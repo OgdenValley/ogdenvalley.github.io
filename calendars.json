@@ -1,0 +1,5 @@
+{
+  "_help": "Paste each Google Calendar ID (Settings > the calendar > Integrate calendar). The calendar must be set to public. Use the same IDs in data/config.js.",
+  "ov":    { "name": "Ogden Valley",  "id": "" },
+  "weber": { "name": "Weber County", "id": "" }
+}
