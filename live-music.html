@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Live Music · Ogden Valley Info & Events</title>
+<meta name="description" content="Live music in Ogden Valley and Weber County: bands, open mics and concerts on a map, searchable by town or venue.">
+<meta property="og:title" content="Live Music · Ogden Valley Info & Events">
+<meta property="og:description" content="Live music in Ogden Valley and Weber County: bands, open mics and concerts on a map, searchable by town or venue.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ogdenvalley.github.io/live-music.html">
+<meta property="og:image" content="https://ogdenvalley.github.io/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo-10-years-32.png">
+<link rel="apple-touch-icon" href="logo-10-years-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<div class="alert-bar" id="alert-bar" hidden></div>
+<div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
+  <strong>Canyon check</strong>
+  <a href="https://ogdenvalley.udot.utah.gov/road-information/" target="_blank" rel="noopener">Ogden Valley roads &amp; cameras (UDOT)</a>
+  <a href="live.html">Live view</a>
+  <a href="safety.html">Alerts &amp; fires</a>
+  <a href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Eden weather</a>
+</div></div>
+<header class="site-head"><div class="container">
+  <a class="brand" href="index.html"><img data-logo="180" src="logo-10-years-180.png" alt="" width="52" height="52"><span><b>Ogden Valley</b><small>Information &amp; Events</small></span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="main" id="nav" aria-label="Main"><a href="events.html" aria-current="page">Events</a><a href="restaurants.html">Eat &amp; Shop</a><a href="artists.html">Artists</a><a href="safety.html">Safety</a><a href="live.html">Live View</a><a href="night-sky.html">Night Sky</a><a href="fun.html">Fun &amp; Contests</a><a href="about.html">About</a><a href="search.html">Search</a></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley · Weber County</p><h1>Live music</h1><p class="lead" style="margin-top:12px">Bands, open mics, DJs and concerts from both calendars. Search by town or venue, or find what's playing near you.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section><div class="container" style="display:grid;gap:16px">
+  <div class="filters" style="margin:0">
+    <input type="search" id="lq" placeholder="Town, venue or band" aria-label="Search live music by town, venue or band">
+    <button class="chip" type="button" data-c="ov" aria-pressed="true"><span class="dot" style="background:var(--ov)"></span>Ogden Valley</button>
+    <button class="chip" type="button" data-c="weber" aria-pressed="true"><span class="dot" style="background:var(--weber)"></span>Weber County</button>
+    <button class="chip" type="button" id="near">Near me</button>
+  </div>
+  <div id="map" role="region" aria-label="Map of live music" style="height:min(60vh,460px);border-radius:12px;border:1px solid var(--line);background:var(--soft)"></div>
+  <p class="meta" id="lm-note" style="color:var(--muted);font-size:15px;margin:0"></p>
+  <div id="lm-list"></div>
+  <div class="card"><h3>Playing a show?</h3><p>Send us your gig. Put "live music" in the title or description and it shows up here and on the map.</p><a data-form="event" href="submit.html">Send your show</a></div>
+</div></section>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+</main>
+<footer class="site-foot"><div class="container">
+  <div class="ten"><img data-logo="180" src="logo-10-years-180.png" alt="" width="64" height="64"><div><b>Ogden Valley Info &amp; Events</b><br><span class="fine">Eden · Liberty · Huntsville · since 2016</span><br><span class="fine" id="gc-count"></span></div></div>
+  <div><h3>Explore</h3><ul><li><a href="events.html">Events</a></li><li><a href="restaurants.html">Restaurants</a></li><li><a href="businesses.html">Valley Businesses</a></li><li><a href="artists.html">Local Artists</a></li><li><a href="safety.html">Safety &amp; alerts</a></li><li><a href="live.html">Live view</a></li><li><a href="night-sky.html">Night sky</a></li></ul></div>
+  <div><h3>Take part</h3><ul><li><a href="submit.html">Send an event or listing</a></li><li><a href="fun.html">Fun &amp; contests</a></li><li><a href="sponsor.html">Sponsor a spot</a></li><li><a href="ten-years.html">10 years</a></li><li><a data-newsletter data-hide-empty href="#">Weekly newsletter</a></li></ul></div>
+  <div><h3>Follow</h3><ul><li><a data-facebook href="https://www.facebook.com/ogdenvalleyevents" target="_blank" rel="noopener">Facebook</a></li><li><a data-instagram data-hide-empty href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="about.html#groups">Our Facebook groups</a></li><li><a href="rules.html">Community rules</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul>
+  <p class="fine">Event details come from organizers. Check with them before you go.</p></div>
+</div></footer>
+<script src="config.js"></script>
+<script src="places.js"></script>
+<script src="site.js"></script>
+<script>
+
+(async function(){const S=window.OVE_SITE;const data=await S.loadEvents();const geo=await S.loadJSON("geocache.json")||{};
+const MUSIC=/live music|\bband\b|concert|acoustic|open mic|\bdj\b|bluegrass|jazz|musician|singer|songwriter|karaoke|symphony|orchestra|#livemusic/i;
+let on=["ov","weber"],q="",me=null;
+const all=S.allEvents(data).filter(e=>MUSIC.test(e.t+" "+(e.desc||"")));
+let map=null,layer=null;
+if(window.L){map=L.map("map",{scrollWheelZoom:false}).setView([41.28,-111.86],10);L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);layer=L.layerGroup().addTo(map)}
+else document.getElementById("map").textContent="The map couldn't load. The list below still works.";
+const dist=(a,b)=>{const R=3959,t=x=>x*Math.PI/180,dl=t(b.lat-a.lat),dg=t(b.lng-a.lng);const h=Math.sin(dl/2)**2+Math.cos(t(a.lat))*Math.cos(t(b.lat))*Math.sin(dg/2)**2;return 2*R*Math.asin(Math.sqrt(h))};
+const esc=s=>String(s||"").replace(/[<>&]/g,c=>({"<":"&lt;",">":"&gt;","&":"&amp;"}[c]));
+function draw(){let list=all.filter(e=>on.includes(e.cal)&&(!q||(e.t+" "+(e.loc||"")+" "+(e.desc||"")).toLowerCase().includes(q)));
+  list.forEach(e=>{const g=e.loc&&geo[e.loc.trim()];e._g=g||null;e._d=me&&g?dist(me,g):null});
+  if(me)list=list.slice().sort((a,b)=>(a._d??9e9)-(b._d??9e9));
+  if(layer){layer.clearLayers();const pts=[];list.forEach(e=>{if(!e._g)return;pts.push([e._g.lat,e._g.lng]);L.circleMarker([e._g.lat,e._g.lng],{radius:9,color:"#fff",weight:2,fillColor:e.cal==="ov"?"#2F7D4F":"#2E6DA4",fillOpacity:.95}).bindPopup("<b>"+esc(e.t)+"</b><br>"+S.dayName(e.s)+(e.allDay?"":" · "+S.timeStr(e.s))+"<br>"+esc(e.loc)).addTo(layer)});
+    if(me)L.circleMarker([me.lat,me.lng],{radius:7,color:"#B3261E",fillColor:"#B3261E",fillOpacity:1}).bindPopup("You are here").addTo(layer);
+    if(pts.length)map.fitBounds(pts.concat(me?[[me.lat,me.lng]]:[]),{padding:[30,30],maxZoom:13})}
+  const noPin=list.filter(e=>!e._g).length;
+  document.getElementById("lm-note").textContent=list.length?(list.length+" show"+(list.length===1?"":"s")+(noPin?" · "+noPin+" not on the map yet (no address found)":"")+(me?" · closest first":"")):"";
+  S.renderEvents(document.getElementById("lm-list"),list,{emptyText:data?"No live music posted for the calendars you picked yet.":"Live music shows up here once the calendars are connected."});
+  if(me){const cards=document.querySelectorAll("#lm-list .event");list.forEach((e,i)=>{const c=cards[i];if(c&&e._d!=null){const w=c.querySelector(".what");w&&w.insertAdjacentText("beforeend"," · "+e._d.toFixed(1)+" mi")}})}}
+document.getElementById("lq").addEventListener("input",ev=>{q=ev.target.value.trim().toLowerCase();draw()});
+document.querySelectorAll("[data-c]").forEach(b=>b.addEventListener("click",()=>{const k=b.dataset.c,p=b.getAttribute("aria-pressed")==="true";if(p&&on.length===1)return;b.setAttribute("aria-pressed",String(!p));on=p?on.filter(x=>x!==k):on.concat(k);draw()}));
+document.getElementById("near").addEventListener("click",ev=>{const b=ev.currentTarget;if(!navigator.geolocation){b.textContent="Location not available";return}b.textContent="Finding you…";navigator.geolocation.getCurrentPosition(p=>{me={lat:p.coords.latitude,lng:p.coords.longitude};b.textContent="Near me";b.setAttribute("aria-pressed","true");draw()},()=>{b.textContent="Location is off"},{timeout:10000})});
+draw();})();
+</script>
+</body>
+</html>

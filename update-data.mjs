@@ -271,8 +271,57 @@ async function reviews(){
   } catch (e) { console.log("reviews failed:", e.message, "- keeping the last good copy"); }
 }
 
+/* ---------------- MAP PINS: look up event locations (OpenStreetMap Nominatim, cached) ---------------- */
+async function geocode(){
+  let cache = {}; try { cache = JSON.parse(fs.readFileSync("geocache.json", "utf8")); } catch {}
+  let ev = {}; try { ev = JSON.parse(fs.readFileSync("events.json", "utf8")); } catch {}
+  const locs = new Set();
+  for (const c of Object.values(ev.calendars || {})) for (const e of c.events || []) if (e.loc && e.loc.trim().length > 3) locs.add(e.loc.trim());
+  const todo = [...locs].filter(l => !(l in cache)).slice(0, 25);
+  for (const l of todo) {
+    try {
+      const q = /utah|\bUT\b/i.test(l) ? l : l + ", Weber County, Utah";
+      const j = await getJSON("https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=us&q=" + encodeURIComponent(q));
+      cache[l] = j && j[0] ? {lat: +(+j[0].lat).toFixed(5), lng: +(+j[0].lon).toFixed(5)} : null;
+      console.log("geocode", l, "->", cache[l] ? "found" : "not found");
+    } catch (e) { console.log("geocode failed for", l, e.message); }
+    await new Promise(r => setTimeout(r, 1100)); // be polite: one lookup per second
+  }
+  writeIfChanged("geocache.json", cache);
+}
+
+/* ---------------- COMMUNITY REPORTS (Google Form → published sheet tab, CSV) ----------------
+   Text posts automatically after the filter; photos only show once "Photo OK" is marked yes.
+   Reports drop off after 48 hours. */
+async function reports(){
+  let cfg = {}; try { cfg = JSON.parse(fs.readFileSync("calendars.json", "utf8")); } catch {}
+  const url = (cfg._reportsCsv || "").trim();
+  if (!url) { let old = null; try { old = JSON.parse(fs.readFileSync("reports.json", "utf8")); } catch {} if (!old) writeIfChanged("reports.json", {updated: new Date().toISOString(), items: [], held: 0}); console.log("reports: no sheet link yet"); return; }
+  try {
+    const rows = parseCSV(await getText(url)).filter(r => r.some(c => c.trim()));
+    const head = (rows.shift() || []).map(h => h.toLowerCase());
+    const col = re => head.findIndex(h => re.test(h));
+    const iT = col(/timestamp/), iK = col(/what kind|type|kind/), iW = col(/where|location|cross/), iD = col(/what did|what you saw|details|describe/), iP = col(/photo(?! ok)/), iOK = col(/photo ok/), iH = col(/^hide/), iN = col(/name/);
+    const now = Date.now(); let held = 0; const items = [];
+    for (const r of rows) {
+      if (iH >= 0 && /hide/i.test(r[iH] || "")) continue;
+      const t = Date.parse(r[iT]); if (!t || now - t > 48 * 36e5) continue;
+      const where = (r[iW] || "").trim(), text = (r[iD] || "").trim();
+      if (heldReason(text + " " + where, r[iN] || "")) { held++; continue; }
+      let photo = null;
+      if (iP >= 0 && iOK >= 0 && /^y/i.test((r[iOK] || "").trim())) { const m = (r[iP] || "").match(/[-\w]{25,}/); if (m) photo = "https://drive.google.com/thumbnail?id=" + m[0] + "&sz=w1200"; }
+      items.push({time: t, kind: (r[iK] || "Report").trim().slice(0, 40), where: where.slice(0, 120), text: text.slice(0, 600), by: (r[iN] || "").trim().slice(0, 30), photo});
+    }
+    items.sort((a, b) => b.time - a.time);
+    console.log("reports", items.length, "showing,", held, "held back");
+    writeIfChanged("reports.json", {updated: new Date().toISOString(), items, held});
+  } catch (e) { console.log("reports failed:", e.message, "- keeping the last good copy"); }
+}
+
 await calendars();
 await sky();
 await safety();
 await local();
 await reviews();
+await reports();
+await geocode();

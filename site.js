@@ -167,6 +167,21 @@ function renderSeason(L){
   if (!items.length) return;
   bar.replaceChildren(el("div", {class: "container"}, [el("strong", {text: "Alert: "}), document.createTextNode([...new Set(items)].slice(0, 3).join(" · ") + " "), el("a", {href: "safety.html", text: "Details"})]));
   bar.hidden = false; })();
+/* ---------- click metrics: what people tap (GoatCounter events, no cookies) ---------- */
+document.addEventListener("click", ev => {
+  const a = ev.target.closest("a,button"); if (!a || !window.goatcounter || !window.goatcounter.count) return;
+  let label = a.dataset.track || "";
+  if (!label) {
+    const href = a.getAttribute("href") || "";
+    const txt = (a.textContent || "").trim().replace(/\s+/g, " ").slice(0, 40);
+    if (a.matches("[data-form]")) label = "form: " + a.dataset.form;
+    else if (a.matches("[data-newsletter]")) label = "newsletter subscribe";
+    else if (/calendar\.google\.com\/calendar\/render\?cid|^webcal:/.test(href)) label = "calendar subscribe: " + txt;
+    else if (/^https?:/.test(href) && !href.includes(location.host)) { try { label = "outbound: " + new URL(href).host + " (" + txt + ")"; } catch (e) {} }
+    else if (a.tagName === "BUTTON") label = "button: " + txt;
+  }
+  if (label) window.goatcounter.count({path: label, title: location.pathname, event: true});
+});
 /* ---------- visit counts (GoatCounter, no cookies) ---------- */
 if (C.goatcounter) {
   const sc = document.createElement("script"); sc.async = true; sc.src = "https://gc.zgo.at/count.js"; sc.dataset.goatcounter = "https://" + C.goatcounter + ".goatcounter.com/count"; document.head.append(sc);

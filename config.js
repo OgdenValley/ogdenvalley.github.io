@@ -27,7 +27,9 @@ window.OVE = {
     photo:    "",             // Photo contest entry
     sponsor:  "",             // Sponsor a spot
     guess:    "",             // Guess the Spot: send a guess
-    guessSubmit: ""           // Guess the Spot: send in your own spot
+    guessSubmit: "",          // Guess the Spot: send in your own spot
+    skyPhoto: "",             // Night sky photo submissions
+    report: ""                // Community reports (fire, road, power) — the form link
   },
 
   /* --- Reviews (Google Form) -------------------------------------------
@@ -66,6 +68,15 @@ window.OVE = {
   /* --- Features (fill in each week / month) --------------------------- */
   businessOfWeek: null,       // { name: "", town: "Eden", blurb: "", link: "" }
   artistOfMonth: null,        // { name: "", medium: "", town: "", blurb: "", link: "" }
+
+  /* --- Night sky photos (newest last) --------------------------------
+     { image: "sky-pineview-milkyway.jpg", title: "Milky Way over Pineview",
+       place: "Pineview", date: "Oct 2026", by: "Jane D." } */
+  skyPhotos: [],
+
+  /* --- Facebook groups you run (shown on the About page) -------------
+     { name: "", url: "https://www.facebook.com/groups/...", about: "" } */
+  facebookGroups: [],
 
   /* --- Started ---------------------------------------------------------- */
   startYear: 2016

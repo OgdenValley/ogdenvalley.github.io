@@ -38,6 +38,10 @@
 <section><div class="container" style="display:grid;gap:28px">
   <div><div class="section-head"><div><p class="eyebrow">National Weather Service</p><h2>Weather alerts</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://www.weather.gov/slc/" target="_blank" rel="noopener">NWS Salt Lake City</a></div><div id="wx"></div></div>
   <div><div class="section-head"><div><p class="eyebrow">National Interagency Fire Center</p><h2>Wildfires near Weber County</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://utahfireinfo.gov/" target="_blank" rel="noopener">Utah Fire Info</a></div><div id="fires"></div></div>
+  <div id="reports"><div class="section-head"><div><p class="eyebrow">From neighbors · not verified</p><h2>Community reports</h2></div><a class="btn primary" data-form="report" href="#">Report something</a></div>
+    <div class="alert warn" style="margin-bottom:12px"><b>Call 911 first</b> if anyone is in danger. Never go near a fire or a crash to take a photo. Reports here come from neighbors, are not checked by officials, and disappear after 48 hours. Official alerts above always come first.</div>
+    <div id="rep"></div>
+    <p class="meta" style="font-size:14px;margin-top:8px">Please share cross streets or a landmark, not house numbers, and no faces, children or license plates. See the <a href="rules.html">community rules</a>.</p></div>
   <div><div class="section-head"><div><p class="eyebrow">UDOT</p><h2>Roads and canyons</h2></div></div>
     <div class="grid">
       <article class="card"><h3>Ogden Valley road information</h3><p>UDOT's page for the Valley, with current road alerts and every canyon camera.</p><a href="https://ogdenvalley.udot.utah.gov/road-information/" target="_blank" rel="noopener">Open UDOT Ogden Valley roads</a></article>
@@ -59,7 +63,7 @@
   <div class="ten"><img data-logo="180" src="logo-10-years-180.png" alt="" width="64" height="64"><div><b>Ogden Valley Info &amp; Events</b><br><span class="fine">Eden · Liberty · Huntsville · since 2016</span><br><span class="fine" id="gc-count"></span></div></div>
   <div><h3>Explore</h3><ul><li><a href="events.html">Events</a></li><li><a href="restaurants.html">Restaurants</a></li><li><a href="businesses.html">Valley Businesses</a></li><li><a href="artists.html">Local Artists</a></li><li><a href="safety.html">Safety &amp; alerts</a></li><li><a href="live.html">Live view</a></li><li><a href="night-sky.html">Night sky</a></li></ul></div>
   <div><h3>Take part</h3><ul><li><a href="submit.html">Send an event or listing</a></li><li><a href="fun.html">Fun &amp; contests</a></li><li><a href="sponsor.html">Sponsor a spot</a></li><li><a href="ten-years.html">10 years</a></li><li><a data-newsletter data-hide-empty href="#">Weekly newsletter</a></li></ul></div>
-  <div><h3>Follow</h3><ul><li><a data-facebook href="https://www.facebook.com/ogdenvalleyevents" target="_blank" rel="noopener">Facebook</a></li><li><a data-instagram data-hide-empty href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="rules.html">Community rules</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul>
+  <div><h3>Follow</h3><ul><li><a data-facebook href="https://www.facebook.com/ogdenvalleyevents" target="_blank" rel="noopener">Facebook</a></li><li><a data-instagram data-hide-empty href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="about.html#groups">Our Facebook groups</a></li><li><a href="rules.html">Community rules</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul>
   <p class="fine">Event details come from organizers. Check with them before you go.</p></div>
 </div></footer>
 <script src="config.js"></script>
@@ -81,6 +85,9 @@ else if(!sf.fires.length)quiet(fires,"No active wildfires reported in or around 
 else{const g=el("div",{class:"grid"});sf.fires.forEach(f=>g.append(el("article",{class:"card",style:"border-left:6px solid #C77700"},[el("h3",{text:f.name}),el("p",{class:"meta",text:f.county+" County"+(f.acres!=null?" · "+Number(f.acres).toLocaleString()+" acres":"")+(f.contained!=null?" · "+f.contained+"% contained":"")}),f.updated?el("p",{class:"meta",text:"Last updated "+fmt(f.updated)}):null,src(f.source,f.link)])));fires.replaceChildren(g)}
 const city=document.getElementById("city");
 if(sf&&sf.city&&sf.city.length){const g=el("div",{class:"grid"});sf.city.slice(0,9).forEach(c=>g.append(el("article",{class:"card"},[el("h3",{style:"font-size:18px"},[c.link?el("a",{href:c.link,target:"_blank",rel:"noopener",text:c.title}):document.createTextNode(c.title)]),c.date?el("p",{class:"meta",text:fmt(c.date)}):null,c.text?el("p",{class:"meta",text:c.text}):null,src(c.source,c.sourceLink)])));city.replaceChildren(g)}
+const R=await S.loadJSON("reports.json"),rep=document.getElementById("rep");
+if(!R||!R.items||!R.items.length)quiet(rep,"No community reports in the last 48 hours.");
+else{rep.replaceChildren(...R.items.map(x=>el("article",{class:"card",style:"border-left:6px solid #C77700"},[el("p",{class:"eyebrow",text:x.kind+" · "+fmt(x.time)}),x.where?el("h3",{text:x.where}):null,x.photo?el("img",{src:x.photo,alt:x.kind+" photo from a neighbor",loading:"lazy",style:"border-radius:10px;max-height:420px;width:100%;object-fit:cover"}):null,x.text?el("p",{text:x.text}):null,el("p",{class:"meta",style:"font-size:14px",text:"Community report"+(x.by?" from "+x.by:"")+" · not verified"})])))}
 S.renderMeetings(document.getElementById("meet-list"),L,20,true);
 if(sf&&sf.updated)document.getElementById("safety-upd").textContent="Last checked "+fmt(sf.updated)+".";
 })();
