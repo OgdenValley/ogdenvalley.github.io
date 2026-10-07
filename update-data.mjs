@@ -254,7 +254,7 @@ async function reviews(){
     const rows = parseCSV(await getText(url)).filter(r => r.some(c => c.trim()));
     const head = (rows.shift() || []).map(h => h.toLowerCase());
     const col = re => head.findIndex(h => re.test(h));
-    const iT = col(/timestamp|date/), iB = col(/business/), iS = col(/star|rating/), iR = col(/review|comment/), iN = col(/name/), iH = col(/^hide/);
+    const iT = col(/^\s*(timestamp|date)/), iB = col(/^\s*business/), iS = col(/^\s*(stars?|rating)/), iR = col(/^\s*(your review|review|comment)/), iN = col(/^\s*(name|your name)/), iH = col(/^\s*hide/);
     const by = {}; let held = 0;
     for (const r of rows) {
       if (iH >= 0 && /hide/i.test(r[iH] || "")) continue;

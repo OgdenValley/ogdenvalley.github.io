@@ -45,7 +45,7 @@ window.OVE = {
   /* --- Reviews (Google Form) -------------------------------------------
      reviewForm: the form's link ending in /viewform
      reviewEntry: the "entry.123456" code for the Business question */
-  reviewForm: "",
+  reviewForm: "https://docs.google.com/forms/d/e/1FAIpQLSeTVfz5wqLAu6f15SJrluiMaY6CZZyO8l_0epaBnbhf5z0k7Q/viewform",
   reviewEntry: "",
 
   /* --- Recipe vote prefill (optional, same idea as reviews) ------------
