@@ -1,1 +1,76 @@
-{"updated":null,"meetings":[],"snow":[],"pineview":null,"status":{}}
+{
+ "updated": "2026-10-07T14:19:42.510Z",
+ "meetings": [
+  {
+   "body": "Ogden Valley City Council",
+   "title": "NOTICE FOR OGDEN VALLEY COUNCIL MEETING - October 6, 2026, 6pm",
+   "start": 1791331200000,
+   "link": "https://www.utah.gov/pmn/sitemap/notice/1113121.html",
+   "source": "Utah Public Notice Website"
+  },
+  {
+   "body": "Huntsville Town Council",
+   "title": "WS and TC Meeting 10-8-26",
+   "start": 1791498600000,
+   "link": "https://www.utah.gov/pmn/sitemap/notice/1112871.html",
+   "source": "Utah Public Notice Website"
+  }
+ ],
+ "snow": [
+  {
+   "name": "Ben Lomond Peak",
+   "elev": 7690,
+   "depth": {
+    "value": 0,
+    "date": "2026-10-06"
+   },
+   "water": {
+    "value": 0.2,
+    "date": "2026-10-06"
+   },
+   "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
+   "source": "USDA NRCS SNOTEL"
+  },
+  {
+   "name": "Ben Lomond Trail",
+   "elev": 5970,
+   "depth": {
+    "value": 1,
+    "date": "2026-10-06"
+   },
+   "water": {
+    "value": 0.3,
+    "date": "2026-10-06"
+   },
+   "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
+   "source": "USDA NRCS SNOTEL"
+  },
+  {
+   "name": "Monte Cristo",
+   "elev": 8930,
+   "depth": {
+    "value": 0,
+    "date": "2026-10-06"
+   },
+   "water": {
+    "value": 0,
+    "date": "2026-10-06"
+   },
+   "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
+   "source": "USDA NRCS SNOTEL"
+  }
+ ],
+ "pineview": {
+  "acreFeet": 1311.19,
+  "percent": 1,
+  "date": "2026-09-30T07:00:00+00:00",
+  "source": "U.S. Bureau of Reclamation",
+  "link": "https://data.usbr.gov/location/437"
+ },
+ "status": {
+  "Ogden Valley City Council": "ok",
+  "Huntsville Town Council": "ok",
+  "snow": "ok",
+  "pineview": "ok"
+ }
+}

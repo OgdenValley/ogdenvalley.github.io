@@ -1,1 +1,14 @@
-{}
+{
+ "Varies": null,
+ "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317": null,
+ "Pineview, Utah": {
+  "lat": 41.25438,
+  "lng": -111.84262,
+  "county": "Weber"
+ },
+ "Logan, Utah": {
+  "lat": 41.73131,
+  "lng": -111.83491,
+  "county": "Cache"
+ }
+}

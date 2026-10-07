@@ -1,1 +1,483 @@
-{"updated":null,"calendars":{"ov":{"name":"Ogden Valley","events":[]},"weber":{"name":"Weber County","events":[]}}}
+{
+ "updated": "2026-10-07T14:19:39.764Z",
+ "calendars": {
+  "ov": {
+   "name": "Ogden Valley",
+   "events": [
+    {
+     "s": 1791417600000,
+     "e": 1791426600000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1791662400000,
+     "e": 1791676800000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1792022400000,
+     "e": 1792031400000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1792267200000,
+     "e": 1792281600000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1792627200000,
+     "e": 1792636200000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1792872000000,
+     "e": 1792886400000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1793232000000,
+     "e": 1793241000000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1793476800000,
+     "e": 1793491200000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1793840400000,
+     "e": 1793849400000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1794085200000,
+     "e": 1794099600000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1794445200000,
+     "e": 1794454200000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1794690000000,
+     "e": 1794704400000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1795050000000,
+     "e": 1795059000000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1795294800000,
+     "e": 1795309200000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1795654800000,
+     "e": 1795663800000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1795899600000,
+     "e": 1795914000000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1796259600000,
+     "e": 1796268600000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1796504400000,
+     "e": 1796518800000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1796864400000,
+     "e": 1796873400000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1797109200000,
+     "e": 1797123600000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1797469200000,
+     "e": 1797478200000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1797714000000,
+     "e": 1797728400000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1798074000000,
+     "e": 1798083000000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1798318800000,
+     "e": 1798333200000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1798678800000,
+     "e": 1798687800000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1798923600000,
+     "e": 1798938000000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1799283600000,
+     "e": 1799292600000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1799528400000,
+     "e": 1799542800000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1799888400000,
+     "e": 1799897400000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1800133200000,
+     "e": 1800147600000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1800493200000,
+     "e": 1800502200000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1800738000000,
+     "e": 1800752400000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1801098000000,
+     "e": 1801107000000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1801342800000,
+     "e": 1801357200000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1801702800000,
+     "e": 1801711800000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1801947600000,
+     "e": 1801962000000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1802307600000,
+     "e": 1802316600000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1802552400000,
+     "e": 1802566800000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1802912400000,
+     "e": 1802921400000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1803157200000,
+     "e": 1803171600000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1803517200000,
+     "e": 1803526200000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1803762000000,
+     "e": 1803776400000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1804122000000,
+     "e": 1804131000000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1804366800000,
+     "e": 1804381200000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1804726800000,
+     "e": 1804735800000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1804971600000,
+     "e": 1804986000000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1805328000000,
+     "e": 1805337000000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1805572800000,
+     "e": 1805587200000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1805932800000,
+     "e": 1805941800000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1806177600000,
+     "e": 1806192000000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    },
+    {
+     "s": 1806537600000,
+     "e": 1806546600000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1806782400000,
+     "e": 1806796800000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
+    }
+   ]
+  },
+  "weber": {
+   "name": "Weber County",
+   "events": []
+  }
+ },
+ "sources": {}
+}
