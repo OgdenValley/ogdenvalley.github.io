@@ -1,0 +1,4 @@
+{
+ "_help": "Add a job: {\"title\": \"\", \"business\": \"\", \"town\": \"\", \"type\": \"Seasonal\", \"pay\": \"\", \"details\": \"\", \"apply\": \"\", \"posted\": \"YYYY-MM-DD\", \"expires\": \"YYYY-MM-DD\"}",
+ "jobs": []
+}

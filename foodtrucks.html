@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Scavenger Hunt · Ogden Valley Info & Events</title>
-<meta name="description" content="Monthly Ogden Valley scavenger hunt for families and visitors. Check things off as you find them.">
-<meta property="og:title" content="Scavenger Hunt · Ogden Valley Info & Events">
-<meta property="og:description" content="Monthly Ogden Valley scavenger hunt for families and visitors. Check things off as you find them.">
+<title>Food Trucks · Ogden Valley Info &amp; Events</title>
+<meta name="description" content="Food trucks and food-truck events in Ogden Valley.">
+<meta property="og:title" content="Food Trucks · Ogden Valley Info &amp; Events">
+<meta property="og:description" content="Food trucks and food-truck events in Ogden Valley.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://ogdenvalley.github.io/scavenger-hunt.html">
+<meta property="og:url" content="https://ogdenvalley.github.io/foodtrucks.html">
 <meta property="og:image" content="https://ogdenvalley.github.io/share-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="logo-10-years-32.png">
@@ -31,20 +31,17 @@
 <header class="site-head"><div class="container">
   <a class="brand" href="index.html"><img data-logo="180" src="logo-10-years-180.png" alt="" width="52" height="52"><span><b>Ogden Valley</b><small>Information &amp; Events</small></span></a>
   <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
-  <nav class="main" id="nav" aria-label="Main"><a href="events.html">Events</a><a href="restaurants.html">Eat &amp; Shop</a><a href="artists.html">Artists</a><a href="safety.html">Safety</a><a href="live.html">Live View</a><a href="night-sky.html">Night Sky</a><a href="fun.html" aria-current="page">Fun &amp; Contests</a><a href="about.html">About</a><a href="search.html">Search</a></nav>
+  <nav class="main" id="nav" aria-label="Main"><a href="events.html">Events</a><a href="restaurants.html" aria-current="page">Eat &amp; Shop</a><a href="artists.html">Artists</a><a href="safety.html">Safety</a><a href="live.html">Live View</a><a href="night-sky.html">Night Sky</a><a href="fun.html">Fun &amp; Contests</a><a href="about.html">About</a><a href="search.html">Search</a></nav>
 </div></header>
 <main id="main">
-<section class="hero"><div class="container"><div><p class="eyebrow">This month</p><h1>Valley scavenger hunt</h1><p class="lead" style="margin-top:12px">Get outside and find these around the Valley. Check them off as you go. Your phone remembers your progress.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
-<section><div class="container" style="display:grid;gap:16px">
-  <div class="card"><div class="section-head" style="margin:0"><div><p class="eyebrow" id="h-month"></p><h2 style="font-size:24px" id="h-title">This month's hunt</h2></div><div class="big" id="h-count">0 of 0</div></div>
-    <div class="hbar"><div id="h-bar"></div></div>
-    <ul class="hunt" id="h-list"></ul></div>
-  <div class="card" id="h-done" hidden><h2 style="font-size:24px">You finished the hunt!</h2><p>Send us one photo from your hunt for a shout-out in the newsletter.</p><div class="btns"><a class="btn primary" data-form="hunt" href="#">Send your finish photo</a></div></div>
-  <p class="meta" style="color:var(--muted);font-size:15px">Stay on public land and trails, respect private property, and never go near wildlife. Under 13? Hunt with a grown-up.</p>
+<section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley</p><h1>Food Trucks</h1><p class="lead" style="margin-top:12px">Food trucks that come up the canyon, and the Valley events where you'll find them.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section><div class="container">
+  <div class="filters" style="margin-bottom:6px"><a class="chip" href="restaurants.html" aria-pressed="false" style="text-decoration:none">Restaurants</a><a class="chip" href="businesses.html" aria-pressed="false" style="text-decoration:none">Valley Businesses</a><a class="chip" href="beauty.html" aria-pressed="false" style="text-decoration:none">Beauty &amp; Wellness</a><a class="chip" href="farm.html" aria-pressed="false" style="text-decoration:none">Farm Stands &amp; Local Food</a><a class="chip" href="foodtrucks.html" aria-pressed="true" style="text-decoration:none">Food Trucks</a></div>
+  <div class="filters"><input type="search" id="q" placeholder="Search food trucks" aria-label="Search food trucks"><button class="chip" type="button" data-town="All" aria-pressed="true">All</button><button class="chip" type="button" data-town="Eden" aria-pressed="false">Eden</button><button class="chip" type="button" data-town="Huntsville" aria-pressed="false">Huntsville</button><button class="chip" type="button" data-town="Liberty" aria-pressed="false">Liberty</button></div>
+  <div class="filters" id="tagbar" hidden></div>
+  <p class="fair">Listings are free and in A–Z order. Nobody pays to be ranked higher, reviews come from real people, and sponsors are always labeled. Every place is checked by a local before it goes up.</p>
+  <div id="list"></div>
 </div></section>
-<style>.hunt{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:8px}.hunt label{display:flex;gap:12px;align-items:flex-start;padding:12px;border:2px solid var(--line);border-radius:10px;cursor:pointer;font-size:18px;font-weight:600;background:var(--card)}
-.hunt input{width:26px;height:26px;flex:none;accent-color:#2F7D4F;margin-top:2px}.hunt .hint{display:block;font-weight:400;font-size:15px;color:var(--muted)}.hunt label:has(input:checked){border-color:var(--good);background:var(--good-bg)}
-.hbar{height:12px;border-radius:99px;background:var(--soft);overflow:hidden;margin-top:10px}.hbar>div{height:100%;width:0;background:var(--good);transition:width .3s}</style>
 </main>
 <footer class="site-foot"><div class="container">
   <div class="ten"><img data-logo="180" src="logo-10-years-180.png" alt="" width="64" height="64"><div><b>Ogden Valley Info &amp; Events</b><br><span class="fine">Eden · Liberty · Huntsville · since 2016</span><br><span class="fine" id="gc-count"></span></div></div>
@@ -57,14 +54,13 @@
 <script src="places.js"></script>
 <script src="site.js"></script>
 <script>
-
-(function(){const S=window.OVE_SITE,H=S.C.hunt||{items:[]};const key="ove-hunt-"+(H.month||"");let done={};try{done=JSON.parse(localStorage.getItem(key)||"{}")}catch(e){}
-document.getElementById("h-month").textContent=H.month||"";if(H.title)document.getElementById("h-title").textContent=H.title;
-const ul=document.getElementById("h-list");
-H.items.forEach((it,i)=>{const id="h"+i;const cb=S.el("input",{type:"checkbox",id});cb.checked=!!done[i];cb.onchange=()=>{done[i]=cb.checked;try{localStorage.setItem(key,JSON.stringify(done))}catch(e){}upd()};
-  ul.append(S.el("li",{},[S.el("label",{for:id},[cb,S.el("span",{},[document.createTextNode(it.find),it.hint?S.el("span",{class:"hint",text:it.hint}):null])])]))});
-function upd(){const n=H.items.filter((_,i)=>done[i]).length;document.getElementById("h-count").textContent=n+" of "+H.items.length;document.getElementById("h-bar").style.width=(H.items.length?n/H.items.length*100:0)+"%";document.getElementById("h-done").hidden=!(H.items.length&&n===H.items.length)}
-upd();})();
+(async function(){const S=window.OVE_SITE,el=S.el;const all=(S.P["foodtrucks"]||[]);let town="All",q="",tag="";const R=await S.loadJSON("reviews.json");
+const tags=[...new Set(all.flatMap(p=>p.tags||[]))].sort();const tb=document.getElementById("tagbar");
+if(tags.length){tb.hidden=false;tb.replaceChildren(...["All"].concat(tags).map(t=>{const b=el("button",{class:"chip",type:"button","aria-pressed":String((tag||"All")===t),text:t});b.onclick=()=>{tag=t==="All"?"":t;[...tb.children].forEach(x=>x.setAttribute("aria-pressed",String(x===b)));draw()};return b}))}
+function draw(){S.listing(document.getElementById("list"),all.filter(p=>(town==="All"||(p.town||p.area)===town)&&(!tag||(p.tags||[]).includes(tag))&&(!q||JSON.stringify(p).toLowerCase().includes(q))),"foodtrucks",R)}
+document.getElementById("q").addEventListener("input",e=>{q=e.target.value.trim().toLowerCase();draw()});
+document.querySelectorAll("button[data-town]").forEach(b=>{b.addEventListener("click",()=>{town=b.dataset.town;document.querySelectorAll("button[data-town]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));draw()})});
+draw();if(location.hash){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t){t.scrollIntoView();t.style.outline="3px solid var(--accent)"}}})();
 </script>
 </body>
 </html>

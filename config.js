@@ -22,7 +22,7 @@ window.OVE = {
   /* --- Google Forms --------------------------------------------------- */
   forms: {
     event:    "",             // Submit an event
-    business: "",             // List a business or restaurant
+    business: "https://docs.google.com/forms/d/e/1FAIpQLSc-jh9kRzlErQ1jv698LT4prqLnCWFkdoJy6Bj5KcUeCZCL7A/viewform", // List a business or restaurant
     artist:   "",             // Be listed as a local artist
     photo:    "",             // Photo contest entry
     sponsor:  "",             // Sponsor a spot
@@ -39,8 +39,14 @@ window.OVE = {
     recipe: "",               // Recipe corner: share a recipe
     recipeVote: "",           // Recipe corner: vote + "what I changed"
     volunteer: "",            // Groups: post a volunteer need or drive
-    tips: ""                  // Garden + Be Prepared boards (one form, Board question picks which)
+    tips: "",                 // Garden + Be Prepared boards (one form, Board question picks which)
+    jobs: "",                 // Help wanted: post a Valley job
+    update: "https://docs.google.com/forms/d/e/1FAIpQLSc-jh9kRzlErQ1jv698LT4prqLnCWFkdoJy6Bj5KcUeCZCL7A/viewform" // Listing updates (business form for now): hours changed, closed, moved, or a place we're missing
   },
+
+  /* --- Who's open this week ------------------------------------------
+     The date the open/closed list was last checked, "YYYY-MM-DD". */
+  weekChecked: "",
 
   /* --- Reviews (Google Form) -------------------------------------------
      reviewForm: the form's link ending in /viewform

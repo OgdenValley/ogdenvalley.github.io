@@ -1,6 +1,6 @@
 /* Ogden Valley Info & Events — shared page code */
 (function(){
-const C = window.OVE || {}, P = window.OVE_PLACES || {restaurants:[],businesses:[],artists:[]};
+const C = window.OVE || {}, P = window.OVE_PLACES || {restaurants:[],businesses:[],beauty:[],farm:[],foodtrucks:[],artists:[]};
 const TZ = "America/Denver";
 const $ = (s, r) => (r || document).querySelector(s);
 const el = (tag, attrs, kids) => { const n = document.createElement(tag);
@@ -112,19 +112,40 @@ function reviewBlock(p, R){
   if (link) wrap.append(el("a", {class: "btn ghost small-btn", href: link, target: "_blank", rel: "noopener", text: r && r.count ? "Leave a review" : "Be the first to review"}));
   return wrap.childNodes.length ? wrap : null;
 }
+/* Listing photos: p.photos is a list of files in photos/ (added after they're approved). Shows 3, the rest open below. */
+function photoStrip(p){
+  const ph = (p.photos || []).filter(Boolean); if (!ph.length) return null;
+  const img = (f, i) => el("img", {src: "photos/" + f, alt: p.name + " photo " + (i + 1), loading: "lazy", width: "400", height: "300"});
+  const wrap = el("div", {class: "photos"}, ph.slice(0, 3).map(img));
+  if (ph.length > 3) wrap.append(el("details", {class: "more-photos"}, [el("summary", {text: "See " + (ph.length - 3) + " more photo" + (ph.length - 3 === 1 ? "" : "s")}), el("div", {class: "photos"}, ph.slice(3).map((f, i) => img(f, i + 3)))]));
+  return wrap;
+}
+function niceDay(d){ const [y,m,dd] = (d || "").split("-").map(Number); if (!y) return ""; return new Date(y, m - 1, dd).toLocaleDateString("en-US", {month: "short", day: "numeric", year: "numeric"}); }
+function listMeta(p){
+  const kids = [];
+  if (p.news && p.news.text) kids.push(el("div", {class: "news"}, [el("b", {text: "From the owner" + (p.news.date ? ", " + niceDay(p.news.date) : "") + ": "}), document.createTextNode(p.news.text)]));
+  if (p.tags && p.tags.length) kids.push(el("div", {class: "tags"}, p.tags.map(t => el("span", {class: "tag", text: t}))));
+  if (p.checked) kids.push(el("div", {class: "checked", text: "✓ Checked by a local " + niceDay(p.checked)}));
+  return kids.length ? el("div", {class: "listmeta"}, kids) : null;
+}
 function listing(box, items, kind, R){
   box.replaceChildren();
   if (!items.length) { box.append(el("div", {class: "empty"}, [ el("p", {text: kind === "artists" ? "Artist listings are being gathered. Are you an Ogden Valley or Weber County artist? Ask to be listed." : "Listings are being gathered and checked. Own or love a place in the Valley? Send it in."}),
     el("a", {class: "btn blue", "data-form": kind === "artists" ? "artist" : "business", href: (C.forms && C.forms[kind === "artists" ? "artist" : "business"]) || "submit.html", text: kind === "artists" ? "Ask to be listed" : "Send a listing"}) ])); return; }
+  const upd = C.forms && C.forms.update;
   const grid = el("div", {class: "grid"}); box.append(grid);
   items.slice().sort((a,b) => a.name.localeCompare(b.name)).forEach(p => grid.append(el("article", {class: "card", id: slug(p.name), "data-town": p.town || p.area || ""}, [
+    photoStrip(p),
     el("h3", {text: p.name}),
     el("div", {class: "meta", text: [p.type || p.medium, p.town || p.area].filter(Boolean).join(" · ")}),
     p.blurb ? el("p", {text: p.blurb}) : null,
     p.address ? el("div", {class: "meta", text: p.address}) : null,
     p.phone ? el("div", {class: "meta", text: p.phone}) : null,
     p.link ? el("a", {href: p.link, target: "_blank", rel: "noopener", text: "Website or page"}) : null,
-    kind !== "artists" ? reviewBlock(p, R) : null ])));
+    listMeta(p),
+    kind !== "artists" ? reviewBlock(p, R) : null,
+    upd ? el("a", {class: "upd", href: upd, target: "_blank", rel: "noopener", text: kind === "artists" ? "Info changed? Let us know" : "Hours changed or closed? Let us know"}) : null ])));
+  if (upd) box.append(el("p", {class: "upd-foot"}, [document.createTextNode(kind === "artists" ? "Know an artist we're missing, or something here that changed? " : "Hours different, a place closed, or one we're missing? "), el("a", {href: upd, target: "_blank", rel: "noopener", text: "Let us know"}), document.createTextNode(". Every update is checked before the listing changes.")]));
 }
 
 
@@ -218,5 +239,5 @@ if (C.goatcounter) {
   document.addEventListener("keydown", e => { if (!box || box.hidden) return; if (e.key === "Escape") hide(); if (e.key === "ArrowRight") show(idx + 1); if (e.key === "ArrowLeft") show(idx - 1); });
 })();
 
-window.OVE_SITE = {C, P, el, $, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, dayKey, dayName, timeStr, todayKey, TZ};
+window.OVE_SITE = {C, P, el, $, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, dayKey, dayName, timeStr, todayKey, TZ};
 })();
