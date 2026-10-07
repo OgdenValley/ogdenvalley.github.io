@@ -1,8 +1,17 @@
 {
- "updated": "2026-10-07T17:31:48.304Z",
+ "updated": "2026-10-07T21:30:04.311Z",
  "weather": [],
  "fires": [],
- "city": [],
+ "city": [
+  {
+   "title": "Boughton St. from Monroe Blvd. to Gramercy Ave.",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2060",
+   "date": 1791410830000,
+   "text": "Emergency Water Shutdown",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  }
+ ],
  "status": {
   "weather": "ok",
   "fires": "ok",
