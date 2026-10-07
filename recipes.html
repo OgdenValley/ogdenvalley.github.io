@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Recipe Corner · Ogden Valley Info & Events</title>
+<meta name="description" content="Favorite recipes from Ogden Valley neighbors. Vote for the recipe of the month and share what you changed when you made it.">
+<meta property="og:title" content="Recipe Corner · Ogden Valley Info & Events">
+<meta property="og:description" content="Favorite recipes from Ogden Valley neighbors. Vote for the recipe of the month and share what you changed when you made it.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ogdenvalley.github.io/recipes.html">
+<meta property="og:image" content="https://ogdenvalley.github.io/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo-10-years-32.png">
+<link rel="apple-touch-icon" href="logo-10-years-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<div class="alert-bar" id="alert-bar" hidden></div>
+<div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
+  <strong>Canyon check</strong>
+  <a href="https://ogdenvalley.udot.utah.gov/road-information/" target="_blank" rel="noopener">Ogden Valley roads &amp; cameras (UDOT)</a>
+  <a href="live.html">Live view</a>
+  <a href="safety.html">Alerts &amp; fires</a>
+  <a href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Eden weather</a>
+</div></div>
+<header class="site-head"><div class="container">
+  <a class="brand" href="index.html"><img data-logo="180" src="logo-10-years-180.png" alt="" width="52" height="52"><span><b>Ogden Valley</b><small>Information &amp; Events</small></span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="main" id="nav" aria-label="Main"><a href="events.html">Events</a><a href="restaurants.html">Eat &amp; Shop</a><a href="artists.html">Artists</a><a href="safety.html">Safety</a><a href="live.html">Live View</a><a href="night-sky.html">Night Sky</a><a href="fun.html" aria-current="page">Fun &amp; Contests</a><a href="about.html">About</a><a href="search.html">Search</a></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="container"><div><p class="eyebrow">Recipe of the month</p><h1>Recipe corner</h1><p class="lead" style="margin-top:12px">Share your favorite recipe. Neighbors vote for the recipe of the month, and anyone who makes it can tell us what they changed.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section><div class="container" style="display:grid;gap:20px">
+  <div class="card cta"><div><h2 id="r-head">This month's recipes</h2><p style="margin-top:6px" id="r-sub">Vote for the one you'd make again. One vote per person each month. The winner is announced in the newsletter and on Facebook.</p></div><div class="btns" style="margin:0"><a class="btn primary" data-form="recipe" href="submit.html">Share a recipe</a></div></div>
+  <div id="r-list" class="grid"></div>
+  <div id="r-winners-wrap" hidden><h2 style="margin-bottom:10px">Past winners</h2><div id="r-winners" class="grid"></div></div>
+  <div id="r-older-wrap" hidden><h2 style="margin-bottom:10px">More neighbor recipes</h2><div id="r-older" class="grid"></div></div>
+  <p class="meta" style="color:var(--muted);font-size:15px">By sharing a recipe you agree to our <a href="terms.html">terms</a>: it's yours to share (or you credit where it came from), and we may show it on this site, in the newsletter and on our Facebook and Instagram.</p>
+</div></section>
+<style>.recipe details{margin-top:4px}.recipe pre{white-space:pre-wrap;font:inherit;margin:6px 0}.recipe .tries{border-top:1px solid var(--line);padding-top:8px;margin-top:6px}.recipe .tries p{margin:4px 0;font-size:15px}.votes{font-weight:700;color:var(--accent,#C2410C)}
+@media print{body *{visibility:hidden}.printing,.printing *{visibility:visible}.printing{position:absolute;left:0;top:0;width:100%;border:0}.printing details>*{display:block!important}.printing .btns{display:none}}</style>
+</main>
+<footer class="site-foot"><div class="container">
+  <div class="ten"><img data-logo="180" src="logo-10-years-180.png" alt="" width="64" height="64"><div><b>Ogden Valley Info &amp; Events</b><br><span class="fine">Eden · Liberty · Huntsville · since 2016</span><br><span class="fine" id="gc-count"></span></div></div>
+  <div><h3>Explore</h3><ul><li><a href="events.html">Events</a></li><li><a href="restaurants.html">Restaurants</a></li><li><a href="businesses.html">Valley Businesses</a></li><li><a href="artists.html">Local Artists</a></li><li><a href="safety.html">Safety &amp; alerts</a></li><li><a href="live.html">Live view</a></li><li><a href="night-sky.html">Night sky</a></li></ul></div>
+  <div><h3>Take part</h3><ul><li><a href="submit.html">Send an event or listing</a></li><li><a href="fun.html">Fun &amp; contests</a></li><li><a href="sponsor.html">Sponsor a spot</a></li><li><a href="ten-years.html">10 years</a></li><li><a href="volunteer.html">Volunteer &amp; give back</a></li><li><a href="recipes.html">Recipe corner</a></li><li><a href="garden.html">Garden board</a></li><li><a href="prepared.html">Be prepared board</a></li><li><a href="coming.html">What&#39;s coming &amp; ideas</a></li><li><a data-newsletter data-hide-empty href="#">Weekly newsletter</a></li></ul></div>
+  <div><h3>Follow</h3><ul><li><a data-facebook href="https://www.facebook.com/ogdenvalleyevents" target="_blank" rel="noopener">Facebook</a></li><li><a data-instagram data-hide-empty href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="about.html#groups">Our Facebook groups</a></li><li><a href="rules.html">Community rules</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul>
+  <p class="fine">Event details come from organizers. Check with them before you go.</p></div>
+</div></footer>
+<script src="config.js"></script>
+<script src="places.js"></script>
+<script src="site.js"></script>
+<script>
+
+(async function(){const S=window.OVE_SITE,el=S.el,C=S.C;const R=await S.loadJSON("recipes.json")||{};const items=R.items||[];
+const mName=ym=>{if(!ym)return"";const[y,m]=ym.split("-");return new Date(+y,+m-1,1).toLocaleString("en-US",{month:"long",year:"numeric"})};
+if(R.month)document.getElementById("r-head").textContent=mName(R.month)+" recipes";
+function voteLink(n){const f=C.recipeVoteForm,e=C.recipeVoteEntry;if(f&&e)return f+(f.includes("?")?"&":"?")+e+"="+n;return C.forms&&C.forms.recipeVote||""}
+function card(i,opts){const tries=(R.tries||{})[i.n]||[];const v=(R.tally||{})[i.n]||0;
+  const body=[i.photo?el("img",{src:i.photo,alt:i.title,loading:"lazy",style:"border-radius:10px;width:100%;aspect-ratio:4/3;object-fit:cover"}):null,
+    el("p",{class:"eyebrow",text:"Recipe #"+i.n+(opts&&opts.winner?" · Winner, "+mName(opts.winner):"")}),el("h3",{text:i.title}),el("p",{class:"meta",text:"From "+i.by}),
+    i.story?el("p",{text:i.story}):null,
+    el("details",{},[el("summary",{text:"Ingredients and steps"}),el("h4",{text:"Ingredients"}),el("pre",{text:i.ingredients||""}),el("h4",{text:"Steps"}),el("pre",{text:i.steps||""})]),
+    tries.length?el("div",{class:"tries"},[el("b",{text:"Neighbors who made it changed:"}),...tries.map(t=>el("p",{},[document.createTextNode("“"+t.text+"”"),t.by?el("span",{class:"meta",text:" — "+t.by}):null]))]):null];
+  const btns=[];if(opts&&opts.current){const L=voteLink(i.n);btns.push(el("span",{class:"votes",text:v+" vote"+(v===1?"":"s")}));if(L)btns.push(el("a",{class:"btn primary",href:L,target:"_blank",rel:"noopener",text:"Vote for #"+i.n}))}
+  const L2=C.forms&&C.forms.recipeVote;if(L2&&!(opts&&opts.current))btns.push(el("a",{class:"btn ghost",style:"color:var(--blue)",href:L2,target:"_blank",rel:"noopener",text:"I made it: tell what I changed"}));
+  const pr=el("button",{class:"btn ghost",type:"button",style:"color:var(--blue)",text:"Print"});btns.push(pr);
+  const a=el("article",{class:"card recipe",id:"recipe-"+i.n},body.concat([el("div",{class:"btns",style:"margin:0;align-items:center"},btns)]));
+  pr.onclick=()=>{a.querySelector("details").open=true;a.classList.add("printing");window.print();setTimeout(()=>a.classList.remove("printing"),500)};return a}
+const cur=items.filter(i=>i.month===R.month),list=document.getElementById("r-list");
+if(!cur.length)list.append(el("div",{class:"empty"},[el("p",{text:items.length?"No recipes in yet this month. Share yours and get the votes started!":"Recipes show up here as neighbors send them in. Be the first!"})]));
+cur.forEach(i=>list.append(card(i,{current:true})));
+const wins=R.winners||{},wm=Object.keys(wins).sort().reverse();
+if(wm.length){document.getElementById("r-winners-wrap").hidden=false;wm.forEach(m=>{const i=items.find(x=>x.n===wins[m]);if(i)document.getElementById("r-winners").append(card(i,{winner:m}))})}
+const older=items.filter(i=>i.month!==R.month&&!wm.some(m=>wins[m]===i.n));if(older.length){document.getElementById("r-older-wrap").hidden=false;older.forEach(i=>document.getElementById("r-older").append(card(i)))}
+})();
+</script>
+</body>
+</html>

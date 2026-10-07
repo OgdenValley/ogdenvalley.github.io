@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wildlife & Wildflowers · Ogden Valley Info & Events</title>
+<meta name="description" content="Share and see wildlife and wildflower sightings around Ogden Valley and Utah, on a map, with a watch list to check off.">
+<meta property="og:title" content="Wildlife & Wildflowers · Ogden Valley Info & Events">
+<meta property="og:description" content="Share and see wildlife and wildflower sightings around Ogden Valley and Utah, on a map, with a watch list to check off.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ogdenvalley.github.io/wildlife.html">
+<meta property="og:image" content="https://ogdenvalley.github.io/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo-10-years-32.png">
+<link rel="apple-touch-icon" href="logo-10-years-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<div class="alert-bar" id="alert-bar" hidden></div>
+<div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
+  <strong>Canyon check</strong>
+  <a href="https://ogdenvalley.udot.utah.gov/road-information/" target="_blank" rel="noopener">Ogden Valley roads &amp; cameras (UDOT)</a>
+  <a href="live.html">Live view</a>
+  <a href="safety.html">Alerts &amp; fires</a>
+  <a href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Eden weather</a>
+</div></div>
+<header class="site-head"><div class="container">
+  <a class="brand" href="index.html"><img data-logo="180" src="logo-10-years-180.png" alt="" width="52" height="52"><span><b>Ogden Valley</b><small>Information &amp; Events</small></span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="main" id="nav" aria-label="Main"><a href="events.html">Events</a><a href="restaurants.html">Eat &amp; Shop</a><a href="artists.html">Artists</a><a href="safety.html">Safety</a><a href="live.html">Live View</a><a href="night-sky.html">Night Sky</a><a href="fun.html" aria-current="page">Fun &amp; Contests</a><a href="about.html">About</a><a href="search.html">Search</a></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="container"><div><p class="eyebrow">What did you see?</p><h1>Wildlife &amp; wildflowers</h1><p class="lead" style="margin-top:12px">Moose by the road, cranes in the fields, the first balsamroot of spring. Share what you saw and where, and see what your neighbors spotted.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section><div class="container" style="display:grid;gap:18px">
+  <div class="btns" style="margin:0"><a class="btn primary" data-form="sighting" href="#">Share a sighting</a></div>
+  <div class="alert warn"><b>Give wildlife space.</b> Never chase, feed or crowd animals for a photo. Moose are dangerous. Share the general area, like "Pineview" or "North Fork," never the exact spot of a nest, den or rare plant.</div>
+  <div class="grid">
+    <article class="card"><p class="eyebrow">So far</p><div class="big" id="w-count">0 sightings</div><p class="meta" id="w-kinds" style="margin:0"></p></article>
+    <article class="card"><p class="eyebrow">Different kinds seen</p><div class="big" id="w-species">0</div><p class="meta" style="margin:0">Every new animal or plant adds to the count.</p></article>
+  </div>
+  <div id="wmap" role="region" aria-label="Map of wildlife sightings" style="height:min(55vh,420px);border-radius:12px;border:1px solid var(--line);background:var(--soft)"></div>
+  <div class="card"><div class="section-head" style="margin:0"><div><p class="eyebrow">Valley watch list</p><h2 style="font-size:24px">Can we spot them all?</h2></div><div class="big" id="w-watch">0 of 0</div></div>
+    <div id="w-list" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:6px 14px;font-size:16px"></div></div>
+  <div><h2 style="margin-bottom:6px">Latest sightings</h2><p class="meta" style="color:var(--muted);font-size:15px;margin:0 0 10px">Tap a photo to see it big and swipe through.</p><div class="grid" id="w-gal" data-gallery></div></div>
+  <p class="meta" style="color:var(--muted);font-size:15px">By sharing you agree to our <a href="terms.html">terms</a>. You can stay anonymous. Under 13? Ask a parent to send it.</p>
+</div></section>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+</main>
+<footer class="site-foot"><div class="container">
+  <div class="ten"><img data-logo="180" src="logo-10-years-180.png" alt="" width="64" height="64"><div><b>Ogden Valley Info &amp; Events</b><br><span class="fine">Eden · Liberty · Huntsville · since 2016</span><br><span class="fine" id="gc-count"></span></div></div>
+  <div><h3>Explore</h3><ul><li><a href="events.html">Events</a></li><li><a href="restaurants.html">Restaurants</a></li><li><a href="businesses.html">Valley Businesses</a></li><li><a href="artists.html">Local Artists</a></li><li><a href="safety.html">Safety &amp; alerts</a></li><li><a href="live.html">Live view</a></li><li><a href="night-sky.html">Night sky</a></li></ul></div>
+  <div><h3>Take part</h3><ul><li><a href="submit.html">Send an event or listing</a></li><li><a href="fun.html">Fun &amp; contests</a></li><li><a href="sponsor.html">Sponsor a spot</a></li><li><a href="ten-years.html">10 years</a></li><li><a href="volunteer.html">Volunteer &amp; give back</a></li><li><a href="recipes.html">Recipe corner</a></li><li><a href="garden.html">Garden board</a></li><li><a href="prepared.html">Be prepared board</a></li><li><a href="coming.html">What&#39;s coming &amp; ideas</a></li><li><a data-newsletter data-hide-empty href="#">Weekly newsletter</a></li></ul></div>
+  <div><h3>Follow</h3><ul><li><a data-facebook href="https://www.facebook.com/ogdenvalleyevents" target="_blank" rel="noopener">Facebook</a></li><li><a data-instagram data-hide-empty href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="about.html#groups">Our Facebook groups</a></li><li><a href="rules.html">Community rules</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul>
+  <p class="fine">Event details come from organizers. Check with them before you go.</p></div>
+</div></footer>
+<script src="config.js"></script>
+<script src="places.js"></script>
+<script src="site.js"></script>
+<script>
+
+(async function(){const S=window.OVE_SITE,el=S.el;const D=await S.loadJSON("sightings.json"),geo=await S.loadJSON("geocache.json")||{};const items=(D&&D.items)||[];
+const norm=t=>String(t||"").toLowerCase().replace(/[^a-z ]/g,"").replace(/\bs\b/g,"").trim();
+const fd=t=>t?new Intl.DateTimeFormat("en-US",{timeZone:S.TZ,month:"short",day:"numeric",year:"numeric"}).format(new Date(t)):"";
+const kinds=new Set(items.map(i=>norm(i.what)));
+document.getElementById("w-count").textContent=items.length+" sighting"+(items.length===1?"":"s");
+document.getElementById("w-kinds").textContent=items.length?items.filter(i=>i.kind==="animal").length+" animals · "+items.filter(i=>i.kind==="plant").length+" plants":"Be the first to share one.";
+document.getElementById("w-species").textContent=kinds.size;
+const watch=S.C.watchList||[];const seen=w=>[...kinds].some(k=>k.includes(norm(w.match||w.name))||norm(w.match||w.name).includes(k)&&k.length>3);
+const got=watch.filter(seen).length;document.getElementById("w-watch").textContent=got+" of "+watch.length;
+document.getElementById("w-list").replaceChildren(...watch.map(w=>el("div",{style:seen(w)?"font-weight:700;color:var(--good)":"color:var(--muted)",text:(seen(w)?"✓ ":"○ ")+w.name+(w.when?" ("+w.when+")":"")})));
+const gal=document.getElementById("w-gal");
+if(!items.length)gal.append(el("div",{class:"empty"},[el("p",{text:"No sightings yet. Seen a moose, a fox or the first wildflowers? Share it and start the list."})]));
+items.slice(0,60).forEach(i=>gal.append(el(i.photo?"figure":"article",{class:"card",style:"margin:0"},[i.photo?el("img",{src:i.photo,alt:i.what+" seen near "+i.area,loading:"lazy",style:"border-radius:10px;width:100%;aspect-ratio:4/3;object-fit:cover"}):null,el(i.photo?"figcaption":"div",{style:"display:grid;gap:2px"},[el("b",{text:i.what+(i.area?" · "+i.area:"")}),el("div",{class:"meta",text:[i.seen?"Seen "+i.seen:"",i.shared?"Shared "+fd(i.shared):"",i.by?"By "+i.by:""].filter(Boolean).join(" · ")})])])));
+const m=document.getElementById("wmap");if(!window.L){m.textContent="The map couldn't load. The list below still works.";return}
+const map=L.map(m,{scrollWheelZoom:false}).setView([41.29,-111.82],10);L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:16,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+const key=c=>String(c||"").trim().replace(/,?\s*(ut|utah)\.?$/i,"")+", Utah";const groups={};items.forEach(i=>{if(i.area){const k=key(i.area);(groups[k]=groups[k]||[]).push(i)}});
+const esc=t=>String(t||"").replace(/[<>&"]/g,c=>({"<":"&lt;",">":"&gt;","&":"&amp;",'"':"&quot;"}[c]));const pts=[];
+Object.entries(groups).forEach(([k,l])=>{const g=geo[k];if(!g)return;pts.push([g.lat,g.lng]);const sz=28+Math.min(l.length,10)*2;
+  L.marker([g.lat,g.lng],{icon:L.divIcon({className:"",iconSize:[sz,sz],html:"<div style='width:"+sz+"px;height:"+sz+"px;border-radius:50%;background:#2F7D4F;border:2px solid #fff;color:#fff;font:800 14px Montserrat,Arial,sans-serif;display:grid;place-items:center;box-shadow:0 1px 4px rgba(0,0,0,.4)'>"+l.length+"</div>"})}).bindPopup("<b>"+esc(k.replace(/, Utah$/,""))+"</b><br>"+l.slice(0,8).map(x=>esc(x.what)).join(", ")).addTo(map)});
+if(pts.length>1)map.fitBounds(pts,{padding:[30,30],maxZoom:12});else if(pts.length===1)map.setView(pts[0],11);
+})();
+</script>
+</body>
+</html>

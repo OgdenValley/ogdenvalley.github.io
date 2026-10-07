@@ -36,6 +36,7 @@
 <main id="main">
 <section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley · Weber County</p><h1>Live music</h1><p class="lead" style="margin-top:12px">Bands, open mics, DJs and concerts from both calendars. Search by town or venue, or find what's playing near you.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
 <section><div class="container" style="display:grid;gap:16px">
+  <div id="motw"></div>
   <div class="filters" style="margin:0">
     <input type="search" id="lq" placeholder="Town, venue or band" aria-label="Search live music by town, venue or band">
     <button class="chip" type="button" data-c="ov" aria-pressed="true"><span class="dot" style="background:var(--ov)"></span>Ogden Valley</button>
@@ -45,6 +46,8 @@
   <div id="map" role="region" aria-label="Map of live music" style="height:min(60vh,460px);border-radius:12px;border:1px solid var(--line);background:var(--soft)"></div>
   <p class="meta" id="lm-note" style="color:var(--muted);font-size:15px;margin:0"></p>
   <div id="lm-list"></div>
+  <div id="hire-wrap" hidden><h2 style="margin:8px 0 6px">Local musicians for private events</h2><p class="meta" style="color:var(--muted);font-size:15px;margin:0 0 10px">Weddings, parties, restaurants and fundraisers. Contact them directly.</p><div id="hire" class="grid"></div></div>
+  <div class="card"><h3>Musicians: get featured</h3><p>Send your bio, a photo and whether you play private events. Each week we spotlight one local musician here, in the newsletter and on Facebook.</p><a data-form="musician" href="submit.html">Send your bio</a></div>
   <div class="card"><h3>Playing a show?</h3><p>Send us your gig. Put "live music" in the title or description and it shows up here and on the map.</p><a data-form="event" href="submit.html">Send your show</a></div>
 </div></section>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
@@ -53,7 +56,7 @@
 <footer class="site-foot"><div class="container">
   <div class="ten"><img data-logo="180" src="logo-10-years-180.png" alt="" width="64" height="64"><div><b>Ogden Valley Info &amp; Events</b><br><span class="fine">Eden · Liberty · Huntsville · since 2016</span><br><span class="fine" id="gc-count"></span></div></div>
   <div><h3>Explore</h3><ul><li><a href="events.html">Events</a></li><li><a href="restaurants.html">Restaurants</a></li><li><a href="businesses.html">Valley Businesses</a></li><li><a href="artists.html">Local Artists</a></li><li><a href="safety.html">Safety &amp; alerts</a></li><li><a href="live.html">Live view</a></li><li><a href="night-sky.html">Night sky</a></li></ul></div>
-  <div><h3>Take part</h3><ul><li><a href="submit.html">Send an event or listing</a></li><li><a href="fun.html">Fun &amp; contests</a></li><li><a href="sponsor.html">Sponsor a spot</a></li><li><a href="ten-years.html">10 years</a></li><li><a data-newsletter data-hide-empty href="#">Weekly newsletter</a></li></ul></div>
+  <div><h3>Take part</h3><ul><li><a href="submit.html">Send an event or listing</a></li><li><a href="fun.html">Fun &amp; contests</a></li><li><a href="sponsor.html">Sponsor a spot</a></li><li><a href="ten-years.html">10 years</a></li><li><a href="volunteer.html">Volunteer &amp; give back</a></li><li><a href="recipes.html">Recipe corner</a></li><li><a href="garden.html">Garden board</a></li><li><a href="prepared.html">Be prepared board</a></li><li><a href="coming.html">What&#39;s coming &amp; ideas</a></li><li><a data-newsletter data-hide-empty href="#">Weekly newsletter</a></li></ul></div>
   <div><h3>Follow</h3><ul><li><a data-facebook href="https://www.facebook.com/ogdenvalleyevents" target="_blank" rel="noopener">Facebook</a></li><li><a data-instagram data-hide-empty href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="about.html#groups">Our Facebook groups</a></li><li><a href="rules.html">Community rules</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul>
   <p class="fine">Event details come from organizers. Check with them before you go.</p></div>
 </div></footer>
@@ -63,6 +66,12 @@
 <script>
 
 (async function(){const S=window.OVE_SITE;const data=await S.loadEvents();const geo=await S.loadJSON("geocache.json")||{};
+(async function(){const el=S.el,M=await S.loadJSON("musicians.json")||{};const sp=M.spotlight,box=document.getElementById("motw");
+  const contact=m=>m.contact?el("div",{class:"card",style:"background:var(--soft)"},[el("b",{text:"Available for private events"}),m.email?el("div",{},[el("a",{href:"mailto:"+m.email,text:m.email})]):null,m.phone?el("div",{},[el("a",{href:"tel:"+m.phone.replace(/[^0-9+]/g,""),text:m.phone})]):null,m.website?el("div",{},[el("a",{href:m.website,target:"_blank",rel:"noopener",text:"Website or page"})]):null]):(m.forHire?el("p",{class:"meta",text:"Plays private events. Ask us for contact info."}):null);
+  if(sp){const re=new RegExp(sp.name.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"),"i");const gigs=S.allEvents(data).filter(e=>re.test(e.t+" "+(e.desc||""))).slice(0,6);
+    const gl=el("div");S.renderEvents(gl,gigs,{emptyText:"No shows on the calendars yet. Musicians: send your dates and they'll show up here."});
+    box.append(el("article",{class:"card feature",style:"border:3px solid var(--accent,#C2410C)"},[el("p",{class:"eyebrow",text:"Musician of the Week"}),sp.photo?el("img",{src:sp.photo,alt:sp.name,loading:"lazy",style:"border-radius:12px;width:100%;max-width:420px;aspect-ratio:4/3;object-fit:cover"}):null,el("h2",{text:sp.name}),el("p",{class:"meta",text:[sp.genre,sp.town].filter(Boolean).join(" \u00B7 ")}),sp.bio?el("p",{text:sp.bio}):null,el("h3",{text:"Where to hear them next"}),gl,contact(sp)]))}
+  const hire=(M.forHire||[]);if(hire.length){document.getElementById("hire-wrap").hidden=false;hire.forEach(m=>document.getElementById("hire").append(el("article",{class:"card"},[m.photo?el("img",{src:m.photo,alt:m.name,loading:"lazy",style:"border-radius:10px;width:100%;aspect-ratio:4/3;object-fit:cover"}):null,el("h3",{text:m.name}),el("p",{class:"meta",text:[m.genre,m.town].filter(Boolean).join(" \u00B7 ")}),contact(m)])))}})();
 const MUSIC=/live music|\bband\b|concert|acoustic|open mic|\bdj\b|bluegrass|jazz|musician|singer|songwriter|karaoke|symphony|orchestra|#livemusic/i;
 let on=["ov","weber"],q="",me=null;
 const all=S.allEvents(data).filter(e=>MUSIC.test(e.t+" "+(e.desc||"")));

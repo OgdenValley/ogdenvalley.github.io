@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Page not found · Ogden Valley Info & Events</title>
-<meta name="description" content="That page isn't here.">
-<meta property="og:title" content="Page not found · Ogden Valley Info & Events">
-<meta property="og:description" content="That page isn't here.">
+<title>Volunteer & Give Back · Ogden Valley Info & Events</title>
+<meta name="description" content="Volunteer openings, blood drives, food drives and cleanups in Ogden Valley and Weber County.">
+<meta property="og:title" content="Volunteer & Give Back · Ogden Valley Info & Events">
+<meta property="og:description" content="Volunteer openings, blood drives, food drives and cleanups in Ogden Valley and Weber County.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://ogdenvalley.github.io/404.html">
+<meta property="og:url" content="https://ogdenvalley.github.io/volunteer.html">
 <meta property="og:image" content="https://ogdenvalley.github.io/share-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="logo-10-years-32.png">
@@ -34,7 +34,18 @@
   <nav class="main" id="nav" aria-label="Main"><a href="events.html">Events</a><a href="restaurants.html">Eat &amp; Shop</a><a href="artists.html">Artists</a><a href="safety.html">Safety</a><a href="live.html">Live View</a><a href="night-sky.html">Night Sky</a><a href="fun.html">Fun &amp; Contests</a><a href="about.html">About</a><a href="search.html">Search</a></nav>
 </div></header>
 <main id="main">
-<section class="hero"><div class="container"><div><p class="eyebrow">Oops</p><h1>That page isn't here</h1><p class="lead" style="margin-top:12px">Try the menu above, or head to this week's events.</p><div class="btns"><a class="btn primary" href="events.html">See events</a></div></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section class="hero"><div class="container"><div><p class="eyebrow">Help your neighbors</p><h1>Volunteer &amp; give back</h1><p class="lead" style="margin-top:12px">Blood drives, food drives, cleanups and groups looking for a hand, pulled from both calendars and updated every hour.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section><div class="container" style="display:grid;gap:22px">
+  <div><h2 style="margin-bottom:10px">Blood drives</h2><div id="v-blood"></div></div>
+  <div><h2 style="margin-bottom:10px">Volunteer, drives &amp; cleanups</h2><div id="v-help"></div></div>
+  <div class="card cta"><div><h2>Need volunteers or donations?</h2><p style="margin-top:6px">Schools, churches, clubs and nonprofits: send us your need and we'll put it on the calendar and on this page. Put "volunteer," "blood drive" or "food drive" in the title.</p></div><div class="btns" style="margin:0"><a class="btn primary" data-form="volunteer" href="submit.html">Post a need</a></div></div>
+  <div><h2 style="margin-bottom:10px">Find more ways to help</h2><div class="grid">
+    <article class="card"><h3>American Red Cross</h3><p>Find a blood drive near you by ZIP code.</p><a href="https://www.redcrossblood.org/give.html/find-drive" target="_blank" rel="noopener">Find a Red Cross drive</a></article>
+    <article class="card"><h3>Vitalant</h3><p>Another blood donation group. Check for drives and donation centers near your ZIP code.</p><a href="https://www.vitalant.org/donate/locations" target="_blank" rel="noopener">Find a Vitalant location</a></article>
+    <article class="card"><h3>JustServe</h3><p>Volunteer projects posted by groups all over Weber County.</p><a href="https://www.justserve.org" target="_blank" rel="noopener">Search JustServe</a></article>
+    <article class="card"><h3>United Way of Northern Utah</h3><p>Volunteer openings with local nonprofits in Weber and Morgan counties.</p><a href="https://uwnu.org/get-involved/volunteer-today/" target="_blank" rel="noopener">Volunteer with United Way</a></article>
+  </div></div>
+</div></section>
 </main>
 <footer class="site-foot"><div class="container">
   <div class="ten"><img data-logo="180" src="logo-10-years-180.png" alt="" width="64" height="64"><div><b>Ogden Valley Info &amp; Events</b><br><span class="fine">Eden · Liberty · Huntsville · since 2016</span><br><span class="fine" id="gc-count"></span></div></div>
@@ -46,5 +57,15 @@
 <script src="config.js"></script>
 <script src="places.js"></script>
 <script src="site.js"></script>
+<script>
+
+(async function(){const S=window.OVE_SITE;const data=await S.loadEvents();const all=S.allEvents(data);
+const BLOOD=/blood drive|blood donation|donate blood|give blood|blood bank|vitalant|red cross/i;
+const HELP=/volunteer|clean[ -]?up|service project|food drive|coat drive|toy drive|book drive|canned food|food bank|pantry|donation drive|donations needed|habitat for humanity|trail work|work day|adopt[ -]a[ -]/i;
+const txt=e=>e.t+" "+(e.desc||"");
+S.renderEvents(document.getElementById("v-blood"),all.filter(e=>BLOOD.test(txt(e))),{emptyText:data?"No blood drives on the calendars right now. Use the Red Cross or Vitalant links below to find one by ZIP code.":"Blood drives show up here once the calendars are connected."});
+S.renderEvents(document.getElementById("v-help"),all.filter(e=>!BLOOD.test(txt(e))&&HELP.test(txt(e))),{emptyText:data?"Nothing posted right now. Check JustServe below, or post a need.":"Volunteer events show up here once the calendars are connected."});
+})();
+</script>
 </body>
 </html>

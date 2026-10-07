@@ -29,7 +29,17 @@ window.OVE = {
     guess:    "",             // Guess the Spot: send a guess
     guessSubmit: "",          // Guess the Spot: send in your own spot
     skyPhoto: "",             // Night sky photo submissions
-    report: ""                // Community reports (fire, road, power) — the form link
+    skyVote: "",              // Night sky photo of the month vote
+    report: "",               // Community reports (fire, road, power) — the form link
+    idea: "",                 // Share an idea for the site
+    sighting: "",             // Wildlife & wildflower sightings
+    hunt: "",                 // Scavenger hunt finish photo
+    coloring: "",             // Finished coloring pages (parents send)
+    musician: "",             // Musicians: bio, photo, private events, contact
+    recipe: "",               // Recipe corner: share a recipe
+    recipeVote: "",           // Recipe corner: vote + "what I changed"
+    volunteer: "",            // Groups: post a volunteer need or drive
+    tips: ""                  // Garden + Be Prepared boards (one form, Board question picks which)
   },
 
   /* --- Reviews (Google Form) -------------------------------------------
@@ -37,6 +47,12 @@ window.OVE = {
      reviewEntry: the "entry.123456" code for the Business question */
   reviewForm: "",
   reviewEntry: "",
+
+  /* --- Recipe vote prefill (optional, same idea as reviews) ------------
+     recipeVoteForm: the vote form's link ending in /viewform
+     recipeVoteEntry: the "entry.123456" code for the Recipe number question */
+  recipeVoteForm: "",
+  recipeVoteEntry: "",
 
   /* --- Visit counts (GoatCounter) ------------------------------------- */
   goatcounter: "",            // the code you picked, e.g. "ogdenvalley"
@@ -72,7 +88,69 @@ window.OVE = {
   /* --- Night sky photos (newest last) --------------------------------
      { image: "sky-pineview-milkyway.jpg", title: "Milky Way over Pineview",
        place: "Pineview", date: "Oct 2026", by: "Jane D." } */
-  skyPhotos: [],
+  skyPhotos: [
+    { image: "sky-logan-peak-moonrise-1.jpg", title: "Moonrise behind Logan Peak", place: "Logan", date: "Sept. 26, 2026", by: "Jim Brown" },
+    { image: "sky-logan-peak-moonrise-2.jpg", title: "Full moon over Logan Peak", place: "Logan", date: "Sept. 26, 2026", by: "Jim Brown" }
+  ],
+
+  /* --- Coloring pages (change each month) ---------------------------- */
+  coloringMonth: "October 2026",
+  coloringPages: [
+    { file: "coloring-moose-ghost.svg", title: "A moose dressed as a ghost" },
+    { file: "coloring-monster-pumpkins.svg", title: "A friendly monster at the pumpkin patch" },
+    { file: "coloring-owl-witch.svg", title: "Owl is ready for trick-or-treat" },
+    { file: "coloring-bear-pumpkin.svg", title: "Bear carves a jack-o'-lantern" }
+  ],
+
+  /* --- Puzzles: word searches -------------------------------------------
+     level: "easy" (10x10, across and down), "medium" (12x12, adds diagonals),
+     "hard" (15x15, every direction, even backwards). Words: letters only. */
+  wordSearches: [
+    { title: "Valley critters & fun", level: "easy", words: ["MOOSE","DEER","OWL","BEAR","FOX","SKI","LAKE","BOAT","HIKE","SNOW"] },
+    { title: "Fall in the Valley", level: "medium", words: ["PUMPKIN","GHOST","CANDY","COSTUME","HAYRIDE","CIDER","HARVEST","LEAVES","APPLES","CORNMAZE","SCARECROW","MOON"] },
+    { title: "Ogden Valley", level: "medium", words: ["EDEN","HUNTSVILLE","LIBERTY","PINEVIEW","SNOWBASIN","POWDER","NORDIC","WASATCH","ASPEN","TRAIL","MOOSE"] },
+    { title: "Utah: the Beehive State", level: "hard", words: ["BEEHIVE","ARCHES","ZION","BRYCE","CANYONLANDS","CAPITOLREEF","WASATCH","BONNEVILLE","PROMONTORY","SEGOLILY","TOPAZ","MOAB","UINTA","COPPER","UTAHRAPTOR"] }
+  ],
+
+  /* --- Puzzles: art jigsaws (only with the artist's OK) -----------------
+     { image: "file.jpg" or Drive thumbnail link, title: "", artist: "", medium: "",
+       bio: "", link: "their website", listing: "Name on the Artists page",
+       artistPhoto: "" }   The first one is a practice puzzle. */
+  jigsaw: [
+    { image: "logo-10-years-halloween-512.png", title: "Our 10-year Halloween logo", artist: "Ogden Valley Info & Events",
+      bio: "This one is our practice puzzle. Soon you'll find puzzles made from paintings and photos by Valley artists here, and finishing one shows you the artist's story and where to see more of their work.",
+      link: "artists.html" }
+  ],
+
+  /* --- Wildlife watch list (checked off automatically from sightings) - */
+  watchList: [
+    { name: "Moose" }, { name: "Elk" }, { name: "Mule deer", match: "deer" }, { name: "Red fox", match: "fox" },
+    { name: "Coyote" }, { name: "Beaver" }, { name: "Porcupine" }, { name: "Yellow-bellied marmot", match: "marmot" },
+    { name: "Bald eagle", match: "bald eagle", when: "winter" }, { name: "Golden eagle", match: "golden eagle" },
+    { name: "Osprey" }, { name: "Great blue heron", match: "heron" }, { name: "Sandhill crane", match: "crane" },
+    { name: "Mountain bluebird", match: "bluebird" }, { name: "Black-billed magpie", match: "magpie" },
+    { name: "Arrowleaf balsamroot", match: "balsamroot", when: "spring" }, { name: "Indian paintbrush", match: "paintbrush" },
+    { name: "Lupine" }, { name: "Sego lily", match: "sego", when: "summer" }, { name: "Columbine" },
+    { name: "Fall aspens", match: "aspen", when: "fall" }
+  ],
+
+  /* --- Scavenger hunt (change each month) ------------------------------ */
+  hunt: {
+    month: "October 2026",
+    title: "Fall in the Valley hunt",
+    items: [
+      { find: "A tree with red or orange leaves" },
+      { find: "A pumpkin on a porch or at a farm stand", hint: "Look, don't touch: it belongs to someone." },
+      { find: "A view of Pineview Reservoir" },
+      { find: "A horse, cow or sheep in a field", hint: "Stay on the road side of the fence." },
+      { find: "A scarecrow or Halloween decoration" },
+      { find: "Snow on a mountain top" },
+      { find: "A bird of prey (hawk or eagle) flying" },
+      { find: "Something yellow at a local business" },
+      { find: "The moon in the daytime" },
+      { find: "A trail sign at a trailhead" }
+    ]
+  },
 
   /* --- Facebook groups you run (shown on the About page) -------------
      { name: "", url: "https://www.facebook.com/groups/...", about: "" } */

@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Puzzles · Ogden Valley Info & Events</title>
+<meta name="description" content="Free Utah and Ogden Valley word searches, crosswords and local-art jigsaw puzzles. Play on your phone or print them.">
+<meta property="og:title" content="Puzzles · Ogden Valley Info & Events">
+<meta property="og:description" content="Free Utah and Ogden Valley word searches, crosswords and local-art jigsaw puzzles. Play on your phone or print them.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ogdenvalley.github.io/puzzles.html">
+<meta property="og:image" content="https://ogdenvalley.github.io/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo-10-years-32.png">
+<link rel="apple-touch-icon" href="logo-10-years-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<div class="alert-bar" id="alert-bar" hidden></div>
+<div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
+  <strong>Canyon check</strong>
+  <a href="https://ogdenvalley.udot.utah.gov/road-information/" target="_blank" rel="noopener">Ogden Valley roads &amp; cameras (UDOT)</a>
+  <a href="live.html">Live view</a>
+  <a href="safety.html">Alerts &amp; fires</a>
+  <a href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Eden weather</a>
+</div></div>
+<header class="site-head"><div class="container">
+  <a class="brand" href="index.html"><img data-logo="180" src="logo-10-years-180.png" alt="" width="52" height="52"><span><b>Ogden Valley</b><small>Information &amp; Events</small></span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="main" id="nav" aria-label="Main"><a href="events.html">Events</a><a href="restaurants.html">Eat &amp; Shop</a><a href="artists.html">Artists</a><a href="safety.html">Safety</a><a href="live.html">Live View</a><a href="night-sky.html">Night Sky</a><a href="fun.html" aria-current="page">Fun &amp; Contests</a><a href="about.html">About</a><a href="search.html">Search</a></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="container"><div><p class="eyebrow">Play here or print</p><h1>Valley puzzles</h1><p class="lead" style="margin-top:12px">Word searches, crosswords and jigsaw puzzles made from local art. Kids and grown-up versions. Play right on your screen, or print and do it with a pencil.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section><div class="container" style="display:grid;gap:18px">
+  <div class="filters" role="tablist" style="margin:0">
+    <button class="chip" type="button" data-tab="ws" aria-pressed="true">Word search</button>
+    <button class="chip" type="button" data-tab="xw" aria-pressed="false">Crossword</button>
+    <button class="chip" type="button" data-tab="jig" aria-pressed="false">Art jigsaw</button>
+  </div>
+
+  <div id="tab-ws" class="pz">
+    <div class="filters" style="margin:0"><select id="ws-pick" aria-label="Pick a word search"></select><button class="btn ghost" type="button" id="ws-new">New puzzle</button><button class="btn ghost" type="button" id="ws-show">Show answers</button><button class="btn ghost" type="button" id="ws-print">Print</button></div>
+    <p class="kid-note" style="margin:0">Find each word. Drag across it, or tap the first letter and then the last letter.</p>
+    <div class="pz-area" id="ws-area"><h2 class="pz-title" id="ws-title"></h2><div id="ws-grid" class="ws-grid"></div><ul id="ws-words" class="ws-words"></ul></div>
+    <div class="card cheer" id="ws-done" hidden><h3>You found them all!</h3><p>Try a new puzzle, or a harder one.</p></div>
+  </div>
+
+  <div id="tab-xw" class="pz" hidden>
+    <div class="filters" style="margin:0"><select id="xw-pick" aria-label="Pick a crossword"><option value="kids">Kids crossword</option><option value="adult">Utah trivia crossword (grown-ups)</option></select><button class="btn ghost" type="button" id="xw-check">Check</button><button class="btn ghost" type="button" id="xw-reveal">Show answers</button><button class="btn ghost" type="button" id="xw-clear">Clear</button><button class="btn ghost" type="button" id="xw-print">Print</button></div>
+    <p class="kid-note" style="margin:0">Tap a square or a clue and type. Tap the same square again to switch between across and down.</p>
+    <div class="pz-area" id="xw-area"><h2 class="pz-title" id="xw-title"></h2><div class="xw-wrap"><div id="xw-grid" class="xw-grid"></div></div><div class="xw-clues"><div><h3>Across</h3><ol id="xw-across"></ol></div><div><h3>Down</h3><ol id="xw-down"></ol></div></div></div>
+    <div class="card cheer" id="xw-done" hidden><h3>Every square is right!</h3><p>Nice work. Try the other crossword next.</p></div>
+  </div>
+
+  <div id="tab-jig" class="pz" hidden>
+    <div class="filters" style="margin:0"><select id="jig-pick" aria-label="Pick a picture"></select><select id="jig-size" aria-label="How many pieces"><option value="3">9 pieces (easy)</option><option value="4" selected>16 pieces</option><option value="5">25 pieces</option><option value="6">36 pieces (hard)</option></select><button class="btn ghost" type="button" id="jig-new">Mix it up</button><button class="btn ghost" type="button" id="jig-peek">Peek</button></div>
+    <p class="kid-note" style="margin:0">Drag each piece onto the board. It snaps in when it's in the right spot. Finish it to meet the artist.</p>
+    <div id="jig-play" class="jig-play"><div id="jig-board" class="jig-board"></div></div>
+    <div class="card artist-reveal" id="jig-done" hidden></div>
+    <div class="card"><h3>Local artists: want your art in a puzzle?</h3><p>Send us a picture of your work and say yes to "puzzle" on the form. When someone finishes your puzzle, they see your name, your story and where to find more of your work.</p><a data-form="artist" href="submit.html">Send your art</a></div>
+  </div>
+</div></section>
+<style>
+[hidden]{display:none!important}
+.pz{display:grid;gap:12px}
+.pz-title{font-size:22px;margin:0 0 8px}
+.ws-grid{display:grid;gap:2px;touch-action:none;user-select:none;-webkit-user-select:none;max-width:560px;width:100%;background:var(--line);border:2px solid var(--line);border-radius:10px;overflow:hidden}
+.ws-grid div{background:var(--card,#fff);aspect-ratio:1;display:flex;align-items:center;justify-content:center;font:700 clamp(13px,4.2vw,22px)/1 var(--display,Arial);cursor:pointer;color:var(--ink)}
+.ws-grid div.sel{background:#FFE58A;color:#111}
+.ws-grid div.f0{background:#B9E4C9;color:#111}.ws-grid div.f1{background:#BFD9F2;color:#111}.ws-grid div.f2{background:#F6C9A8;color:#111}.ws-grid div.f3{background:#E2C6F0;color:#111}.ws-grid div.f4{background:#F3E39E;color:#111}
+.ws-grid div.ans{outline:3px solid #B3261E;outline-offset:-3px}
+.ws-words{list-style:none;padding:0;margin:12px 0 0;display:flex;flex-wrap:wrap;gap:6px 16px;font-weight:700;font-size:17px}
+.ws-words li.got{text-decoration:line-through;color:var(--muted)}
+.xw-wrap{overflow-x:auto;max-width:100%}
+.xw-grid{display:grid;gap:0;width:max-content;border:2px solid #111;background:#111}
+.xw-grid .b{background:#111}
+.xw-grid label{position:relative;display:block;background:#fff;width:var(--cs);height:var(--cs);outline:1px solid #555}
+.xw-grid label span{position:absolute;top:1px;left:2px;font:700 calc(var(--cs)*.28)/1 Arial;color:#111}
+.xw-grid input{width:100%;height:100%;border:0;padding:calc(var(--cs)*.18) 0 0;text-align:center;text-transform:uppercase;font:700 calc(var(--cs)*.55)/1 Arial;background:transparent;color:#111;caret-color:transparent;border-radius:0}
+.xw-grid input:focus{outline:none;background:#FFE58A}
+.xw-grid label.word{background:#E4F0FB}
+.xw-grid label.bad{background:#FBD5D0}
+.xw-clues{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:14px}
+.xw-clues ol{padding-left:0;list-style:none;margin:6px 0 0;display:grid;gap:4px}
+.xw-clues li{cursor:pointer;padding:4px 6px;border-radius:6px}
+.xw-clues li.on{background:#E4F0FB;color:#111}
+.xw-clues li b{display:inline-block;min-width:26px}
+.jig-play{position:relative;touch-action:none;user-select:none;-webkit-user-select:none;width:100%;max-width:640px}
+.jig-board{position:relative;background:var(--soft);border:2px dashed var(--line);border-radius:6px}
+.jig-board .ghost{position:absolute;inset:0;background-size:100% 100%;opacity:0;transition:opacity .3s}
+.jig-board .ghost.on{opacity:.35}
+.jig-piece{position:absolute;background-repeat:no-repeat;box-shadow:0 2px 8px rgba(0,0,0,.35);border-radius:3px;cursor:grab;touch-action:none}
+.jig-piece.locked{box-shadow:none;border-radius:0;cursor:default}
+.jig-piece.drag{cursor:grabbing;z-index:50;box-shadow:0 8px 20px rgba(0,0,0,.45)}
+.artist-reveal{border:3px solid var(--accent,#C2410C)}
+.artist-reveal img{max-width:160px;border-radius:10px}
+.cheer{border:3px solid #2F7D4F}
+@media print{body *{visibility:hidden}.printing,.printing *{visibility:visible}.printing{position:absolute;left:0;top:0;width:100%}.printing input{color:transparent}.ws-grid div{background:#fff!important;outline:none!important}.xw-grid label{background:#fff!important}.xw-clues li{background:none!important}}
+</style>
+</main>
+<footer class="site-foot"><div class="container">
+  <div class="ten"><img data-logo="180" src="logo-10-years-180.png" alt="" width="64" height="64"><div><b>Ogden Valley Info &amp; Events</b><br><span class="fine">Eden · Liberty · Huntsville · since 2016</span><br><span class="fine" id="gc-count"></span></div></div>
+  <div><h3>Explore</h3><ul><li><a href="events.html">Events</a></li><li><a href="restaurants.html">Restaurants</a></li><li><a href="businesses.html">Valley Businesses</a></li><li><a href="artists.html">Local Artists</a></li><li><a href="safety.html">Safety &amp; alerts</a></li><li><a href="live.html">Live view</a></li><li><a href="night-sky.html">Night sky</a></li></ul></div>
+  <div><h3>Take part</h3><ul><li><a href="submit.html">Send an event or listing</a></li><li><a href="fun.html">Fun &amp; contests</a></li><li><a href="sponsor.html">Sponsor a spot</a></li><li><a href="ten-years.html">10 years</a></li><li><a href="volunteer.html">Volunteer &amp; give back</a></li><li><a href="recipes.html">Recipe corner</a></li><li><a href="garden.html">Garden board</a></li><li><a href="prepared.html">Be prepared board</a></li><li><a href="coming.html">What&#39;s coming &amp; ideas</a></li><li><a data-newsletter data-hide-empty href="#">Weekly newsletter</a></li></ul></div>
+  <div><h3>Follow</h3><ul><li><a data-facebook href="https://www.facebook.com/ogdenvalleyevents" target="_blank" rel="noopener">Facebook</a></li><li><a data-instagram data-hide-empty href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="about.html#groups">Our Facebook groups</a></li><li><a href="rules.html">Community rules</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul>
+  <p class="fine">Event details come from organizers. Check with them before you go.</p></div>
+</div></footer>
+<script src="config.js"></script>
+<script src="places.js"></script>
+<script src="site.js"></script>
+<script>
+
+(function(){const S=window.OVE_SITE,el=S.el,C=S.C;
+const XW={"kids": {"rows": 10, "cols": 11, "words": [{"w": "STARS", "clue": "Twinkly lights in the night sky", "r": 1, "c": 6, "d": "A", "n": 2}, {"w": "OWL", "clue": "Bird that hoots at night", "r": 2, "c": 2, "d": "A", "n": 4}, {"w": "PUMPKIN", "clue": "Orange fall fruit you carve into a jack-o'-lantern", "r": 4, "c": 0, "d": "A", "n": 6}, {"w": "SNOW", "clue": "White flakes that fall in winter", "r": 6, "c": 0, "d": "A", "n": 8}, {"w": "DEER", "clue": "Mule ___: a Utah animal with big ears", "r": 7, "c": 6, "d": "A", "n": 11}, {"w": "BEEHIVE", "clue": "Utah is called the ___ State", "r": 8, "c": 0, "d": "A", "n": 12}, {"w": "ASPEN", "clue": "Utah's state tree. Its leaves turn gold in fall", "r": 0, "c": 6, "d": "D", "n": 1}, {"w": "SKI", "clue": "Slide down a snowy mountain on these", "r": 1, "c": 10, "d": "D", "n": 3}, {"w": "LAKE", "clue": "Pineview is a big man-made one of these", "r": 2, "c": 4, "d": "D", "n": 5}, {"w": "MOOSE", "clue": "Big Valley animal with wide, flat antlers", "r": 4, "c": 2, "d": "D", "n": 7}, {"w": "EDEN", "clue": "Valley town that shares its name with a famous garden", "r": 6, "c": 6, "d": "D", "n": 9}, {"w": "LEAF", "clue": "It falls from a tree in autumn", "r": 6, "c": 8, "d": "D", "n": 10}], "missing": 0}, "adult": {"rows": 17, "cols": 16, "words": [{"w": "PINEVIEW", "clue": "Reservoir at the heart of Ogden Valley", "r": 0, "c": 0, "d": "A", "n": 1}, {"w": "SNOWBASIN", "clue": "Valley resort that hosted 2002 Olympic downhill races", "r": 2, "c": 1, "d": "A", "n": 3}, {"w": "HUNTSVILLE", "clue": "Valley town named for Jefferson Hunt", "r": 4, "c": 4, "d": "A", "n": 4}, {"w": "PROMONTORY", "clue": "Summit where the Golden Spike was driven in 1869", "r": 8, "c": 4, "d": "A", "n": 8}, {"w": "TOPAZ", "clue": "Utah's state gem", "r": 10, "c": 3, "d": "A", "n": 9}, {"w": "COPPER", "clue": "Utah's state mineral", "r": 13, "c": 0, "d": "A", "n": 11}, {"w": "SEGOLILY", "clue": "Utah's state flower (two words)", "r": 15, "c": 8, "d": "A", "n": 14}, {"w": "WASATCH", "clue": "Mountain range between Ogden and the Valley", "r": 0, "c": 7, "d": "D", "n": 2}, {"w": "UTAHRAPTOR", "clue": "Utah's state dinosaur", "r": 4, "c": 5, "d": "D", "n": 5}, {"w": "LIBERTY", "clue": "Valley town north of Eden", "r": 4, "c": 12, "d": "D", "n": 6}, {"w": "BONNEVILLE", "clue": "Ice Age lake that once covered much of western Utah", "r": 6, "c": 9, "d": "D", "n": 7}, {"w": "ZION", "clue": "Utah's first national park", "r": 11, "c": 1, "d": "D", "n": 10}, {"w": "GULL", "clue": "California ___, Utah's state bird", "r": 13, "c": 12, "d": "D", "n": 12}, {"w": "ELK", "clue": "Rocky Mountain ___, Utah's state animal", "r": 14, "c": 14, "d": "D", "n": 13}], "missing": 0}};
+/* tabs */
+const tabs=document.querySelectorAll("[data-tab]");function show(t){tabs.forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.tab===t)));["ws","xw","jig"].forEach(k=>document.getElementById("tab-"+k).hidden=k!==t);if(t==="jig")jigStart();if(t==="xw"&&!xwMade){xwMade=true;xwBuild()}try{history.replaceState(null,"","#"+t)}catch(e){}}
+tabs.forEach(b=>b.onclick=()=>show(b.dataset.tab));
+function printEl(id){const n=document.getElementById(id);n.classList.add("printing");window.print();setTimeout(()=>n.classList.remove("printing"),500)}
+
+/* ---------- WORD SEARCH ---------- */
+const LISTS=(C.wordSearches&&C.wordSearches.length)?C.wordSearches:[{title:"Valley animals",level:"easy",words:["MOOSE","DEER","OWL","BEAR","ELK","FOX"]}];
+const pick=document.getElementById("ws-pick");LISTS.forEach((L,i)=>pick.append(el("option",{value:i,text:L.title+" ("+L.level+")"})));
+let W=null,found=[],anchor=null,dragging=false,showAns=false;
+function makeWS(L){const lvl=L.level||"easy",N=lvl==="hard"?15:lvl==="medium"?12:10;
+  const dirs=lvl==="hard"?[[0,1],[1,0],[1,1],[-1,1],[0,-1],[-1,0],[-1,-1],[1,-1]]:lvl==="medium"?[[0,1],[1,0],[1,1],[-1,1]]:[[0,1],[1,0]];
+  const words=L.words.map(w=>String(w).toUpperCase().replace(/[^A-Z]/g,"")).filter(w=>w&&w.length<=N);
+  for(let tries=0;tries<60;tries++){const g=Array.from({length:N},()=>Array(N).fill(""));const pl=[];let ok=true;
+    for(const w of words.slice().sort((a,b)=>b.length-a.length)){let done=false;for(let k=0;k<300&&!done;k++){const[dr,dc]=dirs[Math.floor(Math.random()*dirs.length)];const r=Math.floor(Math.random()*N),c=Math.floor(Math.random()*N);const er=r+dr*(w.length-1),ec=c+dc*(w.length-1);if(er<0||er>=N||ec<0||ec>=N)continue;let fit=true;for(let i=0;i<w.length;i++){const ch=g[r+dr*i][c+dc*i];if(ch&&ch!==w[i]){fit=false;break}}if(!fit)continue;for(let i=0;i<w.length;i++)g[r+dr*i][c+dc*i]=w[i];pl.push({w,r,c,dr,dc});done=true}if(!done){ok=false;break}}
+    if(!ok)continue;const A="ABCDEFGHIJKLMNOPRSTUVWY";for(let r=0;r<N;r++)for(let c=0;c<N;c++)if(!g[r][c])g[r][c]=A[Math.floor(Math.random()*A.length)];return{N,g,pl,title:L.title}}
+  return null}
+function cellsOf(a,b){const dr=Math.sign(b.r-a.r),dc=Math.sign(b.c-a.c),n=Math.max(Math.abs(b.r-a.r),Math.abs(b.c-a.c));if(!(a.r===b.r||a.c===b.c||Math.abs(b.r-a.r)===Math.abs(b.c-a.c)))return null;const out=[];for(let i=0;i<=n;i++)out.push({r:a.r+dr*i,c:a.c+dc*i});return out}
+function wsDraw(){const G=document.getElementById("ws-grid");G.style.gridTemplateColumns="repeat("+W.N+",1fr)";G.replaceChildren();
+  for(let r=0;r<W.N;r++)for(let c=0;c<W.N;c++){const d=el("div",{text:W.g[r][c]});d.dataset.r=r;d.dataset.c=c;G.append(d)}
+  document.getElementById("ws-title").textContent=W.title;const ul=document.getElementById("ws-words");ul.replaceChildren(...W.pl.map(p=>p.w).sort().map(w=>el("li",{text:w,"data-w":w})));paint()}
+function cell(r,c){return document.querySelector('#ws-grid div[data-r="'+r+'"][data-c="'+c+'"]')}
+function paint(sel){document.querySelectorAll("#ws-grid div").forEach(d=>d.className="");
+  found.forEach((w,i)=>{const p=W.pl.find(x=>x.w===w);for(let k=0;k<w.length;k++)cell(p.r+p.dr*k,p.c+p.dc*k).classList.add("f"+(i%5))});
+  if(showAns)W.pl.forEach(p=>{if(found.includes(p.w))return;for(let k=0;k<p.w.length;k++)cell(p.r+p.dr*k,p.c+p.dc*k).classList.add("ans")});
+  (sel||[]).forEach(x=>cell(x.r,x.c).classList.add("sel"));
+  document.querySelectorAll("#ws-words li").forEach(li=>li.classList.toggle("got",found.includes(li.dataset.w)));
+  document.getElementById("ws-done").hidden=found.length!==W.pl.length}
+function tryPick(a,b){const cs=cellsOf(a,b);if(!cs)return;const s=cs.map(x=>W.g[x.r][x.c]).join(""),rv=s.split("").reverse().join("");
+  const p=W.pl.find(p=>!found.includes(p.w)&&(p.w===s||p.w===rv)&&((p.r===a.r&&p.c===a.c)||(p.r===b.r&&p.c===b.c)));if(p){found.push(p.w);if(window.goatcounter&&goatcounter.count)try{goatcounter.count({path:"puzzle-word",title:p.w,event:true})}catch(e){}}}
+function at(ev){const t=document.elementFromPoint(ev.clientX,ev.clientY);return t&&t.parentNode&&t.parentNode.id==="ws-grid"?{r:+t.dataset.r,c:+t.dataset.c}:null}
+const G=document.getElementById("ws-grid");
+G.addEventListener("pointerdown",ev=>{const p=at(ev);if(!p)return;ev.preventDefault();if(anchor&&!dragging){tryPick(anchor,p);anchor=null;paint();return}anchor=p;dragging=true;paint([p])});
+G.addEventListener("pointermove",ev=>{if(!dragging||!anchor)return;const p=at(ev);if(!p)return;paint(cellsOf(anchor,p)||[anchor])});
+window.addEventListener("pointerup",ev=>{if(!dragging)return;dragging=false;const p=at(ev);if(p&&anchor&&(p.r!==anchor.r||p.c!==anchor.c)){tryPick(anchor,p);anchor=null;paint()}else if(anchor)paint([anchor])});
+function wsNew(){W=makeWS(LISTS[+pick.value||0]);found=[];anchor=null;showAns=false;document.getElementById("ws-show").textContent="Show answers";wsDraw()}
+pick.onchange=wsNew;document.getElementById("ws-new").onclick=wsNew;
+document.getElementById("ws-show").onclick=e=>{showAns=!showAns;e.target.textContent=showAns?"Hide answers":"Show answers";paint()};
+document.getElementById("ws-print").onclick=()=>{const was=showAns;showAns=false;paint();printEl("ws-area");showAns=was;paint()};
+wsNew();
+
+/* ---------- CROSSWORD ---------- */
+let X=null,cells={},dir="A",cur=null,xwMade=false;
+const xpick=document.getElementById("xw-pick");
+function xwBuild(){X=XW[xpick.value];cells={};const G=document.getElementById("xw-grid");G.replaceChildren();
+  const cs=Math.max(22,Math.min(40,Math.floor((Math.min(document.getElementById("tab-xw").clientWidth||340,640)-4)/X.cols)));G.style.setProperty("--cs",cs+"px");
+  G.style.gridTemplateColumns="repeat("+X.cols+","+cs+"px)";
+  X.words.forEach(w=>{for(let i=0;i<w.w.length;i++){const r=w.r+(w.d==="D"?i:0),c=w.c+(w.d==="A"?i:0),k=r+","+c;cells[k]=cells[k]||{r,c,ch:w.w[i],words:{}};cells[k].words[w.d]=w;if(i===0)cells[k].n=w.n}});
+  for(let r=0;r<X.rows;r++)for(let c=0;c<X.cols;c++){const k=r+","+c,x=cells[k];if(!x){G.append(el("div",{class:"b"}));continue}
+    const inp=el("input",{maxlength:"1",autocomplete:"off",autocapitalize:"characters",spellcheck:"false","aria-label":"Row "+(r+1)+" column "+(c+1)});x.inp=inp;
+    const lab=el("label",{},[x.n?el("span",{text:String(x.n)}):null,inp]);x.lab=lab;G.append(lab);
+    inp.addEventListener("pointerdown",()=>{if(cur===x){const o=dir==="A"?"D":"A";if(x.words[o])dir=o}else if(!x.words[dir])dir=dir==="A"?"D":"A";setTimeout(()=>focus(x),0)});
+    inp.addEventListener("focus",()=>{if(cur!==x){if(!x.words[dir])dir=dir==="A"?"D":"A";cur=x;hi()}});
+    inp.addEventListener("input",()=>{inp.value=inp.value.replace(/[^a-z]/gi,"").slice(-1).toUpperCase();x.lab.classList.remove("bad");if(inp.value)step(1);checkDone()});
+    inp.addEventListener("keydown",e=>{if(e.key==="Backspace"&&!inp.value){step(-1);e.preventDefault()}else if(e.key==="ArrowRight"){dir="A";step(1);e.preventDefault()}else if(e.key==="ArrowLeft"){dir="A";step(-1);e.preventDefault()}else if(e.key==="ArrowDown"){dir="D";step(1);e.preventDefault()}else if(e.key==="ArrowUp"){dir="D";step(-1);e.preventDefault()}})}
+  ["A","D"].forEach(d=>{const ol=document.getElementById(d==="A"?"xw-across":"xw-down");ol.replaceChildren(...X.words.filter(w=>w.d===d).sort((a,b)=>a.n-b.n).map(w=>{const li=el("li",{},[el("b",{text:w.n+"."}),document.createTextNode(w.clue+" ("+w.w.length+")")]);li.dataset.k=d+w.n;li.onclick=()=>{dir=d;focus(cells[w.r+","+w.c])};return li}))});
+  document.getElementById("xw-title").textContent=xpick.value==="kids"?"Kids crossword":"Utah trivia crossword";document.getElementById("xw-done").hidden=true;cur=null}
+function focus(x){if(!x)return;cur=x;x.inp.focus({preventScroll:false});hi()}
+function step(n){if(!cur)return;const r=cur.r+(dir==="D"?n:0),c=cur.c+(dir==="A"?n:0),x=cells[r+","+c];if(x)focus(x)}
+function hi(){Object.values(cells).forEach(x=>x.lab.classList.remove("word"));document.querySelectorAll(".xw-clues li").forEach(li=>li.classList.remove("on"));if(!cur)return;const w=cur.words[dir];if(!w)return;
+  for(let i=0;i<w.w.length;i++){const x=cells[(w.r+(w.d==="D"?i:0))+","+(w.c+(w.d==="A"?i:0))];x.lab.classList.add("word")}const li=document.querySelector('.xw-clues li[data-k="'+w.d+w.n+'"]');li&&li.classList.add("on")}
+function checkDone(){const all=Object.values(cells);if(all.every(x=>x.inp.value===x.ch))document.getElementById("xw-done").hidden=false}
+document.getElementById("xw-check").onclick=()=>Object.values(cells).forEach(x=>x.lab.classList.toggle("bad",!!x.inp.value&&x.inp.value!==x.ch));
+document.getElementById("xw-reveal").onclick=()=>{Object.values(cells).forEach(x=>{x.inp.value=x.ch;x.lab.classList.remove("bad")})};
+document.getElementById("xw-clear").onclick=()=>{Object.values(cells).forEach(x=>{x.inp.value="";x.lab.classList.remove("bad")});document.getElementById("xw-done").hidden=true};
+document.getElementById("xw-print").onclick=()=>printEl("xw-area");
+xpick.onchange=xwBuild;
+
+/* ---------- ART JIGSAW ---------- */
+const ART=(C.jigsaw||[]).filter(a=>a&&a.image);const jp=document.getElementById("jig-pick");
+ART.forEach((a,i)=>jp.append(el("option",{value:i,text:(a.title||"Picture")+(a.artist?" by "+a.artist:"")})));
+let J=null,jigMade=false;
+function jigStart(){if(!jigMade){jigMade=true;jigNew()}}
+function jigNew(){const a=ART[+jp.value||0];if(!a){document.getElementById("jig-play").textContent="Puzzles are coming soon.";return}
+  const img=new Image();img.onload=()=>build(a,img.naturalWidth/img.naturalHeight);img.onerror=()=>build(a,1);img.src=a.image}
+function build(a,ratio){const play=document.getElementById("jig-play"),board=document.getElementById("jig-board");document.getElementById("jig-done").hidden=true;
+  play.querySelectorAll(".jig-piece").forEach(p=>p.remove());board.replaceChildren(el("div",{class:"ghost",style:"background-image:url('"+a.image.replace(/'/g,"%27")+"')"}));
+  const n=+document.getElementById("jig-size").value,PW=play.clientWidth||340;let bw=Math.min(PW,560),bh=bw/ratio;if(bh>460){bh=460;bw=bh*ratio}
+  board.style.width=bw+"px";board.style.height=bh+"px";const pw=bw/n,ph=bh/n;
+  const tray=Math.ceil(n*n/Math.max(1,Math.floor(PW/(pw+6))))*(ph+6)+20;play.style.height=(bh+tray)+"px";
+  const ids=[];for(let r=0;r<n;r++)for(let c=0;c<n;c++)ids.push({r,c});ids.sort(()=>Math.random()-.5);
+  const perRow=Math.max(1,Math.floor(PW/(pw+6)));let placed=0;
+  ids.forEach((p,i)=>{const d=el("div",{class:"jig-piece"});d.style.width=pw+"px";d.style.height=ph+"px";d.style.backgroundImage="url('"+a.image.replace(/'/g,"%27")+"')";
+    d.style.backgroundSize=bw+"px "+bh+"px";d.style.backgroundPosition=(-p.c*pw)+"px "+(-p.r*ph)+"px";
+    d.style.left=((i%perRow)*(pw+6))+"px";d.style.top=(bh+16+Math.floor(i/perRow)*(ph+6))+"px";play.append(d);
+    let sx=0,sy=0,ox=0,oy=0;
+    d.addEventListener("pointerdown",ev=>{if(d.classList.contains("locked"))return;ev.preventDefault();d.setPointerCapture(ev.pointerId);d.classList.add("drag");sx=ev.clientX;sy=ev.clientY;ox=parseFloat(d.style.left);oy=parseFloat(d.style.top)});
+    d.addEventListener("pointermove",ev=>{if(!d.classList.contains("drag"))return;d.style.left=(ox+ev.clientX-sx)+"px";d.style.top=(oy+ev.clientY-sy)+"px"});
+    const drop=()=>{if(!d.classList.contains("drag"))return;d.classList.remove("drag");const bx=board.offsetLeft,by=board.offsetTop,tx=bx+p.c*pw,ty=by+p.r*ph;
+      if(Math.abs(parseFloat(d.style.left)-tx)<pw*.3&&Math.abs(parseFloat(d.style.top)-ty)<ph*.3){d.style.left=tx+"px";d.style.top=ty+"px";d.classList.add("locked");d.style.zIndex=1;placed++;if(placed===n*n)done(a)}};
+    d.addEventListener("pointerup",drop);d.addEventListener("pointercancel",drop)});J={a}}
+function done(a){const box=document.getElementById("jig-done");box.replaceChildren(el("p",{class:"eyebrow",text:"You finished it! Meet the artist"}),a.artistPhoto?el("img",{src:a.artistPhoto,alt:a.artist||""}):null,el("h2",{text:a.artist||"Local artist"}),a.title?el("p",{class:"meta",text:"“"+a.title+"”"+(a.medium?" · "+a.medium:"")}):null,a.bio?el("p",{text:a.bio}):null,
+  el("div",{class:"btns"},[a.link?el("a",{class:"btn primary",href:a.link,target:a.link.startsWith("http")?"_blank":"_self",rel:"noopener",text:"See more of their work"}):null,a.listing?el("a",{class:"btn ghost",style:"color:var(--blue)",href:"artists.html#"+S.slug(a.listing),text:"Their listing"}):null]));box.hidden=false;box.scrollIntoView({behavior:"smooth",block:"center"});
+  if(window.goatcounter&&goatcounter.count)try{goatcounter.count({path:"puzzle-finished",title:a.artist||"",event:true})}catch(e){}}
+jp.onchange=jigNew;document.getElementById("jig-size").onchange=jigNew;document.getElementById("jig-new").onclick=jigNew;
+document.getElementById("jig-peek").onclick=()=>{const g=document.querySelector("#jig-board .ghost");if(g){g.classList.add("on");setTimeout(()=>g.classList.remove("on"),1500)}};
+const h=(location.hash||"").slice(1);if(["ws","xw","jig"].includes(h))show(h);
+})();
+</script>
+</body>
+</html>

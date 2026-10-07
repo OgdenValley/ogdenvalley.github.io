@@ -277,12 +277,16 @@ async function geocode(){
   let ev = {}; try { ev = JSON.parse(fs.readFileSync("events.json", "utf8")); } catch {}
   const locs = new Set();
   for (const c of Object.values(ev.calendars || {})) for (const e of c.events || []) if (e.loc && e.loc.trim().length > 3) locs.add(e.loc.trim());
+  // night sky photo cities (statewide) — stored as "City, Utah"
+  try { const sp = JSON.parse(fs.readFileSync("skyphotos.json", "utf8")); for (const i of sp.items || []) if (i.city && i.city.trim().length > 1) locs.add(i.city.trim().replace(/,?\s*(ut|utah)\.?$/i, "") + ", Utah"); } catch {}
+  try { const sg = JSON.parse(fs.readFileSync("sightings.json", "utf8")); for (const i of sg.items || []) if (i.area && i.area.trim().length > 1) locs.add(i.area.trim().replace(/,?\s*(ut|utah)\.?$/i, "") + ", Utah"); } catch {}
+  try { const cfg = fs.readFileSync("config.js", "utf8"); for (const m of cfg.matchAll(/place:\s*"([^"]+)"/g)) locs.add(m[1].trim().replace(/,?\s*(ut|utah)\.?$/i, "") + ", Utah"); } catch {}
   const todo = [...locs].filter(l => !(l in cache)).slice(0, 25);
   for (const l of todo) {
     try {
       const q = /utah|\bUT\b/i.test(l) ? l : l + ", Weber County, Utah";
-      const j = await getJSON("https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=us&q=" + encodeURIComponent(q));
-      cache[l] = j && j[0] ? {lat: +(+j[0].lat).toFixed(5), lng: +(+j[0].lon).toFixed(5)} : null;
+      const j = await getJSON("https://nominatim.openstreetmap.org/search?format=json&limit=1&addressdetails=1&countrycodes=us&q=" + encodeURIComponent(q));
+      cache[l] = j && j[0] ? {lat: +(+j[0].lat).toFixed(5), lng: +(+j[0].lon).toFixed(5), county: ((j[0].address && j[0].address.county) || "").replace(/ County$/, "")} : null;
       console.log("geocode", l, "->", cache[l] ? "found" : "not found");
     } catch (e) { console.log("geocode failed for", l, e.message); }
     await new Promise(r => setTimeout(r, 1100)); // be polite: one lookup per second
@@ -318,10 +322,245 @@ async function reports(){
   } catch (e) { console.log("reports failed:", e.message, "- keeping the last good copy"); }
 }
 
+/* ---------------- NIGHT SKY PHOTOS + MONTHLY VOTES ----------------
+   Photos: Public tab of the photo sheet (Timestamp, Photo, City, Date taken, Show name, Name, Photo OK, Hide).
+   Photo numbers are the row order in the sheet, so they never change.
+   Votes: Public tab of the vote sheet = [timestamp, photo number, voter key] with no emails.
+   One vote per voter key per month. */
+async function skyphotos(){
+  let cfg = {}; try { cfg = JSON.parse(fs.readFileSync("calendars.json", "utf8")); } catch {}
+  let old = {}; try { old = JSON.parse(fs.readFileSync("skyphotos.json", "utf8")); } catch {}
+  const out = {updated: new Date().toISOString(), items: old.items || [], month: "", tally: {}, leader: null, totalVotes: 0};
+  const pUrl = (cfg._skyPhotosCsv || "").trim(), vUrl = (cfg._skyVotesCsv || "").trim();
+  if (pUrl) {
+    try {
+      const rows = parseCSV(await getText(pUrl));
+      const head = (rows.shift() || []).map(h => h.toLowerCase());
+      const col = re => head.findIndex(h => re.test(h));
+      const iT = col(/timestamp/), iP = col(/^photo$|photo upload|upload/), iC = col(/city|town/), iD = col(/date taken|taken/), iS = col(/show|anonymous/), iN = col(/^name|your name/), iOK = col(/photo ok/), iH = col(/^hide/);
+      const items = [];
+      rows.forEach((r, idx) => {
+        if (!r.some(c => c.trim())) return;
+        const n = idx + 1;
+        if (iH >= 0 && /hide/i.test(r[iH] || "")) return;
+        if (iOK < 0 || !/^y/i.test((r[iOK] || "").trim())) return;
+        const m = (r[iP] || "").match(/[-\w]{25,}/); if (!m) return;
+        const anon = iS >= 0 && /anonym/i.test(r[iS] || "");
+        const name = anon ? "Anonymous" : ((r[iN] || "").trim().slice(0, 40) || "Anonymous");
+        if (heldReason("night sky photo " + (r[iC] || ""), name)) return;
+        items.push({n, photo: "https://drive.google.com/thumbnail?id=" + m[0] + "&sz=w1200", city: (r[iC] || "").trim().slice(0, 60), taken: (r[iD] || "").trim().slice(0, 30), uploaded: Date.parse(r[iT]) || null, by: name});
+      });
+      out.items = items; console.log("sky photos", items.length);
+    } catch (e) { console.log("sky photos failed:", e.message); }
+  }
+  if (vUrl) {
+    try {
+      const rows = parseCSV(await getText(vUrl)).filter(r => r.length >= 3 && r[0].trim());
+      const ym = d => { const p = new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver", year: "numeric", month: "2-digit"}).format(d); return p.slice(0, 7); };
+      const thisMonth = ym(new Date()); out.month = thisMonth;
+      const seen = new Set(), valid = new Set(out.items.map(i => i.n));
+      for (const r of rows) {
+        const t = Date.parse(r[0]); if (!t || ym(new Date(t)) !== thisMonth) continue;
+        const n = parseInt(String(r[1]).replace(/[^0-9]/g, ""), 10); const key = (r[2] || "").trim();
+        if (!n || !key || !valid.has(n)) continue;
+        if (seen.has(key)) continue; seen.add(key);
+        out.tally[n] = (out.tally[n] || 0) + 1;
+      }
+      out.totalVotes = seen.size;
+      const best = Object.entries(out.tally).sort((a, b) => b[1] - a[1])[0];
+      out.leader = best ? {n: +best[0], votes: best[1]} : null;
+      console.log("sky votes", out.totalVotes, "leader", JSON.stringify(out.leader));
+    } catch (e) { console.log("sky votes failed:", e.message); }
+  }
+  writeIfChanged("skyphotos.json", out);
+}
+
+/* ---------------- WILDLIFE & WILDFLOWER SIGHTINGS ----------------
+   Public tab: Timestamp, Photo, What did you see, Animal or plant, Area, Date seen, Show name, Name, Photo OK, Hide
+   Text shows after the filter; photos only when "Photo OK" is yes. Sightings stay up (they're a record). */
+async function sightings(){
+  let cfg = {}; try { cfg = JSON.parse(fs.readFileSync("calendars.json", "utf8")); } catch {}
+  const url = (cfg._sightingsCsv || "").trim();
+  let old = null; try { old = JSON.parse(fs.readFileSync("sightings.json", "utf8")); } catch {}
+  if (!url) { if (!old) writeIfChanged("sightings.json", {updated: new Date().toISOString(), items: []}); console.log("sightings: no sheet link yet"); return; }
+  try {
+    const rows = parseCSV(await getText(url));
+    const head = (rows.shift() || []).map(h => h.toLowerCase());
+    const col = re => head.findIndex(h => re.test(h));
+    const iT = col(/timestamp/), iP = col(/^photo$|upload/), iW = col(/what did you see|what is it|species/), iK = col(/animal or plant|kind|type/), iA = col(/area|where/), iD = col(/date seen|when/), iS = col(/show|anonymous/), iN = col(/^name|your name/), iOK = col(/photo ok/), iH = col(/^hide/);
+    const items = [];
+    rows.forEach((r, idx) => {
+      if (!r.some(c => c.trim())) return;
+      if (iH >= 0 && /hide/i.test(r[iH] || "")) return;
+      const what = (r[iW] || "").trim().slice(0, 60), area = (r[iA] || "").trim().slice(0, 60);
+      if (!what) return;
+      const anon = iS >= 0 && /anonym/i.test(r[iS] || ""); const by = anon ? "Anonymous" : ((r[iN] || "").trim().slice(0, 40) || "Anonymous");
+      if (heldReason(what + " " + area, by)) return;
+      let photo = null;
+      if (iOK >= 0 && /^y/i.test((r[iOK] || "").trim())) { const m = (r[iP] || "").match(/[-\w]{25,}/); if (m) photo = "https://drive.google.com/thumbnail?id=" + m[0] + "&sz=w1200"; }
+      items.push({n: idx + 1, what, kind: /plant|flower|tree|mushroom/i.test(r[iK] || "") ? "plant" : "animal", area, seen: (r[iD] || "").trim().slice(0, 30), shared: Date.parse(r[iT]) || null, by, photo});
+    });
+    items.sort((a, b) => (b.shared || 0) - (a.shared || 0));
+    console.log("sightings", items.length);
+    writeIfChanged("sightings.json", {updated: new Date().toISOString(), items});
+  } catch (e) { console.log("sightings failed:", e.message); }
+}
+
+/* ---------------- COLORING PAGE GALLERY (kids) ----------------
+   Public tab: Timestamp, Photo, First initial, Last initial, City, Photo OK, Hide.
+   Only initials and city are ever shown. Photos only when "Photo OK" is yes. */
+async function coloring(){
+  let cfg = {}; try { cfg = JSON.parse(fs.readFileSync("calendars.json", "utf8")); } catch {}
+  const url = (cfg._coloringCsv || "").trim();
+  let old = null; try { old = JSON.parse(fs.readFileSync("coloring.json", "utf8")); } catch {}
+  if (!url) { if (!old) writeIfChanged("coloring.json", {updated: new Date().toISOString(), items: []}); console.log("coloring: no sheet link yet"); return; }
+  try {
+    const rows = parseCSV(await getText(url));
+    const head = (rows.shift() || []).map(h => h.toLowerCase());
+    const col = re => head.findIndex(h => re.test(h));
+    const iT = col(/timestamp/), iP = col(/^photo$|upload/), iF = col(/first/), iL = col(/last/), iC = col(/city|town/), iOK = col(/photo ok/), iH = col(/^hide/);
+    const items = [];
+    for (const r of rows) {
+      if (!r.some(c => c.trim())) continue;
+      if (iH >= 0 && /hide/i.test(r[iH] || "")) continue;
+      if (iOK < 0 || !/^y/i.test((r[iOK] || "").trim())) continue;
+      const m = (r[iP] || "").match(/[-\w]{25,}/); if (!m) continue;
+      const ini = s => (String(s || "").trim().match(/[A-Za-z]/) || [""])[0].toUpperCase();
+      const name = [ini(r[iF]), ini(r[iL])].filter(Boolean).map(x => x + ".").join(" ") || "A young artist";
+      const city = (r[iC] || "").trim().slice(0, 40);
+      if (heldReason("coloring page " + city, "")) continue;
+      items.push({photo: "https://drive.google.com/thumbnail?id=" + m[0] + "&sz=w1000", by: name, city, shared: Date.parse(r[iT]) || null});
+    }
+    items.sort((a, b) => (b.shared || 0) - (a.shared || 0));
+    console.log("coloring", items.length);
+    writeIfChanged("coloring.json", {updated: new Date().toISOString(), items});
+  } catch (e) { console.log("coloring failed:", e.message); }
+}
+
+/* ---------------- SHARED SHEET HELPERS ---------------- */
+function cfgAll(){ try { return JSON.parse(fs.readFileSync("calendars.json", "utf8")); } catch { return {}; } }
+function oldJSON(f){ try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return null; } }
+const ymDenver = d => new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver", year: "numeric", month: "2-digit"}).format(d).slice(0, 7);
+async function sheet(url){ const rows = parseCSV(await getText(url)); const head = (rows.shift() || []).map(h => h.toLowerCase().trim());
+  return {rows: rows.filter(r => r.some(c => (c || "").trim())), col: re => head.findIndex(h => re.test(h))}; }
+const driveImg = (v, w) => { const m = String(v || "").match(/[-\w]{25,}/); return m ? "https://drive.google.com/thumbnail?id=" + m[0] + "&sz=w" + (w || 1000) : ""; };
+const yes = v => /^y/i.test(String(v || "").trim());
+
+/* ---------------- MUSICIANS (Musician of the Week + for hire) ----------------
+   Public tab columns (any order, matched by name): Timestamp, Name, Genre, Town, Bio, Photo,
+   Photo OK, Website, Private events, Show contact, Contact email, Contact phone, Spotlight week, Hide.
+   Spotlight: type a date (like 10/12/2026) in "Spotlight week". The newest date that has
+   arrived is the Musician of the Week. Contact info only when "Show contact" is yes. */
+async function musicians(){
+  const url = (cfgAll()._musiciansCsv || "").trim();
+  if (!url) { if (!oldJSON("musicians.json")) writeIfChanged("musicians.json", {updated: new Date().toISOString(), spotlight: null, forHire: []}); console.log("musicians: no sheet link yet"); return; }
+  try {
+    const {rows, col} = await sheet(url);
+    const iN = col(/^name|band|act/), iG = col(/genre|style/), iTn = col(/town|city/), iB = col(/bio/), iP = col(/^photo$|upload/), iOK = col(/photo ok/), iW = col(/website|page|link/),
+      iPE = col(/private/), iSC = col(/show contact/), iE = col(/email/), iPh = col(/phone/), iS = col(/spotlight/), iH = col(/^hide/);
+    const list = [];
+    for (const r of rows) {
+      if (iH >= 0 && /hide/i.test(r[iH] || "")) continue;
+      const name = (r[iN] || "").trim().slice(0, 60); if (!name) continue;
+      const bio = (r[iB] || "").trim().slice(0, 900);
+      if (heldReason(bio || "musician", name)) { console.log("musician held:", name); continue; }
+      const contact = iSC >= 0 && yes(r[iSC]);
+      const m = {name, genre: (r[iG] || "").trim().slice(0, 60), town: (r[iTn] || "").trim().slice(0, 40), bio,
+        photo: iOK >= 0 && yes(r[iOK]) ? driveImg(r[iP], 1000) : "", forHire: iPE >= 0 && yes(r[iPE]), contact,
+        spot: iS >= 0 ? (Date.parse(r[iS]) || 0) : 0};
+      if (contact) { m.email = (r[iE] || "").trim().slice(0, 80); m.phone = (r[iPh] || "").trim().slice(0, 30); const w = (r[iW] || "").trim(); if (/^https?:\/\//i.test(w)) m.website = w.slice(0, 200); }
+      list.push(m);
+    }
+    const now = Date.now() + 36e5 * 12;
+    const sp = list.filter(m => m.spot && m.spot <= now).sort((a, b) => b.spot - a.spot)[0] || null;
+    const forHire = list.filter(m => m.forHire).sort((a, b) => a.name.localeCompare(b.name));
+    console.log("musicians", list.length, "spotlight", sp && sp.name);
+    writeIfChanged("musicians.json", {updated: new Date().toISOString(), spotlight: sp, forHire});
+  } catch (e) { console.log("musicians failed:", e.message); }
+}
+
+/* ---------------- RECIPE CORNER ----------------
+   Recipes Public tab: Timestamp, Your name, Show my name (or Anonymous), Recipe name, Story,
+   Ingredients, Steps, Photo, Photo OK, Hide.  Recipe number = row number.
+   Votes Public tab: Timestamp, Recipe number, Voter key, What I changed, Name for note.
+   This month's recipes are the ones sent in this month. One vote per voter key per month.
+   Past months' winners are counted automatically. */
+async function recipes(){
+  const c = cfgAll(), rUrl = (c._recipesCsv || "").trim(), vUrl = (c._recipeVotesCsv || "").trim();
+  const thisMonth = ymDenver(new Date());
+  if (!rUrl) { if (!oldJSON("recipes.json")) writeIfChanged("recipes.json", {updated: new Date().toISOString(), month: thisMonth, items: [], tally: {}, winners: {}, tries: {}}); console.log("recipes: no sheet link yet"); return; }
+  try {
+    const {rows, col} = await sheet(rUrl);
+    const iT = col(/timestamp/), iN = col(/your name|^name/), iS = col(/show|anonymous/), iR = col(/recipe name|^recipe$|title/), iSt = col(/story|about/), iI = col(/ingredient/), iSp = col(/step|direction|instruction/), iP = col(/^photo$|upload/), iOK = col(/photo ok/), iH = col(/^hide/);
+    const items = [];
+    rows.forEach((r, idx) => {
+      const n = idx + 1;
+      if (iH >= 0 && /hide/i.test(r[iH] || "")) return;
+      const title = (r[iR] || "").trim().slice(0, 90); if (!title) return;
+      const anon = iS >= 0 && /anonym/i.test(r[iS] || "");
+      const by = anon ? "A neighbor" : ((r[iN] || "").trim().slice(0, 40) || "A neighbor");
+      const story = (r[iSt] || "").trim().slice(0, 600), ing = (r[iI] || "").trim().slice(0, 2500), steps = (r[iSp] || "").trim().slice(0, 4000);
+      const why = heldReason([title, story, ing, steps].join(" "), by); if (why) { console.log("recipe held:", n, why); return; }
+      const t = Date.parse(r[iT]) || 0;
+      items.push({n, title, by, story, ingredients: ing, steps, photo: iOK >= 0 && yes(r[iOK]) ? driveImg(r[iP], 1000) : "", month: t ? ymDenver(new Date(t)) : thisMonth});
+    });
+    const tally = {}, winners = {}, tries = {}, byMonth = {};
+    if (vUrl) {
+      const vr = parseCSV(await getText(vUrl)).filter(r => r.length >= 3 && (r[0] || "").trim() && !/timestamp/i.test(r[0]));
+      const seen = new Set(), valid = new Map(items.map(i => [i.n, i.month]));
+      for (const r of vr) {
+        const t = Date.parse(r[0]); if (!t) continue; const m = ymDenver(new Date(t));
+        const n = parseInt(String(r[1]).replace(/[^0-9]/g, ""), 10); const key = (r[2] || "").trim();
+        if (!n || !valid.has(n)) continue;
+        const note = (r[3] || "").trim().slice(0, 400), who = (r[4] || "").trim().slice(0, 40);
+        if (note && !heldReason(note, who)) (tries[n] = tries[n] || []).push({text: note, by: who});
+        if (!key || valid.get(n) !== m) continue;           // votes only count in the recipe's own month
+        if (seen.has(m + "|" + key)) continue; seen.add(m + "|" + key);
+        (byMonth[m] = byMonth[m] || {})[n] = (byMonth[m][n] || 0) + 1;
+      }
+      Object.assign(tally, byMonth[thisMonth] || {});
+      for (const [m, t] of Object.entries(byMonth)) { if (m >= thisMonth) continue; const best = Object.entries(t).sort((a, b) => b[1] - a[1] || a[0] - b[0])[0]; if (best) winners[m] = +best[0]; }
+    }
+    console.log("recipes", items.length, "winners", JSON.stringify(winners));
+    writeIfChanged("recipes.json", {updated: new Date().toISOString(), month: thisMonth, items, tally, winners, tries});
+  } catch (e) { console.log("recipes failed:", e.message); }
+}
+
+/* ---------------- GARDEN + BE PREPARED BOARDS ----------------
+   One form for both. Public tab: Timestamp, Board (Garden / Be prepared), Type (Question / Tip),
+   Your post, Name or initials, Town, Replying to #, Hide.  Post number = row number. */
+async function tips(){
+  const url = (cfgAll()._tipsCsv || "").trim();
+  if (!url) { if (!oldJSON("tips.json")) writeIfChanged("tips.json", {updated: new Date().toISOString(), garden: [], prep: []}); console.log("tips: no sheet link yet"); return; }
+  try {
+    const {rows, col} = await sheet(url);
+    const iT = col(/timestamp/), iB = col(/board/), iK = col(/type|kind/), iP = col(/post|tip|question/), iN = col(/name|initial/), iTn = col(/town|city/), iR = col(/reply|replying/), iH = col(/^hide/);
+    const out = {updated: new Date().toISOString(), garden: [], prep: []};
+    rows.forEach((r, idx) => {
+      const n = idx + 1;
+      if (iH >= 0 && /hide/i.test(r[iH] || "")) return;
+      const text = (r[iP] || "").trim().slice(0, 1200), by = (r[iN] || "").trim().slice(0, 40), town = (r[iTn] || "").trim().slice(0, 40);
+      if (heldReason(text, by + " " + town)) return;
+      const board = /prep|emerg|ready/i.test(r[iB] || "") ? "prep" : "garden";
+      const rt = parseInt(String(r[iR] || "").replace(/[^0-9]/g, ""), 10) || null;
+      out[board].push({n, text, by, town, kind: (r[iK] || "").trim().slice(0, 20), replyTo: rt, t: Date.parse(r[iT]) || null});
+    });
+    for (const k of ["garden", "prep"]) out[k].sort((a, b) => (b.t || 0) - (a.t || 0));
+    console.log("tips", out.garden.length, out.prep.length);
+    writeIfChanged("tips.json", out);
+  } catch (e) { console.log("tips failed:", e.message); }
+}
+
 await calendars();
 await sky();
 await safety();
 await local();
 await reviews();
 await reports();
+await skyphotos();
+await sightings();
+await coloring();
+await musicians();
+await recipes();
+await tips();
 await geocode();

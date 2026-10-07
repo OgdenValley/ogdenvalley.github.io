@@ -46,10 +46,20 @@
   <p class="meta" id="sky-upd" style="color:var(--muted);font-size:15px;margin-top:12px"></p>
 </div></section>
 <section style="padding-top:0"><div class="container">
-  <div class="section-head"><div><p class="eyebrow">From the community</p><h2>Valley night sky photos</h2></div><a class="btn primary" data-form="skyPhoto" href="#">Share your night sky photo</a></div>
-  <div class="grid" id="skyg"></div>
-  <p class="meta" style="color:var(--muted);font-size:15px;margin-top:10px">Stars, the Milky Way, moonrise, northern lights or meteor showers, taken in Ogden Valley or Weber County. By sharing you agree to our <a href="terms.html">terms</a>. Under 13? Ask a parent to send it.</p>
+  <div class="section-head"><div><p class="eyebrow">From the community</p><h2>Utah night skies</h2></div><div class="btns" style="margin:0"><a class="btn primary" data-form="skyPhoto" href="#">Share your night sky photo</a><a class="btn blue" data-form="skyVote" href="#">Vote for a photo</a></div></div>
+  <div id="skylead"></div>
+  <div id="skymap" role="region" aria-label="Map of where the night sky photos were taken" style="height:min(55vh,420px);border-radius:12px;border:1px solid var(--line);background:var(--soft);margin-bottom:8px"></div>
+  <p class="meta" id="skymap-note" style="color:var(--muted);font-size:15px;margin:0 0 16px">Each pin is a city or town where photos were taken. Tap a pin to see them.</p>
+  <div class="grid" style="margin-bottom:18px">
+    <article class="card"><p class="eyebrow">Towns so far</p><div class="big" id="town-count">0</div><div id="town-list" class="meta"></div></article>
+    <article class="card"><p class="eyebrow">Utah counties checklist</p><div class="big" id="county-count">0 of 29</div><p class="meta" style="margin:0">Can we get a night sky photo from every county in Utah?</p><div id="county-list" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:4px 10px;margin-top:8px;font-size:15px"></div></article>
+  </div>
+  <p class="meta" style="color:var(--muted);font-size:15px;margin:0 0 10px">Tap any photo to see it big and swipe through the gallery.</p>
+  <div class="grid" id="skyg" data-gallery></div>
+  <p class="meta" style="color:var(--muted);font-size:15px;margin-top:10px">Stars, the Milky Way, moonrise, northern lights or meteor showers from anywhere in Utah. Tell us the city or town; you can stay anonymous. Vote once a month for your favorite by its photo number. By sharing you agree to our <a href="terms.html">terms</a>. Under 13? Ask a parent to send it.</p>
 </div></section>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
 <section style="padding-top:0"><div class="container prose">
   <h2>Tips for a dark-sky night</h2>
   <p>Get away from porch lights and town. Pullouts above Pineview, and the roads toward the North Fork, are popular. Please stay off private land.</p>
@@ -61,7 +71,7 @@
 <footer class="site-foot"><div class="container">
   <div class="ten"><img data-logo="180" src="logo-10-years-180.png" alt="" width="64" height="64"><div><b>Ogden Valley Info &amp; Events</b><br><span class="fine">Eden · Liberty · Huntsville · since 2016</span><br><span class="fine" id="gc-count"></span></div></div>
   <div><h3>Explore</h3><ul><li><a href="events.html">Events</a></li><li><a href="restaurants.html">Restaurants</a></li><li><a href="businesses.html">Valley Businesses</a></li><li><a href="artists.html">Local Artists</a></li><li><a href="safety.html">Safety &amp; alerts</a></li><li><a href="live.html">Live view</a></li><li><a href="night-sky.html">Night sky</a></li></ul></div>
-  <div><h3>Take part</h3><ul><li><a href="submit.html">Send an event or listing</a></li><li><a href="fun.html">Fun &amp; contests</a></li><li><a href="sponsor.html">Sponsor a spot</a></li><li><a href="ten-years.html">10 years</a></li><li><a data-newsletter data-hide-empty href="#">Weekly newsletter</a></li></ul></div>
+  <div><h3>Take part</h3><ul><li><a href="submit.html">Send an event or listing</a></li><li><a href="fun.html">Fun &amp; contests</a></li><li><a href="sponsor.html">Sponsor a spot</a></li><li><a href="ten-years.html">10 years</a></li><li><a href="volunteer.html">Volunteer &amp; give back</a></li><li><a href="recipes.html">Recipe corner</a></li><li><a href="garden.html">Garden board</a></li><li><a href="prepared.html">Be prepared board</a></li><li><a href="coming.html">What&#39;s coming &amp; ideas</a></li><li><a data-newsletter data-hide-empty href="#">Weekly newsletter</a></li></ul></div>
   <div><h3>Follow</h3><ul><li><a data-facebook href="https://www.facebook.com/ogdenvalleyevents" target="_blank" rel="noopener">Facebook</a></li><li><a data-instagram data-hide-empty href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="about.html#groups">Our Facebook groups</a></li><li><a href="rules.html">Community rules</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul>
   <p class="fine">Event details come from organizers. Check with them before you go.</p></div>
 </div></footer>
@@ -74,9 +84,28 @@
 document.getElementById("m-name").textContent=m.name;document.getElementById("m-ill").textContent=m.illum+"% lit. "+(m.dark?"Good for seeing stars and the Milky Way.":"Bright moonlight washes out fainter stars.");
 const syn=29.530588853;const toNew=(syn-m.age)%syn;const nm=new Date(now.getTime()+toNew*864e5);
 document.getElementById("nm").textContent=new Intl.DateTimeFormat("en-US",{timeZone:S.TZ,weekday:"short",month:"short",day:"numeric"}).format(nm);
-const gal=document.getElementById("skyg"),ph=S.C.skyPhotos||[];
-if(!ph.length)gal.append(S.el("div",{class:"empty"},[S.el("p",{text:"The first night sky photos are coming soon. Have a great shot from the Valley? Share it and it could be the first one here."})]));
-ph.slice().reverse().forEach(x=>gal.append(S.el("figure",{class:"card",style:"margin:0"},[S.el("img",{src:x.image,alt:x.title||"Night sky photo",loading:"lazy",style:"border-radius:10px;width:100%;aspect-ratio:4/3;object-fit:cover"}),S.el("figcaption",{},[S.el("b",{text:x.title||"Night sky"}),S.el("div",{class:"meta",text:[x.place,x.date,x.by?"Photo: "+x.by:""].filter(Boolean).join(" · ")})])])));
+const gal=document.getElementById("skyg"),SP=await S.loadJSON("skyphotos.json");const ph=(SP&&SP.items)||[];const feat=S.C.skyPhotos||[];const tally=(SP&&SP.tally)||{};
+const fd=t=>t?new Intl.DateTimeFormat("en-US",{timeZone:S.TZ,month:"short",day:"numeric",year:"numeric"}).format(new Date(t)):"";
+if(SP&&SP.leader){const w=ph.find(x=>x.n===SP.leader.n);if(w)document.getElementById("skylead").append(S.el("div",{class:"alert good",style:"margin-bottom:14px",text:"Leading this month: Photo #"+w.n+(w.city?" from "+w.city:"")+" with "+SP.leader.votes+" vote"+(SP.leader.votes===1?"":"s")+" ("+SP.totalVotes+" people have voted)."}))}
+if(!ph.length&&!feat.length)gal.append(S.el("div",{class:"empty"},[S.el("p",{text:"The first night sky photos are coming soon. Have a great shot from anywhere in Utah? Share it and it could be the first one here."})]));
+ph.slice().sort((a,b)=>b.n-a.n).forEach(x=>gal.append(S.el("figure",{class:"card",style:"margin:0"},[S.el("img",{src:x.photo,alt:"Night sky photo #"+x.n+(x.city?" from "+x.city:""),loading:"lazy",style:"border-radius:10px;width:100%;aspect-ratio:4/3;object-fit:cover"}),S.el("figcaption",{style:"display:grid;gap:2px"},[S.el("b",{text:"Photo #"+x.n+(x.city?" · "+x.city:"")}),S.el("div",{class:"meta",text:[x.taken?"Taken "+x.taken:"",x.uploaded?"Shared "+fd(x.uploaded):"",x.by?"By "+x.by:""].filter(Boolean).join(" · ")}),tally[x.n]?S.el("div",{class:"meta",text:tally[x.n]+" vote"+(tally[x.n]===1?"":"s")+" this month"}):null])])));
+(async function(){const geo=await S.loadJSON("geocache.json")||{};const key=c=>String(c||"").trim().replace(/,?\s*(ut|utah)\.?$/i,"")+", Utah";
+  const groups={};ph.forEach(x=>{if(!x.city)return;const k=key(x.city);(groups[k]=groups[k]||[]).push({src:x.photo,label:"Photo #"+x.n,by:x.by})});feat.forEach(x=>{if(!x.place)return;const k=key(x.place);(groups[k]=groups[k]||[]).push({src:x.image,label:x.title||"Night sky",by:x.by})});
+  const m=document.getElementById("skymap");if(!window.L){m.textContent="The map couldn't load. The photos below still work.";return}
+  const map=L.map(m,{scrollWheelZoom:false}).setView([39.4,-111.7],6);L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:16,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+  const esc=t=>String(t||"").replace(/[<>&"]/g,c=>({"<":"&lt;",">":"&gt;","&":"&amp;",'"':"&quot;"}[c]));const pts=[];let missing=0;
+  Object.entries(groups).forEach(([k,list])=>{const g=geo[k];if(!g){missing+=list.length;return}pts.push([g.lat,g.lng]);
+    const sz=28+Math.min(list.length,10)*2;L.marker([g.lat,g.lng],{icon:L.divIcon({className:"",iconSize:[sz,sz],html:"<div style='width:"+sz+"px;height:"+sz+"px;border-radius:50%;background:#E8C25A;border:2px solid #fff;color:#10233D;font:800 14px Montserrat,Arial,sans-serif;display:grid;place-items:center;box-shadow:0 1px 4px rgba(0,0,0,.4)'>"+list.length+"</div>"}),title:k.replace(/, Utah$/,"")+": "+list.length+" photos"}).bindPopup("<b>"+esc(k.replace(/, Utah$/,""))+"</b> · "+list.length+" photo"+(list.length===1?"":"s")+"<div style='display:grid;grid-template-columns:repeat(2,90px);gap:6px;margin-top:6px'>"+list.slice(0,6).map(p=>"<img src='"+esc(p.src)+"' alt='"+esc(p.label)+"' style='width:90px;height:68px;object-fit:cover;border-radius:6px'>").join("")+"</div>").addTo(map)});
+  const COUNTIES=["Beaver","Box Elder","Cache","Carbon","Daggett","Davis","Duchesne","Emery","Garfield","Grand","Iron","Juab","Kane","Millard","Morgan","Piute","Rich","Salt Lake","San Juan","Sanpete","Sevier","Summit","Tooele","Uintah","Utah","Wasatch","Washington","Wayne","Weber"];
+  const towns=Object.entries(groups).sort((a,b)=>b[1].length-a[1].length);const have=new Set(towns.map(([k])=>geo[k]&&geo[k].county).filter(Boolean));
+  document.getElementById("town-count").textContent=towns.length+" town"+(towns.length===1?"":"s");
+  document.getElementById("town-list").textContent=towns.map(([k,l])=>k.replace(/, Utah$/,"")+" ("+l.length+")").join(" · ")||"No photos yet.";
+  document.getElementById("county-count").textContent=have.size+" of 29";
+  document.getElementById("county-list").replaceChildren(...COUNTIES.map(c=>S.el("div",{style:have.has(c)?"font-weight:700;color:var(--good)":"color:var(--muted)",text:(have.has(c)?"✓ ":"○ ")+c})));
+  if(pts.length>1)map.fitBounds(pts,{padding:[30,30],maxZoom:9});else if(pts.length===1)map.setView(pts[0],8);
+  if(missing)document.getElementById("skymap-note").textContent="Each pin is a city or town where photos were taken. Tap a pin to see them. New places get their pin within an hour.";
+})();
+feat.slice().reverse().forEach(x=>gal.append(S.el("figure",{class:"card",style:"margin:0"},[S.el("img",{src:x.image,alt:x.title||"Night sky photo",loading:"lazy",style:"border-radius:10px;width:100%;aspect-ratio:4/3;object-fit:cover;background:#000"}),S.el("figcaption",{style:"display:grid;gap:2px"},[S.el("b",{text:(x.title||"Night sky")+(x.place?" · "+x.place:"")}),S.el("div",{class:"meta",text:[x.date?"Taken "+x.date:"",x.by?"Photo: "+x.by:"","shared with permission"].filter(Boolean).join(" · ")})])])));
 const sky=await S.loadSky();const kp=sky&&sky.kpMaxNext24!=null?sky.kpMaxNext24:null;const a=S.auroraText(kp);
 const box=document.getElementById("aurora");box.className="alert "+a.cls;box.textContent=a.text;
 document.getElementById("kp").textContent=kp!=null?"Kp "+kp.toFixed(1):"Not available";

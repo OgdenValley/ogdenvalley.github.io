@@ -189,5 +189,34 @@ if (C.goatcounter) {
   if (out && C.showVisitCount) fetch("https://" + C.goatcounter + ".goatcounter.com/counter/TOTAL.json").then(r => r.ok ? r.json() : null).then(j => { if (j && j.count) out.textContent = j.count + " visits to the site"; }).catch(() => {});
 }
 
+/* ---------- photo gallery viewer: tap any photo in a [data-gallery] area to browse full screen ---------- */
+(function(){
+  let list = [], idx = 0, box = null, img = null, cap = null, startX = null;
+  function build(){
+    box = el("div", {class: "lb", role: "dialog", "aria-modal": "true", "aria-label": "Photo viewer", hidden: ""});
+    img = el("img", {alt: ""}); cap = el("div", {class: "lb-cap"});
+    const prev = el("button", {class: "lb-btn lb-prev", type: "button", "aria-label": "Previous photo", text: "‹"});
+    const next = el("button", {class: "lb-btn lb-next", type: "button", "aria-label": "Next photo", text: "›"});
+    const close = el("button", {class: "lb-btn lb-close", type: "button", "aria-label": "Close", text: "×"});
+    prev.onclick = () => show(idx - 1); next.onclick = () => show(idx + 1); close.onclick = hide;
+    box.addEventListener("click", e => { if (e.target === box) hide(); });
+    box.addEventListener("touchstart", e => { startX = e.touches[0].clientX; }, {passive: true});
+    box.addEventListener("touchend", e => { if (startX == null) return; const dx = e.changedTouches[0].clientX - startX; if (Math.abs(dx) > 40) show(idx + (dx < 0 ? 1 : -1)); startX = null; });
+    box.append(img, cap, prev, next, close); document.body.append(box);
+  }
+  function show(i){
+    if (!list.length) return; idx = (i + list.length) % list.length; const f = list[idx];
+    const im = f.querySelector("img"); img.src = im.src; img.alt = im.alt || "";
+    const c = f.querySelector("figcaption"); cap.textContent = (c ? [...c.children].map(x => x.textContent.trim()).filter(Boolean).join(" · ") : "") + "  (" + (idx + 1) + " of " + list.length + ")";
+  }
+  function hide(){ box.hidden = true; document.body.style.overflow = ""; }
+  document.addEventListener("click", e => {
+    const f = e.target.closest("[data-gallery] figure, [data-gallery] .card"); if (!f || !e.target.closest("img")) return;
+    const g = f.closest("[data-gallery]"); list = [...g.querySelectorAll("figure, .card")].filter(x => x.querySelector("img"));
+    if (!box) build(); box.hidden = false; document.body.style.overflow = "hidden"; show(list.indexOf(f));
+  });
+  document.addEventListener("keydown", e => { if (!box || box.hidden) return; if (e.key === "Escape") hide(); if (e.key === "ArrowRight") show(idx + 1); if (e.key === "ArrowLeft") show(idx - 1); });
+})();
+
 window.OVE_SITE = {C, P, el, $, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, dayKey, dayName, timeStr, todayKey, TZ};
 })();

@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Photo Contest · Ogden Valley Info & Events</title>
-<meta name="description" content="Monthly Ogden Valley photo contest. Send your best Valley photo for a chance to be featured.">
-<meta property="og:title" content="Photo Contest · Ogden Valley Info & Events">
-<meta property="og:description" content="Monthly Ogden Valley photo contest. Send your best Valley photo for a chance to be featured.">
+<title>Scavenger Hunt · Ogden Valley Info & Events</title>
+<meta name="description" content="Monthly Ogden Valley scavenger hunt for families and visitors. Check things off as you find them.">
+<meta property="og:title" content="Scavenger Hunt · Ogden Valley Info & Events">
+<meta property="og:description" content="Monthly Ogden Valley scavenger hunt for families and visitors. Check things off as you find them.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://ogdenvalley.github.io/photo-contest.html">
+<meta property="og:url" content="https://ogdenvalley.github.io/scavenger-hunt.html">
 <meta property="og:image" content="https://ogdenvalley.github.io/share-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="logo-10-years-32.png">
@@ -34,18 +34,17 @@
   <nav class="main" id="nav" aria-label="Main"><a href="events.html">Events</a><a href="restaurants.html">Eat &amp; Shop</a><a href="artists.html">Artists</a><a href="safety.html">Safety</a><a href="live.html">Live View</a><a href="night-sky.html">Night Sky</a><a href="fun.html" aria-current="page">Fun &amp; Contests</a><a href="about.html">About</a><a href="search.html">Search</a></nav>
 </div></header>
 <main id="main">
-<section class="hero"><div class="container"><div><p class="eyebrow">Every month</p><h1>Photo Contest</h1><p class="lead" style="margin-top:12px">One theme each month. The winning photo is featured on the site, in the weekly newsletter and on our Facebook and Instagram, with credit to you.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
-<section><div class="container"><div class="grid">
-  <article class="card feature"><p class="eyebrow" id="c-month">This month</p><h2 id="c-theme" style="font-size:26px">Theme coming soon</h2><p id="c-deadline"></p>
-    <div class="btns"><a class="btn primary" data-form="photo" href="#">Enter your photo</a></div>
-    <p class="kid-note">Under 13? Ask a parent to send your photo for you.</p>
-    <p class="meta" data-email-wrap hidden>No form handy? Email your photo to <span data-email></span>.</p></article>
-  <article class="card"><h3>The rules</h3><ul style="margin:0;padding-left:20px;display:grid;gap:6px">
-    <li>Your own photo, taken in Ogden Valley or Weber County.</li><li>One entry per person each month.</li>
-    <li>Phone photos are welcome. Please don't add borders or text.</li><li>By entering you agree to our <a href="terms.html">terms</a>: you keep the rights, and we may show it on this site, in the newsletter and on our Facebook and Instagram with your name.</li>
-    <li>No faces of other people's kids without a parent's OK.</li></ul></article>
-  <article class="card" id="winner"><p class="eyebrow">Last month's winner</p><h3>First winner announced soon</h3><p>The first contest of our 10th year is running now.</p></article>
-</div></div></section>
+<section class="hero"><div class="container"><div><p class="eyebrow">This month</p><h1>Valley scavenger hunt</h1><p class="lead" style="margin-top:12px">Get outside and find these around the Valley. Check them off as you go. Your phone remembers your progress.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section><div class="container" style="display:grid;gap:16px">
+  <div class="card"><div class="section-head" style="margin:0"><div><p class="eyebrow" id="h-month"></p><h2 style="font-size:24px" id="h-title">This month's hunt</h2></div><div class="big" id="h-count">0 of 0</div></div>
+    <div class="hbar"><div id="h-bar"></div></div>
+    <ul class="hunt" id="h-list"></ul></div>
+  <div class="card" id="h-done" hidden><h2 style="font-size:24px">You finished the hunt!</h2><p>Send us one photo from your hunt for a shout-out in the newsletter.</p><div class="btns"><a class="btn primary" data-form="hunt" href="#">Send your finish photo</a></div></div>
+  <p class="meta" style="color:var(--muted);font-size:15px">Stay on public land and trails, respect private property, and never go near wildlife. Under 13? Hunt with a grown-up.</p>
+</div></section>
+<style>.hunt{list-style:none;padding:0;margin:12px 0 0;display:grid;gap:8px}.hunt label{display:flex;gap:12px;align-items:flex-start;padding:12px;border:2px solid var(--line);border-radius:10px;cursor:pointer;font-size:18px;font-weight:600;background:var(--card)}
+.hunt input{width:26px;height:26px;flex:none;accent-color:#2F7D4F;margin-top:2px}.hunt .hint{display:block;font-weight:400;font-size:15px;color:var(--muted)}.hunt label:has(input:checked){border-color:var(--good);background:var(--good-bg)}
+.hbar{height:12px;border-radius:99px;background:var(--soft);overflow:hidden;margin-top:10px}.hbar>div{height:100%;width:0;background:var(--good);transition:width .3s}</style>
 </main>
 <footer class="site-foot"><div class="container">
   <div class="ten"><img data-logo="180" src="logo-10-years-180.png" alt="" width="64" height="64"><div><b>Ogden Valley Info &amp; Events</b><br><span class="fine">Eden · Liberty · Huntsville · since 2016</span><br><span class="fine" id="gc-count"></span></div></div>
@@ -59,10 +58,13 @@
 <script src="site.js"></script>
 <script>
 
-(function(){const S=window.OVE_SITE,c=S.C.contest||{};
-if(c.theme){document.getElementById("c-month").textContent=c.month;document.getElementById("c-theme").textContent=c.theme;document.getElementById("c-deadline").textContent="Entries close "+c.deadline+"."}
-const w=c.lastWinner;if(w&&w.name){const b=document.getElementById("winner");b.querySelector("h3").textContent=(w.title?w.title+" · ":"")+w.name;const p=b.querySelector("p:not(.eyebrow)");p.textContent="";if(w.image){const i=S.el("img",{src:w.image,alt:w.title||"Winning photo",style:"border-radius:10px"});b.insertBefore(i,p)}}
-})();
+(function(){const S=window.OVE_SITE,H=S.C.hunt||{items:[]};const key="ove-hunt-"+(H.month||"");let done={};try{done=JSON.parse(localStorage.getItem(key)||"{}")}catch(e){}
+document.getElementById("h-month").textContent=H.month||"";if(H.title)document.getElementById("h-title").textContent=H.title;
+const ul=document.getElementById("h-list");
+H.items.forEach((it,i)=>{const id="h"+i;const cb=S.el("input",{type:"checkbox",id});cb.checked=!!done[i];cb.onchange=()=>{done[i]=cb.checked;try{localStorage.setItem(key,JSON.stringify(done))}catch(e){}upd()};
+  ul.append(S.el("li",{},[S.el("label",{for:id},[cb,S.el("span",{},[document.createTextNode(it.find),it.hint?S.el("span",{class:"hint",text:it.hint}):null])])]))});
+function upd(){const n=H.items.filter((_,i)=>done[i]).length;document.getElementById("h-count").textContent=n+" of "+H.items.length;document.getElementById("h-bar").style.width=(H.items.length?n/H.items.length*100:0)+"%";document.getElementById("h-done").hidden=!(H.items.length&&n===H.items.length)}
+upd();})();
 </script>
 </body>
 </html>

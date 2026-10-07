@@ -155,3 +155,12 @@ details summary{cursor:pointer;color:var(--blue)}
   .btns .btn{flex:1 1 auto;justify-content:center;min-height:48px}
   .brand img{width:44px;height:44px}
 }
+
+.lb{position:fixed;inset:0;z-index:100;background:rgba(5,10,18,.94);display:grid;place-items:center;padding:56px 12px 70px}
+.lb[hidden]{display:none}
+.lb img{max-width:100%;max-height:calc(100vh - 140px);object-fit:contain;border-radius:8px}
+.lb-cap{position:absolute;left:16px;right:16px;bottom:16px;color:#E7EEF6;text-align:center;font-size:16px}
+.lb-btn{position:absolute;background:rgba(255,255,255,.14);color:#fff;border:0;border-radius:999px;width:48px;height:48px;font-size:30px;line-height:1;cursor:pointer}
+.lb-btn:hover,.lb-btn:focus-visible{background:rgba(255,255,255,.3)}
+.lb-prev{left:10px;top:50%;transform:translateY(-50%)}.lb-next{right:10px;top:50%;transform:translateY(-50%)}.lb-close{right:12px;top:12px}
+[data-gallery] img{cursor:zoom-in}
