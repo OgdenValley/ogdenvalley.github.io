@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Photo Contest · Ogden Valley Info & Events</title>
-<meta name="description" content="Monthly Ogden Valley photo contest. Send your best Valley photo for a chance to be featured.">
-<meta property="og:title" content="Photo Contest · Ogden Valley Info & Events">
-<meta property="og:description" content="Monthly Ogden Valley photo contest. Send your best Valley photo for a chance to be featured.">
+<title>Fun & Contests · Ogden Valley Info & Events</title>
+<meta name="description" content="Photo contest, Guess the Spot, Then & Now and this weekend's events in Ogden Valley.">
+<meta property="og:title" content="Fun & Contests · Ogden Valley Info & Events">
+<meta property="og:description" content="Photo contest, Guess the Spot, Then & Now and this weekend's events in Ogden Valley.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://ogdenvalley.github.io/photo-contest.html">
+<meta property="og:url" content="https://ogdenvalley.github.io/fun.html">
 <meta property="og:image" content="https://ogdenvalley.github.io/share-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="logo-10-years-32.png">
@@ -34,16 +34,13 @@
   <nav class="main" id="nav" aria-label="Main"><a href="events.html">Events</a><a href="restaurants.html">Eat &amp; Shop</a><a href="artists.html">Artists</a><a href="safety.html">Safety</a><a href="live.html">Live View</a><a href="night-sky.html">Night Sky</a><a href="fun.html" aria-current="page">Fun &amp; Contests</a><a href="about.html">About</a><a href="search.html">Search</a></nav>
 </div></header>
 <main id="main">
-<section class="hero"><div class="container"><div><p class="eyebrow">Every month</p><h1>Photo Contest</h1><p class="lead" style="margin-top:12px">One theme each month. The winning photo is featured on the site and in the weekly newsletter, with credit to you.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section class="hero"><div class="container"><div><p class="eyebrow">Play along</p><h1>Fun &amp; contests</h1><p class="lead" style="margin-top:12px">Monthly photo contest, a weekly Guess the Spot, old-and-new Valley photos, and a ready-made weekend list to share.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
 <section><div class="container"><div class="grid">
-  <article class="card feature"><p class="eyebrow" id="c-month">This month</p><h2 id="c-theme" style="font-size:26px">Theme coming soon</h2><p id="c-deadline"></p>
-    <div class="btns"><a class="btn primary" data-form="photo" href="#">Enter your photo</a></div>
-    <p class="meta" data-email-wrap hidden>No form handy? Email your photo to <span data-email></span>.</p></article>
-  <article class="card"><h3>The rules</h3><ul style="margin:0;padding-left:20px;display:grid;gap:6px">
-    <li>Your own photo, taken in Ogden Valley or Weber County.</li><li>One entry per person each month.</li>
-    <li>Phone photos are welcome. Please don't add borders or text.</li><li>By entering you agree to our <a href="terms.html">terms</a>: you keep the rights, and we may show it on this site and in the newsletter with your name.</li>
-    <li>No faces of other people's kids without a parent's OK.</li></ul></article>
-  <article class="card" id="winner"><p class="eyebrow">Last month's winner</p><h3>First winner announced soon</h3><p>The first contest of our 10th year is running now.</p></article>
+  <article class="card feature"><p class="eyebrow">Monthly</p><h3>Photo contest</h3><p>One theme a month. The winner is featured on the site and in the newsletter.</p><a href="photo-contest.html">Enter this month</a></article>
+  <article class="card feature"><p class="eyebrow">Weekly</p><h3>Guess the Spot</h3><p>Guess where the photo was taken, or send in a spot of your own to stump everyone.</p><a href="guess-the-spot.html">Play</a></article>
+  <article class="card feature"><p class="eyebrow">History</p><h3>Then &amp; Now</h3><p>The same Valley view, years apart. Slide to compare.</p><a href="then-and-now.html">Compare</a></article>
+  <article class="card feature"><p class="eyebrow">Every weekend</p><h3>This weekend in the Valley</h3><p>A shareable list of this weekend's events, made fresh from the calendars.</p><a href="weekend.html">See this weekend</a></article>
+  <article class="card feature"><p class="eyebrow">10 years</p><h3>Our 10th year</h3><p>A look back at the Valley and at a decade of Ogden Valley Info &amp; Events.</p><a href="ten-years.html">Take a look</a></article>
 </div></div></section>
 </main>
 <footer class="site-foot"><div class="container">
@@ -56,12 +53,5 @@
 <script src="config.js"></script>
 <script src="places.js"></script>
 <script src="site.js"></script>
-<script>
-
-(function(){const S=window.OVE_SITE,c=S.C.contest||{};
-if(c.theme){document.getElementById("c-month").textContent=c.month;document.getElementById("c-theme").textContent=c.theme;document.getElementById("c-deadline").textContent="Entries close "+c.deadline+"."}
-const w=c.lastWinner;if(w&&w.name){const b=document.getElementById("winner");b.querySelector("h3").textContent=(w.title?w.title+" · ":"")+w.name;const p=b.querySelector("p:not(.eyebrow)");p.textContent="";if(w.image){const i=S.el("img",{src:w.image,alt:w.title||"Winning photo",style:"border-radius:10px"});b.insertBefore(i,p)}}
-})();
-</script>
 </body>
 </html>

@@ -25,8 +25,30 @@ window.OVE = {
     business: "",             // List a business or restaurant
     artist:   "",             // Be listed as a local artist
     photo:    "",             // Photo contest entry
-    sponsor:  ""              // Sponsor a spot
+    sponsor:  "",             // Sponsor a spot
+    guess:    "",             // Guess the Spot: send a guess
+    guessSubmit: ""           // Guess the Spot: send in your own spot
   },
+
+  /* --- Reviews (Google Form) -------------------------------------------
+     reviewForm: the form's link ending in /viewform
+     reviewEntry: the "entry.123456" code for the Business question */
+  reviewForm: "",
+  reviewEntry: "",
+
+  /* --- Visit counts (GoatCounter) ------------------------------------- */
+  goatcounter: "",            // the code you picked, e.g. "ogdenvalley"
+  showVisitCount: true,       // show the total visits in the footer
+
+  /* --- Guess the Spot (newest last) ------------------------------------
+     { week: "Oct 12", image: "spot-oct12.jpg", hint: "", by: "ove" | "community",
+       credit: "", revealed: false, answer: "", winner: "" } */
+  guessSpots: [],
+
+  /* --- Then & Now ------------------------------------------------------
+     { title: "", then: "then-file.jpg", now: "now-file.jpg", thenYear: "1950s",
+       nowYear: "2026", credit: "", source: "" } */
+  thenNow: [],
 
   /* --- Contact -------------------------------------------------------- */
   email: "ogdenvalleyevent@gmail.com",   // the Ogden Valley Gmail address, shown as text

@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>This Weekend · Ogden Valley Info & Events</title>
+<meta name="description" content="This weekend's Ogden Valley and Weber County events, as a ready-to-share image for Facebook and Instagram.">
+<meta property="og:title" content="This Weekend · Ogden Valley Info & Events">
+<meta property="og:description" content="This weekend's Ogden Valley and Weber County events, as a ready-to-share image for Facebook and Instagram.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ogdenvalley.github.io/weekend.html">
+<meta property="og:image" content="https://ogdenvalley.github.io/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo-10-years-32.png">
+<link rel="apple-touch-icon" href="logo-10-years-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<div class="alert-bar" id="alert-bar" hidden></div>
+<div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
+  <strong>Canyon check</strong>
+  <a href="https://ogdenvalley.udot.utah.gov/road-information/" target="_blank" rel="noopener">Ogden Valley roads &amp; cameras (UDOT)</a>
+  <a href="live.html">Live view</a>
+  <a href="safety.html">Alerts &amp; fires</a>
+  <a href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Eden weather</a>
+</div></div>
+<header class="site-head"><div class="container">
+  <a class="brand" href="index.html"><img data-logo="180" src="logo-10-years-180.png" alt="" width="52" height="52"><span><b>Ogden Valley</b><small>Information &amp; Events</small></span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="main" id="nav" aria-label="Main"><a href="events.html">Events</a><a href="restaurants.html">Eat &amp; Shop</a><a href="artists.html">Artists</a><a href="safety.html">Safety</a><a href="live.html">Live View</a><a href="night-sky.html">Night Sky</a><a href="fun.html" aria-current="page">Fun &amp; Contests</a><a href="about.html">About</a><a href="search.html">Search</a></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="container"><div><p class="eyebrow">Ready to share</p><h1>This weekend in the Valley</h1><p class="lead" style="margin-top:12px">Made fresh from the calendars. Download the picture and post it to Facebook and Instagram.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section><div class="container" style="display:grid;gap:18px">
+  <div class="btns" style="margin:0"><button class="btn primary" type="button" id="dl-ig">Download for Instagram (portrait)</button><button class="btn blue" type="button" id="dl-fb">Download for Facebook (wide)</button></div>
+  <label style="display:grid;gap:6px;max-width:560px;font-weight:600">Show events from
+    <select id="which" style="font:17px var(--body);padding:10px;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink)"><option value="both">Ogden Valley and Weber County</option><option value="ov">Ogden Valley only</option><option value="weber">Weber County only</option></select></label>
+  <canvas id="cv" width="1080" height="1350" style="width:min(540px,100%);height:auto;border-radius:12px;border:1px solid var(--line)"></canvas>
+  <div id="wk-list"></div>
+</div></section>
+</main>
+<footer class="site-foot"><div class="container">
+  <div class="ten"><img data-logo="180" src="logo-10-years-180.png" alt="" width="64" height="64"><div><b>Ogden Valley Info &amp; Events</b><br><span class="fine">Eden · Liberty · Huntsville · since 2016</span><br><span class="fine" id="gc-count"></span></div></div>
+  <div><h3>Explore</h3><ul><li><a href="events.html">Events</a></li><li><a href="restaurants.html">Restaurants</a></li><li><a href="businesses.html">Valley Businesses</a></li><li><a href="artists.html">Local Artists</a></li><li><a href="safety.html">Safety &amp; alerts</a></li><li><a href="live.html">Live view</a></li><li><a href="night-sky.html">Night sky</a></li></ul></div>
+  <div><h3>Take part</h3><ul><li><a href="submit.html">Send an event or listing</a></li><li><a href="fun.html">Fun &amp; contests</a></li><li><a href="sponsor.html">Sponsor a spot</a></li><li><a href="ten-years.html">10 years</a></li><li><a data-newsletter data-hide-empty href="#">Weekly newsletter</a></li></ul></div>
+  <div><h3>Follow</h3><ul><li><a data-facebook href="https://www.facebook.com/ogdenvalleyevents" target="_blank" rel="noopener">Facebook</a></li><li><a data-instagram data-hide-empty href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="rules.html">Community rules</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul>
+  <p class="fine">Event details come from organizers. Check with them before you go.</p></div>
+</div></footer>
+<script src="config.js"></script>
+<script src="places.js"></script>
+<script src="site.js"></script>
+<script>
+
+(async function(){const S=window.OVE_SITE;const data=await S.loadEvents();const cv=document.getElementById("cv"),ctx=cv.getContext("2d");
+const logo=new Image();logo.src=document.querySelector("img[data-logo]").src.replace(/-180\.png$/,"-512.png");await new Promise(r=>{logo.onload=r;logo.onerror=r});
+function weekendRange(){const now=new Date();const d=new Date(now.toLocaleString("en-US",{timeZone:S.TZ}));const dow=d.getDay();const toFri=dow<=5?5-dow:6;const start=new Date(d);start.setDate(d.getDate()+(dow===6||dow===0?(dow===6?-1:-2):toFri));start.setHours(0,0,0,0);const end=new Date(start);end.setDate(start.getDate()+3);
+  const off=new Date(now.toLocaleString("en-US",{timeZone:S.TZ}))-now;return [start-off,end-off]}
+const [a,b]=weekendRange();
+function evs(){const w=document.getElementById("which").value;return S.allEvents(data,w==="both"?["ov","weber"]:[w]).filter(e=>e.s<b&&e.e>a)}
+const css=getComputedStyle(document.documentElement);const col=n=>css.getPropertyValue(n).trim();
+function wrap(t,x,y,max,lh,lines){const words=String(t).split(/\s+/);let line="",n=0;for(const w of words){const test=line?line+" "+w:w;if(ctx.measureText(test).width>max&&line){ctx.fillText(line,x,y);y+=lh;line=w;if(++n>=lines-1){ctx.fillText(ctx.measureText(line+"…").width>max?line.slice(0,30)+"…":line,x,y);return y+lh}}else line=test}ctx.fillText(line,x,y);return y+lh}
+function draw(W,H){cv.width=W;cv.height=H;const g=ctx.createLinearGradient(0,0,0,H);g.addColorStop(0,col("--hero-a"));g.addColorStop(.6,col("--hero-b"));g.addColorStop(1,col("--hero-c"));ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+  ctx.fillStyle="rgba(255,255,255,.12)";ctx.beginPath();ctx.moveTo(0,H*.86);[[.12,.8],[.26,.84],[.4,.76],[.55,.83],[.7,.77],[.86,.84],[1,.79]].forEach(([x,y])=>ctx.lineTo(W*x,H*y));ctx.lineTo(W,H);ctx.lineTo(0,H);ctx.fill();
+  const wide=W>H,pad=wide?56:70,ls=wide?150:190;if(logo.naturalWidth)ctx.drawImage(logo,W-pad-ls,pad-10,ls,ls);
+  ctx.fillStyle=col("--hero-eye")||"#F6B544";ctx.font="700 "+(wide?26:32)+"px Montserrat, Arial, sans-serif";ctx.fillText("THIS WEEKEND IN",pad,pad+30);
+  ctx.fillStyle="#fff";ctx.font="800 "+(wide?60:78)+"px Montserrat, Arial, sans-serif";ctx.fillText("Ogden Valley",pad,pad+(wide?95:115));
+  const f=new Intl.DateTimeFormat("en-US",{timeZone:S.TZ,month:"long",day:"numeric"});ctx.font="600 "+(wide?26:34)+"px 'Source Sans 3', Arial, sans-serif";ctx.fillStyle="#E3ECF6";ctx.fillText(f.format(new Date(a+36e5))+" – "+f.format(new Date(b-36e5)),pad,pad+(wide?135:165));
+  let y=pad+(wide?190:240);const list=evs(),maxY=H-(wide?70:110),cols=wide?2:1,colW=(W-pad*2-(cols-1)*30)/cols;let c=0,startY=y;
+  if(!list.length){ctx.font="600 34px 'Source Sans 3', Arial";ctx.fillStyle="#fff";wrap("Nothing posted yet. Send your event to ogdenvalley.github.io",pad,y+20,W-pad*2,44,3)}
+  for(const e of list){const x=pad+c*(colW+30);const day=new Intl.DateTimeFormat("en-US",{timeZone:S.TZ,weekday:"short"}).format(new Date(e.s<a?a+36e5:e.s));const time=e.allDay?"All day":S.timeStr(e.s);
+    if(y+(wide?84:110)>maxY){if(c<cols-1){c++;y=startY;continue}else break}
+    ctx.fillStyle="rgba(255,255,255,.14)";ctx.fillRect(x,y,colW,wide?72:96);ctx.fillStyle=e.cal==="ov"?"#6CC08C":"#6FA8DC";ctx.fillRect(x,y,8,wide?72:96);
+    ctx.fillStyle=col("--hero-eye")||"#F6B544";ctx.font="700 "+(wide?18:22)+"px Montserrat, Arial";ctx.fillText((day+" · "+time).toUpperCase(),x+22,y+(wide?24:30));
+    ctx.fillStyle="#fff";ctx.font="700 "+(wide?24:32)+"px 'Source Sans 3', Arial";wrap(e.t+(e.loc?" — "+e.loc.split(",")[0]:""),x+22,y+(wide?54:70),colW-40,30,1);
+    y+=wide?84:110}
+  ctx.fillStyle="#fff";ctx.font="700 "+(wide?22:28)+"px Montserrat, Arial";ctx.fillText("ogdenvalley.github.io",pad,H-(wide?28:44));
+  ctx.font="600 "+(wide?18:22)+"px 'Source Sans 3', Arial";ctx.fillStyle="#E3ECF6";const t2="Full calendar + subscribe on the site";ctx.fillText(t2,W-pad-ctx.measureText(t2).width,H-(wide?28:44));
+  S.renderEvents(document.getElementById("wk-list"),list,{emptyText:"No events posted for this weekend yet."})}
+function dl(W,H,name){draw(W,H);const a=document.createElement("a");a.download=name;a.href=cv.toDataURL("image/png");document.body.append(a);a.click();a.remove();draw(1080,1350)}
+document.getElementById("dl-ig").onclick=()=>dl(1080,1350,"this-weekend-ogden-valley-instagram.png");
+document.getElementById("dl-fb").onclick=()=>dl(1200,630,"this-weekend-ogden-valley-facebook.png");
+document.getElementById("which").onchange=()=>draw(1080,1350);
+if(document.fonts&&document.fonts.ready)await document.fonts.ready;draw(1080,1350);
+})();
+</script>
+</body>
+</html>

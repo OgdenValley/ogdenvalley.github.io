@@ -96,19 +96,83 @@ function auroraText(kp){
 }
 
 /* ---------- listings ---------- */
-function listing(box, items, kind){
+const slug = s => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+function reviewLink(name){ if (!C.reviewForm || !C.reviewEntry) return null; return C.reviewForm + (C.reviewForm.includes("?") ? "&" : "?") + "usp=pp_url&" + C.reviewEntry + "=" + encodeURIComponent(name); }
+function starText(n){ const f = Math.round(n); return "★★★★★".slice(0, f) + "☆☆☆☆☆".slice(0, 5 - f); }
+function reviewBlock(p, R){
+  const r = R && R.byBusiness && R.byBusiness[slug(p.name)];
+  const wrap = el("div", {class: "reviews"});
+  if (r && r.count) {
+    wrap.append(el("div", {class: "stars", "aria-label": r.avg + " out of 5 stars"}, [el("span", {class: "st", text: starText(r.avg)}), document.createTextNode(" " + r.avg + " · " + r.count + " review" + (r.count === 1 ? "" : "s"))]));
+    const list = el("details", {}, [el("summary", {text: "Read reviews"})]);
+    r.items.slice(0, 20).forEach(x => list.append(el("blockquote", {class: "rev"}, [el("div", {class: "st", text: starText(x.stars)}), el("p", {text: x.text}), el("cite", {text: "— " + x.name + (x.date ? ", " + fmt({month: "short", year: "numeric"}).format(new Date(x.date)) : "")})])));
+    wrap.append(list);
+  }
+  const link = reviewLink(p.name);
+  if (link) wrap.append(el("a", {class: "btn ghost small-btn", href: link, target: "_blank", rel: "noopener", text: r && r.count ? "Leave a review" : "Be the first to review"}));
+  return wrap.childNodes.length ? wrap : null;
+}
+function listing(box, items, kind, R){
   box.replaceChildren();
   if (!items.length) { box.append(el("div", {class: "empty"}, [ el("p", {text: kind === "artists" ? "Artist listings are being gathered. Are you an Ogden Valley or Weber County artist? Ask to be listed." : "Listings are being gathered and checked. Own or love a place in the Valley? Send it in."}),
     el("a", {class: "btn blue", "data-form": kind === "artists" ? "artist" : "business", href: (C.forms && C.forms[kind === "artists" ? "artist" : "business"]) || "submit.html", text: kind === "artists" ? "Ask to be listed" : "Send a listing"}) ])); return; }
   const grid = el("div", {class: "grid"}); box.append(grid);
-  items.slice().sort((a,b) => a.name.localeCompare(b.name)).forEach(p => grid.append(el("article", {class: "card", "data-town": p.town || p.area || ""}, [
+  items.slice().sort((a,b) => a.name.localeCompare(b.name)).forEach(p => grid.append(el("article", {class: "card", id: slug(p.name), "data-town": p.town || p.area || ""}, [
     el("h3", {text: p.name}),
     el("div", {class: "meta", text: [p.type || p.medium, p.town || p.area].filter(Boolean).join(" · ")}),
     p.blurb ? el("p", {text: p.blurb}) : null,
     p.address ? el("div", {class: "meta", text: p.address}) : null,
     p.phone ? el("div", {class: "meta", text: p.phone}) : null,
-    p.link ? el("a", {href: p.link, target: "_blank", rel: "noopener", text: "Website or page"}) : null ])));
+    p.link ? el("a", {href: p.link, target: "_blank", rel: "noopener", text: "Website or page"}) : null,
+    kind !== "artists" ? reviewBlock(p, R) : null ])));
 }
 
-window.OVE_SITE = {C, P, el, $, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, dayKey, dayName, timeStr, todayKey, TZ};
+
+/* ---------- shared data loaders ---------- */
+async function loadJSON(name){ try { const r = await fetch(name, {cache: "no-store"}); if (!r.ok) throw 0; return await r.json(); } catch (e) { return null; } }
+function renderMeetings(box, L, n, full){
+  if (!box) return; box.replaceChildren();
+  const ms = (L && L.meetings) || [];
+  if (!ms.length) { box.append(el("p", {class: "meta", text: L && L.updated ? "No upcoming meetings posted right now." : "Meeting notices will appear here once the hourly update starts running."})); return; }
+  const f = t => t ? fmt({weekday: "short", month: "short", day: "numeric", hour: "numeric", minute: "2-digit"}).format(new Date(t)) : "";
+  const list = el("div", {style: "display:grid;gap:8px"});
+  ms.slice(0, n).forEach(m => list.append(el("div", {class: full ? "card" : ""}, [
+    el("div", {style: "font-weight:700"}, [el("a", {href: m.link, target: "_blank", rel: "noopener", text: m.title})]),
+    el("div", {class: "meta", style: "font-size:15px", text: [m.body, f(m.start)].filter(Boolean).join(" · ")}),
+    full ? el("div", {class: "meta", style: "font-size:14px", text: "Source: " + m.source}) : null ])));
+  box.append(list);
+}
+function renderSeason(L){
+  const body = document.getElementById("season-body"); if (!body) return;
+  const winter = [11,12,1,2,3,4].includes(mo); body.replaceChildren();
+  if (winter) {
+    document.getElementById("season-eye").textContent = "Snow report"; document.getElementById("season-h").textContent = "Mountain snow";
+    const sn = (L && L.snow || []).filter(s => s.depth);
+    if (sn.length) sn.forEach(s => body.append(el("div", {text: s.name + " (" + s.elev.toLocaleString() + " ft): " + s.depth.value + " in. of snow"})));
+    else body.append(el("div", {text: "Snow depths appear here once the season gets going."}));
+    body.append(el("div", {style: "margin-top:6px"}, [el("a", {href: "live.html", text: "Resort cams and snow reports"})]));
+    body.append(el("div", {style: "font-size:13px;margin-top:4px", text: "Source: USDA NRCS SNOTEL"}));
+  } else {
+    document.getElementById("season-eye").textContent = "Pineview Reservoir"; document.getElementById("season-h").textContent = "How full is Pineview?";
+    const pv = L && L.pineview;
+    if (pv) body.append(el("div", {class: "big", text: pv.percent + "% full"}), el("div", {text: pv.acreFeet.toLocaleString() + " acre-feet" + (pv.date ? " on " + fmt({month: "short", day: "numeric"}).format(new Date(pv.date)) : "")}));
+    else body.append(el("div", {text: "Pineview is being drawn down in 2026 for a pipeline replacement. Water levels will appear here when the data comes in."}));
+    body.append(el("div", {style: "font-size:13px;margin-top:4px", text: "Source: U.S. Bureau of Reclamation"}));
+  }
+}
+/* ---------- alert bar (weather warnings, nearby fires) ---------- */
+(async function(){ const bar = document.getElementById("alert-bar"); if (!bar) return;
+  const sf = await loadJSON("safety.json"); if (!sf) return;
+  const items = (sf.weather || []).map(a => a.event).concat((sf.fires || []).filter(f => f.county === "Weber").map(f => f.name + " in Weber County"));
+  if (!items.length) return;
+  bar.replaceChildren(el("div", {class: "container"}, [el("strong", {text: "Alert: "}), document.createTextNode([...new Set(items)].slice(0, 3).join(" · ") + " "), el("a", {href: "safety.html", text: "Details"})]));
+  bar.hidden = false; })();
+/* ---------- visit counts (GoatCounter, no cookies) ---------- */
+if (C.goatcounter) {
+  const sc = document.createElement("script"); sc.async = true; sc.src = "https://gc.zgo.at/count.js"; sc.dataset.goatcounter = "https://" + C.goatcounter + ".goatcounter.com/count"; document.head.append(sc);
+  const out = document.getElementById("gc-count");
+  if (out && C.showVisitCount) fetch("https://" + C.goatcounter + ".goatcounter.com/counter/TOTAL.json").then(r => r.ok ? r.json() : null).then(j => { if (j && j.count) out.textContent = j.count + " visits to the site"; }).catch(() => {});
+}
+
+window.OVE_SITE = {C, P, el, $, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, dayKey, dayName, timeStr, todayKey, TZ};
 })();

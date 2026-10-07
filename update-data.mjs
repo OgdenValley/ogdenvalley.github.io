@@ -135,5 +135,144 @@ async function sky(){
   writeIfChanged("sky.json", out);
 }
 
+
+/* ---------------- SAFETY: weather alerts, fires, city alerts ---------------- */
+async function getJSON(u){ const r = await fetch(u, {headers: UA}); if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); }
+async function getText(u){ const r = await fetch(u, {headers: UA}); if (!r.ok) throw new Error("HTTP " + r.status); return r.text(); }
+const strip = s => String(s || "").replace(/<!\[CDATA\[|\]\]>/g, "").replace(/<[^>]+>/g, " ").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&#39;|&rsquo;/g, "'").replace(/&quot;/g, '"').replace(/\s+/g, " ").trim();
+function rssItems(xml){ return [...xml.matchAll(/<item[\s>][\s\S]*?<\/item>/g)].map(m => { const x = m[0]; const g = t => { const r = x.match(new RegExp("<" + t + "[^>]*>([\\s\\S]*?)</" + t + ">")); return r ? strip(r[1]) : ""; };
+  return {title: g("title"), link: g("link"), date: g("pubDate") ? Date.parse(g("pubDate")) : null, text: g("description").slice(0, 400)}; }); }
+
+async function safety(){
+  let old = {}; try { old = JSON.parse(fs.readFileSync("safety.json", "utf8")); } catch {}
+  const out = {updated: new Date().toISOString(), weather: old.weather || [], fires: old.fires || [], city: old.city || [], status: {}};
+  // National Weather Service alerts that include Weber County (FIPS 049057)
+  try {
+    const j = await getJSON("https://api.weather.gov/alerts/active?area=UT");
+    out.weather = (j.features || []).map(f => f.properties).filter(p => (p.geocode && (p.geocode.SAME || []).includes("049057")) || /Weber/i.test(p.areaDesc || ""))
+      .map(p => ({event: p.event, severity: p.severity, headline: p.headline, area: p.areaDesc, starts: p.onset || p.effective, ends: p.ends || p.expires, text: (p.description || "").slice(0, 900), instruction: (p.instruction || "").slice(0, 500), link: "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219", source: "National Weather Service"}));
+    out.status.weather = "ok"; console.log("NWS alerts", out.weather.length);
+  } catch (e) { out.status.weather = "failed"; console.log("NWS failed:", e.message); }
+  // Wildfires in and around Weber County (NIFC / WFIGS current incidents)
+  try {
+    const where = "POOState='US-UT' AND POOCounty IN ('Weber','Davis','Morgan','Box Elder','Cache','Rich','Summit')";
+    const u = "https://services3.arcgis.com/T4QMspbfLg3qTGWY/arcgis/rest/services/WFIGS_Incident_Locations_Current/FeatureServer/0/query?where=" + encodeURIComponent(where) + "&outFields=IncidentName,POOCounty,IncidentSize,PercentContained,FireDiscoveryDateTime,ModifiedOnDateTime_dt,IncidentTypeCategory&f=json";
+    const j = await getJSON(u);
+    if (j.error) throw new Error(j.error.message || "query error");
+    out.fires = (j.features || []).map(f => f.attributes).filter(a => a.IncidentTypeCategory !== "RX")
+      .map(a => ({name: (a.IncidentName || "Fire").trim() + " Fire", county: a.POOCounty, acres: a.IncidentSize, contained: a.PercentContained, discovered: a.FireDiscoveryDateTime, updated: a.ModifiedOnDateTime_dt, source: "National Interagency Fire Center (WFIGS)", link: "https://utahfireinfo.gov/"}))
+      .sort((a, b) => (a.county === "Weber" ? -1 : 0) - (b.county === "Weber" ? -1 : 0) || (b.acres || 0) - (a.acres || 0));
+    out.status.fires = "ok"; console.log("fires", out.fires.length);
+  } catch (e) { out.status.fires = "failed"; console.log("fires failed:", e.message); }
+  // City alert feeds (water main breaks, road work)
+  const feeds = [
+    {name: "Ogden City Alerts", url: "https://www.ogdencity.gov/RSSFeed.aspx?ModID=63&CID=All-0", link: "https://www.ogdencity.gov/AlertCenter.aspx"}
+  ];
+  const city = [];
+  for (const f of feeds) {
+    try { const items = rssItems(await getText(f.url)).filter(i => i.title).slice(0, 15).map(i => ({...i, source: f.name, sourceLink: f.link})); city.push(...items); out.status[f.name] = "ok"; console.log(f.name, items.length); }
+    catch (e) { out.status[f.name] = "failed"; console.log(f.name, "failed:", e.message); city.push(...(old.city || []).filter(i => i.source === f.name)); }
+  }
+  out.city = city.sort((a, b) => (b.date || 0) - (a.date || 0));
+  writeIfChanged("safety.json", out);
+}
+
+/* ---------------- LOCAL: public meetings, snow, Pineview ---------------- */
+async function local(){
+  let old = {}; try { old = JSON.parse(fs.readFileSync("local.json", "utf8")); } catch {}
+  const out = {updated: new Date().toISOString(), meetings: [], snow: old.snow || [], pineview: old.pineview || null, status: {}};
+  // Utah Public Notice Website — public bodies (add more ids here)
+  const bodies = [
+    {id: 9431, name: "Ogden Valley City Council"},
+    {id: 313, name: "Huntsville Town Council"}
+  ];
+  for (const b of bodies) {
+    try {
+      const html = await getText("https://www.utah.gov/pmn/sitemap/publicbody/" + b.id + ".html");
+      const rows = [...html.matchAll(/<a[^>]+href="([^"]*\/pmn\/sitemap\/notice\/\d+\.html)"[^>]*>([\s\S]*?)<\/a>([\s\S]{0,400})/g)];
+      let n = 0;
+      for (const r of rows) {
+        const title = strip(r[2]); const near = strip(r[3]) + " " + title;
+        const d = near.match(/(\d{4})\/(\d{2})\/(\d{2})\s+(\d{1,2}):(\d{2})\s*(AM|PM)/i) || near.match(/(\d{4})-(\d{2})-(\d{2})[ T](\d{1,2}):(\d{2})\s*(AM|PM)?/i);
+        let t = null;
+        if (d) { let h = +d[4] % 12; if ((d[6] || "").toUpperCase() === "PM") h += 12; const guess = Date.UTC(+d[1], +d[2] - 1, +d[3], h, +d[5]); t = guess - icsTzOff(guess, "America/Denver"); }
+        if (!title) continue;
+        const link = r[1].startsWith("http") ? r[1] : "https://www.utah.gov" + r[1];
+        out.meetings.push({body: b.name, title, start: t, link, source: "Utah Public Notice Website"}); n++;
+      }
+      out.status[b.name] = n ? "ok" : "no notices found"; console.log(b.name, n, "notices");
+    } catch (e) { out.status[b.name] = "failed"; console.log(b.name, "failed:", e.message); out.meetings.push(...(old.meetings || []).filter(m => m.body === b.name)); }
+  }
+  const now = Date.now();
+  out.meetings = out.meetings.filter(m => !m.start || m.start > now - 864e5).sort((a, b) => (a.start || 9e15) - (b.start || 9e15)).slice(0, 20);
+  // SNOTEL snow depth (NRCS)
+  try {
+    const end = new Date().toISOString().slice(0, 10), begin = new Date(Date.now() - 3 * 864e5).toISOString().slice(0, 10);
+    const sites = [{t: "332:UT:SNTL", name: "Ben Lomond Peak", elev: 7690}, {t: "333:UT:SNTL", name: "Ben Lomond Trail", elev: 5970}, {t: "634:UT:SNTL", name: "Monte Cristo", elev: 8930}];
+    const j = await getJSON("https://wcc.sc.egov.usda.gov/awdbRestApi/services/v1/data?stationTriplets=" + sites.map(s => s.t).join(",") + "&elements=WTEQ,SNWD&duration=DAILY&beginDate=" + begin + "&endDate=" + end);
+    out.snow = sites.map(s => { const st = (j || []).find(x => x.stationTriplet === s.t) || {}; const get = el => { const d = (st.data || []).find(x => x.stationElement && x.stationElement.elementCode === el); const v = d && (d.values || []).filter(v => v.value != null).pop(); return v ? {value: v.value, date: v.date} : null; };
+      return {name: s.name, elev: s.elev, depth: get("SNWD"), water: get("WTEQ"), link: "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=" + s.t.split(":")[0], source: "USDA NRCS SNOTEL"}; });
+    out.status.snow = "ok"; console.log("snow", JSON.stringify(out.snow.map(s => s.depth)));
+  } catch (e) { out.status.snow = "failed"; console.log("snow failed:", e.message); }
+  // Pineview Reservoir storage (Bureau of Reclamation RISE, item 652)
+  try {
+    const end = new Date().toISOString().slice(0, 10), begin = new Date(Date.now() - 10 * 864e5).toISOString().slice(0, 10);
+    const txt = await getText("https://data.usbr.gov/rise/api/result?itemId=652&dateTime%5Bbefore%5D=" + end + "&dateTime%5Bafter%5D=" + begin + "&order%5BdateTime%5D=DESC&itemsPerPage=5");
+    let val = null, when = null;
+    try { const j = JSON.parse(txt); const rows = j["hydra:member"] || j.data || j; const r = Array.isArray(rows) ? rows[0] : null; if (r) { const a = r.attributes || r; val = +a.result; when = a.dateTime; } } catch {}
+    if (val && !isNaN(val)) { out.pineview = {acreFeet: val, percent: Math.round(val / 110150 * 100), date: when, source: "U.S. Bureau of Reclamation", link: "https://data.usbr.gov/location/437"}; out.status.pineview = "ok"; console.log("pineview", val); }
+    else throw new Error("no value in response");
+  } catch (e) { out.status.pineview = "failed"; console.log("pineview failed:", e.message); }
+  writeIfChanged("local.json", out);
+}
+
+/* ---------------- REVIEWS (Google Form → published sheet tab, CSV) ---------------- */
+function parseCSV(t){ const rows = []; let row = [], cur = "", q = false;
+  for (let i = 0; i < t.length; i++) { const c = t[i];
+    if (q) { if (c === '"') { if (t[i + 1] === '"') { cur += '"'; i++; } else q = false; } else cur += c; }
+    else if (c === '"') q = true; else if (c === ",") { row.push(cur); cur = ""; }
+    else if (c === "\n" || c === "\r") { if (c === "\r" && t[i + 1] === "\n") i++; row.push(cur); rows.push(row); row = []; cur = ""; }
+    else cur += c; }
+  if (cur || row.length) { row.push(cur); rows.push(row); } return rows; }
+const slugify = s => String(s || "").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
+const BAD = /\b(fuck|shit|bitch|bastard|asshole|dick|cunt|whore|slut|damn you|retard|fag)\w*/i;
+function heldReason(text, name){
+  const all = (text || "") + " " + (name || "");
+  if (BAD.test(all)) return "language";
+  if (/https?:\/\/|www\.|\b[a-z0-9-]+\.(com|net|org|biz|info|io|co)\b/i.test(all)) return "link";
+  if (/\b\d{3}[\s.\-)]*\d{3}[\s.\-]*\d{4}\b/.test(all)) return "phone";
+  if (/[\w.+-]+@[\w-]+\.[\w.]+/.test(all)) return "email";
+  if ((text || "").trim().length < 3) return "empty";
+  return "";
+}
+async function reviews(){
+  let cfg = {}; try { cfg = JSON.parse(fs.readFileSync("calendars.json", "utf8")); } catch {}
+  const url = (cfg._reviewsCsv || "").trim();
+  let old = {}; try { old = JSON.parse(fs.readFileSync("reviews.json", "utf8")); } catch {}
+  if (!url) { console.log("reviews: no sheet link yet"); if (!old.byBusiness) writeIfChanged("reviews.json", {updated: new Date().toISOString(), byBusiness: {}, held: 0}); return; }
+  try {
+    const rows = parseCSV(await getText(url)).filter(r => r.some(c => c.trim()));
+    const head = (rows.shift() || []).map(h => h.toLowerCase());
+    const col = re => head.findIndex(h => re.test(h));
+    const iT = col(/timestamp|date/), iB = col(/business/), iS = col(/star|rating/), iR = col(/review|comment/), iN = col(/name/), iH = col(/^hide/);
+    const by = {}; let held = 0;
+    for (const r of rows) {
+      if (iH >= 0 && /hide/i.test(r[iH] || "")) continue;
+      const biz = (r[iB] || "").trim(), text = (r[iR] || "").trim(), name = (r[iN] || "").trim().slice(0, 40);
+      const stars = Math.max(1, Math.min(5, parseInt(r[iS], 10) || 0));
+      if (!biz || !stars) continue;
+      if (heldReason(text, name)) { held++; continue; }
+      const k = slugify(biz); by[k] = by[k] || {name: biz, items: []};
+      by[k].items.push({name: name || "A Valley visitor", stars, text: text.slice(0, 1200), date: iT >= 0 ? Date.parse(r[iT]) || null : null});
+    }
+    for (const k in by) { const it = by[k].items.sort((a, b) => (b.date || 0) - (a.date || 0)); by[k].count = it.length; by[k].avg = Math.round(it.reduce((a, b) => a + b.stars, 0) / it.length * 10) / 10; }
+    console.log("reviews", Object.keys(by).length, "businesses,", held, "held back");
+    writeIfChanged("reviews.json", {updated: new Date().toISOString(), byBusiness: by, held});
+  } catch (e) { console.log("reviews failed:", e.message, "- keeping the last good copy"); }
+}
+
 await calendars();
 await sky();
+await safety();
+await local();
+await reviews();

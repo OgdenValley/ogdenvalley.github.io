@@ -124,3 +124,13 @@ input[type=search]{font:17px var(--body);color:var(--ink);background:var(--card)
 .prose p{margin:0 0 14px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
 @media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+.alert-bar{background:#B3261E;color:#fff;font-weight:600;font-size:16px}
+.alert-bar .container{padding-block:10px}
+.alert-bar a{color:#fff;text-decoration:underline}
+.reviews{display:grid;gap:8px;border-top:1px solid var(--line);padding-top:10px;margin-top:4px}
+.stars{font-weight:700}.st{color:#E0A100;letter-spacing:1px}
+.rev{margin:8px 0 0;padding:10px 12px;background:var(--soft);border-radius:8px}.rev p{margin:4px 0}.rev cite{font-size:14px;color:var(--muted);font-style:normal}
+.btn.small-btn{font-size:15px;padding:7px 12px;color:var(--blue);justify-self:start}
+details summary{cursor:pointer;color:var(--blue)}
+.card{scroll-margin-top:100px}
