@@ -15,9 +15,9 @@ const yr = +new Intl.DateTimeFormat("en-US", {timeZone: TZ, year: "numeric"}).fo
 const season = mo === 10 ? "halloween" : [12,1,2].includes(mo) ? "winter" : [3,4,5].includes(mo) ? "spring" : [6,7,8].includes(mo) ? "summer" : "fall";
 document.documentElement.dataset.season = season;
 const logo = season === "halloween" ? "10-years-halloween" : (yr <= 2026 ? "10-years" : season);
-document.querySelectorAll("img[data-logo]").forEach(i => { i.src = "assets/logos/" + logo + "-" + (i.dataset.logo || "512") + ".png"; });
-const fav = document.querySelector("link[rel=icon]"); if (fav) fav.href = "assets/logos/" + logo + "-32.png";
-const apple = document.querySelector("link[rel=apple-touch-icon]"); if (apple) apple.href = "assets/logos/" + logo + "-180.png";
+document.querySelectorAll("img[data-logo]").forEach(i => { i.src = "logo-" + logo + "-" + (i.dataset.logo || "512") + ".png"; });
+const fav = document.querySelector("link[rel=icon]"); if (fav) fav.href = "logo-" + logo + "-32.png";
+const apple = document.querySelector("link[rel=apple-touch-icon]"); if (apple) apple.href = "logo-" + logo + "-180.png";
 const years = yr - (C.startYear || 2016);
 document.querySelectorAll("[data-years]").forEach(n => n.textContent = years);
 
@@ -48,7 +48,7 @@ function calLinks(id){ if (!id) return null; const enc = encodeURIComponent(id);
            https: "https://calendar.google.com/calendar/ical/" + enc + "/public/basic.ics",
            view: "https://calendar.google.com/calendar/embed?src=" + enc + "&ctz=" + encodeURIComponent(TZ) }; }
 async function loadEvents(){
-  try { const r = await fetch("data/events.json", {cache: "no-store"}); if (!r.ok) throw 0; return await r.json(); }
+  try { const r = await fetch("events.json", {cache: "no-store"}); if (!r.ok) throw 0; return await r.json(); }
   catch (e) { return null; }
 }
 function allEvents(data, which){
@@ -87,7 +87,7 @@ function moon(date){
   const idx = Math.floor(((age / syn) * 8) + 0.5) % 8;
   return {age, illum, name: names[idx], dark: illum < 35};
 }
-async function loadSky(){ try { const r = await fetch("data/sky.json", {cache: "no-store"}); if (!r.ok) throw 0; return await r.json(); } catch (e) { return null; } }
+async function loadSky(){ try { const r = await fetch("sky.json", {cache: "no-store"}); if (!r.ok) throw 0; return await r.json(); } catch (e) { return null; } }
 function auroraText(kp){
   if (kp == null) return {cls: "quiet", text: "Northern lights forecast not available right now."};
   if (kp >= 7) return {cls: "good", text: "Northern lights alert: a strong storm is forecast (Kp " + kp.toFixed(1) + "). Look low on the northern horizon after dark, away from town lights. Phone cameras pick it up best."};

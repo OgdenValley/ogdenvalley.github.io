@@ -6,11 +6,11 @@ Ogden Valley Information & Events, celebrating 10 years. Community calendars for
 
 | To change… | Edit this file |
 |---|---|
-| Calendar IDs, newsletter link, Google Form links, email, photo contest theme, Business of the Week, Artist of the Month | `data/config.js` |
-| Restaurants, Valley businesses, local artists | `data/places.js` |
-| Calendar IDs for the automatic hourly update | `data/calendars.json` |
+| Calendar IDs, newsletter link, Google Form links, email, photo contest theme, Business of the Week, Artist of the Month | `config.js` |
+| Restaurants, Valley businesses, local artists | `places.js` |
+| Calendar IDs for the automatic hourly update | `calendars.json` |
 
-`data/events.json` and `data/sky.json` are written automatically every hour by
+`events.json` and `sky.json` are written automatically every hour by
 `.github/workflows/update-data.yml`. Don't edit them by hand.
 
 ## What runs on its own

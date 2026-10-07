@@ -1,6 +1,6 @@
 // Runs every hour on GitHub (see .github/workflows/update-data.yml).
-// 1) Pulls the two public Google Calendars into data/events.json
-// 2) Pulls the NOAA northern-lights (Kp) forecast and NWS cloud cover into data/sky.json
+// 1) Pulls the two public Google Calendars into events.json
+// 2) Pulls the NOAA northern-lights (Kp) forecast and NWS cloud cover into sky.json
 // Files are only rewritten when something actually changed.
 import fs from "node:fs";
 
@@ -66,8 +66,8 @@ function writeIfChanged(path, obj){
 const UA = {"User-Agent": "ogdenvalley.github.io (Ogden Valley Info & Events community site)", "Accept": "application/json, text/calendar, */*"};
 
 async function calendars(){
-  const ids = JSON.parse(fs.readFileSync("data/calendars.json", "utf8"));
-  let old = {}; try { old = JSON.parse(fs.readFileSync("data/events.json", "utf8")).calendars || {}; } catch {}
+  const ids = JSON.parse(fs.readFileSync("calendars.json", "utf8"));
+  let old = {}; try { old = JSON.parse(fs.readFileSync("events.json", "utf8")).calendars || {}; } catch {}
   const now = Date.now(), from = now - 864e5, to = now + 180 * 864e5;
   const out = {updated: new Date().toISOString(), calendars: {}};
   for (const [key, cal] of Object.entries(ids)) {
@@ -86,11 +86,11 @@ async function calendars(){
       out.calendars[key] = old[key] || {name: cal.name, events: []};
     }
   }
-  writeIfChanged("data/events.json", out);
+  writeIfChanged("events.json", out);
 }
 
 async function sky(){
-  let old = {}; try { old = JSON.parse(fs.readFileSync("data/sky.json", "utf8")); } catch {}
+  let old = {}; try { old = JSON.parse(fs.readFileSync("sky.json", "utf8")); } catch {}
   const out = {updated: new Date().toISOString(), kpMaxNext24: old.kpMaxNext24 ?? null, cloudsTonight: old.cloudsTonight ?? null};
   try {
     const r = await fetch("https://services.swpc.noaa.gov/products/noaa-planetary-k-index-forecast.json", {headers: UA});
@@ -121,7 +121,7 @@ async function sky(){
     out.cloudsTonight = hrs.length ? Math.round(hrs.reduce((a, b) => a + b, 0) / hrs.length) : null;
     console.log("clouds tonight", out.cloudsTonight);
   } catch (e) { console.log("clouds failed:", e.message); }
-  writeIfChanged("data/sky.json", out);
+  writeIfChanged("sky.json", out);
 }
 
 await calendars();

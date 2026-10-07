@@ -9,7 +9,7 @@ window.OVE = {
      Paste each calendar's "Calendar ID" (Google Calendar → Settings →
      the calendar → Integrate calendar). It looks like
      abc123@group.calendar.google.com
-     Also add the same two IDs to data/calendars.json so the site can
+     Also add the same two IDs to calendars.json so the site can
      pull the events in automatically every hour. */
   calendars: {
     ov:    { name: "Ogden Valley",  id: "" },
@@ -38,7 +38,7 @@ window.OVE = {
     month: "October 2026",
     theme: "Fall color and Halloween in the Valley",
     deadline: "October 31",
-    lastWinner: null          // { name: "", title: "", image: "data/photos/...jpg" }
+    lastWinner: null          // { name: "", title: "", image: "photo-...jpg" }
   },
 
   /* --- Features (fill in each week / month) --------------------------- */
