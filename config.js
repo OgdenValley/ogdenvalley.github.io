@@ -13,7 +13,7 @@ window.OVE = {
      pull the events in automatically every hour. */
   calendars: {
     ov:    { name: "Ogden Valley",  id: "ogdenvalleyevent@gmail.com" },
-    weber: { name: "Weber County", id: "" }
+    weber: { name: "Weber County", id: "7dd09b529f61c31fbf512699af140b642931413a74f0613f52725dca594f30f1@group.calendar.google.com" }
   },
 
   /* --- Weekly newsletter (new Substack) ------------------------------- */

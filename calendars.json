@@ -1,6 +1,5 @@
 {
   "_help": "Main calendars: ov and weber (must be public). Extra sources: add an entry with \"into\" set to ov or weber and its events are added to that calendar on the site.",
   "ov":    { "name": "Ogden Valley",  "id": "ogdenvalleyevent@gmail.com" },
-  "weber": { "name": "Weber County", "id": "" },
-  "fbc":   { "name": "FBC Church Calendar", "id": "7dd09b529f61c31fbf512699af140b642931413a74f0613f52725dca594f30f1@group.calendar.google.com", "into": "ov" }
+  "weber": { "name": "Weber County", "id": "7dd09b529f61c31fbf512699af140b642931413a74f0613f52725dca594f30f1@group.calendar.google.com" }
 }
