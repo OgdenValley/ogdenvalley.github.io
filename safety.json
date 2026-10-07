@@ -1,17 +1,8 @@
 {
- "updated": "2026-10-07T14:19:41.558Z",
+ "updated": "2026-10-07T17:31:48.304Z",
  "weather": [],
  "fires": [],
- "city": [
-  {
-   "title": "Vitt Dr from Fowler Ave to 925 E, and 925 E from Vitt Dr to 1st St, and 1st St from Quincy Ave to 925 E",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2059",
-   "date": 1791368770000,
-   "text": "Emergency Water Shutdown",
-   "source": "Ogden City Alerts",
-   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
-  }
- ],
+ "city": [],
  "status": {
   "weather": "ok",
   "fires": "ok",

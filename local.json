@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-07T14:19:42.510Z",
+ "updated": "2026-10-07T17:31:49.394Z",
  "meetings": [
   {
    "body": "Ogden Valley City Council",
@@ -25,7 +25,7 @@
     "date": "2026-10-06"
    },
    "water": {
-    "value": 0.2,
+    "value": 0,
     "date": "2026-10-06"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
@@ -35,11 +35,11 @@
    "name": "Ben Lomond Trail",
    "elev": 5970,
    "depth": {
-    "value": 1,
+    "value": 0,
     "date": "2026-10-06"
    },
    "water": {
-    "value": 0.3,
+    "value": 0,
     "date": "2026-10-06"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
