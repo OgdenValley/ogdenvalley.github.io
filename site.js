@@ -64,7 +64,7 @@ function eventCard(e){
   const what = e.url ? el("a", {href: e.url, target: "_blank", rel: "noopener", text: e.t}) : document.createTextNode(e.t);
   return el("article", {class: "event", style: "--cal:" + CAL_COLOR[e.cal]}, [
     el("div", {class: "when", text: when}),
-    el("div", {}, [ el("div", {class: "tag", text: name}), el("div", {class: "what"}, [what]),
+    el("div", {}, [ el("div", {class: "tag", text: name + (e.src ? " · from " + e.src : "")}), el("div", {class: "what"}, [what]),
       e.loc ? el("div", {class: "where", text: e.loc}) : null,
       e.desc ? el("div", {class: "desc", text: e.desc.length > 240 ? e.desc.slice(0, 237) + "…" : e.desc}) : null ]) ]);
 }

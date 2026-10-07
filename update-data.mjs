@@ -65,27 +65,38 @@ function writeIfChanged(path, obj){
 }
 const UA = {"User-Agent": "ogdenvalley.github.io (Ogden Valley Info & Events community site)", "Accept": "application/json, text/calendar, */*"};
 
+async function fetchCal(id){
+  const r = await fetch("https://calendar.google.com/calendar/ical/" + encodeURIComponent(id) + "/public/basic.ics", {headers: UA});
+  if (!r.ok) throw new Error("HTTP " + r.status);
+  const txt = await r.text();
+  if (!txt.includes("BEGIN:VCALENDAR")) throw new Error("not a calendar (is it set to public?)");
+  return txt;
+}
 async function calendars(){
   const ids = JSON.parse(fs.readFileSync("calendars.json", "utf8"));
-  let old = {}; try { old = JSON.parse(fs.readFileSync("events.json", "utf8")).calendars || {}; } catch {}
+  let oldFile = {}; try { oldFile = JSON.parse(fs.readFileSync("events.json", "utf8")); } catch {}
+  const old = oldFile.calendars || {}, oldExtra = oldFile.sources || {};
   const now = Date.now(), from = now - 864e5, to = now + 180 * 864e5;
-  const out = {updated: new Date().toISOString(), calendars: {}};
-  for (const [key, cal] of Object.entries(ids)) {
-    if (key.startsWith("_")) continue;
+  const out = {updated: new Date().toISOString(), calendars: {}, sources: {}};
+  const entries = Object.entries(ids).filter(([k]) => !k.startsWith("_"));
+  // main calendars first
+  for (const [key, cal] of entries.filter(([, c]) => !c.into)) {
     const id = (cal.id || "").trim();
     if (!id) { out.calendars[key] = {name: cal.name, events: []}; continue; }
-    try {
-      const r = await fetch("https://calendar.google.com/calendar/ical/" + encodeURIComponent(id) + "/public/basic.ics", {headers: UA});
-      if (!r.ok) throw new Error("HTTP " + r.status);
-      const txt = await r.text();
-      if (!txt.includes("BEGIN:VCALENDAR")) throw new Error("not a calendar (is it set to public?)");
-      out.calendars[key] = {name: cal.name, events: icsParse(txt, from, to)};
-      console.log(key, out.calendars[key].events.length, "events");
-    } catch (e) {
-      console.log(key, "failed:", e.message, "- keeping the last good copy");
-      out.calendars[key] = old[key] || {name: cal.name, events: []};
-    }
+    try { out.calendars[key] = {name: cal.name, events: icsParse(await fetchCal(id), from, to)}; console.log(key, out.calendars[key].events.length, "events"); }
+    catch (e) { console.log(key, "failed:", e.message, "- keeping the last good copy"); out.calendars[key] = old[key] || {name: cal.name, events: []}; }
   }
+  // extra sources get added into a main calendar
+  for (const [key, cal] of entries.filter(([, c]) => c.into)) {
+    const id = (cal.id || "").trim(); if (!id) continue;
+    let evs;
+    try { evs = icsParse(await fetchCal(id), from, to).map(e => ({...e, src: cal.name})); console.log(key, evs.length, "events into", cal.into); }
+    catch (e) { console.log(key, "failed:", e.message, "- keeping the last good copy"); evs = oldExtra[key] || []; }
+    out.sources[key] = evs;
+    if (!out.calendars[cal.into]) out.calendars[cal.into] = {name: cal.into, events: []};
+    out.calendars[cal.into].events = out.calendars[cal.into].events.concat(evs).sort((a, b) => a.s - b.s);
+  }
+  // keep the file small: sources are only stored for fallback, not shown twice
   writeIfChanged("events.json", out);
 }
 

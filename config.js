@@ -12,7 +12,7 @@ window.OVE = {
      Also add the same two IDs to calendars.json so the site can
      pull the events in automatically every hour. */
   calendars: {
-    ov:    { name: "Ogden Valley",  id: "" },
+    ov:    { name: "Ogden Valley",  id: "ogdenvalleyevent@gmail.com" },
     weber: { name: "Weber County", id: "" }
   },
 
@@ -29,7 +29,7 @@ window.OVE = {
   },
 
   /* --- Contact -------------------------------------------------------- */
-  email: "",                  // the Ogden Valley Gmail address, shown as text
+  email: "ogdenvalleyevent@gmail.com",   // the Ogden Valley Gmail address, shown as text
   facebook: "https://www.facebook.com/ogdenvalleyevents",
   instagram: "",
 
