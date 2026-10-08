@@ -11,6 +11,14 @@
      now:      "open" | "short" | "closed"   (this week, for Who's Open)
      nowNote:  "Closed Mon-Tue until Thanksgiving"
    Artists use medium instead of type.
+   Home services also use:
+     job:      "Handyman & repairs" | "Cleaning & window washing" | "Landscaping & snow removal" | "Car detailing" | "Plumbing" | "Electrical" | "Heating & cooling" | "Pest control" | "Other"
+     serves:   "All of Ogden Valley"   (instead of a street address for home-based or mobile businesses)
+     hours:    "Mon-Fri, 9 a.m.-5 p.m."
+     links:    [{ label: "Facebook", href: "https://..." }]   (extra links)
+     sponsor:  true   (shows the Sponsor label; never changes the order)
+     note:     a short line shown in small print on the card
+   Small, local businesses only: no developers or home builders.
    ===================================================================== */
 window.OVE_PLACES = {
  "restaurants": [
@@ -434,6 +442,24 @@ window.OVE_PLACES = {
    "blurb": "Timeshare/resort lodging at Wolf Creek.",
    "address": "3718 N Wolf Creek Dr, Eden, UT 84310",
    "checked": "2026-10-07"
+  }
+ ],
+ "services": [
+  {
+   "name": "Yes, I Can Fix That",
+   "job": "Handyman & repairs",
+   "type": "Handyman & home repair",
+   "serves": "All of Ogden Valley",
+   "blurb": "Drywall repairs, door repairs, home maintenance and DIY classes. Never schedules two projects at once, so your job always gets the full attention you're paying for.",
+   "hours": "Mon-Fri, 9 a.m.-5 p.m.",
+   "phone": "801-917-4442",
+   "link": "https://icanfixthatut.com",
+   "links": [{"label": "Facebook", "href": "https://www.facebook.com/share/1Kb34tsM9i/"}, {"label": "Read their sponsor story", "href": "spotlight-yes-i-can-fix-that.html"}],
+   "tags": ["Veteran owned", "Insured", "On time"],
+   "photos": ["yes-i-can-fix-that-logo.jpg", "yicft-job-14-card.jpg", "yicft-job-27-card.jpg", "yicft-job-28-card.jpg", "yicft-job-12-card.jpg"],
+   "sponsor": true,
+   "note": "Owned by the publisher of this site.",
+   "checked": "2026-10-08"
   }
  ],
  "beauty": [

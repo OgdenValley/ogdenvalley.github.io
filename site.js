@@ -1,6 +1,6 @@
 /* Ogden Valley Info & Events — shared page code */
 (function(){
-const C = window.OVE || {}, P = window.OVE_PLACES || {restaurants:[],businesses:[],beauty:[],farm:[],foodtrucks:[],artists:[]};
+const C = window.OVE || {}, P = window.OVE_PLACES || {restaurants:[],businesses:[],beauty:[],farm:[],foodtrucks:[],services:[],artists:[]};
 const TZ = "America/Denver";
 const $ = (s, r) => (r || document).querySelector(s);
 const el = (tag, attrs, kids) => { const n = document.createElement(tag);
@@ -136,18 +136,39 @@ function listing(box, items, kind, R){
   const grid = el("div", {class: "grid"}); box.append(grid);
   items.slice().sort((a,b) => a.name.localeCompare(b.name)).forEach(p => grid.append(el("article", {class: "card", id: slug(p.name), "data-town": p.town || p.area || ""}, [
     photoStrip(p),
+    p.sponsor ? el("span", {class: "sponsor-badge", text: "Sponsor"}) : null,
     el("h3", {text: p.name}),
     el("div", {class: "meta", text: [p.type || p.medium, p.town || p.area].filter(Boolean).join(" · ")}),
     p.blurb ? el("p", {text: p.blurb}) : null,
+    p.serves ? el("div", {class: "meta", text: "Serves: " + p.serves}) : null,
     p.address ? el("div", {class: "meta", text: p.address}) : null,
-    p.phone ? el("div", {class: "meta", text: p.phone}) : null,
-    p.link ? el("a", {href: p.link, target: "_blank", rel: "noopener", text: "Website or page"}) : null,
+    p.hours ? el("div", {class: "meta", text: "Hours: " + p.hours}) : null,
+    p.phone ? el("div", {class: "meta"}, [el("a", {href: "tel:" + String(p.phone).replace(/[^0-9+]/g, ""), "data-track": "call: " + p.name, text: p.phone})]) : null,
+    (p.link || (p.links && p.links.length)) ? el("div", {class: "links"}, [p.link ? el("a", {href: p.link, target: "_blank", rel: "noopener", text: "Website or page"}) : null].concat((p.links || []).map(x => el("a", {href: x.href, target: "_blank", rel: "noopener", text: x.label})))) : null,
     listMeta(p),
+    p.note ? el("div", {class: "fine note", text: p.note}) : null,
     kind !== "artists" ? reviewBlock(p, R) : null,
     upd ? el("a", {class: "upd", href: upd, target: "_blank", rel: "noopener", text: kind === "artists" ? "Info changed? Let us know" : "Hours changed or closed? Let us know"}) : null ])));
   if (upd) box.append(el("p", {class: "upd-foot"}, [document.createTextNode(kind === "artists" ? "Know an artist we're missing, or something here that changed? " : "Hours different, a place closed, or one we're missing? "), el("a", {href: upd, target: "_blank", rel: "noopener", text: "Let us know"}), document.createTextNode(". Every update is checked before the listing changes.")]));
 }
 
+
+/* ---------- sponsors strip: any <div data-sponsors> shows the current sponsors from config.js ---------- */
+(function(){ const boxes = document.querySelectorAll("[data-sponsors]"); if (!boxes.length) return;
+  const today = new Date().toISOString().slice(0, 10);
+  const list = (C.sponsors || []).filter(s => s && s.name && (!s.until || s.until >= today));
+  boxes.forEach(box => { box.replaceChildren(); if (!list.length) return;
+    box.append(el("div", {class: "sponsors"}, [
+      el("p", {class: "eyebrow", text: "Thank you to our sponsors"}),
+      el("div", {class: "sp-grid"}, list.map(s => el("article", {class: "sp"}, [
+        s.logo ? el("img", {src: s.logo, alt: s.name + " logo", loading: "lazy", width: "240", height: "180"}) : null,
+        el("div", {}, [
+          el("span", {class: "sponsor-badge", text: s.tier || "Sponsor"}),
+          el("h3", {text: s.name}),
+          s.line ? el("p", {text: s.line}) : null,
+          el("div", {class: "links"}, [s.link ? el("a", {href: s.link, target: "_blank", rel: "noopener", "data-track": "sponsor: " + s.name, text: "Visit their site"}) : null, s.story ? el("a", {href: s.story, text: "Read their story"}) : null, s.listing ? el("a", {href: s.listing, text: "See their listing"}) : null]),
+          s.note ? el("div", {class: "fine note", text: s.note}) : null ]) ]))),
+      el("p", {class: "fine"}, [document.createTextNode("Sponsors are always labeled and never change the order of listings or events. "), el("a", {href: "sponsor.html", text: "Sponsor a spot"})]) ])); }); })();
 
 /* ---------- shared data loaders ---------- */
 async function loadJSON(name){ try { const r = await fetch(name, {cache: "no-store"}); if (!r.ok) throw 0; return await r.json(); } catch (e) { return null; } }
