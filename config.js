@@ -25,7 +25,7 @@ window.OVE = {
     business: "https://docs.google.com/forms/d/e/1FAIpQLSc-jh9kRzlErQ1jv698LT4prqLnCWFkdoJy6Bj5KcUeCZCL7A/viewform", // List a business or restaurant
     artist:   "",             // Be listed as a local artist
     photo:    "",             // Photo contest entry
-    sponsor:  "",             // Sponsor a spot
+    sponsor:  "https://docs.google.com/forms/d/e/1FAIpQLScl8tGaQgMKnVOo2ocL6tqrMPACLtl36UXm_CJIrrg39ix-vQ/viewform", // Sponsor a spot
     guess:    "",             // Guess the Spot: send a guess
     guessSubmit: "",          // Guess the Spot: send in your own spot
     skyPhoto: "",             // Night sky photo submissions
