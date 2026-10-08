@@ -40,7 +40,7 @@ window.OVE = {
     recipeVote: "",           // Recipe corner: vote + "what I changed"
     volunteer: "",            // Groups: post a volunteer need or drive
     tips: "",                 // Garden + Be Prepared boards (one form, Board question picks which)
-    jobs: "",                 // Help wanted: post a Valley job
+    jobs: "https://docs.google.com/forms/d/e/1FAIpQLScOzyUB6XfbZWbwNCMR1FIAjCyWWt-aQFQSGKN2pR5YJvtwkw/viewform", // Help wanted: post a Valley job
     update: "https://docs.google.com/forms/d/e/1FAIpQLSc-jh9kRzlErQ1jv698LT4prqLnCWFkdoJy6Bj5KcUeCZCL7A/viewform" // Listing updates (business form for now): hours changed, closed, moved, or a place we're missing
   },
 
