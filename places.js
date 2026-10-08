@@ -470,9 +470,57 @@ window.OVE_PLACES = {
    "sponsor": true,
    "note": "Owned by the publisher of this site.",
    "checked": "2026-10-08"
+  },
+  {
+   "name": "Bluebird Sprinklers & Irrigation",
+    "photos": ["bluebird-sprinklers-yard.jpg", "bluebird-sprinklers-trench.jpg", "bluebird-sprinklers-valve-box.jpg"],
+   "job": "Landscaping & snow removal",
+   "type": "Sprinklers, irrigation & snow removal",
+   "town": "Huntsville",
+   "serves": "Huntsville and Ogden Valley",
+   "blurb": "Irrigation experts with upfront, transparent pricing: sprinkler system installation, repair and maintenance, drainage installation and repair, and snow removal. On time, or they pay you $50.",
+   "hours": "24/7",
+   "phone": "801-923-3358",
+   "link": "https://bluebirdsprinklers.com",
+   "tags": [
+    "On-time guarantee",
+    "Snow removal"
+   ],
+   "checked": "2026-10-08"
+  },
+  {
+   "name": "That's My House Cleaning Service",
+    "photos": ["thats-my-house-living-room.jpg", "thats-my-house-bedroom.jpg", "thats-my-house-bathroom.jpg", "thats-my-house-cabin.jpg"],
+   "job": "Cleaning & window washing",
+   "type": "House cleaning & vacation rental care",
+   "serves": "Weber County",
+   "blurb": "Premium cleaning with personal, one-on-one service from a dedicated cleaner: weekly, bi-weekly and monthly maintenance, one-time and deep cleanings, and move-in/move-out cleanings. They also clean and manage vacation rentals.",
+   "hours": "Mon-Fri 8 a.m.-4 p.m., Sat-Sun 9 a.m.-2 p.m. Closed major family holidays.",
+   "phone": "801-833-6941",
+   "link": "https://www.thats-myhouse.com",
+   "links": [
+    {
+     "label": "Facebook",
+     "href": "https://www.facebook.com/ThatsMyHouse"
+    }
+   ],
+   "tags": [
+    "Vacation rentals"
+   ],
+   "checked": "2026-10-08"
   }
  ],
  "beauty": [
+  {
+   "name": "Altitude Fitness and Health",
+    "photos": ["altitude-fitness-salad.jpg"],
+   "town": "Eden",
+   "type": "In-home fitness & nutrition coaching",
+   "blurb": "Health and wellness coaching through fitness and nutrition, with mindfulness. Julia Rae meets people where they are on their health goals, in their own home and at their own pace.",
+   "phone": "801-391-3704",
+   "link": "https://www.altitude.fit/",
+   "checked": "2026-10-08"
+  },
   {
    "name": "Free Spirit Holistic Mountain Spa & Yoga",
    "town": "Eden",
