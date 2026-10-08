@@ -204,3 +204,18 @@ details summary{cursor:pointer;color:var(--blue)}
 .gallery figcaption .meta{font-size:14px}
 .spot h2{text-wrap:balance}
 .card .photos{min-width:0}.card{min-width:0}
+
+/* Facebook group circles */
+.fbg-band{padding-block:28px 34px;border-top:1px solid var(--line)}
+.fbg-strip{display:grid;gap:14px;justify-items:center;text-align:center}
+.fbg-title{font-size:clamp(22px,4vw,28px);margin:0}
+.fbg-row{display:flex;flex-wrap:wrap;justify-content:center;gap:18px 14px;max-width:960px}
+.fbg{display:grid;justify-items:center;gap:8px;width:104px;text-decoration:none;color:var(--ink);font-weight:700;font-size:16px;line-height:1.2}
+.fbg-dot{width:76px;height:76px;border-radius:50%;display:grid;place-items:center;background:var(--accent);color:#fff;box-shadow:0 2px 8px rgba(0,0,0,.18);transition:transform .15s}
+.fbg-dot svg{width:38px;height:38px;fill:none;stroke:currentColor;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}
+.fbg:hover .fbg-dot,.fbg:focus-visible .fbg-dot{transform:scale(1.08)}
+.fbg:nth-child(even) .fbg-dot{background:var(--blue,#2e6da4)}
+.fbg-more{margin:0;font-size:15px}
+[data-groups] .fbg-strip{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px}
+[data-groups] .fbg-title{font-size:20px}
+@media (max-width:420px){.fbg{width:92px;font-size:15px}.fbg-dot{width:64px;height:64px}.fbg-dot svg{width:32px;height:32px}}

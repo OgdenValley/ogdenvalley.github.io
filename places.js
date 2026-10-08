@@ -464,7 +464,7 @@ window.OVE_PLACES = {
    "hours": "Mon-Fri, 9 a.m.-5 p.m.",
    "phone": "801-917-4442",
    "link": "https://icanfixthatut.com",
-   "links": [{"label": "Facebook", "href": "https://www.facebook.com/share/1Kb34tsM9i/"}, {"label": "Read their sponsor story", "href": "spotlight-yes-i-can-fix-that.html"}],
+   "links": [{"label": "Facebook", "href": "https://www.facebook.com/profile.php?id=61595063423377"}, {"label": "Read their sponsor story", "href": "spotlight-yes-i-can-fix-that.html"}],
    "tags": ["Veteran owned", "Insured", "On time"],
    "photos": ["yes-i-can-fix-that-logo.jpg", "yicft-job-14-card.jpg", "yicft-job-27-card.jpg", "yicft-job-28-card.jpg", "yicft-job-12-card.jpg"],
    "sponsor": true,

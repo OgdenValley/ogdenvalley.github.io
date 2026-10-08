@@ -169,8 +169,27 @@ window.OVE = {
   },
 
   /* --- Facebook groups you run (shown on the About page) -------------
-     { name: "", url: "https://www.facebook.com/groups/...", about: "" } */
-  facebookGroups: [],
+     { id: "short-id", short: "Label under the circle", name: "", url: "https://www.facebook.com/groups/...", about: "" }
+     Icons by id: qa, weather, updates, roads, rentals, classifieds, lost, forum (any other id gets a people icon).
+     The circles show above the footer on every page, and the full cards show on the About page. */
+  facebookGroups: [
+    { id: "qa", short: "Questions", name: "Ogden Valley Questions & Answers", url: "https://www.facebook.com/share/g/19Xydvp3Rm/",
+      about: "Ask anything about the Valley: who to call, what's open, recommendations and more." },
+    { id: "weather", short: "Weather", name: "Ogden Valley Weather Conditions", url: "https://www.facebook.com/share/g/1EE9RSfvq9/",
+      about: "Neighbors sharing what the weather is really doing in the Valley: snow totals, wind, storms and ice." },
+    { id: "updates", short: "Updates", name: "Weber, Davis & Ogden Valley Updates", url: "https://www.facebook.com/share/g/19Cds7a9Nw/",
+      about: "News and updates from across Weber County, Davis County and Ogden Valley." },
+    { id: "roads", short: "Road conditions", name: "Weber County Road Conditions", url: "https://www.facebook.com/share/g/18ncycfd9U/",
+      about: "Real-time road reports from neighbors: canyon roads, closures, crashes, plowing and slick spots." },
+    { id: "rentals", short: "Rentals & real estate", name: "Ogden Valley Rentals & Real Estate", url: "https://www.facebook.com/share/g/19RRmJ2m8f/",
+      about: "Long-term rentals, vacation rentals by owner, and homes for sale in the Valley, posted by locals." },
+    { id: "classifieds", short: "Classifieds", name: "Ogden Valley Classifieds", url: "https://www.facebook.com/share/g/1EwsJJJtEL/",
+      about: "Buy, sell, trade and give away: furniture, gear, vehicles, animals and services from your neighbors." },
+    { id: "lost", short: "Lost & found", name: "Ogden Valley Lost & Found (Pets & Items)", url: "https://www.facebook.com/share/g/18UUAxkzJQ/",
+      about: "Lost or found a pet, keys, a phone or anything else? Post it here so neighbors can help get it home." },
+    { id: "forum", short: "Open forum", name: "Ogden Valley Open Forum (No Rules)", url: "https://www.facebook.com/share/g/1FU9YRNubQ/",
+      about: "Say what's on your mind. This group doesn't use our community rules, so join knowing anything goes." }
+  ],
 
   /* --- Started ---------------------------------------------------------- */
   startYear: 2016
