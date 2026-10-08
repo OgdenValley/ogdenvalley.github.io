@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08T03:30:43.517Z",
+ "updated": "2026-10-08T04:30:59.096Z",
  "meetings": [
   {
    "body": "Huntsville Town Council",
@@ -63,7 +63,7 @@
  "status": {
   "Ogden Valley City Council": "ok",
   "Huntsville Town Council": "ok",
-  "snow": "failed",
+  "snow": "ok",
   "pineview": "ok"
  }
 }
