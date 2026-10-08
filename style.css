@@ -183,3 +183,6 @@ details summary{cursor:pointer;color:var(--blue)}
 .wk li{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px 14px;display:grid;gap:2px}
 .wk li .meta{font-size:15px;color:var(--muted)}
 .job{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:16px;display:grid;gap:4px}
+.card .price{font-family:var(--display);font-weight:700;font-size:18px;margin:0}
+.perks{margin:4px 0 0;padding-left:20px;display:grid;gap:4px}
+.steps{margin:8px 0 0;padding-left:22px;display:grid;gap:6px}

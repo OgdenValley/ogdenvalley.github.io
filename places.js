@@ -577,6 +577,12 @@ window.OVE_PLACES = {
    "checked": "2026-10-07"
   },
   {
+   "name": "Kristie Tueller Designs",
+   "area": "Ogden Valley",
+   "medium": "Silversmith (handmade silver jewelry)",
+   "checked": "2026-10-07"
+  },
+  {
    "name": "Mike Gardner",
    "area": "Weber County",
    "medium": "Painting",
