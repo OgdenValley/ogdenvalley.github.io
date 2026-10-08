@@ -40,6 +40,7 @@
   <div class="filters"><input type="search" id="q" placeholder="Search valley businesses" aria-label="Search valley businesses"><button class="chip" type="button" data-town="All" aria-pressed="true">All</button><button class="chip" type="button" data-town="Eden" aria-pressed="false">Eden</button><button class="chip" type="button" data-town="Huntsville Town" aria-pressed="false">Huntsville Town</button><button class="chip" type="button" data-town="Huntsville area" aria-pressed="false">Huntsville area</button><button class="chip" type="button" data-town="Snowbasin" aria-pressed="false">Snowbasin</button><button class="chip" type="button" data-town="Powder Mountain" aria-pressed="false">Powder Mountain</button><button class="chip" type="button" data-town="Nordic Valley" aria-pressed="false">Nordic Valley</button><button class="chip" type="button" data-town="Liberty" aria-pressed="false">Liberty</button></div>
   <div class="filters" id="tagbar" hidden></div>
   <p class="fair">Listings are free and in A–Z order. Nobody pays to be ranked higher, reviews come from real people, and sponsors are always labeled. Every place is checked by a local before it goes up.</p>
+  <div class="filters" id="spotbar" hidden></div>
   <div id="list"></div>
   <div data-groups="classifieds,rentals" data-title="Buying, selling or renting? Ask your neighbors" style="margin-top:22px"></div>
 </div></section>
@@ -50,10 +51,10 @@
 <script src="places.js"></script>
 <script src="site.js"></script>
 <script>
-(async function(){const S=window.OVE_SITE,el=S.el;const all=(S.P["businesses"]||[]);let town="All",q="",tag="";const R=await S.loadJSON("reviews.json");
+(async function(){const S=window.OVE_SITE,el=S.el;const all=(S.P["businesses"]||[]);let town="All",q="",tag="";const R=await S.loadJSON("reviews.json");const spot=S.spotFilter(document.getElementById("spotbar"),all,"businesses",()=>draw());
 const tags=[...new Set(all.flatMap(p=>p.tags||[]))].sort();const tb=document.getElementById("tagbar");
 if(tags.length){tb.hidden=false;tb.replaceChildren(...["All"].concat(tags).map(t=>{const b=el("button",{class:"chip",type:"button","aria-pressed":String((tag||"All")===t),text:t});b.onclick=()=>{tag=t==="All"?"":t;[...tb.children].forEach(x=>x.setAttribute("aria-pressed",String(x===b)));draw()};return b}))}
-function draw(){S.listing(document.getElementById("list"),all.filter(p=>(town==="All"||(p.town||p.area)===town)&&(!tag||(p.tags||[]).includes(tag))&&(!q||JSON.stringify(p).toLowerCase().includes(q))),"businesses",R)}
+function draw(){S.listing(document.getElementById("list"),all.filter(p=>spot(p)&&(town==="All"||(p.town||p.area)===town)&&(!tag||(p.tags||[]).includes(tag))&&(!q||JSON.stringify(p).toLowerCase().includes(q))),"businesses",R)}
 document.getElementById("q").addEventListener("input",e=>{q=e.target.value.trim().toLowerCase();draw()});
 document.querySelectorAll("button[data-town]").forEach(b=>{b.addEventListener("click",()=>{town=b.dataset.town;document.querySelectorAll("button[data-town]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));draw()})});
 draw();if(location.hash){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t){t.scrollIntoView();t.style.outline="3px solid var(--accent)"}}})();

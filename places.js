@@ -513,6 +513,7 @@ window.OVE_PLACES = {
  "beauty": [
   {
    "name": "Altitude Fitness and Health",
+    "home": true,
     "photos": ["altitude-fitness-salad.jpg"],
    "town": "Eden",
    "type": "In-home fitness & nutrition coaching",

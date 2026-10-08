@@ -234,3 +234,8 @@ body.kids h1,body.kids h2{font-family:var(--display);font-weight:800;letter-spac
 .hero.photo .btns{justify-content:center}
 .hero-credit{position:absolute;right:12px;bottom:8px;margin:0;font-size:12px;color:rgba(255,255,255,.8);z-index:1}
 @media (max-width:700px){.hero.photo .container{min-height:56vh;padding-block:40px}}
+
+.spot-badge{display:inline-block;font:700 13px var(--body);padding:3px 10px;border-radius:999px;margin:2px 0 6px;width:max-content;max-width:100%}
+.spot-badge.store{background:#E8F0FB;color:#1F4575}
+.spot-badge.home{background:#FFF1E6;color:#8A3D0A}
+@media (prefers-color-scheme: dark){.spot-badge.store{background:#1E2F4A;color:#BFD4F2}.spot-badge.home{background:#3A2616;color:#F6C9A6}}

@@ -128,6 +128,25 @@ function listMeta(p){
   if (p.checked) kids.push(el("div", {class: "checked", text: "✓ Checked by a local " + niceDay(p.checked)}));
   return kids.length ? el("div", {class: "listmeta"}, kids) : null;
 }
+/* Storefront vs home-based: a listing marked home:true (or a Home Services listing) is home-based / comes to you. */
+const isHome = (p, kind) => p.home === true || kind === "services";
+function spotBadge(p, kind){
+  if (kind !== "businesses" && kind !== "beauty") return null;
+  if (isHome(p, kind)) return el("span", {class: "spot-badge home", text: "🏡 Home-based · by appointment"});
+  if (p.address || p.storefront) return el("span", {class: "spot-badge store", text: "🏪 Storefront"});
+  return null;
+}
+/* All · Storefronts · Home-based & mobile buttons (only shown when the list has both kinds) */
+function spotFilter(bar, items, kind, onChange){
+  if (!bar) return () => true;
+  let mode = "all";
+  const hasHome = items.some(p => isHome(p, kind)), hasStore = items.some(p => !isHome(p, kind));
+  if (!(hasHome && hasStore)) { bar.hidden = true; return () => true; }
+  bar.hidden = false;
+  const opts = [["all", "All"], ["store", "🏪 Storefronts"], ["home", "🏡 Home-based & mobile"]];
+  bar.replaceChildren(...opts.map(([k, l]) => { const b = el("button", {class: "chip", type: "button", "aria-pressed": String(k === mode), text: l}); b.onclick = () => { mode = k; [...bar.children].forEach(x => x.setAttribute("aria-pressed", String(x === b))); onChange(); }; return b; }));
+  return p => mode === "all" || (mode === "home" ? isHome(p, kind) : !isHome(p, kind));
+}
 function listing(box, items, kind, R){
   box.replaceChildren();
   if (!items.length) { box.append(el("div", {class: "empty"}, [ el("p", {text: kind === "artists" ? "Artist listings are being gathered. Are you an Ogden Valley or Weber County artist? Ask to be listed." : "Listings are being gathered and checked. Own or love a place in the Valley? Send it in."}),
@@ -138,6 +157,7 @@ function listing(box, items, kind, R){
     photoStrip(p),
     p.sponsor ? el("span", {class: "sponsor-badge", text: "Sponsor"}) : null,
     el("h3", {text: p.name}),
+    spotBadge(p, kind),
     el("div", {class: "meta", text: [p.type || p.medium, p.town || p.area].filter(Boolean).join(" · ")}),
     p.blurb ? el("p", {text: p.blurb}) : null,
     p.serves ? el("div", {class: "meta", text: "Serves: " + p.serves}) : null,
@@ -153,6 +173,21 @@ function listing(box, items, kind, R){
   if (upd) box.append(el("p", {class: "upd-foot"}, [document.createTextNode(kind === "artists" ? "Know an artist we're missing, or something here that changed? " : "Hours different, a place closed, or one we're missing? "), el("a", {href: upd, target: "_blank", rel: "noopener", text: "Let us know"}), document.createTextNode(". Every update is checked before the listing changes.")]));
 }
 
+
+/* ---------- Local home businesses: any <div data-homebiz> shows 3 home-based listings, a different mix each visit ---------- */
+(function(){ const box = document.querySelector("[data-homebiz]"); if (!box) return;
+  const pool = [].concat((P.services || []).map(p => [p, "services"]), (P.beauty || []).filter(p => p.home).map(p => [p, "beauty"]), (P.businesses || []).filter(p => p.home).map(p => [p, "businesses"]));
+  if (!pool.length) return;
+  const pick = pool.map(x => [Math.random(), x]).sort((a, b) => a[0] - b[0]).slice(0, 3).map(x => x[1]);
+  const page = {services: "services.html", beauty: "beauty.html", businesses: "businesses.html"};
+  box.append(el("div", {class: "section-head"}, [el("div", {}, [el("p", {class: "eyebrow", text: "Shop local"}), el("h2", {text: "Local home businesses"})]), el("a", {class: "btn blue", href: "services.html", text: "See them all"})]),
+    el("div", {class: "grid"}, pick.map(([p, k]) => el("article", {class: "card"}, [
+      (p.photos && p.photos[0]) ? el("img", {src: p.photos[0], alt: p.name, loading: "lazy", style: "width:100%;height:160px;object-fit:cover;border-radius:10px"}) : null,
+      el("span", {class: "spot-badge home", text: "🏡 Home-based"}),
+      el("h3", {text: p.name}),
+      el("div", {class: "meta", text: [p.type, p.town || p.serves].filter(Boolean).join(" · ")}),
+      el("a", {href: page[k] + "#" + slug(p.name), text: "See their listing"}) ]))),
+    el("p", {class: "fine", text: "Small businesses run from home or that come to you. Getting listed is free."})); })();
 
 /* ---------- sponsors strip: any <div data-sponsors> shows the current sponsors from config.js ---------- */
 (function(){ const boxes = document.querySelectorAll("[data-sponsors]"); if (!boxes.length) return;
@@ -297,5 +332,5 @@ if (C.goatcounter) {
   document.addEventListener("keydown", e => { if (!box || box.hidden) return; if (e.key === "Escape") hide(); if (e.key === "ArrowRight") show(idx + 1); if (e.key === "ArrowLeft") show(idx - 1); });
 })();
 
-window.OVE_SITE = {C, P, el, $, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, dayKey, dayName, timeStr, todayKey, TZ};
+window.OVE_SITE = {C, P, el, $, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ};
 })();
