@@ -83,10 +83,11 @@ window.OVE = {
   ],
 
   /* --- Home page photo banner -------------------------------------------
-     Swap in your own photo: upload it to the main folder and put its name here. */
+     Used when there is no Photo Contest winner yet. Once a winner is set in contest.lastWinner (Photo contest section below),
+     the banner shows the winning photo automatically, credited as "Photo of the Month". */
   heroPhoto: "sky-logan-peak-moonrise-1.jpg",
   heroHeadline: "Together in Ogden Valley",
-  heroCredit: "",          // e.g. "Photo: Shauna M." (shown small in the corner)
+  heroCredit: "Photo: Jim Brown",          // shown small in the bottom-right corner
 
   /* --- Valley Photos (newest last) ------------------------------------
      { image: "file.jpg", by: "Jen M.", place: "Pineview" | "Eden" | "Liberty" | "Huntsville" | "Ogden Canyon" | "Snowbasin" | "Powder Mountain" | "Nordic Valley",
@@ -109,7 +110,8 @@ window.OVE = {
     month: "October 2026",
     theme: "Fall color and Halloween in the Valley",
     deadline: "October 31",
-    lastWinner: null          // { name: "", title: "", image: "photo-...jpg" }
+    lastWinner: null          // { name: "", title: "", image: "photo-...jpg", month: "October 2026" }
+                              // The winner also becomes the home page banner photo for the month, with credit.
   },
 
   /* --- Features (fill in each week / month) --------------------------- */

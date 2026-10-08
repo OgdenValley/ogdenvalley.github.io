@@ -199,9 +199,12 @@ function listing(box, items, kind, R){
 
 /* ---------- home page photo banner (settings in config.js) ---------- */
 (function(){ const h = document.getElementById("home-hero"); if (!h) return;
-  if (C.heroPhoto) h.style.setProperty("--hero-img", "url('" + C.heroPhoto + "')");
+  const w = (C.contest && C.contest.lastWinner) || null;
+  const photo = (w && w.image) ? w.image : C.heroPhoto;
+  const credit = (w && w.image) ? "Photo of the Month" + (w.month ? " (" + w.month + ")" : "") + (w.title ? ": " + w.title : "") + (w.name ? " · " + w.name : "") : (C.heroCredit || "");
+  if (photo) h.style.setProperty("--hero-img", "url('" + photo + "')");
   if (C.heroHeadline) document.getElementById("hero-h1").textContent = C.heroHeadline;
-  const cr = document.getElementById("hero-credit"); if (cr) cr.textContent = C.heroCredit || ""; })();
+  const cr = document.getElementById("hero-credit"); if (cr) { cr.textContent = credit; if (w && w.image) { cr.innerHTML = ""; cr.append(el("a", {href: "photo-contest.html", style: "color:inherit", text: credit})); } } })();
 
 /* ---------- shared data loaders ---------- */
 async function loadJSON(name){ try { const r = await fetch(name, {cache: "no-store"}); if (!r.ok) throw 0; return await r.json(); } catch (e) { return null; } }
