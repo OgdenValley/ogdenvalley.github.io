@@ -1,8 +1,17 @@
 {
- "updated": "2026-10-08T01:30:24.151Z",
+ "updated": "2026-10-08T14:34:18.014Z",
  "weather": [],
  "fires": [],
- "city": [],
+ "city": [
+  {
+   "title": "Gramercy Ave. from 5th St to 7th St, 7th St. from Gramercy Ave. to 1050 E.",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2061",
+   "date": 1791472558000,
+   "text": "Scheduled Water Outage",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  }
+ ],
  "status": {
   "weather": "ok",
   "fires": "ok",
