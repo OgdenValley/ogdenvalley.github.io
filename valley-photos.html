@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Page not found · Ogden Valley Info & Events</title>
-<meta name="description" content="That page isn't here.">
-<meta property="og:title" content="Page not found · Ogden Valley Info & Events">
-<meta property="og:description" content="That page isn't here.">
+<title>Valley Photos · Ogden Valley Info & Events</title>
+<meta name="description" content="Photos of Ogden Valley sent in by neighbors and visitors: Eden, Liberty, Huntsville, Pineview, the canyon and the mountains in every season.">
+<meta property="og:title" content="Valley Photos · Ogden Valley Info & Events">
+<meta property="og:description" content="Photos of Ogden Valley sent in by neighbors and visitors: Eden, Liberty, Huntsville, Pineview, the canyon and the mountains in every season.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://ogdenvalleyevent.com/404.html">
+<meta property="og:url" content="https://ogdenvalleyevent.com/valley-photos.html">
 <meta property="og:image" content="https://ogdenvalleyevent.com/share-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="logo-10-years-32.png">
@@ -34,7 +34,15 @@
   <nav class="main" id="nav" aria-label="Main"><a href="events.html">Events</a><a href="restaurants.html">Eat &amp; Shop</a><a href="artists.html">Artists</a><a href="safety.html">Safety</a><a href="live.html">Live View</a><a href="night-sky.html">Night Sky</a><a href="fun.html">Fun &amp; Contests</a><a href="about.html">About</a><a href="search.html">Search</a></nav>
 </div></header>
 <main id="main">
-<section class="hero"><div class="container"><div><p class="eyebrow">Oops</p><h1>That page isn't here</h1><p class="lead" style="margin-top:12px">Try the menu above, or head to this week's events.</p><div class="btns"><a class="btn primary" href="events.html">See events</a></div></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section class="hero"><div class="container"><div><p class="eyebrow">From our neighbors</p><h1>Valley Photos</h1><p class="lead" style="margin-top:12px">The Valley through your eyes: sunrises over Pineview, fall color in the canyon, snow on the peaks and everything in between.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section><div class="container" style="display:grid;gap:16px">
+  <div class="filters" id="vp-place" aria-label="Filter by place"></div>
+  <div class="filters" id="vp-season" aria-label="Filter by season"></div>
+  <p class="meta" id="vp-count" style="margin:0"></p>
+  <div class="gallery" id="vp-gal" data-gallery></div>
+  <div class="card cta"><div><h2>Got a great Valley photo?</h2><p style="margin-top:6px">Send it in and it could be featured here and on our Facebook and Instagram, with credit to you.</p></div><div class="btns" style="margin:0"><a class="btn primary" data-form="photo" href="submit.html">Send us your photo</a></div></div>
+  <p class="fair">We only post photos people took themselves and gave us permission to share. Please don't send photos with children's faces, license plates or house numbers you can read. Monthly Photo Contest entries can show here too when the photographer says yes. See our <a href="terms.html">terms</a>.</p>
+</div></section>
 </main>
 <footer class="site-foot"><div class="container">
   <div class="ten"><img data-logo="180" src="logo-10-years-180.png" alt="" width="64" height="64"><div><b>Ogden Valley Info &amp; Events</b><br><span class="fine">Eden · Liberty · Huntsville · since 2016</span><br><span class="fine" id="gc-count"></span></div></div>
@@ -46,5 +54,20 @@
 <script src="config.js"></script>
 <script src="places.js"></script>
 <script src="site.js"></script>
+<script>
+(function(){const S=window.OVE_SITE,el=S.el;const all=((S.C.valleyPhotos)||[]).slice().reverse();
+const season=p=>{const m=+((p.date||"").split("-")[1]||0);return !m?"":[12,1,2].includes(m)?"Winter":[3,4,5].includes(m)?"Spring":[6,7,8].includes(m)?"Summer":"Fall"};
+const nice=d=>{const [y,m]=(d||"").split("-").map(Number);return y&&m?new Date(y,m-1,1).toLocaleDateString("en-US",{month:"long",year:"numeric"}):""};
+let place="",sea="";
+function bar(id,vals,get,set){const b=document.getElementById(id);if(vals.length<2){b.hidden=true;return}b.replaceChildren(...["All"].concat(vals).map(v=>{const c=el("button",{class:"chip",type:"button","aria-pressed":String((get()||"All")===v),text:v});c.onclick=()=>{set(v==="All"?"":v);[...b.children].forEach(x=>x.setAttribute("aria-pressed",String(x===c)));draw()};return c}))}
+bar("vp-place",[...new Set(all.map(p=>p.place).filter(Boolean))].sort(),()=>place,v=>place=v);
+bar("vp-season",["Spring","Summer","Fall","Winter"].filter(s=>all.some(p=>season(p)===s)),()=>sea,v=>sea=v);
+function draw(){const list=all.filter(p=>(!place||p.place===place)&&(!sea||season(p)===sea));const g=document.getElementById("vp-gal");
+ document.getElementById("vp-count").textContent=all.length?list.length+" photo"+(list.length===1?"":"s"):"";
+ if(!all.length){g.replaceChildren(el("div",{class:"empty"},[el("p",{text:"The first Valley photos are on their way. Yours could be the first one here!"})]));return}
+ g.replaceChildren(...list.map(p=>el("figure",{},[el("img",{src:p.image,alt:(p.caption||"Ogden Valley photo")+(p.place?", "+p.place:""),loading:"lazy"}),el("figcaption",{},[el("span",{text:p.caption||p.place||"Ogden Valley"}),el("span",{class:"meta",text:["Photo: "+(p.by||"a neighbor"),p.place&&p.caption?p.place:"",nice(p.date)].filter(Boolean).join(" · ")})])])))}
+draw();})();
+</script>
+
 </body>
 </html>

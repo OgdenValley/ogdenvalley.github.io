@@ -76,8 +76,17 @@ window.OVE = {
 
   /* --- Guess the Spot (newest last) ------------------------------------
      { week: "Oct 12", image: "spot-oct12.jpg", hint: "", by: "ove" | "community",
-       credit: "", revealed: false, answer: "", winner: "" } */
-  guessSpots: [],
+       credit: "", revealed: false, answer: "", winner: "" }
+     Keep "answer" blank until reveal day: this file is public, so anything typed here can be seen. */
+  guessSpots: [
+    { week: "Oct 8", image: "spot-2026-10-08.jpg", hint: "Fall color, string lights and a big rocky ridge. Where are these two pumpkinheads standing?", by: "ove", credit: "", revealed: false, answer: "", winner: "" }
+  ],
+
+  /* --- Valley Photos (newest last) ------------------------------------
+     { image: "file.jpg", by: "Jen M.", place: "Pineview" | "Eden" | "Liberty" | "Huntsville" | "Ogden Canyon" | "Snowbasin" | "Powder Mountain" | "Nordic Valley",
+       date: "2026-10" (year-month, sets the season), caption: "Sunrise over the reservoir" }
+     Only add photos the photographer gave permission for. Upload the image to the main folder. */
+  valleyPhotos: [],
 
   /* --- Then & Now ------------------------------------------------------
      { title: "", then: "then-file.jpg", now: "now-file.jpg", thenYear: "1950s",
