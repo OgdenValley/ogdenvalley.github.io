@@ -665,6 +665,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Kristie Tueller Designs",
+   "added": "2026-10-08",
    "area": "Huntsville area",
    "medium": "Silversmith (handmade silver jewelry)",
    "blurb": "\u201cGrounded by the rugged beauty of the mountains, my workbench is a sanctuary where sterling silver and stone come together to tell a story. My work is defined by a bold, soulful elegance. I craft jewelry for those who carry a connection to the wild within them: timeless, spirited and authentic.\u201d",
