@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08T04:30:59.096Z",
+ "updated": "2026-10-08T08:32:57.192Z",
  "meetings": [
   {
    "body": "Huntsville Town Council",
@@ -15,11 +15,11 @@
    "elev": 7690,
    "depth": {
     "value": 0,
-    "date": "2026-10-06"
+    "date": "2026-10-07"
    },
    "water": {
-    "value": 0,
-    "date": "2026-10-06"
+    "value": 0.2,
+    "date": "2026-10-07"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -29,11 +29,11 @@
    "elev": 5970,
    "depth": {
     "value": 0,
-    "date": "2026-10-06"
+    "date": "2026-10-07"
    },
    "water": {
-    "value": 0,
-    "date": "2026-10-06"
+    "value": 0.3,
+    "date": "2026-10-07"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
@@ -42,12 +42,12 @@
    "name": "Monte Cristo",
    "elev": 8930,
    "depth": {
-    "value": 0,
-    "date": "2026-10-06"
+    "value": 1,
+    "date": "2026-10-07"
    },
    "water": {
-    "value": 0,
-    "date": "2026-10-06"
+    "value": 0.2,
+    "date": "2026-10-07"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
    "source": "USDA NRCS SNOTEL"
