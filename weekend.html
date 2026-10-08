@@ -8,8 +8,8 @@
 <meta property="og:title" content="This Weekend · Ogden Valley Info & Events">
 <meta property="og:description" content="This weekend's Ogden Valley and Weber County events, as a ready-to-share image for Facebook and Instagram.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://ogdenvalley.github.io/weekend.html">
-<meta property="og:image" content="https://ogdenvalley.github.io/share-card.png">
+<meta property="og:url" content="https://ogdenvalleyevent.com/weekend.html">
+<meta property="og:image" content="https://ogdenvalleyevent.com/share-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="logo-10-years-32.png">
 <link rel="apple-touch-icon" href="logo-10-years-180.png">
@@ -70,14 +70,14 @@ function draw(W,H){cv.width=W;cv.height=H;const g=ctx.createLinearGradient(0,0,0
   ctx.fillStyle="#fff";ctx.font="800 "+(wide?60:78)+"px Montserrat, Arial, sans-serif";ctx.fillText("Ogden Valley",pad,pad+(wide?95:115));
   const f=new Intl.DateTimeFormat("en-US",{timeZone:S.TZ,month:"long",day:"numeric"});ctx.font="600 "+(wide?26:34)+"px 'Source Sans 3', Arial, sans-serif";ctx.fillStyle="#E3ECF6";ctx.fillText(f.format(new Date(a+36e5))+" – "+f.format(new Date(b-36e5)),pad,pad+(wide?135:165));
   let y=pad+(wide?190:240);const list=evs(),maxY=H-(wide?70:110),cols=wide?2:1,colW=(W-pad*2-(cols-1)*30)/cols;let c=0,startY=y;
-  if(!list.length){ctx.font="600 34px 'Source Sans 3', Arial";ctx.fillStyle="#fff";wrap("Nothing posted yet. Send your event to ogdenvalley.github.io",pad,y+20,W-pad*2,44,3)}
+  if(!list.length){ctx.font="600 34px 'Source Sans 3', Arial";ctx.fillStyle="#fff";wrap("Nothing posted yet. Send your event to ogdenvalleyevent.com",pad,y+20,W-pad*2,44,3)}
   for(const e of list){const x=pad+c*(colW+30);const day=new Intl.DateTimeFormat("en-US",{timeZone:S.TZ,weekday:"short"}).format(new Date(e.s<a?a+36e5:e.s));const time=e.allDay?"All day":S.timeStr(e.s);
     if(y+(wide?84:110)>maxY){if(c<cols-1){c++;y=startY;continue}else break}
     ctx.fillStyle="rgba(255,255,255,.14)";ctx.fillRect(x,y,colW,wide?72:96);ctx.fillStyle=e.cal==="ov"?"#6CC08C":"#6FA8DC";ctx.fillRect(x,y,8,wide?72:96);
     ctx.fillStyle=col("--hero-eye")||"#F6B544";ctx.font="700 "+(wide?18:22)+"px Montserrat, Arial";ctx.fillText((day+" · "+time).toUpperCase(),x+22,y+(wide?24:30));
     ctx.fillStyle="#fff";ctx.font="700 "+(wide?24:32)+"px 'Source Sans 3', Arial";wrap(e.t+(e.loc?" — "+e.loc.split(",")[0]:""),x+22,y+(wide?54:70),colW-40,30,1);
     y+=wide?84:110}
-  ctx.fillStyle="#fff";ctx.font="700 "+(wide?22:28)+"px Montserrat, Arial";ctx.fillText("ogdenvalley.github.io",pad,H-(wide?28:44));
+  ctx.fillStyle="#fff";ctx.font="700 "+(wide?22:28)+"px Montserrat, Arial";ctx.fillText("ogdenvalleyevent.com",pad,H-(wide?28:44));
   ctx.font="600 "+(wide?18:22)+"px 'Source Sans 3', Arial";ctx.fillStyle="#E3ECF6";const t2="Full calendar + subscribe on the site";ctx.fillText(t2,W-pad-ctx.measureText(t2).width,H-(wide?28:44));
   S.renderEvents(document.getElementById("wk-list"),list,{emptyText:"No events posted for this weekend yet."})}
 function dl(W,H,name){draw(W,H);const a=document.createElement("a");a.download=name;a.href=cv.toDataURL("image/png");document.body.append(a);a.click();a.remove();draw(1080,1350)}

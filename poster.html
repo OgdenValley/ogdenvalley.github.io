@@ -8,8 +8,8 @@
 <meta property="og:title" content="Business Poster · Ogden Valley Info & Events">
 <meta property="og:description" content="Printable QR poster for Ogden Valley businesses.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://ogdenvalley.github.io/poster.html">
-<meta property="og:image" content="https://ogdenvalley.github.io/share-card.png">
+<meta property="og:url" content="https://ogdenvalleyevent.com/poster.html">
+<meta property="og:image" content="https://ogdenvalleyevent.com/share-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="logo-10-years-32.png">
 <link rel="apple-touch-icon" href="logo-10-years-180.png">
@@ -47,7 +47,7 @@
   <div class="pname" id="pname">Your business</div>
   <div id="qr"></div>
   <p>Scan to see our listing, events and more.</p>
-  <p class="meta">#OgdenValleyEvents · ogdenvalley.github.io</p>
+  <p class="meta">#OgdenValleyEvents · ogdenvalleyevent.com</p>
 </div></div></section>
 <style>.poster{max-width:640px;margin:0 auto;background:#fff;color:#10233D;border:3px solid #10233D;border-radius:18px;padding:36px;text-align:center;display:grid;gap:10px;justify-items:center}.poster h2{font-size:30px}.pname{font-family:var(--display);font-weight:800;font-size:40px;line-height:1.1}#qr{padding:14px;background:#fff}@media print{.no-print,.site-head,.canyon,.alert-bar,.site-foot{display:none!important}body{background:#fff}.poster{border-width:4px;page-break-inside:avoid}}</style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
@@ -67,7 +67,7 @@
 (function(){const S=window.OVE_SITE;const all=[].concat((S.P.restaurants||[]).map(p=>[p,"restaurants.html"]),(S.P.businesses||[]).map(p=>[p,"businesses.html"])).sort((a,b)=>a[0].name.localeCompare(b[0].name));
 const sel=document.getElementById("biz");sel.append(new Option("Choose a business",""));all.forEach(([p,h],i)=>sel.append(new Option(p.name,i)));
 const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");let qr=null;
-function upd(name,page){document.getElementById("pname").textContent=name||"Your business";const url="https://ogdenvalley.github.io/"+(page||"restaurants.html")+(name?"#"+slug(name):"");const box=document.getElementById("qr");box.replaceChildren();if(window.QRCode)qr=new QRCode(box,{text:url,width:260,height:260,correctLevel:QRCode.CorrectLevel.M})}
+function upd(name,page){document.getElementById("pname").textContent=name||"Your business";const url="https://ogdenvalleyevent.com/"+(page||"restaurants.html")+(name?"#"+slug(name):"");const box=document.getElementById("qr");box.replaceChildren();if(window.QRCode)qr=new QRCode(box,{text:url,width:260,height:260,correctLevel:QRCode.CorrectLevel.M})}
 sel.onchange=()=>{const x=all[sel.value];if(x){document.getElementById("custom").value="";upd(x[0].name,x[1])}};
 document.getElementById("custom").oninput=e=>{sel.value="";upd(e.target.value.trim(),"businesses.html")};
 const q=new URLSearchParams(location.search).get("b");if(q){document.getElementById("custom").value=q;upd(q,"businesses.html")}else upd("","");

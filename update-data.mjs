@@ -63,7 +63,7 @@ function writeIfChanged(path, obj){
   if (old && strip(old) === strip(obj)) { console.log(path, "unchanged"); return; }
   fs.writeFileSync(path, JSON.stringify(obj, null, 1) + "\n"); console.log(path, "written");
 }
-const UA = {"User-Agent": "ogdenvalley.github.io (Ogden Valley Info & Events community site)", "Accept": "application/json, text/calendar, */*"};
+const UA = {"User-Agent": "ogdenvalleyevent.com (Ogden Valley Info & Events community site)", "Accept": "application/json, text/calendar, */*"};
 
 async function fetchCal(id){
   const r = await fetch("https://calendar.google.com/calendar/ical/" + encodeURIComponent(id) + "/public/basic.ics", {headers: UA});
