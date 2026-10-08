@@ -2,7 +2,7 @@
    LISTINGS — one list per section. Only places Shauna has approved go here.
 
    Fields for every place (leave out any you don't have):
-     name, town ("Eden" | "Huntsville" | "Liberty"), area (when no town),
+     name, town ("Eden" | "Liberty" | "Huntsville Town" | "Huntsville area" | "Snowbasin" | "Powder Mountain"), area (when no town),
      type, blurb, phone, link, address
      checked:  date a local last confirmed it, "YYYY-MM-DD"
      tags:     ["Dog-friendly patio", "Kid-friendly", ...]  (owners choose)
@@ -35,7 +35,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Chris'",
-   "town": "Huntsville",
+   "town": "Huntsville area",
    "type": "Burgers & shakes (seasonal)",
    "blurb": "Casual seasonal stop near Pineview Reservoir known for raspberry shakes, burgers and fries.",
    "phone": "801-745-3542",
@@ -44,7 +44,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Earl's Lodge (Snowbasin)",
-   "town": "Ogden Valley",
+   "town": "Snowbasin",
    "type": "Base lodge dining",
    "blurb": "Slopeside base-area lodge at Snowbasin with a variety of freshly made food.",
    "phone": "801-620-1000",
@@ -64,7 +64,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "First Lift Coffee",
-   "town": "Huntsville",
+   "town": "Huntsville Town",
    "type": "Coffee",
    "blurb": "Coffee shop at Compass Rose Lodge serving coffee, tea, grilled sandwiches, soups and pastries.",
    "phone": "385-279-4460",
@@ -84,7 +84,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Hidden Lake Lodge & Twists Mountain Market (Powder Mountain)",
-   "town": "Ogden Valley",
+   "town": "Powder Mountain",
    "type": "On-mountain lodge (winter)",
    "blurb": "Lodge at the top of the mountain serving burritos, butter chicken, nachos and soups, with a snack market inside.",
    "phone": "801-745-3772",
@@ -94,7 +94,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "John Paul Lodge (Snowbasin)",
-   "town": "Ogden Valley",
+   "town": "Snowbasin",
    "type": "On-mountain lodge (winter)",
    "blurb": "Winter-only lodge at the top of the John Paul Express serving Bavarian-style food.",
    "phone": "801-620-1000",
@@ -114,7 +114,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Lucky Slice (Powder Mountain)",
-   "town": "Ogden Valley",
+   "town": "Powder Mountain",
    "type": "Pizza (winter)",
    "blurb": "Slopeside pizza counter at Sundown Lodge, open through night skiing.",
    "phone": "801-745-3772",
@@ -134,7 +134,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Needles Lodge (Snowbasin)",
-   "town": "Ogden Valley",
+   "town": "Snowbasin",
    "type": "Mountaintop restaurant",
    "blurb": "Restaurant at about 8,700 feet at the top of Snowbasin's Needles Gondola.",
    "phone": "801-620-1000",
@@ -183,7 +183,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Shooting Star Saloon",
-   "town": "Huntsville",
+   "town": "Huntsville Town",
    "type": "Saloon & burgers",
    "blurb": "Saloon dating to 1879, described as Utah's oldest continuously operating saloon, known for its Star Burger.",
    "phone": "(801) 745-2002",
@@ -192,7 +192,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Strawberry Patio (Snowbasin)",
-   "town": "Ogden Valley",
+   "town": "Snowbasin",
    "type": "Open-air food park (winter)",
    "blurb": "Winter-only open-air food park at Snowbasin with 180-plus seats and several food options.",
    "phone": "801-620-1000",
@@ -202,7 +202,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "The Cinnabar (Snowbasin)",
-   "town": "Ogden Valley",
+   "town": "Snowbasin",
    "type": "Shared plates & cocktails",
    "blurb": "Base-area bar and restaurant at Snowbasin serving shared plates and cocktails.",
    "phone": "801-620-1000",
@@ -212,7 +212,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Timberline Cafeteria & The Powder Keg (Powder Mountain)",
-   "town": "Ogden Valley",
+   "town": "Powder Mountain",
    "type": "Resort cafeteria & apres bar (winter)",
    "blurb": "Timberline Lodge cafeteria with pizza, burgers and soups, with The Powder Keg bar downstairs offering local beer and Asian dishes.",
    "phone": "801-745-3772",
@@ -234,7 +234,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Compass Rose Lodge & HALO Observatory",
-   "town": "Huntsville",
+   "town": "Huntsville Town",
    "type": "Boutique lodge & observatory",
    "blurb": "Boutique lodge in Huntsville with an on-site observatory offering stargazing tours, and First Lift Coffee.",
    "phone": "385-279-4460",
@@ -244,7 +244,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Detours",
-   "town": "Huntsville",
+   "town": "Huntsville Town",
    "type": "Paddle & bike rentals, shake shop",
    "blurb": "Locally owned paddleboard, kayak, canoe and cruiser-bike rental shop near Pineview Reservoir, with a shake shop.",
    "phone": "385-380-7102",
@@ -283,7 +283,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Jackson Fork Inn",
-   "town": "Huntsville",
+   "town": "Huntsville area",
    "type": "Inn",
    "blurb": "Inn on Highway 39 in Huntsville.",
    "checked": "2026-10-07"
@@ -346,7 +346,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Ogden Valley Branch Library",
-   "town": "Huntsville",
+   "town": "Huntsville Town",
    "type": "Library",
    "blurb": "Weber County Library's Valley branch, with books, services and free events.",
    "phone": "(801) 337-2660",
@@ -364,7 +364,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Powder Mountain",
-   "town": "Eden",
+   "town": "Powder Mountain",
    "type": "Ski resort",
    "blurb": "Ski resort founded in 1972, known for its large skiable acreage.",
    "phone": "801-745-3772",
@@ -382,7 +382,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Snowbasin Resort",
-   "town": "Huntsville",
+   "town": "Snowbasin",
    "type": "Ski resort (year-round)",
    "blurb": "Ski resort that hosted 2002 Olympic downhill, super-G and combined events; open for summer activities and events too.",
    "phone": "801-620-1000",
@@ -392,7 +392,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "South Fork Hardware (Huntsville)",
-   "town": "Huntsville",
+   "town": "Huntsville area",
    "type": "Hardware store",
    "blurb": "Hardware store, part of a regional family-owned chain, on Highway 39 in Huntsville.",
    "phone": "801-745-2443",
@@ -508,7 +508,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Historic Monastery Farm U-Pick Pumpkin Patch (McFarland Family Farms)",
-   "town": "Huntsville",
+   "town": "Huntsville area",
    "type": "Pumpkin patch / U-pick",
    "blurb": "U-pick pumpkins, hayrides and fall festivals on the former Trappist monastery farmland, seasonal September through October 31.",
    "phone": "(801) 814-6494",
@@ -517,7 +517,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "McFarland Farms Farmers Market (The White Barn Farm)",
-   "town": "Huntsville",
+   "town": "Huntsville area",
    "type": "Farmers market",
    "blurb": "Saturday summer market with local growers, makers and bakers plus McFarland farm produce, held July and August, 9 a.m. to 2 p.m.",
    "link": "https://www.mcfarlandfamilyfarms.com/",
@@ -554,8 +554,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Snowbasin Blues & Brews (weekend food trucks)",
-   "town": "Huntsville",
-   "area": "Snowbasin",
+   "town": "Snowbasin",
    "type": "Event food trucks (various)",
    "blurb": "Free weekend summer concert series at Snowbasin where a 2025 Ski Utah write-up says food trucks serve alongside local breweries; the individual trucks are not named.",
    "link": "https://www.snowbasin.com/events/blues-brews",
