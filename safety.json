@@ -1,6 +1,19 @@
 {
- "updated": "2026-10-08T16:34:19.398Z",
- "weather": [],
+ "updated": "2026-10-08T21:30:16.015Z",
+ "weather": [
+  {
+   "event": "Hydrologic Outlook",
+   "severity": "Unknown",
+   "headline": "Hydrologic Outlook issued October 8 at 3:13PM MDT by NWS Salt Lake City UT",
+   "area": "Beaver, UT; Box Elder, UT; Cache, UT; Carbon, UT; Davis, UT; Duchesne, UT; Emery, UT; Garfield, UT; Iron, UT; Juab, UT; Kane, UT; Millard, UT; Morgan, UT; Piute, UT; Rich, UT; Salt Lake, UT; Sanpete, UT; Sevier, UT; Summit, UT; Tooele, UT; Utah, UT; Wasatch, UT; Washington, UT; Wayne, UT; Weber, UT; Uinta, WY",
+   "starts": "2026-10-08T15:13:00-06:00",
+   "ends": "2026-10-09T18:00:00-06:00",
+   "text": "ESFSLC\n\nThe remnants of Tropical Storm Rachel will merge with a fall-like\nstorm system over the western United States, bringing moderate to\nheavy rainfall and a resulting threat of flooding. Widespread\nrainfall of 1 to 3 inches is expected, locally in excess of 3\ninches, particularly across south aspects of southern Utah\nmountains, between late Saturday and Monday morning.\n\nExpect many area waterways including streams, rivers, normally\ndry washes, creeks, and slot canyons to have rising, fast flows by\nSunday evening. Current forecasts do not bring any rivers to\nflood stage, but this will be monitored as the fine details of\nheavy rain bands become more confident. Those with activities near\nrivers, streams, creeks and recent burn scars should closely\nmonitor the forecast over the next several days. Those with\noutdoor plans Sunday onward that include any travel near waterways\nacross Utah sh",
+   "instruction": "",
+   "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
+   "source": "National Weather Service"
+  }
+ ],
  "fires": [],
  "city": [
   {
