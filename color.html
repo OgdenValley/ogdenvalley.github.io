@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Color Online · Ogden Valley Info &amp; Events</title>
+<meta name="description" content="Free printable Ogden Valley coloring pages for kids, new every month, plus a gallery of finished pages.">
+<meta property="og:title" content="Coloring Pages · Ogden Valley Info & Events">
+<meta property="og:description" content="Free printable Ogden Valley coloring pages for kids, new every month, plus a gallery of finished pages.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ogdenvalleyevent.com/coloring.html">
+<meta property="og:image" content="https://ogdenvalleyevent.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo-10-years-32.png">
+<link rel="apple-touch-icon" href="logo-10-years-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
+<style>
+.cz{display:grid;gap:14px;grid-template-columns:minmax(0,1fr) 340px;align-items:start}
+@media (max-width:900px){.cz{grid-template-columns:1fr}}
+.cz-art{background:#fff;border:1px solid var(--line);border-radius:14px;padding:8px;position:relative}
+.cz-art svg{width:100%;height:auto;display:block;max-height:78vh}
+.cz-art.fill svg [data-f]{cursor:pointer}
+.cz-art.draw svg{touch-action:none;cursor:crosshair}
+.cz-side{display:grid;gap:12px;position:sticky;top:10px}
+@media (max-width:900px){.cz-side{position:static}}
+.cz-box{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px;display:grid;gap:10px}
+.cz-pal{display:grid;grid-template-columns:repeat(8,1fr);gap:6px}
+.cz-sw{aspect-ratio:1;border-radius:50%;border:2px solid rgba(0,0,0,.25);cursor:pointer;padding:0;min-width:28px}
+.cz-sw[aria-pressed="true"]{outline:4px solid var(--ink);outline-offset:2px}
+.cz-tools{display:flex;flex-wrap:wrap;gap:8px}
+.cz-tools .chip[aria-pressed="true"]{border-color:var(--ink);background:var(--soft,#eef)}
+.cz-now{display:flex;align-items:center;gap:10px;font-weight:700}
+.cz-now span{width:34px;height:34px;border-radius:50%;border:2px solid rgba(0,0,0,.3);display:inline-block}
+.cz-pick{display:flex;flex-wrap:wrap;gap:8px}
+.cz-pick button{font:700 15px var(--body)}
+@media print{body *{visibility:hidden}#printme,#printme *{visibility:visible}#printme{position:fixed;inset:0;display:block!important}#printme img{width:100%;height:auto}}
+</style>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<div class="alert-bar" id="alert-bar" hidden></div>
+<div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
+  <strong>Canyon check</strong>
+  <a href="https://ogdenvalley.udot.utah.gov/road-information/" target="_blank" rel="noopener">Ogden Valley roads &amp; cameras (UDOT)</a>
+  <a href="live.html">Live view</a>
+  <a href="safety.html">Alerts &amp; fires</a>
+  <a href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Eden weather</a>
+</div></div>
+<header class="site-head"><div class="container">
+  <a class="brand" href="index.html"><img data-logo="180" src="logo-10-years-180.png" alt="" width="52" height="52"><span><b>Ogden Valley</b><small>Information &amp; Events</small></span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="main" id="nav" aria-label="Main"><a href="events.html">Events</a><a href="restaurants.html">Eat &amp; Shop</a><a href="artists.html">Artists</a><a href="safety.html">Safety</a><a href="live.html">Live View</a><a href="night-sky.html">Night Sky</a><a href="fun.html" aria-current="page">Fun &amp; Contests</a><a href="about.html">About</a><a href="search.html">Search</a></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="container"><div><p class="eyebrow">Coloring pages</p><h1>Color online</h1><p class="lead" style="margin-top:12px">Pick a color, then tap any part of the picture to fill it in. Switch to the crayon to draw your own details.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section><div class="container" style="display:grid;gap:14px">
+  <div class="cz-pick" id="cz-pick" aria-label="Choose a page"></div>
+  <div class="cz">
+    <div class="cz-art fill" id="cz-art"><p class="meta">Loading the picture…</p></div>
+    <div class="cz-side">
+      <div class="cz-box">
+        <div class="cz-now"><span id="cz-cur"></span><b id="cz-curname">Color</b></div>
+        <div class="cz-pal" id="cz-pal" role="group" aria-label="Colors"></div>
+      </div>
+      <div class="cz-box">
+        <div class="cz-tools" role="group" aria-label="Tools">
+          <button class="chip" type="button" data-tool="fill" aria-pressed="true">🪣 Fill</button>
+          <button class="chip" type="button" data-tool="draw" aria-pressed="false">🖍️ Crayon</button>
+          <button class="chip" type="button" data-tool="erase" aria-pressed="false">Eraser</button>
+        </div>
+        <div class="cz-tools" id="cz-sizes" role="group" aria-label="Crayon size" hidden>
+          <button class="chip" type="button" data-size="6" aria-pressed="false">Thin</button>
+          <button class="chip" type="button" data-size="14" aria-pressed="true">Medium</button>
+          <button class="chip" type="button" data-size="28" aria-pressed="false">Thick</button>
+        </div>
+        <div class="cz-tools">
+          <button class="chip" type="button" id="cz-undo">↩ Undo</button>
+          <button class="chip" type="button" id="cz-clear">Start over</button>
+        </div>
+      </div>
+      <div class="cz-box">
+        <div class="btns" style="margin:0"><button class="btn primary" type="button" id="cz-save">Save picture</button><button class="btn blue" type="button" id="cz-print">Print it</button></div>
+        <p class="fine" style="margin:0">Your coloring is saved on this device, so you can come back and finish later. Proud of it? Have a grown-up <a data-form="coloring" href="coloring.html">send it in</a> for the young artists gallery.</p>
+        <a href="coloring.html">← All coloring pages</a>
+      </div>
+    </div>
+  </div>
+</div></section>
+<div id="printme" style="display:none"><img alt="" src=""></div>
+</main>
+<script src="config.js"></script>
+<script src="places.js"></script>
+<script src="site.js"></script>
+<script>
+(function(){
+const C=window.OVE||{}, pages=(C.coloringPages||[]);
+const COLORS=[["Red","#e53935"],["Cherry","#b71c1c"],["Pink","#f48fb1"],["Hot pink","#ec407a"],["Coral","#ff7f6e"],["Orange","#fb8c00"],["Pumpkin","#ef6c00"],["Peach","#ffcc99"],
+["Yellow","#fdd835"],["Lemon","#fff59d"],["Gold","#f9a825"],["Lime","#c0ca33"],["Light green","#9ccc65"],["Green","#43a047"],["Forest","#1b5e20"],["Mint","#a5d6a7"],
+["Teal","#00897b"],["Aqua","#4dd0e1"],["Sky blue","#81d4fa"],["Blue","#1e88e5"],["Navy","#1a237e"],["Periwinkle","#9fa8da"],["Lavender","#ce93d8"],["Purple","#8e24aa"],
+["Grape","#4a148c"],["Magenta","#d81b60"],["Tan","#d7b98e"],["Light brown","#a1887f"],["Brown","#795548"],["Dark brown","#4e342e"],["Rust","#a0522d"],["Sand","#f0e0b8"],
+["Skin 1","#ffe0c7"],["Skin 2","#f5c9a0"],["Skin 3","#d9a37a"],["Skin 4","#b07850"],["Skin 5","#8a5a3b"],["Skin 6","#5c3a24"],["White","#ffffff"],["Light gray","#e0e0e0"],
+["Gray","#9e9e9e"],["Dark gray","#555555"],["Black","#111111"],["Glow green","#76ff03"],["Ghost white","#f4f8ff"],["Witch purple","#5e2b97"],["Night sky","#0d1b3d"],["Candy corn","#ffb300"]];
+let color=COLORS[5][1], tool="fill", size=14, svg=null, file="", fills=[], undo=[], drawLayer=null;
+const art=document.getElementById("cz-art"), pal=document.getElementById("cz-pal");
+const key=()=> "ovColor:"+file;
+function store(){ try{ const strokes=[...drawLayer.children].map(p=>[p.getAttribute("d"),p.getAttribute("stroke"),p.getAttribute("stroke-width")]); localStorage.setItem(key(),JSON.stringify({f:fills.map(e=>e.dataset.c||""),s:strokes})); }catch(e){} }
+function setColor(c,n){ color=c; document.getElementById("cz-cur").style.background=c; document.getElementById("cz-curname").textContent=n; [...pal.children].forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.c===c))); if(tool==="erase") setTool("fill"); }
+COLORS.forEach(([n,c])=>{ const b=document.createElement("button"); b.type="button"; b.className="cz-sw"; b.style.background=c; b.dataset.c=c; b.title=n; b.setAttribute("aria-label",n); b.onclick=()=>setColor(c,n); pal.append(b); });
+function setTool(t){ tool=t; document.querySelectorAll("[data-tool]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.tool===t))); document.getElementById("cz-sizes").hidden=t!=="draw"; art.className="cz-art "+(t==="draw"?"draw":"fill"); }
+document.querySelectorAll("[data-tool]").forEach(b=>b.onclick=()=>setTool(b.dataset.tool));
+document.querySelectorAll("[data-size]").forEach(b=>b.onclick=()=>{ size=+b.dataset.size; document.querySelectorAll("[data-size]").forEach(x=>x.setAttribute("aria-pressed",String(x===b))); });
+function paint(el,c){ el.style.fill=c||""; if(c) el.dataset.c=c; else delete el.dataset.c; }
+async function load(i){
+  const p=pages[i]; if(!p){ art.innerHTML='<p class="meta">No coloring pages this month yet.</p>'; return; }
+  file=p.file; undo=[]; document.querySelectorAll("#cz-pick button").forEach((b,j)=>b.setAttribute("aria-pressed",String(j===i)));
+  const txt=await (await fetch(p.file)).text(); art.innerHTML=txt; svg=art.querySelector("svg"); svg.removeAttribute("width"); svg.removeAttribute("height"); svg.setAttribute("aria-label","Coloring page: "+p.title); svg.setAttribute("role","img");
+  fills=[...svg.querySelectorAll("path,circle,ellipse,rect,polygon")].filter((e,k)=>{ if(k===0&&e.tagName==="rect"&&e.parentNode===svg) return false; const f=getComputedStyle(e).fill; return /rgb\(255, 255, 255\)|#fff/i.test(f); });
+  fills.forEach(e=>{ e.dataset.f=1; e.addEventListener("click",ev=>{ if(tool==="draw") return; const c=tool==="erase"?"":color; const prev=e.dataset.c||""; if(prev===c) return; undo.push({t:"f",e,prev}); paint(e,c); store(); }); });
+  drawLayer=document.createElementNS("http://www.w3.org/2000/svg","g"); drawLayer.setAttribute("fill","none"); drawLayer.setAttribute("stroke-linecap","round"); drawLayer.setAttribute("stroke-linejoin","round"); svg.append(drawLayer);
+  try{ const sv=JSON.parse(localStorage.getItem(key())||"null"); if(sv){ (sv.f||[]).forEach((c,k)=>fills[k]&&c&&paint(fills[k],c)); (sv.s||[]).forEach(([d,c,w])=>addStroke(d,c,w)); } }catch(e){}
+  let cur=null, pts=[];
+  const pt=ev=>{ const m=svg.getScreenCTM().inverse(); const q=new DOMPoint(ev.clientX,ev.clientY).matrixTransform(m); return [Math.round(q.x),Math.round(q.y)]; };
+  svg.addEventListener("pointerdown",ev=>{ if(tool!=="draw") return; ev.preventDefault(); svg.setPointerCapture(ev.pointerId); pts=[pt(ev)]; cur=addStroke("M"+pts[0].join(" ")+" l0 0",color,size); });
+  svg.addEventListener("pointermove",ev=>{ if(!cur) return; pts.push(pt(ev)); cur.setAttribute("d","M"+pts.map(p=>p.join(" ")).join(" L")); });
+  const end=()=>{ if(!cur) return; undo.push({t:"s",e:cur}); cur=null; store(); };
+  svg.addEventListener("pointerup",end); svg.addEventListener("pointercancel",end);
+}
+function addStroke(d,c,w){ const p=document.createElementNS("http://www.w3.org/2000/svg","path"); p.setAttribute("d",d); p.setAttribute("stroke",c); p.setAttribute("stroke-width",w); drawLayer.append(p); return p; }
+document.getElementById("cz-undo").onclick=()=>{ const a=undo.pop(); if(!a) return; if(a.t==="f") paint(a.e,a.prev); else a.e.remove(); store(); };
+document.getElementById("cz-clear").onclick=()=>{ if(!confirm("Start this page over? Your coloring will be erased.")) return; fills.forEach(e=>paint(e,"")); drawLayer.replaceChildren(); undo=[]; store(); };
+function toPNG(){ return new Promise(res=>{ const clone=svg.cloneNode(true); clone.querySelectorAll("[data-f]").forEach(e=>{ if(e.dataset.c) e.setAttribute("fill",e.dataset.c); e.removeAttribute("style"); }); clone.setAttribute("width","1700"); clone.setAttribute("height","2200");
+  const url="data:image/svg+xml;charset=utf-8,"+encodeURIComponent(new XMLSerializer().serializeToString(clone)); const im=new Image(); im.onload=()=>{ const cv=document.createElement("canvas"); cv.width=1700; cv.height=2200; const x=cv.getContext("2d"); x.fillStyle="#fff"; x.fillRect(0,0,1700,2200); x.drawImage(im,0,0,1700,2200); res(cv.toDataURL("image/png")); }; im.src=url; }); }
+document.getElementById("cz-save").onclick=async()=>{ const a=document.createElement("a"); a.href=await toPNG(); a.download="my-ogden-valley-coloring.png"; document.body.append(a); a.click(); a.remove(); if(window.goatcounter&&goatcounter.count) goatcounter.count({path:"coloring: saved "+file,event:true}); };
+document.getElementById("cz-print").onclick=async()=>{ const im=document.querySelector("#printme img"); im.onload=()=>window.print(); im.src=await toPNG(); };
+const pick=document.getElementById("cz-pick"); pages.forEach((p,i)=>{ const b=document.createElement("button"); b.type="button"; b.className="chip"; b.textContent=p.title; b.onclick=()=>{ history.replaceState(null,"","?p="+i); load(i); }; pick.append(b); });
+setColor(COLORS[5][1],COLORS[5][0]);
+const start=Math.min(Math.max(parseInt(new URLSearchParams(location.search).get("p")||"0",10)||0,0),Math.max(pages.length-1,0)); load(start);
+})();
+</script>
+
+<footer class="site-foot"><div class="container">
+  <div class="ten"><img data-logo="180" src="logo-10-years-180.png" alt="" width="64" height="64"><div><b>Ogden Valley Info &amp; Events</b><br><span class="fine">Eden · Liberty · Huntsville · since 2016</span><br><span class="fine" id="gc-count"></span></div></div>
+  <div><h3>Explore</h3><ul><li><a href="events.html">Events</a></li><li><a href="restaurants.html">Restaurants</a></li><li><a href="businesses.html">Valley Businesses</a></li><li><a href="artists.html">Local Artists</a></li><li><a href="beauty.html">Beauty &amp; wellness</a></li><li><a href="farm.html">Farm stands &amp; local food</a></li><li><a href="foodtrucks.html">Food trucks</a></li><li><a href="services.html">Home services</a></li><li><a href="open-this-week.html">Who&#39;s open this week</a></li><li><a href="jobs.html">Valley help wanted</a></li><li><a href="safety.html">Safety &amp; alerts</a></li><li><a href="live.html">Live view</a></li><li><a href="night-sky.html">Night sky</a></li></ul></div>
+  <div><h3>Take part</h3><ul><li><a href="submit.html">Send an event or listing</a></li><li><a href="fun.html">Fun &amp; contests</a></li><li><a href="sponsor.html">Sponsor a spot</a></li><li><a href="ten-years.html">10 years</a></li><li><a href="know-how.html">Valley Know-How classes</a></li><li><a href="volunteer.html">Volunteer &amp; give back</a></li><li><a href="recipes.html">Recipe corner</a></li><li><a href="garden.html">Garden board</a></li><li><a href="prepared.html">Be prepared board</a></li><li><a href="coming.html">What&#39;s coming &amp; ideas</a></li><li><a data-newsletter data-hide-empty href="#">Weekly newsletter</a></li></ul></div>
+  <div><h3>Follow</h3><ul><li><a data-facebook href="https://www.facebook.com/ogdenvalleyevents" target="_blank" rel="noopener">Facebook</a></li><li><a data-instagram data-hide-empty href="#" target="_blank" rel="noopener">Instagram</a></li><li><a href="about.html#groups">Our Facebook groups</a></li><li><a href="rules.html">Community rules</a></li><li><a href="terms.html">Terms</a></li><li><a href="privacy.html">Privacy</a></li></ul>
+  <p class="fine">Event details come from organizers. Check with them before you go.</p></div>
+</div></footer>
+
+</body>
+</html>

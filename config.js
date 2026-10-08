@@ -62,9 +62,9 @@ window.OVE = {
 
   /* --- Sponsors (shown on the home page, Events page and Sponsor page) ---
      Add one { } per sponsor. "until" is the last day it shows ("YYYY-MM-DD"); leave it out to keep it up.
-     Put the logo in the photos/ folder. */
+     Upload the logo to the main folder. */
   sponsors: [
-    { name: "Yes, I Can Fix That", tier: "Valley sponsor", logo: "photos/yes-i-can-fix-that-logo.jpg",
+    { name: "Yes, I Can Fix That", tier: "Valley sponsor", logo: "yes-i-can-fix-that-logo.jpg",
       line: "Veteran-owned handyman serving all of Ogden Valley: drywall, doors, home maintenance and DIY classes.",
       link: "https://icanfixthatut.com", listing: "services.html#yes-i-can-fix-that", story: "spotlight-yes-i-can-fix-that.html",
       note: "Owned by the publisher of this site." }

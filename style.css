@@ -168,7 +168,7 @@ details summary{cursor:pointer;color:var(--blue)}
 .card .upd{display:inline-block;margin-top:6px;font-size:15px}
 .upd-foot{margin-top:18px;color:var(--muted)}
 .card .photos{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:-2px 0 8px}
-.card .photos img{width:100%;max-width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;display:block}
+.card .photos img{min-width:0;width:100%;max-width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:8px;display:block}
 .card .more-photos{grid-column:1/-1;font-size:15px}
 .card .more-photos .photos{margin-top:6px}
 .listmeta{display:grid;gap:6px}
@@ -203,3 +203,4 @@ details summary{cursor:pointer;color:var(--blue)}
 .gallery figcaption{padding:8px 12px 10px;display:grid;gap:2px;font-size:16px}
 .gallery figcaption .meta{font-size:14px}
 .spot h2{text-wrap:balance}
+.card .photos{min-width:0}.card{min-width:0}

@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Business Poster · Ogden Valley Info & Events</title>
-<meta name="description" content="Printable QR poster for Ogden Valley businesses.">
-<meta property="og:title" content="Business Poster · Ogden Valley Info & Events">
-<meta property="og:description" content="Printable QR poster for Ogden Valley businesses.">
+<title>Valley Know-How · Ogden Valley Info & Events</title>
+<meta name="description" content="Free classes from Ogden Valley neighbors: canning, baking, gardening, crafts and more, plus features on the local businesses who teach them.">
+<meta property="og:title" content="Valley Know-How · Ogden Valley Info & Events">
+<meta property="og:description" content="Free classes from Ogden Valley neighbors: canning, baking, gardening, crafts and more, plus features on the local businesses who teach them.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://ogdenvalleyevent.com/poster.html">
+<meta property="og:url" content="https://ogdenvalleyevent.com/know-how.html">
 <meta property="og:image" content="https://ogdenvalleyevent.com/share-card.png">
 <meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="logo-10-years-32.png">
@@ -34,23 +34,18 @@
   <nav class="main" id="nav" aria-label="Main"><a href="events.html">Events</a><a href="restaurants.html">Eat &amp; Shop</a><a href="artists.html">Artists</a><a href="safety.html">Safety</a><a href="live.html">Live View</a><a href="night-sky.html">Night Sky</a><a href="fun.html">Fun &amp; Contests</a><a href="about.html">About</a><a href="search.html">Search</a></nav>
 </div></header>
 <main id="main">
-<section class="no-print"><div class="container" style="display:grid;gap:12px;max-width:760px">
-  <h1>Printable QR poster</h1><p class="lead">Pick a business, then print. The QR code takes customers to the business's listing on the site.</p>
-  <label style="display:grid;gap:6px;font-weight:600">Business<select id="biz" style="font:17px var(--body);padding:10px;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink)"></select></label>
-  <label style="display:grid;gap:6px;font-weight:600">Or type a name<input id="custom" type="text" placeholder="Business name" style="font:17px var(--body);padding:10px;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink)"></label>
-  <div class="btns"><button class="btn primary" type="button" onclick="window.print()">Print poster</button></div>
+<section class="hero"><div class="container"><div><p class="eyebrow">Neighbors teaching neighbors</p><h1 id="kh-h1">Valley Know-How</h1><p class="lead" id="kh-lead" style="margin-top:12px">Learn a skill from someone in the Valley who does it every day, and get to know their business while you're at it.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section><div class="container" style="display:grid;gap:18px">
+  <div><h2 style="margin-bottom:10px">Upcoming classes</h2><div id="kh-up"></div></div>
+  <div class="grid">
+    <article class="card"><p class="eyebrow">How it works</p><h3>Free to be featured</h3><p>Each teacher gets a feature article about who they are, how they learned, and their business. It stays up after the class so people keep finding them.</p></article>
+    <article class="card"><p class="eyebrow">Signing up</p><h3>Straight to the teacher</h3><p>Each class lists the teacher's own sign-up link or phone number. They set the date, place, size and any cost for supplies.</p></article>
+    <article class="card"><p class="eyebrow">Safety</p><h3>Checked credentials</h3><p>For skills like canning and food preservation, teachers must be trained through USU Extension and teach tested methods. We check before a class goes up.</p></article>
+  </div>
+  <div><h2 style="margin-bottom:10px">Teacher features</h2><div id="kh-feats"></div></div>
+  <div class="card cta"><div><h2>Have a skill to share?</h2><p style="margin-top:6px">Canning, bread, quilting, fly tying, gardening at our elevation, first aid: if you know it, the Valley wants to learn it. Being featured is free.</p></div><div class="btns" style="margin:0"><a class="btn primary" data-form="teach" data-hide-empty href="#">Teach a class</a><a class="btn blue" href="https://www.facebook.com/ogdenvalleyevents" target="_blank" rel="noopener">Message us on Facebook</a></div></div>
+  <p class="fair">Teachers run their own classes and are responsible for them. Valley Know-How features are never paid placements. Sponsors are labeled separately.</p>
 </div></section>
-<section><div class="container"><div id="poster" class="poster">
-  <img data-logo="512" src="logo-10-years-512.png" alt="" width="200" height="200">
-  <p class="eyebrow" style="color:var(--blue)">Find us on</p>
-  <h2>Ogden Valley Info &amp; Events</h2>
-  <div class="pname" id="pname">Your business</div>
-  <div id="qr"></div>
-  <p>Scan to see our listing, events and more.</p>
-  <p class="meta">#OgdenValleyEvents · ogdenvalleyevent.com</p>
-</div></div></section>
-<style>.poster{max-width:640px;margin:0 auto;background:#fff;color:#10233D;border:3px solid #10233D;border-radius:18px;padding:36px;text-align:center;display:grid;gap:10px;justify-items:center}.poster h2{font-size:30px}.pname{font-family:var(--display);font-weight:800;font-size:40px;line-height:1.1}#qr{padding:14px;background:#fff}@media print{.no-print,.site-head,.canyon,.alert-bar,.site-foot{display:none!important}body{background:#fff}.poster{border-width:4px;page-break-inside:avoid}}</style>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </main>
 <footer class="site-foot"><div class="container">
   <div class="ten"><img data-logo="180" src="logo-10-years-180.png" alt="" width="64" height="64"><div><b>Ogden Valley Info &amp; Events</b><br><span class="fine">Eden · Liberty · Huntsville · since 2016</span><br><span class="fine" id="gc-count"></span></div></div>
@@ -62,16 +57,7 @@
 <script src="config.js"></script>
 <script src="places.js"></script>
 <script src="site.js"></script>
-<script>
-
-(function(){const S=window.OVE_SITE;const all=[].concat((S.P.restaurants||[]).map(p=>[p,"restaurants.html"]),(S.P.businesses||[]).map(p=>[p,"businesses.html"])).sort((a,b)=>a[0].name.localeCompare(b[0].name));
-const sel=document.getElementById("biz");sel.append(new Option("Choose a business",""));all.forEach(([p,h],i)=>sel.append(new Option(p.name,i)));
-const slug=s=>s.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");let qr=null;
-function upd(name,page){document.getElementById("pname").textContent=name||"Your business";const url="https://ogdenvalleyevent.com/"+(page||"restaurants.html")+(name?"#"+slug(name):"");const box=document.getElementById("qr");box.replaceChildren();if(window.QRCode)qr=new QRCode(box,{text:url,width:260,height:260,correctLevel:QRCode.CorrectLevel.M})}
-sel.onchange=()=>{const x=all[sel.value];if(x){document.getElementById("custom").value="";upd(x[0].name,x[1])}};
-document.getElementById("custom").oninput=e=>{sel.value="";upd(e.target.value.trim(),"businesses.html")};
-const q=new URLSearchParams(location.search).get("b");if(q){document.getElementById("custom").value=q;upd(q,"businesses.html")}else upd("","");
-})();
-</script>
+<script src="knowhow.js"></script>
+<script src="knowhow-page.js"></script>
 </body>
 </html>

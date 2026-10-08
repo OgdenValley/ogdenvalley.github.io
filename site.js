@@ -112,10 +112,10 @@ function reviewBlock(p, R){
   if (link) wrap.append(el("a", {class: "btn ghost small-btn", href: link, target: "_blank", rel: "noopener", text: r && r.count ? "Leave a review" : "Be the first to review"}));
   return wrap.childNodes.length ? wrap : null;
 }
-/* Listing photos: p.photos is a list of files in photos/ (added after they're approved). Shows 3, the rest open below. */
+/* Listing photos: p.photos is a list of image files uploaded to the main folder of the repo (a photos/ folder also works). Shows 3, the rest open below. */
 function photoStrip(p){
   const ph = (p.photos || []).filter(Boolean); if (!ph.length) return null;
-  const img = (f, i) => el("img", {src: "photos/" + f, alt: p.name + " photo " + (i + 1), loading: "lazy", width: "400", height: "300"});
+  const img = (f, i) => { const im = el("img", {src: f, alt: p.name + " photo " + (i + 1), loading: "lazy", width: "400", height: "300"}); im.addEventListener("error", () => { if (!im.dataset.tried && !f.includes("/")) { im.dataset.tried = 1; im.src = "photos/" + f; } }, {once: false}); return im; };
   const wrap = el("div", {class: "photos"}, ph.slice(0, 3).map(img));
   if (ph.length > 3) wrap.append(el("details", {class: "more-photos"}, [el("summary", {text: "See " + (ph.length - 3) + " more photo" + (ph.length - 3 === 1 ? "" : "s")}), el("div", {class: "photos"}, ph.slice(3).map((f, i) => img(f, i + 3)))]));
   return wrap;

@@ -2,12 +2,12 @@
    LISTINGS — one list per section. Only places Shauna has approved go here.
 
    Fields for every place (leave out any you don't have):
-     name, town ("Eden" | "Liberty" | "Huntsville Town" | "Huntsville area" | "Snowbasin" | "Powder Mountain"), area (when no town),
+     name, town ("Eden" | "Liberty" | "Huntsville Town" | "Huntsville area" | "Snowbasin" | "Powder Mountain"), area (when no town, e.g. "Ogden Canyon"),
      type, blurb, phone, link, address
      checked:  date a local last confirmed it, "YYYY-MM-DD"
      tags:     ["Dog-friendly patio", "Kid-friendly", ...]  (owners choose)
      news:     { text: "Pumpkin pie is back!", date: "YYYY-MM-DD" }  (owner update)
-     photos:   ["file.jpg", ...]  files in the photos/ folder, approved only
+     photos:   ["file.jpg", ...]  image files uploaded to the main folder, approved only
      now:      "open" | "short" | "closed"   (this week, for Who's Open)
      nowNote:  "Closed Mon-Tue until Thanksgiving"
    Artists use medium instead of type.
@@ -22,6 +22,16 @@
    ===================================================================== */
 window.OVE_PLACES = {
  "restaurants": [
+  {
+   "name": "The Oaks",
+   "area": "Ogden Canyon",
+   "type": "Historic canyon restaurant & ice cream",
+   "blurb": "One of Utah's oldest restaurants, welcoming visitors in Ogden Canyon since it was founded as a mountain resort in 1907. Homemade meals, burgers and Farr's ice cream; reopened under new owners David and Cora Neal.",
+   "phone": "(801) 348-8188",
+   "link": "https://theoaksogden.com/",
+   "address": "750 Ogden Canyon, Ogden, UT 84401",
+   "checked": "2026-10-08"
+  },
   {
    "name": "Bower Lodge",
    "town": "Eden",
