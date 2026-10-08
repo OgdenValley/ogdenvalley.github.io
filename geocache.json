@@ -10,5 +10,15 @@
   "lat": 41.73131,
   "lng": -111.83491,
   "county": "Cache"
+ },
+ "Nordic Valley, Utah": {
+  "lat": 41.30577,
+  "lng": -111.85716,
+  "county": "Weber"
+ },
+ "Huntsville, Utah": {
+  "lat": 41.26101,
+  "lng": -111.76883,
+  "county": "Weber"
  }
 }
