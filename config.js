@@ -61,7 +61,7 @@ window.OVE = {
   recipeVoteEntry: "",
 
   /* --- Visit counts (GoatCounter) ------------------------------------- */
-  goatcounter: "",            // the code you picked, e.g. "ogdenvalley"
+  goatcounter: "ogdenvalleyevent",          // the code you picked, e.g. "ogdenvalley"
   showVisitCount: true,       // show the total visits in the footer
 
   /* --- Guess the Spot (newest last) ------------------------------------
