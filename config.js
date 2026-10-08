@@ -21,16 +21,16 @@ window.OVE = {
 
   /* --- Google Forms --------------------------------------------------- */
   forms: {
-    event:    "",             // Submit an event
+    event:    "https://docs.google.com/forms/d/e/1FAIpQLSdq-tr_1dUMWJvoD06p9oZAXQWuK5-SnkucboHFwVEFmeZSZg/viewform",             // Submit an event
     business: "https://docs.google.com/forms/d/e/1FAIpQLSc-jh9kRzlErQ1jv698LT4prqLnCWFkdoJy6Bj5KcUeCZCL7A/viewform", // List a business or restaurant
-    artist:   "",             // Be listed as a local artist
-    photo:    "",             // Photo contest entry
+    artist:   "https://docs.google.com/forms/d/e/1FAIpQLSeT9RH4wEL6lcusqhtEeubo62Ypz2kRLDNK5Uqm55OO_cDCKQ/viewform",             // Be listed as a local artist
+    photo:    "https://docs.google.com/forms/d/e/1FAIpQLSe9nppeo6jqEILr9SLywvxZ3jgXA-7V0RiaQ3DSvzk0VCst8A/viewform",             // Photo contest entry
     sponsor:  "https://docs.google.com/forms/d/e/1FAIpQLScl8tGaQgMKnVOo2ocL6tqrMPACLtl36UXm_CJIrrg39ix-vQ/viewform", // Sponsor a spot
     guess:    "",             // Guess the Spot: send a guess
     guessSubmit: "",          // Guess the Spot: send in your own spot
     skyPhoto: "",             // Night sky photo submissions
     skyVote: "",              // Night sky photo of the month vote
-    report: "",               // Community reports (fire, road, power) — the form link
+    report: "https://docs.google.com/forms/d/e/1FAIpQLSeeDFHHAo4biQ0t4BzoG0TmCzcFgXUc5iBN33pOrKYpmK1Eng/viewform",               // Community reports (fire, road, power) — the form link
     idea: "",                 // Share an idea for the site
     sighting: "",             // Wildlife & wildflower sightings
     hunt: "",                 // Scavenger hunt finish photo
@@ -41,7 +41,7 @@ window.OVE = {
     volunteer: "",            // Groups: post a volunteer need or drive
     tips: "",                 // Garden + Be Prepared boards (one form, Board question picks which)
     jobs: "https://docs.google.com/forms/d/e/1FAIpQLScOzyUB6XfbZWbwNCMR1FIAjCyWWt-aQFQSGKN2pR5YJvtwkw/viewform", // Help wanted: post a Valley job
-    update: "https://docs.google.com/forms/d/e/1FAIpQLSc-jh9kRzlErQ1jv698LT4prqLnCWFkdoJy6Bj5KcUeCZCL7A/viewform" // Listing updates (business form for now): hours changed, closed, moved, or a place we're missing
+    update: "https://docs.google.com/forms/d/e/1FAIpQLSfSL4w4MmyTMJyi62Rd4icPvaIdLejnDfsF_9a67BvjhzPK_A/viewform" // Listing updates (no sign-in form): hours changed, closed, moved, or a place we're missing
   },
 
   /* --- Who's open this week ------------------------------------------
