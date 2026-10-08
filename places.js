@@ -661,9 +661,13 @@ window.OVE_PLACES = {
   },
   {
    "name": "Kristie Tueller Designs",
-   "area": "Ogden Valley",
+   "area": "Huntsville area",
    "medium": "Silversmith (handmade silver jewelry)",
-   "checked": "2026-10-07"
+   "blurb": "\u201cGrounded by the rugged beauty of the mountains, my workbench is a sanctuary where sterling silver and stone come together to tell a story. My work is defined by a bold, soulful elegance. I craft jewelry for those who carry a connection to the wild within them: timeless, spirited and authentic.\u201d",
+   "where": "Mountain Arts and Music, Ogden Farmers Market, Oktoberfest at Snowbasin, and her website",
+   "link": "https://kristietuellerdesigns.com",
+   "photos": ["kristie-tueller-necklace.jpg", "kristie-tueller-turquoise-ring.jpg", "kristie-tueller-inlay-ring.jpg"],
+   "checked": "2026-10-08"
   },
   {
    "name": "Mike Gardner",

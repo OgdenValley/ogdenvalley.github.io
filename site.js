@@ -141,6 +141,7 @@ function listing(box, items, kind, R){
     el("div", {class: "meta", text: [p.type || p.medium, p.town || p.area].filter(Boolean).join(" · ")}),
     p.blurb ? el("p", {text: p.blurb}) : null,
     p.serves ? el("div", {class: "meta", text: "Serves: " + p.serves}) : null,
+    p.where ? el("div", {class: "meta", text: "Find the work at: " + p.where}) : null,
     p.address ? el("div", {class: "meta", text: p.address}) : null,
     p.hours ? el("div", {class: "meta", text: "Hours: " + p.hours}) : null,
     p.phone ? el("div", {class: "meta"}, [el("a", {href: "tel:" + String(p.phone).replace(/[^0-9+]/g, ""), "data-track": "call: " + p.name, text: p.phone})]) : null,
