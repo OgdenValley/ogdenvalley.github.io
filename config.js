@@ -85,15 +85,19 @@ window.OVE = {
   /* --- Home page photo banner -------------------------------------------
      Used when there is no Photo Contest winner yet. Once a winner is set in contest.lastWinner (Photo contest section below),
      the banner shows the winning photo automatically, credited as "Photo of the Month". */
-  heroPhoto: "sky-logan-peak-moonrise-1.jpg",
+  heroPhoto: "valley-sunset-huntsville.jpg",
   heroHeadline: "Together in Ogden Valley",
-  heroCredit: "Photo: Jim Brown",          // shown small in the bottom-right corner
+  heroCredit: "Photo: Seth Miller",          // shown small in the bottom-right corner
 
   /* --- Valley Photos (newest last) ------------------------------------
      { image: "file.jpg", by: "Jen M.", place: "Pineview" | "Eden" | "Liberty" | "Huntsville" | "Ogden Canyon" | "Snowbasin" | "Powder Mountain" | "Nordic Valley",
        date: "2026-10" (year-month, sets the season), caption: "Sunrise over the reservoir" }
      Only add photos the photographer gave permission for. Upload the image to the main folder. */
-  valleyPhotos: [],
+  valleyPhotos: [
+    { image: "valley-moose-snow-deck.jpg", by: "Shauna Miller", place: "Nordic Valley", date: "", caption: "A moose naps in the snow right outside the back door" },
+    { image: "valley-sunset-huntsville.jpg", by: "Seth Miller", place: "Huntsville", date: "", caption: "Fire in the sky over the Valley at sunset" },
+    { image: "valley-sunrays-seth-miller.jpg", by: "Seth Miller", place: "Huntsville", date: "", caption: "Sun rays break through the clouds over the mountains" }
+  ],
 
   /* --- Then & Now ------------------------------------------------------
      { title: "", then: "then-file.jpg", now: "now-file.jpg", thenYear: "1950s",

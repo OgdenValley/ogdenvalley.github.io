@@ -2,7 +2,7 @@
    LISTINGS — one list per section. Only places Shauna has approved go here.
 
    Fields for every place (leave out any you don't have):
-     name, town ("Eden" | "Liberty" | "Huntsville Town" | "Huntsville area" | "Snowbasin" | "Powder Mountain"), area (when no town, e.g. "Ogden Canyon"),
+     name, town ("Eden" | "Liberty" | "Huntsville Town" | "Huntsville area" | "Snowbasin" | "Powder Mountain" | "Nordic Valley"), area (when no town, e.g. "Ogden Canyon"),
      type, blurb, phone, link, address
      checked:  date a local last confirmed it, "YYYY-MM-DD"
      tags:     ["Dog-friendly patio", "Kid-friendly", ...]  (owners choose)
@@ -162,7 +162,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Nordic Valley Snack Shack & food trucks",
-   "town": "Ogden Valley",
+   "town": "Nordic Valley",
    "type": "Snack bar & rotating food trucks",
    "blurb": "Resort snack shack plus rotating food trucks (listed: Bad Boy Burger Co., Fry Me To The Moon, Green Goat Kava and Coffee).",
    "phone": "385-298-0155",
@@ -345,7 +345,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Nordic Valley",
-   "town": "Eden",
+   "town": "Nordic Valley",
    "type": "Ski resort",
    "blurb": "Small ski area founded in 1968, known for night skiing.",
    "phone": "385-298-0155",
