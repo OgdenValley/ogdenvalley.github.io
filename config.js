@@ -82,6 +82,12 @@ window.OVE = {
     { week: "Oct 8", image: "spot-2026-10-08.jpg", hint: "Fall color, string lights and a big rocky ridge. Where are these two pumpkinheads standing?", by: "ove", credit: "", revealed: false, answer: "", winner: "" }
   ],
 
+  /* --- Home page photo banner -------------------------------------------
+     Swap in your own photo: upload it to the main folder and put its name here. */
+  heroPhoto: "sky-logan-peak-moonrise-1.jpg",
+  heroHeadline: "Together in Ogden Valley",
+  heroCredit: "",          // e.g. "Photo: Shauna M." (shown small in the corner)
+
   /* --- Valley Photos (newest last) ------------------------------------
      { image: "file.jpg", by: "Jen M.", place: "Pineview" | "Eden" | "Liberty" | "Huntsville" | "Ogden Canyon" | "Snowbasin" | "Powder Mountain" | "Nordic Valley",
        date: "2026-10" (year-month, sets the season), caption: "Sunrise over the reservoir" }

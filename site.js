@@ -197,6 +197,12 @@ function listing(box, items, kind, R){
   if (foot && !document.body.hasAttribute("data-no-groups")) { const sec = el("section", {class: "fbg-band", "aria-label": "Our Facebook groups"}, [el("div", {class: "container"}, [circles(G, "Join our Facebook groups")])]); foot.before(sec); }
 })();
 
+/* ---------- home page photo banner (settings in config.js) ---------- */
+(function(){ const h = document.getElementById("home-hero"); if (!h) return;
+  if (C.heroPhoto) h.style.setProperty("--hero-img", "url('" + C.heroPhoto + "')");
+  if (C.heroHeadline) document.getElementById("hero-h1").textContent = C.heroHeadline;
+  const cr = document.getElementById("hero-credit"); if (cr) cr.textContent = C.heroCredit || ""; })();
+
 /* ---------- shared data loaders ---------- */
 async function loadJSON(name){ try { const r = await fetch(name, {cache: "no-store"}); if (!r.ok) throw 0; return await r.json(); } catch (e) { return null; } }
 function renderMeetings(box, L, n, full){
