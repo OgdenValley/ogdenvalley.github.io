@@ -239,3 +239,8 @@ body.kids h1,body.kids h2{font-family:var(--display);font-weight:800;letter-spac
 .spot-badge.store{background:#E8F0FB;color:#1F4575}
 .spot-badge.home{background:#FFF1E6;color:#8A3D0A}
 @media (prefers-color-scheme: dark){.spot-badge.store{background:#1E2F4A;color:#BFD4F2}.spot-badge.home{background:#3A2616;color:#F6C9A6}}
+.featured{background:var(--card);border:2px solid #F36A22;border-radius:var(--radius);padding:14px 16px 16px;margin-bottom:18px}
+.featured .eyebrow{color:#C2510F;margin:0 0 10px}
+.badges{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:2px 0 4px}
+.new-badge{display:inline-block;font:800 12px var(--body);letter-spacing:.06em;text-transform:uppercase;background:#1E7B4A;color:#fff;padding:3px 9px;border-radius:999px}
+.sortbar{margin-bottom:12px}

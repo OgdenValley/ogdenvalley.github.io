@@ -457,6 +457,7 @@ window.OVE_PLACES = {
  "services": [
   {
    "name": "Yes, I Can Fix That",
+    "added": "2026-10-08",
    "job": "Handyman & repairs",
    "type": "Handyman & home repair",
    "serves": "All of Ogden Valley",
@@ -468,11 +469,11 @@ window.OVE_PLACES = {
    "tags": ["Veteran owned", "Insured", "On time"],
    "photos": ["yes-i-can-fix-that-logo.jpg", "yicft-job-14-card.jpg", "yicft-job-27-card.jpg", "yicft-job-28-card.jpg", "yicft-job-12-card.jpg"],
    "sponsor": true,
-   "note": "Owned by the publisher of this site.",
    "checked": "2026-10-08"
   },
   {
    "name": "Bluebird Sprinklers & Irrigation",
+    "added": "2026-10-08",
     "photos": ["bluebird-sprinklers-yard.jpg", "bluebird-sprinklers-trench.jpg", "bluebird-sprinklers-valve-box.jpg"],
    "job": "Landscaping & snow removal",
    "type": "Sprinklers, irrigation & snow removal",
@@ -490,6 +491,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "That's My House Cleaning Service",
+    "added": "2026-10-08",
     "photos": ["thats-my-house-living-room.jpg", "thats-my-house-bedroom.jpg", "thats-my-house-bathroom.jpg", "thats-my-house-cabin.jpg"],
    "job": "Cleaning & window washing",
    "type": "House cleaning & vacation rental care",
@@ -513,6 +515,7 @@ window.OVE_PLACES = {
  "beauty": [
   {
    "name": "Altitude Fitness and Health",
+    "added": "2026-10-08",
     "home": true,
     "photos": ["altitude-fitness-salad.jpg"],
    "town": "Eden",

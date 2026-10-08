@@ -147,15 +147,28 @@ function spotFilter(bar, items, kind, onChange){
   bar.replaceChildren(...opts.map(([k, l]) => { const b = el("button", {class: "chip", type: "button", "aria-pressed": String(k === mode), text: l}); b.onclick = () => { mode = k; [...bar.children].forEach(x => x.setAttribute("aria-pressed", String(x === b))); onChange(); }; return b; }));
   return p => mode === "all" || (mode === "home" ? isHome(p, kind) : !isHome(p, kind));
 }
+/* "New" = added in the last 30 days (listings carry "added": "YYYY-MM-DD") */
+const isNew = p => { if (!p.added) return false; const [y,m,d] = p.added.split("-").map(Number); return (Date.now() - new Date(y, m - 1, d).getTime()) < 30 * 864e5; };
+const SORT = {};
 function listing(box, items, kind, R){
   box.replaceChildren();
   if (!items.length) { box.append(el("div", {class: "empty"}, [ el("p", {text: kind === "artists" ? "Artist listings are being gathered. Are you an Ogden Valley or Weber County artist? Ask to be listed." : "Listings are being gathered and checked. Own or love a place in the Valley? Send it in."}),
     el("a", {class: "btn blue", "data-form": kind === "artists" ? "artist" : "business", href: (C.forms && C.forms[kind === "artists" ? "artist" : "business"]) || "submit.html", text: kind === "artists" ? "Ask to be listed" : "Send a listing"}) ])); return; }
   const upd = C.forms && C.forms.update;
+  // Featured sponsor box at the top; the regular list below stays A to Z (or newest first).
+  const sponsors = items.filter(p => p.sponsor), rest = items.filter(p => !p.sponsor);
+  if (sponsors.length) box.append(el("div", {class: "featured"}, [el("p", {class: "eyebrow", text: sponsors.length > 1 ? "Featured sponsors" : "Featured sponsor"}), el("div", {class: "grid"}, sponsors.map(p => card(p)))]));
+  const mode = SORT[kind] || "az";
+  if (rest.some(p => p.added) && rest.length > 1) {
+    const bar = el("div", {class: "filters sortbar"}, [["az", "A to Z"], ["new", "Newest first"]].map(([k, l]) => { const b = el("button", {class: "chip", type: "button", "aria-pressed": String(k === mode), text: l}); b.onclick = () => { SORT[kind] = k; listing(box, items, kind, R); }; return b; }));
+    box.append(bar);
+  }
   const grid = el("div", {class: "grid"}); box.append(grid);
-  items.slice().sort((a,b) => a.name.localeCompare(b.name)).forEach(p => grid.append(el("article", {class: "card", id: slug(p.name), "data-town": p.town || p.area || ""}, [
+  const sorter = mode === "new" ? (a, b) => (b.added || "").localeCompare(a.added || "") || a.name.localeCompare(b.name) : (a, b) => a.name.localeCompare(b.name);
+  rest.slice().sort(sorter).forEach(p => grid.append(card(p)));
+  function card(p){ return el("article", {class: "card", id: slug(p.name), "data-town": p.town || p.area || ""}, [
     photoStrip(p),
-    p.sponsor ? el("span", {class: "sponsor-badge", text: "Sponsor"}) : null,
+    (p.sponsor || isNew(p)) ? el("div", {class: "badges"}, [p.sponsor ? el("span", {class: "sponsor-badge", text: "Sponsor"}) : null, isNew(p) ? el("span", {class: "new-badge", text: "New"}) : null]) : null,
     el("h3", {text: p.name}),
     spotBadge(p, kind),
     el("div", {class: "meta", text: [p.type || p.medium, p.town || p.area].filter(Boolean).join(" · ")}),
@@ -169,10 +182,25 @@ function listing(box, items, kind, R){
     listMeta(p),
     p.note ? el("div", {class: "fine note", text: p.note}) : null,
     kind !== "artists" ? reviewBlock(p, R) : null,
-    upd ? el("a", {class: "upd", href: upd, target: "_blank", rel: "noopener", text: kind === "artists" ? "Info changed? Let us know" : "Hours changed or closed? Let us know"}) : null ])));
+    upd ? el("a", {class: "upd", href: upd, target: "_blank", rel: "noopener", text: kind === "artists" ? "Info changed? Let us know" : "Hours changed or closed? Let us know"}) : null ]); }
   if (upd) box.append(el("p", {class: "upd-foot"}, [document.createTextNode(kind === "artists" ? "Know an artist we're missing, or something here that changed? " : "Hours different, a place closed, or one we're missing? "), el("a", {href: upd, target: "_blank", rel: "noopener", text: "Let us know"}), document.createTextNode(". Every update is checked before the listing changes.")]));
 }
 
+
+/* ---------- Just added: any <div data-justadded> shows the 6 newest listings from every page ---------- */
+(function(){ const box = document.querySelector("[data-justadded]"); if (!box) return;
+  const page = {restaurants: "restaurants.html", businesses: "businesses.html", services: "services.html", beauty: "beauty.html", farm: "farm.html", foodtrucks: "foodtrucks.html", artists: "artists.html"};
+  const label = {restaurants: "Eat", businesses: "Shop", services: "Home Services", beauty: "Beauty & Wellness", farm: "Farm & Local Food", foodtrucks: "Food Trucks", artists: "Artists"};
+  const all = Object.keys(page).flatMap(k => (P[k] || []).filter(p => p.added).map(p => [p, k])).sort((a, b) => b[0].added.localeCompare(a[0].added) || a[0].name.localeCompare(b[0].name)).slice(0, 6);
+  if (!all.length) return;
+  box.append(el("div", {class: "section-head"}, [el("div", {}, [el("p", {class: "eyebrow", text: "New on the site"}), el("h2", {text: "Just added"})])]),
+    el("div", {class: "grid"}, all.map(([p, k]) => el("article", {class: "card"}, [
+      (p.photos && p.photos[0]) ? el("img", {src: p.photos[0], alt: p.name, loading: "lazy", style: "width:100%;height:160px;object-fit:cover;border-radius:10px"}) : null,
+      el("div", {class: "badges"}, [el("span", {class: "new-badge", text: "New"}), el("span", {class: "meta", text: label[k]})]),
+      el("h3", {text: p.name}),
+      el("div", {class: "meta", text: [p.type || p.medium, p.town || p.area || p.serves].filter(Boolean).join(" · ")}),
+      el("a", {href: page[k] + "#" + slug(p.name), text: "See the listing"}) ]))));
+})();
 
 /* ---------- Local home businesses: any <div data-homebiz> shows 3 home-based listings, a different mix each visit ---------- */
 (function(){ const box = document.querySelector("[data-homebiz]"); if (!box) return;
