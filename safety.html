@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Safety & Alerts · Ogden Valley Info & Events</title>
-<meta name="description" content="Valley forecast, weather briefings, lightning map, weather alerts, wildfires, road and canyon conditions, city alerts and public meetings for Ogden Valley and Weber County, with the official source for each.">
+<meta name="description" content="Valley forecast, weather briefings, lightning and radar maps, weather alerts, wildfires, road and canyon conditions, city alerts and public meetings for Ogden Valley and Weber County, with the official source for each.">
 <meta property="og:title" content="Safety & Alerts · Ogden Valley Info & Events">
 <meta property="og:description" content="Weather alerts, wildfires, road and canyon conditions, city alerts and public meetings for Ogden Valley and Weber County, with the official source for each.">
 <meta property="og:type" content="website">
@@ -42,15 +42,18 @@
     <p class="meta" id="fc-today" style="font-size:17px;margin-top:12px"></p>
     <p class="meta" id="fc-src" style="font-size:14px;margin-top:6px"></p>
   </div>
+  <div id="briefings"><div class="section-head"><div><p class="eyebrow">From Ogden Valley Info &amp; Events</p><h2>Weather briefing &amp; updates</h2></div></div><div id="brief-list"></div></div>
   <div id="your-weather"><div class="section-head"><div><p class="eyebrow">From neighbors · approved before posting</p><h2>Show us your weather</h2></div><div class="btns" style="margin:0"><a class="btn primary" data-form="report" data-track="send weather photo" href="#">Send your weather photo</a></div></div>
     <p style="margin:0 0 12px">Snow piling up in Eden? A rainbow over Pineview? Send a photo with the <b>Weather photo</b> choice. Tell us the town or a landmark and when you took it. We look at every photo before it goes up, and photos stay here for 7 days. Great shots can be picked for the <a href="photo-contest.html">monthly photo contest</a>.</p>
     <div id="yw"></div>
     <p class="meta" style="font-size:14px;margin-top:8px">No faces, children or license plates, and no house numbers. See the <a href="rules.html">community rules</a>. By sending a photo you agree we may share it on this site, in the newsletter and on our Facebook and Instagram, with your first name or "a neighbor."</p>
   </div>
-  <div id="briefings"><div class="section-head"><div><p class="eyebrow">From Ogden Valley Info &amp; Events</p><h2>Weather briefing &amp; updates</h2></div></div><div id="brief-list"></div></div>
-  <div id="lightning"><div class="section-head"><div><p class="eyebrow">Live · volunteer network</p><h2>Lightning map</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://www.lightningmaps.org/?lang=en#m=oss;t=3;s=0;o=0;b=;ts=0;z=8;y=41.28;x=-111.8;d=2;dl=2;dc=0;" target="_blank" rel="noopener">Open the full lightning map</a></div>
-    <iframe class="lightning-frame" src="https://www.lightningmaps.org/?lang=en#m=oss;t=3;s=0;o=0;b=;ts=0;z=8;y=41.28;x=-111.8;d=2;dl=2;dc=0;" title="Live lightning strikes around Ogden Valley" loading="lazy" referrerpolicy="no-referrer"></iframe>
-    <p class="meta" style="font-size:15px;margin-top:8px">Strikes from the last few hours, centered on the Valley. Map and data from <a href="https://www.lightningmaps.org/" target="_blank" rel="noopener">LightningMaps.org</a> and the <a href="https://www.blitzortung.org/" target="_blank" rel="noopener">Blitzortung.org</a> volunteer network. It is not an official warning. When thunder roars, go indoors. If the map doesn't load, use the button above.</p>
+  <div id="lightning"><div class="section-head"><div><p class="eyebrow">Live maps · open in a new tab</p><h2>Lightning &amp; radar</h2></div></div>
+    <div class="grid">
+      <article class="card"><h3>⚡ Live lightning map</h3><p>Strikes from the last few hours, already centered on Ogden Valley. Updates as you watch.</p><p class="meta" style="font-size:14px">From <a href="https://www.blitzortung.org/" target="_blank" rel="noopener">Blitzortung.org</a> volunteer network. Not an official warning.</p><a class="btn blue" style="justify-self:start" href="https://www.lightningmaps.org/?lang=en#m=oss;t=3;s=0;o=0;b=;ts=0;z=8;y=41.28;x=-111.8;d=2;dl=2;dc=0;" target="_blank" rel="noopener" data-track="open lightning map">Open the lightning map</a></article>
+      <article class="card"><h3>🌧️ Weather radar</h3><p>See rain and snow moving toward the Valley on the National Weather Service radar.</p><p class="meta" style="font-size:14px">From the National Weather Service.</p><a class="btn blue" style="justify-self:start" href="https://radar.weather.gov/station/KMTX/standard" target="_blank" rel="noopener" data-track="open radar">Open the radar</a></article>
+    </div>
+    <p class="meta" style="font-size:15px;margin-top:8px">When thunder roars, go indoors.</p>
   </div>
   <div data-groups="weather,roads,lost" data-title="Local reports from neighbors" style="margin-bottom:18px"></div>
   <div><div class="section-head"><div><p class="eyebrow">National Weather Service</p><h2>Weather alerts</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://www.weather.gov/slc/" target="_blank" rel="noopener">NWS Salt Lake City</a></div><div id="wx"></div></div>
