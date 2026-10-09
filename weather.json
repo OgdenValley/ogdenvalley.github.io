@@ -1,0 +1,14 @@
+{
+ "note": "Valley weather briefings and updates shown on the Safety page. Newest first. Items older than 14 days stop showing on their own. type is weekly or update.",
+ "items": [
+  {
+   "type": "weekly",
+   "date": "2026-10-08T22:30:00-06:00",
+   "title": "Ogden Valley storm briefing: Oct. 9–14",
+   "summary": "Leftovers of Tropical Storm Rachel. Wettest day Sunday, Oct. 11, with 1 to 3 inches of rain late Saturday to Monday morning, creeks running fast by Sunday evening, and snow levels dropping to 8,500–9,000 feet Monday to Wednesday.",
+   "image": "weather-2026-10-08-storm-briefing.png",
+   "alt": "Ogden Valley storm briefing for Oct. 9 to 14: a six-day forecast with Sunday the wettest day, plus boxes on heavy rain, creeks and roads, wind, snow up high, and a get-ready checklist.",
+   "source": "National Weather Service Salt Lake City forecast discussion, issued 2:55 p.m. Oct. 8, 2026; KSL and KUTV, Oct. 8"
+  }
+ ]
+}

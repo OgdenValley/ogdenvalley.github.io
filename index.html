@@ -52,6 +52,7 @@
   <article class="card feature"><p class="eyebrow">Tonight's sky</p><h3 id="sky-moon">Moon and stars</h3><p id="sky-line">Checking tonight's moon and northern lights forecast…</p><a href="night-sky.html">Night sky details</a></article>
 </div></div></section>
 <section style="padding-top:0"><div class="container"><div class="grid">
+  <article class="card" id="home-wx"><p class="eyebrow">Weather this week</p><h3 id="hw-h">Valley forecast</h3><div class="fc-strip" id="hw-fc" style="grid-template-columns:repeat(3,1fr);gap:6px"></div><p class="meta" id="hw-line"></p><a href="safety.html#valley-weather">Full forecast, briefing &amp; lightning map</a></article>
   <article class="card"><p class="eyebrow">Public meetings</p><h3>Town &amp; city council</h3><div id="meet" class="meta">Loading the next meetings…</div><a href="safety.html#meetings">All meetings and notices</a></article>
   <article class="card" id="season"><p class="eyebrow" id="season-eye">This season</p><h3 id="season-h">Valley conditions</h3><div id="season-body" class="meta">Loading…</div></article>
   <article class="card"><p class="eyebrow">Guess the Spot</p><h3>Know the Valley?</h3><p>A new photo each week. Guess where it was taken, or send in your own.</p><a href="guess-the-spot.html">Play this week</a></article>
@@ -80,6 +81,15 @@ fill("bow",b,b&&b.town);fill("aom",a,a&&[a.medium,a.town].filter(Boolean).join("
 if(ct.theme){document.getElementById("ct-theme").textContent=ct.month+": "+ct.theme;document.getElementById("ct-line").textContent="Entries close "+ct.deadline+". The winner is featured here, in the newsletter and on our Facebook and Instagram."}
 const m=S.moon(new Date());document.getElementById("sky-moon").textContent=m.name+" · "+m.illum+"% lit";
 const sky=await S.loadSky();const kp=sky&&sky.kpMaxNext24!=null?sky.kpMaxNext24:null;const at=S.auroraText(kp);
+
+const F=await S.loadJSON("forecast.json");S.renderForecastStrip(document.getElementById("hw-fc"),F,3);
+if(F&&F.days&&F.days.length){const d=F.days[0];document.getElementById("hw-h").textContent=S.wxIcon(d.both||d.short)+" "+(d.high!=null?d.high+"°":"")+" "+(d.short||"");
+ const W=await S.loadJSON("weather.json"),sfw=await S.loadJSON("safety.json"),bits=[];
+ if(sfw&&sfw.weather&&sfw.weather.length)bits.push("Weather service notice: "+sfw.weather[0].event+".");
+ if(F.valleySnowDays&&F.valleySnowDays.length)bits.push("Snow possible on the valley floor: "+F.valleySnowDays.join(", ")+".");
+ const it=(W&&W.items||[]).filter(x=>Date.parse(x.date)>=Date.now()-7*864e5).sort((a,b)=>Date.parse(b.date)-Date.parse(a.date))[0];
+ if(it)bits.push((it.type==="update"?"New update: ":"This week's briefing: ")+it.title+".");
+ bits.push("Source: National Weather Service.");document.getElementById("hw-line").textContent=bits.join(" ")}
 const L=await S.loadJSON("local.json");S.renderMeetings(document.getElementById("meet"),L,3);S.renderSeason(L);
 document.getElementById("sky-line").textContent=(m.dark?"A good dark night for stars if it's clear. ":"Bright moon tonight, so only the brightest stars show. ")+(kp!=null&&kp>=6?at.text:"No northern lights expected.");
 })();

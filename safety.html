@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Safety & Alerts · Ogden Valley Info & Events</title>
-<meta name="description" content="Weather alerts, wildfires, road and canyon conditions, city alerts and public meetings for Ogden Valley and Weber County, with the official source for each.">
+<meta name="description" content="Valley forecast, weather briefings, lightning map, weather alerts, wildfires, road and canyon conditions, city alerts and public meetings for Ogden Valley and Weber County, with the official source for each.">
 <meta property="og:title" content="Safety & Alerts · Ogden Valley Info & Events">
 <meta property="og:description" content="Weather alerts, wildfires, road and canyon conditions, city alerts and public meetings for Ogden Valley and Weber County, with the official source for each.">
 <meta property="og:type" content="website">
@@ -36,6 +36,17 @@
 <main id="main">
 <section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley · Weber County</p><h1>Safety &amp; alerts</h1><p class="lead" style="margin-top:12px">Official alerts in one place, updated every hour. Every item shows where it came from. In an emergency, call 911.</p><div class="btns"><a class="btn light" data-track="share safety to facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fogdenvalleyevent.com%2Fsafety.html" target="_blank" rel="noopener">Share this page on Facebook</a></div></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
 <section><div class="container" style="display:grid;gap:28px">
+  <div id="valley-weather"><div class="section-head"><div><p class="eyebrow">National Weather Service · updated every hour</p><h2>Valley weather</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Full Eden forecast</a></div>
+    <div class="wx-flags" id="wx-flags"></div>
+    <div class="fc-strip" id="fc"></div>
+    <p class="meta" id="fc-today" style="font-size:17px;margin-top:12px"></p>
+    <p class="meta" id="fc-src" style="font-size:14px;margin-top:6px"></p>
+  </div>
+  <div id="briefings"><div class="section-head"><div><p class="eyebrow">From Ogden Valley Info &amp; Events</p><h2>Weather briefing &amp; updates</h2></div></div><div id="brief-list"></div></div>
+  <div id="lightning"><div class="section-head"><div><p class="eyebrow">Live · volunteer network</p><h2>Lightning map</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://www.lightningmaps.org/?lang=en#m=oss;t=3;s=0;o=0;b=;ts=0;z=8;y=41.28;x=-111.8;d=2;dl=2;dc=0;" target="_blank" rel="noopener">Open the full lightning map</a></div>
+    <iframe class="lightning-frame" src="https://www.lightningmaps.org/?lang=en#m=oss;t=3;s=0;o=0;b=;ts=0;z=8;y=41.28;x=-111.8;d=2;dl=2;dc=0;" title="Live lightning strikes around Ogden Valley" loading="lazy" referrerpolicy="no-referrer"></iframe>
+    <p class="meta" style="font-size:15px;margin-top:8px">Strikes from the last few hours, centered on the Valley. Map and data from <a href="https://www.lightningmaps.org/" target="_blank" rel="noopener">LightningMaps.org</a> and the <a href="https://www.blitzortung.org/" target="_blank" rel="noopener">Blitzortung.org</a> volunteer network. It is not an official warning. When thunder roars, go indoors. If the map doesn't load, use the button above.</p>
+  </div>
   <div data-groups="weather,roads,lost" data-title="Local reports from neighbors" style="margin-bottom:18px"></div>
   <div><div class="section-head"><div><p class="eyebrow">National Weather Service</p><h2>Weather alerts</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://www.weather.gov/slc/" target="_blank" rel="noopener">NWS Salt Lake City</a></div><div id="wx"></div></div>
   <div><div class="section-head"><div><p class="eyebrow">National Interagency Fire Center</p><h2>Wildfires near Weber County</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://utahfireinfo.gov/" target="_blank" rel="noopener">Utah Fire Info</a></div><div id="fires"></div></div>
@@ -76,6 +87,25 @@ const wx=document.getElementById("wx");
 if(!sf||!sf.updated)quiet(wx,"Alerts will appear here once the hourly update starts running.");
 else if(!sf.weather.length)quiet(wx,"No weather alerts for Weber County right now.");
 else{wx.replaceChildren(...sf.weather.map(a=>el("article",{class:"card",style:"border-left:6px solid "+(/Warning/.test(a.event)?"#B3261E":"#C77700")},[el("h3",{text:a.event}),el("p",{class:"meta",text:(a.area||"")+(a.ends?" · until "+fmt(a.ends):"")}),a.headline?el("p",{text:a.headline}):null,a.instruction?el("p",{text:a.instruction}):null,src(a.source,a.link)])))}
+
+/* Valley weather: 7-day forecast (forecast.json, hourly from NWS) and our briefings (weather.json) */
+const F=await S.loadJSON("forecast.json");S.renderForecastStrip(document.getElementById("fc"),F,7);
+const flags=document.getElementById("wx-flags"),fl=[];
+if(sf&&sf.weather&&sf.weather.length)fl.push(el("div",{class:"alert warn"},[el("b",{text:"From the National Weather Service: "}),document.createTextNode(sf.weather.map(a=>a.event).filter((v,i,a)=>a.indexOf(v)===i).join(", ")+". Details under Weather alerts below.")]));
+if(F&&F.valleySnowDays&&F.valleySnowDays.length)fl.push(el("div",{class:"alert warn"},[el("b",{text:"Snow possible on the valley floor: "}),document.createTextNode(F.valleySnowDays.join(", ")+(F.snowInches48?" · about "+F.snowInches48+" in. in the next 48 hours":"")+". Check canyon roads before you go.")]));
+if(F&&F.snowLevelFt)fl.push(el("div",{class:"alert quiet"},[el("b",{text:"Snow level: "}),document.createTextNode("down to about "+F.snowLevelFt.toLocaleString()+" feet in the next 3 days. The valley floor is about 4,900 to 5,200 feet.")]));
+fl.push(el("p",{class:"meta",style:"font-size:16px"},[el("b",{text:"Canyon roads: "}),el("a",{href:"https://ogdenvalley.udot.utah.gov/road-information/",target:"_blank",rel:"noopener",text:"Ogden Canyon, Trappers Loop and North Ogden Divide (UDOT)"}),document.createTextNode(" · "),el("a",{href:"live.html",text:"canyon cameras"})]));
+flags.replaceChildren(...fl);
+if(F&&F.today)document.getElementById("fc-today").textContent=F.today;
+if(F)document.getElementById("fc-src").replaceChildren(document.createTextNode("Source: "),el("a",{href:F.link,target:"_blank",rel:"noopener",text:F.source}),document.createTextNode(" forecast for the "+F.place+(F.updated?". Last checked "+fmt(F.updated)+".":".")));
+const W=await S.loadJSON("weather.json"),bl=document.getElementById("brief-list");
+const cut=Date.now()-14*864e5,items=(W&&W.items||[]).filter(x=>Date.parse(x.date)>=cut).sort((a,b)=>Date.parse(b.date)-Date.parse(a.date));
+const wk=items.find(x=>x.type==="weekly"),ups=items.filter(x=>x.type==="update");
+if(!wk&&!ups.length)quiet(bl,"No briefing this week yet. We check the forecast every two days and post at least once a week.");
+else{const kids=[];
+ ups.forEach(u=>kids.push(el("article",{class:"card wx-upd"},[el("p",{class:"eyebrow",text:"Update · "+fmt(u.date)}),el("h3",{text:u.title}),u.image?el("a",{href:u.image,target:"_blank",rel:"noopener"},[el("img",{src:u.image,alt:u.alt||u.title,loading:"lazy",style:"border-radius:10px;max-width:560px;width:100%"})]):null,u.summary?el("p",{text:u.summary}):null,u.source?el("p",{class:"meta",style:"font-size:14px",text:"Source: "+u.source}):null])));
+ if(wk)kids.push(el("article",{class:"card"},[el("p",{class:"eyebrow",text:"Weekly briefing · "+fmt(wk.date)}),el("div",{class:"brief"+(wk.image?" has-img":"")},[wk.image?el("a",{href:wk.image,target:"_blank",rel:"noopener",title:"Open full size"},[el("img",{src:wk.image,alt:wk.alt||wk.title,loading:"lazy"})]):null,el("div",{style:"display:grid;gap:8px;align-content:start"},[el("h3",{text:wk.title}),wk.summary?el("p",{text:wk.summary}):null,wk.source?el("p",{class:"meta",style:"font-size:14px",text:"Source: "+wk.source}):null,wk.image?el("a",{href:wk.image,download:"",text:"Download the graphic to share"}):null])])]));
+ bl.replaceChildren(...kids)}
 const fires=document.getElementById("fires");
 if(!sf||!sf.updated)quiet(fires,"Fire reports will appear here once the hourly update starts running.");
 else if(!sf.fires.length)quiet(fires,"No active wildfires reported in or around Weber County right now.");

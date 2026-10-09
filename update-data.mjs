@@ -551,9 +551,52 @@ async function tips(){
   } catch (e) { console.log("tips failed:", e.message); }
 }
 
+/* ---------------- VALLEY FORECAST: 7 days for Eden, Liberty and Huntsville (NWS) ---------------- */
+async function forecast(){
+  const old = oldJSON("forecast.json") || {};
+  const out = {updated: new Date().toISOString(), place: "Eden, Liberty and Huntsville area", days: old.days || [], today: old.today || "",
+    valleySnowDays: old.valleySnowDays || [], snowLevelFt: old.snowLevelFt ?? null, snowInches48: old.snowInches48 ?? null,
+    forecastIssued: old.forecastIssued || null, link: "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
+    source: "National Weather Service Salt Lake City", status: {}};
+  let pt = null;
+  try {
+    pt = await getJSON("https://api.weather.gov/points/41.3013,-111.8219");
+    const f = await getJSON(pt.properties.forecast);
+    const per = f.properties.periods || [];
+    const byDay = new Map();
+    for (const x of per) { const k = String(x.startTime).slice(0, 10); if (!byDay.has(k)) byDay.set(k, {}); byDay.get(k)[x.isDaytime ? "day" : "night"] = x; }
+    const wd = new Intl.DateTimeFormat("en-US", {timeZone: "America/Denver", weekday: "short"}), md = new Intl.DateTimeFormat("en-US", {timeZone: "America/Denver", month: "short", day: "numeric"});
+    const pop = x => x && x.probabilityOfPrecipitation && x.probabilityOfPrecipitation.value != null ? x.probabilityOfPrecipitation.value : 0;
+    out.days = [...byDay.entries()].slice(0, 7).map(([k, v]) => { const d = new Date(k + "T12:00:00-06:00"); const sh = (v.day || v.night).shortForecast;
+      const txt = [v.day && v.day.shortForecast, v.night && v.night.shortForecast].filter(Boolean).join(" / ");
+      return {date: k, label: wd.format(d), md: md.format(d), high: v.day ? v.day.temperature : null, low: v.night ? v.night.temperature : null,
+        pop: Math.max(pop(v.day), pop(v.night)), short: sh, both: txt, snow: /snow|flurr|sleet|wintry/i.test(txt), wind: v.day ? v.day.windSpeed : (v.night ? v.night.windSpeed : "")}; });
+    out.today = per[0] ? per[0].name + ": " + per[0].detailedForecast : "";
+    out.valleySnowDays = out.days.filter(d => d.snow).map(d => d.label);
+    out.forecastIssued = f.properties.updateTime || f.properties.generatedAt || null;
+    out.status.forecast = "ok"; console.log("forecast days", out.days.length);
+  } catch (e) { out.status.forecast = "failed"; console.log("forecast failed:", e.message); }
+  try {
+    if (!pt) throw new Error("no point");
+    const g = await getJSON(pt.properties.forecastGridData);
+    const now = Date.now();
+    const series = (prop, hours) => { const vals = (g.properties[prop] && g.properties[prop].values) || [], hrs = [];
+      for (const v of vals) { const [ts, dur] = v.validTime.split("/"); const s = Date.parse(ts); const h = Math.max(1, Math.round((icsDur(dur) || 36e5) / 36e5));
+        for (let i = 0; i < h; i++) { const t = s + i * 36e5; if (t >= now && t < now + hours * 36e5) hrs.push(v.value / h); } }
+      return {vals, hrs}; };
+    const sl = ((g.properties.snowLevel && g.properties.snowLevel.values) || []).filter(v => { const [ts, dur] = v.validTime.split("/"); const s = Date.parse(ts); return s + (icsDur(dur) || 36e5) > now && s < now + 72 * 36e5 && v.value != null; });
+    out.snowLevelFt = sl.length ? Math.round(Math.min(...sl.map(v => v.value)) * 3.28084 / 100) * 100 : null;
+    const sn = series("snowfallAmount", 48).hrs.filter(v => v != null);
+    out.snowInches48 = sn.length ? Math.round(sn.reduce((a, b) => a + b, 0) / 25.4 * 10) / 10 : null;
+    out.status.grid = "ok"; console.log("snow level ft", out.snowLevelFt, "valley snow in 48h", out.snowInches48);
+  } catch (e) { out.status.grid = "failed"; console.log("grid failed:", e.message); }
+  writeIfChanged("forecast.json", out);
+}
+
 await calendars();
 await sky();
 await safety();
+await forecast();
 await local();
 await reviews();
 await reports();

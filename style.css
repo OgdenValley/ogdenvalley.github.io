@@ -244,3 +244,29 @@ body.kids h1,body.kids h2{font-family:var(--display);font-weight:800;letter-spac
 .badges{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:2px 0 4px}
 .new-badge{display:inline-block;font:800 12px var(--body);letter-spacing:.06em;text-transform:uppercase;background:#1E7B4A;color:#fff;padding:3px 9px;border-radius:999px}
 .sortbar{margin-bottom:12px}
+
+/* ---------- Valley weather (Safety page + home card) ---------- */
+.fc-strip{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(118px,1fr))}
+.fc-day{background:var(--card);border:2px solid var(--line);border-radius:var(--radius);padding:12px 8px;text-align:center;display:grid;gap:2px}
+.fc-day.wet{border-color:var(--blue)}
+.fc-day.snow{border-color:#3E83C4;background:linear-gradient(var(--card),var(--soft))}
+.fc-day p{margin:0}
+.fc-name{font:800 19px var(--display)}
+.fc-md{font-size:15px;color:var(--muted)}
+.fc-ic{font-size:34px;line-height:1.2}
+.fc-t{font-weight:700;font-size:20px}
+.fc-p{font-weight:700;font-size:16px;color:var(--blue)}
+.fc-s{font-size:14px;color:var(--muted);line-height:1.25}
+.wx-flags{display:grid;gap:10px;margin-bottom:12px}
+.brief{display:grid;gap:14px;grid-template-columns:minmax(0,1fr)}
+@media(min-width:900px){.brief.has-img{grid-template-columns:minmax(0,520px) minmax(0,1fr);align-items:start}}
+.brief img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
+.wx-upd{border-left:6px solid #E07B22}
+.wx-upd .eyebrow{color:#B3261E}
+.lightning-frame{width:100%;height:440px;border:1px solid var(--line);border-radius:12px;background:var(--soft)}
+@media(max-width:600px){.lightning-frame{height:340px}.fc-strip{grid-template-columns:repeat(auto-fit,minmax(96px,1fr))}.fc-ic{font-size:28px}}
+#hw-fc .fc-s,#hw-fc .fc-md{display:none}
+#hw-fc .fc-day{padding:8px 4px}
+#hw-fc .fc-t{font-size:16px}
+#hw-fc .fc-p{font-size:14px}
+#hw-fc .fc-ic{font-size:26px}
