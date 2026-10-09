@@ -40,6 +40,7 @@
   <div class="filters"><input type="search" id="q" placeholder="Search home services" aria-label="Search home services"></div>
   <div class="filters" id="jobbar" hidden></div>
   <div class="filters" id="tagbar" hidden></div>
+  <p class="fair" id="badgenote" style="margin-top:-4px">Badges are as told to us by the owner.</p>
   <p class="fair">Small, local businesses only. Listings are free and in A–Z order. Nobody pays to be ranked higher, reviews come from real people, and sponsors are always labeled. Every place is checked by a local before it goes up.</p>
   <div id="list"></div>
 </div></section>
@@ -55,8 +56,8 @@ function bar(id,vals,get,set){const b=document.getElementById(id);if(!vals.lengt
 const ORDER=["Handyman & repairs","Cleaning & window washing","Landscaping & snow removal","Car detailing","Plumbing","Electrical","Heating & cooling","Pest control","Other"];
 const jobs=[...new Set(all.map(p=>p.job||"Other"))].sort((a,b)=>(ORDER.indexOf(a)+99)%99-(ORDER.indexOf(b)+99)%99||a.localeCompare(b));
 bar("jobbar",jobs.length>1?jobs:[],()=>job,v=>job=v);
-bar("tagbar",[...new Set(all.flatMap(p=>p.tags||[]))].sort(),()=>tag,v=>tag=v);
-function draw(){const st={tag,q,job};const pred=(p,s)=>(!s.job||(p.job||"Other")===s.job)&&(!s.tag||(p.tags||[]).includes(s.tag))&&(!s.q||JSON.stringify(p).toLowerCase().includes(s.q));S.listing(document.getElementById("list"),all.filter(p=>pred(p,st)),"services",R);S.pruneChips(all,pred,st,[{key:"job",btns:document.getElementById("jobbar").children,val:b=>b.textContent==="All"?null:b.textContent},{key:"tag",btns:document.getElementById("tagbar").children,val:b=>b.textContent==="All"?null:b.textContent,row:document.getElementById("tagbar")}])}
+bar("tagbar",[...new Set(all.flatMap(p=>p.badges||[]))].sort(),()=>tag,v=>tag=v);
+function draw(){const st={tag,q,job};const pred=(p,s)=>(!s.job||(p.job||"Other")===s.job)&&(!s.tag||(p.badges||[]).includes(s.tag))&&(!s.q||JSON.stringify(p).toLowerCase().includes(s.q));S.listing(document.getElementById("list"),all.filter(p=>pred(p,st)),"services",R);S.pruneChips(all,pred,st,[{key:"job",btns:document.getElementById("jobbar").children,val:b=>b.textContent==="All"?null:b.textContent},{key:"tag",btns:document.getElementById("tagbar").children,val:b=>b.textContent==="All"?null:b.textContent,row:document.getElementById("tagbar")}])}
 document.getElementById("q").addEventListener("input",e=>{q=e.target.value.trim().toLowerCase();draw()});
 draw();if(location.hash){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t){t.scrollIntoView();t.style.outline="3px solid var(--accent)"}}})();
 </script>

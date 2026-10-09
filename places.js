@@ -466,7 +466,8 @@ window.OVE_PLACES = {
    "phone": "801-917-4442",
    "link": "https://icanfixthatut.com",
    "links": [{"label": "Facebook", "href": "https://www.facebook.com/profile.php?id=61595063423377"}, {"label": "Read their sponsor story", "href": "spotlight-yes-i-can-fix-that.html"}],
-   "tags": ["Veteran owned", "Insured", "On time"],
+   "badges": ["Veteran owned", "Insured"],
+   "tags": ["On time"],
    "photos": ["yes-i-can-fix-that-logo.jpg", "yicft-job-14-card.jpg", "yicft-job-27-card.jpg", "yicft-job-28-card.jpg", "yicft-job-12-card.jpg"],
    "sponsor": true,
    "checked": "2026-10-08"
@@ -481,6 +482,7 @@ window.OVE_PLACES = {
    "serves": "Huntsville and Ogden Valley",
    "blurb": "Irrigation experts with upfront, transparent pricing: sprinkler system installation, repair and maintenance, drainage installation and repair, and snow removal. On time, or they pay you $50.",
    "hours": "24/7",
+   "badges": ["24/7 or emergency service"],
    "phone": "801-923-3358",
    "link": "https://bluebirdsprinklers.com",
    "tags": [

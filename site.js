@@ -124,6 +124,7 @@ function niceDay(d){ const [y,m,dd] = (d || "").split("-").map(Number); if (!y) 
 function listMeta(p){
   const kids = [];
   if (p.news && p.news.text) kids.push(el("div", {class: "news"}, [el("b", {text: "From the owner" + (p.news.date ? ", " + niceDay(p.news.date) : "") + ": "}), document.createTextNode(p.news.text)]));
+  if (p.badges && p.badges.length) kids.push(el("div", {class: "tags"}, p.badges.map(t => el("span", {class: "tag badge-owner", title: "As told to us by the owner", text: "✓ " + t}))));
   if (p.tags && p.tags.length) kids.push(el("div", {class: "tags"}, p.tags.map(t => el("span", {class: "tag", text: t}))));
   if (p.checked) kids.push(el("div", {class: "checked", text: "✓ Checked by a local " + niceDay(p.checked)}));
   return kids.length ? el("div", {class: "listmeta"}, kids) : null;
