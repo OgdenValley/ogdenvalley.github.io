@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-08T21:30:16.015Z",
+ "updated": "2026-10-09T00:42:22.948Z",
  "weather": [
   {
    "event": "Hydrologic Outlook",
@@ -15,16 +15,7 @@
   }
  ],
  "fires": [],
- "city": [
-  {
-   "title": "Gramercy Ave. from 5th St to 7th St, 7th St. from Gramercy Ave. to 1050 E. Updated on 2026-10-08",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2061",
-   "date": 1791478196000,
-   "text": "Scheduled Water Outage Update: &lt;p fr-original-style=\"\" style=\"margin: 0px 0px 6px; box-sizing: inherit;\"&gt;This water outage has been extended to include; Monroe Blvd. From E 600 S St. to 7th St.&lt;/p&gt;",
-   "source": "Ogden City Alerts",
-   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
-  }
- ],
+ "city": [],
  "status": {
   "weather": "ok",
   "fires": "ok",
