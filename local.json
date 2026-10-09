@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T08:32:52.704Z",
+ "updated": "2026-10-09T15:30:54.862Z",
  "meetings": [
   {
    "body": "Huntsville Town Council",
@@ -42,11 +42,11 @@
    "name": "Monte Cristo",
    "elev": 8930,
    "depth": {
-    "value": 1,
+    "value": 0,
     "date": "2026-10-08"
    },
    "water": {
-    "value": 0.2,
+    "value": 0,
     "date": "2026-10-08"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
