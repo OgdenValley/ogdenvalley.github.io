@@ -240,11 +240,12 @@ function listing(box, items, kind, R){
     (preview || (!f.preview && (f.from || back7(f.date)) <= today))).sort((a, b) => a.date < b.date ? -1 : 1);
   const dayLine = f => { const [y,m,dd] = f.date.split("-").map(Number); const d = new Date(y, m - 1, dd);
     return d.toLocaleDateString("en-US", {weekday: "long", month: "long", day: "numeric"}) + (f.time ? " · " + f.time : ""); };
-  boxes.forEach(box => { box.replaceChildren(); if (!list.length) return;
+  boxes.forEach(box => { box.replaceChildren(); const causesOnly = box.dataset.featuredevents === "causes";
+    const mine = causesOnly ? list.filter(f => f.cause) : list; if (!mine.length) return;
     box.append(el("div", {class: "fev"}, [
-      el("div", {class: "fev-head"}, [el("p", {class: "eyebrow", text: "Featured events"}),
+      el("div", {class: "fev-head"}, [el("p", {class: "eyebrow", text: causesOnly ? "Featured fundraisers" : "Featured events"}),
         preview ? el("span", {class: "fev-preview", text: "Preview: only you can see this"}) : null]),
-      el("div", {class: "fev-grid"}, list.map(f => el("article", {class: "fev-card"}, [
+      el("div", {class: "fev-grid"}, mine.map(f => el("article", {class: "fev-card"}, [
         f.image ? el("a", {class: "fev-img", href: f.image, target: "_blank", rel: "noopener", "aria-label": "See the full flyer"},
           [el("img", {src: f.image, alt: f.title + " flyer", loading: "lazy"})]) : null,
         el("div", {class: "fev-body"}, [

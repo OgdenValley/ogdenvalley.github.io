@@ -141,7 +141,8 @@ details summary{cursor:pointer;color:var(--blue)}
 .quick a{display:grid;place-items:center;gap:4px;text-align:center;min-height:88px;padding:12px 8px;border-radius:14px;background:var(--card);border:2px solid var(--line);text-decoration:none;color:var(--ink);font-family:var(--display);font-weight:700;font-size:16px;line-height:1.2}
 .quick a:hover,.quick a:focus-visible{border-color:var(--accent)}
 .quick svg{width:30px;height:30px;stroke:var(--accent);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
-@media (min-width:760px){.quick{grid-template-columns:repeat(6,minmax(0,1fr))}}
+@media (min-width:760px){.quick{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (min-width:1100px){.quick{grid-template-columns:repeat(8,minmax(0,1fr))}}
 .kid-note{background:var(--soft);border-radius:10px;padding:10px 14px;font-size:16px}
 @media (max-width:700px){
   .canyon .container{flex-wrap:nowrap;overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;padding-block:7px}
@@ -268,3 +269,24 @@ body.kids h1,body.kids h2{font-family:var(--display);font-weight:800;letter-spac
 .fev-where{color:var(--muted)}
 .fev-note{font-size:14px;color:var(--muted);margin:10px 0 0;border-top:1px solid var(--line);padding-top:8px}
 @media (max-width:640px){.fev-card{grid-template-columns:1fr}.fev-img img{max-width:320px;margin:0 auto}}
+/* Yard sales */
+.ys-tabs{display:flex;gap:8px;flex-wrap:wrap}
+.ys-tab{font:800 18px var(--display);border:2px solid var(--line);background:var(--card);color:var(--ink);padding:12px 20px;border-radius:12px;cursor:pointer}
+.ys-tab[aria-selected="true"]{background:var(--navy);border-color:var(--navy);color:#fff}
+.ys-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:14px}
+.card.ys{position:relative;padding-left:58px}
+.ys-num{position:absolute;left:14px;top:16px;width:32px;height:32px;border-radius:50%;background:#F36A22;color:#fff;font:800 16px var(--body);display:grid;place-items:center}
+.ys-when{font-weight:800;color:#B4470D;margin:0;font-size:17px}
+.card.ys h3{margin:4px 0 8px;font-size:20px}
+.ys-links{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px;font-weight:700}
+.ys-pin span{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#F36A22;color:#fff;font:800 14px "Source Sans 3",sans-serif;border:2px solid #fff;box-shadow:0 1px 5px rgba(0,0,0,.35)}
+/* Local causes */
+.fcause{background:var(--card);border:3px solid #D9A21B;border-radius:var(--radius);padding:22px 24px;box-shadow:0 4px 14px rgba(217,162,27,.18)}
+.fcause h2{margin:10px 0 2px;font-size:clamp(26px,4vw,36px)}
+.fcause p{max-width:70ch}
+.fc-line{font-size:19px;font-weight:600}
+.cz-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:14px}
+.cz-grid .card h3{margin:2px 0 6px}
+.ys-home{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:14px;background:var(--card);border:2px solid #F36A22;border-radius:var(--radius);padding:14px 18px}
+.ys-home b{font:800 20px var(--display)}
+.ys-home p{margin:2px 0 0;color:var(--muted)}

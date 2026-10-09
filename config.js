@@ -39,6 +39,8 @@ window.OVE = {
     recipe: "",               // Recipe corner: share a recipe
     recipeVote: "",           // Recipe corner: vote + "what I changed"
     volunteer: "",            // Groups: post a volunteer need or drive
+    yardsale: "",             // Post a yard sale (free, shows right away)
+    cause: "",                // Add a local cause or nonprofit (you check it first)
     tips: "",                 // Garden + Be Prepared boards (one form, Board question picks which)
     jobs: "https://docs.google.com/forms/d/e/1FAIpQLScOzyUB6XfbZWbwNCMR1FIAjCyWWt-aQFQSGKN2pR5YJvtwkw/viewform", // Help wanted: post a Valley job
     update: "https://docs.google.com/forms/d/e/1FAIpQLSfSL4w4MmyTMJyi62Rd4icPvaIdLejnDfsF_9a67BvjhzPK_A/viewform" // Listing updates (no sign-in form): hours changed, closed, moved, or a place we're missing
@@ -64,6 +66,7 @@ window.OVE = {
      Shown in the "Featured events" row on the home page and Events page.
      Add one { } per featured event (paid, or one we pick to feature for free). It shows starting 7 days
      before "date" and comes off by itself after. "from": "YYYY-MM-DD" starts it sooner.
+     "cause: true" also shows it on the Local Causes page (fundraisers).
      "preview: true" hides it from the public; you can still see it at ogdenvalleyevent.com/?preview
      (handy for showing an organizer what they'd get). Delete that line once they pay.
      Upload the flyer or photo to the main folder. */
@@ -73,9 +76,41 @@ window.OVE = {
       image: "monster-dash-2026.png",
       line: "5K plus a 1-mile kids run. Runners and walkers of all ages, come in costume! 100% of proceeds go to Make-A-Wish Utah for 4-year-old Arie.",
       link: "https://www.canvaqr.com/RGSQ4K6Sel", linkText: "Join or donate",
-      from: "2026-10-09" }
+      from: "2026-10-09", cause: true }
   ],
   eventFeaturePrice: "$25",
+
+  /* --- Local causes (causes.html) ---------------------------------------
+     featuredCause: the "id" of the cause shown big at the top. Change it any time (free or paid).
+     Each cause: id, name, kind (picks the filter), line, and links. "src" says where the facts came from. */
+  featuredCause: "ogden-valley-land-trust",
+  causes: [
+    { id: "ogden-valley-land-trust", name: "Ogden Valley Land Trust", kind: "Land & open space", town: "Huntsville",
+      line: "A local nonprofit that holds voluntary conservation easements, so landowners can protect their land from development while they keep owning it.",
+      more: "Local landowners and residents serve as its trustees. It protects several thousand acres in Ogden Valley and nearby, and it depends on donations to look after those easements for good.",
+      donate: "https://ogdenvalleylandtrust.org/donate/", site: "https://ogdenvalleylandtrust.org/", facebook: "https://www.facebook.com/OVLandTrust",
+      contact: "P.O. Box 412, Huntsville, UT 84317 · 801-971-1852 · ogdenvalleylandtrust@gmail.com", src: "ogdenvalleylandtrust.org" },
+    { id: "community-foundation-of-ogden-valley", name: "Community Foundation of Ogden Valley", kind: "Gives to Valley groups", town: "Eden",
+      line: "Raises money from local businesses, people and fundraising events, then gives grants to Valley nonprofits and matches gifts to them.",
+      more: "On June 4, 2026 it gave 8 grants totaling over $60,000 to Valley groups, its second year of grants.",
+      donate: "https://cfovoverdrive.org/", site: "https://cfovoverdrive.org/", contact: "PO Box 684, Eden, UT 84310 · cfovutah@gmail.com", src: "cfovoverdrive.org; Ogden Valley News, June 27, 2026" },
+    { id: "eden-valley-trails", name: "Eden Valley Trails", kind: "Trails & outdoors", line: "Builds and maintains a connected trail system in Ogden Valley for every kind of trail user." },
+    { id: "ogden-nordic", name: "Ogden Nordic", kind: "Trails & outdoors", line: "Promotes cross-country skiing and builds and maintains the trails in North Fork Park." },
+    { id: "trails-foundation-of-northern-utah", name: "Trails Foundation of Northern Utah", kind: "Trails & outdoors", line: "Builds trails for walking, running and riding around Weber County." },
+    { id: "back-country-horsemen", name: "Back Country Horsemen", kind: "Trails & outdoors", line: "Volunteers who do trail work that keeps trails open for non-motorized use." },
+    { id: "ogden-avalanche", name: "Ogden Avalanche", kind: "Rescue & safety", line: "Started as a place to share backcountry conditions and grew into a group of experienced backcountry users." },
+    { id: "great-basin-k9-search-and-rescue", name: "Great Basin K9 Search and Rescue", kind: "Rescue & safety", line: "Trains and certifies search-and-rescue dog teams that help public safety agencies at no cost." },
+    { id: "friends-of-mt-ogden", name: "Friends of Mt. Ogden", kind: "Rescue & safety", line: "Training, education and support for the outdoor rescue community. Formerly Northern Wasatch Rescue Professionals.", site: "https://www.friendsofmtogden.org/" },
+    { id: "ogden-valley-adaptive-sports", name: "Ogden Valley Adaptive Sports", kind: "Kids, schools & sports", line: "Adaptive ski and snowboard lessons at three local resorts, often free for families." },
+    { id: "snowbasin-sports-education-foundation", name: "Snowbasin Sports Education Foundation", kind: "Kids, schools & sports", line: "Ski racing, all-mountain and freestyle programs for young skiers." },
+    { id: "ogden-valley-tennis-pickleball", name: "Ogden Valley Tennis & Pickleball", kind: "Kids, schools & sports", line: "Lessons, social play and competition for all ages." },
+    { id: "valley-elementary-pto", name: "Valley Elementary PTO", kind: "Kids, schools & sports", line: "Parents organizing learning and fun activities at Valley Elementary." },
+    { id: "snowcrest-ptso", name: "Snowcrest PTSO", kind: "Kids, schools & sports", line: "Parents, teachers and students organizing activities at Snowcrest Junior High." },
+    { id: "bsa-crossroads-of-the-west", name: "Scouting America (Boy Scouts), Crossroads of the West Council", kind: "Kids, schools & sports", line: "Scouting programs that build character in young people." },
+    { id: "mountain-arts-and-music", name: "Mountain Arts and Music", kind: "Arts & music", line: "Gives Valley residents chances to perform, show their work, teach a skill and grow their talents." },
+    { id: "wolf-creek-foundation", name: "Wolf Creek Foundation", kind: "Military families", line: "Hosts military families facing a deployment for a free weekend at Wolf Creek Resort." }
+  ],
+  causesSource: "https://cfovoverdrive.org/our-non-profits-2/",
 
   /* --- Sponsors (shown on the home page, Events page and Sponsor page) ---
      Add one { } per sponsor. "until" is the last day it shows ("YYYY-MM-DD"); leave it out to keep it up.

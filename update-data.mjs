@@ -490,6 +490,61 @@ async function musicians(){
   } catch (e) { console.log("musicians failed:", e.message); }
 }
 
+/* ---------------- YARD SALES (Google Form → "Public" tab of the yard sale sheet, CSV) ----------------
+   Public tab columns (matched by name): Timestamp, Town (picks the map), First day, Last day, Hours, Address,
+   Cross streets, What's for sale, Details, Hide. The Public tab already leaves out names, phones and
+   any address the seller did not OK. Sales show right away and drop off after their last day.
+   Put "hide" in the Hide column to take one down. Pins come from OpenStreetMap (cached). */
+async function yardsales(){
+  const url = (cfgAll()._yardsalesCsv || "").trim();
+  if (!url) { if (!oldJSON("yardsales.json")) writeIfChanged("yardsales.json", {updated: new Date().toISOString(), items: []}); console.log("yard sales: no sheet link yet"); return; }
+  try {
+    const {rows, col} = await sheet(url);
+    const iT = col(/timestamp/), iA = col(/^area/), iTn = col(/town|city/), iF = col(/first day|^date|start/), iL = col(/last day|end/), iHr = col(/^hours/),
+      iAd = col(/^address|street address/), iX = col(/cross/), iW = col(/what's for sale|whats for sale|for sale|items/), iD = col(/details|anything else|highlights/), iH = col(/^hide/);
+    const ymd = v => { const t = String(v || "").trim(); let m = t.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/); if (m) return m[1] + "-" + m[2].padStart(2, "0") + "-" + m[3].padStart(2, "0");
+      m = t.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})/); if (!m) return ""; const y = m[3].length === 2 ? "20" + m[3] : m[3]; return y + "-" + m[1].padStart(2, "0") + "-" + m[2].padStart(2, "0"); };
+    const today = new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date());
+    const limit = new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date(Date.now() + 60 * 864e5));
+    let cache = oldJSON("geocache.json") || {}, looked = 0, held = 0; const items = [];
+    const inWeber = g => g && g.lat > 40.9 && g.lat < 41.5 && g.lng > -112.3 && g.lng < -111.5;
+    for (const r of rows) {
+      if (iH >= 0 && /hide|^x$/i.test((r[iH] || "").trim())) continue;
+      const first = ymd(r[iF]); if (!first) continue; let last = ymd(r[iL]) || first; if (last < first) last = first;
+      if (last < today || first > limit) continue;
+      const town = (r[iTn] || "").trim().slice(0, 40);
+      const area = /valley|eden|liberty|huntsville|nordic|powder/i.test((iA >= 0 ? r[iA] : "") + " " + town) ? "ov" : "ogden";
+      const address = (r[iAd] || "").trim().slice(0, 120), cross = (r[iX] || "").trim().slice(0, 120);
+      const hours = (r[iHr] || "").trim().slice(0, 80), details = (r[iD] || "").trim().slice(0, 500);
+      if (heldReason(details + " " + hours + " " + cross || "yard sale", "")) { held++; continue; }
+      const what = String(r[iW] || "").split(/,\s*/).map(x => x.trim()).filter(Boolean).slice(0, 12);
+      const where = address || cross; let pin = null;
+      if (where) {
+        const q = "ys:" + where + ", " + (town || (area === "ov" ? "Ogden Valley" : "Ogden"));
+        if (!(q in cache) && looked < 20) {
+          looked++;
+          const tries = address ? [address + ", " + town + ", Utah", address + ", Weber County, Utah"] : [cross.replace(/\s*(&|\band\b|\/|@|\+)\s*/i, " & ") + ", " + town + ", Utah"];
+          let got = null, answered = false;
+          for (const t of tries) { try {
+            const j = await getJSON("https://nominatim.openstreetmap.org/search?format=json&limit=1&countrycodes=us&q=" + encodeURIComponent(t));
+            answered = true; await new Promise(res => setTimeout(res, 1100));
+            if (j && j[0]) { const g = {lat: +(+j[0].lat).toFixed(5), lng: +(+j[0].lon).toFixed(5)}; if (inWeber(g)) { got = g; break; } }
+          } catch (e) { console.log("yard sale lookup failed:", e.message); } }
+          if (got || answered) cache[q] = got; // a failed lookup is tried again next hour
+          console.log("yard sale pin", q, "->", got ? "found" : "not found");
+        }
+        pin = cache[q] || null;
+      }
+      const id = slugify((r[iT] || "") + "-" + first).slice(0, 40);
+      items.push({id, area, town, first, last, hours, address, cross: address ? "" : cross, what, details, lat: pin ? pin.lat : null, lng: pin ? pin.lng : null});
+    }
+    items.sort((a, b) => a.first < b.first ? -1 : a.first > b.first ? 1 : 0);
+    writeIfChanged("geocache.json", cache);
+    console.log("yard sales", items.length, "showing,", held, "held back");
+    writeIfChanged("yardsales.json", {updated: new Date().toISOString(), items, held});
+  } catch (e) { console.log("yard sales failed:", e.message, "- keeping the last good copy"); }
+}
+
 /* ---------------- RECIPE CORNER ----------------
    Recipes Public tab: Timestamp, Your name, Show my name (or Anonymous), Recipe name, Story,
    Ingredients, Steps, Photo, Photo OK, Hide.  Recipe number = row number.
@@ -617,4 +672,5 @@ await coloring();
 await musicians();
 await recipes();
 await tips();
+await yardsales();
 await geocode();
