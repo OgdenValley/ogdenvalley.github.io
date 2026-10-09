@@ -517,7 +517,7 @@ window.OVE_PLACES = {
    "name": "Altitude Fitness and Health",
     "added": "2026-10-08",
     "home": true,
-    "photos": ["altitude-fitness-salad.jpg"],
+    "photos": ["altitude-fitness-logo.jpg", "altitude-fitness-salad.jpg"],
    "town": "Eden",
    "type": "In-home fitness & nutrition coaching",
    "blurb": "Health and wellness coaching through fitness and nutrition, with mindfulness. Julia Rae meets people where they are on their health goals, in their own home and at their own pace.",
