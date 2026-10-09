@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T04:31:36.365Z",
+ "updated": "2026-10-09T05:30:45.750Z",
  "weather": [
   {
    "event": "Hydrologic Outlook",
@@ -18,7 +18,7 @@
  "city": [],
  "status": {
   "weather": "ok",
-  "fires": "failed",
+  "fires": "ok",
   "Ogden City Alerts": "ok"
  }
 }
