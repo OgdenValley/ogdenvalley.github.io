@@ -405,5 +405,15 @@ if (C.goatcounter) {
   document.addEventListener("keydown", e => { if (!box || box.hidden) return; if (e.key === "Escape") hide(); if (e.key === "ArrowRight") show(idx + 1); if (e.key === "ArrowLeft") show(idx - 1); });
 })();
 
-window.OVE_SITE = {C, P, el, $, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ};
+/* ---------- hide filter buttons that would show nothing (e.g. a town with no listings, or a tag no business in the chosen type has) ---------- */
+function pruneChips(all, pred, state, groups){
+  groups.forEach(g => { const btns = [...g.btns]; let any = false;
+    btns.forEach(b => { const v = g.val(b); if (v === null) return;
+      const on = b.getAttribute("aria-pressed") === "true";
+      const n = all.filter(p => pred(p, Object.assign({}, state, {[g.key]: v}))).length;
+      b.hidden = n === 0 && !on; if (!b.hidden) any = true; });
+    const row = g.row === undefined ? (btns[0] && btns[0].parentElement) : g.row; if (row && btns.length) row.hidden = !any; });
+}
+
+window.OVE_SITE = {C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ};
 })();
