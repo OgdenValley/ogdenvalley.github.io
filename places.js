@@ -595,22 +595,19 @@ window.OVE_PLACES = {
    "checked": "2026-10-07"
   },
   {
-   "name": "Historic Monastery Farm U-Pick Pumpkin Patch (McFarland Family Farms)",
+   "name": "McFarland Family Farms - White Barn Farm",
+   "added": "2026-10-09",
+   "photos": ["mcfarland-farms-barn-flag-pumpkin.jpg", "mcfarland-farms-harvest-moon.jpg", "mcfarland-farms-pumpkins-night.jpg", "mcfarland-farms-sunflowers.jpg", "mcfarland-farms-upick-sign.jpg"],
    "town": "Huntsville area",
-   "type": "Pumpkin patch / U-pick",
-   "blurb": "U-pick pumpkins, hayrides and fall festivals on the former Trappist monastery farmland, seasonal September through October 31.",
-   "phone": "(801) 814-6494",
+   "type": "U-pick flowers & pumpkins / Farmers market",
+   "blurb": "A family farm with a Saturday farmers market in July and August (local growers, makers and bakers plus McFarland produce), u-pick flower fields, and u-pick pumpkins, hayrides and fall festivals every September and October, including on the former Trappist monastery farmland. More on-farm events and workshops are added each year.",
+   "tags": ["U-pick flowers (Jul-Aug)", "Farmers market (Jul-Aug)", "U-pick pumpkins (Sep-Oct)", "Fall festivals"],
+   "hours": "Mon-Fri 4-8 p.m., Sat 10 a.m.-9 p.m. (in season)",
+   "address": "6138 E Highway 39, Huntsville, UT 84317",
+   "phone": "801-776-1876",
    "link": "https://www.mcfarlandfamilyfarms.com/",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "McFarland Farms Farmers Market (The White Barn Farm)",
-   "town": "Huntsville area",
-   "type": "Farmers market",
-   "blurb": "Saturday summer market with local growers, makers and bakers plus McFarland farm produce, held July and August, 9 a.m. to 2 p.m.",
-   "link": "https://www.mcfarlandfamilyfarms.com/",
-   "address": "719 S 6300 E, Huntsville, UT 84317",
-   "checked": "2026-10-07"
+   "links": [{"label": "Instagram", "href": "https://www.instagram.com/mcfarlandfamilyfarms/"}],
+   "checked": "2026-10-09"
   },
   {
    "name": "Sandhill Farms",
