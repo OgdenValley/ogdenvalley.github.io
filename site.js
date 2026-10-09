@@ -217,6 +217,50 @@ function listing(box, items, kind, R){
       el("a", {href: page[k] + "#" + slug(p.name), text: "See their listing"}) ]))),
     el("p", {class: "fine", text: "Small businesses run from home or that come to you. Getting listed is free."})); })();
 
+/* ---------- "Post your event, it's free" band: any <div data-postevent> ---------- */
+(function(){ const boxes = document.querySelectorAll("[data-postevent]"); if (!boxes.length) return;
+  const form = (C.forms && C.forms.event) || "submit.html", price = C.eventFeaturePrice || "$25";
+  boxes.forEach(box => box.replaceChildren(el("div", {class: "post-band"}, [
+    el("div", {}, [
+      el("p", {class: "post-eye", text: "Have an event?"}),
+      el("h2", {text: "Post your event. It's free."}),
+      el("p", {text: "Fundraisers, concerts, races, classes, church and school events: if it's in the Valley or Weber County, send it in and it goes on the calendar."}),
+      el("p", {class: "post-small", html: "<b>On Facebook?</b> Create your Facebook event and add <b>Ogden Valley Info &amp; Events</b> as a co-host. It will show on our Facebook page's events too. Then send it in here so it goes on our calendar."}),
+      el("p", {class: "post-small", html: "Want it to stand out? <b>" + price + "</b> puts it in <b>Featured events</b> for the week of your event, plus a pinned Facebook post and a spot in the newsletter. <a href=\"sponsor.html\">How featuring works</a>"})
+    ]),
+    el("a", {class: "btn post-btn", href: form, target: form.startsWith("http") ? "_blank" : null, rel: "noopener", text: "Post my event"})
+  ])));
+})();
+
+/* ---------- Featured events: any <div data-featuredevents> ---------- */
+(function(){ const boxes = document.querySelectorAll("[data-featuredevents]"); if (!boxes.length) return;
+  const today = new Intl.DateTimeFormat("en-CA", {timeZone: TZ}).format(new Date()), preview = /[?&]preview\b/.test(location.search);
+  const back7 = d => { const [y,m,dd] = d.split("-").map(Number); const x = new Date(Date.UTC(y, m - 1, dd - 7)); return x.toISOString().slice(0, 10); };
+  const list = (C.featuredEvents || []).filter(f => f && f.title && f.date && f.date >= today &&
+    (preview || (!f.preview && (f.from || back7(f.date)) <= today))).sort((a, b) => a.date < b.date ? -1 : 1);
+  const dayLine = f => { const [y,m,dd] = f.date.split("-").map(Number); const d = new Date(y, m - 1, dd);
+    return d.toLocaleDateString("en-US", {weekday: "long", month: "long", day: "numeric"}) + (f.time ? " · " + f.time : ""); };
+  boxes.forEach(box => { box.replaceChildren(); if (!list.length) return;
+    box.append(el("div", {class: "fev"}, [
+      el("div", {class: "fev-head"}, [el("p", {class: "eyebrow", text: "Featured events"}),
+        preview ? el("span", {class: "fev-preview", text: "Preview: only you can see this"}) : null]),
+      el("div", {class: "fev-grid"}, list.map(f => el("article", {class: "fev-card"}, [
+        f.image ? el("a", {class: "fev-img", href: f.image, target: "_blank", rel: "noopener", "aria-label": "See the full flyer"},
+          [el("img", {src: f.image, alt: f.title + " flyer", loading: "lazy"})]) : null,
+        el("div", {class: "fev-body"}, [
+          el("span", {class: "fev-tag", text: "★ Featured"}),
+          el("h3", {text: f.title}),
+          el("p", {class: "fev-when", text: dayLine(f)}),
+          (f.place || f.town) ? el("p", {class: "fev-where", text: [f.place, f.town].filter(Boolean).join(", ")}) : null,
+          f.line ? el("p", {text: f.line}) : null,
+          f.link ? el("a", {class: "btn primary", href: f.link, target: "_blank", rel: "noopener", text: f.linkText || "Event details"}) : null
+        ])
+      ]))),
+      el("p", {class: "fev-note", text: "Every event on the calendar is free to post. Want yours featured? See how it works on our Sponsor page."})
+    ]));
+  });
+})();
+
 /* ---------- sponsors strip: any <div data-sponsors> shows the current sponsors from config.js ---------- */
 (function(){ const boxes = document.querySelectorAll("[data-sponsors]"); if (!boxes.length) return;
   const today = new Date().toISOString().slice(0, 10);
@@ -360,10 +404,5 @@ if (C.goatcounter) {
   document.addEventListener("keydown", e => { if (!box || box.hidden) return; if (e.key === "Escape") hide(); if (e.key === "ArrowRight") show(idx + 1); if (e.key === "ArrowLeft") show(idx - 1); });
 })();
 
-/* weather helpers for the Valley forecast (forecast.json, from the National Weather Service) */
-function wxIcon(t){t=String(t||"").toLowerCase();return /thunder/.test(t)?"⛈️":/snow|flurr|sleet|wintry/.test(t)?"🌨️":/rain|shower|drizzle/.test(t)?"🌧️":/fog|haze|smoke/.test(t)?"🌫️":/partly|mostly sunny|mostly clear/.test(t)?"⛅":/cloud|overcast/.test(t)?"☁️":/wind|breez|blustery/.test(t)?"💨":"☀️"}
-function renderForecastStrip(box,F,n){if(!box)return;if(!F||!F.days||!F.days.length){box.replaceChildren(el("div",{class:"alert quiet",text:"The Valley forecast will appear here after the next hourly update."}));return}
-  box.replaceChildren(...F.days.slice(0,n||7).map(d=>el("div",{class:"fc-day"+(d.snow?" snow":"")+(d.pop>=60?" wet":"")},[el("p",{class:"fc-name",text:d.label}),el("p",{class:"fc-md",text:d.md}),el("p",{class:"fc-ic","aria-hidden":"true",text:wxIcon(d.both||d.short)}),el("p",{class:"fc-t",text:(d.high!=null?d.high+"°":"–")+" / "+(d.low!=null?d.low+"°":"–")}),el("p",{class:"fc-p",text:(d.pop||0)+"%"+(d.snow?" snow":" rain")}),el("p",{class:"fc-s",text:d.short||""})])))}
-
-window.OVE_SITE = {C, P, el, $, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip};
+window.OVE_SITE = {C, P, el, $, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ};
 })();

@@ -60,6 +60,23 @@ window.OVE = {
   recipeVoteForm: "",
   recipeVoteEntry: "",
 
+  /* --- Featured events ($25 Event spotlight) ---------------------------
+     Shown in the "Featured events" row on the home page and Events page.
+     Add one { } per featured event (paid, or one we pick to feature for free). It shows starting 7 days
+     before "date" and comes off by itself after. "from": "YYYY-MM-DD" starts it sooner.
+     "preview: true" hides it from the public; you can still see it at ogdenvalleyevent.com/?preview
+     (handy for showing an organizer what they'd get). Delete that line once they pay.
+     Upload the flyer or photo to the main folder. */
+  featuredEvents: [
+    { title: "2nd Annual Monster Dash 5K", date: "2026-10-24", time: "9:00 AM",
+      place: "Weber High School", town: "Pleasant View",
+      image: "monster-dash-2026.png",
+      line: "5K plus a 1-mile kids run. Runners and walkers of all ages, come in costume! 100% of proceeds go to Make-A-Wish Utah for 4-year-old Arie.",
+      link: "https://www.canvaqr.com/RGSQ4K6Sel", linkText: "Join or donate",
+      from: "2026-10-09" }
+  ],
+  eventFeaturePrice: "$25",
+
   /* --- Sponsors (shown on the home page, Events page and Sponsor page) ---
      Add one { } per sponsor. "until" is the last day it shows ("YYYY-MM-DD"); leave it out to keep it up.
      Upload the logo to the main folder. */

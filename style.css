@@ -244,29 +244,27 @@ body.kids h1,body.kids h2{font-family:var(--display);font-weight:800;letter-spac
 .badges{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:2px 0 4px}
 .new-badge{display:inline-block;font:800 12px var(--body);letter-spacing:.06em;text-transform:uppercase;background:#1E7B4A;color:#fff;padding:3px 9px;border-radius:999px}
 .sortbar{margin-bottom:12px}
-
-/* ---------- Valley weather (Safety page + home card) ---------- */
-.fc-strip{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(118px,1fr))}
-.fc-day{background:var(--card);border:2px solid var(--line);border-radius:var(--radius);padding:12px 8px;text-align:center;display:grid;gap:2px}
-.fc-day.wet{border-color:var(--blue)}
-.fc-day.snow{border-color:#3E83C4;background:linear-gradient(var(--card),var(--soft))}
-.fc-day p{margin:0}
-.fc-name{font:800 19px var(--display)}
-.fc-md{font-size:15px;color:var(--muted)}
-.fc-ic{font-size:34px;line-height:1.2}
-.fc-t{font-weight:700;font-size:20px}
-.fc-p{font-weight:700;font-size:16px;color:var(--blue)}
-.fc-s{font-size:14px;color:var(--muted);line-height:1.25}
-.wx-flags{display:grid;gap:10px;margin-bottom:12px}
-.brief{display:grid;gap:14px;grid-template-columns:minmax(0,1fr)}
-@media(min-width:900px){.brief.has-img{grid-template-columns:minmax(0,520px) minmax(0,1fr);align-items:start}}
-.brief img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
-.wx-upd{border-left:6px solid #E07B22}
-.wx-upd .eyebrow{color:#B3261E}
-.lightning-frame{width:100%;height:440px;border:1px solid var(--line);border-radius:12px;background:var(--soft)}
-@media(max-width:600px){.lightning-frame{height:340px}.fc-strip{grid-template-columns:repeat(auto-fit,minmax(96px,1fr))}.fc-ic{font-size:28px}}
-#hw-fc .fc-s,#hw-fc .fc-md{display:none}
-#hw-fc .fc-day{padding:8px 4px}
-#hw-fc .fc-t{font-size:16px}
-#hw-fc .fc-p{font-size:14px}
-#hw-fc .fc-ic{font-size:26px}
+/* Post-your-event band + Featured events */
+.post-band{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:18px;align-items:center;background:#F36A22;color:#fff;border-radius:var(--radius);padding:22px 24px;box-shadow:0 4px 14px rgba(243,106,34,.28)}
+.post-band h2{color:#fff;margin:2px 0 6px;font-size:clamp(24px,4vw,32px)}
+.post-band p{margin:0 0 6px;color:#fff;font-size:18px}
+.post-band .post-eye{font:800 13px var(--body);letter-spacing:.1em;text-transform:uppercase;color:#FFE7C2;margin:0}
+.post-band .post-small{font-size:16px;background:rgba(0,0,0,.14);border-radius:8px;padding:8px 10px;margin-top:8px}
+.post-band .post-small a{color:#fff;font-weight:700}
+.post-btn{background:#fff;color:#B4470D;font-size:19px;padding:14px 22px;white-space:nowrap}
+.post-btn:hover{background:#FFF3E8}
+@media (max-width:640px){.post-band{grid-template-columns:1fr}.post-btn{text-align:center}}
+.fev{background:var(--card);border:2px solid #D9A21B;border-radius:var(--radius);padding:14px 16px 12px;margin-top:18px}
+.fev-head{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-bottom:10px}
+.fev-head .eyebrow{color:#8A6100;margin:0}
+.fev-preview{font:700 12px var(--body);background:#FFF2D9;color:#7A4B00;border:1px dashed #9A5B00;border-radius:999px;padding:3px 10px}
+.fev-grid{display:grid;gap:14px}
+.fev-card{display:grid;grid-template-columns:220px minmax(0,1fr);gap:16px;align-items:start}
+.fev-img img{width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}
+.fev-tag{display:inline-block;font:800 12px var(--body);letter-spacing:.06em;text-transform:uppercase;background:#E8B021;color:#2A1C00;padding:3px 10px;border-radius:999px}
+.fev-body h3{font-size:clamp(22px,3.4vw,28px);margin:8px 0 4px}
+.fev-body p{margin:0 0 8px}
+.fev-when{font-weight:700;font-size:19px;color:var(--ink)}
+.fev-where{color:var(--muted)}
+.fev-note{font-size:14px;color:var(--muted);margin:10px 0 0;border-top:1px solid var(--line);padding-top:8px}
+@media (max-width:640px){.fev-card{grid-template-columns:1fr}.fev-img img{max-width:320px;margin:0 auto}}
