@@ -3,6 +3,7 @@
 // 2) Pulls the NOAA northern-lights (Kp) forecast and NWS cloud cover into sky.json
 // Files are only rewritten when something actually changed.
 import fs from "node:fs";
+import { execSync } from "node:child_process";
 
 function cleanDesc(d){ if(!d) return ""; return d.replace(/<br\s*\/?>/gi,"\n").replace(/<[^>]+>/g,"").replace(/&nbsp;/g," ").replace(/&amp;/g,"&").replace(/\n{3,}/g,"\n\n").trim().slice(0,600); }
 function firstUrl(d){ const m = String(d||"").match(/https?:\/\/[^\s"<>)]+/); return m ? m[0] : ""; }
@@ -674,3 +675,8 @@ await recipes();
 await tips();
 await yardsales();
 await geocode();
+
+// Stage every data file this script writes (yard sales, forecast and any new ones),
+// so the hourly job saves them without anyone editing the workflow file.
+try { execSync('git add -- "*.json"', {stdio: "inherit"}); console.log("staged all .json data files"); }
+catch (e) { console.log("git add skipped:", e.message); }
