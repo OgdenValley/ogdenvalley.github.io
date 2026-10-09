@@ -39,8 +39,8 @@ window.OVE = {
     recipe: "",               // Recipe corner: share a recipe
     recipeVote: "",           // Recipe corner: vote + "what I changed"
     volunteer: "",            // Groups: post a volunteer need or drive
-    yardsale: "",             // Post a yard sale (free, shows right away)
-    cause: "",                // Add a local cause or nonprofit (you check it first)
+    yardsale: "https://docs.google.com/forms/d/e/1FAIpQLSdq-tr_1dUMWJvoD06p9oZAXQWuK5-SnkucboHFwVEFmeZSZg/viewform?usp=pp_url&entry.1817719328=A+yard+sale", // Post a yard sale (event form, opens with "A yard sale" picked)
+    cause: "https://docs.google.com/forms/d/e/1FAIpQLSdi8vhF5R7sEwkGeNK5rgS6WIFjHqdnYcX1yyIWgdqWJvFlOA/viewform", // Add a local cause or nonprofit (you check it first)
     tips: "",                 // Garden + Be Prepared boards (one form, Board question picks which)
     jobs: "https://docs.google.com/forms/d/e/1FAIpQLScOzyUB6XfbZWbwNCMR1FIAjCyWWt-aQFQSGKN2pR5YJvtwkw/viewform", // Help wanted: post a Valley job
     update: "https://docs.google.com/forms/d/e/1FAIpQLSfSL4w4MmyTMJyi62Rd4icPvaIdLejnDfsF_9a67BvjhzPK_A/viewform" // Listing updates (no sign-in form): hours changed, closed, moved, or a place we're missing
@@ -159,7 +159,7 @@ window.OVE = {
   /* --- Contact -------------------------------------------------------- */
   email: "ogdenvalleyevent@gmail.com",   // the Ogden Valley Gmail address, shown as text
   facebook: "https://www.facebook.com/ogdenvalleyevents",
-  instagram: "",
+  instagram: "https://www.instagram.com/ogden_area_information/",
 
   /* --- Photo contest -------------------------------------------------- */
   contest: {
