@@ -27,21 +27,21 @@ window.OVE = {
     photo:    "https://docs.google.com/forms/d/e/1FAIpQLSe9nppeo6jqEILr9SLywvxZ3jgXA-7V0RiaQ3DSvzk0VCst8A/viewform",             // Photo contest entry
     sponsor:  "https://docs.google.com/forms/d/e/1FAIpQLScl8tGaQgMKnVOo2ocL6tqrMPACLtl36UXm_CJIrrg39ix-vQ/viewform", // Sponsor a spot
     guess:    "",             // Guess the Spot: send a guess
-    guessSubmit: "",          // Guess the Spot: send in your own spot
-    skyPhoto: "",             // Night sky photo submissions
-    skyVote: "",              // Night sky photo of the month vote
+    guessSubmit: "https://docs.google.com/forms/d/e/1FAIpQLSckQ0TK7yGakhn_6-vi21A929vR0f9UGynX0Am2gHNTXlOUKA/viewform",          // Guess the Spot: send in your own spot
+    skyPhoto: "https://docs.google.com/forms/d/e/1FAIpQLScWZEieyhS9uxCdjQH7LXsCLFe-C4uDgUnGZKzsMoAmtKHZ-A/viewform",             // Night sky photo submissions
+    skyVote: "https://docs.google.com/forms/d/e/1FAIpQLSdZEtGd2gW33nNf2_6V5JLWKPeJ6oQSQUxbtshH6F-IIBt7FA/viewform",              // Night sky photo of the month vote
     report: "https://docs.google.com/forms/d/e/1FAIpQLSeeDFHHAo4biQ0t4BzoG0TmCzcFgXUc5iBN33pOrKYpmK1Eng/viewform",               // Community reports (fire, road, power) — the form link
-    idea: "",                 // Share an idea for the site
-    sighting: "",             // Wildlife & wildflower sightings
-    hunt: "",                 // Scavenger hunt finish photo
-    coloring: "",             // Finished coloring pages (parents send)
-    musician: "",             // Musicians: bio, photo, private events, contact
-    recipe: "",               // Recipe corner: share a recipe
-    recipeVote: "",           // Recipe corner: vote + "what I changed"
-    volunteer: "",            // Groups: post a volunteer need or drive
+    idea: "https://docs.google.com/forms/d/e/1FAIpQLSfQ3ZjeUSNgWmcP0QW44tiP-ljnVChdE_NP303g8vd8lrsMqQ/viewform",                 // Share an idea for the site
+    sighting: "https://docs.google.com/forms/d/e/1FAIpQLSdmbKVwUo-KKx4XifkTSGgWztiT34gjjhkY3CG0jp4j-K4kQg/viewform",             // Wildlife & wildflower sightings
+    hunt: "https://docs.google.com/forms/d/e/1FAIpQLSctleBxDp0glwI4fpkL1vO1zuoLAfiE-sENEUhkye88dI-_dg/viewform",                 // Scavenger hunt finish photo
+    coloring: "https://docs.google.com/forms/d/e/1FAIpQLSeD4c0NYmQnFrgGuGaCRywZvmHWCaKtzZ1a6b1waX6avH5z-w/viewform",             // Finished coloring pages (parents send)
+    musician: "https://docs.google.com/forms/d/e/1FAIpQLSdyDj-XkJKas0nj5SSxPfO2LwuQKckG5ZpMgyiekk4mdO6MKQ/viewform",             // Musicians: bio, photo, private events, contact
+    recipe: "https://docs.google.com/forms/d/e/1FAIpQLScK353HCsAIb5-ePsKiUxHljdh7s7QZgHwYVz7zQTizzscIAA/viewform",               // Recipe corner: share a recipe
+    recipeVote: "https://docs.google.com/forms/d/e/1FAIpQLScTHPG1-8dU02eNJNt9mNqof5M9mL9jiPkathGpUtUhCzUNbw/viewform",           // Recipe corner: vote + "what I changed"
+    volunteer: "https://docs.google.com/forms/d/e/1FAIpQLSfOcw941wcno_hT3Caeyw1ScHvxuqeWFc4TOUSbyDb1AJPv0g/viewform",            // Groups: post a volunteer need or drive
     yardsale: "https://docs.google.com/forms/d/e/1FAIpQLSdq-tr_1dUMWJvoD06p9oZAXQWuK5-SnkucboHFwVEFmeZSZg/viewform?usp=pp_url&entry.1817719328=A+yard+sale", // Post a yard sale (event form, opens with "A yard sale" picked)
     cause: "https://docs.google.com/forms/d/e/1FAIpQLSdi8vhF5R7sEwkGeNK5rgS6WIFjHqdnYcX1yyIWgdqWJvFlOA/viewform", // Add a local cause or nonprofit (you check it first)
-    tips: "",                 // Garden + Be Prepared boards (one form, Board question picks which)
+    tips: "https://docs.google.com/forms/d/e/1FAIpQLSek8NPANF8g-_CeKDuJwNmrGimF60968v1UwVvFTuFGRFb1DA/viewform",                 // Garden + Be Prepared boards (one form, Board question picks which)
     jobs: "https://docs.google.com/forms/d/e/1FAIpQLScOzyUB6XfbZWbwNCMR1FIAjCyWWt-aQFQSGKN2pR5YJvtwkw/viewform", // Help wanted: post a Valley job
     update: "https://docs.google.com/forms/d/e/1FAIpQLSfSL4w4MmyTMJyi62Rd4icPvaIdLejnDfsF_9a67BvjhzPK_A/viewform" // Listing updates (no sign-in form): hours changed, closed, moved, or a place we're missing
   },
@@ -59,8 +59,8 @@ window.OVE = {
   /* --- Recipe vote prefill (optional, same idea as reviews) ------------
      recipeVoteForm: the vote form's link ending in /viewform
      recipeVoteEntry: the "entry.123456" code for the Recipe number question */
-  recipeVoteForm: "",
-  recipeVoteEntry: "",
+  recipeVoteForm: "https://docs.google.com/forms/d/e/1FAIpQLScTHPG1-8dU02eNJNt9mNqof5M9mL9jiPkathGpUtUhCzUNbw/viewform?usp=pp_url",
+  recipeVoteEntry: "entry.283069220",
 
   /* --- Featured events ($25 Event spotlight) ---------------------------
      Shown in the "Featured events" row on the home page and Events page.
