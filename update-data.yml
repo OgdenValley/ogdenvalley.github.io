@@ -23,5 +23,5 @@ jobs:
         run: |
           git config user.name "ogdenvalley-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add events.json sky.json safety.json forecast.json local.json reviews.json geocache.json reports.json skyphotos.json sightings.json coloring.json musicians.json recipes.json tips.json
+          git add *.json
           if git diff --cached --quiet; then echo "Nothing changed"; else git commit -m "Update events and night sky" && git push; fi
