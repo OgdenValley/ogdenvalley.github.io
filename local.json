@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T15:30:54.862Z",
+ "updated": "2026-10-09T18:32:20.762Z",
  "meetings": [
   {
    "body": "Huntsville Town Council",
@@ -18,7 +18,7 @@
     "date": "2026-10-08"
    },
    "water": {
-    "value": 0.2,
+    "value": 0,
     "date": "2026-10-08"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
@@ -32,7 +32,7 @@
     "date": "2026-10-08"
    },
    "water": {
-    "value": 0.3,
+    "value": 0,
     "date": "2026-10-08"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
