@@ -42,6 +42,11 @@
     <p class="meta" id="fc-today" style="font-size:17px;margin-top:12px"></p>
     <p class="meta" id="fc-src" style="font-size:14px;margin-top:6px"></p>
   </div>
+  <div id="your-weather"><div class="section-head"><div><p class="eyebrow">From neighbors · approved before posting</p><h2>Show us your weather</h2></div><div class="btns" style="margin:0"><a class="btn primary" data-form="report" data-track="send weather photo" href="#">Send your weather photo</a></div></div>
+    <p style="margin:0 0 12px">Snow piling up in Eden? A rainbow over Pineview? Send a photo with the <b>Weather photo</b> choice. Tell us the town or a landmark and when you took it. We look at every photo before it goes up, and photos stay here for 7 days. Great shots can be picked for the <a href="photo-contest.html">monthly photo contest</a>.</p>
+    <div id="yw"></div>
+    <p class="meta" style="font-size:14px;margin-top:8px">No faces, children or license plates, and no house numbers. See the <a href="rules.html">community rules</a>. By sending a photo you agree we may share it on this site, in the newsletter and on our Facebook and Instagram, with your first name or "a neighbor."</p>
+  </div>
   <div id="briefings"><div class="section-head"><div><p class="eyebrow">From Ogden Valley Info &amp; Events</p><h2>Weather briefing &amp; updates</h2></div></div><div id="brief-list"></div></div>
   <div id="lightning"><div class="section-head"><div><p class="eyebrow">Live · volunteer network</p><h2>Lightning map</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://www.lightningmaps.org/?lang=en#m=oss;t=3;s=0;o=0;b=;ts=0;z=8;y=41.28;x=-111.8;d=2;dl=2;dc=0;" target="_blank" rel="noopener">Open the full lightning map</a></div>
     <iframe class="lightning-frame" src="https://www.lightningmaps.org/?lang=en#m=oss;t=3;s=0;o=0;b=;ts=0;z=8;y=41.28;x=-111.8;d=2;dl=2;dc=0;" title="Live lightning strikes around Ogden Valley" loading="lazy" referrerpolicy="no-referrer"></iframe>
@@ -115,6 +120,10 @@ if(sf&&sf.city&&sf.city.length){const g=el("div",{class:"grid"});sf.city.slice(0
 const R=await S.loadJSON("reports.json"),rep=document.getElementById("rep");
 if(!R||!R.items||!R.items.length)quiet(rep,"No community reports in the last 48 hours.");
 else{rep.replaceChildren(...R.items.map(x=>el("article",{class:"card",style:"border-left:6px solid #C77700"},[el("p",{class:"eyebrow",text:x.kind+" · "+fmt(x.time)}),x.where?el("h3",{text:x.where}):null,x.photo?el("img",{src:x.photo,alt:x.kind+" photo from a neighbor",loading:"lazy",style:"border-radius:10px;max-height:420px;width:100%;object-fit:cover"}):null,x.text?el("p",{text:x.text}):null,el("p",{class:"meta",style:"font-size:14px",text:"Community report"+(x.by?" from "+x.by:"")+" · not verified"})])))}
+
+const yw=document.getElementById("yw"),YW=(R&&R.weather)||[];
+if(!YW.length)quiet(yw,"No weather photos this week yet. Be the first to send one.");
+else{const g=el("div",{class:"grid"});YW.forEach(x=>g.append(el("article",{class:"card"},[el("img",{src:x.photo,alt:"Weather photo"+(x.where?" from "+x.where:"")+" sent by a neighbor",loading:"lazy",style:"border-radius:10px;width:100%;aspect-ratio:4/3;object-fit:cover"}),x.where?el("h3",{style:"font-size:19px",text:x.where}):null,x.text?el("p",{text:x.text}):null,el("p",{class:"meta",style:"font-size:14px",text:fmt(x.time)+" · from "+(x.by||"a neighbor")})])));yw.replaceChildren(g)}
 S.renderMeetings(document.getElementById("meet-list"),L,20,true);
 if(sf&&sf.updated)document.getElementById("safety-upd").textContent="Last checked "+fmt(sf.updated)+".";
 })();

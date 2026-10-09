@@ -306,19 +306,30 @@ async function reports(){
     const head = (rows.shift() || []).map(h => h.toLowerCase());
     const col = re => head.findIndex(h => re.test(h));
     const iT = col(/timestamp/), iK = col(/what kind|type|kind/), iW = col(/where|location|cross/), iD = col(/what did|what you saw|details|describe/), iP = col(/photo(?! ok)/), iOK = col(/photo ok/), iH = col(/^hide/), iN = col(/name/);
-    const now = Date.now(); let held = 0; const items = [];
+    const now = Date.now(); let held = 0; const items = [], weather = [];
     for (const r of rows) {
       if (iH >= 0 && /hide/i.test(r[iH] || "")) continue;
-      const t = Date.parse(r[iT]); if (!t || now - t > 48 * 36e5) continue;
+      const t = Date.parse(r[iT]); if (!t) continue;
+      // "Show us your weather": weather photos show only after Photo OK = yes, and stay up 7 days
+      if (/weather photo/i.test(r[iK] || "")) {
+        if (now - t > 7 * 864e5) continue;
+        const m = iP >= 0 ? (r[iP] || "").match(/[-\w]{25,}/) : null;
+        const ok = iOK >= 0 && /^y/i.test((r[iOK] || "").trim());
+        const w = (r[iW] || "").trim(), d = (r[iD] || "").trim();
+        if (!ok || !m || heldReason(d + " " + w, r[iN] || "")) { held++; continue; }
+        weather.push({time: t, where: w.slice(0, 120), text: d.slice(0, 300), by: (r[iN] || "").trim().split(/\s+/)[0].slice(0, 20), photo: "https://drive.google.com/thumbnail?id=" + m[0] + "&sz=w1200"});
+        continue;
+      }
+      if (now - t > 48 * 36e5) continue;
       const where = (r[iW] || "").trim(), text = (r[iD] || "").trim();
       if (heldReason(text + " " + where, r[iN] || "")) { held++; continue; }
       let photo = null;
       if (iP >= 0 && iOK >= 0 && /^y/i.test((r[iOK] || "").trim())) { const m = (r[iP] || "").match(/[-\w]{25,}/); if (m) photo = "https://drive.google.com/thumbnail?id=" + m[0] + "&sz=w1200"; }
       items.push({time: t, kind: (r[iK] || "Report").trim().slice(0, 40), where: where.slice(0, 120), text: text.slice(0, 600), by: (r[iN] || "").trim().slice(0, 30), photo});
     }
-    items.sort((a, b) => b.time - a.time);
-    console.log("reports", items.length, "showing,", held, "held back");
-    writeIfChanged("reports.json", {updated: new Date().toISOString(), items, held});
+    items.sort((a, b) => b.time - a.time); weather.sort((a, b) => b.time - a.time);
+    console.log("reports", items.length, "showing,", weather.length, "weather photos,", held, "held back");
+    writeIfChanged("reports.json", {updated: new Date().toISOString(), items, weather, held});
   } catch (e) { console.log("reports failed:", e.message, "- keeping the last good copy"); }
 }
 
