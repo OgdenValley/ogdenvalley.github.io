@@ -290,3 +290,4 @@ body.kids h1,body.kids h2{font-family:var(--display);font-weight:800;letter-spac
 .ys-home{display:flex;gap:14px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:14px;background:var(--card);border:2px solid #F36A22;border-radius:var(--radius);padding:14px 18px}
 .ys-home b{font:800 20px var(--display)}
 .ys-home p{margin:2px 0 0;color:var(--muted)}
+@media (min-width:901px){nav.main{gap:0}nav.main a{padding:8px 8px}}
