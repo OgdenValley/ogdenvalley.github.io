@@ -1,6 +1,30 @@
 {
- "updated": "2026-10-09T05:30:45.750Z",
+ "updated": "2026-10-09T19:29:23.341Z",
  "weather": [
+  {
+   "event": "Wind Advisory",
+   "severity": "Moderate",
+   "headline": "Wind Advisory issued October 9 at 1:12PM MDT until October 11 at 6:00AM MDT by NWS Salt Lake City UT",
+   "area": "Great Salt Lake Desert and Mountains; Tooele and Rush Valleys; Eastern Box Elder County; Northern Wasatch Front; Salt Lake Valley; Utah Valley; Cache Valley/Utah Portion; Wasatch Back; Bear Lake and Bear River Valley; Sanpete Valley",
+   "starts": "2026-10-10T03:00:00-06:00",
+   "ends": "2026-10-11T06:00:00-06:00",
+   "text": "* WHAT...South winds 25 to 35 mph with gusts up to 55 mph expected.\n\n* WHERE...The Wasatch Front, Great Salt Lake Desert and Mountains,\nTooele and Rush Valleys, Cache Valley/Utah Portion, Wasatch Back,\nBear Lake and Bear River Valley, and Sanpete Valley.\n\n* WHEN...From 3 AM Saturday to 6 AM MDT Sunday. Winds will initially\nstart off Saturday morning as southwesterly downslope off favored\nterrain, such as the Oquirrhs, before becoming more widespread in\nthe late morning to early afternoon hours.\n\n* IMPACTS...Gusty winds will blow around unsecured objects and a few\npower outages may result.",
+   "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles and vehicles with trailers. Use extra caution.\n\nSecure outdoor objects.",
+   "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
+   "source": "National Weather Service"
+  },
+  {
+   "event": "Flood Watch",
+   "severity": "Severe",
+   "headline": "Flood Watch issued October 9 at 1:04PM MDT until October 12 at 6:00PM MDT by NWS Salt Lake City UT",
+   "area": "Great Salt Lake Desert and Mountains; Tooele and Rush Valleys; Eastern Box Elder County; Northern Wasatch Front; Salt Lake Valley; Utah Valley; Cache Valley/Utah Portion; Wasatch Back; Bear Lake and Bear River Valley; Wasatch Mountains I-80 North; Wasatch Mountains South of I-80; Western Uinta Mountains; Western Uinta Basin; Western Millard and Juab Counties",
+   "starts": "2026-10-11T00:00:00-06:00",
+   "ends": "2026-10-12T18:00:00-06:00",
+   "text": "Moisture associated with the remnants of Tropical Storm Rachel will\nimpact Utah this weekend bringing widespread rainfall totals ranging\nfrom 2-4\". Some highly localized amounts to 6-8\" are also possible,\nparticularly across terrain-favored locations in southwestern Utah,\nthe Book Cliffs, and Bear River Range.\n\n* WHAT...Flooding caused by excessive rainfall is possible.\n\n* WHERE...A portion of Utah, including the following areas, Western\nMillard and Juab Counties, Bear Lake and Bear River Valley, Cache\nValley/Utah Portion, Eastern Box Elder County, Great Salt Lake\nDesert and Mountains, Northern Wasatch Front, Salt Lake Valley,\nTooele and Rush Valleys, Utah Valley, Wasatch Back, Wasatch\nMountains I-80 North, Wasatch Mountains South of I-80, Western\nUinta Basin and Western Uinta Mountains. This includes recent burn\nscars such as Rocky Canyon.\n\n* WHEN...From late Saturday night through Mond",
+   "instruction": "You should monitor later forecasts and be alert for possible Flood\nWarnings. Those living in areas prone to flooding should be prepared\nto take action should flooding develop.",
+   "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
+   "source": "National Weather Service"
+  },
   {
    "event": "Hydrologic Outlook",
    "severity": "Unknown",
