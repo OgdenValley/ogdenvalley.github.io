@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T03:29:44.578Z",
+ "updated": "2026-10-10T04:30:05.611Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
@@ -8,23 +8,23 @@
    "md": "Oct 9",
    "high": null,
    "low": 47,
-   "pop": 28,
+   "pop": 30,
    "short": "Mostly Cloudy then Chance Rain Showers",
    "both": "Mostly Cloudy then Chance Rain Showers",
    "snow": false,
-   "wind": "10 mph"
+   "wind": "9 mph"
   },
   {
    "date": "2026-10-10",
    "label": "Sat",
    "md": "Oct 10",
-   "high": 72,
-   "low": 43,
-   "pop": 93,
-   "short": "Showers And Thunderstorms Likely",
-   "both": "Showers And Thunderstorms Likely / Slight Chance Showers And Thunderstorms then Showers And Thunderstorms",
+   "high": 71,
+   "low": 42,
+   "pop": 83,
+   "short": "Showers And Thunderstorms",
+   "both": "Showers And Thunderstorms / Showers And Thunderstorms",
    "snow": false,
-   "wind": "7 to 13 mph"
+   "wind": "7 to 12 mph"
   },
   {
    "date": "2026-10-11",
@@ -32,23 +32,23 @@
    "md": "Oct 11",
    "high": 63,
    "low": 39,
-   "pop": 100,
+   "pop": 99,
    "short": "Showers And Thunderstorms",
    "both": "Showers And Thunderstorms / Showers And Thunderstorms",
    "snow": false,
-   "wind": "2 to 8 mph"
+   "wind": "1 to 7 mph"
   },
   {
    "date": "2026-10-12",
    "label": "Mon",
    "md": "Oct 12",
-   "high": 60,
-   "low": 33,
-   "pop": 87,
+   "high": 61,
+   "low": 34,
+   "pop": 91,
    "short": "Showers And Thunderstorms",
    "both": "Showers And Thunderstorms / Showers And Thunderstorms",
    "snow": false,
-   "wind": "3 to 8 mph"
+   "wind": "6 mph"
   },
   {
    "date": "2026-10-13",
@@ -87,11 +87,11 @@
    "wind": "2 mph"
   }
  ],
- "today": "Tonight: A chance of rain showers after midnight. Mostly cloudy. Low around 47, with temperatures rising to around 51 overnight. Southeast wind around 10 mph. Chance of precipitation is 30%.",
+ "today": "Tonight: A chance of rain showers after midnight. Mostly cloudy. Low around 47, with temperatures rising to around 50 overnight. East southeast wind around 9 mph. Chance of precipitation is 30%.",
  "valleySnowDays": [],
  "snowLevelFt": 9700,
  "snowInches48": 0,
- "forecastIssued": "2026-10-09T22:02:07+00:00",
+ "forecastIssued": "2026-10-10T04:06:51+00:00",
  "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
  "source": "National Weather Service Salt Lake City",
  "status": {
