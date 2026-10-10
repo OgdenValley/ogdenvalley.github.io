@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T10:27:51.756Z",
+ "updated": "2026-10-10T16:28:09.183Z",
  "weather": [
   {
    "event": "Flood Watch",
@@ -27,7 +27,16 @@
   }
  ],
  "fires": [],
- "city": [],
+ "city": [
+  {
+   "title": "800 N from 750 E to 900 E and 675 E to 850 N.",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2062",
+   "date": 1791652901000,
+   "text": "Emergency Water Shutdown",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  }
+ ],
  "status": {
   "weather": "ok",
   "fires": "ok",
