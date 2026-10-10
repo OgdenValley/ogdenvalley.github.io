@@ -126,6 +126,7 @@ window.OVE = {
   /* --- Visit counts (GoatCounter) ------------------------------------- */
   goatcounter: "ove",          // the code you picked, e.g. "ogdenvalley"
   showVisitCount: true,       // show the total visits in the footer
+  visitCountMin: 300,         // the footer count stays hidden until the site passes this many visits
 
   /* --- Guess the Spot (newest last) ------------------------------------
      { week: "Oct 12", start: "2026-10-12", image: "spot-oct12.jpg", hint: "", by: "ove" | "community",

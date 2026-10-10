@@ -374,7 +374,7 @@ document.addEventListener("click", ev => {
 if (C.goatcounter) {
   const sc = document.createElement("script"); sc.async = true; sc.src = "https://gc.zgo.at/count.js"; sc.dataset.goatcounter = "https://" + C.goatcounter + ".goatcounter.com/count"; document.head.append(sc);
   const out = document.getElementById("gc-count");
-  if (out && C.showVisitCount) fetch("https://" + C.goatcounter + ".goatcounter.com/counter/TOTAL.json").then(r => r.ok ? r.json() : null).then(j => { if (j && j.count) out.textContent = j.count + " visits to the site"; }).catch(() => {});
+  if (out && C.showVisitCount) fetch("https://" + C.goatcounter + ".goatcounter.com/counter/TOTAL.json").then(r => r.ok ? r.json() : null).then(j => { const n = j && parseInt(String(j.count || "").replace(/[^0-9]/g, ""), 10); if (n && n >= (+C.visitCountMin || 0)) out.textContent = n.toLocaleString("en-US") + " visits to the site"; }).catch(() => {});
 }
 
 /* ---------- photo gallery viewer: tap any photo in a [data-gallery] area to browse full screen ---------- */
