@@ -1,6 +1,30 @@
 {
- "updated": "2026-10-10T17:26:41.445Z",
+ "updated": "2026-10-10T21:27:28.194Z",
  "weather": [
+  {
+   "event": "Special Weather Statement",
+   "severity": "Moderate",
+   "headline": "Special Weather Statement issued October 10 at 3:25PM MDT by NWS Salt Lake City UT",
+   "area": "Northern Wasatch Front; Salt Lake Valley; Wasatch Back; Wasatch Mountains I-80 North",
+   "starts": "2026-10-10T15:25:00-06:00",
+   "ends": "2026-10-10T16:00:00-06:00",
+   "text": "At 325 PM MDT, Doppler radar was tracking a strong thunderstorm over\nSalt Lake City, moving northeast at 45 mph.\n\nHAZARD...Wind gusts of 50 to 55 mph and pea size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects. Minor damage to outdoor objects is\npossible.\n\nLocations impacted include...\nSalt Lake City, West Valley City, Bountiful, Morgan, South Salt\nLake, North Salt Lake, Centerville, Woods Cross, West Bountiful,\nEmigration Canyon, East Canyon State Park, Canyon Rim, Millcreek,\nSalt Lake City International Airport, Henefer and Portersville.\n\nThis includes the following highways...\nInterstate 84 between mile markers 104 and 113. Interstate 80 in Utah\nbetween mile markers 114 and 119...and between mile markers 123 and\n126. Interstate 15 between mile markers 303 and 319.",
+   "instruction": "Monitor the weather situation closely and be alert for threatening\nweather conditions.\n\nFrequent cloud to ground lightning is occurring with this storm.\nLightning can strike 10 miles away from a thunderstorm. Seek a safe\nshelter inside a building or vehicle.\n\nTorrential rainfall is also occurring with this storm and may lead to\nflash flooding. Do not drive your vehicle through flooded roadways.",
+   "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
+   "source": "National Weather Service"
+  },
+  {
+   "event": "Special Weather Statement",
+   "severity": "Moderate",
+   "headline": "Special Weather Statement issued October 10 at 3:15PM MDT by NWS Salt Lake City UT",
+   "area": "Salt Lake Valley; Wasatch Back; Wasatch Mountains I-80 North; Wasatch Mountains South of I-80",
+   "starts": "2026-10-10T15:15:00-06:00",
+   "ends": "2026-10-10T15:45:00-06:00",
+   "text": "At 315 PM MDT, Doppler radar was tracking a strong thunderstorm over\nHolladay, or 5 miles east of Murray, moving northeast at 20 mph. Pea\nsize hail has been observed with this storm.\n\nHAZARD...Wind gusts of 50 to 55 mph and pea size hail.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects. Minor damage to outdoor objects is\npossible.\n\nLocations impacted include...\nSalt Lake City, Murray, Taylorsville, Cottonwood Heights, Holladay,\nSouth Salt Lake, Summit Park, Mill Creek Canyon, Emigration Canyon,\nMount Olympus, Canyon Rim, East Millcreek, Big Cottonwood Canyon,\nMillcreek, Cottonwood West, Little Cottonwood Canyon, North\nSnyderville Basin and Parleys Summit.\n\nThis includes the following highways...\nInterstate 80 in Utah between mile markers 124 and 143. Interstate 15\nbetween mile markers 300 and 303.",
+   "instruction": "Monitor the weather situation closely and be alert for threatening\nweather conditions.\n\nFrequent cloud to ground lightning is occurring with this storm.\nLightning can strike 10 miles away from a thunderstorm. Seek a safe\nshelter inside a building or vehicle.\n\nTorrential rainfall is also occurring with this storm and may lead to\nflash flooding. Do not drive your vehicle through flooded roadways.",
+   "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
+   "source": "National Weather Service"
+  },
   {
    "event": "Flood Watch",
    "severity": "Severe",
@@ -27,16 +51,7 @@
   }
  ],
  "fires": [],
- "city": [
-  {
-   "title": "800 N from 750 E to 900 E and 675 E to 850 N., 750 N. From Liberty Ave. to Jefferson Ave. Updated on 2026-10-10",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2062",
-   "date": 1791655637000,
-   "text": "Emergency Water Shutdown Update: &lt;p fr-original-style=\"\" style=\"margin: 0px 0px 6px; box-sizing: inherit;\"&gt;This outage has been updated to include 750. N. From Liberty Ave. to Jefferson Ave.&lt;/p&gt;",
-   "source": "Ogden City Alerts",
-   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
-  }
- ],
+ "city": [],
  "status": {
   "weather": "ok",
   "fires": "ok",
