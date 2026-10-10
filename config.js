@@ -26,7 +26,8 @@ window.OVE = {
     artist:   "https://docs.google.com/forms/d/e/1FAIpQLSeT9RH4wEL6lcusqhtEeubo62Ypz2kRLDNK5Uqm55OO_cDCKQ/viewform",             // Be listed as a local artist
     photo:    "https://docs.google.com/forms/d/e/1FAIpQLSe9nppeo6jqEILr9SLywvxZ3jgXA-7V0RiaQ3DSvzk0VCst8A/viewform",             // Photo contest entry
     sponsor:  "https://docs.google.com/forms/d/e/1FAIpQLScl8tGaQgMKnVOo2ocL6tqrMPACLtl36UXm_CJIrrg39ix-vQ/viewform", // Sponsor a spot
-    guess:    "",             // Guess the Spot: send a guess
+    guess:    "https://docs.google.com/forms/d/e/1FAIpQLSeTpZpmY9VttYMGPg39vOm2vL3zSOgfLVOS8nw7L7nqvdsuxQ/viewform",             // Guess the Spot: send a guess
+    teach:    "https://docs.google.com/forms/d/e/1FAIpQLSeVO-lREBnt-L37zUwRMVoINcJ2Qxup3MYliT1d0H1olWRMnA/viewform",             // Valley Know-How: teach a class
     guessSubmit: "https://docs.google.com/forms/d/e/1FAIpQLSckQ0TK7yGakhn_6-vi21A929vR0f9UGynX0Am2gHNTXlOUKA/viewform",          // Guess the Spot: send in your own spot
     skyPhoto: "https://docs.google.com/forms/d/e/1FAIpQLScWZEieyhS9uxCdjQH7LXsCLFe-C4uDgUnGZKzsMoAmtKHZ-A/viewform",             // Night sky photo submissions
     skyVote: "https://docs.google.com/forms/d/e/1FAIpQLSdZEtGd2gW33nNf2_6V5JLWKPeJ6oQSQUxbtshH6F-IIBt7FA/viewform",              // Night sky photo of the month vote
@@ -127,11 +128,12 @@ window.OVE = {
   showVisitCount: true,       // show the total visits in the footer
 
   /* --- Guess the Spot (newest last) ------------------------------------
-     { week: "Oct 12", image: "spot-oct12.jpg", hint: "", by: "ove" | "community",
+     { week: "Oct 12", start: "2026-10-12", image: "spot-oct12.jpg", hint: "", by: "ove" | "community",
        credit: "", revealed: false, answer: "", winner: "" }
-     Keep "answer" blank until reveal day: this file is public, so anything typed here can be seen. */
+     start = the photo's first day. On day 7 (6 days later) the answer, the guesses and the random winner
+     show by themselves from the guess sheet's Spots tab. Keep "answer" blank here: this file is public. */
   guessSpots: [
-    { week: "Oct 8", image: "spot-2026-10-08.jpg", hint: "Fall color, string lights and a big rocky ridge. Where are these two pumpkinheads standing?", by: "ove", credit: "", revealed: false, answer: "", winner: "" }
+    { week: "Oct 8", start: "2026-10-08", image: "spot-2026-10-08.jpg", hint: "Fall color, string lights and a big rocky ridge. Where are these two pumpkinheads standing?", by: "ove", credit: "", revealed: false, answer: "", winner: "" }
   ],
 
   /* --- Home page photo banner -------------------------------------------

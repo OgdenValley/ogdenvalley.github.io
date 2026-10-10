@@ -618,6 +618,29 @@ async function tips(){
   } catch (e) { console.log("tips failed:", e.message); }
 }
 
+/* ---------------- GUESS THE SPOT: day-7 reveal ----------------
+   The guess sheet's "Public" tab (filled every hour by the Apps Script) only has a week once its day 7 has come:
+   Week (first day, YYYY-MM-DD), Answer, Winner, Name, Guess, Right. Contact info is never in it. */
+async function guessreveal(){
+  const url = (cfgAll()._guessRevealCsv || "").trim();
+  if (!url) { if (!oldJSON("guessreveal.json")) writeIfChanged("guessreveal.json", {updated: new Date().toISOString(), weeks: {}}); console.log("guess reveal: no sheet link yet"); return; }
+  try {
+    const {rows, col} = await sheet(url);
+    const iW = col(/^week/), iA = col(/^answer/), iWn = col(/^winner/), iN = col(/^name/), iG = col(/^guess/), iR = col(/^right/);
+    const weeks = {};
+    for (const r of rows) {
+      const wk = (r[iW] || "").trim(); if (!/^\d{4}-\d{2}-\d{2}$/.test(wk)) continue;
+      const w = weeks[wk] || (weeks[wk] = {answer: (r[iA] || "").trim().slice(0, 200), winner: (r[iWn] || "").trim().slice(0, 40), guesses: []});
+      const name = (r[iN] || "").trim().slice(0, 40), guess = (r[iG] || "").trim().slice(0, 200);
+      if (!guess) continue;
+      if (heldReason(guess, name)) { console.log("guess held:", name); continue; }
+      w.guesses.push({name, guess, right: yes(r[iR])});
+    }
+    console.log("guess reveal", Object.keys(weeks).length, "weeks");
+    writeIfChanged("guessreveal.json", {updated: new Date().toISOString(), weeks});
+  } catch (e) { console.log("guess reveal failed:", e.message); }
+}
+
 /* ---------------- VALLEY FORECAST: 7 days for Eden, Liberty and Huntsville (NWS) ---------------- */
 async function forecast(){
   const old = oldJSON("forecast.json") || {};
@@ -674,6 +697,7 @@ await musicians();
 await recipes();
 await tips();
 await yardsales();
+await guessreveal();
 await geocode();
 
 // Stage every data file this script writes (yard sales, forecast and any new ones),
