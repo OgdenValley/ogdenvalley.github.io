@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T23:28:08.014Z",
+ "updated": "2026-10-10T08:29:04.653Z",
  "meetings": [],
  "snow": [
   {
@@ -7,11 +7,11 @@
    "elev": 7690,
    "depth": {
     "value": 0,
-    "date": "2026-10-08"
+    "date": "2026-10-09"
    },
    "water": {
     "value": 0,
-    "date": "2026-10-08"
+    "date": "2026-10-09"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -21,11 +21,11 @@
    "elev": 5970,
    "depth": {
     "value": 0,
-    "date": "2026-10-08"
+    "date": "2026-10-09"
    },
    "water": {
     "value": 0,
-    "date": "2026-10-08"
+    "date": "2026-10-09"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
