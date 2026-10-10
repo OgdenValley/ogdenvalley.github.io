@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T06:34:08.471Z",
+ "updated": "2026-10-10T07:29:21.939Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
@@ -42,11 +42,11 @@
    "date": "2026-10-13",
    "label": "Tue",
    "md": "Oct 13",
-   "high": 56,
-   "low": 32,
-   "pop": 76,
+   "high": 55,
+   "low": 31,
+   "pop": 89,
    "short": "Rain Showers",
-   "both": "Rain Showers / Showers And Thunderstorms Likely",
+   "both": "Rain Showers / Showers And Thunderstorms",
    "snow": false,
    "wind": "2 mph"
   },
@@ -54,13 +54,13 @@
    "date": "2026-10-14",
    "label": "Wed",
    "md": "Oct 14",
-   "high": 56,
-   "low": 31,
-   "pop": 45,
-   "short": "Chance Rain Showers",
-   "both": "Chance Rain Showers / Slight Chance Rain Showers then Partly Cloudy",
+   "high": 54,
+   "low": 30,
+   "pop": 55,
+   "short": "Rain Showers Likely",
+   "both": "Rain Showers Likely / Chance Rain Showers",
    "snow": false,
-   "wind": "0 to 3 mph"
+   "wind": "2 mph"
   },
   {
    "date": "2026-10-15",
@@ -68,7 +68,7 @@
    "md": "Oct 15",
    "high": 60,
    "low": 30,
-   "pop": 7,
+   "pop": 8,
    "short": "Sunny",
    "both": "Sunny / Mostly Clear",
    "snow": false,
@@ -80,18 +80,18 @@
    "md": "Oct 16",
    "high": 64,
    "low": null,
-   "pop": 2,
+   "pop": 0,
    "short": "Sunny",
    "both": "Sunny",
    "snow": false,
-   "wind": "1 mph"
+   "wind": "2 mph"
   }
  ],
  "today": "Overnight: A chance of rain showers. Mostly cloudy. Low around 47, with temperatures rising to around 50 overnight. East southeast wind around 8 mph. Chance of precipitation is 30%.",
  "valleySnowDays": [],
  "snowLevelFt": 9700,
  "snowInches48": 0,
- "forecastIssued": "2026-10-10T04:06:51+00:00",
+ "forecastIssued": "2026-10-10T06:31:30+00:00",
  "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
  "source": "National Weather Service Salt Lake City",
  "status": {
