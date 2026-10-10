@@ -124,7 +124,7 @@ window.OVE = {
   ],
 
   /* --- Visit counts (GoatCounter) ------------------------------------- */
-  goatcounter: "ogdenvalleyevent",          // the code you picked, e.g. "ogdenvalley"
+  goatcounter: "ove",          // the code you picked, e.g. "ogdenvalley"
   showVisitCount: true,       // show the total visits in the footer
 
   /* --- Guess the Spot (newest last) ------------------------------------
