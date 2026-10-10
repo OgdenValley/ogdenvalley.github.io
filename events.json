@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T03:30:50.603Z",
+ "updated": "2026-10-10T00:40:32.929Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -462,6 +462,15 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
+    },
+    {
+     "s": 1807142400000,
+     "e": 1807151400000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
     }
    ]
   },

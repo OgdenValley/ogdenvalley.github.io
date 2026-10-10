@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-09T19:29:23.341Z",
+ "updated": "2026-10-10T00:40:34.153Z",
  "weather": [
   {
    "event": "Wind Advisory",
@@ -22,18 +22,6 @@
    "ends": "2026-10-12T18:00:00-06:00",
    "text": "Moisture associated with the remnants of Tropical Storm Rachel will\nimpact Utah this weekend bringing widespread rainfall totals ranging\nfrom 2-4\". Some highly localized amounts to 6-8\" are also possible,\nparticularly across terrain-favored locations in southwestern Utah,\nthe Book Cliffs, and Bear River Range.\n\n* WHAT...Flooding caused by excessive rainfall is possible.\n\n* WHERE...A portion of Utah, including the following areas, Western\nMillard and Juab Counties, Bear Lake and Bear River Valley, Cache\nValley/Utah Portion, Eastern Box Elder County, Great Salt Lake\nDesert and Mountains, Northern Wasatch Front, Salt Lake Valley,\nTooele and Rush Valleys, Utah Valley, Wasatch Back, Wasatch\nMountains I-80 North, Wasatch Mountains South of I-80, Western\nUinta Basin and Western Uinta Mountains. This includes recent burn\nscars such as Rocky Canyon.\n\n* WHEN...From late Saturday night through Mond",
    "instruction": "You should monitor later forecasts and be alert for possible Flood\nWarnings. Those living in areas prone to flooding should be prepared\nto take action should flooding develop.",
-   "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
-   "source": "National Weather Service"
-  },
-  {
-   "event": "Hydrologic Outlook",
-   "severity": "Unknown",
-   "headline": "Hydrologic Outlook issued October 8 at 3:13PM MDT by NWS Salt Lake City UT",
-   "area": "Beaver, UT; Box Elder, UT; Cache, UT; Carbon, UT; Davis, UT; Duchesne, UT; Emery, UT; Garfield, UT; Iron, UT; Juab, UT; Kane, UT; Millard, UT; Morgan, UT; Piute, UT; Rich, UT; Salt Lake, UT; Sanpete, UT; Sevier, UT; Summit, UT; Tooele, UT; Utah, UT; Wasatch, UT; Washington, UT; Wayne, UT; Weber, UT; Uinta, WY",
-   "starts": "2026-10-08T15:13:00-06:00",
-   "ends": "2026-10-09T18:00:00-06:00",
-   "text": "ESFSLC\n\nThe remnants of Tropical Storm Rachel will merge with a fall-like\nstorm system over the western United States, bringing moderate to\nheavy rainfall and a resulting threat of flooding. Widespread\nrainfall of 1 to 3 inches is expected, locally in excess of 3\ninches, particularly across south aspects of southern Utah\nmountains, between late Saturday and Monday morning.\n\nExpect many area waterways including streams, rivers, normally\ndry washes, creeks, and slot canyons to have rising, fast flows by\nSunday evening. Current forecasts do not bring any rivers to\nflood stage, but this will be monitored as the fine details of\nheavy rain bands become more confident. Those with activities near\nrivers, streams, creeks and recent burn scars should closely\nmonitor the forecast over the next several days. Those with\noutdoor plans Sunday onward that include any travel near waterways\nacross Utah sh",
-   "instruction": "",
    "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
    "source": "National Weather Service"
   }
