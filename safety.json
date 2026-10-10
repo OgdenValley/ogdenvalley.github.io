@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-10T16:28:09.183Z",
+ "updated": "2026-10-10T17:26:41.445Z",
  "weather": [
   {
    "event": "Flood Watch",
@@ -29,10 +29,10 @@
  "fires": [],
  "city": [
   {
-   "title": "800 N from 750 E to 900 E and 675 E to 850 N.",
+   "title": "800 N from 750 E to 900 E and 675 E to 850 N., 750 N. From Liberty Ave. to Jefferson Ave. Updated on 2026-10-10",
    "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2062",
-   "date": 1791652901000,
-   "text": "Emergency Water Shutdown",
+   "date": 1791655637000,
+   "text": "Emergency Water Shutdown Update: &lt;p fr-original-style=\"\" style=\"margin: 0px 0px 6px; box-sizing: inherit;\"&gt;This outage has been updated to include 750. N. From Liberty Ave. to Jefferson Ave.&lt;/p&gt;",
    "source": "Ogden City Alerts",
    "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
   }
