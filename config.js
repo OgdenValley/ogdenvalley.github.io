@@ -154,7 +154,10 @@ window.OVE = {
     { image: "valley-sunset-huntsville.jpg", by: "Seth Miller", place: "Huntsville", date: "", caption: "Fire in the sky over the Valley at sunset" },
     { image: "valley-sunrays-seth-miller.jpg", by: "Seth Miller", place: "Huntsville", date: "", caption: "Sun rays break through the clouds over the mountains" },
     { image: "valley-red-squirrel-feeder.jpg", by: "Shauna Miller", place: "", date: "2026-10", caption: "A red squirrel checks out who's watching from the feeder" },
-    { image: "valley-storm-rainbow-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley City", date: "2026-10", caption: "A rainbow peeks through the storm clouds over the mountains" }
+    { image: "valley-storm-rainbow-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley City", date: "2026-10", caption: "A rainbow peeks through the storm clouds over the mountains" },
+    { image: "valley-sculpture-aspens-sean-smith.jpg", by: "Sean W. Smith", place: "", date: "2026-10", caption: "A giant sculpture rises out of the golden aspens" },
+    { image: "valley-fall-aspens-sean-smith.jpg", by: "Sean W. Smith", place: "", date: "2026-10", caption: "Golden aspens and dark pines on the mountainside" },
+    { image: "valley-pineview-from-above-sean-smith.jpg", by: "Sean W. Smith", place: "Pineview", date: "", caption: "Pineview Reservoir and the Valley from high above" }
   ],
 
   /* --- Then & Now ------------------------------------------------------
@@ -309,7 +312,9 @@ window.OVE = {
     { id: "lost", short: "Lost & found", name: "Ogden Valley Lost & Found (Pets & Items)", url: "https://www.facebook.com/share/g/18UUAxkzJQ/",
       about: "Lost or found a pet, keys, a phone or anything else? Post it here so neighbors can help get it home." },
     { id: "forum", short: "Open forum", name: "Ogden Valley Open Forum (No Rules)", url: "https://www.facebook.com/share/g/1FU9YRNubQ/",
-      about: "Say what's on your mind. This group doesn't use our community rules, so join knowing anything goes." }
+      about: "Say what's on your mind. This group doesn't use our community rules, so join knowing anything goes." },
+    { id: "photo", short: "Photography & art", name: "Ogden Valley Photography and Art (only)", url: "https://www.facebook.com/groups/1699428958552888/",
+      about: "Photos and artwork from the Valley, and nothing else, so your work doesn't get buried. Favorites may be featured on our site with credit." }
   ],
 
   /* --- Started ---------------------------------------------------------- */
