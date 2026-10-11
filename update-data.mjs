@@ -97,6 +97,16 @@ async function calendars(){
     if (!out.calendars[cal.into]) out.calendars[cal.into] = {name: cal.into, events: []};
     out.calendars[cal.into].events = out.calendars[cal.into].events.concat(evs).sort((a, b) => a.s - b.s);
   }
+  // Huntsville Town website (no feed): non-meeting events go on the Ogden Valley calendar
+  { let evs;
+    try { evs = (await huntsvilleTown()).filter(x => !x.meeting && x.e > from && x.s < to)
+        .map(x => ({s: x.s, e: x.e, t: x.title, loc: "Huntsville Town, UT", allDay: x.allDay, desc: x.desc, url: HUNTSVILLE_URL, src: "Huntsville Town"}));
+      if (!evs.length && (oldExtra.huntsville || []).length) throw new Error("page read but no events found - keeping the last good copy");
+      console.log("huntsville", evs.length, "events into ov"); }
+    catch (e) { console.log("huntsville failed:", e.message); evs = (oldExtra.huntsville || []).filter(x => x.e > from); }
+    out.sources.huntsville = evs;
+    if (!out.calendars.ov) out.calendars.ov = {name: "Ogden Valley", events: []};
+    out.calendars.ov.events = out.calendars.ov.events.concat(evs).sort((a, b) => a.s - b.s); }
   // keep the file small: sources are only stored for fallback, not shown twice
   writeIfChanged("events.json", out);
 }
@@ -178,6 +188,52 @@ async function safety(){
   writeIfChanged("safety.json", out);
 }
 
+/* ---------------- HUNTSVILLE TOWN: events page reader ----------------
+   Huntsville Town has no calendar feed, so this reads its "Upcoming Events" page
+   (huntsvilleutah.gov/upcoming-events). Meetings go to the public-meetings list
+   (skipped when the state notice for the same day is already there); everything
+   else goes on the Ogden Valley calendar marked "from Huntsville Town".
+   If the town redesigns its site and nothing can be read, the last good copy is kept. */
+const HUNTSVILLE_URL = "https://huntsvilleutah.gov/upcoming-events";
+let _hvPromise = null;
+function huntsvilleTown(){ return _hvPromise || (_hvPromise = readHuntsville()); }
+async function readHuntsville(){
+  const html = await getText(HUNTSVILLE_URL);
+  return parseHuntsville(html);
+}
+function parseHuntsville(html){
+  const ent = t => t.replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&#39;|&rsquo;|&#8217;/g, "'").replace(/&quot;|&ldquo;|&rdquo;/g, '"').replace(/&ndash;|&mdash;/g, "-").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+  const text = ent(String(html)
+    .replace(/<(script|style|noscript)[\s\S]*?<\/\1>/gi, " ")
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<\/?(p|div|li|ul|ol|h[1-6]|tr|td|th|table|section|article|header|footer|nav|dt|dd|dl)\b[^>]*>/gi, "\n")
+    .replace(/<[^>]+>/g, " "));
+  const raw = text.split("\n").map(l => l.replace(/[ \t]+/g, " ").trim()).filter(Boolean);
+  const lines = []; raw.forEach(l => { const p = lines[lines.length - 1]; if (p && /^(Begins|Ends):?$/i.test(p)) lines[lines.length - 1] = p.replace(/:?$/, ": ") + l; else lines.push(l); });
+  const day = (mo, d, y, h, mi, ap) => { let hr = h == null ? 0 : (+h % 12) + (/pm/i.test(ap || "") ? 12 : 0);
+    const g = Date.UTC(+y, +mo - 1, +d, hr, +(mi || 0)); return g - (icsTzOff(g, "America/Denver") || 0); };
+  const B = /^Begins:\s*(\d{1,2})\/(\d{1,2})\/(\d{4})(?:\s*-?\s*(\d{1,2}):(\d{2})\s*(am|pm))?/i;
+  const E = /^Ends:\s*(\d{1,2})\/(\d{1,2})\/(\d{4})(?:\s*-?\s*(\d{1,2}):(\d{2})\s*(am|pm))?/i;
+  const idx = lines.map((l, i) => B.test(l) ? i : -1).filter(i => i > 0);
+  const stop = i => /^(Navigation for section|Check out Geo-Gizmo|Stay Informed|Quick Links|Contacts)\b/i.test(lines[i]);
+  const out = [];
+  idx.forEach((i, k) => {
+    const title = lines[i - 1]; if (!title || /^Upcoming Events$/i.test(title) || /^(Ends|Begins):/i.test(title)) return;
+    const b = lines[i].match(B); const allDay = !b[4];
+    let s = day(b[1], b[2], b[3], b[4], b[5], b[6]), e = null, j = i + 1;
+    const em = lines[j] && lines[j].match(E);
+    if (em) { e = day(em[1], em[2], em[3], em[4], em[5], em[6]); if (!em[4]) e += 864e5; j++; }
+    if (!e || e <= s) e = allDay ? s + 864e5 : s + 2 * 36e5;
+    const end = k + 1 < idx.length ? idx[k + 1] - 1 : lines.length;
+    const desc = []; for (let n = j; n < end && !stop(n); n++) desc.push(lines[n]);
+    const d = desc.join(" ").replace(/^More info to come!?$/i, "More info to come.").slice(0, 600);
+    const meeting = /\b(meeting|council|commission|hearing|work session|board)\b|\bTC\b/i.test(title);
+    const planning = /planning/i.test(title + " " + d);
+    out.push({title, s, e, allDay, desc: d, meeting, body: planning ? "Huntsville Town Planning Commission" : "Huntsville Town Council"});
+  });
+  return out;
+}
+
 /* ---------------- LOCAL: public meetings, snow, Pineview ---------------- */
 async function local(){
   let old = {}; try { old = JSON.parse(fs.readFileSync("local.json", "utf8")); } catch {}
@@ -204,6 +260,17 @@ async function local(){
       out.status[b.name] = n ? "ok" : "no notices found"; console.log(b.name, n, "notices");
     } catch (e) { out.status[b.name] = "failed"; console.log(b.name, "failed:", e.message); out.meetings.push(...(old.meetings || []).filter(m => m.body === b.name)); }
   }
+  // Huntsville Town website: meetings posted there before the state notice goes up
+  try {
+    const town = (await huntsvilleTown()).filter(x => x.meeting);
+    const dayKey = t => new Date(t - 7 * 36e5).toISOString().slice(0, 10);
+    const have = new Set(out.meetings.filter(m => m.start && /huntsville/i.test(m.body)).map(m => dayKey(m.start)));
+    let n = 0;
+    town.forEach(x => { if (have.has(dayKey(x.s))) return;
+      out.meetings.push({body: x.body, title: x.title, start: x.s, link: HUNTSVILLE_URL, source: "Huntsville Town website (the official agenda is posted on the Utah Public Notice Website closer to the date)"}); n++; });
+    out.status["Huntsville Town website"] = town.length ? "ok" : "no meetings found"; console.log("huntsville town meetings", n, "added");
+  } catch (e) { out.status["Huntsville Town website"] = "failed"; console.log("huntsville town meetings failed:", e.message);
+    out.meetings.push(...(old.meetings || []).filter(m => /Huntsville Town website/.test(m.source || ""))); }
   const now = Date.now();
   out.meetings = out.meetings.filter(m => !m.start || m.start > now - 864e5).sort((a, b) => (a.start || 9e15) - (b.start || 9e15)).slice(0, 20);
   // SNOTEL snow depth (NRCS)
