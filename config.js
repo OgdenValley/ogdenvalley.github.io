@@ -297,8 +297,8 @@ window.OVE = {
      Icons by id: qa, weather, updates, roads, rentals, classifieds, lost, forum (any other id gets a people icon).
      The circles show above the footer on every page, and the full cards show on the About page. */
   facebookGroups: [
-    { id: "qa", short: "Questions", name: "Ogden Valley Questions & Answers", url: "https://www.facebook.com/share/g/19Xydvp3Rm/",
-      about: "Ask anything about the Valley: who to call, what's open, recommendations and more." },
+    { id: "qa", short: "Ogden Valley 411", name: "Ogden Valley 411", url: "https://www.facebook.com/groups/ogdenvalleywherecanifind",
+      about: "Ask anything about the Valley: who to call, where to find it, what's open, recommendations and local job openings." },
     { id: "weather", short: "Weather", name: "Ogden Valley Weather Conditions", url: "https://www.facebook.com/share/g/1EE9RSfvq9/",
       about: "Neighbors sharing what the weather is really doing in the Valley: snow totals, wind, storms and ice." },
     { id: "updates", short: "Updates", name: "Weber, Davis & Ogden Valley Updates", url: "https://www.facebook.com/share/g/19Cds7a9Nw/",
@@ -314,7 +314,7 @@ window.OVE = {
     { id: "forum", short: "Open forum", name: "Ogden Valley Open Forum (No Rules)", url: "https://www.facebook.com/share/g/1FU9YRNubQ/",
       about: "Say what's on your mind. This group doesn't use our community rules, so join knowing anything goes." },
     { id: "photo", short: "Photography & art", name: "Ogden Valley Photography and Art (only)", url: "https://www.facebook.com/groups/1699428958552888/",
-      about: "Photos and artwork from the Valley, and nothing else, so your work doesn't get buried. Favorites may be featured on our site with credit." }
+      about: "Photos, artwork and wildlife sightings from the Valley, and nothing else, so your shots don't get buried. Favorites may be featured on our site with credit." }
   ],
 
   /* --- Started ---------------------------------------------------------- */
