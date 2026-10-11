@@ -1,6 +1,35 @@
 {
- "updated": "2026-10-11T12:34:53.477Z",
- "meetings": [],
+ "updated": "2026-10-11T17:28:15.904Z",
+ "meetings": [
+  {
+   "body": "Huntsville Town Planning Commission",
+   "title": "Planning Meeting",
+   "start": 1792713600000,
+   "link": "https://huntsvilleutah.gov/upcoming-events",
+   "source": "Huntsville Town website (the official agenda is posted on the Utah Public Notice Website closer to the date)"
+  },
+  {
+   "body": "Huntsville Town Council",
+   "title": "TC Meeting 11-5-26",
+   "start": 1793926800000,
+   "link": "https://huntsvilleutah.gov/upcoming-events",
+   "source": "Huntsville Town website (the official agenda is posted on the Utah Public Notice Website closer to the date)"
+  },
+  {
+   "body": "Huntsville Town Council",
+   "title": "TC Meeting 11-19-26",
+   "start": 1795136400000,
+   "link": "https://huntsvilleutah.gov/upcoming-events",
+   "source": "Huntsville Town website (the official agenda is posted on the Utah Public Notice Website closer to the date)"
+  },
+  {
+   "body": "Huntsville Town Council",
+   "title": "TC Meeting 12-3-26",
+   "start": 1796346000000,
+   "link": "https://huntsvilleutah.gov/upcoming-events",
+   "source": "Huntsville Town website (the official agenda is posted on the Utah Public Notice Website closer to the date)"
+  }
+ ],
  "snow": [
   {
    "name": "Ben Lomond Peak",
@@ -55,6 +84,7 @@
  "status": {
   "Ogden Valley City Council": "ok",
   "Huntsville Town Council": "ok",
+  "Huntsville Town website": "ok",
   "snow": "ok",
   "pineview": "ok"
  }
