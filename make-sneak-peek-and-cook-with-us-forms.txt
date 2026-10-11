@@ -1,0 +1,139 @@
+/**
+ * OGDEN VALLEY INFO & EVENTS — makes the Sneak Peek and Cook With Us request forms,
+ * and adds a Town question to the Community Cooking (recipe) form.
+ *
+ * How to use (once, in an Incognito window, signed in ONLY to ogdenvalleyevent@gmail.com):
+ *   1. Go to script.google.com and click "New project".
+ *   2. Delete what's in the box, paste this whole file in, and click Save.
+ *   3. In the dropdown next to Debug, pick "makeRequestForms", then click Run.
+ *   4. Permission: Review permissions → the Ogden Valley account → Advanced →
+ *      "Go to Untitled project (unsafe)" → tick "Select all" → Allow.
+ *   5. When it finishes, open the Execution log at the bottom. Drag-select everything
+ *      between the two ===== lines, copy it (Ctrl+C) and paste it to Claude.
+ *
+ * Each form's answers go to its own Sheet ending in "(Responses)", so your morning
+ * submission email picks them up automatically. Running it twice makes a second copy, so run it once.
+ */
+
+var SITE = 'https://ogdenvalleyevent.com/';
+
+function makeRequestForms() {
+  var out = [];
+  out.push(makeSneakPeek_());
+  out.push(makeCookWithUs_());
+  out.push(addTownToRecipeForm_());
+  Logger.log('=====');
+  out.forEach(function (l) { Logger.log(l); });
+  Logger.log('=====');
+}
+
+/* ---------- shared: the "gate" page everyone must agree to first ---------- */
+function gate_(form, termsUrl, termsLines, agreeText) {
+  form.addSectionHeaderItem()
+    .setTitle('Step 1: Read and agree to the terms')
+    .setHelpText('You have to agree before you can go on to the request.\n\n' + termsLines.join('\n') +
+      '\n\nRead the full terms: ' + termsUrl);
+  form.addCheckboxItem()
+    .setTitle('Agreement')
+    .setHelpText('Check the box to agree to all of the terms above.')
+    .setChoiceValues([agreeText])
+    .setRequired(true);
+  form.addTextItem()
+    .setTitle('Your signature')
+    .setHelpText('Type your full name. This counts as your signature on the terms.')
+    .setRequired(true);
+  form.addTextItem()
+    .setTitle('Your role')
+    .setHelpText('For example: owner, manager, event organizer, artist, home cook.')
+    .setRequired(true);
+}
+
+function sheetFor_(form, name) {
+  var ss = SpreadsheetApp.create(name + ' (Responses)');
+  form.setDestination(FormApp.DestinationType.SPREADSHEET, ss.getId());
+  return ss;
+}
+
+/* ---------- Sneak Peek ---------- */
+function makeSneakPeek_() {
+  var name = 'Ogden Valley: Sneak Peek';
+  var form = FormApp.create(name);
+  form.setDescription('Invite Ogden Valley Info & Events for a free behind-the-scenes look at your business, studio, farm, nonprofit or event in Ogden Valley or Weber County. ' +
+    'It is always free to be featured, nobody pays to be chosen, and every Sneak Peek is labeled as a hosted visit. ' +
+    'Step 1 is agreeing to the terms. Full terms: ' + SITE + 'sneak-peek.html#terms');
+  form.setConfirmationMessage('Thank you! We read every request. If it fits, we will reply with a date. Sending a request does not guarantee a visit or a feature.');
+  form.setCollectEmail(false);
+  gate_(form, SITE + 'sneak-peek.html#terms', [
+    '• The host covers the full experience at no cost to us (admission, tickets, food, tastings, class fees). We may bring one guest, also at no cost.',
+    '• Local only: Ogden Valley and Weber County, unless the host covers travel.',
+    '• No payment either way. Coverage is never guaranteed, and we decide whether, when and how anything is published.',
+    '• Hosts do not approve or edit the story; we check facts with you first. Every feature is labeled "Hosted at no cost by ___".',
+    '• No gifts beyond the experience itself (a taste is fine).',
+    '• We may photograph and record and use it on our site, Facebook, Instagram and newsletter. You make sure staff and guests are OK being photographed. No children\'s faces without a parent\'s OK.',
+    '• Offer 2 or 3 dates; visits run about 1 to 2 hours. Either side can reschedule with notice; two no-shows and we stop scheduling. We may end a visit at any time. Home addresses are never published.',
+    '• Not eligible: political campaigns or candidates, developer or builder pitches, sales presentations.'
+  ], 'I have read and agree to the Sneak Peek terms.');
+  form.addPageBreakItem().setTitle('Step 2: Tell us about your Sneak Peek');
+  form.addTextItem().setTitle('Business, studio, farm or event name').setRequired(true);
+  form.addMultipleChoiceItem().setTitle('Type').setChoiceValues(['Business', 'Artist or maker', 'Farm or ranch', 'Event', 'Nonprofit']).showOtherOption(true).setRequired(true);
+  form.addTextItem().setTitle('Town').setHelpText('Town only, like Eden, Huntsville, Ogden or Roy. We never publish home addresses.').setRequired(true);
+  form.addParagraphTextItem().setTitle('What would we see?').setHelpText('What happens behind the scenes, what makes it special, and why now (an opening, a show, a harvest, a big event).').setRequired(true);
+  form.addTextItem().setTitle('Opening or event date, if there is one').setHelpText('For example: Grand opening Nov. 14.');
+  form.addParagraphTextItem().setTitle('2 or 3 dates and times that work for a visit').setRequired(true);
+  form.addTextItem().setTitle('Website, Facebook or Instagram');
+  form.addTextItem().setTitle('Best phone or email to reach you').setHelpText('Only used to set up the visit. Never shown or shared.').setRequired(true);
+  form.addCheckboxItem().setTitle('Photos').setChoiceValues(['Everyone who will be there knows we may take photos, and is OK with it.']).setRequired(true);
+  sheetFor_(form, name);
+  return 'Sneak Peek form: ' + form.getPublishedUrl();
+}
+
+/* ---------- Cook With Us ---------- */
+function makeCookWithUs_() {
+  var name = 'Ogden Valley: Cook With Us';
+  var form = FormApp.create(name);
+  form.setDescription('Invite Ogden Valley Info & Events into your kitchen to cook a favorite recipe together, and we will share the story and the recipe on our Community Cooking page. ' +
+    'Open to Ogden Valley and Weber County. Step 1 is agreeing to the terms. Full terms: ' + SITE + 'recipes.html#cook-with-us');
+  form.setConfirmationMessage('Thank you! We read every request. If it fits, we will reply with a date. Sending a request does not guarantee a visit or a feature.');
+  form.setCollectEmail(false);
+  gate_(form, SITE + 'recipes.html#cook-with-us', [
+    '• You provide the kitchen and the ingredients at no cost to us. We may bring one guest, also at no cost.',
+    '• Local only: Ogden Valley and Weber County, unless the host covers travel. No payment either way.',
+    '• It is your recipe to share, or you tell us where it came from so we can credit it.',
+    '• We decide whether, when and how anything is published, and you do not edit the story. We check names and facts with you first. Every visit is labeled "Cooked with ___" and says we were hosted at no cost.',
+    '• No gifts beyond tasting what we cook together.',
+    '• We may photograph and record and use it on our site, Facebook, Instagram, newsletter and a future community recipe book. Everyone in the kitchen is OK being photographed. No children\'s faces without a parent\'s OK.',
+    '• Your home address is never published, only the town. You are responsible for your kitchen; recipes are shared as home cooks make them.',
+    '• Offer 2 or 3 dates; visits run about 1 to 2 hours. Either side can reschedule, and we may end a visit at any time.',
+    '• Not eligible: political campaigns or candidates, developer or builder pitches, sales presentations.'
+  ], 'I have read and agree to the Cook With Us terms.');
+  form.addPageBreakItem().setTitle('Step 2: Tell us about your recipe');
+  form.addTextItem().setTitle('Name to show with the recipe').setHelpText('Or write "A neighbor" to stay anonymous.').setRequired(true);
+  form.addTextItem().setTitle('Town').setHelpText('Town only, like Eden, Huntsville, Ogden or Roy.').setRequired(true);
+  form.addTextItem().setTitle('The dish').setRequired(true);
+  form.addParagraphTextItem().setTitle('The story behind it').setHelpText('Whose recipe is it, when do you make it, why does it matter to you?').setRequired(true);
+  form.addMultipleChoiceItem().setTitle('Where would we cook?').setChoiceValues(['My home', 'A church or community kitchen', 'A farm', 'A restaurant or business kitchen']).showOtherOption(true).setRequired(true);
+  form.addParagraphTextItem().setTitle('2 or 3 dates and times that work').setRequired(true);
+  form.addTextItem().setTitle('Best phone or email to reach you').setHelpText('Only used to set up the visit. Never shown or shared.').setRequired(true);
+  form.addCheckboxItem().setTitle('Photos').setChoiceValues(['Everyone who will be in the kitchen knows we may take photos, and is OK with it.']).setRequired(true);
+  sheetFor_(form, name);
+  return 'Cook With Us form: ' + form.getPublishedUrl();
+}
+
+/* ---------- add Town to the existing recipe form (and rename it Community Cooking) ---------- */
+function addTownToRecipeForm_() {
+  var files = DriveApp.searchFiles('mimeType = "application/vnd.google-apps.form" and title contains "Recipe" and trashed = false');
+  var done = [];
+  while (files.hasNext()) {
+    var f = files.next(), form = FormApp.openById(f.getId());
+    var title = form.getTitle();
+    if (/recipe corner/i.test(title)) { form.setTitle(title.replace(/recipe corner/i, 'Community Cooking')); done.push('Renamed: ' + form.getTitle()); }
+    if (!/share a recipe/i.test(title)) continue;       // Town only goes on the "share a recipe" form, not the vote form
+    var has = form.getItems().some(function (it) { return /^town/i.test(it.getTitle()); });
+    if (!has) {
+      var item = form.addTextItem().setTitle('Town').setHelpText('Town only, like Eden, Huntsville, Ogden or Roy.').setRequired(false);
+      form.moveItem(item.getIndex(), Math.min(2, form.getItems().length - 1));
+    }
+    done.push(form.getTitle() + (has ? ' (already had Town)' : ' (Town added)'));
+  }
+  return done.length ? 'Recipe form: ' + done.join('; ') : 'Recipe form: not found by name, so nothing was changed. Add a "Town" question to it by hand.';
+}
