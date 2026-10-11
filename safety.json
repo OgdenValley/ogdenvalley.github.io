@@ -1,18 +1,6 @@
 {
- "updated": "2026-10-11T04:30:11.357Z",
+ "updated": "2026-10-11T12:34:52.354Z",
  "weather": [
-  {
-   "event": "Wind Advisory",
-   "severity": "Moderate",
-   "headline": "Wind Advisory issued October 10 at 9:47PM MDT until October 11 at 6:00AM MDT by NWS Salt Lake City UT",
-   "area": "Great Salt Lake Desert and Mountains; Tooele and Rush Valleys; Eastern Box Elder County; Northern Wasatch Front; Salt Lake Valley; Utah Valley; Cache Valley/Utah Portion; Wasatch Back; Bear Lake and Bear River Valley; Sanpete Valley",
-   "starts": "2026-10-10T21:47:00-06:00",
-   "ends": "2026-10-11T06:00:00-06:00",
-   "text": "* WHAT...South winds 20 to 30 mph with gusts up to 50 mph.\n\n* WHERE...The Wasatch Front, Great Salt Lake Desert and Mountains,\nTooele and Rush Valleys, Cache Valley/Utah Portion, Wasatch Back,\nBear Lake and Bear River Valley, and Sanpete Valley.\n\n* WHEN...Until 6 AM MDT Sunday.\n\n* IMPACTS...Gusty winds will blow around unsecured objects and a few\npower outages may result.",
-   "instruction": "Monitor the latest forecasts and warnings for updates.\n\nFasten loose objects or shelter objects in a safe location prior to\nthe onset of winds.\n\nWinds this strong can make driving difficult, especially for high\nprofile vehicles and vehicles with trailers. Use extra caution.",
-   "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
-   "source": "National Weather Service"
-  },
   {
    "event": "Flood Watch",
    "severity": "Severe",
