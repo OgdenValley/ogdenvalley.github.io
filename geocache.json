@@ -25,5 +25,10 @@
   "lat": 41.3234,
   "lng": -111.98479,
   "county": "Weber"
+ },
+ "Ogden Valley City, Utah": {
+  "lat": 40.66733,
+  "lng": -111.96351,
+  "county": "Salt Lake"
  }
 }
