@@ -1,0 +1,39 @@
+{
+ "updated": "2026-10-11T22:29:29.844Z",
+ "items": [
+  {
+   "t": 1791741600000,
+   "src": "National Weather Service",
+   "text": "Wind Advisory until Mon 12:00 AM · Wasatch Mountains I-80 North; Wasatch Mountains South of I-80; Western Uinta Mountains",
+   "kind": "weather",
+   "link": "https://www.weather.gov/slc/"
+  },
+  {
+   "t": 1791741600000,
+   "src": "National Weather Service",
+   "text": "Wind Advisory until Sun 9:00 PM · Northern Wasatch Front; Salt Lake Valley; Utah Valley; Wasatch Back",
+   "kind": "weather",
+   "link": "https://www.weather.gov/slc/"
+  },
+  {
+   "t": 1791722520000,
+   "src": "National Weather Service",
+   "text": "Flood Watch until Mon 6:00 PM · Great Salt Lake Desert and Mountains; Tooele and Rush Valleys; Eastern Box Elder County; Northern Wasatch Front; Salt La",
+   "kind": "weather",
+   "link": "https://www.weather.gov/slc/"
+  }
+ ],
+ "seen": {
+  "ev": {},
+  "al": {},
+  "cond": {},
+  "pass": {},
+  "ice": {},
+  "nws": {
+   "Wind Advisory|2026-10-11T12:00:00-06:00|2026-10-12T00:00:00-06:00": 1,
+   "Wind Advisory|2026-10-11T12:00:00-06:00|2026-10-11T21:00:00-06:00": 1,
+   "Flood Watch|2026-10-11T06:42:00-06:00|2026-10-12T18:00:00-06:00": 1
+  },
+  "air": "October 11, 2026 8:04 AM|Unhealthy/Unrestricted,Very Unhealthy/Unrestricted,Hazardous/Unrestricted"
+ }
+}
