@@ -457,6 +457,21 @@ async function skyphotos(){
 /* ---------------- WILDLIFE & WILDFLOWER SIGHTINGS ----------------
    Public tab: Timestamp, Photo, What did you see, Animal or plant, Area, Date seen, Show name, Name, Photo OK, Hide
    Text shows after the filter; photos only when "Photo OK" is yes. Sightings stay up (they're a record). */
+/* Sightings show the TOWN only. Known towns are kept as the town name; anything that looks like an
+   address or exact spot (numbers, street words) is cut back to a town, or hidden if no town is named. */
+const SIGHT_TOWNS = ["Eden","Liberty","Huntsville","Nordic Valley","Snowbasin","Powder Mountain","Ogden Valley",
+  "North Ogden","South Ogden","Pleasant View","Harrisville","Farr West","Plain City","West Haven","Marriott-Slaterville","Washington Terrace",
+  "Riverdale","Uintah","Hooper","Roy","Morgan","Mountain Green","Ogden"];
+function townOnly(raw){
+  const t = String(raw || "").replace(/\s+/g, " ").trim(); if (!t) return "";
+  const low = t.toLowerCase();
+  if (/pineview|north arm|ogden canyon/.test(low)) return "Ogden Valley";
+  const hit = SIGHT_TOWNS.find(n => low.includes(n.toLowerCase()));
+  const exact = /\d/.test(t) || /\b(st|street|rd|road|ave|avenue|dr|drive|ln|lane|way|blvd|ct|court|cir|circle|hwy|highway|trail|trailhead|house|home|yard|backyard|deck|my|our|park|campground|creek|canyon|lake|reservoir|peak|resort|pond|river)\b/i.test(t);
+  if (hit) return hit;
+  if (exact) return "";
+  return t.split(",")[0].slice(0, 30);
+}
 async function sightings(){
   let cfg = {}; try { cfg = JSON.parse(fs.readFileSync("calendars.json", "utf8")); } catch {}
   const url = (cfg._sightingsCsv || "").trim();
@@ -471,7 +486,7 @@ async function sightings(){
     rows.forEach((r, idx) => {
       if (!r.some(c => c.trim())) return;
       if (iH >= 0 && /hide/i.test(r[iH] || "")) return;
-      const what = (r[iW] || "").trim().slice(0, 60), area = (r[iA] || "").trim().slice(0, 60);
+      const what = (r[iW] || "").trim().slice(0, 60), area = townOnly(r[iA]);
       if (!what) return;
       const anon = iS >= 0 && /anonym/i.test(r[iS] || ""); const by = anon ? "Anonymous" : ((r[iN] || "").trim().slice(0, 40) || "Anonymous");
       if (heldReason(what + " " + area, by)) return;

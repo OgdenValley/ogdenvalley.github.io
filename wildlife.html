@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 <script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
+<style>@media print{body.print-list *{visibility:hidden}body.print-list #checklist,body.print-list #checklist *{visibility:visible}body.print-list #checklist{position:absolute;left:0;top:0;width:100%;border:0}body.print-list .no-print{display:none!important}}</style>
 </head>
 <body>
 <a class="sr" href="#main">Skip to content</a>
@@ -37,14 +38,36 @@
 <section class="hero"><div class="container"><div><p class="eyebrow">What did you see?</p><h1>Wildlife &amp; wildflowers</h1><p class="lead" style="margin-top:12px">Moose by the road, cranes in the fields, the first balsamroot of spring. Share what you saw and where, and see what your neighbors spotted.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
 <section><div class="container" style="display:grid;gap:18px">
   <div class="btns" style="margin:0"><a class="btn primary" data-form="sighting" href="#">Share a sighting</a></div>
-  <div class="alert warn"><b>Give wildlife space.</b> Never chase, feed or crowd animals for a photo. Moose are dangerous. Share the general area, like "Pineview" or "North Fork," never the exact spot of a nest, den or rare plant.</div>
+  <div class="alert warn"><b>Give wildlife space.</b> Never chase, feed or crowd animals for a photo. Moose are dangerous. Share your <b>town only</b>, like Eden, Liberty or Huntsville. No addresses or exact spots, to keep wildlife and neighbors safe. The site shows the town only, even if more is typed.</div>
   <div class="grid">
     <article class="card"><p class="eyebrow">So far</p><div class="big" id="w-count">0 sightings</div><p class="meta" id="w-kinds" style="margin:0"></p></article>
     <article class="card"><p class="eyebrow">Different kinds seen</p><div class="big" id="w-species">0</div><p class="meta" style="margin:0">Every new animal or plant adds to the count.</p></article>
   </div>
   <div id="wmap" role="region" aria-label="Map of wildlife sightings" style="height:min(55vh,420px);border-radius:12px;border:1px solid var(--line);background:var(--soft)"></div>
-  <div class="card"><div class="section-head" style="margin:0"><div><p class="eyebrow">Valley watch list</p><h2 style="font-size:24px">Can we spot them all?</h2></div><div class="big" id="w-watch">0 of 0</div></div>
-    <div id="w-list" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:6px 14px;font-size:16px"></div></div>
+  <div class="card" id="checklist"><div class="section-head" style="margin:0;flex-wrap:wrap;gap:10px"><div><p class="eyebrow">Ogden Valley wildlife checklist</p><h2 style="font-size:26px">Can we spot them all?</h2></div>
+      <div style="display:flex;gap:18px;flex-wrap:wrap"><div><div class="big" id="w-watch">0 of 0</div><div class="meta" style="font-size:15px">seen by the Valley</div></div><div><div class="big" id="w-mine">0 of 0</div><div class="meta" style="font-size:15px">seen by me</div></div></div></div>
+    <p class="meta" style="font-size:16px;margin:8px 0 4px"><b style="color:var(--good)">✓ Valley</b> checks off by itself when a neighbor shares a sighting. <b>Tap the box</b> to check off what <i>you've</i> seen. It's saved on this phone or computer only.</p>
+    <div id="w-list" style="display:grid;gap:16px;margin-top:10px"></div>
+    <div id="w-confirm" style="margin-top:18px"></div>
+    <div class="btns no-print" style="margin:16px 0 0"><button class="btn" type="button" id="w-print">Print the checklist</button><button class="btn" type="button" id="w-reset">Clear my checkmarks</button></div>
+    <details class="no-print" style="margin-top:16px;font-size:15px"><summary style="cursor:pointer;font-weight:700">Where this list comes from</summary>
+      <p class="meta" style="font-size:15px">Each animal on the main list has a source placing it in Ogden Valley or the Ogden area. Animals that live across much of Utah but have no local source yet are under "Help us confirm."</p>
+      <ul style="font-size:15px;line-height:1.6">
+        <li>Mule deer, porcupine, marmot, chipmunk, red-tailed hawk, wild turkey, mountain bluebird, western tanager, mountain goat: <a href="https://snowbasin.com/activities/wildlife" target="_blank" rel="noopener">Snowbasin wildlife page</a></li>
+        <li>Mountain goats on Ben Lomond: <a href="https://www.kuer.org/science-environment/2025-12-24/ben-lomond-mountain-goat-herd-is-living-their-best-lives-a-year-after-transplant" target="_blank" rel="noopener">KUER, Dec. 2025</a></li>
+        <li>Elk wintering in Ogden Valley: <a href="https://wildlife.utah.gov/pdf/bg/plans/elk_03.pdf" target="_blank" rel="noopener">Utah DWR elk plan</a></li>
+        <li>Moose in Huntsville: <a href="https://kutv.com/news/local/moose-sightings-in-huntsville-utah" target="_blank" rel="noopener">KUTV, Feb. 2023</a></li>
+        <li>Black bear in Ogden Valley: <a href="https://www.ksl.com/article/51327831/black-bear-euthanized-after-multiple-sightings-in-ogden-valley" target="_blank" rel="noopener">KSL, June 2025</a></li>
+        <li>Cougar in Ogden Valley: <a href="https://kutv.com/news/local/neighbors-fear-killer-cougar-loose-in-ogden-valley" target="_blank" rel="noopener">KUTV, Oct. 2018</a></li>
+        <li>Bald eagles at Pineview: <a href="https://www.ogdenvalleynews.com/eagles.html" target="_blank" rel="noopener">Ogden Valley News, Feb. 2026</a></li>
+        <li>Red fox, cottontail, raccoon, beaver, osprey, great horned owl, great blue heron, magpie (Ogden area): <a href="https://ogdennaturecenter.org/wildlife-and-plants-at-onc" target="_blank" rel="noopener">Ogden Nature Center</a></li>
+        <li>Beaver scarce in the Valley: <a href="https://gephardtdaily.com/local/dwr-building-dams-in-ogden-valley-hoping-beavers-take-over/" target="_blank" rel="noopener">Gephardt Daily on DWR's beaver dams</a></li>
+        <li>Sandhill crane at Pineview's North Arm: <a href="https://tykehikes.substack.com/p/north-arm-nature-trail" target="_blank" rel="noopener">North Arm Nature Trail</a></li>
+        <li>Golden eagle, ruffed grouse, Steller's jay, chickadee, broad-tailed hummingbird (Wasatch mountains): <a href="https://stateparks.utah.gov/stateparks/wp-content/uploads/sites/26/2015/02/WasatchMountain_WMSPBirdChecklist09.pdf" target="_blank" rel="noopener">Wasatch Mountain State Park bird checklist</a></li>
+        <li>Uinta ground squirrel: <a href="https://wildutah.us/html/mammals_reptiles_amphibians/h_squirrel_uintahground.html" target="_blank" rel="noopener">Wild Utah</a></li>
+        <li>Red squirrel: a reader photo from the Valley, Oct. 2026</li>
+      </ul></details>
+  </div>
   <div><h2 style="margin-bottom:6px">Latest sightings</h2><p class="meta" style="color:var(--muted);font-size:15px;margin:0 0 10px">Tap a photo to see it big and swipe through.</p><div class="grid" id="w-gal" data-gallery></div></div>
   <p class="meta" style="color:var(--muted);font-size:15px">By sharing you agree to our <a href="terms.html">terms</a>. You can stay anonymous. Under 13? Ask a parent to send it.</p>
 </div></section>
@@ -65,9 +88,31 @@ const kinds=new Set(items.map(i=>norm(i.what)));
 document.getElementById("w-count").textContent=items.length+" sighting"+(items.length===1?"":"s");
 document.getElementById("w-kinds").textContent=items.length?items.filter(i=>i.kind==="animal").length+" animals · "+items.filter(i=>i.kind==="plant").length+" plants":"Be the first to share one.";
 document.getElementById("w-species").textContent=kinds.size;
-const watch=S.C.watchList||[];const seen=w=>[...kinds].some(k=>k.includes(norm(w.match||w.name))||norm(w.match||w.name).includes(k)&&k.length>3);
-const got=watch.filter(seen).length;document.getElementById("w-watch").textContent=got+" of "+watch.length;
-document.getElementById("w-list").replaceChildren(...watch.map(w=>el("div",{style:seen(w)?"font-weight:700;color:var(--good)":"color:var(--muted)",text:(seen(w)?"✓ ":"○ ")+w.name+(w.when?" ("+w.when+")":"")})));
+const watch=(S.C.watchList||[]);const mainL=watch.filter(w=>!w.confirm),helpL=watch.filter(w=>w.confirm);
+const terms=w=>String(w.match||w.name).split("|").map(norm).filter(Boolean);
+const seen=w=>terms(w).some(t=>[...kinds].some(k=>k===t||(" "+k+" ").includes(" "+t+" ")||k.includes(t)&&t.length>4));
+const KEY="ove-wildlife-mine";let mine=new Set();try{mine=new Set(JSON.parse(localStorage.getItem(KEY)||"[]"))}catch(e){}
+const save=()=>{try{localStorage.setItem(KEY,JSON.stringify([...mine]))}catch(e){}};
+function row(w){const v=seen(w),m=mine.has(w.name);
+  const box=el("button",{type:"button","aria-pressed":String(m),"aria-label":(m?"Uncheck ":"Check off ")+w.name,style:"width:34px;height:34px;flex:none;border-radius:8px;border:2px solid var(--line);background:"+(m?"var(--accent)":"var(--card,#fff)")+";color:#fff;font:800 20px Montserrat,Arial,sans-serif;cursor:pointer",text:m?"✓":""});
+  box.onclick=()=>{mine.has(w.name)?mine.delete(w.name):mine.add(w.name);save();draw()};
+  return el("div",{style:"display:flex;gap:10px;align-items:flex-start;padding:6px 0;border-bottom:1px solid var(--line)"},[box,el("div",{style:"flex:1"},[
+    el("div",{style:"font-size:18px;font-weight:700"},[w.name+(w.when?" ":""),w.when?el("span",{class:"meta",style:"font-weight:400;font-size:15px",text:"("+w.when+")"}):null]),
+    w.note?el("div",{class:"meta",style:"font-size:15px",text:w.note}):null]),
+    v?el("span",{style:"flex:none;font-weight:800;color:var(--good);font-size:15px",text:"✓ Valley"}):null])}
+function draw(){
+  document.getElementById("w-watch").textContent=mainL.filter(seen).length+" of "+mainL.length;
+  document.getElementById("w-mine").textContent=mainL.filter(w=>mine.has(w.name)).length+" of "+mainL.length;
+  const groups=[...new Set(mainL.map(w=>w.group||"Animals"))];
+  document.getElementById("w-list").replaceChildren(...groups.map(g=>el("div",{},[el("h3",{style:"font-size:21px;margin:0 0 4px",text:g}),
+    el("div",{style:"display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0 22px"},mainL.filter(w=>(w.group||"Animals")===g).map(row))])));
+  const hc=document.getElementById("w-confirm");hc.replaceChildren();
+  if(helpL.length)hc.append(el("h3",{style:"font-size:21px;margin:0 0 4px",text:"Help us confirm"}),
+    el("p",{class:"meta",style:"font-size:15px;margin:0 0 6px",text:"These live in many parts of Utah, but we haven't found a source that puts them in the Valley yet. Seen one here? Share it, with a photo if you can."}),
+    el("div",{style:"display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:0 22px"},helpL.map(row)));}
+draw();
+document.getElementById("w-print").onclick=()=>{document.body.classList.add("print-list");window.print();setTimeout(()=>document.body.classList.remove("print-list"),500)};
+document.getElementById("w-reset").onclick=()=>{if(confirm("Clear all of your checkmarks?")){mine.clear();save();draw()}};
 const gal=document.getElementById("w-gal");
 if(!items.length)gal.append(el("div",{class:"empty"},[el("p",{text:"No sightings yet. Seen a moose, a fox or the first wildflowers? Share it and start the list."})]));
 items.slice(0,60).forEach(i=>gal.append(el(i.photo?"figure":"article",{class:"card",style:"margin:0"},[i.photo?el("img",{src:i.photo,alt:i.what+" seen near "+i.area,loading:"lazy",style:"border-radius:10px;width:100%;aspect-ratio:4/3;object-fit:cover"}):null,el(i.photo?"figcaption":"div",{style:"display:grid;gap:2px"},[el("b",{text:i.what+(i.area?" · "+i.area:"")}),el("div",{class:"meta",text:[i.seen?"Seen "+i.seen:"",i.shared?"Shared "+fd(i.shared):"",i.by?"By "+i.by:""].filter(Boolean).join(" · ")})])])));

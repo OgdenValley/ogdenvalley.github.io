@@ -69,7 +69,7 @@ const ymd=t=>new Intl.DateTimeFormat("en-CA",{timeZone:"America/Denver",year:"nu
 const today=ymd(new Date()),plus=(s,n)=>{const d=new Date(s+"T12:00:00");d.setDate(d.getDate()+n);return ymd(d)};
 const R=((await S.loadJSON("guessreveal.json"))||{}).weeks||{};
 spots.forEach(s=>{const r=s.start&&R[s.start];if(r){s.revealed=true;s.answer=r.answer||s.answer;s.winner=r.winner||s.winner;s.guesses=r.guesses||[]}s.revealDay=s.start?plus(s.start,6):""});
-const cur=spots.filter(s=>!s.revealed).pop(),past=spots.filter(s=>s.revealed).reverse();
+const cur=spots.filter(s=>!s.revealed&&(!s.start||s.start<=today)).pop(),past=spots.filter(s=>s.revealed).reverse();
 const nice=k=>k?new Date(k+"T12:00:00").toLocaleDateString("en-US",{weekday:"long",month:"short",day:"numeric"}):"";
 const box=document.getElementById("current");
 if(!cur)box.append(el("div",{class:"empty"},[el("p",{text:"The next Guess the Spot photo is coming soon. See last week's answer below, or send in a spot of your own."})]));

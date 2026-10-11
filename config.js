@@ -134,7 +134,8 @@ window.OVE = {
      start = the photo's first day. On day 7 (6 days later) the answer, the guesses and the random winner
      show by themselves from the guess sheet's Spots tab. Keep "answer" blank here: this file is public. */
   guessSpots: [
-    { week: "Oct 8", start: "2026-10-08", image: "spot-2026-10-08.jpg", hint: "Fall color, string lights and a big rocky ridge. Where are these two pumpkinheads standing?", by: "ove", credit: "", revealed: false, answer: "", winner: "" }
+    { week: "Oct 8", start: "2026-10-08", image: "spot-2026-10-08.jpg", hint: "Fall color, string lights and a big rocky ridge. Where are these two pumpkinheads standing?", by: "ove", credit: "", revealed: false, answer: "", winner: "" },
+    { week: "Oct 15", start: "2026-10-15", image: "spot-2026-10-15.jpg", hint: "This little guy has a front-row seat for fall color. Where in the Valley is he sitting?", by: "ove", credit: "", revealed: false, answer: "", winner: "" }
   ],
 
   /* --- Home page photo banner -------------------------------------------
@@ -151,7 +152,8 @@ window.OVE = {
   valleyPhotos: [
     { image: "valley-moose-snow-deck.jpg", by: "Shauna Miller", place: "Nordic Valley", date: "", caption: "A moose naps in the snow right outside the back door" },
     { image: "valley-sunset-huntsville.jpg", by: "Seth Miller", place: "Huntsville", date: "", caption: "Fire in the sky over the Valley at sunset" },
-    { image: "valley-sunrays-seth-miller.jpg", by: "Seth Miller", place: "Huntsville", date: "", caption: "Sun rays break through the clouds over the mountains" }
+    { image: "valley-sunrays-seth-miller.jpg", by: "Seth Miller", place: "Huntsville", date: "", caption: "Sun rays break through the clouds over the mountains" },
+    { image: "valley-red-squirrel-feeder.jpg", by: "Shauna Miller", place: "", date: "2026-10", caption: "A red squirrel checks out who's watching from the feeder" }
   ],
 
   /* --- Then & Now ------------------------------------------------------
@@ -214,16 +216,58 @@ window.OVE = {
       link: "artists.html" }
   ],
 
-  /* --- Wildlife watch list (checked off automatically from sightings) - */
+  /* --- Wildlife watch list (checked off automatically from sightings) ---
+     group: which heading it goes under. match: words that count as a sighting of it (separate with |).
+     when: season. note: short line shown under the name. confirm: true = "Help us confirm" list
+     (animals with no source yet tying them to the Valley; a neighbor's sighting confirms them).
+     Sources for every animal are listed on the Wildlife page under "Where this list comes from". */
   watchList: [
-    { name: "Moose" }, { name: "Elk" }, { name: "Mule deer", match: "deer" }, { name: "Red fox", match: "fox" },
-    { name: "Coyote" }, { name: "Beaver" }, { name: "Porcupine" }, { name: "Yellow-bellied marmot", match: "marmot" },
-    { name: "Bald eagle", match: "bald eagle", when: "winter" }, { name: "Golden eagle", match: "golden eagle" },
-    { name: "Osprey" }, { name: "Great blue heron", match: "heron" }, { name: "Sandhill crane", match: "crane" },
-    { name: "Mountain bluebird", match: "bluebird" }, { name: "Black-billed magpie", match: "magpie" },
-    { name: "Arrowleaf balsamroot", match: "balsamroot", when: "spring" }, { name: "Indian paintbrush", match: "paintbrush" },
-    { name: "Lupine" }, { name: "Sego lily", match: "sego", when: "summer" }, { name: "Columbine" },
-    { name: "Fall aspens", match: "aspen", when: "fall" }
+    { group: "Big animals", name: "Moose", note: "Give them lots of room. Moose are dangerous." },
+    { group: "Big animals", name: "Elk", when: "winter" },
+    { group: "Big animals", name: "Mule deer", match: "deer" },
+    { group: "Big animals", name: "Mountain goat", match: "goat", note: "High ridges like Ben Lomond and Mount Ogden" },
+    { group: "Big animals", name: "Black bear", match: "bear", note: "Rare. Report sightings to Utah DWR." },
+    { group: "Big animals", name: "Cougar", match: "cougar|mountain lion|lion|puma", note: "Rare. Report sightings to Utah DWR." },
+
+    { group: "Small animals", name: "Red squirrel", match: "red squirrel|pine squirrel" },
+    { group: "Small animals", name: "Chipmunk" },
+    { group: "Small animals", name: "Uinta ground squirrel", match: "ground squirrel", when: "spring and summer" },
+    { group: "Small animals", name: "Cottontail rabbit", match: "cottontail|rabbit" },
+    { group: "Small animals", name: "Yellow-bellied marmot", match: "marmot|rockchuck", when: "summer" },
+    { group: "Small animals", name: "Porcupine" },
+    { group: "Small animals", name: "Raccoon" },
+    { group: "Small animals", name: "Beaver", note: "Scarce in the Valley" },
+    { group: "Small animals", name: "Red fox", match: "fox" },
+
+    { group: "Birds", name: "Bald eagle", match: "bald eagle", when: "winter", note: "Watch the open water at Pineview" },
+    { group: "Birds", name: "Golden eagle", match: "golden eagle" },
+    { group: "Birds", name: "Osprey", note: "Seen in the Ogden area" },
+    { group: "Birds", name: "Red-tailed hawk", match: "red tailed hawk|redtailed hawk|redtail" },
+    { group: "Birds", name: "Great horned owl", match: "horned owl" },
+    { group: "Birds", name: "Great blue heron", match: "heron" },
+    { group: "Birds", name: "Sandhill crane", match: "crane", when: "summer" },
+    { group: "Birds", name: "Wild turkey", match: "turkey" },
+    { group: "Birds", name: "Ruffed grouse", match: "grouse", note: "Rarely seen" },
+    { group: "Birds", name: "Steller's jay", match: "steller|stellers jay" },
+    { group: "Birds", name: "Black-billed magpie", match: "magpie" },
+    { group: "Birds", name: "Mountain bluebird", match: "bluebird" },
+    { group: "Birds", name: "Western tanager", match: "tanager", when: "summer" },
+    { group: "Birds", name: "Black-capped chickadee", match: "chickadee" },
+    { group: "Birds", name: "Broad-tailed hummingbird", match: "hummingbird", when: "summer" },
+
+    { group: "Wildflowers & trees", name: "Arrowleaf balsamroot", match: "balsamroot", when: "spring" },
+    { group: "Wildflowers & trees", name: "Indian paintbrush", match: "paintbrush" },
+    { group: "Wildflowers & trees", name: "Lupine" },
+    { group: "Wildflowers & trees", name: "Sego lily", match: "sego", when: "summer" },
+    { group: "Wildflowers & trees", name: "Columbine" },
+    { group: "Wildflowers & trees", name: "Fall aspens", match: "aspen", when: "fall" },
+
+    { confirm: true, name: "Coyote" },
+    { confirm: true, name: "Bobcat" },
+    { confirm: true, name: "Badger" },
+    { confirm: true, name: "Striped skunk", match: "skunk" },
+    { confirm: true, name: "Muskrat" },
+    { confirm: true, name: "Rock squirrel", match: "rock squirrel" }
   ],
 
   /* --- Scavenger hunt (change each month) ------------------------------ */
