@@ -37,14 +37,16 @@ window.OVE = {
     hunt: "https://docs.google.com/forms/d/e/1FAIpQLSctleBxDp0glwI4fpkL1vO1zuoLAfiE-sENEUhkye88dI-_dg/viewform",                 // Scavenger hunt finish photo
     coloring: "https://docs.google.com/forms/d/e/1FAIpQLSeD4c0NYmQnFrgGuGaCRywZvmHWCaKtzZ1a6b1waX6avH5z-w/viewform",             // Finished coloring pages (parents send)
     musician: "https://docs.google.com/forms/d/e/1FAIpQLSdyDj-XkJKas0nj5SSxPfO2LwuQKckG5ZpMgyiekk4mdO6MKQ/viewform",             // Musicians: bio, photo, private events, contact
-    recipe: "https://docs.google.com/forms/d/e/1FAIpQLScK353HCsAIb5-ePsKiUxHljdh7s7QZgHwYVz7zQTizzscIAA/viewform",               // Recipe corner: share a recipe
-    recipeVote: "https://docs.google.com/forms/d/e/1FAIpQLScTHPG1-8dU02eNJNt9mNqof5M9mL9jiPkathGpUtUhCzUNbw/viewform",           // Recipe corner: vote + "what I changed"
+    recipe: "https://docs.google.com/forms/d/e/1FAIpQLScK353HCsAIb5-ePsKiUxHljdh7s7QZgHwYVz7zQTizzscIAA/viewform",               // Community Cooking: share a recipe
+    recipeVote: "https://docs.google.com/forms/d/e/1FAIpQLScTHPG1-8dU02eNJNt9mNqof5M9mL9jiPkathGpUtUhCzUNbw/viewform",           // Community Cooking: vote + "what I changed"
     volunteer: "https://docs.google.com/forms/d/e/1FAIpQLSfOcw941wcno_hT3Caeyw1ScHvxuqeWFc4TOUSbyDb1AJPv0g/viewform",            // Groups: post a volunteer need or drive
     yardsale: "https://docs.google.com/forms/d/e/1FAIpQLSdq-tr_1dUMWJvoD06p9oZAXQWuK5-SnkucboHFwVEFmeZSZg/viewform?usp=pp_url&entry.1817719328=A+yard+sale", // Post a yard sale (event form, opens with "A yard sale" picked)
     cause: "https://docs.google.com/forms/d/e/1FAIpQLSdi8vhF5R7sEwkGeNK5rgS6WIFjHqdnYcX1yyIWgdqWJvFlOA/viewform", // Add a local cause or nonprofit (you check it first)
     tips: "https://docs.google.com/forms/d/e/1FAIpQLSek8NPANF8g-_CeKDuJwNmrGimF60968v1UwVvFTuFGRFb1DA/viewform",                 // Garden + Be Prepared boards (one form, Board question picks which)
     jobs: "https://docs.google.com/forms/d/e/1FAIpQLScOzyUB6XfbZWbwNCMR1FIAjCyWWt-aQFQSGKN2pR5YJvtwkw/viewform", // Help wanted: post a Valley job
-    update: "https://docs.google.com/forms/d/e/1FAIpQLSfSL4w4MmyTMJyi62Rd4icPvaIdLejnDfsF_9a67BvjhzPK_A/viewform" // Listing updates (no sign-in form): hours changed, closed, moved, or a place we're missing
+    update: "https://docs.google.com/forms/d/e/1FAIpQLSfSL4w4MmyTMJyi62Rd4icPvaIdLejnDfsF_9a67BvjhzPK_A/viewform", // Listing updates (no sign-in form): hours changed, closed, moved, or a place we're missing
+    sneakPeek: "https://docs.google.com/forms/d/e/1FAIpQLSc_AC87qBe5wQWEfdjgSs8nn-Mw71zlxoRgRWTxCneNF_t_ug/viewform", // Sneak Peek request (terms gate first)
+    cookWithUs: "https://docs.google.com/forms/d/e/1FAIpQLSeW6D2xYWV9MpRkNyQcscBByrxmcZmJuBve4A0XGS8GizpasA/viewform" // Community Cooking: Cook With Us request (terms gate first)
   },
 
   /* --- Who's open this week ------------------------------------------
