@@ -314,7 +314,9 @@ window.OVE = {
     { id: "forum", short: "Open forum", name: "Ogden Valley Open Forum (No Rules)", url: "https://www.facebook.com/share/g/1FU9YRNubQ/",
       about: "Say what's on your mind. This group doesn't use our community rules, so join knowing anything goes." },
     { id: "photo", short: "Photography & art", name: "Ogden Valley Photography and Art (only)", url: "https://www.facebook.com/groups/1699428958552888/",
-      about: "Photos, artwork and wildlife sightings from the Valley, and nothing else, so your shots don't get buried. Favorites may be featured on our site with credit." }
+      about: "Photos, artwork and wildlife sightings from the Valley, and nothing else, so your shots don't get buried. Favorites may be featured on our site with credit." },
+    { id: "events", short: "Events", name: "Ogden Valley Events", url: "https://www.facebook.com/groups/ogdenvalley",
+      about: "What's happening in the Valley: concerts, fundraisers, races, classes, markets and community events. Post yours and see what's coming up." }
   ],
 
   /* --- Started ---------------------------------------------------------- */
