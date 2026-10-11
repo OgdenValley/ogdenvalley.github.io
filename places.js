@@ -516,6 +516,20 @@ window.OVE_PLACES = {
  ],
  "beauty": [
   {
+   "name": "SaltyBear Cryo",
+   "added": "2026-10-11",
+   "home": true,
+   "photos": ["saltybear-cryo-treatment.jpg"],
+   "town": "Huntsville",
+   "type": "Targeted cryotherapy",
+   "blurb": "Targeted cryotherapy to help your body's natural healing, so you can get back to the life you love. By appointment, with a free consultation.",
+   "hours": "Monday to Saturday, flexible hours by appointment only",
+   "badges": ["Woman owned"],
+   "phone": "801-807-9365",
+   "link": "https://www.saltybearcryo.com",
+   "checked": "2026-10-11"
+  },
+  {
    "name": "Altitude Fitness and Health",
     "added": "2026-10-08",
     "home": true,
