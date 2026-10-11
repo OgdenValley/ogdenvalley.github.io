@@ -310,7 +310,8 @@ async function air(){
     const x = await getText("https://air.utah.gov/xmlFeed.php?id=hv");
     const recs = [...x.matchAll(/<data>([\s\S]*?)<\/data>/g)].map(m => { const g = t => { const r = m[1].match(new RegExp("<" + t + ">([^<]*)</" + t + ">")); return r && r[1].trim() !== "" ? +r[1] : null; };
       const d = (m[1].match(/<date>([^<]*)<\/date>/) || [])[1] || ""; return {date: d.trim(), pm25: g("pm25_24hr_avg"), ozone: g("ozone_8hr_avg")}; }).filter(r => r.pm25 != null || r.ozone != null);
-    const last = recs[recs.length - 1];
+    const when = r => { const m = r.date.match(/(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):(\d{2})/); return m ? Date.UTC(+m[3], +m[1] - 1, +m[2], +m[4], +m[5]) : 0; };
+    const last = recs.slice().sort((a, b) => when(b) - when(a))[0];   // newest reading, whatever order the feed uses
     if (!last) throw new Error("no readings");
     const pl = pmLevel(last.pm25), ol = o3Level(last.ozone), lvl = Math.max(pl == null ? 0 : pl, ol == null ? 0 : ol);
     out.now = {when: last.date, pm25: last.pm25, ozone: last.ozone, level: lvl, name: AQ_NAMES[lvl], cause: (pl ?? -1) >= (ol ?? -1) ? "fine particles (PM2.5)" : "ozone"};
@@ -320,10 +321,15 @@ async function air(){
     const html = await getText("https://air.utah.gov/forecast.php?id=hv");
     const text = html.replace(/<(script|style)[\s\S]*?<\/\1>/gi, " ").replace(/<[^>]+>/g, "\n").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&");
     const issued = (text.match(/Last Updated:\s*([^\n]+)/i) || [])[1] || "";
-    const days = [...text.matchAll(/\b(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)\b/g)].map(m => m[1]);
-    const lv = [...text.matchAll(/\b(Good|Moderate|Unhealthy for Sensitive Groups|Unhealthy|Very Unhealthy|Hazardous)\b/g)].map(m => m[1]);
-    const ac = [...text.matchAll(/\b(Unrestricted|Voluntary|Mandatory)\s+Action\b/gi)].map(m => m[1][0].toUpperCase() + m[1].slice(1).toLowerCase());
-    const n = Math.min(ac.length, 3); const dd = days.slice(-n), ll = lv.slice(-n);
+    // Only read the forecast table itself: after "Last Updated" and before the "Explanation" legend,
+    // which lists every level name and would otherwise be read as the forecast.
+    const start = text.search(/Last Updated:/i), stop = text.search(/\bExplanation\b|Action Forecast|Health Forecast/i);
+    if (start < 0 || stop <= start) throw new Error("could not find the forecast table");
+    const tbl = text.slice(start, stop);
+    const days = [...tbl.matchAll(/\b(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)\b/g)].map(m => m[1]);
+    const lv = [...tbl.matchAll(/\b(Good|Moderate|Unhealthy for Sensitive Groups|Unhealthy|Very Unhealthy|Hazardous)\b/g)].map(m => m[1]);
+    const ac = [...tbl.matchAll(/\b(Unrestricted|Voluntary|Mandatory)\s+Action\b/gi)].map(m => m[1][0].toUpperCase() + m[1].slice(1).toLowerCase());
+    const n = Math.min(ac.length, days.length, lv.length, 3); const dd = days.slice(0, n), ll = lv.slice(0, n);
     if (!n || dd.length < n || ll.length < n) throw new Error("could not read the forecast table");
     out.forecast = {issued: issued.trim(), issuedTime: Date.parse(issued.replace(/,?\s*(\d)/, " $1")) || null, days: dd.map((d, i) => ({day: d, level: ll[i], action: ac[i]}))};
     out.status.forecast = "ok";
