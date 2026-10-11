@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-11T09:29:41.801Z",
+ "updated": "2026-10-11T10:28:39.473Z",
  "meetings": [],
  "snow": [
   {
@@ -35,11 +35,11 @@
    "elev": 8930,
    "depth": {
     "value": 1,
-    "date": "2026-10-09"
+    "date": "2026-10-10"
    },
    "water": {
     "value": 0.2,
-    "date": "2026-10-09"
+    "date": "2026-10-10"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
    "source": "USDA NRCS SNOTEL"
@@ -55,7 +55,7 @@
  "status": {
   "Ogden Valley City Council": "ok",
   "Huntsville Town Council": "ok",
-  "snow": "failed",
+  "snow": "ok",
   "pineview": "ok"
  }
 }
