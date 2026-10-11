@@ -352,6 +352,7 @@ function renderSeason(L){
 (async function(){ const bar = document.getElementById("alert-bar"); if (!bar) return;
   const sf = await loadJSON("safety.json"); if (!sf) return;
   const items = (sf.weather || []).map(a => a.event).concat((sf.fires || []).filter(f => f.county === "Weber").map(f => f.name + " in Weber County"));
+  try { const rd = await loadJSON("roads.json"); ((rd && rd.events) || []).filter(e => e.full).forEach(e => items.push("Closed: " + (e.loc || e.road))); } catch (e) {}
   if (!items.length) return;
   bar.replaceChildren(el("div", {class: "container"}, [el("strong", {text: "Alert: "}), document.createTextNode([...new Set(items)].slice(0, 3).join(" · ") + " "), el("a", {href: "safety.html", text: "Details"})]));
   bar.hidden = false; })();
@@ -416,5 +417,9 @@ function pruneChips(all, pred, state, groups){
     const row = g.row === undefined ? (btns[0] && btns[0].parentElement) : g.row; if (row && btns.length) row.hidden = !any; });
 }
 
-window.OVE_SITE = {C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ};
+/* weather helpers for the Valley forecast (forecast.json, from the National Weather Service) */
+function wxIcon(t){t=String(t||"").toLowerCase();return /thunder/.test(t)?"⛈️":/snow|flurr|sleet|wintry/.test(t)?"🌨️":/rain|shower|drizzle/.test(t)?"🌧️":/fog|haze|smoke/.test(t)?"🌫️":/partly|mostly sunny|mostly clear/.test(t)?"⛅":/cloud|overcast/.test(t)?"☁️":/wind|breez|blustery/.test(t)?"💨":"☀️"}
+function renderForecastStrip(box,F,n){if(!box)return;if(!F||!F.days||!F.days.length){box.replaceChildren(el("div",{class:"alert quiet",text:"The Valley forecast will appear here after the next hourly update."}));return}
+  box.replaceChildren(...F.days.slice(0,n||7).map(d=>el("div",{class:"fc-day"+(d.snow?" snow":"")+(d.pop>=60?" wet":"")},[el("p",{class:"fc-name",text:d.label}),el("p",{class:"fc-md",text:d.md}),el("p",{class:"fc-ic","aria-hidden":"true",text:wxIcon(d.both||d.short)}),el("p",{class:"fc-t",text:(d.high!=null?d.high+"°":"–")+" / "+(d.low!=null?d.low+"°":"–")}),el("p",{class:"fc-p",text:(d.pop||0)+"%"+(d.snow?" snow":" rain")}),el("p",{class:"fc-s",text:d.short||""})])))}
+window.OVE_SITE = {C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip};
 })();

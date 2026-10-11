@@ -17,6 +17,22 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
 <script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css">
+<style>
+.tl{max-height:440px;overflow-y:auto;border:1px solid var(--line);border-radius:12px;background:var(--card);padding:4px 16px}
+.tl-i{display:grid;grid-template-columns:96px 1fr;gap:12px;padding:12px 0;border-bottom:1px solid var(--line);font-size:17px}
+.tl-i:last-child{border-bottom:0}
+.tl-t{font-weight:800;font-family:Montserrat,Arial,sans-serif;font-size:15px;color:var(--ink)}
+.tl-s{display:block;font-size:14px;color:var(--muted);font-weight:700}
+.tl-i[data-k=closure],.tl-i[data-k=crash],.tl-i[data-k=warning]{border-left:5px solid #B3261E;padding-left:10px}
+.tl-i[data-k=winter]{border-left:5px solid #2E6DA4;padding-left:10px}
+.tl-i[data-k=clear]{border-left:5px solid #1E6B3E;padding-left:10px}
+.aq-days{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:10px}
+.aq-d{border:2px solid var(--line);border-radius:12px;padding:12px;text-align:center;background:var(--card)}
+.aq-d b{display:block;font-size:19px}.aq-d .lv{font-weight:800;font-size:18px;margin-top:4px}
+.rd-tbl{width:100%;border-collapse:collapse;font-size:16px}.rd-tbl td,.rd-tbl th{padding:8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+@media (max-width:560px){.tl-i{grid-template-columns:78px 1fr}}
+</style>
 </head>
 <body>
 <a class="sr" href="#main">Skip to content</a>
@@ -36,12 +52,23 @@
 <main id="main">
 <section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley · Weber County</p><h1>Road &amp; weather</h1><p class="lead" style="margin-top:12px">Valley forecast, canyon roads, weather and fire alerts in one place, updated every hour. Every item shows where it came from. In an emergency, call 911.</p><div class="btns"><a class="btn light" data-track="share safety to facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fogdenvalleyevent.com%2Fsafety.html" target="_blank" rel="noopener">Share this page on Facebook</a></div></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
 <section><div class="container" style="display:grid;gap:28px">
+  <div id="timeline"><div class="section-head"><div><p class="eyebrow">Updated every hour · official sources</p><h2>Last 24 hours</h2></div></div>
+    <p class="meta" style="font-size:16px;margin:0 0 10px">Crashes, closures, road conditions, weather alerts and air quality for the Valley and its canyons, newest first. Anything older than 24 hours drops off.</p>
+    <div id="tl" class="tl"></div></div>
+  <div id="roads"><div class="section-head"><div><p class="eyebrow">Utah Department of Transportation · updated every hour</p><h2>Roads &amp; canyons</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://udottraffic.utah.gov/" target="_blank" rel="noopener">UDOT Traffic</a></div>
+    <div id="rd-flags" style="display:grid;gap:10px"></div>
+    <div id="rdmap" role="region" aria-label="Map of road events, snowplows and road sensors" style="height:min(50vh,380px);border-radius:12px;border:1px solid var(--line);background:var(--soft);margin-top:12px"></div>
+    <p class="meta" style="font-size:15px;margin:6px 0 0">🔴 crash or closure · 🟠 snowplow · 🔵 road sensor · 🟡 road work or other</p>
+    <div id="rd-body" style="display:grid;gap:16px;margin-top:14px"></div>
+    <p class="meta" id="rd-src" style="font-size:14px;margin-top:8px"></p></div>
   <div id="valley-weather"><div class="section-head"><div><p class="eyebrow">National Weather Service · updated every hour</p><h2>Valley weather</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Full Eden forecast</a></div>
     <div class="wx-flags" id="wx-flags"></div>
     <div class="fc-strip" id="fc"></div>
     <p class="meta" id="fc-today" style="font-size:17px;margin-top:12px"></p>
     <p class="meta" id="fc-src" style="font-size:14px;margin-top:6px"></p>
   </div>
+  <div id="air"><div class="section-head"><div><p class="eyebrow">Utah Division of Air Quality</p><h2>Air quality</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://air.utah.gov/forecast.php?id=hv" target="_blank" rel="noopener">Full forecast</a></div>
+    <div id="aq"></div></div>
   <div id="briefings"><div class="section-head"><div><p class="eyebrow">From Ogden Valley Info &amp; Events</p><h2>Weather briefing &amp; updates</h2></div></div><div id="brief-list"></div></div>
   <div id="your-weather"><div class="section-head"><div><p class="eyebrow">From neighbors · approved before posting</p><h2>Show us your weather</h2></div><div class="btns" style="margin:0"><a class="btn primary" data-form="report" data-track="send weather photo" href="#">Send your weather photo</a></div></div>
     <p style="margin:0 0 12px">Snow piling up in Eden? A rainbow over Pineview? Send a photo with the <b>Weather photo</b> choice. Tell us the town or a landmark and when you took it. We look at every photo before it goes up, and photos stay here for 7 days. Great shots can be picked for the <a href="photo-contest.html">monthly photo contest</a>.</p>
@@ -129,6 +156,60 @@ if(!YW.length)quiet(yw,"No weather photos this week yet. Be the first to send on
 else{const g=el("div",{class:"grid"});YW.forEach(x=>g.append(el("article",{class:"card"},[el("img",{src:x.photo,alt:"Weather photo"+(x.where?" from "+x.where:"")+" sent by a neighbor",loading:"lazy",style:"border-radius:10px;width:100%;aspect-ratio:4/3;object-fit:cover"}),x.where?el("h3",{style:"font-size:19px",text:x.where}):null,x.text?el("p",{text:x.text}):null,el("p",{class:"meta",style:"font-size:14px",text:fmt(x.time)+" · from "+(x.by||"a neighbor")})])));yw.replaceChildren(g)}
 S.renderMeetings(document.getElementById("meet-list"),L,20,true);
 if(sf&&sf.updated)document.getElementById("safety-upd").textContent="Last checked "+fmt(sf.updated)+".";
+})();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+<script>
+/* Last 24 hours timeline, roads & canyons (UDOT), air quality (Utah DAQ). Data files are written every hour by update-data.mjs. */
+(async function(){const S=window.OVE_SITE,el=S.el;
+const tf=t=>new Intl.DateTimeFormat("en-US",{timeZone:S.TZ,hour:"numeric",minute:"2-digit"}).format(new Date(t));
+const df=t=>new Intl.DateTimeFormat("en-US",{timeZone:S.TZ,weekday:"short",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}).format(new Date(t));
+const quiet=(box,txt)=>box.replaceChildren(el("div",{class:"alert quiet",text:txt}));
+const [T,R,A]=await Promise.all([S.loadJSON("timeline.json"),S.loadJSON("roads.json"),S.loadJSON("air.json")]);
+/* timeline */
+const tl=document.getElementById("tl"),items=((T&&T.items)||[]).filter(i=>i.t>Date.now()-864e5);
+if(!items.length)quiet(tl,T&&T.updated?"Nothing new in the last 24 hours. Quiet roads and skies.":"The 24-hour timeline starts with the next hourly update.");
+else tl.replaceChildren(...items.map(i=>el("div",{class:"tl-i","data-k":i.kind||""},[el("div",{},[el("span",{class:"tl-t",text:tf(i.t)}),el("span",{class:"tl-s",text:new Date(i.t).toDateString()===new Date().toDateString()?"today":"yesterday"})]),
+ el("div",{},[el("span",{class:"tl-s"},[i.link?el("a",{href:i.link,target:"_blank",rel:"noopener",text:i.src}):document.createTextNode(i.src)]),document.createTextNode(i.text)])])));
+/* roads */
+const flags=document.getElementById("rd-flags"),body=document.getElementById("rd-body"),src=document.getElementById("rd-src"),mapBox=document.getElementById("rdmap");
+const fallback=[el("p",{class:"meta",style:"font-size:16px"},[el("b",{text:"Live canyon info: "}),el("a",{href:"https://ogdenvalley.udot.utah.gov/road-information/",target:"_blank",rel:"noopener",text:"Ogden Canyon, Trappers Loop and North Ogden Divide (UDOT)"}),document.createTextNode(" · "),el("a",{href:"live.html",text:"Live webcams"})])];
+if(!R||!R.updated){mapBox.hidden=true;mapBox.nextElementSibling.hidden=true;flags.replaceChildren(el("div",{class:"alert quiet",text:"Live UDOT road data is being connected. Until then, use the links below."}),...fallback);}
+else{
+ const ev=R.events||[],closures=ev.filter(e=>e.full),crash=ev.filter(e=>/accident|crash|incident/i.test(e.type+" "+e.sub));
+ const ice=(R.stations||[]).filter(s=>s.ice),gates=[];(R.passes||[]).forEach(p=>(p.closures||[]).forEach(c=>gates.push({name:c.desc||p.name,status:c.status})));
+ const fl=[];
+ if(closures.length)fl.push(el("div",{class:"alert",style:"background:#FCE8E6;color:#B3261E"},[el("b",{text:"Closed: "}),document.createTextNode(closures.map(e=>e.loc||e.road).join(" · "))]));
+ if(crash.length)fl.push(el("div",{class:"alert warn"},[el("b",{text:"Crash or incident: "}),document.createTextNode(crash.map(e=>e.loc||e.road).join(" · "))]));
+ if(ice.length)fl.push(el("div",{class:"alert",style:"background:#E7F1FB;color:#1F4E80"},[el("b",{text:"Watch for ice: "}),document.createTextNode(ice.map(s=>s.name+(s.surface!=null?" ("+Math.round(s.surface)+"°F pavement)":"")).join(" · "))]));
+ if(!fl.length)fl.push(el("div",{class:"alert good",text:"No crashes or closures reported on the Valley's roads and canyons right now."}));
+ flags.replaceChildren(...fl,...fallback);
+ const kids=[];
+ if(ev.length)kids.push(el("div",{},[el("h3",{text:"Road events ("+ev.length+")"}),el("div",{class:"grid"},ev.slice(0,12).map(e=>el("article",{class:"card",style:"border-left:6px solid "+(e.full||/accident|crash|incident/i.test(e.type)?"#B3261E":/roadwork|construction/i.test(e.type)?"#C9A227":"#C77700")},[el("p",{class:"eyebrow",text:(e.full?"Full closure":e.type.replace(/([a-z])([A-Z])/g,"$1 $2"))+(e.updated?" · updated "+df(e.updated):"")}),el("h3",{style:"font-size:18px",text:e.loc||e.road}),e.desc?el("p",{text:e.desc}):null,e.detour?el("p",{class:"meta",text:"Detour: "+e.detour}):null])))]));
+ if((R.conditions||[]).length)kids.push(el("div",{},[el("h3",{text:"Road conditions"}),el("table",{class:"rd-tbl"},[el("tr",{},[el("th",{text:"Road"}),el("th",{text:"Pavement"}),el("th",{text:"Weather"}),el("th",{text:"Restriction"})]),...R.conditions.map(c=>el("tr",{},[el("td",{text:c.road}),el("td",{text:c.cond||"—"}),el("td",{text:c.weather||"—"}),el("td",{text:c.restriction||"—"})]))])]));
+ if((R.stations||[]).length)kids.push(el("div",{},[el("h3",{text:"Road sensors"}),el("table",{class:"rd-tbl"},[el("tr",{},[el("th",{text:"Sensor"}),el("th",{text:"Air"}),el("th",{text:"Pavement"}),el("th",{text:"Surface"})]),...R.stations.map(s=>el("tr",{style:s.ice?"background:#E7F1FB":""},[el("td",{text:s.name}),el("td",{text:s.air!=null?Math.round(s.air)+"°F":"—"}),el("td",{text:s.surface!=null?Math.round(s.surface)+"°F":"—"}),el("td",{text:(s.status||"—")+(s.ice?" · watch for ice":"")})]))])]));
+ if(gates.length)kids.push(el("div",{},[el("h3",{text:"Seasonal roads"}),el("ul",{style:"font-size:17px"},gates.map(g=>el("li",{},[el("b",{text:g.name+": "}),document.createTextNode(g.status||"—")])))]));
+ kids.push(el("p",{class:"meta",style:"font-size:16px"},[el("b",{text:"Snowplows: "}),document.createTextNode((R.plows||[]).length?(R.plows.length+" UDOT plow"+(R.plows.length===1?"":"s")+" working in the Valley and canyons in the last 2 hours (orange on the map)."):"No UDOT plows reported in the Valley or canyons in the last 2 hours.")]));
+ if((R.alerts||[]).length)kids.push(el("div",{},[el("h3",{text:"UDOT alerts"}),...R.alerts.map(a=>el("div",{class:"alert warn",style:"margin-bottom:8px",text:a.text}))]));
+ body.replaceChildren(...kids);
+ src.replaceChildren(document.createTextNode("Source: "),el("a",{href:R.link||"https://udottraffic.utah.gov/",target:"_blank",rel:"noopener",text:R.source||"UDOT Traffic"}),document.createTextNode(". Last checked "+df(R.updated)+". County roads like the North Ogden Divide may not be included."));
+ if(window.L){const map=L.map(mapBox,{scrollWheelZoom:false}).setView([41.27,-111.75],10);L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:16,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);
+  const dot=(c,lat,lng,txt)=>{if(lat==null||lng==null)return;L.circleMarker([lat,lng],{radius:9,color:"#fff",weight:2,fillColor:c,fillOpacity:1}).bindPopup(txt).addTo(map)};
+  const esc=t=>String(t||"").replace(/[<>&"]/g,c=>({"<":"&lt;",">":"&gt;","&":"&amp;",'"':"&quot;"}[c]));
+  ev.forEach(e=>dot(e.full||/accident|crash|incident/i.test(e.type)?"#B3261E":"#C9A227",e.lat,e.lng,"<b>"+esc(e.loc||e.road)+"</b><br>"+esc(e.desc)));
+  (R.plows||[]).forEach(p=>dot("#E07B22",p.lat,p.lng,"UDOT snowplow"+(p.updated?"<br>seen "+esc(df(p.updated)):"")));
+  (R.stations||[]).forEach(s=>dot("#2E6DA4",s.lat,s.lng,"<b>"+esc(s.name)+"</b><br>Pavement "+(s.surface!=null?Math.round(s.surface)+"°F":"—")+" · "+esc(s.status)));}
+ else mapBox.textContent="The map couldn't load. The lists below still work.";}
+/* air quality */
+const aq=document.getElementById("aq"),cols={"Good":"#1E6B3E","Moderate":"#9A7B00","Unhealthy for Sensitive Groups":"#C77700","Unhealthy for sensitive groups":"#C77700","Unhealthy":"#B3261E","Very Unhealthy":"#7A1FA2","Very unhealthy":"#7A1FA2","Hazardous":"#6B1A1A"};
+if(!A||!A.updated)quiet(aq,"Air quality will appear here once the hourly update starts running.");
+else{const k=[];
+ if(A.now)k.push(el("p",{style:"font-size:18px;margin:0"},[el("b",{text:"Right now: "}),el("span",{style:"font-weight:800;color:"+(cols[A.now.name]||"inherit"),text:A.now.name}),document.createTextNode((A.now.level>0?", mostly from "+A.now.cause:"")+". "+A.place+".")]));
+ const fc=A.forecast,fresh=fc&&fc.issuedTime&&Date.now()-fc.issuedTime<3*864e5;
+ if(fresh)k.push(el("div",{class:"aq-days"},fc.days.map(d=>el("div",{class:"aq-d"},[el("b",{text:d.day}),el("div",{class:"lv",style:"color:"+(cols[d.level]||"inherit"),text:d.level}),el("div",{class:"meta",style:"font-size:15px",text:d.action==="Unrestricted"?"No burn limits":d.action==="Voluntary"?"Voluntary action: please limit wood burning":"Mandatory action: no wood burning"})]))),el("p",{class:"meta",style:"font-size:14px",text:"Forecast issued "+fc.issued+"."}));
+ else k.push(el("p",{class:"meta",style:"font-size:16px",text:"No current forecast from the state for Weber County. They forecast mostly during winter inversions and smoke season."}));
+ k.push(el("p",{class:"meta",style:"font-size:14px"},[document.createTextNode("Source: "),el("a",{href:A.link,target:"_blank",rel:"noopener",text:A.source}),document.createTextNode(". The Weber County monitor is in Harrisville; air in the Valley is often cleaner, above the winter inversion.")]));
+ aq.replaceChildren(...k);}
 })();
 </script>
 </body>

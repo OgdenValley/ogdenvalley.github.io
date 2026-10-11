@@ -234,6 +234,134 @@ function parseHuntsville(html){
   return out;
 }
 
+/* ---------------- ROADS & CANYONS (UDOT Traffic API) ----------------
+   Needs the UDOT developer key saved as the GitHub secret UDOT_KEY (passed in by the workflow).
+   Only keeps what is inside the Ogden Valley / canyons box: Ogden Canyon (SR-39), Trappers Loop (SR-167),
+   Powder Mountain road (SR-158), Snowbasin road (SR-226), Weber Canyon (I-84), Monte Cristo and the Valley.
+   Six calls per run; UDOT allows ten per minute. */
+const ROAD_BOX = {s: 41.10, n: 41.52, w: -111.93, e: -111.40};
+const inBox = (lat, lng) => lat != null && lng != null && +lat >= ROAD_BOX.s && +lat <= ROAD_BOX.n && +lng >= ROAD_BOX.w && +lng <= ROAD_BOX.e;
+function decodePolyline(str){ const pts = []; let i = 0, lat = 0, lng = 0; str = String(str || "");
+  while (i < str.length) { let b, shift = 0, res = 0; do { b = str.charCodeAt(i++) - 63; res |= (b & 31) << shift; shift += 5; } while (b >= 32 && i < str.length);
+    lat += (res & 1) ? ~(res >> 1) : (res >> 1); shift = 0; res = 0;
+    do { b = str.charCodeAt(i++) - 63; res |= (b & 31) << shift; shift += 5; } while (b >= 32 && i < str.length);
+    lng += (res & 1) ? ~(res >> 1) : (res >> 1); pts.push([lat / 1e5, lng / 1e5]); }
+  return pts; }
+const lineInBox = p => decodePolyline(p).some(([a, b]) => inBox(a, b));
+const ROAD_WORDS = /\b(SR|UT|State Route|Hwy|Highway)[- ]?(39|158|167|226)\b|\bI-?84\b|Ogden Canyon|Ogden Valley|Trappers|Powder Mountain|Snowbasin|Nordic Valley|Huntsville|\bEden\b|Liberty|Monte Cristo|Pineview|Causey|North Ogden Divide|Weber Canyon|\bWeber\b|\bMorgan\b/i;
+const secs = v => (v == null || v === "") ? null : (typeof v === "number" ? (v > 1e12 ? v : v * 1000) : (Date.parse(v) || null));
+const num = v => (v == null || v === "" || isNaN(+v)) ? null : +v;
+async function roads(){
+  let old = {}; try { old = JSON.parse(fs.readFileSync("roads.json", "utf8")); } catch {}
+  const key = (process.env.UDOT_KEY || "").trim();
+  if (!key) { writeIfChanged("roads.json", {...old, updated: old.updated || null, status: {udot: "waiting for the UDOT key"}}); console.log("roads: no UDOT_KEY yet"); return; }
+  const out = {updated: new Date().toISOString(), source: "Utah Department of Transportation (UDOT Traffic)", link: "https://udottraffic.utah.gov/", status: {},
+    events: [], conditions: [], alerts: [], plows: [], stations: [], passes: []};
+  const get = async (name) => { try { const j = await getJSON("https://www.udottraffic.utah.gov/api/v2/get/" + name + "?key=" + encodeURIComponent(key) + "&format=json");
+      out.status[name] = Array.isArray(j) ? "ok" : "unexpected answer"; return Array.isArray(j) ? j : []; }
+    catch (e) { out.status[name] = "failed"; console.log("udot", name, "failed:", e.message); return null; } };
+  const now = Date.now();
+  const ev = await get("event");
+  if (ev) out.events = ev.filter(e => inBox(e.Latitude, e.Longitude) || inBox(e.LatitudeSecondary, e.LongitudeSecondary) || lineInBox(e.EncodedPolyline))
+    .map(e => ({id: String(e.ID), type: String(e.EventType || ""), sub: String(e.EventSubType || ""), road: String(e.RoadwayName || ""), dir: String(e.DirectionOfTravel || ""),
+      desc: String(e.Description || "").replace(/\s+/g, " ").trim().slice(0, 320), loc: String(e.Location || ""), county: String(e.County || ""), full: !!e.IsFullClosure,
+      severity: String(e.Severity || ""), reported: secs(e.Reported), updated: secs(e.LastUpdated), ends: secs(e.PlannedEndDate), lat: num(e.Latitude), lng: num(e.Longitude),
+      detour: String(e.DetourInstructions || "").slice(0, 300)}))
+    .sort((a, b) => (b.full - a.full) || (rank(a) - rank(b)) || ((b.updated || 0) - (a.updated || 0)));
+  else out.events = old.events || [];
+  const rc = await get("roadconditions");
+  if (rc) out.conditions = rc.filter(r => lineInBox(r.EncodedPolyline) || ROAD_WORDS.test(String(r.RoadwayName || "")) && lineInBox(r.EncodedPolyline || ""))
+    .map(r => ({id: String(r.Id), road: String(r.RoadwayName || ""), cond: String(r.RoadCondition || ""), weather: String(r.WeatherCondition || ""), restriction: String(r.Restriction || ""), updated: secs(r.LastUpdated)}));
+  else out.conditions = old.conditions || [];
+  const al = await get("alerts");
+  if (al) out.alerts = al.filter(a => ROAD_WORDS.test(String(a.Message || "") + " " + String(a.Notes || "") + " " + JSON.stringify(a.Regions || "")))
+    .map(a => ({id: String(a.Id), text: String(a.Message || "").replace(/\s+/g, " ").trim().slice(0, 320), important: !!a.HighImportance, starts: secs(a.StartTime), ends: secs(a.EndTime)}));
+  else out.alerts = old.alerts || [];
+  const sv = await get("servicevehicles");
+  if (sv) out.plows = sv.filter(p => inBox(p.Latitude, p.Longitude) && secs(p.LastUpdated) && now - secs(p.LastUpdated) < 2 * 36e5)
+    .map(p => ({bearing: String(p.Bearing || ""), lat: num(p.Latitude), lng: num(p.Longitude), updated: secs(p.LastUpdated)}));
+  else out.plows = [];
+  const ws = await get("weatherstations");
+  if (ws) out.stations = ws.filter(s => inBox(s.Latitude, s.Longitude))
+    .map(s => { const surf = num(s.SurfaceTemp), st = String(s.SurfaceStatus || "");
+      return {name: String(s.StationName || ""), air: num(s.AirTemperature), surface: surf, status: st, gust: num(s.WindSpeedGust), lat: num(s.Latitude), lng: num(s.Longitude), updated: secs(s.LastUpdated),
+        ice: (surf != null && surf <= 32 && /wet|ice|icy|snow|slush|frost|damp/i.test(st)) || /ice|icy|frost|black/i.test(st)}; })
+    .sort((a, b) => a.name.localeCompare(b.name));
+  else out.stations = old.stations || [];
+  const mp = await get("mountainpasses");
+  if (mp) out.passes = mp.filter(p => inBox(p.Latitude, p.Longitude) || ROAD_WORDS.test(String(p.Name || "") + " " + String(p.Roadway || "")))
+    .map(p => ({name: String(p.Name || ""), road: String(p.Roadway || ""), elev: num(p.MaxElevation), surface: num(p.SurfaceTemp), status: String(p.SurfaceStatus || ""), air: num(p.AirTemperature),
+      closures: (Array.isArray(p.SeasonalInfo) ? p.SeasonalInfo : []).map(c => ({desc: String(c.SeasonalClosureDescription || ""), status: String(c.SeasonalClosureStatus || "")})).filter(c => c.desc || c.status),
+      seasonal: String(p.SeasonalClosureTitle || p.SeasonalRouteName || "")}));
+  else out.passes = old.passes || [];
+  console.log("roads:", out.events.length, "events,", out.conditions.length, "conditions,", out.alerts.length, "alerts,", out.plows.length, "plows,", out.stations.length, "stations,", out.passes.length, "passes");
+  writeIfChanged("roads.json", out);
+}
+function rank(e){ const t = (e.type + " " + e.sub).toLowerCase(); return /accident|crash|incident/.test(t) ? 0 : /closure/.test(t) ? 1 : /weather|chain|winter/.test(t) ? 2 : /roadwork|construction/.test(t) ? 4 : 3; }
+
+/* ---------------- AIR QUALITY (Utah Division of Air Quality, Weber County monitor in Harrisville) ---------------- */
+const pmLevel = v => v == null ? null : v <= 9 ? 0 : v <= 35.4 ? 1 : v <= 55.4 ? 2 : v <= 125.4 ? 3 : v <= 225.4 ? 4 : 5;
+const o3Level = v => v == null ? null : v <= 0.054 ? 0 : v <= 0.070 ? 1 : v <= 0.085 ? 2 : v <= 0.105 ? 3 : v <= 0.200 ? 4 : 5;
+const AQ_NAMES = ["Good", "Moderate", "Unhealthy for sensitive groups", "Unhealthy", "Very unhealthy", "Hazardous"];
+async function air(){
+  let old = {}; try { old = JSON.parse(fs.readFileSync("air.json", "utf8")); } catch {}
+  const out = {updated: new Date().toISOString(), place: "Weber County (monitor in Harrisville)", source: "Utah Division of Air Quality", link: "https://air.utah.gov/forecast.php?id=hv", now: old.now || null, forecast: old.forecast || null, status: {}};
+  try {
+    const x = await getText("https://air.utah.gov/xmlFeed.php?id=hv");
+    const recs = [...x.matchAll(/<data>([\s\S]*?)<\/data>/g)].map(m => { const g = t => { const r = m[1].match(new RegExp("<" + t + ">([^<]*)</" + t + ">")); return r && r[1].trim() !== "" ? +r[1] : null; };
+      const d = (m[1].match(/<date>([^<]*)<\/date>/) || [])[1] || ""; return {date: d.trim(), pm25: g("pm25_24hr_avg"), ozone: g("ozone_8hr_avg")}; }).filter(r => r.pm25 != null || r.ozone != null);
+    const last = recs[recs.length - 1];
+    if (!last) throw new Error("no readings");
+    const pl = pmLevel(last.pm25), ol = o3Level(last.ozone), lvl = Math.max(pl == null ? 0 : pl, ol == null ? 0 : ol);
+    out.now = {when: last.date, pm25: last.pm25, ozone: last.ozone, level: lvl, name: AQ_NAMES[lvl], cause: (pl ?? -1) >= (ol ?? -1) ? "fine particles (PM2.5)" : "ozone"};
+    out.status.now = "ok";
+  } catch (e) { out.status.now = "failed"; console.log("air now failed:", e.message); }
+  try {
+    const html = await getText("https://air.utah.gov/forecast.php?id=hv");
+    const text = html.replace(/<(script|style)[\s\S]*?<\/\1>/gi, " ").replace(/<[^>]+>/g, "\n").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&");
+    const issued = (text.match(/Last Updated:\s*([^\n]+)/i) || [])[1] || "";
+    const days = [...text.matchAll(/\b(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)\b/g)].map(m => m[1]);
+    const lv = [...text.matchAll(/\b(Good|Moderate|Unhealthy for Sensitive Groups|Unhealthy|Very Unhealthy|Hazardous)\b/g)].map(m => m[1]);
+    const ac = [...text.matchAll(/\b(Unrestricted|Voluntary|Mandatory)\s+Action\b/gi)].map(m => m[1][0].toUpperCase() + m[1].slice(1).toLowerCase());
+    const n = Math.min(ac.length, 3); const dd = days.slice(-n), ll = lv.slice(-n);
+    if (!n || dd.length < n || ll.length < n) throw new Error("could not read the forecast table");
+    out.forecast = {issued: issued.trim(), issuedTime: Date.parse(issued.replace(/,?\s*(\d)/, " $1")) || null, days: dd.map((d, i) => ({day: d, level: ll[i], action: ac[i]}))};
+    out.status.forecast = "ok";
+  } catch (e) { out.status.forecast = "failed"; console.log("air forecast failed:", e.message); }
+  console.log("air:", out.now && out.now.name, out.forecast && out.forecast.days.map(d => d.day + " " + d.action).join(", "));
+  writeIfChanged("air.json", out);
+}
+
+/* ---------------- 24-HOUR TIMELINE (roads, weather alerts, air quality) ----------------
+   Compares this hour with last hour and logs what changed. Entries older than 24 hours drop off. */
+function timeline(){
+  let T = {}; try { T = JSON.parse(fs.readFileSync("timeline.json", "utf8")); } catch {}
+  const first = !T.seen; const seen = T.seen || {}; const items = T.items || [];
+  const now = Date.now(), add = (t, src, text, kind, link) => items.push({t: t || now, src, text, kind, link});
+  const read = f => { try { return JSON.parse(fs.readFileSync(f, "utf8")); } catch { return null; } };
+  const R = read("roads.json"), A = read("air.json"), S = read("safety.json");
+  const next = {ev: {}, al: {}, cond: {}, pass: {}, ice: {}, nws: {}, air: seen.air || ""};
+  if (R && R.updated && R.events) {
+    R.events.forEach(e => { next.ev[e.id] = e.road + "|" + e.desc;
+      const label = (e.full ? "Full closure" : rank(e) === 0 ? "Crash or incident" : rank(e) === 2 ? "Winter driving" : rank(e) === 4 ? "Road work" : "Traffic event") + ": " + (e.loc || e.road);
+      if (!(e.id in (seen.ev || {}))) { if (!first || (e.reported && now - e.reported < 864e5)) add(first ? e.reported : now, "UDOT", label + (e.desc ? ". " + e.desc : ""), e.full ? "closure" : rank(e) === 0 ? "crash" : "road", "https://udottraffic.utah.gov/"); } });
+    if (!first) Object.keys(seen.ev || {}).forEach(id => { if (!(id in next.ev)) add(now, "UDOT", "Cleared: " + String(seen.ev[id]).split("|")[0] + ". " + String(seen.ev[id]).split("|")[1].slice(0, 140), "clear", "https://udottraffic.utah.gov/"); });
+    (R.alerts || []).forEach(a => { next.al[a.id] = 1; if (!(a.id in (seen.al || {})) && !first) add(now, "UDOT alert", a.text, "road", "https://udottraffic.utah.gov/"); });
+    (R.conditions || []).forEach(c => { const v = [c.cond, c.restriction].filter(Boolean).join(" · "); next.cond[c.road + "#" + c.id] = v;
+      const was = (seen.cond || {})[c.road + "#" + c.id]; if (!first && was !== undefined && was !== v && v) add(now, "UDOT", c.road + ": " + v + (c.weather ? " (" + c.weather + ")" : ""), /ice|snow|slush|chain|closed/i.test(v) ? "winter" : "road", "https://udottraffic.utah.gov/"); });
+    (R.passes || []).forEach(p => (p.closures || []).forEach(c => { const k = p.name + "|" + c.desc; next.pass[k] = c.status; const was = (seen.pass || {})[k];
+      if (!first && was !== undefined && was !== c.status) add(now, "UDOT", (c.desc || p.name) + ": now " + c.status, /closed/i.test(c.status) ? "closure" : "clear", "https://udottraffic.utah.gov/"); }));
+    (R.stations || []).forEach(s => { next.ice[s.name] = s.ice ? 1 : 0; if (!first && s.ice && !(seen.ice || {})[s.name]) add(now, "UDOT road sensor", s.name + ": pavement " + (s.surface != null ? Math.round(s.surface) + "°F" : "near freezing") + (s.status ? ", " + s.status.toLowerCase() : "") + ". Watch for ice.", "winter", "https://udottraffic.utah.gov/"); });
+  } else { next.ev = seen.ev || {}; next.al = seen.al || {}; next.cond = seen.cond || {}; next.pass = seen.pass || {}; next.ice = seen.ice || {}; }
+  if (S && S.weather) S.weather.forEach(a => { const k = a.event + "|" + (a.starts || "") + "|" + (a.ends || ""); next.nws[k] = 1;
+    if (!(k in (seen.nws || {}))) add(first ? (Date.parse(a.starts) || now) : now, "National Weather Service", a.event + (a.ends ? " until " + new Intl.DateTimeFormat("en-US", {timeZone: "America/Denver", weekday: "short", hour: "numeric", minute: "2-digit"}).format(new Date(a.ends)) : "") + (a.area ? " · " + a.area.slice(0, 120) : ""), /Warning/.test(a.event) ? "warning" : "weather", "https://www.weather.gov/slc/"); });
+  else next.nws = seen.nws || {};
+  if (A && A.forecast && A.forecast.days && A.forecast.days.length) { const d0 = A.forecast.days[0]; const k = A.forecast.issued + "|" + A.forecast.days.map(d => d.level + "/" + d.action).join(",");
+    next.air = k; if (k !== seen.air && (!first || /Voluntary|Mandatory/.test(k))) add(now, "Utah Air Quality", "Weber County forecast: " + A.forecast.days.map(d => d.day + " " + d.level.toLowerCase() + (d.action !== "Unrestricted" ? ", " + d.action.toLowerCase() + " action" + (d.action === "Mandatory" ? " (no wood burning)" : "") : "")).join(" · "), /Mandatory|Unhealthy/.test(k) ? "warning" : "air", "https://air.utah.gov/forecast.php?id=hv"); }
+  const keep = items.filter(i => i.t > now - 864e5).sort((a, b) => b.t - a.t).slice(0, 80);
+  writeIfChanged("timeline.json", {updated: new Date().toISOString(), items: keep, seen: next});
+}
+
 /* ---------------- LOCAL: public meetings, snow, Pineview ---------------- */
 async function local(){
   let old = {}; try { old = JSON.parse(fs.readFileSync("local.json", "utf8")); } catch {}
@@ -770,6 +898,9 @@ await sky();
 await safety();
 await forecast();
 await local();
+await roads();
+await air();
+timeline();
 await reviews();
 await reports();
 await skyphotos();
