@@ -768,7 +768,7 @@ async function recipes(){
   if (!rUrl) { if (!oldJSON("recipes.json")) writeIfChanged("recipes.json", {updated: new Date().toISOString(), month: thisMonth, items: [], tally: {}, winners: {}, tries: {}}); console.log("recipes: no sheet link yet"); return; }
   try {
     const {rows, col} = await sheet(rUrl);
-    const iT = col(/timestamp/), iN = col(/your name|^name/), iS = col(/show|anonymous/), iR = col(/recipe name|^recipe$|title/), iSt = col(/story|about/), iI = col(/ingredient/), iSp = col(/step|direction|instruction/), iP = col(/^photo$|upload/), iOK = col(/photo ok/), iH = col(/^hide/);
+    const iT = col(/timestamp/), iN = col(/your name|^name/), iS = col(/show|anonymous/), iR = col(/recipe name|^recipe$|title/), iSt = col(/story|about/), iI = col(/ingredient/), iSp = col(/step|direction|instruction/), iP = col(/^photo$|upload/), iOK = col(/photo ok/), iH = col(/^hide/), iTown = col(/^town|city|where do you live/);
     const items = [];
     rows.forEach((r, idx) => {
       const n = idx + 1;
@@ -779,7 +779,7 @@ async function recipes(){
       const story = (r[iSt] || "").trim().slice(0, 600), ing = (r[iI] || "").trim().slice(0, 2500), steps = (r[iSp] || "").trim().slice(0, 4000);
       const why = heldReason([title, story, ing, steps].join(" "), by); if (why) { console.log("recipe held:", n, why); return; }
       const t = Date.parse(r[iT]) || 0;
-      items.push({n, title, by, story, ingredients: ing, steps, photo: iOK >= 0 && yes(r[iOK]) ? driveImg(r[iP], 1000) : "", month: t ? ymDenver(new Date(t)) : thisMonth});
+      items.push({n, title, by, town: iTown >= 0 ? townOnly(r[iTown]) : "", story, ingredients: ing, steps, photo: iOK >= 0 && yes(r[iOK]) ? driveImg(r[iP], 1000) : "", month: t ? ymDenver(new Date(t)) : thisMonth});
     });
     const tally = {}, winners = {}, tries = {}, byMonth = {};
     if (vUrl) {
