@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Community Kids · Ogden Valley Info & Events</title>
+<meta name="description" content="Lessons, teams, clubs and kid events in Ogden Valley and Weber County, plus free coloring pages, puzzles and games.">
+<meta property="og:title" content="Community Kids · Ogden Valley Info & Events">
+<meta property="og:description" content="Lessons, teams, clubs and kid events in Ogden Valley and Weber County, plus free coloring pages, puzzles and games.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ogdenvalleyevent.com/kids.html">
+<meta property="og:image" content="https://ogdenvalleyevent.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="logo-10-years-32.png">
+<link rel="apple-touch-icon" href="logo-10-years-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
+</head>
+<body class="kids">
+<a class="sr" href="#main">Skip to content</a>
+<div class="alert-bar" id="alert-bar" hidden></div>
+<div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
+  <strong>Canyon check</strong>
+  <a href="https://ogdenvalley.udot.utah.gov/road-information/" target="_blank" rel="noopener">Ogden Valley roads &amp; cameras (UDOT)</a>
+  <a href="live.html">Live view</a>
+  <a href="safety.html">Alerts &amp; fires</a>
+  <a href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Eden weather</a>
+</div></div>
+<header class="site-head"><div class="container">
+  <a class="brand" href="index.html"><img data-logo="180" src="logo-10-years-180.png" alt="" width="52" height="52"><span><b>Ogden Valley</b><small>Information &amp; Events</small></span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="main" id="nav" aria-label="Main"></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="container"><div><p class="eyebrow">For Valley kids and families</p><h1>Community Kids</h1><p class="lead" style="margin-top:12px">Lessons kids can take, teams and clubs they can join, kid-friendly events, and free things to do at home. All in one place.</p>
+<p class="meta" style="margin-top:10px">Posted Oct. 11, 2026 · Updated <span id="k-upd">Oct. 11, 2026</span></p></div></div></section>
+<section><div class="container" style="display:grid;gap:18px">
+  <nav class="btns" aria-label="On this page" style="margin:0"><a class="btn" href="#kid-events">Kid events</a><a class="btn" href="#lessons">Lessons &amp; classes</a><a class="btn" href="#groups">Teams &amp; clubs</a><a class="btn" href="#at-home">Things to do at home</a><a class="btn primary" data-form="update" href="#">Add a lesson, team or club</a></nav>
+  <div class="alert warn"><b>Kid-safe rules.</b> We list groups, businesses and public programs only, with their own public website as the contact. Towns only, never a home address. No kids' names or faces in photos without a parent's OK. Check with each program for times, prices and sign-ups before you go.</div>
+</div></section>
+
+<section id="kid-events" style="padding-top:0"><div class="container">
+  <div class="section-head" style="flex-wrap:wrap;gap:10px"><div><p class="eyebrow">Coming up</p><h2>Kid &amp; family events</h2></div>
+    <div class="cal-toggle" role="group" aria-label="Show calendars">
+      <button class="chip" type="button" data-kcal="ov" aria-pressed="true"><span class="dot" style="background:var(--ov)"></span>Ogden Valley</button>
+      <button class="chip" type="button" data-kcal="weber" aria-pressed="true"><span class="dot" style="background:var(--weber)"></span>Weber County</button>
+    </div></div>
+  <p class="meta" style="font-size:16px;margin-top:0">Pulled from our Ogden Valley and Weber County calendars whenever an event says it's for kids, families, youth or teens. Tap a calendar to show or hide it.</p>
+  <div id="k-events"></div>
+</div></section>
+
+<section id="lessons" style="padding-top:0"><div class="container">
+  <div class="section-head" style="flex-wrap:wrap;gap:10px"><div><p class="eyebrow">Sign up</p><h2>Lessons &amp; classes</h2></div>
+    <div class="cal-toggle" role="group" aria-label="Show places">
+      <button class="chip" type="button" data-kwhere="valley" aria-pressed="true"><span class="dot" style="background:var(--ov)"></span>In the Valley</button>
+      <button class="chip" type="button" data-kwhere="weber" aria-pressed="true"><span class="dot" style="background:var(--weber)"></span>Nearby in Weber County</button>
+    </div></div>
+  <div id="k-lessons" style="display:grid;gap:18px"></div>
+</div></section>
+
+<section id="groups" style="padding-top:0"><div class="container">
+  <div class="section-head"><div><p class="eyebrow">Join in</p><h2>Teams, clubs &amp; groups</h2></div></div>
+  <div id="k-groups" style="display:grid;gap:18px"></div>
+  <div class="card" style="margin-top:18px"><h3 style="margin-top:0">Teach kids or run a team or club?</h3><p>Send us your program and we'll check it and add it. Groups, businesses and public programs only, with a public website or page.</p><div class="btns" style="margin:0"><a class="btn primary" data-form="update" href="#">Add a lesson, team or club</a></div></div>
+</div></section>
+
+<section id="at-home" style="padding-top:0"><div class="container">
+  <div class="section-head"><div><p class="eyebrow">Free, any day</p><h2>Things to do at home</h2></div></div>
+  <div class="grid">
+    <article class="card feature"><p class="eyebrow">Print or color online</p><h3>Coloring pages</h3><p>Free Valley pages, new every month. Send in your finished picture.</p><a href="coloring.html">Print a page</a> · <a href="color.html">Color online</a></article>
+    <article class="card feature"><p class="eyebrow">Picture game</p><h3>I Spy in the Valley</h3><p>Find the moose, the kayak and ten more things hiding in the picture.</p><a href="i-spy.html">Play I Spy</a></article>
+    <article class="card feature"><p class="eyebrow">Kids &amp; grown-ups</p><h3>Puzzles</h3><p>Word searches, crosswords and jigsaw puzzles made from local art.</p><a href="puzzles.html">Play a puzzle</a></article>
+    <article class="card feature"><p class="eyebrow">Get outside</p><h3>Scavenger hunt</h3><p>Check off this month's list around the Valley.</p><a href="scavenger-hunt.html">Start the hunt</a></article>
+    <article class="card feature"><p class="eyebrow">Every week</p><h3>Guess the Spot</h3><p>Where in the Valley was this photo taken? Kids can play along.</p><a href="guess-the-spot.html">Play</a></article>
+    <article class="card feature"><p class="eyebrow">Check them off</p><h3>Wildlife checklist</h3><p>Moose, elk, mountain goats and more. Can your family spot them all?</p><a href="wildlife.html#checklist">See the checklist</a></article>
+    <article class="card feature"><p class="eyebrow">Look up</p><h3>Night sky</h3><p>Moon phase, meteor showers and what to look for tonight.</p><a href="night-sky.html">See tonight's sky</a></article>
+  </div>
+</div></section>
+
+<section style="padding-top:0"><div class="container">
+  <details class="card" style="font-size:15px"><summary style="cursor:pointer;font-weight:700">Where this list comes from</summary>
+    <p class="meta" style="font-size:15px">Each lesson, team and club was checked on its own official website, or an official town, county or school page, on <span id="k-checked"></span>. Groups marked "from Local Causes" come from our <a href="causes.html">Local Causes</a> list. Times, ages and prices change, so check with each program.</p>
+    <ul id="k-sources" style="line-height:1.6"></ul>
+  </details>
+</div></section>
+</main>
+<footer class="site-foot"></footer>
+<script src="layout.js"></script>
+<script src="config.js"></script>
+<script src="places.js"></script>
+<script src="site.js"></script>
+<script>
+(async function(){
+const S=window.OVE_SITE,el=S.el,C=S.C;
+const nice=d=>{const p=String(d||"").split("-");return p.length===3?new Date(+p[0],+p[1]-1,+p[2]).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"}).replace(/^(\w{3}) /,"$1. ").replace("May. ","May "):""};
+document.getElementById("k-checked").textContent=nice(C.kidsChecked)||"Oct. 11, 2026";
+if(C.kidsChecked)document.getElementById("k-upd").textContent=nice(C.kidsChecked);
+/* ---- kid events ---- */
+const KID=/\b(kids?|child(ren)?|famil(y|ies)|youth|teens?|toddlers?|preschool(ers)?|story ?time|junior|4-h|scouts?|trunk[- ]or[- ]treat|trick[- ]or[- ]treat|ages? \d)/i, ADULT=/(21\+|adults? only|no kids|no children)/i;
+const data=await S.loadEvents();let kon=["ov","weber"];const box=document.getElementById("k-events");
+function drawEvents(){const list=S.allEvents(data,kon).filter(e=>{const t=(e.t||"")+" "+(e.desc||"");return KID.test(t)&&!ADULT.test(t)&&e.s<Date.now()+90*864e5});
+  /* a weekly event shows once, with its next dates listed, so it doesn't fill the page */
+  const by={},one=[];list.forEach(e=>{const k=(e.t||"").trim().toLowerCase();if(by[k]){by[k].push(e)}else{by[k]=[e];one.push(e)}});
+  const md=t=>new Date(t).toLocaleDateString("en-US",{month:"short",day:"numeric",timeZone:S.TZ});
+  const shown=one.map(e=>{const more=by[(e.t||"").trim().toLowerCase()].slice(1);if(!more.length)return e;
+    return Object.assign({},e,{desc:"Also on "+more.slice(0,4).map(x=>md(x.s)).join(", ")+(more.length>4?" and more":"")+". "+(e.desc||"")})});
+  S.renderEvents(box,shown,{limit:40,emptyText:kon.length===2?"No kid or family events on the calendars right now. Know of one?":"No kid or family events on this calendar right now. Know of one?"});}
+document.querySelectorAll("[data-kcal]").forEach(b=>b.addEventListener("click",()=>{const k=b.dataset.kcal,p=b.getAttribute("aria-pressed")==="true";if(p&&kon.length===1)return;b.setAttribute("aria-pressed",String(!p));kon=p?kon.filter(x=>x!==k):kon.concat(k);drawEvents()}));
+drawEvents();
+/* ---- lessons and groups ---- */
+const all=(C.kidsList||[]).slice();
+const fromCauses=(C.causes||[]).filter(c=>/kids/i.test(c.kind||"")).map(c=>({name:c.name,group:"groups",kind:"From Local Causes",where:"valley",town:"",line:c.line,url:"causes.html"+(c.id?"#"+c.id:""),cause:true}));
+let won=["valley","weber"];
+function card(x){return el("article",{class:"card",style:"display:grid;gap:6px;margin:0"},[
+  el("h3",{style:"margin:0;font-size:20px",text:x.name}),
+  el("div",{class:"meta",style:"font-size:15px",text:[x.town,x.where==="weber"?"Weber County":"",x.ages?(/^\d/.test(x.ages)?"Ages "+x.ages:x.ages):"",x.season].filter(Boolean).join(" · ")}),
+  x.line?el("p",{style:"margin:0",text:x.line}):null,
+  x.url?el("a",{href:x.url,target:x.cause?null:"_blank",rel:x.cause?null:"noopener",text:x.cause?"See it on Local Causes":"Visit their website"}):null])}
+function drawList(id,items){const b=document.getElementById(id);b.replaceChildren();const show=items.filter(x=>won.includes(x.where||"valley"));
+  if(!show.length){b.append(el("p",{class:"meta",text:"Nothing listed here yet. Know of one? Use the Add button."}));return}
+  const kinds=[];show.forEach(x=>{if(!kinds.includes(x.kind))kinds.push(x.kind)});
+  kinds.forEach(k=>b.append(el("div",{},[el("h3",{style:"margin:0 0 10px;font-size:18px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted,#555)",text:k}),el("div",{class:"grid"},show.filter(x=>x.kind===k).map(card))])))}
+function drawAll(){drawList("k-lessons",all.filter(x=>x.group==="lessons"));drawList("k-groups",all.filter(x=>x.group==="groups").concat(fromCauses))}
+document.querySelectorAll("[data-kwhere]").forEach(b=>b.addEventListener("click",()=>{const k=b.dataset.kwhere,p=b.getAttribute("aria-pressed")==="true";if(p&&won.length===1)return;b.setAttribute("aria-pressed",String(!p));won=p?won.filter(x=>x!==k):won.concat(k);drawAll()}));
+drawAll();
+const src=document.getElementById("k-sources");const seen={};all.forEach(x=>{if(!x.url||seen[x.url])return;seen[x.url]=1;src.append(el("li",{},[el("b",{text:x.name+": "}),el("a",{href:x.url,target:"_blank",rel:"noopener",text:x.url.replace(/^https?:\/\/(www\.)?/,"")})]))});
+})();
+</script>
+</body>
+</html>

@@ -49,6 +49,36 @@ window.OVE = {
     cookWithUs: "https://docs.google.com/forms/d/e/1FAIpQLSeW6D2xYWV9MpRkNyQcscBByrxmcZmJuBve4A0XGS8GizpasA/viewform" // Community Cooking: Cook With Us request (terms gate first)
   },
 
+  /* --- Community Kids page (kids.html) ---------------------------------
+     Lessons, classes, teams and clubs kids can join. Each one was checked on
+     its own official website in October 2026 ("checked" is the page read).
+     where: "valley" = in Ogden Valley, "weber" = nearby in Weber County.
+     Groups from the Local Causes list marked "Kids, schools & sports" also show
+     on the Kids page by themselves, so they are not repeated here.
+     Town only. Organizations and businesses only, never a private home. */
+  kidsChecked: "2026-10-11",
+  kidsList: [
+    { name: "Snowbasin youth ski & snowboard lessons", group: "lessons", kind: "Skiing & snowboarding", where: "valley", town: "Huntsville", ages: "3-12", season: "Winter", line: "Daily lessons grouped by age: Mini Cubs (3-4), Cubs (4-6) and Bears (7-12).", url: "https://snowbasin.com/Lessons/Youth-Lessons" },
+    { name: "Snowbasin seasonal kids programs", group: "lessons", kind: "Skiing & snowboarding", where: "valley", town: "Huntsville", ages: "3-12", season: "Winter 2026-27", line: "Four-week weekend sessions (Future Busters, Little Busters, Basin Busters) where kids ski with the same program each week.", url: "https://snowbasin.com/Lessons/Youth-Lessons" },
+    { name: "Snowbasin Learn & Earn", group: "lessons", kind: "Skiing & snowboarding", where: "valley", town: "Huntsville", ages: "", season: "Winter 2026-27", line: "A three-year beginner program with savings on gear, lessons and a season pass.", url: "https://www.snowbasin.com/lessons-rentals" },
+    { name: "Powder Mountain kids ski lessons", group: "lessons", kind: "Skiing & snowboarding", where: "valley", town: "Eden", ages: "3-12", season: "Winter", line: "Full-day group lessons for ages 5-12, night first-timer lessons for 7-12, and private lessons for ages 3-4.", url: "https://powdermountain.com/lessons/winter" },
+    { name: "Powder Mountain Kids Ski Free", group: "lessons", kind: "Skiing & snowboarding", where: "valley", town: "Eden", ages: "12 and under", season: "Winter 2026-27", line: "Kids 6 and under ski free, and kids 12 and under get a free season pass with an adult pass.", url: "https://powdermountain.com/kids-ski-free" },
+    { name: "Nordic Valley kids lessons", group: "lessons", kind: "Skiing & snowboarding", where: "valley", town: "Eden", ages: "8-18", season: "Winter", line: "Two-hour and full-day ski and snowboard lessons for kids and teens.", url: "https://www.nordicvalley.ski/childrens-group-lessons/" },
+    { name: "Nordic Valley 8-week kids program", group: "lessons", kind: "Skiing & snowboarding", where: "valley", town: "Eden", ages: "8-16", season: "Winter, Sundays", line: "Eight Sunday lessons that help beginner and intermediate kids reach the next level.", url: "https://www.nordicvalley.ski/8-week-kids-ski-program/" },
+    { name: "Ogden Nordic Junior Program", group: "lessons", kind: "Cross-country skiing", where: "valley", town: "Liberty", ages: "8-18", season: "Winter (Jan.-Feb.)", line: "Cross-country ski classes at North Fork Park, from first-timers to advanced skate and classic.", url: "https://www.ogdennordic.com/junior-program" },
+    { name: "Ogden Valley Adaptive Sports, winter", group: "lessons", kind: "Adaptive sports", where: "valley", town: "Ogden Valley", ages: "All ages", season: "Winter", line: "Adaptive ski and snowboard lessons with special equipment at Snowbasin, Powder Mountain and Nordic Valley.", url: "https://ogdenvalleyadaptive.org/" },
+    { name: "Ogden Valley Adaptive Sports, summer", group: "lessons", kind: "Adaptive sports", where: "weber", town: "Ogden", ages: "Cycling and kayaking 8+", season: "Summer", line: "Adaptive cycling, kayaking, indoor climbing and hiking for people with disabilities.", url: "https://ogdenvalleyadaptive.org/summer-programs/" },
+    { name: "Ogden Valley Tennis & Pickleball youth tennis", group: "lessons", kind: "Tennis & pickleball", where: "valley", town: "Eden", ages: "5-13, plus a 14+ group", season: "Summer (June-July)", line: "Small-group tennis lessons at the Snowcrest Jr. High courts: Little Aces, Court Crew and Junior Rally.", url: "https://ogdenvalleytennis.blogspot.com/" },
+    { name: "Ogden City swim lessons", group: "lessons", kind: "Swim lessons", where: "weber", town: "Ogden", ages: "6 months-17 years", season: "Year-round, monthly", line: "Swim lessons from Baby & Me through Teen Swimming at the Marshall N. White Center.", url: "https://www.ogdencity.gov/722/Swimming-Lessons" },
+    { name: "Ogden Nature Center summer camps", group: "lessons", kind: "Camps", where: "weber", town: "Ogden", ages: "2-16", season: "Summer (June-Aug.)", line: "Nature camps from toddler programs to week-long camps, plus Volunteens for ages 13-16.", url: "https://www.ogdennaturecenter.org/summer-camps" },
+    { name: "Weber County Library, Ogden Valley Branch", group: "groups", kind: "Library", where: "valley", town: "Huntsville", ages: "0-12 for Book Bundles", season: "Year-round", line: "Book Bundles: staff pick 5-10 books for your child's reading level, in English or Spanish.", url: "https://www.weberpl.lib.ut.us/locations-and-hours/ogden-valley-branch" },
+    { name: "Powder Mountain freeride team", group: "groups", kind: "Ski teams", where: "valley", town: "Eden", ages: "", season: "Winter 2026-27", line: "A team where young skiers get coaching to build their skills and compete.", url: "https://powdermountain.com/kids-ski-free" },
+    { name: "4-H Hoofprints horse club", group: "groups", kind: "4-H", where: "valley", town: "Eden", ages: "Grades K-12", season: "Year-round", line: "A Weber County 4-H horse club in Eden where kids work on a project horse.", url: "https://extension.usu.edu/weber/4h/clubs" },
+    { name: "Weber County 4-H (USU Extension)", group: "groups", kind: "4-H", where: "weber", town: "Ogden", ages: "", season: "Year-round", line: "4-H clubs in horses, livestock, shooting sports, STEM, cooking and sewing, and leadership.", url: "https://extension.usu.edu/weber/4h" },
+    { name: "Weber MTB Team", group: "groups", kind: "Sports teams", where: "valley", town: "Ogden Valley", ages: "Grades 7-12", season: "League season", line: "Youth mountain bike team for students in the Weber High area, including Snowcrest Jr. High.", url: "https://www.webermtb.org/" },
+    { name: "Weber County Recreation youth basketball", group: "groups", kind: "Sports teams", where: "weber", town: "Ogden", ages: "Grades 3-9", season: "September-June", line: "Boys and girls basketball leagues played at the Weber County Fairgrounds.", url: "https://www.webercountyutah.gov/County_Recreation/" }
+  ],
+
   /* --- Who's open this week ------------------------------------------
      The date the open/closed list was last checked, "YYYY-MM-DD". */
   weekChecked: "",
@@ -157,6 +187,7 @@ window.OVE = {
     { image: "valley-sunrays-seth-miller.jpg", by: "Seth Miller", place: "Huntsville", date: "", caption: "Sun rays break through the clouds over the mountains" },
     { image: "valley-red-squirrel-feeder.jpg", by: "Shauna Miller", place: "", date: "2026-10", caption: "A red squirrel checks out who's watching from the feeder" },
     { image: "valley-storm-rainbow-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley City", date: "2026-10", caption: "A rainbow peeks through the storm clouds over the mountains" },
+    { image: "valley-sunset-trees-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley City", date: "2026-10", caption: "An orange sunset glows behind the pines and fall leaves" },
     { image: "valley-sculpture-aspens-sean-smith.jpg", by: "Sean W. Smith", place: "", date: "2026-10", caption: "A giant sculpture rises out of the golden aspens" },
     { image: "valley-fall-aspens-sean-smith.jpg", by: "Sean W. Smith", place: "", date: "2026-10", caption: "Golden aspens and dark pines on the mountainside" },
     { image: "valley-pineview-from-above-sean-smith.jpg", by: "Sean W. Smith", place: "Pineview", date: "", caption: "Pineview Reservoir and the Valley from high above" }
