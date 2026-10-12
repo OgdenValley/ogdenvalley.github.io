@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-12T18:35:17.161Z",
+ "updated": "2026-10-12T20:32:36.237Z",
  "items": [
+  {
+   "t": 1791837156236,
+   "src": "UDOT",
+   "text": "Road work: I-84 bridges crossing the UP railroad; Located just west of the eastbound I-84 rest area. Both bridges span from mileposts 90.6 - 91.2.. !!Lane Closure Alerts!! The following lane closures will require a 11 foot lane restriction... No exceptions will be provided. Eastbound single lane closure | Sat (10/3) - Sat (10/10) | Day & Night Westbound single lane closure | Tue (10/6) - Thu (10/15) | Day & Night Westbound single lane closure | Fri (10/16) - Sprin",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1791837156236,
+   "src": "National Weather Service",
+   "text": "Flood Watch until Mon 6:00 PM · Great Salt Lake Desert and Mountains; Tooele and Rush Valleys; Eastern Box Elder County; Northern Wasatch Front; Salt La",
+   "kind": "weather",
+   "link": "https://www.weather.gov/slc/"
+  },
   {
    "t": 1791815872593,
    "src": "Utah Air Quality",
@@ -24,13 +38,40 @@
   }
  ],
  "seen": {
-  "ev": {},
+  "ev": {
+   "10148": "I-84|!!Lane Closure Alerts!! The following lane closures will require a 11 foot lane restriction... No exceptions will be provided. Eastbound single lane closure | Sat (10/3) - Sat (10/10) | Day & Night Westbound single lane closure | Tue (10/6) - Thu (10/15) | Day & Night Westbound single lane closure | Fri (10/16) - Sprin"
+  },
   "al": {},
-  "cond": {},
-  "pass": {},
-  "ice": {},
+  "cond": {
+   "I-84 I-15 Jct at Riverdale to SR-89#185": "Dry · none",
+   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#186": "Dry · none",
+   "I-84 SR-167 at Mountain Green to Morgan#197": "Dry · none",
+   "SR-39 Ogden to Jct. SR-167 Trappers Loop#208": "Dry · none",
+   "SR-158 to Powder Mountain#216": "Dry · none",
+   "SR-167 Trappers Loop I-84 to Huntsville#217": "Dry · none",
+   "SR-226 to Snowbasin#219": "Dry · none",
+   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#224": "Dry · none",
+   "US-89 From Lagoon to Jct. SR-193#236": "Dry · none",
+   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#238": "Dry · none",
+   "US-89 From Jct. SR-193 to I-84#247": "Dry · none"
+  },
+  "pass": {
+   "SR-39 Monte Cristo|East of Ogden - Milepost 37 to 55.5  \nTypical Closure: Mid to Late Nov\nTypical Opening: Mid to Late May\nSR-39 Monte Cristo Weather Station\n ": "OPEN"
+  },
+  "ice": {
+   "I-84 @ MP 91 Devils Gate": 0,
+   "I-84 @ MP 97 Peterson": 0,
+   "I-84 @ Weber Canyon": 0,
+   "North Ogden Divide": 0,
+   "SR-158 @ MP 11.5 Powder Mountain": 0,
+   "SR-167 @ Trappers Loop": 0,
+   "SR-39 @ MP 14 Pineview Dam": 0,
+   "SR-39 @ MP 17.5 Huntsville": 0,
+   "SR-39 @ MP 46 Monte Cristo": 0,
+   "US-89 @ MP 406 Weber River": 0
+  },
   "nws": {
-   "Flood Watch|2026-10-11T22:35:00-06:00|2026-10-12T18:00:00-06:00": 1
+   "Flood Watch|2026-10-12T13:34:00-06:00|2026-10-12T18:00:00-06:00": 1
   },
   "air": "October 12, 2026 7:54 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
