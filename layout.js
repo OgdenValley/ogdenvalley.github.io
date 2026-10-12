@@ -52,4 +52,15 @@ if (main && mine) {
 }
 var f = document.querySelector("footer.site-foot");
 if (f) f.innerHTML = FOOT;
+/* Posted and updated dates at the bottom of each page (from pagedates.json, kept by the hourly updater) */
+if (main && !document.querySelector("[data-page-dates]") && window.fetch) {
+  fetch("pagedates.json", {cache: "no-store"}).then(function(r){ return r.ok ? r.json() : null; }).then(function(d){
+    var p = d && d.pages && d.pages[page]; if (!p || !p.posted) return;
+    var nice = function(s){ var a = String(s).split("-"); return new Date(+a[0], +a[1] - 1, +a[2]).toLocaleDateString("en-US", {month: "short", day: "numeric", year: "numeric"}); };
+    var box = document.createElement("div"); box.className = "container page-dates";
+    box.setAttribute("style", "padding-block:4px 22px;font-size:15px;color:var(--muted)");
+    box.textContent = "Posted " + nice(p.posted) + (p.updated && p.updated !== p.posted ? " \u00b7 Updated " + nice(p.updated) : "");
+    main.appendChild(box);
+  }).catch(function(){});
+}
 })();

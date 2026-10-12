@@ -5,6 +5,8 @@
      name, town ("Eden" | "Liberty" | "Huntsville Town" | "Huntsville area" | "Snowbasin" | "Powder Mountain" | "Nordic Valley"), area (when no town, e.g. "Ogden Canyon"),
      type, blurb, phone, link, address
      checked:  date a local last confirmed it, "YYYY-MM-DD"
+     Restaurants also have: food (kinds of food), season, lift: true (needs a lift or gondola ride),
+       good (good-for list), note (what a visitor should know) and factsChecked (date checked on their website).
      tags:     ["Dog-friendly patio", "Kid-friendly", ...]  (owners choose)
      news:     { text: "Pumpkin pie is back!", date: "YYYY-MM-DD" }  (owner update)
      photos:   ["file.jpg", ...]  image files uploaded to the main folder, approved only
@@ -24,6 +26,10 @@ window.OVE_PLACES = {
  "restaurants": [
   {
    "name": "The Oaks",
+   "food": ["Burgers & casual", "Sweets & ice cream"],
+   "good": ["Takeout"],
+   "note": "Reopened under new owners in Nov. 2025. Call for hours before you go.",
+   "factsChecked": "2026-10-11",
    "area": "Ogden Canyon",
    "type": "Historic canyon restaurant & ice cream",
    "blurb": "One of Utah's oldest restaurants, welcoming visitors in Ogden Canyon since it was founded as a mountain resort in 1907. Homemade meals, burgers and Farr's ice cream; reopened under new owners David and Cora Neal.",
@@ -34,6 +40,9 @@ window.OVE_PLACES = {
   },
   {
    "name": "Bower Lodge",
+   "food": ["Sit-down dinner", "Drinks & apres"],
+   "note": "May be closed: its online ordering page said \"temporarily closed, reopen date pending\" when we checked in Oct. 2026. Call before you go.",
+   "factsChecked": "2026-10-11",
    "town": "Eden",
    "type": "Restaurant & bar",
    "blurb": "Restaurant and bar at Wolf Creek with share plates, entrees and live music nights.",
@@ -43,6 +52,10 @@ window.OVE_PLACES = {
   },
   {
    "name": "Carlos & Harley's Fresh Mex Cantina",
+   "food": ["Mexican"],
+   "good": ["Reservations", "Takeout"],
+   "note": "The restaurant recommends reservations.",
+   "factsChecked": "2026-10-11",
    "town": "Eden",
    "type": "Mexican / Tex-Mex & bar",
    "blurb": "Mexican and Tex-Mex restaurant with a full bar in a restored 1880s building that was formerly the Eden General Store.",
@@ -53,6 +66,11 @@ window.OVE_PLACES = {
   },
   {
    "name": "Chris'",
+   "food": ["Burgers & casual", "Sweets & ice cream"],
+   "season": "Seasonal",
+   "good": ["Takeout"],
+   "note": "Hours change with the season. Call before you go.",
+   "factsChecked": "2026-10-11",
    "town": "Huntsville area",
    "type": "Burgers & shakes (seasonal)",
    "blurb": "Casual seasonal stop near Pineview Reservoir known for raspberry shakes, burgers and fries.",
@@ -62,6 +80,10 @@ window.OVE_PLACES = {
   },
   {
    "name": "Earl's Lodge (Snowbasin)",
+   "food": ["Resort food court"],
+   "good": ["Patio", "Gluten-free options"],
+   "note": "At the Snowbasin base by the Needles Gondola. No lift ride needed.",
+   "factsChecked": "2026-10-11",
    "town": "Snowbasin",
    "type": "Base lodge dining",
    "blurb": "Slopeside base-area lodge at Snowbasin with a variety of freshly made food.",
@@ -72,6 +94,10 @@ window.OVE_PLACES = {
   },
   {
    "name": "Eats of Eden",
+   "food": ["Pizza", "Burgers & casual"],
+   "good": ["Takeout"],
+   "note": "Usually closed Sundays and Mondays. Check their site for hours.",
+   "factsChecked": "2026-10-11",
    "town": "Eden",
    "type": "Pizza, burgers & sandwiches",
    "blurb": "Restaurant known for homemade breads, buns and pizza crust, serving pizza, burgers, sandwiches, pasta and salads.",
@@ -82,6 +108,9 @@ window.OVE_PLACES = {
   },
   {
    "name": "First Lift Coffee",
+   "food": ["Coffee & breakfast"],
+   "note": "Inside Compass Rose Lodge, and open to everyone, not just hotel guests.",
+   "factsChecked": "2026-10-11",
    "town": "Huntsville Town",
    "type": "Coffee",
    "blurb": "Coffee shop at Compass Rose Lodge serving coffee, tea, grilled sandwiches, soups and pastries.",
@@ -92,6 +121,10 @@ window.OVE_PLACES = {
   },
   {
    "name": "Hank's Bistro & Brew",
+   "food": ["Burgers & casual"],
+   "good": ["Takeout"],
+   "note": "Sunday brunch, and online ordering for pickup.",
+   "factsChecked": "2026-10-11",
    "town": "Eden",
    "type": "Comfort food, beer & wine",
    "blurb": "Family-owned comfort-food restaurant that moved from a food truck to a storefront in Eden; serves beer and wine.",
@@ -102,6 +135,10 @@ window.OVE_PLACES = {
   },
   {
    "name": "Hidden Lake Lodge & Twists Mountain Market (Powder Mountain)",
+   "food": ["Resort food court"],
+   "season": "Winter (ski season)",
+   "note": "Near the top of Powder Mountain. Closed in summer.",
+   "factsChecked": "2026-10-11",
    "town": "Powder Mountain",
    "type": "On-mountain lodge (winter)",
    "blurb": "Lodge at the top of the mountain serving burritos, butter chicken, nachos and soups, with a snack market inside.",
@@ -112,6 +149,12 @@ window.OVE_PLACES = {
   },
   {
    "name": "John Paul Lodge (Snowbasin)",
+   "food": ["Resort food court"],
+   "season": "Winter (ski season)",
+   "lift": true,
+   "good": ["Gluten-free options"],
+   "note": "At the top of the John Paul Express lift. Non-skiers can buy a sightseeing lift ticket.",
+   "factsChecked": "2026-10-11",
    "town": "Snowbasin",
    "type": "On-mountain lodge (winter)",
    "blurb": "Winter-only lodge at the top of the John Paul Express serving Bavarian-style food.",
@@ -122,6 +165,10 @@ window.OVE_PLACES = {
   },
   {
    "name": "Links Bistro at Wolf Creek Resort",
+   "food": ["Coffee & breakfast", "Burgers & casual"],
+   "good": ["Patio"],
+   "note": "Breakfast all day, on the Wolf Creek golf course patio.",
+   "factsChecked": "2026-10-11",
    "town": "Eden",
    "type": "Golf course bistro",
    "blurb": "Breakfast and lunch spot at the Wolf Creek Resort golf course; listings note it is typically closed in winter.",
@@ -132,6 +179,10 @@ window.OVE_PLACES = {
   },
   {
    "name": "Lucky Slice (Powder Mountain)",
+   "food": ["Pizza"],
+   "season": "Winter (ski season)",
+   "note": "In Sundown Lodge, and open through night skiing.",
+   "factsChecked": "2026-10-11",
    "town": "Powder Mountain",
    "type": "Pizza (winter)",
    "blurb": "Slopeside pizza counter at Sundown Lodge, open through night skiing.",
@@ -142,6 +193,10 @@ window.OVE_PLACES = {
   },
   {
    "name": "Mad Moose Cafe",
+   "food": ["Coffee & breakfast", "Burgers & casual"],
+   "good": ["Kids welcome", "Takeout", "Patio"],
+   "note": "Kids' meals come with a cookie or ice cream.",
+   "factsChecked": "2026-10-11",
    "town": "Eden",
    "type": "Cafe & coffee",
    "blurb": "Cafe serving coffee roasted in-house along with paninis, burgers, salads and breakfast.",
@@ -152,6 +207,11 @@ window.OVE_PLACES = {
   },
   {
    "name": "Needles Lodge (Snowbasin)",
+   "food": ["Resort food court"],
+   "lift": true,
+   "good": ["Patio", "Reservations"],
+   "note": "At the top of the Needles Gondola, about 8,700 feet up. In summer it opens for Sunday brunch (reservations required).",
+   "factsChecked": "2026-10-11",
    "town": "Snowbasin",
    "type": "Mountaintop restaurant",
    "blurb": "Restaurant at about 8,700 feet at the top of Snowbasin's Needles Gondola.",
@@ -162,6 +222,10 @@ window.OVE_PLACES = {
   },
   {
    "name": "Nordic Valley Snack Shack & food trucks",
+   "food": ["Resort food court"],
+   "good": ["Patio"],
+   "note": "Snack shack plus rotating food trucks, with fire pits and heaters outside.",
+   "factsChecked": "2026-10-11",
    "town": "Nordic Valley",
    "type": "Snack bar & rotating food trucks",
    "blurb": "Resort snack shack plus rotating food trucks (listed: Bad Boy Burger Co., Fry Me To The Moon, Green Goat Kava and Coffee).",
@@ -172,6 +236,10 @@ window.OVE_PLACES = {
   },
   {
    "name": "Ogden Valley Pizza",
+   "food": ["Pizza"],
+   "good": ["Kids welcome", "Takeout"],
+   "note": "Carryout and delivery ordering online.",
+   "factsChecked": "2026-10-11",
    "town": "Eden",
    "type": "Pizza",
    "blurb": "Family-owned pizzeria offering made-to-order pies, wings and salads, with gluten-free crust available.",
@@ -182,6 +250,10 @@ window.OVE_PLACES = {
   },
   {
    "name": "Peddler's Cafe & Catering (Eden)",
+   "food": ["Coffee & breakfast"],
+   "good": ["Takeout"],
+   "note": "The Eden location is pickup only.",
+   "factsChecked": "2026-10-11",
    "town": "Eden",
    "type": "Cafe, breakfast & lunch",
    "blurb": "Cafe and caterer serving coffee, breakfast and lunch at its Eden location, with pickup ordering online; it also has an Ogden location.",
@@ -192,6 +264,9 @@ window.OVE_PLACES = {
   },
   {
    "name": "Saddlebag Saloon",
+   "food": ["Bar & grill", "Drinks & apres"],
+   "note": "Small, locally owned bar. Hours vary, so call before you go.",
+   "factsChecked": "2026-10-11",
    "town": "Eden",
    "type": "Bar / saloon",
    "blurb": "Bar in the Eden commercial cluster on Highway 162.",
@@ -201,6 +276,9 @@ window.OVE_PLACES = {
   },
   {
    "name": "Shooting Star Saloon",
+   "food": ["Bar & grill", "Burgers & casual"],
+   "note": "Known for the Star Burger.",
+   "factsChecked": "2026-10-11",
    "town": "Huntsville Town",
    "type": "Saloon & burgers",
    "blurb": "Saloon dating to 1879, described as Utah's oldest continuously operating saloon, known for its Star Burger.",
@@ -210,6 +288,11 @@ window.OVE_PLACES = {
   },
   {
    "name": "Strawberry Patio (Snowbasin)",
+   "food": ["Resort food court"],
+   "season": "Winter (ski season)",
+   "good": ["Patio"],
+   "note": "At Snowbasin's Strawberry base by the Strawberry Gondola, with fire pits.",
+   "factsChecked": "2026-10-11",
    "town": "Snowbasin",
    "type": "Open-air food park (winter)",
    "blurb": "Winter-only open-air food park at Snowbasin with 180-plus seats and several food options.",
@@ -220,6 +303,10 @@ window.OVE_PLACES = {
   },
   {
    "name": "The Cinnabar (Snowbasin)",
+   "food": ["Drinks & apres", "Bar & grill"],
+   "good": ["Reservations"],
+   "note": "Full-bar gastropub inside Earl's Lodge at the Snowbasin base.",
+   "factsChecked": "2026-10-11",
    "town": "Snowbasin",
    "type": "Shared plates & cocktails",
    "blurb": "Base-area bar and restaurant at Snowbasin serving shared plates and cocktails.",
@@ -230,6 +317,11 @@ window.OVE_PLACES = {
   },
   {
    "name": "Timberline Cafeteria & The Powder Keg (Powder Mountain)",
+   "food": ["Resort food court", "Drinks & apres"],
+   "season": "Winter (ski season)",
+   "good": ["Live music", "Takeout"],
+   "note": "By the main parking. The Powder Keg bar is downstairs, with live music in ski season.",
+   "factsChecked": "2026-10-11",
    "town": "Powder Mountain",
    "type": "Resort cafeteria & apres bar (winter)",
    "blurb": "Timberline Lodge cafeteria with pizza, burgers and soups, with The Powder Keg bar downstairs offering local beer and Asian dishes.",

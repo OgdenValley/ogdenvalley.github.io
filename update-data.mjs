@@ -4,6 +4,7 @@
 // Files are only rewritten when something actually changed.
 import fs from "node:fs";
 import { execSync } from "node:child_process";
+import crypto from "node:crypto";
 
 function cleanDesc(d){ if(!d) return ""; return d.replace(/<br\s*\/?>/gi,"\n").replace(/<[^>]+>/g,"").replace(/&nbsp;/g," ").replace(/&amp;/g,"&").replace(/\n{3,}/g,"\n\n").trim().slice(0,600); }
 function firstUrl(d){ const m = String(d||"").match(/https?:\/\/[^\s"<>)]+/); return m ? m[0] : ""; }
@@ -899,6 +900,29 @@ async function forecast(){
   writeIfChanged("forecast.json", out);
 }
 
+/* ---------- page dates + sitemap ----------
+   pagedates.json: when each page was first posted and last changed (shown at the bottom of each page).
+   sitemap.xml: the list of pages for Google, with the date each one last changed. */
+const NOINDEX = new Set(["404.html", "poster.html", "know-how-feature.html", "search.html"]);
+const LIVE_PAGES = new Set(["index.html", "events.html", "weekend.html", "safety.html", "kids.html", "yard-sales.html", "live-music.html", "live.html", "night-sky.html"]);
+function pageDates(){
+  const today = new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date());
+  const old = oldJSON("pagedates.json") || {}; const pages = old.pages || {};
+  const files = fs.readdirSync(".").filter(f => f.endsWith(".html")).sort();
+  for (const f of files) {
+    const h = crypto.createHash("sha1").update(fs.readFileSync(f)).digest("hex").slice(0, 12);
+    if (!pages[f]) pages[f] = {posted: today, updated: today, hash: h};
+    else if (pages[f].hash !== h) { pages[f].hash = h; pages[f].updated = today; }
+  }
+  for (const f of Object.keys(pages)) if (!files.includes(f)) delete pages[f];
+  writeIfChanged("pagedates.json", {updated: new Date().toISOString(), pages});
+  const base = "https://ogdenvalleyevent.com/";
+  const xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +
+    files.filter(f => !NOINDEX.has(f)).map(f => "  <url><loc>" + base + (f === "index.html" ? "" : f) + "</loc><lastmod>" + (LIVE_PAGES.has(f) ? today : pages[f].updated) + "</lastmod></url>").join("\n") + "\n</urlset>\n";
+  let cur = ""; try { cur = fs.readFileSync("sitemap.xml", "utf8"); } catch {}
+  if (cur !== xml) { fs.writeFileSync("sitemap.xml", xml); console.log("sitemap.xml written"); } else console.log("sitemap.xml unchanged");
+}
+
 await calendars();
 await sky();
 await safety();
@@ -918,8 +942,9 @@ await tips();
 await yardsales();
 await guessreveal();
 await geocode();
+try { pageDates(); } catch (e) { console.log("page dates failed:", e.message); }
 
 // Stage every data file this script writes (yard sales, forecast and any new ones),
 // so the hourly job saves them without anyone editing the workflow file.
-try { execSync('git add -- "*.json"', {stdio: "inherit"}); console.log("staged all .json data files"); }
+try { execSync('git add -- "*.json" sitemap.xml', {stdio: "inherit"}); console.log("staged all .json data files"); }
 catch (e) { console.log("git add skipped:", e.message); }

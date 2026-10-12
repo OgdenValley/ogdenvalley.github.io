@@ -48,8 +48,22 @@ function calLinks(id){ if (!id) return null; const enc = encodeURIComponent(id);
            https: "https://calendar.google.com/calendar/ical/" + enc + "/public/basic.ics",
            view: "https://calendar.google.com/calendar/embed?src=" + enc + "&ctz=" + encodeURIComponent(TZ) }; }
 async function loadEvents(){
-  try { const r = await fetch("events.json", {cache: "no-store"}); if (!r.ok) throw 0; return await r.json(); }
+  try { const r = await fetch("events.json", {cache: "no-store"}); if (!r.ok) throw 0; const d = await r.json(); eventsLD(d); return d; }
   catch (e) { return null; }
+}
+/* Labels each upcoming event for Google (event name, date, place) so it can show in Google's event listings. */
+function eventsLD(data){
+  try { if (document.getElementById("events-ld")) return;
+    const iso = (t, allDay) => allDay ? new Date(t).toLocaleDateString("en-CA", {timeZone: TZ}) : new Date(t).toISOString();
+    const list = allEvents(data).slice(0, 60).map(e => { const o = {"@type": "Event", name: e.t, startDate: iso(e.s, e.allDay), endDate: iso(e.allDay ? e.e - 1 : e.e, e.allDay),
+        eventStatus: "https://schema.org/EventScheduled", eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
+        location: {"@type": "Place", name: (e.loc || "Ogden Valley").split(/[,@]/)[0].trim() || "Ogden Valley", address: e.loc || ((C.calendars && C.calendars[e.cal] && C.calendars[e.cal].name) || "Ogden Valley") + ", Utah"},
+        organizer: {"@type": "Organization", name: e.src || "Ogden Valley Info & Events", url: "https://ogdenvalleyevent.com/"} };
+      if (e.desc) o.description = e.desc.slice(0, 300); if (e.url) o.url = e.url; return o; });
+    if (!list.length) return;
+    const sc = document.createElement("script"); sc.type = "application/ld+json"; sc.id = "events-ld";
+    sc.textContent = JSON.stringify({"@context": "https://schema.org", "@graph": list}); document.head.appendChild(sc);
+  } catch (e) {}
 }
 function allEvents(data, which){
   const out = [];
@@ -126,6 +140,9 @@ function listMeta(p){
   if (p.news && p.news.text) kids.push(el("div", {class: "news"}, [el("b", {text: "From the owner" + (p.news.date ? ", " + niceDay(p.news.date) : "") + ": "}), document.createTextNode(p.news.text)]));
   if (p.badges && p.badges.length) kids.push(el("div", {class: "tags"}, p.badges.map(t => el("span", {class: "tag badge-owner", title: "As told to us by the owner", text: "✓ " + t}))));
   if (p.tags && p.tags.length) kids.push(el("div", {class: "tags"}, p.tags.map(t => el("span", {class: "tag", text: t}))));
+  /* What visitors need to know (food listings): checked on the place's own website */
+  const facts = [].concat(p.food || [], p.season ? [p.season] : [], p.lift ? ["🚡 Lift or gondola ride needed"] : [], p.good || []);
+  if (facts.length) kids.push(el("div", {class: "tags", title: p.factsChecked ? "Checked on their website " + niceDay(p.factsChecked) : ""}, facts.map(t => el("span", {class: "tag" + (t.indexOf("🚡") === 0 ? " badge-owner" : ""), text: t}))));
   if (p.checked) kids.push(el("div", {class: "checked", text: "✓ Checked by a local " + niceDay(p.checked)}));
   return kids.length ? el("div", {class: "listmeta"}, kids) : null;
 }
