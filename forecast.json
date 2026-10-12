@@ -1,101 +1,103 @@
 {
- "updated": "2026-10-12T05:32:29.152Z",
+ "updated": "2026-10-12T06:41:57.447Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
-  {
-   "date": "2026-10-11",
-   "label": "Sun",
-   "md": "Oct 11",
-   "high": null,
-   "low": 35,
-   "pop": 97,
-   "short": "Patchy Blowing Dust",
-   "both": "Patchy Blowing Dust",
-   "snow": false,
-   "wind": "2 to 13 mph"
-  },
   {
    "date": "2026-10-12",
    "label": "Mon",
    "md": "Oct 12",
-   "high": 59,
-   "low": 32,
+   "high": 57,
+   "low": 31,
    "pop": 99,
    "short": "Showers And Thunderstorms",
    "both": "Showers And Thunderstorms / Showers And Thunderstorms",
    "snow": false,
-   "wind": "2 to 6 mph"
+   "wind": "2 to 8 mph"
   },
   {
    "date": "2026-10-13",
    "label": "Tue",
    "md": "Oct 13",
-   "high": 51,
-   "low": 30,
-   "pop": 97,
+   "high": 50,
+   "low": 29,
+   "pop": 96,
    "short": "Showers And Thunderstorms",
-   "both": "Showers And Thunderstorms / Rain Showers",
+   "both": "Showers And Thunderstorms / Chance Rain Showers",
    "snow": false,
-   "wind": "2 mph"
+   "wind": "3 mph"
   },
   {
    "date": "2026-10-14",
    "label": "Wed",
    "md": "Oct 14",
-   "high": 53,
+   "high": 54,
    "low": 29,
-   "pop": 57,
-   "short": "Rain Showers Likely",
-   "both": "Rain Showers Likely / Slight Chance Rain Showers",
-   "snow": false,
-   "wind": "1 mph"
+   "pop": 42,
+   "short": "Scattered Rain And Snow Showers",
+   "both": "Scattered Rain And Snow Showers / Partly Cloudy",
+   "snow": true,
+   "wind": "0 to 3 mph"
   },
   {
    "date": "2026-10-15",
    "label": "Thu",
    "md": "Oct 15",
    "high": 62,
-   "low": 31,
-   "pop": 1,
+   "low": 30,
+   "pop": 0,
    "short": "Sunny",
    "both": "Sunny / Mostly Clear",
    "snow": false,
-   "wind": "2 mph"
+   "wind": "0 to 3 mph"
   },
   {
    "date": "2026-10-16",
    "label": "Fri",
    "md": "Oct 16",
-   "high": 66,
-   "low": 32,
-   "pop": 1,
+   "high": 65,
+   "low": 31,
+   "pop": 0,
    "short": "Sunny",
    "both": "Sunny / Clear",
    "snow": false,
-   "wind": "0 to 8 mph"
+   "wind": "0 to 7 mph"
   },
   {
    "date": "2026-10-17",
    "label": "Sat",
    "md": "Oct 17",
-   "high": 67,
-   "low": 34,
-   "pop": 1,
+   "high": 66,
+   "low": 33,
+   "pop": 0,
    "short": "Sunny",
    "both": "Sunny / Mostly Clear",
    "snow": false,
-   "wind": "2 mph"
+   "wind": "1 mph"
+  },
+  {
+   "date": "2026-10-18",
+   "label": "Sun",
+   "md": "Oct 18",
+   "high": 67,
+   "low": null,
+   "pop": 0,
+   "short": "Sunny",
+   "both": "Sunny",
+   "snow": false,
+   "wind": "1 mph"
   }
  ],
- "today": "Tonight: A chance of rain showers and patchy blowing dust before midnight, then patchy blowing dust and showers and thunderstorms. Cloudy. Low around 35, with temperatures rising to around 41 overnight. East southeast wind 2 to 13 mph. Chance of precipitation is 100%. New rainfall amounts between a half and three quarters of an inch possible.",
- "valleySnowDays": [],
- "snowLevelFt": 7700,
+ "today": "Overnight: Patchy blowing dust and showers and thunderstorms. Cloudy. Low around 35, with temperatures rising to around 41 overnight. Southeast wind around 5 mph. Chance of precipitation is 90%. New rainfall amounts between a quarter and half of an inch possible.",
+ "valleySnowDays": [
+  "Wed"
+ ],
+ "snowLevelFt": 6800,
  "snowInches48": 0,
- "forecastIssued": "2026-10-12T02:56:58+00:00",
+ "forecastIssued": "2026-10-12T06:31:36+00:00",
  "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
  "source": "National Weather Service Salt Lake City",
  "status": {
-  "forecast": "failed",
+  "forecast": "ok",
   "grid": "ok"
  }
 }
