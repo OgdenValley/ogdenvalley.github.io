@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T18:35:14.435Z",
+ "updated": "2026-10-12T19:30:28.731Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
@@ -7,60 +7,60 @@
    "label": "Mon",
    "md": "Oct 12",
    "high": 57,
-   "low": 31,
+   "low": 32,
    "pop": 99,
    "short": "Showers And Thunderstorms",
    "both": "Showers And Thunderstorms / Showers And Thunderstorms",
    "snow": false,
-   "wind": "3 mph"
+   "wind": "2 mph"
   },
   {
    "date": "2026-10-13",
    "label": "Tue",
    "md": "Oct 13",
-   "high": 50,
+   "high": 52,
    "low": 29,
-   "pop": 96,
+   "pop": 94,
    "short": "Showers And Thunderstorms",
-   "both": "Showers And Thunderstorms / Chance Rain Showers",
+   "both": "Showers And Thunderstorms / Rain Showers Likely",
    "snow": false,
-   "wind": "3 mph"
+   "wind": "0 to 3 mph"
   },
   {
    "date": "2026-10-14",
    "label": "Wed",
    "md": "Oct 14",
-   "high": 54,
-   "low": 29,
-   "pop": 42,
-   "short": "Scattered Rain And Snow Showers",
-   "both": "Scattered Rain And Snow Showers / Partly Cloudy",
-   "snow": true,
+   "high": 56,
+   "low": 30,
+   "pop": 24,
+   "short": "Partly Sunny then Slight Chance Rain Showers",
+   "both": "Partly Sunny then Slight Chance Rain Showers / Partly Cloudy",
+   "snow": false,
    "wind": "0 to 3 mph"
   },
   {
    "date": "2026-10-15",
    "label": "Thu",
    "md": "Oct 15",
-   "high": 62,
+   "high": 63,
    "low": 30,
-   "pop": 0,
+   "pop": 1,
    "short": "Sunny",
    "both": "Sunny / Mostly Clear",
    "snow": false,
-   "wind": "0 to 3 mph"
+   "wind": "0 to 5 mph"
   },
   {
    "date": "2026-10-16",
    "label": "Fri",
    "md": "Oct 16",
    "high": 65,
-   "low": 31,
+   "low": 32,
    "pop": 0,
    "short": "Sunny",
    "both": "Sunny / Clear",
    "snow": false,
-   "wind": "0 to 7 mph"
+   "wind": "0 to 8 mph"
   },
   {
    "date": "2026-10-17",
@@ -72,7 +72,7 @@
    "short": "Sunny",
    "both": "Sunny / Mostly Clear",
    "snow": false,
-   "wind": "1 mph"
+   "wind": "2 mph"
   },
   {
    "date": "2026-10-18",
@@ -80,20 +80,18 @@
    "md": "Oct 18",
    "high": 67,
    "low": 34,
-   "pop": 2,
+   "pop": 1,
    "short": "Sunny",
    "both": "Sunny / Mostly Clear",
    "snow": false,
    "wind": "1 mph"
   }
  ],
- "today": "Columbus Day: Showers and thunderstorms. Cloudy. High near 57, with temperatures falling to around 55 in the afternoon. Southwest wind around 3 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible.",
- "valleySnowDays": [
-  "Wed"
- ],
- "snowLevelFt": 6800,
+ "today": "Columbus Day: Showers and thunderstorms. Cloudy. High near 57, with temperatures falling to around 54 in the afternoon. Southwest wind around 2 mph. Chance of precipitation is 100%. New rainfall amounts between a tenth and quarter of an inch possible.",
+ "valleySnowDays": [],
+ "snowLevelFt": 7300,
  "snowInches48": 0,
- "forecastIssued": "2026-10-12T06:31:36+00:00",
+ "forecastIssued": "2026-10-12T18:31:39+00:00",
  "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
  "source": "National Weather Service Salt Lake City",
  "status": {
