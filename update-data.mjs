@@ -908,7 +908,7 @@ const LIVE_PAGES = new Set(["index.html", "events.html", "weekend.html", "safety
 function pageDates(){
   const today = new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date());
   const old = oldJSON("pagedates.json") || {}; const pages = old.pages || {};
-  const files = fs.readdirSync(".").filter(f => f.endsWith(".html")).sort();
+  const files = fs.readdirSync(".").filter(f => f.endsWith(".html") && !/^google[0-9a-f]+\.html$/.test(f)).sort(); // Google's verification files stay off the sitemap
   for (const f of files) {
     const h = crypto.createHash("sha1").update(fs.readFileSync(f)).digest("hex").slice(0, 12);
     if (!pages[f]) pages[f] = {posted: today, updated: today, hash: h};
