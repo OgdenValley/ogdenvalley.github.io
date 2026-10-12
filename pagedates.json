@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T03:34:11.101Z",
+ "updated": "2026-10-12T04:33:39.363Z",
  "pages": {
   "404.html": {
    "posted": "2026-10-06",
@@ -84,7 +84,7 @@
   "index.html": {
    "posted": "2026-10-06",
    "updated": "2026-10-11",
-   "hash": "a3b6f4422d81"
+   "hash": "eebb21d47aa7"
   },
   "jobs.html": {
    "posted": "2026-10-07",
@@ -245,11 +245,6 @@
    "posted": "2026-10-09",
    "updated": "2026-10-09",
    "hash": "349df3eda585"
-  },
-  "google5d1cf67be9c72938.html": {
-   "posted": "2026-10-11",
-   "updated": "2026-10-11",
-   "hash": "f1615c8f6ef5"
   }
  }
 }
