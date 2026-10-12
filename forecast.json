@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T03:33:56.597Z",
+ "updated": "2026-10-12T05:32:29.152Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
@@ -95,7 +95,7 @@
  "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
  "source": "National Weather Service Salt Lake City",
  "status": {
-  "forecast": "ok",
+  "forecast": "failed",
   "grid": "ok"
  }
 }
