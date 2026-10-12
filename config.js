@@ -221,7 +221,8 @@ window.OVE = {
        place: "Pineview", date: "Oct 2026", by: "Jane D." } */
   skyPhotos: [
     { image: "sky-logan-peak-moonrise-1.jpg", title: "Moonrise behind Logan Peak", place: "Logan", date: "Sept. 26, 2026", by: "Jim Brown" },
-    { image: "sky-logan-peak-moonrise-2.jpg", title: "Full moon over Logan Peak", place: "Logan", date: "Sept. 26, 2026", by: "Jim Brown" }
+    { image: "sky-logan-peak-moonrise-2.jpg", title: "Full moon over Logan Peak", place: "Logan", date: "Sept. 26, 2026", by: "Jim Brown" },
+    { image: "sky-milky-way-pines-doxey.jpg", title: "Milky Way over the pines", place: "", date: "", by: "Tom Doxey" }
   ],
 
   /* --- Coloring pages (change each month) ---------------------------- */
