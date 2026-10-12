@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T16:32:13.329Z",
+ "updated": "2026-10-12T18:35:14.435Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
@@ -12,7 +12,7 @@
    "short": "Showers And Thunderstorms",
    "both": "Showers And Thunderstorms / Showers And Thunderstorms",
    "snow": false,
-   "wind": "2 to 8 mph"
+   "wind": "3 mph"
   },
   {
    "date": "2026-10-13",
@@ -87,7 +87,7 @@
    "wind": "1 mph"
   }
  ],
- "today": "Columbus Day: Showers and thunderstorms. Cloudy. High near 57, with temperatures falling to around 55 in the afternoon. Southwest wind 2 to 8 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible.",
+ "today": "Columbus Day: Showers and thunderstorms. Cloudy. High near 57, with temperatures falling to around 55 in the afternoon. Southwest wind around 3 mph. Chance of precipitation is 100%. New rainfall amounts between a quarter and half of an inch possible.",
  "valleySnowDays": [
   "Wed"
  ],

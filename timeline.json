@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T14:37:52.593Z",
+ "updated": "2026-10-12T18:35:17.161Z",
  "items": [
   {
    "t": 1791815872593,
@@ -21,20 +21,6 @@
    "text": "Weber County forecast: Sunday good · Monday good · Tuesday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1791741600000,
-   "src": "National Weather Service",
-   "text": "Wind Advisory until Mon 12:00 AM · Wasatch Mountains I-80 North; Wasatch Mountains South of I-80; Western Uinta Mountains",
-   "kind": "weather",
-   "link": "https://www.weather.gov/slc/"
-  },
-  {
-   "t": 1791741600000,
-   "src": "National Weather Service",
-   "text": "Wind Advisory until Sun 9:00 PM · Northern Wasatch Front; Salt Lake Valley; Utah Valley; Wasatch Back",
-   "kind": "weather",
-   "link": "https://www.weather.gov/slc/"
   }
  ],
  "seen": {
