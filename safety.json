@@ -1,18 +1,6 @@
 {
- "updated": "2026-10-12T00:42:31.051Z",
+ "updated": "2026-10-12T02:31:24.097Z",
  "weather": [
-  {
-   "event": "Wind Advisory",
-   "severity": "Moderate",
-   "headline": "Wind Advisory issued October 11 at 10:31AM MDT until October 11 at 9:00PM MDT by NWS Salt Lake City UT",
-   "area": "Northern Wasatch Front; Salt Lake Valley; Utah Valley; Wasatch Back",
-   "starts": "2026-10-11T12:00:00-06:00",
-   "ends": "2026-10-11T21:00:00-06:00",
-   "text": "* WHAT...South winds 20 to 30 mph with gusts up to 55 mph expected.\n\n* WHERE...Northern Wasatch Front, Salt Lake Valley, Utah Valley, and\nWasatch Back.\n\n* WHEN...Until 9 PM MDT this evening.\n\n* IMPACTS...Gusty winds will blow around unsecured objects and a few\npower outages may result.",
-   "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles and vehicles with trailers. Use extra caution.",
-   "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
-   "source": "National Weather Service"
-  },
   {
    "event": "Wind Advisory",
    "severity": "Moderate",
@@ -21,6 +9,18 @@
    "starts": "2026-10-11T12:00:00-06:00",
    "ends": "2026-10-12T00:00:00-06:00",
    "text": "* WHAT...South winds 25 to 35 mph with gusts up to 70 mph expected.\n\n* WHERE...The Wasatch Mountains, and Western Uinta Mountains.\n\n* WHEN...Until midnight MDT tonight.\n\n* IMPACTS...Gusty winds will blow around unsecured objects and a few\npower outages may result.",
+   "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles and vehicles with trailers. Use extra caution.",
+   "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
+   "source": "National Weather Service"
+  },
+  {
+   "event": "Wind Advisory",
+   "severity": "Moderate",
+   "headline": "Wind Advisory issued October 11 at 10:31AM MDT until October 11 at 9:00PM MDT by NWS Salt Lake City UT",
+   "area": "Northern Wasatch Front; Salt Lake Valley; Utah Valley; Wasatch Back",
+   "starts": "2026-10-11T12:00:00-06:00",
+   "ends": "2026-10-11T21:00:00-06:00",
+   "text": "* WHAT...South winds 20 to 30 mph with gusts up to 55 mph expected.\n\n* WHERE...Northern Wasatch Front, Salt Lake Valley, Utah Valley, and\nWasatch Back.\n\n* WHEN...Until 9 PM MDT this evening.\n\n* IMPACTS...Gusty winds will blow around unsecured objects and a few\npower outages may result.",
    "instruction": "Winds this strong can make driving difficult, especially for high\nprofile vehicles and vehicles with trailers. Use extra caution.",
    "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
    "source": "National Weather Service"
