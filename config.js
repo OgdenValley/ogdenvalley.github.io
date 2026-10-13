@@ -228,10 +228,10 @@ window.OVE = {
   /* --- Coloring pages (change each month) ---------------------------- */
   coloringMonth: "October 2026",
   coloringPages: [
-    { file: "coloring-moose-ghost.svg", title: "A moose dressed as a ghost" },
-    { file: "coloring-monster-pumpkins.svg", title: "A friendly monster at the pumpkin patch" },
-    { file: "coloring-owl-witch.svg", title: "Owl is ready for trick-or-treat" },
-    { file: "coloring-bear-pumpkin.svg", title: "Bear carves a jack-o'-lantern" }
+    { file: "coloring-moose-ghost.png", title: "A moose dressed as a ghost" },
+    { file: "coloring-monster-pumpkins.png", title: "A friendly monster at the pumpkin patch" },
+    { file: "coloring-owl-witch.png", title: "Owl is ready for trick-or-treat" },
+    { file: "coloring-bear-pumpkin.png", title: "Bear carves a jack-o'-lantern" }
   ],
 
   /* --- Puzzles: word searches -------------------------------------------
