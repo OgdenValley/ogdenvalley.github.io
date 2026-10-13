@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T00:44:19.338Z",
+ "updated": "2026-10-13T05:32:38.844Z",
  "items": [
   {
    "t": 1791852259337,
@@ -28,13 +28,6 @@
    "text": "Weber County forecast: Monday good · Tuesday good · Wednesday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1791783151399,
-   "src": "National Weather Service",
-   "text": "Flood Watch until Mon 6:00 PM · Great Salt Lake Desert and Mountains; Tooele and Rush Valleys; Eastern Box Elder County; Northern Wasatch Front; Salt La",
-   "kind": "weather",
-   "link": "https://www.weather.gov/slc/"
   }
  ],
  "seen": {
