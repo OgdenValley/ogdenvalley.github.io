@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T21:40:29.882Z",
+ "updated": "2026-10-13T22:41:31.217Z",
  "source": "Utah Department of Transportation (UDOT Traffic)",
  "link": "https://udottraffic.utah.gov/",
  "status": {
@@ -12,18 +12,36 @@
  },
  "events": [
   {
+   "id": "36859",
+   "type": "accidentsAndIncidents",
+   "sub": "traffic incident",
+   "road": "SR 39",
+   "dir": "EB",
+   "desc": "Crash, EB Ogden Canyon at MP 10 (SR-39, Weber County). Left Lane (of 2 Lanes) Blocked. SR-39 EB: Left Lane (of 2 Lanes) Blocked. SR-39 WB: No Lanes Blocked..",
+   "loc": "EB Ogden Canyon at MP 10 (SR-39, Weber County)",
+   "county": "Weber",
+   "full": false,
+   "severity": "Minor",
+   "reported": 1791927972000,
+   "updated": 1791927987000,
+   "ends": null,
+   "lat": 41.2398796081543,
+   "lng": -111.905876159668,
+   "detour": ""
+  },
+  {
    "id": "36834",
    "type": "roadwork",
    "sub": "",
    "road": "SR 39",
    "dir": "",
-   "desc": "!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 day and night for about a quarter mile between The Oaks Restaurant and the Ogden Canyon Water Treatment Plant. Motorists can expect one-way alte",
+   "desc": "!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at ni",
    "loc": "SR-39 | Ogden Canyon | Start Milepost: 12.9 - End Milepost 13.3",
    "county": "Weber",
    "full": false,
    "severity": "Unknown",
    "reported": 1792972800000,
-   "updated": 1791886316000,
+   "updated": 1791907274000,
    "ends": 1807747200000,
    "lat": 41.254635,
    "lng": -111.856559,
@@ -55,7 +73,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791927084000
+   "updated": 1791930668000
   },
   {
    "id": "186",
@@ -63,7 +81,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791927084000
+   "updated": 1791930668000
   },
   {
    "id": "197",
@@ -71,7 +89,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791927084000
+   "updated": 1791930668000
   },
   {
    "id": "208",
@@ -79,7 +97,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791927084000
+   "updated": 1791930668000
   },
   {
    "id": "216",
@@ -87,7 +105,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791927084000
+   "updated": 1791930668000
   },
   {
    "id": "217",
@@ -95,7 +113,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791927084000
+   "updated": 1791930668000
   },
   {
    "id": "219",
@@ -103,7 +121,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791927084000
+   "updated": 1791930668000
   },
   {
    "id": "224",
@@ -111,7 +129,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791927084000
+   "updated": 1791930668000
   },
   {
    "id": "236",
@@ -119,7 +137,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791927084000
+   "updated": 1791930668000
   },
   {
    "id": "238",
@@ -127,7 +145,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791927084000
+   "updated": 1791930668000
   },
   {
    "id": "247",
@@ -135,7 +153,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791927084000
+   "updated": 1791930668000
   }
  ],
  "alerts": [],
@@ -144,111 +162,111 @@
   {
    "name": "I-84 @ MP 91 Devils Gate",
    "air": null,
-   "surface": 46.8,
-   "status": "Wet",
+   "surface": 47.1,
+   "status": "Damp",
    "gust": null,
    "lat": 41.1397,
    "lng": -111.8539,
-   "updated": 1791926400000,
+   "updated": 1791930000000,
    "ice": false
   },
   {
    "name": "I-84 @ MP 97 Peterson",
-   "air": 46.04,
-   "surface": 48.7,
+   "air": 45.06,
+   "surface": 48,
    "status": "Wet",
-   "gust": 7.01,
+   "gust": 13.37,
    "lat": 41.114,
    "lng": -111.7631,
-   "updated": 1791926400000,
+   "updated": 1791930000000,
    "ice": false
   },
   {
    "name": "I-84 @ Weber Canyon",
-   "air": 41.33,
-   "surface": 46,
+   "air": 41.2,
+   "surface": 46.4,
    "status": "Wet",
-   "gust": 10.96,
+   "gust": 8.99,
    "lat": 41.1379,
    "lng": -111.8868,
-   "updated": 1791926400000,
+   "updated": 1791930000000,
    "ice": false
   },
   {
    "name": "North Ogden Divide",
-   "air": 40.41,
-   "surface": 39.9,
+   "air": 40.23,
+   "surface": 39.7,
    "status": "",
-   "gust": 14.69,
+   "gust": 16,
    "lat": 41.3205,
    "lng": -111.8993,
-   "updated": 1791926400000,
+   "updated": 1791930000000,
    "ice": false
   },
   {
    "name": "SR-158 @ MP 11.5 Powder Mountain",
-   "air": 31.78,
-   "surface": 40.5,
+   "air": 31.35,
+   "surface": 39.6,
    "status": "Wet",
-   "gust": 8.2,
+   "gust": 9.69,
    "lat": 41.37884,
    "lng": -111.7841,
-   "updated": 1791926400000,
+   "updated": 1791930000000,
    "ice": false
   },
   {
    "name": "SR-167 @ Trappers Loop",
-   "air": 41.55,
-   "surface": 48,
+   "air": 40.08,
+   "surface": 46,
    "status": "Wet",
-   "gust": 3.73,
+   "gust": 7.23,
    "lat": 41.2058,
    "lng": -111.8166,
-   "updated": 1791926400000,
+   "updated": 1791930000000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 14 Pineview Dam",
-   "air": 46.65,
-   "surface": 50.5,
+   "air": 43.85,
+   "surface": 48.7,
    "status": "Wet",
-   "gust": 12.49,
+   "gust": 11.4,
    "lat": 41.2537,
    "lng": -111.8413,
-   "updated": 1791926400000,
+   "updated": 1791930000000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 17.5 Huntsville",
-   "air": 47.99,
-   "surface": 51.6,
+   "air": 45.56,
+   "surface": 50.2,
    "status": "Wet",
-   "gust": 5.26,
+   "gust": 15.12,
    "lat": 41.24793,
    "lng": -111.77576,
-   "updated": 1791926400000,
+   "updated": 1791930000000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 46 Monte Cristo",
-   "air": 31.27,
+   "air": 31.26,
    "surface": null,
    "status": "",
-   "gust": 14.16,
+   "gust": 13.04,
    "lat": 41.4446,
    "lng": -111.5056,
-   "updated": 1791926400000,
+   "updated": 1791930000000,
    "ice": false
   },
   {
    "name": "US-89 @ MP 406 Weber River",
-   "air": 45.73,
-   "surface": 47.3,
+   "air": 45.63,
+   "surface": 48,
    "status": "Wet",
-   "gust": 4.82,
+   "gust": 7.01,
    "lat": 41.1351,
    "lng": -111.91205,
-   "updated": 1791926400000,
+   "updated": 1791930000000,
    "ice": false
   }
  ],
@@ -257,9 +275,9 @@
    "name": "I-84 Rattlesnake Pass",
    "road": "I-84 Idaho Stateline to Blue Creek Summit",
    "elev": 5315,
-   "surface": 50,
+   "surface": 47,
    "status": "Dry",
-   "air": 42,
+   "air": 40,
    "closures": [],
    "seasonal": ""
   },
@@ -304,7 +322,7 @@
    "elev": 8252,
    "surface": 40,
    "status": "Wet",
-   "air": 32,
+   "air": 31,
    "closures": [],
    "seasonal": ""
   },
@@ -312,9 +330,9 @@
    "name": "SR-226 Snowbasin",
    "road": "SR-226 to Snowbasin",
    "elev": 6600,
-   "surface": 48,
+   "surface": 46,
    "status": "Wet",
-   "air": 42,
+   "air": 40,
    "closures": [],
    "seasonal": ""
   },
@@ -322,9 +340,9 @@
    "name": "SR-167 Trappers Loop Summit",
    "road": "SR-167 Trappers Loop I-84 to Huntsville",
    "elev": 6050,
-   "surface": 48,
+   "surface": 46,
    "status": "Wet",
-   "air": 42,
+   "air": 40,
    "closures": [],
    "seasonal": ""
   }

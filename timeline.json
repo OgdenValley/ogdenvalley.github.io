@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-13T21:40:32.925Z",
+ "updated": "2026-10-13T22:41:34.036Z",
  "items": [
+  {
+   "t": 1791931294036,
+   "src": "UDOT",
+   "text": "Crash or incident: EB Ogden Canyon at MP 10 (SR-39, Weber County). Crash, EB Ogden Canyon at MP 10 (SR-39, Weber County). Left Lane (of 2 Lanes) Blocked. SR-39 EB: Left Lane (of 2 Lanes) Blocked. SR-39 WB: No Lanes Blocked..",
+   "kind": "crash",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1791927632925,
    "src": "Utah Air Quality",
@@ -33,7 +40,8 @@
  "seen": {
   "ev": {
    "10148": "I-84|!!Lane Closure Alerts!! The following lane closures will require a 11 foot lane restriction... No exceptions will be provided. Eastbound single lane closure | Sat (10/3) - Sat (10/10) | Day & Night Westbound single lane closure | Tue (10/6) - Thu (10/15) | Day & Night Westbound single lane closure | Fri (10/16) - Sprin",
-   "36834": "SR 39|!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 day and night for about a quarter mile between The Oaks Restaurant and the Ogden Canyon Water Treatment Plant. Motorists can expect one-way alte"
+   "36834": "SR 39|!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at ni",
+   "36859": "SR 39|Crash, EB Ogden Canyon at MP 10 (SR-39, Weber County). Left Lane (of 2 Lanes) Blocked. SR-39 EB: Left Lane (of 2 Lanes) Blocked. SR-39 WB: No Lanes Blocked.."
   },
   "al": {},
   "cond": {
