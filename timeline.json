@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T19:43:16.582Z",
+ "updated": "2026-10-13T20:44:54.395Z",
  "items": [
   {
    "t": 1791909240919,
@@ -21,20 +21,6 @@
    "text": "Weber County forecast: Monday good · Tuesday good · Wednesday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1791837156236,
-   "src": "UDOT",
-   "text": "Road work: I-84 bridges crossing the UP railroad; Located just west of the eastbound I-84 rest area. Both bridges span from mileposts 90.6 - 91.2.. !!Lane Closure Alerts!! The following lane closures will require a 11 foot lane restriction... No exceptions will be provided. Eastbound single lane closure | Sat (10/3) - Sat (10/10) | Day & Night Westbound single lane closure | Tue (10/6) - Thu (10/15) | Day & Night Westbound single lane closure | Fri (10/16) - Sprin",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1791837156236,
-   "src": "National Weather Service",
-   "text": "Flood Watch until Mon 6:00 PM · Great Salt Lake Desert and Mountains; Tooele and Rush Valleys; Eastern Box Elder County; Northern Wasatch Front; Salt La",
-   "kind": "weather",
-   "link": "https://www.weather.gov/slc/"
   }
  ],
  "seen": {
@@ -44,6 +30,8 @@
   },
   "al": {},
   "cond": {
+   "I-84 I-15 Jct at Riverdale to SR-89#185": "Dry · none",
+   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#186": "Dry · none",
    "I-84 SR-167 at Mountain Green to Morgan#197": "Dry · none",
    "SR-39 Ogden to Jct. SR-167 Trappers Loop#208": "Dry · none",
    "SR-158 to Powder Mountain#216": "Dry · none",
@@ -52,9 +40,7 @@
    "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#224": "Dry · none",
    "US-89 From Lagoon to Jct. SR-193#236": "Dry · none",
    "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#238": "Dry · none",
-   "US-89 From Jct. SR-193 to I-84#247": "Dry · none",
-   "I-84 I-15 Jct at Riverdale to SR-89#185": "Dry · none",
-   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#186": "Dry · none"
+   "US-89 From Jct. SR-193 to I-84#247": "Dry · none"
   },
   "pass": {
    "SR-39 Monte Cristo|East of Ogden - Milepost 37 to 55.5  \nTypical Closure: Mid to Late Nov\nTypical Opening: Mid to Late May\nSR-39 Monte Cristo Weather Station\n ": "OPEN"
