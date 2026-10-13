@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T09:34:04.191Z",
+ "updated": "2026-10-13T14:36:24.848Z",
  "meetings": [
   {
    "body": "Ogden Valley City Council",
@@ -42,7 +42,7 @@
    "name": "Ben Lomond Peak",
    "elev": 7690,
    "depth": {
-    "value": 1,
+    "value": 0,
     "date": "2026-10-12"
    },
    "water": {
@@ -56,7 +56,7 @@
    "name": "Ben Lomond Trail",
    "elev": 5970,
    "depth": {
-    "value": 1,
+    "value": 0,
     "date": "2026-10-12"
    },
    "water": {
