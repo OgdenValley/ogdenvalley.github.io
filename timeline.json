@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-13T15:34:39.855Z",
+ "updated": "2026-10-13T16:34:00.919Z",
  "items": [
+  {
+   "t": 1791909240919,
+   "src": "UDOT",
+   "text": "Road work: SR-39 | Ogden Canyon | Start Milepost: 12.9 - End Milepost 13.3. !!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 day and night for about a quarter mile between The Oaks Restaurant and the Ogden Canyon Water Treatment Plant. Motorists can expect one-way alte",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1791902189246,
    "src": "Utah Air Quality",
@@ -32,7 +39,8 @@
  ],
  "seen": {
   "ev": {
-   "10148": "I-84|!!Lane Closure Alerts!! The following lane closures will require a 11 foot lane restriction... No exceptions will be provided. Eastbound single lane closure | Sat (10/3) - Sat (10/10) | Day & Night Westbound single lane closure | Tue (10/6) - Thu (10/15) | Day & Night Westbound single lane closure | Fri (10/16) - Sprin"
+   "10148": "I-84|!!Lane Closure Alerts!! The following lane closures will require a 11 foot lane restriction... No exceptions will be provided. Eastbound single lane closure | Sat (10/3) - Sat (10/10) | Day & Night Westbound single lane closure | Tue (10/6) - Thu (10/15) | Day & Night Westbound single lane closure | Fri (10/16) - Sprin",
+   "36834": "SR 39|!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 day and night for about a quarter mile between The Oaks Restaurant and the Ogden Canyon Water Treatment Plant. Motorists can expect one-way alte"
   },
   "al": {},
   "cond": {
