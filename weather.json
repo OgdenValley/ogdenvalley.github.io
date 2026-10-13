@@ -3,6 +3,15 @@
  "items": [
   {
    "type": "weekly",
+   "date": "2026-10-12T22:45:00-06:00",
+   "title": "Ogden Valley weather update: Oct. 13–18",
+   "summary": "Showers and thunderstorms tonight and Tuesday (94% chance Tuesday), with the snow level near 7,300 feet so the high peaks may turn white while the Valley floor stays rain. Lows of 29–32° every night through Friday, so cover tender plants and unhook hoses. Dry and sunny Thursday through Sunday, warming to the mid-60s. Air quality is Good.",
+   "image": "weather-2026-10-12-update.png",
+   "alt": "Ogden Valley weather update for Oct. 13 to 18: a six-day forecast with Tuesday wet at 94 percent, then sunny Thursday through Sunday, plus boxes on showers and thunder, frost nights, snow up high, a sunny weekend, and a get-ready checklist.",
+   "source": "National Weather Service point forecast for the Eden, Liberty and Huntsville area, issued 10:01 p.m. Oct. 12, 2026; Utah Division of Air Quality forecast, issued 6:27 p.m. Oct. 12"
+  },
+  {
+   "type": "weekly",
    "date": "2026-10-08T22:30:00-06:00",
    "title": "Ogden Valley storm briefing: Oct. 9–14",
    "summary": "Leftovers of Tropical Storm Rachel. Wettest day Sunday, Oct. 11, with 1 to 3 inches of rain late Saturday to Monday morning, creeks running fast by Sunday evening, and snow levels dropping to 8,500–9,000 feet Monday to Wednesday.",
