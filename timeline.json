@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-12T23:29:56.985Z",
+ "updated": "2026-10-13T00:44:19.338Z",
  "items": [
+  {
+   "t": 1791852259337,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Monday good · Tuesday good · Wednesday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1791837156236,
    "src": "UDOT",
@@ -63,9 +70,7 @@
    "SR-39 @ MP 46 Monte Cristo": 0,
    "US-89 @ MP 406 Weber River": 0
   },
-  "nws": {
-   "Flood Watch|2026-10-12T13:34:00-06:00|2026-10-12T18:00:00-06:00": 1
-  },
-  "air": "October 12, 2026 7:54 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "nws": {},
+  "air": "October 12, 2026 6:27 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
