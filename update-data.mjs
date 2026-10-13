@@ -900,6 +900,7 @@ async function jobs(){
    Public tab of the Business listings (Responses) sheet, published as CSV. Columns matched by name:
    Timestamp, Business name, Type of business, Town, Street address, Phone for customers, Website,
    Hours, Featured specialties, Short description, Photos, Check any that apply, Hide, Approve, Page (optional).
+   Artists come from their own sheet (_artistsCsv) into the same section; see below.
    A listing shows only when Approve is "yes"; anything in Hide takes it down. Page (optional) picks the page:
    Restaurants, Businesses, Home Services, Beauty, Farm, Food Trucks or Artists.
    Approved listings are written into the marked section at the bottom of places.js, so every page
@@ -908,8 +909,8 @@ async function jobs(){
    The private columns (emails, name and role, verify contact) stay on the private tab. */
 const FORM_MARK = "/* ===== FORM LISTINGS: written every hour from the Business listings sheet (approved rows only). Edit the sheet, not this section. ===== */";
 async function listings(){
-  const url = (cfgAll()._listingsCsv || "").trim();
-  if (!url) { console.log("listings: no sheet link yet"); return; }
+  const url = (cfgAll()._listingsCsv || "").trim(), artUrl = (cfgAll()._artistsCsv || "").trim();
+  if (!url && !artUrl) { console.log("listings: no sheet link yet"); return; }
   let src; try { src = fs.readFileSync("places.js", "utf8"); } catch { console.log("listings: no places.js"); return; }
   const cutAt = src.indexOf(FORM_MARK), hand = (cutAt >= 0 ? src.slice(0, cutAt) : src).replace(/\s+$/, "") + "\n";
   try {
@@ -918,7 +919,8 @@ async function listings(){
     const norm = n => String(n || "").toLowerCase().replace(/&/g, "and").replace(/\b(llc|inc|co|the)\b/g, "").replace(/[^a-z0-9]/g, "");
     const known = Object.values(P).flat().map(x => norm(x.name)).filter(Boolean);
     const already = n => { const k = norm(n); return !k || known.some(h => h === k || (k.length > 5 && h.length > 5 && (h.includes(k) || k.includes(h)))); };
-    const {rows, col} = await sheet(url);
+    const out = {}; let waiting = 0, skipped = 0, held = 0;
+    const {rows, col} = url ? await sheet(url) : {rows: [], col: () => -1};
     const iT = col(/^timestamp/), iN = col(/^business name/), iTy = col(/^type of business/), iTn = col(/^town/), iAd = col(/^street address/), iPh = col(/^phone/),
       iW = col(/^website/), iHr = col(/^hours/), iSp = col(/^featured special/), iD = col(/^short description/), iPhoto = col(/^photos/), iC = col(/^check any/),
       iH = col(/^hide/), iOK = col(/^approve/), iPg = col(/^page/);
@@ -927,7 +929,6 @@ async function listings(){
     const TOWNS = ["Eden", "Liberty", "Huntsville Town", "Huntsville area", "Snowbasin", "Powder Mountain", "Nordic Valley"];
     const PAGE = [[/restaurant|cafe|café/i, "restaurants"], [/home serv|service pro/i, "services"], [/beauty|wellness|fitness/i, "beauty"], [/farm|local food/i, "farm"], [/food truck/i, "foodtrucks"], [/artist/i, "artists"], [/business|shop|lodging|recreation|rental/i, "businesses"]];
     const JOBS = [[/handyman|drywall|repair|maintenance/i, "Handyman & repairs"], [/clean|window wash/i, "Cleaning & window washing"], [/landscap|snow|sprinkler|irrigation|lawn|yard/i, "Landscaping & snow removal"], [/detail/i, "Car detailing"], [/plumb/i, "Plumbing"], [/electric/i, "Electrical"], [/heat|hvac|furnace|cooling/i, "Heating & cooling"], [/pest/i, "Pest control"]];
-    const out = {}; let waiting = 0, skipped = 0, held = 0;
     for (const r of rows) {
       if (iH >= 0 && cut(r, iH, 40)) continue;
       const name = cut(r, iN, 80).replace(/\s+/g, " "); if (!name) continue;
@@ -958,6 +959,34 @@ async function listings(){
       p.added = ymd(r[iT]) || new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date());
       p.fromForm = true;
       (out[kind] = out[kind] || []).push(p);
+    }
+    /* Artists form (Ogden Valley Artists sheet, Public tab): Timestamp, Name to show, What kind of art?,
+       Where are you based, A few sentences about you, Website/Instagram, Where can people see or buy,
+       OK to list you, Hide, Approve. Shows only with Approve "yes" and a "Yes" in OK to list you. */
+    if (artUrl) {
+      const A = await sheet(artUrl), c = A.col;
+      const jT = c(/^timestamp/), jN = c(/^name to show|^name/), jM = c(/^what kind of art/), jB = c(/^where are you based/), jD = c(/^a few sentences/),
+        jW = c(/^website/), jS = c(/^where can people/), jOK = c(/^ok to list/), jH = c(/^hide/), jA = c(/^approve/);
+      for (const r of A.rows) {
+        if (jH >= 0 && cut(r, jH, 40)) continue;
+        const name = cut(r, jN, 80).replace(/\s+/g, " "); if (!name) continue;
+        if (!(jA >= 0 && yes(r[jA])) || (jOK >= 0 && !yes(r[jOK]))) { waiting++; continue; }
+        if (already(name)) { skipped++; continue; }
+        const medium = cut(r, jM, 60), blurb = cut(r, jD, 500), where = cut(r, jS, 200), based = cut(r, jB, 60);
+        if (BAD.test([name, medium, blurb, where].join(" "))) { held++; console.log("artist held (language):", name); continue; }
+        const p = {name};
+        if (medium) p.medium = medium;
+        const town = TOWNS.find(t => t.toLowerCase() === based.toLowerCase()); if (town) p.town = town; else if (based) p.area = based;
+        if (blurb) p.blurb = blurb;
+        if (where) p.where = where;
+        const urls = cut(r, jW, 400).split(/[\s,;]+/).map(x => x.trim()).filter(x => /\.[a-z]{2,}|^@/i.test(x))
+          .map(x => x.startsWith("@") ? "https://www.instagram.com/" + x.slice(1) : (/^https?:\/\//i.test(x) ? x : "https://" + x.replace(/^\/+/, "")));
+        if (urls[0]) p.link = urls[0];
+        if (urls.length > 1) p.links = urls.slice(1, 4).map(u => ({label: /instagram/i.test(u) ? "Instagram" : /facebook/i.test(u) ? "Facebook" : "Website", href: u}));
+        p.added = ymd(r[jT]) || new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date());
+        p.fromForm = true;
+        (out.artists = out.artists || []).push(p);
+      }
     }
     for (const k in out) out[k].sort((a, b) => a.name.localeCompare(b.name));
     const n = Object.values(out).flat().length;
