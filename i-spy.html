@@ -64,6 +64,29 @@
 </svg><div class="cheer" id="cheer" hidden><div><div style="font-size:54px">🎉</div><b>You found them all!</b><p>Great eyes! Come back next month for a new picture.</p><button class="btn primary" type="button" id="again">Play again</button></div></div></div>
   <div class="card"><div class="section-head" style="margin:0"><h2 style="font-size:24px">I spy with my little eye…</h2><div class="big" id="spy-count">0 of 12</div></div><ul class="spylist" id="spylist"><li data-for="barn"><span class="box" aria-hidden="true"></span>a red barn</li><li data-for="moose"><span class="box" aria-hidden="true"></span>a moose</li><li data-for="balloon"><span class="box" aria-hidden="true"></span>a hot air balloon</li><li data-for="kayak"><span class="box" aria-hidden="true"></span>a kayak</li><li data-for="cow"><span class="box" aria-hidden="true"></span>a cow</li><li data-for="pumpkin"><span class="box" aria-hidden="true"></span>a pumpkin</li><li data-for="owl"><span class="box" aria-hidden="true"></span>an owl</li><li data-for="tractor"><span class="box" aria-hidden="true"></span>a tractor</li><li data-for="bike"><span class="box" aria-hidden="true"></span>a bike</li><li data-for="fish"><span class="box" aria-hidden="true"></span>a jumping fish</li><li data-for="tent"><span class="box" aria-hidden="true"></span>a tent</li><li data-for="eagle"><span class="box" aria-hidden="true"></span>an eagle</li></ul></div>
 </div></section>
+<section><div class="container" style="display:grid;gap:16px">
+  <div class="section-head" style="margin:0"><h2>Halloween I Spy to print</h2></div>
+  <p class="lead" style="margin:0">Find each picture, check the box, then color it in. Print one or save it to print later.</p>
+  <div class="grid" id="ispy-print" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px"></div>
+</div></section>
+<div id="printme" style="display:none"><img alt="" src=""></div>
+<style>@media print{body *{visibility:hidden}#printme,#printme *{visibility:visible}#printme{position:fixed;inset:0;display:block!important}#printme img{width:100%;height:auto}}</style>
+<script>
+(function(){
+const P=[["ispy-halloween-trick-or-treat.png","Trick-or-treat I Spy"],["ispy-halloween-pumpkin-patch.png","Pumpkin patch I Spy"]];
+const box=document.getElementById("ispy-print");
+P.forEach(([f,t])=>{
+  const a=document.createElement("article"); a.className="card";
+  const im=document.createElement("img"); im.src=f; im.alt=t+": find the ghost, bat, witch hat, candy, owl and spider"; im.loading="lazy"; im.style.cssText="border:1px solid var(--line);border-radius:8px;background:#fff;width:100%;height:auto";
+  const h=document.createElement("h3"); h.textContent=t;
+  const b=document.createElement("div"); b.className="btns"; b.style.margin="0";
+  const pr=document.createElement("button"); pr.type="button"; pr.className="btn primary"; pr.textContent="Print";
+  pr.onclick=()=>{const p=document.querySelector("#printme img"); p.onload=()=>window.print(); p.src=f; if(p.complete&&p.naturalWidth)window.print(); if(window.goatcounter&&goatcounter.count)goatcounter.count({path:"ispy printed: "+f,event:true});};
+  const dl=document.createElement("a"); dl.className="btn ghost"; dl.style.color="var(--blue)"; dl.href=f; dl.download=f; dl.textContent="Download";
+  b.append(pr,dl); a.append(im,h,b); box.append(a);
+});
+})();
+</script>
 <style>.ispy-wrap{position:relative}.spy{cursor:pointer}.spy.found{opacity:.95}.spy.found>*{filter:drop-shadow(0 0 6px #fff)}
 .ring{fill:none;stroke:#FFD45C;stroke-width:5;pointer-events:none}
 .spylist{list-style:none;padding:0;margin:10px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px 14px;font-size:18px;font-weight:600}
