@@ -896,6 +896,79 @@ async function jobs(){
   } catch (e) { console.log("jobs failed:", e.message); }
 }
 
+/* ---------------- NEW LISTINGS (Business listings form) ----------------
+   Public tab of the Business listings (Responses) sheet, published as CSV. Columns matched by name:
+   Timestamp, Business name, Type of business, Town, Street address, Phone for customers, Website,
+   Hours, Featured specialties, Short description, Photos, Check any that apply, Hide, Approve, Page (optional).
+   A listing shows only when Approve is "yes"; anything in Hide takes it down. Page (optional) picks the page:
+   Restaurants, Businesses, Home Services, Beauty, Farm, Food Trucks or Artists.
+   Approved listings are written into the marked section at the bottom of places.js, so every page
+   picks them up. Everything above that line in places.js is hand-checked and is never touched here.
+   A business whose name already has a hand-checked listing is skipped, so nothing shows twice.
+   The private columns (emails, name and role, verify contact) stay on the private tab. */
+const FORM_MARK = "/* ===== FORM LISTINGS: written every hour from the Business listings sheet (approved rows only). Edit the sheet, not this section. ===== */";
+async function listings(){
+  const url = (cfgAll()._listingsCsv || "").trim();
+  if (!url) { console.log("listings: no sheet link yet"); return; }
+  let src; try { src = fs.readFileSync("places.js", "utf8"); } catch { console.log("listings: no places.js"); return; }
+  const cutAt = src.indexOf(FORM_MARK), hand = (cutAt >= 0 ? src.slice(0, cutAt) : src).replace(/\s+$/, "") + "\n";
+  try {
+    const sandbox = {window: {}}; new Function("window", hand)(sandbox.window);
+    const P = sandbox.window.OVE_PLACES || {};
+    const norm = n => String(n || "").toLowerCase().replace(/&/g, "and").replace(/\b(llc|inc|co|the)\b/g, "").replace(/[^a-z0-9]/g, "");
+    const known = Object.values(P).flat().map(x => norm(x.name)).filter(Boolean);
+    const already = n => { const k = norm(n); return !k || known.some(h => h === k || (k.length > 5 && h.length > 5 && (h.includes(k) || k.includes(h)))); };
+    const {rows, col} = await sheet(url);
+    const iT = col(/^timestamp/), iN = col(/^business name/), iTy = col(/^type of business/), iTn = col(/^town/), iAd = col(/^street address/), iPh = col(/^phone/),
+      iW = col(/^website/), iHr = col(/^hours/), iSp = col(/^featured special/), iD = col(/^short description/), iPhoto = col(/^photos/), iC = col(/^check any/),
+      iH = col(/^hide/), iOK = col(/^approve/), iPg = col(/^page/);
+    const cut = (r, i, n) => i >= 0 ? String(r[i] || "").trim().slice(0, n) : "";
+    const ymd = v => { const m = String(v || "").trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})/); if (!m) return ""; const y = m[3].length === 2 ? "20" + m[3] : m[3]; return y + "-" + m[1].padStart(2, "0") + "-" + m[2].padStart(2, "0"); };
+    const TOWNS = ["Eden", "Liberty", "Huntsville Town", "Huntsville area", "Snowbasin", "Powder Mountain", "Nordic Valley"];
+    const PAGE = [[/restaurant|cafe|café/i, "restaurants"], [/home serv|service pro/i, "services"], [/beauty|wellness|fitness/i, "beauty"], [/farm|local food/i, "farm"], [/food truck/i, "foodtrucks"], [/artist/i, "artists"], [/business|shop|lodging|recreation|rental/i, "businesses"]];
+    const JOBS = [[/handyman|drywall|repair|maintenance/i, "Handyman & repairs"], [/clean|window wash/i, "Cleaning & window washing"], [/landscap|snow|sprinkler|irrigation|lawn|yard/i, "Landscaping & snow removal"], [/detail/i, "Car detailing"], [/plumb/i, "Plumbing"], [/electric/i, "Electrical"], [/heat|hvac|furnace|cooling/i, "Heating & cooling"], [/pest/i, "Pest control"]];
+    const out = {}; let waiting = 0, skipped = 0, held = 0;
+    for (const r of rows) {
+      if (iH >= 0 && cut(r, iH, 40)) continue;
+      const name = cut(r, iN, 80).replace(/\s+/g, " "); if (!name) continue;
+      if (!(iOK >= 0 && yes(r[iOK]))) { waiting++; continue; }
+      if (already(name)) { skipped++; continue; }
+      const type = cut(r, iTy, 60), addr = cut(r, iAd, 120), blurb = cut(r, iD, 500), spec = cut(r, iSp, 300);
+      if (BAD.test([name, type, blurb, spec].join(" "))) { held++; console.log("listing held (language):", name); continue; }
+      const isAddr = /\d/.test(addr) && !/^(n\/?a|\*|none|home|mobile)/i.test(addr);
+      const pick = cut(r, iPg, 40);
+      let kind = (PAGE.find(([re]) => re.test(pick)) || [])[1];
+      if (!kind) kind = /shop or service/i.test(type) && !isAddr ? "services" : (PAGE.find(([re]) => re.test(type)) || [, "businesses"])[1];
+      const townRaw = cut(r, iTn, 60), town = TOWNS.find(t => t.toLowerCase() === townRaw.toLowerCase());
+      const urls = cut(r, iW, 400).split(/[\s,;]+(?=\S)|\s*\/\s+(?=@)/).map(x => x.trim()).filter(x => /\.[a-z]{2,}|^@/i.test(x))
+        .map(x => x.startsWith("@") ? "https://www.instagram.com/" + x.slice(1) : (/^https?:\/\//i.test(x) ? x : "https://" + x.replace(/^\/+/, "")));
+      const label = u => /facebook\.com/i.test(u) ? "Facebook" : /instagram\.com/i.test(u) ? "Instagram" : "Website";
+      const p = {name, type: type && !/^other$/i.test(type) ? type : (kind === "services" ? "Home service" : "Local business")};
+      if (town) p.town = town; else if (townRaw) p.area = townRaw;
+      if (blurb) p.blurb = blurb;
+      if (isAddr) p.address = addr; else { p.home = true; p.serves = townRaw || "Ogden Valley"; }
+      const phone = cut(r, iPh, 30); if (/\d{3}.*\d{4}/.test(phone)) p.phone = phone;
+      if (urls[0]) p.link = urls[0];
+      if (urls.length > 1) p.links = urls.slice(1, 4).map(u => ({label: label(u), href: u}));
+      const hrs = cut(r, iHr, 160); if (hrs && hrs !== "*") p.hours = hrs;
+      if (spec) p.note = "Known for: " + spec;
+      const badges = cut(r, iC, 300).split(/\s*[,\n]\s*/).map(x => x.trim()).filter(Boolean).slice(0, 8); if (badges.length) p.badges = badges;
+      const photos = cut(r, iPhoto, 2000).split(/\s*,\s*/).map(x => driveImg(x, 1000)).filter(Boolean).slice(0, 6); if (photos.length) p.photos = photos;
+      if (kind === "services") { p.job = (JOBS.find(([re]) => re.test(name + " " + blurb + " " + spec)) || [, "Other"])[1]; if (p.job !== "Other") p.type = p.job; }
+      p.added = ymd(r[iT]) || new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date());
+      p.fromForm = true;
+      (out[kind] = out[kind] || []).push(p);
+    }
+    for (const k in out) out[k].sort((a, b) => a.name.localeCompare(b.name));
+    const n = Object.values(out).flat().length;
+    console.log("listings from the form", n, "waiting", waiting, "already listed", skipped, "held", held);
+    const tail = FORM_MARK + "\n(function (F) { var P = window.OVE_PLACES = window.OVE_PLACES || {}; for (var k in F) P[k] = (P[k] || []).concat(F[k]); })(" + JSON.stringify(out, null, 1) + ");\n";
+    const next = hand + "\n" + tail;
+    if (next !== src) { fs.writeFileSync("places.js", next); console.log("places.js written (form section)"); try { execSync("git add -- places.js", {stdio: "ignore"}); } catch {} }
+    else console.log("places.js unchanged");
+  } catch (e) { console.log("listings failed:", e.message); }
+}
+
 /* ---------------- VALLEY FORECAST: 7 days for Eden, Liberty and Huntsville (NWS) ---------------- */
 async function forecast(){
   const old = oldJSON("forecast.json") || {};
@@ -980,6 +1053,7 @@ await recipes();
 await tips();
 await yardsales();
 await jobs();
+await listings();
 await guessreveal();
 await geocode();
 try { pageDates(); } catch (e) { console.log("page dates failed:", e.message); }
