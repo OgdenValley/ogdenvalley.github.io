@@ -1,8 +1,17 @@
 {
- "updated": "2026-10-13T00:44:13.127Z",
+ "updated": "2026-10-13T17:31:46.630Z",
  "weather": [],
  "fires": [],
- "city": [],
+ "city": [
+  {
+   "title": "33rd St. from Madison Ave. to Boughton St., Monroe Blvd. from Boughton St. to Franklin St., Boughton St. from 33rd. to Gramercy Ave.",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2063",
+   "date": 1791914297000,
+   "text": "Emergency Water Shutdown",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  }
+ ],
  "status": {
   "weather": "ok",
   "fires": "ok",
