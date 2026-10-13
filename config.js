@@ -17,7 +17,7 @@ window.OVE = {
   },
 
   /* --- Weekly newsletter (new Substack) ------------------------------- */
-  newsletterUrl: "https://forms.gle/53PL3cKy3v219VpcA", // sign-up form for now; swap for the Substack link later
+  newsletterUrl: "https://ogdenvallleyevent.substack.com/subscribe", // the Ogden Valley Substack (three l's in "vallley")
 
   /* --- Google Forms --------------------------------------------------- */
   forms: {
