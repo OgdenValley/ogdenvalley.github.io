@@ -63,4 +63,11 @@ if (main && !document.querySelector("[data-page-dates]") && window.fetch) {
     main.appendChild(box);
   }).catch(function(){});
 }
+/* Metricool website stats (added 10/13/26) -- loads on every page that uses this file */
+(function(){
+  var m = document.createElement("script");
+  m.src = "https://tracker.metricool.com/resources/be.js";
+  m.onload = function(){ try { beTracker.t({hash: "9e2e390e65cd63fdd2d3b874ee50394c"}); } catch(e){} };
+  document.head.appendChild(m);
+})();
 })();
