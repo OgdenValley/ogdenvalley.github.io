@@ -798,3 +798,6 @@ window.OVE_PLACES = {
   }
  ]
 };
+
+/* ===== FORM LISTINGS: written every hour from the Business listings sheet (approved rows only). Edit the sheet, not this section. ===== */
+(function (F) { var P = window.OVE_PLACES = window.OVE_PLACES || {}; for (var k in F) P[k] = (P[k] || []).concat(F[k]); })({});

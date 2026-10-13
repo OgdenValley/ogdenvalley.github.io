@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-13T16:34:00.919Z",
+ "updated": "2026-10-13T19:43:16.582Z",
  "items": [
   {
    "t": 1791909240919,
@@ -44,8 +44,6 @@
   },
   "al": {},
   "cond": {
-   "I-84 I-15 Jct at Riverdale to SR-89#185": "Dry · none",
-   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#186": "Dry · none",
    "I-84 SR-167 at Mountain Green to Morgan#197": "Dry · none",
    "SR-39 Ogden to Jct. SR-167 Trappers Loop#208": "Dry · none",
    "SR-158 to Powder Mountain#216": "Dry · none",
@@ -54,7 +52,9 @@
    "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#224": "Dry · none",
    "US-89 From Lagoon to Jct. SR-193#236": "Dry · none",
    "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#238": "Dry · none",
-   "US-89 From Jct. SR-193 to I-84#247": "Dry · none"
+   "US-89 From Jct. SR-193 to I-84#247": "Dry · none",
+   "I-84 I-15 Jct at Riverdale to SR-89#185": "Dry · none",
+   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#186": "Dry · none"
   },
   "pass": {
    "SR-39 Monte Cristo|East of Ogden - Milepost 37 to 55.5  \nTypical Closure: Mid to Late Nov\nTypical Opening: Mid to Late May\nSR-39 Monte Cristo Weather Station\n ": "OPEN"
