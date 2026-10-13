@@ -1,0 +1,13 @@
+{
+ "updated": "2026-10-13T18:23:03.970Z",
+ "needed": false,
+ "since": null,
+ "reasons": [],
+ "forecastIssued": "2026-10-13T16:57:08+00:00",
+ "draft": {
+  "made": "2026-10-13T18:23:03.970Z",
+  "why": "First draft, made when the weather watch was set up",
+  "image": "weather-draft.png",
+  "forecastIssued": "2026-10-13T16:57:08+00:00"
+ }
+}

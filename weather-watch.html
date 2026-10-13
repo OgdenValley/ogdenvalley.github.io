@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Weather Watch · Ogden Valley Info & Events</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="logo-10-years-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.ww{max-width:1100px;margin:0 auto;padding:28px 16px 60px;display:grid;gap:22px}
+.ww h1{font-family:var(--display);font-size:clamp(28px,5vw,40px);margin:0}
+.ww .note{font-size:18px;color:var(--muted);margin:6px 0 0}
+.status{border-radius:14px;padding:20px 22px;font-size:20px}
+.status.need{background:#FCE8E6;color:#8C1D18;border:2px solid #B3261E}
+.status.ok{background:var(--good-bg);color:var(--good);border:2px solid var(--good)}
+.status b.big{display:block;font-family:var(--display);font-size:26px;margin-bottom:6px}
+.status ul{margin:8px 0 0;padding-left:22px;line-height:1.5}
+.draft{display:grid;gap:18px;grid-template-columns:minmax(0,1fr)}
+@media(min-width:900px){.draft{grid-template-columns:minmax(0,480px) minmax(0,1fr);align-items:start}}
+.draft img{width:100%;height:auto;border-radius:12px;border:1px solid var(--line);display:block}
+.draft .card{font-size:19px;line-height:1.5}
+.steps{margin:6px 0 0;padding-left:24px}
+.meta{color:var(--muted)}
+</style>
+</head>
+<body>
+<main class="ww">
+  <div>
+    <p class="eyebrow" style="margin:0">Private · not linked anywhere on the site</p>
+    <h1>Weather watch</h1>
+    <p class="note">The site checks the National Weather Service forecast every hour. This page tells you when a briefing is needed and shows the latest draft graphic. Nothing here posts on its own.</p>
+  </div>
+  <div id="status" class="status ok"><b class="big">Checking…</b></div>
+  <div>
+    <div class="section-head"><div><p class="eyebrow">Draft · not posted</p><h2>Latest briefing draft</h2></div></div>
+    <div class="draft" id="draft"><p class="meta">No draft yet. The first one is made Monday morning, or sooner if a reason for a briefing shows up.</p></div>
+  </div>
+  <div class="card" style="font-size:18px;line-height:1.5">
+    <h3 style="margin-top:0">What sets off "briefing needed"</h3>
+    <ul class="steps">
+      <li>Snow in the Valley forecast (Eden, Liberty and Huntsville area)</li>
+      <li>A hard freeze: a low of 25° or colder</li>
+      <li>Two days in a row with a 70% or higher chance of rain or snow</li>
+      <li>Any National Weather Service warning for Weber County</li>
+    </ul>
+    <p class="meta" style="font-size:16px;margin-bottom:0">A new draft is made every Monday morning, and again whenever a new reason shows up. Drafts use only numbers from the National Weather Service forecast. Read it over before it goes out.</p>
+  </div>
+  <p class="meta" style="font-size:15px"><a href="safety.html">Road &amp; Weather page</a> · <a href="https://www.weather.gov/slc/" target="_blank" rel="noopener">NWS Salt Lake City</a></p>
+</main>
+<script>
+(async function(){
+  const AP=["Jan.","Feb.","March","April","May","June","July","Aug.","Sept.","Oct.","Nov.","Dec."];
+  const when=iso=>{if(!iso)return"";const d=new Date(iso);const h=d.getHours()%12||12,m=String(d.getMinutes()).padStart(2,"0");return d.toLocaleDateString("en-US",{weekday:"long"})+", "+AP[d.getMonth()]+" "+d.getDate()+" at "+h+":"+m+(d.getHours()<12?" a.m.":" p.m.")};
+  const el=(t,a,k)=>{const e=document.createElement(t);for(const x in a||{}){if(x==="text")e.textContent=a[x];else e.setAttribute(x,a[x])}(k||[]).forEach(c=>c&&e.appendChild(typeof c==="string"?document.createTextNode(c):c));return e};
+  const st=document.getElementById("status"),dr=document.getElementById("draft");
+  let w=null;try{const r=await fetch("watch.json?t="+Date.now(),{cache:"no-store"});if(r.ok)w=await r.json()}catch(e){}
+  st.innerHTML="";
+  if(!w){st.className="status ok";st.appendChild(el("b",{class:"big",text:"Waiting for the first check"}));st.appendChild(el("span",{text:"The hourly update will fill this in."}));return}
+  if(w.needed){st.className="status need";st.appendChild(el("b",{class:"big",text:"Briefing needed"}));st.appendChild(el("ul",{},w.reasons.map(r=>el("li",{text:r.text}))));
+    if(w.since)st.appendChild(el("p",{style:"margin:8px 0 0;font-size:16px",text:"Since "+when(w.since)+"."}))}
+  else{st.className="status ok";st.appendChild(el("b",{class:"big",text:"No briefing needed right now"}));st.appendChild(el("span",{text:"Nothing in the forecast crosses the lines below. Keep the weekly briefing going."}))}
+  st.appendChild(el("p",{style:"margin:8px 0 0;font-size:15px;opacity:.85",text:("Last checked "+when(w.updated)+(w.forecastIssued?" · forecast issued "+when(w.forecastIssued):"")).replace(/\.?$/,".")}));
+  if(w.draft&&w.draft.image){dr.innerHTML="";const src=w.draft.image+"?t="+encodeURIComponent(w.draft.made);
+    dr.appendChild(el("a",{href:src,target:"_blank",rel:"noopener",title:"Open full size"},[el("img",{src:src,alt:"Draft Ogden Valley weather briefing graphic"})]));
+    dr.appendChild(el("div",{class:"card"},[el("p",{style:"margin-top:0"},[el("b",{text:"Made: "}),when(w.draft.made)]),el("p",{},[el("b",{text:"Why: "}),w.draft.why]),
+      el("p",{},[el("b",{text:"Next step: "}),"Look it over. If it's good, tell Claude \"post the weather draft\" and it goes out as a draft post for your OK, and onto the Road & Weather page."]),
+      el("a",{class:"btn primary",href:src,download:"weather-briefing.png"},["Download the draft"])]))}
+})();
+</script>
+</body>
+</html>

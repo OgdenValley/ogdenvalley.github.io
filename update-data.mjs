@@ -5,6 +5,7 @@
 import fs from "node:fs";
 import { execSync } from "node:child_process";
 import crypto from "node:crypto";
+import { weatherWatch } from "./weather-watch.mjs";
 
 function cleanDesc(d){ if(!d) return ""; return d.replace(/<br\s*\/?>/gi,"\n").replace(/<[^>]+>/g,"").replace(/&nbsp;/g," ").replace(/&amp;/g,"&").replace(/\n{3,}/g,"\n\n").trim().slice(0,600); }
 function firstUrl(d){ const m = String(d||"").match(/https?:\/\/[^\s"<>)]+/); return m ? m[0] : ""; }
@@ -903,7 +904,7 @@ async function forecast(){
 /* ---------- page dates + sitemap ----------
    pagedates.json: when each page was first posted and last changed (shown at the bottom of each page).
    sitemap.xml: the list of pages for Google, with the date each one last changed. */
-const NOINDEX = new Set(["404.html", "poster.html", "know-how-feature.html", "search.html"]);
+const NOINDEX = new Set(["404.html", "poster.html", "know-how-feature.html", "search.html", "weather-watch.html"]);
 const LIVE_PAGES = new Set(["index.html", "events.html", "weekend.html", "safety.html", "kids.html", "yard-sales.html", "live-music.html", "live.html", "night-sky.html"]);
 function pageDates(){
   const today = new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date());
@@ -930,6 +931,7 @@ await forecast();
 await local();
 await roads();
 await air();
+try { await weatherWatch(); } catch (e) { console.log("weather watch failed:", e.message); }
 timeline();
 await reviews();
 await reports();
