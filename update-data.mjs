@@ -859,6 +859,43 @@ async function guessreveal(){
   } catch (e) { console.log("guess reveal failed:", e.message); }
 }
 
+/* ---------------- JOBS (Post a Valley Job form) ----------------
+   Public tab of the Jobs (Responses) sheet, published as CSV. Columns matched by name, any order:
+   Timestamp, Business Name, Job title, Town, Type of job, Pay, About the job, How to apply, Approve, Hide.
+   A job shows only when Approve is "yes". Anything typed in Hide (like "filled") takes it down.
+   Approved jobs are only held back for bad language.
+   Jobs come down on their own 30 days after they were posted.
+   The two email columns stay on the private tab and are never published. */
+async function jobs(){
+  const url = (cfgAll()._jobsCsv || "").trim();
+  if (!url) { console.log("jobs: no sheet link yet"); return; }
+  try {
+    const {rows, col} = await sheet(url);
+    const iT = col(/^timestamp/), iB = col(/^business/), iJ = col(/^job title|^title/), iTn = col(/^town|^city/), iTy = col(/^type of job|^type/), iP = col(/^pay/),
+      iA = col(/^about the job|^details/), iHow = col(/^how to apply/), iOK = col(/^approve/), iH = col(/^hide/);
+    const ymd = v => { const t = String(v || "").trim(); let m = t.match(/^(\d{4})-(\d{1,2})-(\d{1,2})/); if (m) return m[1] + "-" + m[2].padStart(2, "0") + "-" + m[3].padStart(2, "0");
+      m = t.match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})/); if (!m) return ""; const y = m[3].length === 2 ? "20" + m[3] : m[3]; return y + "-" + m[1].padStart(2, "0") + "-" + m[2].padStart(2, "0"); };
+    const plus30 = d => new Date(Date.parse(d + "T12:00:00Z") + 30 * 864e5).toISOString().slice(0, 10);
+    const today = new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date());
+    const cut = (r, i, n) => i >= 0 ? String(r[i] || "").trim().slice(0, n) : "";
+    const list = []; let waiting = 0, held = 0;
+    for (const r of rows) {
+      if (iH >= 0 && cut(r, iH, 40)) continue;                       // Hide has anything in it: down
+      const title = cut(r, iJ, 80); if (!title) continue;
+      if (!(iOK >= 0 && yes(r[iOK]))) { waiting++; continue; }          // not approved yet
+      const posted = ymd(r[iT]) || today, expires = plus30(posted);
+      if (expires < today) continue;                                   // past 30 days
+      const business = cut(r, iB, 80), details = cut(r, iA, 900);
+      // She approves every job by hand, so only bad language can still stop an approved one.
+      if (BAD.test([title, business, details, cut(r, iHow, 300)].join(" "))) { held++; console.log("job held (language):", title); continue; }
+      list.push({title, business, town: cut(r, iTn, 40), type: cut(r, iTy, 40), pay: cut(r, iP, 60), details, apply: cut(r, iHow, 300), posted, expires});
+    }
+    list.sort((a, b) => a.posted < b.posted ? 1 : a.posted > b.posted ? -1 : 0);
+    console.log("jobs", list.length, "waiting", waiting, "held", held);
+    writeIfChanged("jobs.json", {updated: new Date().toISOString(), jobs: list, waiting, held});
+  } catch (e) { console.log("jobs failed:", e.message); }
+}
+
 /* ---------------- VALLEY FORECAST: 7 days for Eden, Liberty and Huntsville (NWS) ---------------- */
 async function forecast(){
   const old = oldJSON("forecast.json") || {};
@@ -942,6 +979,7 @@ await musicians();
 await recipes();
 await tips();
 await yardsales();
+await jobs();
 await guessreveal();
 await geocode();
 try { pageDates(); } catch (e) { console.log("page dates failed:", e.message); }
