@@ -189,7 +189,8 @@ window.OVE = {
     { image: "valley-sunset-trees-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley City", date: "2026-10", caption: "An orange sunset glows behind the pines and fall leaves" },
     { image: "valley-sculpture-aspens-sean-smith.jpg", by: "Sean W. Smith", place: "", date: "2026-10", caption: "A giant sculpture rises out of the golden aspens" },
     { image: "valley-fall-aspens-sean-smith.jpg", by: "Sean W. Smith", place: "", date: "2026-10", caption: "Golden aspens and dark pines on the mountainside" },
-    { image: "valley-pineview-from-above-sean-smith.jpg", by: "Sean W. Smith", place: "Pineview", date: "", caption: "Pineview Reservoir and the Valley from high above" }
+    { image: "valley-pineview-from-above-sean-smith.jpg", by: "Sean W. Smith", place: "Pineview", date: "", caption: "Pineview Reservoir and the Valley from high above" },
+    { image: "valley-great-horned-owl-jim-brown.jpg", by: "Jim Brown", place: "", date: "2026-10", caption: "A great horned owl keeps watch from a weathered snag" }
   ],
 
   /* --- Then & Now ------------------------------------------------------
