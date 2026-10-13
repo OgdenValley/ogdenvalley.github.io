@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Weekly Newsletter · Ogden Valley Info & Events</title>
+<meta name="description" content="This week in Ogden Valley: events, weather, road work, new local businesses and jobs for Eden, Liberty and Huntsville, plus past issues. Free to subscribe.">
+<meta property="og:title" content="Weekly Newsletter · Ogden Valley Info & Events">
+<meta property="og:description" content="This week in Ogden Valley: events, weather, road work, new local businesses and jobs for Eden, Liberty and Huntsville, plus past issues. Free to subscribe.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ogdenvalleyevent.com/newsletter.html">
+<meta property="og:image" content="https://ogdenvalleyevent.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ogdenvalleyevent.com/newsletter.html">
+<link rel="icon" href="logo-10-years-32.png">
+<link rel="apple-touch-icon" href="logo-10-years-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<div class="alert-bar" id="alert-bar" hidden></div>
+<div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
+  <strong>Canyon check</strong>
+  <a href="https://ogdenvalley.udot.utah.gov/road-information/" target="_blank" rel="noopener">Ogden Valley roads &amp; cameras (UDOT)</a>
+  <a href="https://udottraffic.utah.gov/map" target="_blank" rel="noopener" data-track="open snowplow map">🚜 Snowplows (UDOT)</a>
+  <a href="live.html">Live view</a>
+  <a href="safety.html">Alerts &amp; fires</a>
+  <a href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Eden weather</a>
+</div></div>
+<header class="site-head"><div class="container">
+  <a class="brand" href="index.html"><img data-logo="180" src="logo-10-years-180.png" alt="" width="52" height="52"><span><b>Ogden Valley</b><small>Information &amp; Events</small></span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="main" id="nav" aria-label="Main"></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="container"><div><p class="eyebrow">Every Thursday · free</p><h1>Weekly newsletter</h1><p class="lead" style="margin-top:12px">What's happening in Eden, Liberty and Huntsville this week: events, weather, road work, new local businesses and jobs. Read it here, or get it in your inbox.</p><div class="btns"><a class="btn light" id="nl-sub" data-track="newsletter subscribe" href="#">Subscribe free</a></div></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<style>
+.nl-body{max-width:760px;font-size:18px;line-height:1.6}
+.nl-body h2{font-family:var(--display);font-size:24px;margin:30px 0 8px;padding-bottom:6px;border-bottom:2px solid var(--line)}
+.nl-body h3{font-size:19px;margin:16px 0 4px}
+.nl-body ul{margin:4px 0 8px;padding-left:22px}.nl-body li{margin:5px 0}
+.nl-body img{max-width:100%;height:auto;border-radius:10px;border:1px solid var(--line);display:block}
+.nl-body details.nl-fold{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px;margin:10px 0}
+.nl-body details.nl-fold summary{font-weight:700;color:var(--ink);font-size:18px}
+.nl-when{display:block;font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:700}
+.past details.issue{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px;margin:10px 0}
+.past details.issue>summary{font-family:var(--display);font-size:20px;font-weight:700;color:var(--ink)}
+.past details.issue .nl-body h2{font-size:21px}
+</style>
+<section><div class="container" style="display:grid;gap:10px">
+  <div><p class="eyebrow">This week</p><h2 style="margin:0" id="nl-range">This week in Ogden Valley</h2></div>
+  <article class="nl-body" id="nl-now"><p class="meta">Loading this week's newsletter…</p></article>
+</div></section>
+<section style="padding-top:0"><div class="container past" style="display:grid;gap:6px">
+  <div class="section-head"><div><p class="eyebrow">Saved every Thursday · newest first</p><h2 style="margin:0">Past issues</h2></div></div>
+  <div id="nl-past"><p class="meta">Past issues will show here, starting with the first Thursday.</p></div>
+</div></section>
+</main>
+<footer class="site-foot"></footer>
+<script src="layout.js"></script>
+<script src="config.js"></script>
+<script src="places.js"></script>
+<script src="site.js"></script>
+<script src="newsletter.js"></script>
+<script>
+(async function(){
+  const NL = window.OVE_NL, C = window.OVE || {};
+  const sub = document.getElementById("nl-sub"); if (C.newsletterUrl) { sub.href = C.newsletterUrl; sub.target = "_blank"; sub.rel = "noopener"; } else sub.hidden = true;
+  const get = async f => { try { const r = await fetch(f + "?t=" + Date.now(), {cache: "no-store"}); if (!r.ok) throw 0; return f.endsWith(".html") ? await r.text() : await r.json(); } catch (e) { return null; } };
+  const [E, W, J, S, A] = await Promise.all([get("events.json"), get("weather.json"), get("jobs.json"), get("safety.html"), get("newsletters.json")]);
+  const d = NL.collect(C, window.OVE_PLACES, E, W, J, NL.roadsFromHTML(S, NL.ymd(Date.now())), Date.now());
+  document.getElementById("nl-range").textContent = NL.range(d.start, d.end);
+  document.getElementById("nl-now").innerHTML = NL.render(d, {mode: "web"});
+  const issues = ((A && A.issues) || []).filter(x => x.start !== d.start).sort((a, b) => a.start < b.start ? 1 : -1);
+  const past = document.getElementById("nl-past");
+  if (issues.length) past.innerHTML = issues.map(x => '<details class="issue"><summary>' + NL.range(x.start, x.end) + '</summary><div class="nl-body">' + NL.render(x, {mode: "web"}) + "</div></details>").join("");
+})();
+</script>
+</body>
+</html>

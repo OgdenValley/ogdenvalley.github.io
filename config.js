@@ -151,8 +151,7 @@ window.OVE = {
   sponsors: [
     { name: "Yes, I Can Fix That", tier: "Valley sponsor", logo: "yes-i-can-fix-that-logo.jpg",
       line: "Veteran-owned handyman serving all of Ogden Valley: drywall, doors, home maintenance and DIY classes.",
-      link: "https://icanfixthatut.com", listing: "services.html#yes-i-can-fix-that", story: "spotlight-yes-i-can-fix-that.html",
-      note: "Owned by the publisher of this site." }
+      link: "https://icanfixthatut.com", listing: "services.html#yes-i-can-fix-that", story: "spotlight-yes-i-can-fix-that.html" }
   ],
 
   /* --- Visit counts (GoatCounter) ------------------------------------- */

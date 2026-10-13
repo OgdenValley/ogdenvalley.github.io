@@ -6,7 +6,7 @@
    ===================================================================== */
 (function(){
 var GROUPS = [
- ["Events", [["events.html","All events"],["weekend.html","This weekend"],["live-music.html","Live music"],["yard-sales.html","Yard sales"]]],
+ ["Events", [["events.html","All events"],["weekend.html","This weekend"],["newsletter.html","Weekly newsletter"],["live-music.html","Live music"],["yard-sales.html","Yard sales"]]],
  ["Eat & Shop", [["restaurants.html","Restaurants"],["farm.html","Farm stands & local food"],["foodtrucks.html","Food trucks"],["open-this-week.html","Who's open this week"]]],
  ["Local", [["businesses.html","Valley businesses"],["services.html","Home services"],["beauty.html","Beauty & wellness"],["artists.html","Local artists"],["jobs.html","Help wanted"]]],
  ["Outdoors & Roads", [["safety.html","Road, weather & alerts"],["live.html","Live view"],["night-sky.html","Night sky"],["wildlife.html","Wildlife & wildflowers"],["valley-photos.html","Valley photos"]]],

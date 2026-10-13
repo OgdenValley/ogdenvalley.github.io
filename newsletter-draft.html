@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Newsletter Draft · Ogden Valley Info & Events</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="logo-10-years-32.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<style>
+.wrap{max-width:860px;margin:0 auto;padding:28px 16px 60px;display:grid;gap:20px}
+.wrap h1{font-family:var(--display);font-size:clamp(28px,5vw,40px);margin:0}
+.how{font-size:18px;line-height:1.5}
+.how ol{margin:6px 0 0;padding-left:24px}
+.bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:5}
+.bar .msg{font-size:17px;font-weight:700;color:var(--good)}
+#nl{background:#fff;color:#1b2430;border:1px solid var(--line);border-radius:14px;padding:26px 24px;font-family:Georgia,"Times New Roman",serif;font-size:18px;line-height:1.55}
+#nl h2{font-family:Arial,Helvetica,sans-serif;font-size:22px;color:#10233D;margin:26px 0 8px;border-bottom:2px solid #E3E9F0;padding-bottom:4px}
+#nl h3{font-family:Arial,Helvetica,sans-serif;font-size:18px;color:#10233D;margin:16px 0 4px}
+#nl ul{margin:4px 0 8px;padding-left:22px}
+#nl li{margin:4px 0}
+#nl img{max-width:100%;height:auto;border-radius:8px}
+#nl a{color:#2E6DA4}
+.meta{color:var(--muted)}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <div>
+    <p class="eyebrow" style="margin:0">Private · not linked anywhere on the site</p>
+    <h1>Weekly newsletter draft</h1>
+  </div>
+  <div class="card how">
+    <b>Every Thursday morning:</b>
+    <ol>
+      <li>Open this page. It builds itself from what's on the site right now.</li>
+      <li>Click <b>Copy the newsletter</b>.</li>
+      <li>Paste it into a new post in your newsletter (Substack or email), read it over, add a hello at the top if you like, and send.</li>
+      <li>The same issue is on the site for everyone at <a href="newsletter.html">ogdenvalleyevent.com/newsletter.html</a>, and it saves itself as a past issue every Thursday.</li>
+    </ol>
+    <p class="meta" style="font-size:15px;margin:8px 0 0">Nothing here sends on its own. Events, weather, road work, new listings and jobs all come from the site, so fix anything at its source and reload this page.</p>
+  </div>
+  <div class="bar"><button class="btn primary" id="copy" type="button">Copy the newsletter</button><span class="msg" id="msg" role="status"></span></div>
+  <article id="nl"><p>Building the draft…</p></article>
+</main>
+<script src="config.js"></script>
+<script src="places.js"></script>
+<script src="newsletter.js"></script>
+<script>
+(async function(){
+  const NL = window.OVE_NL, BASE = "https://ogdenvalleyevent.com/";
+  const get = async f => { try { const r = await fetch(f + "?t=" + Date.now(), {cache: "no-store"}); if (!r.ok) throw 0; return f.endsWith(".html") ? await r.text() : await r.json(); } catch (e) { return null; } };
+  const [E, W, J, S] = await Promise.all([get("events.json"), get("weather.json"), get("jobs.json"), get("safety.html")]);
+  const d = NL.collect(window.OVE, window.OVE_PLACES, E, W, J, NL.roadsFromHTML(S, NL.ymd(Date.now())), Date.now());
+  const nl = document.getElementById("nl"); nl.innerHTML = NL.render(d, {mode: "email", base: BASE});
+  const msg = document.getElementById("msg");
+  document.getElementById("copy").addEventListener("click", async () => {
+    try {
+      if (window.ClipboardItem && navigator.clipboard && navigator.clipboard.write) {
+        await navigator.clipboard.write([new ClipboardItem({"text/html": new Blob([nl.innerHTML], {type: "text/html"}), "text/plain": new Blob([nl.innerText], {type: "text/plain"})})]);
+      } else { const r = document.createRange(); r.selectNodeContents(nl); const sel = getSelection(); sel.removeAllRanges(); sel.addRange(r); document.execCommand("copy"); sel.removeAllRanges(); }
+      msg.textContent = "Copied. Now paste it into your newsletter.";
+    } catch (e) { msg.textContent = "Couldn't copy automatically. Select the draft below with your mouse and copy it."; }
+  });
+})();
+</script>
+</body>
+</html>

@@ -98,7 +98,7 @@
   </div>
   <div id="air"><div class="section-head"><div><p class="eyebrow">Utah Division of Air Quality</p><h2>Air quality</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://air.utah.gov/forecast.php?id=hv" target="_blank" rel="noopener">Full forecast</a></div>
     <div id="aq"></div></div>
-  <div id="briefings"><div class="section-head"><div><p class="eyebrow">From Ogden Valley Info &amp; Events</p><h2>Weather briefing &amp; updates</h2></div></div><div id="brief-list"></div></div>
+  <div id="briefings"><div class="section-head"><div><p class="eyebrow">From Ogden Valley Info &amp; Events</p><h2>Weather briefing &amp; updates</h2></div></div><div id="brief-list" style="display:grid;gap:12px"></div></div>
   <div id="your-weather"><div class="section-head"><div><p class="eyebrow">From neighbors · approved before posting</p><h2>Show us your weather</h2></div><div class="btns" style="margin:0"><a class="btn primary" data-form="report" data-track="send weather photo" href="#">Send your weather photo</a></div></div>
     <p style="margin:0 0 12px">Snow piling up in Eden? A rainbow over Pineview? Send a photo with the <b>Weather photo</b> choice. Tell us the town or a landmark and when you took it. We look at every photo before it goes up, and photos stay here for 7 days. Great shots can be picked for the <a href="photo-contest.html">monthly photo contest</a>.</p>
     <div id="yw"></div>
@@ -165,12 +165,11 @@ if(F&&F.today)document.getElementById("fc-today").textContent=F.today;
 if(F)document.getElementById("fc-src").replaceChildren(document.createTextNode("Source: "),el("a",{href:F.link,target:"_blank",rel:"noopener",text:F.source}),document.createTextNode(" forecast for the "+F.place+(F.updated?". Last checked "+fmt(F.updated)+".":".")));
 const W=await S.loadJSON("weather.json"),bl=document.getElementById("brief-list");
 const cut=Date.now()-14*864e5,items=(W&&W.items||[]).filter(x=>Date.parse(x.date)>=cut).sort((a,b)=>Date.parse(b.date)-Date.parse(a.date));
-const wk=items.find(x=>x.type==="weekly"),ups=items.filter(x=>x.type==="update");
-if(!wk&&!ups.length)quiet(bl,"No briefing this week yet. We check the forecast every two days and post at least once a week.");
-else{const kids=[];
- ups.forEach(u=>kids.push(el("article",{class:"card wx-upd"},[el("p",{class:"eyebrow",text:"Update · "+fmt(u.date)}),el("h3",{text:u.title}),u.image?el("a",{href:u.image,target:"_blank",rel:"noopener"},[el("img",{src:u.image,alt:u.alt||u.title,loading:"lazy",style:"border-radius:10px;max-width:560px;width:100%"})]):null,u.summary?el("p",{text:u.summary}):null,u.source?el("p",{class:"meta",style:"font-size:14px",text:"Source: "+u.source}):null])));
- if(wk)kids.push(el("article",{class:"card"},[el("p",{class:"eyebrow",text:"Weekly briefing · "+fmt(wk.date)}),el("div",{class:"brief"+(wk.image?" has-img":"")},[wk.image?el("a",{href:wk.image,target:"_blank",rel:"noopener",title:"Open full size"},[el("img",{src:wk.image,alt:wk.alt||wk.title,loading:"lazy"})]):null,el("div",{style:"display:grid;gap:8px;align-content:start"},[el("h3",{text:wk.title}),wk.summary?el("p",{text:wk.summary}):null,wk.source?el("p",{class:"meta",style:"font-size:14px",text:"Source: "+wk.source}):null,wk.image?el("a",{href:wk.image,download:"",text:"Download the graphic to share"}):null])])]));
- bl.replaceChildren(...kids)}
+if(!items.length)quiet(bl,"No briefing this week yet. We check the forecast every two days and post at least once a week.");
+else bl.replaceChildren(...items.map((w,i)=>el("details",{class:"card wx-fold",open:i===0?"":null},[
+  el("summary",{},[el("span",{class:"eyebrow",style:"display:block;margin:0",text:(w.type==="update"?"Update":"Weekly briefing")+" · "+fmt(w.date)+(i===0?" · newest":"")}),el("b",{style:"font-size:19px;color:var(--ink)",text:w.title})]),
+  el("div",{class:"brief"+(w.image?" has-img":""),style:"margin-top:12px"},[w.image?el("a",{href:w.image,target:"_blank",rel:"noopener",title:"Open full size"},[el("img",{src:w.image,alt:w.alt||w.title,loading:"lazy"})]):null,
+    el("div",{style:"display:grid;gap:8px;align-content:start"},[w.summary?el("p",{style:"margin:0",text:w.summary}):null,w.source?el("p",{class:"meta",style:"font-size:14px",text:"Source: "+w.source}):null,w.image?el("a",{href:w.image,download:"",text:"Download the graphic to share"}):null])])])));
 const fires=document.getElementById("fires");
 if(!sf||!sf.updated)quiet(fires,"Fire reports will appear here once the hourly update starts running.");
 else if(!sf.fires.length)quiet(fires,"No active wildfires reported in or around Weber County right now.");

@@ -998,6 +998,36 @@ async function listings(){
   } catch (e) { console.log("listings failed:", e.message); }
 }
 
+/* ---------------- NEWSLETTER ARCHIVE ----------------
+   Every Thursday from 6 a.m., saves that week's newsletter (the same one shown on newsletter.html and the
+   private newsletter-draft.html) into newsletters.json, so it shows under "Past issues". Keeps the last 52.
+   NEWSLETTER_SAVE=1 saves one by hand on any day. */
+function newsletterArchive(force = process.env.NEWSLETTER_SAVE === "1"){
+  try {
+    const now = Date.now();
+    const p = {}; new Intl.DateTimeFormat("en-US", {timeZone: "America/Denver", weekday: "short", hourCycle: "h23", hour: "numeric"}).formatToParts(new Date(now)).forEach(x => p[x.type] = x.value);
+    if (!force && !(p.weekday === "Thu" && +p.hour >= 6)) return;
+    const old = oldJSON("newsletters.json") || {issues: []};
+    const win = {}; const load = f => { try { new Function("window", fs.readFileSync(f, "utf8"))(win); } catch (e) { console.log("newsletter: could not read", f, e.message); } };
+    load("config.js"); load("places.js"); load("newsletter.js");
+    const NL = win.OVE_NL; if (!NL) throw new Error("newsletter.js missing");
+    const today = NL.ymd(now);
+    if ((old.issues || []).some(x => x.start === today)) { console.log("newsletter: this week already saved"); return; }
+    let html = ""; try { html = fs.readFileSync("safety.html", "utf8"); } catch {}
+    const strip = t => t.replace(/<[^>]+>/g, "").replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/\s+/g, " ").trim();
+    const roads = [];
+    for (const m of html.matchAll(/<div id="roadwork[^"]*" data-ends="(\d{4}-\d{2}-\d{2})">([\s\S]*?)<script>/g)) {
+      if (m[1] <= today) continue;
+      const b = m[2], h = b.match(/<h2>([\s\S]*?)<\/h2>/), a = b.match(/<div class="alert[^"]*">([\s\S]*?)<\/div>/), im = b.match(/<img src="([^"]+)" alt="([^"]*)"/);
+      roads.push({title: h ? strip(h[1]) : "Road work", text: a ? strip(a[1]) : "", image: im ? im[1] : "", alt: im ? strip(im[2]) : ""});
+    }
+    const issue = NL.collect(win.OVE, win.OVE_PLACES, oldJSON("events.json"), oldJSON("weather.json"), oldJSON("jobs.json"), roads, now);
+    const issues = [issue].concat(old.issues || []).sort((x, y) => x.start < y.start ? 1 : -1).slice(0, 52);
+    writeIfChanged("newsletters.json", {updated: new Date().toISOString(), issues});
+    console.log("newsletter: saved the issue for", today);
+  } catch (e) { console.log("newsletter archive failed:", e.message); }
+}
+
 /* ---------------- VALLEY FORECAST: 7 days for Eden, Liberty and Huntsville (NWS) ---------------- */
 async function forecast(){
   const old = oldJSON("forecast.json") || {};
@@ -1043,7 +1073,7 @@ async function forecast(){
 /* ---------- page dates + sitemap ----------
    pagedates.json: when each page was first posted and last changed (shown at the bottom of each page).
    sitemap.xml: the list of pages for Google, with the date each one last changed. */
-const NOINDEX = new Set(["404.html", "poster.html", "know-how-feature.html", "search.html", "weather-watch.html"]);
+const NOINDEX = new Set(["404.html", "poster.html", "know-how-feature.html", "search.html", "weather-watch.html", "newsletter-draft.html"]);
 const LIVE_PAGES = new Set(["index.html", "events.html", "weekend.html", "safety.html", "kids.html", "yard-sales.html", "live-music.html", "live.html", "night-sky.html"]);
 function pageDates(){
   const today = new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date());
@@ -1085,6 +1115,7 @@ await jobs();
 await listings();
 await guessreveal();
 await geocode();
+newsletterArchive();
 try { pageDates(); } catch (e) { console.log("page dates failed:", e.message); }
 
 // Stage every data file this script writes (yard sales, forecast and any new ones),
