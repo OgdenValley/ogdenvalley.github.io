@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-14T00:54:01.000Z",
+ "updated": "2026-10-14T14:43:41.968Z",
  "items": [
+  {
+   "t": 1791989021967,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Wednesday good · Thursday good · Friday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1791934721253,
    "src": "UDOT",
@@ -28,13 +35,6 @@
    "text": "Road work: SR-39 | Ogden Canyon | Start Milepost: 12.9 - End Milepost 13.3. !!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 day and night for about a quarter mile between The Oaks Restaurant and the Ogden Canyon Water Treatment Plant. Motorists can expect one-way alte",
    "kind": "road",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1791902189246,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Tuesday good · Wednesday good · Thursday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
@@ -72,6 +72,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "October 13, 2026 3:30 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "October 14, 2026 8:22 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
