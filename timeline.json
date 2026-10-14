@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T21:41:53.986Z",
+ "updated": "2026-10-14T23:37:07.656Z",
  "items": [
   {
    "t": 1792014113985,
@@ -20,13 +20,6 @@
    "src": "UDOT",
    "text": "Cleared: SR 39. Crash, EB Ogden Canyon at MP 10 (SR-39, Weber County). Left Lane (of 2 Lanes) Blocked. SR-39 EB: Left Lane (of 2 Lanes) Blocked. SR-39 WB: N",
    "kind": "clear",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1791931294036,
-   "src": "UDOT",
-   "text": "Crash or incident: EB Ogden Canyon at MP 10 (SR-39, Weber County). Crash, EB Ogden Canyon at MP 10 (SR-39, Weber County). Left Lane (of 2 Lanes) Blocked. SR-39 EB: Left Lane (of 2 Lanes) Blocked. SR-39 WB: No Lanes Blocked..",
-   "kind": "crash",
    "link": "https://udottraffic.utah.gov/"
   }
  ],
