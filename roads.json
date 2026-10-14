@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T02:42:45.838Z",
+ "updated": "2026-10-14T03:42:58.890Z",
  "source": "Utah Department of Transportation (UDOT Traffic)",
  "link": "https://udottraffic.utah.gov/",
  "status": {
@@ -55,7 +55,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791945278000
+   "updated": 1791948840000
   },
   {
    "id": "186",
@@ -63,7 +63,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791945278000
+   "updated": 1791948841000
   },
   {
    "id": "197",
@@ -71,7 +71,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791945278000
+   "updated": 1791948841000
   },
   {
    "id": "208",
@@ -79,7 +79,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791945278000
+   "updated": 1791948841000
   },
   {
    "id": "216",
@@ -87,7 +87,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791945278000
+   "updated": 1791948841000
   },
   {
    "id": "217",
@@ -95,7 +95,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791945278000
+   "updated": 1791948841000
   },
   {
    "id": "219",
@@ -103,7 +103,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791945278000
+   "updated": 1791948841000
   },
   {
    "id": "224",
@@ -111,7 +111,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791945278000
+   "updated": 1791948841000
   },
   {
    "id": "236",
@@ -119,7 +119,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791945278000
+   "updated": 1791948840000
   },
   {
    "id": "238",
@@ -127,7 +127,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791945278000
+   "updated": 1791948840000
   },
   {
    "id": "247",
@@ -135,127 +135,120 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1791945278000
+   "updated": 1791948840000
   }
  ],
  "alerts": [],
- "plows": [
-  {
-   "bearing": "282",
-   "lat": 41.407873,
-   "lng": -111.59234,
-   "updated": 1791944758000
-  }
- ],
+ "plows": [],
  "stations": [
   {
    "name": "I-84 @ MP 91 Devils Gate",
    "air": null,
-   "surface": 46.6,
+   "surface": 45.7,
    "status": "Damp",
    "gust": null,
    "lat": 41.1397,
    "lng": -111.8539,
-   "updated": 1791943800000,
+   "updated": 1791948000000,
    "ice": false
   },
   {
    "name": "I-84 @ MP 97 Peterson",
-   "air": 45.06,
-   "surface": 46.8,
+   "air": 44.38,
+   "surface": 46.4,
    "status": "Damp",
    "gust": 4.16,
    "lat": 41.114,
    "lng": -111.7631,
-   "updated": 1791944400000,
+   "updated": 1791948000000,
    "ice": false
   },
   {
    "name": "I-84 @ Weber Canyon",
-   "air": 42.39,
-   "surface": 45.7,
+   "air": 42.51,
+   "surface": 45.3,
    "status": "Wet",
-   "gust": 11.84,
+   "gust": 5.48,
    "lat": 41.1379,
    "lng": -111.8868,
-   "updated": 1791944400000,
+   "updated": 1791948000000,
    "ice": false
   },
   {
    "name": "North Ogden Divide",
-   "air": 38.35,
-   "surface": 37.7,
+   "air": 38.7,
+   "surface": 38.2,
    "status": "",
-   "gust": 1.75,
+   "gust": 10.74,
    "lat": 41.3205,
    "lng": -111.8993,
-   "updated": 1791944400000,
+   "updated": 1791948000000,
    "ice": false
   },
   {
    "name": "SR-158 @ MP 11.5 Powder Mountain",
-   "air": 29.92,
-   "surface": 32.5,
-   "status": "Wet",
-   "gust": 11.92,
+   "air": 29.59,
+   "surface": 32.4,
+   "status": "",
+   "gust": 14.9,
    "lat": 41.37884,
    "lng": -111.7841,
-   "updated": 1791944400000,
+   "updated": 1791948000000,
    "ice": false
   },
   {
    "name": "SR-167 @ Trappers Loop",
-   "air": 39.43,
-   "surface": 44.2,
+   "air": 38.83,
+   "surface": 43.9,
    "status": "Wet",
-   "gust": 7.23,
+   "gust": 11.62,
    "lat": 41.2058,
    "lng": -111.8166,
-   "updated": 1791944400000,
+   "updated": 1791948000000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 14 Pineview Dam",
-   "air": 44.69,
-   "surface": 47.3,
+   "air": 44.43,
+   "surface": 47.1,
    "status": "Wet",
-   "gust": 1.53,
+   "gust": 6.8,
    "lat": 41.2537,
    "lng": -111.8413,
-   "updated": 1791944400000,
+   "updated": 1791948000000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 17.5 Huntsville",
-   "air": 44.51,
-   "surface": 47.8,
+   "air": 43.71,
+   "surface": 46.2,
    "status": "Wet",
-   "gust": 8.55,
+   "gust": 12.28,
    "lat": 41.24793,
    "lng": -111.77576,
-   "updated": 1791944400000,
+   "updated": 1791948000000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 46 Monte Cristo",
-   "air": 30.11,
+   "air": 29.18,
    "surface": null,
    "status": "",
-   "gust": 10.06,
+   "gust": 11.55,
    "lat": 41.4446,
    "lng": -111.5056,
-   "updated": 1791944400000,
+   "updated": 1791948000000,
    "ice": false
   },
   {
    "name": "US-89 @ MP 406 Weber River",
-   "air": 46.16,
-   "surface": 47.7,
+   "air": 46.54,
+   "surface": 47.3,
    "status": "Wet",
-   "gust": 2.63,
+   "gust": 8.11,
    "lat": 41.1351,
    "lng": -111.91205,
-   "updated": 1791944400000,
+   "updated": 1791948000000,
    "ice": false
   }
  ],
@@ -265,8 +258,8 @@
    "road": "I-84 Idaho Stateline to Blue Creek Summit",
    "elev": 5315,
    "surface": 42,
-   "status": "Wet",
-   "air": 40,
+   "status": "Damp",
+   "air": 42,
    "closures": [],
    "seasonal": ""
   },
@@ -275,8 +268,8 @@
    "road": "I-84 Blue Creek Summit to Tremonton",
    "elev": 5295,
    "surface": 46,
-   "status": "Wet",
-   "air": 42,
+   "status": "Damp",
+   "air": 41,
    "closures": [],
    "seasonal": ""
   },
@@ -286,7 +279,7 @@
    "elev": 9000,
    "surface": null,
    "status": "",
-   "air": 30,
+   "air": 29,
    "closures": [
     {
      "desc": "East of Ogden - Milepost 37 to 55.5  \nTypical Closure: Mid to Late Nov\nTypical Opening: Mid to Late May\nSR-39 Monte Cristo Weather Station\n ",
@@ -309,8 +302,8 @@
    "name": "SR-158 Powder Mountain",
    "road": "SR-158 to Powder Mountain",
    "elev": 8252,
-   "surface": 33,
-   "status": "Wet",
+   "surface": 32,
+   "status": "",
    "air": 30,
    "closures": [],
    "seasonal": ""
