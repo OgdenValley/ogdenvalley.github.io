@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-14T15:48:32.553Z",
+ "updated": "2026-10-14T16:45:25.809Z",
  "meetings": [
+  {
+   "body": "Huntsville Town Council",
+   "title": "Canceled TC Meeting 10-15-26",
+   "start": 1792108800000,
+   "link": "https://www.utah.gov/pmn/sitemap/notice/1115487.html",
+   "source": "Utah Public Notice Website"
+  },
   {
    "body": "Huntsville Town Planning Commission",
    "title": "Planning Meeting",
@@ -84,7 +91,7 @@
  "status": {
   "Ogden Valley City Council": "ok",
   "Huntsville Town Council": "ok",
-  "Huntsville Town website": "ok",
+  "Huntsville Town website": "failed",
   "snow": "ok",
   "pineview": "ok"
  }

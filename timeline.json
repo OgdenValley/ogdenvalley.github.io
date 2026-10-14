@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T14:43:41.968Z",
+ "updated": "2026-10-14T16:45:31.640Z",
  "items": [
   {
    "t": 1791989021967,
@@ -28,13 +28,6 @@
    "text": "Weber County forecast: Tuesday good · Wednesday good · Thursday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1791909240919,
-   "src": "UDOT",
-   "text": "Road work: SR-39 | Ogden Canyon | Start Milepost: 12.9 - End Milepost 13.3. !!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 day and night for about a quarter mile between The Oaks Restaurant and the Ogden Canyon Water Treatment Plant. Motorists can expect one-way alte",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {
