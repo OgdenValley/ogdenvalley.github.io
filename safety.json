@@ -1,11 +1,20 @@
 {
- "updated": "2026-10-13T20:44:48.342Z",
+ "updated": "2026-10-14T15:48:31.279Z",
  "weather": [],
  "fires": [],
- "city": [],
+ "city": [
+  {
+   "title": "7th St. from 1000 E to Gramercy Ave",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2064",
+   "date": 1791993869000,
+   "text": "Scheduled Water Shutdown",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  }
+ ],
  "status": {
   "weather": "ok",
-  "fires": "ok",
+  "fires": "failed",
   "Ogden City Alerts": "ok"
  }
 }
