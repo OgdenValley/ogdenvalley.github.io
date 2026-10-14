@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-13T21:40:27.791Z",
+ "updated": "2026-10-14T00:53:51.773Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
    "date": "2026-10-13",
    "label": "Tue",
    "md": "Oct 13",
-   "high": 50,
+   "high": null,
    "low": 29,
-   "pop": 80,
-   "short": "Showers And Thunderstorms",
-   "both": "Showers And Thunderstorms / Chance Rain Showers",
+   "pop": 35,
+   "short": "Chance Rain Showers",
+   "both": "Chance Rain Showers",
    "snow": false,
-   "wind": "3 mph"
+   "wind": "0 to 5 mph"
   },
   {
    "date": "2026-10-14",
@@ -87,7 +87,7 @@
    "wind": "5 mph"
   }
  ],
- "today": "This Afternoon: Showers and thunderstorms. Mostly cloudy. High near 50, with temperatures falling to around 48 in the afternoon. West wind around 3 mph. Chance of precipitation is 80%.",
+ "today": "Tonight: A chance of rain showers before 3am. Mostly cloudy. Low around 29, with temperatures rising to around 35 overnight. Northwest wind 0 to 5 mph. Chance of precipitation is 40%.",
  "valleySnowDays": [],
  "snowLevelFt": 7000,
  "snowInches48": 0,
