@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T13:50:56.885Z",
+ "updated": "2026-10-15T15:46:05.589Z",
  "meetings": [
   {
    "body": "Ogden Valley City Council",
@@ -67,7 +67,7 @@
     "date": "2026-10-14"
    },
    "water": {
-    "value": 0.1,
+    "value": 0,
     "date": "2026-10-14"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
@@ -81,7 +81,7 @@
     "date": "2026-10-14"
    },
    "water": {
-    "value": 0.4,
+    "value": 0.2,
     "date": "2026-10-14"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
