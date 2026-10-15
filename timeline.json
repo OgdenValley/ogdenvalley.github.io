@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-15T21:42:55.027Z",
+ "updated": "2026-10-15T22:41:06.973Z",
  "items": [
+  {
+   "t": 1792104066972,
+   "src": "UDOT",
+   "text": "Crash or incident: EB SR-193 at US 89 (Layton). Crash, EB SR-193 at US 89 (Layton). Left Lane (of 3 Lanes) Blocked.",
+   "kind": "crash",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1792100575027,
    "src": "Utah Air Quality",
@@ -47,7 +54,8 @@
  "seen": {
   "ev": {
    "10148": "I-84|!! Traffic Alerts !! (updated 10/14) Westbound single lane closure | Tue (10/6) - Fri (10/16) | Day & Night Westbound single lane closure | Fri (10/19) - Tue, (11/3) | Day & Night Note: Wide load restricted above 11 ft Westbound single lane closure | Spring 2027(TBA) - Winter 2027(TBA) | Day & Night Note: Wide load res",
-   "36834": "SR 39|!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at ni"
+   "36834": "SR 39|!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at ni",
+   "36981": "SR 193|Crash, EB SR-193 at US 89 (Layton). Left Lane (of 3 Lanes) Blocked."
   },
   "al": {},
   "cond": {
