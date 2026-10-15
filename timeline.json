@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-15T01:41:21.370Z",
+ "updated": "2026-10-15T02:43:04.668Z",
  "items": [
+  {
+   "t": 1792032184667,
+   "src": "UDOT",
+   "text": "Cleared: SR 39. Crash, EB Ogden Canyon at Valley Dr (SR-39, Ogden). No Lanes Blocked.",
+   "kind": "clear",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1792028481370,
    "src": "UDOT",
@@ -26,8 +33,7 @@
  "seen": {
   "ev": {
    "10148": "I-84|!!Lane Closure Alerts!! The following lane closures will require a 11 foot lane restriction... No exceptions will be provided. Eastbound single lane closure | Sat (10/3) - Sat (10/10) | Day & Night Westbound single lane closure | Tue (10/6) - Thu (10/15) | Day & Night Westbound single lane closure | Fri (10/16) - Sprin",
-   "36834": "SR 39|!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at ni",
-   "36938": "SR 39|Crash, EB Ogden Canyon at Valley Dr (SR-39, Ogden). No Lanes Blocked."
+   "36834": "SR 39|!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at ni"
   },
   "al": {},
   "cond": {
