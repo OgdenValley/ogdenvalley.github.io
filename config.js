@@ -165,7 +165,7 @@ window.OVE = {
      start = the photo's first day. On day 7 (6 days later) the answer, the guesses and the random winner
      show by themselves from the guess sheet's Spots tab. Keep "answer" blank here: this file is public. */
   guessSpots: [
-    { week: "Oct 8", start: "2026-10-08", image: "spot-2026-10-08.jpg", hint: "Fall color, string lights and a big rocky ridge. Where are these two pumpkinheads standing?", by: "ove", credit: "", revealed: false, answer: "", winner: "" },
+    { week: "Oct 8", start: "2026-10-08", image: "spot-2026-10-08.jpg", answerImage: "spot-2026-10-08-answer.jpg", hint: "Fall color, string lights and a big rocky ridge. Where are these two pumpkinheads standing?", by: "ove", credit: "", revealed: true, answer: "The Oaks in Ogden Canyon", winner: "" },
     { week: "Oct 15", start: "2026-10-15", image: "spot-2026-10-15.jpg", hint: "This little guy has a front-row seat for fall color. Where in the Valley is he sitting?", by: "ove", credit: "", revealed: false, answer: "", winner: "" }
   ],
 
