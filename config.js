@@ -190,7 +190,8 @@ window.OVE = {
     { image: "valley-sculpture-aspens-sean-smith.jpg", by: "Sean W. Smith", place: "", date: "2026-10", caption: "A giant sculpture rises out of the golden aspens" },
     { image: "valley-fall-aspens-sean-smith.jpg", by: "Sean W. Smith", place: "", date: "2026-10", caption: "Golden aspens and dark pines on the mountainside" },
     { image: "valley-pineview-from-above-sean-smith.jpg", by: "Sean W. Smith", place: "Pineview", date: "", caption: "Pineview Reservoir and the Valley from high above" },
-    { image: "valley-great-horned-owl-jim-brown.jpg", by: "Jim Brown", place: "", date: "2026-10", caption: "A great horned owl keeps watch from a weathered snag" }
+    { image: "valley-great-horned-owl-jim-brown.jpg", by: "Jim Brown", place: "", date: "2026-10", caption: "A great horned owl keeps watch from a weathered snag" },
+    { image: "valley-ben-lomond-cloud-cap-sara-barney.jpg", by: "Sara Barney", place: "", date: "2026-10", caption: "Ben Lomond Peak wears a cloud cap after the rain" }
   ],
 
   /* --- Then & Now ------------------------------------------------------
