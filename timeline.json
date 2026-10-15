@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-14T23:37:07.656Z",
+ "updated": "2026-10-15T00:51:46.288Z",
  "items": [
   {
    "t": 1792014113985,
@@ -14,13 +14,6 @@
    "text": "Weber County forecast: Wednesday good · Thursday good · Friday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1791934721253,
-   "src": "UDOT",
-   "text": "Cleared: SR 39. Crash, EB Ogden Canyon at MP 10 (SR-39, Weber County). Left Lane (of 2 Lanes) Blocked. SR-39 EB: Left Lane (of 2 Lanes) Blocked. SR-39 WB: N",
-   "kind": "clear",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {
