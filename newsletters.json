@@ -1,0 +1,152 @@
+{
+ "updated": "2026-10-15T12:55:17.102Z",
+ "issues": [
+  {
+   "start": "2026-10-15",
+   "end": "2026-10-22",
+   "made": "2026-10-15T12:55:17.094Z",
+   "featured": [
+    {
+     "title": "2nd Annual Monster Dash 5K",
+     "date": "2026-10-24",
+     "time": "9:00 AM",
+     "place": "Weber High School",
+     "town": "Pleasant View",
+     "image": "monster-dash-2026.png",
+     "line": "5K plus a 1-mile kids run. Runners and walkers of all ages, come in costume! 100% of proceeds go to Make-A-Wish Utah for 4-year-old Arie.",
+     "link": "https://www.canvaqr.com/RGSQ4K6Sel",
+     "linkText": "Join or donate"
+    }
+   ],
+   "events": [
+    {
+     "day": "2026-10-17",
+     "items": [
+      {
+       "time": "2 p.m.",
+       "t": "Cinema Saturday Feature Films",
+       "url": "",
+       "loc": "Ogden Valley Library @ 131 S 7400 E"
+      }
+     ]
+    },
+    {
+     "day": "2026-10-21",
+     "items": [
+      {
+       "time": "6 p.m.",
+       "t": "Wednesday Night Hikers",
+       "url": "https://www.meetup.com/webercountyoutdoors/",
+       "loc": "Varies"
+      }
+     ]
+    }
+   ],
+   "weather": [
+    {
+     "type": "weekly",
+     "date": "2026-10-12T22:45:00-06:00",
+     "title": "Ogden Valley weather update: Oct. 13–18",
+     "summary": "Showers and thunderstorms tonight and Tuesday (94% chance Tuesday), with the snow level near 7,300 feet so the high peaks may turn white while the Valley floor stays rain. Lows of 29–32° every night through Friday, so cover tender plants and unhook hoses. Dry and sunny Thursday through Sunday, warming to the mid-60s. Air quality is Good.",
+     "image": "weather-2026-10-12-update.png",
+     "alt": "Ogden Valley weather update for Oct. 13 to 18: a six-day forecast with Tuesday wet at 94 percent, then sunny Thursday through Sunday, plus boxes on showers and thunder, frost nights, snow up high, a sunny weekend, and a get-ready checklist.",
+     "source": "National Weather Service point forecast for the Eden, Liberty and Huntsville area, issued 10:01 p.m. Oct. 12, 2026; Utah Division of Air Quality forecast, issued 6:27 p.m. Oct. 12"
+    },
+    {
+     "type": "weekly",
+     "date": "2026-10-08T22:30:00-06:00",
+     "title": "Ogden Valley storm briefing: Oct. 9–14",
+     "summary": "Leftovers of Tropical Storm Rachel. Wettest day Sunday, Oct. 11, with 1 to 3 inches of rain late Saturday to Monday morning, creeks running fast by Sunday evening, and snow levels dropping to 8,500–9,000 feet Monday to Wednesday.",
+     "image": "weather-2026-10-08-storm-briefing.png",
+     "alt": "Ogden Valley storm briefing for Oct. 9 to 14: a six-day forecast with Sunday the wettest day, plus boxes on heavy rain, creeks and roads, wind, snow up high, and a get-ready checklist.",
+     "source": "National Weather Service Salt Lake City forecast discussion, issued 2:55 p.m. Oct. 8, 2026; KSL and KUTV, Oct. 8"
+    }
+   ],
+   "roads": [
+    {
+     "title": "North Ogden Divide repair · Oct. 20",
+     "text": "Starts Tuesday, Oct. 20, around 8 a.m. Work lasts 1 to 2 days. Message boards go up Friday, Oct. 16.",
+     "image": "roadwork-2026-10-20-north-ogden-divide.png",
+     "alt": "North Ogden Divide repair: Weber County Roads fixing failing asphalt starting Tuesday, Oct. 20 around 8 a.m. for 1 to 2 days, with flaggers running one-way traffic and about 5-minute delays"
+    },
+    {
+     "title": "Ogden Canyon lane closure (SR-39)",
+     "text": "Start date is tentative. Work could begin as early as Monday, Oct. 26. The confirmed date will be posted at ogdencitypipeline.com once the pipe arrives.",
+     "image": "roadwork-2026-10-26-ogden-canyon-pipeline.png",
+     "alt": "Ogden Canyon lane closure: one lane of SR-39 closed for about a quarter mile between The Oaks Restaurant and the Ogden Canyon Water Treatment Plant, alternating traffic 24/7, 5 to 10 minute delays, as early as Oct. 26, 2026 through April 2027"
+    }
+   ],
+   "fresh": [
+    {
+     "name": "Yes, I Can Fix That",
+     "page": "services.html",
+     "label": "Home services",
+     "town": "",
+     "blurb": "Drywall repairs, door repairs, home maintenance and DIY classes. Never schedules two projects at once, so your job always gets the full attention you're payi…"
+    },
+    {
+     "name": "Bluebird Sprinklers & Irrigation",
+     "page": "services.html",
+     "label": "Home services",
+     "town": "Huntsville",
+     "blurb": "Irrigation experts with upfront, transparent pricing: sprinkler system installation, repair and maintenance, drainage installation and repair, and snow remov…"
+    },
+    {
+     "name": "That's My House Cleaning Service",
+     "page": "services.html",
+     "label": "Home services",
+     "town": "",
+     "blurb": "Premium cleaning with personal, one-on-one service from a dedicated cleaner: weekly, bi-weekly and monthly maintenance, one-time and deep cleanings, and move…"
+    },
+    {
+     "name": "SaltyBear Cryo",
+     "page": "beauty.html",
+     "label": "Beauty & wellness",
+     "town": "Huntsville",
+     "blurb": "Targeted cryotherapy to help your body's natural healing, so you can get back to the life you love. By appointment, with a free consultation."
+    },
+    {
+     "name": "Altitude Fitness and Health",
+     "page": "beauty.html",
+     "label": "Beauty & wellness",
+     "town": "Eden",
+     "blurb": "Health and wellness coaching through fitness and nutrition, with mindfulness. Julia Rae and her team meet people where they are on their health goals, in the…"
+    },
+    {
+     "name": "McFarland Family Farms - White Barn Farm",
+     "page": "farm.html",
+     "label": "Farm & local food",
+     "town": "Huntsville area",
+     "blurb": "A family farm with a Saturday farmers market in July and August (local growers, makers and bakers plus McFarland produce), u-pick flower fields, and u-pick p…"
+    },
+    {
+     "name": "Kristie Tueller Designs",
+     "page": "artists.html",
+     "label": "Local artists",
+     "town": "Huntsville area",
+     "blurb": "“Grounded by the rugged beauty of the mountains, my workbench is a sanctuary where sterling silver and stone come together to tell a story. My work is define…"
+    }
+   ],
+   "jobs": [],
+   "spot": {
+    "image": "spot-2026-10-15.jpg",
+    "hint": "This little guy has a front-row seat for fall color. Where in the Valley is he sitting?"
+   },
+   "winner": null,
+   "sponsors": [
+    {
+     "name": "Yes, I Can Fix That",
+     "link": "https://icanfixthatut.com",
+     "line": "Veteran-owned handyman serving all of Ogden Valley: drywall, doors, home maintenance and DIY classes."
+    }
+   ],
+   "forms": {
+    "event": "https://docs.google.com/forms/d/e/1FAIpQLSdq-tr_1dUMWJvoD06p9oZAXQWuK5-SnkucboHFwVEFmeZSZg/viewform",
+    "photo": "https://docs.google.com/forms/d/e/1FAIpQLSe9nppeo6jqEILr9SLywvxZ3jgXA-7V0RiaQ3DSvzk0VCst8A/viewform",
+    "business": "https://docs.google.com/forms/d/e/1FAIpQLSc-jh9kRzlErQ1jv698LT4prqLnCWFkdoJy6Bj5KcUeCZCL7A/viewform",
+    "jobs": "https://docs.google.com/forms/d/e/1FAIpQLScOzyUB6XfbZWbwNCMR1FIAjCyWWt-aQFQSGKN2pR5YJvtwkw/viewform",
+    "report": "https://docs.google.com/forms/d/e/1FAIpQLSeeDFHHAo4biQ0t4BzoG0TmCzcFgXUc5iBN33pOrKYpmK1Eng/viewform"
+   }
+  }
+ ]
+}
