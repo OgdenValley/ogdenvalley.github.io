@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-16T03:42:56.425Z",
+ "updated": "2026-10-16T14:45:12.385Z",
  "items": [
+  {
+   "t": 1792161912385,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Friday good · Saturday good · Sunday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1792107424964,
    "src": "UDOT",
@@ -35,13 +42,6 @@
    "text": "Full closure: SR-39 at MP 9 (Valley Dr, Ogden). Crash, SR-39 at MP 9 (Valley Dr, Ogden). Closed. SR-39 EB: Closed. SR-39 WB: Closed.",
    "kind": "closure",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792075490890,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Thursday good · Friday good · Saturday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
@@ -79,6 +79,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "October 15, 2026 3:31 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "October 16, 2026 8:23 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
