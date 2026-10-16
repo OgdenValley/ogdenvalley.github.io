@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T14:45:12.385Z",
+ "updated": "2026-10-16T19:40:36.669Z",
  "items": [
   {
    "t": 1792161912385,
@@ -34,13 +34,6 @@
    "src": "UDOT",
    "text": "Cleared: SR 39. Crash, SR-39 at MP 9 (Valley Dr, Ogden). Closed. SR-39 EB: Closed. SR-39 WB: Closed.",
    "kind": "clear",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792093217488,
-   "src": "UDOT",
-   "text": "Full closure: SR-39 at MP 9 (Valley Dr, Ogden). Crash, SR-39 at MP 9 (Valley Dr, Ogden). Closed. SR-39 EB: Closed. SR-39 WB: Closed.",
-   "kind": "closure",
    "link": "https://udottraffic.utah.gov/"
   }
  ],
