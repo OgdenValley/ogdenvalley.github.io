@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T21:40:55.978Z",
+ "updated": "2026-10-16T22:41:31.934Z",
  "items": [
   {
    "t": 1792186855978,
@@ -21,20 +21,6 @@
    "text": "Cleared: SR 193. Crash, EB SR-193 at US 89 (Layton). Left Lane (of 3 Lanes) Blocked.",
    "kind": "clear",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792104066972,
-   "src": "UDOT",
-   "text": "Crash or incident: EB SR-193 at US 89 (Layton). Crash, EB SR-193 at US 89 (Layton). Left Lane (of 3 Lanes) Blocked.",
-   "kind": "crash",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792100575027,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Thursday good · Friday good · Saturday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
