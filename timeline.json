@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T23:37:04.964Z",
+ "updated": "2026-10-16T02:42:13.259Z",
  "items": [
   {
    "t": 1792107424964,
@@ -48,13 +48,6 @@
    "src": "UDOT",
    "text": "Cleared: SR 39. Crash, EB Ogden Canyon at Valley Dr (SR-39, Ogden). No Lanes Blocked.",
    "kind": "clear",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792028481370,
-   "src": "UDOT",
-   "text": "Crash or incident: EB Ogden Canyon at Valley Dr (SR-39, Ogden). Crash, EB Ogden Canyon at Valley Dr (SR-39, Ogden). No Lanes Blocked.",
-   "kind": "crash",
    "link": "https://udottraffic.utah.gov/"
   }
  ],
