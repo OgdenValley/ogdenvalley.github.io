@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T05:41:17.844Z",
+ "updated": "2026-10-16T06:53:35.167Z",
  "source": "Utah Department of Transportation (UDOT Traffic)",
  "link": "https://udottraffic.utah.gov/",
  "status": {
@@ -55,7 +55,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792128720000
+   "updated": 1792133242000
   },
   {
    "id": "186",
@@ -63,7 +63,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792128721000
+   "updated": 1792133243000
   },
   {
    "id": "197",
@@ -71,7 +71,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792128721000
+   "updated": 1792133243000
   },
   {
    "id": "208",
@@ -79,7 +79,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792128720000
+   "updated": 1792133242000
   },
   {
    "id": "216",
@@ -87,7 +87,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792128720000
+   "updated": 1792133243000
   },
   {
    "id": "217",
@@ -95,7 +95,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792128720000
+   "updated": 1792133243000
   },
   {
    "id": "219",
@@ -103,7 +103,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792128721000
+   "updated": 1792133243000
   },
   {
    "id": "224",
@@ -111,7 +111,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792128720000
+   "updated": 1792133242000
   },
   {
    "id": "236",
@@ -119,7 +119,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792128720000
+   "updated": 1792133242000
   },
   {
    "id": "238",
@@ -127,7 +127,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792128720000
+   "updated": 1792133242000
   },
   {
    "id": "247",
@@ -135,7 +135,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792128720000
+   "updated": 1792133242000
   }
  ],
  "alerts": [],
@@ -144,111 +144,111 @@
   {
    "name": "I-84 @ MP 91 Devils Gate",
    "air": null,
-   "surface": 46.4,
+   "surface": 45.3,
    "status": "Dry",
    "gust": null,
    "lat": 41.1397,
    "lng": -111.8539,
-   "updated": 1792128000000,
+   "updated": 1792131600000,
    "ice": false
   },
   {
    "name": "I-84 @ MP 97 Peterson",
-   "air": 39.44,
-   "surface": 45.3,
+   "air": 38.57,
+   "surface": 44.8,
    "status": "Dry",
-   "gust": 7.67,
+   "gust": 4.16,
    "lat": 41.114,
    "lng": -111.7631,
-   "updated": 1792128000000,
+   "updated": 1792132200000,
    "ice": false
   },
   {
    "name": "I-84 @ Weber Canyon",
-   "air": 45.54,
-   "surface": 50.5,
+   "air": 42.89,
+   "surface": 48.2,
    "status": "Dry",
-   "gust": 24.11,
+   "gust": 23.45,
    "lat": 41.1379,
    "lng": -111.8868,
-   "updated": 1792128000000,
+   "updated": 1792132200000,
    "ice": false
   },
   {
    "name": "North Ogden Divide",
-   "air": 46.54,
-   "surface": 46.1,
+   "air": 43.93,
+   "surface": 44.1,
    "status": "",
-   "gust": 14.69,
+   "gust": 12.93,
    "lat": 41.3205,
    "lng": -111.8993,
-   "updated": 1792128000000,
+   "updated": 1792132200000,
    "ice": false
   },
   {
    "name": "SR-158 @ MP 11.5 Powder Mountain",
-   "air": 42.18,
-   "surface": 43.2,
+   "air": 41.89,
+   "surface": 41.7,
    "status": "Dry",
-   "gust": 14.53,
+   "gust": 17.51,
    "lat": 41.37884,
    "lng": -111.7841,
-   "updated": 1792128000000,
+   "updated": 1792132200000,
    "ice": false
   },
   {
    "name": "SR-167 @ Trappers Loop",
-   "air": 44.62,
-   "surface": 47.7,
+   "air": 45.21,
+   "surface": 47.3,
    "status": "Dry",
-   "gust": 4.6,
+   "gust": 2.19,
    "lat": 41.2058,
    "lng": -111.8166,
-   "updated": 1792128000000,
+   "updated": 1792132200000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 14 Pineview Dam",
-   "air": 42.61,
-   "surface": 48,
+   "air": 40.66,
+   "surface": 45.9,
    "status": "Dry",
-   "gust": 2.19,
+   "gust": 1.75,
    "lat": 41.2537,
    "lng": -111.8413,
-   "updated": 1792128000000,
+   "updated": 1792132200000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 17.5 Huntsville",
-   "air": 39.01,
-   "surface": 45.7,
+   "air": 36.95,
+   "surface": 43.7,
    "status": "Dry",
-   "gust": 2.41,
+   "gust": 3.07,
    "lat": 41.24793,
    "lng": -111.77576,
-   "updated": 1792128000000,
+   "updated": 1792132200000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 46 Monte Cristo",
-   "air": 32.21,
+   "air": 32.28,
    "surface": null,
    "status": "",
-   "gust": 16.39,
+   "gust": 17.88,
    "lat": 41.4446,
    "lng": -111.5056,
-   "updated": 1792128000000,
+   "updated": 1792132200000,
    "ice": false
   },
   {
    "name": "US-89 @ MP 406 Weber River",
-   "air": 52.04,
-   "surface": 52.5,
+   "air": 50.37,
+   "surface": 50.5,
    "status": "Dry",
-   "gust": 20.6,
+   "gust": 35.73,
    "lat": 41.1351,
    "lng": -111.91205,
-   "updated": 1792128000000,
+   "updated": 1792132200000,
    "ice": false
   }
  ],
@@ -257,9 +257,9 @@
    "name": "I-84 Rattlesnake Pass",
    "road": "I-84 Idaho Stateline to Blue Creek Summit",
    "elev": 5315,
-   "surface": 51,
+   "surface": 49,
    "status": "Dry",
-   "air": 49,
+   "air": 47,
    "closures": [],
    "seasonal": ""
   },
@@ -267,7 +267,7 @@
    "name": "I-84 Whites Valley",
    "road": "I-84 Blue Creek Summit to Tremonton",
    "elev": 5295,
-   "surface": 49,
+   "surface": 48,
    "status": "Dry",
    "air": 42,
    "closures": [],
@@ -302,7 +302,7 @@
    "name": "SR-158 Powder Mountain",
    "road": "SR-158 to Powder Mountain",
    "elev": 8252,
-   "surface": 43,
+   "surface": 41,
    "status": "Dry",
    "air": 42,
    "closures": [],
@@ -312,9 +312,9 @@
    "name": "SR-226 Snowbasin",
    "road": "SR-226 to Snowbasin",
    "elev": 6600,
-   "surface": 48,
+   "surface": 46,
    "status": "Dry",
-   "air": 45,
+   "air": 44,
    "closures": [],
    "seasonal": ""
   },
@@ -322,9 +322,9 @@
    "name": "SR-167 Trappers Loop Summit",
    "road": "SR-167 Trappers Loop I-84 to Huntsville",
    "elev": 6050,
-   "surface": 48,
+   "surface": 46,
    "status": "Dry",
-   "air": 45,
+   "air": 44,
    "closures": [],
    "seasonal": ""
   }
