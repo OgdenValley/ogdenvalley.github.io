@@ -152,11 +152,19 @@ async function load(i){
   ops=[]; try{ const sv=JSON.parse(localStorage.getItem(key())||"null"); if(Array.isArray(sv)) ops=sv; }catch(e){} redraw();
   const pt=ev=>{ const r=cv.getBoundingClientRect(); return [Math.round((ev.clientX-r.left)*W/r.width),Math.round((ev.clientY-r.top)*H/r.height)]; };
   let cur=null;
-  cv.addEventListener("pointerdown",ev=>{ if(tool==="draw"){ ev.preventDefault(); cv.setPointerCapture(ev.pointerId); cur={t:"s",c:color,w:Math.round(size*1.5),p:[pt(ev)]}; stroke(cur); return; }
-    const [x,y]=pt(ev); const o={t:"f",x,y,c:tool==="erase"?null:color}; if(wall[y*W+x]) return; ops.push(o); bucket(x,y,o.c); store(); });
-  cv.addEventListener("pointermove",ev=>{ if(!cur) return; const q=pt(ev), l=cur.p[cur.p.length-1]; cur.p.push(q); cx.strokeStyle=cur.c; cx.lineWidth=cur.w; cx.lineCap="round"; cx.beginPath(); cx.moveTo(l[0],l[1]); cx.lineTo(q[0],q[1]); cx.stroke(); });
+  /* Fill and eraser only fire on a real tap (finger down and up in about the same spot, quickly).
+     Scrolling, swiping or pinching across the picture no longer paints by accident. */
+  let tap=null; const down=new Set(); const lift=ev=>down.delete(ev.pointerId); window.addEventListener("pointerup",lift,true); window.addEventListener("pointercancel",lift,true);
+  cv.addEventListener("pointerdown",ev=>{ down.add(ev.pointerId); if(tool==="draw"){ ev.preventDefault(); cv.setPointerCapture(ev.pointerId); cur={t:"s",c:color,w:Math.round(size*1.5),p:[pt(ev)]}; stroke(cur); return; }
+    tap = down.size===1 ? {id:ev.pointerId,x:ev.clientX,y:ev.clientY,t:Date.now()} : null; });
+  cv.addEventListener("pointermove",ev=>{ if(tap&&ev.pointerId===tap.id&&Math.hypot(ev.clientX-tap.x,ev.clientY-tap.y)>10) tap=null;
+    if(!cur) return; const q=pt(ev), l=cur.p[cur.p.length-1]; cur.p.push(q); cx.strokeStyle=cur.c; cx.lineWidth=cur.w; cx.lineCap="round"; cx.beginPath(); cx.moveTo(l[0],l[1]); cx.lineTo(q[0],q[1]); cx.stroke(); });
   const end=()=>{ if(!cur) return; ops.push(cur); cur=null; store(); };
-  cv.addEventListener("pointerup",end); cv.addEventListener("pointercancel",end);
+  cv.addEventListener("pointerup",ev=>{
+    if(tap&&ev.pointerId===tap.id&&tool!=="draw"&&Date.now()-tap.t<700&&Math.hypot(ev.clientX-tap.x,ev.clientY-tap.y)<=10){
+      const [x,y]=pt(ev); tap=null; if(x<0||y<0||x>=W||y>=H||wall[y*W+x]) return; const o={t:"f",x,y,c:tool==="erase"?null:color}; ops.push(o); bucket(x,y,o.c); store(); return; }
+    tap=null; end(); });
+  cv.addEventListener("pointercancel",()=>{ tap=null; end(); });
 }
 document.getElementById("cz-undo").onclick=()=>{ if(!ops.length) return; ops.pop(); redraw(); store(); };
 document.getElementById("cz-clear").onclick=()=>{ if(!confirm("Start this page over? Your coloring will be erased.")) return; ops=[]; redraw(); store(); };

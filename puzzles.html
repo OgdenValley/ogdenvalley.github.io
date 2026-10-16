@@ -45,8 +45,8 @@
   </div>
 
   <div id="tab-ws" class="pz">
-    <div class="filters" style="margin:0"><select id="ws-pick" aria-label="Pick a word search"></select><button class="btn ghost" type="button" id="ws-new">New puzzle</button><button class="btn ghost" type="button" id="ws-show">Show answers</button><button class="btn ghost" type="button" id="ws-print">Print</button></div>
-    <p class="kid-note" style="margin:0">Find each word. Drag across it, or tap the first letter and then the last letter.</p>
+    <div class="filters" style="margin:0"><select id="ws-pick" aria-label="Pick a word search"></select><select id="ws-level" aria-label="How hard?"><option value="easy">Easy</option><option value="medium">Medium</option><option value="hard">Hard</option></select><button class="btn ghost" type="button" id="ws-new">New puzzle</button><button class="btn ghost" type="button" id="ws-show">Show answers</button><button class="btn ghost" type="button" id="ws-print">Print</button></div>
+    <p class="kid-note" style="margin:0">Find each word. Drag across it, or tap the first letter and then the last letter. <b id="ws-dirs"></b></p>
     <div class="pz-area" id="ws-area"><h2 class="pz-title" id="ws-title"></h2><div id="ws-grid" class="ws-grid"></div><ul id="ws-words" class="ws-words"></ul></div>
     <div class="card cheer" id="ws-done" hidden><h3>You found them all!</h3><p>Try a new puzzle, or a harder one.</p></div>
   </div>
@@ -120,14 +120,16 @@ function printEl(id){const n=document.getElementById(id);n.classList.add("printi
 
 /* ---------- WORD SEARCH ---------- */
 const LISTS=(C.wordSearches&&C.wordSearches.length)?C.wordSearches:[{title:"Valley animals",level:"easy",words:["MOOSE","DEER","OWL","BEAR","ELK","FOX"]}];
-const pick=document.getElementById("ws-pick");LISTS.forEach((L,i)=>pick.append(el("option",{value:i,text:L.title+" ("+L.level+")"})));
+const pick=document.getElementById("ws-pick");LISTS.forEach((L,i)=>pick.append(el("option",{value:i,text:L.title})));
+const lvlSel=document.getElementById("ws-level");
+const DIRS={easy:"Easy: words only go across → and down ↓.",medium:"Medium: across, down and slanted ↘ ↗. Never backwards.",hard:"Hard: any direction, even backwards ← ↑ and slanted backwards ↖ ↙."};
 let W=null,found=[],anchor=null,dragging=false,showAns=false;
-function makeWS(L){const lvl=L.level||"easy",N=lvl==="hard"?15:lvl==="medium"?12:10;
+function makeWS(L,lvl){lvl=lvl||L.level||"easy";const longest=Math.max(0,...L.words.map(w=>String(w).replace(/[^A-Za-z]/g,"").length)),N=Math.max(lvl==="hard"?15:lvl==="medium"?12:10,longest+1);
   const dirs=lvl==="hard"?[[0,1],[1,0],[1,1],[-1,1],[0,-1],[-1,0],[-1,-1],[1,-1]]:lvl==="medium"?[[0,1],[1,0],[1,1],[-1,1]]:[[0,1],[1,0]];
   const words=L.words.map(w=>String(w).toUpperCase().replace(/[^A-Z]/g,"")).filter(w=>w&&w.length<=N);
   for(let tries=0;tries<60;tries++){const g=Array.from({length:N},()=>Array(N).fill(""));const pl=[];let ok=true;
     for(const w of words.slice().sort((a,b)=>b.length-a.length)){let done=false;for(let k=0;k<300&&!done;k++){const[dr,dc]=dirs[Math.floor(Math.random()*dirs.length)];const r=Math.floor(Math.random()*N),c=Math.floor(Math.random()*N);const er=r+dr*(w.length-1),ec=c+dc*(w.length-1);if(er<0||er>=N||ec<0||ec>=N)continue;let fit=true;for(let i=0;i<w.length;i++){const ch=g[r+dr*i][c+dc*i];if(ch&&ch!==w[i]){fit=false;break}}if(!fit)continue;for(let i=0;i<w.length;i++)g[r+dr*i][c+dc*i]=w[i];pl.push({w,r,c,dr,dc});done=true}if(!done){ok=false;break}}
-    if(!ok)continue;const A="ABCDEFGHIJKLMNOPRSTUVWY";for(let r=0;r<N;r++)for(let c=0;c<N;c++)if(!g[r][c])g[r][c]=A[Math.floor(Math.random()*A.length)];return{N,g,pl,title:L.title}}
+    if(!ok)continue;const A="ABCDEFGHIJKLMNOPRSTUVWY";for(let r=0;r<N;r++)for(let c=0;c<N;c++)if(!g[r][c])g[r][c]=A[Math.floor(Math.random()*A.length)];return{N,g,pl,title:L.title+" · "+lvl[0].toUpperCase()+lvl.slice(1)}}
   return null}
 function cellsOf(a,b){const dr=Math.sign(b.r-a.r),dc=Math.sign(b.c-a.c),n=Math.max(Math.abs(b.r-a.r),Math.abs(b.c-a.c));if(!(a.r===b.r||a.c===b.c||Math.abs(b.r-a.r)===Math.abs(b.c-a.c)))return null;const out=[];for(let i=0;i<=n;i++)out.push({r:a.r+dr*i,c:a.c+dc*i});return out}
 function wsDraw(){const G=document.getElementById("ws-grid");G.style.gridTemplateColumns="repeat("+W.N+",1fr)";G.replaceChildren();
@@ -147,8 +149,8 @@ const G=document.getElementById("ws-grid");
 G.addEventListener("pointerdown",ev=>{const p=at(ev);if(!p)return;ev.preventDefault();if(anchor&&!dragging){tryPick(anchor,p);anchor=null;paint();return}anchor=p;dragging=true;paint([p])});
 G.addEventListener("pointermove",ev=>{if(!dragging||!anchor)return;const p=at(ev);if(!p)return;paint(cellsOf(anchor,p)||[anchor])});
 window.addEventListener("pointerup",ev=>{if(!dragging)return;dragging=false;const p=at(ev);if(p&&anchor&&(p.r!==anchor.r||p.c!==anchor.c)){tryPick(anchor,p);anchor=null;paint()}else if(anchor)paint([anchor])});
-function wsNew(){W=makeWS(LISTS[+pick.value||0]);found=[];anchor=null;showAns=false;document.getElementById("ws-show").textContent="Show answers";wsDraw()}
-pick.onchange=wsNew;document.getElementById("ws-new").onclick=wsNew;
+function wsNew(){W=makeWS(LISTS[+pick.value||0],lvlSel.value);document.getElementById("ws-dirs").textContent=DIRS[lvlSel.value];found=[];anchor=null;showAns=false;document.getElementById("ws-show").textContent="Show answers";wsDraw()}
+pick.onchange=()=>{lvlSel.value=LISTS[+pick.value||0].level||"easy";wsNew()};lvlSel.onchange=wsNew;lvlSel.value=LISTS[0].level||"easy";document.getElementById("ws-new").onclick=wsNew;
 document.getElementById("ws-show").onclick=e=>{showAns=!showAns;e.target.textContent=showAns?"Hide answers":"Show answers";paint()};
 document.getElementById("ws-print").onclick=()=>{const was=showAns;showAns=false;paint();printEl("ws-area");showAns=was;paint()};
 wsNew();

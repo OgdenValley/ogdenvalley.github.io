@@ -36,33 +36,48 @@
   <nav class="main" id="nav" aria-label="Main"></nav>
 </div></header>
 <main id="main">
-<section class="hero"><div class="container"><div><p class="eyebrow">For kids (and grown-ups)</p><h1>I Spy in the Valley</h1><p class="lead" style="margin-top:12px">Can you find everything hiding in the picture? Tap each one when you spot it.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section class="hero"><div class="container"><div><p class="eyebrow">For kids (and grown-ups)</p><h1>I Spy in the Valley</h1><p class="lead" style="margin-top:12px">Can you find everything hiding in the picture? Tap each one when you spot it, and watch it turn to color. Pick Easy, Medium or Hard.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
 <section><div class="container" style="display:grid;gap:16px">
-  <div class="ispy-wrap"><svg id="scene" viewBox="0 0 1000 620" role="img" aria-label="I Spy picture of a valley with a lake, mountains, farm and hidden things to find" style="width:100%;height:auto;border-radius:14px;display:block;touch-action:manipulation">
-<defs><linearGradient id="isky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7EC8F0"/><stop offset="1" stop-color="#DDF2FC"/></linearGradient></defs>
-<rect width="1000" height="620" fill="url(#isky)"/>
+  <div class="ispy-levels" role="group" aria-label="How hard?">
+    <button class="chip" type="button" data-level="easy">Easy</button>
+    <button class="chip" type="button" data-level="medium">Medium</button>
+    <button class="chip" type="button" data-level="hard">Hard</button>
+    <span class="kid-note" id="level-note"></span>
+  </div>
+  <div class="ispy-wrap"><svg id="scene" viewBox="0 0 1000 620" role="img" aria-label="I Spy picture of a valley with a lake, mountains, farm and hidden things to find. Things turn from black and white to color when you find them." style="width:100%;height:auto;border-radius:14px;display:block;touch-action:manipulation">
+<defs><linearGradient id="isky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7EC8F0"/><stop offset="1" stop-color="#DDF2FC"/></linearGradient>
+<filter id="bw" color-interpolation-filters="sRGB"><feColorMatrix id="bwm" type="saturate" values="0"/></filter></defs>
+<g id="bg" filter="url(#bw)"><rect width="1000" height="620" fill="url(#isky)"/>
 <circle cx="880" cy="90" r="46" fill="#FFD45C"/>
 <path d="M0 300 L120 170 L230 260 L360 120 L500 250 L620 150 L760 260 L880 160 L1000 240 L1000 620 L0 620Z" fill="#6E8FB0"/>
 <path d="M330 150 L360 120 L392 152 Z M590 182 L620 150 L652 184Z M850 192 L880 160 L912 194Z" fill="#fff"/>
 <path d="M0 360 C160 320 300 380 480 350 C660 320 820 370 1000 340 L1000 620 L0 620Z" fill="#5E9A6C"/>
 <path d="M120 430 C260 390 520 400 700 430 C760 445 760 480 700 492 C520 520 260 515 140 490 C80 478 70 445 120 430Z" fill="#3E9BDB"/>
 <path d="M0 520 C200 500 400 540 600 525 C800 510 900 540 1000 530 L1000 620 L0 620Z" fill="#467F55"/>
-<g fill="#2C5E3A"><path d="M40 470 l18 -50 l18 50z"/><path d="M70 480 l16 -44 l16 44z"/><path d="M920 470 l18 -54 l18 54z"/><path d="M955 482 l15 -42 l15 42z"/><path d="M820 360 l14 -40 l14 40z"/></g>
-<!-- hidden things (each one is tappable) -->
-<g class="spy" data-id="barn"><rect x="760" y="380" width="70" height="52" fill="#B3261E"/><path d="M752 382 L795 350 L838 382Z" fill="#8E1C16"/><rect x="785" y="404" width="20" height="28" fill="#fff"/><path d="M785 404 L805 432 M805 404 L785 432" stroke="#B3261E" stroke-width="3"/></g>
-<g class="spy" data-id="moose" transform="translate(210 520)"><rect x="0" y="-26" width="44" height="22" rx="8" fill="#4A3424"/><rect x="4" y="-8" width="5" height="22" fill="#4A3424"/><rect x="34" y="-8" width="5" height="22" fill="#4A3424"/><path d="M42 -26 l14 -8 l6 12 l-8 6z" fill="#4A3424"/><path d="M50 -34 l-6 -12 m6 12 l6 -14 m-6 14 l14 -8" stroke="#6B4E33" stroke-width="4" stroke-linecap="round"/></g>
-<g class="spy" data-id="balloon" transform="translate(470 80)"><path d="M0 -34 C22 -34 30 -14 26 2 C22 18 8 26 4 34 L-4 34 C-8 26 -22 18 -26 2 C-30 -14 -22 -34 0 -34Z" fill="#E2574C"/><path d="M0 -34 C8 -20 8 20 4 34 M0 -34 C-8 -20 -8 20 -4 34" stroke="#F2B33D" stroke-width="4" fill="none"/><rect x="-6" y="40" width="12" height="9" fill="#7A5A3A"/></g>
-<g class="spy" data-id="kayak" transform="translate(330 470)"><path d="M-34 0 Q0 -10 34 0 Q0 10 -34 0Z" fill="#F2A93B"/><circle cx="0" cy="-8" r="5" fill="#10233D"/><path d="M-16 -18 L16 6" stroke="#10233D" stroke-width="3"/></g>
-<g class="spy" data-id="cow" transform="translate(660 395)"><rect x="0" y="0" width="38" height="20" rx="6" fill="#fff" stroke="#10233D" stroke-width="2"/><circle cx="10" cy="8" r="4" fill="#10233D"/><circle cx="25" cy="12" r="5" fill="#10233D"/><rect x="36" y="-4" width="12" height="12" rx="3" fill="#fff" stroke="#10233D" stroke-width="2"/><rect x="4" y="18" width="4" height="12" fill="#10233D"/><rect x="30" y="18" width="4" height="12" fill="#10233D"/></g>
-<g class="spy" data-id="pumpkin" transform="translate(880 520)"><ellipse cx="0" cy="0" rx="16" ry="12" fill="#E07B22"/><rect x="-2" y="-18" width="4" height="8" fill="#2C5E3A"/></g>
-<g class="spy" data-id="owl" transform="translate(66 418)"><ellipse cx="0" cy="0" rx="9" ry="12" fill="#8A6A44"/><circle cx="-3.5" cy="-3" r="3" fill="#fff"/><circle cx="3.5" cy="-3" r="3" fill="#fff"/><circle cx="-3.5" cy="-3" r="1.4" fill="#10233D"/><circle cx="3.5" cy="-3" r="1.4" fill="#10233D"/></g>
-<g class="spy" data-id="tractor" transform="translate(560 540)"><rect x="0" y="-22" width="36" height="16" fill="#2F7D4F"/><rect x="20" y="-38" width="16" height="16" fill="#2F7D4F"/><circle cx="8" cy="-4" r="9" fill="#10233D"/><circle cx="34" cy="-2" r="6" fill="#10233D"/></g>
-<g class="spy" data-id="bike" transform="translate(420 556)"><circle cx="-12" cy="0" r="9" fill="none" stroke="#10233D" stroke-width="3"/><circle cx="12" cy="0" r="9" fill="none" stroke="#10233D" stroke-width="3"/><path d="M-12 0 L-2 -12 L12 0 M-2 -12 L6 -12 M-6 -16 L0 -16" stroke="#E2574C" stroke-width="3" fill="none"/></g>
-<g class="spy" data-id="fish" transform="translate(560 448) rotate(-25)"><ellipse cx="0" cy="0" rx="13" ry="6" fill="#C0C9D4"/><path d="M12 0 l9 -7 v14z" fill="#C0C9D4"/><circle cx="-6" cy="-1" r="1.6" fill="#10233D"/></g>
-<g class="spy" data-id="tent" transform="translate(150 395)"><path d="M-20 14 L0 -16 L20 14Z" fill="#F2B33D"/><path d="M0 -16 L0 14" stroke="#B88400" stroke-width="2"/></g>
-<g class="spy" data-id="eagle" transform="translate(700 120)"><path d="M-26 0 Q-12 -10 0 0 Q12 -10 26 0 Q12 -4 0 4 Q-12 -4 -26 0Z" fill="#3A2A1C"/><circle cx="0" cy="-2" r="3.5" fill="#fff"/></g>
-</svg><div class="cheer" id="cheer" hidden><div><div style="font-size:54px">🎉</div><b>You found them all!</b><p>Great eyes! Come back next month for a new picture.</p><button class="btn primary" type="button" id="again">Play again</button></div></div></div>
-  <div class="card"><div class="section-head" style="margin:0"><h2 style="font-size:24px">I spy with my little eye…</h2><div class="big" id="spy-count">0 of 12</div></div><ul class="spylist" id="spylist"><li data-for="barn"><span class="box" aria-hidden="true"></span>a red barn</li><li data-for="moose"><span class="box" aria-hidden="true"></span>a moose</li><li data-for="balloon"><span class="box" aria-hidden="true"></span>a hot air balloon</li><li data-for="kayak"><span class="box" aria-hidden="true"></span>a kayak</li><li data-for="cow"><span class="box" aria-hidden="true"></span>a cow</li><li data-for="pumpkin"><span class="box" aria-hidden="true"></span>a pumpkin</li><li data-for="owl"><span class="box" aria-hidden="true"></span>an owl</li><li data-for="tractor"><span class="box" aria-hidden="true"></span>a tractor</li><li data-for="bike"><span class="box" aria-hidden="true"></span>a bike</li><li data-for="fish"><span class="box" aria-hidden="true"></span>a jumping fish</li><li data-for="tent"><span class="box" aria-hidden="true"></span>a tent</li><li data-for="eagle"><span class="box" aria-hidden="true"></span>an eagle</li></ul></div>
+<g fill="#2C5E3A"><path d="M40 470 l18 -50 l18 50z"/><path d="M70 480 l16 -44 l16 44z"/><path d="M920 470 l18 -54 l18 54z"/><path d="M955 482 l15 -42 l15 42z"/><path d="M820 360 l14 -40 l14 40z"/></g></g>
+<!-- hidden things: each one turns to color when it's found -->
+<g class="spy" data-id="barn" filter="url(#bw)"><g id="art-barn"><rect x="760" y="380" width="70" height="52" fill="#B3261E"/><path d="M752 382 L795 350 L838 382Z" fill="#8E1C16"/><rect x="785" y="404" width="20" height="28" fill="#fff"/><path d="M785 404 L805 432 M805 404 L785 432" stroke="#B3261E" stroke-width="3"/></g></g>
+<g class="spy" data-id="moose" filter="url(#bw)"><g id="art-moose" transform="translate(210 520)"><rect x="0" y="-26" width="44" height="22" rx="8" fill="#4A3424"/><rect x="4" y="-8" width="5" height="22" fill="#4A3424"/><rect x="34" y="-8" width="5" height="22" fill="#4A3424"/><path d="M42 -26 l14 -8 l6 12 l-8 6z" fill="#4A3424"/><path d="M50 -34 l-6 -12 m6 12 l6 -14 m-6 14 l14 -8" stroke="#6B4E33" stroke-width="4" stroke-linecap="round"/></g></g>
+<g class="spy" data-id="balloon" filter="url(#bw)"><g id="art-balloon" transform="translate(470 80)"><path d="M0 -34 C22 -34 30 -14 26 2 C22 18 8 26 4 34 L-4 34 C-8 26 -22 18 -26 2 C-30 -14 -22 -34 0 -34Z" fill="#E2574C"/><path d="M0 -34 C8 -20 8 20 4 34 M0 -34 C-8 -20 -8 20 -4 34" stroke="#F2B33D" stroke-width="4" fill="none"/><rect x="-6" y="40" width="12" height="9" fill="#7A5A3A"/></g></g>
+<g class="spy" data-id="kayak" filter="url(#bw)"><g id="art-kayak" transform="translate(330 470)"><path d="M-34 0 Q0 -10 34 0 Q0 10 -34 0Z" fill="#F2A93B"/><circle cx="0" cy="-8" r="5" fill="#10233D"/><path d="M-16 -18 L16 6" stroke="#10233D" stroke-width="3"/></g></g>
+<g class="spy" data-id="cow" filter="url(#bw)"><g id="art-cow" transform="translate(660 395)"><rect x="0" y="0" width="38" height="20" rx="6" fill="#fff" stroke="#10233D" stroke-width="2"/><circle cx="10" cy="8" r="4" fill="#10233D"/><circle cx="25" cy="12" r="5" fill="#10233D"/><rect x="36" y="-4" width="12" height="12" rx="3" fill="#fff" stroke="#10233D" stroke-width="2"/><rect x="4" y="18" width="4" height="12" fill="#10233D"/><rect x="30" y="18" width="4" height="12" fill="#10233D"/></g></g>
+<g class="spy" data-id="pumpkin" filter="url(#bw)"><g id="art-pumpkin" transform="translate(880 520)"><ellipse cx="0" cy="0" rx="16" ry="12" fill="#E07B22"/><rect x="-2" y="-18" width="4" height="8" fill="#2C5E3A"/></g></g>
+<g class="spy" data-id="owl" filter="url(#bw)"><g id="art-owl" transform="translate(66 418)"><ellipse cx="0" cy="0" rx="9" ry="12" fill="#8A6A44"/><circle cx="-3.5" cy="-3" r="3" fill="#fff"/><circle cx="3.5" cy="-3" r="3" fill="#fff"/><circle cx="-3.5" cy="-3" r="1.4" fill="#10233D"/><circle cx="3.5" cy="-3" r="1.4" fill="#10233D"/></g></g>
+<g class="spy" data-id="tractor" filter="url(#bw)"><g id="art-tractor" transform="translate(560 540)"><rect x="0" y="-22" width="36" height="16" fill="#2F7D4F"/><rect x="20" y="-38" width="16" height="16" fill="#2F7D4F"/><circle cx="8" cy="-4" r="9" fill="#10233D"/><circle cx="34" cy="-2" r="6" fill="#10233D"/></g></g>
+<g class="spy" data-id="bike" filter="url(#bw)"><g id="art-bike" transform="translate(420 556)"><circle cx="-12" cy="0" r="9" fill="none" stroke="#10233D" stroke-width="3"/><circle cx="12" cy="0" r="9" fill="none" stroke="#10233D" stroke-width="3"/><path d="M-12 0 L-2 -12 L12 0 M-2 -12 L6 -12 M-6 -16 L0 -16" stroke="#E2574C" stroke-width="3" fill="none"/></g></g>
+<g class="spy" data-id="fish" filter="url(#bw)"><g id="art-fish" transform="translate(560 448) rotate(-25)"><ellipse cx="0" cy="0" rx="13" ry="6" fill="#C0C9D4"/><path d="M12 0 l9 -7 v14z" fill="#C0C9D4"/><circle cx="-6" cy="-1" r="1.6" fill="#10233D"/></g></g>
+<g class="spy" data-id="tent" filter="url(#bw)"><g id="art-tent" transform="translate(150 395)"><path d="M-20 14 L0 -16 L20 14Z" fill="#F2B33D"/><path d="M0 -16 L0 14" stroke="#B88400" stroke-width="2"/></g></g>
+<g class="spy" data-id="eagle" filter="url(#bw)"><g id="art-eagle" transform="translate(700 120)"><path d="M-26 0 Q-12 -10 0 0 Q12 -10 26 0 Q12 -4 0 4 Q-12 -4 -26 0Z" fill="#3A2A1C"/><circle cx="0" cy="-2" r="3.5" fill="#fff"/></g></g>
+<g class="spy" data-id="squirrel" filter="url(#bw)"><g id="art-squirrel" transform="translate(941 452)"><circle r="14" fill="transparent"/><ellipse rx="5" ry="4" fill="#8A5A2B"/><circle cx="4.5" cy="-4" r="2.6" fill="#8A5A2B"/><path d="M-4 1 C-12 -1 -12 -11 -5 -10" stroke="#8A5A2B" stroke-width="3" fill="none"/></g></g>
+<g class="spy" data-id="frog" filter="url(#bw)"><g id="art-frog" transform="translate(694 487)"><circle r="14" fill="transparent"/><ellipse rx="7" ry="4.5" fill="#3E8E41"/><circle cx="-3" cy="-4" r="2.2" fill="#3E8E41"/><circle cx="3" cy="-4" r="2.2" fill="#3E8E41"/><circle cx="-3" cy="-4.4" r="1" fill="#10233D"/><circle cx="3" cy="-4.4" r="1" fill="#10233D"/></g></g>
+<g class="spy" data-id="butterfly" filter="url(#bw)"><g id="art-butterfly" transform="translate(296 382)"><circle r="14" fill="transparent"/><ellipse cx="-4" cy="-2" rx="4" ry="5" fill="#9C4DCC"/><ellipse cx="4" cy="-2" rx="4" ry="5" fill="#F2B33D"/><rect x="-0.8" y="-6" width="1.6" height="9" fill="#10233D"/></g></g>
+<g class="spy" data-id="mailbox" filter="url(#bw)"><g id="art-mailbox" transform="translate(742 428)"><circle r="14" fill="transparent"/><rect x="-1.5" y="0" width="3" height="12" fill="#6B4E33"/><rect x="-7" y="-7" width="14" height="8" rx="3" fill="#5C6F82"/><rect x="5" y="-12" width="2" height="7" fill="#E2574C"/></g></g>
+<g class="spy" data-id="bunny" filter="url(#bw)"><g id="art-bunny" transform="translate(486 503)"><circle r="14" fill="transparent"/><ellipse rx="6" ry="4.5" fill="#B9AFA4"/><circle cx="5" cy="-3" r="3" fill="#B9AFA4"/><ellipse cx="5" cy="-9" rx="1.3" ry="4" fill="#B9AFA4"/><ellipse cx="7.5" cy="-8.5" rx="1.3" ry="4" fill="#B9AFA4"/><circle cx="-6" cy="0" r="1.8" fill="#fff"/></g></g>
+<g class="spy" data-id="kite" filter="url(#bw)"><g id="art-kite" transform="translate(182 112)"><circle r="14" fill="transparent"/><path d="M0 -12 L8 0 L0 12 L-8 0Z" fill="#E2574C"/><path d="M0 -12 V12 M-8 0 H8" stroke="#F2B33D" stroke-width="1.5"/><path d="M0 12 q4 6 0 10 q-4 4 0 10" stroke="#10233D" stroke-width="1.2" fill="none"/></g></g>
+<g class="spy" data-id="beaver" filter="url(#bw)"><g id="art-beaver" transform="translate(232 452)"><circle r="14" fill="transparent"/><ellipse cx="0" cy="0" rx="7" ry="5" fill="#6B4423"/><circle cx="-3" cy="-1.5" r="1" fill="#10233D"/><path d="M-16 4 L-8 2 M-16 -2 L-9 -1" stroke="#DDF2FC" stroke-width="1.6"/></g></g>
+<g class="spy" data-id="skier" filter="url(#bw)"><g id="art-skier" transform="translate(372 160)"><circle r="14" fill="transparent"/><circle cx="0" cy="-8" r="2.4" fill="#E2574C"/><path d="M0 -6 L-1 2 M-1 -3 L4 -1 M-1 2 L3 7" stroke="#10233D" stroke-width="2" fill="none"/><path d="M-6 8 L8 6" stroke="#2E6DA4" stroke-width="2"/></g></g>
+</svg><div class="cheer" id="cheer" hidden><div><div class="cheer-emoji">🎉</div><b>You found them all!</b><p id="cheer-msg">Great eyes! Come back next month for a new picture.</p><div class="btns" style="justify-content:center;margin:0"><button class="btn primary" type="button" id="again">Play again</button><button class="btn light" type="button" id="harder">Try it harder</button></div></div></div></div>
+  <div class="card"><div class="section-head" style="margin:0"><h2 style="font-size:24px">I spy with my little eye…</h2><div class="big" id="spy-count">0 of 12</div></div><ul class="spylist" id="spylist"></ul></div>
 </div></section>
 <section><div class="container" style="display:grid;gap:16px">
   <div class="section-head" style="margin:0"><h2>Halloween I Spy to print</h2></div>
@@ -87,14 +102,25 @@ P.forEach(([f,t])=>{
 });
 })();
 </script>
-<style>.ispy-wrap{position:relative}.spy{cursor:pointer}.spy.found{opacity:.95}.spy.found>*{filter:drop-shadow(0 0 6px #fff)}
+<style>.ispy-wrap{position:relative}.spy{cursor:pointer}
+.spy.off{cursor:default}
+.ispy-levels{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.ispy-levels .chip[aria-pressed="true"]{border-color:var(--ink);background:var(--soft)}
+.ispy-levels .kid-note{margin:0 0 0 4px}
 .ring{fill:none;stroke:#FFD45C;stroke-width:5;pointer-events:none}
+.hintring{fill:none;stroke:#fff;stroke-width:4;pointer-events:none;animation:hint 1.2s ease-in-out infinite}
+@keyframes hint{0%,100%{opacity:.25}50%{opacity:1}}
+.pop{animation:pop .55s ease-out}@keyframes pop{0%{opacity:0;transform:scale(.6)}60%{opacity:1;transform:scale(1.15)}100%{transform:scale(1)}}
+.spark{pointer-events:none;font-size:30px}
 .spylist{list-style:none;padding:0;margin:10px 0 0;display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:8px 14px;font-size:18px;font-weight:600}
 .spylist li{display:flex;align-items:center;gap:8px}.spylist .box{width:22px;height:22px;border:3px solid var(--line);border-radius:6px;flex:none}
+.spylist svg.mini{width:34px;height:34px;flex:none;background:#fff;border:1px solid var(--line);border-radius:6px}
 .spylist li.got{color:var(--good);text-decoration:line-through}.spylist li.got .box{background:var(--good);border-color:var(--good)}
 .cheer{position:absolute;inset:0;display:grid;place-items:center;background:rgba(16,35,61,.72);border-radius:14px;color:#fff;text-align:center;padding:16px}.cheer[hidden]{display:none}
+.cheer .btn[hidden]{display:none}.cheer-emoji{font-size:44px;line-height:1}.cheer p{margin:6px 0 12px}
+@media (max-width:560px){.cheer{padding:8px}.cheer-emoji{font-size:28px}.cheer b{font-size:17px}.cheer p{font-size:14px;margin:2px 0 8px;line-height:1.3}.cheer .btn{padding:6px 12px;font-size:15px;min-height:0}}
 .flash{animation:fl .5s}@keyframes fl{0%{transform:scale(1)}50%{transform:scale(1.25)}100%{transform:scale(1)}}
-@media (prefers-reduced-motion:reduce){.flash{animation:none}}</style>
+@media (prefers-reduced-motion:reduce){.flash,.pop,.hintring{animation:none}}</style>
 </main>
 <footer class="site-foot"></footer>
 <script src="layout.js"></script>
@@ -103,14 +129,59 @@ P.forEach(([f,t])=>{
 <script src="site.js"></script>
 <script>
 
-(function(){const svg=document.getElementById("scene"),list=document.getElementById("spylist"),total=list.children.length;let got=new Set();
-function update(){document.getElementById("spy-count").textContent=got.size+" of "+total;if(got.size===total)document.getElementById("cheer").hidden=false}
-svg.querySelectorAll(".spy").forEach(g=>{g.addEventListener("click",()=>{const id=g.dataset.id;if(got.has(id))return;got.add(id);g.classList.add("found");
-  const b=g.getBBox();const r=document.createElementNS("http://www.w3.org/2000/svg","circle");const ctm=g.getCTM(),sv=svg.getCTM().inverse();
-  const p=svg.createSVGPoint();p.x=b.x+b.width/2;p.y=b.y+b.height/2;const q=p.matrixTransform(sv.multiply(ctm));r.setAttribute("cx",q.x);r.setAttribute("cy",q.y);r.setAttribute("r",Math.max(b.width,b.height)/2+12);r.setAttribute("class","ring");svg.append(r);
-  const li=list.querySelector('[data-for="'+id+'"]');if(li){li.classList.add("got","flash")}update();if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:"ispy found: "+id,event:true})})});
-document.getElementById("again").onclick=()=>{got=new Set();svg.querySelectorAll(".ring").forEach(r=>r.remove());svg.querySelectorAll(".spy").forEach(g=>g.classList.remove("found"));list.querySelectorAll("li").forEach(l=>l.classList.remove("got","flash"));document.getElementById("cheer").hidden=true;update()};
-update();})();
+(function(){
+const svg=document.getElementById("scene"),list=document.getElementById("spylist"),NS="http://www.w3.org/2000/svg";
+const NAMES={barn:"a red barn",moose:"a moose",balloon:"a hot air balloon",kayak:"a kayak",cow:"a cow",pumpkin:"a pumpkin",owl:"an owl",tractor:"a tractor",bike:"a bike",fish:"a jumping fish",tent:"a tent",eagle:"an eagle",
+  squirrel:"a squirrel in a tree",frog:"a frog by the water",butterfly:"a butterfly",mailbox:"a mailbox",bunny:"a bunny",kite:"a kite",beaver:"a beaver swimming",skier:"a skier on the mountain"};
+const LEVELS={
+  easy:{ids:["barn","balloon","cow","tractor","moose","kayak","tent","pumpkin"],note:"8 big things. Stuck? A hint will glow.",hint:true,pics:true},
+  medium:{ids:["barn","moose","balloon","kayak","cow","pumpkin","owl","tractor","bike","fish","tent","eagle"],note:"12 things, no hints.",hint:false,pics:true},
+  hard:{ids:["barn","moose","balloon","kayak","cow","pumpkin","owl","tractor","bike","fish","tent","eagle","squirrel","frog","butterfly","mailbox","bunny","kite","beaver","skier"],note:"20 things, some tiny and tucked away. Words only, no hints.",hint:false,pics:false}};
+let level="easy";try{const v=localStorage.getItem("ove-ispy-level");if(LEVELS[v])level=v}catch(e){}
+let got=new Set(),hintT=null,revealT=null;const mat=document.getElementById("bwm");
+const reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+function centerOf(g){const b=g.getBBox(),ctm=g.getCTM(),sv=svg.getCTM().inverse(),pt=svg.createSVGPoint();pt.x=b.x+b.width/2;pt.y=b.y+b.height/2;const q=pt.matrixTransform(sv.multiply(ctm));return{x:q.x,y:q.y,r:Math.max(b.width,b.height)/2}}
+function boxOf(id){const g=svg.querySelector('[data-id="'+id+'"]'),c=centerOf(g),r=Math.max(c.r,14)+6;return(c.x-r)+" "+(c.y-r)+" "+(2*r)+" "+(2*r)}
+function setSat(v){mat.setAttribute("values",String(v))}
+function grayAll(){setSat(0);document.getElementById("bg").setAttribute("filter","url(#bw)");svg.querySelectorAll(".spy").forEach(g=>g.setAttribute("filter","url(#bw)"))}
+function build(){
+  clearTimeout(revealT);got=new Set();grayAll();svg.querySelectorAll(".ring,.hintring,.spark").forEach(n=>n.remove());
+  document.getElementById("cheer").hidden=true;const L=LEVELS[level];
+  document.querySelectorAll("[data-level]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.level===level)));
+  document.getElementById("level-note").textContent=L.note;
+  document.getElementById("harder").hidden=level==="hard";
+  svg.querySelectorAll(".spy").forEach(g=>g.classList.toggle("off",!L.ids.includes(g.dataset.id)));
+  list.replaceChildren(...L.ids.map(id=>{const li=document.createElement("li");li.dataset.for=id;
+    const box=document.createElement("span");box.className="box";box.setAttribute("aria-hidden","true");li.append(box);
+    if(L.pics){const m=document.createElementNS(NS,"svg");m.setAttribute("class","mini");m.setAttribute("viewBox",boxOf(id));m.setAttribute("aria-hidden","true");const u=document.createElementNS(NS,"use");u.setAttribute("href","#art-"+id);m.append(u);li.append(m)}
+    li.append(document.createTextNode(NAMES[id]));return li}));
+  update();armHint()}
+function update(){const t=LEVELS[level].ids.length;document.getElementById("spy-count").textContent=got.size+" of "+t;
+  if(got.size===t){clearTimeout(hintT);svg.querySelectorAll(".hintring").forEach(n=>n.remove());revealAll()}}
+function revealAll(){const bg=document.getElementById("bg");
+  const done=()=>{bg.removeAttribute("filter");svg.querySelectorAll(".spy").forEach(g=>g.removeAttribute("filter"));setSat(0);
+    document.getElementById("cheer-msg").textContent=level==="hard"?"Wow, you found every last one! Come back next month for a new picture.":"Great eyes! Come back next month for a new picture.";
+    document.getElementById("cheer").hidden=false};
+  if(reduce){done();return}
+  const t0=performance.now();(function step(t){const k=Math.min(1,(t-t0)/1400);setSat(k);if(k<1)requestAnimationFrame(step);else revealT=setTimeout(done,350)})(t0)}
+function armHint(){clearTimeout(hintT);if(!LEVELS[level].hint)return;hintT=setTimeout(()=>{
+  const left=LEVELS[level].ids.filter(id=>!got.has(id));if(!left.length)return;svg.querySelectorAll(".hintring").forEach(n=>n.remove());
+  const id=left[Math.floor(Math.random()*left.length)],c=centerOf(svg.querySelector('[data-id="'+id+'"]'));
+  const r=document.createElementNS(NS,"circle");r.setAttribute("class","hintring");r.setAttribute("cx",c.x);r.setAttribute("cy",c.y);r.setAttribute("r",c.r+18);svg.append(r)},20000)}
+svg.querySelectorAll(".spy").forEach(g=>g.addEventListener("click",()=>{const id=g.dataset.id;
+  if(!LEVELS[level].ids.includes(id)||got.has(id))return;got.add(id);
+  g.removeAttribute("filter");const art=g.firstElementChild;art.classList.remove("pop");void art.getBBox();
+  const c=centerOf(g);
+  const ring=document.createElementNS(NS,"circle");ring.setAttribute("class","ring");ring.setAttribute("cx",c.x);ring.setAttribute("cy",c.y);ring.setAttribute("r",c.r+12);svg.append(ring);
+  if(!reduce){const sp=document.createElementNS(NS,"text");sp.setAttribute("class","spark");sp.setAttribute("x",c.x+c.r);sp.setAttribute("y",c.y-c.r);sp.textContent="✨";svg.append(sp);setTimeout(()=>sp.remove(),900)}
+  svg.querySelectorAll(".hintring").forEach(n=>n.remove());
+  const li=list.querySelector('[data-for="'+id+'"]');if(li){li.classList.add("got","flash")}
+  update();armHint();
+  if(window.goatcounter&&window.goatcounter.count)window.goatcounter.count({path:"ispy found: "+id+" ("+level+")",event:true})}));
+document.querySelectorAll("[data-level]").forEach(b=>b.onclick=()=>{level=b.dataset.level;try{localStorage.setItem("ove-ispy-level",level)}catch(e){}build()});
+document.getElementById("again").onclick=build;
+document.getElementById("harder").onclick=()=>{level=level==="easy"?"medium":"hard";try{localStorage.setItem("ove-ispy-level",level)}catch(e){}build()};
+build();})();
 </script>
 </body>
 </html>
