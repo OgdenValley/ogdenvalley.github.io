@@ -80,25 +80,79 @@
   <div class="card"><div class="section-head" style="margin:0"><h2 style="font-size:24px">I spy with my little eye…</h2><div class="big" id="spy-count">0 of 12</div></div><ul class="spylist" id="spylist"></ul></div>
 </div></section>
 <section><div class="container" style="display:grid;gap:16px">
-  <div class="section-head" style="margin:0"><h2>Halloween I Spy to print</h2></div>
-  <p class="lead" style="margin:0">Find each picture, check the box, then color it in. Print one or save it to print later.</p>
-  <div class="grid" id="ispy-print" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px"></div>
+  <div class="section-head" style="margin:0"><h2>Halloween I Spy: play or print</h2></div>
+  <p class="lead" style="margin:0">Tap the picture when you find each thing. It sparkles and the box checks itself! Or print one and do it with crayons.</p>
+  <div class="grid" id="ispy-print" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px"></div>
 </div></section>
 <div id="printme" style="display:none"><img alt="" src=""></div>
-<style>@media print{body *{visibility:hidden}#printme,#printme *{visibility:visible}#printme{position:fixed;inset:0;display:block!important}#printme img{width:100%;height:auto}}</style>
+<style>@media print{body *{visibility:hidden}#printme,#printme *{visibility:visible}#printme{position:fixed;inset:0;display:block!important}#printme img{width:100%;height:auto}}
+.hp{position:relative;border:1px solid var(--line);border-radius:8px;background:#fff;overflow:hidden;touch-action:manipulation}
+.hp img{display:block;width:100%;height:auto;user-select:none;-webkit-user-select:none;pointer-events:none}
+.hp svg{position:absolute;inset:0;width:100%;height:100%;cursor:pointer}
+.hp .hit{fill:none;stroke:#F2B33D;stroke-width:14}
+.hp .glow{fill:#FFE58A;opacity:.35}
+.hp .tick{fill:none;stroke:#1E8A4C;stroke-width:16;stroke-linecap:round;stroke-linejoin:round}
+.hp .miss{fill:none;stroke:#9AA7B5;stroke-width:6;opacity:.8;animation:miss .5s ease-out forwards}
+@keyframes miss{to{opacity:0;r:60}}
+.hp .star{font-size:70px;animation:burst .9s ease-out forwards}
+@keyframes burst{0%{opacity:1;transform:translate(0,0) scale(.4)}100%{opacity:0;transform:translate(var(--dx),var(--dy)) scale(1.2)}}
+.hp .ringpop{animation:rp .5s ease-out}@keyframes rp{0%{opacity:0}100%{opacity:1}}
+.hp-done{position:absolute;inset:0;display:grid;place-items:center;background:rgba(16,35,61,.72);color:#fff;text-align:center;padding:12px}
+.hp-done[hidden]{display:none}
+.hp-done b{font-size:20px}
+.hp-count{font-weight:800;font-size:18px;margin:0}
+@media (prefers-reduced-motion:reduce){.hp .star,.hp .miss,.hp .ringpop{animation:none}.hp .star{display:none}}</style>
 <script>
 (function(){
-const P=[["ispy-halloween-trick-or-treat.png","Trick-or-treat I Spy"],["ispy-halloween-pumpkin-patch.png","Pumpkin patch I Spy"]];
+const NS="http://www.w3.org/2000/svg";
+/* Spots are measured on the 1700 x 2200 picture: x, y = center, rx, ry = how far a tap can be and still count.
+   box = where that item's check box is printed at the bottom of the page. */
+const P=[
+ {f:"ispy-halloween-trick-or-treat.png",t:"Trick-or-treat I Spy",spots:{
+   ghost:{x:530,y:555,rx:150,ry:160,box:[213,2000]},bat:{x:1030,y:490,rx:190,ry:110,box:[470,2000]},hat:{x:1420,y:1060,rx:170,ry:150,box:[727,2000]},
+   candy:{x:1225,y:1500,rx:110,ry:90,box:[983,2000]},owl:{x:1480,y:545,rx:110,ry:140,box:[1235,2000]},spider:{x:1335,y:795,rx:100,ry:100,box:[1485,2000]}}},
+ {f:"ispy-halloween-pumpkin-patch.png",t:"Pumpkin patch I Spy",spots:{
+   ghost:{x:380,y:520,rx:160,ry:160,box:[198,1985]},bat:{x:1115,y:470,rx:190,ry:110,box:[456,1985]},hat:{x:320,y:975,rx:170,ry:160,box:[718,1985]},
+   candy:{x:390,y:1475,rx:130,ry:90,box:[982,1985]},owl:{x:1415,y:700,rx:110,ry:140,box:[1245,1985]},spider:{x:1515,y:1275,rx:100,ry:100,box:[1503,1985]}}}];
+const NAMES={ghost:"ghost",bat:"bat",hat:"witch hat",candy:"candy",owl:"owl",spider:"spider"};
+const reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
 const box=document.getElementById("ispy-print");
-P.forEach(([f,t])=>{
-  const a=document.createElement("article"); a.className="card";
-  const im=document.createElement("img"); im.src=f; im.alt=t+": find the ghost, bat, witch hat, candy, owl and spider"; im.loading="lazy"; im.style.cssText="border:1px solid var(--line);border-radius:8px;background:#fff;width:100%;height:auto";
-  const h=document.createElement("h3"); h.textContent=t;
+function mk(tag,attrs){const n=document.createElementNS(NS,tag);for(const k in attrs)n.setAttribute(k,attrs[k]);return n}
+P.forEach(pg=>{
+  const a=document.createElement("article"); a.className="card"; a.style.cssText="display:grid;gap:10px";
+  const wrap=document.createElement("div"); wrap.className="hp";
+  const im=document.createElement("img"); im.src=pg.f; im.alt=pg.t+": find the ghost, bat, witch hat, candy, owl and spider. Tap each one when you find it."; im.loading="lazy";
+  const sv=mk("svg",{viewBox:"0 0 1700 2200",preserveAspectRatio:"none",role:"button","aria-label":"Tap where you see a hidden picture"});
+  const marks=mk("g",{}); sv.append(marks);
+  const done=document.createElement("div"); done.className="hp-done"; done.hidden=true;
+  done.innerHTML='<div><div style="font-size:40px">🎉</div><b>You found them all!</b><p style="margin:4px 0 10px">Now print it and color it in.</p></div>';
+  wrap.append(im,sv,done);
+  const h=document.createElement("h3"); h.textContent=pg.t; h.style.margin="0";
+  const cnt=document.createElement("p"); cnt.className="hp-count";
+  const total=Object.keys(pg.spots).length; let got=new Set();
+  const upd=()=>{cnt.textContent=got.size===total?"All 6 found! ⭐":"Found "+got.size+" of "+total+" · "+Object.keys(pg.spots).filter(k=>!got.has(k)).map(k=>NAMES[k]).join(", ")+" left"};
+  function pt(ev){const r=sv.getBoundingClientRect();return{x:(ev.clientX-r.left)*1700/r.width,y:(ev.clientY-r.top)*2200/r.height}}
+  function sparkle(x,y){if(reduce)return;for(let i=0;i<7;i++){const ang=i/7*Math.PI*2,d=120+Math.random()*60;const t=mk("text",{x:x-30,y:y+25,class:"star"});t.textContent=["✨","⭐","🌟"][i%3];t.style.setProperty("--dx",Math.cos(ang)*d+"px");t.style.setProperty("--dy",Math.sin(ang)*d+"px");t.style.transformBox="fill-box";sv.append(t);setTimeout(()=>t.remove(),950)}}
+  function find(k){const s=pg.spots[k];got.add(k);
+    marks.append(mk("ellipse",{cx:s.x,cy:s.y,rx:s.rx,ry:s.ry,class:"glow ringpop"}),mk("ellipse",{cx:s.x,cy:s.y,rx:s.rx,ry:s.ry,class:"hit ringpop"}));
+    const [bx,by]=s.box;marks.append(mk("path",{d:"M"+(bx-26)+" "+by+" L"+(bx-6)+" "+(by+24)+" L"+(bx+30)+" "+(by-26),class:"tick"}));
+    sparkle(s.x,s.y);upd();
+    if(window.goatcounter&&goatcounter.count)try{goatcounter.count({path:"halloween ispy found: "+k,event:true})}catch(e){}
+    if(got.size===total)setTimeout(()=>{done.hidden=false},reduce?0:900)}
+  sv.addEventListener("click",ev=>{const q=pt(ev);let hit=null;
+    for(const k in pg.spots){if(got.has(k))continue;const s=pg.spots[k];if(((q.x-s.x)/s.rx)**2+((q.y-s.y)/s.ry)**2<=1){hit=k;break}}
+    if(hit){find(hit);return}
+    /* tapped a check box at the bottom? that's fine too, kids may want to tick it themselves */
+    for(const k in pg.spots){const [bx,by]=pg.spots[k].box;if(!got.has(k)&&Math.abs(q.x-bx)<70&&Math.abs(q.y-by)<70){find(k);return}}
+    if(!reduce){const m=mk("circle",{cx:q.x,cy:q.y,r:20,class:"miss"});sv.append(m);setTimeout(()=>m.remove(),550)}});
+  done.addEventListener("click",()=>{done.hidden=true});
   const b=document.createElement("div"); b.className="btns"; b.style.margin="0";
   const pr=document.createElement("button"); pr.type="button"; pr.className="btn primary"; pr.textContent="Print";
-  pr.onclick=()=>{const p=document.querySelector("#printme img"); p.onload=()=>window.print(); p.src=f; if(p.complete&&p.naturalWidth)window.print(); if(window.goatcounter&&goatcounter.count)goatcounter.count({path:"ispy printed: "+f,event:true});};
-  const dl=document.createElement("a"); dl.className="btn ghost"; dl.style.color="var(--blue)"; dl.href=f; dl.download=f; dl.textContent="Download";
-  b.append(pr,dl); a.append(im,h,b); box.append(a);
+  pr.onclick=()=>{const p=document.querySelector("#printme img"); p.onload=()=>window.print(); p.src=pg.f; if(p.complete&&p.naturalWidth)window.print(); if(window.goatcounter&&goatcounter.count)goatcounter.count({path:"ispy printed: "+pg.f,event:true});};
+  const dl=document.createElement("a"); dl.className="btn ghost"; dl.style.color="var(--blue)"; dl.href=pg.f; dl.download=pg.f; dl.textContent="Download";
+  const again=document.createElement("button"); again.type="button"; again.className="btn ghost"; again.style.color="var(--blue)"; again.textContent="Start over";
+  again.onclick=()=>{got=new Set();marks.replaceChildren();done.hidden=true;upd()};
+  b.append(pr,dl,again); upd(); a.append(wrap,h,cnt,b); box.append(a);
 });
 })();
 </script>
