@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-15T15:46:05.589Z",
+ "updated": "2026-10-16T08:45:17.712Z",
  "meetings": [
   {
    "body": "Ogden Valley City Council",
@@ -50,11 +50,11 @@
    "elev": 7690,
    "depth": {
     "value": 0,
-    "date": "2026-10-14"
+    "date": "2026-10-15"
    },
    "water": {
     "value": 0,
-    "date": "2026-10-14"
+    "date": "2026-10-15"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -64,11 +64,11 @@
    "elev": 5970,
    "depth": {
     "value": 0,
-    "date": "2026-10-14"
+    "date": "2026-10-15"
    },
    "water": {
-    "value": 0,
-    "date": "2026-10-14"
+    "value": 0.1,
+    "date": "2026-10-15"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
@@ -77,12 +77,12 @@
    "name": "Monte Cristo",
    "elev": 8930,
    "depth": {
-    "value": 2,
-    "date": "2026-10-14"
+    "value": 1,
+    "date": "2026-10-15"
    },
    "water": {
     "value": 0.2,
-    "date": "2026-10-14"
+    "date": "2026-10-15"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
    "source": "USDA NRCS SNOTEL"
