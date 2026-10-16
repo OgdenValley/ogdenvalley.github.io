@@ -329,6 +329,66 @@ window.OVE_PLACES = {
    "link": "https://www.powdermountain.com/eats",
    "address": "6965 E Powder Mountain Rd, Eden, UT 84310",
    "checked": "2026-10-07"
+  },
+  {
+   "name": "Eden Coffee Cocoa & Juicery",
+   "food": [
+    "Coffee & breakfast"
+   ],
+   "town": "Eden",
+   "type": "Coffee & juice",
+   "blurb": "Coffee, cocoa and juice shop on Highway 158 in Eden.",
+   "phone": "801-621-0505",
+   "address": "2405 N Hwy 158, Eden, UT 84310",
+   "added": "2026-10-16"
+  },
+  {
+   "name": "Sawasdee Thai Eden",
+   "food": [
+    "Sit-down dinner"
+   ],
+   "good": [
+    "Takeout"
+   ],
+   "note": "Takeout only. Hours we found: Tue-Sat 11:30-2 and 4-7:30, closed Sun-Mon. Call to confirm.",
+   "town": "Eden",
+   "type": "Thai (takeout)",
+   "blurb": "Takeout-only Thai restaurant in Eden.",
+   "phone": "801-979-9896",
+   "link": "https://sawasdee-thai-eden.square.site",
+   "address": "2612 N Hwy 162, Bldg 4, Eden, UT 84310",
+   "added": "2026-10-16"
+  },
+  {
+   "name": "ScallyWag Grill",
+   "food": [
+    "Burgers & casual",
+    "Coffee & breakfast"
+   ],
+   "note": "Hours we found: Tue-Fri 10:30-2:30, Sat 9-2:30. Call to confirm.",
+   "town": "Eden",
+   "type": "Grill",
+   "blurb": "Breakfast and lunch grill on Highway 162 in Eden.",
+   "phone": "801-648-9136",
+   "address": "2580 N Hwy 162, Suite A, Eden, UT 84310",
+   "added": "2026-10-16"
+  },
+  {
+   "name": "The Drip Coffee & Soda Shop",
+   "food": [
+    "Coffee & breakfast"
+   ],
+   "good": [
+    "Takeout"
+   ],
+   "note": "Drive-thru next to Valley Market.",
+   "town": "Eden",
+   "type": "Coffee & soda (drive-thru)",
+   "blurb": "Coffee and soda shop near Valley Market on the road to Powder Mountain, with dine-in, walk-up and drive-thru service.",
+   "phone": "312-391-3912",
+   "link": "https://the-drip-coffee-and-soda-shop.square.site",
+   "address": "2555 N Wolf Creek Dr, Eden, UT 84310",
+   "added": "2026-10-16"
   }
  ],
  "businesses": [
@@ -690,6 +750,56 @@ window.OVE_PLACES = {
    "link": "https://wolfcreekresort.com/facilities/",
    "address": "3718 N Wolf Creek Dr, Eden, UT 84310",
    "checked": "2026-10-07"
+  },
+  {
+   "name": "Lash Line",
+   "town": "Eden",
+   "home": true,
+   "type": "Lash, brow and facials",
+   "blurb": "Kayla Armstrong offers lash extensions, lash lifts and tints, brow and lip waxing, and basic facials. Book online.",
+   "phone": "(435) 703-3479",
+   "link": "https://square.site/book/D9GCY2TC8S2SP/lash-line-eden-ut",
+   "added": "2026-10-16"
+  },
+  {
+   "name": "Lorrie Harper, PT",
+   "town": "Eden",
+   "type": "Physical therapy",
+   "blurb": "Physical therapist at the Eden Professional Center, also known as Zenergy Manual Therapy & Pilates.",
+   "phone": "(801) 644-8731",
+   "link": "https://lorrieharper.com",
+   "address": "2580 N Hwy 162, Suite C, Eden, UT 84310",
+   "added": "2026-10-16"
+  },
+  {
+   "name": "Lunar Energy Massage & Wellness",
+   "town": "Eden",
+   "type": "Massage",
+   "blurb": "Massage and bodywork on the lower level of the Wolf Creek Clubhouse, booked online through Vagaro.",
+   "phone": "(801) 624-9990",
+   "link": "https://wolfcreekresort.com/portfolio/yoga-massage-bodywork-lunar-energy/",
+   "address": "3718 N Wolf Creek Dr (lower level, Wolf Creek Clubhouse), Eden, UT 84310",
+   "added": "2026-10-16"
+  },
+  {
+   "name": "Mountain Performance Massage",
+   "town": "Eden",
+   "type": "Massage and stretch therapy",
+   "blurb": "Shawn Carolan, LMT, offers sports and relaxation massage and Fascial Stretch Therapy.",
+   "phone": "(801) 688-3006",
+   "link": "https://mountainperformancemassage.com/",
+   "address": "2429 N Highway 158, Eden, UT 84310",
+   "added": "2026-10-16"
+  },
+  {
+   "name": "The Healing Tree",
+   "town": "Eden",
+   "home": true,
+   "type": "Massage and bodywork",
+   "blurb": "Theresa Ellis, LMT, offers massage, CranioSacral therapy, energy work and biofeedback scans. Book online.",
+   "phone": "(801) 282-5277",
+   "link": "https://www.thehealingtreeservices.com/",
+   "added": "2026-10-16"
   }
  ],
  "farm": [
@@ -734,6 +844,26 @@ window.OVE_PLACES = {
    "link": "https://sunnyfield-farm.com/",
    "address": "2103 N 5500 E, Eden, UT 84310",
    "checked": "2026-10-07"
+  },
+  {
+   "name": "Dancing Moose Farm",
+   "town": "Huntsville",
+   "type": "Beef ranch / Honey",
+   "blurb": "Grass-fed beef and honey from its own hives, sold now and then through its online farm store; farm tours by appointment.",
+   "note": "Beef and honey aren't always for sale. Check their online store or Instagram.",
+   "phone": "(801) 603-9955",
+   "link": "https://www.dancingmoosefarmut.com/",
+   "address": "13485 E Highway 39, Huntsville, UT 84317",
+   "added": "2026-10-16"
+  },
+  {
+   "name": "Wheelwright's Honey",
+   "town": "Eden",
+   "home": true,
+   "type": "Honey",
+   "blurb": "Raw local Eden honey by the quart. Call to arrange pickup.",
+   "phone": "(801) 648-9088",
+   "added": "2026-10-16"
   }
  ],
  "foodtrucks": [
@@ -752,6 +882,31 @@ window.OVE_PLACES = {
    "blurb": "Free weekend summer concert series at Snowbasin where a 2025 Ski Utah write-up says food trucks serve alongside local breweries; the individual trucks are not named.",
    "link": "https://www.snowbasin.com/events/blues-brews",
    "checked": "2026-10-07"
+  },
+  {
+   "name": "Eden Balloon Festival (food trucks)",
+   "town": "Eden",
+   "type": "Event food trucks (various)",
+   "blurb": "Annual hot-air balloon festival at Eden Park, usually in late September, where local food trucks serve breakfast and more.",
+   "link": "https://www.ogdenvalleynews.com/balloon-festival.html",
+   "added": "2026-10-16"
+  },
+  {
+   "name": "Huntsville Grand Prix CycleKart race (food trucks)",
+   "town": "Huntsville",
+   "type": "Event food trucks (various)",
+   "blurb": "Annual CycleKart street race in Huntsville, usually the first weekend of May, free to watch, with food trucks.",
+   "link": "https://huntsvilleutah.gov/cyclekart-race",
+   "added": "2026-10-16"
+  },
+  {
+   "name": "Sunnyfield Farm Festival (food trucks)",
+   "town": "Eden",
+   "type": "Event food trucks (various)",
+   "blurb": "Annual late-summer farm festival at Sunnyfield Farms in Eden, run by the Community Foundation of Ogden Valley, with food trucks.",
+   "link": "https://www.visitogden.com/events/5th-annual-farm-festival/",
+   "address": "2103 N 5500 E, Eden, UT 84310",
+   "added": "2026-10-16"
   }
  ],
  "artists": [
@@ -795,6 +950,39 @@ window.OVE_PLACES = {
    "name": "Sharon Bradford",
    "area": "Ogden Valley",
    "checked": "2026-10-07"
+  },
+  {
+   "name": "Brent Atwood",
+   "area": "Ogden",
+   "medium": "Murals",
+   "blurb": "Ogden muralist whose work includes the 'Mona Lisa' mural on Washington Boulevard.",
+   "added": "2026-10-16"
+  },
+  {
+   "name": "Cara Koolmees",
+   "area": "Ogden",
+   "medium": "Watercolor",
+   "blurb": "Watercolor painter of buildings, bike races and rail cars, with a long-running gallery-studio on Historic 25th Street in Ogden.",
+   "link": "https://carakoolmees.com",
+   "where": "Her studio at 256 Historic 25th St, Ogden, and the First Friday Art Stroll",
+   "added": "2026-10-16"
+  },
+  {
+   "name": "Jim Jacobs",
+   "area": "Ogden",
+   "medium": "Sculpture / installation",
+   "blurb": "Ogden sculptor working with branches, lumber and tools to explore people's relationship with the environment.",
+   "link": "http://jcjacobs.com",
+   "added": "2026-10-16"
+  },
+  {
+   "name": "Roberta Glidden",
+   "area": "Ogden",
+   "medium": "Painting",
+   "blurb": "Ogden painter and Gallery 25 board member, with studio space at the gallery.",
+   "link": "https://robertaglidden.com/",
+   "where": "Gallery 25, 268 25th St, Ogden",
+   "added": "2026-10-16"
   }
  ]
 };
