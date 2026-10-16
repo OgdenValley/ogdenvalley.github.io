@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T02:42:13.259Z",
+ "updated": "2026-10-16T03:42:56.425Z",
  "items": [
   {
    "t": 1792107424964,
@@ -42,13 +42,6 @@
    "text": "Weber County forecast: Thursday good · Friday good · Saturday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1792032184667,
-   "src": "UDOT",
-   "text": "Cleared: SR 39. Crash, EB Ogden Canyon at Valley Dr (SR-39, Ogden). No Lanes Blocked.",
-   "kind": "clear",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {
