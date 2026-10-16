@@ -1,14 +1,14 @@
 {
- "updated": "2026-10-16T22:41:29.907Z",
+ "updated": "2026-10-16T23:36:14.630Z",
  "source": "Utah Department of Transportation (UDOT Traffic)",
  "link": "https://udottraffic.utah.gov/",
  "status": {
-  "event": "ok",
-  "roadconditions": "ok",
-  "alerts": "ok",
-  "servicevehicles": "ok",
-  "weatherstations": "ok",
-  "mountainpasses": "ok"
+  "event": "failed",
+  "roadconditions": "failed",
+  "alerts": "failed",
+  "servicevehicles": "failed",
+  "weatherstations": "failed",
+  "mountainpasses": "failed"
  },
  "events": [
   {
