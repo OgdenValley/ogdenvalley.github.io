@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T17:37:15.360Z",
+ "updated": "2026-10-17T18:40:45.655Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
@@ -54,11 +54,11 @@
    "date": "2026-10-21",
    "label": "Wed",
    "md": "Oct 21",
-   "high": 66,
-   "low": 40,
-   "pop": 40,
-   "short": "Slight Chance Light Rain then Slight Chance Showers And Thunderstorms",
-   "both": "Slight Chance Light Rain then Slight Chance Showers And Thunderstorms / Chance Light Rain",
+   "high": 69,
+   "low": 43,
+   "pop": 21,
+   "short": "Mostly Sunny",
+   "both": "Mostly Sunny / Slight Chance Light Rain",
    "snow": false,
    "wind": "0 to 5 mph"
   },
@@ -66,36 +66,36 @@
    "date": "2026-10-22",
    "label": "Thu",
    "md": "Oct 22",
-   "high": 60,
-   "low": 38,
-   "pop": 84,
-   "short": "Light Rain Likely then Showers And Thunderstorms",
-   "both": "Light Rain Likely then Showers And Thunderstorms / Showers And Thunderstorms",
+   "high": 65,
+   "low": 42,
+   "pop": 86,
+   "short": "Chance Light Rain then Showers And Thunderstorms Likely",
+   "both": "Chance Light Rain then Showers And Thunderstorms Likely / Showers And Thunderstorms then Rain",
    "snow": false,
-   "wind": "3 mph"
+   "wind": "1 to 5 mph"
   },
   {
    "date": "2026-10-23",
    "label": "Fri",
    "md": "Oct 23",
-   "high": 51,
-   "low": 31,
-   "pop": 82,
-   "short": "Rain then Showers And Thunderstorms Likely",
-   "both": "Rain then Showers And Thunderstorms Likely / Chance Light Rain",
+   "high": 53,
+   "low": 37,
+   "pop": 87,
+   "short": "Rain then Showers And Thunderstorms",
+   "both": "Rain then Showers And Thunderstorms / Showers And Thunderstorms Likely then Chance Light Rain",
    "snow": false,
    "wind": "1 to 5 mph"
   }
  ],
- "today": "Today: Sunny, with a high near 67. Southwest wind around 2 mph.",
+ "today": "This Afternoon: Sunny, with a high near 67. West southwest wind around 2 mph.",
  "valleySnowDays": [],
  "snowLevelFt": 8100,
  "snowInches48": 0,
- "forecastIssued": "2026-10-17T15:51:47+00:00",
+ "forecastIssued": "2026-10-17T18:31:34+00:00",
  "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
  "source": "National Weather Service Salt Lake City",
  "status": {
-  "forecast": "failed",
+  "forecast": "ok",
   "grid": "ok"
  }
 }
