@@ -1,13 +1,19 @@
 {
- "updated": "2026-10-16T18:47:45.618Z",
- "needed": false,
- "since": null,
- "reasons": [],
- "forecastIssued": "2026-10-16T18:31:34+00:00",
+ "updated": "2026-10-17T06:49:01.429Z",
+ "needed": true,
+ "since": "2026-10-17T06:49:01.429Z",
+ "reasons": [
+  {
+   "kind": "wet",
+   "key": "wet:2026-10-22",
+   "text": "Two wet days in a row: Thursday 84% and Friday 82%."
+  }
+ ],
+ "forecastIssued": "2026-10-17T06:31:26+00:00",
  "draft": {
-  "made": "2026-10-13T18:23:03.970Z",
-  "why": "First draft, made when the weather watch was set up",
+  "made": "2026-10-17T06:49:01.429Z",
+  "why": "New reason for a briefing: Two wet days in a row: Thursday 84% and Friday 82%.",
   "image": "weather-draft.png",
-  "forecastIssued": "2026-10-13T16:57:08+00:00"
+  "forecastIssued": "2026-10-17T06:31:26+00:00"
  }
 }
