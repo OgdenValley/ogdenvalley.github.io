@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T13:38:25.067Z",
+ "updated": "2026-10-17T14:38:03.736Z",
  "source": "Utah Department of Transportation (UDOT Traffic)",
  "link": "https://udottraffic.utah.gov/",
  "status": {
@@ -17,13 +17,13 @@
    "sub": "",
    "road": "I-84",
    "dir": "",
-   "desc": "!! Traffic Alerts !! (updated 10/14) Westbound single lane closure | Tue (10/6) - Fri (10/16) | Day & Night Westbound single lane closure | Fri (10/19) - Tue, (11/3) | Day & Night Note: Wide load restricted above 11 ft Westbound single lane closure | Spring 2027(TBA) - Winter 2027(TBA) | Day & Night Note: Wide load res",
+   "desc": "!! Traffic Alerts !! (updated 10/14) Westbound single lane closure | Tue (10/6) - Sun (10/18) | Day & Night Westbound single lane closure | Mon (10/19) - Tue, (11/3) | Day & Night Note: Wide load restricted above 11 ft Westbound single lane closure | Spring 2027(TBA) - Winter 2027(TBA) | Day & Night Note: Wide load res",
    "loc": "I-84 bridges crossing the UP railroad; Located just west of the eastbound I-84 rest area. Both bridges span from mileposts 90.6 - 91.2.",
    "county": "Weber",
    "full": false,
    "severity": "Unknown",
    "reported": 1743033600000,
-   "updated": 1792059395000,
+   "updated": 1792226026000,
    "ends": 1838678400000,
    "lat": 41.138009,
    "lng": -111.872556,
@@ -55,7 +55,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792243750000
+   "updated": 1792247299000
   },
   {
    "id": "186",
@@ -63,7 +63,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792243750000
+   "updated": 1792247300000
   },
   {
    "id": "197",
@@ -71,7 +71,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792243750000
+   "updated": 1792247300000
   },
   {
    "id": "208",
@@ -79,7 +79,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792243750000
+   "updated": 1792247300000
   },
   {
    "id": "216",
@@ -87,7 +87,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792243750000
+   "updated": 1792247300000
   },
   {
    "id": "217",
@@ -95,7 +95,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792243750000
+   "updated": 1792247300000
   },
   {
    "id": "219",
@@ -103,7 +103,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792243750000
+   "updated": 1792247300000
   },
   {
    "id": "224",
@@ -111,7 +111,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792243750000
+   "updated": 1792247300000
   },
   {
    "id": "236",
@@ -119,7 +119,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792243750000
+   "updated": 1792247300000
   },
   {
    "id": "238",
@@ -127,7 +127,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792243750000
+   "updated": 1792247299000
   },
   {
    "id": "247",
@@ -135,7 +135,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1792243750000
+   "updated": 1792247300000
   }
  ],
  "alerts": [
@@ -152,111 +152,111 @@
   {
    "name": "I-84 @ MP 91 Devils Gate",
    "air": null,
-   "surface": 36.7,
+   "surface": 36,
    "status": "Dry",
    "gust": null,
    "lat": 41.1397,
    "lng": -111.8539,
-   "updated": 1792243200000,
+   "updated": 1792246800000,
    "ice": false
   },
   {
    "name": "I-84 @ MP 97 Peterson",
-   "air": 30.63,
-   "surface": 36.9,
+   "air": 29.98,
+   "surface": 36.1,
    "status": "Dry",
-   "gust": 3.29,
+   "gust": 2.63,
    "lat": 41.114,
    "lng": -111.7631,
-   "updated": 1792243200000,
+   "updated": 1792246800000,
    "ice": false
   },
   {
    "name": "I-84 @ Weber Canyon",
-   "air": 33.06,
-   "surface": 37.4,
+   "air": 32.59,
+   "surface": 36.7,
    "status": "Dry",
-   "gust": 18.85,
+   "gust": 17.54,
    "lat": 41.1379,
    "lng": -111.8868,
-   "updated": 1792243200000,
+   "updated": 1792246800000,
    "ice": false
   },
   {
    "name": "North Ogden Divide",
-   "air": 36.16,
-   "surface": 35.1,
+   "air": 35.8,
+   "surface": 34.6,
    "status": "",
-   "gust": 11.18,
+   "gust": 11.62,
    "lat": 41.3205,
    "lng": -111.8993,
-   "updated": 1792243200000,
+   "updated": 1792246800000,
    "ice": false
   },
   {
    "name": "SR-158 @ MP 11.5 Powder Mountain",
-   "air": 46.84,
-   "surface": 41.5,
+   "air": 45.49,
+   "surface": 40.6,
    "status": "Dry",
-   "gust": 16.02,
+   "gust": 14.53,
    "lat": 41.37884,
    "lng": -111.7841,
-   "updated": 1792243200000,
+   "updated": 1792246800000,
    "ice": false
   },
   {
    "name": "SR-167 @ Trappers Loop",
-   "air": 35.76,
-   "surface": 40.5,
+   "air": 37.64,
+   "surface": 41.2,
    "status": "Dry",
-   "gust": 7.89,
+   "gust": 9.64,
    "lat": 41.2058,
    "lng": -111.8166,
-   "updated": 1792243200000,
+   "updated": 1792246800000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 14 Pineview Dam",
-   "air": 34.26,
-   "surface": 38.5,
+   "air": 33.72,
+   "surface": 38.1,
    "status": "Dry",
-   "gust": 8.99,
+   "gust": 10.08,
    "lat": 41.2537,
    "lng": -111.8413,
-   "updated": 1792243200000,
+   "updated": 1792246800000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 17.5 Huntsville",
-   "air": 28.86,
-   "surface": 36.7,
+   "air": 29.63,
+   "surface": 36.5,
    "status": "Dry",
-   "gust": 0.88,
+   "gust": 1.53,
    "lat": 41.24793,
    "lng": -111.77576,
-   "updated": 1792243200000,
+   "updated": 1792246800000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 46 Monte Cristo",
-   "air": 42.92,
+   "air": 42.74,
    "surface": null,
    "status": "",
-   "gust": 19.38,
+   "gust": 19,
    "lat": 41.4446,
    "lng": -111.5056,
-   "updated": 1792243200000,
+   "updated": 1792246800000,
    "ice": false
   },
   {
    "name": "US-89 @ MP 406 Weber River",
-   "air": 41.67,
-   "surface": 43.3,
+   "air": 41.49,
+   "surface": 43,
    "status": "Dry",
-   "gust": 40.99,
+   "gust": 45.59,
    "lat": 41.1351,
    "lng": -111.91205,
-   "updated": 1792243200000,
+   "updated": 1792246800000,
    "ice": false
   }
  ],

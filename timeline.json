@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-17T05:39:26.321Z",
+ "updated": "2026-10-17T14:38:08.640Z",
  "items": [
+  {
+   "t": 1792247888639,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Saturday good · Sunday good · Monday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1792212083953,
    "src": "UDOT alert",
@@ -39,7 +46,7 @@
  ],
  "seen": {
   "ev": {
-   "10148": "I-84|!! Traffic Alerts !! (updated 10/14) Westbound single lane closure | Tue (10/6) - Fri (10/16) | Day & Night Westbound single lane closure | Fri (10/19) - Tue, (11/3) | Day & Night Note: Wide load restricted above 11 ft Westbound single lane closure | Spring 2027(TBA) - Winter 2027(TBA) | Day & Night Note: Wide load res",
+   "10148": "I-84|!! Traffic Alerts !! (updated 10/14) Westbound single lane closure | Tue (10/6) - Sun (10/18) | Day & Night Westbound single lane closure | Mon (10/19) - Tue, (11/3) | Day & Night Note: Wide load restricted above 11 ft Westbound single lane closure | Spring 2027(TBA) - Winter 2027(TBA) | Day & Night Note: Wide load res",
    "36834": "SR 39|!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at ni"
   },
   "al": {
@@ -74,6 +81,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "October 16, 2026 3:31 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "October 17, 2026 8:21 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
