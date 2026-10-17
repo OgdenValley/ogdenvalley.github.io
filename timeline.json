@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-17T02:41:14.893Z",
+ "updated": "2026-10-17T04:41:23.954Z",
  "items": [
+  {
+   "t": 1792212083953,
+   "src": "UDOT alert",
+   "text": "Construction: 650 North southbound off-ramp in Clearfield is closed and detoured to 700 South. The closure will be active from Friday 10/16 at 10 p.m. until Monday, 10/19 at 4 a.m.",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1792212083953,
+   "src": "UDOT alert",
+   "text": "Crash: WB Riverdale Rd at 900 W (Weber County) all lanes of traffic are closed. Use alternate.",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1792198382919,
    "src": "UDOT alert",
@@ -28,7 +42,10 @@
    "10148": "I-84|!! Traffic Alerts !! (updated 10/14) Westbound single lane closure | Tue (10/6) - Fri (10/16) | Day & Night Westbound single lane closure | Fri (10/19) - Tue, (11/3) | Day & Night Note: Wide load restricted above 11 ft Westbound single lane closure | Spring 2027(TBA) - Winter 2027(TBA) | Day & Night Note: Wide load res",
    "36834": "SR 39|!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at ni"
   },
-  "al": {},
+  "al": {
+   "2608": 1,
+   "2612": 1
+  },
   "cond": {
    "I-84 I-15 Jct at Riverdale to SR-89#185": "Dry · none",
    "I-84 Uintah Jct to Jct SR-167 at Mountain Green#186": "Dry · none",
