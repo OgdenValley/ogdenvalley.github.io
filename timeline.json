@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-16T22:41:31.934Z",
+ "updated": "2026-10-17T00:53:02.919Z",
  "items": [
+  {
+   "t": 1792198382919,
+   "src": "UDOT alert",
+   "text": "Update: Crash, NB US-89 at Skyline Dr. (Weber County) All lanes of travel are back open. Residual delays remain in the area.",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1792186855978,
    "src": "Utah Air Quality",
@@ -14,13 +21,6 @@
    "text": "Weber County forecast: Friday good · Saturday good · Sunday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1792107424964,
-   "src": "UDOT",
-   "text": "Cleared: SR 193. Crash, EB SR-193 at US 89 (Layton). Left Lane (of 3 Lanes) Blocked.",
-   "kind": "clear",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {
@@ -28,7 +28,9 @@
    "10148": "I-84|!! Traffic Alerts !! (updated 10/14) Westbound single lane closure | Tue (10/6) - Fri (10/16) | Day & Night Westbound single lane closure | Fri (10/19) - Tue, (11/3) | Day & Night Note: Wide load restricted above 11 ft Westbound single lane closure | Spring 2027(TBA) - Winter 2027(TBA) | Day & Night Note: Wide load res",
    "36834": "SR 39|!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at ni"
   },
-  "al": {},
+  "al": {
+   "2611": 1
+  },
   "cond": {
    "I-84 I-15 Jct at Riverdale to SR-89#185": "Dry · none",
    "I-84 Uintah Jct to Jct SR-167 at Mountain Green#186": "Dry · none",
