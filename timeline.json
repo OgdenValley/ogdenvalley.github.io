@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-17T15:38:23.822Z",
+ "updated": "2026-10-17T22:36:40.440Z",
  "items": [
+  {
+   "t": 1792276600440,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Saturday good · Sunday good · Monday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1792247888639,
    "src": "Utah Air Quality",
@@ -28,13 +35,6 @@
    "text": "Update: Crash, NB US-89 at Skyline Dr. (Weber County) All lanes of travel are back open. Residual delays remain in the area.",
    "kind": "road",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792186855978,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Friday good · Saturday good · Sunday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
@@ -74,6 +74,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "October 17, 2026 8:21 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "October 17, 2026 3:47 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
