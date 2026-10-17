@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T06:49:01.429Z",
+ "updated": "2026-10-17T16:39:31.143Z",
  "needed": true,
  "since": "2026-10-17T06:49:01.429Z",
  "reasons": [
@@ -9,7 +9,7 @@
    "text": "Two wet days in a row: Thursday 84% and Friday 82%."
   }
  ],
- "forecastIssued": "2026-10-17T06:31:26+00:00",
+ "forecastIssued": "2026-10-17T15:51:47+00:00",
  "draft": {
   "made": "2026-10-17T06:49:01.429Z",
   "why": "New reason for a briefing: Two wet days in a row: Thursday 84% and Friday 82%.",
