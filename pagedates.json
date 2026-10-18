@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-16T02:42:26.759Z",
+ "updated": "2026-10-18T16:40:36.241Z",
  "pages": {
   "404.html": {
    "posted": "2026-10-06",
@@ -63,8 +63,8 @@
   },
   "fun.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-12",
-   "hash": "93f7ba28f144"
+   "updated": "2026-10-18",
+   "hash": "429b2c6a9ce9"
   },
   "garden.html": {
    "posted": "2026-10-07",
@@ -260,6 +260,11 @@
    "posted": "2026-10-13",
    "updated": "2026-10-13",
    "hash": "cb7261ee11ca"
+  },
+  "time-capsule.html": {
+   "posted": "2026-10-18",
+   "updated": "2026-10-18",
+   "hash": "dfa9820b7ffe"
   }
  }
 }
