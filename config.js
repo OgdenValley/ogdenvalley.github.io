@@ -339,6 +339,8 @@ window.OVE = {
       about: "Neighbors sharing what the weather is really doing in the Valley: snow totals, wind, storms and ice." },
     { id: "updates", short: "Updates", name: "Weber, Davis & Ogden Valley Updates", url: "https://www.facebook.com/share/g/19Cds7a9Nw/",
       about: "News and updates from across Weber County, Davis County and Ogden Valley." },
+    { id: "development", short: "Development talk", name: "Weber County Development Discussions", url: "https://www.facebook.com/groups/3388293987868007/",
+      about: "New homes, annexations, roads, water and taxes: talk about what's being built in Weber County and how it affects you. Every opinion is welcome. Only threats, hate, personal information, fake accounts and spam are removed." },
     { id: "roads", short: "Road conditions", name: "Weber County Road Conditions", url: "https://www.facebook.com/share/g/18ncycfd9U/",
       about: "Real-time road reports from neighbors: canyon roads, closures, crashes, plowing and slick spots." },
     { id: "rentals", short: "Rentals & real estate", name: "Ogden Valley Rentals & Real Estate", url: "https://www.facebook.com/share/g/19RRmJ2m8f/",
