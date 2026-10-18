@@ -56,7 +56,7 @@ window.OVE = {
      Groups from the Local Causes list marked "Kids, schools & sports" also show
      on the Kids page by themselves, so they are not repeated here.
      Town only. Organizations and businesses only, never a private home. */
-  kidsChecked: "2026-10-11",
+  kidsChecked: "2026-10-18",
   kidsList: [
     { name: "Snowbasin youth ski & snowboard lessons", group: "lessons", kind: "Skiing & snowboarding", where: "valley", town: "Huntsville", ages: "3-12", season: "Winter", line: "Daily lessons grouped by age: Mini Cubs (3-4), Cubs (4-6) and Bears (7-12).", url: "https://snowbasin.com/Lessons/Youth-Lessons" },
     { name: "Snowbasin seasonal kids programs", group: "lessons", kind: "Skiing & snowboarding", where: "valley", town: "Huntsville", ages: "3-12", season: "Winter 2026-27", line: "Four-week weekend sessions (Future Busters, Little Busters, Basin Busters) where kids ski with the same program each week.", url: "https://snowbasin.com/Lessons/Youth-Lessons" },
@@ -71,6 +71,7 @@ window.OVE = {
     { name: "Ogden Valley Tennis & Pickleball youth tennis", group: "lessons", kind: "Tennis & pickleball", where: "valley", town: "Eden", ages: "5-13, plus a 14+ group", season: "Summer (June-July)", line: "Small-group tennis lessons at the Snowcrest Jr. High courts: Little Aces, Court Crew and Junior Rally.", url: "https://ogdenvalleytennis.blogspot.com/" },
     { name: "Ogden City swim lessons", group: "lessons", kind: "Swim lessons", where: "weber", town: "Ogden", ages: "6 months-17 years", season: "Year-round, monthly", line: "Swim lessons from Baby & Me through Teen Swimming at the Marshall N. White Center.", url: "https://www.ogdencity.gov/722/Swimming-Lessons" },
     { name: "Ogden Nature Center summer camps", group: "lessons", kind: "Camps", where: "weber", town: "Ogden", ages: "2-16", season: "Summer (June-Aug.)", line: "Nature camps from toddler programs to week-long camps, plus Volunteens for ages 13-16.", url: "https://www.ogdennaturecenter.org/summer-camps" },
+    { name: "Imagine Music Huntsville", group: "lessons", kind: "Music lessons", where: "valley", town: "Huntsville", ages: "Kids, teens & adults", season: "Year-round", line: "Guitar, piano, voice, drums, violin, ukulele and more at the Historic Old Town Hall. Ask about openings for your instrument.", url: "https://www.imaginemusicogden.com/imagine-music-huntsville" },
     { name: "Weber County Library, Ogden Valley Branch", group: "groups", kind: "Library", where: "valley", town: "Huntsville", ages: "0-12 for Book Bundles", season: "Year-round", line: "Book Bundles: staff pick 5-10 books for your child's reading level, in English or Spanish.", url: "https://www.weberpl.lib.ut.us/locations-and-hours/ogden-valley-branch" },
     { name: "Powder Mountain freeride team", group: "groups", kind: "Ski teams", where: "valley", town: "Eden", ages: "", season: "Winter 2026-27", line: "A team where young skiers get coaching to build their skills and compete.", url: "https://powdermountain.com/kids-ski-free" },
     { name: "4-H Hoofprints horse club", group: "groups", kind: "4-H", where: "valley", town: "Eden", ages: "Grades K-12", season: "Year-round", line: "A Weber County 4-H horse club in Eden where kids work on a project horse.", url: "https://extension.usu.edu/weber/4h/clubs" },
