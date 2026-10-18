@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-17T22:36:40.440Z",
+ "updated": "2026-10-18T00:53:23.084Z",
  "items": [
   {
    "t": 1792276600440,
@@ -26,13 +26,6 @@
    "t": 1792212083953,
    "src": "UDOT alert",
    "text": "Crash: WB Riverdale Rd at 900 W (Weber County) all lanes of traffic are closed. Use alternate.",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792198382919,
-   "src": "UDOT alert",
-   "text": "Update: Crash, NB US-89 at Skyline Dr. (Weber County) All lanes of travel are back open. Residual delays remain in the area.",
    "kind": "road",
    "link": "https://udottraffic.utah.gov/"
   }
