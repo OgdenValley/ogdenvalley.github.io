@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-18T00:53:23.084Z",
+ "updated": "2026-10-18T04:41:32.280Z",
  "items": [
   {
    "t": 1792276600440,
@@ -14,20 +14,6 @@
    "text": "Weber County forecast: Saturday good · Sunday good · Monday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1792212083953,
-   "src": "UDOT alert",
-   "text": "Construction: 650 North southbound off-ramp in Clearfield is closed and detoured to 700 South. The closure will be active from Friday 10/16 at 10 p.m. until Monday, 10/19 at 4 a.m.",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792212083953,
-   "src": "UDOT alert",
-   "text": "Crash: WB Riverdale Rd at 900 W (Weber County) all lanes of traffic are closed. Use alternate.",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {
