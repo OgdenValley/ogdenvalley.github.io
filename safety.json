@@ -1,8 +1,16 @@
 {
- "updated": "2026-10-19T14:47:47.465Z",
+ "updated": "2026-10-19T16:45:50.398Z",
  "weather": [],
  "fires": [],
  "city": [
+  {
+   "title": "Washington Blvd. from Lockwood Dr. Canfield Dr.",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2066",
+   "date": 1792429709000,
+   "text": "Scheduled Water Outage",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  },
   {
    "title": "Boughton St. and Monroe Blvd. to Franklin St. and Gramercy Ave.",
    "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2065",
