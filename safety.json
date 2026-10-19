@@ -1,8 +1,17 @@
 {
- "updated": "2026-10-17T19:34:51.364Z",
+ "updated": "2026-10-19T14:47:47.465Z",
  "weather": [],
  "fires": [],
- "city": [],
+ "city": [
+  {
+   "title": "Boughton St. and Monroe Blvd. to Franklin St. and Gramercy Ave.",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2065",
+   "date": 1792423055000,
+   "text": "Scheduled Water Outage",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  }
+ ],
  "status": {
   "weather": "ok",
   "fires": "ok",
