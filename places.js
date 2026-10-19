@@ -10,6 +10,8 @@
      tags:     ["Dog-friendly patio", "Kid-friendly", ...]  (owners choose)
      news:     { text: "Pumpkin pie is back!", date: "YYYY-MM-DD" }  (owner update)
      photos:   ["file.jpg", ...]  image files uploaded to the main folder, approved only
+     Farm Stands & Local Food also have: sells (what they grow or make) and buy (how to buy),
+       using the same words as the listing form: "Eggs", "Beef", "Honey" ... and "Farm stand", "U-pick", "Order online" ...
      now:      "open" | "short" | "closed"   (this week, for Who's Open)
      nowNote:  "Closed Mon-Tue until Thanksgiving"
    Artists use medium instead of type.
@@ -800,6 +802,7 @@ window.OVE_PLACES = {
  "farm": [
   {
    "name": "Argyle Acres / Harmony Ranch",
+   "sells": ["Chicken", "Turkey", "Eggs", "Pork", "Beef", "Lamb"],
    "town": "Liberty",
    "type": "Meat and eggs ranch",
    "blurb": "Pasture-raised chicken, turkey, duck, eggs and pork, plus grass-fed and grass-finished beef and lamb.",
@@ -809,6 +812,8 @@ window.OVE_PLACES = {
   },
   {
    "name": "McFarland Family Farms - White Barn Farm",
+   "sells": ["Flowers"],
+   "buy": ["U-pick", "Farmers market"],
    "added": "2026-10-09",
    "photos": ["mcfarland-farms-barn-flag-pumpkin.jpg", "mcfarland-farms-harvest-moon.jpg", "mcfarland-farms-pumpkins-night.jpg", "mcfarland-farms-sunflowers.jpg", "mcfarland-farms-upick-sign.jpg"],
    "town": "Huntsville area",
@@ -824,6 +829,7 @@ window.OVE_PLACES = {
   },
   {
    "name": "Sandhill Farms",
+   "sells": ["Vegetables", "Fruit", "Flowers", "Honey", "Beef"],
    "town": "Eden",
    "type": "Produce farm",
    "blurb": "Vegetables, greens, fruit (peaches, raspberries, apples, pears), herbs, flowers, honey, pickles and beef, seasonal.",
@@ -833,6 +839,8 @@ window.OVE_PLACES = {
   },
   {
    "name": "Sunnyfield Farm",
+   "sells": ["Beef", "Pork", "Lamb", "Eggs", "Honey", "Turkey"],
+   "buy": ["Farm stand", "Order online"],
    "town": "Eden",
    "type": "Beef ranch / Farm store",
    "blurb": "Scottish Highland beef plus pork, lamb, eggs, honey, garlic and seasonal turkeys and pumpkins, sold at the farm or on its website.",
@@ -842,6 +850,8 @@ window.OVE_PLACES = {
   },
   {
    "name": "Dancing Moose Farm",
+   "sells": ["Beef", "Honey"],
+   "buy": ["Order online"],
    "town": "Huntsville",
    "type": "Beef ranch / Honey",
    "blurb": "Grass-fed beef and honey from its own hives, sold now and then through its online farm store; farm tours by appointment.",
@@ -853,6 +863,8 @@ window.OVE_PLACES = {
   },
   {
    "name": "Wheelwright's Honey",
+   "sells": ["Honey"],
+   "buy": ["Pickup by appointment"],
    "town": "Eden",
    "home": true,
    "type": "Honey",

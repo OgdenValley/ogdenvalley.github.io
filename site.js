@@ -192,6 +192,8 @@ function listing(box, items, kind, R){
     el("div", {class: "meta", text: [p.type || p.medium, p.town || p.area].filter(Boolean).join(" · ")}),
     p.blurb ? el("p", {text: p.blurb}) : null,
     p.serves ? el("div", {class: "meta", text: "Serves: " + p.serves}) : null,
+    (p.sells && p.sells.length) ? el("div", {class: "meta", text: "Sells: " + p.sells.join(", ")}) : null,
+    (p.buy && p.buy.length) ? el("div", {class: "meta", text: "How to buy: " + p.buy.join(", ")}) : null,
     p.where ? el("div", {class: "meta", text: "Find the work at: " + p.where}) : null,
     p.address ? el("div", {class: "meta", text: p.address}) : null,
     p.hours ? el("div", {class: "meta", text: "Hours: " + p.hours}) : null,
