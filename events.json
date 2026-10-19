@@ -1,18 +1,9 @@
 {
- "updated": "2026-10-17T00:52:55.170Z",
+ "updated": "2026-10-19T00:54:46.492Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1792267200000,
-     "e": 1792281600000,
-     "t": "Cinema Saturday Feature Films",
-     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
-     "allDay": false,
-     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
-     "url": ""
-    },
     {
      "s": 1792627200000,
      "e": 1792636200000,

@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-18T21:38:44.914Z",
+ "updated": "2026-10-19T00:54:49.172Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
    "date": "2026-10-18",
    "label": "Sun",
    "md": "Oct 18",
-   "high": 66,
+   "high": null,
    "low": 38,
    "pop": 0,
-   "short": "Sunny",
-   "both": "Sunny / Mostly Clear",
+   "short": "Mostly Clear",
+   "both": "Mostly Clear",
    "snow": false,
-   "wind": "3 mph"
+   "wind": "2 mph"
   },
   {
    "date": "2026-10-19",
@@ -87,9 +87,9 @@
    "wind": "1 mph"
   }
  ],
- "today": "This Afternoon: Sunny. High near 66, with temperatures falling to around 64 in the afternoon. West wind around 3 mph.",
+ "today": "Tonight: Mostly clear. Low around 38, with temperatures rising to around 40 overnight. East southeast wind around 2 mph.",
  "valleySnowDays": [],
- "snowLevelFt": 9300,
+ "snowLevelFt": 9500,
  "snowInches48": 0,
  "forecastIssued": "2026-10-18T18:31:32+00:00",
  "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
