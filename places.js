@@ -578,6 +578,15 @@ window.OVE_PLACES = {
    "checked": "2026-10-07"
   },
   {
+   "name": "Valley Wine & Spirits",
+   "town": "Eden",
+   "type": "Wine & spirits shop",
+   "blurb": "Wine and spirits shop in the log-cabin shops in Eden, in the same courtyard as the Saddlebag Saloon.",
+   "phone": "385-837-8116",
+   "photos": ["valley-wine-spirits-eden-cabins.jpg"],
+   "checked": "2026-10-19"
+  },
+  {
    "name": "Valley Market",
    "town": "Eden",
    "type": "Grocery & deli",
