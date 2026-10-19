@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T21:42:18.437Z",
+ "updated": "2026-10-19T22:40:35.979Z",
  "items": [
   {
    "t": 1792446138436,
@@ -12,13 +12,6 @@
    "t": 1792421272236,
    "src": "Utah Air Quality",
    "text": "Weber County forecast: Monday good · Tuesday good · Wednesday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1792363034103,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Sunday good · Monday good · Tuesday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
   }
