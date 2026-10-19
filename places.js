@@ -360,20 +360,6 @@ window.OVE_PLACES = {
    "added": "2026-10-16"
   },
   {
-   "name": "ScallyWag Grill",
-   "food": [
-    "Burgers & casual",
-    "Coffee & breakfast"
-   ],
-   "note": "Hours we found: Tue-Fri 10:30-2:30, Sat 9-2:30. Call to confirm.",
-   "town": "Eden",
-   "type": "Grill",
-   "blurb": "Breakfast and lunch grill on Highway 162 in Eden.",
-   "phone": "801-648-9136",
-   "address": "2580 N Hwy 162, Suite A, Eden, UT 84310",
-   "added": "2026-10-16"
-  },
-  {
    "name": "The Drip Coffee & Soda Shop",
    "food": [
     "Coffee & breakfast"
