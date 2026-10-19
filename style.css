@@ -319,3 +319,16 @@ body.kids h1,body.kids h2{font-family:var(--display);font-weight:800;letter-spac
 #hw-fc .fc-t{font-size:16px}
 #hw-fc .fc-p{font-size:14px}
 #hw-fc .fc-ic{font-size:26px}
+
+/* listing filters (tidy layout, Oct. 2026) */
+.fbox{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 18px 8px;margin:0 0 22px}
+.fsearch{width:100%;font:500 17px var(--body);padding:12px 14px;border:2px solid var(--line);border-radius:12px;margin-bottom:14px;background:var(--bg);color:var(--ink)}
+.frow{position:relative;display:flex;flex-wrap:wrap;gap:8px;padding-left:120px;margin-bottom:12px;min-height:40px;align-items:center}
+.flab{position:absolute;left:0;top:9px;font:700 16px var(--display);color:var(--ink)}
+.fselect{font:700 15px var(--body);padding:8px 12px;border:2px solid var(--line);border-radius:999px;background:var(--card);color:var(--ink);min-width:240px}
+.fmore{font:700 15px var(--body);background:none;border:0;color:var(--accent,#2a5db0);cursor:pointer;padding:4px 0 10px 120px;text-decoration:underline}
+.fcount{border-top:1px solid var(--line);margin:4px 0 0;padding-top:10px;font:600 15px var(--body);color:var(--ink)}
+.fclear{font:700 15px var(--body);background:none;border:0;color:var(--accent,#2a5db0);cursor:pointer;text-decoration:underline;margin-left:8px}
+.fnotes{margin-top:26px}.also{font-size:15px}.also a{font-weight:700}
+@media(max-width:640px){.frow{padding-left:0}.flab{position:static;width:100%}.fmore{padding-left:0}.fselect{width:100%}}
+.fbox [hidden]{display:none!important}
