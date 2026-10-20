@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-20T15:43:43.019Z",
+ "updated": "2026-10-20T19:44:24.809Z",
  "pages": {
   "404.html": {
    "posted": "2026-10-06",
@@ -34,12 +34,12 @@
   "color.html": {
    "posted": "2026-10-08",
    "updated": "2026-10-20",
-   "hash": "c90b5dc0bba3"
+   "hash": "6b04664a0cf2"
   },
   "coloring.html": {
    "posted": "2026-10-07",
    "updated": "2026-10-20",
-   "hash": "0f04cafd41d3"
+   "hash": "197bd275a84a"
   },
   "coming.html": {
    "posted": "2026-10-07",
@@ -63,8 +63,8 @@
   },
   "fun.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-18",
-   "hash": "429b2c6a9ce9"
+   "updated": "2026-10-20",
+   "hash": "c29a9168322f"
   },
   "garden.html": {
    "posted": "2026-10-07",
@@ -74,12 +74,12 @@
   "guess-the-spot.html": {
    "posted": "2026-10-07",
    "updated": "2026-10-20",
-   "hash": "f13310e75901"
+   "hash": "9f78c3deab69"
   },
   "i-spy.html": {
    "posted": "2026-10-07",
    "updated": "2026-10-20",
-   "hash": "419adad8da71"
+   "hash": "3649683564b0"
   },
   "index.html": {
    "posted": "2026-10-06",
@@ -94,7 +94,7 @@
   "kids.html": {
    "posted": "2026-10-11",
    "updated": "2026-10-20",
-   "hash": "76fee6220f28"
+   "hash": "fd553155ff8d"
   },
   "know-how-feature.html": {
    "posted": "2026-10-08",
@@ -149,7 +149,7 @@
   "puzzles.html": {
    "posted": "2026-10-07",
    "updated": "2026-10-20",
-   "hash": "7d62f04c567d"
+   "hash": "ca11ef7fcdd0"
   },
   "recipes.html": {
    "posted": "2026-10-07",
@@ -174,7 +174,7 @@
   "scavenger-hunt.html": {
    "posted": "2026-10-07",
    "updated": "2026-10-20",
-   "hash": "961da0936f04"
+   "hash": "a0bedd69c394"
   },
   "search.html": {
    "posted": "2026-10-07",
@@ -269,12 +269,22 @@
   "depot-story.html": {
    "posted": "2026-10-20",
    "updated": "2026-10-20",
-   "hash": "6d1ece22685d"
+   "hash": "5f84f3dbafd9"
   },
   "station-board.html": {
    "posted": "2026-10-20",
    "updated": "2026-10-20",
-   "hash": "c768e4cb0f27"
+   "hash": "71b4d473b9ec"
+  },
+  "found-ben.html": {
+   "posted": "2026-10-20",
+   "updated": "2026-10-20",
+   "hash": "bb515ff2552f"
+  },
+  "where-moose.html": {
+   "posted": "2026-10-20",
+   "updated": "2026-10-20",
+   "hash": "b62caa91be0c"
   }
  }
 }

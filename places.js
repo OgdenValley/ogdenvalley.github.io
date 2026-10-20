@@ -995,4 +995,33 @@ window.OVE_PLACES = {
 };
 
 /* ===== FORM LISTINGS: written every hour from the Business listings sheet (approved rows only). Edit the sheet, not this section. ===== */
-(function (F) { var P = window.OVE_PLACES = window.OVE_PLACES || {}; for (var k in F) P[k] = (P[k] || []).concat(F[k]); })({});
+(function (F) { var P = window.OVE_PLACES = window.OVE_PLACES || {}; for (var k in F) P[k] = (P[k] || []).concat(F[k]); })({
+ "farm": [
+  {
+   "name": "Grace Haven Farm",
+   "type": "Farm, grower or food maker.",
+   "area": "Huntsville",
+   "blurb": "Homemade and simple is best.",
+   "home": true,
+   "serves": "Huntsville",
+   "phone": "9072321068",
+   "hours": "N/A",
+   "note": "Known for: Eggs, honey, chicken feed co-op, Alaskan seafood co-op, fresh veggies, sourdough cinnamon rolls and flavored loaves.",
+   "badges": [
+    "Veteran owned",
+    "Family owned",
+    "Woman owned",
+    "Licensed"
+   ],
+   "photos": [
+    "https://drive.google.com/thumbnail?id=1TpJKR_o0WgTjpkhh7p5Xr0OOaUh1CkqY&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1FtDDRGG_cYv2sW9K--vgW5PC9YrCdJCw&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1DSdszmoFQ1SBACtTDDHP7GovMyt41ZCq&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1zXSWe89uJNEJGSEavW5czkkKuZ1rKMJh&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1utM2wWtJhP--GsJlRGeCt5ckUpOf6hGA&sz=w1000"
+   ],
+   "added": "2026-10-19",
+   "fromForm": true
+  }
+ ]
+});
