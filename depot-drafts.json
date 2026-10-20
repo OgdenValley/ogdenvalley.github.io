@@ -1,0 +1,243 @@
+{
+  "note": "Ready-to-go stories for whichever trip the kids vote for. On the Monday after voting closes, the winner moves into depot.json as the next stop. Not shown on the site.",
+  "forVote": "stop-2",
+  "drafts": {
+    "golden-spike": {
+      "n": 2,
+      "place": "Golden Spike",
+      "title": "Ten Miles in One Day",
+      "lat": 41.6185,
+      "lon": -112.5517,
+      "milesThisTrip": 40,
+      "story": [
+        "All aboard! The kids voted, and the Utah Depot is rolling about 40 miles northwest of Ogden to Promontory Summit. Today it's called Golden Spike National Historical Park.",
+        "Last week we learned that two railroads met here on May 10, 1869. This week, let's find out how they got here.",
+        "The Central Pacific started in California and built east. Its workers, many of them Chinese laborers, had already done the hardest part. They laid track over the tall Sierra Nevada mountains and across the Nevada deserts.",
+        "By spring of 1869, the two railroads were getting close. The Union Pacific had set a record by laying 8 and a half miles of track in one day. Charles Crocker, who was in charge of building for the Central Pacific, had a plan. He waited until the two railroads were so close that the Union Pacific had no room left to try to beat him.",
+        "Then, on April 28, 1869, the Central Pacific went for it. A newspaper writer described a thin line of 1,000 men moving down the track together. By the end of the day, they had laid ten miles and fifty-six feet of track. Nobody has ever matched that record.",
+        "Two weeks later, the railroads met. Here's a surprise: the golden spike was only for the ceremony. The very last spike that held the rails together was an ordinary iron one.",
+        "Today you can visit Promontory Summit and see copies of the two engines, Jupiter and No. 119. They steam out to face each other from May to August, and again from Christmas to New Year's Day.",
+        "Our engine is taking on water. Where should the Utah Depot go next?"
+      ],
+      "quiz": [
+        {
+          "q": "The Central Pacific laid ten miles of track in one day.",
+          "a": true,
+          "why": "It happened on April 28, 1869, and the record has never been matched."
+        },
+        {
+          "q": "The very last spike was made of gold.",
+          "a": false,
+          "why": "The golden spike was for the ceremony. The last spike was an ordinary iron one."
+        },
+        {
+          "q": "The Central Pacific workers crossed the Sierra Nevada mountains.",
+          "a": true,
+          "why": "They laid track over the mountains and across the Nevada deserts before reaching Utah."
+        }
+      ],
+      "draw": "Draw a long line of workers laying track across the desert. How many can you fit?",
+      "find": "Visit Golden Spike National Historical Park and earn a Junior Ranger badge. The booklet takes about 30 to 40 minutes.",
+      "word": {
+        "w": "Record",
+        "def": "The best anyone has ever done. Ten miles of track in one day is a railroad record."
+      },
+      "math": "The Central Pacific laid 10 miles in one day. The Union Pacific's best was 8 and a half miles. How many more miles did the Central Pacific lay?",
+      "learn": [
+        {
+          "title": "Golden Spike for Kids",
+          "by": "National Park Service",
+          "url": "https://www.nps.gov/gosp/learn/kidsyouth/index.htm"
+        },
+        {
+          "title": "Be a Virtual Junior Ranger at Golden Spike",
+          "by": "National Park Service",
+          "url": "https://www.nps.gov/gosp/learn/kidsyouth/be-a-virtual-junior-ranger.htm"
+        },
+        {
+          "title": "West Auto Tour: Ten Miles in One Day",
+          "by": "National Park Service",
+          "url": "https://www.nps.gov/thingstodo/west-auto-tour.htm"
+        }
+      ],
+      "sources": [
+        {
+          "title": "West Auto Tour, National Park Service",
+          "url": "https://www.nps.gov/thingstodo/west-auto-tour.htm",
+          "used": "April 28, 1869; ten miles and fifty-six feet; never equaled; line of 1,000 men; Union Pacific's 8.5-mile record; Charles Crocker's timing; Chinese laborers crossed the Sierra Nevada and Nevada deserts"
+        },
+        {
+          "title": "Golden Spike National Historic Site, Utah History to Go",
+          "url": "https://historytogo.utah.gov/golden-spike/",
+          "used": "May 10, 1869; the last spike was an ordinary iron one; replica engines run May to August and Christmas to New Year's"
+        },
+        {
+          "title": "Golden Spike Kids & Youth, National Park Service",
+          "url": "https://www.nps.gov/gosp/learn/kidsyouth/index.htm",
+          "used": "Junior Ranger booklet takes 30 to 40 minutes"
+        }
+      ],
+      "wordSearch": [
+        "RECORD",
+        "SPIKE",
+        "JUPITER",
+        "WORKERS",
+        "PROMONTORY",
+        "TRACK",
+        "RACE",
+        "RANGER"
+      ]
+    },
+    "antelope-island": {
+      "n": 2,
+      "place": "Antelope Island",
+      "title": "The Island with the Wrong Name",
+      "lat": 41.0436,
+      "lon": -112.2533,
+      "milesThisTrip": 19,
+      "story": [
+        "All aboard! The kids voted, and the Utah Depot is heading about 19 miles southwest of Ogden to Antelope Island in the Great Salt Lake.",
+        "The island got its name in 1845. Explorer John C. Frémont had mapped it two years earlier. Native Americans told his crew they could ride horses across a sandbar from the mainland to reach the island. When the crew got there, they found lots of antelope, so Frémont named it Antelope Island.",
+        "But here's the funny part. Today the island is most famous for a different animal: bison!",
+        "Long ago, hunters had killed off most of the bison in this part of Utah. In 1891, a man named William Glassman tried to bring some back. He bought a dozen bison, but they were delivered to the wrong place, all the way over in Tooele County. In 1893, a company called White and Sons bought those bison and moved them to Antelope Island. More bison came in 1911.",
+        "The herd grew and grew. It is now one of the largest and oldest public bison herds in the country. Every fall, riders on horseback round up nearly 800 bison so they can be checked by the park staff.",
+        "Antelope Island became a state park on January 15, 1969. Then in 1983, the lake rose so high that the road to the island went underwater. The park closed until 1993, when the road was rebuilt. That same year, antelope, also called pronghorn, were brought back to the island.",
+        "At night, the island is so dark that it's an official Dark Sky Park, a great place to see stars.",
+        "Our engine is ready to roll. Where should the Utah Depot go next?"
+      ],
+      "quiz": [
+        {
+          "q": "Antelope Island was named for the antelope Frémont's crew found there.",
+          "a": true,
+          "why": "Frémont named it in 1845 after the crew found lots of antelope."
+        },
+        {
+          "q": "The first bison for the island were delivered to Tooele County by mistake.",
+          "a": true,
+          "why": "William Glassman's bison went to the wrong place in 1891. They reached the island in 1893."
+        },
+        {
+          "q": "You can only see the stars from Antelope Island in summer.",
+          "a": false,
+          "why": "It's a Dark Sky Park all year. Just dress warm in winter!"
+        }
+      ],
+      "draw": "Draw a herd of bison on the island with the lake all around. Add an antelope hiding somewhere.",
+      "find": "Visit Antelope Island State Park and count how many bison you see. Remember to stay far back and never feed or touch them.",
+      "word": {
+        "w": "Herd",
+        "def": "A big group of animals that live and move together, like bison."
+      },
+      "math": "Antelope Island is about 19 miles from Ogden. If the train goes 38 miles an hour, how long is the trip?",
+      "learn": [
+        {
+          "title": "Antelope Island State Park",
+          "by": "Utah State Parks",
+          "url": "https://stateparks.utah.gov/parks/antelope-island/"
+        },
+        {
+          "title": "Antelope Island Junior Ranger Booklet",
+          "by": "Utah State Parks",
+          "url": "https://stateparks.utah.gov/wp-content/uploads/sites/13/2019/05/AISP-Jr.-Ranger-Booklet.pdf"
+        }
+      ],
+      "sources": [
+        {
+          "title": "50 years as a state park: Antelope Island's long and unique history, KSL",
+          "url": "https://www.ksl.com/article/news/features/historic/50-years-as-a-state-park-looking-back-at-antelope-islands-long-and-unique-history/46578419",
+          "used": "Frémont mapped it in 1843 and named it in 1845; the sandbar ride; Glassman's 1891 bison sent to Tooele County; 1893 move by White & Sons; 1911 additions; park opened Jan. 15, 1969; 1983 flooding; 1993 reopening and pronghorn return"
+        },
+        {
+          "title": "Antelope Island State Park, Utah State Parks",
+          "url": "https://stateparks.utah.gov/parks/antelope-island/",
+          "used": "One of the largest and oldest public bison herds; nearly 800 bison in the fall roundup; Dark Sky Park; keep a safe distance from animals"
+        }
+      ],
+      "wordSearch": [
+        "BISON",
+        "ANTELOPE",
+        "ISLAND",
+        "HERD",
+        "PRONGHORN",
+        "STARS",
+        "RANCH",
+        "LAKE"
+      ]
+    },
+    "bear-lake": {
+      "n": 2,
+      "place": "Bear Lake",
+      "title": "The Lighted City",
+      "lat": 41.9466,
+      "lon": -111.3936,
+      "milesThisTrip": 59,
+      "story": [
+        "All aboard! The kids voted, and the Utah Depot is climbing about 59 miles northeast of Ogden to Bear Lake, the big lake on the Utah and Idaho line.",
+        "Bear Lake is old. It formed about 28,000 years ago because of earthquakes. It's about 20 miles long, 8 miles wide and 208 feet deep. And it's famous for its color, a bright blue-green. That color comes from tiny bits of a mineral called calcium carbonate floating in the water.",
+        "In 1819, an explorer named Donald Mackenzie came to the lake. He worked for a fur company, and he first called it Black Bear Lake.",
+        "A few years later, the lake became a busy meeting place. In the summers of 1827 and 1828, fur trappers and Native Americans gathered at the south end of the lake for a rendezvous, a big meeting to trade. More than 1,000 people came, including the famous trapper Jedediah Smith. There were so many campfires at night that one person said it looked like a lighted city.",
+        "Bear Lake has its own special fish, the Bonneville cisco. It's a small fish, about seven inches long. Every January, for about two weeks, the cisco swim close to shore to lay their eggs. People come out in the cold and scoop them up with dip nets!",
+        "Bear Lake State Park opened in 1962. Today families come to swim, boat and camp on the beaches.",
+        "Our engine is ready to roll. Where should the Utah Depot go next?"
+      ],
+      "quiz": [
+        {
+          "q": "Bear Lake's blue-green color comes from blue paint.",
+          "a": false,
+          "why": "It comes from tiny bits of calcium carbonate in the water."
+        },
+        {
+          "q": "Fur trappers held a rendezvous at Bear Lake.",
+          "a": true,
+          "why": "They gathered there in the summers of 1827 and 1828, and more than 1,000 people came."
+        },
+        {
+          "q": "People catch Bonneville cisco with dip nets in January.",
+          "a": true,
+          "why": "The cisco swim close to shore to spawn for about two weeks each January."
+        }
+      ],
+      "draw": "Draw the rendezvous at night, with campfires glowing all along the lake like a lighted city.",
+      "find": "Ask a grown-up: have you ever been to Bear Lake? What color did the water look to you?",
+      "word": {
+        "w": "Rendezvous",
+        "def": "A French word for a planned meeting. Say it like ron-day-voo."
+      },
+      "math": "Bear Lake is about 20 miles long and 8 miles wide. How much longer is it than it is wide?",
+      "learn": [
+        {
+          "title": "Bear Lake State Park",
+          "by": "Utah State Parks",
+          "url": "https://stateparks.utah.gov/parks/bear-lake/discover"
+        },
+        {
+          "title": "Bear Lake fishing guide",
+          "by": "Idaho Fish and Game",
+          "url": "https://idfg.idaho.gov/ifwis/fishingplanner/water/1113174420681"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Bear Lake State Park, Utah State Parks",
+          "url": "https://stateparks.utah.gov/parks/bear-lake/discover",
+          "used": "Formed about 28,000 years ago by earthquake activity; 20 miles long, 8 wide, 208 feet deep; color from calcium carbonates; Donald Mackenzie 1819, Black Bear Lake; 1827 and 1828 rendezvous, over 1,000 people, Jedediah Smith, 'a lighted city'; Bonneville cisco, seven inches, January dip-netting; state park 1962"
+        },
+        {
+          "title": "Bear Lake, Idaho Fish and Game",
+          "url": "https://idfg.idaho.gov/ifwis/fishingplanner/water/1113174420681",
+          "used": "Bear Lake reaches into Idaho"
+        }
+      ],
+      "wordSearch": [
+        "RENDEZVOUS",
+        "CISCO",
+        "TRAPPER",
+        "CAMPFIRE",
+        "BLUE",
+        "LAKE",
+        "MINERAL",
+        "DIPNET"
+      ]
+    }
+  }
+}

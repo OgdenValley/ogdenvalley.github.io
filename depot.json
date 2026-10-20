@@ -1,0 +1,133 @@
+{
+  "note": "The Utah Depot. Add each new stop to the END of stops. 'vote' is the trip kids are voting on now. lat/lon place the stop on the map. Miles are as the crow flies; road miles are checked on a map before they go in. 'learn' links are kid-safe official sites only (National Park Service, state of Utah, museums, libraries). 'coloring' is the stop's coloring page (black-line PNG, 1700x2200, named depot-stop-N-coloring.png). 'suggestForm' is the Google Form link for story ideas; the idea button shows once it is filled in. 'ticketBook' holds the unlockable extras (bonus coloring page, secret caboose fact). 'prizeForm' is the Google Form link for the monthly Master Conductor drawing; the button shows once it is filled in. Any stop can add 'sponsor': {name, url, line} to show 'This stop is brought to you by...' on its story page (for business stops like a farm visit).",
+  "voteCloses": "Sunday, Oct. 25",
+  "vote": {
+    "id": "stop-2",
+    "options": [
+      {
+        "id": "golden-spike",
+        "name": "Golden Spike",
+        "line": "See where the two railroads met in 1869",
+        "lat": 41.6185,
+        "lon": -112.5517,
+        "miles": 40
+      },
+      {
+        "id": "antelope-island",
+        "name": "Antelope Island",
+        "line": "An island in the Great Salt Lake",
+        "lat": 41.0436,
+        "lon": -112.2533,
+        "miles": 19
+      },
+      {
+        "id": "bear-lake",
+        "name": "Bear Lake",
+        "line": "A big lake on the Utah–Idaho line",
+        "lat": 41.9466,
+        "lon": -111.3936,
+        "miles": 59
+      }
+    ]
+  },
+  "stops": [
+    {
+      "n": 1,
+      "place": "Ogden",
+      "title": "Junction City",
+      "posted": "2026-10-20",
+      "lat": 41.2206,
+      "lon": -111.9806,
+      "milesThisTrip": 0,
+      "roadMiles": 0,
+      "story": [
+        "All aboard! Welcome to the Utah Depot. Every week, our train stops somewhere in Utah, and we learn a true story about what happened there. Our first stop is home: Union Station in Ogden.",
+        "The railroad first came to Ogden in 1869. The Union Pacific laid its tracks down through Weber Canyon and into town. Brigham Young set aside land in Ogden for railroad yards, the places where trains are parked, sorted and fixed. With trains coming and going, Ogden got a nickname that stuck: Junction City. A junction is a place where railroads meet.",
+        "That same year, something big happened just northwest of Ogden, at a place called Promontory Summit. Two railroad companies had been racing to build one railroad across the whole country. The Central Pacific built east from Sacramento, California. The Union Pacific built west from Omaha, Nebraska. On May 10, 1869, their tracks finally met.",
+        "The two engines, the Central Pacific's Jupiter and the Union Pacific's No. 119, pulled up face to face, with just one rail's width between them. A golden spike was part of the ceremony. Here's a funny part: Leland Stanford and Thomas Durant, two of the railroad leaders, each swung a hammer at the spike, and each one missed!",
+        "The spike and hammer were wired to the telegraph so the whole country could hear the news. Then a telegraph operator sent one word: \"done.\"",
+        "Ogden's train station has its own story. In 1923, a fire almost destroyed it. A new station was finished in 1924, built right on the old foundation. You can still visit it today on 25th Street. Inside are museums, including the Utah State Railroad Museum.",
+        "Now our engine is ready to roll. The tracks split three ways. Where should the Utah Depot go next?"
+      ],
+      "quiz": [
+        {
+          "q": "Ogden's nickname is Junction City.",
+          "a": true,
+          "why": "A junction is a place where railroads meet."
+        },
+        {
+          "q": "The two railroads met at Promontory Summit in 1969.",
+          "a": false,
+          "why": "It was 1869, 100 years earlier."
+        },
+        {
+          "q": "Union Station was rebuilt after a fire.",
+          "a": true,
+          "why": "It burned in 1923 and was rebuilt in 1924."
+        }
+      ],
+      "draw": "Draw the two engines, Jupiter and No. 119, nose to nose at Promontory Summit.",
+      "find": "Visit Union Station on 25th Street in Ogden and find the Utah State Railroad Museum. Or ask a grandparent: did you ever ride a train?",
+      "word": {
+        "w": "Junction",
+        "def": "A place where two or more roads or railroads meet. Can you find a junction near your house?"
+      },
+      "math": "If the train goes 40 miles an hour, how long would a trip to Golden Spike take? (Hint: it's 40 miles away.)",
+      "sources": [
+        {
+          "title": "The Ogden Union Station, Intermountain Histories",
+          "url": "https://www.intermountainhistories.org/items/show/239",
+          "used": "Junction City nickname, Brigham Young and the railroad yards, 1869 arrival through Weber Canyon, 1923 fire, 1924 rebuild, museums today"
+        },
+        {
+          "title": "Golden Spike National Historic Site, Utah History to Go",
+          "url": "https://historytogo.utah.gov/golden-spike/",
+          "used": "May 10, 1869 at Promontory Summit; Central Pacific from Sacramento and Union Pacific from Omaha; Jupiter and No. 119; Stanford and Durant both missed the spike; the telegraph message \"done\""
+        }
+      ],
+      "learn": [
+        {
+          "title": "Golden Spike for Kids",
+          "by": "National Park Service",
+          "url": "https://www.nps.gov/gosp/learn/kidsyouth/index.htm"
+        },
+        {
+          "title": "Be a Virtual Junior Ranger at Golden Spike",
+          "by": "National Park Service",
+          "url": "https://www.nps.gov/gosp/learn/kidsyouth/be-a-virtual-junior-ranger.htm"
+        },
+        {
+          "title": "Utah's State Railroad Museum",
+          "by": "Utah State Library",
+          "url": "https://onlinelibrary.utah.gov/state-symbol/railroad-museum"
+        }
+      ],
+      "coloring": {
+        "file": "depot-stop-1-coloring.png",
+        "title": "The Utah Depot at Ogden"
+      },
+      "wordSearch": [
+        "JUNCTION",
+        "OGDEN",
+        "RAILROAD",
+        "SPIKE",
+        "ENGINE",
+        "TELEGRAPH",
+        "DEPOT",
+        "TRACKS",
+        "STATION",
+        "MUSEUM"
+      ]
+    }
+  ],
+  "suggestForm": "",
+  "prizeForm": "",
+  "ticketBook": {
+    "bonusColoring": {
+      "file": "depot-bonus-1-coloring.png",
+      "title": "Nose to nose, May 10, 1869"
+    },
+    "secretFact": "Secret caboose fact: Ogden's 1924 Union Station was designed by John and Donald Parkinson in a style called Spanish Colonial Revival. It was built in 1924 on the foundation of the station that burned.",
+    "secretSource": "https://www.intermountainhistories.org/items/show/239"
+  }
+}
