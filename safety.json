@@ -1,8 +1,17 @@
 {
- "updated": "2026-10-19T23:41:13.954Z",
+ "updated": "2026-10-20T07:49:36.466Z",
  "weather": [],
  "fires": [],
- "city": [],
+ "city": [
+  {
+   "title": "Liberty Ave from 1225 N to 1300 N",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2067",
+   "date": 1792485173000,
+   "text": "Emergency Water Shutdown",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  }
+ ],
  "status": {
   "weather": "ok",
   "fires": "ok",
