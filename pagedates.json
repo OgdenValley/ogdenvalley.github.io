@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T15:50:34.804Z",
+ "updated": "2026-10-20T15:43:43.019Z",
  "pages": {
   "404.html": {
    "posted": "2026-10-06",
@@ -33,13 +33,13 @@
   },
   "color.html": {
    "posted": "2026-10-08",
-   "updated": "2026-10-15",
-   "hash": "b9408d3db689"
+   "updated": "2026-10-20",
+   "hash": "c90b5dc0bba3"
   },
   "coloring.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-12",
-   "hash": "caae9bf9f305"
+   "updated": "2026-10-20",
+   "hash": "0f04cafd41d3"
   },
   "coming.html": {
    "posted": "2026-10-07",
@@ -73,13 +73,13 @@
   },
   "guess-the-spot.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-12",
-   "hash": "4e2563fd5760"
+   "updated": "2026-10-20",
+   "hash": "f13310e75901"
   },
   "i-spy.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-15",
-   "hash": "ea3f3427bfd6"
+   "updated": "2026-10-20",
+   "hash": "419adad8da71"
   },
   "index.html": {
    "posted": "2026-10-06",
@@ -93,8 +93,8 @@
   },
   "kids.html": {
    "posted": "2026-10-11",
-   "updated": "2026-10-12",
-   "hash": "5c96f0d8e2af"
+   "updated": "2026-10-20",
+   "hash": "76fee6220f28"
   },
   "know-how-feature.html": {
    "posted": "2026-10-08",
@@ -148,8 +148,8 @@
   },
   "puzzles.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-15",
-   "hash": "317ce66db9db"
+   "updated": "2026-10-20",
+   "hash": "7d62f04c567d"
   },
   "recipes.html": {
    "posted": "2026-10-07",
@@ -173,8 +173,8 @@
   },
   "scavenger-hunt.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-12",
-   "hash": "7415057424ef"
+   "updated": "2026-10-20",
+   "hash": "961da0936f04"
   },
   "search.html": {
    "posted": "2026-10-07",
@@ -265,6 +265,16 @@
    "posted": "2026-10-18",
    "updated": "2026-10-18",
    "hash": "dfa9820b7ffe"
+  },
+  "depot-story.html": {
+   "posted": "2026-10-20",
+   "updated": "2026-10-20",
+   "hash": "6d1ece22685d"
+  },
+  "station-board.html": {
+   "posted": "2026-10-20",
+   "updated": "2026-10-20",
+   "hash": "c768e4cb0f27"
   }
  }
 }
