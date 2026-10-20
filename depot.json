@@ -1,5 +1,5 @@
 {
-  "note": "The Utah Depot. Add each new stop to the END of stops. 'vote' is the trip kids are voting on now. lat/lon place the stop on the map. Miles are as the crow flies; road miles are checked on a map before they go in. 'learn' links are kid-safe official sites only (National Park Service, state of Utah, museums, libraries). 'coloring' is the stop's coloring page (black-line PNG, 1700x2200, named depot-stop-N-coloring.png). 'suggestForm' is the Google Form link for story ideas; the idea button shows once it is filled in. 'ticketBook' holds the unlockable extras (bonus coloring page, secret caboose fact). 'prizeForm' is the Google Form link for the monthly Master Conductor drawing; the button shows once it is filled in. Any stop can add 'sponsor': {name, url, line} to show 'This stop is brought to you by...' on its story page (for business stops like a farm visit).",
+  "note": "The Utah Depot. Add each new stop to the END of stops. 'vote' is the trip kids are voting on now. lat/lon place the stop on the map. Miles are as the crow flies; road miles are checked on a map before they go in. 'learn' links are kid-safe official sites only (National Park Service, state of Utah, museums, libraries). 'coloring' is the stop's coloring page (black-line PNG, 1700x2200, named depot-stop-N-coloring.png). 'suggestForm' is the Google Form link for story ideas; the idea button shows once it is filled in. 'ticketBook' holds the unlockable extras (bonus coloring page, secret caboose fact). 'prizeForm' is the Google Form link for the monthly Master Conductor drawing; the button shows once it is filled in. Any stop can add 'sponsor': {name, url, line} to show 'This stop is brought to you by...' on its story page (for business stops like a farm visit). 'coloring' can be a list: one page for littles and one for bigger kids, each with file, title and level.",
   "voteCloses": "Sunday, Oct. 25",
   "vote": {
     "id": "stop-2",
@@ -102,10 +102,18 @@
           "url": "https://onlinelibrary.utah.gov/state-symbol/railroad-museum"
         }
       ],
-      "coloring": {
-        "file": "depot-stop-1-coloring.png",
-        "title": "The Utah Depot at Ogden"
-      },
+      "coloring": [
+        {
+          "file": "depot-stop-1-coloring.png",
+          "title": "The Utah Depot at Ogden",
+          "level": "For littles (about ages 3 to 6)"
+        },
+        {
+          "file": "depot-stop-1-coloring-big.png",
+          "title": "Color an old steam engine: Jupiter",
+          "level": "For bigger kids (about 7 and up)"
+        }
+      ],
       "wordSearch": [
         "JUNCTION",
         "OGDEN",

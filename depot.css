@@ -182,3 +182,11 @@ body.depot-theme main svg.ridge path{fill:#0B1430}
 /* drawing and game surfaces keep a white page so colors and pictures look right */
 body.depot-theme main canvas,body.depot-theme main .pz-area img{background:#fff}
 @media print{body.depot-theme main{background:#fff!important;color:#000!important}}
+.d-color-list{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:10px}
+.d-color-card{display:grid;gap:8px;align-content:start;padding:12px;border-radius:10px;background:#0E1A3D;border:1px solid rgba(230,194,107,.4)}
+.d-color-card img{width:100%;border-radius:6px;background:#fff;border:2px solid var(--d-line)}
+.d-color-card b{color:var(--d-ink)}
+.d-color-btns{display:flex;flex-wrap:wrap;gap:8px}
+.d-car[aria-current="page"]{border-color:#FFF3C4;box-shadow:0 0 16px rgba(230,194,107,.5)}
+body.depot-theme main .d-more,.d-more{background:transparent}
+body.depot-theme main a.d-car{color:var(--d-ink)}

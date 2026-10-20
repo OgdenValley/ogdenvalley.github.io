@@ -132,13 +132,14 @@ if(page==="story"){
   /* a business or group can sponsor a stop: "sponsor":{"name":"","url":"","line":""} */
   if(s.sponsor&&s.sponsor.name)$("d-story").append(mk("p",{class:"d-sponsor"},["This stop is brought to you by ",s.sponsor.url?mk("a",{href:s.sponsor.url,target:"_blank",rel:"noopener",text:s.sponsor.name}):mk("b",{text:s.sponsor.name}),s.sponsor.line?". "+s.sponsor.line:"."]));
 
-  /* coloring page: color online, or print just the picture */
-  const col=s.coloring;
-  if(col&&col.file){$("d-color-img").src=col.file;$("d-color-img").alt="Coloring page: "+col.title;
-    $("d-color-online").href="color.html?img="+encodeURIComponent(col.file)+"&t="+encodeURIComponent(col.title);
-    $("d-color-online").addEventListener("click",()=>earn("color:"+s.n,1,"Have fun coloring."));
-    $("d-color-print").onclick=()=>{earn("color:"+s.n,1,"Have fun coloring.");const im=document.querySelector("#d-printpic img");document.body.classList.add("printpic");const go=()=>{window.print();setTimeout(()=>document.body.classList.remove("printpic"),500)};im.onload=go;im.src=col.file;if(im.complete&&im.naturalWidth)go();count("depot coloring printed stop-"+s.n)};
-  }else $("d-color").hidden=true;
+  /* coloring pages: one for littles, one for bigger kids. Color online, or print just the picture */
+  const cols=[].concat(s.coloring||[]).filter(c=>c&&c.file);
+  if(cols.length){$("d-color-list").replaceChildren(...cols.map(col=>{
+    const pr=mk("button",{type:"button",class:"d-btn small",text:"Print it"});
+    pr.onclick=()=>{earn("color:"+s.n,1,"Have fun coloring.");const im=document.querySelector("#d-printpic img");document.body.classList.add("printpic");const go=()=>{window.print();setTimeout(()=>document.body.classList.remove("printpic"),500)};im.onload=go;im.src=col.file;if(im.complete&&im.naturalWidth)go();count("depot coloring printed "+col.file)};
+    const on=mk("a",{class:"d-btn small solid",href:"color.html?img="+encodeURIComponent(col.file)+"&t="+encodeURIComponent(col.title),text:"Color online"});on.addEventListener("click",()=>earn("color:"+s.n,1,"Have fun coloring."));
+    return mk("div",{class:"d-color-card"},[mk("p",{class:"d-eye",text:col.level||"Coloring page"}),mk("img",{src:col.file,alt:"Coloring page: "+col.title,loading:"lazy"}),mk("b",{text:col.title}),mk("div",{class:"d-color-btns"},[on,pr])])}))}
+  else $("d-color").hidden=true;
   $("d-print").onclick=()=>{document.querySelectorAll("details.d-src").forEach(d=>d.open=true);window.print();count("depot story printed stop-"+s.n)};
   const acts=$("d-acts");
   const quiz=mk("div",{class:"d-act"},[mk("h3",{text:"Fact or Fiction?"})]);const right=new Set();
