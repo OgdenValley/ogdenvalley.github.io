@@ -194,7 +194,8 @@ window.OVE = {
     { image: "valley-great-horned-owl-jim-brown.jpg", by: "Jim Brown", place: "", date: "2026-10", caption: "A great horned owl keeps watch from a weathered snag" },
     { image: "valley-ben-lomond-cloud-cap-sara-barney.jpg", by: "Sara Barney", place: "", date: "2026-10", caption: "Ben Lomond Peak wears a cloud cap after the rain" },
     { image: "neighbor-2026-09-lani-ogilvie-rainbow.jpg", by: "Lani Ogilvie", place: "Nordic Valley", date: "2026-09", caption: "A full double rainbow over Nordic Valley Drive" },
-    { image: "valley-buck-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley City", date: "", caption: "A buck stands tall with the sun lighting up his antlers" }
+    { image: "valley-buck-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley City", date: "", caption: "A buck stands tall with the sun lighting up his antlers" },
+    { image: "valley-sunrise-huntsville-seth-miller.jpg", by: "Seth Miller", place: "Huntsville", date: "2026-10", caption: "The whole sky lights up orange over the hills at sunrise" }
   ],
 
   /* --- Then & Now ------------------------------------------------------
