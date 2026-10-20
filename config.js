@@ -195,7 +195,11 @@ window.OVE = {
     { image: "valley-ben-lomond-cloud-cap-sara-barney.jpg", by: "Sara Barney", place: "", date: "2026-10", caption: "Ben Lomond Peak wears a cloud cap after the rain" },
     { image: "neighbor-2026-09-lani-ogilvie-rainbow.jpg", by: "Lani Ogilvie", place: "Nordic Valley", date: "2026-09", caption: "A full double rainbow over Nordic Valley Drive" },
     { image: "valley-buck-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley City", date: "", caption: "A buck stands tall with the sun lighting up his antlers" },
-    { image: "valley-sunrise-huntsville-seth-miller.jpg", by: "Seth Miller", place: "Huntsville", date: "2026-10", caption: "The whole sky lights up orange over the hills at sunrise" }
+    { image: "valley-sunrise-huntsville-seth-miller.jpg", by: "Seth Miller", place: "Huntsville", date: "2026-10", caption: "The whole sky lights up orange over the hills at sunrise" },
+    { image: "valley-frost-crystals-sharon-myers.jpg", by: "Sharon Myers", place: "Ogden Valley", date: "2026-10", caption: "Frost crystals spread like tiny feathers across the glass" },
+    { image: "valley-horses-first-snow-sharon-myers.jpg", by: "Sharon Myers", place: "", date: "2026-10", caption: "Horses check out the first snow of the season" },
+    { image: "valley-sunset-orchard-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley", date: "2026-10", caption: "The sky glows orange over the mountains and fall trees" },
+    { image: "valley-sunset-aspens-nordic-dixie-joe-loveless.jpg", by: "Dixie-Joe Loveless", place: "Nordic Valley", date: "2026-10", caption: "A fiery sunset through the aspens near Nordic Valley" }
   ],
 
   /* --- Then & Now ------------------------------------------------------
