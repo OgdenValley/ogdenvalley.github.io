@@ -15,11 +15,12 @@
 <link rel="icon" href="logo-10-years-32.png">
 <link rel="apple-touch-icon" href="logo-10-years-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="depot.css">
 <script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
 </head>
-<body class="kids">
+<body class="depot-theme kids depot" data-depot="map">
 <a class="sr" href="#main">Skip to content</a>
 <div class="alert-bar" id="alert-bar" hidden></div>
 <div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
@@ -36,8 +37,83 @@
   <nav class="main" id="nav" aria-label="Main"></nav>
 </div></header>
 <main id="main">
+<div class="d-night">
+<section class="d-sign"><div class="d-wrap">
+  <div class="rule">Community Kids</div>
+  <h1>The Utah Depot</h1>
+  <span class="d-platform">Platform 1869 · Ogden</span>
+  <p>A true Utah history story every week, with coloring, games and a vote on where the train goes next. Lessons, teams and kid events are down the line.</p>
+  <svg class="d-hero-train" viewBox="0 0 520 210" aria-hidden="true">
+  <circle cx="455" cy="40" r="22" fill="#FFF3C4" opacity=".9"/><circle cx="465" cy="34" r="20" fill="#0B1430"/>
+  <path d="M0 175 L40 120 L70 150 L110 95 L150 150 L190 118 L230 160 L520 160 L520 210 L0 210Z" fill="#13204A"/>
+  <g fill="#0E1A3D"><path d="M300 160 l18-48 18 48z"/><path d="M330 160 l14-36 14 36z"/><path d="M480 160 l16-44 16 44z"/></g>
+  <circle class="steam" cx="132" cy="58" r="16" fill="#EEF2FF" opacity=".8"/><circle class="steam" cx="122" cy="46" r="13" fill="#EEF2FF" opacity=".7"/><circle class="steam" cx="140" cy="40" r="11" fill="#EEF2FF" opacity=".6"/>
+  <rect x="0" y="176" width="520" height="5" fill="#E6C26B"/><rect x="0" y="186" width="520" height="3" fill="#E6C26B" opacity=".6"/>
+  <g fill="#E6C26B" opacity=".45"><rect x="20" y="181" width="10" height="5"/><rect x="70" y="181" width="10" height="5"/><rect x="120" y="181" width="10" height="5"/><rect x="170" y="181" width="10" height="5"/><rect x="220" y="181" width="10" height="5"/><rect x="270" y="181" width="10" height="5"/><rect x="320" y="181" width="10" height="5"/><rect x="370" y="181" width="10" height="5"/><rect x="420" y="181" width="10" height="5"/><rect x="470" y="181" width="10" height="5"/></g>
+  <g stroke="#E6C26B" stroke-width="3" fill="#1B2A5C" stroke-linejoin="round">
+    <path d="M78 172 L100 140 L100 172Z"/>
+    <rect x="98" y="110" width="150" height="50" rx="16"/>
+    <rect x="120" y="70" width="22" height="42"/><rect x="114" y="62" width="34" height="10" rx="3" fill="#E6C26B"/>
+    <path d="M168 110 a16 16 0 0 1 32 0Z" fill="#E6C26B"/>
+    <rect x="240" y="80" width="80" height="84" rx="6"/><rect x="232" y="70" width="96" height="14" rx="4" fill="#E6C26B"/>
+    <rect x="320" y="120" width="130" height="44" rx="6"/>
+    <circle cx="130" cy="166" r="14"/><circle cx="175" cy="162" r="20"/><circle cx="222" cy="162" r="20"/><circle cx="290" cy="166" r="14"/><circle cx="350" cy="168" r="11"/><circle cx="420" cy="168" r="11"/>
+  </g>
+  <rect class="lamp" x="254" y="94" width="20" height="22" rx="3" fill="#FFE9A8"/><rect class="lamp" x="284" y="94" width="20" height="22" rx="3" fill="#FFE9A8"/>
+  <circle class="lamp" cx="104" cy="128" r="9" fill="#FFF3C4"/>
+  <path class="lamp" d="M95 128 L20 112 L20 144Z" fill="#FFF3C4" opacity=".18"/>
+  <text x="380" y="148" text-anchor="middle" font-family="Cinzel, Georgia, serif" font-weight="700" font-size="14" fill="#E6C26B" letter-spacing="2">UTAH DEPOT</text>
+  </svg>
+  
+</div></section>
+<section><div class="d-wrap">
+  <p class="d-eye">Where's the train?</p>
+  <h2 class="d-h">The route map</h2>
+  <div class="d-map"><svg id="d-svg" viewBox="0 0 500 500" role="img" aria-label="Map of Utah"></svg></div>
+  <div class="d-stats"><div><small>Now at</small><b id="d-now">Ogden</b></div><div><small>Total miles</small><b id="d-total">0</b></div><div><small>Stops</small><b id="d-count">1</b></div></div>
+  <p class="d-note">Miles are straight-line miles, the way a crow flies.</p>
+</div></section>
+
+<section style="padding-top:0"><div class="d-wrap">
+  <p class="d-eye">Stories so far</p>
+  <h2 class="d-h">Stops on the line</h2>
+  <ol class="d-list" id="d-stops"></ol>
+</div></section>
+
+<section id="d-vote" style="padding-top:0"><div class="d-wrap">
+  <p class="d-eye">Next departure</p>
+  <h2 class="d-h">Where should the train go next?</h2>
+  <p class="d-note" style="margin:0 0 14px">Tap a ticket to vote. One vote per family, no names, no sign-in. Voting closes <span id="d-closes"></span>.</p>
+  <div class="d-tickets" id="d-tix"></div>
+  <p class="d-voted" id="d-voted" aria-live="polite">The trip with the most votes becomes next week's story.</p>
+</div></section>
+<section id="d-ticket" style="padding-top:0"><div class="d-wrap">
+  <p class="d-eye">Collect punches, unlock extras</p>
+  <h2 class="d-h">Conductor's Ticket Book</h2>
+  <div class="d-tb" id="d-tb"></div>
+</div></section>
+
+<section id="d-activity-cars" style="padding-top:0"><div class="d-wrap">
+  <p class="d-eye">Hop aboard</p>
+  <h2 class="d-h">Activity cars</h2>
+  <p class="d-note" style="margin:0 0 10px">Every kids activity on the site rides on this train. Swipe to see them all.</p>
+  <div class="d-cars" id="d-cars"></div>
+</div></section>
+
+<section id="d-suggest" style="padding-top:0"><div class="d-wrap">
+  <div class="d-act" style="background:var(--d-brass-soft)">
+    <h3>Know a Utah story we haven't told?</h3>
+    <p>Tell us about a true Utah history story or place the train should visit. Have a grown-up send it. We check every fact before it goes on a stop.</p>
+    <p data-suggest-hide class="d-note">The idea box opens soon.</p>
+    <a class="d-btn solid" data-suggest href="#" hidden>Send a story idea</a>
+  </div>
+</div></section>
+</div>
+<!-- The original Community Kids page continues below, unchanged -->
 <section class="hero"><div class="container"><div><p class="eyebrow">For Valley kids and families</p><h1>Community Kids</h1><p class="lead" style="margin-top:12px">Lessons kids can take, teams and clubs they can join, kid-friendly events, and free things to do at home. All in one place.</p>
 <p class="meta" data-page-dates style="margin-top:10px">Posted Oct. 11, 2026 · Updated <span id="k-upd">Oct. 11, 2026</span></p></div></div></section>
+
+
 <section><div class="container" style="display:grid;gap:18px">
   <nav class="btns" aria-label="On this page" style="margin:0"><a class="btn" href="#kid-events">Kid events</a><a class="btn" href="#lessons">Lessons &amp; classes</a><a class="btn" href="#groups">Teams &amp; clubs</a><a class="btn" href="#at-home">Things to do at home</a><a class="btn primary" data-form="update" href="#">Add a lesson, team or club</a></nav>
   <div class="alert warn"><b>Kid-safe rules.</b> We list groups, businesses and public programs only, with their own public website as the contact. Towns only, never a home address. No kids' names or faces in photos without a parent's OK. Check with each program for times, prices and sign-ups before you go.</div>
@@ -93,6 +169,7 @@
 <script src="config.js"></script>
 <script src="places.js"></script>
 <script src="site.js"></script>
+<script src="depot.js"></script>
 <script>
 (async function(){
 const S=window.OVE_SITE,el=S.el,C=S.C;

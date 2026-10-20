@@ -16,10 +16,12 @@
 <link rel="apple-touch-icon" href="logo-10-years-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="depot.css">
 <script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
 </head>
-<body class="kids">
+<body class="depot-theme kids">
 <a class="sr" href="#main">Skip to content</a>
 <div class="alert-bar" id="alert-bar" hidden></div>
 <div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
@@ -119,7 +121,9 @@ tabs.forEach(b=>b.onclick=()=>show(b.dataset.tab));
 function printEl(id){const n=document.getElementById(id);n.classList.add("printing");window.print();setTimeout(()=>n.classList.remove("printing"),500)}
 
 /* ---------- WORD SEARCH ---------- */
-const LISTS=(C.wordSearches&&C.wordSearches.length)?C.wordSearches:[{title:"Valley animals",level:"easy",words:["MOOSE","DEER","OWL","BEAR","ELK","FOX"]}];
+/* a Utah Depot story can open its own word search: puzzles.html?wst=Title&words=A,B,C#ws */
+const DEPOT_WS=(()=>{const q=new URLSearchParams(location.search),w=(q.get("words")||"").split(",").map(x=>x.toUpperCase().replace(/[^A-Z]/g,"")).filter(x=>x.length>1&&x.length<13).slice(0,12);return w.length>2?[{title:(q.get("wst")||"Utah Depot word search").slice(0,60),level:"easy",words:w}]:[]})();
+const LISTS=DEPOT_WS.concat((C.wordSearches&&C.wordSearches.length)?C.wordSearches:[{title:"Valley animals",level:"easy",words:["MOOSE","DEER","OWL","BEAR","ELK","FOX"]}]);
 const pick=document.getElementById("ws-pick");LISTS.forEach((L,i)=>pick.append(el("option",{value:i,text:L.title})));
 const lvlSel=document.getElementById("ws-level");
 const DIRS={easy:"Easy: words only go across → and down ↓.",medium:"Medium: across, down and slanted ↘ ↗. Never backwards.",hard:"Hard: any direction, even backwards ← ↑ and slanted backwards ↖ ↙."};

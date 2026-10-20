@@ -16,7 +16,9 @@
 <link rel="apple-touch-icon" href="logo-10-years-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="depot.css">
 <script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
 <style>
 .cz{display:grid;gap:14px;grid-template-columns:minmax(0,1fr) 340px;align-items:start}
@@ -42,7 +44,7 @@
 @media print{body *{visibility:hidden}#printme,#printme *{visibility:visible}#printme{position:fixed;inset:0;display:block!important}#printme img{width:100%;height:auto}}
 </style>
 </head>
-<body class="kids">
+<body class="depot-theme kids">
 <a class="sr" href="#main">Skip to content</a>
 <div class="alert-bar" id="alert-bar" hidden></div>
 <div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
@@ -105,6 +107,8 @@
 <script>
 (function(){
 const C=window.OVE||{}, pages=(C.coloringPages||[]);
+/* a Utah Depot story can open its own coloring page: color.html?img=depot-stop-1-coloring.png&t=Title */
+{const q=new URLSearchParams(location.search),im=q.get("img");if(im&&/^depot-(stop|bonus)-\d+-coloring\.png$/.test(im))pages.unshift({file:im,title:(q.get("t")||"Utah Depot coloring page").slice(0,80)});}
 const COLORS=[["Red","#e53935"],["Cherry","#b71c1c"],["Pink","#f48fb1"],["Hot pink","#ec407a"],["Coral","#ff7f6e"],["Orange","#fb8c00"],["Pumpkin","#ef6c00"],["Peach","#ffcc99"],
 ["Yellow","#fdd835"],["Lemon","#fff59d"],["Gold","#f9a825"],["Lime","#c0ca33"],["Light green","#9ccc65"],["Green","#43a047"],["Forest","#1b5e20"],["Mint","#a5d6a7"],
 ["Teal","#00897b"],["Aqua","#4dd0e1"],["Sky blue","#81d4fa"],["Blue","#1e88e5"],["Navy","#1a237e"],["Periwinkle","#9fa8da"],["Lavender","#ce93d8"],["Purple","#8e24aa"],

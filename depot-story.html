@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>The Utah Depot Story</title>
+<meta name="description" content="A free weekly read-aloud for kids. Our train stops somewhere in Utah each week for a true history story, with a map, a vote on where to go next, and activities.">
+<meta property="og:title" content="The Utah Depot: True Utah History Stories for Kids">
+<meta property="og:description" content="A free weekly read-aloud for kids. Our train stops somewhere in Utah each week for a true history story, with a map, a vote on where to go next, and activities.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ogdenvalleyevent.com/depot-story.html">
+<meta property="og:image" content="https://ogdenvalleyevent.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ogdenvalleyevent.com/depot-story.html">
+<link rel="icon" href="logo-10-years-32.png">
+<link rel="apple-touch-icon" href="logo-10-years-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
+<link rel="stylesheet" href="depot.css">
+</head>
+<body class="kids depot" data-depot="story">
+<a class="sr" href="#main">Skip to content</a>
+<div class="alert-bar" id="alert-bar" hidden></div>
+<div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
+  <strong>Canyon check</strong>
+  <a href="https://ogdenvalley.udot.utah.gov/road-information/" target="_blank" rel="noopener">Ogden Valley roads &amp; cameras (UDOT)</a>
+  <a href="https://udottraffic.utah.gov/map" target="_blank" rel="noopener" data-track="open snowplow map">🚜 Snowplows (UDOT)</a>
+  <a href="live.html">Live view</a>
+  <a href="safety.html">Alerts &amp; fires</a>
+  <a href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Eden weather</a>
+</div></div>
+<header class="site-head"><div class="container">
+  <a class="brand" href="index.html"><img data-logo="180" src="logo-10-years-180.png" alt="" width="52" height="52"><span><b>Ogden Valley</b><small>Information &amp; Events</small></span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="main" id="nav" aria-label="Main"></nav>
+</div></header>
+<main id="main">
+<div class="d-night">
+<section class="d-sign"><div class="d-wrap">
+  <div class="rule" id="d-stopline">The Utah Depot</div>
+  <h1 id="d-title" style="font-size:clamp(34px,8vw,56px)">All aboard</h1>
+  <span class="d-platform" id="d-platform">Platform 1869</span>
+  <p id="d-meta"></p>
+</div></section>
+
+<section><div class="d-wrap">
+  <div class="d-crumbs" style="margin-bottom:22px"><a class="d-btn" href="kids.html">← Back to the map</a><button class="d-btn" type="button" id="d-print">Print the story &amp; activities</button></div>
+  <div class="d-story" id="d-story"></div>
+</div></section>
+
+<section style="padding-top:0"><div class="d-wrap">
+  <div class="d-divider"><span>After the story</span></div>
+  <div class="d-act" id="d-color">
+    <h3>Coloring page</h3>
+    <p>Color it online with 48 colors, or print it and color it by hand.</p>
+    <img id="d-color-img" alt="" style="width:min(260px,70%);border:2px solid var(--d-line);border-radius:6px;background:#fff;display:block;margin:6px 0 12px">
+    <div style="display:flex;flex-wrap:wrap;gap:10px"><a class="d-btn solid" id="d-color-online" href="color.html">Color online</a><button class="d-btn" type="button" id="d-color-print">Print the coloring page</button></div>
+  </div>
+  <div id="d-acts"></div>
+  <div class="d-tb" id="d-tb" style="margin-bottom:16px"></div>
+  <details class="d-src"><summary>For parents: where these facts come from</summary><ul id="d-sources" style="line-height:1.6"></ul><p class="d-note">Straight-line miles are measured from stop to stop on a map.</p></details>
+  <div style="display:grid;gap:12px;margin-top:22px"><div id="d-next"></div><div class="d-crumbs" id="d-prevnext"></div></div>
+</div></section>
+<section id="d-suggest" style="padding-top:0"><div class="d-wrap">
+  <div class="d-act" style="background:var(--d-brass-soft)">
+    <h3>Know a Utah story we haven't told?</h3>
+    <p>Tell us about a true Utah history story or place the train should visit. Have a grown-up send it. We check every fact before it goes on a stop.</p>
+    <p data-suggest-hide class="d-note">The idea box opens soon.</p>
+    <a class="d-btn solid" data-suggest href="#" hidden>Send a story idea</a>
+  </div>
+</div></section>
+</div>
+<div id="d-printpic" hidden><img alt=""></div>
+<style>@media print{.canyon,.site-head,.site-foot,.d-crumbs,#d-next,#d-prevnext,#d-suggest,.d-btn,#d-color-img,.alert-bar,#d-color{display:none!important}.d-sign{background:#fff!important;color:#000!important;border-bottom:3px solid #000}.d-sign h1,.d-sign p{color:#000!important}.d-act{break-inside:avoid}details.d-src{display:block}details.d-src>*{display:block}body.printpic main,body.printpic .canyon,body.printpic .site-head,body.printpic .site-foot{display:none!important}body.printpic #d-printpic{display:block!important}body.printpic #d-printpic img{width:100%}}</style>
+</main>
+<footer class="site-foot"></footer>
+<script src="layout.js"></script>
+<script src="config.js"></script>
+<script src="places.js"></script>
+<script src="site.js"></script>
+<script src="depot.js"></script>
+</body>
+</html>
