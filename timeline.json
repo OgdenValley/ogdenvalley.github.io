@@ -1,15 +1,22 @@
 {
- "updated": "2026-10-20T21:42:47.221Z",
+ "updated": "2026-10-21T14:44:58.478Z",
  "items": [
   {
-   "t": 1792532567220,
+   "t": 1792593898477,
+   "src": "UDOT alert",
+   "text": "Crash: SB I-15 at MP 344 (12th St, Marriott-Slaterville) blocking the 2 left lane. Expect delays and use an alternate route if possible.",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1792593898477,
    "src": "Utah Air Quality",
-   "text": "Weber County forecast: Tuesday good · Wednesday good · Thursday good",
+   "text": "Weber County forecast: Wednesday good · Thursday good · Friday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
   },
   {
-   "t": 1792507497423,
+   "t": 1792532567220,
    "src": "Utah Air Quality",
    "text": "Weber County forecast: Tuesday good · Wednesday good · Thursday good",
    "kind": "air",
@@ -21,7 +28,9 @@
    "10148": "I-84|!! Traffic Alerts !! (updated 10/14) Westbound single lane closure | Tue (10/6) - Sun (10/18) | Day & Night Westbound single lane closure | Mon (10/19) - Tue, (11/3) | Day & Night Delays may be significant, 10-15min or more during peak periods Note: Wide load restricted above 11 ft Westbound single lane closure | Sprin",
    "36834": "SR 39|!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at ni"
   },
-  "al": {},
+  "al": {
+   "2618": 1
+  },
   "cond": {
    "I-84 I-15 Jct at Riverdale to SR-89#185": "Dry · none",
    "I-84 Uintah Jct to Jct SR-167 at Mountain Green#186": "Dry · none",
@@ -51,6 +60,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "October 20, 2026 3:37 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "October 21, 2026 8:30 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
