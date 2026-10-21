@@ -1,16 +1,8 @@
 {
- "updated": "2026-10-21T16:43:39.533Z",
+ "updated": "2026-10-21T20:43:43.207Z",
  "weather": [],
  "fires": [],
  "city": [
-  {
-   "title": "900 N. St from Washington Blvd. to 445 E. Including Viking Villa",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2070",
-   "date": 1792602613000,
-   "text": "Scheduled Water Outage",
-   "source": "Ogden City Alerts",
-   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
-  },
   {
    "title": "Ogden Canyon from the mouth to Water Treatment Plant including Radford Estates",
    "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2068",
