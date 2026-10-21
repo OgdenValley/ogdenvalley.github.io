@@ -1,8 +1,17 @@
 {
- "updated": "2026-10-20T11:42:52.468Z",
+ "updated": "2026-10-21T13:50:09.325Z",
  "weather": [],
  "fires": [],
- "city": [],
+ "city": [
+  {
+   "title": "Ogden Canyon from the mouth to Water Treatment Plant including Radford Estates",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2068",
+   "date": 1792506800000,
+   "text": "Water Outage/Low Pressure",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  }
+ ],
  "status": {
   "weather": "ok",
   "fires": "ok",
