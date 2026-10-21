@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-21T15:46:03.217Z",
+ "updated": "2026-10-21T16:43:39.533Z",
  "weather": [],
  "fires": [],
  "city": [
   {
-   "title": "2550 S. from Industrial Dr. to Midland Dr.",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2069",
-   "date": 1792599521000,
-   "text": "Emergency Water Outage",
+   "title": "900 N. St from Washington Blvd. to 445 E. Including Viking Villa",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2070",
+   "date": 1792602613000,
+   "text": "Scheduled Water Outage",
    "source": "Ogden City Alerts",
    "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
   },
