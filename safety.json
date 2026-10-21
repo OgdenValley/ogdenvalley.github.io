@@ -1,8 +1,16 @@
 {
- "updated": "2026-10-21T13:50:09.325Z",
+ "updated": "2026-10-21T15:46:03.217Z",
  "weather": [],
  "fires": [],
  "city": [
+  {
+   "title": "2550 S. from Industrial Dr. to Midland Dr.",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2069",
+   "date": 1792599521000,
+   "text": "Emergency Water Outage",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  },
   {
    "title": "Ogden Canyon from the mouth to Water Treatment Plant including Radford Estates",
    "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2068",

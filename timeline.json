@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-21T14:44:58.478Z",
+ "updated": "2026-10-21T15:46:09.108Z",
  "items": [
   {
    "t": 1792593898477,
@@ -28,25 +28,21 @@
    "10148": "I-84|!! Traffic Alerts !! (updated 10/14) Westbound single lane closure | Tue (10/6) - Sun (10/18) | Day & Night Westbound single lane closure | Mon (10/19) - Tue, (11/3) | Day & Night Delays may be significant, 10-15min or more during peak periods Note: Wide load restricted above 11 ft Westbound single lane closure | Sprin",
    "36834": "SR 39|!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at ni"
   },
-  "al": {
-   "2618": 1
-  },
+  "al": {},
   "cond": {
-   "I-84 I-15 Jct at Riverdale to SR-89#185": "Dry · none",
-   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#186": "Dry · none",
-   "I-84 SR-167 at Mountain Green to Morgan#197": "Dry · none",
-   "SR-39 Ogden to Jct. SR-167 Trappers Loop#208": "Dry · none",
-   "SR-158 to Powder Mountain#216": "Dry · none",
-   "SR-167 Trappers Loop I-84 to Huntsville#217": "Dry · none",
-   "SR-226 to Snowbasin#219": "Dry · none",
-   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#224": "Dry · none",
-   "US-89 From Lagoon to Jct. SR-193#236": "Dry · none",
-   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#238": "Dry · none",
-   "US-89 From Jct. SR-193 to I-84#247": "Dry · none"
+   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
+   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
+   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
+   "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
+   "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
+   "SR-158 to Powder Mountain#334": "Dry · none",
+   "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none",
+   "SR-226 to Snowbasin#336": "Dry · none",
+   "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
+   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none",
+   "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none"
   },
-  "pass": {
-   "SR-39 Monte Cristo|East of Ogden - Milepost 37 to 55.5  \nTypical Closure: Mid to Late Nov\nTypical Opening: Mid to Late May\nSR-39 Monte Cristo Weather Station\n ": "OPEN"
-  },
+  "pass": {},
   "ice": {
    "I-84 @ MP 91 Devils Gate": 0,
    "I-84 @ MP 97 Peterson": 0,
