@@ -1,10 +1,21 @@
 {
- "updated": "2026-10-20T21:43:01.555Z",
+ "updated": "2026-10-21T06:53:37.865Z",
  "weeks": {
   "2026-10-08": {
    "answer": "The Oaks",
    "winner": "",
    "guesses": []
+  },
+  "2026-10-15": {
+   "answer": "Nordic Valley",
+   "winner": "JuliaR",
+   "guesses": [
+    {
+     "name": "JuliaR",
+     "guess": "Nordic Valley by the golf course",
+     "right": true
+    }
+   ]
   }
  }
 }
