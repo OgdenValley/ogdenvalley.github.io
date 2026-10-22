@@ -69,7 +69,9 @@ function writeIfChanged(path, obj){
 const UA = {"User-Agent": "ogdenvalleyevent.com (Ogden Valley Info & Events community site)", "Accept": "application/json, text/calendar, */*"};
 
 async function fetchCal(id){
-  const r = await fetch("https://calendar.google.com/calendar/ical/" + encodeURIComponent(id) + "/public/basic.ics", {headers: UA});
+  // a Google Calendar id, or a full feed link (https:// or webcal://, e.g. Visit Ogden's Trumba calendar)
+  const url = /^(webcal|https?):\/\//i.test(id) ? id.replace(/^webcal:/i, "https:") : "https://calendar.google.com/calendar/ical/" + encodeURIComponent(id) + "/public/basic.ics";
+  const r = await fetch(url, {headers: UA});
   if (!r.ok) throw new Error("HTTP " + r.status);
   const txt = await r.text();
   if (!txt.includes("BEGIN:VCALENDAR")) throw new Error("not a calendar (is it set to public?)");
@@ -93,7 +95,8 @@ async function calendars(){
   for (const [key, cal] of entries.filter(([, c]) => c.into)) {
     const id = (cal.id || "").trim(); if (!id) continue;
     let evs;
-    try { evs = icsParse(await fetchCal(id), from, to).map(e => ({...e, src: cal.name})); console.log(key, evs.length, "events into", cal.into); }
+    const until = cal.days ? now + cal.days * 864e5 : to; // optional: only the next N days for big feeds
+    try { evs = icsParse(await fetchCal(id), from, until).map(e => ({...e, src: cal.name})); console.log(key, evs.length, "events into", cal.into); }
     catch (e) { console.log(key, "failed:", e.message, "- keeping the last good copy"); evs = oldExtra[key] || []; }
     out.sources[key] = evs;
     if (!out.calendars[cal.into]) out.calendars[cal.into] = {name: cal.into, events: []};

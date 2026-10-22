@@ -1,26 +1,32 @@
 {
-  "_help": "Main calendars: ov and weber (must be public). Extra sources: add an entry with \"into\" set to ov or weber and its events are added to that calendar on the site. _reviewsCsv: the published CSV link of the Public tab of the reviews sheet. _reportsCsv: the published CSV link of the Public tab of the community reports sheet.",
-  "ov": {
-    "name": "Ogden Valley",
-    "id": "ogdenvalleyevent@gmail.com"
-  },
-  "weber": {
-    "name": "Weber County",
-    "id": "7dd09b529f61c31fbf512699af140b642931413a74f0613f52725dca594f30f1@group.calendar.google.com"
-  },
-  "_reviewsCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQn86HWkoPuagAudOasKHmeTfLrhg8hIJ83zQCWYC_aFxKTyB5y6QnQRdaqIf-jjtYX2fBLi_ohqA2V/pub?gid=642353079&single=true&output=csv",
-  "_reportsCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTIbo3PnOH3AUKMjnkY3-noC5fHzHPOEl-LtneWuZLzddRkaQMsOwT9QbuR5nzkZmZ53Efj7RMMqb1k/pub?gid=0&single=true&output=csv",
-  "_yardsalesCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0MbH5QJ6TwMXBx0AGSHwA9l97xWZvcGPMVPXVfpSSYe3-c-6wdpSQTxJzMi9gd_SUIm_CPBUwEBAk/pub?gid=706538916&single=true&output=csv",
-  "_skyPhotosCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=1455510772&single=true&output=csv",
-  "_skyVotesCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=890522600&single=true&output=csv",
-  "_sightingsCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=1848082241&single=true&output=csv",
-  "_coloringCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=725988161&single=true&output=csv",
-  "_musiciansCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=1731760591&single=true&output=csv",
-  "_recipesCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=1549479473&single=true&output=csv",
-  "_recipeVotesCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=1193278968&single=true&output=csv",
-  "_guessRevealCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTDQoEd43tzFUI81AVmrgGgTHUcsi-ywWAOqn6QRzdqloU8fCQ5aVvff1cV4NZQzUGWf4af4XIleDjw/pub?gid=956076836&single=true&output=csv",
-  "_tipsCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=1081675106&single=true&output=csv",
-  "_jobsCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQhmZVTVM6C2kxBQltlbqPsGoABZK0yT6lhGuzDl1T8zClqfiiku3OU2VMk4ncoOcMoItTRqxQg34kR/pub?gid=1898644849&single=true&output=csv",
-  "_listingsCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSi00_WGXa7jiLsctrHsSE2OpFjgdCM_HTrpY2CwT26kZkfztIir0K8udJhWBt91cUzBqeFoHGqMIO3/pub?gid=78036570&single=true&output=csv",
-  "_artistsCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTbBiAstDY-u3p0Pnz4FsKDh77c9EkVUkNfKTa4ONzx1_eT0LT5XTeBx2xWancZRTNZctPkPuXz8X37/pub?gid=0&single=true&output=csv"
+ "_help": "Main calendars: ov and weber (must be public). Extra sources: add an entry with \"into\" set to ov or weber and its events are added to that calendar on the site. \\\"id\\\" can be a Google Calendar id or a full feed link (https:// or webcal://); \\\"days\\\" (optional) keeps only the next N days. _reviewsCsv: the published CSV link of the Public tab of the reviews sheet. _reportsCsv: the published CSV link of the Public tab of the community reports sheet.",
+ "ov": {
+  "name": "Ogden Valley",
+  "id": "ogdenvalleyevent@gmail.com"
+ },
+ "weber": {
+  "name": "Weber County",
+  "id": "7dd09b529f61c31fbf512699af140b642931413a74f0613f52725dca594f30f1@group.calendar.google.com"
+ },
+ "ogdenarea": {
+  "name": "Ogden Area Events (Visit Ogden)",
+  "id": "https://www.trumba.com/calendars/ogden-area-events.ics",
+  "into": "weber",
+  "days": 60
+ },
+ "_reviewsCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQn86HWkoPuagAudOasKHmeTfLrhg8hIJ83zQCWYC_aFxKTyB5y6QnQRdaqIf-jjtYX2fBLi_ohqA2V/pub?gid=642353079&single=true&output=csv",
+ "_reportsCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTIbo3PnOH3AUKMjnkY3-noC5fHzHPOEl-LtneWuZLzddRkaQMsOwT9QbuR5nzkZmZ53Efj7RMMqb1k/pub?gid=0&single=true&output=csv",
+ "_yardsalesCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ0MbH5QJ6TwMXBx0AGSHwA9l97xWZvcGPMVPXVfpSSYe3-c-6wdpSQTxJzMi9gd_SUIm_CPBUwEBAk/pub?gid=706538916&single=true&output=csv",
+ "_skyPhotosCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=1455510772&single=true&output=csv",
+ "_skyVotesCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=890522600&single=true&output=csv",
+ "_sightingsCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=1848082241&single=true&output=csv",
+ "_coloringCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=725988161&single=true&output=csv",
+ "_musiciansCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=1731760591&single=true&output=csv",
+ "_recipesCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=1549479473&single=true&output=csv",
+ "_recipeVotesCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=1193278968&single=true&output=csv",
+ "_guessRevealCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTDQoEd43tzFUI81AVmrgGgTHUcsi-ywWAOqn6QRzdqloU8fCQ5aVvff1cV4NZQzUGWf4af4XIleDjw/pub?gid=956076836&single=true&output=csv",
+ "_tipsCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSk5HrcNCY9ujn7Tpb9OlncnPh4Jcfp1UvmHvUGpVO254RRFvQX6BoGLYKoP_iKZrHcojD6Ji1wiikV/pub?gid=1081675106&single=true&output=csv",
+ "_jobsCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vQhmZVTVM6C2kxBQltlbqPsGoABZK0yT6lhGuzDl1T8zClqfiiku3OU2VMk4ncoOcMoItTRqxQg34kR/pub?gid=1898644849&single=true&output=csv",
+ "_listingsCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vSi00_WGXa7jiLsctrHsSE2OpFjgdCM_HTrpY2CwT26kZkfztIir0K8udJhWBt91cUzBqeFoHGqMIO3/pub?gid=78036570&single=true&output=csv",
+ "_artistsCsv": "https://docs.google.com/spreadsheets/d/e/2PACX-1vTbBiAstDY-u3p0Pnz4FsKDh77c9EkVUkNfKTa4ONzx1_eT0LT5XTeBx2xWancZRTNZctPkPuXz8X37/pub?gid=0&single=true&output=csv"
 }
