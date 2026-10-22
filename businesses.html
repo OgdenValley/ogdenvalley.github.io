@@ -36,13 +36,15 @@
   <nav class="main" id="nav" aria-label="Main"></nav>
 </div></header>
 <main id="main">
-<section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley</p><h1>Valley Businesses</h1><p class="lead" style="margin-top:12px">Shops, services and outfitters run by your Valley neighbors.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley</p><h1>Local Businesses</h1><p class="lead" style="margin-top:12px">Shops, services and outfitters run by your Valley neighbors, plus the local Ogden shops Valley folks drive down for, from the canyon mouth to Pleasant View.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
 <section><div class="container">
   <div data-find style="margin-bottom:18px"></div>
+  <div id="area" style="margin-bottom:12px"></div>
   <div class="fbox">
-    <input type="search" id="q" class="fsearch" placeholder="Search Valley businesses" aria-label="Search Valley businesses">
+    <input type="search" id="q" class="fsearch" placeholder="Search: candles, florist, bike shop, gas…" aria-label="Search local businesses">
     <div class="frow"><label class="flab" for="where">Where</label><select id="where" class="fselect">
-      <option value="All">All of the Valley</option><option value="Eden">Eden</option><option value="Huntsville Town">Huntsville Town</option><option value="Huntsville area">Huntsville area</option><option value="Liberty">Liberty</option><option value="Snowbasin">Snowbasin</option><option value="Powder Mountain">Powder Mountain</option><option value="Nordic Valley">Nordic Valley</option>
+      <option value="All">Everywhere</option><option value="Eden">Eden</option><option value="Huntsville Town">Huntsville Town</option><option value="Huntsville area">Huntsville area</option><option value="Liberty">Liberty</option><option value="Snowbasin">Snowbasin</option><option value="Powder Mountain">Powder Mountain</option><option value="Nordic Valley">Nordic Valley</option>
+      <optgroup label="Down the canyon"><option value="@h:Canyon mouth / 12th St">Canyon mouth / 12th St</option><option value="@h:Downtown & 25th St">Downtown &amp; 25th St</option><option value="@h:Washington Blvd">Washington Blvd</option><option value="@h:Harrison Blvd">Harrison Blvd</option><option value="@h:North Ogden">North Ogden</option><option value="@h:Pleasant View">Pleasant View</option><option value="@h:South Ogden">South Ogden (30th St &amp; south)</option></optgroup>
     </select></div>
     <div id="more" hidden>
       <div class="frow" id="tagbar"><span class="flab">Badges</span></div>
@@ -52,6 +54,7 @@
     <p class="fcount"><span id="count"></span> <button type="button" class="fclear" id="clear" hidden>Clear filters</button></p>
   </div>
   <div id="list"></div>
+  <div id="list-w-wrap" hidden><div class="section-head" style="margin-top:26px"><div><p class="eyebrow">Weber County · Ogden</p><h2>Down the canyon</h2></div></div><div id="list-w"></div></div>
   <div data-groups="classifieds,rentals" data-title="Buying, selling or renting? Ask your neighbors" style="margin-top:22px"></div>
   <div class="fnotes">
     <p class="fair">Badges are as told to us by the owner. Listings are free and in A–Z order. Nobody pays to be ranked higher, reviews come from real people, and sponsors are always labeled. Every place is checked by a local before it goes up.</p>
@@ -73,16 +76,19 @@ const rows=CFG.rows.map(r=>{const seen=[...new Set(all.flatMap(p=>val(p,r)))];le
  const lab=bar.firstElementChild;bar.replaceChildren(lab,...["All"].concat(vals).map(t=>{const b=el("button",{class:"chip",type:"button","aria-pressed":String(t==="All"),text:t});b.onclick=()=>{st[r.id]=t==="All"?"":t;[...bar.querySelectorAll("button")].forEach(x=>x.setAttribute("aria-pressed",String(x===b)));draw()};return b}));return Object.assign({bar},r)}).filter(Boolean);
 const where=document.getElementById("where"),qi=document.getElementById("q"),more=document.getElementById("more"),mb=document.getElementById("morebtn"),clr=document.getElementById("clear");
 if(more&&!rows.some(r=>r.more)){more.remove();mb.remove()}
-const pred=(p,s)=>spot(p)&&(s.town==="All"||(p.town||p.area)===s.town)&&rows.every(r=>!s[r.id]||val(p,r).includes(s[r.id]))&&(!s.q||JSON.stringify(p).toLowerCase().includes(s.q));
-function draw(){const shown=all.filter(p=>pred(p,st));S.listing(document.getElementById("list"),shown,CFG.key,R);
+const isW=p=>p.region==="weber";let area=S.getArea();const inArea=p=>area==="both"||(area==="weber")===isW(p);
+const pred=(p,s)=>spot(p)&&(s.town==="All"||(s.town.startsWith("@h:")?p.hood===s.town.slice(3):(p.town||p.area)===s.town))&&rows.every(r=>!s[r.id]||val(p,r).includes(s[r.id]))&&(!s.q||JSON.stringify(p).toLowerCase().includes(s.q));
+function draw(){const shown=all.filter(p=>inArea(p)&&pred(p,st));const up=shown.filter(p=>!isW(p)),dn=shown.filter(isW),lw=document.getElementById("list-w-wrap");
+ if(area==="weber"){S.listing(document.getElementById("list"),dn,CFG.key,R);lw.hidden=true}else{if(area==="both"&&!up.length&&dn.length)document.getElementById("list").replaceChildren(el("p",{class:"fcount",style:"font-size:17px",text:"Nothing up here for that yet. Here's what's down the canyon:"}));else S.listing(document.getElementById("list"),up,CFG.key,R);lw.hidden=area!=="both"||!dn.length;if(!lw.hidden)S.listing(document.getElementById("list-w"),dn,CFG.key,R)}
  S.pruneChips(all,pred,st,rows.map(r=>({key:r.id,btns:r.bar.querySelectorAll("button"),val:b=>b.textContent==="All"?null:b.textContent,row:false})));
- if(where)[...where.options].forEach(o=>{if(o.value!=="All")o.disabled=o.value!==st.town&&!all.some(p=>pred(p,Object.assign({},st,{town:o.value})))});
+ if(where)[...where.options].forEach(o=>{if(o.value!=="All")o.disabled=o.value!==st.town&&!all.some(p=>inArea(p)&&pred(p,Object.assign({},st,{town:o.value})))});
  const on=st.town!=="All"||st.q||rows.some(r=>st[r.id]);document.getElementById("count").textContent="Showing "+shown.length+(shown.length===1?" "+CFG.one:" "+CFG.many)+(on?"":" (all)");clr.hidden=!on;
  if(mb&&document.body.contains(mb)){const n=rows.filter(r=>r.more&&st[r.id]).length;mb.textContent=(more.hidden?"More filters ▾":"Fewer filters ▴")+(n&&more.hidden?" ("+n+" on)":"")}}
 qi.addEventListener("input",e=>{st.q=e.target.value.trim().toLowerCase();draw()});
 if(where)where.addEventListener("change",()=>{st.town=where.value;draw()});
 if(mb)mb.addEventListener("click",()=>{more.hidden=!more.hidden;mb.setAttribute("aria-expanded",String(!more.hidden));draw()});
 clr.addEventListener("click",()=>{st.town="All";st.q="";rows.forEach(r=>st[r.id]="");if(where)where.value="All";qi.value="";document.querySelectorAll(".fbox .chip").forEach(b=>b.setAttribute("aria-pressed",String(b.textContent==="All")));draw()});
+S.areaSwitch(document.getElementById("area"),v=>{area=v;draw()});
 draw();if(location.hash){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t){t.scrollIntoView();t.style.outline="3px solid var(--accent)"}}})();
 </script>
 </body>

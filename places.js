@@ -103,7 +103,11 @@ window.OVE_PLACES = {
      "blurb": "Casual seasonal stop near Pineview Reservoir known for raspberry shakes, burgers and fries.",
      "phone": "801-745-3542",
      "address": "7345 E 900 S, Huntsville, UT 84317",
-     "checked": "2026-10-07"
+     "checked": "2026-10-07",
+     "sells": [
+       "gas",
+       "fuel"
+     ]
    },
    {
      "name": "Earl's Lodge (Snowbasin)",
@@ -1551,228 +1555,1654 @@ window.OVE_PLACES = {
    }
  ],
  "businesses": [
-  {
-   "name": "Club Rec Tours & Rentals",
-   "town": "Eden",
-   "type": "Recreation rentals & tours",
-   "blurb": "Rents boats, watercraft, UTVs, paddle craft and snowmobiles, with guided tours; headquartered at Wolf Creek with a Pineview marina location.",
-   "phone": "(801) 745-3038",
-   "link": "https://clubrecutah.com",
-   "address": "6560 1st St",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Compass Rose Lodge & HALO Observatory",
-   "town": "Huntsville Town",
-   "type": "Boutique lodge & observatory",
-   "blurb": "Boutique lodge in Huntsville with an on-site observatory offering stargazing tours, and First Lift Coffee.",
-   "phone": "385-279-4460",
-   "link": "https://compassroselodge.com",
-   "address": "198 S 7400 E, Huntsville, UT 84317",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Detours",
-   "town": "Huntsville Town",
-   "type": "Paddle & bike rentals, shake shop",
-   "blurb": "Locally owned paddleboard, kayak, canoe and cruiser-bike rental shop near Pineview Reservoir, with a shake shop.",
-   "phone": "385-380-7102",
-   "link": "https://detoursutah.com",
-   "address": "198 S 7400 E, Huntsville, UT 84317",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Diamond Peak Mountain Sports",
-   "town": "Eden",
-   "type": "Ski, snowboard & bike shop",
-   "blurb": "Ski, snowboard and bike retailer with rentals and overnight ski-mounting service; says it has been in business more than three decades.",
-   "phone": "801-745-0101",
-   "link": "https://dpmsutah.com",
-   "address": "2429 N Hwy 158, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Edelweiss Inn",
-   "town": "Eden",
-   "type": "Lodging",
-   "blurb": "Lodging near Nordic Valley.",
-   "phone": "850-866-8418",
-   "address": "2548 Nordic Valley Dr, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "EmieJames",
-   "town": "Eden",
-   "type": "Home decor & gifts",
-   "blurb": "Mother-daughter business selling home decor, kitchen items and gifts.",
-   "phone": "(385) 358-5506",
-   "link": "https://emiejames.com",
-   "address": "5522 E 2200 N, Suite B, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Jackson Fork Inn",
-   "town": "Huntsville area",
-   "type": "Inn",
-   "blurb": "Inn on Highway 39 in Huntsville.",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Lavender Hill Utah / The Lavender Loft",
-   "town": "Eden",
-   "type": "Lavender farm & gift shop",
-   "blurb": "Small lavender farm and gift shop selling handmade lavender products; shop is upstairs above Diamond Peak Mountain Sports.",
-   "phone": "801-645-4890",
-   "link": "https://lavenderhillutah.com",
-   "address": "2429 Hwy 158, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Luna & Lavender Co.",
-   "town": "Eden",
-   "type": "Apothecary & gift shop",
-   "blurb": "Shop selling handmade candles, bath products, teas, herbs, jewelry and metaphysical supplies.",
-   "phone": "801-745-5384",
-   "link": "https://lunaandlavenderco.com",
-   "address": "2595 N Hwy 162, Ste 4, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Mountain Luxury",
-   "town": "Eden",
-   "type": "Real estate",
-   "phone": "(801) 745-8400",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "New World Distillery",
-   "town": "Eden",
-   "type": "Craft distillery & tasting room",
-   "blurb": "Craft distillery established in 2016 making agave spirits, gin, vodka and bourbon, with a tasting room and tours.",
-   "phone": "(385) 244-0144",
-   "link": "http://www.newworlddistillery.com/",
-   "address": "4795 2600 N, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Nordic Valley",
-   "town": "Nordic Valley",
-   "type": "Ski resort",
-   "blurb": "Small ski area founded in 1968, known for night skiing.",
-   "phone": "385-298-0155",
-   "link": "https://www.nordicvalley.ski",
-   "address": "3567 Nordic Valley Way, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Ogden Nordic (North Fork Park)",
-   "town": "Liberty",
-   "type": "Nordic ski trails",
-   "blurb": "Nonprofit that grooms cross-country ski, snowshoe and fat-bike trails at North Fork Park.",
-   "phone": "801-648-9020",
-   "address": "4150 E 5950 N, Liberty, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Ogden Valley Branch Library",
-   "town": "Huntsville Town",
-   "type": "Library",
-   "blurb": "Weber County Library's Valley branch, with books, services and free events.",
-   "phone": "(801) 337-2660",
-   "link": "https://www.weberpl.lib.ut.us/locations-and-hours/ogden-valley-branch",
-   "address": "131 S 7400 E, Huntsville, UT 84317",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Ogden Valley Copy (FedEx / UPS)",
-   "town": "Eden",
-   "type": "Shipping, mailing & copies",
-   "blurb": "Ship packages with FedEx or UPS, mail, and make copies in the Valley.",
-   "phone": "(385) 453-6100",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Powder Mountain",
-   "town": "Powder Mountain",
-   "type": "Ski resort",
-   "blurb": "Ski resort founded in 1972, known for its large skiable acreage.",
-   "phone": "801-745-3772",
-   "link": "https://powdermountain.com",
-   "address": "6965 E Powder Mountain Rd, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Simply Eden",
-   "town": "Eden",
-   "type": "Bath & body boutique",
-   "blurb": "Boutique specializing in goat-milk soaps and bath and body products.",
-   "phone": "(801) 745-5033",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Snowbasin Resort",
-   "town": "Snowbasin",
-   "type": "Ski resort (year-round)",
-   "blurb": "Ski resort that hosted 2002 Olympic downhill, super-G and combined events; open for summer activities and events too.",
-   "phone": "801-620-1000",
-   "link": "https://www.snowbasin.com",
-   "address": "3925 E Snowbasin Rd, Huntsville, UT 84317",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "South Fork Hardware (Huntsville)",
-   "town": "Huntsville area",
-   "type": "Hardware store",
-   "blurb": "Hardware store, part of a regional family-owned chain, on Highway 39 in Huntsville.",
-   "phone": "801-745-2443",
-   "link": "https://southforkhw.com",
-   "address": "540 S Hwy 39, Huntsville, UT 84317",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Sunnyfield Meats",
-   "town": "Eden",
-   "type": "Butcher shop",
-   "phone": "(801) 654-9450",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Valley Wine & Spirits",
-   "town": "Eden",
-   "type": "Wine & spirits shop",
-   "blurb": "Wine and spirits shop in the log-cabin shops in Eden, in the same courtyard as the Saddlebag Saloon.",
-   "phone": "385-837-8116",
-   "photos": ["valley-wine-spirits-eden-cabins.jpg"],
-   "checked": "2026-10-19"
-  },
-  {
-   "name": "Valley Market",
-   "town": "Eden",
-   "type": "Grocery & deli",
-   "blurb": "Small grocery store with baked goods, produce, meats, a deli counter and hot meals to go.",
-   "phone": "(801) 745-4000",
-   "link": "https://valleymarketonline.com",
-   "address": "2555 N Wolf Creek Dr, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Wolf Creek Resort (golf & club)",
-   "town": "Eden",
-   "type": "Golf course, fitness club & lodging",
-   "blurb": "Semi-private 18-hole golf club established in 1963 with a fitness club, restaurant and lodging.",
-   "phone": "801-745-3737",
-   "link": "https://www.wolfcreekresort.com",
-   "address": "3718 N Wolf Creek Dr, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "WorldMark Wolf Creek",
-   "town": "Eden",
-   "type": "Resort lodging",
-   "blurb": "Timeshare/resort lodging at Wolf Creek.",
-   "address": "3718 N Wolf Creek Dr, Eden, UT 84310",
-   "checked": "2026-10-07"
-  }
+   {
+     "name": "Club Rec Tours & Rentals",
+     "town": "Eden",
+     "type": "Recreation rentals & tours",
+     "blurb": "Rents boats, watercraft, UTVs, paddle craft and snowmobiles, with guided tours; headquartered at Wolf Creek with a Pineview marina location.",
+     "phone": "(801) 745-3038",
+     "link": "https://clubrecutah.com",
+     "address": "6560 1st St",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Compass Rose Lodge & HALO Observatory",
+     "town": "Huntsville Town",
+     "type": "Boutique lodge & observatory",
+     "blurb": "Boutique lodge in Huntsville with an on-site observatory offering stargazing tours, and First Lift Coffee.",
+     "phone": "385-279-4460",
+     "link": "https://compassroselodge.com",
+     "address": "198 S 7400 E, Huntsville, UT 84317",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Detours",
+     "town": "Huntsville Town",
+     "type": "Paddle & bike rentals, shake shop",
+     "blurb": "Locally owned paddleboard, kayak, canoe and cruiser-bike rental shop near Pineview Reservoir, with a shake shop.",
+     "phone": "385-380-7102",
+     "link": "https://detoursutah.com",
+     "address": "198 S 7400 E, Huntsville, UT 84317",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Diamond Peak Mountain Sports",
+     "town": "Eden",
+     "type": "Ski, snowboard & bike shop",
+     "blurb": "Ski, snowboard and bike retailer with rentals and overnight ski-mounting service; says it has been in business more than three decades.",
+     "phone": "801-745-0101",
+     "link": "https://dpmsutah.com",
+     "address": "2429 N Hwy 158, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Edelweiss Inn",
+     "town": "Eden",
+     "type": "Lodging",
+     "blurb": "Lodging near Nordic Valley.",
+     "phone": "850-866-8418",
+     "address": "2548 Nordic Valley Dr, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "EmieJames",
+     "town": "Eden",
+     "type": "Home decor & gifts",
+     "blurb": "Mother-daughter business selling home decor, kitchen items and gifts.",
+     "phone": "(385) 358-5506",
+     "link": "https://emiejames.com",
+     "address": "5522 E 2200 N, Suite B, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Jackson Fork Inn",
+     "town": "Huntsville area",
+     "type": "Inn",
+     "blurb": "Inn on Highway 39 in Huntsville.",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Lavender Hill Utah / The Lavender Loft",
+     "town": "Eden",
+     "type": "Lavender farm & gift shop",
+     "blurb": "Small lavender farm and gift shop selling handmade lavender products; shop is upstairs above Diamond Peak Mountain Sports.",
+     "phone": "801-645-4890",
+     "link": "https://lavenderhillutah.com",
+     "address": "2429 Hwy 158, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Luna & Lavender Co.",
+     "town": "Eden",
+     "type": "Apothecary & gift shop",
+     "blurb": "Shop selling handmade candles, bath products, teas, herbs, jewelry and metaphysical supplies.",
+     "phone": "801-745-5384",
+     "link": "https://lunaandlavenderco.com",
+     "address": "2595 N Hwy 162, Ste 4, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Mountain Luxury",
+     "town": "Eden",
+     "type": "Real estate",
+     "phone": "(801) 745-8400",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "New World Distillery",
+     "town": "Eden",
+     "type": "Craft distillery & tasting room",
+     "blurb": "Craft distillery established in 2016 making agave spirits, gin, vodka and bourbon, with a tasting room and tours.",
+     "phone": "(385) 244-0144",
+     "link": "http://www.newworlddistillery.com/",
+     "address": "4795 2600 N, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Nordic Valley",
+     "town": "Nordic Valley",
+     "type": "Ski resort",
+     "blurb": "Small ski area founded in 1968, known for night skiing.",
+     "phone": "385-298-0155",
+     "link": "https://www.nordicvalley.ski",
+     "address": "3567 Nordic Valley Way, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Ogden Nordic (North Fork Park)",
+     "town": "Liberty",
+     "type": "Nordic ski trails",
+     "blurb": "Nonprofit that grooms cross-country ski, snowshoe and fat-bike trails at North Fork Park.",
+     "phone": "801-648-9020",
+     "address": "4150 E 5950 N, Liberty, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Ogden Valley Branch Library",
+     "town": "Huntsville Town",
+     "type": "Library",
+     "blurb": "Weber County Library's Valley branch, with books, services and free events.",
+     "phone": "(801) 337-2660",
+     "link": "https://www.weberpl.lib.ut.us/locations-and-hours/ogden-valley-branch",
+     "address": "131 S 7400 E, Huntsville, UT 84317",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Ogden Valley Copy (FedEx / UPS)",
+     "town": "Eden",
+     "type": "Shipping, mailing & copies",
+     "blurb": "Ship packages with FedEx or UPS, mail, and make copies in the Valley.",
+     "phone": "(385) 453-6100",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Powder Mountain",
+     "town": "Powder Mountain",
+     "type": "Ski resort",
+     "blurb": "Ski resort founded in 1972, known for its large skiable acreage.",
+     "phone": "801-745-3772",
+     "link": "https://powdermountain.com",
+     "address": "6965 E Powder Mountain Rd, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Simply Eden",
+     "town": "Eden",
+     "type": "Bath & body boutique",
+     "blurb": "Boutique specializing in goat-milk soaps and bath and body products.",
+     "phone": "(801) 745-5033",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Snowbasin Resort",
+     "town": "Snowbasin",
+     "type": "Ski resort (year-round)",
+     "blurb": "Ski resort that hosted 2002 Olympic downhill, super-G and combined events; open for summer activities and events too.",
+     "phone": "801-620-1000",
+     "link": "https://www.snowbasin.com",
+     "address": "3925 E Snowbasin Rd, Huntsville, UT 84317",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "South Fork Hardware (Huntsville)",
+     "town": "Huntsville area",
+     "type": "Hardware store",
+     "blurb": "Hardware store, part of a regional family-owned chain, on Highway 39 in Huntsville.",
+     "phone": "801-745-2443",
+     "link": "https://southforkhw.com",
+     "address": "540 S Hwy 39, Huntsville, UT 84317",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Sunnyfield Meats",
+     "town": "Eden",
+     "type": "Butcher shop",
+     "phone": "(801) 654-9450",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Valley Wine & Spirits",
+     "town": "Eden",
+     "type": "Wine & spirits shop",
+     "blurb": "Wine and spirits shop in the log-cabin shops in Eden, in the same courtyard as the Saddlebag Saloon.",
+     "phone": "385-837-8116",
+     "photos": [
+       "valley-wine-spirits-eden-cabins.jpg"
+     ],
+     "checked": "2026-10-19"
+   },
+   {
+     "name": "Valley Market",
+     "town": "Eden",
+     "type": "Grocery & deli",
+     "blurb": "Small grocery store with baked goods, produce, meats, a deli counter and hot meals to go.",
+     "phone": "(801) 745-4000",
+     "link": "https://valleymarketonline.com",
+     "address": "2555 N Wolf Creek Dr, Eden, UT 84310",
+     "checked": "2026-10-07",
+     "sells": [
+       "groceries",
+       "pharmacy (Valley Health Mart Pharmacy inside)"
+     ]
+   },
+   {
+     "name": "Wolf Creek Resort (golf & club)",
+     "town": "Eden",
+     "type": "Golf course, fitness club & lodging",
+     "blurb": "Semi-private 18-hole golf club established in 1963 with a fitness club, restaurant and lodging.",
+     "phone": "801-745-3737",
+     "link": "https://www.wolfcreekresort.com",
+     "address": "3718 N Wolf Creek Dr, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "WorldMark Wolf Creek",
+     "town": "Eden",
+     "type": "Resort lodging",
+     "blurb": "Timeshare/resort lodging at Wolf Creek.",
+     "address": "3718 N Wolf Creek Dr, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Maverik (Eden)",
+     "town": "Eden",
+     "kind": "Everyday needs",
+     "type": "Gas station & convenience store",
+     "blurb": "Gas station and convenience store, open 5 a.m. to midnight every day.",
+     "sells": [
+       "gas",
+       "gas station",
+       "fuel",
+       "convenience store",
+       "snacks"
+     ],
+     "phone": "801-745-3800",
+     "link": "https://locations.maverik.com/ut/eden/5100-e.-2500-n.",
+     "address": "5100 E 2500 N, Eden, UT 84310",
+     "checked": "2026-10-22",
+     "added": "2026-10-22"
+   },
+   {
+     "name": "Rainbow Gardens Gift Store",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Canyon mouth / 12th St",
+     "kind": "Gifts & candles",
+     "type": "Gifts & candles",
+     "blurb": "Large gift store at the mouth of Ogden Canyon, with The Greenery restaurant and a cafe on site.",
+     "sells": [
+       "gifts",
+       "home decor",
+       "cards",
+       "candy",
+       "soaps",
+       "Utah gifts"
+     ],
+     "address": "1851 Valley Dr, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-621-1606",
+     "link": "https://rainbowgardens.com/"
+   },
+   {
+     "name": "The Queen Bee Giftery",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Gifts & candles",
+     "type": "Gifts & candles",
+     "blurb": "Independent gift shop on 25th Street.",
+     "sells": [
+       "books",
+       "chocolate",
+       "candles",
+       "stationery",
+       "cards",
+       "toys",
+       "puzzles",
+       "jewelry",
+       "Utah souvenirs"
+     ],
+     "address": "270 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-317-4226",
+     "link": "https://queenbeegiftery.com/"
+   },
+   {
+     "name": "The Wick Lab (Ogden)",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Gifts & candles",
+     "type": "Gifts & candles",
+     "blurb": "Utah-grown pour-your-own candle studio.",
+     "sells": [
+       "candles",
+       "candle making",
+       "custom candles",
+       "parties",
+       "gift cards"
+     ],
+     "address": "2361 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "385-865-8130",
+     "link": "https://thewicklab.com/"
+   },
+   {
+     "name": "Art Box Ogden",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Gifts & candles",
+     "type": "Gifts & candles",
+     "blurb": "Candle shop and make-your-own candle studio with a gift shop and art classes.",
+     "sells": [
+       "candles",
+       "candle making",
+       "gifts",
+       "art classes"
+     ],
+     "address": "455 25th St (The Monarch), Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-675-1078",
+     "link": "https://artboxogden.com/"
+   },
+   {
+     "name": "The Local Artisan Collective",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Gifts & candles",
+     "type": "Gifts & candles",
+     "blurb": "Shop selling work by Utah artists, with walk-in make-and-take crafts and workshops for all ages.",
+     "sells": [
+       "jewelry",
+       "art prints",
+       "cards",
+       "candles",
+       "home decor",
+       "art kits",
+       "classes",
+       "workshops",
+       "kids crafts"
+     ],
+     "address": "2371 Kiesel Ave, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-399-2787",
+     "link": "https://localartisancollective.com/"
+   },
+   {
+     "name": "Beehive Naturals",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Soap & bath",
+     "type": "Soap & bath",
+     "blurb": "Storefront of a Utah maker of honey and goat-milk body products.",
+     "sells": [
+       "handmade soap",
+       "goat milk soap",
+       "soap",
+       "lotion",
+       "raw honey",
+       "beeswax candles",
+       "gift sets",
+       "bath"
+     ],
+     "address": "186 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-917-9585",
+     "link": "https://beehivenaturals.com/"
+   },
+   {
+     "name": "Wild Meraki Apothecary",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Soap & bath",
+     "type": "Soap & bath",
+     "blurb": "Small-batch herbal apothecary and handmade-paper studio.",
+     "sells": [
+       "herbs",
+       "tinctures",
+       "tea",
+       "bath salts",
+       "salves",
+       "incense",
+       "handmade paper"
+     ],
+     "address": "443 27th St Suite B, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-814-5640",
+     "link": "https://wildmerakicreations.com/"
+   },
+   {
+     "name": "Lund Floral",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Canyon mouth / 12th St",
+     "kind": "Florists",
+     "type": "Florists",
+     "blurb": "Florist on 12th Street.",
+     "sells": [
+       "flowers",
+       "florist",
+       "arrangements",
+       "wedding flowers"
+     ],
+     "address": "483 12th St, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-627-2424"
+   },
+   {
+     "name": "Jimmy's Flowers",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Florists",
+     "type": "Florists",
+     "blurb": "Ogden florist since 1948, with same-day delivery.",
+     "sells": [
+       "flowers",
+       "florist",
+       "plants",
+       "gift baskets",
+       "sympathy flowers",
+       "weddings",
+       "delivery"
+     ],
+     "address": "2735 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-621-2360",
+     "link": "https://jimmysflowers.com/"
+   },
+   {
+     "name": "The Posy Place",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Florists",
+     "type": "Florists",
+     "blurb": "Florist with same-day Ogden delivery for orders placed before 10 a.m.",
+     "sells": [
+       "flowers",
+       "florist",
+       "bouquets",
+       "plants",
+       "gifts",
+       "delivery"
+     ],
+     "address": "2757 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-621-4010",
+     "link": "https://theposyplace.com/"
+   },
+   {
+     "name": "Lee's Corner Floral Shop",
+     "region": "weber",
+     "town": "North Ogden",
+     "hood": "North Ogden",
+     "kind": "Florists",
+     "type": "Florists",
+     "blurb": "Florist and gift shop in North Ogden.",
+     "sells": [
+       "flowers",
+       "florist",
+       "gifts"
+     ],
+     "address": "2645 N Washington Blvd, North Ogden, UT 84414",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-782-7800"
+   },
+   {
+     "name": "Planet Rainbow",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Canyon mouth / 12th St",
+     "kind": "Herbs, crystals & metaphysical",
+     "type": "Herbs, crystals & metaphysical",
+     "blurb": "New Age shop at the Rainbow Gardens complex.",
+     "sells": [
+       "crystals",
+       "metaphysical",
+       "psychic readings"
+     ],
+     "address": "1833 Valley Dr, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-392-3902",
+     "link": "https://rainbowgardens.com/"
+   },
+   {
+     "name": "Khroma Herbal Products",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Herbs, crystals & metaphysical",
+     "type": "Herbs, crystals & metaphysical",
+     "blurb": "Organic herbal blends and tinctures sold in glass, plus local artisan goods.",
+     "sells": [
+       "herbs",
+       "tinctures",
+       "tea",
+       "local gifts"
+     ],
+     "address": "2335 Grant Ave, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-994-8097"
+   },
+   {
+     "name": "Bryson's Rock Shop",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "kind": "Herbs, crystals & metaphysical",
+     "type": "Herbs, crystals & metaphysical",
+     "blurb": "Rock, gem and jewelry shop.",
+     "sells": [
+       "crystals",
+       "rocks",
+       "gemstones",
+       "jewelry"
+     ],
+     "address": "326 Washington Blvd, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-399-2838"
+   },
+   {
+     "name": "Goodlife Gemz Crystal Shop",
+     "region": "weber",
+     "town": "North Ogden",
+     "hood": "North Ogden",
+     "kind": "Herbs, crystals & metaphysical",
+     "type": "Herbs, crystals & metaphysical",
+     "blurb": "Crystal shop.",
+     "sells": [
+       "crystals",
+       "stones"
+     ],
+     "address": "380 E 2000 N, North Ogden, UT 84414",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "385-303-0446"
+   },
+   {
+     "name": "Ogden Made",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Boutiques & clothing",
+     "type": "Boutiques & clothing",
+     "blurb": "Ogden outdoor-lifestyle apparel brand.",
+     "sells": [
+       "hats",
+       "sweatshirts",
+       "t-shirts",
+       "beanies",
+       "clothing"
+     ],
+     "address": "2314 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-626-8820",
+     "link": "https://ogdenmade.com/"
+   },
+   {
+     "name": "Urban Trend",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Boutiques & clothing",
+     "type": "Boutiques & clothing",
+     "blurb": "Clothing store.",
+     "sells": [
+       "clothing"
+     ],
+     "address": "2943 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-917-5433"
+   },
+   {
+     "name": "Ogden Blue Boutique",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "kind": "Boutiques & clothing",
+     "type": "Boutiques & clothing",
+     "blurb": "Women's clothing boutique.",
+     "sells": [
+       "clothing",
+       "boutique"
+     ],
+     "address": "3365 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-334-4228"
+   },
+   {
+     "name": "LIAM & CO.",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "kind": "Boutiques & clothing",
+     "type": "Boutiques & clothing",
+     "blurb": "Women's clothing store.",
+     "sells": [
+       "clothing",
+       "boutique"
+     ],
+     "address": "3041 Pennsylvania Ave, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22"
+   },
+   {
+     "name": "Four Sisters Furniture, Framing & Gifts",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Home decor & plants",
+     "type": "Home decor & plants",
+     "blurb": "Unfinished hardwood furniture, custom framing, home decor and local-artisan gifts.",
+     "sells": [
+       "furniture",
+       "framing",
+       "home decor",
+       "gifts"
+     ],
+     "address": "274 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-621-5807"
+   },
+   {
+     "name": "Vintiquers",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "kind": "Home decor & plants",
+     "type": "Home decor & plants",
+     "blurb": "Home-goods and vintage shop.",
+     "sells": [
+       "vintage",
+       "antiques",
+       "home decor",
+       "thrift"
+     ],
+     "address": "806 Washington Blvd, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-452-1911"
+   },
+   {
+     "name": "Jungle Room Plant & Candle Co.",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Home decor & plants",
+     "type": "Home decor & plants",
+     "blurb": "Houseplant shop that also sells candles.",
+     "sells": [
+       "houseplants",
+       "plants",
+       "pots",
+       "candles",
+       "room sprays"
+     ],
+     "address": "2232 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-332-9037",
+     "link": "https://thejungleroomplants.com/"
+   },
+   {
+     "name": "The Romantics Archive",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Bookstores",
+     "type": "Bookstores",
+     "blurb": "Romance-focused bookshop that serves coffee and wine.",
+     "sells": [
+       "books",
+       "bookstore",
+       "romance",
+       "fiction"
+     ],
+     "address": "290 25th St Ste 101, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "link": "https://theromanticsarchive.com/"
+   },
+   {
+     "name": "Chapter & Charm Bookshop",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Bookstores",
+     "type": "Bookstores",
+     "blurb": "New books with a romance focus.",
+     "sells": [
+       "books",
+       "bookstore",
+       "romance"
+     ],
+     "address": "2556 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-821-9837",
+     "link": "https://chapterandcharmbookshop.com/"
+   },
+   {
+     "name": "Underground Books",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "kind": "Bookstores",
+     "type": "Bookstores",
+     "blurb": "Used bookstore with a reading room and game room.",
+     "sells": [
+       "books",
+       "bookstore",
+       "used books",
+       "games"
+     ],
+     "address": "4850 Harrison Blvd #3, Ogden, UT 84403",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-791-5742"
+   },
+   {
+     "name": "A Novel Idea Book Parlor",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "kind": "Bookstores",
+     "type": "Bookstores",
+     "blurb": "Used books, with a local-author section.",
+     "sells": [
+       "books",
+       "bookstore",
+       "used books"
+     ],
+     "address": "3651 Wall Ave #1002 (Newgate Mall), Ogden, UT 84405",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-917-5545",
+     "link": "https://facebook.com/novelideabookparlor"
+   },
+   {
+     "name": "The Quilted Bear",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "kind": "Toys & games",
+     "type": "Toys & games",
+     "blurb": "Gift, toy and home store.",
+     "sells": [
+       "toys",
+       "gifts",
+       "home decor"
+     ],
+     "address": "3651 Wall Ave #1129 (Newgate Mall), Ogden, UT 84405",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-621-0760"
+   },
+   {
+     "name": "Bungster's Brix",
+     "region": "weber",
+     "town": "South Ogden",
+     "hood": "South Ogden",
+     "kind": "Toys & games",
+     "type": "Toys & games",
+     "blurb": "Toy store.",
+     "sells": [
+       "toys",
+       "building bricks"
+     ],
+     "address": "3701 Washington Blvd Ste A, South Ogden, UT 84403",
+     "checked": "2026-10-22",
+     "added": "2026-10-22"
+   },
+   {
+     "name": "HEEBEEGEEBEEZ",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Toys & games",
+     "type": "Toys & games",
+     "blurb": "Family-owned comic shop with games and collectibles.",
+     "sells": [
+       "comics",
+       "games",
+       "collectibles",
+       "trading cards",
+       "toys"
+     ],
+     "address": "2262 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-392-5094",
+     "link": "https://heebeegeebeez.com/"
+   },
+   {
+     "name": "Needlepoint Joint",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Yarn, fabric & crafts",
+     "type": "Yarn, fabric & crafts",
+     "blurb": "Family-owned fiber-arts shop open since 1973.",
+     "sells": [
+       "yarn",
+       "knitting",
+       "crochet",
+       "needlepoint",
+       "weaving",
+       "thread",
+       "craft supplies"
+     ],
+     "address": "241 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-394-4355",
+     "link": "https://needlepointjoint.com/"
+   },
+   {
+     "name": "Shepherd's Bush",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Yarn, fabric & crafts",
+     "type": "Yarn, fabric & crafts",
+     "blurb": "Needlework store.",
+     "sells": [
+       "cross-stitch",
+       "needlework",
+       "threads",
+       "craft supplies"
+     ],
+     "address": "220 24th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-399-4546"
+   },
+   {
+     "name": "The Quilted Beehive",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Canyon mouth / 12th St",
+     "kind": "Yarn, fabric & crafts",
+     "type": "Yarn, fabric & crafts",
+     "blurb": "Quilt and fabric shop at the Rainbow Gardens complex.",
+     "sells": [
+       "fabric",
+       "quilting",
+       "sewing"
+     ],
+     "address": "1843 Valley Dr, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-621-2202"
+   },
+   {
+     "name": "Ogden Creative Reuse",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Yarn, fabric & crafts",
+     "type": "Yarn, fabric & crafts",
+     "blurb": "Thrift store for donated art and craft supplies, with art classes.",
+     "sells": [
+       "fabric",
+       "yarn",
+       "sewing supplies",
+       "beads",
+       "paints",
+       "canvases",
+       "art supplies",
+       "craft supplies",
+       "thrift",
+       "classes"
+     ],
+     "address": "2424 Wall Ave, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-556-7210",
+     "link": "https://ogdencreativereuse.org/"
+   },
+   {
+     "name": "Aqua Fresca",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "kind": "Art supplies & framing",
+     "type": "Art supplies & framing",
+     "blurb": "Graffiti art-supply shop.",
+     "sells": [
+       "spray paint",
+       "art supplies"
+     ],
+     "address": "1666 Washington Blvd, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "385-389-9473"
+   },
+   {
+     "name": "Pintura Fine Art Imaging & Framing",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Art supplies & framing",
+     "type": "Art supplies & framing",
+     "blurb": "Custom framing and art printing.",
+     "sells": [
+       "framing",
+       "art printing"
+     ],
+     "address": "2917 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "385-389-2958"
+   },
+   {
+     "name": "Backcountry Outlet (Ogden)",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Canyon mouth / 12th St",
+     "kind": "Outdoor, ski & bike",
+     "type": "Outdoor, ski & bike",
+     "blurb": "Outdoor-gear outlet store right at the mouth of Ogden Canyon.",
+     "sells": [
+       "outdoor gear",
+       "ski",
+       "camping",
+       "clothing"
+     ],
+     "address": "1273 Canyon Rd, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "435-631-2618"
+   },
+   {
+     "name": "Alpine Sports",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Harrison Blvd",
+     "kind": "Outdoor, ski & bike",
+     "type": "Outdoor, ski & bike",
+     "blurb": "Ski shop with a custom boot lab, ski tuning and rentals.",
+     "sells": [
+       "ski",
+       "ski boots",
+       "tuning",
+       "rentals",
+       "snowboard"
+     ],
+     "address": "1165 Patterson St, Ogden, UT 84403",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-393-0066"
+   },
+   {
+     "name": "Skyline Cycle",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "kind": "Outdoor, ski & bike",
+     "type": "Outdoor, ski & bike",
+     "blurb": "Bike shop that repairs all brands without an appointment, and tunes skis and snowboards.",
+     "sells": [
+       "bike",
+       "bike repair",
+       "ski tuning",
+       "snowboard"
+     ],
+     "address": "834 Washington Blvd, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-394-7700",
+     "link": "https://skylinecyclery.com/"
+   },
+   {
+     "name": "Bountiful Bicycle (Ogden)",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "kind": "Outdoor, ski & bike",
+     "type": "Outdoor, ski & bike",
+     "blurb": "Bike shop selling bikes, e-bikes and kids' bikes, with service and bike fitting.",
+     "sells": [
+       "bike",
+       "e-bike",
+       "kids bikes",
+       "bike repair"
+     ],
+     "address": "1108 Washington Blvd, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-424-5300",
+     "link": "https://bountifulbicycle.com/"
+   },
+   {
+     "name": "Ogden Bicycle Collective",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Outdoor, ski & bike",
+     "type": "Outdoor, ski & bike",
+     "blurb": "Nonprofit community bike shop.",
+     "sells": [
+       "bike",
+       "bike repair",
+       "used bikes"
+     ],
+     "address": "936 28th St, Ogden, UT 84403",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-997-0336"
+   },
+   {
+     "name": "Neighbors Thrift",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Thrift & vintage",
+     "type": "Thrift & vintage",
+     "blurb": "Thrift store with clothing, accessories and housewares.",
+     "sells": [
+       "thrift",
+       "clothing",
+       "housewares"
+     ],
+     "address": "2210 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-913-5069"
+   },
+   {
+     "name": "25th Street Treasures",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "kind": "Thrift & vintage",
+     "type": "Thrift & vintage",
+     "blurb": "Home-goods store.",
+     "sells": [
+       "home goods",
+       "thrift"
+     ],
+     "address": "180 31st St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-394-9035"
+   },
+   {
+     "name": "Farr's Jewelry & Cameras",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Jewelry",
+     "type": "Jewelry",
+     "blurb": "Jewelry store founded in 1956, with custom design and repairs.",
+     "sells": [
+       "jewelry",
+       "engagement rings",
+       "watches",
+       "jewelry repair",
+       "ring sizing"
+     ],
+     "address": "2466 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-621-7666",
+     "link": "https://farrs.com/"
+   },
+   {
+     "name": "The Diamond Room",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Jewelry",
+     "type": "Jewelry",
+     "blurb": "Jewelry, custom design, repairs and appraisals.",
+     "sells": [
+       "jewelry",
+       "jewelry repair",
+       "appraisals"
+     ],
+     "address": "131 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-392-3232"
+   },
+   {
+     "name": "Green Brick Jewelry",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Jewelry",
+     "type": "Jewelry",
+     "blurb": "Jewelry store.",
+     "sells": [
+       "jewelry"
+     ],
+     "address": "2937 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-668-7548"
+   },
+   {
+     "name": "White Diamonds",
+     "region": "weber",
+     "town": "North Ogden",
+     "hood": "North Ogden",
+     "kind": "Jewelry",
+     "type": "Jewelry",
+     "blurb": "Jewelry store.",
+     "sells": [
+       "jewelry"
+     ],
+     "address": "1638 N Washington Blvd #202, North Ogden, UT 84414",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-782-3531"
+   },
+   {
+     "name": "IFA Country Store",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "kind": "Pets & farm",
+     "type": "Pets & farm",
+     "blurb": "Utah farm and ranch co-op store.",
+     "sells": [
+       "pet food",
+       "livestock feed",
+       "farm supplies",
+       "ranch supplies",
+       "pet"
+     ],
+     "address": "1069 W 12th St, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-394-8831"
+   },
+   {
+     "name": "Pets That Don't Bark",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "kind": "Pets & farm",
+     "type": "Pets & farm",
+     "blurb": "Reptile and exotic-pet shop.",
+     "sells": [
+       "reptiles",
+       "exotic pets",
+       "pet supplies"
+     ],
+     "address": "3651 Wall Ave #1214 (Newgate Mall), Ogden, UT 84405",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-876-1212"
+   },
+   {
+     "name": "Lomond View Nursery",
+     "region": "weber",
+     "town": "Pleasant View",
+     "hood": "Pleasant View",
+     "kind": "Garden & nursery",
+     "type": "Garden & nursery",
+     "blurb": "Plant nursery. Call ahead for retail hours.",
+     "sells": [
+       "plants",
+       "nursery",
+       "garden",
+       "trees"
+     ],
+     "address": "304 W Pleasant View Dr, Pleasant View, UT 84414",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-782-0484"
+   },
+   {
+     "name": "Ocean Mart",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "kind": "Groceries & markets",
+     "type": "Groceries & markets",
+     "blurb": "Asian grocery store.",
+     "sells": [
+       "asian grocery",
+       "grocery",
+       "international food"
+     ],
+     "address": "1018 Washington Blvd, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-899-9888"
+   },
+   {
+     "name": "Rancho Markets",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Groceries & markets",
+     "type": "Groceries & markets",
+     "blurb": "Utah-based Latin supermarket with a meat and seafood counter, bakery and kitchen.",
+     "sells": [
+       "latin grocery",
+       "grocery",
+       "butcher",
+       "meat",
+       "bakery",
+       "international food"
+     ],
+     "address": "905 26th St #99A, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-409-9300",
+     "link": "https://ranchomarkets.com/"
+   },
+   {
+     "name": "Anaya's Market",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "kind": "Groceries & markets",
+     "type": "Groceries & markets",
+     "blurb": "Latin grocery store.",
+     "sells": [
+       "latin grocery",
+       "grocery",
+       "international food"
+     ],
+     "address": "150 N Washington Blvd #1, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-393-4596"
+   },
+   {
+     "name": "DeMarillac Formal Attire & Alterations",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Tailor & repair",
+     "type": "Tailor & repair",
+     "blurb": "Nonprofit formalwear shop that also does alterations. Open Mon, Wed and Fri, 11 to 4.",
+     "sells": [
+       "tailor",
+       "alterations",
+       "formalwear"
+     ],
+     "address": "2620 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-393-0100"
+   },
+   {
+     "name": "The Loft Alteration Specialist",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "kind": "Tailor & repair",
+     "type": "Tailor & repair",
+     "blurb": "Alterations, hemming and outdoor-gear repair.",
+     "sells": [
+       "tailor",
+       "alterations",
+       "hemming",
+       "gear repair"
+     ],
+     "address": "3201 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-385-8101"
+   },
+   {
+     "name": "Red Hanger (North Ogden)",
+     "region": "weber",
+     "town": "North Ogden",
+     "hood": "North Ogden",
+     "kind": "Tailor & repair",
+     "type": "Tailor & repair",
+     "blurb": "Dry cleaner that also does tailoring.",
+     "sells": [
+       "dry cleaning",
+       "tailor",
+       "alterations"
+     ],
+     "address": "2274 N Washington Blvd, North Ogden, UT 84414",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-457-9342"
+   },
+   {
+     "name": "Jack's Shoe Repair",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Tailor & repair",
+     "type": "Tailor & repair",
+     "blurb": "Shoe repair shop.",
+     "sells": [
+       "shoe repair",
+       "boot repair"
+     ],
+     "address": "2246 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-392-6731"
+   },
+   {
+     "name": "Canyon View Health Mart Pharmacy",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Canyon mouth / 12th St",
+     "kind": "Everyday needs",
+     "type": "Everyday needs",
+     "blurb": "Locally owned pharmacy inside Ogden Clinic Canyon View, with free delivery.",
+     "sells": [
+       "pharmacy",
+       "prescriptions",
+       "delivery"
+     ],
+     "address": "698 12th St, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-475-3795"
+   },
+   {
+     "name": "Smith's (Harrison Blvd)",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Canyon mouth / 12th St",
+     "kind": "Everyday needs",
+     "type": "Everyday needs",
+     "blurb": "Grocery store with a pharmacy and fuel center, closest to the mouth of the canyon.",
+     "sells": [
+       "grocery",
+       "groceries",
+       "pharmacy",
+       "gas",
+       "fuel"
+     ],
+     "address": "1485 Harrison Blvd, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-621-0234"
+   },
+   {
+     "name": "Chevron (12th St)",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Canyon mouth / 12th St",
+     "kind": "Everyday needs",
+     "type": "Everyday needs",
+     "blurb": "Gas station on 12th Street.",
+     "sells": [
+       "gas",
+       "gas station",
+       "fuel",
+       "convenience store"
+     ],
+     "address": "1177 12th St, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-393-6126"
+   },
+   {
+     "name": "Sinclair Mini Mart (12th St)",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Canyon mouth / 12th St",
+     "kind": "Everyday needs",
+     "type": "Everyday needs",
+     "blurb": "Gas station and mini mart on 12th Street.",
+     "sells": [
+       "gas",
+       "gas station",
+       "fuel",
+       "convenience store"
+     ],
+     "address": "1015 12th St, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-392-7528"
+   },
+   {
+     "name": "Walgreens (Washington Blvd)",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "kind": "Everyday needs",
+     "type": "Everyday needs",
+     "blurb": "Pharmacy and drugstore.",
+     "sells": [
+       "pharmacy",
+       "drugstore"
+     ],
+     "address": "1208 Washington Blvd, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-621-1367"
+   },
+   {
+     "name": "Fresh Market (Harrison Blvd)",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Harrison Blvd",
+     "kind": "Everyday needs",
+     "type": "Everyday needs",
+     "blurb": "Grocery store with a pharmacy.",
+     "sells": [
+       "grocery",
+       "groceries",
+       "pharmacy"
+     ],
+     "address": "2044 S Harrison Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-399-1304"
+   },
+   {
+     "name": "U.S. Post Office (Washington Blvd)",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Everyday needs",
+     "type": "Everyday needs",
+     "blurb": "Post office, open Mon to Fri 8:30 to 5.",
+     "sells": [
+       "post office",
+       "mail",
+       "shipping"
+     ],
+     "address": "2730 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22"
+   },
+   {
+     "name": "The UPS Store (12th St)",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "kind": "Everyday needs",
+     "type": "Everyday needs",
+     "blurb": "Shipping and mailbox store.",
+     "sells": [
+       "shipping",
+       "ups",
+       "mail"
+     ],
+     "address": "185 W 12th St, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22"
+   },
+   {
+     "name": "Inspire Gymnastics",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Kids' classes",
+     "type": "Kids' classes · Gymnastics",
+     "blurb": "Gymnastics gym.",
+     "sells": [
+       "kids classes",
+       "lessons",
+       "gymnastics",
+       "kids"
+     ],
+     "address": "1960 Wall Ave, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "385-289-2962"
+   },
+   {
+     "name": "Dance Establishment",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Kids' classes",
+     "type": "Kids' classes · Dance",
+     "blurb": "Dance school.",
+     "sells": [
+       "kids classes",
+       "lessons",
+       "dance",
+       "kids"
+     ],
+     "address": "2261 Kiesel Ave #330, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22"
+   },
+   {
+     "name": "Dazzle Dance and Cheer",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "North Ogden",
+     "kind": "Kids' classes",
+     "type": "Kids' classes · Dance",
+     "blurb": "Dance and cheer studio.",
+     "sells": [
+       "kids classes",
+       "lessons",
+       "dance",
+       "kids"
+     ],
+     "address": "325 E 2000 N, Ogden, UT 84414",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-737-3047"
+   },
+   {
+     "name": "Foleys Mixed Martial Arts",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "kind": "Kids' classes",
+     "type": "Kids' classes · Martial arts",
+     "blurb": "Martial arts school.",
+     "sells": [
+       "kids classes",
+       "lessons",
+       "martial arts",
+       "kids"
+     ],
+     "address": "375 31st St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-628-8520"
+   },
+   {
+     "name": "Element Mixed Martial Arts",
+     "region": "weber",
+     "town": "North Ogden",
+     "hood": "North Ogden",
+     "kind": "Kids' classes",
+     "type": "Kids' classes · Martial arts",
+     "blurb": "Martial arts school.",
+     "sells": [
+       "kids classes",
+       "lessons",
+       "martial arts",
+       "kids"
+     ],
+     "address": "2566 N 400 E, North Ogden, UT 84414",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "385-240-8069"
+   },
+   {
+     "name": "Imagine Music Ogden",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "kind": "Kids' classes",
+     "type": "Kids' classes · Music lessons",
+     "blurb": "Music lessons.",
+     "sells": [
+       "kids classes",
+       "lessons",
+       "music lessons",
+       "kids"
+     ],
+     "address": "3354 Harrison Blvd, Ogden, UT 84403",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-644-7027"
+   },
+   {
+     "name": "Brush Up Children's Art Studio",
+     "region": "weber",
+     "town": "Pleasant View",
+     "hood": "Pleasant View",
+     "kind": "Kids' classes",
+     "type": "Kids' classes · Art",
+     "blurb": "Kids' art studio.",
+     "sells": [
+       "kids classes",
+       "lessons",
+       "art",
+       "kids"
+     ],
+     "address": "3885 US-89, Pleasant View, UT 84414",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-710-0525"
+   },
+   {
+     "name": "Color Me Mine (Ogden)",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "kind": "Kids' classes",
+     "type": "Kids' classes · Art",
+     "blurb": "Paint-your-own pottery studio that hosts kids' parties.",
+     "sells": [
+       "kids classes",
+       "lessons",
+       "art",
+       "kids"
+     ],
+     "address": "188 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-621-1085"
+   },
+   {
+     "name": "Ben Lomond Community Swimming Pool",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Canyon mouth / 12th St",
+     "kind": "Kids' classes",
+     "type": "Kids' classes · Swimming",
+     "blurb": "Community pool. Ask about swim lessons.",
+     "sells": [
+       "kids classes",
+       "lessons",
+       "swimming",
+       "kids"
+     ],
+     "address": "1075 E 700 S St, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "added": "2026-10-22",
+     "phone": "801-737-7920"
+   }
  ],
  "services": [
   {
