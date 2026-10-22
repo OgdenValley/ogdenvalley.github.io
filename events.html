@@ -76,7 +76,7 @@
 <script>
 
 (async function(){const S=window.OVE_SITE,C=S.C,el=S.el;
-const data=await S.loadEvents();
+const data=await S.loadEvents();const calState={};
 /* public meetings (Utah Public Notice Website + Huntsville Town) go on the calendars too: Valley bodies up here, Weber County Commission down the canyon */
 try{const L=await S.loadJSON("local.json");if(data&&L&&L.meetings){const have=new Set();["ov","weber"].forEach(k=>((data.calendars[k]||{}).events||[]).forEach(e=>have.add(e.t+"|"+e.s)));
   L.meetings.filter(m=>m.start).forEach(m=>{const k=/weber county/i.test(m.body)?"weber":"ov";const t=m.body+(/meeting|hearing|notice/i.test(m.title)?"":" meeting")+": "+m.title;if(have.has(t+"|"+m.start))return;
@@ -85,7 +85,7 @@ const pass=S.eventFilters(document.getElementById("evf"),()=>{draw();const n=doc
 const ft=document.querySelector(".ev-ftoggle");ft.addEventListener("click",()=>{const o=document.getElementById("evf").classList.toggle("open");ft.setAttribute("aria-expanded",String(o))});
 function draw(){const list=S.valleyFirst(S.allEvents(data,S.areaCals(area))).filter(pass);
   const ww=document.getElementById("week-wrap");
-  if(view==="month"){S.monthGrid(box,list);ww.hidden=false;const end=Date.now()+7*864e5;S.renderEvents(document.getElementById("week"),list.filter(e=>e.s<end),{emptyText:"Nothing on the calendar in the next 7 days for what you picked. Try Both."});return}
+  if(view==="month"){S.monthGrid(box,list,{state:calState,onArea:v=>sync(v)});ww.hidden=false;const end=Date.now()+7*864e5;S.renderEvents(document.getElementById("week"),list.filter(e=>e.s<end),{emptyText:"Nothing on the calendar in the next 7 days for what you picked. Try Both."});return}
   ww.hidden=true;
   S.renderEvents(box,list,{emptyText:data?"No upcoming events match what you picked. Try Both, or turn a filter off.":"Events are on their way. The calendars are being set up."})}
 const sync=v=>{area=v;document.querySelectorAll("#area .area-chip,#area2 .area-chip").forEach((b,i)=>b.setAttribute("aria-pressed",String(["ov","weber","both"][i%3]===v)));draw()};

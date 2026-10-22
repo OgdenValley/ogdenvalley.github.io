@@ -490,14 +490,16 @@ function eventFilters(box, onChange){
 /* month grid: one month, each day lists its events; tap a day to see that day's list */
 function monthGrid(box, list, opts){
   opts = opts || {}; const now = new Date(new Date().toLocaleString("en-US", {timeZone: TZ}));
-  let y = opts.y != null ? opts.y : now.getFullYear(), m = opts.m != null ? opts.m : now.getMonth();
+  const keep = opts.state || {}; let y = keep.y != null ? keep.y : opts.y != null ? opts.y : now.getFullYear(), m = keep.m != null ? keep.m : opts.m != null ? opts.m : now.getMonth();
   const draw = () => {
     const first = new Date(y, m, 1), days = new Date(y, m + 1, 0).getDate(), lead = first.getDay();
     const byDay = {}; list.forEach(e => { const k = dayKey(e.s); (byDay[k] = byDay[k] || []).push(e); });
     const key = d => dayKey(new Date(y, m, d, 12).getTime());
     const prev = el("button", {class: "btn ghost", type: "button", text: "‹ Prev"}), next = el("button", {class: "btn ghost", type: "button", text: "Next ›"});
-    prev.addEventListener("click", () => { m--; if (m < 0) { m = 11; y--; } draw(); }); next.addEventListener("click", () => { m++; if (m > 11) { m = 0; y++; } draw(); });
-    const head = el("div", {class: "mg-head"}, [prev, el("h3", {text: first.toLocaleDateString("en-US", {month: "long", year: "numeric"})}), next]);
+    prev.addEventListener("click", () => { m--; if (m < 0) { m = 11; y--; } keep.y = y; keep.m = m; draw(); }); next.addEventListener("click", () => { m++; if (m > 11) { m = 0; y++; } keep.y = y; keep.m = m; draw(); });
+    const mid = el("div", {class: "mg-mid"}, [el("h3", {text: first.toLocaleDateString("en-US", {month: "long", year: "numeric"})})]);
+    if (opts.onArea) { const sw = el("div", {class: "mg-area"}); areaSwitch(sw, opts.onArea); mid.append(sw); }
+    const head = el("div", {class: "mg-head"}, [prev, mid, next]);
     const grid = el("div", {class: "mg-grid"}, ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].map(d => el("div", {class: "mg-dow", text: d})));
     for (let i = 0; i < lead; i++) grid.append(el("div", {class: "mg-day empty"}));
     const detail = el("div", {class: "mg-detail"});
@@ -520,11 +522,104 @@ function monthGrid(box, list, opts){
   "@media (max-width:520px){.area-switch{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;width:100%}.area-chip{padding:7px 8px;gap:6px;font-size:14px}.area-chip small{font-size:11px}}" +
   ".area-chip[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}.area-chip[aria-pressed=true] small{color:#dfe8f3}.dot.both{background:linear-gradient(90deg,var(--ov) 50%,var(--weber) 50%)}" +
   ".ev-filters{align-items:center}.ev-f-label{font-weight:700;color:var(--muted);margin-right:2px}.ev-filters .chip[aria-pressed=true]{background:var(--soft);border-color:var(--ink)}" +
-  ".view-toggle{display:inline-flex;gap:6px}.mg-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.mg-head h3{margin:0}" +
+  ".view-toggle{display:inline-flex;gap:6px}.mg-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.mg-head h3{margin:0}.mg-mid{display:grid;justify-items:center;gap:8px}.mg-area .area-chip{padding:5px 12px}@media (max-width:640px){.mg-head{flex-wrap:wrap}.mg-mid{order:-1;width:100%}.mg-area{width:100%}}" +
   ".mg-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}.mg-dow{font-weight:700;font-size:13px;text-align:center;color:var(--muted);padding:4px 0}" +
   ".mg-day{min-height:92px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:5px;display:flex;flex-direction:column;gap:3px;text-align:left;font:inherit;color:var(--ink);cursor:pointer;min-width:0;overflow:hidden}.mg-day.empty{background:transparent;border:0;cursor:default}" +
   ".mg-day.today{border:2px solid var(--accent,#C2410C)}.mg-day.sel{outline:3px solid var(--navy)}.mg-n{font-weight:700;font-size:14px}.mg-ev{font-size:12px;line-height:1.2;border-left:4px solid var(--cal);padding-left:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mg-more{font-size:12px;color:var(--muted)}" +
   ".mg-detail{margin-top:14px}.mg-count{display:none}@media (max-width:640px){.mg-day{min-height:52px}.mg-ev,.mg-more{display:none}.mg-count{display:block;font-size:11px;color:var(--muted);line-height:1.1}.mg-day.has::after{content:'';width:8px;height:8px;border-radius:50%;background:var(--accent,#C2410C);margin-top:auto}}";
   document.head.appendChild(st); })();
-window.OVE_SITE = {getArea, setArea, areaCals, areaSwitch, valleyFirst, evTags, eventFilters, monthGrid, C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip};
+
+/* ---------- Find it local: "where can I get candles / sushi / swim lessons?" ---------- */
+const FIND_PAGES = {stay: ["stay.html", "Place to stay"], restaurants: ["restaurants.html", "Eat"], businesses: ["businesses.html", "Shop"], services: ["services.html", "Home service"], beauty: ["beauty.html", "Beauty & wellness"], farm: ["farm.html", "Farm & local food"], foodtrucks: ["foodtrucks.html", "Food truck"], artists: ["artists.html", "Local artist"], shops: ["down-the-canyon.html", "Shop"]};
+const FIND_PLACES = [
+  ["Marshall N. White Community Center", "pool indoor pool swim swimming swim lessons classes community center fitness", "down-the-canyon.html#pools", "Pools, ice & rec"],
+  ["Ogden City Recreation", "swim swimming swim lessons aquatics sports leagues court rentals pavilion tennis classes kids", "down-the-canyon.html#pools", "Pools, ice & rec"],
+  ["The Ice Sheet", "ice skating skate hockey figure skating rink", "down-the-canyon.html#pools", "Pools, ice & rec"],
+  ["Weber County Library", "library books story time storytime classes kids movies crafts book club", "down-the-canyon.html#library", "Library & classes"],
+  ["Peery's Egyptian & Eccles Theaters", "theater movies concerts shows film dance", "down-the-canyon.html#shows", "Shows & theaters"],
+  ["Weber State Browning Center", "theater concerts plays dance symphony shows", "down-the-canyon.html#shows", "Shows & theaters"],
+  ["Treehouse Children's Museum", "kids museum children play", "down-the-canyon.html#museums", "Museums & kids"],
+  ["George S. Eccles Dinosaur Park", "dinosaur kids park museum", "down-the-canyon.html#museums", "Museums & kids"],
+  ["Union Station Museums", "museum history train cars", "down-the-canyon.html#museums", "Museums & kids"],
+  ["Ogden Nature Center", "nature trails birds wildlife kids classes camps", "down-the-canyon.html#museums", "Museums & kids"]];
+const FIND_SYN = {
+  candle: "candles,candle", soap: "soaps,soap,bath products,bath and body", flower: "flowers,florist,bouquet", taco: "tacos,mexican", sushi: "sushi,japanese",
+  soup: "soups,ramen,chowder", pho: "pho,vietnamese", gluten: "gluten-free,gluten free", celiac: "gluten-free,gluten free", vegan: "vegan,vegetarian", vegetarian: "vegetarian,vegan",
+  lavendar: "lavender", gas: "gas station,fuel,convenience store", fuel: "fuel,gas station",
+  stay: "lodging,place to stay,timeshare", lodging: "lodging,place to stay", hotel: "lodging,place to stay", motel: "lodging,place to stay", cabin: "cabin,lodging", airbnb: "lodging,place to stay", vrbo: "lodging,place to stay", condo: "condo,lodging",
+  drink: "bar,saloon,brewery,brewpub,cocktails,wine,spirits,distillery,taproom,pub", bar: "bar,saloon,pub,brewpub",
+  beer: "beer,brewery,brewpub,taproom", brewery: "brewery,breweries,brewpub,taproom,brewing", wine: "wine", cocktail: "cocktails,distillery",
+  swim: "swim,swimming,pool,aquatics", swimming: "swim,swimming,pool,aquatics", pool: "pool,swim",
+  haircut: "hair,salon,barber", hair: "hair,salon", nail: "nails,manicure,pedicure", massage: "massage", coffee: "coffee,espresso,latte,cafe",
+  burger: "burgers,burger", breakfast: "breakfast,brunch", brunch: "brunch,breakfast", bbq: "bbq,barbecue", barbecue: "bbq,barbecue", steak: "steak,steakhouse",
+  dessert: "dessert,sweets,ice cream,bakery,cupcakes,chocolates", sweet: "sweets,dessert,ice cream,bakery", bakery: "bakery,bagels,cupcakes", icecream: "ice cream,shakes",
+  handyman: "handyman,repair,repairs,drywall", repair: "repair,repairs", plumber: "plumbing,plumber", sprinkler: "sprinklers,sprinkler,irrigation", cleaning: "cleaning,cleaner",
+  egg: "eggs", beef: "beef,meat,meats", meat: "meat,meats,beef,butcher", produce: "produce,vegetables,fruit",
+  grocery: "grocery,groceries,market", ship: "shipping,fedex,ups", shipping: "fedex,ups,shipping", copy: "copies,copy",
+  ski: "ski,skiing,snowboard", snowboard: "snowboard,ski", bike: "bike,bikes,cycling", boat: "boat,boats,watercraft,paddle,kayak", kayak: "kayak,paddle,paddleboard",
+  lesson: "lessons,lesson,classes,class", class: "classes,class,lessons,workshop",
+  kid: "kids,children,youth", child: "kids,children,youth",
+  art: "art,artist,painter,gallery", jewelry: "jewelry,silver,rings,necklace", photo: "photographer,photography", gift: "gifts,gift",
+  yoga: "yoga,pilates", gym: "gym,fitness", fitness: "fitness,gym", spa: "spa,massage,facials", therapy: "physical therapy", pt: "physical therapy",
+  pet: "pet,pets,dog", dog: "dog,dogs,pet", theater: "theater,movies,shows", movie: "movies,theater,film", museum: "museum,museums", skate: "skating,skate,rink", skating: "skating,skate,rink"};
+const FIND_STOP = new Set("where can i get find buy a an the some any for to in near me good best place places is there who sells sell do you know of what my our up here around valley ogden go take how much local homemade handmade fresh food spot spots".split(" "));
+const FIND_ASKS = [["Candles & gifts", "candles gifts"], ["Kids' classes", "kids classes lessons"], ["Swim lessons", "swim lessons"], ["Haircut", "haircut"], ["Handyman", "handyman"], ["Fresh eggs & beef", "eggs beef"], ["Coffee", "coffee"], ["Sushi", "sushi"], ["Gluten-free", "gluten free"], ["A drink", "drinks"], ["Place to stay", "place to stay"], ["Flowers", "flowers"]];
+function findIndex(){
+  if (findIndex.cache) return findIndex.cache;
+  const W = new Set(["Ogden", "North Ogden", "Pleasant View", "South Ogden", "Weber County"]);
+  const items = [];
+  Object.keys(FIND_PAGES).forEach(k => (P[k] || []).forEach(p => { const [page, label] = FIND_PAGES[k];
+    items.push({name: p.name, label: p.type || label, town: p.town || p.area || "", weber: p.region === "weber" || W.has(p.town),
+      href: page + "#" + slug(p.name), line: p.blurb || "", hay: [p.name, p.type, p.blurb, (p.food || []).join(" "), (p.good || []).join(" "), (p.sells || []).join(" "), (p.offers || []).join(" "), (p.amenities || []).join(" "), (p.tags || []).join(" "), (p.badges || []).join(" "), k === "stay" ? "lodging place to stay vacation rental" : "", k === "restaurants" ? "food eat restaurant" : ""].join(" ").toLowerCase()}); }));
+  (C.kidsList || []).forEach(x => items.push({name: x.name, label: x.kind || "Kids' lessons", town: x.town || "", weber: x.where === "weber", href: "station-board.html#" + (x.group === "groups" ? "groups" : "lessons"), ext: x.url || "", line: x.line || "",
+    hay: [x.name, x.kind, x.line, x.ages, "kids children youth", x.group === "lessons" ? "lessons classes class" : "teams clubs"].join(" ").toLowerCase()}));
+  FIND_PLACES.forEach(([name, words, href, label]) => items.push({name, label, town: "Ogden", weber: true, href, line: "", hay: (name + " " + words).toLowerCase()}));
+  const seen = new Set(); return (findIndex.cache = items.filter(it => { const k = it.name.toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; }));
+}
+function findLocal(q){
+  const raw = String(q || "").toLowerCase().replace(/[’']/g, "").replace(/gluten[\s-]free/g, "gluten").replace(/place to stay/g, "stay");
+  const words = raw.split(/[^a-z0-9+]+/).filter(w => w && !FIND_STOP.has(w));
+  if (!words.length) return {words, up: [], down: []};
+  const sing = w => w.endsWith("ies") && w.length > 5 ? w.slice(0, -3) + "y" : w.length > 4 && w.endsWith("s") && !w.endsWith("ss") ? w.slice(0, -1) : w;
+  const terms = words.map(w => [w, sing(w)].concat((FIND_SYN[w] || FIND_SYN[sing(w)] || "").split(",")).filter(Boolean));
+  const re = t => new RegExp("(^|[^a-z])" + t.replace(/[.*+?^${}()|[\]\\]/g, "\\$&") + "($|[^a-z])");
+  const scored = findIndex().map(it => { let n = 0; terms.forEach(ts => { if (ts.some(t => re(t).test(it.hay))) n++; }); if (n && terms[0].some(t => re(t).test(it.name.toLowerCase()))) n += 0.5; return [n, it]; }).filter(x => x[0] > 0);
+  const best = Math.max(0, ...scored.map(x => x[0])); const need = terms.length > 1 ? Math.max(1, Math.floor(best)) : 1;
+  const hits = scored.filter(x => x[0] >= need).sort((a, b) => b[0] - a[0] || a[1].name.localeCompare(b[1].name)).map(x => x[1]);
+  return {words, up: hits.filter(x => !x.weber), down: hits.filter(x => x.weber)};
+}
+function findBox(box){
+  if (!box) return;
+  const input = el("input", {type: "search", class: "fsearch", placeholder: "Where can I get… (candles, sushi, swim lessons)", "aria-label": "Ask where to find something local"});
+  const go = el("button", {class: "btn primary", type: "submit", text: "Find it"});
+  const form = el("form", {class: "find-form", role: "search"}, [input, go]);
+  const chips = el("div", {class: "filters find-asks"}, FIND_ASKS.map(([l, q]) => { const b = el("button", {class: "chip", type: "button", "data-track": "find tap: " + l, text: l}); b.addEventListener("click", () => { input.value = l; run(q, l); }); return b; }));
+  const out = el("div", {class: "find-out", "aria-live": "polite"});
+  const card = it => el("article", {class: "card find-card"}, [el("h3", {}, [el("a", {href: it.href, "data-track": "find result: " + it.name, text: it.name})]),
+    el("div", {class: "meta", text: [it.label, it.town].filter(Boolean).join(" · ")}), it.line ? el("p", {text: it.line.length > 150 ? it.line.slice(0, 147) + "…" : it.line}) : null,
+    it.ext ? el("a", {href: it.ext, target: "_blank", rel: "noopener", text: "Their website"}) : null]);
+  const count = (path) => { try { if (window.goatcounter && goatcounter.count) goatcounter.count({path, title: location.pathname, event: true}); } catch (e) {} };
+  function run(q, label){
+    const r = findLocal(q); out.replaceChildren(); const shown = (label || q).trim(); if (!shown) return;
+    count((r.up.length + r.down.length ? "find: " : "find none: ") + shown.toLowerCase().slice(0, 60));
+    if (!r.up.length && !r.down.length) {
+      out.append(el("div", {class: "card find-none"}, [el("h3", {text: "We don't know one yet"}), el("p", {text: "Nobody has told us where to find “" + shown + "” around here. Ask your neighbors, or if you run a place like that, list it free."}),
+        el("div", {class: "btns"}, [el("a", {class: "btn blue", href: "about.html#groups", "data-track": "find: ask the valley", text: "Ask the Valley"}), el("a", {class: "btn ghost", "data-form": "business", href: (C.forms && C.forms.business) || "submit.html", target: "_blank", rel: "noopener", text: "Own one? Get listed free"})])])); return; }
+    if (r.up.length) out.append(el("div", {class: "find-group"}, [el("p", {class: "eyebrow", text: "Up here · Ogden Valley"}), el("div", {class: "grid"}, r.up.slice(0, 12).map(card))]));
+    else out.append(el("p", {class: "meta", style: "font-size:17px", text: "Nothing up here for that yet. Here's what's down the canyon:"}));
+    if (r.down.length) out.append(el("div", {class: "find-group"}, [el("p", {class: "eyebrow", text: "Down the canyon · Weber County"}), el("div", {class: "grid"}, r.down.slice(0, 12).map(card))]));
+    out.append(el("p", {class: "fine", text: "Small local businesses only. Know a place we're missing? "}, ));
+    out.lastChild.append(el("a", {"data-form": "business", href: (C.forms && C.forms.business) || "submit.html", target: "_blank", rel: "noopener", text: "Tell us"}));
+  }
+  form.addEventListener("submit", e => { e.preventDefault(); run(input.value); });
+  box.classList.add("find-box");
+  box.replaceChildren(el("p", {class: "eyebrow", text: "Find it local"}), el("h2", {text: "Where can I get…?"}), form, chips, out);
+}
+(function(){ const st = document.createElement("style"); st.textContent =
+  ".find-box{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:18px}.find-box h2{margin:2px 0 12px}.find-form{display:flex;gap:8px;flex-wrap:wrap}.find-form .fsearch{flex:1 1 260px;max-width:none}" +
+  ".find-asks{margin:12px 0 4px}.find-group{margin-top:16px}.find-card h3{margin:0;font-size:19px}.find-card h3 a{text-decoration:none}.find-none{margin-top:14px;border-left:6px solid var(--accent,#C2410C)}" +
+  "@media (max-width:700px){.find-asks{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}.find-asks::-webkit-scrollbar{display:none}.find-asks .chip{flex:none;white-space:nowrap}}";
+  document.head.appendChild(st);
+  document.querySelectorAll("[data-find]").forEach(findBox); })();
+window.OVE_SITE = {findLocal, findBox, getArea, setArea, areaCals, areaSwitch, valleyFirst, evTags, eventFilters, monthGrid, C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip};
 })();
