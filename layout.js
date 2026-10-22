@@ -8,7 +8,7 @@
 var GROUPS = [
  ["Events", [["events.html","All events"],["weekend.html","This weekend"],["newsletter.html","Weekly newsletter"],["live-music.html","Live music"],["down-the-canyon.html","Down the canyon"],["yard-sales.html","Yard sales"]]],
  ["Eat & Shop", [["restaurants.html","Restaurants"],["farm.html","Farm stands & local food"],["foodtrucks.html","Food trucks"],["open-this-week.html","Who's open this week"]]],
- ["Local", [["businesses.html","Local businesses & shops"],["services.html","Home services"],["beauty.html","Beauty & wellness"],["artists.html","Local artists"],["stay.html","Places to stay"],["worship.html","Places of worship"],["jobs.html","Help wanted"]]],
+ ["Local", [["businesses.html","Local businesses & shops"],["services.html","Home services"],["beauty.html","Beauty & wellness"],["artists.html","Local artists"],["stay.html","Places to stay"],["worship.html","Places of worship"],["farm.html","Farm stands & local food"],["jobs.html","Help wanted"]]],
  ["Outdoors & Roads", [["safety.html","Road, weather & alerts"],["live.html","Live view"],["night-sky.html","Night sky"],["wildlife.html","Wildlife & wildflowers"],["valley-photos.html","Valley photos"]]],
  ["Community Kids", [["kids.html","The Utah Depot"],["depot-story.html","This week's stop"],["station-board.html","Station Board: lessons & teams"],["station-board.html#kid-events","Kid events"],["coloring.html","Holiday Express coloring pages"],["color.html","Paint Car (color online)"],["where-moose.html","Moose Car: Where's Ben?"],["i-spy.html","I Spy Car"],["puzzles.html","Puzzle Car"],["scavenger-hunt.html","Scavenger Hunt Car"],["guess-the-spot.html","Guess the Spot Car"]]],
  ["Community", [["causes.html","Local causes"],["volunteer.html","Volunteer & give back"],["recipes.html","Community Cooking"],["sneak-peek.html","Sneak Peek"],["know-how.html","Valley Know-How classes"],["garden.html","Garden board"],["prepared.html","Be prepared board"],["coming.html","What's coming & ideas"]]],
@@ -16,7 +16,7 @@ var GROUPS = [
  ["About", [["about.html","About us"],["submit.html","Send an event or listing"],["sponsor.html","Sponsor a spot"],["ten-years.html","10 years"],["rules.html","Community rules"],["terms.html","Terms"],["privacy.html","Privacy"]]]
 ];
 /* pages listed under two headings: which heading they belong to */
-var HOME = {"puzzles.html": "Fun & Contests", "guess-the-spot.html": "Fun & Contests"};
+var HOME = {"puzzles.html": "Fun & Contests", "guess-the-spot.html": "Fun & Contests", "farm.html": "Eat & Shop"};
 /* the tab bar for a heading can be split into labeled rows with short names (the menu above keeps the full names) */
 var ROWS = {"Community Kids": [
  ["Ride the train", [["kids.html","The Utah Depot"],["depot-story.html","This week's stop"],["station-board.html","Station Board"],["station-board.html#kid-events","Kid events"]]],
