@@ -85,7 +85,7 @@ function eventCard(e){
   const what = e.url ? el("a", {href: e.url, target: "_blank", rel: "noopener", text: e.t}) : document.createTextNode(e.t);
   return el("article", {class: "event", style: "--cal:" + CAL_COLOR[e.cal]}, [
     el("div", {class: "when", text: when}),
-    el("div", {}, [ el("div", {class: "what"}, [what]),
+    el("div", {}, [ el("div", {class: "what"}, [what, (evTags(e).adult && !/21\+/.test(e.t || "")) ? el("span", {class: "ev-21", title: "21 and over", text: "21+"}) : null]),
       e.loc ? el("div", {class: "where", text: e.loc}) : null,
       e.desc ? el("div", {class: "desc", text: e.desc.length > 240 ? e.desc.slice(0, 237) + "…" : e.desc}) : null ]) ]);
 }
@@ -478,8 +478,12 @@ function areaSwitch(box, onChange){
 function valleyFirst(list){ const now = Date.now(); return list.slice().sort((a, b) => { const da = dayKey(Math.max(a.s, now)), db = dayKey(Math.max(b.s, now)); if (da !== db) return da < db ? -1 : 1; if (a.cal !== b.cal) return a.cal === "ov" ? -1 : 1; return a.s - b.s; }); }
 /* quick filters: Free, Family / all ages, 21+, Live music, Classes */
 const EV_MUSIC = /live music|\bband\b|bands|concert|acoustic|open mic|\bdj\b|djs|bluegrass|jazz|musician|singer|songwriter|karaoke|symphony|orchestra|tribute|#livemusic/i;
-function evTags(e){ const t = (e.t || "") + " " + (e.desc || ""); const adult = /21\+|18\+|\(adult|rated r|adults only|ages 21/i.test(t);
+const EV_BAR = /\b(side bar|angry goat|thirsty horse|the outlaw|shooting star saloon|brewski'?s|alleged|lighthouse lounge|kokomo|saloon|tavern|lounge|pub\b|nightclub|cocktail bar|wine bar|bar)\b/i;
+const EV_NOT_BAR = /all ages|all-ages|family|kids|children|sushi bar|bar ?(&|and) ?grill|candy bar|juice bar|salad bar|coffee bar|snack bar|bar ?b ?q|barn|bar mitzvah|pub(lic|lished)/i;
+function evTags(e){ const t = (e.t || "") + " " + (e.desc || ""); const atBar = EV_BAR.test((e.t || "") + " " + (e.loc || "")) && !EV_NOT_BAR.test((e.t || "") + " " + (e.loc || "") + " " + (e.desc || ""));
+  const adult = /21\+|18\+|\(adult|rated r|adults only|ages 21/i.test(t) || atBar;
   return {free: /\bfree\b/i.test(t), adult, family: !adult, music: EV_MUSIC.test(t), class: /\bclass(es)?\b|workshop|lesson|tutorial|storytime|story time/i.test(t), meeting: /commission|council|work ?session|public hearing|public meeting|board of|planning|trustees|town meeting|committee|county commission/i.test(e.t || "")}; }
+(function(){ const c = document.createElement("style"); c.textContent = ".ev-21{display:inline-block;margin-left:8px;font-size:12px;font-weight:700;padding:1px 7px;border-radius:999px;background:#7A1F1F;color:#fff;vertical-align:middle;text-decoration:none}"; document.head.appendChild(c); })();
 const EV_FILTERS = [["free", "Free"], ["family", "Family / all ages"], ["adult", "21+"], ["music", "Live music"], ["class", "Classes"], ["meeting", "Public meetings"]];
 function eventFilters(box, onChange){
   const on = new Set(); if (!box) return () => true;

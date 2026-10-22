@@ -7,28 +7,31 @@
 (function(){
 var GROUPS = [
  ["Events", [["events.html","All events"],["weekend.html","This weekend"],["newsletter.html","Weekly newsletter"],["live-music.html","Live music"],["down-the-canyon.html","Down the canyon"],["yard-sales.html","Yard sales"]]],
- ["Eat & Shop", [["restaurants.html","Restaurants"],["farm.html","Farm stands & local food"],["foodtrucks.html","Food trucks"],["open-this-week.html","Who's open this week"]]],
- ["Local", [["businesses.html","Local businesses & shops"],["services.html","Home services"],["beauty.html","Beauty & wellness"],["artists.html","Local artists"],["stay.html","Places to stay"],["health.html","Health & help"],["worship.html","Places of worship"],["farm.html","Farm stands & local food"],["jobs.html","Help wanted"]]],
+ ["Eat & Shop", [["restaurants.html","Restaurants"],["farm.html","Farm stands & local food"],["foodtrucks.html","Food trucks"],["businesses.html","Local businesses & shops"],["open-this-week.html","Who's open this week"]]],
+ ["Local", [["health.html","Health & help"],["services.html","Home services"],["beauty.html","Beauty & wellness"],["stay.html","Places to stay"],["worship.html","Places of worship"],["artists.html","Local artists"],["jobs.html","Help wanted"],["farm.html","Farm stands & local food"],["businesses.html","Local businesses & shops"]]],
  ["Outdoors & Roads", [["safety.html","Road, weather & alerts"],["live.html","Live view"],["night-sky.html","Night sky"],["wildlife.html","Wildlife & wildflowers"],["valley-photos.html","Valley photos"]]],
- ["Community Kids", [["kids.html","The Utah Depot"],["depot-story.html","This week's stop"],["station-board.html","Station Board: lessons & teams"],["station-board.html#kid-events","Kid events"],["coloring.html","Holiday Express coloring pages"],["color.html","Paint Car (color online)"],["where-moose.html","Moose Car: Where's Ben?"],["i-spy.html","I Spy Car"],["puzzles.html","Puzzle Car"],["scavenger-hunt.html","Scavenger Hunt Car"],["guess-the-spot.html","Guess the Spot Car"]]],
- ["Community", [["causes.html","Local causes"],["volunteer.html","Volunteer & give back"],["recipes.html","Community Cooking"],["sneak-peek.html","Sneak Peek"],["know-how.html","Valley Know-How classes"],["garden.html","Garden board"],["prepared.html","Be prepared board"],["coming.html","What's coming & ideas"]]],
- ["Fun & Contests", [["fun.html","All fun & contests"],["photo-contest.html","Photo contest"],["guess-the-spot.html","Guess the Spot"],["then-and-now.html","Then & Now"],["time-capsule.html","Valley Time Capsule"],["puzzles.html","Puzzles"]]],
- ["About", [["about.html","About us"],["submit.html","Send an event or listing"],["sponsor.html","Sponsor a spot"],["ten-years.html","10 years"],["rules.html","Community rules"],["terms.html","Terms"],["privacy.html","Privacy"]]]
+ ["Kids & Fun", [["kids.html","Community Kids: The Utah Depot"],["station-board.html","Kids lessons & teams"],["station-board.html#kid-events","Kid events"],["coloring.html","Coloring pages"],["fun.html","All fun & contests"],["photo-contest.html","Photo contest"],["guess-the-spot.html","Guess the Spot"],["then-and-now.html","Then & Now"],["time-capsule.html","Valley Time Capsule"],["puzzles.html","Puzzles"]]],
+ ["Community", [["causes.html","Local causes"],["volunteer.html","Volunteer & give back"],["recipes.html","Community Cooking"],["know-how.html","Valley Know-How classes"],["sneak-peek.html","Sneak Peek"],["garden.html","Garden board"],["prepared.html","Be prepared board"],["coming.html","What's coming & ideas"],["about.html","About us"],["submit.html","Send an event or listing"],["sponsor.html","Sponsor a spot"],["ten-years.html","10 years"]]]
 ];
 /* pages listed under two headings: which heading they belong to */
-var HOME = {"puzzles.html": "Fun & Contests", "guess-the-spot.html": "Fun & Contests", "farm.html": "Eat & Shop"};
-/* the tab bar for a heading can be split into labeled rows with short names (the menu above keeps the full names) */
-var ROWS = {"Community Kids": [
- ["Ride the train", [["kids.html","The Utah Depot"],["depot-story.html","This week's stop"],["station-board.html","Station Board"],["station-board.html#kid-events","Kid events"]]],
- ["Play", [["where-moose.html","Where's Ben?"],["coloring.html","Coloring"],["color.html","Paint online"],["i-spy.html","I Spy"],["puzzles.html","Puzzles"],["scavenger-hunt.html","Scavenger hunt"],["guess-the-spot.html","Guess the Spot"]]]
-]};
+var HOME = {"farm.html": "Eat & Shop", "businesses.html": "Eat & Shop"};
+/* the tab bar for a heading can be split into labeled rows with short names (the menu above keeps the full names). Pages only in these rows still get the right tab bar. */
+var ROWS = {
+ "Kids & Fun": [
+  ["Ride the train", [["kids.html","The Utah Depot"],["depot-story.html","This week's stop"],["station-board.html","Station Board"],["station-board.html#kid-events","Kid events"]]],
+  ["Kids play", [["where-moose.html","Where's Ben?"],["coloring.html","Coloring"],["color.html","Paint online"],["i-spy.html","I Spy"],["puzzles.html","Puzzles"],["scavenger-hunt.html","Scavenger hunt"]]],
+  ["Fun & contests", [["fun.html","All fun"],["photo-contest.html","Photo contest"],["guess-the-spot.html","Guess the Spot"],["then-and-now.html","Then & Now"],["time-capsule.html","Time Capsule"]]]],
+ "Community": [
+  ["Give & share", [["causes.html","Local causes"],["volunteer.html","Volunteer"],["recipes.html","Cooking"],["know-how.html","Know-How classes"],["sneak-peek.html","Sneak Peek"],["garden.html","Garden board"],["prepared.html","Be prepared"],["coming.html","What's coming"]]],
+  ["About", [["about.html","About us"],["submit.html","Send something in"],["sponsor.html","Sponsor a spot"],["ten-years.html","10 years"],["rules.html","Community rules"],["terms.html","Terms"],["privacy.html","Privacy"]]]]
+};
 var esc = function(t){ return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;"); };
 var FOOT = (function(){
   var col = function(t, links){ return "<details class=\"fcol\"><summary><h3>" + t + "</h3></summary><ul>" + links + "</ul></details>"; };
   var li = function(p){ return "<li><a href=\"" + p[0] + "\">" + esc(p[1]) + "</a></li>"; };
   var seen = {};
   var cols = GROUPS.map(function(g){ return col(esc(g[0]), g[1].filter(function(p){ if (seen[p[0]]) return false; seen[p[0]] = 1; return true; }).map(li).join("")); }).join("");
-  var follow = col("Follow", "<li><a data-facebook href=\"https://www.facebook.com/ogdenvalleyevents\" target=\"_blank\" rel=\"noopener\">Facebook</a></li><li><a data-instagram data-hide-empty href=\"#\" target=\"_blank\" rel=\"noopener\">Instagram</a></li><li><a href=\"about.html#groups\">Our Facebook groups</a></li><li><a data-newsletter data-hide-empty href=\"#\">Weekly newsletter</a></li>");
+  var follow = col("Follow", "<li><a data-facebook href=\"https://www.facebook.com/ogdenvalleyevents\" target=\"_blank\" rel=\"noopener\">Facebook</a></li><li><a data-instagram data-hide-empty href=\"#\" target=\"_blank\" rel=\"noopener\">Instagram</a></li><li><a href=\"about.html#groups\">Our Facebook groups</a></li><li><a data-newsletter data-hide-empty href=\"#\">Weekly newsletter</a></li><li><a href=\"rules.html\">Community rules</a></li><li><a href=\"terms.html\">Terms</a></li><li><a href=\"privacy.html\">Privacy</a></li>");
   return "<div class=\"container\">\n  <div class=\"ten\"><img data-logo=\"180\" src=\"logo-10-years-180.png\" alt=\"\" width=\"64\" height=\"64\"><div><b>Ogden Valley Info &amp; Events</b><br><span class=\"fine\">Eden \u00b7 Liberty \u00b7 Huntsville \u00b7 since 2016</span><br><span class=\"fine\" id=\"gc-count\"></span></div></div>\n  <div class=\"fcols\">" + cols + follow + "</div>\n  <p class=\"fine\">Event details come from organizers. Check with them before you go.</p>\n</div>";
 })();
 var CSS = ".ng{position:relative}.ng-h{font-family:var(--display);font-weight:600;font-size:15px;color:var(--ink);background:none;border:0;border-radius:8px;padding:8px 9px;cursor:pointer;display:flex;align-items:center;gap:4px}" +
@@ -47,6 +50,7 @@ var CSS = ".ng{position:relative}.ng-h{font-family:var(--display);font-weight:60
 var page = (location.pathname.split("/").pop() || "index.html");
 var mine = null;
 GROUPS.forEach(function(g){ g[1].forEach(function(p){ if (p[0] === page && !mine && (!HOME[page] || HOME[page] === g[0])) mine = g; }); });
+if (!mine) GROUPS.forEach(function(g){ (ROWS[g[0]] || []).forEach(function(r){ r[1].forEach(function(p){ if (p[0] === page && !mine) mine = g; }); }); });
 var st = document.createElement("style"); st.textContent = CSS; document.head.appendChild(st);
 var nav = document.getElementById("nav");
 if (nav) {
