@@ -35,5 +35,42 @@
   "lat": 41.29504,
   "lng": -111.81582,
   "county": "Weber"
- }
+ },
+ "2549 Washington Blvd.<br>Room #310<br>Ogden, UT  84401": null,
+ "McKay-Dee Hospital - Education Center<br>4401 Harrison Blvd. Ogden, UT": null,
+ "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401": null,
+ "Kimball Arts Building": null,
+ "2549 Washington Blvd.<br>City Council Chambers<br>Ogden, UT  84401": null,
+ "Ogden Dinosaur Park<br>1544 Park Blvd. <br>Ogden, UT 84401": null,
+ "Val A. Browning Center | Austad Auditorium": null,
+ "Outdoor Adventure &amp; Welcome Center (1352 Village Dr. Ogden, UT)": null,
+ "Golden Spike Event Center - Exhibit Hall,&#160;1000 1200 W St,&#160;Ogden, UT 84404": null,
+ "The Monarch&#160;<br>455 25th Street&#160;<br>Ogden, Utah 84401": null,
+ "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401": null,
+ "West Valley Performing Arts Center, 3333 Decker Lake Drive, West Valley City, UT 84119": {
+  "lat": 40.69991,
+  "lng": -111.94666,
+  "county": "Salt Lake"
+ },
+ "Hilton Garden Inn<br>2271 S. Washington Blvd.<br>Ogden, Utah 84401": null,
+ "Union Station<br>2501 Wall Ave<br>Ogden, UT 84401": null,
+ "Ogden Amphitheater - 343 25th St, Ogden, Utah": {
+  "lat": 41.22004,
+  "lng": -111.97199,
+  "county": "Weber"
+ },
+ "Ogden Amphitheater": {
+  "lat": 41.22004,
+  "lng": -111.97199,
+  "county": "Weber"
+ },
+ "Local Artisan Collective <br>2371 Kiesel Ave.<br>Ogden, UT 84401": null,
+ "Ogden City Municipal Building<br>2549 Washington Blvd Ste 340<br>Ogden UT  84401": null,
+ "Ogden City Municipal Building<br>Council Chambers, 3rd Floor<br>2549 Washington Blvd<br>Ogden UT  84401": null,
+ "Weber State University Community Education Center<br>2605 S Monroe Blvd, Ogden 84401": null,
+ "Val A Browning Center<br>Weber State University<br>1901 University Circle<br>Ogden, UT 84408": null,
+ "Stellas on 25th<br>225 Historic 25th Street<br>Ogden, UT 84401": null,
+ "Peery&#39;s Egyptian Theatre<br>2415 Washington Blvd<br>Ogden, UT 84401": null,
+ "Weber State University - Shepherd Union<br>3910 West Campus Dr<br>Ogden, UT 84408": null,
+ "Skinny Dogz 2261 Kiesel Ave, Ogden UT, 84401.": null
 }

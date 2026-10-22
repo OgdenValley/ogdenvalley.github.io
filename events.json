@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-19T20:42:37.660Z",
+ "updated": "2026-10-22T16:44:42.246Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -476,10 +476,1873 @@
   },
   "weber": {
    "name": "Weber County",
-   "events": []
+   "events": [
+    {
+     "s": 1792623600000,
+     "e": 1792630800000,
+     "t": "Ogden City Planning Commission Worksession",
+     "loc": "2549 Washington Blvd.<br>Room #310<br>Ogden, UT  84401",
+     "allDay": false,
+     "desc": "Ogden City Planning Commission Worksession",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792627200000,
+     "e": 1792634400000,
+     "t": "Ladies Night Out - Health Across Every Stage",
+     "loc": "McKay-Dee Hospital - Education Center<br>4401 Harrison Blvd. Ogden, UT",
+     "allDay": false,
+     "desc": "Join us for a relaxed, inspiring evening focused on women&#39;s health, connection and community. Delicious bites, mocktails, giveaways, and meaningful conversations.",
+     "url": "https://intermountainhealthcare.org/locations/mckay-dee-hospital",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792629000000,
+     "e": 1792632600000,
+     "t": "Yoga",
+     "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+     "allDay": false,
+     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don&#8217;t forget your yoga mat!",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792632600000,
+     "e": 1792639800000,
+     "t": "Hurst Artist-in-Residence: Pepon Osario",
+     "loc": "Kimball Arts Building",
+     "allDay": false,
+     "desc": "Join us for a conversation with Pep&#243;n Osorio, an internationally recognized multidisciplinary artist whose work explores race, identity, social justice, and the lived experiences of Latinx and working-class communities in the United States. Born in San Juan and later moving to the South Bronx, Osorio creates richly detailed sculptures and installations shaped by community collaboration and social engagement. For more than 35 years, his work has sparked critical conversations around inequality within healthcare, education, and prison systems while centering the voices and experiences of th",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792708200000,
+     "e": 1792711800000,
+     "t": "Ogden City Landmarks Commission",
+     "loc": "2549 Washington Blvd.<br>City Council Chambers<br>Ogden, UT  84401",
+     "allDay": false,
+     "desc": "Ogden City Landmarks Commission",
+     "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792713600000,
+     "e": 1792724400000,
+     "t": "Ogden Dinosaur Park Dinos in the Dark",
+     "loc": "Ogden Dinosaur Park<br>1544 Park Blvd. <br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Wear your favorite costume and join us for all sorts of tricks and treats. This event has something for everyone from treats and crafts for the little explorers to jump scares and haunted trails for those who dare&#8230;",
+     "url": "https://dinosaurpark.org/dinos-dark/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792719000000,
+     "e": 1792726200000,
+     "t": "Luminescence",
+     "loc": "Val A. Browning Center | Austad Auditorium",
+     "allDay": false,
+     "desc": "Join the Weber State Symphonic Band for an evening of enLIGHTening music!",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792764000000,
+     "e": 1792789200000,
+     "t": "Outdoor Gear Sale &amp; Swap",
+     "loc": "Outdoor Adventure &amp; Welcome Center (1352 Village Dr. Ogden, UT)",
+     "allDay": false,
+     "desc": "Step up your game, no more daily rentals! Come score deep discounts on all past season gear at our annual Gear Sale. Shop used gear from the rental center and check out our other vendors. Gear up for grabs includes snowboards, paddleboards, kayaks, and more!\n\nThis year, students get the first chance to shop gear during our student pre-sale, October 20-22! The Gear Sale will open to the community on October 23.\n\nDate: October 23, 2026 // Time: 8 a.m. - 3 p.m.\nLocation: Outdoor Adventure & Welcome Center (1352 Village Dr. Ogden, UT)\n\nStudent Pre-sale: October 20-22 // 12-4 p.m.",
+     "url": "https://www.weber.edu/outdoor/gear-sale-swap.html",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792778400000,
+     "e": 1792976400000,
+     "t": "FREE Ogden Home Show, October 2026",
+     "loc": "Golden Spike Event Center - Exhibit Hall,&#160;1000 1200 W St,&#160;Ogden, UT 84404",
+     "allDay": false,
+     "desc": "FREE ADMISSION!\n\nThe Ogden Home Show takes place October 23&#8211;25, 2026 at the Golden Spike Event Center (Exhibit Hall). Show hours:\n\nFriday: 12:00pm &#8211; 7:00pm\nSaturday: 10:00am &#8211; 5:00pm\nSunday: 11:00am &#8211; 4:00pm\nVisit the event site for details.",
+     "url": "https://eventvesta.com/events/163718/t/tickets",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792800000000,
+     "e": 1792810800000,
+     "t": "Ogden Dinosaur Park Dinos in the Dark",
+     "loc": "Ogden Dinosaur Park<br>1544 Park Blvd. <br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Wear your favorite costume and join us for all sorts of tricks and treats. This event has something for everyone from treats and crafts for the little explorers to jump scares and haunted trails for those who dare&#8230;",
+     "url": "https://dinosaurpark.org/dinos-dark/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792800900000,
+     "e": 1792805400000,
+     "t": "Candlelight: A Haunted Evening of Halloween Classics",
+     "loc": "The Monarch&#160;<br>455 25th Street&#160;<br>Ogden, Utah 84401",
+     "allDay": false,
+     "desc": "Candlelight concerts bring the magic of a live, multi-sensory musical experience to awe-inspiring locations like never seen before in Ogden. Get your tickets now to discover music inspired by Halloween at The Monarch under the gentle glow of candlelight.\n\nSpooky season is almost here! Halloween special concerts are selling fast. Get your tickets before they fully SELL OUT!\n\nThis is a tribute concert experience. It is not affiliated with, endorsed by, or sponsored by the artist, their estate, or official representatives.\nGeneral Info\nVenue: The Monarch\nDates and times: select your dates/times d",
+     "url": "https://feverup.com/m/193195?",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792803600000,
+     "e": 1792810800000,
+     "t": "Peery&#39;s Egyptian Theater Presents: Labyrinth",
+     "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Please note: this event is a film; not a play.&#160;\n&#160;\nSixteen-year-old Sarah is given thirteen hours to solve a labyrinth and rescue her baby brother Toby when her wish for him to be taken away is granted by the Goblin King Jareth.",
+     "url": "https://ogdenpet.com/event/labyrinth/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792805400000,
+     "e": 1792814400000,
+     "t": "Wait Until Dark at West Valley Arts",
+     "loc": "West Valley Performing Arts Center, 3333 Decker Lake Drive, West Valley City, UT 84119",
+     "allDay": false,
+     "desc": "A blind woman. A hidden secret. One apartment.\nIn 1944 Greenwich Village, Susan Hendrix finds herself caught in a web of deception that turns her home into a battleground. As danger closes in, Susan must outthink an unseen adversary in a gripping game of cat and mouse that culminates in total darkness.\nJeffrey Hatcher&#39;s acclaimed adaptation breathes new life into Frederick Knott&#39;s classic thriller, keeping audiences on the edge of their seats until the very end.",
+     "url": "https://wvcarts.ludus.com/200481571",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792809000000,
+     "e": 1792813500000,
+     "t": "Candlelight: Coldplay vs. Imagine Dragons",
+     "loc": "The Monarch&#160;<br>455 25th Street&#160;<br>Ogden, Utah 84401",
+     "allDay": false,
+     "desc": "Candlelight concerts bring the magic of a live, multi-sensory musical experience to awe-inspiring locations like never seen before in Ogden",
+     "url": "https://feverup.com/m/754548?",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792861200000,
+     "e": 1792872000000,
+     "t": "Hilton Garden Inn Fall Vendor Event",
+     "loc": "Hilton Garden Inn<br>2271 S. Washington Blvd.<br>Ogden, Utah 84401",
+     "allDay": false,
+     "desc": "Hilton Garden Inn Ogden Fall Vendor Event\n\nJoin us for the Hilton Garden Inn Ogden Fall Vendor Event on Saturday, October 24th from 11 AM&#8211;2 PM.\n\nShop a variety of local vendors offering handmade goods, boutique finds, beauty and wellness products and services, jewelry, gifts, and more. This free community event is a great opportunity to discover local businesses, shop for something unique, and support small businesses in Northern Utah.\n\nAdmission is free and the event is open to the public.\n\nShop &#8226; Discover &#8226; Support Local",
+     "url": "https://www.hilton.com/en/hotels/ogdwbgi-hilton-garden-inn-ogden-ut/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792868400000,
+     "e": 1792890000000,
+     "t": "Dia de los Muertos Utah",
+     "loc": "Union Station<br>2501 Wall Ave<br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "D&#237;a de los Muertos or Day of the Dead, is a celebration of life and death.\nJoin us at the Historic Union Station, Ogden as we celebrate our loved ones as a community in a state wide festival.\nThere will be a craft market, live music, dancers, car show, food, community altar and more.\nHosted by: Cultura & Craft\nIn partnership with: Ogden Union Station & Ogden City Arts\n(This event is free for the entire family)\nThank you RAMP for your support",
+     "url": "https://www.facebook.com/events/1671494223954930/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792875600000,
+     "e": 1792882800000,
+     "t": "Eskape - Journey Tribute Concert",
+     "loc": "Ogden Amphitheater - 343 25th St, Ogden, Utah",
+     "allDay": false,
+     "desc": "JOURNEY TRIBUTE CONCERT - LIVE AT OGDEN AMPHITHEATER\nEskape, Utah&#39;s premier band. \nUTAH JOURNEY FANS &#8212; THIS ONE&#39;S FOR YOU!\nGet ready for an unforgettable afternoon celebrating the legendary music of JOURNEY as ESKAPE &#8211; Journey Tribute takes its show to the Ogden Amphitheater for the band&#39;s first big performance on a major amphitheater stage!\n&#x1F4C5; SATURDAY &#8226; OCTOBER 24, 2026\n&#9200; 3:00 PM &#8211; 5:00 PM Door opens at 2:00 PM\n&#x1F4CD; OGDEN AMPHITHEATER\nBring your friends. Bring your family. And get ready to sing along!\nExperience the soaring vocals, powerf",
+     "url": "https://ESKAPEJOURNEYTRIBUTE.eventbrite.com",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792875600000,
+     "e": 1792882800000,
+     "t": "Eskape - Journey Tribute Concert",
+     "loc": "Ogden Amphitheater",
+     "allDay": false,
+     "desc": "ESKAPE &#8211; JOURNEY TRIBUTE: LIVE AT OGDEN AMPHITHEATER!\nGet tickets here: eskapejourneytribute.eventbrite.com\n**BIGGER STAGE. BIGGER SOUND. AN UNFORGETTABLE LIVE EXPERIENCE.**\n**SATURDAY &#8226; OCTOBER 24, 2026**\n**3:00 PM &#8211; 5:00 PM**\n **OGDEN AMPHITHEATER &#8226; OGDEN, UTAH**\nJourney fans, **THIS ONE&#39;S FOR YOU!**\nESKAPE &#8211; JOURNEY TRIBUTE is stepping onto a BIG AMPHITHEATER STAGE for a special live concert celebrating the unforgettable music of JOURNEY!\nIf you&#39;ve ever sung along to Journey in your car, turned up the volume when one of their classics came on, or have m",
+     "url": "https://ESKAPEJOURNEYTRIBUTE.eventbrite.com",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792879200000,
+     "e": 1792886400000,
+     "t": "Annual Creepy Doll Class",
+     "loc": "Local Artisan Collective <br>2371 Kiesel Ave.<br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Annual Creepy Doll Class!\nWhat:\nJoin in the fun & create a Creepy Doll! All of our classes have sold out year after year so we added even more this year and tickets are already being sold so make sure that you get your spot before they all sell out.\n\n-All supplies are included and everyone will get their own Creepy Doll along with a variety of cool items to make each doll unique & creepy.\n\n-I will also be teaching how to create warts, wounds, wrinkly skin along with a variety of cool creepy doll techniques. Then you can have fun letting your imagination run wild as you create your own creepy d",
+     "url": "https://localartisancollective.com/events/annual-creepy-doll-class-on-saturday-october-24th-from-400-to-600/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792886400000,
+     "e": 1792897200000,
+     "t": "Ogden Dinosaur Park Dinos in the Dark",
+     "loc": "Ogden Dinosaur Park<br>1544 Park Blvd. <br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Wear your favorite costume and join us for all sorts of tricks and treats. This event has something for everyone from treats and crafts for the little explorers to jump scares and haunted trails for those who dare&#8230;",
+     "url": "https://dinosaurpark.org/dinos-dark/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792891800000,
+     "e": 1792900800000,
+     "t": "Wait Until Dark at West Valley Arts",
+     "loc": "West Valley Performing Arts Center, 3333 Decker Lake Drive, West Valley City, UT 84119",
+     "allDay": false,
+     "desc": "A blind woman. A hidden secret. One apartment.\nIn 1944 Greenwich Village, Susan Hendrix finds herself caught in a web of deception that turns her home into a battleground. As danger closes in, Susan must outthink an unseen adversary in a gripping game of cat and mouse that culminates in total darkness.\nJeffrey Hatcher&#39;s acclaimed adaptation breathes new life into Frederick Knott&#39;s classic thriller, keeping audiences on the edge of their seats until the very end.",
+     "url": "https://wvcarts.ludus.com/200481571",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792891800000,
+     "e": 1792900800000,
+     "t": "The Rocky Horror Picture Show",
+     "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join us at the annual&#160;Rocky Horror Picture Show party & showing&#160;at Peery&#39;s Egyptian Theater!\n\nCome join us for a night of fun with food and bar at 5:30 PM (pre-party ticket required, ages 18+) followed by our annual Costume Contest at 6:50 PM and showing of the film&#160;The Rocky Horror Picture Show&#160;at 7:30 PM.\n\nAfter the wedding of mutual friends, Brad Majors (Barry Bostwick) and his fianc&#233;e Janet Weiss (Susan Sarandon) get lost driving in a heavy downpour. The first house they see belongs to majordomo Riff Raff (Richard O&#39;Brien) and his sister, housekeeper Magent",
+     "url": "https://ogdenpet.com/events/category/series/rocky-horror-picture-show-2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1792978200000,
+     "e": 1792987200000,
+     "t": "The Rocky Horror Picture Show",
+     "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join us at the annual&#160;Rocky Horror Picture Show party & showing&#160;at Peery&#39;s Egyptian Theater!\n\nCome join us for a night of fun with food and bar at 5:30 PM (pre-party ticket required, ages 18+) followed by our annual Costume Contest at 6:50 PM and showing of the film&#160;The Rocky Horror Picture Show&#160;at 7:30 PM.\n\nAfter the wedding of mutual friends, Brad Majors (Barry Bostwick) and his fianc&#233;e Janet Weiss (Susan Sarandon) get lost driving in a heavy downpour. The first house they see belongs to majordomo Riff Raff (Richard O&#39;Brien) and his sister, housekeeper Magent",
+     "url": "https://ogdenpet.com/events/category/series/rocky-horror-picture-show-2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793129400000,
+     "e": 1793133000000,
+     "t": "Gentle Movements",
+     "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+     "allDay": false,
+     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793136600000,
+     "e": 1793143800000,
+     "t": "Ogden City Council Work Session",
+     "loc": "Ogden City Municipal Building<br>2549 Washington Blvd Ste 340<br>Ogden UT  84401",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793145600000,
+     "e": 1793156400000,
+     "t": "Ogden City Council Meeting",
+     "loc": "Ogden City Municipal Building<br>Council Chambers, 3rd Floor<br>2549 Washington Blvd<br>Ogden UT  84401",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793193300000,
+     "e": 1793197800000,
+     "t": "ConnectEffect",
+     "loc": "Weber State University Community Education Center<br>2605 S Monroe Blvd, Ogden 84401",
+     "allDay": false,
+     "desc": "Ogden, Let&#39;s Connect!\n\nCome experience ConnectEffect led by founder Riaz Patel.\n\nA 53 minute immersive experience that turns strangers into connected communities. This FREE community event will be entertaining, joyful, and filled with opportunities to connect in unexpected ways. \n\nShow up early or stay late for delicious desserts and more connections. \n\nDate: Wednesday, October 28\nTime: 7:30 p.m. - 8:30 p.m.\nShow up early or stay late for delicious desserts and more connections. \n\nLocation: Weber State Community Education Center (2605 Monroe Blvd, Ogden) \nFREE Parking\n\nConnection starts wh",
+     "url": "https://givepul.se/hkwy8u",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793233800000,
+     "e": 1793237400000,
+     "t": "Yoga",
+     "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+     "allDay": false,
+     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don&#8217;t forget your yoga mat!",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793237400000,
+     "e": 1793244600000,
+     "t": "UTAH SYMPHONY DISNEY&#8217;S HOCUS POCUS IN CONCERT",
+     "loc": "Val A Browning Center<br>Weber State University<br>1901 University Circle<br>Ogden, UT 84408",
+     "allDay": false,
+     "desc": "A Hocus Pocus in Concert night in Ogden starts the way the best Halloween plans do: lights down, screen glowing, and a full symphony orchestra drawing the first breath of John Debney&#8217;s score. On Wednesday, October 28, the Utah Symphony performs the complete original score live while the beloved 1993 film plays on a big screen above the stage at the Browning Center.",
+     "url": "https://www.onstageogden.org/show-item/hocus-pocus/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793316600000,
+     "e": 1793331000000,
+     "t": "Roaring 20s Halloween Dinner Tour Experience",
+     "loc": "Stellas on 25th<br>225 Historic 25th Street<br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join Tour Ogden and Stellas for a Roaring 20&#8217;s Halloween Experience! Thursday, October 29, 2026 at 5:30 pm enjoy dinner, activities and a historic walking Tour! Spaces are limited for this special event.",
+     "url": "https://tourogden.com/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793320200000,
+     "e": 1793327400000,
+     "t": "Halloween Storytelling Spooktacular",
+     "loc": "Peery&#39;s Egyptian Theatre<br>2415 Washington Blvd<br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Weber State University Storytelling Festival presents a Halloween Spooktacular, featuring Paul Strickland, Sam Payne, and Mo Reynolds, October 29th, at Peery&#39;s Egyptian Theater. This special event starts at 6:30 p.m. with scary stories followed by scarier stories starting at 7:30 p.m. Admission is free, no tickets required, first come, first seated. Encore performance (same storytellers, new stories) on October 30th at the WSU Davis Campus. For more information, go to weber.edu/storytelling.",
+     "url": "https://www.weber.edu/storytelling",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793383200000,
+     "e": 1793412000000,
+     "t": "Weber State&#39;s SPOOK-TACULAR Halloween Party",
+     "loc": "Weber State University - Shepherd Union<br>3910 West Campus Dr<br>Ogden, UT 84408",
+     "allDay": false,
+     "desc": "Weber State&#39;s SPOOK-TACULAR Halloween Party \nJoin us Friday, Oct. 30 at Weber State University for Halloween fun from noon to 8 p.m.,  including Halloween crafts and activities, trick-or-treating, face painting, bowling, two viewings of Hotel Transylvania, and a kids carnival. The Spook-Tacular Halloween Party is free and open to the community.",
+     "url": "https://www.weber.edu/halloween",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793401200000,
+     "e": 1793408400000,
+     "t": "Skinny Dogz Trunk or Treat",
+     "loc": "Skinny Dogz 2261 Kiesel Ave, Ogden UT, 84401.",
+     "allDay": false,
+     "desc": "&#x1F383; Join us for a FREE family-friendly Trunk or Treat! Bring the kids, bring the fam, bring a friend and come enjoy a night of Halloween fun with decorated cars, TONS of candy, costumes, music and more! &#x1F47B;&#x1F36C; Everyone is welcome, come hang out and celebrate Halloween with us!",
+     "url": "https://facebook.com/events/s/skinny-dogz-trunk-or-treat/1400402505593873/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793401200000,
+     "e": 1793408400000,
+     "t": "Skinny Dogz Trunk or Treat",
+     "loc": "Skinny Dogz <br>2261 Kiesel Ave<br>Ogden UT 84401",
+     "allDay": false,
+     "desc": "Join us for a FREE family-friendly Trunk or Treat! Bring the kids, bring the fam, bring a friend and come enjoy a night of Halloween fun with decorated cars, TONS of candy, costumes, music and more! Everyone is welcome, come hang out and celebrate Halloween with us!",
+     "url": "https://facebook.com/events/s/skinny-dogz-trunk-or-treat/1400402505593873/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793404800000,
+     "e": 1793415600000,
+     "t": "Below the Bee: A Spookeasy",
+     "loc": "Queen Bee Giftery<br>270 25th Street<br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "The Queen Bee Giftery is staying open late, and for the first time ever, retail is heading down to our haunted basement. &#x1F47B;\n\nShop after hours with early access to our holiday inventory, then brave the stairs to shop local vendors in the basement.\n\nYour $15 ticket includes:\n\nFree dirty sodas, popcorn, and cotton candy\nA chance to win a gift basket packed with goodies from every Spookeasy vendor\nA swag bag for the first 25 guests\nWhen: Friday, October 30th from  6&#8211;9 pm\nWhere: The Queen Bee Giftery, 270 25th Street, Ogden\n\nSnacks are on us. Anything lurking in the basement is not our",
+     "url": "https://queenbeegiftery.com/products/below-the-bee-a-spookeasy?_pos=1&_sid=fed4e4920&_ss=r",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793410200000,
+     "e": 1793419200000,
+     "t": "The Rocky Horror Picture Show",
+     "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join us at the annual&#160;Rocky Horror Picture Show party & showing&#160;at Peery&#39;s Egyptian Theater!\n\nCome join us for a night of fun with food and bar at 5:30 PM (pre-party ticket required, ages 18+) followed by our annual Costume Contest at 6:50 PM and showing of the film&#160;The Rocky Horror Picture Show&#160;at 7:30 PM.\n\nAfter the wedding of mutual friends, Brad Majors (Barry Bostwick) and his fianc&#233;e Janet Weiss (Susan Sarandon) get lost driving in a heavy downpour. The first house they see belongs to majordomo Riff Raff (Richard O&#39;Brien) and his sister, housekeeper Magent",
+     "url": "https://ogdenpet.com/events/category/series/rocky-horror-picture-show-2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793451600000,
+     "e": 1793494800000,
+     "t": "Nightmare on the Mat Wrestling Competition",
+     "loc": "Golden Spike Event Center<br>1000 N 1200 W<br>Ogden, UT 84404",
+     "allDay": false,
+     "desc": "&#x1F9DF;&#8205;&#9794;&#65039;Nightmare on the Mat Wrestling Competition&#x1F3C6;\n\nGet ready for an action-packed wrestling competition in a spooky glow-in-the-dark setting! Cheer on participants as they battle it out on the mat.\n\n&#x1F480; Doors Open: 7 am\n&#x1F480; Event Starts: 8 am\n&#x1F480; Admission: $10 at the door\n\nFor more information visit: https://www.wrestleutah.com/nightmareonthemat\n\nBring your energy, bring your spirit, and enjoy an exciting competition!",
+     "url": "https://www.wrestleutah.com/nightmareonthemat",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793464200000,
+     "e": 1793469600000,
+     "t": "The Witches Brunch Club",
+     "loc": "Queen Bee Giftery<br>270 25th Street<br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Gather your coven, because Halloween morning is for brunch! &#x1F9D9;\n\nJoin us and our friends at The Brunch Club in the Queen Bee Giftery Loft for a bewitching morning of good food, great company, and a little magic.\n\nYour ticket includes:\n\nBrunch\nMocktails\nArtisan chocolate\nWitchy activities\nWhen: Saturday, October 31, 10:30 am\nWhere: The Queen Bee Giftery Loft, 270 25th Street, Ogden\n\nPointy hats encouraged. Broom parking not guaranteed.",
+     "url": "https://queenbeegiftery.com/products/witches-brunch-the-brunch-club",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793484000000,
+     "e": 1793505600000,
+     "t": "Halloween Bar Crawl",
+     "loc": "Starts at Kokomo Club<br>216 25th Street<br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "The Ogden Halloween Bar Crawl runs Saturday, October 31, 2026, 4PM - 10PM, across 6 bars in Ogden, UT. The route takes in 25th St, 25th Street, Washington Blvd and 24th St.\nCheck in at Kokomo Club (4PM - 6PM) to swap your ticket for a lanyard, badge and drink vouchers. After that there is no set route &#8212; the bars are yours to hit in any order, with crawler drink specials at every stop. The L.A.B. closes out the night.\nOgden has crawled with us every year since 2021.",
+     "url": "https://crawlwith.us/ogden/halloween/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793498400000,
+     "e": 1793512800000,
+     "t": "Halloween Burlesque",
+     "loc": "2450 Grant Ave, Ogden, UT, United States, 84401",
+     "allDay": false,
+     "desc": "Halloween Burlesque at Copper Nickel is a bold, unforgettable Halloween night featuring a captivating burlesque show, after-party, cocktails, and VIP experiences in the heart of Ogden.",
+     "url": "https://www.coppernickel.com/tickets/halloween-burlesque-2026",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793498400000,
+     "e": 1793512800000,
+     "t": "Halloween Burlesque",
+     "loc": "Copper Nickel<br>2450 Grant Ave<br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Halloween Burlesque is coming to Copper Nickel Events on October 31! &#x1F525;\nGet ready for a night of bold performances, exciting entertainment, and unforgettable Halloween energy. If you&#8217;re searching for Halloween events, date night ideas, or fun things to do in Ogden, make this part of your Halloween plans.",
+     "url": "https://www.coppernickel.com/tickets/halloween-burlesque-2026",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793646000000,
+     "e": 1793649600000,
+     "t": "Parent Cafe",
+     "loc": "Family Support Center of Ogden 3340 Harrison Blvd Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Safe space for parents to share, connect, and learn from each other. Each month is a different topic.\nFree Refreshments and Free Childcare for ages 0-11 (Must schedule in advance and complete paperwork)\nEmail at inquiry@fscogden.org or call us 801-393-3113\nAugust 3 - Building Structure and Routine at Home\nSeptember 14 - You are Not Alone - The Village Returns\nOctober 5 - Haunted Tales and Parenting WINS\nNovember 2 - Pulling the Ones You Love Closer - Making Your Home a Refuge\nDecember 7 - Resilience, Calm the Stress Down",
+     "url": "https://www.eventbrite.com/cc/parent-cafes-special-events-4839868?utm-campaign=social&utm-content=creatorshare&utm-medium=discovery&utm-term=odclsxcollection&utm-source=cp&aff=escb",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793714400000,
+     "e": 1793761200000,
+     "t": "2026 General Elections In-Person Voting",
+     "loc": "Golden Spike Event Center<br>1000 N 1200 W<br>Ogden, UT 84404",
+     "allDay": false,
+     "desc": "Come out and make your voice heard by exercising your right to vote! &#x1F5F3;&#65039;\n\nPolls will be open from 7 am to 8 pm, with voting located at the Exhibit Hall on the north side of the facility.\n\nFor more information visit https://www.weberelections.gov/",
+     "url": "https://www.weberelections.gov/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793737800000,
+     "e": 1793741400000,
+     "t": "Gentle Movements",
+     "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+     "allDay": false,
+     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793745000000,
+     "e": 1793752200000,
+     "t": "Ogden City Council Work Session",
+     "loc": "Ogden City Municipal Building<br>2549 Washington Blvd Ste 340<br>Ogden UT  84401",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793754000000,
+     "e": 1793764800000,
+     "t": "Ogden City Council Meeting",
+     "loc": "Ogden City Municipal Building<br>Council Chambers, 3rd Floor<br>2549 Washington Blvd<br>Ogden UT  84401",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793759400000,
+     "e": 1793766600000,
+     "t": "Manual Cinema Presents: The 4th Witch",
+     "loc": "Val A. Browning Center | Austad Auditorium",
+     "allDay": false,
+     "desc": "Manual Cinema is an Emmy Award&#8211;winning performance collective, design studio, and film production company. The 4th Witch is a new story inspired by Shakespeare&#8217;s Macbeth, about a girl who escapes war and flees into a dark forest.\n\nTold through shado puppetry, actors in silhouette, and live music (without dialogue or narration), The 4th Witch begins on the eve of an invasion of a small town by the warlord Macbeth. The girl escapes the invading army and flees into the nearby forest. Orphaned and exiled, she is rescued by a witch who takes her in as an apprentice. As she becomes more ",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793759400000,
+     "e": 1793764800000,
+     "t": "Excellence in the Community Presents: Will Baxter &amp; the Best of Neal Diamond",
+     "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "This is a free event, no tickets are needed.\n\nExcellence in the Community presents, &#8220;Will Baxter and the Best of Neil Diamond&#8221;. Nostalgia and &#8220;good times never felt so good&#8221;.&#160;",
+     "url": "https://ogdenpet.com/event/eic-beachboystribute-2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793833200000,
+     "e": 1793847600000,
+     "t": "RMBRA Jackpots",
+     "loc": "Golden Spike Event Center<br>Outdoor Stadium<br>1000 North 1200 West<br>Ogden, UT 84404",
+     "allDay": false,
+     "desc": "Time Onlys: 4pm&#160;\nRaces: 6:30pm\n\nFor more information and events:\nwww.facebook.com&#8230;",
+     "url": "https://www.facebook.com/RMBRARockyMountainBarrelRacing/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793836800000,
+     "e": 1793851200000,
+     "t": "Ogden City Planning Commission Meeting",
+     "loc": "2549 Washington Blvd.<br>Council Chambers, 3rd floor<br>Ogden, UT  84401",
+     "allDay": false,
+     "desc": "Ogden City Planning Commission",
+     "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793842200000,
+     "e": 1793845800000,
+     "t": "Yoga",
+     "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+     "allDay": false,
+     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don&#8217;t forget your yoga mat!",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793844000000,
+     "e": 1793851200000,
+     "t": "Warren Miller&#39;s &quot;Days Off&quot;",
+     "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Drop in on the 77th historic installment of winter&#8217;s favorite tradition this fall with Warren Miller&#8217;s Days Off. Join host Katie Burrell as she pulls back the curtain on what the world&#8217;s best athletes do on their days off, chasing pure adventure across the globe.\n\nFrom the legendary backcountry of Alaska to the powder of Hokkaido, Japan&#8212;journey across the slopes of Deer Valley, Revelstoke, Whistler, Pemberton, and Banff.&#160;",
+     "url": "https://ogdenpet.com/event/warren-millers-days-off-2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793926800000,
+     "e": 1793934000000,
+     "t": "Visiting Artist Lecture by Melissa Melero-Moose",
+     "loc": "Kimball Arts Building | Room 143",
+     "allDay": false,
+     "desc": "Melissa Melero-Moose is a Northern Paiute/Modoc mixed-media artist whose work is inspired by the landscapes and cultural traditions of the Great Basin. Using organic materials like willow, sand, and reeds, her textured abstract works reflect Indigenous knowledge, basketry traditions, and deep connections to land and community.",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793926800000,
+     "e": 1793934000000,
+     "t": "WSSO",
+     "loc": "Kimball Arts Building | Room 143",
+     "allDay": false,
+     "desc": "Melissa Melero-Moose is a Northern Paiute/Modoc mixed-media artist whose work is inspired by the landscapes and cultural traditions of the Great Basin. Using organic materials like willow, sand, and reeds, her textured abstract works reflect Indigenous knowledge, basketry traditions, and deep connections to land and community.",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793930400000,
+     "e": 1793937600000,
+     "t": "Trails Foundation of Northern Utah presents: Ogden Mountain Film Festival",
+     "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "The Ogden Mountain Film Festival is gearing up to celebrate the adventures and breathtaking landscapes of Ogden, Utah! Presented by the Trails Foundation of Northern Utah, OMFF&#160;will showcase short films that capture the heart-pounding excitement and sheer beauty of exploring our local mountains. These films are not just about the thrill; they&#8217;re about preserving our natural playground for generations to come.",
+     "url": "https://ogdenpet.com/event/ogden-mountain-film-festival-2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794011400000,
+     "e": 1794016800000,
+     "t": "Historic 25th Street Walking Tour",
+     "loc": "Ogden Union Station<br>2501 Wall Ave <br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join local expert, Rich Koski, as he takes you on a guided walk from Union Station to the Monarch Building in the Nine Rails Creative District.\n\nEarly Weber County and Ogden history including the role of the fur traders and mountain men establishing the first European-American settlement in Utah.&#160;\n\nAmong the historical facts and anecdotes provided by your guide you&#8217;ll learn about:&#160;\n\nArrival of the Mormon Pioneers and establishment of Ogden as an agricultural community.&#160;\nOgden&#8217;s emergence as the Crossroads of the West following the completion of the Transcontinental R",
+     "url": "https://www.visitogden.com/things-to-do/guided-tours/guided-tour/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794013200000,
+     "e": 1794024000000,
+     "t": "The Major Brent Taylor Leadership Legacy Gala",
+     "loc": "Ogden Eccles Conference Center <br>2415 Washington Blvd<br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "The Leadership Legacy Gala is the Major Brent Taylor Foundation&#8217;s premier annual event. It is a night filled with reverence, celebration, and purpose. Held each November in honor of Veterans Day, the Gala brings together military families, civic leaders, students, donors, and community members who share a commitment to honoring those who serve and raising up the next generation of leaders.",
+     "url": "https://majorbrenttaylor.com/gala/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794013200000,
+     "e": 1794024000000,
+     "t": "Ogden&#39;s First Friday Art Stroll",
+     "loc": "Downtown Ogden",
+     "allDay": false,
+     "desc": "Ogden&#39;s First Friday Art Stroll is held the first Friday of the month from 6-9 PM, Ogden&#8217;s First Friday Art Stroll is abuzz year &#8216;round with exciting exhibit openings, artist receptions and live music of all genres in venues and in the streets. As the art stroll becomes the virtual front porch of Ogden, those that venture here are treated to great art, an atmosphere of camaraderie and inclusion and amazing night life; small town feel, big city offerings.\n\nEnjoy your journey. We hope you are inspired, delighted and challenged along the way.",
+     "url": "http://www.ogdencityarts.org",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794015000000,
+     "e": 1794024000000,
+     "t": "Under the Western Sky Gala",
+     "loc": "Timbermine Steakhouse 1701 Park Blvd, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "The Family Support Center of Ogden&#39;s Annual Gala Fundraiser. \nDinner with pairings, DJ, dancing, silent auction, and opportunity tickets.\nTables available for purchase.\nFor sponsorship and donation opportunities please email jade@fscogden.org\nThe Family Support Center of Ogden provides free workshops, education, childcare, and supportive services to help strengthen the family unit and enhance family functioning.",
+     "url": "https://FSCOAnnualGala2026.eventbrite.com",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794016800000,
+     "e": 1794715200000,
+     "t": "Much Ado About Nothing",
+     "loc": "Val A. Browning Center | Allred Theatre",
+     "allDay": false,
+     "desc": "November 6&#8211;7 & 11&#8211;14, 2026 | 7 PM\nMatinee: November 14 | 2 PM\n\nThe court of Messina is transformed to the French Quarter of New Orleans, where, against the backdrop of Mardi Gras, a merry war of wits masks a landscape of guarded hearts and sharp-edged pride.\n\nIn Shakespeare&#8217;s sparkling comedy, the cynics, Beatrice and Benedick, are perpetual sparring partners while the young lovers Claudio and Hero have their path to the altar sabotaged by the villainous Don John. A cruel deception threatens to ruin Hero&#8217;s reputation, as one couple is tricked into love and the other int",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794018600000,
+     "e": 1794025800000,
+     "t": "WSSO: Movie Score Selection",
+     "loc": "Val A. Browning Center | Austad Auditorium",
+     "allDay": false,
+     "desc": "Come enjoy the sensational selection of acclaimed movie soundtracks like E.T., Narnia, Out of Africa, Cinema Paradiso, Kung Fu Panda, by composers like Williams, Powell, Zimmer, Shore and others.",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794018600000,
+     "e": 1794025800000,
+     "t": "Onstage Ogden presents National Geographic Live: Wild Cats Revealed with Sandesh Kadur",
+     "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Travel into the mountains, jungles, and plains of India with filmmaker and National Geographic Explorer Sandesh Kadur. Through spectacular photography, rare footage, and stories from the field, Kadur introduces elusive species including Pallas&#8217;s cats, fishing cats, and clouded leopards while revealing the remarkable environments these wild predators call home.\n\nAges 8+ are welcome.",
+     "url": "https://ogdenpet.com/event/nat-geo-live-fall2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794020400000,
+     "e": 1794024000000,
+     "t": "Community United Methodist Church Holiday Boutique",
+     "loc": "Community United Methodist Church<br>163 W 4800 S<br>Washington Terrace, UT 84405",
+     "allDay": false,
+     "desc": "November 6 from 1 pm to 7 pm and November 7 from 10 am to 4 pm.  This is a community event with over 60 vendors.  There will also be food and beverages for purchase.  All kinds of crafts and each vendor is unique, none selling the same items. There is a silent auction and all proceeds go to a local organization that works with food banks in Utah.",
+     "url": "www.cumcholidayboutique.com",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794067200000,
+     "e": 1794076200000,
+     "t": "Turkey Triathlon &amp; 5K Trot",
+     "loc": "WSU Swenson Building, Weber State Ogden Campus",
+     "allDay": false,
+     "desc": "Join Weber State Campus Recreation for the 22nd&#160;Annual Turkey Triathlon and 5K Trot! The race includes a 5k run, 10k bike, 300yd swim, and is a reverse sprint distance to introduce participants to Triathlons. The race circles the Weber State Campus, which offers gorgeous views of the Wasatch Front as you run and bike.&#160;\n\nCommunity members welcome! Race fees include a medal and t-shirt. Spots are filling quickly, so don&#8217;t wait to register!",
+     "url": "https://www.weber.edu/races/turkey-tri.html",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794105000000,
+     "e": 1794112200000,
+     "t": "Aida Cuevas",
+     "loc": "Val A. Browning Center<br>3848 Harrison Blvd<br>Ogden, UT 84403",
+     "allDay": false,
+     "desc": "When A&#237;da Cuevas takes the stage in Ogden, it&#8217;s the kind of night that brings la familia together. Abuelos, parents, and ni&#241;os sharing music that belongs to all of them. On Saturday, November 7, La Voz de M&#233;xico takes the stage at the Browning Center at Weber State University for an evening of mariachi and ranchera that spans five decades of Mexican tradition.",
+     "url": "https://www.onstageogden.org/show-item/aida-cuevas-2026/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794326400000,
+     "e": 1794330000000,
+     "t": "Browning Gun Club Meeting",
+     "loc": "Union Station - Wattis Dumke Room<br>2501 Wall Avenue<br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Club Meets every second Tuesday morning, Sept thru May at Union Station upstairs in the Wattis Dumke Room next to the Browning Gun Museum.  Donuts and juice are served.\n\nJan 8, 2019 &#8211; Presenter & subject TBA\nFeb 12, 2019 &#8211; John Spangler &#8211; Subject TBA\nMar 12, 2019 &#8211; Presenter & subject TBA\nApr 9, 2019 &#8211; Presenter & Subject TBA\nMay 14, 2019 &#8211; Presenter & Subject TBA",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794342600000,
+     "e": 1794346200000,
+     "t": "Gentle Movements",
+     "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+     "allDay": false,
+     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794349800000,
+     "e": 1794357000000,
+     "t": "Ogden City Council Work Session",
+     "loc": "Ogden City Municipal Building<br>2549 Washington Blvd Ste 340<br>Ogden UT  84401",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794351600000,
+     "e": 1794366000000,
+     "t": "RMBRA Jackpots",
+     "loc": "Golden Spike Event Center<br>Outdoor Stadium<br>1000 North 1200 West<br>Ogden, UT 84404",
+     "allDay": false,
+     "desc": "Time Onlys: 4pm&#160;\nRaces: 6:30pm\n\nFor more information and events:\nwww.facebook.com&#8230;",
+     "url": "https://www.facebook.com/RMBRARockyMountainBarrelRacing/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794357000000,
+     "e": 1794364200000,
+     "t": "Free Community Craft night",
+     "loc": "The Local Artisan Collective<br>2371 Kiesel Ave<br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Whether you paint, sew, draw, sculpt, write, knit, crochet, bead, or whatever your creative pursuit, bring your supplies and chat with new friends while we work on our latest projects. During the last 15&#8211;20 minutes of the event, everyone will be invited to share what they&#8217;ve been working on. If you&#8217;ve been struggling with a part of your project or would like to ask the group for feedback, this is the perfect time. This is an open forum for sharing ideas, offering support, and getting help from fellow makers.",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794358800000,
+     "e": 1794369600000,
+     "t": "Ogden City Council Meeting",
+     "loc": "Ogden City Municipal Building<br>Council Chambers, 3rd Floor<br>2549 Washington Blvd<br>Ogden UT  84401",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794364200000,
+     "e": 1794371400000,
+     "t": "Wind and Percussion Chamber Music",
+     "loc": "Val A. Browning Center | Garrison Choral Room",
+     "allDay": false,
+     "desc": "An engaging evening of chamber music showcasing wind and percussion instruments in intimate ensemble settings.",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794447000000,
+     "e": 1794450600000,
+     "t": "Yoga",
+     "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+     "allDay": false,
+     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don&#8217;t forget your yoga mat!",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794553200000,
+     "e": 1794726000000,
+     "t": "Mosaic Lamp Making Classes",
+     "loc": "Hilton Garden Inn Ogden UT<br>2271 Washington Blvd<br>Ogden, UT 84401",
+     "allDay": true,
+     "desc": "Create your own beautiful mosaic lamp in a fun, hands-on workshop! Choose your favorite colors and patterns, learn the traditional mosaic technique, and take home a unique lamp made by you.",
+     "url": "https://artmasterclass.global/products/mosaic-classes-ogden",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794614400000,
+     "e": 1794634200000,
+     "t": "Ogden Big Lebowski Festival",
+     "loc": "Peery&#8217;s Egyptian Theater<br>2415 Washington Blvd., Ogden, Utah",
+     "allDay": false,
+     "desc": "The Dude is back! Join us at the historic Peery&#8217;s Egyptian Theater for a celebration of the Coen Brothers&#8217; cult classic The Big Lebowski.\n\nEnjoy a screening of the film, costume contests, trivia, local vendors, and themed drinks available for purchase. Whether you&#8217;re a lifelong achiever or seeing the movie for the first time, come spend the evening with fellow fans and abide in true Dude fashion.",
+     "url": "https://ogdenpet.com/event/ogden-big-lebowski-festival-2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794616200000,
+     "e": 1794630600000,
+     "t": "Ogden Ski Swap",
+     "loc": "1000 N 1200 W<br>Ogden, UT 84404",
+     "allDay": false,
+     "desc": "Shop a wide selection of discounted new and used skis, snowboards, and boots. Also available are gloves, poles, goggles, hats, and outerwear for all your winter recreation needs. $7/person on Friday only!",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794623400000,
+     "e": 1794630600000,
+     "t": "New Ogden Cinema Presents: Ogden Big Lebowski Festival",
+     "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "&#8220;That rug really tied the room together&#8230;&#8221;\nAnd so does this festival.\n\nThe Dude is back! Join us at the historic Peery&#8217;s Egyptian Theater for a celebration of the Coen Brothers&#8217; cult classic The Big Lebowski.\n\nEnjoy a screening of the film, costume contests, trivia, local vendors, and themed drinks available for purchase. Whether you&#8217;re a lifelong Achiever or seeing the movie for the first time, come spend the evening with fellow fans and abide in true Dude fashion.\n\nMark your calendar, and don&#8217;t forget your bathrobe.\n&#160;\nSCHEDULE:Front doors open at",
+     "url": "https://ogdenpet.com/event/ogden-big-lebowski-festival-2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794675600000,
+     "e": 1794697200000,
+     "t": "Ogden Ski Swap",
+     "loc": "1000 N 1200 W<br>Ogden, UT 84404",
+     "allDay": false,
+     "desc": "Shop a wide selection of discounted new and used skis, snowboards, and boots. Also available are gloves, poles, goggles, hats, and outerwear for all your winter recreation needs. No charge to get in!",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794675600000,
+     "e": 1794693600000,
+     "t": "Annual Holiday Bazaar",
+     "loc": "Episcopal Church of the Good Shepherd<br>2375 Grant Ave<br>Ogden, UT 8401",
+     "allDay": false,
+     "desc": "Good Shepherd Church&#39;s annual bazaar offers handmade crafts and items, baked goods, used books and puzzles to help you prepare for gift-giving season. A raffle provides an opportunity to win unique items just in time for Christmas.",
+     "url": "https://www.goodshepherdogdenutah.org/events.html",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794947400000,
+     "e": 1794951000000,
+     "t": "Gentle Movements",
+     "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+     "allDay": false,
+     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794954600000,
+     "e": 1794961800000,
+     "t": "Ogden City Council Work Session",
+     "loc": "Ogden City Municipal Building<br>2549 Washington Blvd Ste 340<br>Ogden UT  84401",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794958200000,
+     "e": 1794976200000,
+     "t": "Utah Youth Rodeo",
+     "loc": "Golden Spike Event Center<br>1000 N 1200 W St.<br>Ogden, UT 84404",
+     "allDay": false,
+     "desc": "Come out and support the next generation of rodeo athletes! The Utah Youth Rodeo Association is bringing young competitors, ages 2 &#8211; 14, together for a fun-filled evening of rodeo.&#160;\n\nThese young cowboys and cowgirls will put their skills to the test as they compete in a variety of rodeo events and show off all their hard work, determination, and love for the sport.\n\nAdmission is free!\n\nFor more information visit:&#160;https://www.uyraentries.com/",
+     "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/t4e/1/16/1f402.png",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794963600000,
+     "e": 1794974400000,
+     "t": "Ogden City Council Meeting",
+     "loc": "Ogden City Municipal Building<br>Council Chambers, 3rd Floor<br>2549 Washington Blvd<br>Ogden UT  84401",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794967200000,
+     "e": 1794974400000,
+     "t": "Wasatch Audubon Monthly Program",
+     "loc": "Ogden Nature Center<br>966 W. 12th Street<br>Ogden, UT 84404",
+     "allDay": false,
+     "desc": "The Audubon Society presents a different speaker or slide show every month. Meetings are hybrid - in person and Zoom. Please visit www.wasatchaudubon.org or call the Ogden Nature Center for details at 801-621-7595.",
+     "url": "http://www.wasatchaudubon.org",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794969000000,
+     "e": 1794976200000,
+     "t": "String Chamber Music Fall Concert",
+     "loc": "Val A. Browning Center | Garrison Choral Room<br>3848 Harrison Blvd<br>Ogden, UT 84403",
+     "allDay": false,
+     "desc": "WSU string area students will perform exciting chamber music gems in various groups, including string quartets and trios. Collaborating and performing on their own, the students will be sharing the repertoire they&#8217;ve prepared throughout the semester.",
+     "url": "https://www.weber.edu/music/chamber-orchestra.html",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795046400000,
+     "e": 1795053600000,
+     "t": "Ogden City Planning Commission Worksession",
+     "loc": "2549 Washington Blvd.<br>Room #310<br>Ogden, UT  84401",
+     "allDay": false,
+     "desc": "Ogden City Planning Commission Worksession",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795048200000,
+     "e": 1795314600000,
+     "t": "THE FIELD | Fall into Dance",
+     "loc": "Eccles Black Box Theatre",
+     "allDay": false,
+     "desc": "Nov 18 | 5:30 PM, Nov 19&#8211;21 | 7:30 PM\nMatinee: Nov 21 | 2 PM \nTHE FIELD | Fall into Dance is back inviting audiences to reconsider what dance can be in a world marked by division and uncertainty. THE FIELD is a platform to new student choreographers and Moving Company, under the direction of Adjunct Faculty Stacee Perry, to position movement as a dialogue across cultures, identities, and lived experiences.\n\nRooted in a legacy of empowerment, discovery, and community, THE FIELD presents local, regional, and national works that ask how the body carries history, how movement fosters connect",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795051800000,
+     "e": 1795055400000,
+     "t": "Yoga",
+     "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+     "allDay": false,
+     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don&#8217;t forget your yoga mat!",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795131000000,
+     "e": 1795134600000,
+     "t": "Ogden Trails Network Committee Meeting",
+     "loc": "2549 Washington Blvd.<br>Room 710<br>Ogden, UT  84401",
+     "allDay": false,
+     "desc": "Ogden Trails Network Committee Meeting",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795158000000,
+     "e": 1803711600000,
+     "t": "Words/Inspired by Books - Community Art Show",
+     "loc": "Ogden Union Station<br>2501 Wall Avenue, Ogden, UT 84401",
+     "allDay": true,
+     "desc": "Community Art Show is hosted quarterly at Ogden&#8217;s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
+     "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795219200000,
+     "e": 1795233600000,
+     "t": "Acorn Antiques &amp; Vintage Show",
+     "loc": "Golden Spike Event Center<br>1000 N 1200 W<br>Ogden, UT 84404",
+     "allDay": false,
+     "desc": "&#x1F342;&#x1F384; Join us for the Acorn Antiques & Vintage Holiday Show! &#x1F384;&#x1F342;\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country d&#233;cor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you&#8217;ll find something for everyone!\n\n&#x1F39F;&#65039; Admission: &#x1F39F;&#65039;\n&#x1F341; Friday Early Shopping: $10\n&#x1F341; Saturday &#8211; Sunday: $7\n&#10024; Tickets are good for re-entry all weekend!\n&#x1F39F;&#65039; Tickets sold at door.",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795228200000,
+     "e": 1795237200000,
+     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+     "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated &quot;Bah! Humbug!&quot; Scrooge summates his feelings of Christmas tidings and charitable giving, but he&#39;s forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful &quot;Happy Christmas&quot; before spending the day reconnecting and sharing love with those that mean the most t",
+     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795276800000,
+     "e": 1795305600000,
+     "t": "Acorn Antiques &amp; Vintage Show",
+     "loc": "Golden Spike Event Center<br>1000 N 1200 W<br>Ogden, UT 84404",
+     "allDay": false,
+     "desc": "&#x1F342;&#x1F384; Join us for the Acorn Antiques & Vintage Holiday Show! &#x1F384;&#x1F342;\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country d&#233;cor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you&#8217;ll find something for everyone!\n\n&#x1F39F;&#65039; Admission: &#x1F39F;&#65039;\n&#x1F341; Friday Early Shopping: $10\n&#x1F341; Saturday &#8211; Sunday: $7\n&#10024; Tickets are good for re-entry all weekend!\n&#x1F39F;&#65039; Tickets sold at door.",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    }
+   ]
   }
  },
  "sources": {
+  "ogdenarea": [
+   {
+    "s": 1792623600000,
+    "e": 1792630800000,
+    "t": "Ogden City Planning Commission Worksession",
+    "loc": "2549 Washington Blvd.<br>Room #310<br>Ogden, UT  84401",
+    "allDay": false,
+    "desc": "Ogden City Planning Commission Worksession",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792627200000,
+    "e": 1792634400000,
+    "t": "Ladies Night Out - Health Across Every Stage",
+    "loc": "McKay-Dee Hospital - Education Center<br>4401 Harrison Blvd. Ogden, UT",
+    "allDay": false,
+    "desc": "Join us for a relaxed, inspiring evening focused on women&#39;s health, connection and community. Delicious bites, mocktails, giveaways, and meaningful conversations.",
+    "url": "https://intermountainhealthcare.org/locations/mckay-dee-hospital",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792629000000,
+    "e": 1792632600000,
+    "t": "Yoga",
+    "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+    "allDay": false,
+    "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don&#8217;t forget your yoga mat!",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792632600000,
+    "e": 1792639800000,
+    "t": "Hurst Artist-in-Residence: Pepon Osario",
+    "loc": "Kimball Arts Building",
+    "allDay": false,
+    "desc": "Join us for a conversation with Pep&#243;n Osorio, an internationally recognized multidisciplinary artist whose work explores race, identity, social justice, and the lived experiences of Latinx and working-class communities in the United States. Born in San Juan and later moving to the South Bronx, Osorio creates richly detailed sculptures and installations shaped by community collaboration and social engagement. For more than 35 years, his work has sparked critical conversations around inequality within healthcare, education, and prison systems while centering the voices and experiences of th",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792708200000,
+    "e": 1792711800000,
+    "t": "Ogden City Landmarks Commission",
+    "loc": "2549 Washington Blvd.<br>City Council Chambers<br>Ogden, UT  84401",
+    "allDay": false,
+    "desc": "Ogden City Landmarks Commission",
+    "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792713600000,
+    "e": 1792724400000,
+    "t": "Ogden Dinosaur Park Dinos in the Dark",
+    "loc": "Ogden Dinosaur Park<br>1544 Park Blvd. <br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Wear your favorite costume and join us for all sorts of tricks and treats. This event has something for everyone from treats and crafts for the little explorers to jump scares and haunted trails for those who dare&#8230;",
+    "url": "https://dinosaurpark.org/dinos-dark/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792719000000,
+    "e": 1792726200000,
+    "t": "Luminescence",
+    "loc": "Val A. Browning Center | Austad Auditorium",
+    "allDay": false,
+    "desc": "Join the Weber State Symphonic Band for an evening of enLIGHTening music!",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792764000000,
+    "e": 1792789200000,
+    "t": "Outdoor Gear Sale &amp; Swap",
+    "loc": "Outdoor Adventure &amp; Welcome Center (1352 Village Dr. Ogden, UT)",
+    "allDay": false,
+    "desc": "Step up your game, no more daily rentals! Come score deep discounts on all past season gear at our annual Gear Sale. Shop used gear from the rental center and check out our other vendors. Gear up for grabs includes snowboards, paddleboards, kayaks, and more!\n\nThis year, students get the first chance to shop gear during our student pre-sale, October 20-22! The Gear Sale will open to the community on October 23.\n\nDate: October 23, 2026 // Time: 8 a.m. - 3 p.m.\nLocation: Outdoor Adventure & Welcome Center (1352 Village Dr. Ogden, UT)\n\nStudent Pre-sale: October 20-22 // 12-4 p.m.",
+    "url": "https://www.weber.edu/outdoor/gear-sale-swap.html",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792778400000,
+    "e": 1792976400000,
+    "t": "FREE Ogden Home Show, October 2026",
+    "loc": "Golden Spike Event Center - Exhibit Hall,&#160;1000 1200 W St,&#160;Ogden, UT 84404",
+    "allDay": false,
+    "desc": "FREE ADMISSION!\n\nThe Ogden Home Show takes place October 23&#8211;25, 2026 at the Golden Spike Event Center (Exhibit Hall). Show hours:\n\nFriday: 12:00pm &#8211; 7:00pm\nSaturday: 10:00am &#8211; 5:00pm\nSunday: 11:00am &#8211; 4:00pm\nVisit the event site for details.",
+    "url": "https://eventvesta.com/events/163718/t/tickets",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792800000000,
+    "e": 1792810800000,
+    "t": "Ogden Dinosaur Park Dinos in the Dark",
+    "loc": "Ogden Dinosaur Park<br>1544 Park Blvd. <br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Wear your favorite costume and join us for all sorts of tricks and treats. This event has something for everyone from treats and crafts for the little explorers to jump scares and haunted trails for those who dare&#8230;",
+    "url": "https://dinosaurpark.org/dinos-dark/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792800900000,
+    "e": 1792805400000,
+    "t": "Candlelight: A Haunted Evening of Halloween Classics",
+    "loc": "The Monarch&#160;<br>455 25th Street&#160;<br>Ogden, Utah 84401",
+    "allDay": false,
+    "desc": "Candlelight concerts bring the magic of a live, multi-sensory musical experience to awe-inspiring locations like never seen before in Ogden. Get your tickets now to discover music inspired by Halloween at The Monarch under the gentle glow of candlelight.\n\nSpooky season is almost here! Halloween special concerts are selling fast. Get your tickets before they fully SELL OUT!\n\nThis is a tribute concert experience. It is not affiliated with, endorsed by, or sponsored by the artist, their estate, or official representatives.\nGeneral Info\nVenue: The Monarch\nDates and times: select your dates/times d",
+    "url": "https://feverup.com/m/193195?",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792803600000,
+    "e": 1792810800000,
+    "t": "Peery&#39;s Egyptian Theater Presents: Labyrinth",
+    "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Please note: this event is a film; not a play.&#160;\n&#160;\nSixteen-year-old Sarah is given thirteen hours to solve a labyrinth and rescue her baby brother Toby when her wish for him to be taken away is granted by the Goblin King Jareth.",
+    "url": "https://ogdenpet.com/event/labyrinth/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792805400000,
+    "e": 1792814400000,
+    "t": "Wait Until Dark at West Valley Arts",
+    "loc": "West Valley Performing Arts Center, 3333 Decker Lake Drive, West Valley City, UT 84119",
+    "allDay": false,
+    "desc": "A blind woman. A hidden secret. One apartment.\nIn 1944 Greenwich Village, Susan Hendrix finds herself caught in a web of deception that turns her home into a battleground. As danger closes in, Susan must outthink an unseen adversary in a gripping game of cat and mouse that culminates in total darkness.\nJeffrey Hatcher&#39;s acclaimed adaptation breathes new life into Frederick Knott&#39;s classic thriller, keeping audiences on the edge of their seats until the very end.",
+    "url": "https://wvcarts.ludus.com/200481571",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792809000000,
+    "e": 1792813500000,
+    "t": "Candlelight: Coldplay vs. Imagine Dragons",
+    "loc": "The Monarch&#160;<br>455 25th Street&#160;<br>Ogden, Utah 84401",
+    "allDay": false,
+    "desc": "Candlelight concerts bring the magic of a live, multi-sensory musical experience to awe-inspiring locations like never seen before in Ogden",
+    "url": "https://feverup.com/m/754548?",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792861200000,
+    "e": 1792872000000,
+    "t": "Hilton Garden Inn Fall Vendor Event",
+    "loc": "Hilton Garden Inn<br>2271 S. Washington Blvd.<br>Ogden, Utah 84401",
+    "allDay": false,
+    "desc": "Hilton Garden Inn Ogden Fall Vendor Event\n\nJoin us for the Hilton Garden Inn Ogden Fall Vendor Event on Saturday, October 24th from 11 AM&#8211;2 PM.\n\nShop a variety of local vendors offering handmade goods, boutique finds, beauty and wellness products and services, jewelry, gifts, and more. This free community event is a great opportunity to discover local businesses, shop for something unique, and support small businesses in Northern Utah.\n\nAdmission is free and the event is open to the public.\n\nShop &#8226; Discover &#8226; Support Local",
+    "url": "https://www.hilton.com/en/hotels/ogdwbgi-hilton-garden-inn-ogden-ut/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792868400000,
+    "e": 1792890000000,
+    "t": "Dia de los Muertos Utah",
+    "loc": "Union Station<br>2501 Wall Ave<br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "D&#237;a de los Muertos or Day of the Dead, is a celebration of life and death.\nJoin us at the Historic Union Station, Ogden as we celebrate our loved ones as a community in a state wide festival.\nThere will be a craft market, live music, dancers, car show, food, community altar and more.\nHosted by: Cultura & Craft\nIn partnership with: Ogden Union Station & Ogden City Arts\n(This event is free for the entire family)\nThank you RAMP for your support",
+    "url": "https://www.facebook.com/events/1671494223954930/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792875600000,
+    "e": 1792882800000,
+    "t": "Eskape - Journey Tribute Concert",
+    "loc": "Ogden Amphitheater - 343 25th St, Ogden, Utah",
+    "allDay": false,
+    "desc": "JOURNEY TRIBUTE CONCERT - LIVE AT OGDEN AMPHITHEATER\nEskape, Utah&#39;s premier band. \nUTAH JOURNEY FANS &#8212; THIS ONE&#39;S FOR YOU!\nGet ready for an unforgettable afternoon celebrating the legendary music of JOURNEY as ESKAPE &#8211; Journey Tribute takes its show to the Ogden Amphitheater for the band&#39;s first big performance on a major amphitheater stage!\n&#x1F4C5; SATURDAY &#8226; OCTOBER 24, 2026\n&#9200; 3:00 PM &#8211; 5:00 PM Door opens at 2:00 PM\n&#x1F4CD; OGDEN AMPHITHEATER\nBring your friends. Bring your family. And get ready to sing along!\nExperience the soaring vocals, powerf",
+    "url": "https://ESKAPEJOURNEYTRIBUTE.eventbrite.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792875600000,
+    "e": 1792882800000,
+    "t": "Eskape - Journey Tribute Concert",
+    "loc": "Ogden Amphitheater",
+    "allDay": false,
+    "desc": "ESKAPE &#8211; JOURNEY TRIBUTE: LIVE AT OGDEN AMPHITHEATER!\nGet tickets here: eskapejourneytribute.eventbrite.com\n**BIGGER STAGE. BIGGER SOUND. AN UNFORGETTABLE LIVE EXPERIENCE.**\n**SATURDAY &#8226; OCTOBER 24, 2026**\n**3:00 PM &#8211; 5:00 PM**\n **OGDEN AMPHITHEATER &#8226; OGDEN, UTAH**\nJourney fans, **THIS ONE&#39;S FOR YOU!**\nESKAPE &#8211; JOURNEY TRIBUTE is stepping onto a BIG AMPHITHEATER STAGE for a special live concert celebrating the unforgettable music of JOURNEY!\nIf you&#39;ve ever sung along to Journey in your car, turned up the volume when one of their classics came on, or have m",
+    "url": "https://ESKAPEJOURNEYTRIBUTE.eventbrite.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792879200000,
+    "e": 1792886400000,
+    "t": "Annual Creepy Doll Class",
+    "loc": "Local Artisan Collective <br>2371 Kiesel Ave.<br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Annual Creepy Doll Class!\nWhat:\nJoin in the fun & create a Creepy Doll! All of our classes have sold out year after year so we added even more this year and tickets are already being sold so make sure that you get your spot before they all sell out.\n\n-All supplies are included and everyone will get their own Creepy Doll along with a variety of cool items to make each doll unique & creepy.\n\n-I will also be teaching how to create warts, wounds, wrinkly skin along with a variety of cool creepy doll techniques. Then you can have fun letting your imagination run wild as you create your own creepy d",
+    "url": "https://localartisancollective.com/events/annual-creepy-doll-class-on-saturday-october-24th-from-400-to-600/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792886400000,
+    "e": 1792897200000,
+    "t": "Ogden Dinosaur Park Dinos in the Dark",
+    "loc": "Ogden Dinosaur Park<br>1544 Park Blvd. <br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Wear your favorite costume and join us for all sorts of tricks and treats. This event has something for everyone from treats and crafts for the little explorers to jump scares and haunted trails for those who dare&#8230;",
+    "url": "https://dinosaurpark.org/dinos-dark/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792891800000,
+    "e": 1792900800000,
+    "t": "Wait Until Dark at West Valley Arts",
+    "loc": "West Valley Performing Arts Center, 3333 Decker Lake Drive, West Valley City, UT 84119",
+    "allDay": false,
+    "desc": "A blind woman. A hidden secret. One apartment.\nIn 1944 Greenwich Village, Susan Hendrix finds herself caught in a web of deception that turns her home into a battleground. As danger closes in, Susan must outthink an unseen adversary in a gripping game of cat and mouse that culminates in total darkness.\nJeffrey Hatcher&#39;s acclaimed adaptation breathes new life into Frederick Knott&#39;s classic thriller, keeping audiences on the edge of their seats until the very end.",
+    "url": "https://wvcarts.ludus.com/200481571",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792891800000,
+    "e": 1792900800000,
+    "t": "The Rocky Horror Picture Show",
+    "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join us at the annual&#160;Rocky Horror Picture Show party & showing&#160;at Peery&#39;s Egyptian Theater!\n\nCome join us for a night of fun with food and bar at 5:30 PM (pre-party ticket required, ages 18+) followed by our annual Costume Contest at 6:50 PM and showing of the film&#160;The Rocky Horror Picture Show&#160;at 7:30 PM.\n\nAfter the wedding of mutual friends, Brad Majors (Barry Bostwick) and his fianc&#233;e Janet Weiss (Susan Sarandon) get lost driving in a heavy downpour. The first house they see belongs to majordomo Riff Raff (Richard O&#39;Brien) and his sister, housekeeper Magent",
+    "url": "https://ogdenpet.com/events/category/series/rocky-horror-picture-show-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1792978200000,
+    "e": 1792987200000,
+    "t": "The Rocky Horror Picture Show",
+    "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join us at the annual&#160;Rocky Horror Picture Show party & showing&#160;at Peery&#39;s Egyptian Theater!\n\nCome join us for a night of fun with food and bar at 5:30 PM (pre-party ticket required, ages 18+) followed by our annual Costume Contest at 6:50 PM and showing of the film&#160;The Rocky Horror Picture Show&#160;at 7:30 PM.\n\nAfter the wedding of mutual friends, Brad Majors (Barry Bostwick) and his fianc&#233;e Janet Weiss (Susan Sarandon) get lost driving in a heavy downpour. The first house they see belongs to majordomo Riff Raff (Richard O&#39;Brien) and his sister, housekeeper Magent",
+    "url": "https://ogdenpet.com/events/category/series/rocky-horror-picture-show-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793129400000,
+    "e": 1793133000000,
+    "t": "Gentle Movements",
+    "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+    "allDay": false,
+    "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793136600000,
+    "e": 1793143800000,
+    "t": "Ogden City Council Work Session",
+    "loc": "Ogden City Municipal Building<br>2549 Washington Blvd Ste 340<br>Ogden UT  84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793145600000,
+    "e": 1793156400000,
+    "t": "Ogden City Council Meeting",
+    "loc": "Ogden City Municipal Building<br>Council Chambers, 3rd Floor<br>2549 Washington Blvd<br>Ogden UT  84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793193300000,
+    "e": 1793197800000,
+    "t": "ConnectEffect",
+    "loc": "Weber State University Community Education Center<br>2605 S Monroe Blvd, Ogden 84401",
+    "allDay": false,
+    "desc": "Ogden, Let&#39;s Connect!\n\nCome experience ConnectEffect led by founder Riaz Patel.\n\nA 53 minute immersive experience that turns strangers into connected communities. This FREE community event will be entertaining, joyful, and filled with opportunities to connect in unexpected ways. \n\nShow up early or stay late for delicious desserts and more connections. \n\nDate: Wednesday, October 28\nTime: 7:30 p.m. - 8:30 p.m.\nShow up early or stay late for delicious desserts and more connections. \n\nLocation: Weber State Community Education Center (2605 Monroe Blvd, Ogden) \nFREE Parking\n\nConnection starts wh",
+    "url": "https://givepul.se/hkwy8u",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793233800000,
+    "e": 1793237400000,
+    "t": "Yoga",
+    "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+    "allDay": false,
+    "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don&#8217;t forget your yoga mat!",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793237400000,
+    "e": 1793244600000,
+    "t": "UTAH SYMPHONY DISNEY&#8217;S HOCUS POCUS IN CONCERT",
+    "loc": "Val A Browning Center<br>Weber State University<br>1901 University Circle<br>Ogden, UT 84408",
+    "allDay": false,
+    "desc": "A Hocus Pocus in Concert night in Ogden starts the way the best Halloween plans do: lights down, screen glowing, and a full symphony orchestra drawing the first breath of John Debney&#8217;s score. On Wednesday, October 28, the Utah Symphony performs the complete original score live while the beloved 1993 film plays on a big screen above the stage at the Browning Center.",
+    "url": "https://www.onstageogden.org/show-item/hocus-pocus/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793316600000,
+    "e": 1793331000000,
+    "t": "Roaring 20s Halloween Dinner Tour Experience",
+    "loc": "Stellas on 25th<br>225 Historic 25th Street<br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join Tour Ogden and Stellas for a Roaring 20&#8217;s Halloween Experience! Thursday, October 29, 2026 at 5:30 pm enjoy dinner, activities and a historic walking Tour! Spaces are limited for this special event.",
+    "url": "https://tourogden.com/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793320200000,
+    "e": 1793327400000,
+    "t": "Halloween Storytelling Spooktacular",
+    "loc": "Peery&#39;s Egyptian Theatre<br>2415 Washington Blvd<br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Weber State University Storytelling Festival presents a Halloween Spooktacular, featuring Paul Strickland, Sam Payne, and Mo Reynolds, October 29th, at Peery&#39;s Egyptian Theater. This special event starts at 6:30 p.m. with scary stories followed by scarier stories starting at 7:30 p.m. Admission is free, no tickets required, first come, first seated. Encore performance (same storytellers, new stories) on October 30th at the WSU Davis Campus. For more information, go to weber.edu/storytelling.",
+    "url": "https://www.weber.edu/storytelling",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793383200000,
+    "e": 1793412000000,
+    "t": "Weber State&#39;s SPOOK-TACULAR Halloween Party",
+    "loc": "Weber State University - Shepherd Union<br>3910 West Campus Dr<br>Ogden, UT 84408",
+    "allDay": false,
+    "desc": "Weber State&#39;s SPOOK-TACULAR Halloween Party \nJoin us Friday, Oct. 30 at Weber State University for Halloween fun from noon to 8 p.m.,  including Halloween crafts and activities, trick-or-treating, face painting, bowling, two viewings of Hotel Transylvania, and a kids carnival. The Spook-Tacular Halloween Party is free and open to the community.",
+    "url": "https://www.weber.edu/halloween",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793401200000,
+    "e": 1793408400000,
+    "t": "Skinny Dogz Trunk or Treat",
+    "loc": "Skinny Dogz 2261 Kiesel Ave, Ogden UT, 84401.",
+    "allDay": false,
+    "desc": "&#x1F383; Join us for a FREE family-friendly Trunk or Treat! Bring the kids, bring the fam, bring a friend and come enjoy a night of Halloween fun with decorated cars, TONS of candy, costumes, music and more! &#x1F47B;&#x1F36C; Everyone is welcome, come hang out and celebrate Halloween with us!",
+    "url": "https://facebook.com/events/s/skinny-dogz-trunk-or-treat/1400402505593873/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793401200000,
+    "e": 1793408400000,
+    "t": "Skinny Dogz Trunk or Treat",
+    "loc": "Skinny Dogz <br>2261 Kiesel Ave<br>Ogden UT 84401",
+    "allDay": false,
+    "desc": "Join us for a FREE family-friendly Trunk or Treat! Bring the kids, bring the fam, bring a friend and come enjoy a night of Halloween fun with decorated cars, TONS of candy, costumes, music and more! Everyone is welcome, come hang out and celebrate Halloween with us!",
+    "url": "https://facebook.com/events/s/skinny-dogz-trunk-or-treat/1400402505593873/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793404800000,
+    "e": 1793415600000,
+    "t": "Below the Bee: A Spookeasy",
+    "loc": "Queen Bee Giftery<br>270 25th Street<br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "The Queen Bee Giftery is staying open late, and for the first time ever, retail is heading down to our haunted basement. &#x1F47B;\n\nShop after hours with early access to our holiday inventory, then brave the stairs to shop local vendors in the basement.\n\nYour $15 ticket includes:\n\nFree dirty sodas, popcorn, and cotton candy\nA chance to win a gift basket packed with goodies from every Spookeasy vendor\nA swag bag for the first 25 guests\nWhen: Friday, October 30th from  6&#8211;9 pm\nWhere: The Queen Bee Giftery, 270 25th Street, Ogden\n\nSnacks are on us. Anything lurking in the basement is not our",
+    "url": "https://queenbeegiftery.com/products/below-the-bee-a-spookeasy?_pos=1&_sid=fed4e4920&_ss=r",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793410200000,
+    "e": 1793419200000,
+    "t": "The Rocky Horror Picture Show",
+    "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join us at the annual&#160;Rocky Horror Picture Show party & showing&#160;at Peery&#39;s Egyptian Theater!\n\nCome join us for a night of fun with food and bar at 5:30 PM (pre-party ticket required, ages 18+) followed by our annual Costume Contest at 6:50 PM and showing of the film&#160;The Rocky Horror Picture Show&#160;at 7:30 PM.\n\nAfter the wedding of mutual friends, Brad Majors (Barry Bostwick) and his fianc&#233;e Janet Weiss (Susan Sarandon) get lost driving in a heavy downpour. The first house they see belongs to majordomo Riff Raff (Richard O&#39;Brien) and his sister, housekeeper Magent",
+    "url": "https://ogdenpet.com/events/category/series/rocky-horror-picture-show-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793451600000,
+    "e": 1793494800000,
+    "t": "Nightmare on the Mat Wrestling Competition",
+    "loc": "Golden Spike Event Center<br>1000 N 1200 W<br>Ogden, UT 84404",
+    "allDay": false,
+    "desc": "&#x1F9DF;&#8205;&#9794;&#65039;Nightmare on the Mat Wrestling Competition&#x1F3C6;\n\nGet ready for an action-packed wrestling competition in a spooky glow-in-the-dark setting! Cheer on participants as they battle it out on the mat.\n\n&#x1F480; Doors Open: 7 am\n&#x1F480; Event Starts: 8 am\n&#x1F480; Admission: $10 at the door\n\nFor more information visit: https://www.wrestleutah.com/nightmareonthemat\n\nBring your energy, bring your spirit, and enjoy an exciting competition!",
+    "url": "https://www.wrestleutah.com/nightmareonthemat",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793464200000,
+    "e": 1793469600000,
+    "t": "The Witches Brunch Club",
+    "loc": "Queen Bee Giftery<br>270 25th Street<br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Gather your coven, because Halloween morning is for brunch! &#x1F9D9;\n\nJoin us and our friends at The Brunch Club in the Queen Bee Giftery Loft for a bewitching morning of good food, great company, and a little magic.\n\nYour ticket includes:\n\nBrunch\nMocktails\nArtisan chocolate\nWitchy activities\nWhen: Saturday, October 31, 10:30 am\nWhere: The Queen Bee Giftery Loft, 270 25th Street, Ogden\n\nPointy hats encouraged. Broom parking not guaranteed.",
+    "url": "https://queenbeegiftery.com/products/witches-brunch-the-brunch-club",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793484000000,
+    "e": 1793505600000,
+    "t": "Halloween Bar Crawl",
+    "loc": "Starts at Kokomo Club<br>216 25th Street<br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "The Ogden Halloween Bar Crawl runs Saturday, October 31, 2026, 4PM - 10PM, across 6 bars in Ogden, UT. The route takes in 25th St, 25th Street, Washington Blvd and 24th St.\nCheck in at Kokomo Club (4PM - 6PM) to swap your ticket for a lanyard, badge and drink vouchers. After that there is no set route &#8212; the bars are yours to hit in any order, with crawler drink specials at every stop. The L.A.B. closes out the night.\nOgden has crawled with us every year since 2021.",
+    "url": "https://crawlwith.us/ogden/halloween/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793498400000,
+    "e": 1793512800000,
+    "t": "Halloween Burlesque",
+    "loc": "2450 Grant Ave, Ogden, UT, United States, 84401",
+    "allDay": false,
+    "desc": "Halloween Burlesque at Copper Nickel is a bold, unforgettable Halloween night featuring a captivating burlesque show, after-party, cocktails, and VIP experiences in the heart of Ogden.",
+    "url": "https://www.coppernickel.com/tickets/halloween-burlesque-2026",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793498400000,
+    "e": 1793512800000,
+    "t": "Halloween Burlesque",
+    "loc": "Copper Nickel<br>2450 Grant Ave<br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Halloween Burlesque is coming to Copper Nickel Events on October 31! &#x1F525;\nGet ready for a night of bold performances, exciting entertainment, and unforgettable Halloween energy. If you&#8217;re searching for Halloween events, date night ideas, or fun things to do in Ogden, make this part of your Halloween plans.",
+    "url": "https://www.coppernickel.com/tickets/halloween-burlesque-2026",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793646000000,
+    "e": 1793649600000,
+    "t": "Parent Cafe",
+    "loc": "Family Support Center of Ogden 3340 Harrison Blvd Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Safe space for parents to share, connect, and learn from each other. Each month is a different topic.\nFree Refreshments and Free Childcare for ages 0-11 (Must schedule in advance and complete paperwork)\nEmail at inquiry@fscogden.org or call us 801-393-3113\nAugust 3 - Building Structure and Routine at Home\nSeptember 14 - You are Not Alone - The Village Returns\nOctober 5 - Haunted Tales and Parenting WINS\nNovember 2 - Pulling the Ones You Love Closer - Making Your Home a Refuge\nDecember 7 - Resilience, Calm the Stress Down",
+    "url": "https://www.eventbrite.com/cc/parent-cafes-special-events-4839868?utm-campaign=social&utm-content=creatorshare&utm-medium=discovery&utm-term=odclsxcollection&utm-source=cp&aff=escb",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793714400000,
+    "e": 1793761200000,
+    "t": "2026 General Elections In-Person Voting",
+    "loc": "Golden Spike Event Center<br>1000 N 1200 W<br>Ogden, UT 84404",
+    "allDay": false,
+    "desc": "Come out and make your voice heard by exercising your right to vote! &#x1F5F3;&#65039;\n\nPolls will be open from 7 am to 8 pm, with voting located at the Exhibit Hall on the north side of the facility.\n\nFor more information visit https://www.weberelections.gov/",
+    "url": "https://www.weberelections.gov/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793737800000,
+    "e": 1793741400000,
+    "t": "Gentle Movements",
+    "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+    "allDay": false,
+    "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793745000000,
+    "e": 1793752200000,
+    "t": "Ogden City Council Work Session",
+    "loc": "Ogden City Municipal Building<br>2549 Washington Blvd Ste 340<br>Ogden UT  84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793754000000,
+    "e": 1793764800000,
+    "t": "Ogden City Council Meeting",
+    "loc": "Ogden City Municipal Building<br>Council Chambers, 3rd Floor<br>2549 Washington Blvd<br>Ogden UT  84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793759400000,
+    "e": 1793766600000,
+    "t": "Manual Cinema Presents: The 4th Witch",
+    "loc": "Val A. Browning Center | Austad Auditorium",
+    "allDay": false,
+    "desc": "Manual Cinema is an Emmy Award&#8211;winning performance collective, design studio, and film production company. The 4th Witch is a new story inspired by Shakespeare&#8217;s Macbeth, about a girl who escapes war and flees into a dark forest.\n\nTold through shado puppetry, actors in silhouette, and live music (without dialogue or narration), The 4th Witch begins on the eve of an invasion of a small town by the warlord Macbeth. The girl escapes the invading army and flees into the nearby forest. Orphaned and exiled, she is rescued by a witch who takes her in as an apprentice. As she becomes more ",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793759400000,
+    "e": 1793764800000,
+    "t": "Excellence in the Community Presents: Will Baxter &amp; the Best of Neal Diamond",
+    "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "This is a free event, no tickets are needed.\n\nExcellence in the Community presents, &#8220;Will Baxter and the Best of Neil Diamond&#8221;. Nostalgia and &#8220;good times never felt so good&#8221;.&#160;",
+    "url": "https://ogdenpet.com/event/eic-beachboystribute-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793833200000,
+    "e": 1793847600000,
+    "t": "RMBRA Jackpots",
+    "loc": "Golden Spike Event Center<br>Outdoor Stadium<br>1000 North 1200 West<br>Ogden, UT 84404",
+    "allDay": false,
+    "desc": "Time Onlys: 4pm&#160;\nRaces: 6:30pm\n\nFor more information and events:\nwww.facebook.com&#8230;",
+    "url": "https://www.facebook.com/RMBRARockyMountainBarrelRacing/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793836800000,
+    "e": 1793851200000,
+    "t": "Ogden City Planning Commission Meeting",
+    "loc": "2549 Washington Blvd.<br>Council Chambers, 3rd floor<br>Ogden, UT  84401",
+    "allDay": false,
+    "desc": "Ogden City Planning Commission",
+    "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793842200000,
+    "e": 1793845800000,
+    "t": "Yoga",
+    "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+    "allDay": false,
+    "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don&#8217;t forget your yoga mat!",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793844000000,
+    "e": 1793851200000,
+    "t": "Warren Miller&#39;s &quot;Days Off&quot;",
+    "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Drop in on the 77th historic installment of winter&#8217;s favorite tradition this fall with Warren Miller&#8217;s Days Off. Join host Katie Burrell as she pulls back the curtain on what the world&#8217;s best athletes do on their days off, chasing pure adventure across the globe.\n\nFrom the legendary backcountry of Alaska to the powder of Hokkaido, Japan&#8212;journey across the slopes of Deer Valley, Revelstoke, Whistler, Pemberton, and Banff.&#160;",
+    "url": "https://ogdenpet.com/event/warren-millers-days-off-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793926800000,
+    "e": 1793934000000,
+    "t": "Visiting Artist Lecture by Melissa Melero-Moose",
+    "loc": "Kimball Arts Building | Room 143",
+    "allDay": false,
+    "desc": "Melissa Melero-Moose is a Northern Paiute/Modoc mixed-media artist whose work is inspired by the landscapes and cultural traditions of the Great Basin. Using organic materials like willow, sand, and reeds, her textured abstract works reflect Indigenous knowledge, basketry traditions, and deep connections to land and community.",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793926800000,
+    "e": 1793934000000,
+    "t": "WSSO",
+    "loc": "Kimball Arts Building | Room 143",
+    "allDay": false,
+    "desc": "Melissa Melero-Moose is a Northern Paiute/Modoc mixed-media artist whose work is inspired by the landscapes and cultural traditions of the Great Basin. Using organic materials like willow, sand, and reeds, her textured abstract works reflect Indigenous knowledge, basketry traditions, and deep connections to land and community.",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793930400000,
+    "e": 1793937600000,
+    "t": "Trails Foundation of Northern Utah presents: Ogden Mountain Film Festival",
+    "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "The Ogden Mountain Film Festival is gearing up to celebrate the adventures and breathtaking landscapes of Ogden, Utah! Presented by the Trails Foundation of Northern Utah, OMFF&#160;will showcase short films that capture the heart-pounding excitement and sheer beauty of exploring our local mountains. These films are not just about the thrill; they&#8217;re about preserving our natural playground for generations to come.",
+    "url": "https://ogdenpet.com/event/ogden-mountain-film-festival-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794011400000,
+    "e": 1794016800000,
+    "t": "Historic 25th Street Walking Tour",
+    "loc": "Ogden Union Station<br>2501 Wall Ave <br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join local expert, Rich Koski, as he takes you on a guided walk from Union Station to the Monarch Building in the Nine Rails Creative District.\n\nEarly Weber County and Ogden history including the role of the fur traders and mountain men establishing the first European-American settlement in Utah.&#160;\n\nAmong the historical facts and anecdotes provided by your guide you&#8217;ll learn about:&#160;\n\nArrival of the Mormon Pioneers and establishment of Ogden as an agricultural community.&#160;\nOgden&#8217;s emergence as the Crossroads of the West following the completion of the Transcontinental R",
+    "url": "https://www.visitogden.com/things-to-do/guided-tours/guided-tour/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794013200000,
+    "e": 1794024000000,
+    "t": "The Major Brent Taylor Leadership Legacy Gala",
+    "loc": "Ogden Eccles Conference Center <br>2415 Washington Blvd<br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "The Leadership Legacy Gala is the Major Brent Taylor Foundation&#8217;s premier annual event. It is a night filled with reverence, celebration, and purpose. Held each November in honor of Veterans Day, the Gala brings together military families, civic leaders, students, donors, and community members who share a commitment to honoring those who serve and raising up the next generation of leaders.",
+    "url": "https://majorbrenttaylor.com/gala/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794013200000,
+    "e": 1794024000000,
+    "t": "Ogden&#39;s First Friday Art Stroll",
+    "loc": "Downtown Ogden",
+    "allDay": false,
+    "desc": "Ogden&#39;s First Friday Art Stroll is held the first Friday of the month from 6-9 PM, Ogden&#8217;s First Friday Art Stroll is abuzz year &#8216;round with exciting exhibit openings, artist receptions and live music of all genres in venues and in the streets. As the art stroll becomes the virtual front porch of Ogden, those that venture here are treated to great art, an atmosphere of camaraderie and inclusion and amazing night life; small town feel, big city offerings.\n\nEnjoy your journey. We hope you are inspired, delighted and challenged along the way.",
+    "url": "http://www.ogdencityarts.org",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794015000000,
+    "e": 1794024000000,
+    "t": "Under the Western Sky Gala",
+    "loc": "Timbermine Steakhouse 1701 Park Blvd, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "The Family Support Center of Ogden&#39;s Annual Gala Fundraiser. \nDinner with pairings, DJ, dancing, silent auction, and opportunity tickets.\nTables available for purchase.\nFor sponsorship and donation opportunities please email jade@fscogden.org\nThe Family Support Center of Ogden provides free workshops, education, childcare, and supportive services to help strengthen the family unit and enhance family functioning.",
+    "url": "https://FSCOAnnualGala2026.eventbrite.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794016800000,
+    "e": 1794715200000,
+    "t": "Much Ado About Nothing",
+    "loc": "Val A. Browning Center | Allred Theatre",
+    "allDay": false,
+    "desc": "November 6&#8211;7 & 11&#8211;14, 2026 | 7 PM\nMatinee: November 14 | 2 PM\n\nThe court of Messina is transformed to the French Quarter of New Orleans, where, against the backdrop of Mardi Gras, a merry war of wits masks a landscape of guarded hearts and sharp-edged pride.\n\nIn Shakespeare&#8217;s sparkling comedy, the cynics, Beatrice and Benedick, are perpetual sparring partners while the young lovers Claudio and Hero have their path to the altar sabotaged by the villainous Don John. A cruel deception threatens to ruin Hero&#8217;s reputation, as one couple is tricked into love and the other int",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794018600000,
+    "e": 1794025800000,
+    "t": "WSSO: Movie Score Selection",
+    "loc": "Val A. Browning Center | Austad Auditorium",
+    "allDay": false,
+    "desc": "Come enjoy the sensational selection of acclaimed movie soundtracks like E.T., Narnia, Out of Africa, Cinema Paradiso, Kung Fu Panda, by composers like Williams, Powell, Zimmer, Shore and others.",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794018600000,
+    "e": 1794025800000,
+    "t": "Onstage Ogden presents National Geographic Live: Wild Cats Revealed with Sandesh Kadur",
+    "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Travel into the mountains, jungles, and plains of India with filmmaker and National Geographic Explorer Sandesh Kadur. Through spectacular photography, rare footage, and stories from the field, Kadur introduces elusive species including Pallas&#8217;s cats, fishing cats, and clouded leopards while revealing the remarkable environments these wild predators call home.\n\nAges 8+ are welcome.",
+    "url": "https://ogdenpet.com/event/nat-geo-live-fall2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794020400000,
+    "e": 1794024000000,
+    "t": "Community United Methodist Church Holiday Boutique",
+    "loc": "Community United Methodist Church<br>163 W 4800 S<br>Washington Terrace, UT 84405",
+    "allDay": false,
+    "desc": "November 6 from 1 pm to 7 pm and November 7 from 10 am to 4 pm.  This is a community event with over 60 vendors.  There will also be food and beverages for purchase.  All kinds of crafts and each vendor is unique, none selling the same items. There is a silent auction and all proceeds go to a local organization that works with food banks in Utah.",
+    "url": "www.cumcholidayboutique.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794067200000,
+    "e": 1794076200000,
+    "t": "Turkey Triathlon &amp; 5K Trot",
+    "loc": "WSU Swenson Building, Weber State Ogden Campus",
+    "allDay": false,
+    "desc": "Join Weber State Campus Recreation for the 22nd&#160;Annual Turkey Triathlon and 5K Trot! The race includes a 5k run, 10k bike, 300yd swim, and is a reverse sprint distance to introduce participants to Triathlons. The race circles the Weber State Campus, which offers gorgeous views of the Wasatch Front as you run and bike.&#160;\n\nCommunity members welcome! Race fees include a medal and t-shirt. Spots are filling quickly, so don&#8217;t wait to register!",
+    "url": "https://www.weber.edu/races/turkey-tri.html",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794105000000,
+    "e": 1794112200000,
+    "t": "Aida Cuevas",
+    "loc": "Val A. Browning Center<br>3848 Harrison Blvd<br>Ogden, UT 84403",
+    "allDay": false,
+    "desc": "When A&#237;da Cuevas takes the stage in Ogden, it&#8217;s the kind of night that brings la familia together. Abuelos, parents, and ni&#241;os sharing music that belongs to all of them. On Saturday, November 7, La Voz de M&#233;xico takes the stage at the Browning Center at Weber State University for an evening of mariachi and ranchera that spans five decades of Mexican tradition.",
+    "url": "https://www.onstageogden.org/show-item/aida-cuevas-2026/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794326400000,
+    "e": 1794330000000,
+    "t": "Browning Gun Club Meeting",
+    "loc": "Union Station - Wattis Dumke Room<br>2501 Wall Avenue<br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Club Meets every second Tuesday morning, Sept thru May at Union Station upstairs in the Wattis Dumke Room next to the Browning Gun Museum.  Donuts and juice are served.\n\nJan 8, 2019 &#8211; Presenter & subject TBA\nFeb 12, 2019 &#8211; John Spangler &#8211; Subject TBA\nMar 12, 2019 &#8211; Presenter & subject TBA\nApr 9, 2019 &#8211; Presenter & Subject TBA\nMay 14, 2019 &#8211; Presenter & Subject TBA",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794342600000,
+    "e": 1794346200000,
+    "t": "Gentle Movements",
+    "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+    "allDay": false,
+    "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794349800000,
+    "e": 1794357000000,
+    "t": "Ogden City Council Work Session",
+    "loc": "Ogden City Municipal Building<br>2549 Washington Blvd Ste 340<br>Ogden UT  84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794351600000,
+    "e": 1794366000000,
+    "t": "RMBRA Jackpots",
+    "loc": "Golden Spike Event Center<br>Outdoor Stadium<br>1000 North 1200 West<br>Ogden, UT 84404",
+    "allDay": false,
+    "desc": "Time Onlys: 4pm&#160;\nRaces: 6:30pm\n\nFor more information and events:\nwww.facebook.com&#8230;",
+    "url": "https://www.facebook.com/RMBRARockyMountainBarrelRacing/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794357000000,
+    "e": 1794364200000,
+    "t": "Free Community Craft night",
+    "loc": "The Local Artisan Collective<br>2371 Kiesel Ave<br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Whether you paint, sew, draw, sculpt, write, knit, crochet, bead, or whatever your creative pursuit, bring your supplies and chat with new friends while we work on our latest projects. During the last 15&#8211;20 minutes of the event, everyone will be invited to share what they&#8217;ve been working on. If you&#8217;ve been struggling with a part of your project or would like to ask the group for feedback, this is the perfect time. This is an open forum for sharing ideas, offering support, and getting help from fellow makers.",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794358800000,
+    "e": 1794369600000,
+    "t": "Ogden City Council Meeting",
+    "loc": "Ogden City Municipal Building<br>Council Chambers, 3rd Floor<br>2549 Washington Blvd<br>Ogden UT  84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794364200000,
+    "e": 1794371400000,
+    "t": "Wind and Percussion Chamber Music",
+    "loc": "Val A. Browning Center | Garrison Choral Room",
+    "allDay": false,
+    "desc": "An engaging evening of chamber music showcasing wind and percussion instruments in intimate ensemble settings.",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794447000000,
+    "e": 1794450600000,
+    "t": "Yoga",
+    "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+    "allDay": false,
+    "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don&#8217;t forget your yoga mat!",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794553200000,
+    "e": 1794726000000,
+    "t": "Mosaic Lamp Making Classes",
+    "loc": "Hilton Garden Inn Ogden UT<br>2271 Washington Blvd<br>Ogden, UT 84401",
+    "allDay": true,
+    "desc": "Create your own beautiful mosaic lamp in a fun, hands-on workshop! Choose your favorite colors and patterns, learn the traditional mosaic technique, and take home a unique lamp made by you.",
+    "url": "https://artmasterclass.global/products/mosaic-classes-ogden",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794614400000,
+    "e": 1794634200000,
+    "t": "Ogden Big Lebowski Festival",
+    "loc": "Peery&#8217;s Egyptian Theater<br>2415 Washington Blvd., Ogden, Utah",
+    "allDay": false,
+    "desc": "The Dude is back! Join us at the historic Peery&#8217;s Egyptian Theater for a celebration of the Coen Brothers&#8217; cult classic The Big Lebowski.\n\nEnjoy a screening of the film, costume contests, trivia, local vendors, and themed drinks available for purchase. Whether you&#8217;re a lifelong achiever or seeing the movie for the first time, come spend the evening with fellow fans and abide in true Dude fashion.",
+    "url": "https://ogdenpet.com/event/ogden-big-lebowski-festival-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794616200000,
+    "e": 1794630600000,
+    "t": "Ogden Ski Swap",
+    "loc": "1000 N 1200 W<br>Ogden, UT 84404",
+    "allDay": false,
+    "desc": "Shop a wide selection of discounted new and used skis, snowboards, and boots. Also available are gloves, poles, goggles, hats, and outerwear for all your winter recreation needs. $7/person on Friday only!",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794623400000,
+    "e": 1794630600000,
+    "t": "New Ogden Cinema Presents: Ogden Big Lebowski Festival",
+    "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "&#8220;That rug really tied the room together&#8230;&#8221;\nAnd so does this festival.\n\nThe Dude is back! Join us at the historic Peery&#8217;s Egyptian Theater for a celebration of the Coen Brothers&#8217; cult classic The Big Lebowski.\n\nEnjoy a screening of the film, costume contests, trivia, local vendors, and themed drinks available for purchase. Whether you&#8217;re a lifelong Achiever or seeing the movie for the first time, come spend the evening with fellow fans and abide in true Dude fashion.\n\nMark your calendar, and don&#8217;t forget your bathrobe.\n&#160;\nSCHEDULE:Front doors open at",
+    "url": "https://ogdenpet.com/event/ogden-big-lebowski-festival-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794675600000,
+    "e": 1794697200000,
+    "t": "Ogden Ski Swap",
+    "loc": "1000 N 1200 W<br>Ogden, UT 84404",
+    "allDay": false,
+    "desc": "Shop a wide selection of discounted new and used skis, snowboards, and boots. Also available are gloves, poles, goggles, hats, and outerwear for all your winter recreation needs. No charge to get in!",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794675600000,
+    "e": 1794693600000,
+    "t": "Annual Holiday Bazaar",
+    "loc": "Episcopal Church of the Good Shepherd<br>2375 Grant Ave<br>Ogden, UT 8401",
+    "allDay": false,
+    "desc": "Good Shepherd Church&#39;s annual bazaar offers handmade crafts and items, baked goods, used books and puzzles to help you prepare for gift-giving season. A raffle provides an opportunity to win unique items just in time for Christmas.",
+    "url": "https://www.goodshepherdogdenutah.org/events.html",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794947400000,
+    "e": 1794951000000,
+    "t": "Gentle Movements",
+    "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+    "allDay": false,
+    "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794954600000,
+    "e": 1794961800000,
+    "t": "Ogden City Council Work Session",
+    "loc": "Ogden City Municipal Building<br>2549 Washington Blvd Ste 340<br>Ogden UT  84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794958200000,
+    "e": 1794976200000,
+    "t": "Utah Youth Rodeo",
+    "loc": "Golden Spike Event Center<br>1000 N 1200 W St.<br>Ogden, UT 84404",
+    "allDay": false,
+    "desc": "Come out and support the next generation of rodeo athletes! The Utah Youth Rodeo Association is bringing young competitors, ages 2 &#8211; 14, together for a fun-filled evening of rodeo.&#160;\n\nThese young cowboys and cowgirls will put their skills to the test as they compete in a variety of rodeo events and show off all their hard work, determination, and love for the sport.\n\nAdmission is free!\n\nFor more information visit:&#160;https://www.uyraentries.com/",
+    "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/t4e/1/16/1f402.png",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794963600000,
+    "e": 1794974400000,
+    "t": "Ogden City Council Meeting",
+    "loc": "Ogden City Municipal Building<br>Council Chambers, 3rd Floor<br>2549 Washington Blvd<br>Ogden UT  84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794967200000,
+    "e": 1794974400000,
+    "t": "Wasatch Audubon Monthly Program",
+    "loc": "Ogden Nature Center<br>966 W. 12th Street<br>Ogden, UT 84404",
+    "allDay": false,
+    "desc": "The Audubon Society presents a different speaker or slide show every month. Meetings are hybrid - in person and Zoom. Please visit www.wasatchaudubon.org or call the Ogden Nature Center for details at 801-621-7595.",
+    "url": "http://www.wasatchaudubon.org",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794976200000,
+    "t": "String Chamber Music Fall Concert",
+    "loc": "Val A. Browning Center | Garrison Choral Room<br>3848 Harrison Blvd<br>Ogden, UT 84403",
+    "allDay": false,
+    "desc": "WSU string area students will perform exciting chamber music gems in various groups, including string quartets and trios. Collaborating and performing on their own, the students will be sharing the repertoire they&#8217;ve prepared throughout the semester.",
+    "url": "https://www.weber.edu/music/chamber-orchestra.html",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795046400000,
+    "e": 1795053600000,
+    "t": "Ogden City Planning Commission Worksession",
+    "loc": "2549 Washington Blvd.<br>Room #310<br>Ogden, UT  84401",
+    "allDay": false,
+    "desc": "Ogden City Planning Commission Worksession",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795048200000,
+    "e": 1795314600000,
+    "t": "THE FIELD | Fall into Dance",
+    "loc": "Eccles Black Box Theatre",
+    "allDay": false,
+    "desc": "Nov 18 | 5:30 PM, Nov 19&#8211;21 | 7:30 PM\nMatinee: Nov 21 | 2 PM \nTHE FIELD | Fall into Dance is back inviting audiences to reconsider what dance can be in a world marked by division and uncertainty. THE FIELD is a platform to new student choreographers and Moving Company, under the direction of Adjunct Faculty Stacee Perry, to position movement as a dialogue across cultures, identities, and lived experiences.\n\nRooted in a legacy of empowerment, discovery, and community, THE FIELD presents local, regional, and national works that ask how the body carries history, how movement fosters connect",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795051800000,
+    "e": 1795055400000,
+    "t": "Yoga",
+    "loc": "Main Library<br>2464 Jefferson Ave.,<br>Ogden, UT  84401",
+    "allDay": false,
+    "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don&#8217;t forget your yoga mat!",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795131000000,
+    "e": 1795134600000,
+    "t": "Ogden Trails Network Committee Meeting",
+    "loc": "2549 Washington Blvd.<br>Room 710<br>Ogden, UT  84401",
+    "allDay": false,
+    "desc": "Ogden Trails Network Committee Meeting",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795158000000,
+    "e": 1803711600000,
+    "t": "Words/Inspired by Books - Community Art Show",
+    "loc": "Ogden Union Station<br>2501 Wall Avenue, Ogden, UT 84401",
+    "allDay": true,
+    "desc": "Community Art Show is hosted quarterly at Ogden&#8217;s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
+    "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795219200000,
+    "e": 1795233600000,
+    "t": "Acorn Antiques &amp; Vintage Show",
+    "loc": "Golden Spike Event Center<br>1000 N 1200 W<br>Ogden, UT 84404",
+    "allDay": false,
+    "desc": "&#x1F342;&#x1F384; Join us for the Acorn Antiques & Vintage Holiday Show! &#x1F384;&#x1F342;\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country d&#233;cor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you&#8217;ll find something for everyone!\n\n&#x1F39F;&#65039; Admission: &#x1F39F;&#65039;\n&#x1F341; Friday Early Shopping: $10\n&#x1F341; Saturday &#8211; Sunday: $7\n&#10024; Tickets are good for re-entry all weekend!\n&#x1F39F;&#65039; Tickets sold at door.",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795228200000,
+    "e": 1795237200000,
+    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+    "loc": "Peery&#39;s Egyptian Theater<br>2415 Washington Blvd. <br>Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated &quot;Bah! Humbug!&quot; Scrooge summates his feelings of Christmas tidings and charitable giving, but he&#39;s forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful &quot;Happy Christmas&quot; before spending the day reconnecting and sharing love with those that mean the most t",
+    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795276800000,
+    "e": 1795305600000,
+    "t": "Acorn Antiques &amp; Vintage Show",
+    "loc": "Golden Spike Event Center<br>1000 N 1200 W<br>Ogden, UT 84404",
+    "allDay": false,
+    "desc": "&#x1F342;&#x1F384; Join us for the Acorn Antiques & Vintage Holiday Show! &#x1F384;&#x1F342;\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country d&#233;cor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you&#8217;ll find something for everyone!\n\n&#x1F39F;&#65039; Admission: &#x1F39F;&#65039;\n&#x1F341; Friday Early Shopping: $10\n&#x1F341; Saturday &#8211; Sunday: $7\n&#10024; Tickets are good for re-entry all weekend!\n&#x1F39F;&#65039; Tickets sold at door.",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   }
+  ],
   "huntsville": []
  }
 }
