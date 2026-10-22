@@ -39,7 +39,7 @@
 <main id="main">
 <section class="no-print"><div class="container" style="display:grid;gap:12px;max-width:760px">
   <h1>Printable QR poster</h1><p class="lead">Pick a business, then print. The QR code takes customers to the business's listing on the site.</p>
-  <label style="display:grid;gap:6px;font-weight:600">Business<select id="biz" style="font:17px var(--body);padding:10px;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink)"></select></label>
+  <label style="display:grid;gap:6px;font-weight:600">Business<select id="biz" style="width:100%;max-width:100%;min-width:0;font:17px var(--body);padding:10px;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink)"></select></label>
   <label style="display:grid;gap:6px;font-weight:600">Or type a name<input id="custom" type="text" placeholder="Business name" style="font:17px var(--body);padding:10px;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink)"></label>
   <div class="btns"><button class="btn primary" type="button" onclick="window.print()">Print poster</button></div>
 </div></section>
@@ -52,7 +52,7 @@
   <p>Scan to see our listing, events and more.</p>
   <p class="meta">#OgdenValleyEvents · ogdenvalleyevent.com</p>
 </div></div></section>
-<style>.poster{max-width:640px;margin:0 auto;background:#fff;color:#10233D;border:3px solid #10233D;border-radius:18px;padding:36px;text-align:center;display:grid;gap:10px;justify-items:center}.poster h2{font-size:30px}.pname{font-family:var(--display);font-weight:800;font-size:40px;line-height:1.1}#qr{padding:14px;background:#fff}@media print{.no-print,.site-head,.canyon,.alert-bar,.site-foot{display:none!important}body{background:#fff}.poster{border-width:4px;page-break-inside:avoid}}</style>
+<style>main .container>*,main label{min-width:0}.poster{max-width:640px;margin:0 auto;background:#fff;color:#10233D;border:3px solid #10233D;border-radius:18px;padding:36px;text-align:center;display:grid;gap:10px;justify-items:center}.poster h2{font-size:30px}.pname{font-family:var(--display);font-weight:800;font-size:40px;line-height:1.1}#qr{padding:14px;background:#fff}@media print{.no-print,.site-head,.canyon,.alert-bar,.site-foot{display:none!important}body{background:#fff}.poster{border-width:4px;page-break-inside:avoid}}</style>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </main>
 <footer class="site-foot"></footer>

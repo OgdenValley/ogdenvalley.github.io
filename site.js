@@ -206,8 +206,8 @@ function listing(box, items, kind, R){
     (p.amenities && p.amenities.length) ? el("div", {class: "meta", text: p.amenities.join(" · ")}) : null,
     p.host ? el("div", {class: "meta", text: "Local host: " + p.host}) : null,
     p.address ? el("div", {class: "meta", text: p.address}) : null,
-    p.hours ? el("div", {class: "meta", text: "Hours: " + p.hours}) : null,
-    p.phone ? el("div", {class: "meta"}, [el("a", {href: "tel:" + String(p.phone).replace(/[^0-9+]/g, ""), "data-track": "call: " + p.name, text: p.phone})]) : null,
+    (p.hours && !/^(n\/?a|none|-)$/i.test(String(p.hours).trim())) ? el("div", {class: "meta", text: "Hours: " + p.hours}) : null,
+    p.phone ? el("div", {class: "meta"}, [el("a", {href: "tel:" + String(p.phone).replace(/[^0-9+]/g, ""), "data-track": "call: " + p.name, text: (d => d.length === 10 ? "(" + d.slice(0, 3) + ") " + d.slice(3, 6) + "-" + d.slice(6) : p.phone)(String(p.phone).replace(/\D/g, ""))})]) : null,
     p.book ? el("div", {class: "btns", style: "margin:4px 0"}, [el("a", {class: "btn primary", href: p.book, target: "_blank", rel: "noopener", "data-track": "book stay: " + p.name, text: "Check dates & book"})]) : null,
     (p.link || (p.links && p.links.length)) ? el("div", {class: "links"}, [p.link ? el("a", {href: p.link, target: "_blank", rel: "noopener", text: "Website or page"}) : null].concat((p.links || []).map(x => el("a", {href: x.href, target: "_blank", rel: "noopener", text: x.label})))) : null,
     listMeta(p),
@@ -218,11 +218,11 @@ function listing(box, items, kind, R){
 }
 
 
-/* ---------- Just added: any <div data-justadded> shows the 6 newest Valley listings (down-the-canyon ones are left off) ---------- */
+/* ---------- Just added: any <div data-justadded> shows the 6 newest listings that owners sent in themselves through the form ---------- */
 (function(){ const box = document.querySelector("[data-justadded]"); if (!box) return;
   const page = {restaurants: "restaurants.html", businesses: "businesses.html", stay: "stay.html", services: "services.html", beauty: "beauty.html", farm: "farm.html", foodtrucks: "foodtrucks.html", artists: "artists.html"};
   const label = {restaurants: "Eat", businesses: "Shop", stay: "Places to stay", services: "Home Services", beauty: "Beauty & Wellness", farm: "Farm & Local Food", foodtrucks: "Food Trucks", artists: "Artists"};
-  const all = Object.keys(page).flatMap(k => (P[k] || []).filter(p => p.added && p.region !== "weber" && !/^(north |south )?ogden$/i.test(p.town || p.area || "")).map(p => [p, k])).sort((a, b) => b[0].added.localeCompare(a[0].added) || a[0].name.localeCompare(b[0].name)).slice(0, 6);
+  const all = Object.keys(page).flatMap(k => (P[k] || []).filter(p => p.added && p.fromForm).map(p => [p, k])).sort((a, b) => b[0].added.localeCompare(a[0].added) || a[0].name.localeCompare(b[0].name)).slice(0, 6);
   if (!all.length) return;
   box.append(el("div", {class: "section-head"}, [el("div", {}, [el("p", {class: "eyebrow", text: "New on the site"}), el("h2", {text: "Just added"})])]),
     el("div", {class: "grid"}, all.map(([p, k]) => el("article", {class: "card"}, [
@@ -336,7 +336,10 @@ function listing(box, items, kind, R){
   document.querySelectorAll("[data-groups]").forEach(box => { const want = box.dataset.groups.split(",").map(x => x.trim()); const list = want.map(w => G.find(g => g.id === w)).filter(Boolean);
     if (list.length) box.replaceChildren(circles(list, box.dataset.title || "Neighbors helping neighbors on Facebook")); });
   const foot = document.querySelector("footer.site-foot");
-  if (foot && !document.body.hasAttribute("data-no-groups")) { const sec = el("section", {class: "fbg-band", "aria-label": "Our Facebook groups"}, [el("div", {class: "container"}, [circles(G, "Join our Facebook groups")])]); foot.before(sec); }
+  if (foot && !document.body.hasAttribute("data-no-groups")) { const phone = window.matchMedia && matchMedia("(max-width:700px)").matches;
+    const inner = phone ? el("details", {class: "fbg-fold"}, [el("summary", {}, [el("span", {text: "Join our Facebook groups (" + G.length + ")"})]), circles(G, "")]) : circles(G, "Join our Facebook groups");
+    const sec = el("section", {class: "fbg-band", "aria-label": "Our Facebook groups"}, [el("div", {class: "container"}, [inner])]); foot.before(sec);
+    if (!document.getElementById("fbg-fold-css")) { const c = el("style", {id: "fbg-fold-css"}); c.textContent = ".fbg-fold summary{list-style:none;cursor:pointer;font-family:var(--display);font-weight:700;font-size:19px;display:flex;justify-content:space-between;align-items:center;padding:12px 16px;background:var(--card);border:1px solid var(--line);border-radius:14px}.fbg-fold summary::-webkit-details-marker{display:none}.fbg-fold summary::after{content:'\\25BE'}.fbg-fold[open] summary::after{content:'\\25B4'}.fbg-fold[open] .fbg-strip{margin-top:14px}.fbg-band:has(.fbg-fold){padding-block:16px}"; document.head.append(c); } }
 })();
 
 /* ---------- home page photo banner (settings in config.js) ---------- */
@@ -571,7 +574,7 @@ function findIndex(){
   const items = [];
   Object.keys(FIND_PAGES).forEach(k => (P[k] || []).forEach(p => { const [page, label] = FIND_PAGES[k];
     items.push({name: p.name, label: p.faith || p.type || label, town: p.town || p.area || "", weber: p.region === "weber" || W.has(p.town),
-      href: page + "#" + slug(p.name), line: p.blurb || "", hay: [p.name, p.type, p.blurb, (p.food || []).join(" "), (p.good || []).join(" "), (p.sells || []).join(" "), (p.offers || []).join(" "), (p.amenities || []).join(" "), (p.tags || []).join(" "), (p.badges || []).join(" "), k === "stay" ? "lodging place to stay vacation rental" : "", k === "worship" ? "worship church place of worship services " + (p.faith || "") + " " + (p.times || []).join(" ") : "", k === "restaurants" ? "food eat restaurant" : ""].join(" ").toLowerCase()}); }));
+      href: page + "#" + slug(p.name), line: p.blurb || "", hay: [p.name, p.type, p.blurb, (p.food || []).join(" "), (p.good || []).join(" "), (p.sells || []).join(" "), (p.offers || []).join(" "), (p.amenities || []).join(" "), (p.tags || []).join(" "), (p.keywords || []).join(" "), (p.badges || []).join(" "), k === "stay" ? "lodging place to stay vacation rental" : "", k === "worship" ? "worship church place of worship services " + (p.faith || "") + " " + (p.times || []).join(" ") : "", k === "restaurants" ? "food eat restaurant" : ""].join(" ").toLowerCase()}); }));
   (C.kidsList || []).forEach(x => items.push({name: x.name, label: x.kind || "Kids' lessons", town: x.town || "", weber: x.where === "weber", href: "station-board.html#" + (x.group === "groups" ? "groups" : "lessons"), ext: x.url || "", line: x.line || "",
     hay: [x.name, x.kind, x.line, x.ages, "kids children youth", x.group === "lessons" ? "lessons classes class" : "teams clubs"].join(" ").toLowerCase()}));
   FIND_PLACES.forEach(([name, words, href, label]) => items.push({name, label, town: "Ogden", weber: true, href, line: "", hay: (name + " " + words).toLowerCase()}));

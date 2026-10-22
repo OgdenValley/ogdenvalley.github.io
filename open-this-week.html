@@ -51,12 +51,13 @@
 <script>
 (function(){const S=window.OVE_SITE,el=S.el,P=S.P,C=S.C;
 const KN={restaurants:"restaurants.html",businesses:"businesses.html",beauty:"beauty.html",farm:"farm.html",foodtrucks:"foodtrucks.html"};
-const all=[];Object.keys(KN).forEach(k=>(P[k]||[]).forEach(p=>all.push(Object.assign({_k:k},p))));
+const all=[];Object.keys(KN).forEach(k=>(P[k]||[]).filter(p=>p.region!=="weber").forEach(p=>all.push(Object.assign({_k:k},p))));
 document.getElementById("wk-date").textContent=C.weekChecked?"Last checked "+S.niceDay(C.weekChecked)+".":"This week's list is being checked now.";
 const G=[["open","Open as usual"],["short","Open, shorter hours"],["closed","Closed this week"],["","Not checked yet this week"]];
 const box=document.getElementById("wk");
 G.forEach(([v,t])=>{const items=all.filter(p=>(p.now||"")===v).sort((a,b)=>a.name.localeCompare(b.name));if(!items.length)return;
-box.append(el("section",{},[el("h2",{text:t+" ("+items.length+")"}),el("ul",{},items.map(p=>el("li",{},[el("a",{href:KN[p._k]+"#"+S.slug(p.name),text:p.name}),el("span",{class:"meta",text:[p.nowNote,p.type,p.town||p.area].filter(Boolean).join(" · ")})])))]))});
+const ul=el("ul",{},items.map(p=>el("li",{},[el("a",{href:KN[p._k]+"#"+S.slug(p.name),text:p.name}),el("span",{class:"meta",text:[p.nowNote,p.type,p.town||p.area].filter(Boolean).join(" · ")})])));
+box.append(v?el("section",{},[el("h2",{text:t+" ("+items.length+")"}),ul]):el("details",{class:"week-dd",style:"margin-top:16px"},[el("summary",{},[el("span",{},[el("span",{class:"eyebrow",text:"Valley places"}),el("span",{class:"wk-h",text:t+" ("+items.length+")"})])]),ul]))});
 if(C.forms&&C.forms.update)document.querySelectorAll("[data-form='update']").forEach(a=>{a.href=C.forms.update;a.target="_blank";a.rel="noopener"});})();
 </script>
 </body>

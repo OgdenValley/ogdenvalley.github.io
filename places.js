@@ -3226,7 +3226,7 @@ window.OVE_PLACES = {
      "kind": "Community & veterans",
      "type": "Veterans post & club",
      "blurb": "Ogden Valley's veterans post in Huntsville.",
-     "sells": [
+      "keywords": [
        "veterans",
        "vfw",
        "american legion",

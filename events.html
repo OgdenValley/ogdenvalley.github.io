@@ -84,7 +84,7 @@ try{const L=await S.loadJSON("local.json");if(data&&L&&L.meetings){const have=ne
 const pass=S.eventFilters(document.getElementById("evf"),()=>{draw();const n=document.querySelectorAll("#evf .chip[aria-pressed=true]").length;ft.textContent=n?"Filters ("+n+")":"Filters"});
 const ft=document.querySelector(".ev-ftoggle");ft.addEventListener("click",()=>{const o=document.getElementById("evf").classList.toggle("open");ft.setAttribute("aria-expanded",String(o))});
 function draw(){const list=S.valleyFirst(S.allEvents(data,S.areaCals(area))).filter(pass);
-  const ww=document.getElementById("week-wrap");
+  const ww=document.getElementById("week-wrap");document.getElementById("area").hidden=view==="month";
   if(view==="month"){S.monthGrid(box,list,{state:calState,onArea:v=>sync(v)});ww.hidden=false;const end=Date.now()+7*864e5;S.renderEvents(document.getElementById("week"),list.filter(e=>e.s<end),{emptyText:"Nothing on the calendar in the next 7 days for what you picked. Try Both."});return}
   ww.hidden=true;
   S.renderEvents(box,list,{emptyText:data?"No upcoming events match what you picked. Try Both, or turn a filter off.":"Events are on their way. The calendars are being set up."})}
