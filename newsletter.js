@@ -41,7 +41,7 @@
       .sort(function (a, b) { return Date.parse(b.date) - Date.parse(a.date); })
       .map(function (i) { return {type: i.type || "weekly", date: i.date, title: i.title || "Weather briefing", summary: i.summary || "", image: i.image || "", alt: i.alt || "", source: i.source || ""}; });
     var fresh = [];
-    Object.keys(PAGE).forEach(function (k) { (P[k] || []).forEach(function (p) { if (p.added && p.added >= weekAgo && p.added <= today) fresh.push({name: p.name, page: PAGE[k][0], label: PAGE[k][1], town: p.town || p.area || "", blurb: clip(p.blurb, 160)}); }); });
+    Object.keys(PAGE).forEach(function (k) { (P[k] || []).forEach(function (p) { if (p.added && p.region !== "weber" && !/^(north |south )?ogden$/i.test(p.town || p.area || "") && p.added >= weekAgo && p.added <= today) fresh.push({name: p.name, page: PAGE[k][0], label: PAGE[k][1], town: p.town || p.area || "", blurb: clip(p.blurb, 160)}); }); });
     var jobs = ((J && J.jobs) || []).filter(function (j) { return !j.expires || j.expires >= today; }).slice(0, 10)
       .map(function (j) { return {title: j.title, business: j.business || "", town: j.town || "", pay: j.pay || ""}; });
     var spot = (C.guessSpots || []).filter(function (s) { return s.start && s.start <= today; }).slice(-1)[0] || null;

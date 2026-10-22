@@ -218,11 +218,11 @@ function listing(box, items, kind, R){
 }
 
 
-/* ---------- Just added: any <div data-justadded> shows the 6 newest listings from every page ---------- */
+/* ---------- Just added: any <div data-justadded> shows the 6 newest Valley listings (down-the-canyon ones are left off) ---------- */
 (function(){ const box = document.querySelector("[data-justadded]"); if (!box) return;
   const page = {restaurants: "restaurants.html", businesses: "businesses.html", stay: "stay.html", services: "services.html", beauty: "beauty.html", farm: "farm.html", foodtrucks: "foodtrucks.html", artists: "artists.html"};
   const label = {restaurants: "Eat", businesses: "Shop", stay: "Places to stay", services: "Home Services", beauty: "Beauty & Wellness", farm: "Farm & Local Food", foodtrucks: "Food Trucks", artists: "Artists"};
-  const all = Object.keys(page).flatMap(k => (P[k] || []).filter(p => p.added).map(p => [p, k])).sort((a, b) => b[0].added.localeCompare(a[0].added) || a[0].name.localeCompare(b[0].name)).slice(0, 6);
+  const all = Object.keys(page).flatMap(k => (P[k] || []).filter(p => p.added && p.region !== "weber" && !/^(north |south )?ogden$/i.test(p.town || p.area || "")).map(p => [p, k])).sort((a, b) => b[0].added.localeCompare(a[0].added) || a[0].name.localeCompare(b[0].name)).slice(0, 6);
   if (!all.length) return;
   box.append(el("div", {class: "section-head"}, [el("div", {}, [el("p", {class: "eyebrow", text: "New on the site"}), el("h2", {text: "Just added"})])]),
     el("div", {class: "grid"}, all.map(([p, k]) => el("article", {class: "card"}, [

@@ -3202,6 +3202,43 @@ window.OVE_PLACES = {
      "checked": "2026-10-22",
      "added": "2026-10-22",
      "phone": "801-737-7920"
+   },
+   {
+     "name": "South Fork Chevron (Huntsville)",
+     "town": "Huntsville Town",
+     "kind": "Everyday needs",
+     "type": "Gas station & convenience store",
+     "blurb": "Gas station and convenience store in Huntsville, at the same spot as South Fork Hardware.",
+     "sells": [
+       "gas",
+       "gas station",
+       "fuel",
+       "convenience store"
+     ],
+     "phone": "801-829-5810",
+     "address": "560 S 7800 E, Huntsville, UT 84317",
+     "checked": "2026-10-22",
+     "added": "2026-10-22"
+   },
+   {
+     "name": "American Legion Post 129 Ogden Valley",
+     "town": "Huntsville Town",
+     "kind": "Community & veterans",
+     "type": "Veterans post & club",
+     "blurb": "Ogden Valley's veterans post in Huntsville.",
+     "sells": [
+       "veterans",
+       "vfw",
+       "american legion",
+       "legion",
+       "post",
+       "club"
+     ],
+     "phone": "801-745-3802",
+     "link": "https://www.facebook.com/OgdenValleyLegion/",
+     "address": "604 S 7800 E, Huntsville, UT 84317",
+     "checked": "2026-10-22",
+     "added": "2026-10-22"
    }
  ],
  "services": [
