@@ -1,6 +1,211 @@
 {
- "updated": "2026-10-15T12:55:17.102Z",
+ "updated": "2026-10-22T12:53:16.323Z",
  "issues": [
+  {
+   "start": "2026-10-22",
+   "end": "2026-10-29",
+   "made": "2026-10-22T12:53:16.317Z",
+   "featured": [
+    {
+     "title": "2nd Annual Monster Dash 5K",
+     "date": "2026-10-24",
+     "time": "9:00 AM",
+     "place": "Weber High School",
+     "town": "Pleasant View",
+     "image": "monster-dash-2026.png",
+     "line": "5K plus a 1-mile kids run. Runners and walkers of all ages, come in costume! 100% of proceeds go to Make-A-Wish Utah for 4-year-old Arie.",
+     "link": "https://www.canvaqr.com/RGSQ4K6Sel",
+     "linkText": "Join or donate"
+    }
+   ],
+   "events": [
+    {
+     "day": "2026-10-24",
+     "items": [
+      {
+       "time": "2 p.m.",
+       "t": "Cinema Saturday Feature Films",
+       "url": "",
+       "loc": "Ogden Valley Library @ 131 S 7400 E"
+      }
+     ]
+    },
+    {
+     "day": "2026-10-28",
+     "items": [
+      {
+       "time": "6 p.m.",
+       "t": "Wednesday Night Hikers",
+       "url": "https://www.meetup.com/webercountyoutdoors/",
+       "loc": "Varies"
+      }
+     ]
+    }
+   ],
+   "weather": [],
+   "roads": [
+    {
+     "title": "North Ogden Divide repair · Oct. 20",
+     "text": "Starts Tuesday, Oct. 20, around 8 a.m. Work lasts 1 to 2 days. Message boards go up Friday, Oct. 16.",
+     "image": "roadwork-2026-10-20-north-ogden-divide.png",
+     "alt": "North Ogden Divide repair: Weber County Roads fixing failing asphalt starting Tuesday, Oct. 20 around 8 a.m. for 1 to 2 days, with flaggers running one-way traffic and about 5-minute delays"
+    },
+    {
+     "title": "Ogden Canyon lane closure (SR-39)",
+     "text": "Start date is tentative. Work could begin as early as Monday, Oct. 26. The confirmed date will be posted at ogdencitypipeline.com once the pipe arrives.",
+     "image": "roadwork-2026-10-26-ogden-canyon-pipeline.png",
+     "alt": "Ogden Canyon lane closure: one lane of SR-39 closed for about a quarter mile between The Oaks Restaurant and the Ogden Canyon Water Treatment Plant, alternating traffic 24/7, 5 to 10 minute delays, as early as Oct. 26, 2026 through April 2027"
+    }
+   ],
+   "fresh": [
+    {
+     "name": "Eden Coffee Cocoa & Juicery",
+     "page": "restaurants.html",
+     "label": "Eat",
+     "town": "Eden",
+     "blurb": "Coffee, cocoa and juice shop on Highway 158 in Eden."
+    },
+    {
+     "name": "Sawasdee Thai Eden",
+     "page": "restaurants.html",
+     "label": "Eat",
+     "town": "Eden",
+     "blurb": "Takeout-only Thai restaurant in Eden."
+    },
+    {
+     "name": "The Drip Coffee & Soda Shop",
+     "page": "restaurants.html",
+     "label": "Eat",
+     "town": "Eden",
+     "blurb": "Coffee and soda shop near Valley Market on the road to Powder Mountain, with dine-in, walk-up and drive-thru service."
+    },
+    {
+     "name": "Lash Line",
+     "page": "beauty.html",
+     "label": "Beauty & wellness",
+     "town": "Eden",
+     "blurb": "Kayla Armstrong offers lash extensions, lash lifts and tints, brow and lip waxing, and basic facials. Book online."
+    },
+    {
+     "name": "Lorrie Harper, PT",
+     "page": "beauty.html",
+     "label": "Beauty & wellness",
+     "town": "Eden",
+     "blurb": "Physical therapist at the Eden Professional Center, also known as Zenergy Manual Therapy & Pilates."
+    },
+    {
+     "name": "Lunar Energy Massage & Wellness",
+     "page": "beauty.html",
+     "label": "Beauty & wellness",
+     "town": "Eden",
+     "blurb": "Massage and bodywork on the lower level of the Wolf Creek Clubhouse, booked online through Vagaro."
+    },
+    {
+     "name": "Mountain Performance Massage",
+     "page": "beauty.html",
+     "label": "Beauty & wellness",
+     "town": "Eden",
+     "blurb": "Shawn Carolan, LMT, offers sports and relaxation massage and Fascial Stretch Therapy."
+    },
+    {
+     "name": "The Healing Tree",
+     "page": "beauty.html",
+     "label": "Beauty & wellness",
+     "town": "Eden",
+     "blurb": "Theresa Ellis, LMT, offers massage, CranioSacral therapy, energy work and biofeedback scans. Book online."
+    },
+    {
+     "name": "Dancing Moose Farm",
+     "page": "farm.html",
+     "label": "Farm & local food",
+     "town": "Huntsville",
+     "blurb": "Grass-fed beef and honey from its own hives, sold now and then through its online farm store; farm tours by appointment."
+    },
+    {
+     "name": "Wheelwright's Honey",
+     "page": "farm.html",
+     "label": "Farm & local food",
+     "town": "Eden",
+     "blurb": "Raw local Eden honey by the quart. Call to arrange pickup."
+    },
+    {
+     "name": "Grace Haven Farm",
+     "page": "farm.html",
+     "label": "Farm & local food",
+     "town": "Huntsville",
+     "blurb": "Homemade and simple is best."
+    },
+    {
+     "name": "Eden Balloon Festival (food trucks)",
+     "page": "foodtrucks.html",
+     "label": "Food trucks",
+     "town": "Eden",
+     "blurb": "Annual hot-air balloon festival at Eden Park, usually in late September, where local food trucks serve breakfast and more."
+    },
+    {
+     "name": "Huntsville Grand Prix CycleKart race (food trucks)",
+     "page": "foodtrucks.html",
+     "label": "Food trucks",
+     "town": "Huntsville",
+     "blurb": "Annual CycleKart street race in Huntsville, usually the first weekend of May, free to watch, with food trucks."
+    },
+    {
+     "name": "Sunnyfield Farm Festival (food trucks)",
+     "page": "foodtrucks.html",
+     "label": "Food trucks",
+     "town": "Eden",
+     "blurb": "Annual late-summer farm festival at Sunnyfield Farms in Eden, run by the Community Foundation of Ogden Valley, with food trucks."
+    },
+    {
+     "name": "Brent Atwood",
+     "page": "artists.html",
+     "label": "Local artists",
+     "town": "Ogden",
+     "blurb": "Ogden muralist whose work includes the 'Mona Lisa' mural on Washington Boulevard."
+    },
+    {
+     "name": "Cara Koolmees",
+     "page": "artists.html",
+     "label": "Local artists",
+     "town": "Ogden",
+     "blurb": "Watercolor painter of buildings, bike races and rail cars, with a long-running gallery-studio on Historic 25th Street in Ogden."
+    },
+    {
+     "name": "Jim Jacobs",
+     "page": "artists.html",
+     "label": "Local artists",
+     "town": "Ogden",
+     "blurb": "Ogden sculptor working with branches, lumber and tools to explore people's relationship with the environment."
+    },
+    {
+     "name": "Roberta Glidden",
+     "page": "artists.html",
+     "label": "Local artists",
+     "town": "Ogden",
+     "blurb": "Ogden painter and Gallery 25 board member, with studio space at the gallery."
+    }
+   ],
+   "jobs": [],
+   "spot": {
+    "image": "spot-2026-10-15.jpg",
+    "hint": "This little guy has a front-row seat for fall color. Where in the Valley is he sitting?"
+   },
+   "winner": null,
+   "sponsors": [
+    {
+     "name": "Yes, I Can Fix That",
+     "link": "https://icanfixthatut.com",
+     "line": "Veteran-owned handyman serving all of Ogden Valley: drywall, doors, home maintenance and DIY classes."
+    }
+   ],
+   "forms": {
+    "event": "https://docs.google.com/forms/d/e/1FAIpQLSdq-tr_1dUMWJvoD06p9oZAXQWuK5-SnkucboHFwVEFmeZSZg/viewform",
+    "photo": "https://docs.google.com/forms/d/e/1FAIpQLSe9nppeo6jqEILr9SLywvxZ3jgXA-7V0RiaQ3DSvzk0VCst8A/viewform",
+    "business": "https://docs.google.com/forms/d/e/1FAIpQLSc-jh9kRzlErQ1jv698LT4prqLnCWFkdoJy6Bj5KcUeCZCL7A/viewform",
+    "jobs": "https://docs.google.com/forms/d/e/1FAIpQLScOzyUB6XfbZWbwNCMR1FIAjCyWWt-aQFQSGKN2pR5YJvtwkw/viewform",
+    "report": "https://docs.google.com/forms/d/e/1FAIpQLSeeDFHHAo4biQ0t4BzoG0TmCzcFgXUc5iBN33pOrKYpmK1Eng/viewform"
+   }
+  },
   {
    "start": "2026-10-15",
    "end": "2026-10-22",
