@@ -1,0 +1,61 @@
+{
+ "_help": "Events Claude adds from the OVE Facebook Events tab. start/end are local times with offset (-06:00 until Nov 1, -07:00 after). into: ov or weber. Past events drop off on their own.",
+ "events": [
+  {
+   "t": "Town Dance Party",
+   "start": "2026-10-24T19:00:00-06:00",
+   "loc": "7474 E 200 S, Huntsville, UT 84317",
+   "into": "ov",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Hosted on the Ogden Valley Information and Events Facebook page."
+  },
+  {
+   "t": "Spooky Steps To Healing Hearts",
+   "start": "2026-10-24T09:00:00-06:00",
+   "loc": "Weber High School",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Hosted on the Ogden Valley Information and Events Facebook page."
+  },
+  {
+   "t": "The Potion Lab: A DIY Potion Bottle Workshop",
+   "start": "2026-10-22T17:00:00-06:00",
+   "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Event by The Local Artisan Collective."
+  },
+  {
+   "t": "Roy Community Trick-or-Treat",
+   "start": "2026-10-28T17:00:00-06:00",
+   "loc": "4059 S 1900 W, Roy, UT 84067",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Event by Roy Community Farmers Market."
+  },
+  {
+   "t": "St Paul Lutheran Holiday Bazaar",
+   "start": "2026-11-07T10:00:00-07:00",
+   "loc": "3329 Harrison Blvd, Ogden, UT 84403",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "2026 holiday bazaar at St Paul Lutheran."
+  },
+  {
+   "t": "Copper Ornament Class",
+   "start": "2026-11-14T12:00:00-07:00",
+   "loc": "2371 Kiesel Ave, Ogden, UT 84401",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Event by Galleon's Gold Jewelry."
+  },
+  {
+   "t": "Hairy Horse Show",
+   "start": "2026-11-21T09:00:00-07:00",
+   "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Event by Golden Spike Event Center."
+  }
+ ]
+}

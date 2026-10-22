@@ -7,7 +7,10 @@ import { execSync } from "node:child_process";
 import crypto from "node:crypto";
 import { weatherWatch } from "./weather-watch.mjs";
 
-function cleanDesc(d){ if(!d) return ""; return d.replace(/<br\s*\/?>/gi,"\n").replace(/<[^>]+>/g,"").replace(/&nbsp;/g," ").replace(/&amp;/g,"&").replace(/\n{3,}/g,"\n\n").trim().slice(0,600); }
+function deEnt(s){ return String(s||"").replace(/&#(\d+);/g,(m,n)=>{try{return String.fromCodePoint(+n)}catch(e){return " "}}).replace(/&#x([0-9a-f]+);/gi,(m,n)=>{try{return String.fromCodePoint(parseInt(n,16))}catch(e){return " "}}).replace(/&nbsp;/gi," ").replace(/&quot;/gi,'"').replace(/&(apos|rsquo|lsquo);/gi,"'").replace(/&(ndash|mdash);/gi,"\u2013").replace(/&hellip;/gi,"\u2026").replace(/&lt;/gi,"<").replace(/&gt;/gi,">").replace(/&amp;/gi,"&").replace(/\u00a0/g," "); }
+// one-line text (titles, places): <br> becomes a comma, codes like &amp; and &#160; become real characters
+function cleanLine(s){ return deEnt(String(s||"").replace(/<br\s*\/?>/gi,", ").replace(/<[^>]+>/g,"")).replace(/[ \t]+/g," ").replace(/\s*,(\s*,)+/g,",").replace(/\s+,/g,",").replace(/,(?=\S)/g,", ").replace(/^[\s,]+|[\s,]+$/g,"").trim(); }
+function cleanDesc(d){ if(!d) return ""; return deEnt(d.replace(/<br\s*\/?>/gi,"\n").replace(/<\/p>/gi,"\n").replace(/<[^>]+>/g,"")).replace(/[ \t]+/g," ").replace(/ *\n */g,"\n").replace(/\n{3,}/g,"\n\n").trim().slice(0,600); }
 function firstUrl(d){ const m = String(d||"").match(/https?:\/\/[^\s"<>)]+/); return m ? m[0] : ""; }
 
 function icsTzOff(t,tz){try{const p={};new Intl.DateTimeFormat("en-US",{timeZone:tz,hourCycle:"h23",year:"numeric",month:"2-digit",day:"2-digit",hour:"2-digit",minute:"2-digit",second:"2-digit"}).formatToParts(new Date(t)).forEach(x=>p[x.type]=x.value);return Date.UTC(+p.year,+p.month-1,+p.day,+p.hour%24,+p.minute,+p.second)-t}catch(e){return null}}
@@ -35,7 +38,7 @@ function icsParse(txt,from,to){
   const out=[];const over={};
   raw.filter(e=>e.rid&&e.uid).forEach(e=>{over[e.uid+"|"+e.rid.t]=e});
   const len=e=>{if(!e.ds)return 0;if(e.de)return Math.max(0,e.de.t-e.ds.t);if(e.dur!=null)return e.dur;return e.ds.allDay?864e5:36e5};
-  const push=(e,s,L)=>{if(e.st==="CANCELLED"||e.tr==="TRANSPARENT")return;const en=s+L;if(en<=from||s>=to)return;out.push({s,e:en,t:e.t||"Event",loc:e.loc||"",allDay:!!(e.ds&&e.ds.allDay),desc:cleanDesc(e.desc),url:e.url||firstUrl(e.desc)})};
+  const push=(e,s,L)=>{if(e.st==="CANCELLED"||e.tr==="TRANSPARENT")return;const en=s+L;if(en<=from||s>=to)return;out.push({s,e:en,t:cleanLine(e.t)||"Event",loc:cleanLine(e.loc),allDay:!!(e.ds&&e.ds.allDay),desc:cleanDesc(e.desc),url:e.url||firstUrl(e.desc)})};
   const DOW={SU:0,MO:1,TU:2,WE:3,TH:4,FR:5,SA:6};
   raw.forEach(e=>{
     if(!e.ds||e.rid)return;const L=len(e);
@@ -112,6 +115,19 @@ async function calendars(){
     out.sources.huntsville = evs;
     if (!out.calendars.ov) out.calendars.ov = {name: "Ogden Valley", events: []};
     out.calendars.ov.events = out.calendars.ov.events.concat(evs).sort((a, b) => a.s - b.s); }
+  // events Claude adds by hand from the OVE Facebook events tab (extra-events.json): {t, start, end?, loc, url, desc, into: "ov"|"weber", src}
+  { let list = []; try { list = JSON.parse(fs.readFileSync("extra-events.json", "utf8")).events || []; } catch (e) { console.log("extra-events.json not read:", e.message); }
+    let n = 0;
+    for (const x of list) {
+      const s = Date.parse(x.start); if (!s) continue; const e = x.end ? Date.parse(x.end) : s + 2 * 36e5;
+      if (e <= from || s >= to) continue; const into = x.into === "ov" ? "ov" : "weber";
+      if (!out.calendars[into]) out.calendars[into] = {name: into === "ov" ? "Ogden Valley" : "Weber County", events: []};
+      const tl = cleanLine(x.t).toLowerCase(); // skip if a feed already has the same title on the same day
+      if (out.calendars[into].events.some(y => (y.t || "").toLowerCase() === tl && Math.abs(y.s - s) < 864e5)) continue;
+      out.calendars[into].events.push({s, e, t: cleanLine(x.t), loc: cleanLine(x.loc), allDay: !!x.allDay, desc: cleanDesc(x.desc || ""), url: x.url || "", src: x.src || "Ogden Valley Information and Events"}); n++;
+    }
+    for (const k of Object.keys(out.calendars)) out.calendars[k].events.sort((a, b) => a.s - b.s);
+    console.log("extra events added:", n); }
   // keep the file small: sources are only stored for fallback, not shown twice
   writeIfChanged("events.json", out);
 }
