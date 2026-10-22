@@ -251,5 +251,17 @@
   "lat": 41.27735,
   "lng": -111.99744,
   "county": "Weber"
- }
+ },
+ "Episcopal Church of the Good Shepherd, 2375 Grant Ave, Ogden, UT 8401": null,
+ "2371 Kiesel Ave, Ogden, UT 84401": {
+  "lat": 41.2238,
+  "lng": -111.97182,
+  "county": "Weber"
+ },
+ "Golden Spike Event Center, 1000 N 1200 W St., Ogden, UT 84404": null,
+ "Ogden Nature Center, 966 W. 12th Street, Ogden, UT 84404": null,
+ "Val A. Browning Center | Garrison Choral Room, 3848 Harrison Blvd, Ogden, UT 84403": null,
+ "Eccles Black Box Theatre": null,
+ "2549 Washington Blvd., Room 710, Ogden, UT 84401": null,
+ "Ogden Union Station, 2501 Wall Avenue, Ogden, UT 84401": null
 }
