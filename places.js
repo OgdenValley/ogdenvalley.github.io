@@ -100,7 +100,7 @@ window.OVE_PLACES = {
      "factsChecked": "2026-10-11",
      "town": "Huntsville area",
      "type": "Burgers & shakes (seasonal)",
-     "blurb": "Casual seasonal stop near Pineview Reservoir known for raspberry shakes, burgers and fries.",
+     "blurb": "Casual seasonal stop near Pineview Reservoir known for raspberry shakes, burgers and fries. Gas pumps on site.",
      "phone": "801-745-3542",
      "address": "7345 E 900 S, Huntsville, UT 84317",
      "checked": "2026-10-07",

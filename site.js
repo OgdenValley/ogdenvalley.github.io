@@ -613,10 +613,11 @@ function findBox(box){
   }
   form.addEventListener("submit", e => { e.preventDefault(); run(input.value); });
   box.classList.add("find-box");
+  if (box.dataset.find === "compact") { box.classList.add("compact"); box.replaceChildren(form, chips, out); return; }
   box.replaceChildren(el("p", {class: "eyebrow", text: "Find it local"}), el("h2", {text: "Where can I get…?"}), form, chips, out);
 }
 (function(){ const st = document.createElement("style"); st.textContent =
-  ".find-box{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:18px}.find-box h2{margin:2px 0 12px}.find-form{display:flex;gap:8px;flex-wrap:wrap}.find-form .fsearch{flex:1 1 260px;max-width:none}" +
+  ".find-box{background:var(--card);border:2px solid var(--line);border-radius:16px;padding:18px}.find-box.compact{background:none;border:0;padding:0}.find-box h2{margin:2px 0 12px}.find-form{display:flex;gap:8px;flex-wrap:wrap}.find-form .fsearch{flex:1 1 260px;max-width:none}" +
   ".find-asks{margin:12px 0 4px}.find-group{margin-top:16px}.find-card h3{margin:0;font-size:19px}.find-card h3 a{text-decoration:none}.find-none{margin-top:14px;border-left:6px solid var(--accent,#C2410C)}" +
   "@media (max-width:700px){.find-asks{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}.find-asks::-webkit-scrollbar{display:none}.find-asks .chip{flex:none;white-space:nowrap}}";
   document.head.appendChild(st);
