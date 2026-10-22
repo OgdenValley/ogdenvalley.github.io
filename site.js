@@ -544,7 +544,23 @@ const FIND_PLACES = [
   ["Treehouse Children's Museum", "kids museum children play", "down-the-canyon.html#museums", "Museums & kids"],
   ["George S. Eccles Dinosaur Park", "dinosaur kids park museum", "down-the-canyon.html#museums", "Museums & kids"],
   ["Union Station Museums", "museum history train cars", "down-the-canyon.html#museums", "Museums & kids"],
-  ["Ogden Nature Center", "nature trails birds wildlife kids classes camps", "down-the-canyon.html#museums", "Museums & kids"]];
+  ["Ogden Nature Center", "nature trails birds wildlife kids classes camps", "down-the-canyon.html#museums", "Museums & kids"],
+  ["Valley Health Mart Pharmacy", "pharmacy prescriptions medicine drugstore", "health.html#valley-health-mart-pharmacy", "Pharmacy", "Eden", 1],
+  ["Zimbi Dental", "dentist dental teeth", "health.html#zimbi-dental", "Dentist", "Eden", 1],
+  ["Iverson & Burton Dental", "dentist dental teeth", "health.html#iverson-burton-dental", "Dentist", "Eden", 1],
+  ["Valley Physical Therapy", "physical therapy pt rehab injury", "health.html#valley-physical-therapy", "Physical therapy", "Eden", 1],
+  ["McKay-Dee Hospital ER", "er emergency room hospital emergency", "health.html#emergency-rooms-open-24-7", "Emergency room", "Ogden", 0],
+  ["Ogden Regional Medical Center ER", "er emergency room hospital emergency", "health.html#emergency-rooms-open-24-7", "Emergency room", "Ogden", 0],
+  ["North Ogden InstaCare", "urgent care instacare doctor clinic sick walk-in medical", "health.html#urgent-care", "Urgent care", "North Ogden", 0],
+  ["Midtown Community Health Center", "clinic doctor low-cost dental medical sliding uninsured", "health.html#low-cost-free-care", "Low-cost clinic", "Ogden", 0],
+  ["Seager Memorial Clinic", "free clinic doctor uninsured medical dental", "health.html#low-cost-free-care", "Free clinic", "Ogden", 0],
+  ["Weber Human Services", "mental health counseling therapy addiction substance crisis 988", "health.html#mental-health", "Mental health", "Ogden", 0],
+  ["988 Suicide & Crisis Lifeline", "crisis suicide mental health 988 hotline", "health.html", "Call or text 988", "", 1],
+  ["Lantern House", "shelter homeless homelessness bed meals", "health.html#shelter", "Shelter", "Ogden", 0],
+  ["Catholic Community Services Food Bank", "food bank pantry groceries hungry", "health.html#food", "Food bank", "Ogden", 0],
+  ["Utah 211", "rent help utilities bills assistance 211 housing", "health.html#rent-bills-more", "Help line", "", 0],
+  ["YCC Family Crisis Center", "domestic violence abuse crisis shelter", "health.html", "Crisis line", "Ogden", 0],
+  ["Ogden VA Clinic", "veterans va clinic doctor", "health.html#veterans", "Veterans", "South Ogden", 0]];
 const FIND_SYN = {
   candle: "candles,candle", soap: "soaps,soap,bath products,bath and body", flower: "flowers,florist,bouquet", taco: "tacos,mexican", sushi: "sushi,japanese",
   soup: "soups,ramen,chowder", pho: "pho,vietnamese", gluten: "gluten-free,gluten free", celiac: "gluten-free,gluten free", vegan: "vegan,vegetarian", vegetarian: "vegetarian,vegan",
@@ -564,7 +580,7 @@ const FIND_SYN = {
   kid: "kids,children,youth", child: "kids,children,youth",
   art: "art,artist,painter,gallery", jewelry: "jewelry,silver,rings,necklace", photo: "photographer,photography", gift: "gifts,gift",
   yoga: "yoga,pilates", gym: "gym,fitness", fitness: "fitness,gym", spa: "spa,massage,facials", therapy: "physical therapy", pt: "physical therapy",
-  pet: "pet,pets,dog", dog: "dog,dogs,pet", theater: "theater,movies,shows", movie: "movies,theater,film", museum: "museum,museums", skate: "skating,skate,rink", skating: "skating,skate,rink",
+  pet: "pet,pets,dog", doctor: "doctor,clinic,urgent care", dentist: "dentist,dental", dental: "dental,dentist", pharmacy: "pharmacy,prescriptions", prescription: "pharmacy,prescriptions", medicine: "pharmacy", er: "er,emergency room", emergency: "emergency room,er", hospital: "hospital,emergency room", clinic: "clinic,urgent care", urgent: "urgent care", shelter: "shelter,homeless", homeless: "shelter,homeless", "food bank": "food bank,pantry", pantry: "pantry,food bank", rent: "rent help,rent", crisis: "crisis,988", therapy: "physical therapy,counseling,therapy", counseling: "counseling,mental health", veteran: "veterans,va", vet: "veterans,va", dog: "dog,dogs,pet", theater: "theater,movies,shows", movie: "movies,theater,film", museum: "museum,museums", skate: "skating,skate,rink", skating: "skating,skate,rink",
   church: "church,worship", worship: "worship,church", mass: "mass,catholic", catholic: "catholic,mass", mosque: "mosque,muslim,jumuah", muslim: "muslim,mosque", islam: "muslim,mosque", synagogue: "synagogue,jewish", jewish: "jewish,synagogue", temple: "temple,hindu,buddhist", hindu: "hindu", buddhist: "buddhist", lds: "latter-day saint", ward: "ward,latter-day saint", sacrament: "latter-day saint", christian: "christian,church,catholic,lutheran,baptist,episcopal,presbyterian,orthodox"};
 const FIND_STOP = new Set("where can i get find buy a an the some any for to in near me good best place places is there who sells sell do you know of what my our up here around valley ogden go take how much local homemade handmade fresh food spot spots".split(" "));
 const FIND_ASKS = [["Candles & gifts", "candles gifts"], ["Kids' classes", "kids classes lessons"], ["Swim lessons", "swim lessons"], ["Haircut", "haircut"], ["Handyman", "handyman"], ["Fresh eggs & beef", "eggs beef"], ["Coffee", "coffee"], ["Sushi", "sushi"], ["Gluten-free", "gluten free"], ["A drink", "drinks"], ["Place to stay", "place to stay"], ["Flowers", "flowers"]];
@@ -577,7 +593,7 @@ function findIndex(){
       href: page + "#" + slug(p.name), line: p.blurb || "", hay: [p.name, p.type, p.blurb, (p.food || []).join(" "), (p.good || []).join(" "), (p.sells || []).join(" "), (p.offers || []).join(" "), (p.amenities || []).join(" "), (p.tags || []).join(" "), (p.keywords || []).join(" "), (p.badges || []).join(" "), k === "stay" ? "lodging place to stay vacation rental" : "", k === "worship" ? "worship church place of worship services " + (p.faith || "") + " " + (p.times || []).join(" ") : "", k === "restaurants" ? "food eat restaurant" : ""].join(" ").toLowerCase()}); }));
   (C.kidsList || []).forEach(x => items.push({name: x.name, label: x.kind || "Kids' lessons", town: x.town || "", weber: x.where === "weber", href: "station-board.html#" + (x.group === "groups" ? "groups" : "lessons"), ext: x.url || "", line: x.line || "",
     hay: [x.name, x.kind, x.line, x.ages, "kids children youth", x.group === "lessons" ? "lessons classes class" : "teams clubs"].join(" ").toLowerCase()}));
-  FIND_PLACES.forEach(([name, words, href, label]) => items.push({name, label, town: "Ogden", weber: true, href, line: "", hay: (name + " " + words).toLowerCase()}));
+  FIND_PLACES.forEach(([name, words, href, label, town, up]) => items.push({name, label, town: town === undefined ? "Ogden" : town, weber: !up, href, line: "", hay: (name + " " + words).toLowerCase()}));
   const seen = new Set(); return (findIndex.cache = items.filter(it => { const k = it.name.toLowerCase(); if (seen.has(k)) return false; seen.add(k); return true; }));
 }
 function findLocal(q){
