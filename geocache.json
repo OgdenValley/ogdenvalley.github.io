@@ -198,5 +198,58 @@
  "4059 S 1900 W, Roy, UT 84067": null,
  "Val A Browning Center, Weber State University, 1901 University Circle, Ogden, UT 84408": null,
  "Stellas on 25th, 225 Historic 25th Street, Ogden, UT 84401": null,
- "Peery's Egyptian Theatre, 2415 Washington Blvd, Ogden, UT 84401": null
+ "Peery's Egyptian Theatre, 2415 Washington Blvd, Ogden, UT 84401": null,
+ "Weber State University - Shepherd Union, 3910 West Campus Dr, Ogden, UT 84408": null,
+ "Skinny Dogz, 2261 Kiesel Ave, Ogden UT 84401": null,
+ "Queen Bee Giftery, 270 25th Street, Ogden, UT 84401": {
+  "lat": 41.22089,
+  "lng": -111.97405,
+  "county": "Weber"
+ },
+ "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404": null,
+ "Starts at Kokomo Club, 216 25th Street, Ogden, UT 84401": null,
+ "2450 Grant Ave, Ogden, UT, United States, 84401": null,
+ "Copper Nickel, 2450 Grant Ave, Ogden, UT 84401": null,
+ "Family Support Center of Ogden 3340 Harrison Blvd Ogden, UT 84403": null,
+ "Golden Spike Event Center, Outdoor Stadium, 1000 North 1200 West, Ogden, UT 84404": null,
+ "2549 Washington Blvd., Council Chambers, 3rd floor, Ogden, UT 84401": null,
+ "Kimball Arts Building | Room 143": null,
+ "Ogden Union Station, 2501 Wall Ave, Ogden, UT 84401": null,
+ "Ogden Eccles Conference Center, 2415 Washington Blvd, Ogden, UT 84401": null,
+ "Downtown Ogden": {
+  "lat": 41.2244,
+  "lng": -111.97001,
+  "county": "Weber"
+ },
+ "Timbermine Steakhouse 1701 Park Blvd, Ogden, UT 84401": null,
+ "Val A. Browning Center | Allred Theatre": null,
+ "Community United Methodist Church, 163 W 4800 S, Washington Terrace, UT 84405": {
+  "lat": 41.17561,
+  "lng": -111.97947,
+  "county": "Weber"
+ },
+ "WSU Swenson Building, Weber State Ogden Campus": null,
+ "3329 Harrison Blvd, Ogden, UT 84403": {
+  "lat": 41.20294,
+  "lng": -111.94967,
+  "county": "Weber"
+ },
+ "Val A. Browning Center, 3848 Harrison Blvd, Ogden, UT 84403": null,
+ "Union Station - Wattis Dumke Room, 2501 Wall Avenue, Ogden, UT 84401": null,
+ "Val A. Browning Center | Garrison Choral Room": null,
+ "Hilton Garden Inn Ogden UT, 2271 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.22518,
+  "lng": -111.97093,
+  "county": "Weber"
+ },
+ "Peery’s Egyptian Theater, 2415 Washington Blvd., Ogden, Utah": {
+  "lat": 41.22179,
+  "lng": -111.97106,
+  "county": "Weber"
+ },
+ "1000 N 1200 W, Ogden, UT 84404": {
+  "lat": 41.27735,
+  "lng": -111.99744,
+  "county": "Weber"
+ }
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T18:50:23.161Z",
+ "updated": "2026-10-22T19:44:33.600Z",
  "pages": {
   "404.html": {
    "posted": "2026-10-06",
@@ -19,12 +19,12 @@
   "beauty.html": {
    "posted": "2026-10-07",
    "updated": "2026-10-22",
-   "hash": "b8a4928bbece"
+   "hash": "c5fbf6eb12a7"
   },
   "businesses.html": {
    "posted": "2026-10-06",
    "updated": "2026-10-22",
-   "hash": "dfbfc2569f1a"
+   "hash": "2bf67e60f23e"
   },
   "causes.html": {
    "posted": "2026-10-09",
@@ -43,18 +43,18 @@
   },
   "coming.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-12",
-   "hash": "d4740cf8fb76"
+   "updated": "2026-10-22",
+   "hash": "ced7efb6bf86"
   },
   "events.html": {
    "posted": "2026-10-06",
    "updated": "2026-10-22",
-   "hash": "d86801df8180"
+   "hash": "8ff3517bb8f2"
   },
   "farm.html": {
    "posted": "2026-10-07",
    "updated": "2026-10-22",
-   "hash": "3bc08b2dff83"
+   "hash": "4548086d4fec"
   },
   "foodtrucks.html": {
    "posted": "2026-10-07",
@@ -63,8 +63,8 @@
   },
   "fun.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-20",
-   "hash": "c29a9168322f"
+   "updated": "2026-10-22",
+   "hash": "68905a0bc166"
   },
   "garden.html": {
    "posted": "2026-10-07",
@@ -84,7 +84,7 @@
   "index.html": {
    "posted": "2026-10-06",
    "updated": "2026-10-22",
-   "hash": "8937780b6cd5"
+   "hash": "0310ae3779ca"
   },
   "jobs.html": {
    "posted": "2026-10-07",
@@ -123,8 +123,8 @@
   },
   "open-this-week.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-12",
-   "hash": "956fd116ca7b"
+   "updated": "2026-10-22",
+   "hash": "e68afb3b715d"
   },
   "photo-contest.html": {
    "posted": "2026-10-06",
@@ -133,8 +133,8 @@
   },
   "poster.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-12",
-   "hash": "c452e87d9ad3"
+   "updated": "2026-10-22",
+   "hash": "14d4b880df28"
   },
   "prepared.html": {
    "posted": "2026-10-07",
@@ -169,7 +169,7 @@
   "safety.html": {
    "posted": "2026-10-07",
    "updated": "2026-10-22",
-   "hash": "1bba50e8a832"
+   "hash": "b117ea5d9dbb"
   },
   "scavenger-hunt.html": {
    "posted": "2026-10-07",
@@ -178,13 +178,13 @@
   },
   "search.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-12",
-   "hash": "ec9e56b51147"
+   "updated": "2026-10-22",
+   "hash": "0368e92e7065"
   },
   "services.html": {
    "posted": "2026-10-08",
    "updated": "2026-10-22",
-   "hash": "5855d1f06a10"
+   "hash": "fe06831408c7"
   },
   "sneak-peek.html": {
    "posted": "2026-10-11",
@@ -295,6 +295,16 @@
    "posted": "2026-10-22",
    "updated": "2026-10-22",
    "hash": "89210ed988a5"
+  },
+  "health.html": {
+   "posted": "2026-10-22",
+   "updated": "2026-10-22",
+   "hash": "543e8a8420b8"
+  },
+  "worship.html": {
+   "posted": "2026-10-22",
+   "updated": "2026-10-22",
+   "hash": "f6cf868b0acc"
   }
  }
 }
