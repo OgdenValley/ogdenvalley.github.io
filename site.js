@@ -530,7 +530,7 @@ function monthGrid(box, list, opts){
   document.head.appendChild(st); })();
 
 /* ---------- Find it local: "where can I get candles / sushi / swim lessons?" ---------- */
-const FIND_PAGES = {stay: ["stay.html", "Place to stay"], restaurants: ["restaurants.html", "Eat"], businesses: ["businesses.html", "Shop"], services: ["services.html", "Home service"], beauty: ["beauty.html", "Beauty & wellness"], farm: ["farm.html", "Farm & local food"], foodtrucks: ["foodtrucks.html", "Food truck"], artists: ["artists.html", "Local artist"], shops: ["down-the-canyon.html", "Shop"]};
+const FIND_PAGES = {stay: ["stay.html", "Place to stay"], restaurants: ["restaurants.html", "Eat"], businesses: ["businesses.html", "Shop"], services: ["services.html", "Home service"], beauty: ["beauty.html", "Beauty & wellness"], farm: ["farm.html", "Farm & local food"], foodtrucks: ["foodtrucks.html", "Food truck"], artists: ["artists.html", "Local artist"], worship: ["worship.html", "Place of worship"], shops: ["down-the-canyon.html", "Shop"]};
 const FIND_PLACES = [
   ["Marshall N. White Community Center", "pool indoor pool swim swimming swim lessons classes community center fitness", "down-the-canyon.html#pools", "Pools, ice & rec"],
   ["Ogden City Recreation", "swim swimming swim lessons aquatics sports leagues court rentals pavilion tennis classes kids", "down-the-canyon.html#pools", "Pools, ice & rec"],
@@ -561,7 +561,8 @@ const FIND_SYN = {
   kid: "kids,children,youth", child: "kids,children,youth",
   art: "art,artist,painter,gallery", jewelry: "jewelry,silver,rings,necklace", photo: "photographer,photography", gift: "gifts,gift",
   yoga: "yoga,pilates", gym: "gym,fitness", fitness: "fitness,gym", spa: "spa,massage,facials", therapy: "physical therapy", pt: "physical therapy",
-  pet: "pet,pets,dog", dog: "dog,dogs,pet", theater: "theater,movies,shows", movie: "movies,theater,film", museum: "museum,museums", skate: "skating,skate,rink", skating: "skating,skate,rink"};
+  pet: "pet,pets,dog", dog: "dog,dogs,pet", theater: "theater,movies,shows", movie: "movies,theater,film", museum: "museum,museums", skate: "skating,skate,rink", skating: "skating,skate,rink",
+  church: "church,worship", worship: "worship,church", mass: "mass,catholic", catholic: "catholic,mass", mosque: "mosque,muslim,jumuah", muslim: "muslim,mosque", islam: "muslim,mosque", synagogue: "synagogue,jewish", jewish: "jewish,synagogue", temple: "temple,hindu,buddhist", hindu: "hindu", buddhist: "buddhist", lds: "latter-day saint", ward: "ward,latter-day saint", sacrament: "latter-day saint", christian: "christian,church,catholic,lutheran,baptist,episcopal,presbyterian,orthodox"};
 const FIND_STOP = new Set("where can i get find buy a an the some any for to in near me good best place places is there who sells sell do you know of what my our up here around valley ogden go take how much local homemade handmade fresh food spot spots".split(" "));
 const FIND_ASKS = [["Candles & gifts", "candles gifts"], ["Kids' classes", "kids classes lessons"], ["Swim lessons", "swim lessons"], ["Haircut", "haircut"], ["Handyman", "handyman"], ["Fresh eggs & beef", "eggs beef"], ["Coffee", "coffee"], ["Sushi", "sushi"], ["Gluten-free", "gluten free"], ["A drink", "drinks"], ["Place to stay", "place to stay"], ["Flowers", "flowers"]];
 function findIndex(){
@@ -569,8 +570,8 @@ function findIndex(){
   const W = new Set(["Ogden", "North Ogden", "Pleasant View", "South Ogden", "Weber County"]);
   const items = [];
   Object.keys(FIND_PAGES).forEach(k => (P[k] || []).forEach(p => { const [page, label] = FIND_PAGES[k];
-    items.push({name: p.name, label: p.type || label, town: p.town || p.area || "", weber: p.region === "weber" || W.has(p.town),
-      href: page + "#" + slug(p.name), line: p.blurb || "", hay: [p.name, p.type, p.blurb, (p.food || []).join(" "), (p.good || []).join(" "), (p.sells || []).join(" "), (p.offers || []).join(" "), (p.amenities || []).join(" "), (p.tags || []).join(" "), (p.badges || []).join(" "), k === "stay" ? "lodging place to stay vacation rental" : "", k === "restaurants" ? "food eat restaurant" : ""].join(" ").toLowerCase()}); }));
+    items.push({name: p.name, label: p.faith || p.type || label, town: p.town || p.area || "", weber: p.region === "weber" || W.has(p.town),
+      href: page + "#" + slug(p.name), line: p.blurb || "", hay: [p.name, p.type, p.blurb, (p.food || []).join(" "), (p.good || []).join(" "), (p.sells || []).join(" "), (p.offers || []).join(" "), (p.amenities || []).join(" "), (p.tags || []).join(" "), (p.badges || []).join(" "), k === "stay" ? "lodging place to stay vacation rental" : "", k === "worship" ? "worship church place of worship services " + (p.faith || "") + " " + (p.times || []).join(" ") : "", k === "restaurants" ? "food eat restaurant" : ""].join(" ").toLowerCase()}); }));
   (C.kidsList || []).forEach(x => items.push({name: x.name, label: x.kind || "Kids' lessons", town: x.town || "", weber: x.where === "weber", href: "station-board.html#" + (x.group === "groups" ? "groups" : "lessons"), ext: x.url || "", line: x.line || "",
     hay: [x.name, x.kind, x.line, x.ages, "kids children youth", x.group === "lessons" ? "lessons classes class" : "teams clubs"].join(" ").toLowerCase()}));
   FIND_PLACES.forEach(([name, words, href, label]) => items.push({name, label, town: "Ogden", weber: true, href, line: "", hay: (name + " " + words).toLowerCase()}));

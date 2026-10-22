@@ -3680,6 +3680,313 @@ window.OVE_PLACES = {
      "address": "3718 N Wolf Creek Dr, Eden, UT 84310",
      "checked": "2026-10-07"
    }
+ ],
+ "worship": [
+   {
+     "name": "Latter-day Saint meetinghouse, Huntsville",
+     "town": "Huntsville Town",
+     "faith": "Latter-day Saint",
+     "address": "277 S 7400 E, Huntsville, UT 84317",
+     "times": [
+       "Huntsville 1st Ward: Sunday 9:00 AM",
+       "Huntsville 2nd Ward: Sunday 10:30 AM",
+       "South Fork Ward: Sunday 12:00 PM"
+     ],
+     "link": "https://local.churchofjesuschrist.org/en/us/ut/huntsville/277-s-7400-e",
+     "blurb": "A meetinghouse of The Church of Jesus Christ of Latter-day Saints serving three Huntsville-area wards.",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Latter-day Saint meetinghouse, Eden (Hwy 162)",
+     "town": "Eden",
+     "faith": "Latter-day Saint",
+     "address": "2900 N Highway 162, Eden, UT 84310",
+     "times": [
+       "Nordic Valley Ward: Sunday 9:00 AM",
+       "Eden 2nd Ward: Sunday 10:30 AM",
+       "Wolf Creek Ward: Sunday 12:00 PM"
+     ],
+     "link": "https://local.churchofjesuschrist.org/en/us/ut/eden/2900-n-highway-162",
+     "blurb": "A meetinghouse of The Church of Jesus Christ of Latter-day Saints serving three Eden-area wards.",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Latter-day Saint meetinghouse, Eden (1900 N)",
+     "town": "Eden",
+     "faith": "Latter-day Saint",
+     "address": "6500 E 1900 N, Eden, UT 84310",
+     "times": [
+       "Eden 1st Ward: Sunday 9:00 AM",
+       "Middle Fork Ward: Sunday 10:30 AM"
+     ],
+     "link": "https://local.churchofjesuschrist.org/en/us/ut/eden/6500-e-1900-n",
+     "blurb": "A meetinghouse of The Church of Jesus Christ of Latter-day Saints serving Eden-area wards. The Huntsville Utah FamilySearch Center (family history) is in the same building.",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Latter-day Saint meetinghouse, Liberty",
+     "town": "Liberty",
+     "faith": "Latter-day Saint",
+     "address": "4279 N 3300 E, Liberty, UT 84310",
+     "times": [
+       "Liberty 2nd Ward: Sunday 9:00 AM",
+       "Liberty 1st Ward: Sunday 10:30 AM",
+       "North Fork Ward: Sunday 12:00 PM"
+     ],
+     "link": "https://local.churchofjesuschrist.org/en/us/ut/liberty/4279-north-3300-east",
+     "blurb": "A meetinghouse of The Church of Jesus Christ of Latter-day Saints serving three Liberty-area wards.",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "St. Florence Catholic Mission",
+     "town": "Huntsville Town",
+     "faith": "Catholic",
+     "address": "6461 E Hwy 39, Huntsville, UT 84317",
+     "phone": "801-745-5673",
+     "link": "https://stflorence.wordpress.com/",
+     "times": [
+       "Saturday 6:00 PM Mass",
+       "Sunday 9:00 AM Mass",
+       "Wednesday 8:30 AM Mass",
+       "First Friday 8:30 AM Mass"
+     ],
+     "blurb": "A small Catholic mission church in Huntsville offering weekend and weekday Mass. Served by St. Joseph Parish in Ogden.",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Ogden Valley Community Church",
+     "town": "Huntsville Town",
+     "faith": "Christian (non-denominational)",
+     "address": "9228 E 100 S, Huntsville, UT 84317",
+     "phone": "801-920-6841",
+     "link": "https://ovcchuntsville.org/",
+     "times": [
+       "Sunday 10:00 AM worship"
+     ],
+     "blurb": "A non-denominational Christian church holding Sunday worship in Huntsville.",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Fellowship Bible Church",
+     "town": "Liberty",
+     "faith": "Christian (Bible church)",
+     "address": "4783 N 3100 E, Liberty, UT 84310",
+     "phone": "801-745-6200",
+     "link": "https://fbcliberty.com/",
+     "times": [
+       "Sunday School 10:00 AM",
+       "Sunday worship 11:00 AM"
+     ],
+     "blurb": "A Bible church in Liberty with Sunday school and Sunday worship.",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "St. Joseph Catholic Church",
+     "town": "Ogden",
+     "faith": "Catholic",
+     "address": "514 24th St, Ogden, UT 84401",
+     "phone": "801-399-5627",
+     "link": "https://stjosephogden.org/",
+     "times": [
+       "Saturday vigil 5:30 PM (English), 7:00 PM (Spanish)",
+       "Sunday 8:30 & 11:30 AM (English), 10:00 AM & 1:00 PM (Spanish)",
+       "Weekdays 8:30 AM"
+     ],
+     "blurb": "Ogden's historic downtown Catholic parish, with Mass in English and Spanish.",
+     "region": "weber",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Episcopal Church of the Good Shepherd / El Buen Pastor",
+     "town": "Ogden",
+     "faith": "Episcopal",
+     "address": "2374 Grant Ave, Ogden, UT 84401",
+     "phone": "801-392-8168",
+     "link": "https://goodshepherdogden.org/",
+     "times": [
+       "Sunday 10:00 AM (Spanish), 10:30 AM (English)",
+       "Wednesday 11:30 AM Eucharist"
+     ],
+     "blurb": "A historic downtown Episcopal parish with services in English and Spanish.",
+     "region": "weber",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Historic Elim Lutheran Church",
+     "town": "Ogden",
+     "faith": "Lutheran",
+     "address": "575 23rd St, Ogden, UT 84401",
+     "phone": "801-394-5543",
+     "link": "https://elimlutheran.org/",
+     "times": [
+       "Sunday 9:00 AM Bible study",
+       "Sunday 10:00 AM worship with communion"
+     ],
+     "blurb": "A historic Lutheran (ELCA) congregation near downtown Ogden.",
+     "region": "weber",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "St. Paul Lutheran Church",
+     "town": "Ogden",
+     "faith": "Lutheran",
+     "address": "3329 Harrison Blvd, Ogden, UT 84403",
+     "phone": "801-392-6368",
+     "link": "https://stpaulutah.org/",
+     "times": [
+       "Sunday 8:30 & 11:00 AM worship",
+       "Sunday School 9:45 AM"
+     ],
+     "blurb": "A Lutheran congregation on Harrison Boulevard with two Sunday services.",
+     "region": "weber",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "First Presbyterian Church of Ogden",
+     "town": "Ogden",
+     "faith": "Presbyterian",
+     "address": "880 28th St, Ogden, UT 84403",
+     "phone": "801-393-8477",
+     "link": "https://fpcogden.org/",
+     "times": [
+       "Sunday 10:00 AM worship",
+       "Wednesday 7:00 PM vespers"
+     ],
+     "blurb": "A Presbyterian congregation holding Sunday worship and Wednesday vespers.",
+     "region": "weber",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Unitarian Universalist Church of Ogden",
+     "town": "Ogden",
+     "faith": "Unitarian Universalist",
+     "address": "880 28th St, Ogden, UT 84403",
+     "link": "https://uuco.org/",
+     "times": [
+       "Sunday 10:00 AM (except first Sundays; check their site)"
+     ],
+     "blurb": "A liberal religious congregation meeting in the First Presbyterian building.",
+     "region": "weber",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Canyon Road Church",
+     "town": "Ogden",
+     "faith": "Christian",
+     "address": "1390 Canyon Rd, Ogden, UT 84404",
+     "link": "https://canyonroadchurch.com/",
+     "times": [
+       "Sunday 9:00 AM (Spanish)",
+       "Sunday 10:30 AM"
+     ],
+     "blurb": "A Christian church near the mouth of Ogden Canyon with English and Spanish services.",
+     "region": "weber",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Berean Baptist Church",
+     "town": "Ogden",
+     "faith": "Baptist",
+     "address": "3846 Jackson Ave, Ogden, UT 84403",
+     "phone": "801-399-3855",
+     "link": "https://berean-baptist-utah.com/",
+     "times": [
+       "Sunday School 9:45 AM",
+       "Sunday 10:45 AM & 5:30 PM",
+       "Wednesday 7:00 PM"
+     ],
+     "blurb": "An independent Baptist church that also runs a Christian school.",
+     "region": "weber",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Transfiguration Greek Orthodox Church",
+     "town": "South Ogden",
+     "faith": "Greek Orthodox",
+     "address": "674 42nd St, South Ogden, UT 84403",
+     "phone": "801-399-2231",
+     "link": "https://orthodoxogden.org/",
+     "times": [
+       "Sunday 9:00 AM Orthros",
+       "Sunday 10:00 AM Divine Liturgy"
+     ],
+     "blurb": "A Greek Orthodox parish known locally for its annual Greek festival.",
+     "region": "weber",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Buddhist Church of Ogden",
+     "town": "Ogden",
+     "faith": "Buddhist",
+     "address": "155 North St, Ogden, UT 84404",
+     "phone": "801-392-7132",
+     "link": "https://ogdenbuddhistchurch.org/",
+     "times": [
+       "See their calendar for services"
+     ],
+     "blurb": "A long-established Jodo Shinshu Buddhist temple.",
+     "region": "weber",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Islamic Center of Kuwait in Utah",
+     "town": "South Ogden",
+     "faith": "Muslim",
+     "address": "5864 Harrison Blvd, South Ogden, UT 84403",
+     "link": "https://ickutah.org/",
+     "times": [
+       "Friday Jumu'ah 1:30 PM",
+       "Daily prayer times on their site"
+     ],
+     "blurb": "A mosque and Islamic center serving Muslims in the Ogden area.",
+     "region": "weber",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Ogden Seventh-day Adventist Church",
+     "town": "Ogden",
+     "faith": "Seventh-day Adventist",
+     "address": "2185 Taylor Ave, Ogden, UT 84401",
+     "phone": "385-288-1916",
+     "link": "https://ogdenut.adventistchurch.org/",
+     "times": [
+       "Saturday (Sabbath) services; see “Plan your visit” on their site"
+     ],
+     "blurb": "An Adventist congregation in central Ogden.",
+     "region": "weber",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Congregation Brith Sholem",
+     "town": "Ogden",
+     "faith": "Jewish",
+     "address": "2750 Grant Ave, Ogden, UT 84401",
+     "phone": "801-436-7268",
+     "link": "https://brithsholem.org/",
+     "times": [
+       "Service times aren't posted"
+     ],
+     "blurb": "Describes itself as Utah's oldest continuously active synagogue.",
+     "note": "Call before you go: their website has no current service times.",
+     "region": "weber",
+     "checked": "2026-10-22"
+   },
+   {
+     "name": "Sri Ganesha Hindu Temple of Utah",
+     "town": "South Jordan",
+     "faith": "Hindu",
+     "address": "1142 W South Jordan Pkwy, South Jordan, UT 84095",
+     "phone": "801-254-9177",
+     "link": "https://utahganeshatemple.org/",
+     "times": [
+       "Mon–Fri 8:30 AM–12 PM & 5–8:30 PM",
+       "Sat–Sun 8:30 AM–8:30 PM"
+     ],
+     "blurb": "The closest Hindu temple. There isn't one in Weber County; this one is about an hour south of Ogden.",
+     "note": "Nearest one, outside Weber County.",
+     "region": "weber",
+     "checked": "2026-10-22"
+   }
  ]
 };
 

@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Places of Worship in Ogden Valley &amp; Ogden</title>
+<meta name="description" content="Churches and places of worship in Eden, Huntsville and Liberty, plus Ogden-area congregations of many faiths, with service times.">
+<meta property="og:title" content="Places of Worship in Ogden Valley &amp; Ogden">
+<meta property="og:description" content="Churches and places of worship in Eden, Huntsville and Liberty, plus Ogden-area congregations of many faiths, with service times.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ogdenvalleyevent.com/worship.html">
+<meta property="og:image" content="https://ogdenvalleyevent.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ogdenvalleyevent.com/worship.html">
+<link rel="icon" href="logo-10-years-32.png">
+<link rel="apple-touch-icon" href="logo-10-years-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
+<style>@media (max-width:700px){#faithbar{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}#faithbar .chip,#faithbar .flab{flex:none;white-space:nowrap}}</style>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<div class="alert-bar" id="alert-bar" hidden></div>
+<div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
+  <strong>Canyon check</strong>
+  <a href="https://ogdenvalley.udot.utah.gov/road-information/" target="_blank" rel="noopener">Ogden Valley roads &amp; cameras (UDOT)</a>
+  <a href="https://udottraffic.utah.gov/map" target="_blank" rel="noopener" data-track="open snowplow map">🚜 Snowplows (UDOT)</a>
+  <a href="live.html">Live view</a>
+  <a href="safety.html">Alerts &amp; fires</a>
+  <a href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Eden weather</a>
+</div></div>
+<header class="site-head"><div class="container">
+  <a class="brand" href="index.html"><img data-logo="180" src="logo-10-years-180.png" alt="" width="52" height="52"><span><b>Ogden Valley</b><small>Information &amp; Events</small></span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="main" id="nav" aria-label="Main"></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="container"><div><p class="eyebrow">Up here &amp; down the canyon</p><h1>Places of worship</h1><p class="lead" style="margin-top:12px">Service times for congregations in Eden, Huntsville and Liberty, plus many faiths down the canyon in Ogden.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section><div class="container">
+  <div class="fbox">
+    <div id="area" style="margin-bottom:10px"></div>
+    <div class="frow" id="faithbar"><span class="flab">Faith</span></div>
+    <input type="search" id="q" class="fsearch" placeholder="Search: Mass, Sunday 9 AM, Spanish, Liberty…" aria-label="Search places of worship">
+    <p class="fcount"><span id="count"></span> <button type="button" class="fclear" id="clear" hidden>Clear</button></p>
+  </div>
+  <div id="list"></div>
+  <div id="list-w-wrap" hidden><div class="section-head" style="margin-top:26px"><div><p class="eyebrow">Weber County · Ogden</p><h2>Down the canyon</h2></div></div><div id="list-w"></div></div>
+  <div class="fnotes">
+    <p class="fair">Times come from each congregation's own website and can change for holidays. Check their site or call before you go. Know a congregation we're missing, or a time that changed? <a data-form="update" href="submit.html">Let us know</a>.</p>
+    <p class="also">Also see: <a href="down-the-canyon.html">Down the canyon</a> · <a href="safety.html">Safety &amp; who to call</a> · <a href="businesses.html">Local businesses</a></p>
+  </div>
+</div></section>
+</main>
+<footer class="site-foot"></footer>
+<script src="layout.js"></script>
+<script src="config.js"></script>
+<script src="places.js"></script>
+<script src="site.js"></script>
+<script>
+(function(){const S=window.OVE_SITE,el=S.el,all=(S.P.worship||[]);let area=S.getArea(),faith="",q="";
+const isW=p=>p.region==="weber";
+const faiths=[...new Set(all.map(p=>p.faith))].sort();
+const bar=document.getElementById("faithbar"),lab=bar.firstElementChild;
+bar.replaceChildren(lab,...["All"].concat(faiths).map(t=>{const b=el("button",{class:"chip",type:"button","aria-pressed":String(t==="All"),text:t});b.addEventListener("click",()=>{faith=t==="All"?"":t;[...bar.querySelectorAll("button")].forEach(x=>x.setAttribute("aria-pressed",String(x===b)));draw()});return b}));
+const map=a=>"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(a);
+const card=p=>el("article",{class:"card",id:S.slug(p.name)},[
+ el("div",{class:"badges"},[el("span",{class:"meta",text:p.faith+" · "+p.town})]),
+ el("h3",{text:p.name}),
+ p.blurb?el("p",{text:p.blurb}):null,
+ p.note?el("p",{class:"fine note",style:"font-weight:700",text:p.note}):null,
+ el("ul",{style:"margin:6px 0 8px;padding-left:20px"},(p.times||[]).map(t=>el("li",{text:t}))),
+ el("div",{class:"meta"},[el("a",{href:map(p.address),target:"_blank",rel:"noopener","data-track":"worship map: "+p.name,text:p.address})]),
+ p.phone?el("div",{class:"meta"},[el("a",{href:"tel:"+p.phone.replace(/[^0-9]/g,""),"data-track":"call: "+p.name,text:p.phone})]):null,
+ p.link?el("div",{class:"links"},[el("a",{href:p.link,target:"_blank",rel:"noopener",text:"Website"})]):null]);
+const grid=(box,items)=>box.replaceChildren(items.length?el("div",{class:"grid"},items.map(card)):el("p",{class:"fcount",text:"None match that up here."}));
+function draw(){const shown=all.filter(p=>(!faith||p.faith===faith)&&(!q||JSON.stringify(p).toLowerCase().includes(q)));
+ const up=shown.filter(p=>!isW(p)),dn=shown.filter(isW),lw=document.getElementById("list-w-wrap"),L=document.getElementById("list");
+ if(area==="weber"){grid(L,dn);lw.hidden=true}
+ else{if(area==="both"&&!up.length&&dn.length)L.replaceChildren(el("p",{class:"fcount",style:"font-size:17px",text:"Nothing up here for that. Here's what's down the canyon:"}));else grid(L,up);
+  lw.hidden=area!=="both"||!dn.length;if(!lw.hidden)grid(document.getElementById("list-w"),dn)}
+ const n=area==="ov"?up.length:area==="weber"?dn.length:shown.length;
+ document.getElementById("count").textContent="Showing "+n+(n===1?" place":" places");document.getElementById("clear").hidden=!(faith||q);
+ [...bar.querySelectorAll("button")].forEach(b=>{if(b.textContent!=="All")b.hidden=!all.some(p=>p.faith===b.textContent&&(area==="both"||(area==="weber")===isW(p)))})}
+S.areaSwitch(document.getElementById("area"),v=>{area=v;draw()});
+document.getElementById("q").addEventListener("input",e=>{q=e.target.value.trim().toLowerCase();draw()});
+document.getElementById("clear").addEventListener("click",()=>{faith="";q="";document.getElementById("q").value="";[...bar.querySelectorAll("button")].forEach(x=>x.setAttribute("aria-pressed",String(x.textContent==="All")));draw()});
+draw();if(location.hash){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t){t.scrollIntoView();t.style.outline="3px solid var(--accent)"}}})();
+</script>
+</body>
+</html>
