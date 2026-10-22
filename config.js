@@ -185,7 +185,7 @@ window.OVE = {
     { image: "valley-moose-snow-deck.jpg", by: "Shauna Miller", place: "Nordic Valley", date: "", caption: "A moose naps in the snow right outside the back door" },
     { image: "valley-sunset-huntsville.jpg", by: "Seth Miller", place: "Huntsville", date: "", caption: "Fire in the sky over the Valley at sunset" },
     { image: "valley-sunrays-seth-miller.jpg", by: "Seth Miller", place: "Huntsville", date: "", caption: "Sun rays break through the clouds over the mountains" },
-    { image: "valley-red-squirrel-feeder.jpg", by: "Shauna Miller", place: "", date: "2026-10", caption: "A red squirrel checks out who's watching from the feeder" },
+    { image: "valley-red-squirrel-feeder.jpg", by: "Shauna Miller", place: "Nordic Valley", date: "2026-10", caption: "A red squirrel checks out who's watching from the feeder" },
     { image: "valley-storm-rainbow-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley City", date: "2026-10", caption: "A rainbow peeks through the storm clouds over the mountains" },
     { image: "valley-sunset-trees-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley City", date: "2026-10", caption: "An orange sunset glows behind the pines and fall leaves" },
     { image: "valley-sculpture-aspens-sean-smith.jpg", by: "Sean W. Smith", place: "", date: "2026-10", caption: "A giant sculpture rises out of the golden aspens" },
