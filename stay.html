@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Places to Stay in Ogden Valley: Lodges, Inns &amp; Vacation Rentals</title>
+<meta name="description" content="Places to stay in Eden, Huntsville and Liberty: lodges, inns, resort stays and vacation rentals from local hosts.">
+<meta property="og:title" content="Places to Stay in Ogden Valley">
+<meta property="og:description" content="Places to stay in Eden, Huntsville and Liberty: lodges, inns, resort stays and vacation rentals from local hosts.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ogdenvalleyevent.com/stay.html">
+<meta property="og:image" content="https://ogdenvalleyevent.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ogdenvalleyevent.com/stay.html">
+<link rel="icon" href="logo-10-years-32.png">
+<link rel="apple-touch-icon" href="logo-10-years-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<div class="alert-bar" id="alert-bar" hidden></div>
+<div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
+  <strong>Canyon check</strong>
+  <a href="https://ogdenvalley.udot.utah.gov/road-information/" target="_blank" rel="noopener">Ogden Valley roads &amp; cameras (UDOT)</a>
+  <a href="https://udottraffic.utah.gov/map" target="_blank" rel="noopener" data-track="open snowplow map">🚜 Snowplows (UDOT)</a>
+  <a href="live.html">Live view</a>
+  <a href="safety.html">Alerts &amp; fires</a>
+  <a href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Eden weather</a>
+</div></div>
+<header class="site-head"><div class="container">
+  <a class="brand" href="index.html"><img data-logo="180" src="logo-10-years-180.png" alt="" width="52" height="52"><span><b>Ogden Valley</b><small>Information &amp; Events</small></span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="main" id="nav" aria-label="Main"></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley</p><h1>Places to stay</h1><p class="lead" style="margin-top:12px">Lodges, inns, resort stays and cabins from local hosts in Eden, Huntsville and Liberty.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section><div class="container">
+  <div class="card" style="border-left:6px solid var(--accent,#C2410C);margin-bottom:16px"><p class="eyebrow" style="margin:0">Valley hosts</p><h2 style="margin:4px 0">Rent out your cabin or condo? List it free.</h2><p>Send your VRBO, Airbnb or booking link, town, how many it sleeps, what guests love (hot tub, pets OK, near the lifts or Pineview) and a photo or two. We check every place before it goes up.</p><a class="btn primary" data-form="stay" data-track="list my place to stay" href="submit.html">List my place, free</a></div>
+  <div class="fbox">
+    <div class="frow" id="kindbar"><span class="flab">Kind</span></div>
+    <input type="search" id="q" class="fsearch" placeholder="Search: hot tub, sleeps 8, pet-friendly…" aria-label="Search places to stay">
+    <div class="frow"><label class="flab" for="where">Where</label><select id="where" class="fselect">
+      <option value="All">All of the Valley</option><option value="Eden">Eden</option><option value="Huntsville Town">Huntsville Town</option><option value="Huntsville area">Huntsville area</option><option value="Liberty">Liberty</option><option value="Snowbasin">Snowbasin</option><option value="Powder Mountain">Powder Mountain</option><option value="Nordic Valley">Nordic Valley</option>
+    </select></div>
+    <div id="more" hidden>
+      <div class="frow" id="amenbar"><span class="flab">Has</span></div>
+    </div>
+    <button type="button" class="fmore" id="morebtn" aria-expanded="false" aria-controls="more">More filters ▾</button>
+    
+    <p class="fcount"><span id="count"></span> <button type="button" class="fclear" id="clear" hidden>Clear filters</button></p>
+  </div>
+  <div id="list"></div>
+  <div data-groups="rentals" data-title="Looking for a longer stay? Ask your neighbors" style="margin-top:22px"></div>
+  <div class="fnotes">
+    <p class="fair">Details are as told to us by the owner or host. Listings are free and in A–Z order. Nobody pays to be ranked higher, reviews come from real people, and sponsors are always labeled. Every place is checked by a local before it goes up.</p>
+    <p class="also">Also see: <a href="restaurants.html">Restaurants</a> · <a href="businesses.html">Valley Businesses</a> · <a href="beauty.html">Beauty &amp; Wellness</a> · <a href="farm.html">Farm Stands &amp; Local Food</a> · <a href="foodtrucks.html">Food Trucks</a> · <a href="services.html">Home Services</a></p>
+  </div>
+</div></section>
+</main>
+<footer class="site-foot"></footer>
+<script src="layout.js"></script>
+<script src="config.js"></script>
+<script src="places.js"></script>
+<script src="site.js"></script>
+<script>
+(async function(){const S=window.OVE_SITE,el=S.el,CFG={"key": "stay", "spot": false, "one": "place to stay", "many": "places to stay", "rows": [{"id": "kindbar", "field": "kind", "single": true, "order": ["Lodge & inn", "Resort stay", "Cabin / vacation rental", "Condo"]}, {"id": "amenbar", "field": "amenities", "more": true}]};const all=(S.P[CFG.key]||[]);const R=await S.loadJSON("reviews.json");
+const st={town:"All",q:""};const spot=CFG.spot?S.spotFilter(document.getElementById("spotbar"),all,CFG.key,()=>draw()):()=>true;
+const val=(p,r)=>r.single?[p[r.field]||"Other"]:(p[r.field]||[]);
+const rows=CFG.rows.map(r=>{const seen=[...new Set(all.flatMap(p=>val(p,r)))];let vals=r.order?r.order.filter(v=>seen.includes(v)||r.keepAll).concat(seen.filter(v=>!r.order.includes(v)).sort()):seen.sort();
+ const bar=document.getElementById(r.id);st[r.id]="";if(!vals.length||(r.single&&vals.length<2)){bar.hidden=true;return null}
+ const lab=bar.firstElementChild;bar.replaceChildren(lab,...["All"].concat(vals).map(t=>{const b=el("button",{class:"chip",type:"button","aria-pressed":String(t==="All"),text:t});b.onclick=()=>{st[r.id]=t==="All"?"":t;[...bar.querySelectorAll("button")].forEach(x=>x.setAttribute("aria-pressed",String(x===b)));draw()};return b}));return Object.assign({bar},r)}).filter(Boolean);
+const where=document.getElementById("where"),qi=document.getElementById("q"),more=document.getElementById("more"),mb=document.getElementById("morebtn"),clr=document.getElementById("clear");
+if(more&&!rows.some(r=>r.more)){more.remove();mb.remove()}
+const pred=(p,s)=>spot(p)&&(s.town==="All"||(p.town||p.area)===s.town)&&rows.every(r=>!s[r.id]||val(p,r).includes(s[r.id]))&&(!s.q||JSON.stringify(p).toLowerCase().includes(s.q));
+function draw(){const shown=all.filter(p=>pred(p,st));S.listing(document.getElementById("list"),shown,CFG.key,R);
+ S.pruneChips(all,pred,st,rows.map(r=>({key:r.id,btns:r.bar.querySelectorAll("button"),val:b=>b.textContent==="All"?null:b.textContent,row:false})));
+ if(where)[...where.options].forEach(o=>{if(o.value!=="All")o.disabled=o.value!==st.town&&!all.some(p=>pred(p,Object.assign({},st,{town:o.value})))});
+ const on=st.town!=="All"||st.q||rows.some(r=>st[r.id]);document.getElementById("count").textContent="Showing "+shown.length+(shown.length===1?" "+CFG.one:" "+CFG.many)+(on?"":" (all)");clr.hidden=!on;
+ if(mb&&document.body.contains(mb)){const n=rows.filter(r=>r.more&&st[r.id]).length;mb.textContent=(more.hidden?"More filters ▾":"Fewer filters ▴")+(n&&more.hidden?" ("+n+" on)":"")}}
+qi.addEventListener("input",e=>{st.q=e.target.value.trim().toLowerCase();draw()});
+if(where)where.addEventListener("change",()=>{st.town=where.value;draw()});
+if(mb)mb.addEventListener("click",()=>{more.hidden=!more.hidden;mb.setAttribute("aria-expanded",String(!more.hidden));draw()});
+clr.addEventListener("click",()=>{st.town="All";st.q="";rows.forEach(r=>st[r.id]="");if(where)where.value="All";qi.value="";document.querySelectorAll(".fbox .chip").forEach(b=>b.setAttribute("aria-pressed",String(b.textContent==="All")));draw()});
+draw();if(location.hash){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t){t.scrollIntoView();t.style.outline="3px solid var(--accent)"}}})();
+</script>
+</body>
+</html>

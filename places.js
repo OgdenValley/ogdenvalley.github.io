@@ -24,360 +24,1531 @@
      note:     a short line shown in small print on the card
    Small, local businesses only: no developers or home builders.
    ===================================================================== */
+/*
+   PLACES TO STAY (stay): lodges, inns, resort stays and local vacation rentals.
+     kind: "Lodge & inn" | "Resort stay" | "Cabin / vacation rental" | "Condo"
+     sleeps (number), bedrooms (number), book (VRBO / Airbnb / booking link), minNights,
+     amenities: ["Hot tub", "Pet-friendly", "Ski-in / ski-out", "Near the lifts", "Near Pineview", "Full kitchen", "Fireplace", "Wi-Fi", "EV charging"]
+     host (first name of a local host, if they want it shown)
+*/
 window.OVE_PLACES = {
  "restaurants": [
-  {
-   "name": "The Oaks",
-   "food": ["Burgers & casual", "Sweets & ice cream"],
-   "good": ["Takeout"],
-   "note": "Reopened under new owners in Nov. 2025. Call for hours before you go.",
-   "factsChecked": "2026-10-11",
-   "area": "Ogden Canyon",
-   "type": "Historic canyon restaurant & ice cream",
-   "blurb": "One of Utah's oldest restaurants, welcoming visitors in Ogden Canyon since it was founded as a mountain resort in 1907. Homemade meals, burgers and Farr's ice cream; reopened under new owners David and Cora Neal.",
-   "phone": "(801) 348-8188",
-   "link": "https://theoaksogden.com/",
-   "address": "750 Ogden Canyon, Ogden, UT 84401",
-   "checked": "2026-10-08"
-  },
-  {
-   "name": "Bower Lodge",
-   "food": ["Sit-down dinner", "Drinks & apres"],
-   "note": "May be closed: its online ordering page said \"temporarily closed, reopen date pending\" when we checked in Oct. 2026. Call before you go.",
-   "factsChecked": "2026-10-11",
-   "town": "Eden",
-   "type": "Restaurant & bar",
-   "blurb": "Restaurant and bar at Wolf Creek with share plates, entrees and live music nights.",
-   "phone": "385-326-3690",
-   "address": "3900 N Wolf Creek Dr, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Carlos & Harley's Fresh Mex Cantina",
-   "food": ["Mexican"],
-   "good": ["Reservations", "Takeout"],
-   "note": "The restaurant recommends reservations.",
-   "factsChecked": "2026-10-11",
-   "town": "Eden",
-   "type": "Mexican / Tex-Mex & bar",
-   "blurb": "Mexican and Tex-Mex restaurant with a full bar in a restored 1880s building that was formerly the Eden General Store.",
-   "phone": "801-745-8226",
-   "link": "https://carlosandharleys.com",
-   "address": "5510 E 2200 N, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Chris'",
-   "food": ["Burgers & casual", "Sweets & ice cream"],
-   "season": "Seasonal",
-   "good": ["Takeout"],
-   "note": "Hours change with the season. Call before you go.",
-   "factsChecked": "2026-10-11",
-   "town": "Huntsville area",
-   "type": "Burgers & shakes (seasonal)",
-   "blurb": "Casual seasonal stop near Pineview Reservoir known for raspberry shakes, burgers and fries.",
-   "phone": "801-745-3542",
-   "address": "7345 E 900 S, Huntsville, UT 84317",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Earl's Lodge (Snowbasin)",
-   "food": ["Resort food court"],
-   "good": ["Patio", "Gluten-free options"],
-   "note": "At the Snowbasin base by the Needles Gondola. No lift ride needed.",
-   "factsChecked": "2026-10-11",
-   "town": "Snowbasin",
-   "type": "Base lodge dining",
-   "blurb": "Slopeside base-area lodge at Snowbasin with a variety of freshly made food.",
-   "phone": "801-620-1000",
-   "link": "https://www.snowbasin.com/dining/",
-   "address": "3925 E Snowbasin Rd, Huntsville, UT 84317",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Eats of Eden",
-   "food": ["Pizza", "Burgers & casual"],
-   "good": ["Takeout"],
-   "note": "Usually closed Sundays and Mondays. Check their site for hours.",
-   "factsChecked": "2026-10-11",
-   "town": "Eden",
-   "type": "Pizza, burgers & sandwiches",
-   "blurb": "Restaurant known for homemade breads, buns and pizza crust, serving pizza, burgers, sandwiches, pasta and salads.",
-   "phone": "801-745-8618",
-   "link": "https://eatsofedenutah.com",
-   "address": "2595 N Hwy 162, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "First Lift Coffee",
-   "food": ["Coffee & breakfast"],
-   "note": "Inside Compass Rose Lodge, and open to everyone, not just hotel guests.",
-   "factsChecked": "2026-10-11",
-   "town": "Huntsville Town",
-   "type": "Coffee",
-   "blurb": "Coffee shop at Compass Rose Lodge serving coffee, tea, grilled sandwiches, soups and pastries.",
-   "phone": "385-279-4460",
-   "link": "https://compassroselodge.com/first-lift-coffee",
-   "address": "198 S 7400 E, Huntsville, UT 84317",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Hank's Bistro & Brew",
-   "food": ["Burgers & casual"],
-   "good": ["Takeout"],
-   "note": "Sunday brunch, and online ordering for pickup.",
-   "factsChecked": "2026-10-11",
-   "town": "Eden",
-   "type": "Comfort food, beer & wine",
-   "blurb": "Family-owned comfort-food restaurant that moved from a food truck to a storefront in Eden; serves beer and wine.",
-   "phone": "(801) 745-4265",
-   "link": "http://hanksbistroandbrew.com/",
-   "address": "2429 UT-158, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Hidden Lake Lodge & Twists Mountain Market (Powder Mountain)",
-   "food": ["Resort food court"],
-   "season": "Winter (ski season)",
-   "note": "Near the top of Powder Mountain. Closed in summer.",
-   "factsChecked": "2026-10-11",
-   "town": "Powder Mountain",
-   "type": "On-mountain lodge (winter)",
-   "blurb": "Lodge at the top of the mountain serving burritos, butter chicken, nachos and soups, with a snack market inside.",
-   "phone": "801-745-3772",
-   "link": "https://www.powdermountain.com/eats",
-   "address": "6965 E Powder Mountain Rd, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "John Paul Lodge (Snowbasin)",
-   "food": ["Resort food court"],
-   "season": "Winter (ski season)",
-   "lift": true,
-   "good": ["Gluten-free options"],
-   "note": "At the top of the John Paul Express lift. Non-skiers can buy a sightseeing lift ticket.",
-   "factsChecked": "2026-10-11",
-   "town": "Snowbasin",
-   "type": "On-mountain lodge (winter)",
-   "blurb": "Winter-only lodge at the top of the John Paul Express serving Bavarian-style food.",
-   "phone": "801-620-1000",
-   "link": "https://www.snowbasin.com/dining/",
-   "address": "3925 E Snowbasin Rd, Huntsville, UT 84317",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Links Bistro at Wolf Creek Resort",
-   "food": ["Coffee & breakfast", "Burgers & casual"],
-   "good": ["Patio"],
-   "note": "Breakfast all day, on the Wolf Creek golf course patio.",
-   "factsChecked": "2026-10-11",
-   "town": "Eden",
-   "type": "Golf course bistro",
-   "blurb": "Breakfast and lunch spot at the Wolf Creek Resort golf course; listings note it is typically closed in winter.",
-   "phone": "801-781-4150",
-   "link": "https://linksbistro.com",
-   "address": "3873 N Wolf Creek Dr, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Lucky Slice (Powder Mountain)",
-   "food": ["Pizza"],
-   "season": "Winter (ski season)",
-   "note": "In Sundown Lodge, and open through night skiing.",
-   "factsChecked": "2026-10-11",
-   "town": "Powder Mountain",
-   "type": "Pizza (winter)",
-   "blurb": "Slopeside pizza counter at Sundown Lodge, open through night skiing.",
-   "phone": "801-745-3772",
-   "link": "https://www.powdermountain.com/eats",
-   "address": "6965 E Powder Mountain Rd, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Mad Moose Cafe",
-   "food": ["Coffee & breakfast", "Burgers & casual"],
-   "good": ["Kids welcome", "Takeout", "Patio"],
-   "note": "Kids' meals come with a cookie or ice cream.",
-   "factsChecked": "2026-10-11",
-   "town": "Eden",
-   "type": "Cafe & coffee",
-   "blurb": "Cafe serving coffee roasted in-house along with paninis, burgers, salads and breakfast.",
-   "phone": "(801) 452-7425",
-   "link": "https://madmoosecafe.com",
-   "address": "2429 N Hwy 158, Suite 6, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Needles Lodge (Snowbasin)",
-   "food": ["Resort food court"],
-   "lift": true,
-   "good": ["Patio", "Reservations"],
-   "note": "At the top of the Needles Gondola, about 8,700 feet up. In summer it opens for Sunday brunch (reservations required).",
-   "factsChecked": "2026-10-11",
-   "town": "Snowbasin",
-   "type": "Mountaintop restaurant",
-   "blurb": "Restaurant at about 8,700 feet at the top of Snowbasin's Needles Gondola.",
-   "phone": "801-620-1000",
-   "link": "https://www.snowbasin.com/dining/",
-   "address": "3925 E Snowbasin Rd, Huntsville, UT 84317",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Nordic Valley Snack Shack & food trucks",
-   "food": ["Resort food court"],
-   "good": ["Patio"],
-   "note": "Snack shack plus rotating food trucks, with fire pits and heaters outside.",
-   "factsChecked": "2026-10-11",
-   "town": "Nordic Valley",
-   "type": "Snack bar & rotating food trucks",
-   "blurb": "Resort snack shack plus rotating food trucks (listed: Bad Boy Burger Co., Fry Me To The Moon, Green Goat Kava and Coffee).",
-   "phone": "385-298-0155",
-   "link": "https://www.nordicvalley.ski/food-beverage/",
-   "address": "3567 Nordic Valley Way, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Ogden Valley Pizza",
-   "food": ["Pizza"],
-   "good": ["Kids welcome", "Takeout"],
-   "note": "Carryout and delivery ordering online.",
-   "factsChecked": "2026-10-11",
-   "town": "Eden",
-   "type": "Pizza",
-   "blurb": "Family-owned pizzeria offering made-to-order pies, wings and salads, with gluten-free crust available.",
-   "phone": "(385) 205-6130",
-   "link": "https://ogdenvalleypizza.hungerrush.com",
-   "address": "2612 N Hwy 162, Unit 2, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Peddler's Cafe & Catering (Eden)",
-   "food": ["Coffee & breakfast"],
-   "good": ["Takeout"],
-   "note": "The Eden location is pickup only.",
-   "factsChecked": "2026-10-11",
-   "town": "Eden",
-   "type": "Cafe, breakfast & lunch",
-   "blurb": "Cafe and caterer serving coffee, breakfast and lunch at its Eden location, with pickup ordering online; it also has an Ogden location.",
-   "phone": "(801) 695-1573",
-   "link": "https://peddlerscatering.com",
-   "address": "3632 N Wolf Creek Dr, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Saddlebag Saloon",
-   "food": ["Bar & grill", "Drinks & apres"],
-   "note": "Small, locally owned bar. Hours vary, so call before you go.",
-   "factsChecked": "2026-10-11",
-   "town": "Eden",
-   "type": "Bar / saloon",
-   "blurb": "Bar in the Eden commercial cluster on Highway 162.",
-   "phone": "801-920-7087",
-   "address": "2612 N Hwy 162, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Shooting Star Saloon",
-   "food": ["Bar & grill", "Burgers & casual"],
-   "note": "Known for the Star Burger.",
-   "factsChecked": "2026-10-11",
-   "town": "Huntsville Town",
-   "type": "Saloon & burgers",
-   "blurb": "Saloon dating to 1879, described as Utah's oldest continuously operating saloon, known for its Star Burger.",
-   "phone": "(801) 745-2002",
-   "address": "7350 E 200 S, Huntsville, UT",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Strawberry Patio (Snowbasin)",
-   "food": ["Resort food court"],
-   "season": "Winter (ski season)",
-   "good": ["Patio"],
-   "note": "At Snowbasin's Strawberry base by the Strawberry Gondola, with fire pits.",
-   "factsChecked": "2026-10-11",
-   "town": "Snowbasin",
-   "type": "Open-air food park (winter)",
-   "blurb": "Winter-only open-air food park at Snowbasin with 180-plus seats and several food options.",
-   "phone": "801-620-1000",
-   "link": "https://www.snowbasin.com/dining/",
-   "address": "3925 E Snowbasin Rd, Huntsville, UT 84317",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "The Cinnabar (Snowbasin)",
-   "food": ["Drinks & apres", "Bar & grill"],
-   "good": ["Reservations"],
-   "note": "Full-bar gastropub inside Earl's Lodge at the Snowbasin base.",
-   "factsChecked": "2026-10-11",
-   "town": "Snowbasin",
-   "type": "Shared plates & cocktails",
-   "blurb": "Base-area bar and restaurant at Snowbasin serving shared plates and cocktails.",
-   "phone": "801-620-1000",
-   "link": "https://www.snowbasin.com/dining/",
-   "address": "3925 E Snowbasin Rd, Huntsville, UT 84317",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Timberline Cafeteria & The Powder Keg (Powder Mountain)",
-   "food": ["Resort food court", "Drinks & apres"],
-   "season": "Winter (ski season)",
-   "good": ["Live music", "Takeout"],
-   "note": "By the main parking. The Powder Keg bar is downstairs, with live music in ski season.",
-   "factsChecked": "2026-10-11",
-   "town": "Powder Mountain",
-   "type": "Resort cafeteria & apres bar (winter)",
-   "blurb": "Timberline Lodge cafeteria with pizza, burgers and soups, with The Powder Keg bar downstairs offering local beer and Asian dishes.",
-   "phone": "801-745-3772",
-   "link": "https://www.powdermountain.com/eats",
-   "address": "6965 E Powder Mountain Rd, Eden, UT 84310",
-   "checked": "2026-10-07"
-  },
-  {
-   "name": "Eden Coffee Cocoa & Juicery",
-   "food": [
-    "Coffee & breakfast"
-   ],
-   "town": "Eden",
-   "type": "Coffee & juice",
-   "blurb": "Coffee, cocoa and juice shop on Highway 158 in Eden.",
-   "phone": "801-621-0505",
-   "address": "2405 N Hwy 158, Eden, UT 84310",
-   "added": "2026-10-16"
-  },
-  {
-   "name": "Sawasdee Thai Eden",
-   "food": [
-    "Sit-down dinner"
-   ],
-   "good": [
-    "Takeout"
-   ],
-   "note": "Takeout only. Hours we found: Tue-Sat 11:30-2 and 4-7:30, closed Sun-Mon. Call to confirm.",
-   "town": "Eden",
-   "type": "Thai (takeout)",
-   "blurb": "Takeout-only Thai restaurant in Eden.",
-   "phone": "801-979-9896",
-   "link": "https://sawasdee-thai-eden.square.site",
-   "address": "2612 N Hwy 162, Bldg 4, Eden, UT 84310",
-   "added": "2026-10-16"
-  },
-  {
-   "name": "The Drip Coffee & Soda Shop",
-   "food": [
-    "Coffee & breakfast"
-   ],
-   "good": [
-    "Takeout"
-   ],
-   "note": "Drive-thru next to Valley Market.",
-   "town": "Eden",
-   "type": "Coffee & soda (drive-thru)",
-   "blurb": "Coffee and soda shop near Valley Market on the road to Powder Mountain, with dine-in, walk-up and drive-thru service.",
-   "phone": "312-391-3912",
-   "link": "https://the-drip-coffee-and-soda-shop.square.site",
-   "address": "2555 N Wolf Creek Dr, Eden, UT 84310",
-   "added": "2026-10-16"
-  }
+   {
+     "name": "The Oaks",
+     "food": [
+       "Burgers & casual",
+       "Sweets & ice cream"
+     ],
+     "good": [
+       "Takeout"
+     ],
+     "note": "Reopened under new owners in Nov. 2025. Call for hours before you go.",
+     "factsChecked": "2026-10-11",
+     "area": "Ogden Canyon",
+     "type": "Historic canyon restaurant & ice cream",
+     "blurb": "One of Utah's oldest restaurants, welcoming visitors in Ogden Canyon since it was founded as a mountain resort in 1907. Homemade meals, burgers and Farr's ice cream; reopened under new owners David and Cora Neal.",
+     "phone": "(801) 348-8188",
+     "link": "https://theoaksogden.com/",
+     "address": "750 Ogden Canyon, Ogden, UT 84401",
+     "checked": "2026-10-08"
+   },
+   {
+     "name": "Bower Lodge",
+     "food": [
+       "Sit-down dinner",
+       "Drinks & apres"
+     ],
+     "note": "May be closed: its online ordering page said \"temporarily closed, reopen date pending\" when we checked in Oct. 2026. Call before you go.",
+     "factsChecked": "2026-10-11",
+     "town": "Eden",
+     "type": "Restaurant & bar",
+     "blurb": "Restaurant and bar at Wolf Creek with share plates, entrees and live music nights.",
+     "phone": "385-326-3690",
+     "address": "3900 N Wolf Creek Dr, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Carlos & Harley's Fresh Mex Cantina",
+     "food": [
+       "Mexican"
+     ],
+     "good": [
+       "Reservations",
+       "Takeout"
+     ],
+     "note": "The restaurant recommends reservations.",
+     "factsChecked": "2026-10-11",
+     "town": "Eden",
+     "type": "Mexican / Tex-Mex & bar",
+     "blurb": "Mexican and Tex-Mex restaurant with a full bar in a restored 1880s building that was formerly the Eden General Store.",
+     "phone": "801-745-8226",
+     "link": "https://carlosandharleys.com",
+     "address": "5510 E 2200 N, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Chris'",
+     "food": [
+       "Burgers & casual",
+       "Sweets & ice cream"
+     ],
+     "season": "Seasonal",
+     "good": [
+       "Takeout"
+     ],
+     "note": "Hours change with the season. Call before you go.",
+     "factsChecked": "2026-10-11",
+     "town": "Huntsville area",
+     "type": "Burgers & shakes (seasonal)",
+     "blurb": "Casual seasonal stop near Pineview Reservoir known for raspberry shakes, burgers and fries.",
+     "phone": "801-745-3542",
+     "address": "7345 E 900 S, Huntsville, UT 84317",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Earl's Lodge (Snowbasin)",
+     "food": [
+       "Resort food court"
+     ],
+     "good": [
+       "Patio",
+       "Gluten-free options"
+     ],
+     "note": "At the Snowbasin base by the Needles Gondola. No lift ride needed.",
+     "factsChecked": "2026-10-11",
+     "town": "Snowbasin",
+     "type": "Base lodge dining",
+     "blurb": "Slopeside base-area lodge at Snowbasin with a variety of freshly made food.",
+     "phone": "801-620-1000",
+     "link": "https://www.snowbasin.com/dining/",
+     "address": "3925 E Snowbasin Rd, Huntsville, UT 84317",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Eats of Eden",
+     "food": [
+       "Pizza",
+       "Burgers & casual"
+     ],
+     "good": [
+       "Takeout"
+     ],
+     "note": "Usually closed Sundays and Mondays. Check their site for hours.",
+     "factsChecked": "2026-10-11",
+     "town": "Eden",
+     "type": "Pizza, burgers & sandwiches",
+     "blurb": "Restaurant known for homemade breads, buns and pizza crust, serving pizza, burgers, sandwiches, pasta and salads.",
+     "phone": "801-745-8618",
+     "link": "https://eatsofedenutah.com",
+     "address": "2595 N Hwy 162, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "First Lift Coffee",
+     "food": [
+       "Coffee & breakfast"
+     ],
+     "note": "Inside Compass Rose Lodge, and open to everyone, not just hotel guests.",
+     "factsChecked": "2026-10-11",
+     "town": "Huntsville Town",
+     "type": "Coffee",
+     "blurb": "Coffee shop at Compass Rose Lodge serving coffee, tea, grilled sandwiches, soups and pastries.",
+     "phone": "385-279-4460",
+     "link": "https://compassroselodge.com/first-lift-coffee",
+     "address": "198 S 7400 E, Huntsville, UT 84317",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Hank's Bistro & Brew",
+     "food": [
+       "Burgers & casual"
+     ],
+     "good": [
+       "Takeout"
+     ],
+     "note": "Sunday brunch, and online ordering for pickup.",
+     "factsChecked": "2026-10-11",
+     "town": "Eden",
+     "type": "Comfort food, beer & wine",
+     "blurb": "Family-owned comfort-food restaurant that moved from a food truck to a storefront in Eden; serves beer and wine.",
+     "phone": "(801) 745-4265",
+     "link": "http://hanksbistroandbrew.com/",
+     "address": "2429 UT-158, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Hidden Lake Lodge & Twists Mountain Market (Powder Mountain)",
+     "food": [
+       "Resort food court"
+     ],
+     "season": "Winter (ski season)",
+     "note": "Near the top of Powder Mountain. Closed in summer.",
+     "factsChecked": "2026-10-11",
+     "town": "Powder Mountain",
+     "type": "On-mountain lodge (winter)",
+     "blurb": "Lodge at the top of the mountain serving burritos, butter chicken, nachos and soups, with a snack market inside.",
+     "phone": "801-745-3772",
+     "link": "https://www.powdermountain.com/eats",
+     "address": "6965 E Powder Mountain Rd, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "John Paul Lodge (Snowbasin)",
+     "food": [
+       "Resort food court"
+     ],
+     "season": "Winter (ski season)",
+     "lift": true,
+     "good": [
+       "Gluten-free options"
+     ],
+     "note": "At the top of the John Paul Express lift. Non-skiers can buy a sightseeing lift ticket.",
+     "factsChecked": "2026-10-11",
+     "town": "Snowbasin",
+     "type": "On-mountain lodge (winter)",
+     "blurb": "Winter-only lodge at the top of the John Paul Express serving Bavarian-style food.",
+     "phone": "801-620-1000",
+     "link": "https://www.snowbasin.com/dining/",
+     "address": "3925 E Snowbasin Rd, Huntsville, UT 84317",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Links Bistro at Wolf Creek Resort",
+     "food": [
+       "Coffee & breakfast",
+       "Burgers & casual"
+     ],
+     "good": [
+       "Patio"
+     ],
+     "note": "Breakfast all day, on the Wolf Creek golf course patio.",
+     "factsChecked": "2026-10-11",
+     "town": "Eden",
+     "type": "Golf course bistro",
+     "blurb": "Breakfast and lunch spot at the Wolf Creek Resort golf course; listings note it is typically closed in winter.",
+     "phone": "801-781-4150",
+     "link": "https://linksbistro.com",
+     "address": "3873 N Wolf Creek Dr, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Lucky Slice (Powder Mountain)",
+     "food": [
+       "Pizza"
+     ],
+     "season": "Winter (ski season)",
+     "note": "In Sundown Lodge, and open through night skiing.",
+     "factsChecked": "2026-10-11",
+     "town": "Powder Mountain",
+     "type": "Pizza (winter)",
+     "blurb": "Slopeside pizza counter at Sundown Lodge, open through night skiing.",
+     "phone": "801-745-3772",
+     "link": "https://www.powdermountain.com/eats",
+     "address": "6965 E Powder Mountain Rd, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Mad Moose Cafe",
+     "food": [
+       "Coffee & breakfast",
+       "Burgers & casual"
+     ],
+     "good": [
+       "Kids welcome",
+       "Takeout",
+       "Patio"
+     ],
+     "note": "Kids' meals come with a cookie or ice cream.",
+     "factsChecked": "2026-10-11",
+     "town": "Eden",
+     "type": "Cafe & coffee",
+     "blurb": "Cafe serving coffee roasted in-house along with paninis, burgers, salads and breakfast.",
+     "phone": "(801) 452-7425",
+     "link": "https://madmoosecafe.com",
+     "address": "2429 N Hwy 158, Suite 6, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Needles Lodge (Snowbasin)",
+     "food": [
+       "Resort food court"
+     ],
+     "lift": true,
+     "good": [
+       "Patio",
+       "Reservations"
+     ],
+     "note": "At the top of the Needles Gondola, about 8,700 feet up. In summer it opens for Sunday brunch (reservations required).",
+     "factsChecked": "2026-10-11",
+     "town": "Snowbasin",
+     "type": "Mountaintop restaurant",
+     "blurb": "Restaurant at about 8,700 feet at the top of Snowbasin's Needles Gondola.",
+     "phone": "801-620-1000",
+     "link": "https://www.snowbasin.com/dining/",
+     "address": "3925 E Snowbasin Rd, Huntsville, UT 84317",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Nordic Valley Snack Shack & food trucks",
+     "food": [
+       "Resort food court"
+     ],
+     "good": [
+       "Patio"
+     ],
+     "note": "Snack shack plus rotating food trucks, with fire pits and heaters outside.",
+     "factsChecked": "2026-10-11",
+     "town": "Nordic Valley",
+     "type": "Snack bar & rotating food trucks",
+     "blurb": "Resort snack shack plus rotating food trucks (listed: Bad Boy Burger Co., Fry Me To The Moon, Green Goat Kava and Coffee).",
+     "phone": "385-298-0155",
+     "link": "https://www.nordicvalley.ski/food-beverage/",
+     "address": "3567 Nordic Valley Way, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Ogden Valley Pizza",
+     "food": [
+       "Pizza"
+     ],
+     "good": [
+       "Kids welcome",
+       "Takeout",
+       "Gluten-free options"
+     ],
+     "note": "Carryout and delivery ordering online.",
+     "factsChecked": "2026-10-11",
+     "town": "Eden",
+     "type": "Pizza",
+     "blurb": "Family-owned pizzeria offering made-to-order pies, wings and salads, with gluten-free crust available.",
+     "phone": "(385) 205-6130",
+     "link": "https://ogdenvalleypizza.hungerrush.com",
+     "address": "2612 N Hwy 162, Unit 2, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Peddler's Cafe & Catering (Eden)",
+     "food": [
+       "Coffee & breakfast"
+     ],
+     "good": [
+       "Takeout"
+     ],
+     "note": "The Eden location is pickup only.",
+     "factsChecked": "2026-10-11",
+     "town": "Eden",
+     "type": "Cafe, breakfast & lunch",
+     "blurb": "Cafe and caterer serving coffee, breakfast and lunch at its Eden location, with pickup ordering online; it also has an Ogden location.",
+     "phone": "(801) 695-1573",
+     "link": "https://peddlerscatering.com",
+     "address": "3632 N Wolf Creek Dr, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Saddlebag Saloon",
+     "food": [
+       "Bar & grill",
+       "Drinks & apres"
+     ],
+     "note": "Small, locally owned bar. Hours vary, so call before you go.",
+     "factsChecked": "2026-10-11",
+     "town": "Eden",
+     "type": "Bar / saloon",
+     "blurb": "Bar in the Eden commercial cluster on Highway 162.",
+     "phone": "801-920-7087",
+     "address": "2612 N Hwy 162, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Shooting Star Saloon",
+     "food": [
+       "Bar & grill",
+       "Burgers & casual"
+     ],
+     "note": "Known for the Star Burger.",
+     "factsChecked": "2026-10-11",
+     "town": "Huntsville Town",
+     "type": "Saloon & burgers",
+     "blurb": "Saloon dating to 1879, described as Utah's oldest continuously operating saloon, known for its Star Burger.",
+     "phone": "(801) 745-2002",
+     "address": "7350 E 200 S, Huntsville, UT",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Strawberry Patio (Snowbasin)",
+     "food": [
+       "Resort food court"
+     ],
+     "season": "Winter (ski season)",
+     "good": [
+       "Patio"
+     ],
+     "note": "At Snowbasin's Strawberry base by the Strawberry Gondola, with fire pits.",
+     "factsChecked": "2026-10-11",
+     "town": "Snowbasin",
+     "type": "Open-air food park (winter)",
+     "blurb": "Winter-only open-air food park at Snowbasin with 180-plus seats and several food options.",
+     "phone": "801-620-1000",
+     "link": "https://www.snowbasin.com/dining/",
+     "address": "3925 E Snowbasin Rd, Huntsville, UT 84317",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "The Cinnabar (Snowbasin)",
+     "food": [
+       "Drinks & apres",
+       "Bar & grill"
+     ],
+     "good": [
+       "Reservations"
+     ],
+     "note": "Full-bar gastropub inside Earl's Lodge at the Snowbasin base.",
+     "factsChecked": "2026-10-11",
+     "town": "Snowbasin",
+     "type": "Shared plates & cocktails",
+     "blurb": "Base-area bar and restaurant at Snowbasin serving shared plates and cocktails.",
+     "phone": "801-620-1000",
+     "link": "https://www.snowbasin.com/dining/",
+     "address": "3925 E Snowbasin Rd, Huntsville, UT 84317",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Timberline Cafeteria & The Powder Keg (Powder Mountain)",
+     "food": [
+       "Resort food court",
+       "Drinks & apres"
+     ],
+     "season": "Winter (ski season)",
+     "good": [
+       "Live music",
+       "Takeout"
+     ],
+     "note": "By the main parking. The Powder Keg bar is downstairs, with live music in ski season.",
+     "factsChecked": "2026-10-11",
+     "town": "Powder Mountain",
+     "type": "Resort cafeteria & apres bar (winter)",
+     "blurb": "Timberline Lodge cafeteria with pizza, burgers and soups, with The Powder Keg bar downstairs offering local beer and Asian dishes.",
+     "phone": "801-745-3772",
+     "link": "https://www.powdermountain.com/eats",
+     "address": "6965 E Powder Mountain Rd, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Eden Coffee Cocoa & Juicery",
+     "food": [
+       "Coffee & breakfast"
+     ],
+     "town": "Eden",
+     "type": "Coffee & juice",
+     "blurb": "Coffee, cocoa and juice shop on Highway 158 in Eden.",
+     "phone": "801-621-0505",
+     "address": "2405 N Hwy 158, Eden, UT 84310",
+     "added": "2026-10-16"
+   },
+   {
+     "name": "Sawasdee Thai Eden",
+     "food": [
+       "Sit-down dinner"
+     ],
+     "good": [
+       "Takeout"
+     ],
+     "note": "Takeout only. Hours we found: Tue-Sat 11:30-2 and 4-7:30, closed Sun-Mon. Call to confirm.",
+     "town": "Eden",
+     "type": "Thai (takeout)",
+     "blurb": "Takeout-only Thai restaurant in Eden.",
+     "phone": "801-979-9896",
+     "link": "https://sawasdee-thai-eden.square.site",
+     "address": "2612 N Hwy 162, Bldg 4, Eden, UT 84310",
+     "added": "2026-10-16"
+   },
+   {
+     "name": "The Drip Coffee & Soda Shop",
+     "food": [
+       "Coffee & breakfast"
+     ],
+     "good": [
+       "Takeout"
+     ],
+     "note": "Drive-thru next to Valley Market.",
+     "town": "Eden",
+     "type": "Coffee & soda (drive-thru)",
+     "blurb": "Coffee and soda shop near Valley Market on the road to Powder Mountain, with dine-in, walk-up and drive-thru service.",
+     "phone": "312-391-3912",
+     "link": "https://the-drip-coffee-and-soda-shop.square.site",
+     "address": "2555 N Wolf Creek Dr, Eden, UT 84310",
+     "added": "2026-10-16"
+   },
+   {
+     "name": "Hermitage Grill",
+     "area": "Ogden Canyon",
+     "food": [
+       "Burgers & casual",
+       "Coffee & breakfast"
+     ],
+     "type": "Riverside grill",
+     "blurb": "Small riverside grill at the Alaskan Inn about 3 miles up Ogden Canyon; breakfast daily, full menu Friday to Sunday.",
+     "address": "435 Ogden Canyon Rd, Ogden, UT 84401",
+     "link": "https://www.facebook.com/p/Hermitage-Grill-100091822484066/",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22"
+   },
+   {
+     "name": "Wing Wah Restaurant",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Canyon mouth / 12th St",
+     "food": [
+       "Chinese"
+     ],
+     "type": "Chinese",
+     "blurb": "Long-running Chinese restaurant on 12th Street.",
+     "address": "465 12th St, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-394-8788",
+     "link": "https://wingwahrestaurant.com/"
+   },
+   {
+     "name": "Jade Bowl",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Harrison Blvd",
+     "food": [
+       "Chinese"
+     ],
+     "type": "Chinese",
+     "blurb": "Chinese restaurant with online ordering; closed Tuesdays.",
+     "address": "2068 Harrison Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-621-0787",
+     "link": "https://order.jadebowlut.com/"
+   },
+   {
+     "name": "Dragon Restaurant",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "food": [
+       "Chinese"
+     ],
+     "type": "Chinese (Mandarin)",
+     "blurb": "Mandarin-style Chinese restaurant; closed Mondays.",
+     "address": "303 Washington Blvd, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-627-1680",
+     "link": "https://www.facebook.com/p/Dragon-Restaurant-100063185770578/"
+   },
+   {
+     "name": "Zhang's Chinese Kitchen",
+     "region": "weber",
+     "town": "North Ogden",
+     "hood": "North Ogden",
+     "food": [
+       "Chinese"
+     ],
+     "type": "Chinese",
+     "blurb": "Chinese dine-in and takeout.",
+     "address": "2586 N 400 E, North Ogden, UT 84414",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-737-3393"
+   },
+   {
+     "name": "Tona Sushi Bar & Grill",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Japanese & sushi",
+       "Seafood",
+       "Sit-down dinner"
+     ],
+     "type": "Sushi & Japanese grill",
+     "blurb": "Sushi bar and Japanese grill on 25th Street; closed Sundays and Mondays.",
+     "address": "210 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-622-8662",
+     "link": "https://tonarestaurant.com/"
+   },
+   {
+     "name": "Ohana Sushi & Asian Cuisine",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Canyon mouth / 12th St",
+     "food": [
+       "Japanese & sushi"
+     ],
+     "type": "Sushi & Asian",
+     "blurb": "Sushi and Japanese/Asian dishes; closed Sundays.",
+     "address": "476 12th St, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-621-2595",
+     "link": "https://ohanasushi.com/"
+   },
+   {
+     "name": "Watami Sushi Bistro",
+     "region": "weber",
+     "town": "North Ogden",
+     "hood": "North Ogden",
+     "food": [
+       "Japanese & sushi"
+     ],
+     "type": "Sushi & Japanese",
+     "blurb": "Sushi and Japanese restaurant in North Ogden.",
+     "address": "2361 N Washington Blvd, North Ogden, UT 84414",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-737-0888",
+     "link": "https://watamisushibistro.netwaiter.com/north-ogden/about/"
+   },
+   {
+     "name": "Ramen Haus",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Japanese & sushi"
+     ],
+     "type": "Ramen",
+     "blurb": "Ramen and Japanese comfort food downtown.",
+     "address": "2550 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-393-0000",
+     "link": "https://www.ramenhaus.com/"
+   },
+   {
+     "name": "Jo Jo Bowls and Boba",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Asian bowls"
+     ],
+     "type": "Rice, ramen & poke bowls",
+     "blurb": "Rice, ramen and poke bowls plus boba drinks; closed Sundays.",
+     "address": "252 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "385-432-0859",
+     "link": "https://www.jojobowls.com/"
+   },
+   {
+     "name": "Son Son Asian Eats",
+     "region": "weber",
+     "town": "Pleasant View",
+     "hood": "Pleasant View",
+     "food": [
+       "Asian bowls"
+     ],
+     "type": "Asian bowls & banh mi",
+     "blurb": "Asian-inspired rice bowls, banh mi and kimchi fries; closed Sundays.",
+     "address": "360 W 2650 N #3, Pleasant View, UT 84414",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-710-2448",
+     "link": "https://www.sonsoneats.com/"
+   },
+   {
+     "name": "Kesari Indian Kitchen",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Indian"
+     ],
+     "type": "Indian",
+     "blurb": "Indian restaurant serving tandoori dishes, curries and naan.",
+     "address": "2214 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "385-333-4779",
+     "link": "https://kesariindiankitchen.com/"
+   },
+   {
+     "name": "The Fort Cuisine of India",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Indian",
+       "Vegetarian & vegan"
+     ],
+     "type": "Indian",
+     "blurb": "Indian restaurant (formerly Red Fort) with curries, tandoori and vegan options; closed Sundays.",
+     "address": "2564 Ogden Ave, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-872-3614",
+     "link": "https://thefortcuisine.com/",
+     "good": [
+       "Vegetarian or vegan options"
+     ]
+   },
+   {
+     "name": "Awadh Aroma of India",
+     "region": "weber",
+     "town": "Pleasant View",
+     "hood": "Pleasant View",
+     "food": [
+       "Indian"
+     ],
+     "type": "Indian",
+     "blurb": "Indian restaurant in Pleasant View.",
+     "address": "380 W 2650 N Ste 3, Pleasant View, UT 84414",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "385-333-4033"
+   },
+   {
+     "name": "Andy's Club",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "food": [
+       "Greek & Mediterranean",
+       "Steak"
+     ],
+     "type": "Greek",
+     "blurb": "Greek restaurant open since 1974 with souvlaki, gyros, steaks and a bar; closed Mondays.",
+     "address": "501 N Washington Blvd, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-782-9972",
+     "link": "https://andysofogden.com/"
+   },
+   {
+     "name": "Greek Garden II",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Greek & Mediterranean"
+     ],
+     "type": "Greek (counter service)",
+     "blurb": "Counter-service Greek food like gyros and souvlaki.",
+     "address": "339 E 2250 S #102, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "385-492-4814",
+     "link": "https://www.instagram.com/greekgardentwo/"
+   },
+   {
+     "name": "Thai-Pho Kitchen",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Vietnamese & pho",
+       "Thai"
+     ],
+     "type": "Vietnamese & Thai",
+     "blurb": "Vietnamese pho and Thai dishes; closed Mondays.",
+     "address": "154 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-317-4367",
+     "link": "https://www.facebook.com/thaiphokitchen/"
+   },
+   {
+     "name": "Lost Texan BBQ",
+     "region": "weber",
+     "town": "Pleasant View",
+     "hood": "Pleasant View",
+     "food": [
+       "BBQ",
+       "Brunch"
+     ],
+     "type": "BBQ",
+     "blurb": "Southern-style barbecue with a Sunday brunch menu; closed Mondays.",
+     "address": "1144 W 2700 N, Pleasant View, UT 84414",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-948-9494",
+     "link": "https://www.losttexanbbq.com/"
+   },
+   {
+     "name": "Steve's Black Sabbath BBQ",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "food": [
+       "BBQ"
+     ],
+     "type": "Texas BBQ",
+     "blurb": "Texas-style barbecue; closed Mondays.",
+     "address": "1895 Washington Blvd Ste 300, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "385-258-3545",
+     "link": "https://www.instagram.com/stevesblacksabbath/"
+   },
+   {
+     "name": "Timbermine Steakhouse",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Canyon mouth / 12th St",
+     "food": [
+       "Steak",
+       "Seafood",
+       "Sit-down dinner"
+     ],
+     "type": "Steak & seafood",
+     "blurb": "Mining-themed steak and seafood house near the canyon mouth, open for dinner Tuesday to Saturday.",
+     "address": "1701 Park Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-393-2155",
+     "link": "https://www.timbermine.com/"
+   },
+   {
+     "name": "Prairie Schooner Steak House",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "food": [
+       "Steak",
+       "Sit-down dinner"
+     ],
+     "type": "Steakhouse",
+     "blurb": "Long-running steakhouse with covered-wagon booths.",
+     "address": "445 Park Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-392-2712",
+     "link": "https://www.facebook.com/p/Prairie-Schooner-100057185213141/"
+   },
+   {
+     "name": "Rovali's Ristorante Italiano",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Italian",
+       "Sit-down dinner"
+     ],
+     "type": "Italian",
+     "blurb": "Family-run Italian restaurant with a wine bar; closed Mondays.",
+     "address": "174 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-394-1070",
+     "link": "https://www.rovalis.com/",
+     "good": [
+       "Gluten-free options"
+     ]
+   },
+   {
+     "name": "La Ferrovia Italian Ristorante",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Italian"
+     ],
+     "type": "Italian",
+     "blurb": "Casual Italian restaurant on 25th Street.",
+     "address": "234 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-394-8628"
+   },
+   {
+     "name": "Stellas on 25th",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Italian",
+       "Sit-down dinner"
+     ],
+     "type": "Italian",
+     "blurb": "Italian restaurant serving lunch and dinner.",
+     "address": "225 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "385-333-4184",
+     "link": "https://www.stellason25th.com/"
+   },
+   {
+     "name": "Michis Pa La Banda",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "food": [
+       "Seafood",
+       "Mexican"
+     ],
+     "type": "Mariscos (Mexican seafood)",
+     "blurb": "Mexican-style seafood (mariscos) and micheladas.",
+     "address": "333 2nd St #4, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-791-0162",
+     "link": "https://michispalabanda.com/"
+   },
+   {
+     "name": "Weller's Bistro",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "German",
+       "Sit-down dinner"
+     ],
+     "type": "German",
+     "blurb": "German restaurant with schnitzel, goulash and strudel in The Monarch building.",
+     "address": "455 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "385-333-4128",
+     "link": "https://www.wellersbistro.com/"
+   },
+   {
+     "name": "LoLo Hawaiian BBQ",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Canyon mouth / 12th St",
+     "food": [
+       "Hawaiian"
+     ],
+     "type": "Hawaiian plate lunch",
+     "blurb": "Hawaiian plate lunches.",
+     "address": "310 12th St, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-392-2668"
+   },
+   {
+     "name": "Mo' Bettahs",
+     "region": "weber",
+     "town": "North Ogden",
+     "hood": "North Ogden",
+     "food": [
+       "Hawaiian"
+     ],
+     "type": "Hawaiian plate lunch (Utah-grown)",
+     "blurb": "Utah-grown Hawaiian-style plate lunch spot; closed Sundays.",
+     "address": "365 E 2600 N, North Ogden, UT 84414",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "385-732-1823",
+     "link": "https://locations.mobettahs.com/ut/north-ogden/north-ogden/"
+   },
+   {
+     "name": "Hearth on 25th",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Sit-down dinner"
+     ],
+     "type": "Scratch kitchen & tasting menu",
+     "blurb": "Scratch kitchen with a wood-fired oven, a chef's tasting menu and an oil-and-vinegar shop; dinner Monday to Saturday.",
+     "address": "195 25th St Ste 6, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-399-0088",
+     "link": "https://www.hearth25.com/"
+   },
+   {
+     "name": "The Garden Grille & Lounge",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Sit-down dinner"
+     ],
+     "type": "Restaurant & lounge",
+     "blurb": "Restaurant inside the Hilton Garden Inn, open for breakfast and dinner.",
+     "address": "2271 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-399-2000"
+   },
+   {
+     "name": "Sapori Italian Bakery & Cafe",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Bakery & sweets",
+       "Italian"
+     ],
+     "type": "Italian bakery & cafe",
+     "blurb": "Italian bakery and cafe run by a family from Sicily.",
+     "address": "325 24th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "385-244-1695",
+     "link": "http://www.sapori-catering.com"
+   },
+   {
+     "name": "Elevated Bagel Company",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Bakery & sweets",
+       "Coffee & breakfast"
+     ],
+     "type": "Bagels",
+     "blurb": "Bagel shop serving bagel sandwiches, open Wednesday to Sunday.",
+     "address": "2347 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-719-9408"
+   },
+   {
+     "name": "Lene' Marie Chocolates",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Bakery & sweets"
+     ],
+     "type": "Chocolates",
+     "blurb": "Hand-dipped chocolates, open Tuesday to Saturday.",
+     "address": "126 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-690-0345",
+     "link": "https://lenemariechocolates.com/"
+   },
+   {
+     "name": "The Cupcake Shoppe and Bakery",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Bakery & sweets"
+     ],
+     "type": "Cupcakes & bakery",
+     "blurb": "Cupcakes, cookies and cakes, including gluten-free options; closed Sundays.",
+     "address": "2352 Kiesel Ave, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-546-8252",
+     "link": "https://www.thecupcakeshoppeandbakery.com/",
+     "good": [
+       "Gluten-free options"
+     ]
+   },
+   {
+     "name": "Nana's Sugar Shack",
+     "region": "weber",
+     "town": "North Ogden",
+     "hood": "North Ogden",
+     "food": [
+       "Bakery & sweets"
+     ],
+     "type": "Bakery",
+     "blurb": "Bakery with cinnamon rolls, cookies and eclairs; closed Wednesdays and Sundays.",
+     "address": "428 E 2600 N Ste 1, North Ogden, UT 84414",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "385-432-0116",
+     "link": "https://www.nanassugarshack.com/"
+   },
+   {
+     "name": "O-Town Eats",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Brunch",
+       "Coffee & breakfast"
+     ],
+     "type": "Breakfast & brunch",
+     "blurb": "Breakfast, brunch and small plates daily, 8 a.m. to 3 p.m.",
+     "address": "227 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "385-333-4135",
+     "link": "https://otowneatson25th.com/"
+   },
+   {
+     "name": "Two-Bit Bistro",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Brunch",
+       "Sit-down dinner"
+     ],
+     "type": "Bistro & weekend brunch",
+     "blurb": "Restaurant at The Bigelow hotel with weekend brunch and free live music nights.",
+     "address": "2510 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-393-1225",
+     "link": "https://www.twobitbistro.com/"
+   },
+   {
+     "name": "Slop Shop Breakfast Joint",
+     "region": "weber",
+     "town": "Pleasant View",
+     "hood": "Pleasant View",
+     "food": [
+       "Coffee & breakfast",
+       "Brunch"
+     ],
+     "type": "Breakfast & lunch",
+     "blurb": "Breakfast and lunch from 6 a.m. to 2 p.m.",
+     "address": "420 W 2700 N Ste 200, Pleasant View, UT 84414",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-605-3646",
+     "link": "https://www.instagram.com/slopshoputah/"
+   },
+   {
+     "name": "Taboo Pizza (Riverwalk)",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "food": [
+       "Pizza"
+     ],
+     "type": "Pizza & bar",
+     "blurb": "Dine-in pizzeria by the Ogden River with a full bar and riverside patio.",
+     "address": "1877 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-827-0228",
+     "link": "https://taboo.pizza/"
+   },
+   {
+     "name": "Slackwater Pizzeria",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Pizza",
+       "Bar & grill"
+     ],
+     "type": "Pizza pub",
+     "blurb": "Pizza pub with specialty pizzas, appetizers and craft beer; gluten-free and vegan dough.",
+     "address": "209 24th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-399-0637",
+     "link": "https://www.slackwaterpizzeria.com/",
+     "good": [
+       "Gluten-free options"
+     ]
+   },
+   {
+     "name": "Roosters Brewing Co. (25th St)",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Bar & grill",
+       "Breweries & tasting rooms"
+     ],
+     "type": "Brewpub",
+     "blurb": "Long-running brewpub on Historic 25th Street with pub food and house-brewed beer.",
+     "address": "253 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-627-6171",
+     "link": "https://www.roostersbrewingco.com/"
+   },
+   {
+     "name": "Roosters B Street Brewery & Taproom",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Brewery",
+     "food": [
+       "Breweries & tasting rooms",
+       "Brunch"
+     ],
+     "type": "Brewery & taproom (21+)",
+     "blurb": "Roosters' production brewery and 21+ taproom with food and a patio; weekend brunch.",
+     "address": "2325 B Ave, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-689-2879",
+     "link": "https://www.roostersbrewingco.com/location/b-street/"
+   },
+   {
+     "name": "The Sonora Grill",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Mexican"
+     ],
+     "type": "Mexican & Southwestern",
+     "blurb": "Mexican and Southwestern restaurant with a bar.",
+     "address": "2310 Kiesel Ave, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-393-1999",
+     "link": "https://thesonoragrill.com/"
+   },
+   {
+     "name": "Maria's Mexican Restaurant (downtown)",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "food": [
+       "Mexican"
+     ],
+     "type": "Mexican",
+     "blurb": "Downtown branch of Maria's Mexican Restaurant.",
+     "address": "352 Park Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-331-8003",
+     "link": "https://www.toasttab.com/local/order/marias-mexican-restaurant-ogden-352-park-blvd"
+   },
+   {
+     "name": "The Pie Pizzeria – Ogden",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "food": [
+       "Pizza"
+     ],
+     "type": "Pizza (Utah-grown)",
+     "blurb": "Ogden branch of the Utah pizzeria founded in 1980, near Weber State.",
+     "address": "4300 Harrison Blvd #12, Ogden, UT 84403",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-627-1920",
+     "link": "https://thepie.com/thepie-locations/the-pie-ogden",
+     "good": [
+       "Gluten-free options"
+     ]
+   },
+   {
+     "name": "Warrens Craft Burger",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Burgers & casual"
+     ],
+     "type": "Burgers & bar",
+     "blurb": "Burger restaurant and bar on Historic 25th Street.",
+     "address": "258 25th St #2302, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-781-5005",
+     "link": "https://www.mycraftburger.com/"
+   },
+   {
+     "name": "Ogden Pizzeria",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "food": [
+       "Pizza"
+     ],
+     "type": "Pizza",
+     "blurb": "Long-running local pizzeria with an aquarium in the dining room; closed Sundays.",
+     "address": "936 Washington Blvd, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-393-3191"
+   },
+   {
+     "name": "Lucky Slice Pizza (25th St)",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Pizza"
+     ],
+     "type": "Pizza by the slice",
+     "blurb": "Pizza by the slice or pie on 25th Street, open late Fridays and Saturdays; gluten-free crust and vegan cheese.",
+     "address": "207 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-627-2229",
+     "link": "https://www.theluckyslice.com/"
+   },
+   {
+     "name": "Kogane Korean Kitchen",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "food": [
+       "Korean"
+     ],
+     "type": "Korean",
+     "blurb": "Korean restaurant open for lunch and dinner.",
+     "address": "458 40th St, Ogden, UT 84403",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "385-238-4163",
+     "link": "https://www.facebook.com/koganekoreankitchen/"
+   },
+   {
+     "name": "Hot Pot X & Korean BBQ",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "food": [
+       "Korean"
+     ],
+     "type": "Korean BBQ & hot pot",
+     "blurb": "All-you-can-eat hot pot and Korean BBQ cooked at the table.",
+     "address": "4339 Harrison Blvd, Ogden, UT 84403",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "385-289-2732",
+     "link": "https://www.hotpotxogden.com/"
+   },
+   {
+     "name": "Sitara India",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "food": [
+       "Indian"
+     ],
+     "type": "Indian",
+     "blurb": "Indian restaurant near Weber State; closed Mondays.",
+     "address": "3585 Harrison Blvd #214, Ogden, UT 84403",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-621-2455",
+     "link": "https://sitaraindia.com/"
+   },
+   {
+     "name": "University Broiler & Grill",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "food": [
+       "Greek & Mediterranean"
+     ],
+     "type": "Greek",
+     "blurb": "Greek grill near Weber State; closed Sundays.",
+     "address": "4342 Harrison Blvd, Ogden, UT 84403",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-392-2525",
+     "link": "https://ubggreek.com/"
+   },
+   {
+     "name": "Thai Palm Kitchen",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "food": [
+       "Thai",
+       "Vegetarian & vegan"
+     ],
+     "type": "Thai",
+     "blurb": "Thai restaurant with vegetarian options; closed Sundays.",
+     "address": "4844 Harrison Blvd, Ogden, UT 84403",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-690-8972",
+     "link": "https://www.thaipalmkitchen.com/",
+     "good": [
+       "Vegetarian or vegan options"
+     ]
+   },
+   {
+     "name": "Top Tier Cake Shoppe",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "South Ogden",
+     "food": [
+       "Bakery & sweets"
+     ],
+     "type": "Cakes & bakery",
+     "blurb": "Custom cakes and baked goods.",
+     "address": "3585 Harrison Blvd Ste 218, Ogden, UT 84403",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-888-3460"
+   },
+   {
+     "name": "The Lotus Cafe",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Coffee & breakfast"
+     ],
+     "type": "Cafe",
+     "blurb": "Cafe serving soups, salads, sandwiches and baked goods, open daily.",
+     "address": "529 25th St, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-686-1560",
+     "link": "https://www.instagram.com/thelotuscafeogden/"
+   },
+   {
+     "name": "North Branch Café",
+     "region": "weber",
+     "town": "North Ogden",
+     "hood": "North Ogden",
+     "food": [
+       "Coffee & breakfast",
+       "Vegetarian & vegan"
+     ],
+     "type": "Cafe (inside the North Branch Library)",
+     "blurb": "Cafe inside the North Branch Library with gluten-free, vegan and vegetarian options.",
+     "address": "475 E 2600 N, North Ogden, UT 84414",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-710-5457",
+     "link": "https://northbranch.cafe/",
+     "good": [
+       "Gluten-free options",
+       "Vegetarian or vegan options"
+     ]
+   },
+   {
+     "name": "Harp & Hound",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Bar & grill",
+       "Vegetarian & vegan"
+     ],
+     "type": "Irish pub",
+     "blurb": "Irish pub with a full vegan pub menu alongside its regular menu.",
+     "address": "2550 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-621-3483",
+     "link": "https://harphound.com/",
+     "good": [
+       "Vegetarian or vegan options"
+     ]
+   },
+   {
+     "name": "Pinky's Food Hauz",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Washington Blvd",
+     "food": [
+       "Filipino"
+     ],
+     "type": "Filipino",
+     "blurb": "Filipino food inside an Asian market.",
+     "address": "1018 Washington Blvd, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-648-9705",
+     "link": "http://www.orderpinkysfoodhauz.com/"
+   },
+   {
+     "name": "Talisman Brewing Co.",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Brewery",
+     "food": [
+       "Breweries & tasting rooms"
+     ],
+     "type": "Brewery taproom",
+     "blurb": "Small brewery taproom with no kitchen; bring your own food. Closed Sundays.",
+     "address": "1258 Gibson Ave, Ogden, UT 84404",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "385-389-2945",
+     "link": "https://talismanbrewingco.com/"
+   },
+   {
+     "name": "Ogden's Own Distillery & Side Bar",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Brewery",
+     "food": [
+       "Breweries & tasting rooms",
+       "Drinks & apres"
+     ],
+     "type": "Distillery & cocktail bar",
+     "blurb": "Distillery with Side Bar, serving 40-plus craft cocktails Wednesday to Sunday evenings.",
+     "address": "615 W Stockman Way, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-675-3204",
+     "link": "https://www.ogdensown.com/side-bar/"
+   },
+   {
+     "name": "Ogden Beer Company",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Brewery",
+     "food": [
+       "Breweries & tasting rooms",
+       "Bar & grill"
+     ],
+     "type": "Brewpub",
+     "blurb": "Brewpub by the river with food, a rooftop and a patio.",
+     "address": "358 Park Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-884-6939",
+     "link": "https://ogdenbeercompany.com/"
+   },
+   {
+     "name": "UTOG Brewing Co.",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Brewery",
+     "food": [
+       "Breweries & tasting rooms",
+       "Bar & grill"
+     ],
+     "type": "Brewery & restaurant",
+     "blurb": "Downtown brewery and full restaurant with an on-site beer store; many menu items marked gluten-free.",
+     "address": "2331 Grant Ave, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-689-3476",
+     "link": "https://www.utogbrewing.com/",
+     "good": [
+       "Gluten-free options"
+     ]
+   },
+   {
+     "name": "The Angry Goat Pub N Kitchen",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Downtown & 25th St",
+     "food": [
+       "Breweries & tasting rooms",
+       "Bar & grill"
+     ],
+     "type": "Beer bar (21+)",
+     "blurb": "21+ pub with a large beer list, food and a rooftop patio.",
+     "address": "2570 Washington Blvd, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-675-5757"
+   },
+   {
+     "name": "The Greenery Restaurant",
+     "region": "weber",
+     "town": "Ogden",
+     "hood": "Canyon mouth / 12th St",
+     "food": [
+       "Burgers & casual",
+       "Sit-down dinner"
+     ],
+     "type": "Restaurant at Rainbow Gardens",
+     "blurb": "Long-running restaurant inside the Rainbow Gardens gift center at the mouth of Ogden Canyon, open daily for lunch and dinner.",
+     "address": "1875 Valley Dr, Ogden, UT 84401",
+     "checked": "2026-10-22",
+     "factsChecked": "2026-10-22",
+     "phone": "801-392-1777",
+     "link": "https://rainbowgardens.com/contact-greenery-restaurant/"
+   }
  ],
  "businesses": [
   {
@@ -991,6 +2162,57 @@ window.OVE_PLACES = {
    "where": "Gallery 25, 268 25th St, Ogden",
    "added": "2026-10-16"
   }
+ ],
+ "stay": [
+   {
+     "name": "Compass Rose Lodge & HALO Observatory",
+     "town": "Huntsville Town",
+     "kind": "Lodge & inn",
+     "type": "Boutique lodge & observatory",
+     "blurb": "Boutique lodge in Huntsville with an on-site observatory offering stargazing tours, and First Lift Coffee.",
+     "phone": "385-279-4460",
+     "link": "https://compassroselodge.com",
+     "address": "198 S 7400 E, Huntsville, UT 84317",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Edelweiss Inn",
+     "town": "Eden",
+     "kind": "Lodge & inn",
+     "type": "Inn",
+     "blurb": "Lodging near Nordic Valley.",
+     "phone": "850-866-8418",
+     "address": "2548 Nordic Valley Dr, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Jackson Fork Inn",
+     "town": "Huntsville area",
+     "kind": "Lodge & inn",
+     "type": "Inn",
+     "blurb": "Inn on Highway 39 in Huntsville.",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "Wolf Creek Resort",
+     "town": "Eden",
+     "kind": "Resort stay",
+     "type": "Golf resort lodging",
+     "blurb": "Semi-private 18-hole golf club established in 1963 with a fitness club, restaurant and lodging.",
+     "phone": "801-745-3737",
+     "link": "https://www.wolfcreekresort.com",
+     "address": "3718 N Wolf Creek Dr, Eden, UT 84310",
+     "checked": "2026-10-07"
+   },
+   {
+     "name": "WorldMark Wolf Creek",
+     "town": "Eden",
+     "kind": "Resort stay",
+     "type": "Timeshare & resort lodging",
+     "blurb": "Timeshare/resort lodging at Wolf Creek.",
+     "address": "3718 N Wolf Creek Dr, Eden, UT 84310",
+     "checked": "2026-10-07"
+   }
  ]
 };
 

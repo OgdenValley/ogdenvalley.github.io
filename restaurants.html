@@ -36,14 +36,16 @@
   <nav class="main" id="nav" aria-label="Main"></nav>
 </div></header>
 <main id="main">
-<section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley</p><h1>Restaurants</h1><p class="lead" style="margin-top:12px">Where to eat in Eden, Liberty and Huntsville. Call ahead in the off-season, since hours change with the ski and lake seasons.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley · Down the canyon</p><h1>Restaurants</h1><p class="lead" style="margin-top:12px">Where to eat up here in Eden, Liberty and Huntsville, plus the Ogden places Valley folks drive down for, from the canyon mouth to Pleasant View. Call ahead in the off-season, since hours change with the ski and lake seasons.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
 <section><div class="container">
+  <div id="area" style="margin-bottom:12px"></div>
   <div class="fbox">
     <input type="search" id="q" class="fsearch" placeholder="Search restaurants by name or food" aria-label="Search restaurants">
     <div class="frow"><label class="flab" for="where">Where</label><select id="where" class="fselect">
-      <option value="All">All of the Valley</option><option value="@town">In town (no ski resorts)</option><option value="@resort">At the ski resorts</option>
+      <option value="All">Everywhere</option><option value="@town">In town (no ski resorts)</option><option value="@resort">At the ski resorts</option>
       <option value="Eden">Eden</option><option value="Huntsville Town">Huntsville Town</option><option value="Huntsville area">Huntsville area</option><option value="Liberty">Liberty</option>
       <option value="Snowbasin">Snowbasin</option><option value="Powder Mountain">Powder Mountain</option><option value="Nordic Valley">Nordic Valley</option><option value="Ogden Canyon">Ogden Canyon</option>
+      <optgroup label="Down the canyon"><option value="@h:Canyon mouth / 12th St">Canyon mouth / 12th St</option><option value="@h:Downtown & 25th St">Downtown &amp; 25th St</option><option value="@h:Washington Blvd">Washington Blvd</option><option value="@h:Harrison Blvd">Harrison Blvd</option><option value="@h:North Ogden">North Ogden</option><option value="@h:Pleasant View">Pleasant View</option><option value="@h:South Ogden">South Ogden (30th St &amp; south)</option></optgroup>
     </select></div>
     <div class="frow" id="foodbar" aria-label="Kind of food"><span class="flab">Hungry for</span></div>
     <div id="more" hidden>
@@ -54,8 +56,9 @@
     <p class="fcount"><span id="count"></span> <button type="button" class="fclear" id="clear" hidden>Clear filters</button></p>
   </div>
   <div id="list"></div>
+  <div id="list-w-wrap" hidden><div class="section-head" style="margin-top:26px"><div><p class="eyebrow">Weber County · Ogden</p><h2>Down the canyon</h2></div></div><div id="list-w"></div></div>
   <div class="fnotes">
-    <p class="fair">🚡 means you need a lift or gondola ride to get there. Food, season, lift and good-for details were checked on each place's own website or the resort's page in Oct. 2026. Hours change with the seasons, so call ahead. Badges are as told to us by the owner.</p>
+    <p class="fair">Down-the-canyon restaurants were checked on each place's own site or current listing in Oct. 2026. 🚡 means you need a lift or gondola ride to get there. Food, season, lift and good-for details were checked on each place's own website or the resort's page in Oct. 2026. Hours change with the seasons, so call ahead. Badges are as told to us by the owner.</p>
     <p class="fair">Listings are free and in A–Z order. Nobody pays to be ranked higher, reviews come from real people, and sponsors are always labeled. Every place is checked by a local before it goes up.</p>
     <p class="also">Also see: <a href="businesses.html">Valley Businesses</a> · <a href="beauty.html">Beauty &amp; Wellness</a> · <a href="farm.html">Farm Stands &amp; Local Food</a> · <a href="foodtrucks.html">Food Trucks</a> · <a href="services.html">Home Services</a></p>
   </div>
@@ -70,23 +73,25 @@
 (async function(){const S=window.OVE_SITE,el=S.el;const all=(S.P["restaurants"]||[]);let town="All",q="",tag="";const R=await S.loadJSON("reviews.json");
 const tags=[...new Set(all.flatMap(p=>p.badges||[]))].sort();const tb=document.getElementById("tagbar");
 if(tags.length){tb.hidden=false;const lab=tb.firstElementChild;tb.replaceChildren(lab,...["All"].concat(tags).map(t=>{const b=el("button",{class:"chip",type:"button","aria-pressed":String((tag||"All")===t),text:t});b.onclick=()=>{tag=t==="All"?"":t;[...tb.querySelectorAll("button")].forEach(x=>x.setAttribute("aria-pressed",String(x===b)));draw()};return b}))}
-const RESORTS=["Snowbasin","Powder Mountain","Nordic Valley"],place=p=>p.town||p.area||"";
-const inTown=(p,t)=>t==="All"||(t==="@resort"?RESORTS.includes(place(p)):t==="@town"?!RESORTS.includes(place(p)):place(p)===t);
-const FOODS=["Coffee & breakfast","Pizza","Burgers & casual","Mexican","Bar & grill","Sit-down dinner","Sweets & ice cream","Drinks & apres","Resort food court"].filter(f=>all.some(p=>(p.food||[]).includes(f)));
+const RESORTS=["Snowbasin","Powder Mountain","Nordic Valley"],place=p=>p.town||p.area||"";const isW=p=>p.region==="weber";let area=S.getArea();
+const inTown=(p,t)=>t==="All"||(t.startsWith("@h:")?p.hood===t.slice(3):t==="@resort"?RESORTS.includes(place(p)):t==="@town"?!RESORTS.includes(place(p))&&!isW(p):place(p)===t);const inArea=p=>area==="both"||(area==="weber")===isW(p);
+const FOODS=["Coffee & breakfast","Brunch","Pizza","Burgers & casual","Mexican","Chinese","Japanese & sushi","Asian bowls","Thai","Vietnamese & pho","Korean","Indian","Greek & Mediterranean","Italian","German","Hawaiian","Filipino","BBQ","Steak","Seafood","Vegetarian & vegan","Bakery & sweets","Bar & grill","Breweries & tasting rooms","Sit-down dinner","Sweets & ice cream","Drinks & apres","Resort food court"].filter(f=>all.some(p=>(p.food||[]).includes(f)));
 const GOODS=[["@nolift","No lift ride needed"],["@offseason","Open outside ski season"]].concat([...new Set(all.flatMap(p=>p.good||[]))].sort().map(g=>[g,g]));
 const goodOk=(p,g)=>!g||(g==="@nolift"?!p.lift:g==="@offseason"?p.season!=="Winter (ski season)":(p.good||[]).includes(g));
 let food="",good="";
 function chipRow(id,items,get,set){const bar=document.getElementById(id);const lab=bar.firstElementChild;bar.replaceChildren(lab,...[["","All"]].concat(items).map(([v,l])=>{const b=el("button",{class:"chip",type:"button","data-v":v,"aria-pressed":String(get()===v),text:l});b.onclick=()=>{set(v);[...bar.querySelectorAll("button")].forEach(x=>x.setAttribute("aria-pressed",String(x===b)));draw()};return b}));return bar}
 const fb=chipRow("foodbar",FOODS.map(f=>[f,f]),()=>food,v=>food=v),gb=chipRow("goodbar",GOODS,()=>good,v=>good=v);
 const where=document.getElementById("where"),qi=document.getElementById("q"),more=document.getElementById("more"),mb=document.getElementById("morebtn"),clr=document.getElementById("clear");
-function draw(){const st={town,tag,q,food,good};const pred=(p,s)=>inTown(p,s.town)&&(!s.tag||(p.badges||[]).includes(s.tag))&&(!s.food||(p.food||[]).includes(s.food))&&goodOk(p,s.good)&&(!s.q||JSON.stringify(p).toLowerCase().includes(s.q));const shown=all.filter(p=>pred(p,st));S.listing(document.getElementById("list"),shown,"restaurants",R);S.pruneChips(all,pred,st,[{key:"tag",btns:tb.querySelectorAll("button"),val:b=>b.textContent==="All"?null:b.textContent,row:false},{key:"food",btns:fb.querySelectorAll("button"),val:b=>b.dataset.v||null,row:false},{key:"good",btns:gb.querySelectorAll("button"),val:b=>b.dataset.v||null,row:false}]);
- [...where.options].forEach(o=>{if(o.value!=="All")o.disabled=!all.some(p=>pred(p,Object.assign({},st,{town:o.value})))&&o.value!==town});
+function draw(){const st={town,tag,q,food,good};const pred=(p,s)=>inTown(p,s.town)&&(!s.tag||(p.badges||[]).includes(s.tag))&&(!s.food||(p.food||[]).includes(s.food))&&goodOk(p,s.good)&&(!s.q||JSON.stringify(p).toLowerCase().includes(s.q));const shown=all.filter(p=>inArea(p)&&pred(p,st));const up=shown.filter(p=>!isW(p)),dn=shown.filter(isW);const lw=document.getElementById("list-w-wrap");
+ if(area==="weber"){S.listing(document.getElementById("list"),dn,"restaurants",R);lw.hidden=true}else{S.listing(document.getElementById("list"),up,"restaurants",R);lw.hidden=area!=="both"||!dn.length;if(!lw.hidden)S.listing(document.getElementById("list-w"),dn,"restaurants",R)}S.pruneChips(all,pred,st,[{key:"tag",btns:tb.querySelectorAll("button"),val:b=>b.textContent==="All"?null:b.textContent,row:false},{key:"food",btns:fb.querySelectorAll("button"),val:b=>b.dataset.v||null,row:false},{key:"good",btns:gb.querySelectorAll("button"),val:b=>b.dataset.v||null,row:false}]);
+ [...where.options].forEach(o=>{if(o.value!=="All")o.disabled=!all.some(p=>inArea(p)&&pred(p,Object.assign({},st,{town:o.value})))&&o.value!==town});
  const on=town!=="All"||q||food||good||tag;document.getElementById("count").textContent="Showing "+shown.length+(shown.length===1?" place":" places")+(on?"":" (all)");clr.hidden=!on;
  const n=(good?1:0)+(tag?1:0);mb.textContent=(more.hidden?"More filters ▾":"Fewer filters ▴")+(n&&more.hidden?" ("+n+" on)":"")}
 qi.addEventListener("input",e=>{q=e.target.value.trim().toLowerCase();draw()});
 where.addEventListener("change",()=>{town=where.value;draw()});
 mb.addEventListener("click",()=>{more.hidden=!more.hidden;mb.setAttribute("aria-expanded",String(!more.hidden));draw()});
 clr.addEventListener("click",()=>{town="All";q="";food="";good="";tag="";where.value="All";qi.value="";document.querySelectorAll(".fbox .chip").forEach(b=>b.setAttribute("aria-pressed",String(b.textContent==="All")));draw()});
+S.areaSwitch(document.getElementById("area"),v=>{area=v;draw()});
 draw();if(location.hash){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t){t.scrollIntoView();t.style.outline="3px solid var(--accent)"}}})();
 </script>
 </body>

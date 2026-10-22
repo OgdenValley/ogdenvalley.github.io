@@ -40,9 +40,8 @@
 <section><div class="container" style="display:grid;gap:16px">
   <div id="motw"></div>
   <div class="filters" style="margin:0">
+    <div id="area" style="flex-basis:100%"></div>
     <input type="search" id="lq" placeholder="Town, venue or band" aria-label="Search live music by town, venue or band">
-    <button class="chip" type="button" data-c="ov" aria-pressed="true"><span class="dot" style="background:var(--ov)"></span>Ogden Valley</button>
-    <button class="chip" type="button" data-c="weber" aria-pressed="true"><span class="dot" style="background:var(--weber)"></span>Weber County</button>
     <button class="chip" type="button" id="near">Near me</button>
   </div>
   <div id="map" role="region" aria-label="Map of live music" style="height:min(60vh,460px);border-radius:12px;border:1px solid var(--line);background:var(--soft)"></div>
@@ -70,7 +69,7 @@
     box.append(el("article",{class:"card feature",style:"border:3px solid var(--accent,#C2410C)"},[el("p",{class:"eyebrow",text:"Musician of the Week"}),sp.photo?el("img",{src:sp.photo,alt:sp.name,loading:"lazy",style:"border-radius:12px;width:100%;max-width:420px;aspect-ratio:4/3;object-fit:cover"}):null,el("h2",{text:sp.name}),el("p",{class:"meta",text:[sp.genre,sp.town].filter(Boolean).join(" \u00B7 ")}),sp.bio?el("p",{text:sp.bio}):null,el("h3",{text:"Where to hear them next"}),gl,contact(sp)]))}
   const hire=(M.forHire||[]);if(hire.length){document.getElementById("hire-wrap").hidden=false;hire.forEach(m=>document.getElementById("hire").append(el("article",{class:"card"},[m.photo?el("img",{src:m.photo,alt:m.name,loading:"lazy",style:"border-radius:10px;width:100%;aspect-ratio:4/3;object-fit:cover"}):null,el("h3",{text:m.name}),el("p",{class:"meta",text:[m.genre,m.town].filter(Boolean).join(" \u00B7 ")}),contact(m)])))}})();
 const MUSIC=/live music|\bband\b|concert|acoustic|open mic|\bdj\b|bluegrass|jazz|musician|singer|songwriter|karaoke|symphony|orchestra|#livemusic/i;
-let on=["ov","weber"],q="",me=null;
+let on=S.areaCals(S.getArea()),q="",me=null;
 const all=S.allEvents(data).filter(e=>MUSIC.test(e.t+" "+(e.desc||"")));
 let map=null,layer=null;
 if(window.L){map=L.map("map",{scrollWheelZoom:false}).setView([41.28,-111.86],10);L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(map);layer=L.layerGroup().addTo(map)}
@@ -88,7 +87,7 @@ function draw(){let list=all.filter(e=>on.includes(e.cal)&&(!q||(e.t+" "+(e.loc|
   S.renderEvents(document.getElementById("lm-list"),list,{emptyText:data?"No live music posted for the calendars you picked yet.":"Live music shows up here once the calendars are connected."});
   if(me){const cards=document.querySelectorAll("#lm-list .event");list.forEach((e,i)=>{const c=cards[i];if(c&&e._d!=null){const w=c.querySelector(".what");w&&w.insertAdjacentText("beforeend"," · "+e._d.toFixed(1)+" mi")}})}}
 document.getElementById("lq").addEventListener("input",ev=>{q=ev.target.value.trim().toLowerCase();draw()});
-document.querySelectorAll("[data-c]").forEach(b=>b.addEventListener("click",()=>{const k=b.dataset.c,p=b.getAttribute("aria-pressed")==="true";if(p&&on.length===1)return;b.setAttribute("aria-pressed",String(!p));on=p?on.filter(x=>x!==k):on.concat(k);draw()}));
+S.areaSwitch(document.getElementById("area"),v=>{on=S.areaCals(v);draw()});
 document.getElementById("near").addEventListener("click",ev=>{const b=ev.currentTarget;if(!navigator.geolocation){b.textContent="Location not available";return}b.textContent="Finding you…";navigator.geolocation.getCurrentPosition(p=>{me={lat:p.coords.latitude,lng:p.coords.longitude};b.textContent="Near me";b.setAttribute("aria-pressed","true");draw()},()=>{b.textContent="Location is off"},{timeout:10000})});
 draw();})();
 </script>

@@ -39,8 +39,7 @@
 <section class="hero"><div class="container"><div><p class="eyebrow">Ready to share</p><h1>This weekend in the Valley</h1><p class="lead" style="margin-top:12px">Made fresh from the calendars. Download the picture and post it to Facebook and Instagram.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
 <section><div class="container" style="display:grid;gap:18px">
   <div class="btns" style="margin:0"><button class="btn primary" type="button" id="dl-ig">Download for Instagram (portrait)</button><button class="btn blue" type="button" id="dl-fb">Download for Facebook (wide)</button></div>
-  <label style="display:grid;gap:6px;max-width:560px;font-weight:600">Show events from
-    <select id="which" style="font:17px var(--body);padding:10px;border-radius:10px;border:2px solid var(--line);background:var(--card);color:var(--ink)"><option value="both">Ogden Valley and Weber County</option><option value="ov">Ogden Valley only</option><option value="weber">Weber County only</option></select></label>
+  <div id="area"></div>
   <canvas id="cv" width="1080" height="1350" style="width:min(540px,100%);height:auto;border-radius:12px;border:1px solid var(--line)"></canvas>
   <div id="wk-list"></div>
 </div></section>
@@ -57,7 +56,7 @@ const logo=new Image();logo.src=document.querySelector("img[data-logo]").src.rep
 function weekendRange(){const now=new Date();const d=new Date(now.toLocaleString("en-US",{timeZone:S.TZ}));const dow=d.getDay();const toFri=dow<=5?5-dow:6;const start=new Date(d);start.setDate(d.getDate()+(dow===6||dow===0?(dow===6?-1:-2):toFri));start.setHours(0,0,0,0);const end=new Date(start);end.setDate(start.getDate()+3);
   const off=new Date(now.toLocaleString("en-US",{timeZone:S.TZ}))-now;return [start-off,end-off]}
 const [a,b]=weekendRange();
-function evs(){const w=document.getElementById("which").value;return S.allEvents(data,w==="both"?["ov","weber"]:[w]).filter(e=>e.s<b&&e.e>a)}
+let area=S.getArea();function evs(){return S.valleyFirst(S.allEvents(data,S.areaCals(area))).filter(e=>e.s<b&&e.e>a)}
 const css=getComputedStyle(document.documentElement);const col=n=>css.getPropertyValue(n).trim();
 function wrap(t,x,y,max,lh,lines){const words=String(t).split(/\s+/);let line="",n=0;for(const w of words){const test=line?line+" "+w:w;if(ctx.measureText(test).width>max&&line){ctx.fillText(line,x,y);y+=lh;line=w;if(++n>=lines-1){ctx.fillText(ctx.measureText(line+"…").width>max?line.slice(0,30)+"…":line,x,y);return y+lh}}else line=test}ctx.fillText(line,x,y);return y+lh}
 function draw(W,H){cv.width=W;cv.height=H;const g=ctx.createLinearGradient(0,0,0,H);g.addColorStop(0,col("--hero-a"));g.addColorStop(.6,col("--hero-b"));g.addColorStop(1,col("--hero-c"));ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
@@ -80,7 +79,7 @@ function draw(W,H){cv.width=W;cv.height=H;const g=ctx.createLinearGradient(0,0,0
 function dl(W,H,name){draw(W,H);const a=document.createElement("a");a.download=name;a.href=cv.toDataURL("image/png");document.body.append(a);a.click();a.remove();draw(1080,1350)}
 document.getElementById("dl-ig").onclick=()=>dl(1080,1350,"this-weekend-ogden-valley-instagram.png");
 document.getElementById("dl-fb").onclick=()=>dl(1200,630,"this-weekend-ogden-valley-facebook.png");
-document.getElementById("which").onchange=()=>draw(1080,1350);
+S.areaSwitch(document.getElementById("area"),v=>{area=v;draw(1080,1350)});
 if(document.fonts&&document.fonts.ready)await document.fonts.ready;draw(1080,1350);
 })();
 </script>

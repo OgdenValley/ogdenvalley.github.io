@@ -195,9 +195,13 @@ function listing(box, items, kind, R){
     (p.sells && p.sells.length) ? el("div", {class: "meta", text: "Sells: " + p.sells.join(", ")}) : null,
     (p.buy && p.buy.length) ? el("div", {class: "meta", text: "How to buy: " + p.buy.join(", ")}) : null,
     p.where ? el("div", {class: "meta", text: "Find the work at: " + p.where}) : null,
+    (p.sleeps || p.bedrooms) ? el("div", {class: "meta", text: [p.sleeps ? "Sleeps " + p.sleeps : "", p.bedrooms ? p.bedrooms + " bedroom" + (p.bedrooms == 1 ? "" : "s") : "", p.minNights ? p.minNights + "-night minimum" : ""].filter(Boolean).join(" · ")}) : null,
+    (p.amenities && p.amenities.length) ? el("div", {class: "meta", text: p.amenities.join(" · ")}) : null,
+    p.host ? el("div", {class: "meta", text: "Local host: " + p.host}) : null,
     p.address ? el("div", {class: "meta", text: p.address}) : null,
     p.hours ? el("div", {class: "meta", text: "Hours: " + p.hours}) : null,
     p.phone ? el("div", {class: "meta"}, [el("a", {href: "tel:" + String(p.phone).replace(/[^0-9+]/g, ""), "data-track": "call: " + p.name, text: p.phone})]) : null,
+    p.book ? el("div", {class: "btns", style: "margin:4px 0"}, [el("a", {class: "btn primary", href: p.book, target: "_blank", rel: "noopener", "data-track": "book stay: " + p.name, text: "Check dates & book"})]) : null,
     (p.link || (p.links && p.links.length)) ? el("div", {class: "links"}, [p.link ? el("a", {href: p.link, target: "_blank", rel: "noopener", text: "Website or page"}) : null].concat((p.links || []).map(x => el("a", {href: x.href, target: "_blank", rel: "noopener", text: x.label})))) : null,
     listMeta(p),
     p.note ? el("div", {class: "fine note", text: p.note}) : null,
@@ -209,8 +213,8 @@ function listing(box, items, kind, R){
 
 /* ---------- Just added: any <div data-justadded> shows the 6 newest listings from every page ---------- */
 (function(){ const box = document.querySelector("[data-justadded]"); if (!box) return;
-  const page = {restaurants: "restaurants.html", businesses: "businesses.html", services: "services.html", beauty: "beauty.html", farm: "farm.html", foodtrucks: "foodtrucks.html", artists: "artists.html"};
-  const label = {restaurants: "Eat", businesses: "Shop", services: "Home Services", beauty: "Beauty & Wellness", farm: "Farm & Local Food", foodtrucks: "Food Trucks", artists: "Artists"};
+  const page = {restaurants: "restaurants.html", businesses: "businesses.html", stay: "stay.html", services: "services.html", beauty: "beauty.html", farm: "farm.html", foodtrucks: "foodtrucks.html", artists: "artists.html"};
+  const label = {restaurants: "Eat", businesses: "Shop", stay: "Places to stay", services: "Home Services", beauty: "Beauty & Wellness", farm: "Farm & Local Food", foodtrucks: "Food Trucks", artists: "Artists"};
   const all = Object.keys(page).flatMap(k => (P[k] || []).filter(p => p.added).map(p => [p, k])).sort((a, b) => b[0].added.localeCompare(a[0].added) || a[0].name.localeCompare(b[0].name)).slice(0, 6);
   if (!all.length) return;
   box.append(el("div", {class: "section-head"}, [el("div", {}, [el("p", {class: "eyebrow", text: "New on the site"}), el("h2", {text: "Just added"})])]),
@@ -442,5 +446,74 @@ function pruneChips(all, pred, state, groups){
 function wxIcon(t){t=String(t||"").toLowerCase();return /thunder/.test(t)?"⛈️":/snow|flurr|sleet|wintry/.test(t)?"🌨️":/rain|shower|drizzle/.test(t)?"🌧️":/fog|haze|smoke/.test(t)?"🌫️":/partly|mostly sunny|mostly clear/.test(t)?"⛅":/cloud|overcast/.test(t)?"☁️":/wind|breez|blustery/.test(t)?"💨":"☀️"}
 function renderForecastStrip(box,F,n){if(!box)return;if(!F||!F.days||!F.days.length){box.replaceChildren(el("div",{class:"alert quiet",text:"The Valley forecast will appear here after the next hourly update."}));return}
   box.replaceChildren(...F.days.slice(0,n||7).map(d=>el("div",{class:"fc-day"+(d.snow?" snow":"")+(d.pop>=60?" wet":"")},[el("p",{class:"fc-name",text:d.label}),el("p",{class:"fc-md",text:d.md}),el("p",{class:"fc-ic","aria-hidden":"true",text:wxIcon(d.both||d.short)}),el("p",{class:"fc-t",text:(d.high!=null?d.high+"°":"–")+" / "+(d.low!=null?d.low+"°":"–")}),el("p",{class:"fc-p",text:(d.pop||0)+"%"+(d.snow?" snow":" rain")}),el("p",{class:"fc-s",text:d.short||""})])))}
-window.OVE_SITE = {C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip};
+
+/* ---------- Up here / Down the canyon switch (shared by every page that shows both calendars) ---------- */
+const AREA_KEY = "ove-area";
+function getArea(){ try { const v = localStorage.getItem(AREA_KEY); if (v === "ov" || v === "weber" || v === "both") return v; } catch (e) {} return "both"; }
+function setArea(v){ try { localStorage.setItem(AREA_KEY, v); } catch (e) {} }
+function areaCals(v){ return v === "ov" ? ["ov"] : v === "weber" ? ["weber"] : ["ov", "weber"]; }
+function areaSwitch(box, onChange){
+  if (!box) return getArea();
+  const opts = [["ov", "Up here", "Ogden Valley", "var(--ov)"], ["weber", "Down the canyon", "Weber County", "var(--weber)"], ["both", "Both", "Valley first", ""]];
+  box.classList.add("area-switch"); box.setAttribute("role", "group"); box.setAttribute("aria-label", "Show events from");
+  const cur = getArea();
+  box.replaceChildren(...opts.map(([k, a, b, col]) => { const btn = el("button", {class: "chip area-chip", type: "button", "data-track": "area switch: " + a, "aria-pressed": String(k === cur)}, [
+      col ? el("span", {class: "dot", style: "background:" + col}) : el("span", {class: "dot both"}),
+      el("span", {class: "ac-t"}, [el("b", {text: a}), b ? el("small", {text: b}) : null])]);
+    btn.addEventListener("click", () => { setArea(k); [...box.children].forEach(x => x.setAttribute("aria-pressed", String(x === btn))); onChange && onChange(k); });
+    return btn; }));
+  return cur;
+}
+/* same day: Ogden Valley events first, then Weber County, each by time */
+function valleyFirst(list){ const now = Date.now(); return list.slice().sort((a, b) => { const da = dayKey(Math.max(a.s, now)), db = dayKey(Math.max(b.s, now)); if (da !== db) return da < db ? -1 : 1; if (a.cal !== b.cal) return a.cal === "ov" ? -1 : 1; return a.s - b.s; }); }
+/* quick filters: Free, Family / all ages, 21+, Live music, Classes */
+const EV_MUSIC = /live music|\bband\b|bands|concert|acoustic|open mic|\bdj\b|djs|bluegrass|jazz|musician|singer|songwriter|karaoke|symphony|orchestra|tribute|#livemusic/i;
+function evTags(e){ const t = (e.t || "") + " " + (e.desc || ""); const adult = /21\+|18\+|\(adult|rated r|adults only|ages 21/i.test(t);
+  return {free: /\bfree\b/i.test(t), adult, family: !adult, music: EV_MUSIC.test(t), class: /\bclass(es)?\b|workshop|lesson|tutorial|storytime|story time/i.test(t)}; }
+const EV_FILTERS = [["free", "Free"], ["family", "Family / all ages"], ["adult", "21+"], ["music", "Live music"], ["class", "Classes"]];
+function eventFilters(box, onChange){
+  const on = new Set(); if (!box) return () => true;
+  box.classList.add("filters", "ev-filters"); box.setAttribute("role", "group"); box.setAttribute("aria-label", "Filter events");
+  const btns = EV_FILTERS.map(([k, l]) => { const b = el("button", {class: "chip", type: "button", "data-track": "event filter: " + l, "aria-pressed": "false", text: l});
+    b.addEventListener("click", () => { if (on.has(k)) on.delete(k); else { on.add(k); if (k === "family") on.delete("adult"); if (k === "adult") on.delete("family"); }
+      btns.forEach((x, i) => x.setAttribute("aria-pressed", String(on.has(EV_FILTERS[i][0])))); onChange && onChange(); }); return b; });
+  box.replaceChildren(el("span", {class: "ev-f-label", text: "Show:"}), ...btns);
+  return e => { if (!on.size) return true; const t = evTags(e); for (const k of on) if (!t[k]) return false; return true; };
+}
+/* month grid: one month, each day lists its events; tap a day to see that day's list */
+function monthGrid(box, list, opts){
+  opts = opts || {}; const now = new Date(new Date().toLocaleString("en-US", {timeZone: TZ}));
+  let y = opts.y != null ? opts.y : now.getFullYear(), m = opts.m != null ? opts.m : now.getMonth();
+  const draw = () => {
+    const first = new Date(y, m, 1), days = new Date(y, m + 1, 0).getDate(), lead = first.getDay();
+    const byDay = {}; list.forEach(e => { const k = dayKey(e.s); (byDay[k] = byDay[k] || []).push(e); });
+    const key = d => dayKey(new Date(y, m, d, 12).getTime());
+    const prev = el("button", {class: "btn ghost", type: "button", text: "‹ Prev"}), next = el("button", {class: "btn ghost", type: "button", text: "Next ›"});
+    prev.addEventListener("click", () => { m--; if (m < 0) { m = 11; y--; } draw(); }); next.addEventListener("click", () => { m++; if (m > 11) { m = 0; y++; } draw(); });
+    const head = el("div", {class: "mg-head"}, [prev, el("h3", {text: first.toLocaleDateString("en-US", {month: "long", year: "numeric"})}), next]);
+    const grid = el("div", {class: "mg-grid"}, ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"].map(d => el("div", {class: "mg-dow", text: d})));
+    for (let i = 0; i < lead; i++) grid.append(el("div", {class: "mg-day empty"}));
+    const detail = el("div", {class: "mg-detail"});
+    for (let d = 1; d <= days; d++) { const k = key(d), evs = byDay[k] || [];
+      const cell = el("button", {class: "mg-day" + (k === todayKey ? " today" : "") + (evs.length ? " has" : ""), type: "button", "aria-label": new Date(y, m, d).toLocaleDateString("en-US", {weekday: "long", month: "long", day: "numeric"}) + ", " + evs.length + " event" + (evs.length === 1 ? "" : "s")}, [
+        el("span", {class: "mg-n", text: String(d)}),
+        ...evs.slice(0, 3).map(e => el("span", {class: "mg-ev", style: "--cal:" + CAL_COLOR[e.cal], text: e.t})),
+        evs.length > 3 ? el("span", {class: "mg-more", text: "+" + (evs.length - 3) + " more"}) : null]);
+      cell.addEventListener("click", () => { grid.querySelectorAll(".mg-day.sel").forEach(x => x.classList.remove("sel")); cell.classList.add("sel"); renderEvents(detail, evs, {emptyText: "Nothing on the calendar this day."}); detail.scrollIntoView({behavior: "smooth", block: "nearest"}); });
+      grid.append(cell); }
+    box.replaceChildren(head, grid, detail);
+  };
+  draw();
+}
+(function(){ const st = document.createElement("style"); st.textContent =
+  ".area-switch{display:flex;flex-wrap:wrap;gap:8px}.area-chip{padding:8px 16px;text-align:left}.area-chip .ac-t{display:grid;line-height:1.15}.area-chip small{font-weight:600;font-size:13px;color:var(--muted)}" +
+  ".area-chip[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}.area-chip[aria-pressed=true] small{color:#dfe8f3}.dot.both{background:linear-gradient(90deg,var(--ov) 50%,var(--weber) 50%)}" +
+  ".ev-filters{align-items:center}.ev-f-label{font-weight:700;color:var(--muted);margin-right:2px}.ev-filters .chip[aria-pressed=true]{background:var(--soft);border-color:var(--ink)}" +
+  ".view-toggle{display:inline-flex;gap:6px}.mg-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.mg-head h3{margin:0}" +
+  ".mg-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}.mg-dow{font-weight:700;font-size:13px;text-align:center;color:var(--muted);padding:4px 0}" +
+  ".mg-day{min-height:92px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:5px;display:flex;flex-direction:column;gap:3px;text-align:left;font:inherit;color:var(--ink);cursor:pointer;min-width:0;overflow:hidden}.mg-day.empty{background:transparent;border:0;cursor:default}" +
+  ".mg-day.today{border:2px solid var(--accent,#C2410C)}.mg-day.sel{outline:3px solid var(--navy)}.mg-n{font-weight:700;font-size:14px}.mg-ev{font-size:12px;line-height:1.2;border-left:4px solid var(--cal);padding-left:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mg-more{font-size:12px;color:var(--muted)}" +
+  ".mg-detail{margin-top:14px}@media (max-width:640px){.mg-day{min-height:52px}.mg-ev{display:none}.mg-day.has::after{content:'';width:8px;height:8px;border-radius:50%;background:var(--accent,#C2410C);margin-top:auto}}";
+  document.head.appendChild(st); })();
+window.OVE_SITE = {getArea, setArea, areaCals, areaSwitch, valleyFirst, evTags, eventFilters, monthGrid, C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip};
 })();

@@ -47,11 +47,8 @@
 
 <section id="kid-events" style="padding-top:0"><div class="container">
   <div class="section-head" style="flex-wrap:wrap;gap:10px"><div><p class="eyebrow">Coming up</p><h2>Kid &amp; family events</h2></div>
-    <div class="cal-toggle" role="group" aria-label="Show calendars">
-      <button class="chip" type="button" data-kcal="ov" aria-pressed="true"><span class="dot" style="background:var(--ov)"></span>Ogden Valley</button>
-      <button class="chip" type="button" data-kcal="weber" aria-pressed="true"><span class="dot" style="background:var(--weber)"></span>Weber County</button>
-    </div></div>
-  <p class="meta" style="font-size:16px;margin-top:0">Pulled from our Ogden Valley and Weber County calendars whenever an event says it's for kids, families, youth or teens. Tap a calendar to show or hide it.</p>
+    <div id="karea"></div></div>
+  <p class="meta" style="font-size:16px;margin-top:0">Pulled from our Ogden Valley and Weber County calendars whenever an event says it's for kids, families, youth or teens. Pick Up here, Down the canyon or Both.</p>
   <div id="k-events"></div>
 </div></section>
 
@@ -108,7 +105,7 @@ document.getElementById("k-checked").textContent=nice(C.kidsChecked)||"Oct. 11, 
 if(C.kidsChecked)document.getElementById("k-upd").textContent=nice(C.kidsChecked);
 /* ---- kid events ---- */
 const KID=/\b(kids?|child(ren)?|famil(y|ies)|youth|teens?|toddlers?|preschool(ers)?|story ?time|junior|4-h|scouts?|trunk[- ]or[- ]treat|trick[- ]or[- ]treat|ages? \d)/i, ADULT=/(21\+|adults? only|no kids|no children)/i;
-const data=await S.loadEvents();let kon=["ov","weber"];const box=document.getElementById("k-events");
+const data=await S.loadEvents();let kon=S.areaCals(S.getArea());const box=document.getElementById("k-events");
 function drawEvents(){const list=S.allEvents(data,kon).filter(e=>{const t=(e.t||"")+" "+(e.desc||"");return KID.test(t)&&!ADULT.test(t)&&e.s<Date.now()+90*864e5});
   /* a weekly event shows once, with its next dates listed, so it doesn't fill the page */
   const by={},one=[];list.forEach(e=>{const k=(e.t||"").trim().toLowerCase();if(by[k]){by[k].push(e)}else{by[k]=[e];one.push(e)}});
@@ -116,7 +113,7 @@ function drawEvents(){const list=S.allEvents(data,kon).filter(e=>{const t=(e.t||
   const shown=one.map(e=>{const more=by[(e.t||"").trim().toLowerCase()].slice(1);if(!more.length)return e;
     return Object.assign({},e,{desc:"Also on "+more.slice(0,4).map(x=>md(x.s)).join(", ")+(more.length>4?" and more":"")+". "+(e.desc||"")})});
   S.renderEvents(box,shown,{limit:40,emptyText:kon.length===2?"No kid or family events on the calendars right now. Know of one?":"No kid or family events on this calendar right now. Know of one?"});}
-document.querySelectorAll("[data-kcal]").forEach(b=>b.addEventListener("click",()=>{const k=b.dataset.kcal,p=b.getAttribute("aria-pressed")==="true";if(p&&kon.length===1)return;b.setAttribute("aria-pressed",String(!p));kon=p?kon.filter(x=>x!==k):kon.concat(k);drawEvents()}));
+S.areaSwitch(document.getElementById("karea"),v=>{kon=S.areaCals(v);drawEvents()});
 drawEvents();
 /* ---- lessons and groups ---- */
 const all=(C.kidsList||[]).slice();
