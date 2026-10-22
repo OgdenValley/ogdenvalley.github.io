@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T08:49:26.522Z",
+ "updated": "2026-10-22T13:52:58.999Z",
  "meetings": [
   {
    "body": "Huntsville Town Planning Commission",
@@ -49,7 +49,7 @@
    "name": "Ben Lomond Trail",
    "elev": 5970,
    "depth": {
-    "value": 1,
+    "value": 0,
     "date": "2026-10-21"
    },
    "water": {

@@ -1,13 +1,13 @@
 {
- "updated": "2026-10-22T00:54:10.738Z",
+ "updated": "2026-10-22T13:52:57.703Z",
  "weather": [],
  "fires": [],
  "city": [
   {
-   "title": "Ogden Canyon from the mouth to Water Treatment Plant including Radford Estates Updated on 2026-10-21",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2068",
-   "date": 1792633304000,
-   "text": "Water Outage/Low Pressure Update: &lt;p fr-original-style=\"\" style=\"margin: 0px 0px 6px; box-sizing: inherit;\"&gt;Estimated restoration time is extended until 10:00 PM.&lt;/p&gt;",
+   "title": "Ogden Canyon from the mouth to Water Treatment Plant including Radford Estates",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2071",
+   "date": 1792678732000,
+   "text": "Emergency Water Shutdown",
    "source": "Ogden City Alerts",
    "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
   }
