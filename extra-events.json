@@ -1,5 +1,5 @@
 {
- "_help": "Events Claude adds from the OVE Facebook Events tab. start/end are local times with offset (-06:00 until Nov 1, -07:00 after). into: ov or weber. Past events drop off on their own.",
+ "_help": "Events Claude adds by hand (OVE Facebook Events tab, local event lists). Down-the-canyon events are included on purpose: the Valley has few bars, venues, classes or rinks, so Valley people go to Ogden for them. start/end are local times with offset (-06:00 until Nov 1, -07:00 after). into: ov or weber. Past events drop off on their own.",
  "events": [
   {
    "t": "Town Dance Party",
@@ -10,12 +10,12 @@
    "desc": "Hosted on the Ogden Valley Information and Events Facebook page."
   },
   {
-   "t": "Spooky Steps To Healing Hearts",
+   "t": "Monster Dash 5K: Spooky Steps To Healing Hearts",
    "start": "2026-10-24T09:00:00-06:00",
-   "loc": "Weber High School",
+   "loc": "Weber High School, Pleasant View",
    "into": "weber",
    "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-   "desc": "Hosted on the Ogden Valley Information and Events Facebook page."
+   "desc": "5K plus a 1-mile kids run. Runners and walkers of all ages, come in costume! Proceeds go to Make-A-Wish Utah."
   },
   {
    "t": "The Potion Lab: A DIY Potion Bottle Workshop",
@@ -56,6 +56,557 @@
    "into": "weber",
    "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
    "desc": "Event by Golden Spike Event Center."
+  },
+  {
+   "t": "Vintage Halloween Rosette class",
+   "start": "2026-10-22T15:00:00-06:00",
+   "loc": "Ogden Creative Reuse, 2424 Wall Ave., Ogden",
+   "into": "weber",
+   "desc": "Art workshop, $12.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Skate Night",
+   "start": "2026-10-22T17:00:00-06:00",
+   "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "$5.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-22T21:00:00-06:00"
+  },
+  {
+   "t": "Open Mic (21+)",
+   "start": "2026-10-22T17:00:00-06:00",
+   "loc": "Side Bar at Ogden's Own Distillery, 615 W. Stockman Way, Ogden",
+   "into": "weber",
+   "desc": "Free, 21+.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-22T22:00:00-06:00"
+  },
+  {
+   "t": "Crafting with Cats",
+   "start": "2026-10-22T18:00:00-06:00",
+   "loc": "The House Cat Cafe, 341 27th Street, Ogden",
+   "into": "weber",
+   "desc": "After-hours crafts with cats, $10.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-22T19:30:00-06:00"
+  },
+  {
+   "t": "Eden's Yellow Rose: live music",
+   "start": "2026-10-22T18:00:00-06:00",
+   "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Live music and ice cream, all ages, free show.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-22T20:00:00-06:00"
+  },
+  {
+   "t": "Vinyl Night (21+)",
+   "start": "2026-10-22T18:00:00-06:00",
+   "loc": "The Thirsty Horse, 3611 S Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Bring your own vinyl or pick one there. Free, 21+.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Trivia (21+)",
+   "start": "2026-10-22T18:00:00-06:00",
+   "loc": "Angry Goat Pub & Kitchen, 2570 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Free, 21+.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Line Dancing (21+)",
+   "start": "2026-10-22T19:00:00-06:00",
+   "loc": "The Outlaw, 1254 West 2100 South, Ogden",
+   "into": "weber",
+   "desc": "Free, 21+.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-22T21:00:00-06:00"
+  },
+  {
+   "t": "Rift Promotions: emo metal concert",
+   "start": "2026-10-22T19:00:00-06:00",
+   "loc": "For The Love Studio, 3651 Wall Ave. (inside Newgate Mall), Ogden",
+   "into": "weber",
+   "desc": "All ages, $10 online/$12 door.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-22T22:00:00-06:00"
+  },
+  {
+   "t": "Country Dancing",
+   "start": "2026-10-22T20:30:00-06:00",
+   "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Mondays, Wednesdays and Thursdays.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-23T00:00:00-06:00"
+  },
+  {
+   "t": "New World Distillery tasting tour",
+   "start": "2026-10-23T13:00:00-06:00",
+   "loc": "New World Distillery, Eden",
+   "into": "ov",
+   "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Annual Creepy Doll Class",
+   "start": "2026-10-23T16:30:00-06:00",
+   "loc": "The Local Artisan Collective, 2371 Kiesel Ave., Ogden",
+   "into": "weber",
+   "desc": "4:30 and 6:30 p.m., $25. Friday through Sunday.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Steppin' The Ogden Way dance class",
+   "start": "2026-10-23T17:30:00-06:00",
+   "loc": "Marshall White Center, 222 28th Street, Ogden",
+   "into": "weber",
+   "desc": "R&B, hip hop, Southern country and soul line dancing with Dolores Green, $10 or free for members. Every Friday.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-23T19:00:00-06:00"
+  },
+  {
+   "t": "The Groove: bluegrass and folk",
+   "start": "2026-10-23T18:00:00-06:00",
+   "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Live music and ice cream, all ages, free show.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-23T20:00:00-06:00"
+  },
+  {
+   "t": "Party Night",
+   "start": "2026-10-23T18:00:00-06:00",
+   "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "$10.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-24T00:00:00-06:00"
+  },
+  {
+   "t": "Charity Recital for Seager Clinic",
+   "start": "2026-10-23T18:30:00-06:00",
+   "loc": "Browning Center, Weber State University, Ogden",
+   "into": "weber",
+   "desc": "6th annual fundraiser for Seager Memorial Clinic's free health care, $50+.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Tai Finlayson (21+)",
+   "start": "2026-10-23T19:00:00-06:00",
+   "loc": "Side Bar at Ogden's Own Distillery, 615 W. Stockman Way, Ogden",
+   "into": "weber",
+   "desc": "Live music, $5, doors at 6, 21+.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-23T21:00:00-06:00"
+  },
+  {
+   "t": "Friday Night Jazz",
+   "start": "2026-10-23T19:00:00-06:00",
+   "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "New Ogden Jazz Group, free show, all ages.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Paddy Teglia (21+)",
+   "start": "2026-10-23T19:00:00-06:00",
+   "loc": "Angry Goat Pub & Kitchen, 2570 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Acoustic rock, free, 21+.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-23T22:00:00-06:00"
+  },
+  {
+   "t": "Mark Dee",
+   "start": "2026-10-23T19:00:00-06:00",
+   "loc": "Warrens Craft Burger, 258 25th Street, Ogden",
+   "into": "weber",
+   "desc": "Acoustic blues and rock, free, all ages.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-23T21:00:00-06:00"
+  },
+  {
+   "t": "\"Bright Star\"",
+   "start": "2026-10-23T19:30:00-06:00",
+   "loc": "Terrace Plaza Playhouse, Ogden",
+   "into": "weber",
+   "desc": "Musical, $25. Through Nov. 14.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "\"Little Shop of Horrors\" (adult)",
+   "start": "2026-10-23T19:30:00-06:00",
+   "loc": "Ziegfeld Theater, Ogden",
+   "into": "weber",
+   "desc": "Musical, rated R/adult, $26.95. Through Oct. 24.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "J Law & Warhorse (21+)",
+   "start": "2026-10-23T19:30:00-06:00",
+   "loc": "The Thirsty Horse, 3611 S Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Classic rock, free, 21+.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Local bands at Black Lung Society",
+   "start": "2026-10-23T19:30:00-06:00",
+   "loc": "Black Lung Society, 3701 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Just 4 The Record, The Acid Blues Band, Dirty Hands. Doors 7, $15 or $10 with a food pantry donation, all ages.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-23T23:00:00-06:00"
+  },
+  {
+   "t": "Spencer King: comedy",
+   "start": "2026-10-23T19:30:00-06:00",
+   "loc": "Wiseguys Comedy Cafe, 269 Historic 25th Street, Ogden",
+   "into": "weber",
+   "desc": "$23.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Local Bands Night (21+)",
+   "start": "2026-10-23T20:00:00-06:00",
+   "loc": "Talisman Brewing, 1258 Gibson Ave., Ogden",
+   "into": "weber",
+   "desc": "Antlerbath, Ophelia Found Floating, The Fever Drift. Free, 21+.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Los Perdidos with Sangre Latina (21+)",
+   "start": "2026-10-23T21:00:00-06:00",
+   "loc": "Funk n Dive Bar, 2550 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Latin and pop, $10, 21+.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "The Grateful Dudes (21+)",
+   "start": "2026-10-23T21:00:00-06:00",
+   "loc": "The Outlaw, 1254 West 2100 South, Ogden",
+   "into": "weber",
+   "desc": "Country and rock, $5, 21+.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Spoketacular Community Bike Ride",
+   "start": "2026-10-24T11:00:00-06:00",
+   "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden",
+   "into": "weber",
+   "desc": "Presented by GOAL Foundation, free.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-24T13:00:00-06:00"
+  },
+  {
+   "t": "New World Distillery tasting tour",
+   "start": "2026-10-24T13:00:00-06:00",
+   "loc": "New World Distillery, Eden",
+   "into": "ov",
+   "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Sugar Skull Painting",
+   "start": "2026-10-24T14:00:00-06:00",
+   "loc": "Ogden Creative Reuse, 2424 Wall Ave., Ogden",
+   "into": "weber",
+   "desc": "Art workshop, $25.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Craft n Cry",
+   "start": "2026-10-24T14:00:00-06:00",
+   "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
+   "into": "weber",
+   "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Beatdiggers",
+   "start": "2026-10-24T18:00:00-06:00",
+   "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Live music and ice cream, all ages, free show.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-24T20:00:00-06:00"
+  },
+  {
+   "t": "Live music at Two Bit Bistro",
+   "start": "2026-10-24T18:00:00-06:00",
+   "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Free show, all ages.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Adam Johnston (21+)",
+   "start": "2026-10-24T19:00:00-06:00",
+   "loc": "Side Bar at Ogden's Own Distillery, 615 W. Stockman Way, Ogden",
+   "into": "weber",
+   "desc": "Live music, $5, 21+.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-24T21:00:00-06:00"
+  },
+  {
+   "t": "Korene Greenwood (21+)",
+   "start": "2026-10-24T19:00:00-06:00",
+   "loc": "Angry Goat Pub & Kitchen, 2570 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Acoustic rock, free, 21+.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-24T22:00:00-06:00"
+  },
+  {
+   "t": "The Suddz: hip hop",
+   "start": "2026-10-24T19:00:00-06:00",
+   "loc": "For The Love Studio, 3651 Wall Ave. (inside Newgate Mall), Ogden",
+   "into": "weber",
+   "desc": "All ages, $10 online/$12 door.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-24T22:00:00-06:00"
+  },
+  {
+   "t": "Singles Mingle",
+   "start": "2026-10-24T19:00:00-06:00",
+   "loc": "Grounds for Coffee, 111 25th Street, Ogden",
+   "into": "weber",
+   "desc": "Free, every Saturday.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-24T21:00:00-06:00"
+  },
+  {
+   "t": "\"Bright Star\"",
+   "start": "2026-10-24T19:30:00-06:00",
+   "loc": "Terrace Plaza Playhouse, Ogden",
+   "into": "weber",
+   "desc": "Musical, $25. Through Nov. 14.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "\"Little Shop of Horrors\" (adult, final night)",
+   "start": "2026-10-24T19:30:00-06:00",
+   "loc": "Ziegfeld Theater, Ogden",
+   "into": "weber",
+   "desc": "Musical, rated R/adult, $26.95.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Spencer King: comedy",
+   "start": "2026-10-24T19:30:00-06:00",
+   "loc": "Wiseguys Comedy Cafe, 269 Historic 25th Street, Ogden",
+   "into": "weber",
+   "desc": "$23.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Local bands at Black Lung Society",
+   "start": "2026-10-24T19:30:00-06:00",
+   "loc": "Black Lung Society, 3701 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Womn, Weedhemoth, Drying. Doors 7, $15 or $10 with a food pantry donation, all ages.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-24T23:00:00-06:00"
+  },
+  {
+   "t": "Devotion Championship Wrestling (21+)",
+   "start": "2026-10-24T20:30:00-06:00",
+   "loc": "Kamikazes Ogden, 2404 Adams Ave., Ogden",
+   "into": "weber",
+   "desc": "Live pro wrestling, $10, 21+.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "80s Ladies' Night",
+   "start": "2026-10-24T21:00:00-06:00",
+   "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Free for ladies 16+.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-25T00:00:00-06:00"
+  },
+  {
+   "t": "Atomic with Valence Project (21+)",
+   "start": "2026-10-24T21:00:00-06:00",
+   "loc": "Funk n Dive Bar, 2550 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Rock covers, $5, 21+.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "The Grateful Dudes (21+)",
+   "start": "2026-10-24T21:00:00-06:00",
+   "loc": "The Outlaw, 1254 West 2100 South, Ogden",
+   "into": "weber",
+   "desc": "Country and rock, $5, 21+.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Paws & Pistons Car Show",
+   "start": "2026-10-25T09:00:00-06:00",
+   "loc": "George E. Whalen Park, Roy",
+   "into": "weber",
+   "desc": "Fundraiser for Utah Paws & Tails, $0-$10.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-25T14:00:00-06:00"
+  },
+  {
+   "t": "Live Jazz: Jack Durbano Trio",
+   "start": "2026-10-25T12:00:00-06:00",
+   "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Live music and brunch, free show, all ages.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-25T14:00:00-06:00"
+  },
+  {
+   "t": "New World Distillery tasting tour",
+   "start": "2026-10-25T13:00:00-06:00",
+   "loc": "New World Distillery, Eden",
+   "into": "ov",
+   "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Cereal Box Shrine class",
+   "start": "2026-10-25T15:30:00-06:00",
+   "loc": "Ogden Creative Reuse, 2424 Wall Ave., Ogden",
+   "into": "weber",
+   "desc": "Art workshop, $15.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "The Gathering",
+   "start": "2026-10-25T16:30:00-06:00",
+   "loc": "9356 E 200 S, Huntsville",
+   "into": "ov",
+   "desc": "Presented by Wild Shaped Bakery and Better Food Farms, $150.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Adam Kozlewski",
+   "start": "2026-10-25T18:00:00-06:00",
+   "loc": "Slackwater Pizzeria, 209 24th St., Ogden",
+   "into": "weber",
+   "desc": "Acoustic rock, free.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-25T20:00:00-06:00"
+  },
+  {
+   "t": "Halloween Fest at Black Lung Society",
+   "start": "2026-10-25T19:30:00-06:00",
+   "loc": "Black Lung Society, 3701 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Cool Hat, Still Awake, Erinne Jones, Melopanic. Doors 7, $15 or $10 with a food pantry donation, all ages.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-25T23:00:00-06:00"
+  },
+  {
+   "t": "Mystic Mondays: tarot readings",
+   "start": "2026-10-26T18:00:00-06:00",
+   "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "$5 readings.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-26T20:00:00-06:00"
+  },
+  {
+   "t": "Bingo, steak dinner night (21+)",
+   "start": "2026-10-26T19:00:00-06:00",
+   "loc": "Harp and Hound, 2550 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "21+.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "\"Bright Star\"",
+   "start": "2026-10-26T19:30:00-06:00",
+   "loc": "Terrace Plaza Playhouse, Ogden",
+   "into": "weber",
+   "desc": "Musical, $25. Through Nov. 14.",
+   "url": "",
+   "src": "Down the canyon"
+  },
+  {
+   "t": "Country Dancing",
+   "start": "2026-10-26T20:30:00-06:00",
+   "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-27T00:00:00-06:00"
+  },
+  {
+   "t": "A Court of Splintered Harmony masquerade",
+   "start": "2026-10-26T21:30:00-06:00",
+   "loc": "Black Lung Society, 3701 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Masquerade, DJ and dancing, best-dressed contest.",
+   "url": "",
+   "src": "Down the canyon",
+   "end": "2026-10-27T00:00:00-06:00"
   }
  ]
 }
