@@ -129,5 +129,74 @@
   "lng": -111.97106,
   "county": "Weber"
  },
- "Two Bit Bistro, 2510 Washington Blvd., Ogden": null
+ "Two Bit Bistro, 2510 Washington Blvd., Ogden": null,
+ "Warrens Craft Burger, 258 25th Street, Ogden": null,
+ "Terrace Plaza Playhouse, Ogden": null,
+ "Ziegfeld Theater, Ogden": {
+  "lat": 41.19143,
+  "lng": -111.97056,
+  "county": "Weber"
+ },
+ "Black Lung Society, 3701 Washington Blvd., Ogden": {
+  "lat": 41.19569,
+  "lng": -111.97115,
+  "county": "Weber"
+ },
+ "Wiseguys Comedy Cafe, 269 Historic 25th Street, Ogden": null,
+ "Talisman Brewing, 1258 Gibson Ave., Ogden": {
+  "lat": 41.24342,
+  "lng": -111.98396,
+  "county": "Weber"
+ },
+ "Funk n Dive Bar, 2550 Washington Blvd., Ogden": {
+  "lat": 41.21945,
+  "lng": -111.97008,
+  "county": "Weber"
+ },
+ "Weber High School, Pleasant View": {
+  "lat": 41.3234,
+  "lng": -111.98479,
+  "county": "Weber"
+ },
+ "Hilton Garden Inn, 2271 S. Washington Blvd., Ogden, Utah 84401": null,
+ "Ogden Dinosaur Park, 1544 Park Blvd., Ogden": null,
+ "Union Station, 2501 Wall Ave, Ogden, UT 84401": {
+  "lat": 41.22117,
+  "lng": -111.97974,
+  "county": "Weber"
+ },
+ "Kaffe Mercantile, 1221 26th St., Ogden": {
+  "lat": 41.2181,
+  "lng": -111.94758,
+  "county": "Weber"
+ },
+ "Local Artisan Collective, 2371 Kiesel Ave., Ogden, UT 84401": null,
+ "Grounds for Coffee, 111 25th Street, Ogden": {
+  "lat": 41.22059,
+  "lng": -111.97829,
+  "county": "Weber"
+ },
+ "Kamikazes Ogden, 2404 Adams Ave., Ogden": {
+  "lat": 41.22243,
+  "lng": -111.96724,
+  "county": "Weber"
+ },
+ "George E. Whalen Park, Roy": null,
+ "Slackwater Pizzeria, 209 24th St., Ogden": {
+  "lat": 41.22251,
+  "lng": -111.97569,
+  "county": "Weber"
+ },
+ "Harp and Hound, 2550 Washington Blvd., Ogden": {
+  "lat": 41.21948,
+  "lng": -111.97019,
+  "county": "Weber"
+ },
+ "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401": null,
+ "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401": null,
+ "Weber State University Community Education Center, 2605 S Monroe Blvd, Ogden 84401": null,
+ "4059 S 1900 W, Roy, UT 84067": null,
+ "Val A Browning Center, Weber State University, 1901 University Circle, Ogden, UT 84408": null,
+ "Stellas on 25th, 225 Historic 25th Street, Ogden, UT 84401": null,
+ "Peery's Egyptian Theatre, 2415 Washington Blvd, Ogden, UT 84401": null
 }

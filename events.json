@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T17:39:37.766Z",
+ "updated": "2026-10-22T18:49:22.945Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -21,7 +21,7 @@
      "allDay": false,
      "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
      "url": "",
-     "src": "Down the canyon"
+     "src": "Weekly regular"
     },
     {
      "s": 1792868400000,
@@ -31,7 +31,7 @@
      "allDay": false,
      "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
      "url": "",
-     "src": "Down the canyon"
+     "src": "Weekly regular"
     },
     {
      "s": 1792872000000,
@@ -60,7 +60,7 @@
      "allDay": false,
      "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
      "url": "",
-     "src": "Down the canyon"
+     "src": "Weekly regular"
     },
     {
      "s": 1792967400000,
@@ -82,6 +82,26 @@
      "url": "https://www.meetup.com/webercountyoutdoors/"
     },
     {
+     "s": 1793386800000,
+     "e": 1793394000000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1793473200000,
+     "e": 1793480400000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1793476800000,
      "e": 1793491200000,
      "t": "Cinema Saturday Feature Films",
@@ -89,6 +109,16 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
+    },
+    {
+     "s": 1793563200000,
+     "e": 1793570400000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1793840400000,
@@ -100,6 +130,26 @@
      "url": "https://www.meetup.com/webercountyoutdoors/"
     },
     {
+     "s": 1793995200000,
+     "e": 1794002400000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1794081600000,
+     "e": 1794088800000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1794085200000,
      "e": 1794099600000,
      "t": "Cinema Saturday Feature Films",
@@ -107,6 +157,16 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
+    },
+    {
+     "s": 1794168000000,
+     "e": 1794175200000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1794445200000,
@@ -118,6 +178,26 @@
      "url": "https://www.meetup.com/webercountyoutdoors/"
     },
     {
+     "s": 1794600000000,
+     "e": 1794607200000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1794686400000,
+     "e": 1794693600000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1794690000000,
      "e": 1794704400000,
      "t": "Cinema Saturday Feature Films",
@@ -125,6 +205,16 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
+    },
+    {
+     "s": 1794772800000,
+     "e": 1794780000000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1795050000000,
@@ -136,6 +226,26 @@
      "url": "https://www.meetup.com/webercountyoutdoors/"
     },
     {
+     "s": 1795204800000,
+     "e": 1795212000000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1795291200000,
+     "e": 1795298400000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1795294800000,
      "e": 1795309200000,
      "t": "Cinema Saturday Feature Films",
@@ -143,6 +253,16 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
+    },
+    {
+     "s": 1795377600000,
+     "e": 1795384800000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1795654800000,
@@ -154,6 +274,26 @@
      "url": "https://www.meetup.com/webercountyoutdoors/"
     },
     {
+     "s": 1795809600000,
+     "e": 1795816800000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1795896000000,
+     "e": 1795903200000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1795899600000,
      "e": 1795914000000,
      "t": "Cinema Saturday Feature Films",
@@ -161,6 +301,16 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
+    },
+    {
+     "s": 1795982400000,
+     "e": 1795989600000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1796259600000,
@@ -172,6 +322,26 @@
      "url": "https://www.meetup.com/webercountyoutdoors/"
     },
     {
+     "s": 1796414400000,
+     "e": 1796421600000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1796500800000,
+     "e": 1796508000000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1796504400000,
      "e": 1796518800000,
      "t": "Cinema Saturday Feature Films",
@@ -179,6 +349,16 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
+    },
+    {
+     "s": 1796587200000,
+     "e": 1796594400000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1796864400000,
@@ -190,6 +370,26 @@
      "url": "https://www.meetup.com/webercountyoutdoors/"
     },
     {
+     "s": 1797019200000,
+     "e": 1797026400000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797105600000,
+     "e": 1797112800000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1797109200000,
      "e": 1797123600000,
      "t": "Cinema Saturday Feature Films",
@@ -197,6 +397,16 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
+    },
+    {
+     "s": 1797192000000,
+     "e": 1797199200000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1797469200000,
@@ -208,6 +418,26 @@
      "url": "https://www.meetup.com/webercountyoutdoors/"
     },
     {
+     "s": 1797624000000,
+     "e": 1797631200000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797710400000,
+     "e": 1797717600000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1797714000000,
      "e": 1797728400000,
      "t": "Cinema Saturday Feature Films",
@@ -215,6 +445,16 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
+    },
+    {
+     "s": 1797796800000,
+     "e": 1797804000000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1798074000000,
@@ -568,6 +808,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1792636200000,
+     "e": 1792648800000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1792702800000,
      "e": 1792710000000,
      "t": "Vintage Halloween Rosette class",
@@ -650,16 +900,6 @@
     {
      "s": 1792713600000,
      "e": 1792720800000,
-     "t": "Eden's Yellow Rose: live music",
-     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Live music and ice cream, all ages, free show.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792713600000,
-     "e": 1792720800000,
      "t": "Vinyl Night (21+)",
      "loc": "The Thirsty Horse, 3611 S Washington Blvd., Ogden",
      "allDay": false,
@@ -676,6 +916,16 @@
      "desc": "Free, 21+.",
      "url": "",
      "src": "Down the canyon"
+    },
+    {
+     "s": 1792713600000,
+     "e": 1792720800000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1792717200000,
@@ -723,9 +973,9 @@
      "t": "Country Dancing",
      "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
      "allDay": false,
-     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Mondays, Wednesdays and Thursdays.",
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
-     "src": "Down the canyon"
+     "src": "Weekly regular"
     },
     {
      "s": 1792764000000,
@@ -753,9 +1003,9 @@
      "t": "Steppin' The Ogden Way dance class",
      "loc": "Marshall White Center, 222 28th Street, Ogden",
      "allDay": false,
-     "desc": "R&B, hip hop, Southern country and soul line dancing with Dolores Green, $10 or free for members. Every Friday.",
+     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
      "url": "",
-     "src": "Down the canyon"
+     "src": "Weekly regular"
     },
     {
      "s": 1792800000000,
@@ -769,16 +1019,6 @@
     },
     {
      "s": 1792800000000,
-     "e": 1792807200000,
-     "t": "The Groove: bluegrass and folk",
-     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Live music and ice cream, all ages, free show.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792800000000,
      "e": 1792821600000,
      "t": "Party Night",
      "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
@@ -786,6 +1026,16 @@
      "desc": "$10.",
      "url": "",
      "src": "Down the canyon"
+    },
+    {
+     "s": 1792800000000,
+     "e": 1792807200000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1792800900000,
@@ -839,16 +1089,6 @@
     },
     {
      "s": 1792803600000,
-     "e": 1792810800000,
-     "t": "Friday Night Jazz",
-     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "New Ogden Jazz Group, free show, all ages.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792803600000,
      "e": 1792814400000,
      "t": "Paddy Teglia (21+)",
      "loc": "Angry Goat Pub & Kitchen, 2570 Washington Blvd., Ogden",
@@ -866,6 +1106,16 @@
      "desc": "Acoustic blues and rock, free, all ages.",
      "url": "",
      "src": "Down the canyon"
+    },
+    {
+     "s": 1792803600000,
+     "e": 1792810800000,
+     "t": "Friday Night Jazz",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free show, all ages. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1792805400000,
@@ -1025,7 +1275,7 @@
      "allDay": false,
      "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
      "url": "",
-     "src": "Down the canyon"
+     "src": "Weekly regular"
     },
     {
      "s": 1792875600000,
@@ -1070,22 +1320,22 @@
     {
      "s": 1792886400000,
      "e": 1792893600000,
-     "t": "Beatdiggers",
-     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Live music and ice cream, all ages, free show.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792886400000,
-     "e": 1792893600000,
      "t": "Live music at Two Bit Bistro",
      "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
      "allDay": false,
      "desc": "Free show, all ages.",
      "url": "",
      "src": "Down the canyon"
+    },
+    {
+     "s": 1792886400000,
+     "e": 1792893600000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1792890000000,
@@ -1123,9 +1373,9 @@
      "t": "Singles Mingle",
      "loc": "Grounds for Coffee, 111 25th Street, Ogden",
      "allDay": false,
-     "desc": "Free, every Saturday.",
+     "desc": "Free. Every Saturday.",
      "url": "",
-     "src": "Down the canyon"
+     "src": "Weekly regular"
     },
     {
      "s": 1792891800000,
@@ -1293,9 +1543,9 @@
      "t": "Mystic Mondays: tarot readings",
      "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
      "allDay": false,
-     "desc": "$5 readings.",
+     "desc": "$5 readings. Every Monday.",
      "url": "",
-     "src": "Down the canyon"
+     "src": "Weekly regular"
     },
     {
      "s": 1793062800000,
@@ -1323,9 +1573,9 @@
      "t": "Country Dancing",
      "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
      "allDay": false,
-     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages.",
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
-     "src": "Down the canyon"
+     "src": "Weekly regular"
     },
     {
      "s": 1793071800000,
@@ -1438,6 +1688,16 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1793241000000,
+     "e": 1793253600000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1793316600000,
      "e": 1793331000000,
      "t": "Roaring 20s Halloween Dinner Tour Experience",
@@ -1458,6 +1718,16 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1793318400000,
+     "e": 1793325600000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1793320200000,
      "e": 1793327400000,
      "t": "Halloween Storytelling Spooktacular",
@@ -1476,6 +1746,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1793327400000,
+     "e": 1793340000000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1793383200000,
@@ -1508,6 +1788,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1793403000000,
+     "e": 1793408400000,
+     "t": "Steppin' The Ogden Way dance class",
+     "loc": "Marshall White Center, 222 28th Street, Ogden",
+     "allDay": false,
+     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1793404800000,
      "e": 1793415600000,
      "t": "Below the Bee: A Spookeasy",
@@ -1516,6 +1806,26 @@
      "desc": "The Queen Bee Giftery is staying open late, and for the first time ever, retail is heading down to our haunted basement. 👻\n\nShop after hours with early access to our holiday inventory, then brave the stairs to shop local vendors in the basement.\n\nYour $15 ticket includes:\n\nFree dirty sodas, popcorn, and cotton candy\nA chance to win a gift basket packed with goodies from every Spookeasy vendor\nA swag bag for the first 25 guests\nWhen: Friday, October 30th from 6–9 pm\nWhere: The Queen Bee Giftery, 270 25th Street, Ogden\n\nSnacks are on us. Anything lurking in the basement is not our responsibilit",
      "url": "https://queenbeegiftery.com/products/below-the-bee-a-spookeasy?_pos=1&_sid=fed4e4920&_ss=r",
      "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793404800000,
+     "e": 1793412000000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1793408400000,
+     "e": 1793415600000,
+     "t": "Friday Night Jazz",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free show, all ages. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1793410200000,
@@ -1558,6 +1868,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1793476800000,
+     "e": 1793484000000,
+     "t": "Craft n Cry",
+     "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
+     "allDay": false,
+     "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1793484000000,
      "e": 1793505600000,
      "t": "Halloween Bar Crawl",
@@ -1566,6 +1886,26 @@
      "desc": "The Ogden Halloween Bar Crawl runs Saturday, October 31, 2026, 4PM - 10PM, across 6 bars in Ogden, UT. The route takes in 25th St, 25th Street, Washington Blvd and 24th St.\nCheck in at Kokomo Club (4PM - 6PM) to swap your ticket for a lanyard, badge and drink vouchers. After that there is no set route — the bars are yours to hit in any order, with crawler drink specials at every stop. The L.A.B. closes out the night.\nOgden has crawled with us every year since 2021.",
      "url": "https://crawlwith.us/ogden/halloween/",
      "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793491200000,
+     "e": 1793498400000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1793494800000,
+     "e": 1793502000000,
+     "t": "Singles Mingle",
+     "loc": "Grounds for Coffee, 111 25th Street, Ogden",
+     "allDay": false,
+     "desc": "Free. Every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1793498400000,
@@ -1596,6 +1936,26 @@
      "desc": "Safe space for parents to share, connect, and learn from each other. Each month is a different topic.\nFree Refreshments and Free Childcare for ages 0-11 (Must schedule in advance and complete paperwork)\nEmail at inquiry@fscogden.org or call us 801-393-3113\nAugust 3 - Building Structure and Routine at Home\nSeptember 14 - You are Not Alone - The Village Returns\nOctober 5 - Haunted Tales and Parenting WINS\nNovember 2 - Pulling the Ones You Love Closer - Making Your Home a Refuge\nDecember 7 - Resilience, Calm the Stress Down",
      "url": "https://www.eventbrite.com/cc/parent-cafes-special-events-4839868?utm-campaign=social&utm-content=creatorshare&utm-medium=discovery&utm-term=odclsxcollection&utm-source=cp&aff=escb",
      "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793667600000,
+     "e": 1793674800000,
+     "t": "Mystic Mondays: tarot readings",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "$5 readings. Every Monday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1793676600000,
+     "e": 1793689200000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1793714400000,
@@ -1718,6 +2078,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1793849400000,
+     "e": 1793862000000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1793926800000,
      "e": 1793934000000,
      "t": "Visiting Artist Lecture by Melissa Melero-Moose",
@@ -1738,6 +2108,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1793926800000,
+     "e": 1793934000000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1793930400000,
      "e": 1793937600000,
      "t": "Trails Foundation of Northern Utah presents: Ogden Mountain Film Festival",
@@ -1748,6 +2128,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1793935800000,
+     "e": 1793948400000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1794011400000,
      "e": 1794016800000,
      "t": "Historic 25th Street Walking Tour",
@@ -1756,6 +2146,16 @@
      "desc": "Join local expert, Rich Koski, as he takes you on a guided walk from Union Station to the Monarch Building in the Nine Rails Creative District.\n\nEarly Weber County and Ogden history including the role of the fur traders and mountain men establishing the first European-American settlement in Utah.\n\nAmong the historical facts and anecdotes provided by your guide you’ll learn about:\n\nArrival of the Mormon Pioneers and establishment of Ogden as an agricultural community.\nOgden’s emergence as the Crossroads of the West following the completion of the Transcontinental Railroad and an overview of the",
      "url": "https://www.visitogden.com/things-to-do/guided-tours/guided-tour/",
      "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794011400000,
+     "e": 1794016800000,
+     "t": "Steppin' The Ogden Way dance class",
+     "loc": "Marshall White Center, 222 28th Street, Ogden",
+     "allDay": false,
+     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1794013200000,
@@ -1776,6 +2176,16 @@
      "desc": "Ogden's First Friday Art Stroll is held the first Friday of the month from 6-9 PM, Ogden’s First Friday Art Stroll is abuzz year ‘round with exciting exhibit openings, artist receptions and live music of all genres in venues and in the streets. As the art stroll becomes the virtual front porch of Ogden, those that venture here are treated to great art, an atmosphere of camaraderie and inclusion and amazing night life; small town feel, big city offerings.\n\nEnjoy your journey. We hope you are inspired, delighted and challenged along the way.",
      "url": "http://www.ogdencityarts.org",
      "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794013200000,
+     "e": 1794020400000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1794015000000,
@@ -1806,6 +2216,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1794016800000,
+     "e": 1794024000000,
+     "t": "Friday Night Jazz",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free show, all ages. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1794018600000,
@@ -1868,6 +2288,26 @@
      "src": "Ogden Valley Information and Events"
     },
     {
+     "s": 1794085200000,
+     "e": 1794092400000,
+     "t": "Craft n Cry",
+     "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
+     "allDay": false,
+     "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1794099600000,
+     "e": 1794106800000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1794103200000,
      "e": 1794112200000,
      "t": "WSU Theatre: Much Ado About Nothing - Allred",
@@ -1876,6 +2316,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1794103200000,
+     "e": 1794110400000,
+     "t": "Singles Mingle",
+     "loc": "Grounds for Coffee, 111 25th Street, Ogden",
+     "allDay": false,
+     "desc": "Free. Every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1794105000000,
@@ -1896,6 +2346,26 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1794272400000,
+     "e": 1794279600000,
+     "t": "Mystic Mondays: tarot readings",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "$5 readings. Every Monday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1794281400000,
+     "e": 1794294000000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1794326400000,
@@ -1998,6 +2468,16 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1794454200000,
+     "e": 1794466800000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1794510000000,
      "e": 1794511800000,
      "t": "Jessica Greenberg Lecture - Allred",
@@ -2008,6 +2488,16 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1794531600000,
+     "e": 1794538800000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1794535200000,
      "e": 1794544200000,
      "t": "WSU Theatre: Much Ado About Nothing - Allred",
@@ -2016,6 +2506,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1794540600000,
+     "e": 1794553200000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1794553200000,
@@ -2048,6 +2548,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1794616200000,
+     "e": 1794621600000,
+     "t": "Steppin' The Ogden Way dance class",
+     "loc": "Marshall White Center, 222 28th Street, Ogden",
+     "allDay": false,
+     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1794618000000,
      "e": 1794625200000,
      "t": "Trans Awareness Week: Film Screening - 113",
@@ -2056,6 +2566,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1794618000000,
+     "e": 1794625200000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1794621600000,
@@ -2076,6 +2596,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1794621600000,
+     "e": 1794628800000,
+     "t": "Friday Night Jazz",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free show, all ages. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1794623400000,
@@ -2138,6 +2668,26 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1794690000000,
+     "e": 1794697200000,
+     "t": "Craft n Cry",
+     "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
+     "allDay": false,
+     "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1794704400000,
+     "e": 1794711600000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1794708000000,
      "e": 1794717000000,
      "t": "WSU Theatre: Much Ado About Nothing - Allred",
@@ -2156,6 +2706,36 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1794708000000,
+     "e": 1794715200000,
+     "t": "Singles Mingle",
+     "loc": "Grounds for Coffee, 111 25th Street, Ogden",
+     "allDay": false,
+     "desc": "Free. Every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1794877200000,
+     "e": 1794884400000,
+     "t": "Mystic Mondays: tarot readings",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "$5 readings. Every Monday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1794886200000,
+     "e": 1794898800000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1794947400000,
@@ -2278,6 +2858,16 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1795059000000,
+     "e": 1795071600000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1795131000000,
      "e": 1795134600000,
      "t": "Ogden Trails Network Committee Meeting",
@@ -2298,6 +2888,16 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1795136400000,
+     "e": 1795143600000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1795141800000,
      "e": 1795149000000,
      "t": "Clytie Adams Nutcracker - Austad",
@@ -2306,6 +2906,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1795145400000,
+     "e": 1795158000000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1795158000000,
@@ -2328,6 +2938,26 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1795221000000,
+     "e": 1795226400000,
+     "t": "Steppin' The Ogden Way dance class",
+     "loc": "Marshall White Center, 222 28th Street, Ogden",
+     "allDay": false,
+     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1795222800000,
+     "e": 1795230000000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1795226400000,
      "e": 1795233600000,
      "t": "WSU Dance: The Field - Eccles",
@@ -2336,6 +2966,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1795226400000,
+     "e": 1795233600000,
+     "t": "Friday Night Jazz",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free show, all ages. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1795228200000,
@@ -2398,6 +3038,26 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1795294800000,
+     "e": 1795302000000,
+     "t": "Craft n Cry",
+     "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
+     "allDay": false,
+     "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1795309200000,
+     "e": 1795316400000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1795312800000,
      "e": 1795320000000,
      "t": "WSU Dance: The Field - Eccles",
@@ -2406,6 +3066,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1795312800000,
+     "e": 1795320000000,
+     "t": "Singles Mingle",
+     "loc": "Grounds for Coffee, 111 25th Street, Ogden",
+     "allDay": false,
+     "desc": "Free. Every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1795314600000,
@@ -2418,6 +3088,56 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1795482000000,
+     "e": 1795489200000,
+     "t": "Mystic Mondays: tarot readings",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "$5 readings. Every Monday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1795491000000,
+     "e": 1795503600000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1795663800000,
+     "e": 1795676400000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1795741200000,
+     "e": 1795748400000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1795750200000,
+     "e": 1795762800000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1795813200000,
      "e": 1795820400000,
      "t": "Ballet West: Nutcracker - Austad",
@@ -2426,6 +3146,26 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1795825800000,
+     "e": 1795831200000,
+     "t": "Steppin' The Ogden Way dance class",
+     "loc": "Marshall White Center, 222 28th Street, Ogden",
+     "allDay": false,
+     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1795827600000,
+     "e": 1795834800000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1795831200000,
@@ -2438,6 +3178,16 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1795831200000,
+     "e": 1795838400000,
+     "t": "Friday Night Jazz",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free show, all ages. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1795899600000,
      "e": 1795906800000,
      "t": "Ballet West: Nutcracker - Austad",
@@ -2446,6 +3196,26 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1795899600000,
+     "e": 1795906800000,
+     "t": "Craft n Cry",
+     "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
+     "allDay": false,
+     "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1795914000000,
+     "e": 1795921200000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1795917600000,
@@ -2458,6 +3228,16 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1795917600000,
+     "e": 1795924800000,
+     "t": "Singles Mingle",
+     "loc": "Grounds for Coffee, 111 25th Street, Ogden",
+     "allDay": false,
+     "desc": "Free. Every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1795978800000,
      "e": 1795986000000,
      "t": "Ballet West: Nutcracker - Austad",
@@ -2466,6 +3246,26 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1796086800000,
+     "e": 1796094000000,
+     "t": "Mystic Mondays: tarot readings",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "$5 readings. Every Monday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1796095800000,
+     "e": 1796108400000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1796178600000,
@@ -2478,6 +3278,26 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1796268600000,
+     "e": 1796281200000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1796346000000,
+     "e": 1796353200000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1796351400000,
      "e": 1796358600000,
      "t": "Symphonic Band - Austad",
@@ -2486,6 +3306,46 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1796355000000,
+     "e": 1796367600000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1796430600000,
+     "e": 1796436000000,
+     "t": "Steppin' The Ogden Way dance class",
+     "loc": "Marshall White Center, 222 28th Street, Ogden",
+     "allDay": false,
+     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1796432400000,
+     "e": 1796439600000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1796436000000,
+     "e": 1796443200000,
+     "t": "Friday Night Jazz",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free show, all ages. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1796482800000,
@@ -2498,6 +3358,26 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1796504400000,
+     "e": 1796511600000,
+     "t": "Craft n Cry",
+     "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
+     "allDay": false,
+     "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1796518800000,
+     "e": 1796526000000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1796522400000,
      "e": 1796529600000,
      "t": "Joy to the World - Austad",
@@ -2506,6 +3386,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1796522400000,
+     "e": 1796529600000,
+     "t": "Singles Mingle",
+     "loc": "Grounds for Coffee, 111 25th Street, Ogden",
+     "allDay": false,
+     "desc": "Free. Every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1796691600000,
@@ -2518,6 +3408,16 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1796691600000,
+     "e": 1796698800000,
+     "t": "Mystic Mondays: tarot readings",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "$5 readings. Every Monday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1796697000000,
      "e": 1796700600000,
      "t": "Studio 1 - Austad",
@@ -2526,6 +3426,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1796700600000,
+     "e": 1796713200000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1796783400000,
@@ -2538,6 +3448,136 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1796873400000,
+     "e": 1796886000000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1796950800000,
+     "e": 1796958000000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1796959800000,
+     "e": 1796972400000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797035400000,
+     "e": 1797040800000,
+     "t": "Steppin' The Ogden Way dance class",
+     "loc": "Marshall White Center, 222 28th Street, Ogden",
+     "allDay": false,
+     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797037200000,
+     "e": 1797044400000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797040800000,
+     "e": 1797048000000,
+     "t": "Friday Night Jazz",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free show, all ages. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797109200000,
+     "e": 1797116400000,
+     "t": "Craft n Cry",
+     "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
+     "allDay": false,
+     "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797123600000,
+     "e": 1797130800000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797127200000,
+     "e": 1797134400000,
+     "t": "Singles Mingle",
+     "loc": "Grounds for Coffee, 111 25th Street, Ogden",
+     "allDay": false,
+     "desc": "Free. Every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797296400000,
+     "e": 1797303600000,
+     "t": "Mystic Mondays: tarot readings",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "$5 readings. Every Monday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797305400000,
+     "e": 1797318000000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797478200000,
+     "e": 1797490800000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797555600000,
+     "e": 1797562800000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1797561000000,
      "e": 1797567600000,
      "t": "Utah Symphony: Holiday Pops Extravaganza - Austad",
@@ -2546,6 +3586,76 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1797564600000,
+     "e": 1797577200000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797640200000,
+     "e": 1797645600000,
+     "t": "Steppin' The Ogden Way dance class",
+     "loc": "Marshall White Center, 222 28th Street, Ogden",
+     "allDay": false,
+     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797642000000,
+     "e": 1797649200000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797645600000,
+     "e": 1797652800000,
+     "t": "Friday Night Jazz",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free show, all ages. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797714000000,
+     "e": 1797721200000,
+     "t": "Craft n Cry",
+     "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
+     "allDay": false,
+     "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797728400000,
+     "e": 1797735600000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1797732000000,
+     "e": 1797739200000,
+     "t": "Singles Mingle",
+     "loc": "Grounds for Coffee, 111 25th Street, Ogden",
+     "allDay": false,
+     "desc": "Free. Every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
     }
    ]
   }

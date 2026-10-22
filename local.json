@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T16:44:46.310Z",
+ "updated": "2026-10-22T18:49:26.816Z",
  "meetings": [
   {
    "body": "Huntsville Town Planning Commission",
@@ -7,6 +7,13 @@
    "start": 1792713600000,
    "link": "https://huntsvilleutah.gov/upcoming-events",
    "source": "Huntsville Town website (the official agenda is posted on the Utah Public Notice Website closer to the date)"
+  },
+  {
+   "body": "Ogden Valley Planning Commission",
+   "title": "NOTICE FOR OGDEN VALLEY PLANNING COMMISSION MEETING - October 27, 2026, 6pm",
+   "start": 1793145600000,
+   "link": "https://www.utah.gov/pmn/sitemap/notice/1116421.html",
+   "source": "Utah Public Notice Website"
   },
   {
    "body": "Huntsville Town Council",
@@ -83,7 +90,9 @@
  },
  "status": {
   "Ogden Valley City Council": "ok",
+  "Ogden Valley Planning Commission": "ok",
   "Huntsville Town Council": "ok",
+  "Weber County Commission": "ok",
   "Huntsville Town website": "ok",
   "snow": "ok",
   "pineview": "ok"

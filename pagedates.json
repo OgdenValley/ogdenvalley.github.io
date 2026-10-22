@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-22T17:40:38.617Z",
+ "updated": "2026-10-22T18:50:23.161Z",
  "pages": {
   "404.html": {
    "posted": "2026-10-06",
@@ -18,13 +18,13 @@
   },
   "beauty.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-19",
-   "hash": "7c27ac5032d5"
+   "updated": "2026-10-22",
+   "hash": "b8a4928bbece"
   },
   "businesses.html": {
    "posted": "2026-10-06",
-   "updated": "2026-10-19",
-   "hash": "f6864d076973"
+   "updated": "2026-10-22",
+   "hash": "dfbfc2569f1a"
   },
   "causes.html": {
    "posted": "2026-10-09",
@@ -49,12 +49,12 @@
   "events.html": {
    "posted": "2026-10-06",
    "updated": "2026-10-22",
-   "hash": "f58040b2f12c"
+   "hash": "d86801df8180"
   },
   "farm.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-19",
-   "hash": "40d056f76e49"
+   "updated": "2026-10-22",
+   "hash": "3bc08b2dff83"
   },
   "foodtrucks.html": {
    "posted": "2026-10-07",
@@ -83,8 +83,8 @@
   },
   "index.html": {
    "posted": "2026-10-06",
-   "updated": "2026-10-18",
-   "hash": "037d5d07240c"
+   "updated": "2026-10-22",
+   "hash": "8937780b6cd5"
   },
   "jobs.html": {
    "posted": "2026-10-07",
@@ -108,8 +108,8 @@
   },
   "live-music.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-12",
-   "hash": "2295ea85d3d7"
+   "updated": "2026-10-22",
+   "hash": "d324bb093c7e"
   },
   "live.html": {
    "posted": "2026-10-07",
@@ -158,8 +158,8 @@
   },
   "restaurants.html": {
    "posted": "2026-10-06",
-   "updated": "2026-10-19",
-   "hash": "3a032846c8d0"
+   "updated": "2026-10-22",
+   "hash": "c1bf266ebe48"
   },
   "rules.html": {
    "posted": "2026-10-07",
@@ -168,8 +168,8 @@
   },
   "safety.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-13",
-   "hash": "d213925935cf"
+   "updated": "2026-10-22",
+   "hash": "1bba50e8a832"
   },
   "scavenger-hunt.html": {
    "posted": "2026-10-07",
@@ -183,8 +183,8 @@
   },
   "services.html": {
    "posted": "2026-10-08",
-   "updated": "2026-10-19",
-   "hash": "ad27a9366c06"
+   "updated": "2026-10-22",
+   "hash": "5855d1f06a10"
   },
   "sneak-peek.html": {
    "posted": "2026-10-11",
@@ -233,8 +233,8 @@
   },
   "weekend.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-12",
-   "hash": "1f8d0737f2a6"
+   "updated": "2026-10-22",
+   "hash": "20969d794ef2"
   },
   "wildlife.html": {
    "posted": "2026-10-07",
@@ -273,8 +273,8 @@
   },
   "station-board.html": {
    "posted": "2026-10-20",
-   "updated": "2026-10-20",
-   "hash": "71b4d473b9ec"
+   "updated": "2026-10-22",
+   "hash": "7c0ab050f2f2"
   },
   "found-ben.html": {
    "posted": "2026-10-20",
@@ -285,6 +285,16 @@
    "posted": "2026-10-20",
    "updated": "2026-10-20",
    "hash": "b62caa91be0c"
+  },
+  "down-the-canyon.html": {
+   "posted": "2026-10-22",
+   "updated": "2026-10-22",
+   "hash": "3496be72088f"
+  },
+  "stay.html": {
+   "posted": "2026-10-22",
+   "updated": "2026-10-22",
+   "hash": "89210ed988a5"
   }
  }
 }
