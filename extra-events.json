@@ -1,5 +1,5 @@
 {
- "_help": "Events Claude adds by hand (OVE Facebook Events tab, local event lists). Down-the-canyon events are included on purpose: the Valley has few bars, venues, classes or rinks, so Valley people go to Ogden for them. start/end are local times with offset (-06:00 until Nov 1, -07:00 after). into: ov or weber. Past events drop off on their own.",
+ "_help": "Events Claude adds by hand (OVE Facebook Events tab, local event lists). Down-the-canyon events are included on purpose: the Valley has few bars, venues, classes or rinks, so Valley people go to Ogden for them. start/end are local times with offset (-06:00 until Nov 1, -07:00 after). into: ov or weber. Past events drop off on their own. Weekly regulars use \"weekly\": {\"days\": [\"MO\",\"WE\"], \"time\": \"20:30\", \"hours\": 3.5, \"from\": \"YYYY-MM-DD\", \"until\": \"YYYY-MM-DD\" (optional)} instead of start/end, and repeat on their own for the next 60 days.",
  "events": [
   {
    "t": "Town Dance Party",
@@ -97,16 +97,6 @@
    "end": "2026-10-22T19:30:00-06:00"
   },
   {
-   "t": "Eden's Yellow Rose: live music",
-   "start": "2026-10-22T18:00:00-06:00",
-   "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-   "into": "weber",
-   "desc": "Live music and ice cream, all ages, free show.",
-   "url": "",
-   "src": "Down the canyon",
-   "end": "2026-10-22T20:00:00-06:00"
-  },
-  {
    "t": "Vinyl Night (21+)",
    "start": "2026-10-22T18:00:00-06:00",
    "loc": "The Thirsty Horse, 3611 S Washington Blvd., Ogden",
@@ -145,25 +135,6 @@
    "end": "2026-10-22T22:00:00-06:00"
   },
   {
-   "t": "Country Dancing",
-   "start": "2026-10-22T20:30:00-06:00",
-   "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
-   "into": "weber",
-   "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Mondays, Wednesdays and Thursdays.",
-   "url": "",
-   "src": "Down the canyon",
-   "end": "2026-10-23T00:00:00-06:00"
-  },
-  {
-   "t": "New World Distillery tasting tour",
-   "start": "2026-10-23T13:00:00-06:00",
-   "loc": "New World Distillery, Eden",
-   "into": "ov",
-   "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
-   "url": "",
-   "src": "Down the canyon"
-  },
-  {
    "t": "Annual Creepy Doll Class",
    "start": "2026-10-23T16:30:00-06:00",
    "loc": "The Local Artisan Collective, 2371 Kiesel Ave., Ogden",
@@ -171,26 +142,6 @@
    "desc": "4:30 and 6:30 p.m., $25. Friday through Sunday.",
    "url": "",
    "src": "Down the canyon"
-  },
-  {
-   "t": "Steppin' The Ogden Way dance class",
-   "start": "2026-10-23T17:30:00-06:00",
-   "loc": "Marshall White Center, 222 28th Street, Ogden",
-   "into": "weber",
-   "desc": "R&B, hip hop, Southern country and soul line dancing with Dolores Green, $10 or free for members. Every Friday.",
-   "url": "",
-   "src": "Down the canyon",
-   "end": "2026-10-23T19:00:00-06:00"
-  },
-  {
-   "t": "The Groove: bluegrass and folk",
-   "start": "2026-10-23T18:00:00-06:00",
-   "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-   "into": "weber",
-   "desc": "Live music and ice cream, all ages, free show.",
-   "url": "",
-   "src": "Down the canyon",
-   "end": "2026-10-23T20:00:00-06:00"
   },
   {
    "t": "Party Night",
@@ -220,15 +171,6 @@
    "url": "",
    "src": "Down the canyon",
    "end": "2026-10-23T21:00:00-06:00"
-  },
-  {
-   "t": "Friday Night Jazz",
-   "start": "2026-10-23T19:00:00-06:00",
-   "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
-   "into": "weber",
-   "desc": "New Ogden Jazz Group, free show, all ages.",
-   "url": "",
-   "src": "Down the canyon"
   },
   {
    "t": "Paddy Teglia (21+)",
@@ -334,15 +276,6 @@
    "end": "2026-10-24T13:00:00-06:00"
   },
   {
-   "t": "New World Distillery tasting tour",
-   "start": "2026-10-24T13:00:00-06:00",
-   "loc": "New World Distillery, Eden",
-   "into": "ov",
-   "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
-   "url": "",
-   "src": "Down the canyon"
-  },
-  {
    "t": "Sugar Skull Painting",
    "start": "2026-10-24T14:00:00-06:00",
    "loc": "Ogden Creative Reuse, 2424 Wall Ave., Ogden",
@@ -350,25 +283,6 @@
    "desc": "Art workshop, $25.",
    "url": "",
    "src": "Down the canyon"
-  },
-  {
-   "t": "Craft n Cry",
-   "start": "2026-10-24T14:00:00-06:00",
-   "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
-   "into": "weber",
-   "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
-   "url": "",
-   "src": "Down the canyon"
-  },
-  {
-   "t": "Beatdiggers",
-   "start": "2026-10-24T18:00:00-06:00",
-   "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-   "into": "weber",
-   "desc": "Live music and ice cream, all ages, free show.",
-   "url": "",
-   "src": "Down the canyon",
-   "end": "2026-10-24T20:00:00-06:00"
   },
   {
    "t": "Live music at Two Bit Bistro",
@@ -408,16 +322,6 @@
    "url": "",
    "src": "Down the canyon",
    "end": "2026-10-24T22:00:00-06:00"
-  },
-  {
-   "t": "Singles Mingle",
-   "start": "2026-10-24T19:00:00-06:00",
-   "loc": "Grounds for Coffee, 111 25th Street, Ogden",
-   "into": "weber",
-   "desc": "Free, every Saturday.",
-   "url": "",
-   "src": "Down the canyon",
-   "end": "2026-10-24T21:00:00-06:00"
   },
   {
    "t": "\"Bright Star\"",
@@ -514,15 +418,6 @@
    "end": "2026-10-25T14:00:00-06:00"
   },
   {
-   "t": "New World Distillery tasting tour",
-   "start": "2026-10-25T13:00:00-06:00",
-   "loc": "New World Distillery, Eden",
-   "into": "ov",
-   "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
-   "url": "",
-   "src": "Down the canyon"
-  },
-  {
    "t": "Cereal Box Shrine class",
    "start": "2026-10-25T15:30:00-06:00",
    "loc": "Ogden Creative Reuse, 2424 Wall Ave., Ogden",
@@ -561,16 +456,6 @@
    "end": "2026-10-25T23:00:00-06:00"
   },
   {
-   "t": "Mystic Mondays: tarot readings",
-   "start": "2026-10-26T18:00:00-06:00",
-   "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
-   "into": "weber",
-   "desc": "$5 readings.",
-   "url": "",
-   "src": "Down the canyon",
-   "end": "2026-10-26T20:00:00-06:00"
-  },
-  {
    "t": "Bingo, steak dinner night (21+)",
    "start": "2026-10-26T19:00:00-06:00",
    "loc": "Harp and Hound, 2550 Washington Blvd., Ogden",
@@ -589,16 +474,6 @@
    "src": "Down the canyon"
   },
   {
-   "t": "Country Dancing",
-   "start": "2026-10-26T20:30:00-06:00",
-   "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
-   "into": "weber",
-   "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages.",
-   "url": "",
-   "src": "Down the canyon",
-   "end": "2026-10-27T00:00:00-06:00"
-  },
-  {
    "t": "A Court of Splintered Harmony masquerade",
    "start": "2026-10-26T21:30:00-06:00",
    "loc": "Black Lung Society, 3701 Washington Blvd., Ogden",
@@ -607,6 +482,140 @@
    "url": "",
    "src": "Down the canyon",
    "end": "2026-10-27T00:00:00-06:00"
+  },
+  {
+   "t": "Country Dancing",
+   "weekly": {
+    "days": [
+     "MO",
+     "WE",
+     "TH"
+    ],
+    "time": "20:30",
+    "hours": 3.5,
+    "from": "2026-10-22"
+   },
+   "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+   "url": "",
+   "src": "Weekly regular"
+  },
+  {
+   "t": "Free live music & ice cream at Z's Sweets",
+   "weekly": {
+    "days": [
+     "TH",
+     "FR",
+     "SA"
+    ],
+    "time": "18:00",
+    "hours": 2,
+    "from": "2026-10-22"
+   },
+   "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+   "url": "",
+   "src": "Weekly regular"
+  },
+  {
+   "t": "Steppin' The Ogden Way dance class",
+   "weekly": {
+    "days": [
+     "FR"
+    ],
+    "time": "17:30",
+    "hours": 1.5,
+    "from": "2026-10-22"
+   },
+   "loc": "Marshall White Center, 222 28th Street, Ogden",
+   "into": "weber",
+   "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
+   "url": "",
+   "src": "Weekly regular"
+  },
+  {
+   "t": "Friday Night Jazz",
+   "weekly": {
+    "days": [
+     "FR"
+    ],
+    "time": "19:00",
+    "hours": 2,
+    "from": "2026-10-22"
+   },
+   "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "Free show, all ages. Every Friday.",
+   "url": "",
+   "src": "Weekly regular"
+  },
+  {
+   "t": "Singles Mingle",
+   "weekly": {
+    "days": [
+     "SA"
+    ],
+    "time": "19:00",
+    "hours": 2,
+    "from": "2026-10-22"
+   },
+   "loc": "Grounds for Coffee, 111 25th Street, Ogden",
+   "into": "weber",
+   "desc": "Free. Every Saturday.",
+   "url": "",
+   "src": "Weekly regular"
+  },
+  {
+   "t": "Craft n Cry",
+   "weekly": {
+    "days": [
+     "SA"
+    ],
+    "time": "14:00",
+    "hours": 2,
+    "from": "2026-10-22"
+   },
+   "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
+   "into": "weber",
+   "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
+   "url": "",
+   "src": "Weekly regular"
+  },
+  {
+   "t": "Mystic Mondays: tarot readings",
+   "weekly": {
+    "days": [
+     "MO"
+    ],
+    "time": "18:00",
+    "hours": 2,
+    "from": "2026-10-22"
+   },
+   "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+   "into": "weber",
+   "desc": "$5 readings. Every Monday.",
+   "url": "",
+   "src": "Weekly regular"
+  },
+  {
+   "t": "New World Distillery tasting tour",
+   "weekly": {
+    "days": [
+     "FR",
+     "SA",
+     "SU"
+    ],
+    "time": "13:00",
+    "hours": 2,
+    "from": "2026-10-22"
+   },
+   "loc": "New World Distillery, Eden",
+   "into": "ov",
+   "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+   "url": "",
+   "src": "Weekly regular"
   }
  ]
 }

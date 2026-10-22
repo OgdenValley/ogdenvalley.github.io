@@ -118,7 +118,22 @@ async function calendars(){
   // events Claude adds by hand from the OVE Facebook events tab (extra-events.json): {t, start, end?, loc, url, desc, into: "ov"|"weber", src}
   { let list = []; try { list = JSON.parse(fs.readFileSync("extra-events.json", "utf8")).events || []; } catch (e) { console.log("extra-events.json not read:", e.message); }
     let n = 0;
+    // weekly regulars: {t, weekly: {days: ["MO","WE"], time: "20:30", hours: 3.5, from: "YYYY-MM-DD", until?: "YYYY-MM-DD"}, loc, desc, into}
+    // become one event per matching day in the next 60 days (Mountain time, daylight saving handled)
+    const DOWS = {SU: 0, MO: 1, TU: 2, WE: 3, TH: 4, FR: 5, SA: 6}, expanded = [];
     for (const x of list) {
+      if (!x.weekly) { expanded.push(x); continue; }
+      const w = x.weekly, days = (w.days || []).map(d => DOWS[d]), [hh, mm] = String(w.time || "12:00").split(":").map(Number);
+      const until = w.until ? Date.parse(w.until + "T23:59:59Z") : now + 60 * 864e5, fromD = w.from ? Date.parse(w.from + "T00:00:00Z") : 0;
+      for (let i = -1; i < 61; i++) {
+        const d = new Date(now + i * 864e5); const local = new Date(d.toLocaleString("en-US", {timeZone: "America/Denver"}));
+        if (!days.includes(local.getDay())) continue;
+        const g = Date.UTC(local.getFullYear(), local.getMonth(), local.getDate(), hh, mm); const off = icsTzOff(g, "America/Denver"); const st = g - (off == null ? -6 * 36e5 : off);
+        if (st < fromD || st > until) continue;
+        expanded.push(Object.assign({}, x, {weekly: undefined, start: new Date(st).toISOString(), end: new Date(st + (w.hours || 2) * 36e5).toISOString()}));
+      }
+    }
+    for (const x of expanded) {
       const s = Date.parse(x.start); if (!s) continue; const e = x.end ? Date.parse(x.end) : s + 2 * 36e5;
       if (e <= from || s >= to) continue; const into = x.into === "ov" ? "ov" : "weber";
       if (!out.calendars[into]) out.calendars[into] = {name: into === "ov" ? "Ogden Valley" : "Weber County", events: []};

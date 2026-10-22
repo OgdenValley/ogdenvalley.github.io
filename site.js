@@ -70,7 +70,14 @@ function allEvents(data, which){
   ["ov","weber"].forEach(k => { if (which && !which.includes(k)) return;
     const cal = data && data.calendars && data.calendars[k]; if (!cal) return;
     (cal.events || []).forEach(e => out.push(Object.assign({cal: k}, e))); });
-  return out.filter(e => e.e > Date.now()).sort((a,b) => a.s - b.s);
+  // the same event from two sources (same name, same day) shows once; keep the copy with the most detail, Valley first
+  const norm = t => String(t || "").toLowerCase().replace(/&/g, "and").replace(/^(annual|the|\d+(st|nd|rd|th) annual)\s+/, "").replace(/[^a-z0-9]+/g, " ").trim();
+  const seen = new Map(), keep = [];
+  out.filter(e => e.e > Date.now()).sort((a,b) => a.s - b.s).forEach(e => { const k = norm(e.t) + "|" + dayKey(e.s);
+    const prev = seen.get(k); if (!prev) { seen.set(k, e); keep.push(e); return; }
+    const score = x => (x.url ? 2 : 0) + (x.loc ? 1 : 0) + (x.desc || "").length / 400 + (x.cal === "ov" ? 0.5 : 0);
+    if (score(e) > score(prev)) { keep[keep.indexOf(prev)] = e; seen.set(k, e); } });
+  return keep;
 }
 function eventCard(e){
   const name = (C.calendars && C.calendars[e.cal] && C.calendars[e.cal].name) || e.cal;
@@ -510,6 +517,7 @@ function monthGrid(box, list, opts){
 }
 (function(){ const st = document.createElement("style"); st.textContent =
   ".area-switch{display:flex;flex-wrap:wrap;gap:8px}.area-chip{padding:8px 16px;text-align:left}.area-chip .ac-t{display:grid;line-height:1.15}.area-chip small{font-weight:600;font-size:13px;color:var(--muted)}" +
+  "@media (max-width:520px){.area-switch{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px;width:100%}.area-chip{padding:7px 8px;gap:6px;font-size:14px}.area-chip small{font-size:11px}}" +
   ".area-chip[aria-pressed=true]{background:var(--navy);border-color:var(--navy);color:#fff}.area-chip[aria-pressed=true] small{color:#dfe8f3}.dot.both{background:linear-gradient(90deg,var(--ov) 50%,var(--weber) 50%)}" +
   ".ev-filters{align-items:center}.ev-f-label{font-weight:700;color:var(--muted);margin-right:2px}.ev-filters .chip[aria-pressed=true]{background:var(--soft);border-color:var(--ink)}" +
   ".view-toggle{display:inline-flex;gap:6px}.mg-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:10px}.mg-head h3{margin:0}" +

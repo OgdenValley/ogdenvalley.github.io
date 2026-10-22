@@ -81,12 +81,17 @@ const goodOk=(p,g)=>!g||(g==="@nolift"?!p.lift:g==="@offseason"?p.season!=="Wint
 let food="",good="";
 function chipRow(id,items,get,set){const bar=document.getElementById(id);const lab=bar.firstElementChild;bar.replaceChildren(lab,...[["","All"]].concat(items).map(([v,l])=>{const b=el("button",{class:"chip",type:"button","data-v":v,"aria-pressed":String(get()===v),text:l});b.onclick=()=>{set(v);[...bar.querySelectorAll("button")].forEach(x=>x.setAttribute("aria-pressed",String(x===b)));draw()};return b}));return bar}
 const fb=chipRow("foodbar",FOODS.map(f=>[f,f]),()=>food,v=>food=v),gb=chipRow("goodbar",GOODS,()=>good,v=>good=v);
+/* show the 8 most-asked foods first; the rest open with "More foods" */
+const TOP=["Coffee & breakfast","Pizza","Mexican","Burgers & casual","Chinese","Japanese & sushi","BBQ","Breweries & tasting rooms"];let allFoods=false;
+const mf=el("button",{class:"chip more-foods",type:"button","data-track":"restaurants: more foods"});fb.append(mf);
+function foldFoods(){let hid=0;fb.querySelectorAll("button[data-v]").forEach(b=>{const v=b.dataset.v;const extra=v&&!TOP.includes(v)&&v!==food;if(extra&&!b.hidden&&!allFoods){b.dataset.fold="1";b.style.display="none";hid++}else{if(b.dataset.fold){b.style.display=""};delete b.dataset.fold}});mf.textContent=allFoods?"Fewer foods ▴":"More foods ▾";mf.hidden=!allFoods&&!hid}
+mf.addEventListener("click",()=>{allFoods=!allFoods;foldFoods()});
 const where=document.getElementById("where"),qi=document.getElementById("q"),more=document.getElementById("more"),mb=document.getElementById("morebtn"),clr=document.getElementById("clear");
 function draw(){const st={town,tag,q,food,good};const pred=(p,s)=>inTown(p,s.town)&&(!s.tag||(p.badges||[]).includes(s.tag))&&(!s.food||(p.food||[]).includes(s.food))&&goodOk(p,s.good)&&(!s.q||JSON.stringify(p).toLowerCase().includes(s.q));const shown=all.filter(p=>inArea(p)&&pred(p,st));const up=shown.filter(p=>!isW(p)),dn=shown.filter(isW);const lw=document.getElementById("list-w-wrap");
  if(area==="weber"){S.listing(document.getElementById("list"),dn,"restaurants",R);lw.hidden=true}else{S.listing(document.getElementById("list"),up,"restaurants",R);lw.hidden=area!=="both"||!dn.length;if(!lw.hidden)S.listing(document.getElementById("list-w"),dn,"restaurants",R)}S.pruneChips(all,pred,st,[{key:"tag",btns:tb.querySelectorAll("button"),val:b=>b.textContent==="All"?null:b.textContent,row:false},{key:"food",btns:fb.querySelectorAll("button"),val:b=>b.dataset.v||null,row:false},{key:"good",btns:gb.querySelectorAll("button"),val:b=>b.dataset.v||null,row:false}]);
  [...where.options].forEach(o=>{if(o.value!=="All")o.disabled=!all.some(p=>inArea(p)&&pred(p,Object.assign({},st,{town:o.value})))&&o.value!==town});
  const on=town!=="All"||q||food||good||tag;document.getElementById("count").textContent="Showing "+shown.length+(shown.length===1?" place":" places")+(on?"":" (all)");clr.hidden=!on;
- const n=(good?1:0)+(tag?1:0);mb.textContent=(more.hidden?"More filters ▾":"Fewer filters ▴")+(n&&more.hidden?" ("+n+" on)":"")}
+ foldFoods();const n=(good?1:0)+(tag?1:0);mb.textContent=(more.hidden?"More filters ▾":"Fewer filters ▴")+(n&&more.hidden?" ("+n+" on)":"")}
 qi.addEventListener("input",e=>{q=e.target.value.trim().toLowerCase();draw()});
 where.addEventListener("change",()=>{town=where.value;draw()});
 mb.addEventListener("click",()=>{more.hidden=!more.hidden;mb.setAttribute("aria-expanded",String(!more.hidden));draw()});

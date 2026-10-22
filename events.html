@@ -36,19 +36,20 @@
   <nav class="main" id="nav" aria-label="Main"></nav>
 </div></header>
 <main id="main">
-<section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley · Weber County</p><h1>Events</h1><p class="lead" style="margin-top:12px">Pick <b>Up here</b> for Ogden Valley, <b>Down the canyon</b> for Weber County, or <b>Both</b>. Valley events are green, Weber County events are blue, and your pick carries over to every events page.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section class="hero slim"><div class="container"><div><p class="eyebrow">Ogden Valley · Weber County</p><h1>Events</h1><p class="lead" style="margin-top:12px">Pick <b>Up here</b> for Ogden Valley, <b>Down the canyon</b> for Weber County, or <b>Both</b>. Valley events are green, Weber County events are blue, and your pick carries over to every events page.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
 <section><div class="container">
   <div class="section-head" style="flex-wrap:wrap;gap:10px;align-items:flex-start"><div id="area"></div>
-    <div class="view-toggle" role="group" aria-label="View"><button class="chip" type="button" data-view="month" data-track="events view: month" aria-pressed="true">Calendar</button><button class="chip" type="button" data-view="list" data-track="events view: list" aria-pressed="false">List</button></div></div>
+    <div class="view-toggle" role="group" aria-label="View"><button class="chip ev-ftoggle" type="button" aria-expanded="false" aria-controls="evf" data-track="events: filters button">Filters</button><button class="chip" type="button" data-view="month" data-track="events view: month" aria-pressed="true">Calendar</button><button class="chip" type="button" data-view="list" data-track="events view: list" aria-pressed="false">List</button></div></div>
   <div id="evf"></div>
-  <div class="btns" style="margin:0 0 14px"><a class="btn ghost" style="color:var(--blue)" href="down-the-canyon.html">Pools, library, theaters &amp; more down the canyon</a><a class="btn ghost" style="color:var(--blue)" href="live-music.html">Live music, with map</a><a class="btn ghost" style="color:var(--blue)" href="yard-sales.html">Yard sales map</a><a class="btn ghost" style="color:var(--blue)" href="causes.html#fundraisers">Fundraisers</a></div>
   <p class="meta" id="updated" style="margin:0 0 10px;color:var(--muted);font-size:15px"></p>
-  <div data-featuredevents style="margin-bottom:18px"></div>
   <div id="events"><div class="empty"><p>Loading events…</p></div></div>
+  <div data-featuredevents style="margin:22px 0 0"></div>
   <div id="week-wrap" style="margin-top:26px">
     <div class="section-head" style="flex-wrap:wrap;gap:10px;align-items:flex-end"><div><p class="eyebrow">Coming up</p><h2 style="margin:0">The next 7 days</h2></div><div id="area2"></div></div>
     <div id="week"></div>
   </div>
+  <div class="section-head" style="margin-top:26px"><div><p class="eyebrow">More ways to find things to do</p></div></div>
+  <div class="btns" style="margin:0 0 14px"><a class="btn ghost" style="color:var(--blue)" href="down-the-canyon.html">Pools, library, theaters &amp; more down the canyon</a><a class="btn ghost" style="color:var(--blue)" href="live-music.html">Live music, with map</a><a class="btn ghost" style="color:var(--blue)" href="yard-sales.html">Yard sales map</a><a class="btn ghost" style="color:var(--blue)" href="causes.html#fundraisers">Fundraisers</a></div>
 </div></section>
 <section style="padding-top:0"><div class="container"><div data-postevent></div></div></section>
 <section style="padding-top:0"><div class="container"><div data-sponsors></div></div></section>
@@ -62,6 +63,11 @@
 </div></section>
 <section style="padding-top:0"><div class="container"><div data-groups="events" data-title="Join our Ogden Valley Events group" style="margin-top:8px"></div></div></section>
 </main>
+<style>
+.hero.slim .container{padding-block:22px 66px}.hero.slim .lead{font-size:17px;margin-top:8px!important}
+.ev-ftoggle{display:none}
+@media (max-width:700px){.hero.slim .lead{display:none}.hero.slim .container{padding-block:16px 58px}.ev-ftoggle{display:inline-flex}#evf.ev-filters{display:none}#evf.ev-filters.open{display:flex}.ev-ftoggle[aria-expanded=true]{background:var(--soft);border-color:var(--ink)}}
+</style>
 <footer class="site-foot"></footer>
 <script src="layout.js"></script>
 <script src="config.js"></script>
@@ -75,7 +81,8 @@ const data=await S.loadEvents();
 try{const L=await S.loadJSON("local.json");if(data&&L&&L.meetings){const have=new Set();["ov","weber"].forEach(k=>((data.calendars[k]||{}).events||[]).forEach(e=>have.add(e.t+"|"+e.s)));
   L.meetings.filter(m=>m.start).forEach(m=>{const k=/weber county/i.test(m.body)?"weber":"ov";const t=m.body+(/meeting|hearing|notice/i.test(m.title)?"":" meeting")+": "+m.title;if(have.has(t+"|"+m.start))return;
     (data.calendars[k]=data.calendars[k]||{events:[]}).events.push({s:m.start,e:m.start+2*36e5,t,loc:"",allDay:false,desc:"Public meeting. See the agenda for the place and topics.",url:m.link||""})})}}catch(e){}let area=S.getArea(),view="month";try{const v=localStorage.getItem("ove-view");if(v==="list"||v==="month")view=v}catch(e){}document.querySelectorAll("[data-view]").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.view===view)));const box=document.getElementById("events");
-const pass=S.eventFilters(document.getElementById("evf"),()=>draw());
+const pass=S.eventFilters(document.getElementById("evf"),()=>{draw();const n=document.querySelectorAll("#evf .chip[aria-pressed=true]").length;ft.textContent=n?"Filters ("+n+")":"Filters"});
+const ft=document.querySelector(".ev-ftoggle");ft.addEventListener("click",()=>{const o=document.getElementById("evf").classList.toggle("open");ft.setAttribute("aria-expanded",String(o))});
 function draw(){const list=S.valleyFirst(S.allEvents(data,S.areaCals(area))).filter(pass);
   const ww=document.getElementById("week-wrap");
   if(view==="month"){S.monthGrid(box,list);ww.hidden=false;const end=Date.now()+7*864e5;S.renderEvents(document.getElementById("week"),list.filter(e=>e.s<end),{emptyText:"Nothing on the calendar in the next 7 days for what you picked. Try Both."});return}
