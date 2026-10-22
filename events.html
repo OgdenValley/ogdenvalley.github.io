@@ -39,12 +39,16 @@
 <section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley · Weber County</p><h1>Events</h1><p class="lead" style="margin-top:12px">Pick <b>Up here</b> for Ogden Valley, <b>Down the canyon</b> for Weber County, or <b>Both</b>. Valley events are green, Weber County events are blue, and your pick carries over to every events page.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
 <section><div class="container">
   <div class="section-head" style="flex-wrap:wrap;gap:10px;align-items:flex-start"><div id="area"></div>
-    <div class="view-toggle" role="group" aria-label="View"><button class="chip" type="button" data-view="list" data-track="events view: list" aria-pressed="true">List</button><button class="chip" type="button" data-view="month" data-track="events view: month" aria-pressed="false">Month</button></div></div>
+    <div class="view-toggle" role="group" aria-label="View"><button class="chip" type="button" data-view="month" data-track="events view: month" aria-pressed="true">Calendar</button><button class="chip" type="button" data-view="list" data-track="events view: list" aria-pressed="false">List</button></div></div>
   <div id="evf"></div>
   <div class="btns" style="margin:0 0 14px"><a class="btn ghost" style="color:var(--blue)" href="down-the-canyon.html">Pools, library, theaters &amp; more down the canyon</a><a class="btn ghost" style="color:var(--blue)" href="live-music.html">Live music, with map</a><a class="btn ghost" style="color:var(--blue)" href="yard-sales.html">Yard sales map</a><a class="btn ghost" style="color:var(--blue)" href="causes.html#fundraisers">Fundraisers</a></div>
   <p class="meta" id="updated" style="margin:0 0 10px;color:var(--muted);font-size:15px"></p>
   <div data-featuredevents style="margin-bottom:18px"></div>
   <div id="events"><div class="empty"><p>Loading events…</p></div></div>
+  <div id="week-wrap" style="margin-top:26px">
+    <div class="section-head" style="flex-wrap:wrap;gap:10px;align-items:flex-end"><div><p class="eyebrow">Coming up</p><h2 style="margin:0">The next 7 days</h2></div><div id="area2"></div></div>
+    <div id="week"></div>
+  </div>
 </div></section>
 <section style="padding-top:0"><div class="container"><div data-postevent></div></div></section>
 <section style="padding-top:0"><div class="container"><div data-sponsors></div></div></section>
@@ -66,13 +70,16 @@
 <script>
 
 (async function(){const S=window.OVE_SITE,C=S.C,el=S.el;
-const data=await S.loadEvents();let area=S.getArea(),view="list";const box=document.getElementById("events");
+const data=await S.loadEvents();let area=S.getArea(),view="month";try{const v=localStorage.getItem("ove-view");if(v==="list"||v==="month")view=v}catch(e){}document.querySelectorAll("[data-view]").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.view===view)));const box=document.getElementById("events");
 const pass=S.eventFilters(document.getElementById("evf"),()=>draw());
 function draw(){const list=S.valleyFirst(S.allEvents(data,S.areaCals(area))).filter(pass);
-  if(view==="month"){S.monthGrid(box,list);return}
+  const ww=document.getElementById("week-wrap");
+  if(view==="month"){S.monthGrid(box,list);ww.hidden=false;const end=Date.now()+7*864e5;S.renderEvents(document.getElementById("week"),list.filter(e=>e.s<end),{emptyText:"Nothing on the calendar in the next 7 days for what you picked. Try Both."});return}
+  ww.hidden=true;
   S.renderEvents(box,list,{emptyText:data?"No upcoming events match what you picked. Try Both, or turn a filter off.":"Events are on their way. The calendars are being set up."})}
-S.areaSwitch(document.getElementById("area"),v=>{area=v;draw()});
-document.querySelectorAll("[data-view]").forEach(b=>b.addEventListener("click",()=>{view=b.dataset.view;document.querySelectorAll("[data-view]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));draw()}));
+const sync=v=>{area=v;document.querySelectorAll("#area .area-chip,#area2 .area-chip").forEach((b,i)=>b.setAttribute("aria-pressed",String(["ov","weber","both"][i%3]===v)));draw()};
+S.areaSwitch(document.getElementById("area"),sync);S.areaSwitch(document.getElementById("area2"),sync);
+document.querySelectorAll("[data-view]").forEach(b=>b.addEventListener("click",()=>{view=b.dataset.view;try{localStorage.setItem("ove-view",view)}catch(e){}document.querySelectorAll("[data-view]").forEach(x=>x.setAttribute("aria-pressed",String(x===b)));draw()}));
 draw();
 if(data&&data.updated)document.getElementById("updated").textContent="Updated "+new Intl.DateTimeFormat("en-US",{timeZone:S.TZ,month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}).format(new Date(data.updated));
 const subs=document.getElementById("subs");

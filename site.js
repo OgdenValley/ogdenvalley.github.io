@@ -498,10 +498,13 @@ function monthGrid(box, list, opts){
       const cell = el("button", {class: "mg-day" + (k === todayKey ? " today" : "") + (evs.length ? " has" : ""), type: "button", "aria-label": new Date(y, m, d).toLocaleDateString("en-US", {weekday: "long", month: "long", day: "numeric"}) + ", " + evs.length + " event" + (evs.length === 1 ? "" : "s")}, [
         el("span", {class: "mg-n", text: String(d)}),
         ...evs.slice(0, 3).map(e => el("span", {class: "mg-ev", style: "--cal:" + CAL_COLOR[e.cal], text: e.t})),
-        evs.length > 3 ? el("span", {class: "mg-more", text: "+" + (evs.length - 3) + " more"}) : null]);
+        evs.length > 3 ? el("span", {class: "mg-more", text: "+" + (evs.length - 3) + " more"}) : null,
+        evs.length ? el("span", {class: "mg-count", text: evs.length + (evs.length === 1 ? " event" : " events")}) : null]);
       cell.addEventListener("click", () => { grid.querySelectorAll(".mg-day.sel").forEach(x => x.classList.remove("sel")); cell.classList.add("sel"); renderEvents(detail, evs, {emptyText: "Nothing on the calendar this day."}); detail.scrollIntoView({behavior: "smooth", block: "nearest"}); });
       grid.append(cell); }
     box.replaceChildren(head, grid, detail);
+    /* show today's events under the calendar right away */
+    const t = opts.autoToday ? grid.querySelector(".mg-day.today") : null; if (t) { t.classList.add("sel"); renderEvents(detail, byDay[todayKey] || [], {emptyText: "Nothing else on the calendar today. Tap another day to see its events."}); }
   };
   draw();
 }
@@ -513,7 +516,7 @@ function monthGrid(box, list, opts){
   ".mg-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}.mg-dow{font-weight:700;font-size:13px;text-align:center;color:var(--muted);padding:4px 0}" +
   ".mg-day{min-height:92px;background:var(--card);border:1px solid var(--line);border-radius:8px;padding:5px;display:flex;flex-direction:column;gap:3px;text-align:left;font:inherit;color:var(--ink);cursor:pointer;min-width:0;overflow:hidden}.mg-day.empty{background:transparent;border:0;cursor:default}" +
   ".mg-day.today{border:2px solid var(--accent,#C2410C)}.mg-day.sel{outline:3px solid var(--navy)}.mg-n{font-weight:700;font-size:14px}.mg-ev{font-size:12px;line-height:1.2;border-left:4px solid var(--cal);padding-left:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.mg-more{font-size:12px;color:var(--muted)}" +
-  ".mg-detail{margin-top:14px}@media (max-width:640px){.mg-day{min-height:52px}.mg-ev{display:none}.mg-day.has::after{content:'';width:8px;height:8px;border-radius:50%;background:var(--accent,#C2410C);margin-top:auto}}";
+  ".mg-detail{margin-top:14px}.mg-count{display:none}@media (max-width:640px){.mg-day{min-height:52px}.mg-ev,.mg-more{display:none}.mg-count{display:block;font-size:11px;color:var(--muted);line-height:1.1}.mg-day.has::after{content:'';width:8px;height:8px;border-radius:50%;background:var(--accent,#C2410C);margin-top:auto}}";
   document.head.appendChild(st); })();
 window.OVE_SITE = {getArea, setArea, areaCals, areaSwitch, valleyFirst, evTags, eventFilters, monthGrid, C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip};
 })();
