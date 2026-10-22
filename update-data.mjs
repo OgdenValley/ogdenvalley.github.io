@@ -396,7 +396,9 @@ async function local(){
   // Utah Public Notice Website — public bodies (add more ids here)
   const bodies = [
     {id: 9431, name: "Ogden Valley City Council"},
-    {id: 313, name: "Huntsville Town Council"}
+    {id: 9467, name: "Ogden Valley Planning Commission"},
+    {id: 313, name: "Huntsville Town Council"},
+    {id: 2167, name: "Weber County Commission"}
   ];
   for (const b of bodies) {
     try {
@@ -427,7 +429,7 @@ async function local(){
   } catch (e) { out.status["Huntsville Town website"] = "failed"; console.log("huntsville town meetings failed:", e.message);
     out.meetings.push(...(old.meetings || []).filter(m => /Huntsville Town website/.test(m.source || ""))); }
   const now = Date.now();
-  out.meetings = out.meetings.filter(m => !m.start || m.start > now - 864e5).sort((a, b) => (a.start || 9e15) - (b.start || 9e15)).slice(0, 20);
+  out.meetings = out.meetings.filter(m => !m.start || m.start > now - 864e5).sort((a, b) => (a.start || 9e15) - (b.start || 9e15)).slice(0, 40);
   // SNOTEL snow depth (NRCS)
   try {
     const end = new Date().toISOString().slice(0, 10), begin = new Date(Date.now() - 3 * 864e5).toISOString().slice(0, 10);

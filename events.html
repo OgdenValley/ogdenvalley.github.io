@@ -70,7 +70,11 @@
 <script>
 
 (async function(){const S=window.OVE_SITE,C=S.C,el=S.el;
-const data=await S.loadEvents();let area=S.getArea(),view="month";try{const v=localStorage.getItem("ove-view");if(v==="list"||v==="month")view=v}catch(e){}document.querySelectorAll("[data-view]").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.view===view)));const box=document.getElementById("events");
+const data=await S.loadEvents();
+/* public meetings (Utah Public Notice Website + Huntsville Town) go on the calendars too: Valley bodies up here, Weber County Commission down the canyon */
+try{const L=await S.loadJSON("local.json");if(data&&L&&L.meetings){const have=new Set();["ov","weber"].forEach(k=>((data.calendars[k]||{}).events||[]).forEach(e=>have.add(e.t+"|"+e.s)));
+  L.meetings.filter(m=>m.start).forEach(m=>{const k=/weber county/i.test(m.body)?"weber":"ov";const t=m.body+(/meeting|hearing|notice/i.test(m.title)?"":" meeting")+": "+m.title;if(have.has(t+"|"+m.start))return;
+    (data.calendars[k]=data.calendars[k]||{events:[]}).events.push({s:m.start,e:m.start+2*36e5,t,loc:"",allDay:false,desc:"Public meeting. See the agenda for the place and topics.",url:m.link||""})})}}catch(e){}let area=S.getArea(),view="month";try{const v=localStorage.getItem("ove-view");if(v==="list"||v==="month")view=v}catch(e){}document.querySelectorAll("[data-view]").forEach(x=>x.setAttribute("aria-pressed",String(x.dataset.view===view)));const box=document.getElementById("events");
 const pass=S.eventFilters(document.getElementById("evf"),()=>draw());
 function draw(){const list=S.valleyFirst(S.allEvents(data,S.areaCals(area))).filter(pass);
   const ww=document.getElementById("week-wrap");

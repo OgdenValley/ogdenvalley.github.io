@@ -469,8 +469,8 @@ function valleyFirst(list){ const now = Date.now(); return list.slice().sort((a,
 /* quick filters: Free, Family / all ages, 21+, Live music, Classes */
 const EV_MUSIC = /live music|\bband\b|bands|concert|acoustic|open mic|\bdj\b|djs|bluegrass|jazz|musician|singer|songwriter|karaoke|symphony|orchestra|tribute|#livemusic/i;
 function evTags(e){ const t = (e.t || "") + " " + (e.desc || ""); const adult = /21\+|18\+|\(adult|rated r|adults only|ages 21/i.test(t);
-  return {free: /\bfree\b/i.test(t), adult, family: !adult, music: EV_MUSIC.test(t), class: /\bclass(es)?\b|workshop|lesson|tutorial|storytime|story time/i.test(t)}; }
-const EV_FILTERS = [["free", "Free"], ["family", "Family / all ages"], ["adult", "21+"], ["music", "Live music"], ["class", "Classes"]];
+  return {free: /\bfree\b/i.test(t), adult, family: !adult, music: EV_MUSIC.test(t), class: /\bclass(es)?\b|workshop|lesson|tutorial|storytime|story time/i.test(t), meeting: /commission|council|work ?session|public hearing|public meeting|board of|planning|trustees|town meeting|committee|county commission/i.test(e.t || "")}; }
+const EV_FILTERS = [["free", "Free"], ["family", "Family / all ages"], ["adult", "21+"], ["music", "Live music"], ["class", "Classes"], ["meeting", "Public meetings"]];
 function eventFilters(box, onChange){
   const on = new Set(); if (!box) return () => true;
   box.classList.add("filters", "ev-filters"); box.setAttribute("role", "group"); box.setAttribute("aria-label", "Filter events");
