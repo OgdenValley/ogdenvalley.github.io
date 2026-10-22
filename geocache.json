@@ -72,5 +72,62 @@
  "Stellas on 25th<br>225 Historic 25th Street<br>Ogden, UT 84401": null,
  "Peery&#39;s Egyptian Theatre<br>2415 Washington Blvd<br>Ogden, UT 84401": null,
  "Weber State University - Shepherd Union<br>3910 West Campus Dr<br>Ogden, UT 84408": null,
- "Skinny Dogz 2261 Kiesel Ave, Ogden UT, 84401.": null
+ "Skinny Dogz 2261 Kiesel Ave, Ogden UT, 84401.": null,
+ "New World Distillery, Eden": {
+  "lat": 41.3054,
+  "lng": -111.83254,
+  "county": "Weber"
+ },
+ "7474 E 200 S, Huntsville, UT 84317": {
+  "lat": 41.26105,
+  "lng": -111.76885,
+  "county": "Weber"
+ },
+ "9356 E 200 S, Huntsville": {
+  "lat": 41.26065,
+  "lng": -111.77348,
+  "county": "Weber"
+ },
+ "2549 Washington Blvd., Room #310, Ogden, UT 84401": null,
+ "McKay-Dee Hospital - Education Center, 4401 Harrison Blvd. Ogden, UT": null,
+ "Main Library, 2464 Jefferson Ave., Ogden, UT 84401": null,
+ "Ogden Creative Reuse, 2424 Wall Ave., Ogden": null,
+ "2549 Washington Blvd., City Council Chambers, Ogden, UT 84401": null,
+ "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401": null,
+ "Neptune Skating Center, 2770 Washington Blvd., Ogden": null,
+ "Side Bar at Ogden's Own Distillery, 615 W. Stockman Way, Ogden": null,
+ "Ogden Dinosaur Park, 1544 Park Blvd., Ogden, UT 84401": null,
+ "The House Cat Cafe, 341 27th Street, Ogden": null,
+ "Z's Sweets, 3920 Washington Blvd., Ogden": null,
+ "The Thirsty Horse, 3611 S Washington Blvd., Ogden": {
+  "lat": 41.19723,
+  "lng": -111.97151,
+  "county": "Weber"
+ },
+ "Angry Goat Pub & Kitchen, 2570 Washington Blvd., Ogden": null,
+ "The Outlaw, 1254 West 2100 South, Ogden": null,
+ "For The Love Studio, 3651 Wall Ave. (inside Newgate Mall), Ogden": null,
+ "Outdoor Adventure & Welcome Center (1352 Village Dr. Ogden, UT)": {
+  "lat": 41.18891,
+  "lng": -111.94473,
+  "county": "Weber"
+ },
+ "Golden Spike Event Center - Exhibit Hall, 1000 1200 W St, Ogden, UT 84404": null,
+ "Marshall White Center, 222 28th Street, Ogden": {
+  "lat": 41.21535,
+  "lng": -111.97533,
+  "county": "Weber"
+ },
+ "The Monarch, 455 25th Street, Ogden, Utah 84401": {
+  "lat": 41.21999,
+  "lng": -111.96854,
+  "county": "Weber"
+ },
+ "Browning Center, Weber State University, Ogden": null,
+ "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401": {
+  "lat": 41.22179,
+  "lng": -111.97106,
+  "county": "Weber"
+ },
+ "Two Bit Bistro, 2510 Washington Blvd., Ogden": null
 }
