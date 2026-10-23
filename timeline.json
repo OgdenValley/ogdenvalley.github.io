@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-23T15:47:32.107Z",
+ "updated": "2026-10-23T21:41:51.562Z",
  "items": [
+  {
+   "t": 1792791711562,
+   "src": "UDOT alert",
+   "text": "Construction Alert: Eastbound I-84 will be closed between I-15 and Riverdale Road from 10 p.m. Friday, Oct. 23, through 6 a.m. Monday, Oct. 26. Drivers can detour southbound I-15 to 5600 South and Riverdale Road. Drivers traveling through Riverdale should plan ahead, follow posted detours and allow extra travel time.",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1792791711562,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Friday good · Saturday good · Sunday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1792766976222,
    "src": "Utah Air Quality",
@@ -42,13 +56,6 @@
    "text": "Crash or incident: I-84. Crash, WB I-84 at MP 97 (Peterson). Left Shoulder Blocked.",
    "kind": "crash",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792705265752,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Thursday good · Friday good · Saturday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
@@ -56,7 +63,9 @@
    "10148": "I-84|!! Traffic Alerts !! (updated 10/14) Westbound single lane closure | Tue (10/6) - Sun (10/18) | Day & Night Westbound single lane closure | Mon (10/19) - Tue, (11/3) | Day & Night Delays may be significant, 10-15min or more during peak periods Note: Wide load restricted above 11 ft Westbound single lane closure | Sprin",
    "36834": "SR 39|!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at ni"
   },
-  "al": {},
+  "al": {
+   "2626": 1
+  },
   "cond": {
    "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
    "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
@@ -84,6 +93,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "October 23, 2026 8:26 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "October 23, 2026 3:32 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }

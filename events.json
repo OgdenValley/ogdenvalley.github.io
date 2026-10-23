@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T20:43:47.492Z",
+ "updated": "2026-10-23T21:41:42.299Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -1222,9 +1222,9 @@
      "s": 1792875600000,
      "e": 1792882800000,
      "t": "Eskape - Journey Tribute Concert",
-     "loc": "Ogden Amphitheater - 343 25th St, Ogden, Utah",
+     "loc": "Ogden Amphitheater",
      "allDay": false,
-     "desc": "JOURNEY TRIBUTE CONCERT - LIVE AT OGDEN AMPHITHEATER\nEskape, Utah's premier band.\nUTAH JOURNEY FANS — THIS ONE'S FOR YOU!\nGet ready for an unforgettable afternoon celebrating the legendary music of JOURNEY as ESKAPE – Journey Tribute takes its show to the Ogden Amphitheater for the band's first big performance on a major amphitheater stage!\n📅 SATURDAY • OCTOBER 24, 2026\n⏰ 3:00 PM – 5:00 PM Door opens at 2:00 PM\n📍 OGDEN AMPHITHEATER\nBring your friends. Bring your family. And get ready to sing along!\nExperience the soaring vocals, powerful guitars, unmistakable keyboards, driving drums and tim",
+     "desc": "ESKAPE – JOURNEY TRIBUTE: LIVE AT OGDEN AMPHITHEATER!\nGet tickets here: eskapejourneytribute.eventbrite.com\n**BIGGER STAGE. BIGGER SOUND. AN UNFORGETTABLE LIVE EXPERIENCE.**\n**SATURDAY • OCTOBER 24, 2026**\n**3:00 PM – 5:00 PM**\n**OGDEN AMPHITHEATER • OGDEN, UTAH**\nJourney fans, **THIS ONE'S FOR YOU!**\nESKAPE – JOURNEY TRIBUTE is stepping onto a BIG AMPHITHEATER STAGE for a special live concert celebrating the unforgettable music of JOURNEY!\nIf you've ever sung along to Journey in your car, turned up the volume when one of their classics came on, or have memories connected to their music — come",
      "url": "https://ESKAPEJOURNEYTRIBUTE.eventbrite.com",
      "src": "Ogden Area Events (Visit Ogden)"
     },
@@ -1232,9 +1232,9 @@
      "s": 1792875600000,
      "e": 1792882800000,
      "t": "Eskape - Journey Tribute Concert",
-     "loc": "Ogden Amphitheater",
+     "loc": "Ogden Amphitheater - 343 25th St, Ogden, Utah",
      "allDay": false,
-     "desc": "ESKAPE – JOURNEY TRIBUTE: LIVE AT OGDEN AMPHITHEATER!\nGet tickets here: eskapejourneytribute.eventbrite.com\n**BIGGER STAGE. BIGGER SOUND. AN UNFORGETTABLE LIVE EXPERIENCE.**\n**SATURDAY • OCTOBER 24, 2026**\n**3:00 PM – 5:00 PM**\n**OGDEN AMPHITHEATER • OGDEN, UTAH**\nJourney fans, **THIS ONE'S FOR YOU!**\nESKAPE – JOURNEY TRIBUTE is stepping onto a BIG AMPHITHEATER STAGE for a special live concert celebrating the unforgettable music of JOURNEY!\nIf you've ever sung along to Journey in your car, turned up the volume when one of their classics came on, or have memories connected to their music — come",
+     "desc": "JOURNEY TRIBUTE CONCERT - LIVE AT OGDEN AMPHITHEATER\nEskape, Utah's premier band.\nUTAH JOURNEY FANS — THIS ONE'S FOR YOU!\nGet ready for an unforgettable afternoon celebrating the legendary music of JOURNEY as ESKAPE – Journey Tribute takes its show to the Ogden Amphitheater for the band's first big performance on a major amphitheater stage!\n📅 SATURDAY • OCTOBER 24, 2026\n⏰ 3:00 PM – 5:00 PM Door opens at 2:00 PM\n📍 OGDEN AMPHITHEATER\nBring your friends. Bring your family. And get ready to sing along!\nExperience the soaring vocals, powerful guitars, unmistakable keyboards, driving drums and tim",
      "url": "https://ESKAPEJOURNEYTRIBUTE.eventbrite.com",
      "src": "Ogden Area Events (Visit Ogden)"
     },
@@ -1637,6 +1637,16 @@
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1793316600000,
+     "e": 1793327400000,
+     "t": "Halloween Pizza Bash",
+     "loc": "Wild Shape Bakery, 2856 Washington Blvd, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "We will have our traditional sourdough pizza (cheese, margarita, and pepperoni), plus Salt and Hops will provide beverages, both alcoholic and non-alcoholic.\n\nOn top of that, we are making house-made s’mores that you can roast over our fire-pit. The s’mores will be complimentary for everyone who comes. We will make the marshmallows and crackers in-house. So you can feel good about the ingredients and the quality.\n\nThis is a family-friendly event. You can sit on our patio or go inside the bakery where there are game and toys available to use for free. You can also pick up your pizza to go. You ",
+     "url": "https://www.wildshapedbakery.com/events/pizza-night-m87kg-dygpn-w6w6n",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1793316600000,
@@ -2420,6 +2430,16 @@
     },
     {
      "s": 1794510000000,
+     "e": 1794519000000,
+     "t": "Author Celebration with Mac Barnett",
+     "loc": "Treehouse Children's Museum, 347 22nd Street, Ogden, UT. 84401",
+     "allDay": false,
+     "desc": "Children and adults are invited to celebrate the magic and power of picture books with award-winning author Mac Barnett who was named the 2006 National Ambassador for Young People's Literature by the Library of Congress. Mac will talk in Treehouse's Storybook Theater at 5:30 p.m. or 7 p.m. on Thursday, November 11. Children and parents can also participate in 5 activities throughout the Museum based some of our favorites books by Mac and have their books signed, too. Tickets are free but must be reserved in advance on the Treehouse website. Both children and adults need a ticket.",
+     "url": "https://www.treehousemuseum.org/events/87/author-party-with-mac-barnett",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794510000000,
      "e": 1794511800000,
      "t": "Jessica Greenberg Lecture - Allred",
      "loc": "",
@@ -2587,6 +2607,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1794682800000,
+     "e": 1794708000000,
+     "t": "Festive Ornament Workshop with Local Artisans",
+     "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "You’re Invited to Our Festive Ornament Workshops!\n\nJoin us for a merry time as we celebrate the holiday season with creativity and joy! ❄️\n\nGather your family, friends or just come alone to unleash your inner artist alongside five talented local artists! Each workshop is packed with fun, laughter, and the chance to create your very own unique ornaments that will sparkle on your tree. Whether you want to make one ornament, one of each or anything in between, there’s something for everyone!\n\nWhat to Expect:\n🎄 Hands-on ornament-making sessions\n⛄ All materials provided\n🎄 No experience needed\n⛄ F",
+     "url": "https://localartisancollective.com/events/ornamentworkshop26/",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1794682800000,
@@ -2869,16 +2899,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1795219200000,
-     "e": 1795233600000,
-     "t": "Acorn Antiques & Vintage Show",
-     "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-     "allDay": false,
-     "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1795221000000,
      "e": 1795226400000,
      "t": "Steppin' The Ogden Way dance class",
@@ -2920,16 +2940,6 @@
     },
     {
      "s": 1795228200000,
-     "e": 1795237200000,
-     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
-     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795228200000,
      "e": 1795235400000,
      "t": "Clytie Adams Nutcracker - Austad",
      "loc": "",
@@ -2937,16 +2947,6 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1795276800000,
-     "e": 1795305600000,
-     "t": "Acorn Antiques & Vintage Show",
-     "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-     "allDay": false,
-     "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1795276800000,
@@ -3747,9 +3747,9 @@
     "s": 1792875600000,
     "e": 1792882800000,
     "t": "Eskape - Journey Tribute Concert",
-    "loc": "Ogden Amphitheater - 343 25th St, Ogden, Utah",
+    "loc": "Ogden Amphitheater",
     "allDay": false,
-    "desc": "JOURNEY TRIBUTE CONCERT - LIVE AT OGDEN AMPHITHEATER\nEskape, Utah's premier band.\nUTAH JOURNEY FANS — THIS ONE'S FOR YOU!\nGet ready for an unforgettable afternoon celebrating the legendary music of JOURNEY as ESKAPE – Journey Tribute takes its show to the Ogden Amphitheater for the band's first big performance on a major amphitheater stage!\n📅 SATURDAY • OCTOBER 24, 2026\n⏰ 3:00 PM – 5:00 PM Door opens at 2:00 PM\n📍 OGDEN AMPHITHEATER\nBring your friends. Bring your family. And get ready to sing along!\nExperience the soaring vocals, powerful guitars, unmistakable keyboards, driving drums and tim",
+    "desc": "ESKAPE – JOURNEY TRIBUTE: LIVE AT OGDEN AMPHITHEATER!\nGet tickets here: eskapejourneytribute.eventbrite.com\n**BIGGER STAGE. BIGGER SOUND. AN UNFORGETTABLE LIVE EXPERIENCE.**\n**SATURDAY • OCTOBER 24, 2026**\n**3:00 PM – 5:00 PM**\n**OGDEN AMPHITHEATER • OGDEN, UTAH**\nJourney fans, **THIS ONE'S FOR YOU!**\nESKAPE – JOURNEY TRIBUTE is stepping onto a BIG AMPHITHEATER STAGE for a special live concert celebrating the unforgettable music of JOURNEY!\nIf you've ever sung along to Journey in your car, turned up the volume when one of their classics came on, or have memories connected to their music — come",
     "url": "https://ESKAPEJOURNEYTRIBUTE.eventbrite.com",
     "src": "Ogden Area Events (Visit Ogden)"
    },
@@ -3757,9 +3757,9 @@
     "s": 1792875600000,
     "e": 1792882800000,
     "t": "Eskape - Journey Tribute Concert",
-    "loc": "Ogden Amphitheater",
+    "loc": "Ogden Amphitheater - 343 25th St, Ogden, Utah",
     "allDay": false,
-    "desc": "ESKAPE – JOURNEY TRIBUTE: LIVE AT OGDEN AMPHITHEATER!\nGet tickets here: eskapejourneytribute.eventbrite.com\n**BIGGER STAGE. BIGGER SOUND. AN UNFORGETTABLE LIVE EXPERIENCE.**\n**SATURDAY • OCTOBER 24, 2026**\n**3:00 PM – 5:00 PM**\n**OGDEN AMPHITHEATER • OGDEN, UTAH**\nJourney fans, **THIS ONE'S FOR YOU!**\nESKAPE – JOURNEY TRIBUTE is stepping onto a BIG AMPHITHEATER STAGE for a special live concert celebrating the unforgettable music of JOURNEY!\nIf you've ever sung along to Journey in your car, turned up the volume when one of their classics came on, or have memories connected to their music — come",
+    "desc": "JOURNEY TRIBUTE CONCERT - LIVE AT OGDEN AMPHITHEATER\nEskape, Utah's premier band.\nUTAH JOURNEY FANS — THIS ONE'S FOR YOU!\nGet ready for an unforgettable afternoon celebrating the legendary music of JOURNEY as ESKAPE – Journey Tribute takes its show to the Ogden Amphitheater for the band's first big performance on a major amphitheater stage!\n📅 SATURDAY • OCTOBER 24, 2026\n⏰ 3:00 PM – 5:00 PM Door opens at 2:00 PM\n📍 OGDEN AMPHITHEATER\nBring your friends. Bring your family. And get ready to sing along!\nExperience the soaring vocals, powerful guitars, unmistakable keyboards, driving drums and tim",
     "url": "https://ESKAPEJOURNEYTRIBUTE.eventbrite.com",
     "src": "Ogden Area Events (Visit Ogden)"
    },
@@ -3871,6 +3871,16 @@
     "allDay": false,
     "desc": "A Hocus Pocus in Concert night in Ogden starts the way the best Halloween plans do: lights down, screen glowing, and a full symphony orchestra drawing the first breath of John Debney’s score. On Wednesday, October 28, the Utah Symphony performs the complete original score live while the beloved 1993 film plays on a big screen above the stage at the Browning Center.",
     "url": "https://www.onstageogden.org/show-item/hocus-pocus/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793316600000,
+    "e": 1793327400000,
+    "t": "Halloween Pizza Bash",
+    "loc": "Wild Shape Bakery, 2856 Washington Blvd, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "We will have our traditional sourdough pizza (cheese, margarita, and pepperoni), plus Salt and Hops will provide beverages, both alcoholic and non-alcoholic.\n\nOn top of that, we are making house-made s’mores that you can roast over our fire-pit. The s’mores will be complimentary for everyone who comes. We will make the marshmallows and crackers in-house. So you can feel good about the ingredients and the quality.\n\nThis is a family-friendly event. You can sit on our patio or go inside the bakery where there are game and toys available to use for free. You can also pick up your pizza to go. You ",
+    "url": "https://www.wildshapedbakery.com/events/pizza-night-m87kg-dygpn-w6w6n",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4314,6 +4324,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1794510000000,
+    "e": 1794519000000,
+    "t": "Author Celebration with Mac Barnett",
+    "loc": "Treehouse Children's Museum, 347 22nd Street, Ogden, UT. 84401",
+    "allDay": false,
+    "desc": "Children and adults are invited to celebrate the magic and power of picture books with award-winning author Mac Barnett who was named the 2006 National Ambassador for Young People's Literature by the Library of Congress. Mac will talk in Treehouse's Storybook Theater at 5:30 p.m. or 7 p.m. on Thursday, November 11. Children and parents can also participate in 5 activities throughout the Museum based some of our favorites books by Mac and have their books signed, too. Tickets are free but must be reserved in advance on the Treehouse website. Both children and adults need a ticket.",
+    "url": "https://www.treehousemuseum.org/events/87/author-party-with-mac-barnett",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1794553200000,
     "e": 1794726000000,
     "t": "Mosaic Lamp Making Classes",
@@ -4371,6 +4391,16 @@
     "allDay": false,
     "desc": "Good Shepherd Church's annual bazaar offers handmade crafts and items, baked goods, used books and puzzles to help you prepare for gift-giving season. A raffle provides an opportunity to win unique items just in time for Christmas.",
     "url": "https://www.goodshepherdogdenutah.org/events.html",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794682800000,
+    "e": 1794708000000,
+    "t": "Festive Ornament Workshop with Local Artisans",
+    "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "You’re Invited to Our Festive Ornament Workshops!\n\nJoin us for a merry time as we celebrate the holiday season with creativity and joy! ❄️\n\nGather your family, friends or just come alone to unleash your inner artist alongside five talented local artists! Each workshop is packed with fun, laughter, and the chance to create your very own unique ornaments that will sparkle on your tree. Whether you want to make one ornament, one of each or anything in between, there’s something for everyone!\n\nWhat to Expect:\n🎄 Hands-on ornament-making sessions\n⛄ All materials provided\n🎄 No experience needed\n⛄ F",
+    "url": "https://localartisancollective.com/events/ornamentworkshop26/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4481,36 +4511,6 @@
     "allDay": true,
     "desc": "Community Art Show is hosted quarterly at Ogden’s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
     "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795219200000,
-    "e": 1795233600000,
-    "t": "Acorn Antiques & Vintage Show",
-    "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-    "allDay": false,
-    "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795228200000,
-    "e": 1795237200000,
-    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
-    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795276800000,
-    "e": 1795305600000,
-    "t": "Acorn Antiques & Vintage Show",
-    "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-    "allDay": false,
-    "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
-    "url": "",
     "src": "Ogden Area Events (Visit Ogden)"
    }
   ],
