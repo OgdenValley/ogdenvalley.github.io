@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-23T21:41:51.562Z",
+ "updated": "2026-10-23T22:40:36.613Z",
  "items": [
+  {
+   "t": 1792795236612,
+   "src": "UDOT road sensor",
+   "text": "SR-158 @ MP 11.5 Powder Mountain: pavement 32°F, wet. Watch for ice.",
+   "kind": "winter",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1792791711562,
    "src": "UDOT alert",
@@ -85,7 +92,7 @@
    "I-84 @ MP 97 Peterson": 0,
    "I-84 @ Weber Canyon": 0,
    "North Ogden Divide": 0,
-   "SR-158 @ MP 11.5 Powder Mountain": 0,
+   "SR-158 @ MP 11.5 Powder Mountain": 1,
    "SR-167 @ Trappers Loop": 0,
    "SR-39 @ MP 14 Pineview Dam": 0,
    "SR-39 @ MP 17.5 Huntsville": 0,
