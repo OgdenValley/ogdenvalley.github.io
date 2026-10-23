@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T15:47:17.796Z",
+ "updated": "2026-10-23T16:45:30.062Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
@@ -8,45 +8,45 @@
    "md": "Oct 23",
    "high": 53,
    "low": 30,
-   "pop": 73,
-   "short": "Chance Showers And Thunderstorms",
-   "both": "Chance Showers And Thunderstorms / Scattered Rain Showers then Mostly Cloudy",
+   "pop": 70,
+   "short": "Chance Light Rain then Showers And Thunderstorms Likely",
+   "both": "Chance Light Rain then Showers And Thunderstorms Likely / Partly Cloudy",
    "snow": false,
-   "wind": "6 to 9 mph"
+   "wind": "5 to 10 mph"
   },
   {
    "date": "2026-10-24",
    "label": "Sat",
    "md": "Oct 24",
-   "high": 59,
-   "low": 29,
-   "pop": 3,
-   "short": "Mostly Sunny",
-   "both": "Mostly Sunny / Partly Cloudy",
+   "high": 58,
+   "low": 28,
+   "pop": 2,
+   "short": "Sunny",
+   "both": "Sunny / Partly Cloudy",
    "snow": false,
-   "wind": "3 mph"
+   "wind": "2 mph"
   },
   {
    "date": "2026-10-25",
    "label": "Sun",
    "md": "Oct 25",
    "high": 57,
-   "low": 30,
-   "pop": 18,
-   "short": "Isolated Rain Showers then Partly Sunny",
-   "both": "Isolated Rain Showers then Partly Sunny / Partly Cloudy",
+   "low": 29,
+   "pop": 6,
+   "short": "Mostly Sunny",
+   "both": "Mostly Sunny / Mostly Clear",
    "snow": false,
-   "wind": "0 to 3 mph"
+   "wind": "2 mph"
   },
   {
    "date": "2026-10-26",
    "label": "Mon",
    "md": "Oct 26",
-   "high": 60,
-   "low": 30,
-   "pop": 11,
+   "high": 61,
+   "low": 31,
+   "pop": 28,
    "short": "Mostly Sunny",
-   "both": "Mostly Sunny / Partly Cloudy",
+   "both": "Mostly Sunny / Partly Cloudy then Chance Light Rain",
    "snow": false,
    "wind": "0 to 3 mph"
   },
@@ -87,11 +87,11 @@
    "wind": "2 mph"
   }
  ],
- "today": "Today: A chance of showers and thunderstorms. Mostly cloudy, with a high near 53. South southwest wind 6 to 9 mph. Chance of precipitation is 70%. New rainfall amounts between a tenth and quarter of an inch possible.",
+ "today": "Today: A chance of rain before noon, then showers and thunderstorms likely. Mostly cloudy. High near 53, with temperatures falling to around 51 in the afternoon. South southwest wind 5 to 10 mph. Chance of precipitation is 70%.",
  "valleySnowDays": [],
- "snowLevelFt": 7700,
+ "snowLevelFt": 7500,
  "snowInches48": 0,
- "forecastIssued": "2026-10-23T06:31:32+00:00",
+ "forecastIssued": "2026-10-23T16:16:46+00:00",
  "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
  "source": "National Weather Service Salt Lake City",
  "status": {
