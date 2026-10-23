@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-22T22:40:12.121Z",
+ "updated": "2026-10-23T01:46:49.509Z",
  "items": [
+  {
+   "t": 1792720009509,
+   "src": "UDOT",
+   "text": "Crash or incident: I-84. Crash, WB I-84 at MP 97 (Peterson). Left Shoulder Blocked.",
+   "kind": "crash",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1792705265752,
    "src": "Utah Air Quality",
@@ -33,7 +40,8 @@
  "seen": {
   "ev": {
    "10148": "I-84|!! Traffic Alerts !! (updated 10/14) Westbound single lane closure | Tue (10/6) - Sun (10/18) | Day & Night Westbound single lane closure | Mon (10/19) - Tue, (11/3) | Day & Night Delays may be significant, 10-15min or more during peak periods Note: Wide load restricted above 11 ft Westbound single lane closure | Sprin",
-   "36834": "SR 39|!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at ni"
+   "36834": "SR 39|!!TRAFFIC ALERT!! Oct. 26, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, October 26, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at ni",
+   "37398": "I-84|Crash, WB I-84 at MP 97 (Peterson). Left Shoulder Blocked."
   },
   "al": {},
   "cond": {

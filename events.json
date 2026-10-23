@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T00:56:55.217Z",
+ "updated": "2026-10-23T01:46:40.678Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -768,16 +768,6 @@
    "name": "Weber County",
    "events": [
     {
-     "s": 1792623600000,
-     "e": 1792630800000,
-     "t": "Ogden City Planning Commission Worksession",
-     "loc": "2549 Washington Blvd., Room #310, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ogden City Planning Commission Worksession",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1792627200000,
      "e": 1792634400000,
      "t": "Ladies Night Out - Health Across Every Stage",
@@ -785,16 +775,6 @@
      "allDay": false,
      "desc": "Join us for a relaxed, inspiring evening focused on women's health, connection and community. Delicious bites, mocktails, giveaways, and meaningful conversations.",
      "url": "https://intermountainhealthcare.org/locations/mckay-dee-hospital",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1792629000000,
-     "e": 1792632600000,
-     "t": "Yoga",
-     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
-     "url": "https://weberpl.events.mylibrary.digital/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -2579,8 +2559,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2589,8 +2569,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2689,8 +2669,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2699,8 +2679,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2799,8 +2779,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2809,8 +2789,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3656,22 +3636,22 @@
      "desc": "Free. Every Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1797901200000,
+     "e": 1797908400000,
+     "t": "Mystic Mondays: tarot readings",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "$5 readings. Every Monday.",
+     "url": "",
+     "src": "Weekly regular"
     }
    ]
   }
  },
  "sources": {
   "ogdenarea": [
-   {
-    "s": 1792623600000,
-    "e": 1792630800000,
-    "t": "Ogden City Planning Commission Worksession",
-    "loc": "2549 Washington Blvd., Room #310, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ogden City Planning Commission Worksession",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
    {
     "s": 1792627200000,
     "e": 1792634400000,
@@ -3680,16 +3660,6 @@
     "allDay": false,
     "desc": "Join us for a relaxed, inspiring evening focused on women's health, connection and community. Delicious bites, mocktails, giveaways, and meaningful conversations.",
     "url": "https://intermountainhealthcare.org/locations/mckay-dee-hospital",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1792629000000,
-    "e": 1792632600000,
-    "t": "Yoga",
-    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
-    "url": "https://weberpl.events.mylibrary.digital/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4796,8 +4766,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4806,8 +4776,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4836,16 +4806,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794715200000,
     "t": "DPAC Scrooge - Austad",
     "loc": "",
@@ -4855,9 +4815,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "s": 1794708000000,
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4868,6 +4828,16 @@
     "s": 1794969000000,
     "e": 1794976200000,
     "t": "Jazz - Allred",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
