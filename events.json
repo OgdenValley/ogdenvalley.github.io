@@ -1,18 +1,9 @@
 {
- "updated": "2026-10-23T01:46:40.678Z",
+ "updated": "2026-10-23T02:42:24.013Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1792627200000,
-     "e": 1792636200000,
-     "t": "Wednesday Night Hikers",
-     "loc": "Varies",
-     "allDay": false,
-     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
-     "url": "https://www.meetup.com/webercountyoutdoors/"
-    },
     {
      "s": 1792782000000,
      "e": 1792789200000,
@@ -767,16 +758,6 @@
   "weber": {
    "name": "Weber County",
    "events": [
-    {
-     "s": 1792627200000,
-     "e": 1792634400000,
-     "t": "Ladies Night Out - Health Across Every Stage",
-     "loc": "McKay-Dee Hospital - Education Center, 4401 Harrison Blvd. Ogden, UT",
-     "allDay": false,
-     "desc": "Join us for a relaxed, inspiring evening focused on women's health, connection and community. Delicious bites, mocktails, giveaways, and meaningful conversations.",
-     "url": "https://intermountainhealthcare.org/locations/mckay-dee-hospital",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
     {
      "s": 1792632600000,
      "e": 1792639800000,
@@ -2559,8 +2540,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2569,8 +2550,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2669,8 +2650,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2679,8 +2660,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3652,16 +3633,6 @@
  },
  "sources": {
   "ogdenarea": [
-   {
-    "s": 1792627200000,
-    "e": 1792634400000,
-    "t": "Ladies Night Out - Health Across Every Stage",
-    "loc": "McKay-Dee Hospital - Education Center, 4401 Harrison Blvd. Ogden, UT",
-    "allDay": false,
-    "desc": "Join us for a relaxed, inspiring evening focused on women's health, connection and community. Delicious bites, mocktails, giveaways, and meaningful conversations.",
-    "url": "https://intermountainhealthcare.org/locations/mckay-dee-hospital",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
    {
     "s": 1792632600000,
     "e": 1792639800000,
@@ -4766,8 +4737,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4776,8 +4747,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4806,8 +4777,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4816,8 +4787,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
