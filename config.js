@@ -183,6 +183,7 @@ window.OVE = {
        date: "2026-10" (year-month, sets the season), caption: "Sunrise over the reservoir" }
      Only add photos the photographer gave permission for. Upload the image to the main folder. */
   valleyPhotos: [
+    { image: "valley-pineview-sunrise-tom-doxey.jpg", by: "Tom Doxey", place: "Pineview", date: "2026-10", caption: "Sunrise over Pineview, looking east up the low water" },
     { image: "valley-moose-snow-deck.jpg", by: "Shauna Miller", place: "Nordic Valley", date: "", caption: "A moose naps in the snow right outside the back door" },
     { image: "valley-sunset-huntsville.jpg", by: "Seth Miller", place: "Huntsville", date: "", caption: "Fire in the sky over the Valley at sunset" },
     { image: "valley-sunrays-seth-miller.jpg", by: "Seth Miller", place: "Huntsville", date: "", caption: "Sun rays break through the clouds over the mountains" },
