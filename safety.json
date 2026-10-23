@@ -1,6 +1,19 @@
 {
- "updated": "2026-10-22T16:44:44.374Z",
- "weather": [],
+ "updated": "2026-10-23T08:45:31.022Z",
+ "weather": [
+  {
+   "event": "Special Weather Statement",
+   "severity": "Moderate",
+   "headline": "Special Weather Statement issued October 23 at 2:30AM MDT by NWS Salt Lake City UT",
+   "area": "Eastern Box Elder County; Cache Valley/Utah Portion; Wasatch Mountains I-80 North",
+   "starts": "2026-10-23T02:30:00-06:00",
+   "ends": "2026-10-23T03:00:00-06:00",
+   "text": "At 230 AM MDT, Doppler radar was tracking a line of showers extending\nfrom near Peter to 8 miles southeast of Hyrum, moving northeast at 40\nmph.\n\nHAZARD...Wind gusts up to 50 mph.\n\nSOURCE...Radar indicated.\n\nIMPACT...Gusty winds could knock down tree limbs and blow around\nunsecured objects.\n\nLocations impacted include...\nLogan, Cache, Smithfield, Hyrum, Wellsville, Clarkston, Trenton,\nUtah State University, Benson, Peter, North Logan, Providence,\nNibley, Hyde Park, Richmond, Millville, River Heights, Honeyville,\nMendon and Elwood.\n\nThis includes the following highways...\nUS Route 89 between mile markers 459 and 477. Interstate 15 between\nmile markers 373 and 376.",
+   "instruction": "Monitor the weather situation closely and be alert for threatening\nweather conditions.",
+   "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
+   "source": "National Weather Service"
+  }
+ ],
  "fires": [],
  "city": [],
  "status": {

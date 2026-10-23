@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-23T02:42:31.512Z",
+ "updated": "2026-10-23T08:45:37.554Z",
  "items": [
+  {
+   "t": 1792745137553,
+   "src": "UDOT road sensor",
+   "text": "SR-158 @ MP 11.5 Powder Mountain: pavement 32°F, slushy. Watch for ice.",
+   "kind": "winter",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1792745137553,
+   "src": "National Weather Service",
+   "text": "Special Weather Statement until Fri 3:00 AM · Eastern Box Elder County; Cache Valley/Utah Portion; Wasatch Mountains I-80 North",
+   "kind": "weather",
+   "link": "https://www.weather.gov/slc/"
+  },
   {
    "t": 1792723351511,
    "src": "UDOT",
@@ -69,14 +83,16 @@
    "I-84 @ MP 97 Peterson": 0,
    "I-84 @ Weber Canyon": 0,
    "North Ogden Divide": 0,
-   "SR-158 @ MP 11.5 Powder Mountain": 0,
+   "SR-158 @ MP 11.5 Powder Mountain": 1,
    "SR-167 @ Trappers Loop": 0,
    "SR-39 @ MP 14 Pineview Dam": 0,
    "SR-39 @ MP 17.5 Huntsville": 0,
    "SR-39 @ MP 46 Monte Cristo": 0,
    "US-89 @ MP 406 Weber River": 0
   },
-  "nws": {},
+  "nws": {
+   "Special Weather Statement|2026-10-23T02:30:00-06:00|2026-10-23T03:00:00-06:00": 1
+  },
   "air": "October 22, 2026 3:32 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
