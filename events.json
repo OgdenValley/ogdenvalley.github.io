@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T02:42:24.013Z",
+ "updated": "2026-10-23T03:43:32.545Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -758,16 +758,6 @@
   "weber": {
    "name": "Weber County",
    "events": [
-    {
-     "s": 1792632600000,
-     "e": 1792639800000,
-     "t": "Hurst Artist-in-Residence: Pepon Osario",
-     "loc": "Kimball Arts Building",
-     "allDay": false,
-     "desc": "Join us for a conversation with Pepón Osorio, an internationally recognized multidisciplinary artist whose work explores race, identity, social justice, and the lived experiences of Latinx and working-class communities in the United States. Born in San Juan and later moving to the South Bronx, Osorio creates richly detailed sculptures and installations shaped by community collaboration and social engagement. For more than 35 years, his work has sparked critical conversations around inequality within healthcare, education, and prison systems while centering the voices and experiences of the com",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
     {
      "s": 1792636200000,
      "e": 1792648800000,
@@ -2540,8 +2530,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2550,8 +2540,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2650,8 +2640,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2660,8 +2650,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3627,22 +3617,22 @@
      "desc": "$5 readings. Every Monday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1797910200000,
+     "e": 1797922800000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
     }
    ]
   }
  },
  "sources": {
   "ogdenarea": [
-   {
-    "s": 1792632600000,
-    "e": 1792639800000,
-    "t": "Hurst Artist-in-Residence: Pepon Osario",
-    "loc": "Kimball Arts Building",
-    "allDay": false,
-    "desc": "Join us for a conversation with Pepón Osorio, an internationally recognized multidisciplinary artist whose work explores race, identity, social justice, and the lived experiences of Latinx and working-class communities in the United States. Born in San Juan and later moving to the South Bronx, Osorio creates richly detailed sculptures and installations shaped by community collaboration and social engagement. For more than 35 years, his work has sparked critical conversations around inequality within healthcare, education, and prison systems while centering the voices and experiences of the com",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
    {
     "s": 1792708200000,
     "e": 1792711800000,
@@ -4737,8 +4727,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4747,8 +4737,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4777,8 +4767,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4787,8 +4777,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
