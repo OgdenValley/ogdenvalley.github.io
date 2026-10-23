@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-23T13:50:03.920Z",
+ "updated": "2026-10-23T14:49:36.222Z",
  "items": [
+  {
+   "t": 1792766976222,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Friday good · Saturday good · Sunday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1792763403919,
    "src": "UDOT road sensor",
@@ -49,20 +56,6 @@
    "text": "Cleared: US 89. Crash, NB US-89 at I-84 (Weber). Right Shoulder Blocked.",
    "kind": "clear",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792680332657,
-   "src": "UDOT",
-   "text": "Crash or incident: US 89. Crash, NB US-89 at I-84 (Weber). Right Shoulder Blocked.",
-   "kind": "crash",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792680332657,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Thursday good · Friday good · Saturday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
@@ -90,7 +83,7 @@
    "I-84 @ MP 97 Peterson": 0,
    "I-84 @ Weber Canyon": 0,
    "North Ogden Divide": 0,
-   "SR-158 @ MP 11.5 Powder Mountain": 1,
+   "SR-158 @ MP 11.5 Powder Mountain": 0,
    "SR-167 @ Trappers Loop": 0,
    "SR-39 @ MP 14 Pineview Dam": 0,
    "SR-39 @ MP 17.5 Huntsville": 0,
@@ -98,6 +91,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "October 22, 2026 3:32 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "October 23, 2026 8:26 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
