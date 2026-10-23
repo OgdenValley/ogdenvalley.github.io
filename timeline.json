@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T14:49:36.222Z",
+ "updated": "2026-10-23T15:47:32.107Z",
  "items": [
   {
    "t": 1792766976222,
@@ -49,13 +49,6 @@
    "text": "Weber County forecast: Thursday good · Friday good · Saturday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1792683883217,
-   "src": "UDOT",
-   "text": "Cleared: US 89. Crash, NB US-89 at I-84 (Weber). Right Shoulder Blocked.",
-   "kind": "clear",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {
