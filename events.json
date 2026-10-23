@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T22:40:23.263Z",
+ "updated": "2026-10-23T23:38:59.890Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -758,26 +758,6 @@
   "weber": {
    "name": "Weber County",
    "events": [
-    {
-     "s": 1792702800000,
-     "e": 1792710000000,
-     "t": "Vintage Halloween Rosette class",
-     "loc": "Ogden Creative Reuse, 2424 Wall Ave., Ogden",
-     "allDay": false,
-     "desc": "Art workshop, $12.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792708200000,
-     "e": 1792711800000,
-     "t": "Ogden City Landmarks Commission",
-     "loc": "2549 Washington Blvd., City Council Chambers, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ogden City Landmarks Commission",
-     "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
     {
      "s": 1792710000000,
      "e": 1792717200000,
@@ -2770,8 +2750,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2780,8 +2760,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3623,16 +3603,6 @@
  },
  "sources": {
   "ogdenarea": [
-   {
-    "s": 1792708200000,
-    "e": 1792711800000,
-    "t": "Ogden City Landmarks Commission",
-    "loc": "2549 Washington Blvd., City Council Chambers, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ogden City Landmarks Commission",
-    "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
    {
     "s": 1792713600000,
     "e": 1792724400000,
@@ -4777,8 +4747,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4787,8 +4757,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
