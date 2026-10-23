@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T08:45:37.554Z",
+ "updated": "2026-10-23T09:43:57.112Z",
  "items": [
   {
    "t": 1792745137553,
@@ -83,16 +83,14 @@
    "I-84 @ MP 97 Peterson": 0,
    "I-84 @ Weber Canyon": 0,
    "North Ogden Divide": 0,
-   "SR-158 @ MP 11.5 Powder Mountain": 1,
+   "SR-158 @ MP 11.5 Powder Mountain": 0,
    "SR-167 @ Trappers Loop": 0,
    "SR-39 @ MP 14 Pineview Dam": 0,
    "SR-39 @ MP 17.5 Huntsville": 0,
    "SR-39 @ MP 46 Monte Cristo": 0,
    "US-89 @ MP 406 Weber River": 0
   },
-  "nws": {
-   "Special Weather Statement|2026-10-23T02:30:00-06:00|2026-10-23T03:00:00-06:00": 1
-  },
+  "nws": {},
   "air": "October 22, 2026 3:32 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
