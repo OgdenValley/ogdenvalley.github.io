@@ -1,6 +1,20 @@
 {
- "updated": "2026-10-24T09:41:23.164Z",
+ "updated": "2026-10-24T14:40:21.032Z",
  "items": [
+  {
+   "t": 1792852821032,
+   "src": "UDOT road sensor",
+   "text": "SR-158 @ MP 11.5 Powder Mountain: pavement 32°F, damp. Watch for ice.",
+   "kind": "winter",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1792852821032,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Saturday good · Sunday good · Monday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1792795236612,
    "src": "UDOT road sensor",
@@ -28,13 +42,6 @@
    "text": "Weber County forecast: Friday good · Saturday good · Sunday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1792763403919,
-   "src": "UDOT road sensor",
-   "text": "SR-158 @ MP 11.5 Powder Mountain: pavement 31°F, slushy. Watch for ice.",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {
@@ -64,7 +71,7 @@
    "I-84 @ MP 97 Peterson": 0,
    "I-84 @ Weber Canyon": 0,
    "North Ogden Divide": 0,
-   "SR-158 @ MP 11.5 Powder Mountain": 0,
+   "SR-158 @ MP 11.5 Powder Mountain": 1,
    "SR-167 @ Trappers Loop": 0,
    "SR-39 @ MP 14 Pineview Dam": 0,
    "SR-39 @ MP 17.5 Huntsville": 0,
@@ -72,6 +79,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "October 23, 2026 3:32 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "October 24, 2026 8:23 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
