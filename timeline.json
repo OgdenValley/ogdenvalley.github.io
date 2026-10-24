@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T01:48:25.551Z",
+ "updated": "2026-10-24T03:42:25.627Z",
  "items": [
   {
    "t": 1792795236612,
@@ -49,13 +49,6 @@
    "text": "Special Weather Statement until Fri 3:00 AM · Eastern Box Elder County; Cache Valley/Utah Portion; Wasatch Mountains I-80 North",
    "kind": "weather",
    "link": "https://www.weather.gov/slc/"
-  },
-  {
-   "t": 1792723351511,
-   "src": "UDOT",
-   "text": "Cleared: I-84. Crash, WB I-84 at MP 97 (Peterson). Left Shoulder Blocked.",
-   "kind": "clear",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {

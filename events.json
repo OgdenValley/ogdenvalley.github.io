@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T02:41:07.714Z",
+ "updated": "2026-10-24T03:42:17.185Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -769,49 +769,9 @@
    "events": [
     {
      "s": 1792710000000,
-     "e": 1792724400000,
-     "t": "Skate Night",
-     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "$5.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792710000000,
      "e": 1792728000000,
      "t": "Open Mic (21+)",
      "loc": "Side Bar at Ogden's Own Distillery, 615 W. Stockman Way, Ogden",
-     "allDay": false,
-     "desc": "Free, 21+.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792713600000,
-     "e": 1792724400000,
-     "t": "Ogden Dinosaur Park Dinos in the Dark",
-     "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Wear your favorite costume and join us for all sorts of tricks and treats. This event has something for everyone from treats and crafts for the little explorers to jump scares and haunted trails for those who dare…",
-     "url": "https://dinosaurpark.org/dinos-dark/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1792713600000,
-     "e": 1792724400000,
-     "t": "Student Success Center - LGBTQ+ Film Screening - 113",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1792717200000,
-     "e": 1792724400000,
-     "t": "Line Dancing (21+)",
-     "loc": "The Outlaw, 1254 West 2100 South, Ogden",
      "allDay": false,
      "desc": "Free, 21+.",
      "url": "",
@@ -826,26 +786,6 @@
      "desc": "All ages, $10 online/$12 door.",
      "url": "",
      "src": "Down the canyon"
-    },
-    {
-     "s": 1792719000000,
-     "e": 1792726200000,
-     "t": "Luminescence",
-     "loc": "Val A. Browning Center | Austad Auditorium",
-     "allDay": false,
-     "desc": "Join the Weber State Symphonic Band for an evening of enLIGHTening music!",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1792719000000,
-     "e": 1792726200000,
-     "t": "Symphonic Band - Austad",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1792722600000,
@@ -2709,8 +2649,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2719,8 +2659,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3562,26 +3502,6 @@
  },
  "sources": {
   "ogdenarea": [
-   {
-    "s": 1792713600000,
-    "e": 1792724400000,
-    "t": "Ogden Dinosaur Park Dinos in the Dark",
-    "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Wear your favorite costume and join us for all sorts of tricks and treats. This event has something for everyone from treats and crafts for the little explorers to jump scares and haunted trails for those who dare…",
-    "url": "https://dinosaurpark.org/dinos-dark/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1792719000000,
-    "e": 1792726200000,
-    "t": "Luminescence",
-    "loc": "Val A. Browning Center | Austad Auditorium",
-    "allDay": false,
-    "desc": "Join the Weber State Symphonic Band for an evening of enLIGHTening music!",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
    {
     "s": 1792764000000,
     "e": 1792789200000,
@@ -4445,26 +4365,6 @@
   ],
   "treehouse": [
    {
-    "s": 1792713600000,
-    "e": 1792724400000,
-    "t": "Student Success Center - LGBTQ+ Film Screening - 113",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1792719000000,
-    "e": 1792726200000,
-    "t": "Symphonic Band - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
     "s": 1792801800000,
     "e": 1792809000000,
     "t": "Seager Charity Recital - Room 136",
@@ -4706,8 +4606,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4716,8 +4616,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
