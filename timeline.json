@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T15:40:53.232Z",
+ "updated": "2026-10-24T22:39:06.451Z",
  "items": [
   {
    "t": 1792852821032,
@@ -21,20 +21,6 @@
    "text": "SR-158 @ MP 11.5 Powder Mountain: pavement 32°F, wet. Watch for ice.",
    "kind": "winter",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792791711562,
-   "src": "UDOT alert",
-   "text": "Construction Alert: Eastbound I-84 will be closed between I-15 and Riverdale Road from 10 p.m. Friday, Oct. 23, through 6 a.m. Monday, Oct. 26. Drivers can detour southbound I-15 to 5600 South and Riverdale Road. Drivers traveling through Riverdale should plan ahead, follow posted detours and allow extra travel time.",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792791711562,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Friday good · Saturday good · Sunday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
