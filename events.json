@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T03:42:17.185Z",
+ "updated": "2026-10-24T04:41:02.325Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -767,26 +767,6 @@
   "weber": {
    "name": "Weber County",
    "events": [
-    {
-     "s": 1792710000000,
-     "e": 1792728000000,
-     "t": "Open Mic (21+)",
-     "loc": "Side Bar at Ogden's Own Distillery, 615 W. Stockman Way, Ogden",
-     "allDay": false,
-     "desc": "Free, 21+.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792717200000,
-     "e": 1792728000000,
-     "t": "Rift Promotions: emo metal concert",
-     "loc": "For The Love Studio, 3651 Wall Ave. (inside Newgate Mall), Ogden",
-     "allDay": false,
-     "desc": "All ages, $10 online/$12 door.",
-     "url": "",
-     "src": "Down the canyon"
-    },
     {
      "s": 1792722600000,
      "e": 1792735200000,
@@ -2419,8 +2399,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2429,8 +2409,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2539,8 +2519,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2549,8 +2529,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -4546,8 +4526,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4556,8 +4536,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4586,8 +4566,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4596,8 +4576,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
