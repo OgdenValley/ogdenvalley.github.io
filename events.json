@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T01:48:17.873Z",
+ "updated": "2026-10-24T02:41:07.714Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -806,36 +806,6 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1792713600000,
-     "e": 1792720800000,
-     "t": "Vinyl Night (21+)",
-     "loc": "The Thirsty Horse, 3611 S Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Bring your own vinyl or pick one there. Free, 21+.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792713600000,
-     "e": 1792720800000,
-     "t": "Trivia (21+)",
-     "loc": "Angry Goat Pub & Kitchen, 2570 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free, 21+.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792713600000,
-     "e": 1792720800000,
-     "t": "Free live music & ice cream at Z's Sweets",
-     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
-     "url": "",
-     "src": "Weekly regular"
     },
     {
      "s": 1792717200000,
@@ -2739,8 +2709,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2749,8 +2719,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -4736,8 +4706,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4746,8 +4716,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
