@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T06:49:57.798Z",
+ "updated": "2026-10-24T08:42:37.645Z",
  "meetings": [
   {
    "body": "Ogden Valley City Council",
@@ -50,11 +50,11 @@
    "elev": 7690,
    "depth": {
     "value": 0,
-    "date": "2026-10-22"
+    "date": "2026-10-23"
    },
    "water": {
-    "value": 0,
-    "date": "2026-10-22"
+    "value": 0.1,
+    "date": "2026-10-23"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -64,11 +64,11 @@
    "elev": 5970,
    "depth": {
     "value": 0,
-    "date": "2026-10-22"
+    "date": "2026-10-23"
    },
    "water": {
     "value": 0,
-    "date": "2026-10-22"
+    "date": "2026-10-23"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
@@ -78,11 +78,11 @@
    "elev": 8930,
    "depth": {
     "value": 1,
-    "date": "2026-10-22"
+    "date": "2026-10-23"
    },
    "water": {
-    "value": 0.1,
-    "date": "2026-10-22"
+    "value": 0.2,
+    "date": "2026-10-23"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
    "source": "USDA NRCS SNOTEL"
