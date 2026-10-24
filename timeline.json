@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-23T23:39:09.349Z",
+ "updated": "2026-10-24T01:48:25.551Z",
  "items": [
   {
    "t": 1792795236612,
@@ -55,13 +55,6 @@
    "src": "UDOT",
    "text": "Cleared: I-84. Crash, WB I-84 at MP 97 (Peterson). Left Shoulder Blocked.",
    "kind": "clear",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792720009509,
-   "src": "UDOT",
-   "text": "Crash or incident: I-84. Crash, WB I-84 at MP 97 (Peterson). Left Shoulder Blocked.",
-   "kind": "crash",
    "link": "https://udottraffic.utah.gov/"
   }
  ],
