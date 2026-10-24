@@ -200,7 +200,9 @@ window.OVE = {
     { image: "valley-sunrise-huntsville-seth-miller.jpg", by: "Seth Miller", place: "Huntsville", date: "2026-10", caption: "The whole sky lights up orange over the hills at sunrise" },
     { image: "valley-frost-crystals-sharon-myers.jpg", by: "Sharon Myers", place: "Ogden Valley", date: "2026-10", caption: "Frost crystals spread like tiny feathers across the glass" },
     { image: "valley-sunset-orchard-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley", date: "2026-10", caption: "The sky glows orange over the mountains and fall trees" },
-    { image: "valley-sunset-aspens-nordic-dixie-joe-loveless.jpg", by: "Dixie-Joe Loveless", place: "Nordic Valley", date: "2026-10", caption: "A fiery sunset through the aspens near Nordic Valley" }
+    { image: "valley-sunset-aspens-nordic-dixie-joe-loveless.jpg", by: "Dixie-Joe Loveless", place: "Nordic Valley", date: "2026-10", caption: "A fiery sunset through the aspens near Nordic Valley" },
+    { image: "valley-sunset-manuel-prieto.jpg", by: "Manuel Prieto", place: "Ogden Valley", date: "2026-10", caption: "The sun breaks through over the mountains, and the cottonwoods light up gold" },
+    { image: "valley-trail-carol-harlow.jpg", by: "Carol Harlow", place: "Ogden Valley", date: "2026-10", caption: "A shady trail through the trees and tall grass" }
   ],
 
   /* --- Then & Now ------------------------------------------------------
