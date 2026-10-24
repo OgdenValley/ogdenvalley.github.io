@@ -202,7 +202,14 @@ window.OVE = {
     { image: "valley-sunset-orchard-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley", date: "2026-10", caption: "The sky glows orange over the mountains and fall trees" },
     { image: "valley-sunset-aspens-nordic-dixie-joe-loveless.jpg", by: "Dixie-Joe Loveless", place: "Nordic Valley", date: "2026-10", caption: "A fiery sunset through the aspens near Nordic Valley" },
     { image: "valley-sunset-manuel-prieto.jpg", by: "Manuel Prieto", place: "Ogden Valley", date: "2026-10", caption: "The sun breaks through over the mountains, and the cottonwoods light up gold" },
-    { image: "valley-trail-carol-harlow.jpg", by: "Carol Harlow", place: "Ogden Valley", date: "2026-10", caption: "A shady trail through the trees and tall grass" }
+    { image: "valley-trail-carol-harlow.jpg", by: "Carol Harlow", place: "Ogden Valley", date: "2026-10", caption: "A shady trail through the trees and tall grass" },
+    { image: "valley-golden-sunset-clouds-seth-miller.jpg", by: "Seth Miller", place: "Ogden Valley", date: "", caption: "A golden sunset blazes under dark storm clouds" },
+    { image: "valley-fog-fall-colors-canyon-seth-miller.jpg", by: "Seth Miller", place: "Ogden Valley", date: "", caption: "Fog rolls through the red and orange fall leaves above the canyon road" },
+    { image: "valley-balloon-over-water-seth-miller.jpg", by: "Seth Miller", place: "Ogden Valley", date: "", caption: "A hot air balloon drifts high over the water and hills" },
+    { image: "valley-snowy-peaks-clouds-seth-miller.jpg", by: "Seth Miller", place: "Ogden Valley", date: "", caption: "Fresh snow on the peaks as the clouds roll over the green Valley" },
+    { image: "valley-snowy-peaks-spring-seth-miller.jpg", by: "Seth Miller", place: "Ogden Valley", date: "", caption: "Snow-dusted peaks above spring-green fields and homes" },
+    { image: "valley-dusk-from-above-seth-miller.jpg", by: "Seth Miller", place: "Ogden Valley", date: "", caption: "Pink and purple dusk over the Valley from high above" },
+    { image: "valley-balloon-fest-eden-park-seth-miller.jpg", by: "Seth Miller", place: "Eden", date: "", caption: "Hot air balloons glow at night at the balloon fest at Eden Park" }
   ],
 
   /* --- Then & Now ------------------------------------------------------
