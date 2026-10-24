@@ -1,17 +1,8 @@
 {
- "updated": "2026-10-24T20:38:16.216Z",
+ "updated": "2026-10-24T23:35:45.990Z",
  "weather": [],
  "fires": [],
- "city": [
-  {
-   "title": "Jefferson Ave to Liberty Ave. from 750 E to 850 E",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2073",
-   "date": 1792870846000,
-   "text": "Emergency Water Shutdown",
-   "source": "Ogden City Alerts",
-   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
-  }
- ],
+ "city": [],
  "status": {
   "weather": "ok",
   "fires": "ok",
