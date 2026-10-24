@@ -265,5 +265,10 @@
  "2549 Washington Blvd., Room 710, Ogden, UT 84401": null,
  "Ogden Union Station, 2501 Wall Avenue, Ogden, UT 84401": null,
  "Wild Shape Bakery, 2856 Washington Blvd, Ogden, UT 84401": null,
- "Treehouse Children's Museum, 347 22nd Street, Ogden, UT. 84401": null
+ "Treehouse Children's Museum, 347 22nd Street, Ogden, UT. 84401": null,
+ "Eden, Utah": {
+  "lat": 41.30447,
+  "lng": -111.8263,
+  "county": "Weber"
+ }
 }
