@@ -1,8 +1,17 @@
 {
- "updated": "2026-10-23T09:43:51.167Z",
+ "updated": "2026-10-24T16:41:10.153Z",
  "weather": [],
  "fires": [],
- "city": [],
+ "city": [
+  {
+   "title": "1200 N from Orchard Ave. to Liberty Ave.",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2072",
+   "date": 1792862659000,
+   "text": "Emergency Water Shutdown",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  }
+ ],
  "status": {
   "weather": "ok",
   "fires": "ok",
