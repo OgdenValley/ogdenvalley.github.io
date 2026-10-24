@@ -1,19 +1,9 @@
 {
- "updated": "2026-10-24T20:38:13.727Z",
+ "updated": "2026-10-24T21:39:56.623Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1792782000000,
-     "e": 1792789200000,
-     "t": "New World Distillery tasting tour",
-     "loc": "New World Distillery, Eden",
-     "allDay": false,
-     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
     {
      "s": 1792868400000,
      "e": 1792875600000,
@@ -767,16 +757,6 @@
   "weber": {
    "name": "Weber County",
    "events": [
-    {
-     "s": 1792764000000,
-     "e": 1792789200000,
-     "t": "Outdoor Gear Sale & Swap",
-     "loc": "Outdoor Adventure & Welcome Center (1352 Village Dr. Ogden, UT)",
-     "allDay": false,
-     "desc": "Step up your game, no more daily rentals! Come score deep discounts on all past season gear at our annual Gear Sale. Shop used gear from the rental center and check out our other vendors. Gear up for grabs includes snowboards, paddleboards, kayaks, and more!\n\nThis year, students get the first chance to shop gear during our student pre-sale, October 20-22! The Gear Sale will open to the community on October 23.\n\nDate: October 23, 2026 // Time: 8 a.m. - 3 p.m.\nLocation: Outdoor Adventure & Welcome Center (1352 Village Dr. Ogden, UT)\n\nStudent Pre-sale: October 20-22 // 12-4 p.m.",
-     "url": "https://www.weber.edu/outdoor/gear-sale-swap.html",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
     {
      "s": 1792778400000,
      "e": 1792976400000,
@@ -2389,8 +2369,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2399,8 +2379,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2509,8 +2489,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2519,8 +2499,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3472,16 +3452,6 @@
  },
  "sources": {
   "ogdenarea": [
-   {
-    "s": 1792764000000,
-    "e": 1792789200000,
-    "t": "Outdoor Gear Sale & Swap",
-    "loc": "Outdoor Adventure & Welcome Center (1352 Village Dr. Ogden, UT)",
-    "allDay": false,
-    "desc": "Step up your game, no more daily rentals! Come score deep discounts on all past season gear at our annual Gear Sale. Shop used gear from the rental center and check out our other vendors. Gear up for grabs includes snowboards, paddleboards, kayaks, and more!\n\nThis year, students get the first chance to shop gear during our student pre-sale, October 20-22! The Gear Sale will open to the community on October 23.\n\nDate: October 23, 2026 // Time: 8 a.m. - 3 p.m.\nLocation: Outdoor Adventure & Welcome Center (1352 Village Dr. Ogden, UT)\n\nStudent Pre-sale: October 20-22 // 12-4 p.m.",
-    "url": "https://www.weber.edu/outdoor/gear-sale-swap.html",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
    {
     "s": 1792778400000,
     "e": 1792976400000,
@@ -4516,8 +4486,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4526,8 +4496,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4556,8 +4526,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4566,8 +4536,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
