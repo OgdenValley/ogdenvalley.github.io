@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-24T03:42:25.627Z",
+ "updated": "2026-10-24T09:41:23.164Z",
  "items": [
   {
    "t": 1792795236612,
@@ -35,20 +35,6 @@
    "text": "SR-158 @ MP 11.5 Powder Mountain: pavement 31°F, slushy. Watch for ice.",
    "kind": "winter",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792745137553,
-   "src": "UDOT road sensor",
-   "text": "SR-158 @ MP 11.5 Powder Mountain: pavement 32°F, slushy. Watch for ice.",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1792745137553,
-   "src": "National Weather Service",
-   "text": "Special Weather Statement until Fri 3:00 AM · Eastern Box Elder County; Cache Valley/Utah Portion; Wasatch Mountains I-80 North",
-   "kind": "weather",
-   "link": "https://www.weather.gov/slc/"
   }
  ],
  "seen": {
