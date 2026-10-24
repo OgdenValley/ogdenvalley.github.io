@@ -1,12 +1,20 @@
 {
- "updated": "2026-10-24T16:41:10.153Z",
+ "updated": "2026-10-24T18:42:46.237Z",
  "weather": [],
  "fires": [],
  "city": [
   {
-   "title": "1200 N from Orchard Ave. to Liberty Ave.",
+   "title": "1200 N from Orchard Ave. to Liberty Ave. Updated on 2026-10-24",
    "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2072",
-   "date": 1792862659000,
+   "date": 1792870933000,
+   "text": "Emergency Water Shutdown Update: &lt;p fr-original-style=\"\" style=\"margin: 0px 0px 6px; box-sizing: inherit;\"&gt;Outage extended to 4:00 PM&lt;/p&gt;",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  },
+  {
+   "title": "Jefferson Ave to Liberty Ave. from 750 E to 850 E",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2073",
+   "date": 1792870846000,
    "text": "Emergency Water Shutdown",
    "source": "Ogden City Alerts",
    "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
