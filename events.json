@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T05:39:56.453Z",
+ "updated": "2026-10-25T06:50:36.699Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -768,16 +768,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1792800000000,
-     "e": 1792821600000,
-     "t": "Party Night",
-     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "$10.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
      "s": 1792854000000,
      "e": 1792861200000,
      "t": "Monster Dash 5K: Spooky Steps To Healing Hearts",
@@ -789,16 +779,6 @@
     },
     {
      "s": 1792861200000,
-     "e": 1792872000000,
-     "t": "Hilton Garden Inn Fall Vendor Event",
-     "loc": "Hilton Garden Inn, 2271 S. Washington Blvd., Ogden, Utah 84401",
-     "allDay": false,
-     "desc": "Hilton Garden Inn Ogden Fall Vendor Event\n\nJoin us for the Hilton Garden Inn Ogden Fall Vendor Event on Saturday, October 24th from 11 AM–2 PM.\n\nShop a variety of local vendors offering handmade goods, boutique finds, beauty and wellness products and services, jewelry, gifts, and more. This free community event is a great opportunity to discover local businesses, shop for something unique, and support small businesses in Northern Utah.\n\nAdmission is free and the event is open to the public.\n\nShop • Discover • Support Local",
-     "url": "https://www.hilton.com/en/hotels/ogdwbgi-hilton-garden-inn-ogden-ut/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1792861200000,
      "e": 1792868400000,
      "t": "Spoketacular Community Bike Ride",
      "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden",
@@ -806,16 +786,6 @@
      "desc": "Presented by GOAL Foundation, free.",
      "url": "",
      "src": "Down the canyon"
-    },
-    {
-     "s": 1792868400000,
-     "e": 1792890000000,
-     "t": "Dia de los Muertos Utah",
-     "loc": "Union Station, 2501 Wall Ave, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Día de los Muertos or Day of the Dead, is a celebration of life and death.\nJoin us at the Historic Union Station, Ogden as we celebrate our loved ones as a community in a state wide festival.\nThere will be a craft market, live music, dancers, car show, food, community altar and more.\nHosted by: Cultura & Craft\nIn partnership with: Ogden Union Station & Ogden City Arts\n(This event is free for the entire family)\nThank you RAMP for your support",
-     "url": "https://www.facebook.com/events/1671494223954930/",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1792872000000,
@@ -836,46 +806,6 @@
      "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
      "url": "",
      "src": "Weekly regular"
-    },
-    {
-     "s": 1792875600000,
-     "e": 1792882800000,
-     "t": "Eskape - Journey Tribute Concert",
-     "loc": "Ogden Amphitheater",
-     "allDay": false,
-     "desc": "ESKAPE – JOURNEY TRIBUTE: LIVE AT OGDEN AMPHITHEATER!\nGet tickets here: eskapejourneytribute.eventbrite.com\n**BIGGER STAGE. BIGGER SOUND. AN UNFORGETTABLE LIVE EXPERIENCE.**\n**SATURDAY • OCTOBER 24, 2026**\n**3:00 PM – 5:00 PM**\n**OGDEN AMPHITHEATER • OGDEN, UTAH**\nJourney fans, **THIS ONE'S FOR YOU!**\nESKAPE – JOURNEY TRIBUTE is stepping onto a BIG AMPHITHEATER STAGE for a special live concert celebrating the unforgettable music of JOURNEY!\nIf you've ever sung along to Journey in your car, turned up the volume when one of their classics came on, or have memories connected to their music — come",
-     "url": "https://ESKAPEJOURNEYTRIBUTE.eventbrite.com",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1792875600000,
-     "e": 1792882800000,
-     "t": "Eskape - Journey Tribute Concert",
-     "loc": "Ogden Amphitheater - 343 25th St, Ogden, Utah",
-     "allDay": false,
-     "desc": "JOURNEY TRIBUTE CONCERT - LIVE AT OGDEN AMPHITHEATER\nEskape, Utah's premier band.\nUTAH JOURNEY FANS — THIS ONE'S FOR YOU!\nGet ready for an unforgettable afternoon celebrating the legendary music of JOURNEY as ESKAPE – Journey Tribute takes its show to the Ogden Amphitheater for the band's first big performance on a major amphitheater stage!\n📅 SATURDAY • OCTOBER 24, 2026\n⏰ 3:00 PM – 5:00 PM Door opens at 2:00 PM\n📍 OGDEN AMPHITHEATER\nBring your friends. Bring your family. And get ready to sing along!\nExperience the soaring vocals, powerful guitars, unmistakable keyboards, driving drums and tim",
-     "url": "https://ESKAPEJOURNEYTRIBUTE.eventbrite.com",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1792879200000,
-     "e": 1792886400000,
-     "t": "Annual Creepy Doll Class",
-     "loc": "Local Artisan Collective, 2371 Kiesel Ave., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Annual Creepy Doll Class!\nWhat:\nJoin in the fun & create a Creepy Doll! All of our classes have sold out year after year so we added even more this year and tickets are already being sold so make sure that you get your spot before they all sell out.\n\n-All supplies are included and everyone will get their own Creepy Doll along with a variety of cool items to make each doll unique & creepy.\n\n-I will also be teaching how to create warts, wounds, wrinkly skin along with a variety of cool creepy doll techniques. Then you can have fun letting your imagination run wild as you create your own creepy d",
-     "url": "https://localartisancollective.com/events/annual-creepy-doll-class-on-saturday-october-24th-from-400-to-600/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1792886400000,
-     "e": 1792897200000,
-     "t": "Ogden Dinosaur Park Dinos in the Dark",
-     "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Wear your favorite costume and join us for all sorts of tricks and treats. This event has something for everyone from treats and crafts for the little explorers to jump scares and haunted trails for those who dare…",
-     "url": "https://dinosaurpark.org/dinos-dark/",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1792886400000,
@@ -936,26 +866,6 @@
      "desc": "Free. Every Saturday.",
      "url": "",
      "src": "Weekly regular"
-    },
-    {
-     "s": 1792891800000,
-     "e": 1792900800000,
-     "t": "Wait Until Dark at West Valley Arts",
-     "loc": "West Valley Performing Arts Center, 3333 Decker Lake Drive, West Valley City, UT 84119",
-     "allDay": false,
-     "desc": "A blind woman. A hidden secret. One apartment.\nIn 1944 Greenwich Village, Susan Hendrix finds herself caught in a web of deception that turns her home into a battleground. As danger closes in, Susan must outthink an unseen adversary in a gripping game of cat and mouse that culminates in total darkness.\nJeffrey Hatcher's acclaimed adaptation breathes new life into Frederick Knott's classic thriller, keeping audiences on the edge of their seats until the very end.",
-     "url": "https://wvcarts.ludus.com/200481571",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1792891800000,
-     "e": 1792900800000,
-     "t": "The Rocky Horror Picture Show",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Join us at the annual Rocky Horror Picture Show party & showing at Peery's Egyptian Theater!\n\nCome join us for a night of fun with food and bar at 5:30 PM (pre-party ticket required, ages 18+) followed by our annual Costume Contest at 6:50 PM and showing of the film The Rocky Horror Picture Show at 7:30 PM.\n\nAfter the wedding of mutual friends, Brad Majors (Barry Bostwick) and his fiancée Janet Weiss (Susan Sarandon) get lost driving in a heavy downpour. The first house they see belongs to majordomo Riff Raff (Richard O'Brien) and his sister, housekeeper Magenta (Patricia Quinn). Brad and Jane",
-     "url": "https://ogdenpet.com/events/category/series/rocky-horror-picture-show-2026/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1792891800000,
@@ -2159,8 +2069,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2169,8 +2079,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2279,8 +2189,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2289,8 +2199,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2389,8 +2299,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2399,8 +2309,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2518,6 +2428,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1795219200000,
+     "e": 1795233600000,
+     "t": "Acorn Antiques & Vintage Show",
+     "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
+     "allDay": false,
+     "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1795221000000,
      "e": 1795226400000,
      "t": "Steppin' The Ogden Way dance class",
@@ -2559,6 +2479,16 @@
     },
     {
      "s": 1795228200000,
+     "e": 1795237200000,
+     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795228200000,
      "e": 1795235400000,
      "t": "Clytie Adams Nutcracker - Austad",
      "loc": "",
@@ -2569,13 +2499,23 @@
     },
     {
      "s": 1795276800000,
-     "e": 1795284000000,
+     "e": 1795305600000,
+     "t": "Acorn Antiques & Vintage Show",
+     "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
+     "allDay": false,
+     "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795276800000,
+     "e": 1795305600000,
      "t": "Hairy Horse Show",
      "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
      "allDay": false,
-     "desc": "Event by Golden Spike Event Center.",
-     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-     "src": "Ogden Valley Information and Events"
+     "desc": "Ever wondered what the \"Hairy Horse Show\" is all about? It’s a fun, family-friendly horse show for all ages! From kiddos to adults, everyone’s welcome to join the action. Classes include halter, pleasure, snaffle bit, reining, barrels, poles, and keyhole.\n\nSign-ups start at 7:30 am and go until 9 am, with the show kicking off right at 9 am!\n\nAdmission for spectators is FREE.",
+     "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/t1/1/16/1f40e.png",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1795284000000,
@@ -2586,6 +2526,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1795294800000,
+     "e": 1795303800000,
+     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1795294800000,
@@ -2639,6 +2589,16 @@
     },
     {
      "s": 1795314600000,
+     "e": 1795323600000,
+     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795314600000,
      "e": 1795321800000,
      "t": "Clytie Adams Nutcracker - Austad",
      "loc": "",
@@ -2646,6 +2606,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1795366800000,
+     "e": 1795388400000,
+     "t": "Acorn Antiques & Vintage Show",
+     "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
+     "allDay": false,
+     "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1795482000000,
@@ -2658,6 +2628,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1795487400000,
+     "e": 1795496400000,
+     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1795491000000,
      "e": 1795503600000,
      "t": "Country Dancing",
@@ -2668,6 +2648,66 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1795552200000,
+     "e": 1795555800000,
+     "t": "Gentle Movements",
+     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795559400000,
+     "e": 1795566600000,
+     "t": "Ogden City Council Work Session",
+     "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795568400000,
+     "e": 1795579200000,
+     "t": "Ogden City Council Meeting",
+     "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795573800000,
+     "e": 1795582800000,
+     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795626000000,
+     "e": 1795662000000,
+     "t": "Christmas Tree Jubilee",
+     "loc": "Ogden Eccles Conference Center, 2415 Washington Blvd, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "The Christmas Tree Jubilee is the ultimate kick off to the Holiday Season and a treasured tradition for our community! This is the largest fundraising event for Weber School Foundation and proceeds fund class and school grants, field trips, enhanced educational programs and opportunities, special needs adaptive equipment and so much more.",
+     "url": "https://www.wsd.net/o/foundation/page/christmas-tree-jubilee",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795656600000,
+     "e": 1795660200000,
+     "t": "Yoga",
+     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1795663800000,
      "e": 1795676400000,
      "t": "Country Dancing",
@@ -2676,6 +2716,16 @@
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1795735800000,
+     "e": 1795739400000,
+     "t": "Ogden City Landmarks Commission",
+     "loc": "2549 Washington Blvd., City Council Chambers, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ogden City Landmarks Commission",
+     "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1795741200000,
@@ -2696,6 +2746,26 @@
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1795798800000,
+     "e": 1795827600000,
+     "t": "Christmas Tree Jubilee",
+     "loc": "Ogden Eccles Conference Center, 2415 Washington Blvd, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "The Christmas Tree Jubilee is the ultimate kick off to the Holiday Season and a treasured tradition for our community! This is the largest fundraising event for Weber School Foundation and proceeds fund class and school grants, field trips, enhanced educational programs and opportunities, special needs adaptive equipment and so much more.",
+     "url": "https://www.wsd.net/o/foundation/page/christmas-tree-jubilee",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795813200000,
+     "e": 1795818600000,
+     "t": "Ballet West's The Nutcracker",
+     "loc": "Val A. Browning Center, 3848 Harrison Blvd, Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Ballet West’s Nutcracker returns to Ogden for Thanksgiving weekend, America’s first and longest-running production of the holiday classic. Willam Christensen choreographed it in 1944 for San Francisco Ballet, developed in consultation with George Balanchine and Alexandra Danilova. For ten years his was the only complete Nutcracker in the country, and Ballet West has danced it every year since 1963.\n\nFRIDAY, NOVEMBER 27 | 2 PM & 7 PM",
+     "url": "https://www.onstageogden.org/show-item/nutcracker-2026/",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1795813200000,
@@ -2748,6 +2818,56 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1795833000000,
+     "e": 1795842000000,
+     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795849200000,
+     "e": 1798786800000,
+     "t": "Christmas Village",
+     "loc": "Municipal Gardens, 2500 Grant Ave, Ogden, UT",
+     "allDay": true,
+     "desc": "Ogden City’s Christmas Village illuminates downtown Ogden with its magnificent festive lights every year from the Saturday after Thanksgiving through January 1st.\n\nLights are turned on daily at 5 p.m. They are turned off at 10 p.m. Sunday through Thursday and at midnight on Friday and Saturday. Lights are on Christmas Eve, Christmas Day, and New Years.Enjoy the stage entertainment Monday- Saturday 6-8 pm\nSanta visits the Christmas Village Monday through Friday from 6pm to 9pm, and on Saturday from 5pm to 9pm. Starting November 28th through December 23rd.\n*Opening Day, Santa will be in his cast",
+     "url": "https://www.ogdencity.com/452/Christmas-Village",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795887000000,
+     "e": 1795894200000,
+     "t": "The Polar Express",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "We’re excited to welcome back a favorite tradition—The Polar Express—now in its 12th year of bringing holiday joy to our community.\n\nCome celebrate with us in your coziest, holiday-inspired pajamas and enjoy a morning filled with holiday cheer. Whether it’s your first time or your twelfth, we can’t wait to share this special experience with you. Your presence makes the event even more meaningful.\n\nSynopsis: When a doubting young boy takes an extraordinary train ride to the North Pole he embarks on a journey of self-discovery that shows him that the wonder of life never fades for those who beli",
+     "url": "https://ogdenpet.com/event/the-polar-express-2/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795899600000,
+     "e": 1795905000000,
+     "t": "Ballet West's The Nutcracker",
+     "loc": "Val A. Browning Center, 3848 Harrison Blvd, Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Ballet West’s Nutcracker returns to Ogden for Thanksgiving weekend, America’s first and longest-running production of the holiday classic. Willam Christensen choreographed it in 1944 for San Francisco Ballet, developed in consultation with George Balanchine and Alexandra Danilova. For ten years his was the only complete Nutcracker in the country, and Ballet West has danced it every year since 1963.\n\nSATURDAY, NOVEMBER 28 | 2 PM & 7 PM",
+     "url": "https://www.onstageogden.org/show-item/nutcracker-2026/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795899600000,
+     "e": 1795908600000,
+     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1795899600000,
      "e": 1795906800000,
      "t": "Ballet West: Nutcracker - Austad",
@@ -2766,6 +2886,26 @@
      "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1795908600000,
+     "e": 1795912200000,
+     "t": "Ogden Santa Run",
+     "loc": "Downtown Ogden, 22nd Street and Washington Blvd",
+     "allDay": false,
+     "desc": "Run this awesome 5K in downtown Ogden wearing a Santa Suit. All runners get a complete Santa suit for their $35 registration fee. Enjoy milk and cookie aid stations; volunteers dress as elves!\n\nBe a part of the 7th Annual Ogden Santa Run. This timed fun run is the best way to start the Holiday Season. ALL RUNNERS MUST DRESS UP AS SANTA CLAUS!!! Along your 5K course you will have Santa's Helpers (Volunteers) dressed with green shirts and hats handing out Milk & Cookies to aid the runners.\n\nFor your registration fee you will receive all you need to run as Santa Claus (Hat, Beard, Jacket, and Pan",
+     "url": "http://www.runsanta.com",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795912200000,
+     "e": 1795915800000,
+     "t": "Holiday Electric Light Parade",
+     "loc": "*22nd Street to 28th Street along Washington*, 2500 Washington Blvd, Ogden Ut",
+     "allDay": false,
+     "desc": "Happy Holidays! Santa is planning his arrival in Ogden with the Holiday Electric Light Parade on the Saturday following Thanksgiving.\n\nThe parade begins at 5:30pm and will go south on Washington Boulevard from 22nd Street to 28th Street. At the conclusion of the parade, approximately 6:30pm, Santa will turn on the lights of Christmas Village and kick-off the month-long holiday celebration with Christmas Village on display at Municipal Gardens.\n\nFloats will be on display in front of the Amphitheater on 25th Street after the parade. Those interested in having an entry in the parade should contac",
+     "url": "https://www.ogdencity.gov/852/Holiday-Electric-Light-Parade",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1795914000000,
@@ -2798,6 +2938,26 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1795919400000,
+     "e": 1795928400000,
+     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795978800000,
+     "e": 1795984200000,
+     "t": "Ballet West's The Nutcracker",
+     "loc": "Val A. Browning Center, 3848 Harrison Blvd, Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Ballet West’s Nutcracker returns to Ogden for Thanksgiving weekend, America’s first and longest-running production of the holiday classic. Willam Christensen choreographed it in 1944 for San Francisco Ballet, developed in consultation with George Balanchine and Alexandra Danilova. For ten years his was the only complete Nutcracker in the country, and Ballet West has danced it every year since 1963.",
+     "url": "https://www.onstageogden.org/show-item/nutcracker-2026/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1795978800000,
      "e": 1795986000000,
      "t": "Ballet West: Nutcracker - Austad",
@@ -2808,6 +2968,16 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1795993200000,
+     "e": 1796002200000,
+     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1796086800000,
      "e": 1796094000000,
      "t": "Mystic Mondays: tarot readings",
@@ -2816,6 +2986,16 @@
      "desc": "$5 readings. Every Monday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1796090400000,
+     "e": 1796097600000,
+     "t": "WSU Guitar Ensembles Concert",
+     "loc": "Val A. Browning Center | Room 136, 3848 Harrison Blvd, Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Join our community guitar orchestra and ensembles for an evening of music featuring a vibrant selection of works performed on both nylon and steel-string guitars. From rich harmonies to energetic rhythms, this concert showcases the versatility and beauty of the guitar in a welcoming and engaging performance for all audiences.",
+     "url": "https://www.weber.edu/artscalendar",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796095800000,
@@ -3260,86 +3440,6 @@
     "allDay": false,
     "desc": "FREE ADMISSION!\n\nThe Ogden Home Show takes place October 23–25, 2026 at the Golden Spike Event Center (Exhibit Hall). Show hours:\n\nFriday: 12:00pm – 7:00pm\nSaturday: 10:00am – 5:00pm\nSunday: 11:00am – 4:00pm\nVisit the event site for details.",
     "url": "https://eventvesta.com/events/163718/t/tickets",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1792861200000,
-    "e": 1792872000000,
-    "t": "Hilton Garden Inn Fall Vendor Event",
-    "loc": "Hilton Garden Inn, 2271 S. Washington Blvd., Ogden, Utah 84401",
-    "allDay": false,
-    "desc": "Hilton Garden Inn Ogden Fall Vendor Event\n\nJoin us for the Hilton Garden Inn Ogden Fall Vendor Event on Saturday, October 24th from 11 AM–2 PM.\n\nShop a variety of local vendors offering handmade goods, boutique finds, beauty and wellness products and services, jewelry, gifts, and more. This free community event is a great opportunity to discover local businesses, shop for something unique, and support small businesses in Northern Utah.\n\nAdmission is free and the event is open to the public.\n\nShop • Discover • Support Local",
-    "url": "https://www.hilton.com/en/hotels/ogdwbgi-hilton-garden-inn-ogden-ut/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1792868400000,
-    "e": 1792890000000,
-    "t": "Dia de los Muertos Utah",
-    "loc": "Union Station, 2501 Wall Ave, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Día de los Muertos or Day of the Dead, is a celebration of life and death.\nJoin us at the Historic Union Station, Ogden as we celebrate our loved ones as a community in a state wide festival.\nThere will be a craft market, live music, dancers, car show, food, community altar and more.\nHosted by: Cultura & Craft\nIn partnership with: Ogden Union Station & Ogden City Arts\n(This event is free for the entire family)\nThank you RAMP for your support",
-    "url": "https://www.facebook.com/events/1671494223954930/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1792875600000,
-    "e": 1792882800000,
-    "t": "Eskape - Journey Tribute Concert",
-    "loc": "Ogden Amphitheater",
-    "allDay": false,
-    "desc": "ESKAPE – JOURNEY TRIBUTE: LIVE AT OGDEN AMPHITHEATER!\nGet tickets here: eskapejourneytribute.eventbrite.com\n**BIGGER STAGE. BIGGER SOUND. AN UNFORGETTABLE LIVE EXPERIENCE.**\n**SATURDAY • OCTOBER 24, 2026**\n**3:00 PM – 5:00 PM**\n**OGDEN AMPHITHEATER • OGDEN, UTAH**\nJourney fans, **THIS ONE'S FOR YOU!**\nESKAPE – JOURNEY TRIBUTE is stepping onto a BIG AMPHITHEATER STAGE for a special live concert celebrating the unforgettable music of JOURNEY!\nIf you've ever sung along to Journey in your car, turned up the volume when one of their classics came on, or have memories connected to their music — come",
-    "url": "https://ESKAPEJOURNEYTRIBUTE.eventbrite.com",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1792875600000,
-    "e": 1792882800000,
-    "t": "Eskape - Journey Tribute Concert",
-    "loc": "Ogden Amphitheater - 343 25th St, Ogden, Utah",
-    "allDay": false,
-    "desc": "JOURNEY TRIBUTE CONCERT - LIVE AT OGDEN AMPHITHEATER\nEskape, Utah's premier band.\nUTAH JOURNEY FANS — THIS ONE'S FOR YOU!\nGet ready for an unforgettable afternoon celebrating the legendary music of JOURNEY as ESKAPE – Journey Tribute takes its show to the Ogden Amphitheater for the band's first big performance on a major amphitheater stage!\n📅 SATURDAY • OCTOBER 24, 2026\n⏰ 3:00 PM – 5:00 PM Door opens at 2:00 PM\n📍 OGDEN AMPHITHEATER\nBring your friends. Bring your family. And get ready to sing along!\nExperience the soaring vocals, powerful guitars, unmistakable keyboards, driving drums and tim",
-    "url": "https://ESKAPEJOURNEYTRIBUTE.eventbrite.com",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1792879200000,
-    "e": 1792886400000,
-    "t": "Annual Creepy Doll Class",
-    "loc": "Local Artisan Collective, 2371 Kiesel Ave., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Annual Creepy Doll Class!\nWhat:\nJoin in the fun & create a Creepy Doll! All of our classes have sold out year after year so we added even more this year and tickets are already being sold so make sure that you get your spot before they all sell out.\n\n-All supplies are included and everyone will get their own Creepy Doll along with a variety of cool items to make each doll unique & creepy.\n\n-I will also be teaching how to create warts, wounds, wrinkly skin along with a variety of cool creepy doll techniques. Then you can have fun letting your imagination run wild as you create your own creepy d",
-    "url": "https://localartisancollective.com/events/annual-creepy-doll-class-on-saturday-october-24th-from-400-to-600/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1792886400000,
-    "e": 1792897200000,
-    "t": "Ogden Dinosaur Park Dinos in the Dark",
-    "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Wear your favorite costume and join us for all sorts of tricks and treats. This event has something for everyone from treats and crafts for the little explorers to jump scares and haunted trails for those who dare…",
-    "url": "https://dinosaurpark.org/dinos-dark/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1792891800000,
-    "e": 1792900800000,
-    "t": "Wait Until Dark at West Valley Arts",
-    "loc": "West Valley Performing Arts Center, 3333 Decker Lake Drive, West Valley City, UT 84119",
-    "allDay": false,
-    "desc": "A blind woman. A hidden secret. One apartment.\nIn 1944 Greenwich Village, Susan Hendrix finds herself caught in a web of deception that turns her home into a battleground. As danger closes in, Susan must outthink an unseen adversary in a gripping game of cat and mouse that culminates in total darkness.\nJeffrey Hatcher's acclaimed adaptation breathes new life into Frederick Knott's classic thriller, keeping audiences on the edge of their seats until the very end.",
-    "url": "https://wvcarts.ludus.com/200481571",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1792891800000,
-    "e": 1792900800000,
-    "t": "The Rocky Horror Picture Show",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Join us at the annual Rocky Horror Picture Show party & showing at Peery's Egyptian Theater!\n\nCome join us for a night of fun with food and bar at 5:30 PM (pre-party ticket required, ages 18+) followed by our annual Costume Contest at 6:50 PM and showing of the film The Rocky Horror Picture Show at 7:30 PM.\n\nAfter the wedding of mutual friends, Brad Majors (Barry Bostwick) and his fiancée Janet Weiss (Susan Sarandon) get lost driving in a heavy downpour. The first house they see belongs to majordomo Riff Raff (Richard O'Brien) and his sister, housekeeper Magenta (Patricia Quinn). Brad and Jane",
-    "url": "https://ogdenpet.com/events/category/series/rocky-horror-picture-show-2026/peerys-egyptian-theater/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4051,6 +4151,286 @@
     "desc": "Community Art Show is hosted quarterly at Ogden’s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
     "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
     "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795219200000,
+    "e": 1795233600000,
+    "t": "Acorn Antiques & Vintage Show",
+    "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
+    "allDay": false,
+    "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795228200000,
+    "e": 1795237200000,
+    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795276800000,
+    "e": 1795305600000,
+    "t": "Acorn Antiques & Vintage Show",
+    "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
+    "allDay": false,
+    "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795276800000,
+    "e": 1795305600000,
+    "t": "Hairy Horse Show",
+    "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
+    "allDay": false,
+    "desc": "Ever wondered what the \"Hairy Horse Show\" is all about? It’s a fun, family-friendly horse show for all ages! From kiddos to adults, everyone’s welcome to join the action. Classes include halter, pleasure, snaffle bit, reining, barrels, poles, and keyhole.\n\nSign-ups start at 7:30 am and go until 9 am, with the show kicking off right at 9 am!\n\nAdmission for spectators is FREE.",
+    "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/t1/1/16/1f40e.png",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795294800000,
+    "e": 1795303800000,
+    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795314600000,
+    "e": 1795323600000,
+    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795366800000,
+    "e": 1795388400000,
+    "t": "Acorn Antiques & Vintage Show",
+    "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
+    "allDay": false,
+    "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795487400000,
+    "e": 1795496400000,
+    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795552200000,
+    "e": 1795555800000,
+    "t": "Gentle Movements",
+    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795559400000,
+    "e": 1795566600000,
+    "t": "Ogden City Council Work Session",
+    "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795568400000,
+    "e": 1795579200000,
+    "t": "Ogden City Council Meeting",
+    "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795573800000,
+    "e": 1795582800000,
+    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795626000000,
+    "e": 1795662000000,
+    "t": "Christmas Tree Jubilee",
+    "loc": "Ogden Eccles Conference Center, 2415 Washington Blvd, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "The Christmas Tree Jubilee is the ultimate kick off to the Holiday Season and a treasured tradition for our community! This is the largest fundraising event for Weber School Foundation and proceeds fund class and school grants, field trips, enhanced educational programs and opportunities, special needs adaptive equipment and so much more.",
+    "url": "https://www.wsd.net/o/foundation/page/christmas-tree-jubilee",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795656600000,
+    "e": 1795660200000,
+    "t": "Yoga",
+    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795735800000,
+    "e": 1795739400000,
+    "t": "Ogden City Landmarks Commission",
+    "loc": "2549 Washington Blvd., City Council Chambers, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ogden City Landmarks Commission",
+    "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795798800000,
+    "e": 1795827600000,
+    "t": "Christmas Tree Jubilee",
+    "loc": "Ogden Eccles Conference Center, 2415 Washington Blvd, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "The Christmas Tree Jubilee is the ultimate kick off to the Holiday Season and a treasured tradition for our community! This is the largest fundraising event for Weber School Foundation and proceeds fund class and school grants, field trips, enhanced educational programs and opportunities, special needs adaptive equipment and so much more.",
+    "url": "https://www.wsd.net/o/foundation/page/christmas-tree-jubilee",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795813200000,
+    "e": 1795818600000,
+    "t": "Ballet West's The Nutcracker",
+    "loc": "Val A. Browning Center, 3848 Harrison Blvd, Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Ballet West’s Nutcracker returns to Ogden for Thanksgiving weekend, America’s first and longest-running production of the holiday classic. Willam Christensen choreographed it in 1944 for San Francisco Ballet, developed in consultation with George Balanchine and Alexandra Danilova. For ten years his was the only complete Nutcracker in the country, and Ballet West has danced it every year since 1963.\n\nFRIDAY, NOVEMBER 27 | 2 PM & 7 PM",
+    "url": "https://www.onstageogden.org/show-item/nutcracker-2026/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795833000000,
+    "e": 1795842000000,
+    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795849200000,
+    "e": 1798786800000,
+    "t": "Christmas Village",
+    "loc": "Municipal Gardens, 2500 Grant Ave, Ogden, UT",
+    "allDay": true,
+    "desc": "Ogden City’s Christmas Village illuminates downtown Ogden with its magnificent festive lights every year from the Saturday after Thanksgiving through January 1st.\n\nLights are turned on daily at 5 p.m. They are turned off at 10 p.m. Sunday through Thursday and at midnight on Friday and Saturday. Lights are on Christmas Eve, Christmas Day, and New Years.Enjoy the stage entertainment Monday- Saturday 6-8 pm\nSanta visits the Christmas Village Monday through Friday from 6pm to 9pm, and on Saturday from 5pm to 9pm. Starting November 28th through December 23rd.\n*Opening Day, Santa will be in his cast",
+    "url": "https://www.ogdencity.com/452/Christmas-Village",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795887000000,
+    "e": 1795894200000,
+    "t": "The Polar Express",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "We’re excited to welcome back a favorite tradition—The Polar Express—now in its 12th year of bringing holiday joy to our community.\n\nCome celebrate with us in your coziest, holiday-inspired pajamas and enjoy a morning filled with holiday cheer. Whether it’s your first time or your twelfth, we can’t wait to share this special experience with you. Your presence makes the event even more meaningful.\n\nSynopsis: When a doubting young boy takes an extraordinary train ride to the North Pole he embarks on a journey of self-discovery that shows him that the wonder of life never fades for those who beli",
+    "url": "https://ogdenpet.com/event/the-polar-express-2/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795899600000,
+    "e": 1795905000000,
+    "t": "Ballet West's The Nutcracker",
+    "loc": "Val A. Browning Center, 3848 Harrison Blvd, Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Ballet West’s Nutcracker returns to Ogden for Thanksgiving weekend, America’s first and longest-running production of the holiday classic. Willam Christensen choreographed it in 1944 for San Francisco Ballet, developed in consultation with George Balanchine and Alexandra Danilova. For ten years his was the only complete Nutcracker in the country, and Ballet West has danced it every year since 1963.\n\nSATURDAY, NOVEMBER 28 | 2 PM & 7 PM",
+    "url": "https://www.onstageogden.org/show-item/nutcracker-2026/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795899600000,
+    "e": 1795908600000,
+    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795908600000,
+    "e": 1795912200000,
+    "t": "Ogden Santa Run",
+    "loc": "Downtown Ogden, 22nd Street and Washington Blvd",
+    "allDay": false,
+    "desc": "Run this awesome 5K in downtown Ogden wearing a Santa Suit. All runners get a complete Santa suit for their $35 registration fee. Enjoy milk and cookie aid stations; volunteers dress as elves!\n\nBe a part of the 7th Annual Ogden Santa Run. This timed fun run is the best way to start the Holiday Season. ALL RUNNERS MUST DRESS UP AS SANTA CLAUS!!! Along your 5K course you will have Santa's Helpers (Volunteers) dressed with green shirts and hats handing out Milk & Cookies to aid the runners.\n\nFor your registration fee you will receive all you need to run as Santa Claus (Hat, Beard, Jacket, and Pan",
+    "url": "http://www.runsanta.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795912200000,
+    "e": 1795915800000,
+    "t": "Holiday Electric Light Parade",
+    "loc": "*22nd Street to 28th Street along Washington*, 2500 Washington Blvd, Ogden Ut",
+    "allDay": false,
+    "desc": "Happy Holidays! Santa is planning his arrival in Ogden with the Holiday Electric Light Parade on the Saturday following Thanksgiving.\n\nThe parade begins at 5:30pm and will go south on Washington Boulevard from 22nd Street to 28th Street. At the conclusion of the parade, approximately 6:30pm, Santa will turn on the lights of Christmas Village and kick-off the month-long holiday celebration with Christmas Village on display at Municipal Gardens.\n\nFloats will be on display in front of the Amphitheater on 25th Street after the parade. Those interested in having an entry in the parade should contac",
+    "url": "https://www.ogdencity.gov/852/Holiday-Electric-Light-Parade",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795919400000,
+    "e": 1795928400000,
+    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795978800000,
+    "e": 1795984200000,
+    "t": "Ballet West's The Nutcracker",
+    "loc": "Val A. Browning Center, 3848 Harrison Blvd, Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Ballet West’s Nutcracker returns to Ogden for Thanksgiving weekend, America’s first and longest-running production of the holiday classic. Willam Christensen choreographed it in 1944 for San Francisco Ballet, developed in consultation with George Balanchine and Alexandra Danilova. For ten years his was the only complete Nutcracker in the country, and Ballet West has danced it every year since 1963.",
+    "url": "https://www.onstageogden.org/show-item/nutcracker-2026/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795993200000,
+    "e": 1796002200000,
+    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796090400000,
+    "e": 1796097600000,
+    "t": "WSU Guitar Ensembles Concert",
+    "loc": "Val A. Browning Center | Room 136, 3848 Harrison Blvd, Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Join our community guitar orchestra and ensembles for an evening of music featuring a vibrant selection of works performed on both nylon and steel-string guitars. From rich harmonies to energetic rhythms, this concert showcases the versatility and beauty of the guitar in a welcoming and engaging performance for all audiences.",
+    "url": "https://www.weber.edu/artscalendar",
+    "src": "Ogden Area Events (Visit Ogden)"
    }
   ],
   "treehouse": [
@@ -4226,8 +4606,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4236,8 +4616,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4266,16 +4646,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794717000000,
     "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
@@ -4285,9 +4655,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "s": 1794708000000,
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4298,6 +4668,16 @@
     "s": 1794969000000,
     "e": 1794976200000,
     "t": "Jazz - Allred",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
