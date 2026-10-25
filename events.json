@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T22:37:49.534Z",
+ "updated": "2026-10-25T23:35:55.987Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -2019,8 +2019,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2029,8 +2029,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2139,8 +2139,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2149,8 +2149,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2249,8 +2249,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2259,8 +2259,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -4556,8 +4556,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4566,8 +4566,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4596,16 +4596,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794715200000,
     "t": "DPAC Scrooge - Austad",
     "loc": "",
@@ -4615,9 +4605,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "s": 1794708000000,
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4628,6 +4618,16 @@
     "s": 1794969000000,
     "e": 1794978000000,
     "t": "String Chamber Music Fall Concert - 136",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
