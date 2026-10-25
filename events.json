@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T00:50:26.966Z",
+ "updated": "2026-10-25T01:39:35.071Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -768,16 +768,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1792798200000,
-     "e": 1792803600000,
-     "t": "Steppin' The Ogden Way dance class",
-     "loc": "Marshall White Center, 222 28th Street, Ogden",
-     "allDay": false,
-     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
      "s": 1792800000000,
      "e": 1792810800000,
      "t": "Ogden Dinosaur Park Dinos in the Dark",
@@ -806,16 +796,6 @@
      "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
      "url": "",
      "src": "Weekly regular"
-    },
-    {
-     "s": 1792800900000,
-     "e": 1792805400000,
-     "t": "Candlelight: A Haunted Evening of Halloween Classics",
-     "loc": "The Monarch, 455 25th Street, Ogden, Utah 84401",
-     "allDay": false,
-     "desc": "Candlelight concerts bring the magic of a live, multi-sensory musical experience to awe-inspiring locations like never seen before in Ogden. Get your tickets now to discover music inspired by Halloween at The Monarch under the gentle glow of candlelight.\n\nSpooky season is almost here! Halloween special concerts are selling fast. Get your tickets before they fully SELL OUT!\n\nThis is a tribute concert experience. It is not affiliated with, endorsed by, or sponsored by the artist, their estate, or official representatives.\nGeneral Info\nVenue: The Monarch\nDates and times: select your dates/times d",
-     "url": "https://feverup.com/m/193195?",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1792801800000,
@@ -2369,8 +2349,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2379,8 +2359,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2489,8 +2469,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2499,8 +2479,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2599,8 +2579,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2609,8 +2589,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3470,16 +3450,6 @@
     "allDay": false,
     "desc": "Wear your favorite costume and join us for all sorts of tricks and treats. This event has something for everyone from treats and crafts for the little explorers to jump scares and haunted trails for those who dare…",
     "url": "https://dinosaurpark.org/dinos-dark/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1792800900000,
-    "e": 1792805400000,
-    "t": "Candlelight: A Haunted Evening of Halloween Classics",
-    "loc": "The Monarch, 455 25th Street, Ogden, Utah 84401",
-    "allDay": false,
-    "desc": "Candlelight concerts bring the magic of a live, multi-sensory musical experience to awe-inspiring locations like never seen before in Ogden. Get your tickets now to discover music inspired by Halloween at The Monarch under the gentle glow of candlelight.\n\nSpooky season is almost here! Halloween special concerts are selling fast. Get your tickets before they fully SELL OUT!\n\nThis is a tribute concert experience. It is not affiliated with, endorsed by, or sponsored by the artist, their estate, or official representatives.\nGeneral Info\nVenue: The Monarch\nDates and times: select your dates/times d",
-    "url": "https://feverup.com/m/193195?",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4486,8 +4456,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4496,8 +4466,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4526,16 +4496,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794715200000,
     "t": "DPAC Scrooge - Austad",
     "loc": "",
@@ -4545,9 +4505,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "s": 1794708000000,
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4558,6 +4518,16 @@
     "s": 1794969000000,
     "e": 1794978000000,
     "t": "String Chamber Music Fall Concert - 136",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
