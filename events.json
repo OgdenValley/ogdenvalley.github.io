@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T04:41:25.539Z",
+ "updated": "2026-10-25T05:39:56.453Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -774,36 +774,6 @@
      "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
      "allDay": false,
      "desc": "$10.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792805400000,
-     "e": 1792818000000,
-     "t": "Local bands at Black Lung Society",
-     "loc": "Black Lung Society, 3701 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Just 4 The Record, The Acid Blues Band, Dirty Hands. Doors 7, $15 or $10 with a food pantry donation, all ages.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792810800000,
-     "e": 1792818000000,
-     "t": "Los Perdidos with Sangre Latina (21+)",
-     "loc": "Funk n Dive Bar, 2550 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Latin and pop, $10, 21+.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792810800000,
-     "e": 1792818000000,
-     "t": "The Grateful Dudes (21+)",
-     "loc": "The Outlaw, 1254 West 2100 South, Ogden",
-     "allDay": false,
-     "desc": "Country and rock, $5, 21+.",
      "url": "",
      "src": "Down the canyon"
     },
@@ -2419,8 +2389,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2429,8 +2399,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -4316,8 +4286,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4326,8 +4296,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
