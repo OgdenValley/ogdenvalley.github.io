@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T03:42:54.959Z",
+ "updated": "2026-10-25T04:41:25.539Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -778,26 +778,6 @@
      "src": "Down the canyon"
     },
     {
-     "s": 1792803600000,
-     "e": 1792814400000,
-     "t": "Paddy Teglia (21+)",
-     "loc": "Angry Goat Pub & Kitchen, 2570 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Acoustic rock, free, 21+.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792805400000,
-     "e": 1792814400000,
-     "t": "Wait Until Dark at West Valley Arts",
-     "loc": "West Valley Performing Arts Center, 3333 Decker Lake Drive, West Valley City, UT 84119",
-     "allDay": false,
-     "desc": "A blind woman. A hidden secret. One apartment.\nIn 1944 Greenwich Village, Susan Hendrix finds herself caught in a web of deception that turns her home into a battleground. As danger closes in, Susan must outthink an unseen adversary in a gripping game of cat and mouse that culminates in total darkness.\nJeffrey Hatcher's acclaimed adaptation breathes new life into Frederick Knott's classic thriller, keeping audiences on the edge of their seats until the very end.",
-     "url": "https://wvcarts.ludus.com/200481571",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1792805400000,
      "e": 1792818000000,
      "t": "Local bands at Black Lung Society",
@@ -806,26 +786,6 @@
      "desc": "Just 4 The Record, The Acid Blues Band, Dirty Hands. Doors 7, $15 or $10 with a food pantry donation, all ages.",
      "url": "",
      "src": "Down the canyon"
-    },
-    {
-     "s": 1792807200000,
-     "e": 1792814400000,
-     "t": "Local Bands Night (21+)",
-     "loc": "Talisman Brewing, 1258 Gibson Ave., Ogden",
-     "allDay": false,
-     "desc": "Antlerbath, Ophelia Found Floating, The Fever Drift. Free, 21+.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792809000000,
-     "e": 1792813500000,
-     "t": "Candlelight: Coldplay vs. Imagine Dragons",
-     "loc": "The Monarch, 455 25th Street, Ogden, Utah 84401",
-     "allDay": false,
-     "desc": "Candlelight concerts bring the magic of a live, multi-sensory musical experience to awe-inspiring locations like never seen before in Ogden",
-     "url": "https://feverup.com/m/754548?",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1792810800000,
@@ -2229,8 +2189,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2239,8 +2199,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2349,8 +2309,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2359,8 +2319,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2459,8 +2419,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2469,8 +2429,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3330,26 +3290,6 @@
     "allDay": false,
     "desc": "FREE ADMISSION!\n\nThe Ogden Home Show takes place October 23–25, 2026 at the Golden Spike Event Center (Exhibit Hall). Show hours:\n\nFriday: 12:00pm – 7:00pm\nSaturday: 10:00am – 5:00pm\nSunday: 11:00am – 4:00pm\nVisit the event site for details.",
     "url": "https://eventvesta.com/events/163718/t/tickets",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1792805400000,
-    "e": 1792814400000,
-    "t": "Wait Until Dark at West Valley Arts",
-    "loc": "West Valley Performing Arts Center, 3333 Decker Lake Drive, West Valley City, UT 84119",
-    "allDay": false,
-    "desc": "A blind woman. A hidden secret. One apartment.\nIn 1944 Greenwich Village, Susan Hendrix finds herself caught in a web of deception that turns her home into a battleground. As danger closes in, Susan must outthink an unseen adversary in a gripping game of cat and mouse that culminates in total darkness.\nJeffrey Hatcher's acclaimed adaptation breathes new life into Frederick Knott's classic thriller, keeping audiences on the edge of their seats until the very end.",
-    "url": "https://wvcarts.ludus.com/200481571",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1792809000000,
-    "e": 1792813500000,
-    "t": "Candlelight: Coldplay vs. Imagine Dragons",
-    "loc": "The Monarch, 455 25th Street, Ogden, Utah 84401",
-    "allDay": false,
-    "desc": "Candlelight concerts bring the magic of a live, multi-sensory musical experience to awe-inspiring locations like never seen before in Ogden",
-    "url": "https://feverup.com/m/754548?",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4316,8 +4256,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4326,8 +4266,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4356,16 +4296,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794715200000,
     "t": "DPAC Scrooge - Austad",
     "loc": "",
@@ -4375,9 +4305,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "s": 1794708000000,
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4388,6 +4318,16 @@
     "s": 1794969000000,
     "e": 1794976200000,
     "t": "Jazz - Allred",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
