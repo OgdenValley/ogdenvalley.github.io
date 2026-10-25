@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-25T02:41:40.873Z",
+ "updated": "2026-10-25T03:42:54.959Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -769,41 +769,11 @@
     },
     {
      "s": 1792800000000,
-     "e": 1792810800000,
-     "t": "Ogden Dinosaur Park Dinos in the Dark",
-     "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Wear your favorite costume and join us for all sorts of tricks and treats. This event has something for everyone from treats and crafts for the little explorers to jump scares and haunted trails for those who dare…",
-     "url": "https://dinosaurpark.org/dinos-dark/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1792800000000,
      "e": 1792821600000,
      "t": "Party Night",
      "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
      "allDay": false,
      "desc": "$10.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792803600000,
-     "e": 1792810800000,
-     "t": "Peery's Egyptian Theater Presents: Labyrinth",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Please note: this event is a film; not a play.\n\nSixteen-year-old Sarah is given thirteen hours to solve a labyrinth and rescue her baby brother Toby when her wish for him to be taken away is granted by the Goblin King Jareth.",
-     "url": "https://ogdenpet.com/event/labyrinth/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1792803600000,
-     "e": 1792810800000,
-     "t": "Tai Finlayson (21+)",
-     "loc": "Side Bar at Ogden's Own Distillery, 615 W. Stockman Way, Ogden",
-     "allDay": false,
-     "desc": "Live music, $5, doors at 6, 21+.",
      "url": "",
      "src": "Down the canyon"
     },
@@ -818,26 +788,6 @@
      "src": "Down the canyon"
     },
     {
-     "s": 1792803600000,
-     "e": 1792810800000,
-     "t": "Mark Dee",
-     "loc": "Warrens Craft Burger, 258 25th Street, Ogden",
-     "allDay": false,
-     "desc": "Acoustic blues and rock, free, all ages.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792803600000,
-     "e": 1792810800000,
-     "t": "Friday Night Jazz",
-     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free show, all ages. Every Friday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
      "s": 1792805400000,
      "e": 1792814400000,
      "t": "Wait Until Dark at West Valley Arts",
@@ -849,51 +799,11 @@
     },
     {
      "s": 1792805400000,
-     "e": 1792812600000,
-     "t": "\"Bright Star\"",
-     "loc": "Terrace Plaza Playhouse, Ogden",
-     "allDay": false,
-     "desc": "Musical, $25. Through Nov. 14.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792805400000,
-     "e": 1792812600000,
-     "t": "\"Little Shop of Horrors\" (adult)",
-     "loc": "Ziegfeld Theater, Ogden",
-     "allDay": false,
-     "desc": "Musical, rated R/adult, $26.95. Through Oct. 24.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792805400000,
-     "e": 1792812600000,
-     "t": "J Law & Warhorse (21+)",
-     "loc": "The Thirsty Horse, 3611 S Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Classic rock, free, 21+.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792805400000,
      "e": 1792818000000,
      "t": "Local bands at Black Lung Society",
      "loc": "Black Lung Society, 3701 Washington Blvd., Ogden",
      "allDay": false,
      "desc": "Just 4 The Record, The Acid Blues Band, Dirty Hands. Doors 7, $15 or $10 with a food pantry donation, all ages.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792805400000,
-     "e": 1792812600000,
-     "t": "Spencer King: comedy",
-     "loc": "Wiseguys Comedy Cafe, 269 Historic 25th Street, Ogden",
-     "allDay": false,
-     "desc": "$23.",
      "url": "",
      "src": "Down the canyon"
     },
@@ -2549,8 +2459,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2559,8 +2469,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3396,6 +3306,16 @@
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1798083000000,
+     "e": 1798095600000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
     }
    ]
   }
@@ -3410,26 +3330,6 @@
     "allDay": false,
     "desc": "FREE ADMISSION!\n\nThe Ogden Home Show takes place October 23–25, 2026 at the Golden Spike Event Center (Exhibit Hall). Show hours:\n\nFriday: 12:00pm – 7:00pm\nSaturday: 10:00am – 5:00pm\nSunday: 11:00am – 4:00pm\nVisit the event site for details.",
     "url": "https://eventvesta.com/events/163718/t/tickets",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1792800000000,
-    "e": 1792810800000,
-    "t": "Ogden Dinosaur Park Dinos in the Dark",
-    "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Wear your favorite costume and join us for all sorts of tricks and treats. This event has something for everyone from treats and crafts for the little explorers to jump scares and haunted trails for those who dare…",
-    "url": "https://dinosaurpark.org/dinos-dark/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1792803600000,
-    "e": 1792810800000,
-    "t": "Peery's Egyptian Theater Presents: Labyrinth",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Please note: this event is a film; not a play.\n\nSixteen-year-old Sarah is given thirteen hours to solve a labyrinth and rescue her baby brother Toby when her wish for him to be taken away is granted by the Goblin King Jareth.",
-    "url": "https://ogdenpet.com/event/labyrinth/peerys-egyptian-theater/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4476,8 +4376,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4486,8 +4386,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
