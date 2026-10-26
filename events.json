@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T03:45:30.029Z",
+ "updated": "2026-10-26T04:44:47.096Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -739,42 +739,12 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1792890000000,
-     "e": 1792900800000,
-     "t": "Korene Greenwood (21+)",
-     "loc": "Angry Goat Pub & Kitchen, 2570 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Acoustic rock, free, 21+.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792890000000,
-     "e": 1792900800000,
-     "t": "The Suddz: hip hop",
-     "loc": "For The Love Studio, 3651 Wall Ave. (inside Newgate Mall), Ogden",
-     "allDay": false,
-     "desc": "All ages, $10 online/$12 door.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
      "s": 1792891800000,
      "e": 1792904400000,
      "t": "Local bands at Black Lung Society",
      "loc": "Black Lung Society, 3701 Washington Blvd., Ogden",
      "allDay": false,
      "desc": "Womn, Weedhemoth, Drying. Doors 7, $15 or $10 with a food pantry donation, all ages.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792895400000,
-     "e": 1792902600000,
-     "t": "Devotion Championship Wrestling (21+)",
-     "loc": "Kamikazes Ogden, 2404 Adams Ave., Ogden",
-     "allDay": false,
-     "desc": "Live pro wrestling, $10, 21+.",
      "url": "",
      "src": "Down the canyon"
     },
@@ -1930,8 +1900,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1940,8 +1910,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2050,8 +2020,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2060,8 +2030,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2160,8 +2130,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2170,8 +2140,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -4487,8 +4457,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4497,8 +4467,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4527,16 +4497,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794715200000,
     "t": "DPAC Scrooge - Austad",
     "loc": "",
@@ -4546,9 +4506,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "s": 1794708000000,
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4559,6 +4519,16 @@
     "s": 1794969000000,
     "e": 1794978000000,
     "t": "String Chamber Music Fall Concert - 136",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
