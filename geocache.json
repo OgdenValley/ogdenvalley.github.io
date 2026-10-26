@@ -274,5 +274,13 @@
  "Municipal Gardens, 2500 Grant Ave, Ogden, UT": null,
  "Downtown Ogden, 22nd Street and Washington Blvd": null,
  "*22nd Street to 28th Street along Washington*, 2500 Washington Blvd, Ogden Ut": null,
- "Val A. Browning Center | Room 136, 3848 Harrison Blvd, Ogden, UT 84403": null
+ "Val A. Browning Center | Room 136, 3848 Harrison Blvd, Ogden, UT 84403": null,
+ "Peery's Egyptian Theater": {
+  "lat": 41.22179,
+  "lng": -111.97106,
+  "county": "Weber"
+ },
+ "Feller & Wendt, 67 S. Main Street, Layton UT 84041": null,
+ "Copper Nickel Events, 2450 Grant Avenue, Ogden, UT 84401": null,
+ "Ogden Union Station - Browning Theater": null
 }
