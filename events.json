@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T05:44:49.682Z",
+ "updated": "2026-10-26T06:57:20.464Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -737,16 +737,6 @@
      "desc": "FREE ADMISSION!\n\nThe Ogden Home Show takes place October 23–25, 2026 at the Golden Spike Event Center (Exhibit Hall). Show hours:\n\nFriday: 12:00pm – 7:00pm\nSaturday: 10:00am – 5:00pm\nSunday: 11:00am – 4:00pm\nVisit the event site for details.",
      "url": "https://eventvesta.com/events/163718/t/tickets",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1792897200000,
-     "e": 1792908000000,
-     "t": "80s Ladies' Night",
-     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free for ladies 16+.",
-     "url": "",
-     "src": "Down the canyon"
     },
     {
      "s": 1792940400000,
