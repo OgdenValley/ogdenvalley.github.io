@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T21:42:42.198Z",
+ "updated": "2026-10-26T22:43:40.169Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -991,16 +991,6 @@
      "s": 1793320200000,
      "e": 1793327400000,
      "t": "Halloween Storytelling Spooktacular",
-     "loc": "Peery's Egyptian Theatre, 2415 Washington Blvd, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Weber State University Storytelling Festival presents a Halloween Spooktacular, featuring Paul Strickland, Sam Payne, and Mo Reynolds, October 29th, at Peery's Egyptian Theater. This special event starts at 6:30 p.m. with scary stories followed by scarier stories starting at 7:30 p.m. Admission is free, no tickets required, first come, first seated. Encore performance (same storytellers, new stories) on October 30th at the WSU Davis Campus. For more information, go to weber.edu/storytelling.",
-     "url": "https://www.weber.edu/storytelling",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793320200000,
-     "e": 1793327400000,
-     "t": "Halloween Storytelling Spooktacular",
      "loc": "Peery's Egyptian Theater",
      "allDay": false,
      "desc": "Mark your calendars and join us for ✨spooktacular storytelling✨ starting at 6:30 p.m. on Thursday, October 29 at Peery’s Egyptian Theater!\nThe Weber State Storytelling Festival is proud to present its first Spooktacular, a night filled with stories for everyone! With two free sessions featuring light frights to chilling chatter, let the magic of storytelling wish you a Happy Halloween. 👻🎃\n6:30-7:20 p.m. - Spooky Stories, great for young children and families\n7:30-8:20 p.m. - Spookier Stories, perfect for older kids, teens, and adults\nENCORE PERFORMANCE (SAME TIME, SAME TELLERS, NEW STORIES) ",
@@ -1186,16 +1176,6 @@
      "desc": "Free. Every Saturday.",
      "url": "",
      "src": "Weekly regular"
-    },
-    {
-     "s": 1793498400000,
-     "e": 1793512800000,
-     "t": "Halloween Burlesque",
-     "loc": "2450 Grant Ave, Ogden, UT, United States, 84401",
-     "allDay": false,
-     "desc": "Halloween Burlesque at Copper Nickel is a bold, unforgettable Halloween night featuring a captivating burlesque show, after-party, cocktails, and VIP experiences in the heart of Ogden.",
-     "url": "https://www.coppernickel.com/tickets/halloween-burlesque-2026",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1793498400000,
@@ -1811,7 +1791,7 @@
      "s": 1794535200000,
      "e": 1794540600000,
      "t": "Winter's Tales: An Evening of Shakespeare, Music, Food, and Merriment!",
-     "loc": "Ogden Union Station - Browning Theater",
+     "loc": "Ogden Union Station - Browning Theater, 2501 Wall Ave, Ogden, UT 84401",
      "allDay": false,
      "desc": "What exactly is WINTER’S TALES? ❄️\n\nImagine a winter night. A gathering of strangers. Food, drink, music, and stories waiting to be told.\n\nWINTER’S TALES is an original play with music, written by Jennifer Riley, weaving Shakespeare’s plays and sonnets together with winter-themed songs—some from Shakespeare’s works, others contemporary—to create one new, interconnected story.\n\nAs travelers gather to escape the cold, their stories begin to unfold. They become Shakespeare’s lovers, fools, dreamers, and kings, revealing something of themselves along the way.\n\nAnd this time, you’re part of the gat",
      "url": "https://www.ogdenshakesfest.org/events/",
@@ -1901,7 +1881,7 @@
      "s": 1794621600000,
      "e": 1794627000000,
      "t": "Winter's Tales: An Evening of Shakespeare, Music, Food, and Merriment!",
-     "loc": "Ogden Union Station - Browning Theater",
+     "loc": "Ogden Union Station - Browning Theater, 2501 Wall Ave, Ogden, UT 84401",
      "allDay": false,
      "desc": "What exactly is WINTER’S TALES? ❄️\n\nImagine a winter night. A gathering of strangers. Food, drink, music, and stories waiting to be told.\n\nWINTER’S TALES is an original play with music, written by Jennifer Riley, weaving Shakespeare’s plays and sonnets together with winter-themed songs—some from Shakespeare’s works, others contemporary—to create one new, interconnected story.\n\nAs travelers gather to escape the cold, their stories begin to unfold. They become Shakespeare’s lovers, fools, dreamers, and kings, revealing something of themselves along the way.\n\nAnd this time, you’re part of the gat",
      "url": "https://www.ogdenshakesfest.org/events/",
@@ -1909,8 +1889,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1919,8 +1899,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2031,7 +2011,7 @@
      "s": 1794708000000,
      "e": 1794713400000,
      "t": "Winter's Tales: An Evening of Shakespeare, Music, Food, and Merriment!",
-     "loc": "Ogden Union Station - Browning Theater",
+     "loc": "Ogden Union Station - Browning Theater, 2501 Wall Ave, Ogden, UT 84401",
      "allDay": false,
      "desc": "What exactly is WINTER’S TALES? ❄️\n\nImagine a winter night. A gathering of strangers. Food, drink, music, and stories waiting to be told.\n\nWINTER’S TALES is an original play with music, written by Jennifer Riley, weaving Shakespeare’s plays and sonnets together with winter-themed songs—some from Shakespeare’s works, others contemporary—to create one new, interconnected story.\n\nAs travelers gather to escape the cold, their stories begin to unfold. They become Shakespeare’s lovers, fools, dreamers, and kings, revealing something of themselves along the way.\n\nAnd this time, you’re part of the gat",
      "url": "https://www.ogdenshakesfest.org/events/",
@@ -2039,8 +2019,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2049,8 +2029,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2149,8 +2129,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2159,8 +2139,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2709,6 +2689,16 @@
     },
     {
      "s": 1795899600000,
+     "e": 1795908600000,
+     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795899600000,
      "e": 1795906800000,
      "t": "Ballet West: Nutcracker - Austad",
      "loc": "",
@@ -2726,6 +2716,16 @@
      "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1795908600000,
+     "e": 1795912200000,
+     "t": "Ogden Santa Run",
+     "loc": "Downtown Ogden, 22nd Street and Washington Blvd",
+     "allDay": false,
+     "desc": "Run this awesome 5K in downtown Ogden wearing a Santa Suit. All runners get a complete Santa suit for their $35 registration fee. Enjoy milk and cookie aid stations; volunteers dress as elves!\n\nBe a part of the 7th Annual Ogden Santa Run. This timed fun run is the best way to start the Holiday Season. ALL RUNNERS MUST DRESS UP AS SANTA CLAUS!!! Along your 5K course you will have Santa's Helpers (Volunteers) dressed with green shirts and hats handing out Milk & Cookies to aid the runners.\n\nFor your registration fee you will receive all you need to run as Santa Claus (Hat, Beard, Jacket, and Pan",
+     "url": "http://www.runsanta.com",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1795914000000,
@@ -3336,16 +3336,6 @@
     "s": 1793320200000,
     "e": 1793327400000,
     "t": "Halloween Storytelling Spooktacular",
-    "loc": "Peery's Egyptian Theatre, 2415 Washington Blvd, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Weber State University Storytelling Festival presents a Halloween Spooktacular, featuring Paul Strickland, Sam Payne, and Mo Reynolds, October 29th, at Peery's Egyptian Theater. This special event starts at 6:30 p.m. with scary stories followed by scarier stories starting at 7:30 p.m. Admission is free, no tickets required, first come, first seated. Encore performance (same storytellers, new stories) on October 30th at the WSU Davis Campus. For more information, go to weber.edu/storytelling.",
-    "url": "https://www.weber.edu/storytelling",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793320200000,
-    "e": 1793327400000,
-    "t": "Halloween Storytelling Spooktacular",
     "loc": "Peery's Egyptian Theater",
     "allDay": false,
     "desc": "Mark your calendars and join us for ✨spooktacular storytelling✨ starting at 6:30 p.m. on Thursday, October 29 at Peery’s Egyptian Theater!\nThe Weber State Storytelling Festival is proud to present its first Spooktacular, a night filled with stories for everyone! With two free sessions featuring light frights to chilling chatter, let the magic of storytelling wish you a Happy Halloween. 👻🎃\n6:30-7:20 p.m. - Spooky Stories, great for young children and families\n7:30-8:20 p.m. - Spookier Stories, perfect for older kids, teens, and adults\nENCORE PERFORMANCE (SAME TIME, SAME TELLERS, NEW STORIES) ",
@@ -3440,16 +3430,6 @@
     "allDay": false,
     "desc": "The Ogden Halloween Bar Crawl runs Saturday, October 31, 2026, 4PM - 10PM, across 6 bars in Ogden, UT. The route takes in 25th St, 25th Street, Washington Blvd and 24th St.\nCheck in at Kokomo Club (4PM - 6PM) to swap your ticket for a lanyard, badge and drink vouchers. After that there is no set route — the bars are yours to hit in any order, with crawler drink specials at every stop. The L.A.B. closes out the night.\nOgden has crawled with us every year since 2021.",
     "url": "https://crawlwith.us/ogden/halloween/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793498400000,
-    "e": 1793512800000,
-    "t": "Halloween Burlesque",
-    "loc": "2450 Grant Ave, Ogden, UT, United States, 84401",
-    "allDay": false,
-    "desc": "Halloween Burlesque at Copper Nickel is a bold, unforgettable Halloween night featuring a captivating burlesque show, after-party, cocktails, and VIP experiences in the heart of Ogden.",
-    "url": "https://www.coppernickel.com/tickets/halloween-burlesque-2026",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -3816,7 +3796,7 @@
     "s": 1794535200000,
     "e": 1794540600000,
     "t": "Winter's Tales: An Evening of Shakespeare, Music, Food, and Merriment!",
-    "loc": "Ogden Union Station - Browning Theater",
+    "loc": "Ogden Union Station - Browning Theater, 2501 Wall Ave, Ogden, UT 84401",
     "allDay": false,
     "desc": "What exactly is WINTER’S TALES? ❄️\n\nImagine a winter night. A gathering of strangers. Food, drink, music, and stories waiting to be told.\n\nWINTER’S TALES is an original play with music, written by Jennifer Riley, weaving Shakespeare’s plays and sonnets together with winter-themed songs—some from Shakespeare’s works, others contemporary—to create one new, interconnected story.\n\nAs travelers gather to escape the cold, their stories begin to unfold. They become Shakespeare’s lovers, fools, dreamers, and kings, revealing something of themselves along the way.\n\nAnd this time, you’re part of the gat",
     "url": "https://www.ogdenshakesfest.org/events/",
@@ -3856,7 +3836,7 @@
     "s": 1794621600000,
     "e": 1794627000000,
     "t": "Winter's Tales: An Evening of Shakespeare, Music, Food, and Merriment!",
-    "loc": "Ogden Union Station - Browning Theater",
+    "loc": "Ogden Union Station - Browning Theater, 2501 Wall Ave, Ogden, UT 84401",
     "allDay": false,
     "desc": "What exactly is WINTER’S TALES? ❄️\n\nImagine a winter night. A gathering of strangers. Food, drink, music, and stories waiting to be told.\n\nWINTER’S TALES is an original play with music, written by Jennifer Riley, weaving Shakespeare’s plays and sonnets together with winter-themed songs—some from Shakespeare’s works, others contemporary—to create one new, interconnected story.\n\nAs travelers gather to escape the cold, their stories begin to unfold. They become Shakespeare’s lovers, fools, dreamers, and kings, revealing something of themselves along the way.\n\nAnd this time, you’re part of the gat",
     "url": "https://www.ogdenshakesfest.org/events/",
@@ -3906,7 +3886,7 @@
     "s": 1794708000000,
     "e": 1794713400000,
     "t": "Winter's Tales: An Evening of Shakespeare, Music, Food, and Merriment!",
-    "loc": "Ogden Union Station - Browning Theater",
+    "loc": "Ogden Union Station - Browning Theater, 2501 Wall Ave, Ogden, UT 84401",
     "allDay": false,
     "desc": "What exactly is WINTER’S TALES? ❄️\n\nImagine a winter night. A gathering of strangers. Food, drink, music, and stories waiting to be told.\n\nWINTER’S TALES is an original play with music, written by Jennifer Riley, weaving Shakespeare’s plays and sonnets together with winter-themed songs—some from Shakespeare’s works, others contemporary—to create one new, interconnected story.\n\nAs travelers gather to escape the cold, their stories begin to unfold. They become Shakespeare’s lovers, fools, dreamers, and kings, revealing something of themselves along the way.\n\nAnd this time, you’re part of the gat",
     "url": "https://www.ogdenshakesfest.org/events/",
@@ -4231,6 +4211,26 @@
     "desc": "Ballet West’s Nutcracker returns to Ogden for Thanksgiving weekend, America’s first and longest-running production of the holiday classic. Willam Christensen choreographed it in 1944 for San Francisco Ballet, developed in consultation with George Balanchine and Alexandra Danilova. For ten years his was the only complete Nutcracker in the country, and Ballet West has danced it every year since 1963.\n\nSATURDAY, NOVEMBER 28 | 2 PM & 7 PM",
     "url": "https://www.onstageogden.org/show-item/nutcracker-2026/",
     "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795899600000,
+    "e": 1795908600000,
+    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795908600000,
+    "e": 1795912200000,
+    "t": "Ogden Santa Run",
+    "loc": "Downtown Ogden, 22nd Street and Washington Blvd",
+    "allDay": false,
+    "desc": "Run this awesome 5K in downtown Ogden wearing a Santa Suit. All runners get a complete Santa suit for their $35 registration fee. Enjoy milk and cookie aid stations; volunteers dress as elves!\n\nBe a part of the 7th Annual Ogden Santa Run. This timed fun run is the best way to start the Holiday Season. ALL RUNNERS MUST DRESS UP AS SANTA CLAUS!!! Along your 5K course you will have Santa's Helpers (Volunteers) dressed with green shirts and hats handing out Milk & Cookies to aid the runners.\n\nFor your registration fee you will receive all you need to run as Santa Claus (Hat, Beard, Jacket, and Pan",
+    "url": "http://www.runsanta.com",
+    "src": "Ogden Area Events (Visit Ogden)"
    }
   ],
   "treehouse": [
@@ -4406,8 +4406,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4416,8 +4416,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4446,16 +4446,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794715200000,
     "t": "DPAC Scrooge - Austad",
     "loc": "",
@@ -4465,9 +4455,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "s": 1794708000000,
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4478,6 +4468,16 @@
     "s": 1794969000000,
     "e": 1794976200000,
     "t": "Jazz - Allred",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
