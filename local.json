@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T08:53:54.549Z",
+ "updated": "2026-10-26T15:13:13.509Z",
  "meetings": [
   {
    "body": "Ogden Valley City Council",
@@ -67,7 +67,7 @@
     "date": "2026-10-25"
    },
    "water": {
-    "value": 0.1,
+    "value": 0,
     "date": "2026-10-25"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
@@ -91,7 +91,7 @@
  "pineview": {
   "acreFeet": 2204.65,
   "percent": 2,
-  "date": "2026-10-22T07:00:00+00:00",
+  "date": "2026-10-24T07:00:00+00:00",
   "source": "U.S. Bureau of Reclamation",
   "link": "https://data.usbr.gov/location/437"
  },
