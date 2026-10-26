@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T15:13:13.509Z",
+ "updated": "2026-10-26T16:11:44.053Z",
  "meetings": [
   {
    "body": "Ogden Valley City Council",
@@ -77,11 +77,11 @@
    "name": "Monte Cristo",
    "elev": 8930,
    "depth": {
-    "value": 1,
+    "value": 0,
     "date": "2026-10-25"
    },
    "water": {
-    "value": 0.2,
+    "value": 0,
     "date": "2026-10-25"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
