@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T19:49:02.792Z",
+ "updated": "2026-10-26T20:44:50.227Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -418,6 +418,16 @@
      "url": "https://www.meetup.com/webercountyoutdoors/"
     },
     {
+     "s": 1798228800000,
+     "e": 1798236000000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1798318800000,
      "e": 1798333200000,
      "t": "Cinema Saturday Feature Films",
@@ -722,6 +732,15 @@
      "allDay": false,
      "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
      "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1808596800000,
+     "e": 1808611200000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
     }
    ]
   },
@@ -737,26 +756,6 @@
      "desc": "FREE ADMISSION!\n\nThe Ogden Home Show takes place October 23–25, 2026 at the Golden Spike Event Center (Exhibit Hall). Show hours:\n\nFriday: 12:00pm – 7:00pm\nSaturday: 10:00am – 5:00pm\nSunday: 11:00am – 4:00pm\nVisit the event site for details.",
      "url": "https://eventvesta.com/events/163718/t/tickets",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1792940400000,
-     "e": 1792958400000,
-     "t": "Paws & Pistons Car Show",
-     "loc": "George E. Whalen Park, Roy",
-     "allDay": false,
-     "desc": "Fundraiser for Utah Paws & Tails, $0-$10.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792951200000,
-     "e": 1792958400000,
-     "t": "Live Jazz: Jack Durbano Trio",
-     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Live music and brunch, free show, all ages.",
-     "url": "",
-     "src": "Down the canyon"
     },
     {
      "s": 1792963800000,
@@ -1860,8 +1859,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1870,8 +1869,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1980,8 +1979,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1990,8 +1989,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2090,8 +2089,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2100,8 +2099,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -4417,8 +4416,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4427,8 +4426,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4457,16 +4456,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794715200000,
     "t": "DPAC Scrooge - Austad",
     "loc": "",
@@ -4476,9 +4465,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "s": 1794708000000,
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4489,6 +4478,16 @@
     "s": 1794969000000,
     "e": 1794978000000,
     "t": "String Chamber Music Fall Concert - 136",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
