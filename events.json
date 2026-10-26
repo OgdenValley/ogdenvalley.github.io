@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-26T01:53:37.736Z",
+ "updated": "2026-10-26T02:45:01.497Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -747,26 +747,6 @@
      "desc": "FREE ADMISSION!\n\nThe Ogden Home Show takes place October 23–25, 2026 at the Golden Spike Event Center (Exhibit Hall). Show hours:\n\nFriday: 12:00pm – 7:00pm\nSaturday: 10:00am – 5:00pm\nSunday: 11:00am – 4:00pm\nVisit the event site for details.",
      "url": "https://eventvesta.com/events/163718/t/tickets",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1792886400000,
-     "e": 1792893600000,
-     "t": "Live music at Two Bit Bistro",
-     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free show, all ages.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1792886400000,
-     "e": 1792893600000,
-     "t": "Free live music & ice cream at Z's Sweets",
-     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
-     "url": "",
-     "src": "Weekly regular"
     },
     {
      "s": 1792890000000,
@@ -2010,8 +1990,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2020,8 +2000,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2130,8 +2110,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2140,8 +2120,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2240,8 +2220,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2250,8 +2230,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -4557,8 +4537,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4567,8 +4547,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4597,16 +4577,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794717000000,
     "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
@@ -4616,9 +4586,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "s": 1794708000000,
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4629,6 +4599,16 @@
     "s": 1794969000000,
     "e": 1794976200000,
     "t": "Jazz - Allred",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
