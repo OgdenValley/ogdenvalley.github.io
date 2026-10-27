@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Time Train · Ogden Valley Info & Events</title>
+<meta name="description" content="Ride the Time Train through Ogden Valley history: old photos, then and now, for kids and grown-ups.">
+<meta property="og:title" content="Time Train · Ogden Valley Info & Events">
+<meta property="og:description" content="Ride the Time Train through Ogden Valley history: old photos, then and now, for kids and grown-ups.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ogdenvalleyevent.com/time-train.html">
+<meta property="og:image" content="https://ogdenvalleyevent.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ogdenvalleyevent.com/time-train.html">
+<link rel="icon" href="logo-10-years-32.png">
+<link rel="apple-touch-icon" href="logo-10-years-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&display=swap">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="depot.css">
+<script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
+</head>
+<body class="depot-theme kids">
+<a class="sr" href="#main">Skip to content</a>
+<div class="alert-bar" id="alert-bar" hidden></div>
+<div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
+  <strong>Canyon check</strong>
+  <a href="https://ogdenvalley.udot.utah.gov/road-information/" target="_blank" rel="noopener">Ogden Valley roads &amp; cameras (UDOT)</a>
+  <a href="https://udottraffic.utah.gov/map" target="_blank" rel="noopener" data-track="open snowplow map">🚜 Snowplows (UDOT)</a>
+  <a href="live.html">Live view</a>
+  <a href="safety.html">Alerts &amp; fires</a>
+  <a href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Eden weather</a>
+</div></div>
+<header class="site-head"><div class="container">
+  <a class="brand" href="index.html"><img data-logo="180" src="logo-10-years-180.png" alt="" width="52" height="52"><span><b>Ogden Valley</b><small>Information &amp; Events</small></span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="main" id="nav" aria-label="Main"></nav>
+</div></header>
+<main id="main">
+<section class="hero"><div class="container"><div><p class="eyebrow">Utah Depot · Activity car</p><h1>🚂 The Time Train</h1><p class="lead" style="margin-top:12px">All aboard! Ride through Ogden Valley history one stop at a time. Tap <b>Next stop</b> to keep going, and watch the Valley change.</p></div></div></section>
+<section><div class="container tt">
+  <div class="tt-track" aria-hidden="true"><div class="tt-rail"></div><div class="tt-engine" id="tt-engine">🚂</div></div>
+  <ol class="tt-dots" id="tt-dots" aria-label="Stops"></ol>
+  <article class="card tt-stop" id="tt-stop" aria-live="polite"></article>
+  <div class="tt-nav"><button class="btn" type="button" id="tt-prev">◀ Back</button><button class="btn blue" type="button" id="tt-next">Next stop ▶</button></div>
+  <p class="fine">Every fact on the Time Train comes from the archive that keeps the photo. Some old photos are still waiting on permission to share, so for now you'll see a drawing and the words. New stops get added as we find more history.</p>
+  <p><a href="kids.html">◀ Back to the Utah Depot</a></p>
+</div></section>
+<style>
+.tt{display:grid;gap:16px;max-width:820px}
+.tt-track{position:relative;height:46px}
+.tt-rail{position:absolute;left:0;right:0;top:34px;height:6px;border-radius:3px;background:repeating-linear-gradient(90deg,var(--ink) 0 10px,transparent 10px 18px);opacity:.45}
+.tt-engine{position:absolute;top:0;font-size:34px;transition:left .6s ease;transform:scaleX(-1)}
+.tt-dots{display:flex;justify-content:space-between;list-style:none;margin:0;padding:0;gap:4px;flex-wrap:wrap}
+.tt-dots button{font:inherit;font-weight:700;font-size:15px;border:2px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:6px 10px;cursor:pointer}
+.tt-dots button[aria-current="true"]{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.tt-stop{display:grid;gap:12px}
+.tt-year{font-family:Montserrat,sans-serif;font-weight:800;font-size:44px;line-height:1;color:var(--accent)}
+.tt-stop h2{margin:0;font-size:28px}
+.tt-stop p.kid{font-size:20px;line-height:1.5;margin:0}
+.tt-pic{width:100%;border-radius:12px;display:block}
+.tt-draw{display:grid;place-items:center;text-align:center;gap:6px;background:var(--soft);border:2px dashed var(--line);border-radius:12px;padding:28px 12px;font-size:64px}
+.tt-draw span{font-size:16px;color:var(--muted)}
+.tt-nav{display:flex;justify-content:space-between;gap:12px}
+.tt-nav .btn{font-size:18px;padding:12px 18px}
+.tt-src{font-size:14px;color:var(--muted)}
+.tt-tog{justify-self:start}
+</style>
+<script>
+(function(){
+const STOPS=[
+ {year:"1915",title:"Water from deep underground",kid:"Ogden City drilled wells near Huntsville. The water came shooting up out of the ground all by itself! Wells like that are called artesian wells.",pic:"time-train-1920-artesian-wells.jpg",alt:"Old photo of water spouting from round concrete wells in a grassy field near Huntsville, about 1920",src:"Photo: Fred Pack, about 1920. J. Willard Marriott Library, University of Utah."},
+ {year:"1920s",title:"Picnics at Artesian Park",kid:"Families came out to the wells for picnics. Some came on the old Utah-Idaho Central train cars! Choo choo!",draw:"🧺🚃",src:"From the Utah State Historical Society photo \"Artesian Wells, Ogden Valley\" (1920). Photo coming soon."},
+ {year:"1929",title:"A ski jump in the canyon",kid:"Skiers built a ski jump at Becker Hill. Today, that spot is where Pineview Dam stands.",draw:"⛷️🏔️",src:"From the Becker Hill photo, summer 1929 (J. Willard Marriott Library). Photo coming soon."},
+ {year:"1935",title:"Building a dam",kid:"Workers poured concrete, lots and lots of it, to build Pineview Dam.",draw:"👷🏗️",src:"From the Utah State Historical Society photo \"Pineview Dam\" (1935). Photo coming soon."},
+ {year:"1937",title:"The dam is done!",kid:"Utah's governor, Henry Blood, came for the dam's dedication. Water slowly filled the valley behind it, right over Artesian Park.",draw:"🎉🌊",src:"From the Salt Lake Tribune photo of the 1937 Pineview Dam dedication (Utah State Historical Society). Photo coming soon."},
+ {year:"1970s",title:"Splash! Skiing into a pool",kid:"At Nordic Valley, skiers flew off a water ramp and flipped into a pool to practice tricks. The archive says it was the biggest in North America!",draw:"🤸💦",src:"From the \"Water ramp, Nordic Valley\" photo (1973-1980, J. Willard Marriott Library). Photo coming soon."},
+ {year:"Today",title:"Pineview Reservoir",kid:"Now there's a big lake where Artesian Park used to be. People boat, swim and fish here, and the old wells are under the water.",pic:"valley-pineview-sunrise-tom-doxey.jpg",alt:"Sunrise over Pineview Reservoir",src:"Photo: Tom Doxey.",then:0}
+];
+let i=0,thenView=false;const $=id=>document.getElementById(id);
+function el(t,a,c){const e=document.createElement(t);for(const k in (a||{}))e.setAttribute(k,a[k]);(c||[]).forEach(x=>e.append(x));return e}
+function txt(t,cls,s){const e=el(t,cls?{class:cls}:{});e.textContent=s;return e}
+const dots=$("tt-dots");STOPS.forEach((s,n)=>{const b=el("button",{type:"button"});b.textContent=s.year;b.addEventListener("click",()=>go(n));dots.append(el("li",{},[b]))});
+function show(){const s=STOPS[i],box=$("tt-stop");thenView=thenView&&s.then!==undefined;const v=thenView?STOPS[s.then]:s;
+ const pic=v.pic?el("img",{class:"tt-pic",src:v.pic,alt:v.alt||v.title,loading:"lazy"}):el("div",{class:"tt-draw","aria-hidden":"true"},[document.createTextNode(v.draw),txt("span","","Old photo coming soon")]);
+ const kids=[txt("div","tt-year",s.year),txt("h2","",s.title),pic,txt("p","kid",s.kid)];
+ if(s.then!==undefined){const t=el("button",{type:"button",class:"btn tt-tog"});t.textContent=thenView?"Show today":"Show then ("+STOPS[s.then].year+")";t.addEventListener("click",()=>{thenView=!thenView;show()});kids.push(t)}
+ kids.push(txt("p","tt-src",v.src));box.replaceChildren(...kids);
+ [...dots.querySelectorAll("button")].forEach((b,n)=>b.setAttribute("aria-current",n===i?"true":"false"));
+ $("tt-engine").style.left="calc("+(i/(STOPS.length-1))*100+"% - "+(i/(STOPS.length-1))*40+"px)";
+ $("tt-prev").disabled=i===0;$("tt-next").textContent=i===STOPS.length-1?"Ride again 🔁":"Next stop ▶"}
+function go(n){i=(n+STOPS.length)%STOPS.length;thenView=false;show()}
+$("tt-prev").addEventListener("click",()=>go(i-1));$("tt-next").addEventListener("click",()=>go(i===STOPS.length-1?0:i+1));
+show();
+})();
+</script>
+</main>
+<footer class="site-foot"></footer>
+<script src="layout.js"></script>
+<script src="config.js"></script>
+<script src="places.js"></script>
+<script src="site.js"></script>
+</body>
+</html>
