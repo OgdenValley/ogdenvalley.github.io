@@ -236,8 +236,11 @@ function listing(box, items, kind, R){
 /* ---------- Local home businesses: any <div data-homebiz> shows 3 home-based listings, a different mix each visit ---------- */
 (function(){ const box = document.querySelector("[data-homebiz]"); if (!box) return;
   const pool = [].concat((P.services || []).map(p => [p, "services"]), (P.beauty || []).filter(p => p.home).map(p => [p, "beauty"]), (P.businesses || []).filter(p => p.home).map(p => [p, "businesses"]));
-  if (!pool.length) return;
-  const pick = pool.map(x => [Math.random(), x]).sort((a, b) => a[0] - b[0]).slice(0, 3).map(x => x[1]);
+  /* Rule (Shauna, Oct. 2026): only businesses that listed or updated with us AND sent photos show in this spot. No photo = not shown here (still on the full listings pages). */
+  const ok = x => x[0].photos && x[0].photos.length && (x[0].added || x[0].fromForm);
+  const pool2 = pool.filter(ok);
+  if (!pool2.length) return;
+  const pick = pool2.map(x => [Math.random(), x]).sort((a, b) => a[0] - b[0]).slice(0, 3).map(x => x[1]);
   const page = {services: "services.html", beauty: "beauty.html", businesses: "businesses.html"};
   box.append(el("div", {class: "section-head"}, [el("div", {}, [el("p", {class: "eyebrow", text: "Shop local"}), el("h2", {text: "Local home businesses"})]), el("a", {class: "btn blue", href: "services.html", text: "See them all"})]),
     el("div", {class: "grid"}, pick.map(([p, k]) => el("article", {class: "card"}, [
@@ -246,7 +249,7 @@ function listing(box, items, kind, R){
       el("h3", {text: p.name}),
       el("div", {class: "meta", text: [p.type, p.town || p.serves].filter(Boolean).join(" · ")}),
       el("a", {href: page[k] + "#" + slug(p.name), text: "See their listing"}) ]))),
-    el("p", {class: "fine", text: "Small businesses run from home or that come to you. Getting listed is free."})); })();
+    el("p", {class: "fine", text: "Small businesses run from home or that come to you. Getting listed is free. Only businesses that send us their details and photos are highlighted here, so send yours to be featured."})); })();
 
 /* ---------- "Post your event, it's free" band: any <div data-postevent> ---------- */
 (function(){ const boxes = document.querySelectorAll("[data-postevent]"); if (!boxes.length) return;
