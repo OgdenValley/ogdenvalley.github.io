@@ -209,7 +209,8 @@ window.OVE = {
     { image: "valley-snowy-peaks-clouds-seth-miller.jpg", by: "Seth Miller", place: "Ogden Valley", date: "", caption: "Fresh snow on the peaks as the clouds roll over the green Valley" },
     { image: "valley-snowy-peaks-spring-seth-miller.jpg", by: "Seth Miller", place: "Ogden Valley", date: "", caption: "Snow-dusted peaks above spring-green fields and homes" },
     { image: "valley-dusk-from-above-seth-miller.jpg", by: "Seth Miller", place: "Ogden Valley", date: "", caption: "Pink and purple dusk over the Valley from high above" },
-    { image: "valley-balloon-fest-eden-park-seth-miller.jpg", by: "Seth Miller", place: "Eden", date: "", caption: "Hot air balloons glow at night at the balloon fest at Eden Park" }
+    { image: "valley-balloon-fest-eden-park-seth-miller.jpg", by: "Seth Miller", place: "Eden", date: "", caption: "Hot air balloons glow at night at the balloon fest at Eden Park" },
+    { image: "photo-2026-10-carla-r-icebox-canyon.jpg", by: "Carla R", place: "", date: "2026-10", caption: "Sunset at Icebox Canyon (October photo contest, entry #1)" }
   ],
 
   /* --- Then & Now ------------------------------------------------------
