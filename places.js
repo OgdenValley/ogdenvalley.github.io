@@ -58,7 +58,7 @@ window.OVE_PLACES = {
        "Sit-down dinner",
        "Drinks & apres"
      ],
-     "note": "May be closed: its online ordering page said \"temporarily closed, reopen date pending\" when we checked in Oct. 2026. Call before you go.",
+     "note": "Reported closed: a reader told us in Oct. 2026 that it has closed and the building now houses Powder Mountain's offices. Its online ordering page also said \"temporarily closed, reopen date pending\" when we checked in Oct. 2026.",
      "factsChecked": "2026-10-11",
      "town": "Eden",
      "type": "Restaurant & bar",
@@ -1656,7 +1656,9 @@ window.OVE_PLACES = {
      "phone": "(385) 244-0144",
      "link": "http://www.newworlddistillery.com/",
      "address": "4795 2600 N, Eden, UT 84310",
-     "checked": "2026-10-07"
+     "hours": "Tue-Sat 11 AM-5 PM, Sun noon-5 PM",
+     "note": "Hours sent in by the distillery, Oct. 2026.",
+     "checked": "2026-10-27"
    },
    {
      "name": "Nordic Valley",
@@ -3518,7 +3520,8 @@ window.OVE_PLACES = {
    "type": "Burgers and bistro food (pirate-ship themed)",
    "blurb": "Pirate-ship themed truck serving burgers like a pineapple teriyaki burger, fries and Monte Cristos, listed as appearing at Huntsville's 4th of July.",
    "link": "https://www.instagram.com/wagonscally/",
-   "checked": "2026-10-07"
+   "note": "Reported closed: a reader told us in Oct. 2026 that it has closed permanently. Check their Instagram before you go.",
+   "checked": "2026-10-27"
   },
   {
    "name": "Snowbasin Blues & Brews (weekend food trucks)",
