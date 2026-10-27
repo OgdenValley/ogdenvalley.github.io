@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T20:44:36.949Z",
+ "updated": "2026-10-27T21:43:54.611Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -1839,8 +1839,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1849,8 +1849,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1969,8 +1969,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1979,8 +1979,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2948,6 +2948,46 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1797004800000,
+     "e": 1797010200000,
+     "t": "Fall Graduation - Austad",
+     "loc": "",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1797013800000,
+     "e": 1797019200000,
+     "t": "Fall Graduation - Austad",
+     "loc": "",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1797022800000,
+     "e": 1797028200000,
+     "t": "Fall Graduation - Austad",
+     "loc": "",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1797031800000,
+     "e": 1797037200000,
+     "t": "Fall Graduation - Austad",
+     "loc": "",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
+    },
+    {
      "s": 1797035400000,
      "e": 1797040800000,
      "t": "Steppin' The Ogden Way dance class",
@@ -3006,6 +3046,16 @@
      "desc": "Free. Every Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1797129000000,
+     "e": 1797136200000,
+     "t": "ODT Christmas Spectacular - Austad",
+     "loc": "",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1797296400000,
@@ -3090,6 +3140,16 @@
     {
      "s": 1797645600000,
      "e": 1797652800000,
+     "t": "Brendan Child Concert - Austad",
+     "loc": "",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1797645600000,
+     "e": 1797652800000,
      "t": "Friday Night Jazz",
      "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
      "allDay": false,
@@ -3108,6 +3168,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1797717600000,
+     "e": 1797724800000,
+     "t": "Brendan Child Concert - Austad",
+     "loc": "",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
+    },
+    {
      "s": 1797728400000,
      "e": 1797735600000,
      "t": "Free live music & ice cream at Z's Sweets",
@@ -3116,6 +3186,16 @@
      "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1797732000000,
+     "e": 1797739200000,
+     "t": "Brendan Child Concert - Austad",
+     "loc": "",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1797732000000,
@@ -3204,6 +3284,16 @@
      "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
      "allDay": false,
      "desc": "Free show, all ages. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1798318800000,
+     "e": 1798326000000,
+     "t": "Craft n Cry",
+     "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
+     "allDay": false,
+     "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
      "url": "",
      "src": "Weekly regular"
     }
@@ -4366,8 +4456,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4376,8 +4466,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4406,8 +4496,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4416,8 +4506,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4655,9 +4745,89 @@
     "src": "Treehouse Children's Museum"
    },
    {
+    "s": 1797004800000,
+    "e": 1797010200000,
+    "t": "Fall Graduation - Austad",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1797013800000,
+    "e": 1797019200000,
+    "t": "Fall Graduation - Austad",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1797022800000,
+    "e": 1797028200000,
+    "t": "Fall Graduation - Austad",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1797031800000,
+    "e": 1797037200000,
+    "t": "Fall Graduation - Austad",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1797129000000,
+    "e": 1797136200000,
+    "t": "ODT Christmas Spectacular - Austad",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
     "s": 1797561000000,
     "e": 1797567600000,
     "t": "Utah Symphony: Holiday Pops Extravaganza - Austad",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1797645600000,
+    "e": 1797652800000,
+    "t": "Brendan Child Concert - Austad",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1797717600000,
+    "e": 1797724800000,
+    "t": "Brendan Child Concert - Austad",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1797732000000,
+    "e": 1797739200000,
+    "t": "Brendan Child Concert - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
