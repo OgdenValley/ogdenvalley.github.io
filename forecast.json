@@ -1,18 +1,18 @@
 {
- "updated": "2026-10-26T18:56:52.377Z",
+ "updated": "2026-10-27T00:57:20.760Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
    "date": "2026-10-26",
    "label": "Mon",
    "md": "Oct 26",
-   "high": 61,
+   "high": null,
    "low": 34,
-   "pop": 16,
-   "short": "Mostly Sunny",
-   "both": "Mostly Sunny / Chance Showers And Thunderstorms then Slight Chance Light Rain",
+   "pop": 47,
+   "short": "Chance Showers And Thunderstorms then Slight Chance Light Rain",
+   "both": "Chance Showers And Thunderstorms then Slight Chance Light Rain",
    "snow": false,
-   "wind": "7 mph"
+   "wind": "0 to 9 mph"
   },
   {
    "date": "2026-10-27",
@@ -87,13 +87,13 @@
    "wind": "2 mph"
   }
  ],
- "today": "This Afternoon: Mostly sunny. High near 61, with temperatures falling to around 59 in the afternoon. South southwest wind around 7 mph.",
+ "today": "Tonight: A chance of showers and thunderstorms between 9pm and midnight, then a slight chance of rain between midnight and 3am. Mostly cloudy. Low around 34, with temperatures rising to around 37 overnight. North northwest wind 0 to 9 mph. Chance of precipitation is 50%.",
  "valleySnowDays": [
   "Sun"
  ],
  "snowLevelFt": 6000,
  "snowInches48": 0,
- "forecastIssued": "2026-10-26T18:37:04+00:00",
+ "forecastIssued": "2026-10-26T23:31:44+00:00",
  "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
  "source": "National Weather Service Salt Lake City",
  "status": {
