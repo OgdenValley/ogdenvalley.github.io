@@ -4022,5 +4022,50 @@ window.OVE_PLACES = {
    "added": "2026-10-19",
    "fromForm": true
   }
+ ],
+ "businesses": [
+  {
+   "name": "Powder pups",
+   "type": "Shop or service",
+   "town": "Eden",
+   "blurb": "Award Winning Dog Grooming. All breeds welcome.",
+   "address": "5460 E 2200 N Eden UT 84310",
+   "phone": "385-481-5933",
+   "link": "https://Powderpups.com",
+   "hours": "9am-5pm Monday-Friday",
+   "note": "Known for: Award winning Dog Grooming",
+   "badges": [
+    "Family owned",
+    "Insured",
+    "Licensed",
+    "Free estimates"
+   ],
+   "photos": [
+    "https://drive.google.com/thumbnail?id=1keWh9azDeoLdkNMm5hy73BJRTzy8HcFw&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1y2vs3zZb47ScKR8Rju44kk6ceNznH_yE&sz=w1000"
+   ],
+   "added": "2026-10-27",
+   "fromForm": true
+  },
+  {
+   "name": "Wild poppy floral co",
+   "type": "Local business",
+   "town": "Eden",
+   "blurb": "Local florist specializing in weddings, special events, everyday flowers and custom designs.",
+   "address": "5460 e 2200 n Eden Utah 84310",
+   "phone": "8014363794",
+   "hours": "Monday-Friday 11-5",
+   "note": "Known for: Local delivery, weddings, special events, everyday flowers.",
+   "badges": [
+    "Woman owned"
+   ],
+   "photos": [
+    "https://drive.google.com/thumbnail?id=1D2YkYo2yKUy-BVDVByC2Pj4aZhCM855n&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1L0PjS3lrS4U8R_NaC7OVSXpqfpQcvIGE&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1CB7GnFaLwmv0n-YjNjes1AlLDVdoq9fl&sz=w1000"
+   ],
+   "added": "2026-10-24",
+   "fromForm": true
+  }
  ]
 });
