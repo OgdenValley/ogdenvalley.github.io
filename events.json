@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T01:50:37.374Z",
+ "updated": "2026-10-27T02:42:20.154Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -727,16 +727,6 @@
   "weber": {
    "name": "Weber County",
    "events": [
-    {
-     "s": 1792972800000,
-     "e": 1792980000000,
-     "t": "Adam Kozlewski",
-     "loc": "Slackwater Pizzeria, 209 24th St., Ogden",
-     "allDay": false,
-     "desc": "Acoustic rock, free.",
-     "url": "",
-     "src": "Down the canyon"
-    },
     {
      "s": 1792978200000,
      "e": 1792987200000,
@@ -3214,6 +3204,16 @@
      "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
      "allDay": false,
      "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1798250400000,
+     "e": 1798257600000,
+     "t": "Friday Night Jazz",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free show, all ages. Every Friday.",
      "url": "",
      "src": "Weekly regular"
     }
