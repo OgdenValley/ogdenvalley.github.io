@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T09:49:20.508Z",
+ "updated": "2026-10-27T10:47:30.067Z",
  "source": "Utah Department of Transportation (UDOT Traffic)",
  "link": "https://udottraffic.utah.gov/",
  "status": {
@@ -165,24 +165,24 @@
   },
   {
    "name": "I-84 @ Weber Canyon",
-   "air": 41.68,
-   "surface": 45.9,
+   "air": 40.75,
+   "surface": 45.3,
    "status": "Dry",
-   "gust": 9.64,
+   "gust": 10.3,
    "lat": 41.1379,
    "lng": -111.8868,
-   "updated": 1793094000000,
+   "updated": 1793097000000,
    "ice": false
   },
   {
    "name": "North Ogden Divide",
-   "air": 36.61,
-   "surface": 36.4,
+   "air": 34.56,
+   "surface": 34.3,
    "status": "",
-   "gust": 4.6,
+   "gust": 6.14,
    "lat": 41.3205,
    "lng": -111.8993,
-   "updated": 1793091600000,
+   "updated": 1793097000000,
    "ice": false
   },
   {
@@ -198,24 +198,24 @@
   },
   {
    "name": "SR-167 @ Trappers Loop",
-   "air": 38.9,
-   "surface": 41.7,
+   "air": 37.5,
+   "surface": 40.8,
    "status": "Dry",
-   "gust": 6.58,
+   "gust": 4.6,
    "lat": 41.2058,
    "lng": -111.8166,
-   "updated": 1793094000000,
+   "updated": 1793097000000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 14 Pineview Dam",
-   "air": 42.63,
-   "surface": 43.3,
+   "air": 40.09,
+   "surface": 41.4,
    "status": "Wet",
-   "gust": 1.32,
+   "gust": 2.41,
    "lat": 41.2537,
    "lng": -111.8413,
-   "updated": 1793091600000,
+   "updated": 1793097000000,
    "ice": false
   },
   {
@@ -231,24 +231,24 @@
   },
   {
    "name": "SR-39 @ MP 46 Monte Cristo",
-   "air": 27.19,
+   "air": 26.83,
    "surface": null,
    "status": "",
-   "gust": 19.38,
+   "gust": 19,
    "lat": 41.4446,
    "lng": -111.5056,
-   "updated": 1793094000000,
+   "updated": 1793097000000,
    "ice": false
   },
   {
    "name": "US-89 @ MP 406 Weber River",
-   "air": 46.46,
-   "surface": 49.8,
+   "air": 44.08,
+   "surface": 48.2,
    "status": "Dry",
    "gust": 4.16,
    "lat": 41.1351,
    "lng": -111.91205,
-   "updated": 1793091600000,
+   "updated": 1793097000000,
    "ice": false
   }
  ],
@@ -257,9 +257,9 @@
    "name": "I-84 Rattlesnake Pass",
    "road": "I-84 Idaho Stateline to Blue Creek Summit",
    "elev": 5315,
-   "surface": 38,
+   "surface": 39,
    "status": "Damp",
-   "air": 36,
+   "air": 39,
    "closures": [],
    "seasonal": ""
   },
@@ -267,7 +267,7 @@
    "name": "I-84 Whites Valley",
    "road": "I-84 Blue Creek Summit to Tremonton",
    "elev": 5295,
-   "surface": 39,
+   "surface": 40,
    "status": "Dry",
    "air": 32,
    "closures": [],
@@ -307,9 +307,9 @@
    "name": "SR-226 Snowbasin",
    "road": "SR-226 to Snowbasin",
    "elev": 6600,
-   "surface": 42,
+   "surface": 41,
    "status": "Dry",
-   "air": 39,
+   "air": 38,
    "closures": [],
    "seasonal": ""
   },
@@ -317,9 +317,9 @@
    "name": "SR-167 Trappers Loop Summit",
    "road": "SR-167 Trappers Loop I-84 to Huntsville",
    "elev": 6050,
-   "surface": 42,
+   "surface": 41,
    "status": "Dry",
-   "air": 39,
+   "air": 38,
    "closures": [],
    "seasonal": ""
   }
