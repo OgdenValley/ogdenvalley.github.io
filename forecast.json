@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T18:53:00.584Z",
+ "updated": "2026-10-27T19:47:56.400Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
@@ -8,21 +8,21 @@
    "md": "Oct 27",
    "high": 57,
    "low": 34,
-   "pop": 52,
-   "short": "Sunny",
-   "both": "Sunny / Chance Showers And Thunderstorms then Chance Light Rain",
+   "pop": 48,
+   "short": "Mostly Sunny",
+   "both": "Mostly Sunny / Scattered Showers And Thunderstorms",
    "snow": false,
-   "wind": "1 to 6 mph"
+   "wind": "6 mph"
   },
   {
    "date": "2026-10-28",
    "label": "Wed",
    "md": "Oct 28",
-   "high": 54,
+   "high": 56,
    "low": 32,
-   "pop": 3,
+   "pop": 0,
    "short": "Sunny",
-   "both": "Sunny / Mostly Clear",
+   "both": "Sunny / Partly Cloudy",
    "snow": false,
    "wind": "0 to 3 mph"
   },
@@ -30,35 +30,35 @@
    "date": "2026-10-29",
    "label": "Thu",
    "md": "Oct 29",
-   "high": 60,
+   "high": 61,
    "low": 36,
-   "pop": 3,
+   "pop": 2,
    "short": "Mostly Sunny",
    "both": "Mostly Sunny / Mostly Cloudy",
    "snow": false,
-   "wind": "3 mph"
+   "wind": "0 to 3 mph"
   },
   {
    "date": "2026-10-30",
    "label": "Fri",
    "md": "Oct 30",
-   "high": 58,
-   "low": 37,
-   "pop": 75,
-   "short": "Mostly Cloudy then Chance Showers And Thunderstorms",
-   "both": "Mostly Cloudy then Chance Showers And Thunderstorms / Showers And Thunderstorms Likely then Light Rain",
+   "high": 61,
+   "low": 38,
+   "pop": 55,
+   "short": "Partly Sunny then Isolated Rain Showers",
+   "both": "Partly Sunny then Isolated Rain Showers / Showers And Thunderstorms Likely",
    "snow": false,
-   "wind": "3 mph"
+   "wind": "5 mph"
   },
   {
    "date": "2026-10-31",
    "label": "Sat",
    "md": "Oct 31",
-   "high": 55,
-   "low": 35,
-   "pop": 83,
-   "short": "Light Rain then Showers And Thunderstorms",
-   "both": "Light Rain then Showers And Thunderstorms / Showers And Thunderstorms",
+   "high": 58,
+   "low": 37,
+   "pop": 91,
+   "short": "Light Rain Likely then Showers And Thunderstorms Likely",
+   "both": "Light Rain Likely then Showers And Thunderstorms Likely / Chance Showers And Thunderstorms then Rain",
    "snow": false,
    "wind": "2 mph"
   },
@@ -66,35 +66,35 @@
    "date": "2026-11-01",
    "label": "Sun",
    "md": "Nov 1",
-   "high": 49,
-   "low": 29,
-   "pop": 83,
-   "short": "Showers And Thunderstorms Likely",
-   "both": "Showers And Thunderstorms Likely / Chance Light Rain then Chance Rain And Snow",
+   "high": 51,
+   "low": 31,
+   "pop": 91,
+   "short": "Rain",
+   "both": "Rain / Rain And Snow Likely",
    "snow": true,
-   "wind": "0 to 3 mph"
+   "wind": "3 mph"
   },
   {
    "date": "2026-11-02",
    "label": "Mon",
    "md": "Nov 2",
    "high": 48,
-   "low": 28,
-   "pop": 28,
+   "low": 27,
+   "pop": 26,
    "short": "Chance Rain And Snow",
    "both": "Chance Rain And Snow / Partly Cloudy",
    "snow": true,
    "wind": "2 mph"
   }
  ],
- "today": "Today: Sunny. High near 57, with temperatures falling to around 55 in the afternoon. South southeast wind 1 to 6 mph.",
+ "today": "This Afternoon: Mostly sunny. High near 57, with temperatures falling to around 55 in the afternoon. West southwest wind around 6 mph.",
  "valleySnowDays": [
   "Sun",
   "Mon"
  ],
  "snowLevelFt": 6700,
  "snowInches48": 0,
- "forecastIssued": "2026-10-27T06:31:28+00:00",
+ "forecastIssued": "2026-10-27T18:31:38+00:00",
  "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
  "source": "National Weather Service Salt Lake City",
  "status": {
