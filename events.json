@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T04:42:41.021Z",
+ "updated": "2026-10-27T05:43:09.790Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -727,16 +727,6 @@
   "weber": {
    "name": "Weber County",
    "events": [
-    {
-     "s": 1792978200000,
-     "e": 1792990800000,
-     "t": "Halloween Fest at Black Lung Society",
-     "loc": "Black Lung Society, 3701 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Cool Hat, Still Awake, Erinne Jones, Melopanic. Doors 7, $15 or $10 with a food pantry donation, all ages.",
-     "url": "",
-     "src": "Down the canyon"
-    },
     {
      "s": 1793059200000,
      "e": 1793066400000,
@@ -2079,8 +2069,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2089,8 +2079,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -4426,8 +4416,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4436,8 +4426,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
