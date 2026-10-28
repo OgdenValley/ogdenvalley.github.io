@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27T23:40:42.889Z",
+ "updated": "2026-10-28T01:07:34.526Z",
  "meetings": [
   {
    "body": "Ogden Valley Planning Commission",
@@ -94,7 +94,7 @@
   "Huntsville Town Council": "ok",
   "Weber County Commission": "ok",
   "Huntsville Town website": "ok",
-  "snow": "failed",
+  "snow": "ok",
   "pineview": "ok"
  }
 }
