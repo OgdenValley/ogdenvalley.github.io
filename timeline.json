@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T21:49:43.833Z",
+ "updated": "2026-10-28T22:48:44.694Z",
  "items": [
   {
    "t": 1793224183832,
@@ -34,13 +34,6 @@
    "src": "UDOT",
    "text": "Cleared: SR 39. Crash, EB SR-39 at MP 8.4 (Valley Dr, Ogden). Closed. SR-39 EB: Closed. SR-39 WB: Closed.",
    "kind": "clear",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1793141052094,
-   "src": "UDOT alert",
-   "text": "Crash: NB I-15 at MP 342 (N of 31st St, Weber County) left lanes blocked. Expect heavy delays.",
-   "kind": "road",
    "link": "https://udottraffic.utah.gov/"
   }
  ],
