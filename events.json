@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T21:49:35.964Z",
+ "updated": "2026-10-28T23:45:23.202Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -747,16 +747,6 @@
   "weber": {
    "name": "Weber County",
    "events": [
-    {
-     "s": 1793136600000,
-     "e": 1793143800000,
-     "t": "Ogden City Council Work Session",
-     "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
     {
      "s": 1793143800000,
      "e": 1793151000000,
@@ -3272,16 +3262,6 @@
  },
  "sources": {
   "ogdenarea": [
-   {
-    "s": 1793136600000,
-    "e": 1793143800000,
-    "t": "Ogden City Council Work Session",
-    "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
    {
     "s": 1793145600000,
     "e": 1793156400000,
