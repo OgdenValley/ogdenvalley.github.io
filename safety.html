@@ -35,6 +35,29 @@
 @media (max-width:560px){.tl-i{grid-template-columns:78px 1fr}}
 main .container>*{min-width:0}.tl-i>*{min-width:0;overflow-wrap:anywhere}#who-to-call{overflow-wrap:anywhere}.rd-tbl{display:block;max-width:100%;overflow-x:auto}main .container div{min-width:0}@media (max-width:560px){.rd-tbl{font-size:15px}.rd-tbl th,.rd-tbl td{padding:6px 5px}}
 </style>
+<style>
+.br-card{grid-template-columns:300px 1fr;gap:20px;align-items:center;border-left:6px solid #2E7D32}
+.br-card[data-s=closed]{border-left-color:#B3261E}.br-card[data-s=accident]{border-left-color:#C77700}.br-card[data-s=snow]{border-left-color:#1F4E80}.br-card[data-s=slow]{border-left-color:#C9A227}
+.br-pic img{width:300px;height:300px;border-radius:14px;display:block;object-fit:cover}
+.br-say{font-size:19px;margin:0 0 8px}
+.br-list{margin:0 0 8px;padding-left:20px;display:grid;gap:6px;font-size:17px}
+@media(max-width:700px){.br-card{grid-template-columns:1fr}.br-pic img{width:100%;height:auto;max-width:420px}}
+.b8-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px}
+@media(max-width:700px){.b8-grid{grid-template-columns:1fr}}
+.b8-ben img{width:100%;max-width:300px;height:auto;border-radius:14px}
+.b8-ballcard{justify-items:center;text-align:center}
+.b8-call{font-size:20px;font-weight:700;margin:0}
+.b8-ball{width:240px;height:240px;border-radius:50%;border:0;cursor:pointer;background:radial-gradient(circle at 35% 30%,#555 0,#1a1a1a 45%,#000 75%);box-shadow:0 10px 24px rgba(0,0,0,.35);display:grid;place-items:center;padding:0}
+.b8-win{width:120px;height:120px;border-radius:50%;background:radial-gradient(circle,#13284d 0,#0a1530 70%);border:4px solid #2a3c66;display:grid;place-items:center;overflow:hidden}
+#b8-ans{color:#9fd0ff;font:700 13px/1.25 var(--display,sans-serif);text-transform:uppercase;padding:10px;transition:opacity .4s}
+.b8-shaking{animation:b8s .7s}
+@keyframes b8s{0%,100%{transform:translate(0,0) rotate(0)}20%{transform:translate(-14px,4px) rotate(-10deg)}40%{transform:translate(12px,-6px) rotate(8deg)}60%{transform:translate(-10px,6px) rotate(-6deg)}80%{transform:translate(8px,-2px) rotate(4deg)}}
+.b8-score{gap:10px}
+.b8-board{display:flex;gap:24px;align-items:center}
+.b8-board div{display:grid;justify-items:center}.b8-board b{font:800 40px/1 var(--display,sans-serif)}.b8-board span{color:var(--muted)}
+.b8-vs{color:var(--muted);font-weight:700}
+@media (prefers-reduced-motion:reduce){.b8-shaking{animation:none}}
+</style>
 </head>
 <body>
 <a class="sr" href="#main">Skip to content</a>
@@ -55,6 +78,16 @@ main .container>*{min-width:0}.tl-i>*{min-width:0;overflow-wrap:anywhere}#who-to
 <main id="main">
 <section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley · Weber County</p><h1>Road &amp; weather</h1><p class="lead" style="margin-top:12px">Valley forecast, canyon roads, weather and fire alerts in one place, updated every hour. Every item shows where it came from. In an emergency, call 911.</p><div class="btns"><a class="btn light" data-track="share safety to facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fogdenvalleyevent.com%2Fsafety.html" target="_blank" rel="noopener">Share this page on Facebook</a></div></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
 <section><div class="container" style="display:grid;gap:28px">
+  <div id="ben-road" class="card br-card" aria-live="polite">
+    <div class="br-pic"><img id="br-img" src="ben-road-clear.jpg" alt="Ben Lomoose, our road reporter moose, in a safety vest with a BEN name tag" width="300" height="300"></div>
+    <div class="br-txt">
+      <p class="eyebrow" style="margin:0">Ben's Road Report · updates every hour</p>
+      <h2 id="br-head" style="margin:2px 0 6px">Checking the roads…</h2>
+      <p id="br-say" class="br-say"></p>
+      <ul id="br-list" class="br-list"></ul>
+      <p class="meta" style="font-size:15px;margin:0">Ben reads the UDOT road data below so you don't have to. Details and the map are under <a href="#timeline">Last 24 hours</a> and the road section. Emergency: call 911.</p>
+    </div>
+  </div>
   <div id="who-to-call" class="card" style="border-left:6px solid #B3261E">
     <p class="eyebrow" style="margin:0">Save these numbers</p>
     <h2 style="margin:2px 0 6px">Who to call</h2>
@@ -113,6 +146,27 @@ main .container>*{min-width:0}.tl-i>*{min-width:0;overflow-wrap:anywhere}#who-to
   <div id="air"><div class="section-head"><div><p class="eyebrow">Utah Division of Air Quality</p><h2>Air quality</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://air.utah.gov/forecast.php?id=hv" target="_blank" rel="noopener">Full forecast</a></div>
     <div id="aq"></div></div>
   <div id="briefings"><div class="section-head"><div><p class="eyebrow">From Ogden Valley Info &amp; Events</p><h2>Weather briefing &amp; updates</h2></div></div><div id="brief-list" style="display:grid;gap:12px"></div></div>
+  <div id="ben-vs-8"><div class="section-head"><div><p class="eyebrow">Just for fun</p><h2>Anchorman Ben vs. the Magic 8 Ball</h2></div></div>
+    <div class="b8-grid">
+      <article class="card b8-ben">
+        <img src="ben-weather-desk.jpg" alt="Ben Lomoose at the Weather Desk" width="300" height="300">
+        <h3 style="margin:0">Ben says</h3>
+        <p id="b8-bensays" class="b8-call">…</p>
+        <p class="meta" style="font-size:14px;margin:0">Ben reads the National Weather Service forecast. Like a pro.</p>
+      </article>
+      <article class="card b8-ballcard">
+        <button id="b8-ball" class="b8-ball" type="button" aria-label="Shake the Magic 8 Ball"><span class="b8-win"><span id="b8-ans">Ask me about the weather</span></span></button>
+        <button id="b8-shake" class="btn primary" type="button" data-track="shake magic 8 ball">Shake the 8 Ball</button>
+        <p class="meta" style="font-size:14px;margin:0">The 8 Ball reads… nothing. It just shakes.</p>
+      </article>
+    </div>
+    <div class="card b8-score">
+      <h3 style="margin:0">This week's question</h3>
+      <p id="b8-q" class="b8-call" style="margin:0"></p>
+      <div class="b8-board"><div><b id="b8-bs">0</b><span>Ben</span></div><div class="b8-vs">vs.</div><div><b id="b8-xs">0</b><span>8 Ball</span></div></div>
+      <ul id="b8-past" class="br-list"></ul>
+    </div>
+  </div>
   <div id="your-weather"><div class="section-head"><div><p class="eyebrow">From neighbors · approved before posting</p><h2>Show us your weather</h2></div><div class="btns" style="margin:0"><a class="btn primary" data-form="report" data-track="send weather photo" href="#">Send your weather photo</a></div></div>
     <p style="margin:0 0 12px">Snow piling up in Eden? A rainbow over Pineview? Send a photo with the <b>Weather photo</b> choice. Tell us the town or a landmark and when you took it. We look at every photo before it goes up, and photos stay here for 7 days. Great shots can be picked for the <a href="photo-contest.html">monthly photo contest</a>.</p>
     <div id="yw"></div>
@@ -253,6 +307,50 @@ else{const k=[];
  else k.push(el("p",{class:"meta",style:"font-size:16px",text:"No current forecast from the state for Weber County. They forecast mostly during winter inversions and smoke season."}));
  k.push(el("p",{class:"meta",style:"font-size:14px"},[document.createTextNode("Source: "),el("a",{href:A.link,target:"_blank",rel:"noopener",text:A.source}),document.createTextNode(". The Weber County monitor is in Harrisville; air in the Valley is often cleaner, above the winter inversion.")]));
  aq.replaceChildren(...k);}
+})();
+</script>
+<script>
+/* Ben's Road Report: picks Ben's pose from the hourly UDOT data. Order: closed, accident, snow/ice, slow/road work, all clear. */
+(async function(){const S=window.OVE_SITE;if(!S)return;
+const [R,T,F]=await Promise.all([S.loadJSON("roads.json"),S.loadJSON("timeline.json"),S.loadJSON("forecast.json")]);
+const card=document.getElementById("ben-road"),img=document.getElementById("br-img"),head=document.getElementById("br-head"),say=document.getElementById("br-say"),list=document.getElementById("br-list");
+if(!R||!R.updated){head.textContent="Ben is getting his vest on";say.textContent="Live road data is loading. Use the UDOT links below for now.";return;}
+const now=Date.now(),ev=(R.events||[]),started=ev.filter(e=>!e.reported||e.reported<=now);
+const closed=started.filter(e=>e.full),crash=started.filter(e=>/accident|crash|incident/i.test(e.type+" "+e.sub)),work=started.filter(e=>/roadwork|construction|maintenance/i.test(e.type)&&!e.full);
+const ice=(R.stations||[]).filter(s=>s.ice),slick=(R.conditions||[]).filter(c=>/snow|ice|slush|slick/i.test((c.cond||"")+" "+(c.weather||"")));
+const wint=((T&&T.items)||[]).filter(i=>i.kind==="winter"&&i.t>now-3*36e5);const today=F&&F.days&&F.days[0],snowToday=today&&today.snow;
+const short=t=>{t=String(t||"").replace(/!+\s*traffic alerts?\s*!+/ig,"").replace(/\s+/g," ").trim();return t.length>150?t.slice(0,147)+"…":t};
+const li=t=>{const x=document.createElement("li");x.textContent=t;return x};
+let s="clear",H,Sy,items=[];
+if(closed.length){s="closed";H="Road closed";Sy="Ben's holding the stop sign. Find another way or wait it out.";items=closed.map(e=>"Closed: "+(e.loc||e.road));}
+else if(crash.length){s="accident";H="Crash on the road";Sy="Slow down, move over and give the crews room.";items=crash.map(e=>"Crash: "+(e.loc||e.road)+(e.desc?". "+short(e.desc):""));}
+else if(ice.length||slick.length||wint.length||snowToday){s="snow";H="Snow and ice out there";Sy="Take it slow, leave extra room, and have chains or good tires for the canyons.";
+ items=[...ice.map(x=>"Icy pavement: "+x.name+(x.surface!=null?" ("+Math.round(x.surface)+"°F)":"")),...slick.map(c=>c.road+": "+[c.cond,c.weather].filter(Boolean).join(", ")),...wint.map(i=>i.text)];if(snowToday&&!items.length)items=["Snow in today's forecast: "+(today.both||today.short)];}
+else if(work.length){s="slow";H="Road work: go slow";Sy="Roads are open, but expect crews, lane closures and short waits.";items=work.map(e=>(e.road?e.road+": ":"")+short(e.loc)+(e.desc?". "+short(e.desc):""));}
+else{H="All clear";Sy="No crashes, closures or ice reported on the Valley's roads and canyons. Drive safe and watch for deer.";}
+card.dataset.s=s;img.src="ben-road-"+s+".jpg";img.alt={clear:"Ben Lomoose giving a thumbs up by a dry canyon road",closed:"Ben Lomoose holding a stop sign at a snowy road closure",accident:"Ben Lomoose waving traffic around a minor crash",snow:"Ben Lomoose in a scarf holding tire chains by a snowplow",slow:"Ben Lomoose in a hard hat holding a SLOW sign at road work"}[s]+", wearing his BEN name tag";
+head.textContent=H;say.textContent=Sy;list.replaceChildren(...items.slice(0,5).map(li));
+const others=[closed.length&&s!=="closed"?closed.length+" closure":"",crash.length&&s!=="accident"?crash.length+" crash":"",work.length&&s!=="slow"?work.length+" road work":""].filter(Boolean);
+if(others.length)list.append(li("Also: "+others.join(" · ")+". See below."));
+if(!items.length&&!others.length)list.hidden=true;
+})();
+/* Anchorman Ben vs. the Magic 8 Ball */
+(async function(){const S=window.OVE_SITE;
+const A=["Signs point to snow.","Ask again after Pineview freezes.","Outlook sunny. Bring a coat anyway.","It's Utah. Wait 10 minutes.","Without a doubt… maybe.","Reply hazy. Blame the inversion.","Yes, but only on the Divide.","Don't count on it. Count on wind.","It is certain: Ben will be wrong.","Cannot predict now. A moose is in the way.","Very doubtful. Wear layers.","Most likely a powder day.","My sources say: ask the cows.","Better not tell you now. Check the canyon cam."];
+const ans=document.getElementById("b8-ans"),ball=document.getElementById("b8-ball");let last=-1;
+function shake(){ball.classList.remove("b8-shaking");void ball.offsetWidth;ball.classList.add("b8-shaking");ans.style.opacity=0;let i;do{i=Math.floor(Math.random()*A.length)}while(i===last);last=i;setTimeout(()=>{ans.textContent=A[i];ans.style.opacity=1},650)}
+ball.onclick=shake;document.getElementById("b8-shake").onclick=shake;
+const [F,B]=S?await Promise.all([S.loadJSON("forecast.json"),S.loadJSON("ball8.json")]):[null,null];
+const bs=document.getElementById("b8-bensays");
+if(F&&F.days&&F.days[1]){const d=F.days[1];bs.textContent="Tomorrow: "+d.short+", high "+d.high+"°, low "+d.low+"°."+(d.snow?" Snow in the Valley!":"")}else bs.textContent="Ben is at the forecast office. Check back soon.";
+const rounds=(B&&B.rounds)||[],q=document.getElementById("b8-q"),past=document.getElementById("b8-past"),day=86400000,t=Date.now();
+let ben=0,ball8=0;rounds.forEach(r=>{if(r.benRight)ben++;if(r.ballRight)ball8++});
+document.getElementById("b8-bs").textContent=ben;document.getElementById("b8-xs").textContent=ball8;
+const cur=rounds.find(r=>{const s=new Date(r.week+"T00:00:00").getTime();return t>=s&&t<s+7*day});
+if(cur)q.textContent=cur.question+" Ben: "+cur.ben+" · 8 Ball: “"+cur.ball+"”";
+else q.textContent=(B&&B.next)||"First round starts Monday, November 2.";
+const done=rounds.filter(r=>r.result).slice(-4).reverse();
+past.replaceChildren(...done.map(r=>{const x=document.createElement("li");x.textContent="Week of "+r.weekLabel+": "+r.result;return x}));if(!done.length)past.hidden=true;
 })();
 </script>
 </body>
