@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T02:54:39.698Z",
+ "updated": "2026-10-28T03:53:56.895Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -737,26 +737,6 @@
   "weber": {
    "name": "Weber County",
    "events": [
-    {
-     "s": 1793062800000,
-     "e": 1793070000000,
-     "t": "Bingo, steak dinner night (21+)",
-     "loc": "Harp and Hound, 2550 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "21+.",
-     "url": "",
-     "src": "Down the canyon"
-    },
-    {
-     "s": 1793064600000,
-     "e": 1793071800000,
-     "t": "\"Bright Star\"",
-     "loc": "Terrace Plaza Playhouse, Ogden",
-     "allDay": false,
-     "desc": "Musical, $25. Through Nov. 14.",
-     "url": "",
-     "src": "Down the canyon"
-    },
     {
      "s": 1793068200000,
      "e": 1793080800000,
