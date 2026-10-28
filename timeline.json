@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-27T22:44:12.094Z",
+ "updated": "2026-10-28T02:02:07.064Z",
  "items": [
+  {
+   "t": 1793152927063,
+   "src": "UDOT",
+   "text": "Cleared: SR 39. Crash, EB SR-39 at MP 8.4 (Valley Dr, Ogden). Closed. SR-39 EB: Closed. SR-39 WB: Closed.",
+   "kind": "clear",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1793141052094,
    "src": "UDOT alert",
@@ -54,13 +61,10 @@
  "seen": {
   "ev": {
    "10148": "I-84|!! Traffic Alerts !! (updated 10/14) Westbound single lane closure | Tue (10/6) - Sun (10/18) | Day & Night Westbound single lane closure | Mon (10/19) - Tue, (11/3) | Day & Night Delays may be significant, 10-15min or more during peak periods Note: Wide load restricted above 11 ft Westbound single lane closure | Sprin",
-   "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at",
-   "37600": "SR 39|Crash, EB SR-39 at MP 8.4 (Valley Dr, Ogden). Closed. SR-39 EB: Closed. SR-39 WB: Closed."
+   "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at"
   },
   "al": {
-   "2641": 1,
-   "2643": 1,
-   "2644": 1
+   "2641": 1
   },
   "cond": {
    "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",

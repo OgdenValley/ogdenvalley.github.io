@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T01:07:29.911Z",
+ "updated": "2026-10-28T02:01:45.357Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -737,16 +737,6 @@
   "weber": {
    "name": "Weber County",
    "events": [
-    {
-     "s": 1793059200000,
-     "e": 1793066400000,
-     "t": "Mystic Mondays: tarot readings",
-     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "$5 readings. Every Monday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
     {
      "s": 1793062800000,
      "e": 1793070000000,
@@ -3304,6 +3294,16 @@
      "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
      "allDay": false,
      "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1798336800000,
+     "e": 1798344000000,
+     "t": "Singles Mingle",
+     "loc": "Grounds for Coffee, 111 25th Street, Ogden",
+     "allDay": false,
+     "desc": "Free. Every Saturday.",
      "url": "",
      "src": "Weekly regular"
     }
