@@ -48,6 +48,12 @@
     <li>No faces of other people's kids without a parent's OK.</li></ul></article>
   <article class="card" id="winner"><p class="eyebrow">Last month's winner</p><h3>First winner announced soon</h3><p>The first contest of our 10th year is running now.</p></article>
 </div></div></section>
+<section id="entries" style="padding-top:0" hidden><div class="container">
+  <p class="eyebrow" style="color:var(--muted)" id="e-month">This month</p>
+  <h2 style="margin:4px 0 6px">Entries so far</h2>
+  <p class="meta" style="margin:0 0 14px">Every photo sent in this month, numbered in the order it arrived. The winner is announced on the 1st. Tap a photo to see it full size.</p>
+  <div class="shots" id="e-list"></div>
+</div></section>
 <section id="neighbor-shots" style="padding-top:0"><div class="container">
   <p class="eyebrow" style="color:var(--muted)">From our Photography &amp; Art group</p>
   <h2 style="margin:4px 0 6px">Neighbor shots</h2>
@@ -63,6 +69,7 @@
 .shots{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(100%,560px),1fr))}
 .shot{margin:0;padding:10px}
 .shot img{width:100%;height:auto;display:block;border-radius:10px}
+#entries .shot img{max-height:620px;width:100%;object-fit:contain;background:#0b1a2c}
 .shot figcaption{font-size:17px;line-height:1.45;padding:4px 4px 2px}
 </style>
 <section style="padding-top:0"><div class="container"><div data-groups="photo" data-title="Share your shots any time in our photo group" style="margin-top:8px"></div></div></section>
@@ -77,6 +84,7 @@
 (function(){const S=window.OVE_SITE,c=S.C.contest||{};
 if(c.theme){document.getElementById("c-month").textContent=c.month;document.getElementById("c-theme").textContent=c.theme;document.getElementById("c-deadline").textContent="Entries close "+c.deadline+"."}
 const w=c.lastWinner;if(w&&w.name){const b=document.getElementById("winner");b.querySelector("h3").textContent=(w.title?w.title+" · ":"")+w.name;const p=b.querySelector("p:not(.eyebrow)");p.textContent="";if(w.image){const i=S.el("img",{src:w.image,alt:w.title||"Winning photo",style:"border-radius:10px"});b.insertBefore(i,p)}}
+const E=c.entries||[];if(E.length){const box=document.getElementById("entries"),L=document.getElementById("e-list");document.getElementById("e-month").textContent=(c.month||"This month")+" · "+E.length+(E.length===1?" entry":" entries");E.forEach((e,i)=>{const a=S.el("a",{href:e.image,title:"Open full size"},[S.el("img",{src:e.image,alt:(e.title||"Contest entry")+" by "+(e.by||"a neighbor"),loading:"lazy"})]);const f=S.el("figcaption",{});f.innerHTML="<b>Entry #"+(i+1)+(e.title?": "+e.title.replace(/</g,"&lt;"):"")+"</b><br><span class=\"meta\">📷 "+(e.by||"").replace(/</g,"&lt;")+"</span>";L.append(S.el("figure",{class:"card shot"},[a,f]))});box.hidden=false}
 })();
 </script>
 </body>

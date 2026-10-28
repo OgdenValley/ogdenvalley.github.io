@@ -168,7 +168,8 @@ window.OVE = {
      show by themselves from the guess sheet's Spots tab. Keep "answer" blank here: this file is public. */
   guessSpots: [
     { week: "Oct 8", start: "2026-10-08", image: "spot-2026-10-08.jpg", answerImage: "spot-2026-10-08-answer.jpg", hint: "Fall color, string lights and a big rocky ridge. Where are these two pumpkinheads standing?", by: "ove", credit: "", revealed: true, answer: "The Oaks in Ogden Canyon", winner: "" },
-    { week: "Oct 15", start: "2026-10-15", image: "spot-2026-10-15.jpg", hint: "This little guy has a front-row seat for fall color. Where in the Valley is he sitting?", by: "ove", credit: "", revealed: false, answer: "", winner: "" }
+    { week: "Oct 15", start: "2026-10-15", image: "spot-2026-10-15.jpg", hint: "This little guy has a front-row seat for fall color. Where in the Valley is he sitting?", by: "ove", credit: "", revealed: false, answer: "", winner: "" },
+    { week: "Oct 27", start: "2026-10-27", image: "spot-2026-10-27.jpg", hint: "This old-timer has been parked in the Valley a long time, and it's not on a main road. Town or road only, please, no house numbers.", by: "ove", credit: "Photo: Shauna Miller", revealed: false, answer: "", winner: "" }
   ],
 
   /* --- Home page photo banner -------------------------------------------
@@ -210,7 +211,9 @@ window.OVE = {
     { image: "valley-snowy-peaks-spring-seth-miller.jpg", by: "Seth Miller", place: "Ogden Valley", date: "", caption: "Snow-dusted peaks above spring-green fields and homes" },
     { image: "valley-dusk-from-above-seth-miller.jpg", by: "Seth Miller", place: "Ogden Valley", date: "", caption: "Pink and purple dusk over the Valley from high above" },
     { image: "valley-balloon-fest-eden-park-seth-miller.jpg", by: "Seth Miller", place: "Eden", date: "", caption: "Hot air balloons glow at night at the balloon fest at Eden Park" },
-    { image: "photo-2026-10-carla-r-icebox-canyon.jpg", by: "Carla R", place: "", date: "2026-10", caption: "Sunset at Icebox Canyon (October photo contest, entry #1)" }
+    { image: "photo-2026-10-carla-r-icebox-canyon.jpg", by: "Carla R", place: "", date: "2026-10", caption: "Sunset at Icebox Canyon (October photo contest, entry #1)" },
+    { image: "valley-aspens-sunburst-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley", date: "2026-10", caption: "The sun bursts through the pines and lights up the aspens" },
+    { image: "valley-north-fork-barn-captura.jpg", by: "Captura", place: "North Fork Park", date: "2026-10", caption: "North Fork Barn, with fresh snow on the peaks behind it" }
   ],
 
   /* --- Then & Now ------------------------------------------------------
@@ -228,7 +231,11 @@ window.OVE = {
     month: "October 2026",
     theme: "Fall color and Halloween in the Valley",
     deadline: "October 31",
-    lastWinner: null          // { name: "", title: "", image: "photo-...jpg", month: "October 2026" }
+    lastWinner: null,         // { name: "", title: "", image: "photo-...jpg", month: "October 2026" }
+    // This month's entries, shown on the Photo Contest page (newest last). Clear this list when a new month starts.
+    entries: [
+      { image: "photo-2026-10-carla-r-icebox-canyon.jpg", by: "Carla R", title: "Sunset at Icebox Canyon" }
+    ]
                               // The winner also becomes the home page banner photo for the month, with credit.
   },
 
