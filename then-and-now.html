@@ -36,11 +36,12 @@
   <nav class="main" id="nav" aria-label="Main"></nav>
 </div></header>
 <main id="main">
-<section class="hero"><div class="container"><div><p class="eyebrow">Valley history</p><h1>Then &amp; Now</h1><p class="lead" style="margin-top:12px">The same view, years apart. Drag the slider to see how the Valley has changed.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section class="hero"><div class="container"><div><p class="eyebrow">Valley history</p><h1>Then &amp; Now</h1><p class="lead" style="margin-top:12px">The same place, years apart. Drag the slider to see how the Valley has changed.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
 <section><div class="container"><div id="pairs" style="display:grid;gap:28px"></div>
+<div class="card" id="tn-soon" hidden style="margin-top:24px"><h3>Coming soon</h3><p id="tn-soon-note"></p><ul id="tn-soon-list" class="tn-soon"></ul><p style="margin:10px 0 0"><b>Help us with the "now" photos.</b> If you live near one of these spots, send us a photo you took from about the same place today.</p></div>
 <div class="card" style="margin-top:24px"><h3>Have an old Valley photo?</h3><p>Send it in with the year and place, and we may pair it with a photo from today. Only send photos you own or have permission to share.</p><div class="btns" style="margin-top:6px"><a class="btn blue" data-form="photo" href="#">Send a photo</a></div></div>
 </div></section>
-<style>.tn{position:relative;overflow:hidden;border-radius:12px;max-width:100%;aspect-ratio:4/3;background:var(--soft)}.tn img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.tn .top{clip-path:inset(0 50% 0 0)}.tn input{position:absolute;inset:auto 0 12px 0;width:calc(100% - 24px);margin:0 12px}.tn .lab{position:absolute;top:10px;padding:4px 10px;border-radius:8px;background:rgba(16,35,61,.8);color:#fff;font-weight:700;font-size:14px}</style>
+<style>.tn{position:relative;overflow:hidden;border-radius:12px;max-width:100%;aspect-ratio:4/3;background:var(--soft)}.tn img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}.tn .top{clip-path:inset(0 50% 0 0)}.tn input{position:absolute;inset:auto 0 12px 0;width:calc(100% - 24px);margin:0 12px}.tn .lab{position:absolute;top:10px;padding:4px 10px;border-radius:8px;background:rgba(16,35,61,.8);color:#fff;font-weight:700;font-size:14px}.tn-hint{margin:8px 0 0;font-size:15px;color:var(--muted)}.tn-more{font-weight:700}.tn-soon{list-style:none;padding:0;margin:8px 0 0;display:grid;gap:6px;font-size:17px}.tn-soon b{display:inline-block;min-width:56px;color:var(--accent,#2E6DA4)}</style>
 </main>
 <footer class="site-foot"></footer>
 <script src="layout.js"></script>
@@ -49,11 +50,17 @@
 <script src="site.js"></script>
 <script>
 
-(function(){const S=window.OVE_SITE,el=S.el;const list=S.C.thenNow||[];const box=document.getElementById("pairs");
-if(!list.length){box.append(el("div",{class:"empty"},[el("p",{text:"The first Then & Now pair is coming soon."})]));return}
-list.forEach((p,i)=>{const top=el("img",{class:"top",src:p.then,alt:"Then: "+p.title}),r=el("input",{type:"range",min:"0",max:"100",value:"50","aria-label":"Compare "+p.title});
+(async function(){const S=window.OVE_SITE,el=S.el;const box=document.getElementById("pairs");
+let D={pairs:[],soon:[]};try{D=await (await fetch("thennow.json",{cache:"no-cache"})).json()}catch(e){}
+const list=(D.pairs||[]).concat(S.C.thenNow||[]);
+if(!list.length)box.append(el("div",{class:"empty"},[el("p",{text:"The first Then & Now pair is coming soon."})]));
+list.forEach(p=>{const top=el("img",{class:"top",src:p.then,alt:"Then: "+p.title}),r=el("input",{type:"range",min:"0",max:"100",value:"50","aria-label":"Compare "+p.title});
 r.addEventListener("input",()=>top.style.clipPath="inset(0 "+(100-r.value)+"% 0 0)");
-box.append(el("article",{class:"card"},[el("h2",{style:"font-size:24px",text:p.title}),el("div",{class:"tn"},[el("img",{src:p.now,alt:"Now: "+p.title}),top,el("span",{class:"lab",style:"left:10px",text:p.thenYear||"Then"}),el("span",{class:"lab",style:"right:10px",text:p.nowYear||"Now"}),r]),p.credit?el("p",{class:"meta",text:"Photos: "+p.credit}):null,p.source?el("p",{class:"meta",text:"Source: "+p.source}):null]))});
+const more=(p.more||[]).length?el("p",{class:"tn-more"},(p.more||[]).flatMap((m,i)=>[i?" · ":"",el("a",{href:m.url,text:m.label})])):null;
+box.append(el("article",{class:"card"},[el("h2",{style:"font-size:24px",text:p.title}),el("div",{class:"tn"},[el("img",{src:p.now,alt:"Now: "+p.title}),top,el("span",{class:"lab",style:"left:10px",text:p.thenYear||"Then"}),el("span",{class:"lab",style:"right:10px",text:p.nowYear||"Now"}),r]),
+ el("p",{class:"tn-hint",text:"Drag the slider to go from then to now."}),p.note?el("p",{text:p.note}):null,p.credit?el("p",{class:"meta",text:"Photos: "+p.credit}):null,p.source?el("p",{class:"meta",text:"Source: "+p.source}):null,more]))});
+const soon=D.soon||[];if(soon.length){const s=document.getElementById("tn-soon");s.hidden=false;document.getElementById("tn-soon-note").textContent=D.soonNote||"";
+ document.getElementById("tn-soon-list").replaceChildren(...soon.map(x=>el("li",{},[el("b",{text:x.year}),el("span",{text:" "+x.title})])))}
 })();
 </script>
 </body>

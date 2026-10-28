@@ -1,0 +1,18 @@
+{
+ "pairs": [
+  { "title": "Artesian Park, then Pineview Reservoir",
+    "then": "time-train-1920-artesian-wells.jpg", "thenYear": "About 1920",
+    "now": "valley-pineview-sunrise-tom-doxey.jpg", "nowYear": "2026",
+    "note": "Same area, not the exact same spot. About 1920, water bubbled up on its own from artesian wells near Huntsville, and families picnicked there. Ogden City drilled the wells in 1915. The dam was finished in 1937, and today the old park is under Pineview Reservoir.",
+    "credit": "Then: Fred Pack, about 1920, J. Willard Marriott Library, University of Utah. Now: Tom Doxey.",
+    "more": [ { "label": "Ride the Time Train", "url": "time-train.html" }, { "label": "Read the Time Capsule", "url": "time-capsule.html" } ] }
+ ],
+ "soon": [
+  { "title": "The Eden store", "year": "1913" },
+  { "title": "The Huntsville school", "year": "1903" },
+  { "title": "Building Pineview Dam", "year": "1935" },
+  { "title": "The Pineview Dam dedication with Gov. Henry Blood", "year": "1937" },
+  { "title": "David O. McKay in Huntsville", "year": "1916" }
+ ],
+ "soonNote": "We asked the Utah State Historical Society for permission to share these old photos. As each one is OK'd, it goes up here next to a photo from today."
+}
