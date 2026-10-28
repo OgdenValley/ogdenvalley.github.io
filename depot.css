@@ -190,3 +190,9 @@ body.depot-theme main canvas,body.depot-theme main .pz-area img{background:#fff}
 .d-car[aria-current="page"]{border-color:#FFF3C4;box-shadow:0 0 16px rgba(230,194,107,.5)}
 body.depot-theme main .d-more,.d-more{background:transparent}
 body.depot-theme main a.d-car{color:var(--d-ink)}
+/* cleanup Oct 2026: cars as a grid near the top, rewards folded, short link line */
+#d-activity-cars .d-cars{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:18px 12px;overflow:visible;padding-bottom:18px}
+#d-activity-cars .d-car{flex:none}
+.d-allrewards summary{cursor:pointer;font-weight:700;color:var(--d-brass);margin:10px 0;font-size:17px}
+.d-morelinks{font-size:17px;line-height:1.9}.d-morelinks a{color:var(--d-brass)}
+.subtabs .more-fun{font:600 15px var(--display);background:var(--card,#fff);border:1px dashed var(--line);border-radius:999px;padding:7px 13px;cursor:pointer;color:var(--ink)}

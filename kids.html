@@ -42,7 +42,7 @@
   <div class="rule">Community Kids</div>
   <h1>The Utah Depot</h1>
   <span class="d-platform">Platform 1869 · Ogden</span>
-  <p>A true Utah history story every week, with coloring, games and a vote on where the train goes next. Lessons, teams and kid events are on the Station Board.</p>
+  <p>A true Utah history story every week, with coloring and games. Lessons, teams and kid events are on the Station Board.</p>
   <svg class="d-hero-train" viewBox="0 0 520 210" aria-hidden="true">
   <circle cx="455" cy="40" r="22" fill="#FFF3C4" opacity=".9"/><circle cx="465" cy="34" r="20" fill="#0B1430"/>
   <path d="M0 175 L40 120 L70 150 L110 95 L150 150 L190 118 L230 160 L520 160 L520 210 L0 210Z" fill="#13204A"/>
@@ -66,6 +66,12 @@
   </svg>
   
 </div></section>
+<section id="d-activity-cars" style="padding-top:0"><div class="d-wrap">
+  <p class="d-eye">Hop aboard</p>
+  <h2 class="d-h">Activity cars</h2>
+  <p class="d-note" style="margin:0 0 10px">Every kids activity on the site rides on this train. Tap a car to hop on.</p>
+  <div class="d-cars" id="d-cars"></div>
+</div></section>
 <section><div class="d-wrap">
   <p class="d-eye">Where's the train?</p>
   <h2 class="d-h">The route map</h2>
@@ -80,7 +86,13 @@
   <ol class="d-list" id="d-stops"></ol>
 </div></section>
 
-<section id="d-vote" style="padding-top:0"><div class="d-wrap">
+<section id="d-nextstop" style="padding-top:0"><div class="d-wrap">
+  <p class="d-eye">Next departure</p>
+  <h2 class="d-h">Where the train goes next</h2>
+  <div class="d-tickets"><div class="d-ticket" aria-pressed="true" style="cursor:default"><span class="main"><b id="d-ns-name"></b><span id="d-ns-line"></span></span><span class="side"><b id="d-ns-miles"></b><small>miles</small></span></div></div>
+  <p class="d-voted on" id="d-ns-when"></p>
+</div></section>
+<section id="d-vote" hidden style="padding-top:0"><div class="d-wrap">
   <p class="d-eye">Next departure</p>
   <h2 class="d-h">Where should the train go next?</h2>
   <p class="d-note" style="margin:0 0 14px">Tap a ticket to vote. One vote per family, no names, no sign-in. Voting closes <span id="d-closes"></span>.</p>
@@ -93,14 +105,8 @@
   <div class="d-tb" id="d-tb"></div>
 </div></section>
 
-<section id="d-activity-cars" style="padding-top:0"><div class="d-wrap">
-  <p class="d-eye">Hop aboard</p>
-  <h2 class="d-h">Activity cars</h2>
-  <p class="d-note" style="margin:0 0 10px">Every kids activity on the site rides on this train. Swipe to see them all.</p>
-  <div class="d-cars" id="d-cars"></div>
-</div></section>
 
-<section id="d-suggest" style="padding-top:0"><div class="d-wrap">
+<section id="d-suggest" style="padding-top:0" hidden><div class="d-wrap">
   <div class="d-act" style="background:var(--d-brass-soft)">
     <h3>Know a Utah story we haven't told?</h3>
     <p>Tell us about a true Utah history story or place the train should visit. Have a grown-up send it. We check every fact before it goes on a stop.</p>
@@ -119,7 +125,7 @@
 <section class="d-more" style="padding-top:10px"><div class="d-wrap">
   <p class="d-eye">More aboard the Utah Depot</p>
   <h2 class="d-h">Community Kids</h2>
-  <div class="d-cars"><a class="d-car" href="kids.html" aria-current="page"><b>The Utah Depot</b><span>Map, vote & Ticket Book</span><i aria-hidden="true"></i></a><a class="d-car" href="depot-story.html"><b>This week's stop</b><span>The newest story</span><i aria-hidden="true"></i></a><a class="d-car" href="station-board.html"><b>Station Board</b><span>Lessons, teams & kid events</span><i aria-hidden="true"></i></a><a class="d-car" href="coloring.html"><b>Holiday Express</b><span>Valley coloring pages</span><i aria-hidden="true"></i></a><a class="d-car" href="color.html"><b>Paint Car</b><span>Color online</span><i aria-hidden="true"></i></a><a class="d-car" href="where-moose.html"><b>Moose Car</b><span>Where's Ben Lomoose?</span><i aria-hidden="true"></i></a><a class="d-car" href="i-spy.html"><b>I Spy Car</b><span>Find the hidden things</span><i aria-hidden="true"></i></a><a class="d-car" href="puzzles.html"><b>Puzzle Car</b><span>Word search, crossword, jigsaw</span><i aria-hidden="true"></i></a><a class="d-car" href="scavenger-hunt.html"><b>Scavenger Hunt Car</b><span>This month's hunt</span><i aria-hidden="true"></i></a><a class="d-car" href="guess-the-spot.html"><b>Guess the Spot Car</b><span>Where was this taken?</span><i aria-hidden="true"></i></a></div>
+  <p class="d-morelinks"><a href="kids.html">The Utah Depot</a> · <a href="depot-story.html">This week's stop</a> · <a href="station-board.html">Station Board</a> · <a href="coloring.html">Holiday Express</a> · <a href="color.html">Paint Car</a> · <a href="where-moose.html">Moose Car</a> · <a href="i-spy.html">I Spy Car</a> · <a href="puzzles.html">Puzzle Car</a> · <a href="scavenger-hunt.html">Scavenger Hunt Car</a> · <a href="guess-the-spot.html">Guess the Spot Car</a></p>
 </div></section>
 </main>
 <footer class="site-foot"></footer>
@@ -128,6 +134,13 @@
 <script src="places.js"></script>
 <script src="site.js"></script>
 <script src="depot.js"></script>
+<script>
+/* Kids page only: show the first row of the tab bar, the rest behind "More fun" */
+(function(){var c=document.querySelector(".subtabs .container.rows");if(!c)return;var rows=[].slice.call(c.querySelectorAll(".row")).slice(1);if(!rows.length)return;
+rows.forEach(function(r){r.style.display="none"});var b=document.createElement("button");b.type="button";b.className="more-fun";b.textContent="More fun \u25BE";b.setAttribute("aria-expanded","false");
+b.onclick=function(){var open=b.getAttribute("aria-expanded")!=="true";rows.forEach(function(r){r.style.display=open?"":"none"});b.setAttribute("aria-expanded",String(open));b.textContent=open?"Less \u25B4":"More fun \u25BE"};
+c.querySelector(".row").append(b)})();
+</script>
 
 </body>
 </html>

@@ -7,7 +7,7 @@ const count=p=>{try{if(window.goatcounter&&goatcounter.count)goatcounter.count({
 const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 const nice=d=>{const p=String(d||"").split("-");return p.length===3?new Date(+p[0],+p[1]-1,+p[2]).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"}).replace(/^(\w{3}) /,"$1. ").replace("May. ","May "):""};
 let D;try{D=window.DEPOT_DATA||await (await fetch("depot.json",{cache:"no-cache"})).json()}catch(e){const m=$("d-main");if(m)m.prepend(mk("p",{class:"d-note",text:"The train is running late. Please check back soon."}));return}
-const stops=D.stops||[],here=stops[stops.length-1],opts=(D.vote&&D.vote.options)||[];
+const stops=D.stops||[],here=stops[stops.length-1],opts=(D.vote&&D.vote.options)||[],mapOpts=opts.length?opts:(D.nextStop&&D.nextStop.lat?[D.nextStop]:[]);
 const page=document.body.dataset.depot;
 
 /* ================= CONDUCTOR'S TICKET BOOK =================
@@ -42,8 +42,8 @@ function drawTB(){const box=$("d-tb");if(!box)return;const n=punches(),lv=levelO
     ul.append(li)});
   if(n>=5){const inp=mk("input",{id:"d-cert-name",type:"text",maxlength:"30",autocomplete:"off",placeholder:"First name for your certificate",value:TB.nm||""});inp.oninput=()=>{TB.nm=inp.value.slice(0,30);tbSave()};
     parts.push(mk("label",{class:"d-namefield",for:"d-cert-name"},[mk("span",{text:"Your first name for the certificate (it stays on this device)"}),inp]))}
-  parts.push(ul);
-  parts.push(mk("p",{class:"d-note",text:"How to earn punches: read a story (1), get all of Fact or Fiction right (2), color or print the coloring page (1), do the word search (1), vote (1), visit a Learn More site (1), and hop on an activity car each day (1). Punches are saved only on this device."}));
+  const det=mk("details",{class:"d-allrewards"},[mk("summary",{text:"See all rewards"}),ul]);parts.push(det);
+  parts.push(mk("p",{class:"d-note",text:"How to earn punches: read a story (1), get all of Fact or Fiction right (2), color or print the coloring page (1), do the word search (1), visit a Learn More site (1), and hop on an activity car each day (1). Punches are saved only on this device."}));
   box.replaceChildren(...parts)}
 function printCert(title){let c=$("d-cert");if(!c){c=mk("div",{id:"d-cert"});document.body.append(c)}
   const nameBox=$("d-cert-name");const nm=(nameBox&&nameBox.value||"").trim().slice(0,30);
@@ -54,7 +54,7 @@ function printCert(title){let c=$("d-cert");if(!c){c=mk("div",{id:"d-cert"});doc
 /* ================= MAP PAGE ================= */
 if(page==="map"){
   const X=lon=>(lon+114.05)*100,Y=lat=>(42-lat)*100,map=$("d-svg");
-  const pts=stops.map(s=>[X(s.lon),Y(s.lat)]).concat(opts.map(o=>[X(o.lon),Y(o.lat)]));
+  const pts=stops.map(s=>[X(s.lon),Y(s.lat)]).concat(mapOpts.map(o=>[X(o.lon),Y(o.lat)]));
   const x0=Math.min(...pts.map(p=>p[0])),x1=Math.max(...pts.map(p=>p[0])),y0=Math.min(...pts.map(p=>p[1])),y1=Math.max(...pts.map(p=>p[1]));
   const vw=Math.max(x1-x0+250,330),vh=Math.max(y1-y0+150,vw*.72),vx=(x0+x1)/2-vw/2,vy=(y0+y1)/2-vh/2+8,k=vw/560;
   map.setAttribute("viewBox",[vx,vy,vw,vh].map(n=>n.toFixed(1)).join(" "));
@@ -73,7 +73,7 @@ if(page==="map"){
   const hx=X(here.lon),hy=Y(here.lat);
   /* trips on the ballot: dashed line, a mile badge halfway, the name on the far side of the dot */
   const later=[];
-  opts.forEach(o=>{const x=X(o.lon),y=Y(o.lat),dx=x-hx,dy=y-hy,len=Math.hypot(dx,dy)||1,ux=dx/len,uy=dy/len;
+  mapOpts.forEach(o=>{const x=X(o.lon),y=Y(o.lat),dx=x-hx,dy=y-hy,len=Math.hypot(dx,dy)||1,ux=dx/len,uy=dy/len;
     map.append(sv("line",{x1:hx,y1:hy,x2:x,y2:y,stroke:"var(--d-green)","stroke-width":3*k,"stroke-dasharray":(8*k)+" "+(7*k)}));
     map.append(sv("circle",{cx:x,cy:y,r:9*k,fill:"#0E1A3D",stroke:"var(--d-green)","stroke-width":4*k}));
     const lx=x+ux*20*k,ly=y+uy*20*k+(uy>.35?18*k:uy<-.35?-4*k:7*k);
@@ -87,7 +87,7 @@ if(page==="map"){
   const eng=sv("g",{id:"engine"});
   eng.innerHTML=('<g transform="scale('+k+') translate(18,16) scale(.5)"><rect x="18" y="40" width="70" height="30" rx="10" fill="#1B2A5C" stroke="var(--eng)" stroke-width="3"/><rect x="30" y="16" width="14" height="28" fill="#1B2A5C" stroke="#E6C26B" stroke-width="3"/><rect x="26" y="12" width="22" height="7" rx="2" fill="#E6C26B"/><rect x="84" y="22" width="44" height="48" rx="4" fill="#1B2A5C" stroke="#E6C26B" stroke-width="3"/><rect x="80" y="16" width="52" height="9" rx="3" fill="#E6C26B"/><rect x="94" y="32" width="14" height="14" rx="2" fill="#FFE9A8"/><polygon points="2,80 18,58 18,80" fill="#E6C26B"/><g fill="#1B2A5C" stroke="#E6C26B" stroke-width="4"><circle cx="36" cy="80" r="11"/><circle cx="64" cy="80" r="11"/><circle cx="106" cy="78" r="14"/></g></g>').replace(/#E6C26B/g,'var(--eng)');
   eng.style.transform="translate("+hx+"px,"+hy+"px)";map.append(eng);
-  map.setAttribute("aria-label","Map of northern Utah. The train is at "+here.place+". Trips to vote on: "+opts.map(o=>o.name+", "+o.miles+" miles").join("; ")+".");
+  map.setAttribute("aria-label","Map of northern Utah. The train is at "+here.place+(opts.length?". Trips to vote on: ":". Next stop: ")+mapOpts.map(o=>o.name+", "+o.miles+" miles").join("; ")+".");
 
   /* activity cars: every kids activity on the site rides along */
   const CARS=[["coloring.html","Holiday Express","Valley coloring pages to print"],["color.html","Paint Car","Color online with 48 colors"],["puzzles.html","Puzzle Car","Word searches, crosswords and jigsaws"],["where-moose.html","Moose Car","Where's Ben Lomoose?"],["i-spy.html","I Spy Car","Find the hidden things"],["scavenger-hunt.html","Scavenger Car","Check off this month's hunt"],["guess-the-spot.html","Lookout Car","Guess where the photo was taken"],["wildlife.html#checklist","Wildlife Car","Spot Valley animals"],["night-sky.html","Stargazer Car","What's in tonight's sky"],["time-train.html","Time Train","Ride through Valley history"]];
@@ -99,7 +99,10 @@ if(page==="map"){
     mk("span",{class:"num"},[mk("small",{text:"STOP"}),String(s.n)]),
     mk("span",{},[mk("h3",{text:s.title}),mk("span",{class:"where",text:s.place+(s.posted?" · "+nice(s.posted):"")})]),
     mk("span",{class:"go",text:"Read the story →"})])])));
-  /* vote */
+  /* next stop (we pick it; no vote) */
+  const ns=$("d-nextstop");
+  if(ns){if(D.nextStop){$("d-ns-name").textContent=D.nextStop.name;$("d-ns-line").textContent=D.nextStop.line||"";$("d-ns-miles").textContent=String(D.nextStop.miles||"");$("d-ns-when").textContent=D.nextStop.when||""}else ns.hidden=true}
+  /* vote (only if options are set in depot.json) */
   const vote=$("d-vote");
   if(!opts.length){vote.hidden=true}else{
     $("d-closes").textContent=D.voteCloses||"Sunday night";
@@ -119,6 +122,7 @@ if(page==="map"){
 /* ================= BOTH PAGES: story-idea box ================= */
 document.querySelectorAll("[data-suggest]").forEach(a=>{if(D.suggestForm){a.href=D.suggestForm;a.target="_blank";a.rel="noopener";a.hidden=false;a.setAttribute("data-track","depot story idea")}});
 if(D.suggestForm)document.querySelectorAll("[data-suggest-hide]").forEach(e=>e.hidden=true);
+if(D.suggestForm){const sg=document.getElementById("d-suggest");if(sg)sg.hidden=false}
 
 /* ================= STORY PAGE ================= */
 if(page==="story"){
@@ -159,8 +163,8 @@ if(page==="story"){
   const div=document.querySelector(".d-divider");if(div&&"IntersectionObserver" in window){const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){earn("read:"+s.n,1,"You read Stop "+s.n+".");io.disconnect()}});io.observe(div)}
   $("d-sources").replaceChildren(...(s.sources||[]).map(x=>mk("li",{},[mk("a",{href:x.url,target:"_blank",rel:"noopener",text:x.title}),": "+x.used])));
   /* next step */
-  const latest=s===here&&opts.length;
-  $("d-next").replaceChildren(latest?mk("a",{class:"d-btn solid",href:"kids.html#d-vote",text:"Vote on where the train goes next →"}):mk("a",{class:"d-btn solid",href:"kids.html",text:"Back to the map →"}));
+  const latest=s===here&&(opts.length||D.nextStop);
+  $("d-next").replaceChildren(latest?mk("a",{class:"d-btn solid",href:opts.length?"kids.html#d-vote":"kids.html#d-nextstop",text:opts.length?"Vote on where the train goes next →":"See where the train goes next →"}):mk("a",{class:"d-btn solid",href:"kids.html",text:"Back to the map →"}));
   const i=stops.indexOf(s),prev=stops[i-1],nxt=stops[i+1];
   const pn=$("d-prevnext");pn.replaceChildren();
   if(prev)pn.append(mk("a",{class:"d-btn",href:"depot-story.html?stop="+prev.n,text:"← Stop "+prev.n+": "+prev.place}));
