@@ -1,0 +1,14 @@
+{
+ "_how": "letters: {date,title,body,name,town}. dearBen: {num,date,title,question,signoff,answer}. Items show on their date.",
+ "letters": [],
+ "dearBen": [
+  {
+   "num": 1,
+   "date": "2026-11-03",
+   "title": "Turkeys on the road",
+   "question": "Dear Ben,\n\nThe wild turkeys in my neighborhood stand in the middle of the road every morning and won't budge. I'm late for work three days a week. What do I do?",
+   "signoff": "Stuck Behind the Flock in Eden",
+   "answer": "Dear Stuck,\n\nTake it from someone who has held up a few cars himself: turkeys don't hurry, and honking only gets you a turkey stare. Slow down, give them a minute, and never try to swing around them on a blind curve. Leave five minutes early and call it your morning nature show.\n\nThey'll move when they're ready. Turkeys run on Valley time.\n\nP.S. I've been told I block traffic too. We have a lot in common."
+  }
+ ]
+}

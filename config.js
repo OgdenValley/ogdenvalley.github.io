@@ -39,6 +39,7 @@ window.OVE = {
     coloring: "https://docs.google.com/forms/d/e/1FAIpQLSeD4c0NYmQnFrgGuGaCRywZvmHWCaKtzZ1a6b1waX6avH5z-w/viewform",             // Finished coloring pages (parents send)
     musician: "https://docs.google.com/forms/d/e/1FAIpQLSdyDj-XkJKas0nj5SSxPfO2LwuQKckG5ZpMgyiekk4mdO6MKQ/viewform",             // Musicians: bio, photo, private events, contact
     recipe: "https://docs.google.com/forms/d/e/1FAIpQLScK353HCsAIb5-ePsKiUxHljdh7s7QZgHwYVz7zQTizzscIAA/viewform",               // Community Cooking: share a recipe
+    letter: "https://docs.google.com/forms/d/e/1FAIpQLScznXP4DVXeJW2ALw22HwoRpqzp2KFMnXTln4eKvfPy0n1wDg/viewform",                                                                                      // Letters to the Editor & Dear Ben (paste the form link here)
     recipeVote: "https://docs.google.com/forms/d/e/1FAIpQLScTHPG1-8dU02eNJNt9mNqof5M9mL9jiPkathGpUtUhCzUNbw/viewform",           // Community Cooking: vote + "what I changed"
     volunteer: "https://docs.google.com/forms/d/e/1FAIpQLSfOcw941wcno_hT3Caeyw1ScHvxuqeWFc4TOUSbyDb1AJPv0g/viewform",            // Groups: post a volunteer need or drive
     yardsale: "https://docs.google.com/forms/d/e/1FAIpQLSdq-tr_1dUMWJvoD06p9oZAXQWuK5-SnkucboHFwVEFmeZSZg/viewform?usp=pp_url&entry.1817719328=A+yard+sale", // Post a yard sale (event form, opens with "A yard sale" picked)

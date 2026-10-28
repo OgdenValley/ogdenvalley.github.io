@@ -11,7 +11,7 @@ var GROUPS = [
  ["Local", [["health.html","Health & help"],["services.html","Home services"],["beauty.html","Beauty & wellness"],["stay.html","Places to stay"],["worship.html","Places of worship"],["artists.html","Local artists"],["jobs.html","Help wanted"],["farm.html","Farm stands & local food"],["businesses.html","Local businesses & shops"]]],
  ["Outdoors & Roads", [["safety.html","Road, weather & alerts"],["live.html","Live view"],["night-sky.html","Night sky"],["wildlife.html","Wildlife & wildflowers"],["valley-photos.html","Valley photos"]]],
  ["Kids & Fun", [["kids.html","Community Kids: The Utah Depot"],["station-board.html","Kids lessons & teams"],["station-board.html#kid-events","Kid events"],["coloring.html","Coloring pages"],["fun.html","All fun & contests"],["photo-contest.html","Photo contest"],["guess-the-spot.html","Guess the Spot"],["then-and-now.html","Then & Now"],["time-capsule.html","Valley Time Capsule"],["puzzles.html","Puzzles"]]],
- ["Community", [["causes.html","Local causes"],["volunteer.html","Volunteer & give back"],["recipes.html","Community Cooking"],["know-how.html","Valley Know-How classes"],["sneak-peek.html","Sneak Peek"],["garden.html","Garden board"],["prepared.html","Be prepared board"],["coming.html","What's coming & ideas"],["about.html","About us"],["submit.html","Send an event or listing"],["sponsor.html","Sponsor a spot"],["ten-years.html","10 years"]]]
+ ["Community", [["causes.html","Local causes"],["volunteer.html","Volunteer & give back"],["recipes.html","Community Cooking"],["know-how.html","Valley Know-How classes"],["sneak-peek.html","Sneak Peek"],["garden.html","Garden board"],["prepared.html","Be prepared board"],["coming.html","What's coming & ideas"],["about.html","About us"],["letters.html","Letters & Dear Ben"],["submit.html","Send an event or listing"],["sponsor.html","Sponsor a spot"],["ten-years.html","10 years"]]]
 ];
 /* pages listed under two headings: which heading they belong to */
 var HOME = {"farm.html": "Eat & Shop", "businesses.html": "Eat & Shop"};
@@ -23,7 +23,7 @@ var ROWS = {
   ["Fun & contests", [["fun.html","All fun"],["photo-contest.html","Photo contest"],["guess-the-spot.html","Guess the Spot"],["then-and-now.html","Then & Now"],["time-capsule.html","Time Capsule"]]]],
  "Community": [
   ["Give & share", [["causes.html","Local causes"],["volunteer.html","Volunteer"],["recipes.html","Cooking"],["know-how.html","Know-How classes"],["sneak-peek.html","Sneak Peek"],["garden.html","Garden board"],["prepared.html","Be prepared"],["coming.html","What's coming"]]],
-  ["About", [["about.html","About us"],["submit.html","Send something in"],["sponsor.html","Sponsor a spot"],["ten-years.html","10 years"],["rules.html","Community rules"],["terms.html","Terms"],["privacy.html","Privacy"]]]]
+  ["About", [["about.html","About us"],["submit.html","Send something in"],["letters.html","Letters to the Editor"],["sponsor.html","Sponsor a spot"],["ten-years.html","10 years"],["rules.html","Community rules"],["terms.html","Terms"],["privacy.html","Privacy"]]]]
 };
 var esc = function(t){ return String(t).replace(/&/g,"&amp;").replace(/</g,"&lt;"); };
 var FOOT = (function(){
