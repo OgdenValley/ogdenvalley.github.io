@@ -50,7 +50,7 @@
 </div></header>
 <main id="main">
 <section class="hero"><div class="container"><div><p class="eyebrow">From old Valley newspapers</p><h1>Valley Time Capsule</h1><p class="lead" style="margin-top:12px">What was happening in Eden, Liberty, Huntsville and the canyon 25, 50 and 100 years ago this week, told from the original newspaper pages.</p>
-  <div class="btns"><a class="btn primary" href="#archive">See every capsule</a><a class="btn light" data-form="report" href="submit.html">Share a memory or old photo</a></div></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+  <div class="btns"><a class="btn primary" href="#archive">See every capsule</a><a class="btn light" data-form="report" href="submit.html">Share a memory or old photo</a><a class="btn light" href="time-train.html">🚂 Ride the Time Train</a></div></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
 <section><div class="container"><div class="section-head"><div><p class="eyebrow">This week's capsule</p><h2 id="tc-ft-title">Loading…</h2></div></div><div id="tc-feature"></div></div></section>
 <section style="padding-top:0" id="archive"><div class="container">
   <div class="section-head"><div><p class="eyebrow">Every capsule so far</p><h2>The archive</h2></div></div>
@@ -78,7 +78,7 @@
 const form=C.forms&&C.forms.report;if(form)document.querySelectorAll("[data-form='report']").forEach(a=>{a.href=form;a.target="_blank";a.rel="noopener"});
 let D;try{D=await (await fetch("timecapsule.json",{cache:"no-cache"})).json()}catch(e){document.getElementById("tc-grid").replaceChildren(el("div",{class:"empty"},[el("p",{text:"The capsules didn't load. Try again in a minute."})]));return}
 const list=(D.entries||[]).slice().sort((a,b)=>(b.posted||"").localeCompare(a.posted||"")||b.num-a.num);
-const links=e=>el("p",{class:"tc-src"},[el("span",{text:"Source: "+e.source+", via Utah Digital Newspapers. "})].concat((e.links||[]).flatMap((l,i)=>[i?el("span",{text:" · "}):null,el("a",{href:l.url,target:"_blank",rel:"noopener",text:"See the original ("+l.label+")"})])));
+const links=e=>el("p",{class:"tc-src"},[el("span",{text:"Source: "+e.source+(e.photoOnly?" ":", via Utah Digital Newspapers. ")})].concat((e.links||[]).flatMap((l,i)=>[i?el("span",{text:" · "}):null,el("a",{href:l.url,target:"_blank",rel:"noopener",text:l.plain?l.label:"See the original ("+l.label+")"})])));
 const fbBtn=e=>e.facebook?el("a",{class:"btn blue",href:e.facebook,target:"_blank",rel:"noopener",text:"Comment on Facebook"}):el("a",{class:"btn blue","data-facebook":"",href:"https://www.facebook.com/ogdenvalleyevents",target:"_blank",rel:"noopener",text:"Share your memory on Facebook"});
 const f=list.find(e=>e.id===D.featured)||list[0];
 if(f){document.getElementById("tc-ft-title").textContent=f.title;

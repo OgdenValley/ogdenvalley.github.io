@@ -1,7 +1,7 @@
 {
- "updated": "2026-10-18",
+ "updated": "2026-10-27",
  "note": "Valley Time Capsule entries. Newest first is decided by \"posted\"; \"featured\" is the one shown at the top.",
- "featured": "1926-eden-still",
+ "featured": "1920-artesian-park",
  "entries": [
   {
    "id": "1926-eden-still",
@@ -165,6 +165,38 @@
     {
      "label": "Oct. 23, 1926 story",
      "url": "https://newspapers.lib.utah.edu/details?id=6429046"
+    }
+   ]
+  },
+  {
+   "id": "1920-artesian-park",
+   "num": 7,
+   "town": "Huntsville",
+   "decade": "1920s",
+   "paper_date": "1920-01-01",
+   "when": "Near Huntsville, about 1920",
+   "ago": "About 100 years ago",
+   "title": "What's under Pineview? Artesian Park",
+   "question": "Did your family ever talk about the wells or picnicking out there before the dam?",
+   "source": "Ogden Standard-Examiner, July 8, 1920 (photo: Fred Pack, about 1920, J. Willard Marriott Library, University of Utah)",
+   "body": [
+    "About 1920, this was “Artesian Park” near Huntsville. Water bubbled up out of the ground on its own. Photographer Fred Pack saw what the area could do, and Ogden City drilled these artesian wells in 1915. The spot later became a favorite picnic place.",
+    "On July 7, 1920, Mayor Frank Francis and the city commissioners took a trip up to the wells. The engineers with them agreed that with a pumping plant, “an almost unlimited supply of water” could come from the wells, and they said the water came from a gravel bed, so there was “no danger of the wells becoming closed.”",
+    "Today it’s all under Pineview Reservoir.",
+    "Kids can ride the Time Train to watch the wells turn into Pineview, one stop at a time."
+   ],
+   "posted": "2026-10-29",
+   "image": "time-train-1920-artesian-wells.jpg",
+   "facebook": "",
+   "links": [
+    {
+     "label": "July 8, 1920 story",
+     "url": "https://newspapers.lib.utah.edu/details?id=7083725"
+    },
+    {
+     "label": "🚂 Ride the Time Train",
+     "url": "time-train.html",
+     "plain": true
     }
    ]
   }
