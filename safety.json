@@ -1,17 +1,8 @@
 {
- "updated": "2026-10-28T15:01:35.427Z",
+ "updated": "2026-10-28T16:58:40.445Z",
  "weather": [],
  "fires": [],
- "city": [
-  {
-   "title": "Jackson Ave. from 19th St. to 20th St.",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2076",
-   "date": 1793202170000,
-   "text": "Scheduled Water Shutdown",
-   "source": "Ogden City Alerts",
-   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
-  }
- ],
+ "city": [],
  "status": {
   "weather": "ok",
   "fires": "ok",
