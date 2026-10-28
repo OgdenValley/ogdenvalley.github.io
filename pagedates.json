@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T05:51:57.582Z",
+ "updated": "2026-10-28T14:07:00.488Z",
  "pages": {
   "404.html": {
    "posted": "2026-10-06",
@@ -168,8 +168,8 @@
   },
   "safety.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-22",
-   "hash": "b117ea5d9dbb"
+   "updated": "2026-10-28",
+   "hash": "0e52d8501ffb"
   },
   "scavenger-hunt.html": {
    "posted": "2026-10-07",
@@ -203,8 +203,8 @@
   },
   "submit.html": {
    "posted": "2026-10-06",
-   "updated": "2026-10-19",
-   "hash": "a78f70d653b2"
+   "updated": "2026-10-28",
+   "hash": "2f61494ad8ca"
   },
   "ten-years.html": {
    "posted": "2026-10-07",
@@ -310,6 +310,11 @@
    "posted": "2026-10-27",
    "updated": "2026-10-27",
    "hash": "c3c086689d50"
+  },
+  "letters.html": {
+   "posted": "2026-10-28",
+   "updated": "2026-10-28",
+   "hash": "dde7561dc758"
   }
  }
 }
