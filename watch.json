@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T18:58:00.547Z",
+ "updated": "2026-10-29T07:07:19.647Z",
  "needed": true,
  "since": "2026-10-26T18:56:56.043Z",
  "reasons": [
@@ -11,10 +11,10 @@
   {
    "kind": "wet",
    "key": "wet:2026-10-31",
-   "text": "Two wet days in a row: Saturday 85% and Sunday 91%."
+   "text": "Two wet days in a row: Saturday 99% and Sunday 99%."
   }
  ],
- "forecastIssued": "2026-10-28T18:31:37+00:00",
+ "forecastIssued": "2026-10-29T06:31:27+00:00",
  "draft": {
   "made": "2026-10-28T18:58:00.547Z",
   "why": "New reason for a briefing: Snow is in the Valley forecast for Sunday, Monday.",
