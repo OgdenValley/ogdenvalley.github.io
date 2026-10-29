@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T03:55:01.985Z",
+ "updated": "2026-10-29T04:55:21.967Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -940,7 +940,7 @@
     {
      "s": 1793404800000,
      "e": 1793415600000,
-     "t": "Below the Bee: A Spookeasy",
+     "t": "CANCELLED - Below the Bee: A Spookeasy",
      "loc": "Queen Bee Giftery, 270 25th Street, Ogden, UT 84401",
      "allDay": false,
      "desc": "The Queen Bee Giftery is staying open late, and for the first time ever, retail is heading down to our haunted basement. 👻\n\nShop after hours with early access to our holiday inventory, then brave the stairs to shop local vendors in the basement.\n\nYour $15 ticket includes:\n\nFree dirty sodas, popcorn, and cotton candy\nA chance to win a gift basket packed with goodies from every Spookeasy vendor\nA swag bag for the first 25 guests\nWhen: Friday, October 30th from 6–9 pm\nWhere: The Queen Bee Giftery, 270 25th Street, Ogden\n\nSnacks are on us. Anything lurking in the basement is not our responsibilit",
@@ -1999,8 +1999,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2009,8 +2009,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3345,7 +3345,7 @@
    {
     "s": 1793404800000,
     "e": 1793415600000,
-    "t": "Below the Bee: A Spookeasy",
+    "t": "CANCELLED - Below the Bee: A Spookeasy",
     "loc": "Queen Bee Giftery, 270 25th Street, Ogden, UT 84401",
     "allDay": false,
     "desc": "The Queen Bee Giftery is staying open late, and for the first time ever, retail is heading down to our haunted basement. 👻\n\nShop after hours with early access to our holiday inventory, then brave the stairs to shop local vendors in the basement.\n\nYour $15 ticket includes:\n\nFree dirty sodas, popcorn, and cotton candy\nA chance to win a gift basket packed with goodies from every Spookeasy vendor\nA swag bag for the first 25 guests\nWhen: Friday, October 30th from 6–9 pm\nWhere: The Queen Bee Giftery, 270 25th Street, Ogden\n\nSnacks are on us. Anything lurking in the basement is not our responsibilit",
@@ -4416,8 +4416,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4426,8 +4426,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
