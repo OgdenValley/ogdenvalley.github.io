@@ -143,8 +143,8 @@ function bucket(x,y,c){
   while(st.length){ const i=st.pop(); reg.push(i); const px=i%W;
     if(px>0&&!seen[i-1]&&!wall[i-1]){seen[i-1]=1;st.push(i-1);} if(px<W-1&&!seen[i+1]&&!wall[i+1]){seen[i+1]=1;st.push(i+1);}
     if(i>=W&&!seen[i-W]&&!wall[i-W]){seen[i-W]=1;st.push(i-W);} if(i<W*(H-1)&&!seen[i+W]&&!wall[i+W]){seen[i+W]=1;st.push(i+W);} }
-  /* grow 2px under the black lines so no white edge is left */
-  const add=[]; for(const i of reg){ const px=i%W; for(let dy=-2;dy<=2;dy++) for(let dx=-2;dx<=2;dx++){ const qx=px+dx, j=i+dy*W+dx; if(qx<0||qx>=W||j<0||j>=W*H||seen[j]) continue; if(wall[j]){ seen[j]=1; add.push(j); } } }
+  /* grow 3px under the black lines so no white edge is left */
+  const add=[]; for(const i of reg){ const px=i%W; for(let dy=-3;dy<=3;dy++) for(let dx=-3;dx<=3;dx++){ const qx=px+dx, j=i+dy*W+dx; if(qx<0||qx>=W||j<0||j>=W*H||seen[j]) continue; if(wall[j]){ seen[j]=1; add.push(j); } } }
   const img=cx.getImageData(0,0,W,H), d=img.data, rgb=c?hex(c):null;
   for(const arr of [reg,add]) for(const i of arr){ const k=i*4; if(rgb){ d[k]=rgb[0]; d[k+1]=rgb[1]; d[k+2]=rgb[2]; d[k+3]=255; } else d[k+3]=0; }
   cx.putImageData(img,0,0);
@@ -160,6 +160,9 @@ async function load(i){
   /* read the black lines once, at canvas size */
   const t=document.createElement("canvas"); t.width=W; t.height=H; const tx=t.getContext("2d"); tx.fillStyle="#fff"; tx.fillRect(0,0,W,H); tx.drawImage(lineImg,0,0,W,H);
   const td=tx.getImageData(0,0,W,H).data; wall=new Uint8Array(W*H); for(let k=0;k<W*H;k++) wall[k]=(td[k*4]+td[k*4+1]+td[k*4+2])<3*170?1:0;
+  /* seal tiny gaps: thicken the walls 2px so a fill can't leak through a line that almost touches */
+  {const R=2,t2=new Uint8Array(W*H);for(let y=0;y<H;y++){const o=y*W;for(let x=0;x<W;x++){if(!wall[o+x])continue;const a=Math.max(0,x-R),b=Math.min(W-1,x+R);for(let q=a;q<=b;q++)t2[o+q]=1;}}
+   for(let x=0;x<W;x++)for(let y=0;y<H;y++){if(!t2[y*W+x])continue;const a=Math.max(0,y-R),b=Math.min(H-1,y+R);for(let q=a;q<=b;q++)wall[q*W+x]=1;}}
   cv=document.createElement("canvas"); cv.width=W; cv.height=H; cv.setAttribute("aria-label","Coloring page: "+p.title); cv.setAttribute("role","img"); cx=cv.getContext("2d");
   const over=lineImg.cloneNode(); over.alt="";
   const stage=document.createElement("div"); stage.className="cz-stage"; stage.style.background="#fff"; stage.append(cv,over); art.replaceChildren(stage);

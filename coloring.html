@@ -43,7 +43,7 @@
 <section><div class="container" style="display:grid;gap:18px">
   <p class="eyebrow" id="c-month" style="margin:0"></p>
   <div class="grid" id="c-pages"></div>
-  <div style="display:grid;gap:10px"><p class="eyebrow" style="margin:0">Meet the Valley Crew</p><h2 style="margin:0">The Valley Crew coloring pages</h2><p class="meta" style="color:var(--muted);font-size:16px;margin:0">Five friends who ride the train and explore the Valley together. Color each one, and watch for them in our stories. Hint: Matteo the Mouse likes to hide!</p></div>
+  <div style="display:grid;gap:10px"><p class="eyebrow" style="margin:0">Meet the Valley Crew</p><h2 style="margin:0">The Valley Crew coloring pages</h2><p class="meta" style="color:var(--muted);font-size:16px;margin:0">Six friends who ride the train and explore the Valley together. Color each one, and watch for them in our stories. Hint: Matteo the Mouse likes to hide!</p></div>
   <div class="grid" id="c-crew"></div>
   <div style="display:grid;gap:10px"><p class="eyebrow" style="margin:0">Utah facts</p><h2 style="margin:0">Utah facts coloring pages</h2><p class="meta" style="color:var(--muted);font-size:16px;margin:0">Color a Utah symbol and learn a true fact about it. Every fact is checked with the State of Utah.</p></div>
   <div class="grid" id="c-utah"></div>
@@ -84,7 +84,8 @@ const CREW=[{file:"coloring-crew-timmy-tyrannosaurus.png",title:"Timmy the Tyran
 {file:"coloring-crew-matteo-mouse.png",title:"Matteo the Mouse",facts:["He's the map keeper for the Valley Crew.","He rides on top of Timmy's head.","Look for him hiding in every picture!"]},
 {file:"coloring-crew-morgan-marmot.png",title:"Morgan the Marmot",facts:["She lives high up in the mountains.","She whistles to warn her friends.","Her favorite thing: sunning on a warm rock."]},
 {file:"coloring-crew-wyatt-wapiti.png",title:"Wyatt the Wapiti",facts:["Wapiti is another name for elk.","He grows brand-new antlers every year.","In winter he likes to visit his elk friends at Hardware Ranch."]},
-{file:"coloring-crew-berkley-bee.png",title:"Berkley the Bee",facts:["Berkley flies ahead to find the next stop.","Utah is the Beehive State!","When her wings get tired, Wyatt's antlers make a perfect seat."]}];
+{file:"coloring-crew-berkley-bee.png",title:"Berkley the Bee",facts:["Berkley flies ahead to find the next stop.","Utah is the Beehive State!","When her wings get tired, Wyatt's antlers make a perfect seat."]},
+{file:"coloring-crew-ben-lomoose.png",title:"Ben Lomoose",facts:["He's named after Ben Lomond Peak.","He wears a gold conductor's cap and a blue bandana.","Can you find him in the Moose Car game?"]}];
 const cb=document.getElementById("c-crew");CREW.forEach(p=>{
   const pr=el("button",{class:"btn primary",type:"button",text:"Print"});pr.onclick=()=>{const im=document.querySelector("#printme img");im.src=p.file;im.onload=()=>window.print();if(im.complete)window.print()};
   cb.append(el("article",{class:"card"},[el("img",{src:p.file,alt:"Coloring page: "+p.title,loading:"lazy",style:"border:1px solid var(--line);border-radius:8px;background:#fff"}),el("h3",{text:p.title}),el("ul",{style:"margin:0;padding-left:20px"},p.facts.map(t=>el("li",{text:t}))),el("div",{class:"btns",style:"margin:0"},[el("a",{class:"btn blue",href:"color.html?img="+encodeURIComponent(p.file)+"&t="+encodeURIComponent(p.title),text:"Color online"}),pr,el("a",{class:"btn ghost",style:"color:var(--blue)",href:p.file,download:p.file,text:"Download"})])]))});
