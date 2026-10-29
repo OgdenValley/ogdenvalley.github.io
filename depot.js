@@ -7,7 +7,7 @@ const count=p=>{try{if(window.goatcounter&&goatcounter.count)goatcounter.count({
 const store={get(k){try{return localStorage.getItem(k)}catch(e){return null}},set(k,v){try{localStorage.setItem(k,v)}catch(e){}}};
 const nice=d=>{const p=String(d||"").split("-");return p.length===3?new Date(+p[0],+p[1]-1,+p[2]).toLocaleDateString("en-US",{month:"short",day:"numeric",year:"numeric"}).replace(/^(\w{3}) /,"$1. ").replace("May. ","May "):""};
 let D;try{D=window.DEPOT_DATA||await (await fetch("depot.json",{cache:"no-cache"})).json()}catch(e){const m=$("d-main");if(m)m.prepend(mk("p",{class:"d-note",text:"The train is running late. Please check back soon."}));return}
-const stops=D.stops||[],here=stops[stops.length-1],opts=(D.vote&&D.vote.options)||[],mapOpts=opts.length?opts:(D.nextStop&&D.nextStop.lat?[D.nextStop]:[]);
+const dToday=new Date().toLocaleDateString("en-CA",{timeZone:"America/Denver"});const stops=(D.stops||[]).filter(s=>!s.posted||s.posted<=dToday),here=stops[stops.length-1];if(here&&here.next)D.nextStop=here.next,opts=(D.vote&&D.vote.options)||[],mapOpts=opts.length?opts:(D.nextStop&&D.nextStop.lat?[D.nextStop]:[]);
 const page=document.body.dataset.depot;
 
 /* ================= CONDUCTOR'S TICKET BOOK =================

@@ -405,3 +405,54 @@ window.OVE = {
   /* --- Started ---------------------------------------------------------- */
   startYear: 2016
 };
+
+/* =====================================================================
+   MONTHLY SWITCH: on the 1st of each month (Utah time), the settings for that
+   month replace the ones above automatically. Add next month here ahead of time.
+   "set" replaces a setting; "addWordSearches" puts new word lists at the front.
+   ===================================================================== */
+window.OVE.monthly = [
+  { month: "2026-11", set: {
+      hunt: {
+        month: "November 2026",
+        title: "Frosty fall in the Valley hunt",
+        items: [
+          { find: "A wild turkey", hint: "Look in fields and along the roads. Watch from the car or the road." },
+          { find: "Geese flying in a V" },
+          { find: "Frost on a leaf, window or car" },
+          { find: "Snow on a mountain top" },
+          { find: "A pinecone" },
+          { find: "A pile of fallen leaves" },
+          { find: "Hay bales or a round bale in a field", hint: "Stay on the road side of the fence." },
+          { find: "A snow stake or snowplow marker along the road" },
+          { find: "Smoke from a chimney" },
+          { find: "The moon in the daytime" }
+        ]
+      },
+      contest: {
+        month: "November 2026",
+        theme: "Frosty mornings and thankful moments in the Valley",
+        deadline: "November 30",
+        lastWinner: { name: "Carla R", title: "Sunset at Icebox Canyon", image: "photo-2026-10-carla-r-icebox-canyon.jpg", month: "October 2026" },
+        entries: []
+      },
+      jigsaw: [
+        { image: "logo-10-years-512.png", title: "Our 10-year logo", artist: "Ogden Valley Info & Events",
+          bio: "This one is our practice puzzle. Soon you'll find puzzles made from paintings and photos by Valley artists here, and finishing one shows you the artist's story and where to see more of their work.",
+          link: "artists.html" }
+      ]
+    },
+    addWordSearches: [
+      { title: "Thanksgiving in the Valley", level: "medium", words: ["TURKEY","PIE","PUMPKIN","HARVEST","THANKFUL","FAMILY","CORN","CRANBERRY","ACORN","LEAVES","FEAST","FROST"] }
+    ]
+  }
+];
+(function(C){
+  var now = new Date().toLocaleDateString("en-CA", { timeZone: "America/Denver" }).slice(0, 7);
+  (C.monthly || []).filter(function(m){ return m.month <= now; })
+    .sort(function(a, b){ return a.month < b.month ? -1 : 1; })
+    .forEach(function(m){
+      if (m.set) Object.keys(m.set).forEach(function(k){ C[k] = m.set[k]; });
+      if (m.addWordSearches) C.wordSearches = m.addWordSearches.concat(C.wordSearches || []);
+    });
+})(window.OVE);

@@ -99,7 +99,121 @@
     "TRACKS",
     "STATION",
     "MUSEUM"
-   ]
+   ],
+   "next": {
+    "name": "Golden Spike",
+    "line": "See where the two railroads met in 1869",
+    "miles": 40,
+    "when": "The story comes next week.",
+    "id": "golden-spike",
+    "lat": 41.6185,
+    "lon": -112.5517
+   }
+  },
+  {
+   "n": 2,
+   "place": "Promontory Summit",
+   "title": "Golden Spike",
+   "posted": "2026-11-01",
+   "lat": 41.6185,
+   "lon": -112.5517,
+   "milesThisTrip": 40,
+   "roadMiles": 0,
+   "story": [
+    "All aboard! Our train rolled about 40 miles northwest from Ogden, around the north side of the Great Salt Lake, to Promontory Summit. This is the spot where the two railroads met in 1869. Today it is Golden Spike National Historical Park.",
+    "Last stop, we learned that the Central Pacific built east from California and the Union Pacific built west from Nebraska. Building a railroad took thousands of workers. The Central Pacific started by hiring 50 Chinese workers. They were so strong and hardworking that the company hired many more. About 10,000 Chinese workers helped build the railroad.",
+    "The work was hard and dangerous. More than one thousand Chinese workers likely died building the Central Pacific. On June 24, 1867, Chinese workers in the mountains of California stopped work together. It was the largest organized workers' strike in the country at that time.",
+    "Near the end, the two railroads made a bet: who could lay the most track in one day? On April 28, 1869, the Central Pacific went for 10 miles. At sunrise, eight Irish track layers started moving the heavy rails into place. Behind them, at least 400 Chinese workers laid the wooden ties, spiked the rails down, bolted them together and packed the ground under the track.",
+    "When the sun went down, they had laid 10 miles and 56 feet of track in a single day. That beat the Union Pacific by almost 2 miles!",
+    "Twelve days later, on May 10, 1869, eight Chinese workers set the very last rail into place. The last tie was made of polished laurel wood, with holes drilled for the special spikes.",
+    "If you visit the park today, you can see working copies of the two engines, Jupiter and No. 119. They came to the park in 1979, 110 years after the tracks first met. Toot toot! Next week, Timmy the Tyrannosaurus is taking the train to Dinosaur Park. All aboard!"
+   ],
+   "quiz": [
+    {
+     "q": "About 10,000 Chinese workers helped build the Central Pacific Railroad.",
+     "a": true,
+     "why": "They did much of the hardest work, from the mountains of California to Utah."
+    },
+    {
+     "q": "On the 10-mile day, the workers laid 10 miles of track in one week.",
+     "a": false,
+     "why": "It was one day: April 28, 1869. They laid 10 miles and 56 feet!"
+    },
+    {
+     "q": "The last tie at Promontory was made of laurel wood.",
+     "a": true,
+     "why": "It was a polished laurel wood tie with holes drilled for the spikes."
+    }
+   ],
+   "draw": "Draw the workers on the 10-mile day: someone carrying a rail, someone hammering a spike, and the sun going down.",
+   "find": "Go outside and count your steps for one minute. The 10-mile day was about 21,000 steps for a grown-up! Or visit Golden Spike National Historical Park with a grown-up and see Jupiter and No. 119.",
+   "word": {
+    "w": "Tie",
+    "def": "A railroad tie is the wooden board that goes across the ground under the rails. The rails are spiked to the ties. Can you find something at home made of wood boards?"
+   },
+   "math": "The workers laid 10 miles in one day. How many miles would they lay in 3 days at that speed?",
+   "sources": [
+    {
+     "title": "Chinese Labor and the Iron Road, National Park Service",
+     "url": "https://www.nps.gov/gosp/learn/historyculture/chinese-labor-and-the-iron-road.htm",
+     "used": "50 Chinese workers hired first; about 10,000 Chinese laborers; over one thousand likely died; June 24, 1867 strike between Cisco and Truckee, California, the largest organized labor strike in the U.S. at the time; April 28, 1869: eight Irish track layers, at least 400 Chinese laborers, 10 miles and 56 feet, Central Pacific beat Union Pacific by almost 2 miles; May 10, 1869: eight Chinese men set the final rail, polished laurel wood tie"
+    },
+    {
+     "title": "Golden Spike National Historical Park",
+     "url": "https://en.wikipedia.org/wiki/Golden_Spike_National_Historical_Park",
+     "used": "Promontory Summit north of the Great Salt Lake; working copies of Jupiter and No. 119 arrived in 1979 for the 110th anniversary; national historical park since 2019"
+    }
+   ],
+   "learn": [
+    {
+     "title": "Golden Spike for Kids",
+     "by": "National Park Service",
+     "url": "https://www.nps.gov/gosp/learn/kidsyouth/index.htm"
+    },
+    {
+     "title": "Chinese Labor and the Iron Road",
+     "by": "National Park Service",
+     "url": "https://www.nps.gov/gosp/learn/historyculture/chinese-labor-and-the-iron-road.htm"
+    },
+    {
+     "title": "Be a Virtual Junior Ranger at Golden Spike",
+     "by": "National Park Service",
+     "url": "https://www.nps.gov/gosp/learn/kidsyouth/be-a-virtual-junior-ranger.htm"
+    }
+   ],
+   "coloring": [
+    {
+     "file": "depot-stop-2-coloring.png",
+     "title": "Stop 2: Golden Spike",
+     "level": "For littles (about ages 3 to 6)"
+    },
+    {
+     "file": "depot-stop-2-coloring-big.png",
+     "title": "The 10-Mile Day",
+     "level": "For bigger kids (about 7 and up)"
+    }
+   ],
+   "wordSearch": [
+    "PROMONTORY",
+    "SPIKE",
+    "JUPITER",
+    "LAUREL",
+    "RAILS",
+    "TIES",
+    "WORKERS",
+    "RECORD",
+    "TELEGRAPH",
+    "SUMMIT"
+   ],
+   "next": {
+    "name": "Dinosaur Park",
+    "line": "Timmy the Tyrannosaurus takes us to meet more than 100 dinosaurs",
+    "miles": 42,
+    "when": "The story comes next week.",
+    "id": "dinosaur-park",
+    "lat": 41.2298,
+    "lon": -111.9262
+   }
   }
  ],
  "suggestForm": "",

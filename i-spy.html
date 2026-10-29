@@ -82,9 +82,10 @@
   <div class="card"><div class="section-head" style="margin:0"><h2 style="font-size:24px">I spy with my little eye…</h2><div class="big" id="spy-count">0 of 12</div></div><ul class="spylist" id="spylist"></ul></div>
 </div></section>
 <section><div class="container" style="display:grid;gap:16px">
-  <div class="section-head" style="margin:0"><h2>Halloween I Spy: play or print</h2></div>
+  <div class="section-head" style="margin:0"><h2 id="ispy-head">I Spy: play or print</h2></div>
   <p class="lead" style="margin:0">Tap the picture when you find each thing. It sparkles and the box checks itself! Or print one and do it with crayons.</p>
   <div class="grid" id="ispy-print" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px"></div>
+  <div id="ispy-past-wrap" hidden style="display:grid;gap:12px"><div><p class="eyebrow" style="margin:0">Still want to play these?</p><h2 style="margin:4px 0 0">Past months</h2></div><div id="ispy-past" style="display:grid;gap:14px"></div></div>
 </div></section>
 <div id="printme" style="display:none"><img alt="" src=""></div>
 <style>@media print{body *{visibility:hidden}#printme,#printme *{visibility:visible}#printme{position:fixed;inset:0;display:block!important}#printme img{width:100%;height:auto}}
@@ -103,27 +104,38 @@
 .hp-done[hidden]{display:none}
 .hp-done b{font-size:20px}
 .hp-count{font-weight:800;font-size:18px;margin:0}
+#ispy-past-wrap[hidden]{display:none!important}
+.ispy-mo{border:2px solid #d9a93a;border-radius:14px;padding:0 16px}.ispy-mo>summary{cursor:pointer;font-weight:800;font-size:1.25rem;padding:16px 0;list-style:none;display:flex;align-items:center;gap:10px}.ispy-mo>summary::-webkit-details-marker{display:none}.ispy-mo>summary::before{content:"\25B6";font-size:.9em;transition:transform .2s}.ispy-mo[open]>summary::before{transform:rotate(90deg)}.ispy-mo>summary::after{content:"Tap to open";margin-left:auto;font-size:.85rem;font-weight:600;opacity:.75}.ispy-mo[open]>summary::after{content:"Tap to close"}.ispy-mo>.ispy-g{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px;padding-bottom:16px}
 @media (prefers-reduced-motion:reduce){.hp .star,.hp .miss,.hp .ringpop{animation:none}.hp .star{display:none}}</style>
 <script>
 (function(){
 const NS="http://www.w3.org/2000/svg";
 /* Spots are measured on the 1700 x 2200 picture: x, y = center, rx, ry = how far a tap can be and still count.
    box = where that item's check box is printed at the bottom of the page. */
-const P=[
+/* Each month: its I Spy pages show on top on the 1st (Utah time); earlier months move to "Past months". */
+const MONTHS=[
+ {month:"2026-11",label:"November 2026",head:"Thanksgiving I Spy: play or print",pages:[
+   {f:"ispy-2026-11-thanksgiving.png",t:"Thanksgiving farm stand I Spy",names:{turkey:"turkey",pie:"pie",corn:"corn",acorn:"acorn",squirrel:"squirrel",hat:"pilgrim hat"},spots:{turkey:{x:242,y:1203,rx:136,ry:171,box:[259,1981]},pie:{x:887,y:1489,rx:136,ry:64,box:[497,1981]},corn:{x:830,y:1203,rx:121,ry:114,box:[737,1981]},acorn:{x:602,y:1496,rx:57,ry:71,box:[973,1981]},squirrel:{x:1366,y:1367,rx:114,ry:129,box:[1212,1981]},hat:{x:1452,y:881,rx:93,ry:71,box:[1452,1981]}}}]},
+ {month:"2026-10",label:"October 2026",head:"Halloween I Spy: play or print",pages:[
  {f:"ispy-halloween-trick-or-treat.png",t:"Trick-or-treat I Spy",spots:{
    ghost:{x:530,y:555,rx:150,ry:160,box:[213,2000]},bat:{x:1030,y:490,rx:190,ry:110,box:[470,2000]},hat:{x:1420,y:1060,rx:170,ry:150,box:[727,2000]},
    candy:{x:1225,y:1500,rx:110,ry:90,box:[983,2000]},owl:{x:1480,y:545,rx:110,ry:140,box:[1235,2000]},spider:{x:1335,y:795,rx:100,ry:100,box:[1485,2000]}}},
  {f:"ispy-halloween-pumpkin-patch.png",t:"Pumpkin patch I Spy",spots:{
    ghost:{x:380,y:520,rx:160,ry:160,box:[198,1985]},bat:{x:1115,y:470,rx:190,ry:110,box:[456,1985]},hat:{x:320,y:975,rx:170,ry:160,box:[718,1985]},
-   candy:{x:390,y:1475,rx:130,ry:90,box:[982,1985]},owl:{x:1415,y:700,rx:110,ry:140,box:[1245,1985]},spider:{x:1515,y:1275,rx:100,ry:100,box:[1503,1985]}}}];
-const NAMES={ghost:"ghost",bat:"bat",hat:"witch hat",candy:"candy",owl:"owl",spider:"spider"};
+   candy:{x:390,y:1475,rx:130,ry:90,box:[982,1985]},owl:{x:1415,y:700,rx:110,ry:140,box:[1245,1985]},spider:{x:1515,y:1275,rx:100,ry:100,box:[1503,1985]}}}]}];
+const HALLOWEEN={ghost:"ghost",bat:"bat",hat:"witch hat",candy:"candy",owl:"owl",spider:"spider"};
+const today=new Date().toLocaleDateString("en-CA",{timeZone:"America/Denver"}).slice(0,7);
+const live=MONTHS.filter(m=>m.month<=today&&m.pages.some(pg=>pg.spots)).sort((a,b)=>b.month.localeCompare(a.month));
 const reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
-const box=document.getElementById("ispy-print");
+const box0=document.getElementById("ispy-print"),pastBox=document.getElementById("ispy-past");
+if(live[0])document.getElementById("ispy-head").textContent=live[0].head;
+document.getElementById("ispy-past-wrap").hidden=live.length<2;
+live.forEach((m,mi)=>{let box=box0;if(mi>0){const d=document.createElement("details");d.className="ispy-mo";const s=document.createElement("summary");s.textContent=m.label+" I Spy ("+m.pages.filter(pg=>pg.spots).length+")";box=document.createElement("div");box.className="ispy-g";d.append(s,box);pastBox.append(d);}
+m.pages.filter(pg=>pg.spots).forEach(pg=>{const NAMES=pg.names||HALLOWEEN;
 function mk(tag,attrs){const n=document.createElementNS(NS,tag);for(const k in attrs)n.setAttribute(k,attrs[k]);return n}
-P.forEach(pg=>{
   const a=document.createElement("article"); a.className="card"; a.style.cssText="display:grid;gap:10px";
   const wrap=document.createElement("div"); wrap.className="hp";
-  const im=document.createElement("img"); im.src=pg.f; im.alt=pg.t+": find the ghost, bat, witch hat, candy, owl and spider. Tap each one when you find it."; im.loading="lazy";
+  const im=document.createElement("img"); im.src=pg.f; im.alt=pg.t+": find the "+Object.keys(pg.spots).map(k=>NAMES[k]).join(", ")+". Tap each one when you find it."; im.loading="lazy";
   const sv=mk("svg",{viewBox:"0 0 1700 2200",preserveAspectRatio:"none",role:"button","aria-label":"Tap where you see a hidden picture"});
   const marks=mk("g",{}); sv.append(marks);
   const done=document.createElement("div"); done.className="hp-done"; done.hidden=true;
@@ -132,14 +144,14 @@ P.forEach(pg=>{
   const h=document.createElement("h3"); h.textContent=pg.t; h.style.margin="0";
   const cnt=document.createElement("p"); cnt.className="hp-count";
   const total=Object.keys(pg.spots).length; let got=new Set();
-  const upd=()=>{cnt.textContent=got.size===total?"All 6 found! ⭐":"Found "+got.size+" of "+total+" · "+Object.keys(pg.spots).filter(k=>!got.has(k)).map(k=>NAMES[k]).join(", ")+" left"};
+  const upd=()=>{cnt.textContent=got.size===total?"All "+total+" found! ⭐":"Found "+got.size+" of "+total+" · "+Object.keys(pg.spots).filter(k=>!got.has(k)).map(k=>NAMES[k]).join(", ")+" left"};
   function pt(ev){const r=sv.getBoundingClientRect();return{x:(ev.clientX-r.left)*1700/r.width,y:(ev.clientY-r.top)*2200/r.height}}
   function sparkle(x,y){if(reduce)return;for(let i=0;i<7;i++){const ang=i/7*Math.PI*2,d=120+Math.random()*60;const t=mk("text",{x:x-30,y:y+25,class:"star"});t.textContent=["✨","⭐","🌟"][i%3];t.style.setProperty("--dx",Math.cos(ang)*d+"px");t.style.setProperty("--dy",Math.sin(ang)*d+"px");t.style.transformBox="fill-box";sv.append(t);setTimeout(()=>t.remove(),950)}}
   function find(k){const s=pg.spots[k];got.add(k);
     marks.append(mk("ellipse",{cx:s.x,cy:s.y,rx:s.rx,ry:s.ry,class:"glow ringpop"}),mk("ellipse",{cx:s.x,cy:s.y,rx:s.rx,ry:s.ry,class:"hit ringpop"}));
     const [bx,by]=s.box;marks.append(mk("path",{d:"M"+(bx-26)+" "+by+" L"+(bx-6)+" "+(by+24)+" L"+(bx+30)+" "+(by-26),class:"tick"}));
     sparkle(s.x,s.y);upd();
-    if(window.goatcounter&&goatcounter.count)try{goatcounter.count({path:"halloween ispy found: "+k,event:true})}catch(e){}
+    if(window.goatcounter&&goatcounter.count)try{goatcounter.count({path:"ispy found: "+pg.f+" "+k,event:true})}catch(e){}
     if(got.size===total)setTimeout(()=>{done.hidden=false},reduce?0:900)}
   sv.addEventListener("click",ev=>{const q=pt(ev);let hit=null;
     for(const k in pg.spots){if(got.has(k))continue;const s=pg.spots[k];if(((q.x-s.x)/s.rx)**2+((q.y-s.y)/s.ry)**2<=1){hit=k;break}}
@@ -155,7 +167,7 @@ P.forEach(pg=>{
   const again=document.createElement("button"); again.type="button"; again.className="btn ghost"; again.style.color="var(--blue)"; again.textContent="Start over";
   again.onclick=()=>{got=new Set();marks.replaceChildren();done.hidden=true;upd()};
   b.append(pr,dl,again); upd(); a.append(wrap,h,cnt,b); box.append(a);
-});
+});});
 })();
 </script>
 <style>.ispy-wrap{position:relative}.spy{cursor:pointer}
