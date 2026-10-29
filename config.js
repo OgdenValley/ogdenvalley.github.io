@@ -214,7 +214,10 @@ window.OVE = {
     { image: "valley-balloon-fest-eden-park-seth-miller.jpg", by: "Seth Miller", place: "Eden", date: "", caption: "Hot air balloons glow at night at the balloon fest at Eden Park" },
     { image: "photo-2026-10-carla-r-icebox-canyon.jpg", by: "Carla R", place: "", date: "2026-10", caption: "Sunset at Icebox Canyon (October photo contest, entry #1)" },
     { image: "valley-aspens-sunburst-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley", date: "2026-10", caption: "The sun bursts through the pines and lights up the aspens" },
-    { image: "valley-north-fork-barn-captura.jpg", by: "Captura", place: "North Fork Park", date: "2026-10", caption: "North Fork Barn, with fresh snow on the peaks behind it" }
+    { image: "valley-north-fork-barn-captura.jpg", by: "Captura", place: "North Fork Park", date: "2026-10", caption: "North Fork Barn, with fresh snow on the peaks behind it" },
+    { image: "valley-pineview-lakebed-mountains-shauna-miller.jpg", by: "Shauna Miller", place: "Pineview", date: "2026-10", caption: "Pineview's lakebed stretches almost to the mountains" },
+    { image: "valley-pineview-cottonwoods-tall-shauna-miller.jpg", by: "Shauna Miller", place: "Pineview", date: "2026-10", caption: "Cottonwoods hang on to their gold along the low water" },
+    { image: "valley-pineview-low-water-cottonwoods-shauna-miller.jpg", by: "Shauna Miller", place: "Pineview", date: "2026-10", caption: "Two cottonwoods frame the empty lakebed from the trail" }
   ],
 
   /* --- Then & Now ------------------------------------------------------
@@ -254,14 +257,28 @@ window.OVE = {
   ],
 
   /* --- Coloring pages (change each month) ---------------------------- */
-  coloringMonth: "October 2026",
-  coloringPages: [
-    { file: "coloring-moose-ghost.png", title: "A moose dressed as a ghost" },
-    { file: "coloring-monster-pumpkins.png", title: "A friendly monster at the pumpkin patch" },
-    { file: "coloring-owl-witch.png", title: "Owl is ready for trick-or-treat" },
-    { file: "coloring-bear-pumpkin.png", title: "Bear carves a jack-o'-lantern" }
+  /* --- Monthly coloring pages (Holiday Express) --------------------------
+     Each month gets its own entry. On the 1st of a month its pages move to the
+     top of the Coloring page automatically; earlier months move down to
+     "Past months" (newest first) so kids can still color them. */
+  coloringMonths: [
+    { month: "2026-11", label: "November 2026", pages: [
+      { file: "coloring-2026-11-crew-thanksgiving.png", title: "Happy Thanksgiving from the Valley Crew!" },
+      { file: "coloring-2026-11-crew-leaf-pile.png", title: "Morgan and Wyatt's leaf pile" },
+      { file: "coloring-2026-11-crew-timmy-pie.png", title: "Timmy baked a pie!" },
+      { file: "coloring-2026-11-turkey-skating.png", title: "Turkey goes skating on Pineview" },
+      { file: "coloring-2026-11-farm-stand.png", title: "Fresh from the Valley farm stand" },
+      { file: "coloring-2026-11-turkey-pie.png", title: "Turkey sneaks a slice of pie" },
+      { file: "coloring-2026-11-eat-more-ham.png", title: "Eat more ham!" },
+      { file: "coloring-2026-11-elk-river.png", title: "Elk at the river in fall" }
+    ] },
+    { month: "2026-10", label: "October 2026", pages: [
+      { file: "coloring-moose-ghost.png", title: "A moose dressed as a ghost" },
+      { file: "coloring-monster-pumpkins.png", title: "A friendly monster at the pumpkin patch" },
+      { file: "coloring-owl-witch.png", title: "Owl is ready for trick-or-treat" },
+      { file: "coloring-bear-pumpkin.png", title: "Bear carves a jack-o'-lantern" }
+    ] }
   ],
-
   /* --- Puzzles: word searches -------------------------------------------
      level: "easy" (10x10, across and down), "medium" (12x12, adds diagonals),
      "hard" (15x15, every direction, even backwards). Words: letters only. */

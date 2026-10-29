@@ -77,18 +77,20 @@
 (async function(){const S=window.OVE_SITE,el=S.el,C=S.C;
 const form=C.forms&&C.forms.report;if(form)document.querySelectorAll("[data-form='report']").forEach(a=>{a.href=form;a.target="_blank";a.rel="noopener"});
 let D;try{D=await (await fetch("timecapsule.json",{cache:"no-cache"})).json()}catch(e){document.getElementById("tc-grid").replaceChildren(el("div",{class:"empty"},[el("p",{text:"The capsules didn't load. Try again in a minute."})]));return}
-const list=(D.entries||[]).slice().sort((a,b)=>(b.posted||"").localeCompare(a.posted||"")||b.num-a.num);
+const today=new Date().toLocaleDateString("en-CA",{timeZone:"America/Denver"});
+const list=(D.entries||[]).filter(e=>!e.hideUntilPosted||e.posted<=today).sort((a,b)=>(b.posted||"").localeCompare(a.posted||"")||b.num-a.num);
 const links=e=>el("p",{class:"tc-src"},[el("span",{text:"Source: "+e.source+(e.photoOnly?" ":", via Utah Digital Newspapers. ")})].concat((e.links||[]).flatMap((l,i)=>[i?el("span",{text:" · "}):null,el("a",{href:l.url,target:"_blank",rel:"noopener",text:l.plain?l.label:"See the original ("+l.label+")"})])));
 const fbBtn=e=>e.facebook?el("a",{class:"btn blue",href:e.facebook,target:"_blank",rel:"noopener",text:"Comment on Facebook"}):el("a",{class:"btn blue","data-facebook":"",href:"https://www.facebook.com/ogdenvalleyevents",target:"_blank",rel:"noopener",text:"Share your memory on Facebook"});
-const f=list.find(e=>e.id===D.featured)||list[0];
+const fs=(D.featured_schedule||[]).filter(x=>x.from<=today).sort((a,b)=>b.from.localeCompare(a.from))[0];
+const f=(fs&&list.find(e=>e.id===fs.id))||list.find(e=>e.id===D.featured)||list[0];
 if(f){document.getElementById("tc-ft-title").textContent=f.title;
 document.getElementById("tc-feature").replaceChildren(el("article",{class:"card tc-feature"},[
-  el("a",{href:f.image,target:"_blank",rel:"noopener"},[el("img",{src:f.image,alt:"Old newspaper clipping: "+f.title+" ("+f.source+")",loading:"eager"})]),
+  el("a",{href:f.image,target:"_blank",rel:"noopener"},[el("img",{src:f.image,alt:f.alt||("Old newspaper clipping: "+f.title+" ("+f.source+")"),loading:"eager"})]),
   el("div",{class:"tc-body"},[el("p",{class:"eyebrow",text:f.ago+" · "+f.when})].concat(f.body.map(t=>el("p",{text:t}))).concat([el("p",{class:"tc-q",text:f.question}),el("div",{class:"btns"},[fbBtn(f)]),links(f)]))]))}
 const towns=["All"].concat([...new Set(list.map(e=>e.town))]);let t="All";const fb=document.getElementById("tc-filter");
 function draw(){fb.replaceChildren(...towns.map(x=>{const b=el("button",{class:"chip",type:"button","aria-pressed":String(x===t),text:x});b.addEventListener("click",()=>{t=x;draw()});return b}));
  document.getElementById("tc-grid").replaceChildren(...list.filter(e=>t==="All"||e.town===t).map(e=>el("article",{class:"card tc-card"},[
-   el("a",{href:e.image,target:"_blank",rel:"noopener"},[el("img",{src:e.image,alt:"Old newspaper clipping: "+e.title,loading:"lazy"})]),
+   el("a",{href:e.image,target:"_blank",rel:"noopener"},[el("img",{src:e.image,alt:e.alt||("Old newspaper clipping: "+e.title),loading:"lazy"})]),
    el("p",{class:"eyebrow",text:"#"+e.num+" · "+e.when}),el("h3",{text:e.title}),
    el("details",{},[el("summary",{text:"Read the story"})].concat(e.body.map(x=>el("p",{text:x}))).concat([el("p",{class:"tc-q",text:e.question}),links(e)]))])))}
 draw();})();

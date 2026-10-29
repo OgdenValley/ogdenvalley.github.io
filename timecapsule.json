@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-27",
+ "updated": "2026-10-28",
  "note": "Valley Time Capsule entries. Newest first is decided by \"posted\"; \"featured\" is the one shown at the top.",
  "featured": "1920-artesian-park",
  "entries": [
@@ -199,6 +199,59 @@
      "plain": true
     }
    ]
+  },
+  {
+   "id": "beneath-pineview",
+   "num": 8,
+   "town": "Huntsville",
+   "decade": "1910s",
+   "paper_date": "1914-11-17",
+   "when": "Near Huntsville, 1914 to today",
+   "ago": "More than 100 years ago, and this week",
+   "title": "Beneath Pineview: When Low Water Shows Us the Old Valley",
+   "question": "Have you walked out on the lakebed this fall? Did you spot anything that's usually underwater?",
+   "source": "Ogden City Records Office photographs (1914 and 1915); Utah Humanities; Weber State University. Photo: Shauna Miller, Pineview, October 2026",
+   "photoOnly": true,
+   "alt": "Two yellow cottonwoods frame Pineview's dry lakebed and the mountains, seen from the trail, October 2026, photo by Shauna Miller",
+   "body": [
+    "Photographs kept by the Ogden City Records Office for more than a century show the artesian wells being drilled near Huntsville in 1914 and 1915. By accident they also show something else: Ogden Valley about 20 years before Pineview Dam was built.",
+    "Whoever took them wrote notes right on the prints. One, dated Nov. 17, 1914, reads “Wells at Huntsville, Well #7, Flow 530 g.p.m.” Four men stand around the well while a column of water bursts out of the ground. That’s 530 gallons a minute, with no pump.",
+    "Another photo from the same day is labeled Well #8, with a 4-inch pipe and “Down 80'.” Instead of a finished well, it shows the drilling rig standing in an open field with the mountains behind it.",
+    "The wide shot of several flowing wells may be the most striking. Water pours from the pipes across the field, with trees, farm buildings and fields stretching into the distance. Look past the wells for a minute. This is land we now think of as lake and shoreline, back when it was still open country.",
+    "The wells were soon tied together into one system. A photo labeled “Setting Valves for Intake at City Wells, Aug. & Sept. 1915” shows a row of valves pouring water into a concrete collection basin. When the remains of structures like this show up in the mud at Pineview today, they can look strange. A century ago, they were a carefully built way to collect and control the water.",
+    "The area became known as Artesian Park. Drilling started in 1914, and about 51 wells were drilled over the years that followed. Work on Pineview Dam began in 1934, and when the dam was finished in 1937, the reservoir covered Artesian Park under 30 to 40 feet of water. Because the wells were capped below the clay, they kept supplying Ogden even underwater. Roads fell out of use, buildings were moved, and the old waterworks disappeared from view.",
+    "That’s why these old photos matter now. With Pineview this low, concrete, pipes, old roads and foundations are coming back into view after decades underwater. Without photos and records like these, some of it would just be unexplained concrete sticking out of the mud.",
+    "This week, from the trail along the shore, the lakebed stretches almost all the way to the mountains. From up there you can see how much ground the water has given back, but you can’t tell what any of it used to be. For that, we still need the photographs, maps and records kept by places like the Ogden City Records Office.",
+    "The old photos show us what was there. The new ones show us what’s left. Together they remind us that Pineview didn’t erase the old Ogden Valley. It covered it. Every so often, when the water drops far enough, the old valley gets to show itself again.",
+    "Find more in the Ogden City Records Office’s “Beneath Pineview” story map."
+   ],
+   "posted": "2026-10-30",
+   "image": "valley-pineview-low-water-cottonwoods-shauna-miller.jpg",
+   "facebook": "",
+   "links": [
+    {
+     "label": "Utah Humanities: Artesian Park",
+     "url": "https://stories.utahhumanities.org/item/1193",
+     "plain": true
+    },
+    {
+     "label": "Weber State: Pineview Dam, 1934",
+     "url": "https://exhibits.weber.edu/s/SC50/page/Pineview",
+     "plain": true
+    },
+    {
+     "label": "See #7: Artesian Park about 1920",
+     "url": "#tc-grid",
+     "plain": true
+    }
+   ],
+   "hideUntilPosted": true
+  }
+ ],
+ "featured_schedule": [
+  {
+   "from": "2026-10-30",
+   "id": "beneath-pineview"
   }
  ]
 }

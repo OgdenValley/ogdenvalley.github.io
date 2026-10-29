@@ -111,7 +111,12 @@
 <script src="site.js"></script>
 <script>
 (function(){
-const C=window.OVE||{}, pages=(C.coloringPages||[]);
+/* monthly coloring: this month on top, earlier months below (newest first) */
+function coloringByMonth(C){const t=new Date().toLocaleDateString("en-CA",{timeZone:"America/Denver"}).slice(0,7);
+ let ms=(C.coloringMonths||[]).filter(m=>m.month<=t).sort((a,b)=>b.month.localeCompare(a.month));
+ if(!ms.length&&C.coloringPages)ms=[{month:t,label:C.coloringMonth||"",pages:C.coloringPages}];
+ const all=[];ms.forEach(m=>m.pages.forEach(p=>all.push(Object.assign({month:m.label},p))));return {current:ms[0]||null,past:ms.slice(1),all};}
+const C=window.OVE||{}, CM=coloringByMonth(C), pages=CM.all.map((p,i)=>i<(CM.current?CM.current.pages.length:0)?p:Object.assign({},p,{title:p.title+" ("+p.month+")"}));
 /* a Utah Depot story can open its own coloring page: color.html?img=depot-stop-1-coloring.png&t=Title */
 {const q=new URLSearchParams(location.search),im=q.get("img");if(im&&(/^depot-(stop|bonus)-\d+-coloring(-big)?\.png$/.test(im)||/^utah-fact-[a-z-]+\.png$/.test(im)||/^coloring-crew-[a-z-]+\.png$/.test(im)))pages.unshift({file:im,title:(q.get("t")||"Utah Depot coloring page").slice(0,80)});}
 const COLORS=[["Red","#e53935"],["Cherry","#b71c1c"],["Pink","#f48fb1"],["Hot pink","#ec407a"],["Coral","#ff7f6e"],["Orange","#fb8c00"],["Pumpkin","#ef6c00"],["Peach","#ffcc99"],
