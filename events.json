@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T16:01:46.496Z",
+ "updated": "2026-10-29T17:00:31.487Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -896,6 +896,16 @@
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1793253600000,
+     "e": 1807423200000,
+     "t": "La Vrille: public art by elparo",
+     "loc": "Dumke Arts Plaza, 445 25th Street",
+     "allDay": true,
+     "desc": "elparo has created large-scale site-responsive sculptures all over the world. La Vrille is his debut work in the United States.",
+     "url": "https://www.weber.edu/shawgallery/upcoming.html",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1793316600000,
@@ -1849,8 +1859,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1859,8 +1869,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1979,8 +1989,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1989,8 +1999,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2645,16 +2655,6 @@
      "allDay": false,
      "desc": "Ballet West’s Nutcracker returns to Ogden for Thanksgiving weekend, America’s first and longest-running production of the holiday classic. Willam Christensen choreographed it in 1944 for San Francisco Ballet, developed in consultation with George Balanchine and Alexandra Danilova. For ten years his was the only complete Nutcracker in the country, and Ballet West has danced it every year since 1963.\n\nSATURDAY, NOVEMBER 28 | 2 PM & 7 PM",
      "url": "https://www.onstageogden.org/show-item/nutcracker-2026/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795899600000,
-     "e": 1795908600000,
-     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
-     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -3340,6 +3340,16 @@
     "allDay": false,
     "desc": "A Hocus Pocus in Concert night in Ogden starts the way the best Halloween plans do: lights down, screen glowing, and a full symphony orchestra drawing the first breath of John Debney’s score. On Wednesday, October 28, the Utah Symphony performs the complete original score live while the beloved 1993 film plays on a big screen above the stage at the Browning Center.",
     "url": "https://www.onstageogden.org/show-item/hocus-pocus/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793253600000,
+    "e": 1807423200000,
+    "t": "La Vrille: public art by elparo",
+    "loc": "Dumke Arts Plaza, 445 25th Street",
+    "allDay": true,
+    "desc": "elparo has created large-scale site-responsive sculptures all over the world. La Vrille is his debut work in the United States.",
+    "url": "https://www.weber.edu/shawgallery/upcoming.html",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4251,16 +4261,6 @@
     "desc": "Ballet West’s Nutcracker returns to Ogden for Thanksgiving weekend, America’s first and longest-running production of the holiday classic. Willam Christensen choreographed it in 1944 for San Francisco Ballet, developed in consultation with George Balanchine and Alexandra Danilova. For ten years his was the only complete Nutcracker in the country, and Ballet West has danced it every year since 1963.\n\nSATURDAY, NOVEMBER 28 | 2 PM & 7 PM",
     "url": "https://www.onstageogden.org/show-item/nutcracker-2026/",
     "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795899600000,
-    "e": 1795908600000,
-    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
-    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
    }
   ],
   "treehouse": [
@@ -4426,8 +4426,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4436,8 +4436,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4466,8 +4466,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4476,8 +4476,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
