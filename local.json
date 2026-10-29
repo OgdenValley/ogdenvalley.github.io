@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T14:11:06.046Z",
+ "updated": "2026-10-29T15:04:44.924Z",
  "meetings": [
   {
    "body": "Weber County Commission",
@@ -39,7 +39,7 @@
     "date": "2026-10-28"
    },
    "water": {
-    "value": 0.1,
+    "value": 0,
     "date": "2026-10-28"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
@@ -49,11 +49,11 @@
    "name": "Ben Lomond Trail",
    "elev": 5970,
    "depth": {
-    "value": 1,
+    "value": 0,
     "date": "2026-10-28"
    },
    "water": {
-    "value": 0.1,
+    "value": 0,
     "date": "2026-10-28"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",

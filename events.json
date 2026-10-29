@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T14:11:01.804Z",
+ "updated": "2026-10-29T15:04:41.547Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -838,16 +838,6 @@
    "name": "Weber County",
    "events": [
     {
-     "s": 1793193300000,
-     "e": 1793197800000,
-     "t": "ConnectEffect",
-     "loc": "Weber State University Community Education Center, 2605 S Monroe Blvd, Ogden 84401",
-     "allDay": false,
-     "desc": "Ogden, Let's Connect!\n\nCome experience ConnectEffect led by founder Riaz Patel.\n\nA 53 minute immersive experience that turns strangers into connected communities. This FREE community event will be entertaining, joyful, and filled with opportunities to connect in unexpected ways.\n\nShow up early or stay late for delicious desserts and more connections.\n\nDate: Wednesday, October 28\nTime: 7:30 p.m. - 8:30 p.m.\nShow up early or stay late for delicious desserts and more connections.\n\nLocation: Weber State Community Education Center (2605 Monroe Blvd, Ogden)\nFREE Parking\n\nConnection starts when we sh",
-     "url": "https://givepul.se/hkwy8u",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1793228400000,
      "e": 1793235600000,
      "t": "Roy Community Trick-or-Treat",
@@ -1030,11 +1020,11 @@
     {
      "s": 1793404800000,
      "e": 1793415600000,
-     "t": "CANCELLED - Below the Bee: A Spookeasy",
-     "loc": "Queen Bee Giftery, 270 25th Street, Ogden, UT 84401",
+     "t": "Below the Bee: A SPOOKEASY",
+     "loc": "The Queen Bee, 270 25th Street, Ogden, UT 84401",
      "allDay": false,
-     "desc": "The Queen Bee Giftery is staying open late, and for the first time ever, retail is heading down to our haunted basement. 👻\n\nShop after hours with early access to our holiday inventory, then brave the stairs to shop local vendors in the basement.\n\nYour $15 ticket includes:\n\nFree dirty sodas, popcorn, and cotton candy\nA chance to win a gift basket packed with goodies from every Spookeasy vendor\nA swag bag for the first 25 guests\nWhen: Friday, October 30th from 6–9 pm\nWhere: The Queen Bee Giftery, 270 25th Street, Ogden\n\nSnacks are on us. Anything lurking in the basement is not our responsibilit",
-     "url": "https://queenbeegiftery.com/products/below-the-bee-a-spookeasy?_pos=1&_sid=fed4e4920&_ss=r",
+     "desc": "Ever wanted to see what's below 25th Street? NOW'S YOUR CHANCE! Shop our SPOOKEASY with some of our favorite Ogden businesses!\n\nThe first 25 people come shop get a swag bag with goodies from every vendor and EVERY person who shops will get a chance to enter a gift basket PACKED FULL of goodies from all of us to you!\n\nOh, we'll also have free popcorn and cotton candy.\n\nSo tell all your besties, tell your Amazon driver, and get ready to shop 'til you drop!",
+     "url": "https://queenbeegiftery.com/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -1046,6 +1036,16 @@
      "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1793406600000,
+     "e": 1793413800000,
+     "t": "Spirits at the Station",
+     "loc": "Museums at Union Station, 2501 Wall Ave, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Museums at Union Station in partnership with Weber County Heritage Foundation will be discussing the spirits that haunt this 100 year old landmark of Ogden. Join us for the lecture and then explore the museums with your family and friends.",
+     "url": "https://www.webercountyheritagefoundation.com/event-6855556",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1793408400000,
@@ -2089,8 +2089,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2099,8 +2099,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2676,16 +2676,6 @@
      "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
      "url": "",
      "src": "Weekly regular"
-    },
-    {
-     "s": 1795908600000,
-     "e": 1795912200000,
-     "t": "Ogden Santa Run",
-     "loc": "Downtown Ogden, 22nd Street and Washington Blvd",
-     "allDay": false,
-     "desc": "Run this awesome 5K in downtown Ogden wearing a Santa Suit. All runners get a complete Santa suit for their $35 registration fee. Enjoy milk and cookie aid stations; volunteers dress as elves!\n\nBe a part of the 7th Annual Ogden Santa Run. This timed fun run is the best way to start the Holiday Season. ALL RUNNERS MUST DRESS UP AS SANTA CLAUS!!! Along your 5K course you will have Santa's Helpers (Volunteers) dressed with green shirts and hats handing out Milk & Cookies to aid the runners.\n\nFor your registration fee you will receive all you need to run as Santa Claus (Hat, Beard, Jacket, and Pan",
-     "url": "http://www.runsanta.com",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1795914000000,
@@ -3333,16 +3323,6 @@
  "sources": {
   "ogdenarea": [
    {
-    "s": 1793193300000,
-    "e": 1793197800000,
-    "t": "ConnectEffect",
-    "loc": "Weber State University Community Education Center, 2605 S Monroe Blvd, Ogden 84401",
-    "allDay": false,
-    "desc": "Ogden, Let's Connect!\n\nCome experience ConnectEffect led by founder Riaz Patel.\n\nA 53 minute immersive experience that turns strangers into connected communities. This FREE community event will be entertaining, joyful, and filled with opportunities to connect in unexpected ways.\n\nShow up early or stay late for delicious desserts and more connections.\n\nDate: Wednesday, October 28\nTime: 7:30 p.m. - 8:30 p.m.\nShow up early or stay late for delicious desserts and more connections.\n\nLocation: Weber State Community Education Center (2605 Monroe Blvd, Ogden)\nFREE Parking\n\nConnection starts when we sh",
-    "url": "https://givepul.se/hkwy8u",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1793233800000,
     "e": 1793237400000,
     "t": "Yoga",
@@ -3435,11 +3415,21 @@
    {
     "s": 1793404800000,
     "e": 1793415600000,
-    "t": "CANCELLED - Below the Bee: A Spookeasy",
-    "loc": "Queen Bee Giftery, 270 25th Street, Ogden, UT 84401",
+    "t": "Below the Bee: A SPOOKEASY",
+    "loc": "The Queen Bee, 270 25th Street, Ogden, UT 84401",
     "allDay": false,
-    "desc": "The Queen Bee Giftery is staying open late, and for the first time ever, retail is heading down to our haunted basement. 👻\n\nShop after hours with early access to our holiday inventory, then brave the stairs to shop local vendors in the basement.\n\nYour $15 ticket includes:\n\nFree dirty sodas, popcorn, and cotton candy\nA chance to win a gift basket packed with goodies from every Spookeasy vendor\nA swag bag for the first 25 guests\nWhen: Friday, October 30th from 6–9 pm\nWhere: The Queen Bee Giftery, 270 25th Street, Ogden\n\nSnacks are on us. Anything lurking in the basement is not our responsibilit",
-    "url": "https://queenbeegiftery.com/products/below-the-bee-a-spookeasy?_pos=1&_sid=fed4e4920&_ss=r",
+    "desc": "Ever wanted to see what's below 25th Street? NOW'S YOUR CHANCE! Shop our SPOOKEASY with some of our favorite Ogden businesses!\n\nThe first 25 people come shop get a swag bag with goodies from every vendor and EVERY person who shops will get a chance to enter a gift basket PACKED FULL of goodies from all of us to you!\n\nOh, we'll also have free popcorn and cotton candy.\n\nSo tell all your besties, tell your Amazon driver, and get ready to shop 'til you drop!",
+    "url": "https://queenbeegiftery.com/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793406600000,
+    "e": 1793413800000,
+    "t": "Spirits at the Station",
+    "loc": "Museums at Union Station, 2501 Wall Ave, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Museums at Union Station in partnership with Weber County Heritage Foundation will be discussing the spirits that haunt this 100 year old landmark of Ogden. Join us for the lecture and then explore the museums with your family and friends.",
+    "url": "https://www.webercountyheritagefoundation.com/event-6855556",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4271,16 +4261,6 @@
     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
     "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795908600000,
-    "e": 1795912200000,
-    "t": "Ogden Santa Run",
-    "loc": "Downtown Ogden, 22nd Street and Washington Blvd",
-    "allDay": false,
-    "desc": "Run this awesome 5K in downtown Ogden wearing a Santa Suit. All runners get a complete Santa suit for their $35 registration fee. Enjoy milk and cookie aid stations; volunteers dress as elves!\n\nBe a part of the 7th Annual Ogden Santa Run. This timed fun run is the best way to start the Holiday Season. ALL RUNNERS MUST DRESS UP AS SANTA CLAUS!!! Along your 5K course you will have Santa's Helpers (Volunteers) dressed with green shirts and hats handing out Milk & Cookies to aid the runners.\n\nFor your registration fee you will receive all you need to run as Santa Claus (Hat, Beard, Jacket, and Pan",
-    "url": "http://www.runsanta.com",
-    "src": "Ogden Area Events (Visit Ogden)"
    }
   ],
   "treehouse": [
@@ -4506,8 +4486,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4516,8 +4496,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
