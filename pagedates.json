@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T14:07:00.488Z",
+ "updated": "2026-10-29T02:56:02.738Z",
  "pages": {
   "404.html": {
    "posted": "2026-10-06",
@@ -33,13 +33,13 @@
   },
   "color.html": {
    "posted": "2026-10-08",
-   "updated": "2026-10-20",
-   "hash": "6b04664a0cf2"
+   "updated": "2026-10-28",
+   "hash": "39e5b018e2c7"
   },
   "coloring.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-20",
-   "hash": "197bd275a84a"
+   "updated": "2026-10-28",
+   "hash": "e055e1b81aae"
   },
   "coming.html": {
    "posted": "2026-10-07",
@@ -263,8 +263,8 @@
   },
   "time-capsule.html": {
    "posted": "2026-10-18",
-   "updated": "2026-10-27",
-   "hash": "e01f55c79dc4"
+   "updated": "2026-10-28",
+   "hash": "a90de7ceda49"
   },
   "depot-story.html": {
    "posted": "2026-10-20",
