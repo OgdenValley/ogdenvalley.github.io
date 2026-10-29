@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T01:05:10.639Z",
+ "updated": "2026-10-29T02:02:09.086Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -747,16 +747,6 @@
   "weber": {
    "name": "Weber County",
    "events": [
-    {
-     "s": 1793143800000,
-     "e": 1793151000000,
-     "t": "Browning Center 113 Open House - 113",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
     {
      "s": 1793145600000,
      "e": 1793156400000,
@@ -4224,16 +4214,6 @@
    }
   ],
   "treehouse": [
-   {
-    "s": 1793143800000,
-    "e": 1793151000000,
-    "t": "Browning Center 113 Open House - 113",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
    {
     "s": 1793232000000,
     "e": 1793242800000,

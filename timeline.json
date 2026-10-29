@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-28T22:48:44.694Z",
+ "updated": "2026-10-29T02:04:32.019Z",
  "items": [
   {
    "t": 1793224183832,
@@ -27,13 +27,6 @@
    "src": "UDOT road sensor",
    "text": "SR-158 @ MP 11.5 Powder Mountain: pavement 32°F, slushy. Watch for ice.",
    "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1793152927063,
-   "src": "UDOT",
-   "text": "Cleared: SR 39. Crash, EB SR-39 at MP 8.4 (Valley Dr, Ogden). Closed. SR-39 EB: Closed. SR-39 WB: Closed.",
-   "kind": "clear",
    "link": "https://udottraffic.utah.gov/"
   }
  ],
