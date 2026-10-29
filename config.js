@@ -273,6 +273,8 @@ window.OVE = {
       { file: "coloring-2026-11-wyatt-river.png", title: "Wyatt the Wapiti at the river" }
     ] },
     { month: "2026-10", label: "October 2026", pages: [
+        { file: "coloring-2026-10-crew-timmy-trick-or-treat.png", title: "Timmy goes trick-or-treating!" },
+        { file: "coloring-2026-10-crew-pumpkin-patch.png", title: "Morgan and Berkley's pumpkin patch" },
       { file: "coloring-moose-ghost.png", title: "A moose dressed as a ghost" },
       { file: "coloring-monster-pumpkins.png", title: "A friendly monster at the pumpkin patch" },
       { file: "coloring-owl-witch.png", title: "Owl is ready for trick-or-treat" },
