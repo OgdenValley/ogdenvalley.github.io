@@ -1,6 +1,405 @@
 {
- "updated": "2026-10-22T12:53:16.323Z",
+ "updated": "2026-10-29T13:06:19.835Z",
  "issues": [
+  {
+   "start": "2026-10-29",
+   "end": "2026-11-05",
+   "made": "2026-10-29T13:06:19.800Z",
+   "featured": [],
+   "events": [
+    {
+     "day": "2026-10-29",
+     "items": [
+      {
+       "time": "5:30 p.m.",
+       "t": "Halloween Pizza Bash",
+       "url": "https://www.wildshapedbakery.com/events/pizza-night-m87kg-dygpn-w6w6n",
+       "loc": "Wild Shape Bakery"
+      },
+      {
+       "time": "5:30 p.m.",
+       "t": "Roaring 20s Halloween Dinner Tour Experience",
+       "url": "https://tourogden.com/",
+       "loc": "Stellas on 25th"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Student Success Center - LGBTQ+ Film Screening - 113",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Free live music & ice cream at Z's Sweets",
+       "url": "",
+       "loc": "Z's Sweets"
+      },
+      {
+       "time": "6:30 p.m.",
+       "t": "Halloween Storytelling Spooktacular",
+       "url": "",
+       "loc": "Peery's Egyptian Theater"
+      },
+      {
+       "time": "7:30 p.m.",
+       "t": "Fall Opera - Eccles",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "8:30 p.m.",
+       "t": "Country Dancing",
+       "url": "",
+       "loc": "Neptune Skating Center"
+      }
+     ]
+    },
+    {
+     "day": "2026-10-30",
+     "items": [
+      {
+       "time": "12 p.m.",
+       "t": "Weber State's SPOOK-TACULAR Halloween Party",
+       "url": "https://www.weber.edu/halloween",
+       "loc": "Weber State University - Shepherd Union"
+      },
+      {
+       "time": "1 p.m.",
+       "t": "New World Distillery tasting tour",
+       "url": "",
+       "loc": "New World Distillery"
+      },
+      {
+       "time": "5 p.m.",
+       "t": "Skinny Dogz Trunk or Treat",
+       "url": "https://facebook.com/events/s/skinny-dogz-trunk-or-treat/1400402505593873/",
+       "loc": "Skinny Dogz 2261 Kiesel Ave"
+      },
+      {
+       "time": "5:30 p.m.",
+       "t": "Steppin' The Ogden Way dance class",
+       "url": "",
+       "loc": "Marshall White Center"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Trunk or Treat Community Event",
+       "url": "https://www.facebook.com/share/1DyQUFjgTV/",
+       "loc": "Feller & Wendt"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "CANCELLED - Below the Bee: A Spookeasy",
+       "url": "https://queenbeegiftery.com/products/below-the-bee-a-spookeasy?_pos=1&_sid=fed4e4920&_ss=r",
+       "loc": "Queen Bee Giftery"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Free live music & ice cream at Z's Sweets",
+       "url": "",
+       "loc": "Z's Sweets"
+      },
+      {
+       "time": "7 p.m.",
+       "t": "Friday Night Jazz",
+       "url": "",
+       "loc": "Two Bit Bistro"
+      },
+      {
+       "time": "7:30 p.m.",
+       "t": "The Rocky Horror Picture Show",
+       "url": "https://ogdenpet.com/events/category/series/rocky-horror-picture-show-2026/peerys-egyptian-theater/",
+       "loc": "Peery's Egyptian Theater"
+      },
+      {
+       "time": "7:30 p.m.",
+       "t": "Fall Opera - Eccles",
+       "url": "",
+       "loc": ""
+      }
+     ]
+    },
+    {
+     "day": "2026-10-31",
+     "items": [
+      {
+       "time": "7 a.m.",
+       "t": "Nightmare on the Mat Wrestling Competition",
+       "url": "https://www.wrestleutah.com/nightmareonthemat",
+       "loc": "Golden Spike Event Center"
+      },
+      {
+       "time": "10:30 a.m.",
+       "t": "The Witches Brunch Club",
+       "url": "https://queenbeegiftery.com/products/witches-brunch-the-brunch-club",
+       "loc": "Queen Bee Giftery"
+      },
+      {
+       "time": "1 p.m.",
+       "t": "New World Distillery tasting tour",
+       "url": "",
+       "loc": "New World Distillery"
+      },
+      {
+       "time": "2 p.m.",
+       "t": "Cinema Saturday Feature Films",
+       "url": "",
+       "loc": "Ogden Valley Library @ 131 S 7400 E"
+      },
+      {
+       "time": "2 p.m.",
+       "t": "Craft n Cry",
+       "url": "",
+       "loc": "Kaffe Mercantile"
+      },
+      {
+       "time": "4 p.m.",
+       "t": "Halloween Bar Crawl",
+       "url": "https://crawlwith.us/ogden/halloween/",
+       "loc": "Starts at Kokomo Club"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Free live music & ice cream at Z's Sweets",
+       "url": "",
+       "loc": "Z's Sweets"
+      },
+      {
+       "time": "7 p.m.",
+       "t": "Singles Mingle",
+       "url": "",
+       "loc": "Grounds for Coffee"
+      },
+      {
+       "time": "8 p.m.",
+       "t": "Halloween Burlesque",
+       "url": "https://www.coppernickel.com/tickets/halloween-burlesque-2026",
+       "loc": "Copper Nickel"
+      },
+      {
+       "time": "8:45 p.m.",
+       "t": "Halloween Burlesque at Copper Nickel (21+)",
+       "url": "https://www.coppernickel.com/tickets/halloween-burlesque-2026?utm_source=ogdencity&utm_medium=listing&utm_campaign=hb26&utm_content=calendar",
+       "loc": "Copper Nickel Events"
+      },
+      {
+       "time": "10 p.m.",
+       "t": "Ghosted: Halloween After Party at Copper Nickel (21+)",
+       "url": "https://www.coppernickel.com/tickets/ghosted-after-party-2026?utm_source=ogdencity&utm_medium=listing&utm_campaign=hb26&utm_content=calendar",
+       "loc": "Copper Nickel Events"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-01",
+     "items": [
+      {
+       "time": "1 p.m.",
+       "t": "New World Distillery tasting tour",
+       "url": "",
+       "loc": "New World Distillery"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-02",
+     "items": [
+      {
+       "time": "12 p.m.",
+       "t": "Parent Cafe",
+       "url": "https://www.eventbrite.com/cc/parent-cafes-special-events-4839868?utm-campaign=social&utm-content=creatorshare&utm-medium=discovery&utm-term=odclsxcollection&utm-source=cp&aff=escb",
+       "loc": "Family Support Center of Ogden 3340 Harrison Blvd Ogden"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Mystic Mondays: tarot readings",
+       "url": "",
+       "loc": "Two Bit Bistro"
+      },
+      {
+       "time": "8:30 p.m.",
+       "t": "Country Dancing",
+       "url": "",
+       "loc": "Neptune Skating Center"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-03",
+     "items": [
+      {
+       "time": "7 a.m.",
+       "t": "2026 General Elections In-Person Voting",
+       "url": "https://www.weberelections.gov/",
+       "loc": "Golden Spike Event Center"
+      },
+      {
+       "time": "1:30 p.m.",
+       "t": "Gentle Movements",
+       "url": "https://weberpl.events.mylibrary.digital/",
+       "loc": "Main Library"
+      },
+      {
+       "time": "3:30 p.m.",
+       "t": "Ogden City Council Work Session",
+       "url": "",
+       "loc": "Ogden City Municipal Building"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Ogden City Council Meeting",
+       "url": "",
+       "loc": "Ogden City Municipal Building"
+      },
+      {
+       "time": "7:30 p.m.",
+       "t": "Manual Cinema Presents: The 4th Witch",
+       "url": "",
+       "loc": "Val A. Browning Center | Austad Auditorium"
+      },
+      {
+       "time": "7:30 p.m.",
+       "t": "Excellence in the Community Presents: Will Baxter & the Best of Neal Diamond",
+       "url": "https://ogdenpet.com/event/eic-beachboystribute-2026/peerys-egyptian-theater/",
+       "loc": "Peery's Egyptian Theater"
+      },
+      {
+       "time": "7:30 p.m.",
+       "t": "Browning Presents: Manual Cinema's The 4th Witch - Austad",
+       "url": "",
+       "loc": ""
+      }
+     ]
+    },
+    {
+     "day": "2026-11-04",
+     "items": [
+      {
+       "time": "4 p.m.",
+       "t": "RMBRA Jackpots",
+       "url": "https://www.facebook.com/RMBRARockyMountainBarrelRacing/",
+       "loc": "Golden Spike Event Center"
+      },
+      {
+       "time": "5 p.m.",
+       "t": "Ogden City Planning Commission Meeting",
+       "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
+       "loc": "2549 Washington Blvd."
+      },
+      {
+       "time": "5:30 p.m.",
+       "t": "Weber State Students Fall Cello Recital - 113",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Wednesday Night Hikers",
+       "url": "https://www.meetup.com/webercountyoutdoors/",
+       "loc": "Varies"
+      },
+      {
+       "time": "6:30 p.m.",
+       "t": "Yoga",
+       "url": "https://weberpl.events.mylibrary.digital/",
+       "loc": "Main Library"
+      },
+      {
+       "time": "7 p.m.",
+       "t": "Warren Miller's \"Days Off\"",
+       "url": "https://ogdenpet.com/event/warren-millers-days-off-2026/peerys-egyptian-theater/",
+       "loc": "Peery's Egyptian Theater"
+      },
+      {
+       "time": "8:30 p.m.",
+       "t": "Country Dancing",
+       "url": "",
+       "loc": "Neptune Skating Center"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-05",
+     "items": [
+      {
+       "time": "6 p.m.",
+       "t": "Visiting Artist Lecture by Melissa Melero-Moose",
+       "url": "",
+       "loc": "Kimball Arts Building | Room 143"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "WSSO",
+       "url": "",
+       "loc": "Kimball Arts Building | Room 143"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Free live music & ice cream at Z's Sweets",
+       "url": "",
+       "loc": "Z's Sweets"
+      },
+      {
+       "time": "7 p.m.",
+       "t": "Trails Foundation of Northern Utah presents: Ogden Mountain Film Festival",
+       "url": "https://ogdenpet.com/event/ogden-mountain-film-festival-2026/peerys-egyptian-theater/",
+       "loc": "Peery's Egyptian Theater"
+      },
+      {
+       "time": "8:30 p.m.",
+       "t": "Country Dancing",
+       "url": "",
+       "loc": "Neptune Skating Center"
+      }
+     ]
+    }
+   ],
+   "weather": [],
+   "roads": [
+    {
+     "title": "Ogden Canyon lane closure (SR-39)",
+     "text": "Start date is tentative. Work could begin as early as Monday, Oct. 26. The confirmed date will be posted at ogdencitypipeline.com once the pipe arrives.",
+     "image": "roadwork-2026-10-26-ogden-canyon-pipeline.png",
+     "alt": "Ogden Canyon lane closure: one lane of SR-39 closed for about a quarter mile between The Oaks Restaurant and the Ogden Canyon Water Treatment Plant, alternating traffic 24/7, 5 to 10 minute delays, as early as Oct. 26, 2026 through April 2027"
+    }
+   ],
+   "fresh": [
+    {
+     "name": "Powder pups",
+     "page": "businesses.html",
+     "label": "Shop & do",
+     "town": "Eden",
+     "blurb": "Award Winning Dog Grooming. All breeds welcome."
+    },
+    {
+     "name": "Wild poppy floral co",
+     "page": "businesses.html",
+     "label": "Shop & do",
+     "town": "Eden",
+     "blurb": "Local florist specializing in weddings, special events, everyday flowers and custom designs."
+    }
+   ],
+   "jobs": [],
+   "spot": {
+    "image": "spot-2026-10-27.jpg",
+    "hint": "This old-timer has been parked in the Valley a long time, and it's not on a main road. Town or road only, please, no house numbers."
+   },
+   "winner": null,
+   "sponsors": [
+    {
+     "name": "Yes, I Can Fix That",
+     "link": "https://icanfixthatut.com",
+     "line": "Veteran-owned handyman serving all of Ogden Valley: drywall, doors, home maintenance and DIY classes."
+    }
+   ],
+   "forms": {
+    "event": "https://docs.google.com/forms/d/e/1FAIpQLSdq-tr_1dUMWJvoD06p9oZAXQWuK5-SnkucboHFwVEFmeZSZg/viewform",
+    "photo": "https://docs.google.com/forms/d/e/1FAIpQLSe9nppeo6jqEILr9SLywvxZ3jgXA-7V0RiaQ3DSvzk0VCst8A/viewform",
+    "business": "https://docs.google.com/forms/d/e/1FAIpQLSc-jh9kRzlErQ1jv698LT4prqLnCWFkdoJy6Bj5KcUeCZCL7A/viewform",
+    "jobs": "https://docs.google.com/forms/d/e/1FAIpQLScOzyUB6XfbZWbwNCMR1FIAjCyWWt-aQFQSGKN2pR5YJvtwkw/viewform",
+    "report": "https://docs.google.com/forms/d/e/1FAIpQLSeeDFHHAo4biQ0t4BzoG0TmCzcFgXUc5iBN33pOrKYpmK1Eng/viewform"
+   }
+  },
   {
    "start": "2026-10-22",
    "end": "2026-10-29",
