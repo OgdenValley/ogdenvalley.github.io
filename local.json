@@ -1,13 +1,6 @@
 {
- "updated": "2026-10-28T15:58:49.759Z",
+ "updated": "2026-10-29T01:05:15.584Z",
  "meetings": [
-  {
-   "body": "Ogden Valley Planning Commission",
-   "title": "NOTICE FOR OGDEN VALLEY PLANNING COMMISSION MEETING - October 27, 2026, 6pm",
-   "start": 1793145600000,
-   "link": "https://www.utah.gov/pmn/sitemap/notice/1116421.html",
-   "source": "Utah Public Notice Website"
-  },
   {
    "body": "Weber County Commission",
    "title": "Public Notice of Vacancy on the Mt. Ogden Public Infrastructure Districts 1, 2, and 3",
@@ -93,7 +86,7 @@
   "Ogden Valley Planning Commission": "ok",
   "Huntsville Town Council": "ok",
   "Weber County Commission": "ok",
-  "Huntsville Town website": "ok",
+  "Huntsville Town website": "failed",
   "snow": "ok",
   "pineview": "ok"
  }
