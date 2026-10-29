@@ -42,6 +42,8 @@
 <section><div class="container" style="display:grid;gap:18px">
   <p class="eyebrow" id="c-month" style="margin:0"></p>
   <div class="grid" id="c-pages"></div>
+  <div style="display:grid;gap:10px"><p class="eyebrow" style="margin:0">Meet the Valley Crew</p><h2 style="margin:0">The Valley Crew coloring pages</h2><p class="meta" style="color:var(--muted);font-size:16px;margin:0">Five friends who ride the train and explore the Valley together. Color each one, and watch for them in our stories. Hint: Matteo the Mouse likes to hide!</p></div>
+  <div class="grid" id="c-crew"></div>
   <div style="display:grid;gap:10px"><p class="eyebrow" style="margin:0">Utah facts</p><h2 style="margin:0">Utah facts coloring pages</h2><p class="meta" style="color:var(--muted);font-size:16px;margin:0">Color a Utah symbol and learn a true fact about it. Every fact is checked with the State of Utah.</p></div>
   <div class="grid" id="c-utah"></div>
   <div class="card cta"><div><h2>Finished your picture?</h2><p style="margin-top:6px">Have a grown-up send a photo of it. We only ever show a <b>first and last initial and your city</b>, like "M. B., Eden."</p></div><div class="btns" style="margin:0"><a class="btn primary" data-form="coloring" href="#">Send a finished page</a></div></div>
@@ -67,6 +69,16 @@
 const box=document.getElementById("c-pages");(S.C.coloringPages||[]).forEach((p,pi)=>{
   const pr=el("button",{class:"btn primary",type:"button",text:"Print"});pr.onclick=()=>{const im=document.querySelector("#printme img");im.src=p.file;im.onload=()=>window.print();if(im.complete)window.print()};
   box.append(el("article",{class:"card"},[el("img",{src:p.file,alt:"Coloring page: "+p.title,loading:"lazy",style:"border:1px solid var(--line);border-radius:8px;background:#fff"}),el("h3",{text:p.title}),el("div",{class:"btns",style:"margin:0"},[el("a",{class:"btn blue",href:"color.html?p="+pi,text:"Color online"}),pr,el("a",{class:"btn ghost",style:"color:var(--blue)",href:p.file,download:p.file,text:"Download"})])]))});
+
+/* The Valley Crew character pages */
+const CREW=[{file:"coloring-crew-timmy-tyrannosaurus.png",title:"Timmy the Tyrannosaurus",facts:["Favorite place: Dinosaur Park","Favorite food: everything!","His arms are tiny, but his hugs are big."]},
+{file:"coloring-crew-matteo-mouse.png",title:"Matteo the Mouse",facts:["He's the map keeper for the Valley Crew.","He rides on top of Timmy's head.","Look for him hiding in every picture!"]},
+{file:"coloring-crew-morgan-marmot.png",title:"Morgan the Marmot",facts:["She lives high up in the mountains.","She whistles to warn her friends.","Her favorite thing: sunning on a warm rock."]},
+{file:"coloring-crew-wyatt-wapiti.png",title:"Wyatt the Wapiti",facts:["Wapiti is another name for elk.","He grows brand-new antlers every year.","In winter he likes to visit his elk friends at Hardware Ranch."]},
+{file:"coloring-crew-berkeley-bee.png",title:"Berkeley the Bee",facts:["Berkeley flies ahead to find the next stop.","Utah is the Beehive State!","When her wings get tired, Wyatt's antlers make a perfect seat."]}];
+const cb=document.getElementById("c-crew");CREW.forEach(p=>{
+  const pr=el("button",{class:"btn primary",type:"button",text:"Print"});pr.onclick=()=>{const im=document.querySelector("#printme img");im.src=p.file;im.onload=()=>window.print();if(im.complete)window.print()};
+  cb.append(el("article",{class:"card"},[el("img",{src:p.file,alt:"Coloring page: "+p.title,loading:"lazy",style:"border:1px solid var(--line);border-radius:8px;background:#fff"}),el("h3",{text:p.title}),el("ul",{style:"margin:0;padding-left:20px"},p.facts.map(t=>el("li",{text:t}))),el("div",{class:"btns",style:"margin:0"},[el("a",{class:"btn blue",href:"color.html?img="+encodeURIComponent(p.file)+"&t="+encodeURIComponent(p.title),text:"Color online"}),pr,el("a",{class:"btn ghost",style:"color:var(--blue)",href:p.file,download:p.file,text:"Download"})])]))});
 
 /* Utah facts coloring pages */
 const UF=[{file:"utah-fact-gull.png",title:"Utah's State Bird: the California Gull",fact:"In 1848, gulls ate the crickets that were destroying the settlers' crops. Utah made the California gull its state bird in 1955.",src:"https://onlinelibrary.utah.gov/utah/symbols/bird/"},
