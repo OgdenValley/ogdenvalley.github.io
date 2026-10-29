@@ -3,6 +3,15 @@
  "items": [
   {
    "type": "weekly",
+   "date": "2026-10-29T08:30:00-06:00",
+   "title": "Ogden Valley weather: Oct. 29 to Nov. 4",
+   "summary": "Dry and mild today and early Friday, highs near 61°. Rain chances start Friday afternoon and evening (52%). Halloween looks wet: light rain Saturday turning to showers and thunderstorms by evening (99%), highs near 58°, so plan trick-or-treating with rain gear. Sunday, Nov. 1, brings showers and thunderstorms, then rain and snow likely Sunday night, with a chance of rain and snow Monday morning; lows near 29–31°. Snow level near 8,000 feet. Mostly sunny Tuesday and Wednesday, highs in the 50s. Air quality is Good. Clocks fall back one hour early Sunday, Nov. 1.",
+   "image": "",
+   "alt": "",
+   "source": "National Weather Service point forecast for the Eden, Liberty and Huntsville area, issued 12:31 a.m. Oct. 29, 2026; Utah Division of Air Quality forecast, issued 3:31 p.m. Oct. 28"
+  },
+  {
+   "type": "weekly",
    "date": "2026-10-12T22:45:00-06:00",
    "title": "Ogden Valley weather update: Oct. 13–18",
    "summary": "Showers and thunderstorms tonight and Tuesday (94% chance Tuesday), with the snow level near 7,300 feet so the high peaks may turn white while the Valley floor stays rain. Lows of 29–32° every night through Friday, so cover tender plants and unhook hoses. Dry and sunny Thursday through Sunday, warming to the mid-60s. Air quality is Good.",

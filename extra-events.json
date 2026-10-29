@@ -616,6 +616,96 @@
    "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
    "url": "",
    "src": "Weekly regular"
+  },
+  {
+   "t": "FREE drop-in pumpkin painting",
+   "start": "2026-10-30T15:00:00-06:00",
+   "end": "2026-10-30T17:00:00-06:00",
+   "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
+   "into": "ov",
+   "url": "https://www.facebook.com/MountainArtsAndMusic/",
+   "desc": "Paint and decorate a pumpkin to celebrate the season. Free, drop in any time from 3 to 5 p.m.",
+   "src": "Mountain Arts and Music Facebook post, shared Oct. 28, 2026"
+  },
+  {
+   "t": "Huntsville Town Council meeting",
+   "start": "2026-11-05T18:00:00-07:00",
+   "end": "2026-11-05T20:00:00-07:00",
+   "loc": "Huntsville Town Hall, 7474 E. 200 S., Huntsville",
+   "into": "ov",
+   "url": "https://huntsvilleutah.gov/upcoming-events",
+   "desc": "Regularly scheduled Town Council meeting. All are welcome.",
+   "src": "huntsvilleutah.gov upcoming events, checked Oct. 29, 2026"
+  },
+  {
+   "t": "Huntsville Town Council meeting",
+   "start": "2026-11-19T18:00:00-07:00",
+   "end": "2026-11-19T20:00:00-07:00",
+   "loc": "Huntsville Town Hall, 7474 E. 200 S., Huntsville",
+   "into": "ov",
+   "url": "https://huntsvilleutah.gov/upcoming-events",
+   "desc": "Regularly scheduled Town Council meeting. All are welcome.",
+   "src": "huntsvilleutah.gov upcoming events, checked Oct. 29, 2026"
+  },
+  {
+   "t": "Trunk or Treat at Snowcrest Jr High",
+   "start": "2026-10-31T16:00:00-06:00",
+   "end": "2026-10-31T17:30:00-06:00",
+   "loc": "Snowcrest Junior High, Eden",
+   "into": "ov",
+   "url": "",
+   "desc": "Free community trunk-or-treat. Bring your littles, or bring your car and a trunk full of candy to take part. Trunk setup at 3:30 p.m., trunk-or-treating 4 to 5:30 p.m. Contact Jennifer Stickler for details: 801-430-0073.",
+   "src": "Event flyer, shared Oct. 29, 2026"
+  },
+  {
+   "t": "Open Music Jam",
+   "start": "2026-11-05T18:30:00-07:00",
+   "end": "2026-11-05T21:00:00-07:00",
+   "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
+   "into": "ov",
+   "url": "https://www.mountainartsandmusic.org/",
+   "desc": "Musicians of all abilities welcome to play, share songs and learn new ones. 1st and 3rd Thursdays, 6:30 p.m. until whenever.",
+   "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
+  },
+  {
+   "t": "Open Music Jam",
+   "start": "2026-11-19T18:30:00-07:00",
+   "end": "2026-11-19T21:00:00-07:00",
+   "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
+   "into": "ov",
+   "url": "https://www.mountainartsandmusic.org/",
+   "desc": "Musicians of all abilities welcome to play, share songs and learn new ones. 1st and 3rd Thursdays, 6:30 p.m. until whenever.",
+   "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
+  },
+  {
+   "t": "Open Art Studio",
+   "start": "2026-11-10T15:00:00-07:00",
+   "end": "2026-11-10T17:00:00-07:00",
+   "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
+   "into": "ov",
+   "url": "https://www.mountainartsandmusic.org/",
+   "desc": "Artists of all abilities welcome to come do art. Bring your own work in progress and learn from the on-site instructor. Watercolor supplies provided. 2nd and 4th Tuesdays.",
+   "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
+  },
+  {
+   "t": "Open Art Studio",
+   "start": "2026-11-24T15:00:00-07:00",
+   "end": "2026-11-24T17:00:00-07:00",
+   "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
+   "into": "ov",
+   "url": "https://www.mountainartsandmusic.org/",
+   "desc": "Artists of all abilities welcome to come do art. Bring your own work in progress and learn from the on-site instructor. Watercolor supplies provided. 2nd and 4th Tuesdays.",
+   "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
+  },
+  {
+   "t": "Can't Do Art? Think Again! (art basics for beginners)",
+   "start": "2026-11-07T14:00:00-07:00",
+   "end": "2026-11-07T16:00:00-07:00",
+   "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
+   "into": "ov",
+   "url": "https://www.mountainartsandmusic.org/",
+   "desc": "Intro to art basics for absolute beginners, 1st Saturdays. From $25, sign up at mountainartsandmusic.org/workshops.",
+   "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
   }
  ]
 }
