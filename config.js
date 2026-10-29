@@ -270,7 +270,7 @@ window.OVE = {
       { file: "coloring-2026-11-farm-stand.png", title: "Fresh from the Valley farm stand" },
       { file: "coloring-2026-11-turkey-pie.png", title: "Turkey sneaks a slice of pie" },
       { file: "coloring-2026-11-eat-more-ham.png", title: "Eat more ham!" },
-      { file: "coloring-2026-11-elk-river.png", title: "Elk at the river in fall" }
+      { file: "coloring-2026-11-wyatt-river.png", title: "Wyatt the Wapiti at the river" }
     ] },
     { month: "2026-10", label: "October 2026", pages: [
       { file: "coloring-moose-ghost.png", title: "A moose dressed as a ghost" },
