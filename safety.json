@@ -1,8 +1,17 @@
 {
- "updated": "2026-10-28T16:58:40.445Z",
+ "updated": "2026-10-29T16:01:49.654Z",
  "weather": [],
  "fires": [],
- "city": [],
+ "city": [
+  {
+   "title": "Lincoln Ave from 22nd St. to 23rd St",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2077",
+   "date": 1793292968000,
+   "text": "EMERGENCY WATER SHUTDOWN",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  }
+ ],
  "status": {
   "weather": "ok",
   "fires": "ok",
