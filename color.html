@@ -41,6 +41,14 @@
 .cz-now span{width:34px;height:34px;border-radius:50%;border:2px solid rgba(0,0,0,.3);display:inline-block}
 .cz-pick{display:flex;flex-wrap:wrap;gap:8px}
 .cz-pick button{font:700 15px var(--body)}
+.cz-big{display:flex;gap:12px;justify-content:center}
+.cz-bt{width:56px;height:56px;border-radius:50%;border:3px solid var(--line);background:var(--card,#fff);font-size:28px;line-height:1;display:grid;place-items:center;cursor:pointer;padding:0;flex:none;transition:transform .15s,box-shadow .15s}
+.cz-bt[aria-pressed="true"]{transform:scale(1.12);border-color:#ffd54a;box-shadow:0 0 0 4px rgba(255,213,74,.55),0 0 18px rgba(255,213,74,.9)}
+.cz-dot{position:relative}
+.cz-badge{position:absolute;right:-6px;bottom:-6px;width:24px;height:24px;border-radius:50%;background:#fff;border:2px solid #333;font-size:14px;display:grid;place-items:center;line-height:1}
+@keyframes czwig{0%,100%{transform:rotate(0)}25%{transform:rotate(-14deg)}75%{transform:rotate(14deg)}}
+.cz-bt.wig{animation:czwig .35s 2}
+.cz-now .cz-badge{width:20px;height:20px;border:2px solid #333;font-size:12px;right:-7px;bottom:-7px}
 .cz [hidden]{display:none!important}
 .cz-mode{display:flex;gap:8px}
 .cz-mode .chip[aria-pressed="true"]{border-color:var(--ink);background:var(--soft,#eef)}
@@ -55,7 +63,11 @@
 @media (max-width:900px){
  body.cz-on{padding-bottom:84px}
  .cz-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;align-items:center;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--card,#fff);border-top:2px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.18)}
- .cz-bar .cz-dot{width:44px;height:44px;border-radius:50%;border:3px solid rgba(0,0,0,.3);flex:none}
+ .cz-bar{gap:8px}
+ .cz-bar .cz-dot{width:46px;height:46px;border-radius:50%;border:3px solid rgba(0,0,0,.3);flex:none}
+ .cz-bar .cz-bt{width:50px;height:50px;font-size:26px}
+ #cz-colors .cz-big{display:none}
+ .cz-bar #cz-open{width:50px;height:50px;border-radius:50%;font-size:26px;padding:0;display:grid;place-items:center}
  .cz-bar .cz-recent{flex:1;flex-wrap:nowrap;overflow-x:auto;min-height:0;padding:6px 4px}
  .cz-bar .chip{flex:none;font-weight:800}
  #cz-colors.sheet.open{position:fixed;left:0;right:0;bottom:74px;z-index:49;max-height:62vh;overflow:auto;border-radius:16px 16px 0 0;box-shadow:0 -6px 24px rgba(0,0,0,.25)}
@@ -88,7 +100,8 @@
     <div class="cz-art fill" id="cz-art"><p class="meta">Loading the picture…</p></div>
     <div class="cz-side">
       <div class="cz-box" id="cz-colors">
-        <div class="cz-now"><span id="cz-cur"></span><b id="cz-curname">Color</b><button class="chip" type="button" id="cz-done" style="margin-left:auto" hidden>Done</button></div>
+        <div class="cz-big" role="group" aria-label="Tools with pictures"><button class="cz-bt" type="button" data-tool="fill" aria-pressed="true" aria-label="Fill: tap to color">🪣</button><button class="cz-bt" type="button" data-tool="draw" aria-pressed="false" aria-label="Crayon: draw">🖍️</button><button class="cz-bt cz-undo-big" type="button" aria-label="Undo">↩️</button></div>
+        <div class="cz-now"><span id="cz-cur" class="cz-dot"><span class="cz-badge" id="cz-badge1" aria-hidden="true">🪣</span></span><b id="cz-curname">Color</b><button class="chip" type="button" id="cz-done" style="margin-left:auto" hidden>Done</button></div>
         <div class="cz-mode" role="group" aria-label="How to pick a color">
           <button class="chip" type="button" data-mode="boxes" aria-pressed="true">Color boxes</button>
           <button class="chip" type="button" data-mode="mix" aria-pressed="false">🌈 Mix your own</button>
@@ -124,7 +137,7 @@
     </div>
   </div>
 </div></section>
-<div class="cz-bar" id="cz-bar" aria-label="Your color"><span class="cz-dot" id="cz-bardot"></span><div class="cz-recent" id="cz-barrecent"></div><button class="chip" type="button" id="cz-open">🎨 Colors</button></div>
+<div class="cz-bar" id="cz-bar" aria-label="Your color and tools"><span class="cz-dot" id="cz-bardot"><span class="cz-badge" id="cz-badge2" aria-hidden="true">🪣</span></span><button class="cz-bt" type="button" data-tool="fill" aria-pressed="true" aria-label="Fill: tap to color">🪣</button><button class="cz-bt" type="button" data-tool="draw" aria-pressed="false" aria-label="Crayon: draw">🖍️</button><button class="cz-bt cz-undo-big" type="button" aria-label="Undo">↩️</button><div class="cz-recent" id="cz-barrecent"></div><button class="chip" type="button" id="cz-open" aria-label="All colors">🎨</button></div>
 <div id="printme" style="display:none"><img alt="" src=""></div>
 <section class="d-more" style="padding-top:10px"><div class="d-wrap">
   <p class="d-eye">More aboard the Utah Depot</p>
@@ -187,7 +200,7 @@ function phoneMode(){ const on=mq.matches; document.body.classList.toggle("cz-on
 document.getElementById("cz-open").onclick=()=>{ colorsBox.classList.toggle("open"); doneBtn.hidden=!colorsBox.classList.contains("open"); if(!document.getElementById("cz-mix").hidden) drawWheel(); };
 doneBtn.onclick=()=>{ colorsBox.classList.remove("open"); doneBtn.hidden=true; };
 pal.addEventListener("click",()=>{ colorsBox.classList.remove("open"); doneBtn.hidden=true; });
-function setTool(t){ tool=t; document.querySelectorAll("[data-tool]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.tool===t))); document.getElementById("cz-sizes").hidden=t!=="draw"; art.className="cz-art "+(t==="draw"?"draw":"fill"); }
+function setTool(t){ tool=t; document.querySelectorAll("[data-tool]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.tool===t))); document.getElementById("cz-sizes").hidden=t!=="draw"; art.className="cz-art "+(t==="draw"?"draw":"fill"); const ic=t==="draw"?"🖍️":t==="erase"?"🧽":"🪣"; ["cz-badge1","cz-badge2"].forEach(i=>{const e=document.getElementById(i); if(e) e.textContent=ic;}); }
 document.querySelectorAll("[data-tool]").forEach(b=>b.onclick=()=>setTool(b.dataset.tool));
 document.querySelectorAll("[data-size]").forEach(b=>b.onclick=()=>{ size=+b.dataset.size; document.querySelectorAll("[data-size]").forEach(x=>x.setAttribute("aria-pressed",String(x===b))); });
 const hex=c=>[parseInt(c.slice(1,3),16),parseInt(c.slice(3,5),16),parseInt(c.slice(5,7),16)];
@@ -238,7 +251,12 @@ async function load(i){
     tap=null; end(); });
   cv.addEventListener("pointercancel",()=>{ tap=null; end(); });
 }
-document.getElementById("cz-undo").onclick=()=>{ if(!ops.length) return; ops.pop(); redraw(); store(); };
+let blinking=false;
+function doUndo(btn){ if(!ops.length||blinking) return; const last=ops.pop(); store(); if(btn){ btn.classList.remove("wig"); void btn.offsetWidth; btn.classList.add("wig"); }
+  /* flash what was taken away, then remove it */
+  blinking=true; let n=0; const step=()=>{ if(n%2===0) redraw(); else { ops.push(last); redraw(); ops.pop(); } n++; if(n<5) setTimeout(step,140); else { redraw(); blinking=false; } }; ops.push(last); redraw(); ops.pop(); setTimeout(step,140); }
+document.getElementById("cz-undo").onclick=()=>doUndo(null);
+document.querySelectorAll(".cz-undo-big").forEach(b=>b.onclick=()=>doUndo(b));
 document.getElementById("cz-clear").onclick=()=>{ if(!confirm("Start this page over? Your coloring will be erased.")) return; ops=[]; redraw(); store(); };
 function toPNG(){ const o=document.createElement("canvas"); o.width=1700; o.height=2200; const x=o.getContext("2d"); x.fillStyle="#fff"; x.fillRect(0,0,1700,2200); x.drawImage(cv,0,0,1700,2200); x.globalCompositeOperation="multiply"; x.drawImage(lineImg,0,0,1700,2200); return Promise.resolve(o.toDataURL("image/png")); }
 document.getElementById("cz-save").onclick=async()=>{ const a=document.createElement("a"); a.href=await toPNG(); a.download="my-ogden-valley-coloring.png"; document.body.append(a); a.click(); a.remove(); if(window.goatcounter&&goatcounter.count) goatcounter.count({path:"coloring: saved "+file,event:true}); };
