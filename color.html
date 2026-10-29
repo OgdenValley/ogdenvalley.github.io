@@ -41,6 +41,26 @@
 .cz-now span{width:34px;height:34px;border-radius:50%;border:2px solid rgba(0,0,0,.3);display:inline-block}
 .cz-pick{display:flex;flex-wrap:wrap;gap:8px}
 .cz-pick button{font:700 15px var(--body)}
+.cz [hidden]{display:none!important}
+.cz-mode{display:flex;gap:8px}
+.cz-mode .chip[aria-pressed="true"]{border-color:var(--ink);background:var(--soft,#eef)}
+.cz-mix{display:grid;gap:10px;justify-items:center}
+.cz-wheel{width:100%;max-width:260px;aspect-ratio:1;touch-action:none;cursor:crosshair;border-radius:50%}
+.cz-mix label{display:grid;gap:4px;width:100%;max-width:260px;font-weight:700}
+.cz-mix input[type=range]{width:100%;height:34px}
+.cz-recent{display:flex;gap:8px;align-items:center;flex-wrap:wrap;min-height:34px}
+.cz-recent .cz-sw{width:34px;height:34px;min-width:34px;flex:none}
+.cz-recent .cz-sw[aria-pressed="true"]{outline:3px solid var(--ink);outline-offset:2px}
+.cz-bar{display:none}
+@media (max-width:900px){
+ body.cz-on{padding-bottom:84px}
+ .cz-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;align-items:center;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--card,#fff);border-top:2px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.18)}
+ .cz-bar .cz-dot{width:44px;height:44px;border-radius:50%;border:3px solid rgba(0,0,0,.3);flex:none}
+ .cz-bar .cz-recent{flex:1;flex-wrap:nowrap;overflow-x:auto;min-height:0;padding:6px 4px}
+ .cz-bar .chip{flex:none;font-weight:800}
+ #cz-colors.sheet.open{position:fixed;left:0;right:0;bottom:74px;z-index:49;max-height:62vh;overflow:auto;border-radius:16px 16px 0 0;box-shadow:0 -6px 24px rgba(0,0,0,.25)}
+ #cz-colors.sheet .cz-wheel{max-width:min(230px,34vh)}
+}
 @media print{body *{visibility:hidden}#printme,#printme *{visibility:visible}#printme{position:fixed;inset:0;display:block!important}#printme img{width:100%;height:auto}}
 </style>
 </head>
@@ -67,9 +87,18 @@
   <div class="cz">
     <div class="cz-art fill" id="cz-art"><p class="meta">Loading the picture…</p></div>
     <div class="cz-side">
-      <div class="cz-box">
-        <div class="cz-now"><span id="cz-cur"></span><b id="cz-curname">Color</b></div>
+      <div class="cz-box" id="cz-colors">
+        <div class="cz-now"><span id="cz-cur"></span><b id="cz-curname">Color</b><button class="chip" type="button" id="cz-done" style="margin-left:auto" hidden>Done</button></div>
+        <div class="cz-mode" role="group" aria-label="How to pick a color">
+          <button class="chip" type="button" data-mode="boxes" aria-pressed="true">Color boxes</button>
+          <button class="chip" type="button" data-mode="mix" aria-pressed="false">🌈 Mix your own</button>
+        </div>
         <div class="cz-pal" id="cz-pal" role="group" aria-label="Colors"></div>
+        <div class="cz-mix" id="cz-mix" hidden>
+          <canvas class="cz-wheel" id="cz-wheel" width="520" height="520" aria-label="Rainbow color wheel: drag your finger to pick any color"></canvas>
+          <label>Lighter or darker<input type="range" id="cz-light" min="12" max="92" value="50" aria-label="Lighter or darker"></label>
+        </div>
+        <div><p class="fine" style="margin:0 0 6px">Colors you just used</p><div class="cz-recent" id="cz-recent"></div></div>
       </div>
       <div class="cz-box">
         <div class="cz-tools" role="group" aria-label="Tools">
@@ -95,6 +124,7 @@
     </div>
   </div>
 </div></section>
+<div class="cz-bar" id="cz-bar" aria-label="Your color"><span class="cz-dot" id="cz-bardot"></span><div class="cz-recent" id="cz-barrecent"></div><button class="chip" type="button" id="cz-open">🎨 Colors</button></div>
 <div id="printme" style="display:none"><img alt="" src=""></div>
 <section class="d-more" style="padding-top:10px"><div class="d-wrap">
   <p class="d-eye">More aboard the Utah Depot</p>
@@ -130,8 +160,33 @@ const W=1275, H=1650; /* coloring canvas size (3/4 of the 1700x2200 print page) 
 const art=document.getElementById("cz-art"), pal=document.getElementById("cz-pal");
 const key=()=> "ovColor2:"+file;
 function store(){ try{ localStorage.setItem(key(),JSON.stringify(ops)); }catch(e){} }
-function setColor(c,n){ color=c; document.getElementById("cz-cur").style.background=c; document.getElementById("cz-curname").textContent=n; [...pal.children].forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.c===c))); if(tool==="erase") setTool("fill"); }
+let recent=[]; try{ const r=JSON.parse(localStorage.getItem("ovColorRecent")||"[]"); if(Array.isArray(r)) recent=r.filter(x=>Array.isArray(x)&&/^#[0-9a-f]{6}$/i.test(x[0])).slice(0,6); }catch(e){}
+function showRecent(){ for(const id of ["cz-recent","cz-barrecent"]){ const box=document.getElementById(id); if(!box) continue; box.replaceChildren(...recent.map(([c,n])=>{ const b=document.createElement("button"); b.type="button"; b.className="cz-sw"; b.style.background=c; b.title=n; b.setAttribute("aria-label",n); b.setAttribute("aria-pressed",String(c===color)); b.onclick=()=>setColor(c,n); return b; })); if(!recent.length&&id==="cz-recent"){ const s=document.createElement("span"); s.className="fine"; s.textContent="Your colors will show up here."; box.append(s); } } }
+function setColor(c,n,keep){ color=c; document.getElementById("cz-cur").style.background=c; document.getElementById("cz-bardot").style.background=c; document.getElementById("cz-curname").textContent=n; [...pal.children].forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.c===c))); if(tool==="erase") setTool("fill");
+  if(!keep){ recent=[[c,n],...recent.filter(x=>x[0]!==c)].slice(0,6); try{ localStorage.setItem("ovColorRecent",JSON.stringify(recent)); }catch(e){} } showRecent(); }
 COLORS.forEach(([n,c])=>{ const b=document.createElement("button"); b.type="button"; b.className="cz-sw"; b.style.background=c; b.dataset.c=c; b.title=n; b.setAttribute("aria-label",n); b.onclick=()=>setColor(c,n); pal.append(b); });
+/* "Mix your own": rainbow wheel (color around the circle, softer toward the middle) + lighter/darker slider */
+const wheel=document.getElementById("cz-wheel"), wx=wheel.getContext("2d"), light=document.getElementById("cz-light"); let mixH=200, mixS=90;
+function hsl2hex(h,s,l){ s/=100; l/=100; const k=n=>(n+h/30)%12, a=s*Math.min(l,1-l), f=n=>l-a*Math.max(-1,Math.min(k(n)-3,Math.min(9-k(n),1))); return "#"+[f(0),f(8),f(4)].map(x=>Math.round(x*255).toString(16).padStart(2,"0")).join(""); }
+function drawWheel(){ const R=260, L=+light.value, img=wx.createImageData(520,520), d=img.data;
+  for(let y=0;y<520;y++) for(let x=0;x<520;x++){ const dx=x-R, dy=y-R, r=Math.hypot(dx,dy), i=(y*520+x)*4; if(r>R){ d[i+3]=0; continue; }
+    const h=(Math.atan2(dy,dx)*180/Math.PI+360)%360, s=r/R*100, hx=hsl2hex(h,s,L); d[i]=parseInt(hx.slice(1,3),16); d[i+1]=parseInt(hx.slice(3,5),16); d[i+2]=parseInt(hx.slice(5,7),16); d[i+3]=255; }
+  wx.putImageData(img,0,0); const a=mixH*Math.PI/180, r=mixS/100*R; wx.lineWidth=5; wx.strokeStyle="#fff"; wx.beginPath(); wx.arc(R+Math.cos(a)*r,R+Math.sin(a)*r,16,0,7); wx.stroke(); wx.lineWidth=2; wx.strokeStyle="#000"; wx.beginPath(); wx.arc(R+Math.cos(a)*r,R+Math.sin(a)*r,19,0,7); wx.stroke(); }
+function mixPick(keep){ setColor(hsl2hex(mixH,mixS,+light.value),"Your mixed color",keep); }
+let wheelDown=false;
+function wheelAt(ev){ const b=wheel.getBoundingClientRect(), dx=(ev.clientX-b.left)/b.width*520-260, dy=(ev.clientY-b.top)/b.height*520-260; mixH=(Math.atan2(dy,dx)*180/Math.PI+360)%360; mixS=Math.min(100,Math.hypot(dx,dy)/260*100); drawWheel(); mixPick(true); }
+wheel.addEventListener("pointerdown",ev=>{ ev.preventDefault(); wheelDown=true; wheel.setPointerCapture(ev.pointerId); wheelAt(ev); });
+wheel.addEventListener("pointermove",ev=>{ if(wheelDown) wheelAt(ev); });
+const wheelUp=()=>{ if(wheelDown){ wheelDown=false; mixPick(false); } }; wheel.addEventListener("pointerup",wheelUp); wheel.addEventListener("pointercancel",wheelUp);
+light.addEventListener("input",()=>{ drawWheel(); mixPick(true); }); light.addEventListener("change",()=>mixPick(false));
+document.querySelectorAll("[data-mode]").forEach(b=>b.onclick=()=>{ const m=b.dataset.mode; document.querySelectorAll("[data-mode]").forEach(x=>x.setAttribute("aria-pressed",String(x===b))); pal.hidden=m!=="boxes"; document.getElementById("cz-mix").hidden=m!=="mix"; if(m==="mix") drawWheel(); });
+/* phones: the color box becomes a pop-up sheet, opened from the bar that stays at the bottom of the screen */
+const colorsBox=document.getElementById("cz-colors"), doneBtn=document.getElementById("cz-done"), mq=matchMedia("(max-width:900px)");
+function phoneMode(){ const on=mq.matches; document.body.classList.toggle("cz-on",on); colorsBox.classList.toggle("sheet",on); if(!on) colorsBox.classList.remove("open"); doneBtn.hidden=!colorsBox.classList.contains("open"); }
+(mq.addEventListener?mq.addEventListener("change",phoneMode):mq.addListener(phoneMode)); phoneMode();
+document.getElementById("cz-open").onclick=()=>{ colorsBox.classList.toggle("open"); doneBtn.hidden=!colorsBox.classList.contains("open"); if(!document.getElementById("cz-mix").hidden) drawWheel(); };
+doneBtn.onclick=()=>{ colorsBox.classList.remove("open"); doneBtn.hidden=true; };
+pal.addEventListener("click",()=>{ colorsBox.classList.remove("open"); doneBtn.hidden=true; });
 function setTool(t){ tool=t; document.querySelectorAll("[data-tool]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.tool===t))); document.getElementById("cz-sizes").hidden=t!=="draw"; art.className="cz-art "+(t==="draw"?"draw":"fill"); }
 document.querySelectorAll("[data-tool]").forEach(b=>b.onclick=()=>setTool(b.dataset.tool));
 document.querySelectorAll("[data-size]").forEach(b=>b.onclick=()=>{ size=+b.dataset.size; document.querySelectorAll("[data-size]").forEach(x=>x.setAttribute("aria-pressed",String(x===b))); });
@@ -189,7 +244,7 @@ function toPNG(){ const o=document.createElement("canvas"); o.width=1700; o.heig
 document.getElementById("cz-save").onclick=async()=>{ const a=document.createElement("a"); a.href=await toPNG(); a.download="my-ogden-valley-coloring.png"; document.body.append(a); a.click(); a.remove(); if(window.goatcounter&&goatcounter.count) goatcounter.count({path:"coloring: saved "+file,event:true}); };
 document.getElementById("cz-print").onclick=async()=>{ const im=document.querySelector("#printme img"); im.onload=()=>window.print(); im.src=await toPNG(); };
 const pick=document.getElementById("cz-pick"); pages.forEach((p,i)=>{ const b=document.createElement("button"); b.type="button"; b.className="chip"; b.textContent=p.title; b.onclick=()=>{ history.replaceState(null,"","?p="+i); load(i); }; pick.append(b); });
-setColor(COLORS[5][1],COLORS[5][0]);
+setColor(COLORS[5][1],COLORS[5][0],true);
 const start=Math.min(Math.max(parseInt(new URLSearchParams(location.search).get("p")||"0",10)||0,0),Math.max(pages.length-1,0)); load(start);
 })();
 </script>
