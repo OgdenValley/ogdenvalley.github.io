@@ -1,11 +1,56 @@
 {
- "updated": "2026-10-29T13:06:19.835Z",
+ "updated": "2026-10-29T14:49:06.980Z",
  "issues": [
   {
    "start": "2026-10-29",
    "end": "2026-11-05",
-   "made": "2026-10-29T13:06:19.800Z",
-   "featured": [],
+   "made": "2026-10-29T14:49:06.914Z",
+   "featured": [
+    {
+     "title": "Valley Time Capsule: What's under Pineview?",
+     "date": "2026-10-29",
+     "time": "",
+     "place": "Artesian Park",
+     "town": "Huntsville",
+     "image": "time-train-1920-artesian-wells.jpg",
+     "line": "About 1920, water bubbled up out of the ground on its own at \"Artesian Park\" near Huntsville. Today it's under Pineview Reservoir. Kids can ride our new Time Train through Valley history on the Utah Depot page. Photo: Fred Pack, about 1920, J. Willard Marriott Library, University of Utah.",
+     "link": "https://ogdenvalleyevent.com/time-capsule.html",
+     "linkText": "Read the Time Capsule"
+    },
+    {
+     "title": "Last day to enter: October Photo Contest",
+     "date": "2026-10-31",
+     "time": "",
+     "place": "",
+     "town": "",
+     "image": "",
+     "line": "This month's theme is fall color and Halloween in the Valley. The winner becomes our November Photo of the Month: the home page banner and our Facebook cover, with credit to you.",
+     "link": "https://ogdenvalleyevent.com/photo-contest.html",
+     "linkText": "Enter by Oct. 31"
+    },
+    {
+     "title": "Trunk or Treat at Snowcrest Jr High",
+     "date": "2026-10-31",
+     "time": "4–5:30 PM",
+     "place": "Snowcrest Junior High",
+     "town": "Eden",
+     "image": "trunk-or-treat-snowcrest-2026.png",
+     "line": "A free community trunk-or-treat. Bring your littles, or bring your car and a trunk full of candy to take part (trunk setup at 3:30). Saturday's forecast calls for rain, so bring rain gear. Contact Jennifer Stickler for details: 801-430-0073.",
+     "link": "",
+     "linkText": ""
+    },
+    {
+     "title": "Ogden Valley Info & Events turns 10",
+     "date": "2026-11-01",
+     "time": "",
+     "place": "",
+     "town": "Eden, Liberty and Huntsville",
+     "image": "",
+     "line": "Sunday is our 10th anniversary relaunch: one place for Valley events, road and weather, local businesses, jobs, the Utah Depot for kids, Valley history and Community Cooking. Thank you for 10 years of reading, sharing and showing up for each other.",
+     "link": "https://ogdenvalleyevent.com/",
+     "linkText": "See what's new"
+    }
+   ],
    "events": [
     {
      "day": "2026-10-29",
@@ -68,6 +113,12 @@
        "t": "New World Distillery tasting tour",
        "url": "",
        "loc": "New World Distillery"
+      },
+      {
+       "time": "3 p.m.",
+       "t": "FREE drop-in pumpkin painting",
+       "url": "https://www.facebook.com/MountainArtsAndMusic/",
+       "loc": "Mountain Arts and Music Art Space"
       },
       {
        "time": "5 p.m.",
@@ -323,6 +374,12 @@
      "items": [
       {
        "time": "6 p.m.",
+       "t": "Huntsville Town Council meeting",
+       "url": "https://huntsvilleutah.gov/upcoming-events",
+       "loc": "Huntsville Town Hall"
+      },
+      {
+       "time": "6 p.m.",
        "t": "Visiting Artist Lecture by Melissa Melero-Moose",
        "url": "",
        "loc": "Kimball Arts Building | Room 143"
@@ -340,6 +397,12 @@
        "loc": "Z's Sweets"
       },
       {
+       "time": "6:30 p.m.",
+       "t": "Open Music Jam",
+       "url": "https://www.mountainartsandmusic.org/",
+       "loc": "Mountain Arts and Music Art Space"
+      },
+      {
        "time": "7 p.m.",
        "t": "Trails Foundation of Northern Utah presents: Ogden Mountain Film Festival",
        "url": "https://ogdenpet.com/event/ogden-mountain-film-festival-2026/peerys-egyptian-theater/",
@@ -354,13 +417,23 @@
      ]
     }
    ],
-   "weather": [],
+   "weather": [
+    {
+     "type": "weekly",
+     "date": "2026-10-29T08:30:00-06:00",
+     "title": "Ogden Valley weather: Oct. 29 to Nov. 4",
+     "summary": "Dry and mild today and early Friday, highs near 61°. Rain chances start Friday afternoon and evening (52%). Halloween looks wet: light rain Saturday turning to showers and thunderstorms by evening (99%), highs near 58°, so plan trick-or-treating with rain gear. Sunday, Nov. 1, brings showers and thunderstorms, then rain and snow likely Sunday night, with a chance of rain and snow Monday morning; lows near 29–31°. Snow level near 8,000 feet. Mostly sunny Tuesday and Wednesday, highs in the 50s. Air quality is Good. Clocks fall back one hour early Sunday, Nov. 1.",
+     "image": "weather-2026-10-29-briefing.png",
+     "alt": "Ogden Valley weather briefing for Oct. 29 to Nov. 4: a six-day forecast with Saturday and Sunday highlighted at 99 percent, plus boxes on a wet Halloween, rain and snow Sunday night, clocks falling back, and drying out, and a get-ready list.",
+     "source": "National Weather Service point forecast for the Eden, Liberty and Huntsville area, issued 12:31 a.m. Oct. 29, 2026; Utah Division of Air Quality forecast, issued 3:31 p.m. Oct. 28"
+    }
+   ],
    "roads": [
     {
      "title": "Ogden Canyon lane closure (SR-39)",
-     "text": "Start date is tentative. Work could begin as early as Monday, Oct. 26. The confirmed date will be posted at ogdencitypipeline.com once the pipe arrives.",
-     "image": "roadwork-2026-10-26-ogden-canyon-pipeline.png",
-     "alt": "Ogden Canyon lane closure: one lane of SR-39 closed for about a quarter mile between The Oaks Restaurant and the Ogden Canyon Water Treatment Plant, alternating traffic 24/7, 5 to 10 minute delays, as early as Oct. 26, 2026 through April 2027"
+     "text": "New start date: as early as Monday, Nov. 2. UDOT now lists the closure starting Nov. 2 and running through April 2027 (it was first set for Oct. 26). Dates can still change, so check udottraffic.utah.gov before you drive.",
+     "image": "roadwork-2026-11-02-ogden-canyon-pipeline.png",
+     "alt": "Ogden Canyon lane closure: one lane of SR-39 closed for about a quarter mile between The Oaks Restaurant and the Ogden Canyon Water Treatment Plant, alternating traffic 24/7, 5 to 10 minute delays, as early as Nov. 2, 2026 through April 2027"
     }
    ],
    "fresh": [
