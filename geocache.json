@@ -288,5 +288,26 @@
   "lat": 41.3867,
   "lng": -111.92494,
   "county": "Weber"
+ },
+ "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)": null,
+ "Snowcrest Junior High, Eden": {
+  "lat": 41.30909,
+  "lng": -111.83378,
+  "county": "Weber"
+ },
+ "Huntsville Town Hall, 7474 E. 200 S., Huntsville": {
+  "lat": 41.26105,
+  "lng": -111.76885,
+  "county": "Weber"
+ },
+ "Artesian Park, Utah": {
+  "lat": 40.75172,
+  "lng": -111.87705,
+  "county": "Salt Lake"
+ },
+ "Snowcrest Junior High, Utah": {
+  "lat": 41.30909,
+  "lng": -111.83378,
+  "county": "Weber"
  }
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T11:52:37.057Z",
+ "updated": "2026-10-29T14:11:01.804Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -24,6 +24,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1793394000000,
+     "e": 1793401200000,
+     "t": "FREE drop-in pumpkin painting",
+     "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
+     "allDay": false,
+     "desc": "Paint and decorate a pumpkin to celebrate the season. Free, drop in any time from 3 to 5 p.m.",
+     "url": "https://www.facebook.com/MountainArtsAndMusic/",
+     "src": "Mountain Arts and Music Facebook post, shared Oct. 28, 2026"
+    },
+    {
      "s": 1793473200000,
      "e": 1793480400000,
      "t": "New World Distillery tasting tour",
@@ -43,6 +53,16 @@
      "url": ""
     },
     {
+     "s": 1793484000000,
+     "e": 1793489400000,
+     "t": "Trunk or Treat at Snowcrest Jr High",
+     "loc": "Snowcrest Junior High, Eden",
+     "allDay": false,
+     "desc": "Free community trunk-or-treat. Bring your littles, or bring your car and a trunk full of candy to take part. Trunk setup at 3:30 p.m., trunk-or-treating 4 to 5:30 p.m. Contact Jennifer Stickler for details: 801-430-0073.",
+     "url": "",
+     "src": "Event flyer, shared Oct. 29, 2026"
+    },
+    {
      "s": 1793563200000,
      "e": 1793570400000,
      "t": "New World Distillery tasting tour",
@@ -60,6 +80,26 @@
      "allDay": false,
      "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
      "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1793926800000,
+     "e": 1793934000000,
+     "t": "Huntsville Town Council meeting",
+     "loc": "Huntsville Town Hall, 7474 E. 200 S., Huntsville",
+     "allDay": false,
+     "desc": "Regularly scheduled Town Council meeting. All are welcome.",
+     "url": "https://huntsvilleutah.gov/upcoming-events",
+     "src": "huntsvilleutah.gov upcoming events, checked Oct. 29, 2026"
+    },
+    {
+     "s": 1793928600000,
+     "e": 1793937600000,
+     "t": "Open Music Jam",
+     "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
+     "allDay": false,
+     "desc": "Musicians of all abilities welcome to play, share songs and learn new ones. 1st and 3rd Thursdays, 6:30 p.m. until whenever.",
+     "url": "https://www.mountainartsandmusic.org/",
+     "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
     },
     {
      "s": 1793995200000,
@@ -91,6 +131,16 @@
      "url": ""
     },
     {
+     "s": 1794085200000,
+     "e": 1794092400000,
+     "t": "Can't Do Art? Think Again! (art basics for beginners)",
+     "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
+     "allDay": false,
+     "desc": "Intro to art basics for absolute beginners, 1st Saturdays. From $25, sign up at mountainartsandmusic.org/workshops.",
+     "url": "https://www.mountainartsandmusic.org/",
+     "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
+    },
+    {
      "s": 1794168000000,
      "e": 1794175200000,
      "t": "New World Distillery tasting tour",
@@ -99,6 +149,16 @@
      "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1794348000000,
+     "e": 1794355200000,
+     "t": "Open Art Studio",
+     "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
+     "allDay": false,
+     "desc": "Artists of all abilities welcome to come do art. Bring your own work in progress and learn from the on-site instructor. Watercolor supplies provided. 2nd and 4th Tuesdays.",
+     "url": "https://www.mountainartsandmusic.org/",
+     "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
     },
     {
      "s": 1794445200000,
@@ -158,6 +218,26 @@
      "url": "https://www.meetup.com/webercountyoutdoors/"
     },
     {
+     "s": 1795136400000,
+     "e": 1795143600000,
+     "t": "Huntsville Town Council meeting",
+     "loc": "Huntsville Town Hall, 7474 E. 200 S., Huntsville",
+     "allDay": false,
+     "desc": "Regularly scheduled Town Council meeting. All are welcome.",
+     "url": "https://huntsvilleutah.gov/upcoming-events",
+     "src": "huntsvilleutah.gov upcoming events, checked Oct. 29, 2026"
+    },
+    {
+     "s": 1795138200000,
+     "e": 1795147200000,
+     "t": "Open Music Jam",
+     "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
+     "allDay": false,
+     "desc": "Musicians of all abilities welcome to play, share songs and learn new ones. 1st and 3rd Thursdays, 6:30 p.m. until whenever.",
+     "url": "https://www.mountainartsandmusic.org/",
+     "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
+    },
+    {
      "s": 1795204800000,
      "e": 1795212000000,
      "t": "New World Distillery tasting tour",
@@ -195,6 +275,16 @@
      "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1795557600000,
+     "e": 1795564800000,
+     "t": "Open Art Studio",
+     "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
+     "allDay": false,
+     "desc": "Artists of all abilities welcome to come do art. Bring your own work in progress and learn from the on-site instructor. Watercolor supplies provided. 2nd and 4th Tuesdays.",
+     "url": "https://www.mountainartsandmusic.org/",
+     "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
     },
     {
      "s": 1795654800000,
@@ -1759,8 +1849,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1769,8 +1859,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1889,8 +1979,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1899,8 +1989,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -4356,8 +4446,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4366,8 +4456,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4396,8 +4486,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4406,8 +4496,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
