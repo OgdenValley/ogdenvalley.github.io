@@ -1,17 +1,8 @@
 {
- "updated": "2026-10-29T18:59:46.058Z",
+ "updated": "2026-10-29T20:53:00.144Z",
  "weather": [],
  "fires": [],
- "city": [
-  {
-   "title": "Foothill Dr. from 27th St to end of cul-de-sac",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2079",
-   "date": 1793303468000,
-   "text": "EMERGENCY WATER SHUTDOWN",
-   "source": "Ogden City Alerts",
-   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
-  }
- ],
+ "city": [],
  "status": {
   "weather": "ok",
   "fires": "ok",
