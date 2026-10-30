@@ -1,11 +1,11 @@
 {
- "updated": "2026-10-30T11:50:49.027Z",
+ "updated": "2026-10-30T13:03:48.391Z",
  "weather": [],
  "fires": [],
  "city": [],
  "status": {
   "weather": "ok",
-  "fires": "failed",
+  "fires": "ok",
   "Ogden City Alerts": "ok"
  }
 }
