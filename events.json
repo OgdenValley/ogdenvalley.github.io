@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T02:56:04.120Z",
+ "updated": "2026-10-30T03:56:07.183Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -828,36 +828,6 @@
   "weber": {
    "name": "Weber County",
    "events": [
-    {
-     "s": 1793232000000,
-     "e": 1793242800000,
-     "t": "Film 4713: Film Screening - 113",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1793237400000,
-     "e": 1793244600000,
-     "t": "UTAH SYMPHONY DISNEY’S HOCUS POCUS IN CONCERT",
-     "loc": "Val A Browning Center, Weber State University, 1901 University Circle, Ogden, UT 84408",
-     "allDay": false,
-     "desc": "A Hocus Pocus in Concert night in Ogden starts the way the best Halloween plans do: lights down, screen glowing, and a full symphony orchestra drawing the first breath of John Debney’s score. On Wednesday, October 28, the Utah Symphony performs the complete original score live while the beloved 1993 film plays on a big screen above the stage at the Browning Center.",
-     "url": "https://www.onstageogden.org/show-item/hocus-pocus/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793237400000,
-     "e": 1793244000000,
-     "t": "ONOG: Hocus Pocus in Concert - Austad",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
     {
      "s": 1793241000000,
      "e": 1793253600000,
@@ -1830,8 +1800,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1840,8 +1810,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1960,8 +1930,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1970,8 +1940,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3297,22 +3267,22 @@
      "desc": "$5 readings. Every Monday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1798515000000,
+     "e": 1798527600000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
     }
    ]
   }
  },
  "sources": {
   "ogdenarea": [
-   {
-    "s": 1793237400000,
-    "e": 1793244600000,
-    "t": "UTAH SYMPHONY DISNEY’S HOCUS POCUS IN CONCERT",
-    "loc": "Val A Browning Center, Weber State University, 1901 University Circle, Ogden, UT 84408",
-    "allDay": false,
-    "desc": "A Hocus Pocus in Concert night in Ogden starts the way the best Halloween plans do: lights down, screen glowing, and a full symphony orchestra drawing the first breath of John Debney’s score. On Wednesday, October 28, the Utah Symphony performs the complete original score live while the beloved 1993 film plays on a big screen above the stage at the Browning Center.",
-    "url": "https://www.onstageogden.org/show-item/hocus-pocus/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
    {
     "s": 1793253600000,
     "e": 1807423200000,
@@ -4236,26 +4206,6 @@
   ],
   "treehouse": [
    {
-    "s": 1793232000000,
-    "e": 1793242800000,
-    "t": "Film 4713: Film Screening - 113",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1793237400000,
-    "e": 1793244000000,
-    "t": "ONOG: Hocus Pocus in Concert - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
     "s": 1793318400000,
     "e": 1793325600000,
     "t": "Student Success Center - LGBTQ+ Film Screening - 113",
@@ -4397,8 +4347,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4407,8 +4357,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4437,8 +4387,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4447,8 +4397,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
