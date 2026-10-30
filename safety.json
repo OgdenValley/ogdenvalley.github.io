@@ -1,17 +1,8 @@
 {
- "updated": "2026-10-30T18:54:38.290Z",
+ "updated": "2026-10-30T22:46:53.826Z",
  "weather": [],
  "fires": [],
- "city": [
-  {
-   "title": "Patterson St from Van Buren Ave to Eccles Ave, and Van Buren Ave from 30th St south to the dead end",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2080",
-   "date": 1793387691000,
-   "text": "Emergency Water Shutdown",
-   "source": "Ogden City Alerts",
-   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
-  }
- ],
+ "city": [],
  "status": {
   "weather": "ok",
   "fires": "ok",
