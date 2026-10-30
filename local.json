@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T08:09:22.386Z",
+ "updated": "2026-10-30T09:00:25.644Z",
  "meetings": [
   {
    "body": "Weber County Commission",
@@ -36,11 +36,11 @@
    "elev": 7690,
    "depth": {
     "value": 0,
-    "date": "2026-10-28"
+    "date": "2026-10-29"
    },
    "water": {
-    "value": 0,
-    "date": "2026-10-28"
+    "value": 0.1,
+    "date": "2026-10-29"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -50,11 +50,11 @@
    "elev": 5970,
    "depth": {
     "value": 0,
-    "date": "2026-10-28"
+    "date": "2026-10-29"
    },
    "water": {
-    "value": 0,
-    "date": "2026-10-28"
+    "value": 0.1,
+    "date": "2026-10-29"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
@@ -63,12 +63,12 @@
    "name": "Monte Cristo",
    "elev": 8930,
    "depth": {
-    "value": 0,
-    "date": "2026-10-28"
+    "value": 1,
+    "date": "2026-10-29"
    },
    "water": {
-    "value": 0,
-    "date": "2026-10-28"
+    "value": 0.2,
+    "date": "2026-10-29"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
    "source": "USDA NRCS SNOTEL"
