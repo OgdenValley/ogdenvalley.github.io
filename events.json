@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-29T22:50:28.404Z",
+ "updated": "2026-10-30T01:08:08.641Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -837,16 +837,6 @@
   "weber": {
    "name": "Weber County",
    "events": [
-    {
-     "s": 1793228400000,
-     "e": 1793235600000,
-     "t": "Roy Community Trick-or-Treat",
-     "loc": "4059 S 1900 W, Roy, UT 84067",
-     "allDay": false,
-     "desc": "Event by Roy Community Farmers Market.",
-     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-     "src": "Ogden Valley Information and Events"
-    },
     {
      "s": 1793232000000,
      "e": 1793242800000,
@@ -3314,6 +3304,16 @@
      "loc": "Grounds for Coffee, 111 25th Street, Ogden",
      "allDay": false,
      "desc": "Free. Every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1798506000000,
+     "e": 1798513200000,
+     "t": "Mystic Mondays: tarot readings",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "$5 readings. Every Monday.",
      "url": "",
      "src": "Weekly regular"
     }
