@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-29T21:51:48.117Z",
+ "updated": "2026-10-30T14:07:31.481Z",
  "items": [
+  {
+   "t": 1793369251480,
+   "src": "UDOT alert",
+   "text": "Crash Update: SB I-15 is now open at MP 319 (Parrish Lane) . Expect heavy delay in the area.",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1793310708117,
    "src": "Utah Air Quality",
@@ -21,7 +28,9 @@
    "10148": "I-84|!! Traffic Alerts !! (updated 10/14) Westbound single lane closure | Tue (10/6) - Sun (10/18) | Day & Night Westbound single lane closure | Mon (10/19) - Tue, (11/3) | Day & Night Delays may be significant, 10-15min or more during peak periods Note: Wide load restricted above 11 ft Westbound single lane closure | Sprin",
    "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at"
   },
-  "al": {},
+  "al": {
+   "2650": 1
+  },
   "cond": {
    "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
    "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-30T09:00:25.644Z",
+ "updated": "2026-10-30T14:07:26.995Z",
  "meetings": [
   {
    "body": "Weber County Commission",
@@ -63,11 +63,11 @@
    "name": "Monte Cristo",
    "elev": 8930,
    "depth": {
-    "value": 1,
+    "value": 0,
     "date": "2026-10-29"
    },
    "water": {
-    "value": 0.2,
+    "value": 0,
     "date": "2026-10-29"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
