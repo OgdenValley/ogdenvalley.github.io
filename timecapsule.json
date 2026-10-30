@@ -246,12 +246,172 @@
     }
    ],
    "hideUntilPosted": true
+  },
+  {
+   "id": "1976-11-ski-season-everything-but-snow",
+   "num": 9,
+   "town": "Ogden Valley",
+   "decade": "1970s",
+   "paper_date": "1976-11-05",
+   "when": "Ogden Valley ski hills, November 1976 and 1951",
+   "ago": "50 and 75 years ago this week",
+   "title": "Everything but Snow",
+   "question": "Do you remember your first ski lesson? Where was it, and who taught you?",
+   "source": "Deseret News, Nov. 5, 1976; Ogden Standard-Examiner, Nov. 4, 1951",
+   "body": [
+    "Fifty years ago this week, Utah's ski resorts said they were \"ready for the 1976-77 season with everything but snow.\" Resort leaders shared their news at a Salt Lake Area Chamber of Commerce winter sports lunch.",
+    "Our valley had plenty to report. Powder Mountain had a new beginners area, a new ski shop and other new facilities, and was looking into opening the Hidden Lake area. Snow Basin had replaced its T-bar with a new chair lift, improved its beginners area and added a new advanced run, and work was under way to bring more UTA bus service up from Ogden.",
+    "Twenty-five years before that, in November 1951, the Standard-Examiner said the winter sports season was \"just around the corner.\" Snow Basin expected \"one of the best seasons in history\" and had two new ski instructors."
+   ],
+   "posted": "2026-11-06",
+   "image": "vtc-09-everything-but-snow.jpg",
+   "facebook": "",
+   "hideUntilPosted": true,
+   "links": [
+    {
+     "label": "Nov. 5, 1976 Deseret News page",
+     "url": "https://newspapers.lib.utah.edu/details?id=26358780"
+    },
+    {
+     "label": "Nov. 4, 1951 Standard-Examiner page",
+     "url": "https://newspapers.lib.utah.edu/details?id=30912051"
+    }
+   ]
+  },
+  {
+   "id": "1976-11-perception-park-spruce",
+   "num": 10,
+   "town": "South Fork",
+   "decade": "1970s",
+   "paper_date": "1976-11-15",
+   "when": "South Fork of Ogden Canyon, November 1976",
+   "ago": "50 years ago this week",
+   "title": "200 Blue Spruce for Perception Park",
+   "question": "Have you visited Perception Park up the South Fork? Did you know how it got its trees?",
+   "source": "Salt Lake Tribune, Nov. 15, 1976; Midvale Journal, Nov. 11, 1976; Tooele Transcript-Bulletin, Dec. 10, 1976",
+   "body": [
+    "Fifty years ago this week, women from across Utah came up the South Fork with shovels in hand. On Monday, Nov. 15, 1976, the Utah Federation of Women's Clubs and a women's conservation council planted 200 blue spruce at Perception Park.",
+    "The park was being made for visitors who are blind or have disabilities, and their families, on Forest Service land known as the Hawthorn recreation site. The Tribune said the spot was a good fit because it was close to the Utah State School for the Blind and Deaf. The Forest Service's Ogden district ranger directed the planting.",
+    "The call went out ahead of time: the clubs \"would like 100 women to take shovels and do their part.\" A bus ran from Salt Lake City for those who didn't want to drive, and everyone was asked to bring a lunch. Weeks later, the Tooele club women reported back that the park was a 25-acre tract set aside by the Forest Service."
+   ],
+   "posted": "2026-11-13",
+   "image": "vtc-10-perception-park-spruce.jpg",
+   "facebook": "",
+   "hideUntilPosted": true,
+   "links": [
+    {
+     "label": "Nov. 15, 1976 Tribune page",
+     "url": "https://newspapers.lib.utah.edu/details?id=28694649"
+    },
+    {
+     "label": "Nov. 11, 1976 Midvale Journal page",
+     "url": "https://newspapers.lib.utah.edu/details?id=23742364"
+    },
+    {
+     "label": "Dec. 10, 1976 Tooele Transcript-Bulletin page",
+     "url": "https://newspapers.lib.utah.edu/details?id=24916093"
+    }
+   ]
+  },
+  {
+   "id": "1951-11-snow-basin-gets-ready",
+   "num": 11,
+   "town": "Snow Basin",
+   "decade": "1950s",
+   "paper_date": "1951-11-19",
+   "when": "Snow Basin, November 1951 and 1976",
+   "ago": "75 and 50 years ago this week",
+   "title": "Flush Toilets and a Welcome Sign",
+   "question": "What do you remember about the old Snow Basin shelter, or Nordic Valley in the 1970s?",
+   "source": "Ogden Standard-Examiner, Nov. 14, 18 and 19, 1951; Salt Lake Tribune, Nov. 17, 1976",
+   "body": [
+    "Seventy-five years ago this week, Snow Basin was getting dressed up for winter. A mid-November storm left about 18 inches at what the paper called \"Ogden's famous winter playground.\"",
+    "On Nov. 19, 1951, a Cache National Forest ranger said about $7,500 in improvements had just been finished. There was a new 10,000-gallon water tank at Wildcat Springs, a new furnace blower and stoker, and flush toilets to replace the old chemical kind at the ski shelter. The Snow Basin Ski Club raised money for the furnace, and Ogden City lent a tractor. A new highway sign a mile below the basin now welcomed skiers. Still, the ranger said, brush was poking through the snow. \"Skiing is just around the corner,\" he said, but not yet.",
+    "Twenty-five years later, in November 1976, the Tribune had good news for Ogden skiers: Nordic Valley would run that season. \"The rumors of its demise were premature,\" the paper said, and lift prices were staying the same as the year before."
+   ],
+   "posted": "2026-11-20",
+   "image": "vtc-11-snow-basin-gets-ready.jpg",
+   "facebook": "",
+   "hideUntilPosted": true,
+   "links": [
+    {
+     "label": "Nov. 19, 1951 story",
+     "url": "https://newspapers.lib.utah.edu/details?id=30912415"
+    },
+    {
+     "label": "Nov. 18, 1951 sign photo",
+     "url": "https://newspapers.lib.utah.edu/details?id=30912374"
+    },
+    {
+     "label": "Nov. 14, 1951 page",
+     "url": "https://newspapers.lib.utah.edu/details?id=30912281"
+    },
+    {
+     "label": "Nov. 17, 1976 Tribune page",
+     "url": "https://newspapers.lib.utah.edu/details?id=28694767"
+    }
+   ]
+  },
+  {
+   "id": "1926-11-sanitarium-ruins-last-fishing",
+   "num": 12,
+   "town": "Ogden Canyon",
+   "decade": "1920s",
+   "paper_date": "1926-11-28",
+   "when": "Ogden Canyon and Ogden Valley, November 1926",
+   "ago": "100 years ago this week",
+   "title": "Clearing the Ruins, Last Cast of the Season",
+   "question": "Does your family have any stories about the old Ogden Canyon Sanitarium?",
+   "source": "Ogden Standard-Examiner, Nov. 28, Nov. 29 and Dec. 4, 1926",
+   "body": [
+    "A follow-up to Capsule #6: one hundred years ago this week, the paper said the fire-swept ruins of the Ogden Canyon Sanitarium would be torn down completely to make way for a new building. The owners planned to start the cleanup the next Monday morning. Plans for \"a splendid new structure\" had been talked about for several weeks, but building plans were not yet set.",
+    "It was the last week of fishing, too. Tuesday, Nov. 30, closed the 1926 game fishing season, and the trout were safe until June 15, 1927. A few fishermen were out on Ogden Valley streams that Sunday, and some caught trout with bait. But the cold water sent the fish to the bottom of the creeks, where \"they are not inclined to bite.\"",
+    "The weather turned that weekend. A short but strong thunderstorm shook Ogden on Saturday, and in Huntsville the thermometer dropped to 30 degrees with sleet. A week later, an editorial said there was no more delightful place for winter sports than Ogden Canyon, and that \"Ogden should begin to organize for winter sports.\""
+   ],
+   "posted": "2026-11-27",
+   "image": "vtc-12-sanitarium-ruins.jpg",
+   "facebook": "",
+   "hideUntilPosted": true,
+   "links": [
+    {
+     "label": "Nov. 28, 1926 sanitarium story",
+     "url": "https://newspapers.lib.utah.edu/details?id=6416168"
+    },
+    {
+     "label": "Nov. 29, 1926 fishing story",
+     "url": "https://newspapers.lib.utah.edu/details?id=6416579"
+    },
+    {
+     "label": "Nov. 28, 1926 storm story",
+     "url": "https://newspapers.lib.utah.edu/details?id=6416016"
+    },
+    {
+     "label": "Dec. 4, 1926 winter sports editorial",
+     "url": "https://newspapers.lib.utah.edu/details?id=6417730"
+    }
+   ]
   }
  ],
  "featured_schedule": [
   {
    "from": "2026-10-30",
    "id": "beneath-pineview"
+  },
+  {
+   "from": "2026-11-06",
+   "id": "1976-11-ski-season-everything-but-snow"
+  },
+  {
+   "from": "2026-11-13",
+   "id": "1976-11-perception-park-spruce"
+  },
+  {
+   "from": "2026-11-20",
+   "id": "1951-11-snow-basin-gets-ready"
+  },
+  {
+   "from": "2026-11-27",
+   "id": "1926-11-sanitarium-ruins-last-fishing"
   }
  ]
 }
