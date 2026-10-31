@@ -1,0 +1,84 @@
+{
+ "note": "Recipes from the OVE kitchen. Edited by hand (not by the hourly updater). Newest first.",
+ "items": [
+  {
+   "id": "caramel-apples",
+   "posted": "2026-11-01",
+   "title": "Homemade Caramel Apples (the way we actually got them to work)",
+   "by": "Ogden Valley Info & Events",
+   "adapted": {
+    "name": "Sally's Baking: Homemade Caramel Apples",
+    "url": "https://sallysbakingaddiction.com/homemade-caramel-apples/"
+   },
+   "photo": "kitchen-caramel-apples-board.jpg",
+   "intro": "We made caramel apples from scratch and learned a few things the recipe didn't spell out: butter the pan, don't stir, be patient, and get the apples cold. Then we went wild with white chocolate and toppings.",
+   "yield": "Makes 8 to 9 apples. Plan for about 2 hours, plus apple prep the day before if you can.",
+   "ingredients": [
+    "8 to 9 small to medium apples, firm and as round as you can find",
+    "1¾ cups heavy cream",
+    "1 cup light corn syrup",
+    "2 cups packed brown sugar (light or dark)",
+    "4 Tbsp unsalted butter at room temperature, plus extra for buttering the pan",
+    "½ tsp salt",
+    "½ tsp vanilla",
+    "Sturdy sticks, 5½ to 7 inches long",
+    "A heavy 3-quart saucepan, a candy thermometer and a wooden spoon",
+    "A baking sheet with a silicone mat, or one greased with butter (caramel sticks to wax paper and parchment)",
+    "Toppings: white chocolate, plus broken peppermint bark, crushed Oreos, chopped Snickers and Biscoff cookie crumbs"
+   ],
+   "steps": [
+    {
+     "h": "Get the wax off, then chill the apples (the day before is best)",
+     "p": "Store apples have a waxy film that makes caramel slide right off. Boil the apples for about 1 minute, then wipe them completely dry. Pull the stems, push a stick about ¾ of the way in, and put the apples in the fridge. They need to be all the way cold and dry when you dip. Doing this the day before makes the next day easy."
+    },
+    {
+     "h": "Butter the pan at the caramel line",
+     "p": "Our biggest tip. Before anything goes in, rub butter around the inside of the saucepan where the caramel will sit and a little above it. It helped immensely."
+    },
+    {
+     "h": "Cook the caramel, and don't stir",
+     "p": "Put the cream, corn syrup, brown sugar, 4 Tbsp butter and salt in the pan over medium heat. Stir only until the butter melts. Then clip on the thermometer, making sure the tip doesn't touch the bottom of the pan.\n\nNow stop stirring. That's the hard part. Stirring as it heats can make the caramel grainy. Turning the heat up to speed things along can burn it, so leave it on medium.\n\nBe patient. For us it took almost 20 minutes just to go from 220° to 240°. It creeps up slowly and then moves fast at the end, so stay by the pot.\n\nTake it off the heat between 235° and 240°F. 240° holds onto the apples better. Stir in the vanilla gently, since too much stirring puts bubbles in the caramel."
+    },
+    {
+     "h": "Let the caramel cool before dipping",
+     "p": "Let it sit 10 to 15 minutes, until it thickens a little. Hot, thin caramel runs off the apple and pools at the bottom. If it still seems runny, give it another 5 to 10 minutes."
+    },
+    {
+     "h": "Dip",
+     "p": "Hold the stick, dip and tilt the pot to coat all sides, then twirl and let the extra drip off. Set it on the mat."
+    },
+    {
+     "h": "White chocolate and toppings (two ways)",
+     "p": "Clean layers: let the caramel set 45 to 60 minutes first, then dip or drizzle with melted white chocolate.\n\nMarbled: put the white chocolate on while the caramel is still soft. It swirls together, with a different texture, and it looks really cool.\n\nEither way, roll the apples in your toppings while the chocolate is still wet. We used peppermint bark, Oreos, Snickers and Biscoff crumbles."
+    },
+    {
+     "h": "Keeping and serving",
+     "p": "Store them loosely covered in the fridge for up to a week. To share, stand an apple on a cutting board and slice around the stick. We sliced ours and set them out on a board with cheese and grapes.\n\nCleanup trick: fill the sticky pan with water and set it on low heat until the caramel melts off."
+    }
+   ],
+   "photos": [
+    {
+     "src": "kitchen-caramel-apples-sticks.jpg",
+     "alt": "Granny Smith apples on sticks, ready to dip"
+    },
+    {
+     "src": "kitchen-caramel-apples-pot.jpg",
+     "alt": "Caramel bubbling in the pot with a candy thermometer"
+    },
+    {
+     "src": "kitchen-caramel-apples-toppings.jpg",
+     "alt": "Melted white chocolate, crushed peppermint bark and Biscoff crumbs ready for dipping"
+    },
+    {
+     "src": "kitchen-caramel-apples-board-2.jpg",
+     "alt": "Sliced caramel apples with peppermint and Biscoff toppings on a cheese board"
+    }
+   ],
+   "cooks": {
+    "src": "kitchen-caramel-apples-cooks.jpg",
+    "alt": "The three cooks smiling together in the kitchen",
+    "caption": "The crew who made these. We come to your kitchen too."
+   }
+  }
+ ]
+}
