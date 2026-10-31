@@ -39,7 +39,7 @@ window.OVE = {
     coloring: "https://docs.google.com/forms/d/e/1FAIpQLSeD4c0NYmQnFrgGuGaCRywZvmHWCaKtzZ1a6b1waX6avH5z-w/viewform",             // Finished coloring pages (parents send)
     musician: "https://docs.google.com/forms/d/e/1FAIpQLSdyDj-XkJKas0nj5SSxPfO2LwuQKckG5ZpMgyiekk4mdO6MKQ/viewform",             // Musicians: bio, photo, private events, contact
     recipe: "https://docs.google.com/forms/d/e/1FAIpQLScK353HCsAIb5-ePsKiUxHljdh7s7QZgHwYVz7zQTizzscIAA/viewform",               // Community Cooking: share a recipe
-    letter: "https://docs.google.com/forms/d/e/1FAIpQLScznXP4DVXeJW2ALw22HwoRpqzp2KFMnXTln4eKvfPy0n1wDg/viewform",                                                                                      // Letters to the Editor & Dear Ben (paste the form link here)
+    letter: "https://docs.google.com/forms/d/e/1FAIpQLScznXP4DVXeJW2ALw22HwoRpqzp2KFMnXTln4eKvfPy0n1wDg/viewform",  // Letters to the Editor & Dear Ben
     recipeVote: "https://docs.google.com/forms/d/e/1FAIpQLScTHPG1-8dU02eNJNt9mNqof5M9mL9jiPkathGpUtUhCzUNbw/viewform",           // Community Cooking: vote + "what I changed"
     volunteer: "https://docs.google.com/forms/d/e/1FAIpQLSfOcw941wcno_hT3Caeyw1ScHvxuqeWFc4TOUSbyDb1AJPv0g/viewform",            // Groups: post a volunteer need or drive
     yardsale: "https://docs.google.com/forms/d/e/1FAIpQLSdq-tr_1dUMWJvoD06p9oZAXQWuK5-SnkucboHFwVEFmeZSZg/viewform?usp=pp_url&entry.1817719328=A+yard+sale", // Post a yard sale (event form, opens with "A yard sale" picked)
@@ -112,28 +112,7 @@ window.OVE = {
       image: "monster-dash-2026.png",
       line: "5K plus a 1-mile kids run. Runners and walkers of all ages, come in costume! 100% of proceeds go to Make-A-Wish Utah for 4-year-old Arie.",
       link: "https://www.canvaqr.com/RGSQ4K6Sel", linkText: "Join or donate",
-      from: "2026-10-09", cause: true },
-    { title: "Valley Time Capsule: What's under Pineview?", date: "2026-10-29",
-      place: "Artesian Park", town: "Huntsville",
-      image: "time-train-1920-artesian-wells.jpg",
-      line: "About 1920, water bubbled up out of the ground on its own at \"Artesian Park\" near Huntsville. Today it's under Pineview Reservoir. Kids can ride our new Time Train through Valley history on the Utah Depot page. Photo: Fred Pack, about 1920, J. Willard Marriott Library, University of Utah.",
-      link: "https://ogdenvalleyevent.com/time-capsule.html", linkText: "Read the Time Capsule",
-      from: "2026-10-29" },
-    { title: "Last day to enter: October Photo Contest", date: "2026-10-31",
-      image: "ove-photo-contest-2026-10-vote-a-b.jpg",
-      line: "This month's theme is fall color and Halloween in the Valley. The winner becomes our November Photo of the Month: the home page banner and our Facebook cover, with credit to you.",
-      link: "https://ogdenvalleyevent.com/photo-contest.html", linkText: "Enter by Oct. 31",
-      from: "2026-10-29" },
-    { title: "Trunk or Treat at Snowcrest Jr High", date: "2026-10-31", time: "4–5:30 PM",
-      place: "Snowcrest Junior High", town: "Eden",
-      image: "trunk-or-treat-snowcrest-2026.png",
-      line: "A free community trunk-or-treat. Bring your littles, or bring your car and a trunk full of candy to take part (trunk setup at 3:30). Saturday's forecast calls for rain, so bring rain gear. Contact Jennifer Stickler for details: 801-430-0073.",
-      from: "2026-10-29" },
-    { title: "Ogden Valley Info & Events turns 10", date: "2026-11-01",
-      town: "Eden, Liberty and Huntsville",
-      line: "Sunday is our 10th anniversary relaunch: one place for Valley events, road and weather, local businesses, jobs, the Utah Depot for kids, Valley history and Community Cooking. Thank you for 10 years of reading, sharing and showing up for each other.",
-      link: "https://ogdenvalleyevent.com/", linkText: "See what's new",
-      from: "2026-10-29" }
+      from: "2026-10-09", cause: true }
   ],
   eventFeaturePrice: "$25",
 
@@ -235,10 +214,7 @@ window.OVE = {
     { image: "valley-balloon-fest-eden-park-seth-miller.jpg", by: "Seth Miller", place: "Eden", date: "", caption: "Hot air balloons glow at night at the balloon fest at Eden Park" },
     { image: "photo-2026-10-carla-r-icebox-canyon.jpg", by: "Carla R", place: "", date: "2026-10", caption: "Sunset at Icebox Canyon (October photo contest, entry #1)" },
     { image: "valley-aspens-sunburst-julia-rae.jpg", by: "Julia Rae", place: "Ogden Valley", date: "2026-10", caption: "The sun bursts through the pines and lights up the aspens" },
-    { image: "valley-north-fork-barn-captura.jpg", by: "Captura", place: "North Fork Park", date: "2026-10", caption: "North Fork Barn, with fresh snow on the peaks behind it" },
-    { image: "valley-pineview-lakebed-mountains-shauna-miller.jpg", by: "Shauna Miller", place: "Pineview", date: "2026-10", caption: "Pineview's lakebed stretches almost to the mountains" },
-    { image: "valley-pineview-cottonwoods-tall-shauna-miller.jpg", by: "Shauna Miller", place: "Pineview", date: "2026-10", caption: "Cottonwoods hang on to their gold along the low water" },
-    { image: "valley-pineview-low-water-cottonwoods-shauna-miller.jpg", by: "Shauna Miller", place: "Pineview", date: "2026-10", caption: "Two cottonwoods frame the empty lakebed from the trail" }
+    { image: "valley-north-fork-barn-captura.jpg", by: "Captura", place: "North Fork Park", date: "2026-10", caption: "North Fork Barn, with fresh snow on the peaks behind it" }
   ],
 
   /* --- Then & Now ------------------------------------------------------
@@ -253,15 +229,13 @@ window.OVE = {
 
   /* --- Photo contest -------------------------------------------------- */
   contest: {
-    month: "October 2026",
-    theme: "Fall color and Halloween in the Valley",
-    deadline: "October 31",
-    lastWinner: null,         // { name: "", title: "", image: "photo-...jpg", month: "October 2026" }
+    month: "November 2026",
+    theme: "First snow and cozy Valley days",
+    deadline: "November 30",
+    lastWinner: { name: "Carla R", title: "Sunset at Icebox Canyon", image: "photo-2026-10-carla-r-icebox-canyon.jpg", month: "October 2026" },
     // This month's entries, shown on the Photo Contest page (newest last). Clear this list when a new month starts.
-    entries: [
-      { image: "photo-2026-10-carla-r-icebox-canyon.jpg", by: "Carla R", title: "Sunset at Icebox Canyon" },
-      { image: "photo-2026-10-nancy-e-middle-fork.jpg", by: "Nancy E.", title: "Sunset a couple weeks ago from our front yard in Middle Fork" }
-    ]
+    // October 2026 entries: Carla R, "Sunset at Icebox Canyon" (winner)
+    entries: []
                               // The winner also becomes the home page banner photo for the month, with credit.
   },
 
@@ -279,36 +253,30 @@ window.OVE = {
   ],
 
   /* --- Coloring pages (change each month) ---------------------------- */
-  /* --- Monthly coloring pages (Holiday Express) --------------------------
-     Each month gets its own entry. On the 1st of a month its pages move to the
-     top of the Coloring page automatically; earlier months move down to
-     "Past months" (newest first) so kids can still color them. */
-  coloringMonths: [
-    { month: "2026-11", label: "November 2026", pages: [
-      { file: "coloring-2026-11-crew-thanksgiving.png", title: "Happy Thanksgiving from the Valley Crew!" },
-      { file: "coloring-2026-11-crew-leaf-pile.png", title: "Morgan and Wyatt's leaf pile" },
-      { file: "coloring-2026-11-crew-timmy-pie.png", title: "Timmy baked a pie!" },
-      { file: "coloring-2026-11-turkey-skating.png", title: "Turkey goes skating on Pineview" },
-      { file: "coloring-2026-11-farm-stand.png", title: "Fresh from the Valley farm stand" },
-      { file: "coloring-2026-11-turkey-pie.png", title: "Turkey sneaks a slice of pie" },
-      { file: "coloring-2026-11-eat-more-ham.png", title: "Eat more ham!" },
-      { file: "coloring-2026-11-wyatt-river.png", title: "Wyatt the Wapiti at the river" }
-    ] },
-    { month: "2026-10", label: "October 2026", pages: [
-        { file: "coloring-2026-10-crew-timmy-trick-or-treat.png", title: "Timmy goes trick-or-treating!" },
-        { file: "coloring-2026-10-crew-pumpkin-patch.png", title: "Morgan and Berkley's pumpkin patch" },
+  coloringMonth: "November 2026",
+  coloringPages: [
+    { file: "coloring-ben-turkey.png", title: "Ben Lomoose dressed as a turkey" },
+    { file: "coloring-ben-thanksgiving-salad.png", title: "Ben eats salad while everyone else eats turkey" },
+    { file: "coloring-fall-leaves-friends.png", title: "Friends jumping in the fall leaves" },
+    { file: "coloring-ben-cozy-fire.png", title: "Ben gets cozy by the fire" }
+  ],
+  /* Past months stay up as an archive under the current month's pages (newest first). */
+  coloringPast: [
+    { month: "October 2026", pages: [
       { file: "coloring-moose-ghost.png", title: "A moose dressed as a ghost" },
       { file: "coloring-monster-pumpkins.png", title: "A friendly monster at the pumpkin patch" },
       { file: "coloring-owl-witch.png", title: "Owl is ready for trick-or-treat" },
-      { file: "coloring-bear-pumpkin.png", title: "Bear carves a jack-o'-lantern" }
-    ] }
+      { file: "coloring-bear-pumpkin.png", title: "Bear carves a jack-o'-lantern" } ] }
   ],
+
   /* --- Puzzles: word searches -------------------------------------------
      level: "easy" (10x10, across and down), "medium" (12x12, adds diagonals),
      "hard" (15x15, every direction, even backwards). Words: letters only. */
   wordSearches: [
     { title: "Valley critters & fun", level: "easy", words: ["MOOSE","DEER","OWL","BEAR","FOX","SKI","LAKE","BOAT","HIKE","SNOW"] },
-    { title: "Fall in the Valley", level: "medium", words: ["PUMPKIN","GHOST","CANDY","COSTUME","HAYRIDE","CIDER","HARVEST","LEAVES","APPLES","CORNMAZE","SCARECROW","MOON"] },
+    { title: "Ben's Thanksgiving", level: "easy", words: ["BEN","MOOSE","PIE","CORN","LEAVES","FEAST","SALAD","FAMILY","THANKS","ACORN"] },
+    { title: "Thanksgiving in the Valley", level: "medium", words: ["TURKEY","GRATEFUL","HARVEST","GRAVY","PUMPKIN","STUFFING","CRANBERRY","FAMILY","FIRST","SNOWFALL","COCOA","SCARF"] },
+    /* Saved for next October: { title: "Fall in the Valley", level: "medium", words: ["PUMPKIN","GHOST","CANDY","COSTUME","HAYRIDE","CIDER","HARVEST","LEAVES","APPLES","CORNMAZE","SCARECROW","MOON"] }, */
     { title: "Ogden Valley", level: "medium", words: ["EDEN","HUNTSVILLE","LIBERTY","PINEVIEW","SNOWBASIN","POWDER","NORDIC","WASATCH","ASPEN","TRAIL","MOOSE"] },
     { title: "Utah: the Beehive State", level: "hard", words: ["BEEHIVE","ARCHES","ZION","BRYCE","CANYONLANDS","CAPITOLREEF","WASATCH","BONNEVILLE","PROMONTORY","SEGOLILY","TOPAZ","MOAB","UINTA","COPPER","UTAHRAPTOR"] }
   ],
@@ -318,7 +286,7 @@ window.OVE = {
        bio: "", link: "their website", listing: "Name on the Artists page",
        artistPhoto: "" }   The first one is a practice puzzle. */
   jigsaw: [
-    { image: "logo-10-years-halloween-512.png", title: "Our 10-year Halloween logo", artist: "Ogden Valley Info & Events",
+    { image: "logo-10-years-512.png", title: "Our 10-year logo", artist: "Ogden Valley Info & Events",
       bio: "This one is our practice puzzle. Soon you'll find puzzles made from paintings and photos by Valley artists here, and finishing one shows you the artist's story and where to see more of their work.",
       link: "artists.html" }
   ],
@@ -379,20 +347,22 @@ window.OVE = {
 
   /* --- Scavenger hunt (change each month) ------------------------------ */
   hunt: {
-    month: "October 2026",
-    title: "Fall in the Valley hunt",
+    month: "November 2026",
+    title: "Thankful in the Valley hunt",
     items: [
-      { find: "A tree with red or orange leaves" },
-      { find: "A pumpkin on a porch or at a farm stand", hint: "Look, don't touch: it belongs to someone." },
-      { find: "A view of Pineview Reservoir" },
-      { find: "A horse, cow or sheep in a field", hint: "Stay on the road side of the fence." },
-      { find: "A scarecrow or Halloween decoration" },
-      { find: "Snow on a mountain top" },
-      { find: "A bird of prey (hawk or eagle) flying" },
-      { find: "Something yellow at a local business" },
-      { find: "The moon in the daytime" },
-      { find: "A trail sign at a trailhead" }
+      { find: "A wild turkey", hint: "They like fields and roadsides. Give them room and stay in the car near roads." },
+      { find: "Fresh snow on Ben Lomond or another peak" },
+      { find: "A woodpile or smoke from a chimney" },
+      { find: "Geese flying in a V" },
+      { find: "A leaf pile (jump in it if it's yours!)" },
+      { find: "A Ben Lomoose painted rock", hint: "Found one? Scan the code and tell us where." },
+      { find: "Ice on a puddle or the edge of Pineview" },
+      { find: "Something you are thankful for at home" },
+      { find: "A snowplow or a sand truck" },
+      { find: "A deer or a moose", hint: "Always watch from far away. Never walk up to a moose." }
     ]
+    /* October 2026 hunt "Fall in the Valley hunt": red/orange tree; pumpkin on a porch; Pineview view; horse/cow/sheep;
+       scarecrow or Halloween decoration; snow on a mountain top; hawk or eagle; something yellow at a local business; daytime moon; trail sign */
   },
 
   /* --- Facebook groups you run (shown on the About page) -------------
@@ -427,54 +397,3 @@ window.OVE = {
   /* --- Started ---------------------------------------------------------- */
   startYear: 2016
 };
-
-/* =====================================================================
-   MONTHLY SWITCH: on the 1st of each month (Utah time), the settings for that
-   month replace the ones above automatically. Add next month here ahead of time.
-   "set" replaces a setting; "addWordSearches" puts new word lists at the front.
-   ===================================================================== */
-window.OVE.monthly = [
-  { month: "2026-11", set: {
-      hunt: {
-        month: "November 2026",
-        title: "Frosty fall in the Valley hunt",
-        items: [
-          { find: "A wild turkey", hint: "Look in fields and along the roads. Watch from the car or the road." },
-          { find: "Geese flying in a V" },
-          { find: "Frost on a leaf, window or car" },
-          { find: "Snow on a mountain top" },
-          { find: "A pinecone" },
-          { find: "A pile of fallen leaves" },
-          { find: "Hay bales or a round bale in a field", hint: "Stay on the road side of the fence." },
-          { find: "A snow stake or snowplow marker along the road" },
-          { find: "Smoke from a chimney" },
-          { find: "The moon in the daytime" }
-        ]
-      },
-      contest: {
-        month: "November 2026",
-        theme: "Frosty mornings and thankful moments in the Valley",
-        deadline: "November 30",
-        lastWinner: { name: "Carla R", title: "Sunset at Icebox Canyon", image: "photo-2026-10-carla-r-icebox-canyon.jpg", month: "October 2026" },
-        entries: []
-      },
-      jigsaw: [
-        { image: "logo-10-years-512.png", title: "Our 10-year logo", artist: "Ogden Valley Info & Events",
-          bio: "This one is our practice puzzle. Soon you'll find puzzles made from paintings and photos by Valley artists here, and finishing one shows you the artist's story and where to see more of their work.",
-          link: "artists.html" }
-      ]
-    },
-    addWordSearches: [
-      { title: "Thanksgiving in the Valley", level: "medium", words: ["TURKEY","PIE","PUMPKIN","HARVEST","THANKFUL","FAMILY","CORN","CRANBERRY","ACORN","LEAVES","FEAST","FROST"] }
-    ]
-  }
-];
-(function(C){
-  var now = new Date().toLocaleDateString("en-CA", { timeZone: "America/Denver" }).slice(0, 7);
-  (C.monthly || []).filter(function(m){ return m.month <= now; })
-    .sort(function(a, b){ return a.month < b.month ? -1 : 1; })
-    .forEach(function(m){
-      if (m.set) Object.keys(m.set).forEach(function(k){ C[k] = m.set[k]; });
-      if (m.addWordSearches) C.wordSearches = m.addWordSearches.concat(C.wordSearches || []);
-    });
-})(window.OVE);

@@ -14,7 +14,7 @@ const mo = +new Intl.DateTimeFormat("en-US", {timeZone: TZ, month: "numeric"}).f
 const yr = +new Intl.DateTimeFormat("en-US", {timeZone: TZ, year: "numeric"}).format(now);
 const season = mo === 10 ? "halloween" : [12,1,2].includes(mo) ? "winter" : [3,4,5].includes(mo) ? "spring" : [6,7,8].includes(mo) ? "summer" : "fall";
 document.documentElement.dataset.season = season;
-const logo = season === "halloween" ? "10-years-halloween" : (yr <= 2026 ? "10-years" : season);
+const logo = season === "halloween" ? "10-years-halloween" : (yr <= 2026 ? (mo === 11 ? "10-years-november" : "10-years") : season);
 document.querySelectorAll("img[data-logo]").forEach(i => { i.src = "logo-" + logo + "-" + (i.dataset.logo || "512") + ".png"; });
 const fav = document.querySelector("link[rel=icon]"); if (fav) fav.href = "logo-" + logo + "-32.png";
 const apple = document.querySelector("link[rel=apple-touch-icon]"); if (apple) apple.href = "logo-" + logo + "-180.png";
@@ -281,8 +281,7 @@ function listing(box, items, kind, R){
         preview ? el("span", {class: "fev-preview", text: "Preview: only you can see this"}) : null]),
       el("div", {class: "fev-grid"}, mine.map(f => el("article", {class: "fev-card"}, [
         f.image ? el("a", {class: "fev-img", href: f.image, target: "_blank", rel: "noopener", "aria-label": "See the full flyer"},
-          [el("img", {src: f.image, alt: f.title + " flyer", loading: "lazy"})])
-          : el("div", {class: "fev-img fev-logo"}, [el("img", {src: "logo-10-years-512.png", alt: "", loading: "lazy"})]),
+          [el("img", {src: f.image, alt: f.title + " flyer", loading: "lazy"})]) : null,
         el("div", {class: "fev-body"}, [
           el("span", {class: "fev-tag", text: "★ Featured"}),
           el("h3", {text: f.title}),
