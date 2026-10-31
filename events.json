@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T02:54:51.475Z",
+ "updated": "2026-10-31T03:52:22.755Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -846,26 +846,6 @@
      "desc": "elparo has created large-scale site-responsive sculptures all over the world. La Vrille is his debut work in the United States.",
      "url": "https://www.weber.edu/shawgallery/upcoming.html",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793316600000,
-     "e": 1793331000000,
-     "t": "Roaring 20s Halloween Dinner Tour Experience",
-     "loc": "Stellas on 25th, 225 Historic 25th Street, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Join Tour Ogden and Stellas for a Roaring 20’s Halloween Experience! Thursday, October 29, 2026 at 5:30 pm enjoy dinner, activities and a historic walking Tour! Spaces are limited for this special event.",
-     "url": "https://tourogden.com/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793323800000,
-     "e": 1793331000000,
-     "t": "Fall Opera - Eccles",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1793327400000,
@@ -1999,8 +1979,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2009,8 +1989,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3253,16 +3233,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1793316600000,
-    "e": 1793331000000,
-    "t": "Roaring 20s Halloween Dinner Tour Experience",
-    "loc": "Stellas on 25th, 225 Historic 25th Street, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Join Tour Ogden and Stellas for a Roaring 20’s Halloween Experience! Thursday, October 29, 2026 at 5:30 pm enjoy dinner, activities and a historic walking Tour! Spaces are limited for this special event.",
-    "url": "https://tourogden.com/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1793383200000,
     "e": 1793412000000,
     "t": "Weber State's SPOOK-TACULAR Halloween Party",
@@ -4145,16 +4115,6 @@
   ],
   "treehouse": [
    {
-    "s": 1793323800000,
-    "e": 1793331000000,
-    "t": "Fall Opera - Eccles",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
     "s": 1793410200000,
     "e": 1793417400000,
     "t": "Fall Opera - Eccles",
@@ -4336,8 +4296,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4346,8 +4306,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
