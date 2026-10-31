@@ -20,6 +20,7 @@
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="depot.css">
 <script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script>
+<style>.c-pastmo{border:2px solid #d9a93a;border-radius:14px;padding:0 16px}.c-pastmo>summary{cursor:pointer;font-weight:800;font-size:1.25rem;padding:16px 0;list-style:none;display:flex;align-items:center;gap:10px}.c-pastmo>summary::-webkit-details-marker{display:none}.c-pastmo>summary::before{content:"\25B6";font-size:.9em;transition:transform .2s}.c-pastmo[open]>summary::before{transform:rotate(90deg)}.c-pastmo>summary::after{content:"Tap to open";margin-left:auto;font-size:.85rem;font-weight:600;opacity:.75}.c-pastmo[open]>summary::after{content:"Tap to close"}.c-pastmo>.grid{padding-bottom:16px}</style>
 </head>
 <body class="depot-theme kids">
 <a class="sr" href="#main">Skip to content</a>
@@ -42,9 +43,11 @@
 <section><div class="container" style="display:grid;gap:18px">
   <p class="eyebrow" id="c-month" style="margin:0"></p>
   <div class="grid" id="c-pages"></div>
-  <div id="c-past" hidden style="display:grid;gap:12px"></div>
+  <div style="display:grid;gap:10px"><p class="eyebrow" style="margin:0">Meet the Valley Crew</p><h2 style="margin:0">The Valley Crew coloring pages</h2><p class="meta" style="color:var(--muted);font-size:16px;margin:0">Six friends who ride the train and explore the Valley together. Color each one, and watch for them in our stories. Hint: Matteo the Mouse likes to hide!</p></div>
+  <div class="grid" id="c-crew"></div>
   <div style="display:grid;gap:10px"><p class="eyebrow" style="margin:0">Utah facts</p><h2 style="margin:0">Utah facts coloring pages</h2><p class="meta" style="color:var(--muted);font-size:16px;margin:0">Color a Utah symbol and learn a true fact about it. Every fact is checked with the State of Utah.</p></div>
   <div class="grid" id="c-utah"></div>
+  <div id="c-past-wrap" hidden style="display:grid;gap:14px"><div><p class="eyebrow" style="margin:0">Still want to color these?</p><h2 style="margin:4px 0 0">Past months</h2></div><div id="c-past" style="display:grid;gap:14px"></div></div>
   <div class="card cta"><div><h2>Finished your picture?</h2><p style="margin-top:6px">Have a grown-up send a photo of it. We only ever show a <b>first and last initial and your city</b>, like "M. B., Eden."</p></div><div class="btns" style="margin:0"><a class="btn primary" data-form="coloring" href="#">Send a finished page</a></div></div>
   <div><h2 style="margin-bottom:6px">Young artists gallery</h2><p class="meta" style="color:var(--muted);font-size:15px;margin:0 0 10px">Tap a picture to see it big.</p><div class="grid" id="c-gal" data-gallery></div></div>
   <p class="meta" style="color:var(--muted);font-size:15px">Please photograph just the coloring page: no faces, names or school names in the picture. Pages are shared on this site, in the newsletter and on our Facebook and Instagram, per our <a href="terms.html">terms</a>.</p>
@@ -63,19 +66,30 @@
 <script src="places.js"></script>
 <script src="site.js"></script>
 <script>
+/* monthly coloring: this month on top, earlier months below (newest first) */
+function coloringByMonth(C){const t=new Date().toLocaleDateString("en-CA",{timeZone:"America/Denver"}).slice(0,7);
+ let ms=(C.coloringMonths||[]).filter(m=>m.month<=t).sort((a,b)=>b.month.localeCompare(a.month));
+ if(!ms.length&&C.coloringPages)ms=[{month:t,label:C.coloringMonth||"",pages:C.coloringPages}];
+ const all=[];ms.forEach(m=>m.pages.forEach(p=>all.push(Object.assign({month:m.label},p))));return {current:ms[0]||null,past:ms.slice(1),all};}
 
-(async function(){const S=window.OVE_SITE,el=S.el;document.getElementById("c-month").textContent=(S.C.coloringMonth||"")+" pages";
-const box=document.getElementById("c-pages");(S.C.coloringPages||[]).forEach((p,pi)=>{
+(async function(){const S=window.OVE_SITE,el=S.el;const CM=coloringByMonth(S.C);document.getElementById("c-month").textContent=CM.current?CM.current.label+" coloring pages":"";
+const card=(p,pi)=>{
   const pr=el("button",{class:"btn primary",type:"button",text:"Print"});pr.onclick=()=>{const im=document.querySelector("#printme img");im.src=p.file;im.onload=()=>window.print();if(im.complete)window.print()};
-  box.append(el("article",{class:"card"},[el("img",{src:p.file,alt:"Coloring page: "+p.title,loading:"lazy",style:"border:1px solid var(--line);border-radius:8px;background:#fff"}),el("h3",{text:p.title}),el("div",{class:"btns",style:"margin:0"},[el("a",{class:"btn blue",href:"color.html?p="+pi,text:"Color online"}),pr,el("a",{class:"btn ghost",style:"color:var(--blue)",href:p.file,download:p.file,text:"Download"})])]))});
+  return el("article",{class:"card"},[el("img",{src:p.file,alt:"Coloring page: "+p.title,loading:"lazy",style:"border:1px solid var(--line);border-radius:8px;background:#fff"}),el("h3",{text:p.title}),el("div",{class:"btns",style:"margin:0"},[el("a",{class:"btn blue",href:"color.html?p="+pi,text:"Color online"}),pr,el("a",{class:"btn ghost",style:"color:var(--blue)",href:p.file,download:p.file,text:"Download"})])])};
+const box=document.getElementById("c-pages");let gi=0;(CM.current?CM.current.pages:[]).forEach(p=>box.append(card(p,gi++)));
+const pastBox=document.getElementById("c-past");CM.past.forEach(m=>{const g=el("div",{class:"grid"});m.pages.forEach(p=>g.append(card(p,gi++)));const d=el("details",{class:"c-pastmo"},[el("summary",{text:m.label+" coloring pages ("+m.pages.length+")"}),g]);pastBox.append(d)});document.getElementById("c-past-wrap").hidden=!CM.past.length;
 
+/* The Valley Crew character pages */
+const CREW=[{file:"coloring-crew-timmy-tyrannosaurus.png",title:"Timmy the Tyrannosaurus",facts:["Favorite place: Dinosaur Park","Favorite food: everything!","His arms are tiny, but his hugs are big."]},
+{file:"coloring-crew-matteo-mouse.png",title:"Matteo the Mouse",facts:["He's the map keeper for the Valley Crew.","He rides on top of Timmy's head.","Look for him hiding in every picture!"]},
+{file:"coloring-crew-morgan-marmot.png",title:"Morgan the Marmot",facts:["She lives high up in the mountains.","She whistles to warn her friends.","Her favorite thing: sunning on a warm rock."]},
+{file:"coloring-crew-wyatt-wapiti.png",title:"Wyatt the Wapiti",facts:["Wapiti is another name for elk.","He grows brand-new antlers every year.","In winter he likes to visit his elk friends at Hardware Ranch."]},
+{file:"coloring-crew-berkley-bee.png",title:"Berkley the Bee",facts:["Berkley flies ahead to find the next stop.","Utah is the Beehive State!","When her wings get tired, Wyatt's antlers make a perfect seat."]},
+{file:"coloring-crew-ben-lomoose.png",title:"Ben Lomoose",facts:["He's named after Ben Lomond Peak.","He wears a gold conductor's cap and a blue bandana.","Can you find him in the Moose Car game?"]}];
+const cb=document.getElementById("c-crew");CREW.forEach(p=>{
+  const pr=el("button",{class:"btn primary",type:"button",text:"Print"});pr.onclick=()=>{const im=document.querySelector("#printme img");im.src=p.file;im.onload=()=>window.print();if(im.complete)window.print()};
+  cb.append(el("article",{class:"card"},[el("img",{src:p.file,alt:"Coloring page: "+p.title,loading:"lazy",style:"border:1px solid var(--line);border-radius:8px;background:#fff"}),el("h3",{text:p.title}),el("ul",{style:"margin:0;padding-left:20px"},p.facts.map(t=>el("li",{text:t}))),el("div",{class:"btns",style:"margin:0"},[el("a",{class:"btn blue",href:"color.html?img="+encodeURIComponent(p.file)+"&t="+encodeURIComponent(p.title),text:"Color online"}),pr,el("a",{class:"btn ghost",style:"color:var(--blue)",href:p.file,download:p.file,text:"Download"})])]))});
 
-/* past months archive */
-(function(){const past=S.C.coloringPast||[];if(!past.length)return;const pb=document.getElementById("c-past");pb.hidden=false;
-pb.append(el("h2",{style:"margin:0",text:"Past months"}));
-past.forEach(m=>{const g=el("div",{class:"grid"});m.pages.forEach(p=>{const pr=el("button",{class:"btn primary",type:"button",text:"Print"});pr.onclick=()=>{const im=document.querySelector("#printme img");im.src=p.file;im.onload=()=>window.print();if(im.complete)window.print()};
- g.append(el("article",{class:"card"},[el("img",{src:p.file,alt:"Coloring page: "+p.title,loading:"lazy",style:"border:1px solid var(--line);border-radius:8px;background:#fff"}),el("h3",{text:p.title}),el("div",{class:"btns",style:"margin:0"},[el("a",{class:"btn blue",href:"color.html?img="+encodeURIComponent(p.file)+"&t="+encodeURIComponent(p.title),text:"Color online"}),pr])]))});
- pb.append(el("p",{class:"eyebrow",style:"margin:6px 0 0",text:m.month}),g)})})();
 /* Utah facts coloring pages */
 const UF=[{file:"utah-fact-gull.png",title:"Utah's State Bird: the California Gull",fact:"In 1848, gulls ate the crickets that were destroying the settlers' crops. Utah made the California gull its state bird in 1955.",src:"https://onlinelibrary.utah.gov/utah/symbols/bird/"},
 {file:"utah-fact-sego-lily.png",title:"Utah's State Flower: the Sego Lily",fact:"Pioneer families dug up and ate sego lily bulbs when food was short. Utah made it the state flower in 1911. Real sego lilies are white, lilac or yellow.",src:"https://onlinelibrary.utah.gov/state-symbol/flower/"},

@@ -41,6 +41,38 @@
 .cz-now span{width:34px;height:34px;border-radius:50%;border:2px solid rgba(0,0,0,.3);display:inline-block}
 .cz-pick{display:flex;flex-wrap:wrap;gap:8px}
 .cz-pick button{font:700 15px var(--body)}
+.cz-big{display:flex;gap:12px;justify-content:center}
+.cz-bt{width:56px;height:56px;border-radius:50%;border:3px solid var(--line);background:var(--card,#fff);font-size:28px;line-height:1;display:grid;place-items:center;cursor:pointer;padding:0;flex:none;transition:transform .15s,box-shadow .15s}
+.cz-bt[aria-pressed="true"]{transform:scale(1.12);border-color:#ffd54a;box-shadow:0 0 0 4px rgba(255,213,74,.55),0 0 18px rgba(255,213,74,.9)}
+.cz-dot{position:relative}
+.cz-badge{position:absolute;right:-6px;bottom:-6px;width:24px;height:24px;border-radius:50%;background:#fff;border:2px solid #333;font-size:14px;display:grid;place-items:center;line-height:1}
+@keyframes czwig{0%,100%{transform:rotate(0)}25%{transform:rotate(-14deg)}75%{transform:rotate(14deg)}}
+.cz-bt.wig{animation:czwig .35s 2}
+.cz-now .cz-badge{width:20px;height:20px;border:2px solid #333;font-size:12px;right:-7px;bottom:-7px}
+.cz [hidden]{display:none!important}
+.cz-mode{display:flex;gap:8px}
+.cz-mode .chip[aria-pressed="true"]{border-color:var(--ink);background:var(--soft,#eef)}
+.cz-mix{display:grid;gap:10px;justify-items:center}
+.cz-wheel{width:100%;max-width:260px;aspect-ratio:1;touch-action:none;cursor:crosshair;border-radius:50%}
+.cz-mix label{display:grid;gap:4px;width:100%;max-width:260px;font-weight:700}
+.cz-mix input[type=range]{width:100%;height:34px}
+.cz-recent{display:flex;gap:8px;align-items:center;flex-wrap:wrap;min-height:34px}
+.cz-recent .cz-sw{width:34px;height:34px;min-width:34px;flex:none}
+.cz-recent .cz-sw[aria-pressed="true"]{outline:3px solid var(--ink);outline-offset:2px}
+.cz-bar{display:none}
+@media (max-width:900px){
+ body.cz-on{padding-bottom:84px}
+ .cz-bar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:50;align-items:center;gap:10px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:var(--card,#fff);border-top:2px solid var(--line);box-shadow:0 -4px 16px rgba(0,0,0,.18)}
+ .cz-bar{gap:8px}
+ .cz-bar .cz-dot{width:46px;height:46px;border-radius:50%;border:3px solid rgba(0,0,0,.3);flex:none}
+ .cz-bar .cz-bt{width:50px;height:50px;font-size:26px}
+ #cz-colors .cz-big{display:none}
+ .cz-bar #cz-open{width:50px;height:50px;border-radius:50%;font-size:26px;padding:0;display:grid;place-items:center}
+ .cz-bar .cz-recent{flex:1;flex-wrap:nowrap;overflow-x:auto;min-height:0;padding:6px 4px}
+ .cz-bar .chip{flex:none;font-weight:800}
+ #cz-colors.sheet.open{position:fixed;left:0;right:0;bottom:74px;z-index:49;max-height:62vh;overflow:auto;border-radius:16px 16px 0 0;box-shadow:0 -6px 24px rgba(0,0,0,.25)}
+ #cz-colors.sheet .cz-wheel{max-width:min(230px,34vh)}
+}
 @media print{body *{visibility:hidden}#printme,#printme *{visibility:visible}#printme{position:fixed;inset:0;display:block!important}#printme img{width:100%;height:auto}}
 </style>
 </head>
@@ -67,9 +99,19 @@
   <div class="cz">
     <div class="cz-art fill" id="cz-art"><p class="meta">Loading the picture…</p></div>
     <div class="cz-side">
-      <div class="cz-box">
-        <div class="cz-now"><span id="cz-cur"></span><b id="cz-curname">Color</b></div>
+      <div class="cz-box" id="cz-colors">
+        <div class="cz-big" role="group" aria-label="Tools with pictures"><button class="cz-bt" type="button" data-tool="fill" aria-pressed="true" aria-label="Fill: tap to color">🪣</button><button class="cz-bt" type="button" data-tool="draw" aria-pressed="false" aria-label="Crayon: draw">🖍️</button><button class="cz-bt cz-undo-big" type="button" aria-label="Undo">↩️</button></div>
+        <div class="cz-now"><span id="cz-cur" class="cz-dot"><span class="cz-badge" id="cz-badge1" aria-hidden="true">🪣</span></span><b id="cz-curname">Color</b><button class="chip" type="button" id="cz-done" style="margin-left:auto" hidden>Done</button></div>
+        <div class="cz-mode" role="group" aria-label="How to pick a color">
+          <button class="chip" type="button" data-mode="boxes" aria-pressed="true">Color boxes</button>
+          <button class="chip" type="button" data-mode="mix" aria-pressed="false">🌈 Mix your own</button>
+        </div>
         <div class="cz-pal" id="cz-pal" role="group" aria-label="Colors"></div>
+        <div class="cz-mix" id="cz-mix" hidden>
+          <canvas class="cz-wheel" id="cz-wheel" width="520" height="520" aria-label="Rainbow color wheel: drag your finger to pick any color"></canvas>
+          <label>Lighter or darker<input type="range" id="cz-light" min="12" max="92" value="50" aria-label="Lighter or darker"></label>
+        </div>
+        <div><p class="fine" style="margin:0 0 6px">Colors you just used</p><div class="cz-recent" id="cz-recent"></div></div>
       </div>
       <div class="cz-box">
         <div class="cz-tools" role="group" aria-label="Tools">
@@ -95,6 +137,7 @@
     </div>
   </div>
 </div></section>
+<div class="cz-bar" id="cz-bar" aria-label="Your color and tools"><span class="cz-dot" id="cz-bardot"><span class="cz-badge" id="cz-badge2" aria-hidden="true">🪣</span></span><button class="cz-bt" type="button" data-tool="fill" aria-pressed="true" aria-label="Fill: tap to color">🪣</button><button class="cz-bt" type="button" data-tool="draw" aria-pressed="false" aria-label="Crayon: draw">🖍️</button><button class="cz-bt cz-undo-big" type="button" aria-label="Undo">↩️</button><div class="cz-recent" id="cz-barrecent"></div><button class="chip" type="button" id="cz-open" aria-label="All colors">🎨</button></div>
 <div id="printme" style="display:none"><img alt="" src=""></div>
 <section class="d-more" style="padding-top:10px"><div class="d-wrap">
   <p class="d-eye">More aboard the Utah Depot</p>
@@ -111,9 +154,14 @@
 <script src="site.js"></script>
 <script>
 (function(){
-const C=window.OVE||{}, pages=(C.coloringPages||[]);
+/* monthly coloring: this month on top, earlier months below (newest first) */
+function coloringByMonth(C){const t=new Date().toLocaleDateString("en-CA",{timeZone:"America/Denver"}).slice(0,7);
+ let ms=(C.coloringMonths||[]).filter(m=>m.month<=t).sort((a,b)=>b.month.localeCompare(a.month));
+ if(!ms.length&&C.coloringPages)ms=[{month:t,label:C.coloringMonth||"",pages:C.coloringPages}];
+ const all=[];ms.forEach(m=>m.pages.forEach(p=>all.push(Object.assign({month:m.label},p))));return {current:ms[0]||null,past:ms.slice(1),all};}
+const C=window.OVE||{}, CM=coloringByMonth(C), pages=CM.all.map((p,i)=>i<(CM.current?CM.current.pages.length:0)?p:Object.assign({},p,{title:p.title+" ("+p.month+")"}));
 /* a Utah Depot story can open its own coloring page: color.html?img=depot-stop-1-coloring.png&t=Title */
-{const q=new URLSearchParams(location.search),im=q.get("img");if(im&&(/^depot-(stop|bonus)-\d+-coloring(-big)?\.png$/.test(im)||/^utah-fact-[a-z-]+\.png$/.test(im)||/^coloring-[a-z0-9-]+\.png$/.test(im)))pages.unshift({file:im,title:(q.get("t")||"Utah Depot coloring page").slice(0,80)});}
+{const q=new URLSearchParams(location.search),im=q.get("img");if(im&&(/^depot-(stop|bonus)-\d+-coloring(-big)?\.png$/.test(im)||/^utah-fact-[a-z-]+\.png$/.test(im)||/^coloring-crew-[a-z-]+\.png$/.test(im)))pages.unshift({file:im,title:(q.get("t")||"Utah Depot coloring page").slice(0,80)});}
 const COLORS=[["Red","#e53935"],["Cherry","#b71c1c"],["Pink","#f48fb1"],["Hot pink","#ec407a"],["Coral","#ff7f6e"],["Orange","#fb8c00"],["Pumpkin","#ef6c00"],["Peach","#ffcc99"],
 ["Yellow","#fdd835"],["Lemon","#fff59d"],["Gold","#f9a825"],["Lime","#c0ca33"],["Light green","#9ccc65"],["Green","#43a047"],["Forest","#1b5e20"],["Mint","#a5d6a7"],
 ["Teal","#00897b"],["Aqua","#4dd0e1"],["Sky blue","#81d4fa"],["Blue","#1e88e5"],["Navy","#1a237e"],["Periwinkle","#9fa8da"],["Lavender","#ce93d8"],["Purple","#8e24aa"],
@@ -125,9 +173,34 @@ const W=1275, H=1650; /* coloring canvas size (3/4 of the 1700x2200 print page) 
 const art=document.getElementById("cz-art"), pal=document.getElementById("cz-pal");
 const key=()=> "ovColor2:"+file;
 function store(){ try{ localStorage.setItem(key(),JSON.stringify(ops)); }catch(e){} }
-function setColor(c,n){ color=c; document.getElementById("cz-cur").style.background=c; document.getElementById("cz-curname").textContent=n; [...pal.children].forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.c===c))); if(tool==="erase") setTool("fill"); }
+let recent=[]; try{ const r=JSON.parse(localStorage.getItem("ovColorRecent")||"[]"); if(Array.isArray(r)) recent=r.filter(x=>Array.isArray(x)&&/^#[0-9a-f]{6}$/i.test(x[0])).slice(0,6); }catch(e){}
+function showRecent(){ for(const id of ["cz-recent","cz-barrecent"]){ const box=document.getElementById(id); if(!box) continue; box.replaceChildren(...recent.map(([c,n])=>{ const b=document.createElement("button"); b.type="button"; b.className="cz-sw"; b.style.background=c; b.title=n; b.setAttribute("aria-label",n); b.setAttribute("aria-pressed",String(c===color)); b.onclick=()=>setColor(c,n); return b; })); if(!recent.length&&id==="cz-recent"){ const s=document.createElement("span"); s.className="fine"; s.textContent="Your colors will show up here."; box.append(s); } } }
+function setColor(c,n,keep){ color=c; document.getElementById("cz-cur").style.background=c; document.getElementById("cz-bardot").style.background=c; document.getElementById("cz-curname").textContent=n; [...pal.children].forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.c===c))); if(tool==="erase") setTool("fill");
+  if(!keep){ recent=[[c,n],...recent.filter(x=>x[0]!==c)].slice(0,6); try{ localStorage.setItem("ovColorRecent",JSON.stringify(recent)); }catch(e){} } showRecent(); }
 COLORS.forEach(([n,c])=>{ const b=document.createElement("button"); b.type="button"; b.className="cz-sw"; b.style.background=c; b.dataset.c=c; b.title=n; b.setAttribute("aria-label",n); b.onclick=()=>setColor(c,n); pal.append(b); });
-function setTool(t){ tool=t; document.querySelectorAll("[data-tool]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.tool===t))); document.getElementById("cz-sizes").hidden=t!=="draw"; art.className="cz-art "+(t==="draw"?"draw":"fill"); }
+/* "Mix your own": rainbow wheel (color around the circle, softer toward the middle) + lighter/darker slider */
+const wheel=document.getElementById("cz-wheel"), wx=wheel.getContext("2d"), light=document.getElementById("cz-light"); let mixH=200, mixS=90;
+function hsl2hex(h,s,l){ s/=100; l/=100; const k=n=>(n+h/30)%12, a=s*Math.min(l,1-l), f=n=>l-a*Math.max(-1,Math.min(k(n)-3,Math.min(9-k(n),1))); return "#"+[f(0),f(8),f(4)].map(x=>Math.round(x*255).toString(16).padStart(2,"0")).join(""); }
+function drawWheel(){ const R=260, L=+light.value, img=wx.createImageData(520,520), d=img.data;
+  for(let y=0;y<520;y++) for(let x=0;x<520;x++){ const dx=x-R, dy=y-R, r=Math.hypot(dx,dy), i=(y*520+x)*4; if(r>R){ d[i+3]=0; continue; }
+    const h=(Math.atan2(dy,dx)*180/Math.PI+360)%360, s=r/R*100, hx=hsl2hex(h,s,L); d[i]=parseInt(hx.slice(1,3),16); d[i+1]=parseInt(hx.slice(3,5),16); d[i+2]=parseInt(hx.slice(5,7),16); d[i+3]=255; }
+  wx.putImageData(img,0,0); const a=mixH*Math.PI/180, r=mixS/100*R; wx.lineWidth=5; wx.strokeStyle="#fff"; wx.beginPath(); wx.arc(R+Math.cos(a)*r,R+Math.sin(a)*r,16,0,7); wx.stroke(); wx.lineWidth=2; wx.strokeStyle="#000"; wx.beginPath(); wx.arc(R+Math.cos(a)*r,R+Math.sin(a)*r,19,0,7); wx.stroke(); }
+function mixPick(keep){ setColor(hsl2hex(mixH,mixS,+light.value),"Your mixed color",keep); }
+let wheelDown=false;
+function wheelAt(ev){ const b=wheel.getBoundingClientRect(), dx=(ev.clientX-b.left)/b.width*520-260, dy=(ev.clientY-b.top)/b.height*520-260; mixH=(Math.atan2(dy,dx)*180/Math.PI+360)%360; mixS=Math.min(100,Math.hypot(dx,dy)/260*100); drawWheel(); mixPick(true); }
+wheel.addEventListener("pointerdown",ev=>{ ev.preventDefault(); wheelDown=true; wheel.setPointerCapture(ev.pointerId); wheelAt(ev); });
+wheel.addEventListener("pointermove",ev=>{ if(wheelDown) wheelAt(ev); });
+const wheelUp=()=>{ if(wheelDown){ wheelDown=false; mixPick(false); } }; wheel.addEventListener("pointerup",wheelUp); wheel.addEventListener("pointercancel",wheelUp);
+light.addEventListener("input",()=>{ drawWheel(); mixPick(true); }); light.addEventListener("change",()=>mixPick(false));
+document.querySelectorAll("[data-mode]").forEach(b=>b.onclick=()=>{ const m=b.dataset.mode; document.querySelectorAll("[data-mode]").forEach(x=>x.setAttribute("aria-pressed",String(x===b))); pal.hidden=m!=="boxes"; document.getElementById("cz-mix").hidden=m!=="mix"; if(m==="mix") drawWheel(); });
+/* phones: the color box becomes a pop-up sheet, opened from the bar that stays at the bottom of the screen */
+const colorsBox=document.getElementById("cz-colors"), doneBtn=document.getElementById("cz-done"), mq=matchMedia("(max-width:900px)");
+function phoneMode(){ const on=mq.matches; document.body.classList.toggle("cz-on",on); colorsBox.classList.toggle("sheet",on); if(!on) colorsBox.classList.remove("open"); doneBtn.hidden=!colorsBox.classList.contains("open"); }
+(mq.addEventListener?mq.addEventListener("change",phoneMode):mq.addListener(phoneMode)); phoneMode();
+document.getElementById("cz-open").onclick=()=>{ colorsBox.classList.toggle("open"); doneBtn.hidden=!colorsBox.classList.contains("open"); if(!document.getElementById("cz-mix").hidden) drawWheel(); };
+doneBtn.onclick=()=>{ colorsBox.classList.remove("open"); doneBtn.hidden=true; };
+pal.addEventListener("click",()=>{ colorsBox.classList.remove("open"); doneBtn.hidden=true; });
+function setTool(t){ tool=t; document.querySelectorAll("[data-tool]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.tool===t))); document.getElementById("cz-sizes").hidden=t!=="draw"; art.className="cz-art "+(t==="draw"?"draw":"fill"); const ic=t==="draw"?"🖍️":t==="erase"?"🧽":"🪣"; ["cz-badge1","cz-badge2"].forEach(i=>{const e=document.getElementById(i); if(e) e.textContent=ic;}); }
 document.querySelectorAll("[data-tool]").forEach(b=>b.onclick=()=>setTool(b.dataset.tool));
 document.querySelectorAll("[data-size]").forEach(b=>b.onclick=()=>{ size=+b.dataset.size; document.querySelectorAll("[data-size]").forEach(x=>x.setAttribute("aria-pressed",String(x===b))); });
 const hex=c=>[parseInt(c.slice(1,3),16),parseInt(c.slice(3,5),16),parseInt(c.slice(5,7),16)];
@@ -138,8 +211,8 @@ function bucket(x,y,c){
   while(st.length){ const i=st.pop(); reg.push(i); const px=i%W;
     if(px>0&&!seen[i-1]&&!wall[i-1]){seen[i-1]=1;st.push(i-1);} if(px<W-1&&!seen[i+1]&&!wall[i+1]){seen[i+1]=1;st.push(i+1);}
     if(i>=W&&!seen[i-W]&&!wall[i-W]){seen[i-W]=1;st.push(i-W);} if(i<W*(H-1)&&!seen[i+W]&&!wall[i+W]){seen[i+W]=1;st.push(i+W);} }
-  /* grow 2px under the black lines so no white edge is left */
-  const add=[]; for(const i of reg){ const px=i%W; for(let dy=-2;dy<=2;dy++) for(let dx=-2;dx<=2;dx++){ const qx=px+dx, j=i+dy*W+dx; if(qx<0||qx>=W||j<0||j>=W*H||seen[j]) continue; if(wall[j]){ seen[j]=1; add.push(j); } } }
+  /* grow 3px under the black lines so no white edge is left */
+  const add=[]; for(const i of reg){ const px=i%W; for(let dy=-3;dy<=3;dy++) for(let dx=-3;dx<=3;dx++){ const qx=px+dx, j=i+dy*W+dx; if(qx<0||qx>=W||j<0||j>=W*H||seen[j]) continue; if(wall[j]){ seen[j]=1; add.push(j); } } }
   const img=cx.getImageData(0,0,W,H), d=img.data, rgb=c?hex(c):null;
   for(const arr of [reg,add]) for(const i of arr){ const k=i*4; if(rgb){ d[k]=rgb[0]; d[k+1]=rgb[1]; d[k+2]=rgb[2]; d[k+3]=255; } else d[k+3]=0; }
   cx.putImageData(img,0,0);
@@ -155,6 +228,9 @@ async function load(i){
   /* read the black lines once, at canvas size */
   const t=document.createElement("canvas"); t.width=W; t.height=H; const tx=t.getContext("2d"); tx.fillStyle="#fff"; tx.fillRect(0,0,W,H); tx.drawImage(lineImg,0,0,W,H);
   const td=tx.getImageData(0,0,W,H).data; wall=new Uint8Array(W*H); for(let k=0;k<W*H;k++) wall[k]=(td[k*4]+td[k*4+1]+td[k*4+2])<3*170?1:0;
+  /* seal tiny gaps: thicken the walls 2px so a fill can't leak through a line that almost touches */
+  {const R=2,t2=new Uint8Array(W*H);for(let y=0;y<H;y++){const o=y*W;for(let x=0;x<W;x++){if(!wall[o+x])continue;const a=Math.max(0,x-R),b=Math.min(W-1,x+R);for(let q=a;q<=b;q++)t2[o+q]=1;}}
+   for(let x=0;x<W;x++)for(let y=0;y<H;y++){if(!t2[y*W+x])continue;const a=Math.max(0,y-R),b=Math.min(H-1,y+R);for(let q=a;q<=b;q++)wall[q*W+x]=1;}}
   cv=document.createElement("canvas"); cv.width=W; cv.height=H; cv.setAttribute("aria-label","Coloring page: "+p.title); cv.setAttribute("role","img"); cx=cv.getContext("2d");
   const over=lineImg.cloneNode(); over.alt="";
   const stage=document.createElement("div"); stage.className="cz-stage"; stage.style.background="#fff"; stage.append(cv,over); art.replaceChildren(stage);
@@ -175,13 +251,18 @@ async function load(i){
     tap=null; end(); });
   cv.addEventListener("pointercancel",()=>{ tap=null; end(); });
 }
-document.getElementById("cz-undo").onclick=()=>{ if(!ops.length) return; ops.pop(); redraw(); store(); };
+let blinking=false;
+function doUndo(btn){ if(!ops.length||blinking) return; const last=ops.pop(); store(); if(btn){ btn.classList.remove("wig"); void btn.offsetWidth; btn.classList.add("wig"); }
+  /* flash what was taken away, then remove it */
+  blinking=true; let n=0; const step=()=>{ if(n%2===0) redraw(); else { ops.push(last); redraw(); ops.pop(); } n++; if(n<5) setTimeout(step,140); else { redraw(); blinking=false; } }; ops.push(last); redraw(); ops.pop(); setTimeout(step,140); }
+document.getElementById("cz-undo").onclick=()=>doUndo(null);
+document.querySelectorAll(".cz-undo-big").forEach(b=>b.onclick=()=>doUndo(b));
 document.getElementById("cz-clear").onclick=()=>{ if(!confirm("Start this page over? Your coloring will be erased.")) return; ops=[]; redraw(); store(); };
 function toPNG(){ const o=document.createElement("canvas"); o.width=1700; o.height=2200; const x=o.getContext("2d"); x.fillStyle="#fff"; x.fillRect(0,0,1700,2200); x.drawImage(cv,0,0,1700,2200); x.globalCompositeOperation="multiply"; x.drawImage(lineImg,0,0,1700,2200); return Promise.resolve(o.toDataURL("image/png")); }
 document.getElementById("cz-save").onclick=async()=>{ const a=document.createElement("a"); a.href=await toPNG(); a.download="my-ogden-valley-coloring.png"; document.body.append(a); a.click(); a.remove(); if(window.goatcounter&&goatcounter.count) goatcounter.count({path:"coloring: saved "+file,event:true}); };
 document.getElementById("cz-print").onclick=async()=>{ const im=document.querySelector("#printme img"); im.onload=()=>window.print(); im.src=await toPNG(); };
 const pick=document.getElementById("cz-pick"); pages.forEach((p,i)=>{ const b=document.createElement("button"); b.type="button"; b.className="chip"; b.textContent=p.title; b.onclick=()=>{ history.replaceState(null,"","?p="+i); load(i); }; pick.append(b); });
-setColor(COLORS[5][1],COLORS[5][0]);
+setColor(COLORS[5][1],COLORS[5][0],true);
 const start=Math.min(Math.max(parseInt(new URLSearchParams(location.search).get("p")||"0",10)||0,0),Math.max(pages.length-1,0)); load(start);
 })();
 </script>

@@ -37,96 +37,32 @@
 </div></header>
 <main id="main">
 <section class="hero"><div class="container"><div><p class="eyebrow">Play along</p><h1>Fun &amp; contests</h1><p class="lead" style="margin-top:12px">Monthly photo contest, a weekly Guess the Spot, old-and-new Valley photos, and a ready-made weekend list to share.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
-<section><div class="container">
-  <p class="eyebrow fx-eye">Right now</p>
-  <h2 class="fx-h">Happening this month</h2>
-  <div class="fx-now" id="fx-now"></div>
-</div></section>
-<section style="padding-top:0"><div class="container">
-  <p class="eyebrow fx-eye">Play and explore</p>
-  <h2 class="fx-h">Pick something fun</h2>
-  <div class="fx-tiles" id="fx-tiles"></div>
-</div></section>
-<section style="padding-top:0"><div class="container">
-  <p class="eyebrow fx-eye">More to do</p>
-  <h2 class="fx-h">Around the Valley</h2>
-  <div class="fx-links">
-    <div><h3>This week</h3><ul>
-      <li><a href="weekend.html">This weekend in the Valley</a><span>A shareable list of this weekend's events</span></li>
-      <li><a href="newsletter.html">The weekly newsletter</a><span>Everything in one email, every Thursday</span></li>
-    </ul></div>
-    <div><h3>Learn and share</h3><ul>
-      <li><a href="recipes.html">Community Cooking</a><span>Valley recipes, recipe of the month and Cook With Us</span></li>
-      <li><a href="know-how.html">Valley Know-How classes</a><span>Neighbors teaching neighbors</span></li>
-      <li><a href="sneak-peek.html">Sneak Peek</a><span>Invite us for a free behind-the-scenes look</span></li>
-      <li><a href="garden.html">Garden board</a><span>Mountain gardening questions and tips</span></li>
-      <li><a href="prepared.html">Be prepared board</a><span>Getting ready for emergencies</span></li>
-    </ul></div>
-    <div><h3>Give back and more</h3><ul>
-      <li><a href="volunteer.html">Volunteer &amp; blood drives</a><span>Find a way to help</span></li>
-      <li><a href="coming.html">What's coming</a><span>Letters to the editor and more on the way</span></li>
-      <li><a href="ten-years.html">Our 10th year</a><span>A decade of Ogden Valley Info &amp; Events</span></li>
-    </ul></div>
-  </div>
-</div></section>
-<style>
-.fx-eye{color:var(--muted)}.fx-h{margin:4px 0 16px}
-.fx-now{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr))}
-.fx-tiles{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(min(100%,220px),1fr))}
-.fx-t{position:relative;display:block;border-radius:14px;overflow:hidden;text-decoration:none;color:#fff;background:#10233D;aspect-ratio:4/3;box-shadow:0 4px 14px rgba(16,35,61,.18)}
-.fx-now .fx-t{aspect-ratio:16/11}
-.fx-t img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .3s}
-.fx-t.contain img{object-fit:contain;background:#0B1430;padding:8px}
-.fx-t:hover img,.fx-t:focus-visible img{transform:scale(1.04)}
-.fx-t .cap{position:absolute;left:0;right:0;bottom:0;padding:34px 14px 12px;background:linear-gradient(transparent,rgba(10,20,40,.9))}
-.fx-t .tag{display:inline-block;font:700 12px var(--display);letter-spacing:.08em;text-transform:uppercase;background:#F2C230;color:#10233D;border-radius:999px;padding:3px 9px;margin-bottom:6px}
-.fx-t b{display:block;font-family:var(--display);font-size:21px;line-height:1.2}
-.fx-now .fx-t b{font-size:24px}
-.fx-t span.s{display:block;font-size:15px;opacity:.92;margin-top:2px}
-.fx-t small{position:absolute;top:8px;right:10px;font-size:12px;background:rgba(0,0,0,.45);padding:2px 7px;border-radius:6px}
-@media (max-width:560px){.fx-tiles{grid-template-columns:1fr 1fr;gap:10px}.fx-tiles .fx-t b{font-size:16px}.fx-tiles .fx-t span.s,.fx-tiles .fx-t small{display:none}.fx-t .tag{font-size:10px}}
-.fx-links{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(min(100%,280px),1fr))}
-.fx-links>div{background:var(--card,#fff);border:1px solid var(--line);border-radius:14px;padding:16px 18px}
-.fx-links h3{margin:0 0 8px;font-size:19px}
-.fx-links ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
-.fx-links a{font-weight:700;font-size:17px}.fx-links span{display:block;font-size:15px;color:var(--muted)}
-</style>
+<section><div class="container"><div class="grid">
+  <article class="card feature"><p class="eyebrow">For kids &amp; families</p><h3>Community Kids</h3><p>Lessons, teams and clubs kids can join, kid events, and all the kid games in one place.</p><a href="kids.html">See Community Kids</a></article>
+  <article class="card feature"><p class="eyebrow">For kids</p><h3>I Spy in the Valley</h3><p>Find the moose, the kayak and ten more things hiding in the picture.</p><a href="i-spy.html">Play I Spy</a></article>
+  <article class="card feature"><p class="eyebrow">For kids</p><h3>Where's the Moose?</h3><p>Find Ben Lomoose, the Ogden Valley moose, hiding at each Utah Depot train stop.</p><a href="where-moose.html">Find Ben</a></article>
+  <article class="card feature"><p class="eyebrow">Kids &amp; grown-ups</p><h3>Puzzles</h3><p>Word searches, crosswords and jigsaw puzzles made from local art. Play here or print.</p><a href="puzzles.html">Play a puzzle</a></article>
+  <article class="card feature"><p class="eyebrow">Every month</p><h3>Community Cooking</h3><p>Recipes from the Valley and Weber County, recipe of the month, and Cook With Us.</p><a href="recipes.html">See the recipes</a></article>
+  <article class="card feature"><p class="eyebrow">Behind the scenes</p><h3>Sneak Peek</h3><p>Opening, showing or harvesting something? Invite us for a free behind-the-scenes look.</p><a href="sneak-peek.html">How it works</a></article>
+  <article class="card feature"><p class="eyebrow">For kids</p><h3>Coloring pages</h3><p>Free Valley pages to print and color. Send in your finished picture.</p><p style="margin:0"><a href="coloring.html">Print a page</a> · <a href="color.html">Color online</a></p></article>
+  <article class="card feature"><p class="eyebrow">New every week</p><h3>Valley Time Capsule</h3><p>What was happening in the Valley 25, 50 and 100 years ago this week, from the original newspaper pages.</p><a href="time-capsule.html">Open the time capsule</a></article>
+  <article class="card"><p class="eyebrow">From neighbors</p><h3>Valley Photos</h3><p>The Valley through your eyes. Send in a photo you took and see it in the gallery.</p><a href="valley-photos.html">See the photos</a></article>
+  <article class="card feature"><p class="eyebrow">Every month</p><h3>Scavenger hunt</h3><p>Get outside and check off this month's list around the Valley.</p><a href="scavenger-hunt.html">Start the hunt</a></article>
+  <article class="card feature"><p class="eyebrow">Always open</p><h3>Wildlife &amp; wildflowers</h3><p>Share what you spotted and help check off the Valley watch list.</p><a href="wildlife.html">See sightings</a></article>
+  <article class="card feature"><p class="eyebrow">Monthly</p><h3>Photo contest</h3><p>One theme a month. The winner is featured on the site, in the newsletter and on Facebook and Instagram.</p><a href="photo-contest.html">Enter this month</a></article>
+  <article class="card feature"><p class="eyebrow">Weekly</p><h3>Guess the Spot</h3><p>Guess where the photo was taken, or send in a spot of your own to stump everyone.</p><a href="guess-the-spot.html">Play</a></article>
+  <article class="card feature"><p class="eyebrow">History</p><h3>Then &amp; Now</h3><p>The same Valley view, years apart. Slide to compare.</p><a href="then-and-now.html">Compare</a></article>
+  <article class="card feature"><p class="eyebrow">Every weekend</p><h3>This weekend in the Valley</h3><p>A shareable list of this weekend's events, made fresh from the calendars.</p><a href="weekend.html">See this weekend</a></article>
+  <article class="card feature"><p class="eyebrow">Neighbors helping</p><h3>Garden &amp; be-prepared boards</h3><p>Ask questions and swap tips about mountain gardening and getting ready for emergencies.</p><div class="btns" style="margin:0"><a href="garden.html">Garden board</a><a href="prepared.html">Be prepared</a></div></article>
+  <article class="card feature"><p class="eyebrow">Give back</p><h3>Volunteer &amp; blood drives</h3><p>Find a blood drive, a cleanup or a group that needs a hand.</p><a href="volunteer.html">Find a way to help</a></article>
+  <article class="card feature"><p class="eyebrow">Your ideas</p><h3>Share an idea</h3><p>Something you wish was on the site? Tell us. We read every idea.</p><a href="coming.html">Share an idea</a></article>
+  <article class="card feature"><p class="eyebrow">10 years</p><h3>Our 10th year</h3><p>A look back at the Valley and at a decade of Ogden Valley Info &amp; Events.</p><a href="ten-years.html">Take a look</a></article>
+</div></div></section>
 </main>
 <footer class="site-foot"></footer>
 <script src="layout.js"></script>
 <script src="config.js"></script>
 <script src="places.js"></script>
 <script src="site.js"></script>
-<script>
-(function(){
-const C=window.OVE||{},VP=C.valleyPhotos||[];
-const by=f=>{const p=VP.find(x=>x.image===f);return p&&p.by?"Photo: "+p.by:""};
-const esc=t=>String(t||"").replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-function tile(t){return '<a class="fx-t'+(t.fit?" "+t.fit:"")+'" href="'+t.href+'"><img src="'+esc(t.img)+'" alt="" loading="lazy">'+(t.credit?'<small>'+esc(t.credit)+'</small>':'')+'<span class="cap">'+(t.tag?'<span class="tag">'+esc(t.tag)+'</span>':'')+'<b>'+esc(t.title)+'</b><span class="s">'+esc(t.line)+'</span></span></a>'}
-/* Right now */
-const now=[];const ct=C.contest||{};
-const cImg=(ct.entries&&ct.entries.length&&ct.entries[ct.entries.length-1].image)||(ct.lastWinner&&ct.lastWinner.image)||(VP.length?VP[VP.length-1].image:"");
-const cBy=(ct.entries&&ct.entries.length)?"Photo: "+ct.entries[ct.entries.length-1].by:(ct.lastWinner?ct.lastWinner.month.split(" ")[0]+" winner: "+ct.lastWinner.name:by(cImg));
-now.push({href:"photo-contest.html",img:cImg,credit:cBy,tag:"Photo contest",title:ct.theme||"This month's photo contest",line:ct.deadline?"Send yours by "+ct.deadline:"Send your best Valley photo"});
-const gs=(C.guessSpots||[]).filter(s=>s.start&&s.start<=new Date().toISOString().slice(0,10)).pop();
-if(gs)now.push({href:"guess-the-spot.html",img:gs.image,tag:"Guess the Spot",title:"Where was this taken?",line:"New spot "+gs.week+". Send your guess!"});
-now.push({href:"where-moose.html",img:"fun-where-ben.jpg",tag:"Where's Ben?",title:"Find Ben Lomoose",line:"This month's picture is up. Play or print it."});
-document.getElementById("fx-now").innerHTML=now.map(tile).join("");
-/* Play and explore */
-const col=(C.coloringPages||[])[0];const lastVP=VP.length?VP[VP.length-1]:null;
-const T=[
- {href:"kids.html",img:"fun-depot.jpg",fit:"contain",tag:"For kids",title:"The Utah Depot",line:"Kid games, stories and the train"},
- {href:"i-spy.html",img:"fun-ispy.jpg",tag:"For kids",title:"I Spy",line:"Tap everything hiding in the picture"},
- {href:"coloring.html",img:col?col.file:"coloring-moose-ghost.png",fit:"contain",tag:"For kids",title:"Coloring pages",line:"Color online or print"},
- {href:"puzzles.html",img:"fun-puzzles.jpg",fit:"contain",tag:"Kids & grown-ups",title:"Puzzles",line:"Word searches, crosswords, jigsaws"},
- {href:"scavenger-hunt.html",img:"valley-pumpkin-patch-pineview-shauna-miller.jpg",credit:by("valley-pumpkin-patch-pineview-shauna-miller.jpg"),tag:"Get outside",title:"Scavenger hunt",line:(C.hunt&&C.hunt.title)||"This month's hunt"},
- {href:"time-train.html",img:"time-train-1920-artesian-wells.jpg",credit:"Photo: Fred Pack, Marriott Library",tag:"History",title:"Time Train",line:"Ride through Valley history"},
- {href:"time-capsule.html",img:"vtc-01-1926-eden-still.jpg",tag:"History",title:"Valley Time Capsule",line:"25, 50 and 100 years ago this week"},
- {href:"then-and-now.html",img:"valley-ben-lomond-cloud-cap-sara-barney.jpg",credit:by("valley-ben-lomond-cloud-cap-sara-barney.jpg"),tag:"History",title:"Then & Now",line:"The same view, years apart"},
- {href:"valley-photos.html",img:lastVP?lastVP.image:"",credit:lastVP?"Photo: "+lastVP.by:"",tag:"From neighbors",title:"Valley Photos",line:"See them, or send yours"},
- {href:"wildlife.html",img:"valley-moose-snow-deck.jpg",credit:by("valley-moose-snow-deck.jpg"),tag:"Outdoors",title:"Wildlife & wildflowers",line:"Share what you spotted"}];
-document.getElementById("fx-tiles").innerHTML=T.filter(t=>t.img).map(tile).join("");
-})();
-</script>
 </body>
 </html>
