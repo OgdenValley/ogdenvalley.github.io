@@ -1,6 +1,13 @@
 {
- "updated": "2026-10-30T22:46:59.475Z",
+ "updated": "2026-10-31T14:44:31.548Z",
  "items": [
+  {
+   "t": 1793457871547,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Saturday good · Sunday good · Monday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1793396822647,
    "src": "Utah Air Quality",
@@ -14,13 +21,6 @@
    "text": "Weber County forecast: Friday good · Saturday good · Sunday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1793369251480,
-   "src": "UDOT alert",
-   "text": "Crash Update: SB I-15 is now open at MP 319 (Parrish Lane) . Expect heavy delay in the area.",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {
@@ -56,6 +56,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "October 30, 2026 3:32 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "October 31, 2026 8:09 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
