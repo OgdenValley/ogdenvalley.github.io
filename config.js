@@ -453,8 +453,8 @@ window.OVE.monthly = [
       },
       contest: {
         month: "November 2026",
-        theme: "Frosty mornings and thankful moments in the Valley",
-        deadline: "November 30",
+        theme: "First snow and cozy Valley days",
+        deadline: "November 28",
         lastWinner: { name: "Carla R", title: "Sunset at Icebox Canyon", image: "photo-2026-10-carla-r-icebox-canyon.jpg", month: "October 2026" },
         entries: []
       },
