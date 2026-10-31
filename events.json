@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T01:06:02.197Z",
+ "updated": "2026-10-31T02:02:15.676Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -866,26 +866,6 @@
      "desc": "Join Tour Ogden and Stellas for a Roaring 20’s Halloween Experience! Thursday, October 29, 2026 at 5:30 pm enjoy dinner, activities and a historic walking Tour! Spaces are limited for this special event.",
      "url": "https://tourogden.com/",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793318400000,
-     "e": 1793325600000,
-     "t": "Student Success Center - LGBTQ+ Film Screening - 113",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1793318400000,
-     "e": 1793325600000,
-     "t": "Free live music & ice cream at Z's Sweets",
-     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
-     "url": "",
-     "src": "Weekly regular"
     },
     {
      "s": 1793320200000,
@@ -1799,8 +1779,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1809,8 +1789,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1929,8 +1909,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1939,8 +1919,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2039,8 +2019,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2049,8 +2029,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -4205,16 +4185,6 @@
   ],
   "treehouse": [
    {
-    "s": 1793318400000,
-    "e": 1793325600000,
-    "t": "Student Success Center - LGBTQ+ Film Screening - 113",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
     "s": 1793323800000,
     "e": 1793331000000,
     "t": "Fall Opera - Eccles",
@@ -4346,8 +4316,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4356,8 +4326,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4386,16 +4356,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794717000000,
     "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
@@ -4405,9 +4365,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "s": 1794708000000,
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4418,6 +4378,16 @@
     "s": 1794969000000,
     "e": 1794978000000,
     "t": "String Chamber Music Fall Concert - 136",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
