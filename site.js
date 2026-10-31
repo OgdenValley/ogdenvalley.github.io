@@ -279,7 +279,7 @@ function listing(box, items, kind, R){
     box.append(el("div", {class: "fev"}, [
       el("div", {class: "fev-head"}, [el("p", {class: "eyebrow", text: causesOnly ? "Featured fundraisers" : "Featured events"}),
         preview ? el("span", {class: "fev-preview", text: "Preview: only you can see this"}) : null]),
-      el("div", {class: "fev-grid"}, mine.map(f => el("article", {class: "fev-card"}, [
+      el("div", {class: "fev-grid"}, mine.map(f => el("article", {class: "fev-card" + (f.image ? "" : " noimg")}, [
         f.image ? el("a", {class: "fev-img", href: f.image, target: "_blank", rel: "noopener", "aria-label": "See the full flyer"},
           [el("img", {src: f.image, alt: f.title + " flyer", loading: "lazy"})]) : null,
         el("div", {class: "fev-body"}, [
