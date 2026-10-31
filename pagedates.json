@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T01:06:22.305Z",
+ "updated": "2026-10-31T02:55:13.697Z",
  "pages": {
   "404.html": {
    "posted": "2026-10-06",
@@ -283,8 +283,8 @@
   },
   "where-moose.html": {
    "posted": "2026-10-20",
-   "updated": "2026-10-20",
-   "hash": "b62caa91be0c"
+   "updated": "2026-10-30",
+   "hash": "d81df8d28fdf"
   },
   "down-the-canyon.html": {
    "posted": "2026-10-22",
@@ -315,6 +315,11 @@
    "posted": "2026-10-28",
    "updated": "2026-10-28",
    "hash": "dde7561dc758"
+  },
+  "where-moose-2026-10-ogden.html": {
+   "posted": "2026-10-30",
+   "updated": "2026-10-30",
+   "hash": "db252bc5cbec"
   }
  }
 }

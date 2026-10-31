@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T02:02:15.676Z",
+ "updated": "2026-10-31T02:54:51.475Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -849,32 +849,12 @@
     },
     {
      "s": 1793316600000,
-     "e": 1793327400000,
-     "t": "Halloween Pizza Bash",
-     "loc": "Wild Shape Bakery, 2856 Washington Blvd, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "We will have our traditional sourdough pizza (cheese, margarita, and pepperoni), plus Salt and Hops will provide beverages, both alcoholic and non-alcoholic.\n\nOn top of that, we are making house-made s’mores that you can roast over our fire-pit. The s’mores will be complimentary for everyone who comes. We will make the marshmallows and crackers in-house. So you can feel good about the ingredients and the quality.\n\nThis is a family-friendly event. You can sit on our patio or go inside the bakery where there are game and toys available to use for free. You can also pick up your pizza to go. You ",
-     "url": "https://www.wildshapedbakery.com/events/pizza-night-m87kg-dygpn-w6w6n",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793316600000,
      "e": 1793331000000,
      "t": "Roaring 20s Halloween Dinner Tour Experience",
      "loc": "Stellas on 25th, 225 Historic 25th Street, Ogden, UT 84401",
      "allDay": false,
      "desc": "Join Tour Ogden and Stellas for a Roaring 20’s Halloween Experience! Thursday, October 29, 2026 at 5:30 pm enjoy dinner, activities and a historic walking Tour! Spaces are limited for this special event.",
      "url": "https://tourogden.com/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793320200000,
-     "e": 1793327400000,
-     "t": "Halloween Storytelling Spooktacular",
-     "loc": "Peery's Egyptian Theater",
-     "allDay": false,
-     "desc": "Mark your calendars and join us for ✨spooktacular storytelling✨ starting at 6:30 p.m. on Thursday, October 29 at Peery’s Egyptian Theater!\nThe Weber State Storytelling Festival is proud to present its first Spooktacular, a night filled with stories for everyone! With two free sessions featuring light frights to chilling chatter, let the magic of storytelling wish you a Happy Halloween. 👻🎃\n6:30-7:20 p.m. - Spooky Stories, great for young children and families\n7:30-8:20 p.m. - Spookier Stories, perfect for older kids, teens, and adults\nENCORE PERFORMANCE (SAME TIME, SAME TELLERS, NEW STORIES) ",
-     "url": "",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -1779,8 +1759,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1789,8 +1769,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1909,8 +1889,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1919,8 +1899,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3274,32 +3254,12 @@
    },
    {
     "s": 1793316600000,
-    "e": 1793327400000,
-    "t": "Halloween Pizza Bash",
-    "loc": "Wild Shape Bakery, 2856 Washington Blvd, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "We will have our traditional sourdough pizza (cheese, margarita, and pepperoni), plus Salt and Hops will provide beverages, both alcoholic and non-alcoholic.\n\nOn top of that, we are making house-made s’mores that you can roast over our fire-pit. The s’mores will be complimentary for everyone who comes. We will make the marshmallows and crackers in-house. So you can feel good about the ingredients and the quality.\n\nThis is a family-friendly event. You can sit on our patio or go inside the bakery where there are game and toys available to use for free. You can also pick up your pizza to go. You ",
-    "url": "https://www.wildshapedbakery.com/events/pizza-night-m87kg-dygpn-w6w6n",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793316600000,
     "e": 1793331000000,
     "t": "Roaring 20s Halloween Dinner Tour Experience",
     "loc": "Stellas on 25th, 225 Historic 25th Street, Ogden, UT 84401",
     "allDay": false,
     "desc": "Join Tour Ogden and Stellas for a Roaring 20’s Halloween Experience! Thursday, October 29, 2026 at 5:30 pm enjoy dinner, activities and a historic walking Tour! Spaces are limited for this special event.",
     "url": "https://tourogden.com/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793320200000,
-    "e": 1793327400000,
-    "t": "Halloween Storytelling Spooktacular",
-    "loc": "Peery's Egyptian Theater",
-    "allDay": false,
-    "desc": "Mark your calendars and join us for ✨spooktacular storytelling✨ starting at 6:30 p.m. on Thursday, October 29 at Peery’s Egyptian Theater!\nThe Weber State Storytelling Festival is proud to present its first Spooktacular, a night filled with stories for everyone! With two free sessions featuring light frights to chilling chatter, let the magic of storytelling wish you a Happy Halloween. 👻🎃\n6:30-7:20 p.m. - Spooky Stories, great for young children and families\n7:30-8:20 p.m. - Spookier Stories, perfect for older kids, teens, and adults\nENCORE PERFORMANCE (SAME TIME, SAME TELLERS, NEW STORIES) ",
-    "url": "",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4316,8 +4276,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4326,8 +4286,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4356,8 +4316,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4366,8 +4326,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
