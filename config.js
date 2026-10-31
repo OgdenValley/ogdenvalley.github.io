@@ -120,6 +120,7 @@ window.OVE = {
       link: "https://ogdenvalleyevent.com/time-capsule.html", linkText: "Read the Time Capsule",
       from: "2026-10-29" },
     { title: "Last day to enter: October Photo Contest", date: "2026-10-31",
+      image: "ove-photo-contest-2026-10-vote-a-b.jpg",
       line: "This month's theme is fall color and Halloween in the Valley. The winner becomes our November Photo of the Month: the home page banner and our Facebook cover, with credit to you.",
       link: "https://ogdenvalleyevent.com/photo-contest.html", linkText: "Enter by Oct. 31",
       from: "2026-10-29" },
@@ -258,7 +259,8 @@ window.OVE = {
     lastWinner: null,         // { name: "", title: "", image: "photo-...jpg", month: "October 2026" }
     // This month's entries, shown on the Photo Contest page (newest last). Clear this list when a new month starts.
     entries: [
-      { image: "photo-2026-10-carla-r-icebox-canyon.jpg", by: "Carla R", title: "Sunset at Icebox Canyon" }
+      { image: "photo-2026-10-carla-r-icebox-canyon.jpg", by: "Carla R", title: "Sunset at Icebox Canyon" },
+      { image: "photo-2026-10-nancy-e-middle-fork.jpg", by: "Nancy E.", title: "Sunset a couple weeks ago from our front yard in Middle Fork" }
     ]
                               // The winner also becomes the home page banner photo for the month, with credit.
   },

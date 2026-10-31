@@ -279,9 +279,10 @@ function listing(box, items, kind, R){
     box.append(el("div", {class: "fev"}, [
       el("div", {class: "fev-head"}, [el("p", {class: "eyebrow", text: causesOnly ? "Featured fundraisers" : "Featured events"}),
         preview ? el("span", {class: "fev-preview", text: "Preview: only you can see this"}) : null]),
-      el("div", {class: "fev-grid"}, mine.map(f => el("article", {class: "fev-card" + (f.image ? "" : " noimg")}, [
+      el("div", {class: "fev-grid"}, mine.map(f => el("article", {class: "fev-card"}, [
         f.image ? el("a", {class: "fev-img", href: f.image, target: "_blank", rel: "noopener", "aria-label": "See the full flyer"},
-          [el("img", {src: f.image, alt: f.title + " flyer", loading: "lazy"})]) : null,
+          [el("img", {src: f.image, alt: f.title + " flyer", loading: "lazy"})])
+          : el("div", {class: "fev-img fev-logo"}, [el("img", {src: "logo-10-years-512.png", alt: "", loading: "lazy"})]),
         el("div", {class: "fev-body"}, [
           el("span", {class: "fev-tag", text: "★ Featured"}),
           el("h3", {text: f.title}),

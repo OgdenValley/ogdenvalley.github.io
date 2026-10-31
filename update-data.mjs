@@ -802,7 +802,9 @@ async function yardsales(){
 
 /* ---------------- RECIPE CORNER ----------------
    Recipes Public tab: Timestamp, Your name, Show my name (or Anonymous), Recipe name, Story,
-   Ingredients, Steps, Photo, Photo OK, Hide.  Recipe number = row number.
+   Ingredients, Steps, Photo, Photo OK, Hide, Memory, Old photo, Old photo OK.
+   The photo shows unless Photo OK says no. The old photo shows only when the sender checked the OK box.
+   Votes Public tab also has a 6th column, Memory (a memory of someone else's recipe).  Recipe number = row number.
    Votes Public tab: Timestamp, Recipe number, Voter key, What I changed, Name for note.
    This month's recipes are the ones sent in this month. One vote per voter key per month.
    Past months' winners are counted automatically. */
@@ -812,7 +814,7 @@ async function recipes(){
   if (!rUrl) { if (!oldJSON("recipes.json")) writeIfChanged("recipes.json", {updated: new Date().toISOString(), month: thisMonth, items: [], tally: {}, winners: {}, tries: {}}); console.log("recipes: no sheet link yet"); return; }
   try {
     const {rows, col} = await sheet(rUrl);
-    const iT = col(/timestamp/), iN = col(/your name|^name/), iS = col(/show|anonymous/), iR = col(/recipe name|^recipe$|title/), iSt = col(/story|about/), iI = col(/ingredient/), iSp = col(/step|direction|instruction/), iP = col(/^photo$|upload/), iOK = col(/photo ok/), iH = col(/^hide/), iTown = col(/^town|city|where do you live/);
+    const iT = col(/timestamp/), iN = col(/your name|^name/), iS = col(/show|anonymous/), iR = col(/recipe name|^recipe$|title/), iSt = col(/story|about/), iI = col(/ingredient/), iSp = col(/step|direction|instruction/), iP = col(/^photo$|upload/), iOK = col(/^photo ok/), iH = col(/^hide/), iTown = col(/^town|city|where do you live/), iMem = col(/^memory$|share a memory/), iOld = col(/^old photo$|old photo of you/), iOldOK = col(/^old photo ok|ok to post the old photo/);
     const items = [];
     rows.forEach((r, idx) => {
       const n = idx + 1;
@@ -823,9 +825,9 @@ async function recipes(){
       const story = (r[iSt] || "").trim().slice(0, 600), ing = (r[iI] || "").trim().slice(0, 2500), steps = (r[iSp] || "").trim().slice(0, 4000);
       const why = heldReason([title, story, ing, steps].join(" "), by); if (why) { console.log("recipe held:", n, why); return; }
       const t = Date.parse(r[iT]) || 0;
-      items.push({n, title, by, town: iTown >= 0 ? townOnly(r[iTown]) : "", story, ingredients: ing, steps, photo: iOK >= 0 && yes(r[iOK]) ? driveImg(r[iP], 1000) : "", month: t ? ymDenver(new Date(t)) : thisMonth});
+      items.push({n, title, by, town: iTown >= 0 ? townOnly(r[iTown]) : "", story, ingredients: ing, steps, photo: (iOK < 0 || !/^n/i.test(String(r[iOK] || "").trim())) ? driveImg(r[iP], 1000) : "", memory: iMem >= 0 && !heldReason(r[iMem] || "", by) ? (r[iMem] || "").trim().slice(0, 1200) : "", oldPhoto: iOld >= 0 && iOldOK >= 0 && yes(r[iOldOK]) ? driveImg(r[iOld], 1000) : "", month: t ? ymDenver(new Date(t)) : thisMonth});
     });
-    const tally = {}, winners = {}, tries = {}, byMonth = {};
+    const tally = {}, winners = {}, tries = {}, memories = {}, byMonth = {};
     if (vUrl) {
       const vr = parseCSV(await getText(vUrl)).filter(r => r.length >= 3 && (r[0] || "").trim() && !/timestamp/i.test(r[0]));
       const seen = new Set(), valid = new Map(items.map(i => [i.n, i.month]));
@@ -835,6 +837,7 @@ async function recipes(){
         if (!n || !valid.has(n)) continue;
         const note = (r[3] || "").trim().slice(0, 400), who = (r[4] || "").trim().slice(0, 40);
         if (note && !heldReason(note, who)) (tries[n] = tries[n] || []).push({text: note, by: who});
+        const mem = (r[5] || "").trim().slice(0, 800); if (mem && !heldReason(mem, who)) (memories[n] = memories[n] || []).push({text: mem, by: who});
         if (!key || valid.get(n) !== m) continue;           // votes only count in the recipe's own month
         if (seen.has(m + "|" + key)) continue; seen.add(m + "|" + key);
         (byMonth[m] = byMonth[m] || {})[n] = (byMonth[m][n] || 0) + 1;
@@ -843,7 +846,7 @@ async function recipes(){
       for (const [m, t] of Object.entries(byMonth)) { if (m >= thisMonth) continue; const best = Object.entries(t).sort((a, b) => b[1] - a[1] || a[0] - b[0])[0]; if (best) winners[m] = +best[0]; }
     }
     console.log("recipes", items.length, "winners", JSON.stringify(winners));
-    writeIfChanged("recipes.json", {updated: new Date().toISOString(), month: thisMonth, items, tally, winners, tries});
+    writeIfChanged("recipes.json", {updated: new Date().toISOString(), month: thisMonth, items, tally, winners, tries, memories});
   } catch (e) { console.log("recipes failed:", e.message); }
 }
 
