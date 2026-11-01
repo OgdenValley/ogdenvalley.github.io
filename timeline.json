@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T02:56:01.316Z",
+ "updated": "2026-11-01T14:46:27.326Z",
  "items": [
   {
    "t": 1793501761316,
@@ -21,13 +21,6 @@
    "text": "Crash or incident: I-84. Crash, EB I-84 at MP 96 (Morgan County). Right Shoulder Blocked.",
    "kind": "crash",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1793457871547,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Saturday good · Sunday good · Monday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
