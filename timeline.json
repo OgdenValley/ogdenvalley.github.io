@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-01T14:46:27.326Z",
+ "updated": "2026-11-01T15:43:17.136Z",
  "items": [
+  {
+   "t": 1793547797135,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Sunday good · Monday good · Tuesday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1793501761316,
    "src": "UDOT",
@@ -56,6 +63,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "October 31, 2026 7:32 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "November 1, 2026 8:26 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
