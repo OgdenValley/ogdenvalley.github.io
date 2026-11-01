@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T03:58:06.946Z",
+ "updated": "2026-11-01T04:57:25.723Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -828,16 +828,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1793410200000,
-     "e": 1793419200000,
-     "t": "The Rocky Horror Picture Show",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Join us at the annual Rocky Horror Picture Show party & showing at Peery's Egyptian Theater!\n\nCome join us for a night of fun with food and bar at 5:30 PM (pre-party ticket required, ages 18+) followed by our annual Costume Contest at 6:50 PM and showing of the film The Rocky Horror Picture Show at 7:30 PM.\n\nAfter the wedding of mutual friends, Brad Majors (Barry Bostwick) and his fiancée Janet Weiss (Susan Sarandon) get lost driving in a heavy downpour. The first house they see belongs to majordomo Riff Raff (Richard O'Brien) and his sister, housekeeper Magenta (Patricia Quinn). Brad and Jane",
-     "url": "https://ogdenpet.com/events/category/series/rocky-horror-picture-show-2026/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1793451600000,
      "e": 1793494800000,
      "t": "Nightmare on the Mat Wrestling Competition",
@@ -1609,8 +1599,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1619,8 +1609,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1739,8 +1729,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1749,8 +1739,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3113,16 +3103,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1793410200000,
-    "e": 1793419200000,
-    "t": "The Rocky Horror Picture Show",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Join us at the annual Rocky Horror Picture Show party & showing at Peery's Egyptian Theater!\n\nCome join us for a night of fun with food and bar at 5:30 PM (pre-party ticket required, ages 18+) followed by our annual Costume Contest at 6:50 PM and showing of the film The Rocky Horror Picture Show at 7:30 PM.\n\nAfter the wedding of mutual friends, Brad Majors (Barry Bostwick) and his fiancée Janet Weiss (Susan Sarandon) get lost driving in a heavy downpour. The first house they see belongs to majordomo Riff Raff (Richard O'Brien) and his sister, housekeeper Magenta (Patricia Quinn). Brad and Jane",
-    "url": "https://ogdenpet.com/events/category/series/rocky-horror-picture-show-2026/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1793451600000,
     "e": 1793494800000,
     "t": "Nightmare on the Mat Wrestling Competition",
@@ -4046,8 +4026,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4056,8 +4036,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4086,8 +4066,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4096,8 +4076,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
