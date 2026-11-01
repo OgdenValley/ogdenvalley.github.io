@@ -3,6 +3,15 @@
  "items": [
   {
    "type": "weekly",
+   "date": "2026-11-01T09:00:00-07:00",
+   "title": "Ogden Valley weather: Nov. 1 to 6",
+   "summary": "A soaking Sunday: rain turning to showers and thunderstorms (100%), with about three-quarters of an inch to an inch of rain possible and a high near 50°. A chance of light rain Monday through Wednesday (36–44%), then drier and sunnier by Thursday. Lows of 29–32° Monday through Friday nights, so cover tender plants and unhook hoses. Snow level near 6,600 feet, so the peaks may turn white while the Valley floor stays rain. Starting as early as Monday, Nov. 2, and through April, one lane of SR-39 in upper Ogden Canyon is closed, with alternating traffic around the clock. Air quality is Good.",
+   "image": "weather-2026-11-01-briefing.png",
+   "alt": "Ogden Valley weather briefing for Nov. 1 to 6: a six-day forecast with Sunday highlighted at 100 percent, plus boxes on a soaking Sunday, frosty nights, snow up high, the Ogden Canyon lane closure, and a get-ready list.",
+   "source": "National Weather Service point forecast for the Eden, Liberty and Huntsville area, issued 12:31 a.m. Nov. 1, 2026; UDOT Traffic (SR-39); Utah Division of Air Quality forecast, issued 7:32 p.m. Oct. 31"
+  },
+  {
+   "type": "weekly",
    "date": "2026-10-29T08:30:00-06:00",
    "title": "Ogden Valley weather: Oct. 29 to Nov. 4",
    "summary": "Dry and mild today and early Friday, highs near 61°. Rain chances start Friday afternoon and evening (52%). Halloween looks wet: light rain Saturday turning to showers and thunderstorms by evening (99%), highs near 58°, so plan trick-or-treating with rain gear. Sunday, Nov. 1, brings showers and thunderstorms, then rain and snow likely Sunday night, with a chance of rain and snow Monday morning; lows near 29–31°. Snow level near 8,000 feet. Mostly sunny Tuesday and Wednesday, highs in the 50s. Air quality is Good. Clocks fall back one hour early Sunday, Nov. 1.",
