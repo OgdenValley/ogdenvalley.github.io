@@ -1,19 +1,9 @@
 {
- "updated": "2026-11-01T20:45:14.882Z",
+ "updated": "2026-11-01T21:43:50.948Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1793473200000,
-     "e": 1793480400000,
-     "t": "New World Distillery tasting tour",
-     "loc": "New World Distillery, Eden",
-     "allDay": false,
-     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
     {
      "s": 1793476800000,
      "e": 1793491200000,
