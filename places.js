@@ -4014,7 +4014,7 @@ window.OVE_PLACES = {
    ],
    "photos": [
     "https://drive.google.com/thumbnail?id=1TpJKR_o0WgTjpkhh7p5Xr0OOaUh1CkqY&sz=w1000",
-    "https://drive.google.com/thumbnail?id=1FtDDRGG_cYv2sW9K--vgW5PC9YrCdJCw&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1zectQf-MGJu3xGYFtk6AHVbkhz5uqUYF&sz=w1000",
     "https://drive.google.com/thumbnail?id=1DSdszmoFQ1SBACtTDDHP7GovMyt41ZCq&sz=w1000",
     "https://drive.google.com/thumbnail?id=1zXSWe89uJNEJGSEavW5czkkKuZ1rKMJh&sz=w1000",
     "https://drive.google.com/thumbnail?id=1utM2wWtJhP--GsJlRGeCt5ckUpOf6hGA&sz=w1000"
