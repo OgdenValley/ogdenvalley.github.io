@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T04:57:25.723Z",
+ "updated": "2026-11-01T07:07:47.338Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -828,26 +828,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1793451600000,
-     "e": 1793494800000,
-     "t": "Nightmare on the Mat Wrestling Competition",
-     "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-     "allDay": false,
-     "desc": "🧟‍♂️Nightmare on the Mat Wrestling Competition🏆\n\nGet ready for an action-packed wrestling competition in a spooky glow-in-the-dark setting! Cheer on participants as they battle it out on the mat.\n\n💀 Doors Open: 7 am\n💀 Event Starts: 8 am\n💀 Admission: $10 at the door\n\nFor more information visit: https://www.wrestleutah.com/nightmareonthemat\n\nBring your energy, bring your spirit, and enjoy an exciting competition!",
-     "url": "https://www.wrestleutah.com/nightmareonthemat",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793464200000,
-     "e": 1793469600000,
-     "t": "The Witches Brunch Club",
-     "loc": "Queen Bee Giftery, 270 25th Street, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Gather your coven, because Halloween morning is for brunch! 🧙\n\nJoin us and our friends at The Brunch Club in the Queen Bee Giftery Loft for a bewitching morning of good food, great company, and a little magic.\n\nYour ticket includes:\n\nBrunch\nMocktails\nArtisan chocolate\nWitchy activities\nWhen: Saturday, October 31, 10:30 am\nWhere: The Queen Bee Giftery Loft, 270 25th Street, Ogden\n\nPointy hats encouraged. Broom parking not guaranteed.",
-     "url": "https://queenbeegiftery.com/products/witches-brunch-the-brunch-club",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1793476800000,
      "e": 1793484000000,
      "t": "Craft n Cry",
@@ -856,16 +836,6 @@
      "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
      "url": "",
      "src": "Weekly regular"
-    },
-    {
-     "s": 1793484000000,
-     "e": 1793505600000,
-     "t": "Halloween Bar Crawl",
-     "loc": "Starts at Kokomo Club, 216 25th Street, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "The Ogden Halloween Bar Crawl runs Saturday, October 31, 2026, 4PM - 10PM, across 6 bars in Ogden, UT. The route takes in 25th St, 25th Street, Washington Blvd and 24th St.\nCheck in at Kokomo Club (4PM - 6PM) to swap your ticket for a lanyard, badge and drink vouchers. After that there is no set route — the bars are yours to hit in any order, with crawler drink specials at every stop. The L.A.B. closes out the night.\nOgden has crawled with us every year since 2021.",
-     "url": "https://crawlwith.us/ogden/halloween/",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1793491200000,
@@ -886,36 +856,6 @@
      "desc": "Free. Every Saturday.",
      "url": "",
      "src": "Weekly regular"
-    },
-    {
-     "s": 1793498400000,
-     "e": 1793512800000,
-     "t": "Halloween Burlesque",
-     "loc": "Copper Nickel, 2450 Grant Ave, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Halloween Burlesque is coming to Copper Nickel Events on October 31! 🔥\nGet ready for a night of bold performances, exciting entertainment, and unforgettable Halloween energy. If you’re searching for Halloween events, date night ideas, or fun things to do in Ogden, make this part of your Halloween plans.",
-     "url": "https://www.coppernickel.com/tickets/halloween-burlesque-2026",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793501100000,
-     "e": 1793509200000,
-     "t": "Halloween Burlesque at Copper Nickel (21+)",
-     "loc": "Copper Nickel Events, 2450 Grant Avenue, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "A full burlesque show in costume, seated beneath original 1906 brick in downtown Ogden. Halloween night, 21+. VIP and VIP Couple's packages include the Ghosted After Party.\n\nSpend Halloween night inside Copper Nickel, a 1906 industrial hall in downtown Ogden with original brick and trusses. The Halloween Burlesque is a full, seated burlesque performance in costume, minutes from home with no drive down I-15.\n\nPackages:\n- General Admission ($50): the show with standard seating.\n- Premium ($65): priority entry and seating, plus first access to merch.\n- VIP: The Full Halloween Experience ($150): 7",
-     "url": "https://www.coppernickel.com/tickets/halloween-burlesque-2026?utm_source=ogdencity&utm_medium=listing&utm_campaign=hb26&utm_content=calendar",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793505600000,
-     "e": 1793516400000,
-     "t": "Ghosted: Halloween After Party at Copper Nickel (21+)",
-     "loc": "Copper Nickel Events, 2450 Grant Avenue, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Don't get ghosted. Halloween night's after party in Copper Nickel's 1906 hall, 10 PM to 1 AM, right after the Burlesque show. Costumes encouraged, prizes, dance floor. 21+.\n\nThe curtain falls, and the night keeps going. Ghosted takes over Copper Nickel's 1906 hall in downtown Ogden the moment the Halloween Burlesque show ends, with a packed dance floor, costumes, prizes, and a room full of singles, couples, and crews.\n\nSaturday, October 31, 10 PM to 1 AM. Standing. Costumes encouraged. Tickets are $5 online for a limited time, or $10 at the door. Included with VIP Burlesque tickets, and with G",
-     "url": "https://www.coppernickel.com/tickets/ghosted-after-party-2026?utm_source=ogdencity&utm_medium=listing&utm_campaign=hb26&utm_content=calendar",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1793646000000,
@@ -1599,8 +1539,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1609,8 +1549,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1729,8 +1669,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1739,8 +1679,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2399,6 +2339,16 @@
     },
     {
      "s": 1795899600000,
+     "e": 1795908600000,
+     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795899600000,
      "e": 1795906800000,
      "t": "Ballet West: Nutcracker - Austad",
      "loc": "",
@@ -2416,6 +2366,26 @@
      "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1795908600000,
+     "e": 1795912200000,
+     "t": "Ogden Santa Run",
+     "loc": "Downtown Ogden, 22nd Street and Washington Blvd",
+     "allDay": false,
+     "desc": "Run this awesome 5K in downtown Ogden wearing a Santa Suit. All runners get a complete Santa suit for their $35 registration fee. Enjoy milk and cookie aid stations; volunteers dress as elves!\n\nBe a part of the 7th Annual Ogden Santa Run. This timed fun run is the best way to start the Holiday Season. ALL RUNNERS MUST DRESS UP AS SANTA CLAUS!!! Along your 5K course you will have Santa's Helpers (Volunteers) dressed with green shirts and hats handing out Milk & Cookies to aid the runners.\n\nFor your registration fee you will receive all you need to run as Santa Claus (Hat, Beard, Jacket, and Pan",
+     "url": "http://www.runsanta.com",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795912200000,
+     "e": 1795915800000,
+     "t": "Holiday Electric Light Parade",
+     "loc": "*22nd Street to 28th Street along Washington*, 2500 Washington Blvd, Ogden Ut",
+     "allDay": false,
+     "desc": "Happy Holidays! Santa is planning his arrival in Ogden with the Holiday Electric Light Parade on the Saturday following Thanksgiving.\n\nThe parade begins at 5:30pm and will go south on Washington Boulevard from 22nd Street to 28th Street. At the conclusion of the parade, approximately 6:30pm, Santa will turn on the lights of Christmas Village and kick-off the month-long holiday celebration with Christmas Village on display at Municipal Gardens.\n\nFloats will be on display in front of the Amphitheater on 25th Street after the parade. Those interested in having an entry in the parade should contac",
+     "url": "https://www.ogdencity.gov/852/Holiday-Electric-Light-Parade",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1795914000000,
@@ -2448,6 +2418,26 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1795919400000,
+     "e": 1795928400000,
+     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795978800000,
+     "e": 1795984200000,
+     "t": "Ballet West's The Nutcracker",
+     "loc": "Val A. Browning Center, 3848 Harrison Blvd, Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Ballet West’s Nutcracker returns to Ogden for Thanksgiving weekend, America’s first and longest-running production of the holiday classic. Willam Christensen choreographed it in 1944 for San Francisco Ballet, developed in consultation with George Balanchine and Alexandra Danilova. For ten years his was the only complete Nutcracker in the country, and Ballet West has danced it every year since 1963.",
+     "url": "https://www.onstageogden.org/show-item/nutcracker-2026/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1795978800000,
      "e": 1795986000000,
      "t": "Ballet West: Nutcracker - Austad",
@@ -2456,6 +2446,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1795993200000,
+     "e": 1796002200000,
+     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796086800000,
@@ -2468,6 +2468,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1796090400000,
+     "e": 1796097600000,
+     "t": "WSU Guitar Ensembles Concert",
+     "loc": "Val A. Browning Center | Room 136, 3848 Harrison Blvd, Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Join our community guitar orchestra and ensembles for an evening of music featuring a vibrant selection of works performed on both nylon and steel-string guitars. From rich harmonies to energetic rhythms, this concert showcases the versatility and beauty of the guitar in a welcoming and engaging performance for all audiences.",
+     "url": "https://www.weber.edu/artscalendar",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1796095800000,
      "e": 1796108400000,
      "t": "Country Dancing",
@@ -2478,6 +2488,46 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1796157000000,
+     "e": 1796160600000,
+     "t": "Gentle Movements",
+     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796164200000,
+     "e": 1796171400000,
+     "t": "Ogden City Council Work Session",
+     "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796173200000,
+     "e": 1796184000000,
+     "t": "Ogden City Council Meeting",
+     "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796178600000,
+     "e": 1796185800000,
+     "t": "Carol of Drums Festival",
+     "loc": "Val A. Browning Center | Allred Theatre, 3848 Harrison Blvd, Ogden, UT 84403",
+     "allDay": false,
+     "desc": "The Weber State University Percussion Ensemble welcomes you to our Annual Carol of Drums Festival. The WSU Percussion Ensemble will showcase original works and arrangements by students and faculty and invites you to come and celebrate the holidays with us.\n\nOur concert will feature performances by the WSU Percussion Orchestra; WSU Percussion Chamber Ensembles; WSU Marimba Ensemble; the WSU Steel Pan Ensemble, Pantastica; WSU Drumline; and special guests from the Ogden Community.",
+     "url": "https://www.weber.edu/music/percussion-ensemble.html",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1796178600000,
      "e": 1796185800000,
      "t": "Percussion Ensemble - Allred",
@@ -2486,6 +2536,26 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1796256000000,
+     "e": 1796270400000,
+     "t": "Ogden City Planning Commission Meeting",
+     "loc": "2549 Washington Blvd., Council Chambers, 3rd floor, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ogden City Planning Commission",
+     "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796261400000,
+     "e": 1796265000000,
+     "t": "Yoga",
+     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796268600000,
@@ -2499,6 +2569,16 @@
     },
     {
      "s": 1796346000000,
+     "e": 1796352300000,
+     "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
+     "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796346000000,
      "e": 1796353200000,
      "t": "Free live music & ice cream at Z's Sweets",
      "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
@@ -2506,6 +2586,26 @@
      "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1796349600000,
+     "e": 1796356800000,
+     "t": "Speech Showcase",
+     "loc": "Elizabeth Hall | Room 229",
+     "allDay": false,
+     "desc": "Join us for an inspiring evening of student voices and storytelling as the top speakers from COMM 1020 take the stage to present speeches on topics they are passionate about. Selected from all COMM 1020 classes, these outstanding students showcase the power of communication, creativity, and public speaking through engaging and thought-provoking presentations.",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796351400000,
+     "e": 1796358600000,
+     "t": "Songs of the Season",
+     "loc": "Val A. Browning Center | Austad Auditorium, 3848 Harrison Blvd, Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Join the Symphonic Band as we celebrate the holidays with \"Songs of the Season,\" a concert filled with classics guaranteed to leave you filled with holiday cheer.",
+     "url": "https://www.weber.edu/music/symphonic-band.html",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796351400000,
@@ -2528,6 +2628,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1796367600000,
+     "e": 1796972400000,
+     "t": "BFA Thesis Exhibition",
+     "loc": "Kimball Arts Building | Shaw Gallery",
+     "allDay": true,
+     "desc": "Join us in celebrating the creativity, talent, and hard work of our graduating art and design students at this capstone showcase. Featuring a diverse range of projects and artistic perspectives, the exhibition highlights the innovative work students have developed throughout their academic journey and offers a glimpse into the next generation of artists and designers.",
+     "url": "https://www.weber.edu/shawgallery/upcoming.html",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1796430600000,
      "e": 1796436000000,
      "t": "Steppin' The Ogden Way dance class",
@@ -2536,6 +2646,26 @@
      "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1796432400000,
+     "e": 1796438700000,
+     "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
+     "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796432400000,
+     "e": 1796443200000,
+     "t": "Ogden's First Friday Art Stroll",
+     "loc": "Downtown Ogden",
+     "allDay": false,
+     "desc": "Ogden's First Friday Art Stroll is held the first Friday of the month from 6-9 PM, Ogden’s First Friday Art Stroll is abuzz year ‘round with exciting exhibit openings, artist receptions and live music of all genres in venues and in the streets. As the art stroll becomes the virtual front porch of Ogden, those that venture here are treated to great art, an atmosphere of camaraderie and inclusion and amazing night life; small town feel, big city offerings.\n\nEnjoy your journey. We hope you are inspired, delighted and challenged along the way.",
+     "url": "http://www.ogdencityarts.org",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796432400000,
@@ -2568,6 +2698,36 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1796490000000,
+     "e": 1796493600000,
+     "t": "Faux Stained Glass Ornaments",
+     "loc": "966 W 12th St, Ogden, UT, 84404",
+     "allDay": false,
+     "desc": "Join us at the Ogden Nature Center to create a faux stained-glass masterpiece! Local artist Olivia Roundy will walk you through how to make a beautiful translucent ornament in this hour-long workshop.\nDon't know what faux stained-glass is? Just take a peek at the Visitor Center and Education Building windows at the nature center! Not only are these artworks adorable (many made by 3rd graders from Greenwood Charter) but they help wildlife! Having something in the window reduces bird strikes by limiting the reflections that confuse birds. It's truly the intersection of art, nature, and science!\n",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796497200000,
+     "e": 1796500800000,
+     "t": "Faux Stained Glass Ornaments",
+     "loc": "966 W 12th St, Ogden, UT, 84404",
+     "allDay": false,
+     "desc": "Join us at the Ogden Nature Center to create a faux stained-glass masterpiece! Local artist Olivia Roundy will walk you through how to make a beautiful translucent ornament in this hour-long workshop.\nDon't know what faux stained-glass is? Just take a peek at the Visitor Center and Education Building windows at the nature center! Not only are these artworks adorable (many made by 3rd graders from Greenwood Charter) but they help wildlife! Having something in the window reduces bird strikes by limiting the reflections that confuse birds. It's truly the intersection of art, nature, and science!\n",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796497200000,
+     "e": 1796503500000,
+     "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
+     "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1796504400000,
      "e": 1796511600000,
      "t": "Craft n Cry",
@@ -2579,6 +2739,16 @@
     },
     {
      "s": 1796518800000,
+     "e": 1796525100000,
+     "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
+     "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796518800000,
      "e": 1796526000000,
      "t": "Free live music & ice cream at Z's Sweets",
      "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
@@ -2586,6 +2756,16 @@
      "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1796522400000,
+     "e": 1796527800000,
+     "t": "Joy to the World! A Sacred Celebration",
+     "loc": "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Experience the magic of Christmas with Grammy-nominated violinist Jenny Oaks Baker and her accomplished children, musical ensemble Family Four, in a heartwarming, Christ-centered holiday show featuring Tony Award-Winning Soprano Lisa Hopkins Seegmiller. Enjoy captivating and cherished Christmas carols arranged by Emmy Award-winning composer Kurt Bestor, inspiring script by New York Times best-selling author Jason F. Wright, and moving narration and powerful vocals by baritone Preston Yates. Returning by popular demand are vibrant performances by local ballet companies and Scariff Locklier Leon",
+     "url": "https://www.facebook.com/events/27833916432910040/",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796522400000,
@@ -3100,66 +3280,6 @@
     "allDay": true,
     "desc": "elparo has created large-scale site-responsive sculptures all over the world. La Vrille is his debut work in the United States.",
     "url": "https://www.weber.edu/shawgallery/upcoming.html",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793451600000,
-    "e": 1793494800000,
-    "t": "Nightmare on the Mat Wrestling Competition",
-    "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-    "allDay": false,
-    "desc": "🧟‍♂️Nightmare on the Mat Wrestling Competition🏆\n\nGet ready for an action-packed wrestling competition in a spooky glow-in-the-dark setting! Cheer on participants as they battle it out on the mat.\n\n💀 Doors Open: 7 am\n💀 Event Starts: 8 am\n💀 Admission: $10 at the door\n\nFor more information visit: https://www.wrestleutah.com/nightmareonthemat\n\nBring your energy, bring your spirit, and enjoy an exciting competition!",
-    "url": "https://www.wrestleutah.com/nightmareonthemat",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793464200000,
-    "e": 1793469600000,
-    "t": "The Witches Brunch Club",
-    "loc": "Queen Bee Giftery, 270 25th Street, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Gather your coven, because Halloween morning is for brunch! 🧙\n\nJoin us and our friends at The Brunch Club in the Queen Bee Giftery Loft for a bewitching morning of good food, great company, and a little magic.\n\nYour ticket includes:\n\nBrunch\nMocktails\nArtisan chocolate\nWitchy activities\nWhen: Saturday, October 31, 10:30 am\nWhere: The Queen Bee Giftery Loft, 270 25th Street, Ogden\n\nPointy hats encouraged. Broom parking not guaranteed.",
-    "url": "https://queenbeegiftery.com/products/witches-brunch-the-brunch-club",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793484000000,
-    "e": 1793505600000,
-    "t": "Halloween Bar Crawl",
-    "loc": "Starts at Kokomo Club, 216 25th Street, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "The Ogden Halloween Bar Crawl runs Saturday, October 31, 2026, 4PM - 10PM, across 6 bars in Ogden, UT. The route takes in 25th St, 25th Street, Washington Blvd and 24th St.\nCheck in at Kokomo Club (4PM - 6PM) to swap your ticket for a lanyard, badge and drink vouchers. After that there is no set route — the bars are yours to hit in any order, with crawler drink specials at every stop. The L.A.B. closes out the night.\nOgden has crawled with us every year since 2021.",
-    "url": "https://crawlwith.us/ogden/halloween/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793498400000,
-    "e": 1793512800000,
-    "t": "Halloween Burlesque",
-    "loc": "Copper Nickel, 2450 Grant Ave, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Halloween Burlesque is coming to Copper Nickel Events on October 31! 🔥\nGet ready for a night of bold performances, exciting entertainment, and unforgettable Halloween energy. If you’re searching for Halloween events, date night ideas, or fun things to do in Ogden, make this part of your Halloween plans.",
-    "url": "https://www.coppernickel.com/tickets/halloween-burlesque-2026",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793501100000,
-    "e": 1793509200000,
-    "t": "Halloween Burlesque at Copper Nickel (21+)",
-    "loc": "Copper Nickel Events, 2450 Grant Avenue, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "A full burlesque show in costume, seated beneath original 1906 brick in downtown Ogden. Halloween night, 21+. VIP and VIP Couple's packages include the Ghosted After Party.\n\nSpend Halloween night inside Copper Nickel, a 1906 industrial hall in downtown Ogden with original brick and trusses. The Halloween Burlesque is a full, seated burlesque performance in costume, minutes from home with no drive down I-15.\n\nPackages:\n- General Admission ($50): the show with standard seating.\n- Premium ($65): priority entry and seating, plus first access to merch.\n- VIP: The Full Halloween Experience ($150): 7",
-    "url": "https://www.coppernickel.com/tickets/halloween-burlesque-2026?utm_source=ogdencity&utm_medium=listing&utm_campaign=hb26&utm_content=calendar",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793505600000,
-    "e": 1793516400000,
-    "t": "Ghosted: Halloween After Party at Copper Nickel (21+)",
-    "loc": "Copper Nickel Events, 2450 Grant Avenue, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Don't get ghosted. Halloween night's after party in Copper Nickel's 1906 hall, 10 PM to 1 AM, right after the Burlesque show. Costumes encouraged, prizes, dance floor. 21+.\n\nThe curtain falls, and the night keeps going. Ghosted takes over Copper Nickel's 1906 hall in downtown Ogden the moment the Halloween Burlesque show ends, with a packed dance floor, costumes, prizes, and a room full of singles, couples, and crews.\n\nSaturday, October 31, 10 PM to 1 AM. Standing. Costumes encouraged. Tickets are $5 online for a limited time, or $10 at the door. Included with VIP Burlesque tickets, and with G",
-    "url": "https://www.coppernickel.com/tickets/ghosted-after-party-2026?utm_source=ogdencity&utm_medium=listing&utm_campaign=hb26&utm_content=calendar",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -3911,6 +4031,246 @@
     "desc": "Ballet West’s Nutcracker returns to Ogden for Thanksgiving weekend, America’s first and longest-running production of the holiday classic. Willam Christensen choreographed it in 1944 for San Francisco Ballet, developed in consultation with George Balanchine and Alexandra Danilova. For ten years his was the only complete Nutcracker in the country, and Ballet West has danced it every year since 1963.\n\nSATURDAY, NOVEMBER 28 | 2 PM & 7 PM",
     "url": "https://www.onstageogden.org/show-item/nutcracker-2026/",
     "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795899600000,
+    "e": 1795908600000,
+    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795908600000,
+    "e": 1795912200000,
+    "t": "Ogden Santa Run",
+    "loc": "Downtown Ogden, 22nd Street and Washington Blvd",
+    "allDay": false,
+    "desc": "Run this awesome 5K in downtown Ogden wearing a Santa Suit. All runners get a complete Santa suit for their $35 registration fee. Enjoy milk and cookie aid stations; volunteers dress as elves!\n\nBe a part of the 7th Annual Ogden Santa Run. This timed fun run is the best way to start the Holiday Season. ALL RUNNERS MUST DRESS UP AS SANTA CLAUS!!! Along your 5K course you will have Santa's Helpers (Volunteers) dressed with green shirts and hats handing out Milk & Cookies to aid the runners.\n\nFor your registration fee you will receive all you need to run as Santa Claus (Hat, Beard, Jacket, and Pan",
+    "url": "http://www.runsanta.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795912200000,
+    "e": 1795915800000,
+    "t": "Holiday Electric Light Parade",
+    "loc": "*22nd Street to 28th Street along Washington*, 2500 Washington Blvd, Ogden Ut",
+    "allDay": false,
+    "desc": "Happy Holidays! Santa is planning his arrival in Ogden with the Holiday Electric Light Parade on the Saturday following Thanksgiving.\n\nThe parade begins at 5:30pm and will go south on Washington Boulevard from 22nd Street to 28th Street. At the conclusion of the parade, approximately 6:30pm, Santa will turn on the lights of Christmas Village and kick-off the month-long holiday celebration with Christmas Village on display at Municipal Gardens.\n\nFloats will be on display in front of the Amphitheater on 25th Street after the parade. Those interested in having an entry in the parade should contac",
+    "url": "https://www.ogdencity.gov/852/Holiday-Electric-Light-Parade",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795919400000,
+    "e": 1795928400000,
+    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795978800000,
+    "e": 1795984200000,
+    "t": "Ballet West's The Nutcracker",
+    "loc": "Val A. Browning Center, 3848 Harrison Blvd, Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Ballet West’s Nutcracker returns to Ogden for Thanksgiving weekend, America’s first and longest-running production of the holiday classic. Willam Christensen choreographed it in 1944 for San Francisco Ballet, developed in consultation with George Balanchine and Alexandra Danilova. For ten years his was the only complete Nutcracker in the country, and Ballet West has danced it every year since 1963.",
+    "url": "https://www.onstageogden.org/show-item/nutcracker-2026/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795993200000,
+    "e": 1796002200000,
+    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
+    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796090400000,
+    "e": 1796097600000,
+    "t": "WSU Guitar Ensembles Concert",
+    "loc": "Val A. Browning Center | Room 136, 3848 Harrison Blvd, Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Join our community guitar orchestra and ensembles for an evening of music featuring a vibrant selection of works performed on both nylon and steel-string guitars. From rich harmonies to energetic rhythms, this concert showcases the versatility and beauty of the guitar in a welcoming and engaging performance for all audiences.",
+    "url": "https://www.weber.edu/artscalendar",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796157000000,
+    "e": 1796160600000,
+    "t": "Gentle Movements",
+    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796164200000,
+    "e": 1796171400000,
+    "t": "Ogden City Council Work Session",
+    "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796173200000,
+    "e": 1796184000000,
+    "t": "Ogden City Council Meeting",
+    "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796178600000,
+    "e": 1796185800000,
+    "t": "Carol of Drums Festival",
+    "loc": "Val A. Browning Center | Allred Theatre, 3848 Harrison Blvd, Ogden, UT 84403",
+    "allDay": false,
+    "desc": "The Weber State University Percussion Ensemble welcomes you to our Annual Carol of Drums Festival. The WSU Percussion Ensemble will showcase original works and arrangements by students and faculty and invites you to come and celebrate the holidays with us.\n\nOur concert will feature performances by the WSU Percussion Orchestra; WSU Percussion Chamber Ensembles; WSU Marimba Ensemble; the WSU Steel Pan Ensemble, Pantastica; WSU Drumline; and special guests from the Ogden Community.",
+    "url": "https://www.weber.edu/music/percussion-ensemble.html",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796256000000,
+    "e": 1796270400000,
+    "t": "Ogden City Planning Commission Meeting",
+    "loc": "2549 Washington Blvd., Council Chambers, 3rd floor, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ogden City Planning Commission",
+    "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796261400000,
+    "e": 1796265000000,
+    "t": "Yoga",
+    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796346000000,
+    "e": 1796352300000,
+    "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
+    "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796349600000,
+    "e": 1796356800000,
+    "t": "Speech Showcase",
+    "loc": "Elizabeth Hall | Room 229",
+    "allDay": false,
+    "desc": "Join us for an inspiring evening of student voices and storytelling as the top speakers from COMM 1020 take the stage to present speeches on topics they are passionate about. Selected from all COMM 1020 classes, these outstanding students showcase the power of communication, creativity, and public speaking through engaging and thought-provoking presentations.",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796351400000,
+    "e": 1796358600000,
+    "t": "Songs of the Season",
+    "loc": "Val A. Browning Center | Austad Auditorium, 3848 Harrison Blvd, Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Join the Symphonic Band as we celebrate the holidays with \"Songs of the Season,\" a concert filled with classics guaranteed to leave you filled with holiday cheer.",
+    "url": "https://www.weber.edu/music/symphonic-band.html",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796367600000,
+    "e": 1796972400000,
+    "t": "BFA Thesis Exhibition",
+    "loc": "Kimball Arts Building | Shaw Gallery",
+    "allDay": true,
+    "desc": "Join us in celebrating the creativity, talent, and hard work of our graduating art and design students at this capstone showcase. Featuring a diverse range of projects and artistic perspectives, the exhibition highlights the innovative work students have developed throughout their academic journey and offers a glimpse into the next generation of artists and designers.",
+    "url": "https://www.weber.edu/shawgallery/upcoming.html",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796432400000,
+    "e": 1796438700000,
+    "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
+    "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796432400000,
+    "e": 1796443200000,
+    "t": "Ogden's First Friday Art Stroll",
+    "loc": "Downtown Ogden",
+    "allDay": false,
+    "desc": "Ogden's First Friday Art Stroll is held the first Friday of the month from 6-9 PM, Ogden’s First Friday Art Stroll is abuzz year ‘round with exciting exhibit openings, artist receptions and live music of all genres in venues and in the streets. As the art stroll becomes the virtual front porch of Ogden, those that venture here are treated to great art, an atmosphere of camaraderie and inclusion and amazing night life; small town feel, big city offerings.\n\nEnjoy your journey. We hope you are inspired, delighted and challenged along the way.",
+    "url": "http://www.ogdencityarts.org",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796490000000,
+    "e": 1796493600000,
+    "t": "Faux Stained Glass Ornaments",
+    "loc": "966 W 12th St, Ogden, UT, 84404",
+    "allDay": false,
+    "desc": "Join us at the Ogden Nature Center to create a faux stained-glass masterpiece! Local artist Olivia Roundy will walk you through how to make a beautiful translucent ornament in this hour-long workshop.\nDon't know what faux stained-glass is? Just take a peek at the Visitor Center and Education Building windows at the nature center! Not only are these artworks adorable (many made by 3rd graders from Greenwood Charter) but they help wildlife! Having something in the window reduces bird strikes by limiting the reflections that confuse birds. It's truly the intersection of art, nature, and science!\n",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796497200000,
+    "e": 1796500800000,
+    "t": "Faux Stained Glass Ornaments",
+    "loc": "966 W 12th St, Ogden, UT, 84404",
+    "allDay": false,
+    "desc": "Join us at the Ogden Nature Center to create a faux stained-glass masterpiece! Local artist Olivia Roundy will walk you through how to make a beautiful translucent ornament in this hour-long workshop.\nDon't know what faux stained-glass is? Just take a peek at the Visitor Center and Education Building windows at the nature center! Not only are these artworks adorable (many made by 3rd graders from Greenwood Charter) but they help wildlife! Having something in the window reduces bird strikes by limiting the reflections that confuse birds. It's truly the intersection of art, nature, and science!\n",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796497200000,
+    "e": 1796503500000,
+    "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
+    "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796518800000,
+    "e": 1796525100000,
+    "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
+    "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796522400000,
+    "e": 1796527800000,
+    "t": "Joy to the World! A Sacred Celebration",
+    "loc": "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Experience the magic of Christmas with Grammy-nominated violinist Jenny Oaks Baker and her accomplished children, musical ensemble Family Four, in a heartwarming, Christ-centered holiday show featuring Tony Award-Winning Soprano Lisa Hopkins Seegmiller. Enjoy captivating and cherished Christmas carols arranged by Emmy Award-winning composer Kurt Bestor, inspiring script by New York Times best-selling author Jason F. Wright, and moving narration and powerful vocals by baritone Preston Yates. Returning by popular demand are vibrant performances by local ballet companies and Scariff Locklier Leon",
+    "url": "https://www.facebook.com/events/27833916432910040/",
+    "src": "Ogden Area Events (Visit Ogden)"
    }
   ],
   "treehouse": [
@@ -4026,8 +4386,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4036,8 +4396,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4066,8 +4426,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4076,8 +4436,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",

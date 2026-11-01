@@ -312,5 +312,15 @@
  },
  "The Queen Bee, 270 25th Street, Ogden, UT 84401": null,
  "Museums at Union Station, 2501 Wall Ave, Ogden, UT 84401": null,
- "Dumke Arts Plaza, 445 25th Street": null
+ "Dumke Arts Plaza, 445 25th Street": null,
+ "Val A. Browning Center | Allred Theatre, 3848 Harrison Blvd, Ogden, UT 84403": null,
+ "Elizabeth Hall | Room 229": null,
+ "Val A. Browning Center | Austad Auditorium, 3848 Harrison Blvd, Ogden, UT 84403": null,
+ "Kimball Arts Building | Shaw Gallery": null,
+ "966 W 12th St, Ogden, UT, 84404": {
+  "lat": 41.24461,
+  "lng": -112.00335,
+  "county": "Weber"
+ },
+ "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403": null
 }
