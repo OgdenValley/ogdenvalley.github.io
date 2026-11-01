@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T01:17:24.971Z",
+ "updated": "2026-11-01T02:55:53.329Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -828,26 +828,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1793383200000,
-     "e": 1793412000000,
-     "t": "Weber State's SPOOK-TACULAR Halloween Party",
-     "loc": "Weber State University - Shepherd Union, 3910 West Campus Dr, Ogden, UT 84408",
-     "allDay": false,
-     "desc": "Weber State's SPOOK-TACULAR Halloween Party\nJoin us Friday, Oct. 30 at Weber State University for Halloween fun from noon to 8 p.m., including Halloween crafts and activities, trick-or-treating, face painting, bowling, two viewings of Hotel Transylvania, and a kids carnival. The Spook-Tacular Halloween Party is free and open to the community.",
-     "url": "https://www.weber.edu/halloween",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793404800000,
-     "e": 1793412000000,
-     "t": "Trunk or Treat Community Event",
-     "loc": "Feller & Wendt, 67 S. Main Street, Layton UT 84041",
-     "allDay": false,
-     "desc": "Feller & Wendt invites you to join us to trunk or treat from 6-8pm on October 30th. Come dressed up, bring the entire family and enjoy your evening. The following food trunks will be in attendance: The Haunted Wagon, 808 In Any State and Tampequeno. We will have a table with full sized candy bars, decorated trunks with candy and loads of fun!",
-     "url": "https://www.facebook.com/share/1DyQUFjgTV/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1793404800000,
      "e": 1793415600000,
      "t": "Below the Bee: A SPOOKEASY",
@@ -855,26 +835,6 @@
      "allDay": false,
      "desc": "Ever wanted to see what's below 25th Street? NOW'S YOUR CHANCE! Shop our SPOOKEASY with some of our favorite Ogden businesses!\n\nThe first 25 people come shop get a swag bag with goodies from every vendor and EVERY person who shops will get a chance to enter a gift basket PACKED FULL of goodies from all of us to you!\n\nOh, we'll also have free popcorn and cotton candy.\n\nSo tell all your besties, tell your Amazon driver, and get ready to shop 'til you drop!",
      "url": "https://queenbeegiftery.com/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793404800000,
-     "e": 1793412000000,
-     "t": "Free live music & ice cream at Z's Sweets",
-     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
-     "s": 1793406600000,
-     "e": 1793413800000,
-     "t": "Spirits at the Station",
-     "loc": "Museums at Union Station, 2501 Wall Ave, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Museums at Union Station in partnership with Weber County Heritage Foundation will be discussing the spirits that haunt this 100 year old landmark of Ogden. Join us for the lecture and then explore the museums with your family and friends.",
-     "url": "https://www.webercountyheritagefoundation.com/event-6855556",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -1679,8 +1639,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1689,8 +1649,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1809,8 +1769,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1819,8 +1779,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1919,8 +1879,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1929,8 +1889,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3173,26 +3133,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1793383200000,
-    "e": 1793412000000,
-    "t": "Weber State's SPOOK-TACULAR Halloween Party",
-    "loc": "Weber State University - Shepherd Union, 3910 West Campus Dr, Ogden, UT 84408",
-    "allDay": false,
-    "desc": "Weber State's SPOOK-TACULAR Halloween Party\nJoin us Friday, Oct. 30 at Weber State University for Halloween fun from noon to 8 p.m., including Halloween crafts and activities, trick-or-treating, face painting, bowling, two viewings of Hotel Transylvania, and a kids carnival. The Spook-Tacular Halloween Party is free and open to the community.",
-    "url": "https://www.weber.edu/halloween",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793404800000,
-    "e": 1793412000000,
-    "t": "Trunk or Treat Community Event",
-    "loc": "Feller & Wendt, 67 S. Main Street, Layton UT 84041",
-    "allDay": false,
-    "desc": "Feller & Wendt invites you to join us to trunk or treat from 6-8pm on October 30th. Come dressed up, bring the entire family and enjoy your evening. The following food trunks will be in attendance: The Haunted Wagon, 808 In Any State and Tampequeno. We will have a table with full sized candy bars, decorated trunks with candy and loads of fun!",
-    "url": "https://www.facebook.com/share/1DyQUFjgTV/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1793404800000,
     "e": 1793415600000,
     "t": "Below the Bee: A SPOOKEASY",
@@ -3200,16 +3140,6 @@
     "allDay": false,
     "desc": "Ever wanted to see what's below 25th Street? NOW'S YOUR CHANCE! Shop our SPOOKEASY with some of our favorite Ogden businesses!\n\nThe first 25 people come shop get a swag bag with goodies from every vendor and EVERY person who shops will get a chance to enter a gift basket PACKED FULL of goodies from all of us to you!\n\nOh, we'll also have free popcorn and cotton candy.\n\nSo tell all your besties, tell your Amazon driver, and get ready to shop 'til you drop!",
     "url": "https://queenbeegiftery.com/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793406600000,
-    "e": 1793413800000,
-    "t": "Spirits at the Station",
-    "loc": "Museums at Union Station, 2501 Wall Ave, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Museums at Union Station in partnership with Weber County Heritage Foundation will be discussing the spirits that haunt this 100 year old landmark of Ogden. Join us for the lecture and then explore the museums with your family and friends.",
-    "url": "https://www.webercountyheritagefoundation.com/event-6855556",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4156,8 +4086,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4166,8 +4096,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4196,16 +4126,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794715200000,
     "t": "DPAC Scrooge - Austad",
     "loc": "",
@@ -4215,9 +4135,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "s": 1794708000000,
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4228,6 +4148,16 @@
     "s": 1794969000000,
     "e": 1794976200000,
     "t": "Jazz - Allred",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
