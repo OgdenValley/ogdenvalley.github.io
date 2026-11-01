@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T22:43:57.305Z",
+ "updated": "2026-11-01T23:42:13.237Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -12,16 +12,6 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
-    },
-    {
-     "s": 1793484000000,
-     "e": 1793489400000,
-     "t": "Trunk or Treat at Snowcrest Jr High",
-     "loc": "Snowcrest Junior High, Eden",
-     "allDay": false,
-     "desc": "Free community trunk-or-treat. Bring your littles, or bring your car and a trunk full of candy to take part. Trunk setup at 3:30 p.m., trunk-or-treating 4 to 5:30 p.m. Contact Jennifer Stickler for details: 801-430-0073.",
-     "url": "",
-     "src": "Event flyer, shared Oct. 29, 2026"
     },
     {
      "s": 1793563200000,
