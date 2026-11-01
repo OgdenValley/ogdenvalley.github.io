@@ -1,14 +1,14 @@
 {
- "updated": "2026-11-01T15:43:13.947Z",
+ "updated": "2026-11-01T16:45:17.737Z",
  "source": "Utah Department of Transportation (UDOT Traffic)",
  "link": "https://udottraffic.utah.gov/",
  "status": {
-  "event": "ok",
-  "roadconditions": "ok",
-  "alerts": "ok",
-  "servicevehicles": "ok",
-  "weatherstations": "ok",
-  "mountainpasses": "ok"
+  "event": "failed",
+  "roadconditions": "failed",
+  "alerts": "failed",
+  "servicevehicles": "failed",
+  "weatherstations": "failed",
+  "mountainpasses": "failed"
  },
  "events": [
   {
@@ -139,20 +139,7 @@
   }
  ],
  "alerts": [],
- "plows": [
-  {
-   "bearing": "222",
-   "lat": 41.435269,
-   "lng": -111.505345,
-   "updated": 1793546346000
-  },
-  {
-   "bearing": "305",
-   "lat": 41.441094,
-   "lng": -111.505338,
-   "updated": 1793547268000
-  }
- ],
+ "plows": [],
  "stations": [
   {
    "name": "I-84 @ MP 91 Devils Gate",
