@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-01T02:55:53.329Z",
+ "updated": "2026-11-01T03:58:06.946Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -828,26 +828,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1793404800000,
-     "e": 1793415600000,
-     "t": "Below the Bee: A SPOOKEASY",
-     "loc": "The Queen Bee, 270 25th Street, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ever wanted to see what's below 25th Street? NOW'S YOUR CHANCE! Shop our SPOOKEASY with some of our favorite Ogden businesses!\n\nThe first 25 people come shop get a swag bag with goodies from every vendor and EVERY person who shops will get a chance to enter a gift basket PACKED FULL of goodies from all of us to you!\n\nOh, we'll also have free popcorn and cotton candy.\n\nSo tell all your besties, tell your Amazon driver, and get ready to shop 'til you drop!",
-     "url": "https://queenbeegiftery.com/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793408400000,
-     "e": 1793415600000,
-     "t": "Friday Night Jazz",
-     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free show, all ages. Every Friday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
      "s": 1793410200000,
      "e": 1793419200000,
      "t": "The Rocky Horror Picture Show",
@@ -856,16 +836,6 @@
      "desc": "Join us at the annual Rocky Horror Picture Show party & showing at Peery's Egyptian Theater!\n\nCome join us for a night of fun with food and bar at 5:30 PM (pre-party ticket required, ages 18+) followed by our annual Costume Contest at 6:50 PM and showing of the film The Rocky Horror Picture Show at 7:30 PM.\n\nAfter the wedding of mutual friends, Brad Majors (Barry Bostwick) and his fiancée Janet Weiss (Susan Sarandon) get lost driving in a heavy downpour. The first house they see belongs to majordomo Riff Raff (Richard O'Brien) and his sister, housekeeper Magenta (Patricia Quinn). Brad and Jane",
      "url": "https://ogdenpet.com/events/category/series/rocky-horror-picture-show-2026/peerys-egyptian-theater/",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793410200000,
-     "e": 1793417400000,
-     "t": "Fall Opera - Eccles",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1793451600000,
@@ -1639,8 +1609,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1649,8 +1619,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1769,8 +1739,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1779,8 +1749,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1879,8 +1849,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1889,8 +1859,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3116,6 +3086,16 @@
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1798687800000,
+     "e": 1798700400000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
     }
    ]
   }
@@ -3130,16 +3110,6 @@
     "allDay": true,
     "desc": "elparo has created large-scale site-responsive sculptures all over the world. La Vrille is his debut work in the United States.",
     "url": "https://www.weber.edu/shawgallery/upcoming.html",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793404800000,
-    "e": 1793415600000,
-    "t": "Below the Bee: A SPOOKEASY",
-    "loc": "The Queen Bee, 270 25th Street, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ever wanted to see what's below 25th Street? NOW'S YOUR CHANCE! Shop our SPOOKEASY with some of our favorite Ogden businesses!\n\nThe first 25 people come shop get a swag bag with goodies from every vendor and EVERY person who shops will get a chance to enter a gift basket PACKED FULL of goodies from all of us to you!\n\nOh, we'll also have free popcorn and cotton candy.\n\nSo tell all your besties, tell your Amazon driver, and get ready to shop 'til you drop!",
-    "url": "https://queenbeegiftery.com/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -3965,16 +3935,6 @@
   ],
   "treehouse": [
    {
-    "s": 1793410200000,
-    "e": 1793417400000,
-    "t": "Fall Opera - Eccles",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
     "s": 1793759400000,
     "e": 1793763000000,
     "t": "Browning Presents: Manual Cinema's The 4th Witch - Austad",
@@ -4086,8 +4046,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4096,8 +4056,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4126,16 +4086,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794717000000,
     "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
@@ -4145,9 +4095,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "s": 1794708000000,
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4158,6 +4108,16 @@
     "s": 1794969000000,
     "e": 1794978000000,
     "t": "String Chamber Music Fall Concert - 136",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
