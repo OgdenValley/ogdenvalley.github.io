@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T23:42:08.036Z",
+ "updated": "2026-11-01T01:17:24.971Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -836,36 +836,6 @@
      "desc": "Weber State's SPOOK-TACULAR Halloween Party\nJoin us Friday, Oct. 30 at Weber State University for Halloween fun from noon to 8 p.m., including Halloween crafts and activities, trick-or-treating, face painting, bowling, two viewings of Hotel Transylvania, and a kids carnival. The Spook-Tacular Halloween Party is free and open to the community.",
      "url": "https://www.weber.edu/halloween",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793401200000,
-     "e": 1793408400000,
-     "t": "Skinny Dogz Trunk or Treat",
-     "loc": "Skinny Dogz 2261 Kiesel Ave, Ogden UT, 84401.",
-     "allDay": false,
-     "desc": "🎃 Join us for a FREE family-friendly Trunk or Treat! Bring the kids, bring the fam, bring a friend and come enjoy a night of Halloween fun with decorated cars, TONS of candy, costumes, music and more! 👻🍬 Everyone is welcome, come hang out and celebrate Halloween with us!",
-     "url": "https://facebook.com/events/s/skinny-dogz-trunk-or-treat/1400402505593873/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793401200000,
-     "e": 1793408400000,
-     "t": "Skinny Dogz Trunk or Treat",
-     "loc": "Skinny Dogz, 2261 Kiesel Ave, Ogden UT 84401",
-     "allDay": false,
-     "desc": "Join us for a FREE family-friendly Trunk or Treat! Bring the kids, bring the fam, bring a friend and come enjoy a night of Halloween fun with decorated cars, TONS of candy, costumes, music and more! Everyone is welcome, come hang out and celebrate Halloween with us!",
-     "url": "https://facebook.com/events/s/skinny-dogz-trunk-or-treat/1400402505593873/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793403000000,
-     "e": 1793408400000,
-     "t": "Steppin' The Ogden Way dance class",
-     "loc": "Marshall White Center, 222 28th Street, Ogden",
-     "allDay": false,
-     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
-     "url": "",
-     "src": "Weekly regular"
     },
     {
      "s": 1793404800000,
@@ -1709,8 +1679,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1719,8 +1689,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1839,8 +1809,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1849,8 +1819,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1949,8 +1919,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1959,8 +1929,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3213,26 +3183,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1793401200000,
-    "e": 1793408400000,
-    "t": "Skinny Dogz Trunk or Treat",
-    "loc": "Skinny Dogz 2261 Kiesel Ave, Ogden UT, 84401.",
-    "allDay": false,
-    "desc": "🎃 Join us for a FREE family-friendly Trunk or Treat! Bring the kids, bring the fam, bring a friend and come enjoy a night of Halloween fun with decorated cars, TONS of candy, costumes, music and more! 👻🍬 Everyone is welcome, come hang out and celebrate Halloween with us!",
-    "url": "https://facebook.com/events/s/skinny-dogz-trunk-or-treat/1400402505593873/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793401200000,
-    "e": 1793408400000,
-    "t": "Skinny Dogz Trunk or Treat",
-    "loc": "Skinny Dogz, 2261 Kiesel Ave, Ogden UT 84401",
-    "allDay": false,
-    "desc": "Join us for a FREE family-friendly Trunk or Treat! Bring the kids, bring the fam, bring a friend and come enjoy a night of Halloween fun with decorated cars, TONS of candy, costumes, music and more! Everyone is welcome, come hang out and celebrate Halloween with us!",
-    "url": "https://facebook.com/events/s/skinny-dogz-trunk-or-treat/1400402505593873/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1793404800000,
     "e": 1793412000000,
     "t": "Trunk or Treat Community Event",
@@ -4206,8 +4156,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4216,8 +4166,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4246,16 +4196,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794717000000,
     "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
@@ -4265,9 +4205,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "s": 1794708000000,
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4278,6 +4218,16 @@
     "s": 1794969000000,
     "e": 1794978000000,
     "t": "String Chamber Music Fall Concert - 136",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
