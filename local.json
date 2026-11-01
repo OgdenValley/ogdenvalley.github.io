@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-31T14:44:26.622Z",
+ "updated": "2026-11-01T08:55:06.346Z",
  "meetings": [
   {
    "body": "Weber County Commission",
@@ -36,11 +36,11 @@
    "elev": 7690,
    "depth": {
     "value": 1,
-    "date": "2026-10-30"
+    "date": "2026-10-31"
    },
    "water": {
     "value": 0.1,
-    "date": "2026-10-30"
+    "date": "2026-10-31"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -50,11 +50,11 @@
    "elev": 5970,
    "depth": {
     "value": 1,
-    "date": "2026-10-30"
+    "date": "2026-10-31"
    },
    "water": {
-    "value": 0.1,
-    "date": "2026-10-30"
+    "value": 0,
+    "date": "2026-10-31"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
@@ -64,11 +64,11 @@
    "elev": 8930,
    "depth": {
     "value": 1,
-    "date": "2026-10-30"
+    "date": "2026-10-31"
    },
    "water": {
     "value": 0.3,
-    "date": "2026-10-30"
+    "date": "2026-10-31"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
    "source": "USDA NRCS SNOTEL"
@@ -88,6 +88,6 @@
   "Weber County Commission": "ok",
   "Huntsville Town website": "ok",
   "snow": "ok",
-  "pineview": "ok"
+  "pineview": "failed"
  }
 }
