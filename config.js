@@ -256,7 +256,7 @@ window.OVE = {
     month: "October 2026",
     theme: "Fall color and Halloween in the Valley",
     deadline: "October 31",
-    lastWinner: null,         // { name: "", title: "", image: "photo-...jpg", month: "October 2026" }
+    lastWinner: null,         // { name: "", title: "", image: "photo-...jpg" (clean, home banner), marked: "photo-...-winner.jpg" (with credit bar, contest page), month: "October 2026" }
     // This month's entries, shown on the Photo Contest page (newest last). Clear this list when a new month starts.
     entries: [
       { image: "photo-2026-10-carla-r-icebox-canyon.jpg", by: "Carla R", title: "Sunset at Icebox Canyon" },
@@ -455,7 +455,7 @@ window.OVE.monthly = [
         month: "November 2026",
         theme: "First snow and cozy Valley days",
         deadline: "November 28",
-        lastWinner: { name: "Carla R", title: "Sunset at Icebox Canyon", image: "photo-2026-10-carla-r-icebox-canyon.jpg", month: "October 2026" },
+        lastWinner: { name: "Carla R", title: "Sunset at Icebox Canyon", image: "photo-2026-10-carla-r-icebox-canyon.jpg", marked: "photo-2026-10-carla-r-icebox-canyon-winner.jpg", month: "October 2026" },
         entries: []
       },
       jigsaw: [
