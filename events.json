@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T19:58:14.530Z",
+ "updated": "2026-11-02T20:52:25.268Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -478,6 +478,16 @@
      "url": "https://www.meetup.com/webercountyoutdoors/"
     },
     {
+     "s": 1798833600000,
+     "e": 1798840800000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1798923600000,
      "e": 1798938000000,
      "t": "Cinema Saturday Feature Films",
@@ -792,6 +802,15 @@
      "desc": "More info to come.",
      "url": "https://huntsvilleutah.gov/upcoming-events",
      "src": "Huntsville Town"
+    },
+    {
+     "s": 1809201600000,
+     "e": 1809216000000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
     }
    ]
   },
@@ -1730,8 +1749,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1740,8 +1759,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -4417,8 +4436,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4427,8 +4446,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
