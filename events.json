@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T05:09:42.948Z",
+ "updated": "2026-11-02T06:11:15.084Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -782,6 +782,16 @@
      "allDay": false,
      "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
      "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1809151200000,
+     "e": 1809324000000,
+     "t": "Cycle Kart 2027",
+     "loc": "Huntsville Town, UT",
+     "allDay": true,
+     "desc": "More info to come.",
+     "url": "https://huntsvilleutah.gov/upcoming-events",
+     "src": "Huntsville Town"
     }
    ]
   },
@@ -1720,8 +1730,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1730,8 +1740,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -4407,8 +4417,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4417,8 +4427,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4726,6 +4736,17 @@
     "src": "Treehouse Children's Museum"
    }
   ],
-  "huntsville": []
+  "huntsville": [
+   {
+    "s": 1809151200000,
+    "e": 1809324000000,
+    "t": "Cycle Kart 2027",
+    "loc": "Huntsville Town, UT",
+    "allDay": true,
+    "desc": "More info to come.",
+    "url": "https://huntsvilleutah.gov/upcoming-events",
+    "src": "Huntsville Town"
+   }
+  ]
  }
 }

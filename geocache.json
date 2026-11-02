@@ -322,5 +322,10 @@
   "lng": -112.00335,
   "county": "Weber"
  },
- "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403": null
+ "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403": null,
+ "Huntsville Town, UT": {
+  "lat": 41.25968,
+  "lng": -111.76896,
+  "county": "Weber"
+ }
 }
