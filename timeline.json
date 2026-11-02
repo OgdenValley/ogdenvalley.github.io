@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-02T15:04:53.888Z",
+ "updated": "2026-11-02T16:09:18.452Z",
  "items": [
+  {
+   "t": 1793635758452,
+   "src": "UDOT",
+   "text": "Cleared: I-84. Crash, EB I-84 at MP 90.6 (5400 N, South Weber). Right Shoulder Blocked.",
+   "kind": "clear",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1793635758452,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Monday good · Tuesday good · Wednesday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1793631893888,
    "src": "UDOT",
@@ -21,20 +35,12 @@
    "text": "Weber County forecast: Sunday good · Monday good · Tuesday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1793547797135,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Sunday good · Monday good · Tuesday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
   "ev": {
    "10148": "I-84|!! Traffic Alerts !! (updated 10/14) Westbound single lane closure | Tue (10/6) - Sun (10/18) | Day & Night Westbound single lane closure | Mon (10/19) - Tue, (11/3) | Day & Night Delays may be significant, 10-15min or more during peak periods Note: Wide load restricted above 11 ft Westbound single lane closure | Sprin",
-   "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at",
-   "37858": "I-84|Crash, EB I-84 at MP 90.6 (5400 N, South Weber). Right Shoulder Blocked."
+   "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at"
   },
   "al": {},
   "cond": {
@@ -64,6 +70,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "November 1, 2026 4:14 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "November 2, 2026 8:25 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
