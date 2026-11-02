@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T22:50:27.126Z",
+ "updated": "2026-11-02T23:45:13.089Z",
  "items": [
   {
    "t": 1793659827126,
@@ -35,13 +35,6 @@
    "text": "SR-158 @ MP 11.5 Powder Mountain: pavement 32°F, wet. Watch for ice.",
    "kind": "winter",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1793576540102,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Sunday good · Monday good · Tuesday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
