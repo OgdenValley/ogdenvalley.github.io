@@ -1,19 +1,9 @@
 {
- "updated": "2026-11-02T20:52:25.268Z",
+ "updated": "2026-11-02T22:50:19.650Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1793563200000,
-     "e": 1793570400000,
-     "t": "New World Distillery tasting tour",
-     "loc": "New World Distillery, Eden",
-     "allDay": false,
-     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
     {
      "s": 1793840400000,
      "e": 1793849400000,
@@ -935,6 +925,16 @@
      "allDay": false,
      "desc": "Time Onlys: 4pm\nRaces: 6:30pm\n\nFor more information and events:\nwww.facebook.com…",
      "url": "https://www.facebook.com/RMBRARockyMountainBarrelRacing/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1793833200000,
+     "e": 1793840400000,
+     "t": "Diabetes Technology Fair",
+     "loc": "McKay-Dee Hospital, Education Center, 4401 Harrison Blvd, Ogden UT",
+     "allDay": false,
+     "desc": "Living with diabetes? Come see how today’s technology can make managing it a little easier. Join us for the Diabetes Technology Open House at McKay-Dee Hospital on Wednesday, November 4, from 4–6 p.m. Meet diabetes technology experts and representatives, explore continuous glucose monitors (CGMs), insulin pumps and other insulin delivery devices, and get answers to your questions about how they work and which options may be right for you. Whether you're already using diabetes technology or simply want to learn what's available, stop by, ask questions and explore the latest options. Come learn,",
+     "url": "https://www.intermountainhealth.org/locations/mckay-dee-hospital?utm_campaign=gmb&utm_medium=organic&utm_source=local",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -2729,16 +2729,6 @@
     },
     {
      "s": 1796522400000,
-     "e": 1796527800000,
-     "t": "Joy to the World! A Sacred Celebration",
-     "loc": "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403",
-     "allDay": false,
-     "desc": "Experience the magic of Christmas with Grammy-nominated violinist Jenny Oaks Baker and her accomplished children, musical ensemble Family Four, in a heartwarming, Christ-centered holiday show featuring Tony Award-Winning Soprano Lisa Hopkins Seegmiller. Enjoy captivating and cherished Christmas carols arranged by Emmy Award-winning composer Kurt Bestor, inspiring script by New York Times best-selling author Jason F. Wright, and moving narration and powerful vocals by baritone Preston Yates. Returning by popular demand are vibrant performances by local ballet companies and Scariff Locklier Leon",
-     "url": "https://www.facebook.com/events/27833916432910040/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1796522400000,
      "e": 1796529600000,
      "t": "Joy to the World - Austad",
      "loc": "",
@@ -3350,6 +3340,16 @@
     "allDay": false,
     "desc": "Time Onlys: 4pm\nRaces: 6:30pm\n\nFor more information and events:\nwww.facebook.com…",
     "url": "https://www.facebook.com/RMBRARockyMountainBarrelRacing/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793833200000,
+    "e": 1793840400000,
+    "t": "Diabetes Technology Fair",
+    "loc": "McKay-Dee Hospital, Education Center, 4401 Harrison Blvd, Ogden UT",
+    "allDay": false,
+    "desc": "Living with diabetes? Come see how today’s technology can make managing it a little easier. Join us for the Diabetes Technology Open House at McKay-Dee Hospital on Wednesday, November 4, from 4–6 p.m. Meet diabetes technology experts and representatives, explore continuous glucose monitors (CGMs), insulin pumps and other insulin delivery devices, and get answers to your questions about how they work and which options may be right for you. Whether you're already using diabetes technology or simply want to learn what's available, stop by, ask questions and explore the latest options. Come learn,",
+    "url": "https://www.intermountainhealth.org/locations/mckay-dee-hospital?utm_campaign=gmb&utm_medium=organic&utm_source=local",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4250,16 +4250,6 @@
     "allDay": false,
     "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
     "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1796522400000,
-    "e": 1796527800000,
-    "t": "Joy to the World! A Sacred Celebration",
-    "loc": "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403",
-    "allDay": false,
-    "desc": "Experience the magic of Christmas with Grammy-nominated violinist Jenny Oaks Baker and her accomplished children, musical ensemble Family Four, in a heartwarming, Christ-centered holiday show featuring Tony Award-Winning Soprano Lisa Hopkins Seegmiller. Enjoy captivating and cherished Christmas carols arranged by Emmy Award-winning composer Kurt Bestor, inspiring script by New York Times best-selling author Jason F. Wright, and moving narration and powerful vocals by baritone Preston Yates. Returning by popular demand are vibrant performances by local ballet companies and Scariff Locklier Leon",
-    "url": "https://www.facebook.com/events/27833916432910040/",
     "src": "Ogden Area Events (Visit Ogden)"
    }
   ],

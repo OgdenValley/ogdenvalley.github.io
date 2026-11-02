@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-02T21:50:37.901Z",
+ "updated": "2026-11-02T22:50:27.126Z",
  "items": [
+  {
+   "t": 1793659827126,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Monday good · Tuesday good · Wednesday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1793635758452,
    "src": "UDOT",
@@ -44,17 +51,17 @@
   },
   "al": {},
   "cond": {
-   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
    "SR-226 to Snowbasin#336": "Dry · none",
    "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none",
-   "SR-158 to Powder Mountain#334": "Dry · none",
-   "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
-   "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
-   "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
-   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none",
    "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
    "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
-   "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none"
+   "SR-158 to Powder Mountain#334": "Dry · none",
+   "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none",
+   "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
+   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none",
+   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
+   "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
+   "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none"
   },
   "pass": {},
   "ice": {
@@ -70,6 +77,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "November 2, 2026 8:25 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "November 2, 2026 3:32 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
