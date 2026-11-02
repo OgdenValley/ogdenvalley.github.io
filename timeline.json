@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-02T13:18:01.185Z",
+ "updated": "2026-11-02T15:04:53.888Z",
  "items": [
+  {
+   "t": 1793631893888,
+   "src": "UDOT",
+   "text": "Crash or incident: I-84. Crash, EB I-84 at MP 90.6 (5400 N, South Weber). Right Shoulder Blocked.",
+   "kind": "crash",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1793596191003,
    "src": "UDOT road sensor",
@@ -26,7 +33,8 @@
  "seen": {
   "ev": {
    "10148": "I-84|!! Traffic Alerts !! (updated 10/14) Westbound single lane closure | Tue (10/6) - Sun (10/18) | Day & Night Westbound single lane closure | Mon (10/19) - Tue, (11/3) | Day & Night Delays may be significant, 10-15min or more during peak periods Note: Wide load restricted above 11 ft Westbound single lane closure | Sprin",
-   "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at"
+   "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at",
+   "37858": "I-84|Crash, EB I-84 at MP 90.6 (5400 N, South Weber). Right Shoulder Blocked."
   },
   "al": {},
   "cond": {

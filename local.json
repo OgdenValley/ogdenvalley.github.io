@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T09:13:53.394Z",
+ "updated": "2026-11-02T15:01:51.307Z",
  "meetings": [
   {
    "body": "Ogden Valley City Council",
@@ -42,11 +42,11 @@
    "name": "Ben Lomond Peak",
    "elev": 7690,
    "depth": {
-    "value": 1,
+    "value": 0,
     "date": "2026-11-01"
    },
    "water": {
-    "value": 0.1,
+    "value": 0,
     "date": "2026-11-01"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
@@ -60,7 +60,7 @@
     "date": "2026-11-01"
    },
    "water": {
-    "value": 0.1,
+    "value": 0,
     "date": "2026-11-01"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
@@ -93,8 +93,8 @@
   "Ogden Valley Planning Commission": "ok",
   "Huntsville Town Council": "ok",
   "Weber County Commission": "ok",
-  "Huntsville Town website": "ok",
+  "Huntsville Town website": "failed",
   "snow": "ok",
-  "pineview": "ok"
+  "pineview": "failed"
  }
 }
