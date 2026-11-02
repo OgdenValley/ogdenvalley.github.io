@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T02:15:01.923Z",
+ "updated": "2026-11-02T03:02:09.751Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -797,16 +797,6 @@
      "desc": "elparo has created large-scale site-responsive sculptures all over the world. La Vrille is his debut work in the United States.",
      "url": "https://www.weber.edu/shawgallery/upcoming.html",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793494800000,
-     "e": 1793502000000,
-     "t": "Singles Mingle",
-     "loc": "Grounds for Coffee, 111 25th Street, Ogden",
-     "allDay": false,
-     "desc": "Free. Every Saturday.",
-     "url": "",
-     "src": "Weekly regular"
     },
     {
      "s": 1793646000000,
