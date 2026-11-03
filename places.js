@@ -79,12 +79,13 @@ window.OVE_PLACES = {
      "note": "The restaurant recommends reservations.",
      "factsChecked": "2026-10-11",
      "town": "Eden",
-     "type": "Mexican / Tex-Mex & bar",
-     "blurb": "Mexican and Tex-Mex restaurant with a full bar in a restored 1880s building that was formerly the Eden General Store.",
+     "type": "Fresh Mex",
+     "blurb": "Fresh Mex restaurant in a restored 1880s building that was formerly the Eden General Store. Serves liquor and cocktails (no longer a full-service bar).",
+     "hours": "Mon-Thu 11:30 AM-8 PM, Fri-Sat 11:30 AM-9 PM, Sun 11:30 AM-8 PM",
      "phone": "801-745-8226",
      "link": "https://carlosandharleys.com",
      "address": "5510 E 2200 N, Eden, UT 84310",
-     "checked": "2026-10-07"
+     "checked": "2026-11-03"
    },
    {
      "name": "Chris'",
