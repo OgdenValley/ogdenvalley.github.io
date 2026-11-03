@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T01:13:11.635Z",
+ "updated": "2026-11-03T02:10:07.963Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -1749,8 +1749,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1759,8 +1759,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3266,6 +3266,16 @@
      "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1798855200000,
+     "e": 1798862400000,
+     "t": "Friday Night Jazz",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free show, all ages. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
     }
    ]
   }
@@ -4446,8 +4456,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4456,8 +4466,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
