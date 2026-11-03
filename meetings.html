@@ -27,7 +27,13 @@
 .mt-links{display:flex;flex-wrap:wrap;gap:8px}.mt-links a{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:16px;padding:7px 12px;border-radius:999px;border:2px solid var(--line);text-decoration:none;color:var(--ink);background:var(--soft)}
 .mt-links a.rec{border-color:#2F7D4F}.mt-links a.min{border-color:#2E6DA4}.mt-links a.on{border-color:#5B4BA5}
 .mt-none{font-size:15px;color:var(--muted)}
-.mt details summary{font-weight:700;font-size:17px}.mt ol{margin:8px 0 0 22px;padding:0}.mt li{margin:3px 0}
+.mt-ag{border-top:1px solid var(--line);padding-top:4px}
+.mt-ag>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;min-height:48px;padding:6px 4px;font-weight:800;font-size:18px;color:var(--blue)}
+.mt-ag>summary::-webkit-details-marker{display:none}
+.mt-ag>summary::after{content:"\25B8";font-size:20px;transition:transform .15s}.mt-ag[open]>summary::after{transform:rotate(90deg)}
+.mt-ag>summary:focus-visible{outline:3px solid var(--blue);outline-offset:2px;border-radius:8px}
+.mt-ag ol{margin:4px 0 6px 24px;padding:0;font-size:18px}.mt-ag li{margin:6px 0}
+.mt-today{display:inline-block;background:#2F7D4F;color:#fff;font-weight:800;font-size:14px;padding:2px 10px;border-radius:999px;margin-left:6px;vertical-align:middle}
 .mt[data-g="Ogden Valley City"]{--mc:#2F7D4F}.mt[data-g="Huntsville Town"]{--mc:#2E6DA4}.mt[data-g="Districts"]{--mc:#B35A00}.mt[data-g="Weber County"]{--mc:#5B4BA5}
 </style>
 </head>
@@ -82,17 +88,18 @@ const draw=()=>{const now=Date.now(),day=864e5;
   const thisMon=mondayKey(now);
   const wkLabel=k=>k===thisMon?"This week":k===thisMon+7*day?"Next week":k===thisMon-7*day?"Last week":"Week of "+new Date(k).toLocaleDateString("en-US",{month:"long",day:"numeric"});
   const card=m=>{const g=(D.bodies.find(b=>b.id===m.bodyId)||{}).group||"";const rec=(m.files||[]).filter(f=>f.kind==="recording"),min=(m.files||[]).filter(f=>f.kind==="minutes"),ag=(m.files||[]).filter(f=>f.kind==="agenda"||f.kind==="file");
-    const isPast=m.start&&m.start<now-3*36e5;
+    const isPast=m.start&&m.start<now-3*36e5;const dk=t=>new Date(t).toLocaleDateString("en-CA",{timeZone:TZ});const today=m.start&&dk(m.start)===dk(now);let agendaBox=null;
     const links=[el("a",{href:m.link,target:"_blank",rel:"noopener","data-track":"meeting: notice",text:"📄 Notice & agenda"})];
     if(m.online&&!isPast&&!m.canceled)links.push(el("a",{class:"on",href:m.online,target:"_blank",rel:"noopener","data-track":"meeting: join online",text:"💻 Join on "+(m.onlineKind||"Teams")}));
     ag.slice(0,3).forEach(f=>links.push(el("a",{href:f.url,target:"_blank",rel:"noopener",text:"📎 "+f.name.replace(/\.(pdf|docx?)$/i,"").slice(0,40)})));
     rec.forEach(f=>links.push(el("a",{class:"rec",href:f.url,target:"_blank",rel:"noopener","data-track":"meeting: recording",text:"🎧 Recording"})));
     min.forEach(f=>links.push(el("a",{class:"min",href:f.url,target:"_blank",rel:"noopener","data-track":"meeting: minutes",text:"📝 Minutes"})));
-    const kids=[el("p",{class:"mt-when"},[document.createTextNode(m.start?F({weekday:"long",month:"long",day:"numeric",hour:"numeric",minute:"2-digit"}).format(new Date(m.start)):"Date in the notice"),m.canceled?el("span",{class:"mt-cx",text:"Canceled"}):null]),
+    const kids=[el("p",{class:"mt-when"},[document.createTextNode(m.start?F({weekday:"long",month:"long",day:"numeric",hour:"numeric",minute:"2-digit"}).format(new Date(m.start)):"Date in the notice"),m.canceled?el("span",{class:"mt-cx",text:"Canceled"}):today?el("span",{class:"mt-today",text:"Today"}):null]),
       el("p",{class:"mt-body",text:m.body}),el("p",{class:"mt-title",text:m.title})];
     if(m.place)kids.push(el("p",{text:"📍 "+m.place}));
-    if(m.items&&m.items.length){const d=el("details");d.append(el("summary",{text:"On the agenda ("+m.items.length+")"}),el("ol",{},m.items.map(x=>el("li",{text:x}))));kids.push(d)}
+    if(m.items&&m.items.length){const d=el("details",{class:"mt-ag"});if(today)d.open=true;d.append(el("summary",{"data-track":"meeting: agenda toggle",text:"Agenda ("+m.items.length+" item"+(m.items.length===1?"":"s")+")"}),el("ol",{},m.items.map(x=>el("li",{text:x}))));agendaBox=d}
     kids.push(el("div",{class:"mt-links"},links));
+    if(agendaBox)kids.push(agendaBox);
     if(isPast&&!m.canceled&&(!rec.length||!min.length))kids.push(el("p",{class:"mt-none",text:[!rec.length?"Recording not posted yet":"",!min.length?"Minutes not posted yet":""].filter(Boolean).join(" · ")+"."}));
     return el("article",{class:"mt","data-g":g},kids)};
   const group=(list,box,desc,empty)=>{if(!list.length){box.replaceChildren(el("div",{class:"alert quiet",text:empty}));return}
