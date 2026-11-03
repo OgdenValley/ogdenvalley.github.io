@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T02:10:12.340Z",
+ "updated": "2026-11-03T08:59:45.816Z",
  "meetings": [
   {
    "body": "Ogden Valley City Council",
@@ -42,12 +42,12 @@
    "name": "Ben Lomond Peak",
    "elev": 7690,
    "depth": {
-    "value": 0,
-    "date": "2026-11-01"
+    "value": 1,
+    "date": "2026-11-02"
    },
    "water": {
     "value": 0,
-    "date": "2026-11-01"
+    "date": "2026-11-02"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -57,11 +57,11 @@
    "elev": 5970,
    "depth": {
     "value": 0,
-    "date": "2026-11-01"
+    "date": "2026-11-02"
    },
    "water": {
-    "value": 0,
-    "date": "2026-11-01"
+    "value": 0.1,
+    "date": "2026-11-02"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
@@ -71,11 +71,11 @@
    "elev": 8930,
    "depth": {
     "value": 4,
-    "date": "2026-11-01"
+    "date": "2026-11-02"
    },
    "water": {
-    "value": 1.1,
-    "date": "2026-11-01"
+    "value": 0.9,
+    "date": "2026-11-02"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
    "source": "USDA NRCS SNOTEL"
