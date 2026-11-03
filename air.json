@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-03T10:00:40.442Z",
+ "updated": "2026-11-03T11:01:05.211Z",
  "place": "Weber County (monitor in Harrisville)",
  "source": "Utah Division of Air Quality",
  "link": "https://air.utah.gov/forecast.php?id=hv",
  "now": {
-  "when": "11/03/2026 01:00:00",
-  "pm25": 3,
-  "ozone": 0.008,
+  "when": "11/03/2026 02:00:00",
+  "pm25": 3.2,
+  "ozone": 0.005,
   "level": 0,
   "name": "Good",
   "cause": "fine particles (PM2.5)"
