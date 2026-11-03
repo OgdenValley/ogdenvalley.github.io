@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T08:59:45.816Z",
+ "updated": "2026-11-03T14:24:01.956Z",
  "meetings": [
   {
    "body": "Ogden Valley City Council",
@@ -82,9 +82,9 @@
   }
  ],
  "pineview": {
-  "acreFeet": 2204.65,
+  "acreFeet": 2447.05,
   "percent": 2,
-  "date": "2026-10-24T07:00:00+00:00",
+  "date": "2026-11-02T07:00:00+00:00",
   "source": "U.S. Bureau of Reclamation",
   "link": "https://data.usbr.gov/location/437"
  },
