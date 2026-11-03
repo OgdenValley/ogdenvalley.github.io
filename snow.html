@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Snow Mode · Ogden Valley Roads, Winter Alerts &amp; Resort Snow Reports</title>
+<meta name="description" content="Snow mode for Ogden Valley: winter weather alerts, canyon road conditions, snow totals by the hour and the Snowbasin, Powder Mountain and Nordic Valley snow reports, refreshed every 5 minutes during storms.">
+<meta property="og:title" content="Snow Mode · Ogden Valley Roads, Winter Alerts &amp; Resort Snow Reports">
+<meta property="og:description" content="Winter alerts, canyon roads, snow totals and resort snow reports for Ogden Valley, refreshed every 5 minutes during storms.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://ogdenvalleyevent.com/snow.html">
+<meta property="og:image" content="https://ogdenvalleyevent.com/share-card.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://ogdenvalleyevent.com/snow.html">
+<link rel="icon" href="logo-10-years-32.png">
+<link rel="apple-touch-icon" href="logo-10-years-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>/* set the month's colors before the page paints */(function(){var m=new Date().getMonth()+1;document.documentElement.dataset.season=m===10?"halloween":[12,1,2].indexOf(m)>-1?"winter":[3,4,5].indexOf(m)>-1?"spring":[6,7,8].indexOf(m)>-1?"summer":"fall"})();</script><style>
+.sm-list{display:grid;gap:10px}
+.sm-row{background:var(--card);border:2px solid var(--line);border-radius:14px;overflow:hidden}
+.sm-row>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:16px 18px;color:var(--ink)}
+.sm-row>summary::-webkit-details-marker{display:none}
+.sm-row>summary::after{content:"Show \25BE";font-weight:700;color:var(--blue);white-space:nowrap;font-size:16px}
+.sm-row[open]>summary::after{content:"Hide \25B4"}
+.sm-t{font-family:var(--display);font-weight:800;font-size:clamp(19px,3.4vw,23px);flex:1}
+.sm-chip{font-weight:800;font-size:16px;padding:5px 12px;border-radius:999px;background:var(--soft);color:var(--ink);white-space:nowrap}
+.sm-chip.ok{background:var(--good-bg);color:var(--good)}.sm-chip.warn{background:var(--warn-bg);color:var(--warn)}.sm-chip.bad{background:#B3261E;color:#fff}.sm-chip.snowy{background:#DCEBFA;color:#16304F}
+.sm-row.bad{border-color:#B3261E}.sm-row.warn{border-color:#C77700}.sm-row.snowy{border-color:#3E83C4}
+.sm-body{padding:0 18px 16px;display:grid;gap:10px;font-size:18px;line-height:1.5}
+.sm-body p{margin:0}.sm-big{font-weight:700;font-size:19px}
+.sm-do{color:var(--warn);font-weight:700}.sm-bad{color:#B3261E;font-weight:700}
+.sm-tbl{width:100%;border-collapse:collapse;font-size:17px}.sm-tbl th,.sm-tbl td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line)}
+.sm-tbl th{font-size:14px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}.sm-tbl tr.some td{background:#EEF5FC}.sm-tbl tr.heavy td{background:#DCEBFA;font-weight:700}
+.sm-status{border-left:6px solid var(--line)}.sm-status.on{border-left-color:#2E6DA4;background:linear-gradient(90deg,#EEF5FC,var(--card))}
+@media(prefers-color-scheme:dark){.sm-tbl tr.some td{background:#16283C}.sm-tbl tr.heavy td{background:#1C3550}.sm-chip.snowy{background:#1C3550;color:#DCEBFA}.sm-status.on{background:var(--card)}}
+@media(max-width:600px){.sm-row>summary{flex-wrap:wrap}.sm-row>summary::after{width:100%;font-size:15px}.sm-tbl{font-size:16px}}
+</style>
+</head>
+<body>
+<a class="sr" href="#main">Skip to content</a>
+<div class="alert-bar" id="alert-bar" hidden></div>
+<div class="canyon" role="region" aria-label="Canyon and road conditions"><div class="container">
+  <strong>Canyon check</strong>
+  <a href="https://ogdenvalley.udot.utah.gov/road-information/" target="_blank" rel="noopener">Ogden Valley roads &amp; cameras (UDOT)</a>
+  <a href="https://udottraffic.utah.gov/map" target="_blank" rel="noopener" data-track="open snowplow map">🚜 Snowplows (UDOT)</a>
+  <a href="live.html">Live view</a>
+  <a href="safety.html">Alerts &amp; fires</a>
+  <a href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Eden weather</a>
+</div></div>
+<header class="site-head"><div class="container">
+  <a class="brand" href="index.html"><img data-logo="180" src="logo-10-years-180.png" alt="" width="52" height="52"><span><b>Ogden Valley</b><small>Information &amp; Events</small></span></a>
+  <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+  <nav class="main" id="nav" aria-label="Main"></nav>
+</div></header>
+<main id="main"><section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley · winter storms</p><h1>❄️ Snow mode</h1><p class="lead" id="sm-lead" style="margin-top:12px">Checking the National Weather Service…</p><div class="btns"><a class="btn light" href="safety.html">All roads &amp; weather</a><a class="btn light" href="live.html">Canyon &amp; resort cameras</a></div></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section><div class="container" style="display:grid;gap:30px">
+  <div class="card sm-status" id="sm-status" aria-live="polite"><p class="eyebrow" style="margin:0">Updates</p><p id="sm-refresh" style="margin:0;font-size:18px">Loading…</p><p class="meta" style="margin:0;font-size:15px">Tap any alert, road or day to see the details.</p></div>
+  <div id="sm-alerts-wrap"><div class="section-head"><div><p class="eyebrow">National Weather Service</p><h2>Winter alerts</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://www.weather.gov/slc/" target="_blank" rel="noopener">NWS Salt Lake City</a></div><div id="sm-alerts" class="sm-list"></div></div>
+  <div id="sm-roads-wrap"><div class="section-head"><div><p class="eyebrow">Utah Department of Transportation</p><h2>Valley roads &amp; canyons</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://udottraffic.utah.gov/map" target="_blank" rel="noopener" data-track="snow: plow map">🚜 Plow map</a></div><p class="meta" id="sm-plows" style="font-size:16px;margin:0 0 10px"></p><div id="sm-roads" class="sm-list"></div><p class="meta" id="sm-roads-src" style="font-size:14px;margin-top:8px"></p></div>
+  <div id="sm-days-wrap"><div class="section-head"><div><p class="eyebrow">National Weather Service · Eden, Liberty &amp; Huntsville</p><h2>Snow by the day</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Full forecast</a></div><div id="sm-days" class="sm-list"></div></div>
+  <div id="sm-resorts-wrap"><div class="section-head"><div><p class="eyebrow">From each resort's own snow report · updated hourly</p><h2>Resort snow reports</h2></div></div><div id="sm-resorts"></div></div>
+  <div class="empty" style="border-style:solid"><p><b>Please note:</b> snow mode turns on by itself when the National Weather Service issues a winter alert for the Valley. It gathers official information automatically and can run behind. Always follow instructions from UDOT and emergency officials. In an emergency, call 911.</p></div>
+</div></section>
+</main>
+<footer class="site-foot"></footer>
+<script src="layout.js"></script>
+<script src="config.js"></script>
+<script src="places.js"></script>
+<script src="site.js"></script>
+<script>
+(function(){const S=window.OVE_SITE,el=S.el,TZ=S.TZ;
+const F=o=>new Intl.DateTimeFormat("en-US",Object.assign({timeZone:TZ},o));
+const when=t=>t?F({weekday:"short",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}).format(new Date(t)):"";
+const hr=t=>F({hour:"numeric"}).format(new Date(t));
+const POINT="41.3013,-111.8219",PREVIEW=window.OVE_SNOW_PREVIEW||null;
+const fresh=n=>n+"?t="+Date.now();
+const loadFresh=async n=>PREVIEW&&PREVIEW[n]?PREVIEW[n]:S.loadJSON(fresh(n));
+/* one tap-to-open row: big summary line, details inside */
+function row(title,chip,kind,kids,open){const d=el("details",{class:"sm-row"+(kind?" "+kind:"")});if(open)d.open=true;
+  d.append(el("summary",{},[el("span",{class:"sm-t",text:title}),chip?el("span",{class:"sm-chip "+(kind||""),text:chip}):null]),el("div",{class:"sm-body"},kids));return d}
+const P=t=>t?el("p",{text:t}):null;
+const link=(t,u)=>el("a",{href:u,target:"_blank",rel:"noopener",text:t});
+
+/* ---- alerts ---- */
+function drawAlerts(st){const box=document.getElementById("sm-alerts");const A=(st&&st.alerts)||[];
+  const lead=document.getElementById("sm-lead");
+  if(!A.length){lead.textContent="No winter alerts for the Valley right now. Snow mode turns on by itself when the National Weather Service issues one.";box.replaceChildren(el("div",{class:"alert good",text:"No winter weather alerts for Ogden Valley right now."}));return}
+  lead.textContent="Snow mode is on: "+[...new Set(A.map(a=>a.event))].join(", ")+". This page refreshes every 5 minutes while it's open.";
+  box.replaceChildren(...A.map((a,i)=>row(a.event,a.ends?"Until "+when(a.ends):"",/warning|blizzard|ice storm/i.test(a.event)?"bad":"warn",[
+    a.headline?el("p",{class:"sm-big",text:a.headline}):null,
+    el("p",{},[el("b",{text:"Starts: "}),document.createTextNode(when(a.starts)||"now")," ",el("b",{text:" Ends: "}),document.createTextNode(when(a.ends)||"until further notice")]),
+    ...String(a.text||"").split(/\n\s*\n/).map(x=>x.replace(/\s*\n\s*/g," ").trim()).filter(Boolean).map(x=>el("p",{text:x})),
+    a.instruction?el("p",{class:"sm-do"},[el("b",{text:"What to do: "}),document.createTextNode(String(a.instruction).replace(/\s*\n\s*/g," "))]):null,
+    el("p",{class:"meta",style:"font-size:14px"},[document.createTextNode("Source: National Weather Service. "),link("Read it on weather.gov","https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219")])],i===0)))}
+
+/* ---- roads ---- */
+const ROADS=[
+ {name:"Ogden Canyon (SR-39)",cond:/^SR-39 Ogden to/i,pass:/Ogden Canyon/i,stn:/Pineview Dam/i,ev:/SR[- ]?39/i,evloc:/Ogden Canyon|milepost (?:[0-9]|1[0-4])\b/i,cams:[["Below Pineview Dam","157818"],["Top of the canyon at the dam","159421"]]},
+ {name:"Trappers Loop (SR-167)",cond:/^SR-167/i,pass:/Trappers Loop Summit/i,stn:/SR-167/i,ev:/SR[- ]?167|Trappers/i,cams:[["Trappers Loop junction near Huntsville","157871"],["Trappers Loop at Snowbasin Road","159406"]]},
+ {name:"North Ogden Divide",cond:null,pass:null,stn:/North Ogden Divide/i,ev:/North Ogden|Divide/i,cams:[["Ben Lomond trailhead","158013"]],note:"Weber County road. UDOT doesn't report conditions for it, only the road sensor below."},
+ {name:"Huntsville to Monte Cristo (SR-39)",cond:/^SR-39 Jct\.? SR-167/i,pass:/Monte Cristo/i,stn:/Huntsville|Monte Cristo/i,ev:/SR[- ]?39/i,evloc:/Huntsville|Monte Cristo|milepost (?:1[7-9]|[2-5]\d)\b/i,cams:[["Monte Cristo (lower)","159458"],["Monte Cristo (summit area)","159468"]]},
+ {name:"Powder Mountain road (SR-158)",cond:/^SR-158/i,pass:/Powder Mountain/i,stn:/SR-158|Powder/i,ev:/SR[- ]?158|Powder/i,cams:[["SR-158 lower","158080"],["SR-158 upper","159400"]],resort:"powder"},
+ {name:"Snowbasin road (SR-226)",cond:/^SR-226/i,pass:/Snowbasin/i,stn:/SR-226|Snowbasin/i,ev:/SR[- ]?226|Snowbasin/i,cams:[["Snowbasin Road","159036"]]}];
+const BAD=/closed|chain|ice|icy|snow pack|snowpacked|slush|slick|hazard|blowing|drift|restrict/i;
+function drawRoads(R,RS){const box=document.getElementById("sm-roads");
+  if(!R||!R.updated){box.replaceChildren(el("div",{class:"alert quiet",text:"Road reports will appear here after the next update."}));return}
+  const plows=(R.plows||[]).length;document.getElementById("sm-plows").textContent=plows?"🚜 "+plows+" UDOT plow"+(plows===1?"":"s")+" reported working in or near the Valley in the last 2 hours.":"🚜 No UDOT plows reported in the Valley in the last 2 hours.";
+  box.replaceChildren(...ROADS.map(r=>{
+    const c=r.cond?(R.conditions||[]).filter(x=>r.cond.test(x.road)):[];
+    const p=r.pass?(R.passes||[]).filter(x=>r.pass.test(x.name)):[];
+    const s=(R.stations||[]).filter(x=>r.stn.test(x.name));
+    const e=(R.events||[]).filter(x=>r.ev.test(x.road+" "+x.loc)&&(!r.evloc||r.evloc.test(x.loc+" "+x.desc)));
+    const closed=e.some(x=>x.full)||p.some(x=>(x.closures||[]).some(z=>/closed/i.test(z.status)));
+    const restr=c.map(x=>x.restriction).filter(x=>x&&!/^none$/i.test(x));
+    const ice=s.some(x=>x.ice);
+    const condTxt=c.map(x=>[x.cond,x.weather].filter(Boolean).join(", ")).filter(Boolean)[0]||(s[0]&&s[0].status)||"";
+    const chip=closed?"Closed":restr.length?restr[0]:ice?"Icy spots":condTxt||"No report";
+    const kind=closed?"bad":(restr.length||ice||BAD.test(condTxt))?"warn":condTxt?"ok":"";
+    const kids=[];
+    if(r.note)kids.push(P(r.note));
+    c.forEach(x=>kids.push(el("p",{},[el("b",{text:x.road+": "}),document.createTextNode([x.cond,x.weather].filter(Boolean).join(", ")||"No report"),x.restriction&&!/^none$/i.test(x.restriction)?el("span",{class:"sm-do",text:" · "+x.restriction}):null])));
+    if(restr.length)kids.push(el("p",{class:"sm-do",text:"⛓️ Traction rules: "+[...new Set(restr)].join("; ")+". Check UDOT before you go."}));
+    e.forEach(x=>kids.push(el("p",{class:x.full?"sm-bad":""},[el("b",{text:(x.full?"CLOSED: ":"")+(x.type?x.type.replace(/^\w/,m=>m.toUpperCase())+": ":"")}),document.createTextNode([x.loc,x.desc].filter(Boolean).join(". ").slice(0,320)),x.detour?document.createTextNode(" Detour: "+x.detour):null])));
+    p.forEach(x=>{if(x.surface!=null||x.status)kids.push(P("Pass sensor ("+x.name.replace(/^SR-\d+\s*/,"")+(x.elev?", "+x.elev.toLocaleString()+" ft":"")+"): "+[x.status,x.surface!=null?"pavement "+Math.round(x.surface)+"°F":"",x.air!=null?"air "+Math.round(x.air)+"°F":""].filter(Boolean).join(", ")));(x.closures||[]).forEach(z=>kids.push(P("Seasonal closure: "+[z.desc,z.status].filter(Boolean).join(" · "))))});
+    s.forEach(x=>kids.push(el("p",{class:x.ice?"sm-bad":""},[document.createTextNode("Road sensor, "+x.name+": "+[x.status,x.surface!=null?"pavement "+Math.round(x.surface)+"°F":"",x.air!=null?"air "+Math.round(x.air)+"°F":"",x.gust!=null?"gusts "+Math.round(x.gust)+" mph":""].filter(Boolean).join(", ")+(x.ice?". Watch for ice.":""))])));
+    if(r.resort&&RS){const z=(RS.resorts||[]).find(q=>q.id===r.resort);(z&&z.roads||[]).forEach(q=>kids.push(P("From "+z.name+": "+q.name+" is "+q.status.toLowerCase()+".")))}
+    kids.push(el("p",{class:"sm-cams"},[el("b",{text:"Cameras: "}),...r.cams.flatMap(([t,id],i)=>[i?document.createTextNode(" · "):null,link(t,"https://www.udottraffic.utah.gov/map/Cctv/"+id)])]));
+    return row(r.name,chip,kind,kids)}));
+  document.getElementById("sm-roads-src").replaceChildren(document.createTextNode("Source: UDOT Traffic, last read "+when(R.updated)+". "),link("Open UDOT Traffic","https://udottraffic.utah.gov/"));}
+
+/* ---- days: snow totals and snow level by the hour (live from the Weather Service, hourly copy as backup) ---- */
+const dur=s=>{const m=String(s||"").match(/P(?:(\d+)D)?T?(?:(\d+)H)?/);return m?((+m[1]||0)*24+(+m[2]||0))||1:1};
+function hourly(g,prop,conv){const out={};((g.properties[prop]||{}).values||[]).forEach(v=>{const[ts,d]=v.validTime.split("/");const s=Date.parse(ts),h=dur(d);for(let i=0;i<h;i++)out[s+i*36e5]=v.value==null?null:conv(v.value,h)});return out}
+async function liveDays(){if(PREVIEW&&PREVIEW.days)return PREVIEW.days;
+  const pt=await S.nwsJSON("https://api.weather.gov/points/"+POINT);if(!pt)return null;
+  const[f,g]=await Promise.all([S.nwsJSON(pt.properties.forecast),S.nwsJSON(pt.properties.forecastGridData)]);if(!f||!g)return null;
+  const snow=hourly(g,"snowfallAmount",(v,h)=>v/25.4/h),lvl=hourly(g,"snowLevel",v=>Math.round(v*3.28084/100)*100),tmp=hourly(g,"temperature",v=>Math.round(v*9/5+32));
+  const byDay=new Map();(f.properties.periods||[]).forEach(p=>{const k=F({year:"numeric",month:"2-digit",day:"2-digit"}).format(new Date(p.startTime));if(!byDay.has(k))byDay.set(k,{});byDay.get(k)[p.isDaytime?"day":"night"]=p});
+  const now=Date.now();
+  return[...byDay.entries()].slice(0,7).map(([k,v])=>{const any=v.day||v.night;const start=Date.parse((v.day||v.night).startTime),end=Date.parse((v.night||v.day).endTime);
+    const blocks=[];for(let t=Math.max(Math.floor(start/36e5)*36e5,Math.floor(now/36e5)*36e5);t<end;t+=3*36e5){let sn=0,has=false,lv=[],tp=[];for(let i=0;i<3;i++){const h=t+i*36e5;if(snow[h]!=null){sn+=snow[h];has=true}if(lvl[h]!=null)lv.push(lvl[h]);if(tmp[h]!=null)tp.push(tmp[h])}
+      blocks.push({t,snow:has?Math.round(sn*10)/10:null,level:lv.length?Math.min(...lv):null,temp:tp.length?Math.round(tp.reduce((a,b)=>a+b,0)/tp.length):null})}
+    const tot=blocks.reduce((a,b)=>a+(b.snow||0),0);
+    return{label:F({weekday:"long"}).format(new Date(start)),md:F({month:"short",day:"numeric"}).format(new Date(start)),high:v.day?v.day.temperature:null,low:v.night?v.night.temperature:null,
+      short:[v.day&&v.day.shortForecast,v.night&&v.night.shortForecast].filter(Boolean).join(" / "),detail:[v.day&&(v.day.name+": "+v.day.detailedForecast),v.night&&(v.night.name+": "+v.night.detailedForecast)].filter(Boolean),total:Math.round(tot*10)/10,blocks}})}
+async function drawDays(){const box=document.getElementById("sm-days");let D=await liveDays();
+  if(!D){const fc=await S.loadJSON("forecast.json");if(fc&&fc.days)D=fc.days.map(d=>({label:d.label,md:d.md,high:d.high,low:d.low,short:d.both||d.short,detail:[],total:null,blocks:[]}))}
+  if(!D){box.replaceChildren(el("div",{class:"alert quiet",text:"The forecast couldn't be loaded just now. It will try again in 5 minutes."}));return}
+  box.replaceChildren(...D.map((d,i)=>{const snowy=/snow|flurr|sleet|wintry/i.test(d.short)||d.total>0;
+    const chip=(d.total!=null&&d.total>0?d.total+"″ snow · ":"")+(d.high!=null?d.high+"°":"–")+" / "+(d.low!=null?d.low+"°":"–");
+    const tbl=d.blocks.length?el("table",{class:"sm-tbl"},[el("thead",{},[el("tr",{},["Time","New snow","Snow level","Temp"].map(h=>el("th",{text:h})))]),el("tbody",{},d.blocks.map(b=>el("tr",{class:b.snow>=1?"heavy":b.snow>0?"some":""},[el("td",{text:hr(b.t)+"–"+hr(b.t+3*36e5)}),el("td",{text:b.snow==null?"–":b.snow>0?b.snow+"″":"none"}),el("td",{text:b.level==null?"–":b.level.toLocaleString()+" ft"}),el("td",{text:b.temp==null?"–":b.temp+"°"})])))]):P("Hour-by-hour snow will show here when the live forecast loads.");
+    return row(S.wxIcon(d.short)+" "+d.label+", "+d.md,chip,snowy?"snowy":"",[P(d.short),...d.detail.map(P),tbl,el("p",{class:"meta",style:"font-size:14px",text:"Snow level is the elevation where rain turns to snow. The Valley floor is about 4,900–5,200 ft. Source: National Weather Service."})],i===0&&snowy)}));}
+
+/* ---- resorts ---- */
+async function drawResorts(){const R=await loadFresh("resorts.json");S.renderResorts(document.getElementById("sm-resorts"),R);return R}
+
+let busy=false;
+async function refresh(st){if(busy)return;busy=true;try{
+  if(PREVIEW&&PREVIEW.alerts)st={live:true,at:Date.now(),alerts:PREVIEW.alerts};else if(!st)st=await S.snowCheck();
+  drawAlerts(st);const[R,RS]=await Promise.all([loadFresh("roads.json"),drawResorts()]);drawRoads(R,RS);await drawDays();
+  const on=st&&st.alerts.length;document.getElementById("sm-refresh").textContent=(on?"Snow mode is on. Refreshing every 5 minutes. ":"Snow mode is off. Refreshing every 30 minutes. ")+"Last refreshed "+when(Date.now())+(st&&!st.live?" (Weather Service didn't answer; showing the last hourly copy)":"")+".";
+  document.getElementById("sm-status").classList.toggle("on",!!on);
+}finally{busy=false}}
+refresh();
+let last=Date.now();setInterval(()=>{const on=document.getElementById("sm-status").classList.contains("on");if(document.hidden)return;if(Date.now()-last>=(on?5:30)*6e4){last=Date.now();refresh()}},30000);
+document.addEventListener("visibilitychange",()=>{if(!document.hidden&&Date.now()-last>5*6e4){last=Date.now();refresh()}});
+})();
+</script>
+</body>
+</html>

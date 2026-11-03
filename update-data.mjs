@@ -6,6 +6,7 @@ import fs from "node:fs";
 import { execSync } from "node:child_process";
 import crypto from "node:crypto";
 import { weatherWatch } from "./weather-watch.mjs";
+import { resorts as resortReports, isWinterAlert } from "./resorts.mjs";
 
 function deEnt(s){ return String(s||"").replace(/&#(\d+);/g,(m,n)=>{try{return String.fromCodePoint(+n)}catch(e){return " "}}).replace(/&#x([0-9a-f]+);/gi,(m,n)=>{try{return String.fromCodePoint(parseInt(n,16))}catch(e){return " "}}).replace(/&nbsp;/gi," ").replace(/&quot;/gi,'"').replace(/&(apos|rsquo|lsquo);/gi,"'").replace(/&(ndash|mdash);/gi,"\u2013").replace(/&hellip;/gi,"\u2026").replace(/&lt;/gi,"<").replace(/&gt;/gi,">").replace(/&amp;/gi,"&").replace(/\u00a0/g," "); }
 // one-line text (titles, places): <br> becomes a comma, codes like &amp; and &#160; become real characters
@@ -1113,7 +1114,7 @@ async function forecast(){
    pagedates.json: when each page was first posted and last changed (shown at the bottom of each page).
    sitemap.xml: the list of pages for Google, with the date each one last changed. */
 const NOINDEX = new Set(["404.html", "poster.html", "know-how-feature.html", "search.html", "weather-watch.html", "newsletter-draft.html"]);
-const LIVE_PAGES = new Set(["index.html", "events.html", "weekend.html", "safety.html", "kids.html", "yard-sales.html", "live-music.html", "live.html", "night-sky.html"]);
+const LIVE_PAGES = new Set(["index.html", "events.html", "weekend.html", "safety.html", "snow.html", "kids.html", "yard-sales.html", "live-music.html", "live.html", "night-sky.html"]);
 function pageDates(){
   const today = new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date());
   const old = oldJSON("pagedates.json") || {}; const pages = old.pages || {};
@@ -1132,6 +1133,26 @@ function pageDates(){
   if (cur !== xml) { fs.writeFileSync("sitemap.xml", xml); console.log("sitemap.xml written"); } else console.log("sitemap.xml unchanged");
 }
 
+/* ---------------- SNOW MODE (every 5 minutes, .github/workflows/snow-update.yml) ----------------
+   Runs only while the National Weather Service has a winter alert for the Valley. Then it refreshes
+   just the fast-changing pieces (alerts, forecast, roads, resort reports, 24-hour timeline) and stops.
+   With no winter alert it exits right away and changes nothing. */
+async function resorts(){ try { await resortReports({getText, writeIfChanged, oldJSON}); } catch (e) { console.log("resorts failed:", e.message); } }
+async function winterNow(){
+  try {
+    const j = await getJSON("https://api.weather.gov/alerts/active?point=41.3013,-111.8219");
+    const on = (j.features || []).map(f => f.properties).filter(isWinterAlert);
+    console.log("winter alerts for the Valley:", on.map(a => a.event).join(", ") || "none"); return on.length > 0;
+  } catch (e) { console.log("NWS check failed, using safety.json:", e.message); return ((oldJSON("safety.json") || {}).weather || []).some(isWinterAlert); }
+}
+if (process.env.SNOW_JOB === "1") {
+  if (!(await winterNow())) { console.log("snow mode off: nothing to refresh"); process.exit(0); }
+  await safety(); await forecast(); await roads(); await resorts();
+  try { timeline(); } catch (e) { console.log("timeline failed:", e.message); }
+  try { execSync('git add -- safety.json forecast.json roads.json resorts.json timeline.json', {stdio: "inherit"}); } catch (e) { console.log("git add skipped:", e.message); }
+  process.exit(0);
+}
+
 await calendars();
 await sky();
 await safety();
@@ -1139,6 +1160,7 @@ await forecast();
 await local();
 await roads();
 await air();
+await resorts();
 try { await weatherWatch(); } catch (e) { console.log("weather watch failed:", e.message); }
 timeline();
 await reviews();

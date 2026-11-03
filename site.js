@@ -650,5 +650,59 @@ function findBox(box){
   "@media (max-width:700px){.find-asks{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:4px}.find-asks::-webkit-scrollbar{display:none}.find-asks .chip{flex:none;white-space:nowrap}}";
   document.head.appendChild(st);
   document.querySelectorAll("[data-find]").forEach(findBox); })();
-window.OVE_SITE = {findLocal, findBox, getArea, setArea, areaCals, areaSwitch, valleyFirst, evTags, eventFilters, monthGrid, C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip};
+/* ---------- SNOW MODE: turns on by itself during a National Weather Service winter alert for the Valley ----------
+   Shows a snow banner at the top of every page while the alert lasts, and re-checks every 5 minutes
+   while the page is open. Details live on snow.html. */
+const NWS_POINT = "41.3013,-111.8219";
+const WINTER_RE = /winter storm|winter weather|blizzard|ice storm|snow squall|heavy snow|lake effect snow|avalanche|wind chill|extreme cold|cold weather advisory|freezing rain|freezing drizzle/i;
+const isWinter = a => WINTER_RE.test(String((a && (a.event || a.headline)) || ""));
+async function nwsJSON(u, ms){ const c = new AbortController(); const t = setTimeout(() => c.abort(), ms || 8000);
+  try { const r = await fetch(u, {signal: c.signal, headers: {"Accept": "application/geo+json"}}); if (!r.ok) throw 0; return await r.json(); } catch (e) { return null; } finally { clearTimeout(t); } }
+/* winter alerts now: live from the Weather Service, or the hourly copy (safety.json) if the live check fails */
+async function snowCheck(){
+  const j = await nwsJSON("https://api.weather.gov/alerts/active?point=" + NWS_POINT, 7000);
+  if (j && j.features) return {live: true, at: Date.now(), alerts: j.features.map(f => f.properties).filter(isWinter).map(p => ({event: p.event, headline: p.headline, severity: p.severity, starts: p.onset || p.effective, ends: p.ends || p.expires, text: p.description || "", instruction: p.instruction || "", area: p.areaDesc || "", id: p.id}))};
+  const sf = await loadJSON("safety.json"); return {live: false, at: sf && sf.updated ? Date.parse(sf.updated) : null, alerts: ((sf && sf.weather) || []).filter(isWinter)};
+}
+(function(){ const st = document.createElement("style"); st.textContent =
+  ".snow-bar{background:linear-gradient(90deg,#16304F,#2E6DA4);color:#fff;font-size:18px;font-weight:700}.snow-bar .container{padding-block:12px;display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center}" +
+  ".snow-bar a{color:#fff;background:rgba(255,255,255,.18);border:2px solid rgba(255,255,255,.6);border-radius:999px;padding:6px 14px;text-decoration:none;white-space:nowrap}.snow-bar a:hover{background:rgba(255,255,255,.3)}" +
+  ".snow-bar .sb-flake{font-size:24px}.snow-bar small{font-weight:600;opacity:.9;font-size:15px}" +
+  ".rs-grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}.rs-card{border-top:6px solid #3E83C4}.rs-card h3{margin:0;font-size:22px}" +
+  ".rs-nums{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:6px 0}.rs-nums div{background:var(--soft);border-radius:10px;padding:8px 4px;text-align:center}.rs-nums b{display:block;font-family:var(--display);font-size:26px;color:var(--ink)}.rs-nums span{font-size:14px;color:var(--muted);font-weight:700}" +
+  ".rs-open{display:inline-block;font-weight:800;font-size:14px;padding:3px 10px;border-radius:999px;background:var(--good-bg);color:var(--good)}.rs-open.closed{background:var(--soft);color:var(--muted)}.rs-card p{margin:0;font-size:16px}.rs-warn{color:var(--warn);font-weight:700}";
+  document.head.appendChild(st); })();
+let snowState = null;
+function showSnowBar(s){
+  let bar = document.getElementById("snow-bar");
+  if (!s || !s.alerts.length) { if (bar) bar.remove(); delete document.documentElement.dataset.snow; return; }
+  document.documentElement.dataset.snow = "on";
+  if (!bar) { bar = el("div", {class: "snow-bar", id: "snow-bar", role: "region", "aria-label": "Snow mode"}); const top = document.getElementById("alert-bar") || document.body.firstElementChild; top && top.parentNode ? top.parentNode.insertBefore(bar, top) : document.body.prepend(bar); }
+  const names = [...new Set(s.alerts.map(a => a.event))].join(" · ");
+  const until = s.alerts.map(a => Date.parse(a.ends)).filter(Boolean).sort((a, b) => b - a)[0];
+  const kids = [el("span", {class: "sb-flake", "aria-hidden": "true", text: "❄️"}), el("span", {text: "Snow mode: " + names}), until ? el("small", {text: "until " + fmt({weekday: "short", hour: "numeric", minute: "2-digit"}).format(new Date(until))}) : null];
+  if (!/snow\.html$/.test(location.pathname)) kids.push(el("a", {href: "snow.html", "data-track": "snow bar: details", text: "Roads, alerts & snow totals ›"}));
+  bar.replaceChildren(el("div", {class: "container"}, kids));
+}
+async function snowTick(){ try { snowState = await snowCheck(); showSnowBar(snowState); document.dispatchEvent(new CustomEvent("ove-snow", {detail: snowState})); } catch (e) {} }
+snowTick(); setInterval(() => { if (!document.hidden && snowState && snowState.alerts.length) snowTick(); }, 5 * 60 * 1000);
+/* resort snow report cards (resorts.json, from each resort's own report) */
+function renderResorts(box, R, compact){
+  if (!box) return;
+  const list = (R && R.resorts) || [];
+  if (!list.length) { box.replaceChildren(el("div", {class: "alert quiet", text: "Resort snow reports will appear here after the next hourly update."})); return; }
+  const v = n => n == null ? "–" : n + "″";
+  const when = r => r.resortUpdated ? "Resort updated " + r.resortUpdated : (r.checked ? "Checked " + fmt({weekday: "short", hour: "numeric", minute: "2-digit"}).format(new Date(r.checked)) : "");
+  if (compact) { box.replaceChildren(...list.map(r => el("span", {class: "rs-line"}, [el("b", {text: r.name + ": "}), document.createTextNode((r.new24 != null ? v(r.new24) + " new" : "") + (r.base != null ? ", " + v(r.base) + " base" : "") + (r.liftsOpen != null ? ", " + r.liftsOpen + "/" + r.liftsTotal + " lifts" : r.open === false ? ", closed" : "") + "  ")]))); return; }
+  box.replaceChildren(el("div", {class: "rs-grid"}, list.map(r => el("article", {class: "card rs-card"}, [
+    el("div", {style: "display:flex;justify-content:space-between;align-items:center;gap:8px"}, [el("h3", {text: r.name}), r.open == null ? null : el("span", {class: "rs-open" + (r.open ? "" : " closed"), text: r.open ? "Open" : "Closed"})]),
+    el("div", {class: "rs-nums"}, [el("div", {}, [el("b", {text: v(r.new24 != null ? r.new24 : r.new48)}), el("span", {text: r.new24 != null ? "24 hours" : "48 hours"})]), el("div", {}, [el("b", {text: v(r.base)}), el("span", {text: "Base"})]),
+      el("div", {}, [el("b", {text: r.liftsOpen != null ? r.liftsOpen + "/" + r.liftsTotal : v(r.new7d)}), el("span", {text: r.liftsOpen != null ? "Lifts open" : "7 days"})])]),
+    r.trailsOpen != null ? el("p", {text: r.trailsOpen + " of " + r.trailsTotal + " runs open" + (r.new7d != null && r.liftsOpen != null ? " · " + v(r.new7d) + " in 7 days" : "")}) : null,
+    r.season != null ? el("p", {text: v(r.season) + " so far this season"}) : null,
+    ...(r.roads || []).map(x => el("p", {text: "🚗 " + x.name + ": " + x.status})),
+    r.status && r.status !== "ok" ? el("p", {class: "rs-warn", text: "Couldn't update just now. Showing the last numbers we had."}) : null,
+    el("p", {class: "meta", style: "font-size:14px"}, [document.createTextNode(when(r) + " · From " + r.source + ". "), el("a", {href: r.link, target: "_blank", rel: "noopener", "data-track": "resort report: " + r.name, text: "Full report"})])]))));
+}
+window.OVE_SITE = {findLocal, findBox, getArea, setArea, areaCals, areaSwitch, valleyFirst, evTags, eventFilters, monthGrid, C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip, snowCheck, isWinter, renderResorts, nwsJSON, snowState: () => snowState};
 })();
