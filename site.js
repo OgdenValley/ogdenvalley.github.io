@@ -622,8 +622,8 @@ function dayInfo(key){
   const y = +key.slice(0, 4), hol = holidaysFor(y).filter(h => h.key === key).concat(holidaysFor(y + 1).filter(h => h.key === key));
   const out = {holidays: hol.filter(h => !h.observed).map(h => h.name), closed: [...new Set(hol.map(h => h.closed).filter(Boolean))], school: [], busy: ""};
   hol.filter(h => h.observedOn).forEach(h => out.notes = (out.notes || []).concat(h.name + " falls on a weekend; government offices observe it on " + new Date(h.observedOn + "T12:00:00").toLocaleDateString("en-US", {weekday: "long", month: "short", day: "numeric"}) + "."));
-  ((SCHOOL && SCHOOL.districts) || []).forEach(dt => { (dt.breaks || []).forEach(b => { if (key >= b.start && key <= b.end) out.school.push({short: dt.short, name: dt.name, what: b.name, start: b.start, end: b.end}); });
-    if (key === dt.firstDay) out.school.push({short: dt.short, name: dt.name, what: "First day of school", first: true}); if (key === dt.lastDay) out.school.push({short: dt.short, name: dt.name, what: "Last day of school", first: true}); });
+  ((SCHOOL && SCHOOL.districts) || []).forEach(dt => { (dt.breaks || []).forEach(b => { if (key >= b.start && key <= b.end) out.school.push({id: dt.id, short: dt.short, name: dt.name, what: b.name, start: b.start, end: b.end}); });
+    if (key === dt.firstDay) out.school.push({id: dt.id, short: dt.short, name: dt.name, what: "First day of school", first: true}); if (key === dt.lastDay) out.school.push({id: dt.id, short: dt.short, name: dt.name, what: "Last day of school", first: true}); });
   if (!_busy[y]) _busy[y] = busyKeys(y);
   if (_busy[y].has(key)) out.busy = "Holiday weekend: expect busier roads, trailheads and ski resorts.";
   else if (out.school.some(s => !s.first)) out.busy = "School break: expect busier roads, trailheads and ski resorts.";
@@ -636,7 +636,7 @@ function dayInfoBox(key){ const I = dayInfo(key); if (!I.any) return null;
   I.closed.forEach(c => kids.push(el("p", {class: "di-closed", text: "🏛️ " + c + "."})));
   (I.notes || []).forEach(n => kids.push(el("p", {class: "di-note", text: n})));
   const seen = new Set(); I.school.forEach(s => { const k = s.short + s.what; if (seen.has(k)) return; seen.add(k);
-    kids.push(el("p", {class: "di-school"}, [el("span", {class: "sch-tag", text: s.first ? "School" : "No school"}), document.createTextNode(" " + s.name + ": " + s.what + (s.start ? " (" + fmtRange(s.start, s.end) + ")" : ""))])); });
+    kids.push(el("p", {class: "di-school"}, [el("span", {class: "sch-tag d-" + s.id, text: (s.first ? "School" : "No school") + " (" + s.short + ")"}), document.createTextNode(" " + s.name + ": " + s.what + (s.start ? " (" + fmtRange(s.start, s.end) + ")" : ""))])); });
   if (I.busy) kids.push(el("p", {class: "di-busy", text: "🚗 " + I.busy}));
   if (I.school.length && SCHOOL && SCHOOL.url) kids.push(el("p", {class: "di-src"}, [document.createTextNode("School dates: "), el("a", {href: SCHOOL.url, target: "_blank", rel: "noopener", text: (SCHOOL.source || "Utah State Board of Education") + ", school year " + (SCHOOL.schoolYear || "")})]));
   return el("div", {class: "dayinfo"}, kids); }
@@ -647,8 +647,9 @@ function dayInfoBox(key){ const I = dayInfo(key); if (!I.any) return null;
   ".mg-day.busy{background:linear-gradient(var(--card),var(--card)) padding-box,repeating-linear-gradient(45deg,#2E6DA4 0 4px,transparent 4px 8px) border-box;border:2px dashed transparent}" +
   ".dayinfo{display:grid;gap:6px;background:var(--soft);border-radius:12px;padding:10px 14px;margin:6px 0 10px;font-size:17px}.dayinfo p{margin:0}.di-busy{color:var(--warn);font-weight:700}.di-src,.di-note{font-size:14px;color:var(--muted)}" +
   ".mg-legend{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:10px;font-size:14px;color:var(--muted);align-items:center}.mg-legend .lg-busy{display:inline-block;width:16px;height:12px;border:2px dashed #2E6DA4;border-radius:3px;vertical-align:middle;margin-right:4px}" +
-  "@media(prefers-color-scheme:dark){.hol-tag,.mg-hol{background:#2E2050;color:#E2D4FF}.sch-tag,.mg-sch{background:#3D2410;color:#FFD2A6}}" +
-  "@media (max-width:640px){.mg-hol{font-size:10px;padding:0 3px}.mg-sch{font-size:0;height:6px;padding:0;border-radius:3px;border-left:0;background:#E07A1F}}";
+  ".sch-tag.d-ogden,.mg-sch.d-ogden{background:#FFF3B0;color:#5C4500;border-left-color:#E0B400}" +
+  "@media(prefers-color-scheme:dark){.hol-tag,.mg-hol{background:#2E2050;color:#E2D4FF}.sch-tag,.mg-sch{background:#3D2410;color:#FFD2A6}.sch-tag.d-ogden,.mg-sch.d-ogden{background:#3A3008;color:#FFE680;border-left-color:#E0B400}}" +
+  "@media (max-width:640px){.mg-hol{font-size:10px;padding:0 3px}.mg-sch{font-size:0;height:6px;padding:0;border-radius:3px;border-left:0;background:#E07A1F}.mg-sch.d-ogden{background:#E0B400}}";
   document.head.appendChild(st); })();
 function monthGrid(box, list, opts){
   opts = opts || {}; const now = new Date(new Date().toLocaleString("en-US", {timeZone: TZ}));
@@ -666,17 +667,17 @@ function monthGrid(box, list, opts){
     for (let i = 0; i < lead; i++) grid.append(el("div", {class: "mg-day empty"}));
     const detail = el("div", {class: "mg-detail"});
     for (let d = 1; d <= days; d++) { const k = key(d), evs = byDay[k] || [];
-      const DI = dayInfo(ymdKey(y, m, d)), schoolTags = [...new Set(DI.school.filter(x => !x.first).map(x => x.short))];
+      const DI = dayInfo(ymdKey(y, m, d)), schoolOff = DI.school.filter(x => !x.first).filter((x, i, a) => a.findIndex(z => z.id === x.id) === i), schoolTags = schoolOff.map(x => x.short);
       const cell = el("button", {class: "mg-day" + (k === todayKey ? " today" : "") + (evs.length ? " has" : "") + (DI.busy ? " busy" : ""), type: "button", "aria-label": new Date(y, m, d).toLocaleDateString("en-US", {weekday: "long", month: "long", day: "numeric"}) + ", " + evs.length + " event" + (evs.length === 1 ? "" : "s") + (DI.holidays.length ? ", " + DI.holidays.join(", ") : "") + (schoolTags.length ? ", no school: " + schoolTags.join(", ") : "")}, [
         el("span", {class: "mg-n", text: String(d)}),
         ...DI.holidays.slice(0, 2).map(h => el("span", {class: "mg-hol", text: h})),
-        schoolTags.length ? el("span", {class: "mg-sch", text: "No school: " + schoolTags.join(", ")}) : null,
+        ...schoolOff.map(x => el("span", {class: "mg-sch d-" + x.id, text: "No school: " + x.short})),
         ...evs.slice(0, 3).map(e => el("span", {class: "mg-ev", style: "--cal:" + CAL_COLOR[e.cal], text: e.t})),
         evs.length > 3 ? el("span", {class: "mg-more", text: "+" + (evs.length - 3) + " more"}) : null,
         evs.length ? el("span", {class: "mg-count", text: evs.length + (evs.length === 1 ? " event" : " events")}) : null]);
       cell.addEventListener("click", () => { grid.querySelectorAll(".mg-day.sel").forEach(x => x.classList.remove("sel")); cell.classList.add("sel"); renderEvents(detail, evs, {noDayInfo: true, emptyText: DI.any ? "No events posted this day." : "Nothing on the calendar this day."}); const ib = dayInfoBox(ymdKey(y, m, d)); if (ib) detail.prepend(ib); detail.scrollIntoView({behavior: "smooth", block: "nearest"}); });
       grid.append(cell); }
-    const legend = el("div", {class: "mg-legend", "aria-label": "Calendar key"}, [el("span", {class: "hol-tag", text: "Holiday"}), el("span", {class: "sch-tag", text: "No school"}), el("span", {}, [el("span", {class: "lg-busy"}), document.createTextNode("Busy weekend")])]);
+    const legend = el("div", {class: "mg-legend", "aria-label": "Calendar key"}, [el("span", {class: "hol-tag", text: "Holiday"}), el("span", {class: "sch-tag d-weber", text: "No school (Weber SD)"}), el("span", {class: "sch-tag d-ogden", text: "No school (Ogden SD)"}), el("span", {}, [el("span", {class: "lg-busy"}), document.createTextNode("Busy weekend")])]);
     box.replaceChildren(head, grid, legend, detail);
     /* show today's events under the calendar right away */
     const t = opts.autoToday ? grid.querySelector(".mg-day.today") : null; if (t) { t.classList.add("sel"); renderEvents(detail, byDay[todayKey] || [], {noDayInfo: true, emptyText: "Nothing else on the calendar today. Tap another day to see its events."}); const ib = dayInfoBox(keyOf(new Date(new Date().toLocaleString("en-US", {timeZone: TZ})))); if (ib) detail.prepend(ib); }
