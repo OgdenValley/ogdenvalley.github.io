@@ -45,7 +45,48 @@
   <p class="lead" style="margin-top:14px">Events for the Valley and Weber County, local places to eat and shop, Valley artists and neighbors helping neighbors.</p>
   <div class="btns"><a class="btn primary" href="events.html">See this week's events</a><a class="btn light" data-newsletter href="#">Get the weekly newsletter</a></div></div>
 </div><p class="hero-credit" id="hero-credit"></p></section>
-<section style="padding-block:18px 0"><div class="container"><nav class="quick" aria-label="Quick links"><a href="events.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Events</span></a><a href="yard-sales.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10l9-6 9 6v10H3z"/><path d="M8 20v-6h8v6M7 10h10"/></svg><span>Yard Sales</span></a><a href="restaurants.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v8M5 3v4a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 2-2 6 0 8v10"/></svg><span>Eat &amp; Shop</span></a><a href="farm.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V11M12 11c0-4 3-7 7-7 0 4-3 7-7 7zM12 14c0-3-2.5-5.5-6-5.5 0 3.5 2.5 5.5 6 5.5zM5 21h14"/></svg><span>Farm stands</span></a><a href="kids.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="6" r="2.5"/><circle cx="16.5" cy="8" r="2"/><path d="M8 9v6M5 12h6M8 15l-2 5M8 15l2 5M16.5 10v5M14.5 12.5h4M16.5 15l-1.5 4M16.5 15l1.5 4"/></svg><span>Community Kids</span></a><a href="businesses.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l2-5h14l2 5M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0zM5 13v8h14v-8M10 21v-5h4v5"/></svg><span>Businesses</span></a><a href="fun.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5a4 4 0 0 0 7 0M9 9.5h.01M15 9.5h.01"/></svg><span>Fun &amp; Contests</span></a><a href="causes.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span>Causes</span></a><a href="safety.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 8v5M12 16h.01"/></svg><span>Safety</span></a><a href="live.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg><span>Live Cams</span></a><a href="live-music.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><span>Live Music</span></a></nav></div></section>
+<section style="padding-block:18px 0"><div class="container"><a class="nowbox" id="nowbox" href="safety.html" data-track="home: right now weather box" aria-live="polite">
+  <div class="nb-alert" id="nb-alert" hidden></div>
+  <div class="nb-main"><span class="nb-ic" id="nb-ic" aria-hidden="true">🌤️</span><div class="nb-txt"><p class="nb-eye">Right now in the Valley</p><p class="nb-now" id="nb-now">Checking the weather…</p><p class="nb-sub" id="nb-sub"></p></div></div>
+  <p class="nb-road" id="nb-road"></p>
+  <p class="nb-snow" id="nb-snow" hidden></p>
+  <span class="nb-more" id="nb-more">Roads, weather &amp; alerts ›</span>
+</a>
+<div class="thisweek" id="thisweek" hidden><p class="nb-eye">This week in the Valley</p><div class="tw-list" id="tw-list"></div></div>
+</div></section>
+<style>
+.nowbox{display:grid;gap:10px;background:var(--card);border:2px solid var(--line);border-left:8px solid var(--blue);border-radius:16px;padding:16px 20px;text-decoration:none;color:var(--ink);box-shadow:0 2px 10px rgba(16,35,61,.06)}
+.nowbox:hover,.nowbox:focus-visible{border-color:var(--blue)}
+.nowbox p{margin:0}
+.nb-alert{background:#B3261E;color:#fff;font-weight:800;font-size:18px;border-radius:10px;padding:8px 12px}
+.nb-main{display:flex;gap:14px;align-items:center}
+.nb-ic{font-size:44px;line-height:1}
+.nb-eye{font-family:var(--display);font-size:13px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.nb-now{font-family:var(--display);font-weight:800;font-size:clamp(24px,4.4vw,32px);line-height:1.15}
+.nb-sub{font-size:18px;color:var(--muted);font-weight:600}
+.nb-road{font-size:19px;font-weight:700}
+.nb-road.warn{color:var(--warn)}.nb-road.bad{color:#B3261E}
+.nb-snow{font-size:18px;font-weight:600;background:var(--soft);border-radius:10px;padding:8px 12px}
+.nb-more{font-weight:700;color:var(--blue);font-size:17px}
+.nowbox.snow{border-left-color:#3E83C4;background:linear-gradient(90deg,#EEF5FC,var(--card))}
+@media(prefers-color-scheme:dark){.nowbox.snow{background:var(--card)}}
+@media(max-width:600px){.nowbox{padding:14px 16px}.nb-ic{font-size:36px}.nb-road,.nb-snow,.nb-sub{font-size:17px}}
+.thisweek{margin-top:10px;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:12px 18px;display:grid;gap:6px}
+.tw-list{display:flex;flex-wrap:wrap;gap:6px 22px}.tw-list a{font-size:18px;font-weight:700;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--line)}.tw-list a:hover{border-color:var(--blue)}
+@media(max-width:600px){.tw-list{display:grid;gap:8px}.tw-list a{font-size:17px}}
+</style>
+<section style="padding-block:18px 0"><div class="container"><style>
+.qgroups{display:grid;gap:18px}
+.qg-h{font-family:var(--display);font-size:14px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.qgroups .qg-tiles{grid-template-columns:repeat(var(--qn,3),minmax(0,1fr))!important}
+.qg-tiles a[hidden]{display:none!important}
+.qg-tiles.n2{--qn:2}.qg-tiles.n3{--qn:3}.qg-tiles.n4{--qn:2}
+.qg-tiles .q-snow{border-color:#3E83C4;background:linear-gradient(#EEF5FC,var(--card))}.qg-tiles .q-snow svg{stroke:#2E6DA4}
+@media(prefers-color-scheme:dark){.qg-tiles .q-snow{background:var(--card)}}
+@media (min-width:760px){.qg-tiles.n4{--qn:4}}
+@media (min-width:1000px){.qgroups{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 28px}}
+</style>
+<nav class="qgroups" aria-label="Quick links"><div class="qg" id="qg-1"><p class="qg-h">What's happening</p><div class="quick qg-tiles n4"><a href="events.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><span>Events</span></a><a href="live-music.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg><span>Live Music</span></a><a href="yard-sales.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 10l9-6 9 6v10H3z"/><path d="M8 20v-6h8v6M7 10h10"/></svg><span>Yard Sales</span></a><a href="meetings.html" data-track="home tile: public meetings"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21h18M5 21V10M19 21V10M9 21v-6h6v6M2 10l10-6 10 6z"/></svg><span>Public Meetings</span></a></div></div><div class="qg" id="qg-2"><p class="qg-h">Eat, shop &amp; local</p><div class="quick qg-tiles n4"><a href="restaurants.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 3v8M5 3v4a2 2 0 0 0 4 0V3M7 11v10M17 3c-2 2-2 6 0 8v10"/></svg><span>Eat &amp; Shop</span></a><a href="farm.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V11M12 11c0-4 3-7 7-7 0 4-3 7-7 7zM12 14c0-3-2.5-5.5-6-5.5 0 3.5 2.5 5.5 6 5.5zM5 21h14"/></svg><span>Farm stands</span></a><a href="businesses.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9l2-5h14l2 5M3 9h18v2a3 3 0 0 1-6 0 3 3 0 0 1-6 0 3 3 0 0 1-6 0zM5 13v8h14v-8M10 21v-5h4v5"/></svg><span>Businesses</span></a><a href="causes.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg><span>Causes</span></a></div></div><div class="qg" id="qg-3"><p class="qg-h">Kids &amp; fun</p><div class="quick qg-tiles n2"><a href="kids.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="6" r="2.5"/><circle cx="16.5" cy="8" r="2"/><path d="M8 9v6M5 12h6M8 15l-2 5M8 15l2 5M16.5 10v5M14.5 12.5h4M16.5 15l-1.5 4M16.5 15l1.5 4"/></svg><span>Community Kids</span></a><a href="fun.html"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M8.5 14.5a4 4 0 0 0 7 0M9 9.5h.01M15 9.5h.01"/></svg><span>Fun &amp; Contests</span></a></div></div><div class="qg" id="qg-4"><p class="qg-h">Weather, roads &amp; safety</p><div class="quick qg-tiles n3"><a href="safety.html" data-track="home tile: weather and roads"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="8" r="3"/><path d="M8 2v1.5M2 8h1.5M3.8 3.8l1 1M12.2 3.8l-1 1"/><path d="M8 20h9a4 4 0 0 0 0-8 5.5 5.5 0 0 0-10.4 1.6A3.2 3.2 0 0 0 8 20z"/></svg><span>Weather &amp; Roads</span></a><a href="snow.html" id="q-snow" class="q-snow" data-track="home tile: snow mode" hidden><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2v20M3.3 7l17.4 10M3.3 17L20.7 7"/><path d="M9.5 3.5L12 6l2.5-2.5M9.5 20.5L12 18l2.5 2.5M3.6 10.4l3.4.9-.9-3.4M20.4 13.6l-3.4-.9.9 3.4M3.6 13.6l3.4-.9-.9 3.4M20.4 10.4l-3.4.9.9-3.4"/></svg><span>Snow Mode</span></a><a href="live.html"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/></svg><span>Live Cams</span></a><a href="safety.html"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z"/><path d="M12 8v5M12 16h.01"/></svg><span>Safety</span></a></div></div></nav></div></section>
 <section style="padding-bottom:0"><div class="container"><div data-featuredevents></div></div></section>
 <section><div class="container">
   <div class="section-head"><div><p class="eyebrow">Ogden Valley · Weber County</p><h2>Events calendar</h2></div><a class="btn blue" href="events.html">All events &amp; subscribe</a></div>
@@ -128,6 +169,79 @@ const L=await S.loadJSON("local.json");S.renderMeetings(document.getElementById(
  b.replaceChildren(...(its.length?its.map(i=>S.el("div",{style:"margin-bottom:6px"},[S.el("b",{text:tf(i.t)+" · "+i.src+": "}),document.createTextNode(i.text.length>140?i.text.slice(0,137)+"…":i.text)])):[S.el("p",{text:"Nothing new on the roads or in the skies in the last 24 hours."})]));}
 document.getElementById("sky-line").textContent=(m.dark?"A good dark night for stars if it's clear. ":"Bright moon tonight, so only the brightest stars show. ")+(kp!=null&&kp>=6?at.text:"No northern lights expected.");
 })();
+</script>
+<script>
+/* "This week in the Valley": events left this week, the next public meeting, and road work if the weather box isn't already showing it */
+(async function(){const S=window.OVE_SITE,box=document.getElementById("thisweek");if(!box)return;const PV=window.OVE_THISWEEK_PREVIEW||null;
+const el=S.el,F=o=>new Intl.DateTimeFormat("en-US",Object.assign({timeZone:S.TZ},o)),now=Date.now(),items=[];
+const local=new Date(new Date().toLocaleString("en-US",{timeZone:S.TZ})),daysLeft=7-((local.getDay()+6)%7),endWeek=now+daysLeft*864e5-((local.getHours()*60+local.getMinutes())*6e4);
+try{const E=PV&&PV.events?PV.events:await S.loadEvents();const ev=E?S.allEvents(E,["ov"]).filter(e=>e.e>now&&e.s<endWeek):[];
+  if(ev.length)items.push(el("a",{href:"events.html","data-track":"this week: events",text:"📅 "+ev.length+" Valley event"+(ev.length===1?"":"s")+" "+(daysLeft<=1?"today":"the rest of this week")}))}catch(e){}
+try{const M=PV&&PV.meetings?PV.meetings:await S.loadJSON("meetings.json?t="+now);const m=((M&&M.meetings)||[]).filter(x=>x.start&&x.start>now-36e5&&!x.canceled).sort((a,b)=>a.start-b.start)[0];
+  if(m)items.push(el("a",{href:"meetings.html","data-track":"this week: next meeting",text:"🏛️ Next public meeting: "+(m.short||m.body)+", "+F({weekday:"short",month:"short",day:"numeric",hour:"numeric",minute:"2-digit"}).format(new Date(m.start))}))}catch(e){}
+try{await new Promise(r=>{let n=0;const t=setInterval(()=>{const x=document.getElementById("nb-road");if((x&&x.textContent)||++n>40){clearInterval(t);r()}},200)});const R=PV&&PV.roads?PV.roads:await S.loadJSON("roads.json?t="+now);const shown=(document.getElementById("nb-road")||{}).textContent||"";
+  const w=((R&&R.events)||[]).filter(e=>/roadwork|construction/i.test(e.type)&&/SR[- ]?(39|158|167|226)|Ogden Canyon|Trappers|Huntsville|Eden|Liberty/i.test((e.road||"")+" "+(e.loc||"")));
+  if(w.length&&!/road work|one lane/i.test(shown))items.push(el("a",{href:"safety.html#roads","data-track":"this week: road work",text:"🚧 Road work: "+w.length+" project"+(w.length===1?"":"s")+" on Valley roads"}))}catch(e){}
+if(items.length){document.getElementById("tw-list").replaceChildren(...items);box.hidden=false}})();
+/* "Right now" weather box at the top of the home page: current temperature (live from the National Weather Service),
+   today's high and low, the most important road news on Valley roads (roads.json) and, in ski season, new snow at the
+   three resorts (resorts.json). Falls back to the hourly copies if the Weather Service doesn't answer. */
+(async function(){const S=window.OVE_SITE,box=document.getElementById("nowbox");if(!box)return;const PV=window.OVE_NOWBOX_PREVIEW||null;
+const F=o=>new Intl.DateTimeFormat("en-US",Object.assign({timeZone:S.TZ},o));
+const fresh=n=>PV&&PV[n]?Promise.resolve(PV[n]):S.loadJSON(n+"?t="+Date.now());
+const VALLEY=/eden|huntsville|liberty|pineview|snowbasin|powder|nordic|ogden valley|monte cristo|trappers|ben lomond|north ogden divide/i;
+async function current(){
+  if(PV&&PV.now)return PV.now;
+  const pt=await S.nwsJSON("https://api.weather.gov/points/41.3013,-111.8219",6000);if(!pt)return null;
+  try{const st=await S.nwsJSON(pt.properties.observationStations,6000);const list=((st&&st.features)||[]).slice(0,12).filter(f=>VALLEY.test(f.properties.name||""));
+    for(const f of list.slice(0,3)){const o=await S.nwsJSON("https://api.weather.gov/stations/"+f.properties.stationIdentifier+"/observations/latest",6000);const p=o&&o.properties;
+      if(p&&p.temperature&&p.temperature.value!=null&&Date.now()-Date.parse(p.timestamp)<90*6e4)return{temp:Math.round(p.temperature.value*9/5+32),text:p.textDescription||"",where:f.properties.name.replace(/,?\s*UT$/,"").trim(),at:Date.parse(p.timestamp)}}}catch(e){}
+  const h=await S.nwsJSON(pt.properties.forecastHourly,6000);const c=h&&h.properties&&h.properties.periods&&h.properties.periods[0];
+  return c?{temp:c.temperature,text:c.shortForecast,where:"",at:Date.parse(c.startTime),forecast:true}:null}
+const NAME=[[/SR[- ]?39/i,/ogden canyon|milepost (?:[0-9]|1[0-4])\b/i,"Ogden Canyon"],[/SR[- ]?39/i,null,"SR-39 (Huntsville to Monte Cristo)"],[/SR[- ]?167|trappers/i,null,"Trappers Loop"],[/SR[- ]?158|powder/i,null,"Powder Mountain road"],[/SR[- ]?226|snowbasin/i,null,"Snowbasin road"],[/north ogden|divide/i,null,"North Ogden Divide"],[/I-?84/i,null,"I-84 Weber Canyon"]];
+const nameOf=e=>{const t=(e.road||"")+" "+(e.loc||"");for(const[a,b,n]of NAME)if(a.test(t)&&(!b||b.test(t+" "+(e.desc||""))))return n;return null};
+function roadLine(R){if(!R)return null;
+  const ev=(R.events||[]).map(e=>({e,n:nameOf(e)})).filter(x=>x.n);
+  const what=e=>{const t=(e.desc||"")+" "+(e.loc||"")+" "+(e.sub||"");return e.full?"closed":/one lane|single lane|lane clos|alternating|flagger/i.test(t)?"one lane":/chain|traction/i.test(t)?"chain rules":/crash|accident|incident/i.test(e.type+" "+t)?"crash reported":/roadwork|construction/i.test(e.type)?"road work":(e.type||"alert")};
+  const rank=x=>x.e.full?0:/crash|accident|incident/i.test(x.e.type)?1:/chain|traction/i.test(x.e.desc||"")?2:/one lane|single lane|lane clos/i.test((x.e.desc||"")+(x.e.loc||""))?3:4;
+  ev.sort((a,b)=>rank(a)-rank(b)||(a.n==="I-84 Weber Canyon")-(b.n==="I-84 Weber Canyon"));
+  const restr=(R.conditions||[]).filter(c=>/^SR-(39|158|167|226)/i.test(c.road)&&c.restriction&&!/^none$/i.test(c.restriction));
+  const icy=(R.stations||[]).filter(s=>s.ice&&VALLEY.test(s.name+" SR-39 SR-158 SR-167"));
+  if(ev.length&&rank(ev[0])<=1)return{t:"🚧 "+ev[0].n+": "+what(ev[0].e)+(ev.length>1?" · "+(ev.length-1)+" more":""),k:"bad"};
+  if(restr.length)return{t:"⛓️ "+restr[0].road.replace(/ (Ogden to|Jct\.?|to|I-84 to).*$/i,"").replace(/^SR-167.*/i,"Trappers Loop")+": "+restr[0].restriction,k:"warn"};
+  if(ev.length)return{t:"🚧 "+ev[0].n+": "+what(ev[0].e)+(ev.length>1?" · "+(ev.length-1)+" more":""),k:"warn"};
+  if(icy.length)return{t:"🧊 Icy pavement reported: "+icy[0].name,k:"warn"};
+  return{t:"🚗 Valley roads: no closures reported",k:""}}
+function snowLine(RS){const L=(RS&&RS.resorts)||[];if(!L.length)return null;const d=new Date(new Date().toLocaleString("en-US",{timeZone:S.TZ})),m=d.getMonth()+1,dd=d.getDate();
+  const season=(m===11&&dd>=15)||m===12||m<=3||(m===4&&dd<=30);if(!season&&!L.some(r=>r.open))return null;
+  const v=r=>r.new24!=null?r.new24+"″":r.new48!=null?r.new48+"″ (48 hr)":"–";
+  return"❄️ New snow (24 hr): "+L.map(r=>r.name+" "+v(r)).join(" · ")}
+async function draw(){
+  const snow=S.snowState&&S.snowState();const[now,FC,R,RS,SF]=await Promise.all([current(),fresh("forecast.json"),fresh("roads.json"),fresh("resorts.json"),fresh("safety.json")]);
+  /* no Weather Service station sits in the Valley, so use UDOT's road sensor air temperature at Huntsville or Pineview Dam when it's fresh */
+  if(now&&now.forecast&&R){const u=(R.stations||[]).filter(x=>/Huntsville|Pineview/i.test(x.name)&&x.air!=null&&x.updated&&Date.now()-x.updated<90*6e4)[0];if(u){now.temp=Math.round(u.air);now.where="UDOT sensor, "+u.name.replace(/^SR-39 @ MP [\d.]+ /,"");now.at=u.updated}}
+  let alerts=PV&&PV.alerts?PV.alerts:null;
+  if(!alerts){const live=await S.nwsJSON("https://api.weather.gov/alerts/active?point=41.3013,-111.8219",6000);alerts=live&&live.features?live.features.map(f=>f.properties):((SF&&SF.weather)||[])}
+  const on=alerts.some(S.isWinter);box.href=on?"snow.html":"safety.html";box.classList.toggle("snow",on);document.getElementById("nb-more").textContent=on?"Snow mode: roads, alerts & snow totals ›":"Roads, weather & alerts ›";
+  const al=document.getElementById("nb-alert");if(alerts.length){const a=alerts[0],end=Date.parse(a.ends||a.expires);al.textContent="⚠️ "+[...new Set(alerts.map(x=>x.event))].join(" · ")+(end?" until "+F({weekday:"short",hour:"numeric",minute:"2-digit"}).format(new Date(end)):"");al.hidden=false}else al.hidden=true;
+  const d=FC&&FC.days&&FC.days[0];
+  if(now){document.getElementById("nb-ic").textContent=S.wxIcon(now.text);document.getElementById("nb-now").textContent=now.temp+"° "+(now.text||"")}
+  else if(d){document.getElementById("nb-ic").textContent=S.wxIcon(d.both||d.short);document.getElementById("nb-now").textContent="Today: "+(d.short||"")}
+  else document.getElementById("nb-now").textContent="Weather is loading slowly. Tap for the full forecast.";
+  const sub=[];if(d&&(d.high!=null||d.low!=null))sub.push("Today's high "+(d.high!=null?d.high+"°":"–")+", low "+(d.low!=null?d.low+"°":"–"));
+  if(now&&now.where)sub.push("at "+now.where+(now.at?", "+F({hour:"numeric",minute:"2-digit"}).format(new Date(now.at)):""));else if(now&&now.forecast)sub.push("Weather Service forecast for Eden");
+  document.getElementById("nb-sub").textContent=sub.join(" · ");
+  const rl=roadLine(R),re=document.getElementById("nb-road");if(rl){re.textContent=rl.t;re.className="nb-road "+rl.k}else re.textContent="";
+  const sl=snowLine(RS),se=document.getElementById("nb-snow");if(sl){se.textContent=sl;se.hidden=false}else se.hidden=true;}
+await draw();setInterval(()=>{if(!document.hidden)draw()},(document.documentElement.dataset.snow?5:15)*6e4);
+})();
+</script>
+<script>
+/* home tiles: show the Snow Mode tile only while a winter alert is active */
+(function(){const t=document.getElementById("q-snow"),g=document.querySelector("#qg-4 .qg-tiles");if(!t||!g)return;
+const set=on=>{t.hidden=!on;g.classList.toggle("n4",!!on);g.classList.toggle("n3",!on)};
+const S=window.OVE_SITE,st=S&&S.snowState&&S.snowState();set(!!(st&&st.alerts&&st.alerts.length)||document.documentElement.dataset.snow==="on");
+document.addEventListener("ove-snow",e=>set(!!(e.detail&&e.detail.alerts&&e.detail.alerts.length)));})();
 </script>
 </body>
 </html>

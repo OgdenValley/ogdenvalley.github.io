@@ -7,6 +7,7 @@ import { execSync } from "node:child_process";
 import crypto from "node:crypto";
 import { weatherWatch } from "./weather-watch.mjs";
 import { resorts as resortReports, isWinterAlert } from "./resorts.mjs";
+import { meetings as valleyMeetings } from "./meetings.mjs";
 
 function deEnt(s){ return String(s||"").replace(/&#(\d+);/g,(m,n)=>{try{return String.fromCodePoint(+n)}catch(e){return " "}}).replace(/&#x([0-9a-f]+);/gi,(m,n)=>{try{return String.fromCodePoint(parseInt(n,16))}catch(e){return " "}}).replace(/&nbsp;/gi," ").replace(/&quot;/gi,'"').replace(/&(apos|rsquo|lsquo);/gi,"'").replace(/&(ndash|mdash);/gi,"\u2013").replace(/&hellip;/gi,"\u2026").replace(/&lt;/gi,"<").replace(/&gt;/gi,">").replace(/&amp;/gi,"&").replace(/\u00a0/g," "); }
 // one-line text (titles, places): <br> becomes a comma, codes like &amp; and &#160; become real characters
@@ -1114,7 +1115,7 @@ async function forecast(){
    pagedates.json: when each page was first posted and last changed (shown at the bottom of each page).
    sitemap.xml: the list of pages for Google, with the date each one last changed. */
 const NOINDEX = new Set(["404.html", "poster.html", "know-how-feature.html", "search.html", "weather-watch.html", "newsletter-draft.html"]);
-const LIVE_PAGES = new Set(["index.html", "events.html", "weekend.html", "safety.html", "snow.html", "kids.html", "yard-sales.html", "live-music.html", "live.html", "night-sky.html"]);
+const LIVE_PAGES = new Set(["index.html", "events.html", "weekend.html", "safety.html", "snow.html", "meetings.html", "kids.html", "yard-sales.html", "live-music.html", "live.html", "night-sky.html"]);
 function pageDates(){
   const today = new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date());
   const old = oldJSON("pagedates.json") || {}; const pages = old.pages || {};
@@ -1137,6 +1138,7 @@ function pageDates(){
    Runs only while the National Weather Service has a winter alert for the Valley. Then it refreshes
    just the fast-changing pieces (alerts, forecast, roads, resort reports, 24-hour timeline) and stops.
    With no winter alert it exits right away and changes nothing. */
+async function meetings(){ try { await valleyMeetings({getText, writeIfChanged, oldJSON}); } catch (e) { console.log("meetings failed:", e.message); } }
 async function resorts(){ try { await resortReports({getText, writeIfChanged, oldJSON}); } catch (e) { console.log("resorts failed:", e.message); } }
 async function winterNow(){
   try {
@@ -1158,6 +1160,7 @@ await sky();
 await safety();
 await forecast();
 await local();
+await meetings();
 await roads();
 await air();
 await resorts();

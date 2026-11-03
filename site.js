@@ -51,15 +51,33 @@ async function loadEvents(){
   try { const r = await fetch("events.json", {cache: "no-store"}); if (!r.ok) throw 0; const d = await r.json(); eventsLD(d); return d; }
   catch (e) { return null; }
 }
-/* Labels each upcoming event for Google (event name, date, place) so it can show in Google's event listings. */
+/* Labels each upcoming event for Google (Event rich results). Only real data from the calendars is used:
+   name, start/end with the Utah time offset, a real place (or an online link), description, the event's own link,
+   and our share image as the picture. An event with no real place or no start time is left out of the labels.
+   Offers (price 0) only when the listing itself says it's free; no organizer or performer is added because the calendars don't say. */
+function isoMT(t){ const d = new Date(t); const p = {}; new Intl.DateTimeFormat("en-US", {timeZone: TZ, hourCycle: "h23", year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", second: "2-digit"}).formatToParts(d).forEach(x => p[x.type] = x.value);
+  const local = Date.UTC(+p.year, +p.month - 1, +p.day, +p.hour % 24, +p.minute, +p.second); const off = Math.round((local - d.getTime()) / 6e4), sg = off < 0 ? "-" : "+", a = Math.abs(off);
+  return p.year + "-" + p.month + "-" + p.day + "T" + String(+p.hour % 24).padStart(2, "0") + ":" + p.minute + ":" + p.second + sg + String(Math.floor(a / 60)).padStart(2, "0") + ":" + String(a % 60).padStart(2, "0"); }
+function eventLD(e){
+  if (!e || !e.t || !e.s) return null;
+  const loc = String(e.loc || "").trim(), online = /\b(online|virtual|zoom|teams|webinar|livestream|live stream)\b/i.test(loc + " " + (e.t || ""));
+  if (!loc || /^(varies|various|tbd|tba|see (link|description)|multiple locations?)$/i.test(loc)) { if (!(online && e.url)) return null; }
+  const day = t => new Date(t).toLocaleDateString("en-CA", {timeZone: TZ});
+  const o = {"@type": "Event", name: String(e.t).slice(0, 200), startDate: e.allDay ? day(e.s) : isoMT(e.s), eventStatus: "https://schema.org/EventScheduled",
+    image: ["https://ogdenvalleyevent.com/share-card.png"], url: e.url || "https://ogdenvalleyevent.com/events.html"};
+  if (e.e && e.e > e.s) o.endDate = e.allDay ? day(e.e - 1) : isoMT(e.e);
+  if (online && (!loc || /^(online|virtual|zoom|teams)$/i.test(loc)) && e.url) { o.eventAttendanceMode = "https://schema.org/OnlineEventAttendanceMode"; o.location = {"@type": "VirtualLocation", url: e.url}; }
+  else { o.eventAttendanceMode = "https://schema.org/OfflineEventAttendanceMode";
+    const name = loc.split(/[,@]/)[0].trim() || loc;
+    o.location = {"@type": "Place", name, address: {"@type": "PostalAddress", streetAddress: loc, addressRegion: "UT", addressCountry: "US"}}; }
+  const desc = String(e.desc || "").replace(/https?:\/\/\S+/g, "").replace(/\s+/g, " ").trim();
+  o.description = desc.length >= 20 ? desc.slice(0, 300) : (o.name + (o.location.name ? " at " + o.location.name : "") + ", " + (e.allDay ? new Date(e.s).toLocaleDateString("en-US", {timeZone: TZ, weekday: "long", month: "long", day: "numeric"}) : new Date(e.s).toLocaleString("en-US", {timeZone: TZ, weekday: "long", month: "long", day: "numeric", hour: "numeric", minute: "2-digit"})) + ".");
+  if (/\bfree\b/i.test((e.t || "") + " " + (e.desc || "")) && !/free with|free for members|free for kids|free to members/i.test(e.desc || "")) o.offers = {"@type": "Offer", price: "0", priceCurrency: "USD", availability: "https://schema.org/InStock", url: o.url};
+  return o;
+}
 function eventsLD(data){
   try { if (document.getElementById("events-ld")) return;
-    const iso = (t, allDay) => allDay ? new Date(t).toLocaleDateString("en-CA", {timeZone: TZ}) : new Date(t).toISOString();
-    const list = allEvents(data).slice(0, 60).map(e => { const o = {"@type": "Event", name: e.t, startDate: iso(e.s, e.allDay), endDate: iso(e.allDay ? e.e - 1 : e.e, e.allDay),
-        eventStatus: "https://schema.org/EventScheduled", eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
-        location: {"@type": "Place", name: (e.loc || "Ogden Valley").split(/[,@]/)[0].trim() || "Ogden Valley", address: e.loc || ((C.calendars && C.calendars[e.cal] && C.calendars[e.cal].name) || "Ogden Valley") + ", Utah"},
-        organizer: {"@type": "Organization", name: e.src || "Ogden Valley Info & Events", url: "https://ogdenvalleyevent.com/"} };
-      if (e.desc) o.description = e.desc.slice(0, 300); if (e.url) o.url = e.url; return o; });
+    const list = allEvents(data).slice(0, 60).map(eventLD).filter(Boolean);
     if (!list.length) return;
     const sc = document.createElement("script"); sc.type = "application/ld+json"; sc.id = "events-ld";
     sc.textContent = JSON.stringify({"@context": "https://schema.org", "@graph": list}); document.head.appendChild(sc);
@@ -175,6 +193,52 @@ function spotFilter(bar, items, kind, onChange){
 /* "New" = added in the last 30 days (listings carry "added": "YYYY-MM-DD") */
 const isNew = p => { if (!p.added) return false; const [y,m,d] = p.added.split("-").map(Number); return (Date.now() - new Date(y, m - 1, d).getTime()) < 30 * 864e5; };
 const SORT = {};
+/* ---------- "Open now": read a listing's hours only when they're written clearly ----------
+   e.g. "Mon-Thu 11:30 AM-8 PM, Fri-Sat 11:30 AM-9 PM" or "9am-5pm Monday-Friday". Anything seasonal, by appointment,
+   "call ahead", or without a.m./p.m. gets no tag at all, so the tag is only shown when we're sure. Utah time. */
+const DAYS = ["sun","mon","tue","wed","thu","fri","sat"];
+const dayIdx = w => { const k = String(w).toLowerCase().slice(0, 3); const i = DAYS.indexOf(k === "thr" ? "thu" : k === "tus" ? "tue" : k); return i; };
+function parseClock(s, mer){ s = String(s).trim().toLowerCase();
+  if (s === "noon") return 12 * 60; if (s === "midnight") return 24 * 60;
+  const m = s.match(/^(\d{1,2})(?::(\d{2}))?\s*(am|pm)?$/); if (!m) return null; const h = +m[1], mi = +(m[2] || 0); if (h > 12 || mi > 59) return null;
+  const ap = m[3] || mer; if (!ap) return null; return ((h % 12) + (ap === "pm" ? 12 : 0)) * 60 + mi; }
+function parseHours(str){
+  let s = String(str || "").toLowerCase();
+  if (!s || /season|appointment|appt|varies|vary|call|by reservation|weather permitting|tbd|flexible|24\/7|open year round|n\/a/.test(s)) return null;
+  s = s.replace(/closed[^,;]*holidays?\.?/g, "").replace(/a\.m\./g, "am").replace(/p\.m\./g, "pm").replace(/\b(\d{1,2}(?::\d{2})?)\s+(am|pm)\b/g, "$1$2")
+       .replace(/\s*(–|—|to|through|thru)\s*/g, "-").replace(/\s*-\s*/g, "-").replace(/\s+/g, " ").trim();
+  const DAY = "(sun|mon|tue|tues|wed|thu|thur|thurs|fri|sat)[a-z]*\\.?";
+  s = s.replace(/\b(daily|every ?day|7 days( a week)?)\b/g, "sun-sat");
+  const raw = s.split(/[;,]|\band\b/).map(x => x.trim()).filter(Boolean), segs = [];
+  const onlyDays = new RegExp("^" + DAY + "(-" + DAY + ")?$");
+  for (let i = 0; i < raw.length; i++) { if (onlyDays.test(raw[i]) && raw[i + 1] && /^\S*\d/.test(raw[i + 1]) && !new RegExp(DAY).test(raw[i + 1])) { segs.push(raw[i] + " " + raw[i + 1]); i++; } else segs.push(raw[i]); }
+  const out = {}; let any = false;
+  for (const seg of segs) {
+    if (/^closed\b/.test(seg) || new RegExp("^" + DAY + "(-" + DAY + ")?:? closed$").test(seg)) { continue; }
+    const m = seg.match(new RegExp("^(?:(" + DAY + "(?:-" + DAY + ")?(?:/" + DAY + ")*)\\s*:?\\s*)?((?:noon|midnight|\\d{1,2}(?::\\d{2})?(?:am|pm)?))-((?:noon|midnight|\\d{1,2}(?::\\d{2})?(?:am|pm)?))(?:\\s+(" + DAY + "(?:-" + DAY + ")?))?$"));
+    if (!m) return null;
+    const dayTxt = m[1] || m[7]; if (!dayTxt) return null;
+    const endMer = (m[6].match(/(am|pm)$/) || [])[1], startMer = (m[5].match(/(am|pm)$/) || [])[1];
+    let a = parseClock(m[5], startMer || endMer), b = parseClock(m[6], endMer);
+    if (a == null || b == null) return null;
+    if (!startMer && endMer && a > b && a - 12 * 60 < b) a -= 12 * 60; // "4-8pm"
+    if (!startMer && endMer === "pm" && a >= 12 * 60 && b > a) {}     // already fine
+    if (b <= a) b += 24 * 60;                                          // past midnight
+    if (b - a > 20 * 60) return null;
+    const days = [];
+    for (const part of dayTxt.split("/")) { const r = part.split("-"); const d1 = dayIdx(r[0]), d2 = r[1] ? dayIdx(r[1]) : d1; if (d1 < 0 || d2 < 0) return null; for (let d = d1, k = 0; k < 7; d = (d + 1) % 7, k++) { days.push(d); if (d === d2) break; } }
+    days.forEach(d => (out[d] = out[d] || []).push([a, b])); any = true;
+  }
+  return any ? out : null;
+}
+function openNow(p, at){
+  if (!p || !p.hours || p.season || /closed|permanently/i.test(p.status || "")) return null;
+  const H = parseHours(p.hours); if (!H) return null;
+  const t = new Date(new Date(at || Date.now()).toLocaleString("en-US", {timeZone: TZ})), d = t.getDay(), m = t.getHours() * 60 + t.getMinutes();
+  const inSpan = (day, min) => (H[day] || []).some(([a, b]) => min >= a && min < b);
+  return inSpan(d, m) || inSpan((d + 6) % 7, m + 24 * 60);
+}
+(function(){ const st = document.createElement("style"); st.textContent = ".open-tag{display:inline-block;font-weight:800;font-size:14px;padding:3px 10px;border-radius:999px;margin-left:8px;vertical-align:middle;white-space:nowrap}.open-tag.yes{background:var(--good-bg);color:var(--good)}.open-tag.no{background:var(--soft);color:var(--muted)}"; document.head.appendChild(st); })();
 function listing(box, items, kind, R){
   box.replaceChildren();
   if (!items.length) { box.append(el("div", {class: "empty"}, [ el("p", {text: kind === "artists" ? "Artist listings are being gathered. Are you an Ogden Valley or Weber County artist? Ask to be listed." : "Listings are being gathered and checked. Own or love a place in the Valley? Send it in."}),
@@ -194,7 +258,7 @@ function listing(box, items, kind, R){
   function card(p){ return el("article", {class: "card", id: slug(p.name), "data-town": p.town || p.area || ""}, [
     photoStrip(p),
     (p.sponsor || isNew(p)) ? el("div", {class: "badges"}, [p.sponsor ? el("span", {class: "sponsor-badge", text: "Sponsor"}) : null, isNew(p) ? el("span", {class: "new-badge", text: "New"}) : null]) : null,
-    el("h3", {text: p.name}),
+    (on => el("h3", {}, [document.createTextNode(p.name), on == null ? null : el("span", {class: "open-tag " + (on ? "yes" : "no"), text: on ? "Open now" : "Closed now"})]))(openNow(p)),
     spotBadge(p, kind),
     el("div", {class: "meta", text: [p.type || p.medium, p.town || p.area].filter(Boolean).join(" · ")}),
     p.blurb ? el("p", {text: p.blurb}) : null,
@@ -704,5 +768,5 @@ function renderResorts(box, R, compact){
     r.status && r.status !== "ok" ? el("p", {class: "rs-warn", text: "Couldn't update just now. Showing the last numbers we had."}) : null,
     el("p", {class: "meta", style: "font-size:14px"}, [document.createTextNode(when(r) + " · From " + r.source + ". "), el("a", {href: r.link, target: "_blank", rel: "noopener", "data-track": "resort report: " + r.name, text: "Full report"})])]))));
 }
-window.OVE_SITE = {findLocal, findBox, getArea, setArea, areaCals, areaSwitch, valleyFirst, evTags, eventFilters, monthGrid, C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip, snowCheck, isWinter, renderResorts, nwsJSON, snowState: () => snowState};
+window.OVE_SITE = {findLocal, findBox, getArea, setArea, areaCals, areaSwitch, valleyFirst, evTags, eventFilters, monthGrid, C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip, snowCheck, isWinter, renderResorts, nwsJSON, snowState: () => snowState, parseHours, openNow};
 })();

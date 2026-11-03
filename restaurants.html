@@ -76,8 +76,8 @@ if(tags.length){tb.hidden=false;const lab=tb.firstElementChild;tb.replaceChildre
 const RESORTS=["Snowbasin","Powder Mountain","Nordic Valley"],place=p=>p.town||p.area||"";const isW=p=>p.region==="weber";let area=S.getArea();
 const inTown=(p,t)=>t==="All"||(t.startsWith("@h:")?p.hood===t.slice(3):t==="@resort"?RESORTS.includes(place(p)):t==="@town"?!RESORTS.includes(place(p))&&!isW(p):place(p)===t);const inArea=p=>area==="both"||(area==="weber")===isW(p);
 const FOODS=["Coffee & breakfast","Brunch","Pizza","Burgers & casual","Mexican","Chinese","Japanese & sushi","Asian bowls","Thai","Vietnamese & pho","Korean","Indian","Greek & Mediterranean","Italian","German","Hawaiian","Filipino","BBQ","Steak","Seafood","Vegetarian & vegan","Bakery & sweets","Bar & grill","Breweries & tasting rooms","Sit-down dinner","Sweets & ice cream","Drinks & apres","Resort food court"].filter(f=>all.some(p=>(p.food||[]).includes(f)));
-const GOODS=[["@nolift","No lift ride needed"],["@offseason","Open outside ski season"]].concat([...new Set(all.flatMap(p=>p.good||[]))].sort().map(g=>[g,g]));
-const goodOk=(p,g)=>!g||(g==="@nolift"?!p.lift:g==="@offseason"?p.season!=="Winter (ski season)":(p.good||[]).includes(g));
+const GOODS=[["@opennow","Open now"],["@nolift","No lift ride needed"],["@offseason","Open outside ski season"]].concat([...new Set(all.flatMap(p=>p.good||[]))].sort().map(g=>[g,g]));
+const goodOk=(p,g)=>!g||(g==="@opennow"?S.openNow(p)===true:g==="@nolift"?!p.lift:g==="@offseason"?p.season!=="Winter (ski season)":(p.good||[]).includes(g));
 let food="",good="";
 function chipRow(id,items,get,set){const bar=document.getElementById(id);const lab=bar.firstElementChild;bar.replaceChildren(lab,...[["","All"]].concat(items).map(([v,l])=>{const b=el("button",{class:"chip",type:"button","data-v":v,"aria-pressed":String(get()===v),text:l});b.onclick=()=>{set(v);[...bar.querySelectorAll("button")].forEach(x=>x.setAttribute("aria-pressed",String(x===b)));draw()};return b}));return bar}
 const fb=chipRow("foodbar",FOODS.map(f=>[f,f]),()=>food,v=>food=v),gb=chipRow("goodbar",GOODS,()=>good,v=>good=v);
