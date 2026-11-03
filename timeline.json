@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T17:04:44.384Z",
+ "updated": "2026-11-03T17:58:26.391Z",
  "items": [
   {
    "t": 1793721586910,
@@ -31,7 +31,6 @@
   "al": {},
   "cond": {
    "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
-   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
    "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
    "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
    "SR-158 to Powder Mountain#334": "Dry · none",
@@ -39,6 +38,7 @@
    "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
    "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none",
    "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none",
+   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
    "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
    "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none"
   },
