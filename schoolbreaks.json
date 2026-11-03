@@ -1,0 +1,26 @@
+{
+ "schoolYear": "2026-27",
+ "source": "Utah State Board of Education, 2026-27 district calendars",
+ "url": "https://schools.utah.gov/schoolcalendars/26-27DistrictCalendar.pdf",
+ "note": "Next school year: replace the dates below with the new year's calendar from the same page. Nothing else needs changing.",
+ "districts": [
+  {"id": "weber", "name": "Weber School District", "short": "Weber SD", "firstDay": "2026-08-24", "lastDay": "2027-05-28",
+   "breaks": [
+    {"name": "No school", "start": "2026-08-20", "end": "2026-08-21"},
+    {"name": "Fall recess", "start": "2026-10-15", "end": "2026-10-16"},
+    {"name": "No school", "start": "2026-10-23", "end": "2026-10-23"},
+    {"name": "No school", "start": "2026-11-25", "end": "2026-11-25"},
+    {"name": "Thanksgiving break", "start": "2026-11-26", "end": "2026-11-27"},
+    {"name": "Winter break", "start": "2026-12-21", "end": "2027-01-01"},
+    {"name": "No school", "start": "2027-01-08", "end": "2027-01-08"},
+    {"name": "No school", "start": "2027-02-12", "end": "2027-02-12"},
+    {"name": "No school", "start": "2027-03-26", "end": "2027-03-26"},
+    {"name": "Spring break", "start": "2027-03-29", "end": "2027-04-02"}]},
+  {"id": "ogden", "name": "Ogden City School District", "short": "Ogden SD", "firstDay": "2026-08-21", "lastDay": "2027-05-28",
+   "breaks": [
+    {"name": "Fall recess", "start": "2026-10-15", "end": "2026-10-16"},
+    {"name": "Thanksgiving break", "start": "2026-11-25", "end": "2026-11-27"},
+    {"name": "Winter break", "start": "2026-12-21", "end": "2027-01-01"},
+    {"name": "Spring break", "start": "2027-03-29", "end": "2027-04-02"}]}
+ ]
+}

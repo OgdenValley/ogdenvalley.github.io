@@ -72,7 +72,7 @@
 @media(prefers-color-scheme:dark){.nowbox.snow{background:var(--card)}}
 @media(max-width:600px){.nowbox{padding:14px 16px}.nb-ic{font-size:36px}.nb-road,.nb-snow,.nb-sub{font-size:17px}}
 .thisweek{margin-top:10px;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:12px 18px;display:grid;gap:6px}
-.tw-list{display:flex;flex-wrap:wrap;gap:6px 22px}.tw-list a{font-size:18px;font-weight:700;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--line)}.tw-list a:hover{border-color:var(--blue)}
+.tw-list{display:flex;flex-wrap:wrap;gap:6px 22px}.tw-busy{font-size:17px;font-weight:700;color:var(--warn)}.tw-list a{font-size:18px;font-weight:700;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--line)}.tw-list a:hover{border-color:var(--blue)}
 @media(max-width:600px){.tw-list{display:grid;gap:8px}.tw-list a{font-size:17px}}
 </style>
 <section style="padding-block:18px 0"><div class="container"><style>
@@ -173,7 +173,7 @@ document.getElementById("sky-line").textContent=(m.dark?"A good dark night for s
 <script>
 /* "This week in the Valley": events left this week, the next public meeting, and road work if the weather box isn't already showing it */
 (async function(){const S=window.OVE_SITE,box=document.getElementById("thisweek");if(!box)return;const PV=window.OVE_THISWEEK_PREVIEW||null;
-const el=S.el,F=o=>new Intl.DateTimeFormat("en-US",Object.assign({timeZone:S.TZ},o)),now=Date.now(),items=[];
+const el=S.el,F=o=>new Intl.DateTimeFormat("en-US",Object.assign({timeZone:S.TZ},o)),now=Date.now(),items=[];const fmtR=(a,b)=>{const o={month:"short",day:"numeric"},A=new Date(a+"T12:00:00"),B=new Date(b+"T12:00:00");return a===b?A.toLocaleDateString("en-US",o):A.toLocaleDateString("en-US",o)+"–"+B.toLocaleDateString("en-US",o)};
 const local=new Date(new Date().toLocaleString("en-US",{timeZone:S.TZ})),daysLeft=7-((local.getDay()+6)%7),endWeek=now+daysLeft*864e5-((local.getHours()*60+local.getMinutes())*6e4);
 try{const E=PV&&PV.events?PV.events:await S.loadEvents();const ev=E?S.allEvents(E,["ov"]).filter(e=>e.e>now&&e.s<endWeek):[];
   if(ev.length)items.push(el("a",{href:"events.html","data-track":"this week: events",text:"📅 "+ev.length+" Valley event"+(ev.length===1?"":"s")+" "+(daysLeft<=1?"today":"the rest of this week")}))}catch(e){}
@@ -182,6 +182,10 @@ try{const M=PV&&PV.meetings?PV.meetings:await S.loadJSON("meetings.json?t="+now)
 try{await new Promise(r=>{let n=0;const t=setInterval(()=>{const x=document.getElementById("nb-road");if((x&&x.textContent)||++n>40){clearInterval(t);r()}},200)});const R=PV&&PV.roads?PV.roads:await S.loadJSON("roads.json?t="+now);const shown=(document.getElementById("nb-road")||{}).textContent||"";
   const w=((R&&R.events)||[]).filter(e=>/roadwork|construction/i.test(e.type)&&/SR[- ]?(39|158|167|226)|Ogden Canyon|Trappers|Huntsville|Eden|Liberty/i.test((e.road||"")+" "+(e.loc||"")));
   if(w.length&&!/road work|one lane/i.test(shown))items.push(el("a",{href:"safety.html#roads","data-track":"this week: road work",text:"🚧 Road work: "+w.length+" project"+(w.length===1?"":"s")+" on Valley roads"}))}catch(e){}
+try{await new Promise(r=>S.onSchool?S.onSchool(r):r());const seen=new Set();for(let i=0;i<daysLeft;i++){const k=new Date(now+i*864e5).toLocaleDateString("en-CA",{timeZone:S.TZ}),I=S.dayInfo(k),lab=F({weekday:"short",month:"short",day:"numeric"}).format(new Date(k+"T12:00:00"));
+  I.holidays.forEach(h=>{if(seen.has(h))return;seen.add(h);items.push(el("a",{href:"events.html","data-track":"this week: holiday",text:"🎉 "+h+", "+lab+(I.closed.length?" · "+I.closed[0]:"")}))});
+  I.school.filter(x=>!x.first).forEach(x=>{const t=x.short+x.what;if(seen.has(t))return;seen.add(t);items.push(el("a",{href:"events.html","data-track":"this week: no school",text:"🏫 No school ("+x.short+"): "+x.what+", "+fmtR(x.start,x.end)}))});
+  if(I.busy&&!seen.has("busy")){seen.add("busy");items.push(el("span",{class:"tw-busy",text:"🚗 "+I.busy}))}}}catch(e){}
 if(items.length){document.getElementById("tw-list").replaceChildren(...items);box.hidden=false}})();
 /* "Right now" weather box at the top of the home page: current temperature (live from the National Weather Service),
    today's high and low, the most important road news on Valley roads (roads.json) and, in ski season, new snow at the

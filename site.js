@@ -113,7 +113,7 @@ function renderEvents(box, list, opts){
     el("a", {class: "btn blue", "data-form": "event", href: (C.forms && C.forms.event) || "submit.html", text: "Send us an event"})])); return; }
   let cur = null, grp = null;
   list.slice(0, opts.limit || 500).forEach(e => { const k = dayKey(e.s < Date.now() ? Date.now() : e.s);
-    if (k !== cur) { cur = k; grp = el("div", {class: "day-group"}, [el("h3", {text: k === todayKey ? "Today · " + dayName(e.s < Date.now() ? Date.now() : e.s) : dayName(e.s)})]); box.append(grp); }
+    if (k !== cur) { cur = k; const ds = e.s < Date.now() ? Date.now() : e.s; grp = el("div", {class: "day-group"}, [el("h3", {text: k === todayKey ? "Today · " + dayName(ds) : dayName(e.s)}), opts.noDayInfo ? null : dayInfoBox(new Date(ds).toLocaleDateString("en-CA", {timeZone: TZ}))]); box.append(grp); }
     grp.append(eventCard(e)); });
 }
 
@@ -563,6 +563,93 @@ function eventFilters(box, onChange){
   return e => { if (!on.size) return true; const t = evTags(e); for (const k of on) if (!t[k]) return false; return true; };
 }
 /* month grid: one month, each day lists its events; tap a day to see that day's list */
+/* ---------- Holidays, "what's closed" and school breaks (worked out every year, no yearly edits) ----------
+   Utah state holidays + everyday holidays are computed from the calendar rules. The "closed" line is only added for
+   government holidays, where it's always true; when one falls on a weekend the government observes it on Friday (Sat)
+   or Monday (Sun), and the closed line goes on that observed day. School breaks come from schoolbreaks.json
+   (Utah State Board of Education district calendars), so next school year is a data swap. Holidays never count as
+   events and never go into the Google event labels. */
+const HOL_FED = "Government offices, post offices and banks closed";
+function ymdKey(y, m, d){ return y + "-" + String(m + 1).padStart(2, "0") + "-" + String(d).padStart(2, "0"); }
+const nthDow = (y, m, dow, n) => { const f = new Date(y, m, 1).getDay(); return 1 + ((dow - f + 7) % 7) + (n - 1) * 7; };
+const lastDow = (y, m, dow) => { const last = new Date(y, m + 1, 0); return last.getDate() - ((last.getDay() - dow + 7) % 7); };
+function easter(y){ const a = y % 19, b = Math.floor(y / 100), c = y % 100, d = Math.floor(b / 4), e = b % 4, f = Math.floor((b + 8) / 25), g = Math.floor((b - f + 1) / 3),
+  h = (19 * a + b - d - g + 15) % 30, i = Math.floor(c / 4), k = c % 4, l = (32 + 2 * e + 2 * i - h - k) % 7, m = Math.floor((a + 11 * h + 22 * l) / 451);
+  const mo = Math.floor((h + l - 7 * m + 114) / 31), da = ((h + l - 7 * m + 114) % 31) + 1; return [mo - 1, da]; }
+const _holCache = {};
+function holidaysFor(y){
+  if (_holCache[y]) return _holCache[y];
+  const L = [], add = (m, d, name, gov, closed, busy) => L.push({key: ymdKey(y, m, d), y, m, d, name, gov: !!gov, closed: closed || "", busy: busy || ""});
+  // Utah state holidays (gov = government holiday)
+  add(0, 1, "New Year's Day", 1, HOL_FED);
+  add(0, nthDow(y, 0, 1, 3), "Martin Luther King Jr. Day", 1, HOL_FED, "mon");
+  add(1, nthDow(y, 1, 1, 3), "Presidents Day", 1, HOL_FED, "mon");
+  add(4, lastDow(y, 4, 1), "Memorial Day", 1, HOL_FED, "mon");
+  add(5, 19, "Juneteenth", 1, HOL_FED);
+  add(6, 4, "Independence Day", 1, HOL_FED, "day");
+  add(6, 24, "Pioneer Day", 1, "State and local government offices closed (post offices open)", "day");
+  add(8, nthDow(y, 8, 1, 1), "Labor Day", 1, HOL_FED, "mon");
+  add(9, nthDow(y, 9, 1, 2), "Columbus Day", 1, "Government offices, post offices and most banks closed", "mon");
+  add(10, 11, "Veterans Day", 1, "Government offices and post offices closed; most banks closed");
+  const tg = nthDow(y, 10, 4, 4);
+  add(10, tg, "Thanksgiving", 1, HOL_FED, "thanks");
+  add(11, 25, "Christmas Day", 1, HOL_FED);
+  // everyday holidays (no closed line)
+  add(1, 14, "Valentine's Day"); const [em, ed] = easter(y); add(em, ed, "Easter");
+  add(4, nthDow(y, 4, 0, 2), "Mother's Day"); add(5, nthDow(y, 5, 0, 3), "Father's Day");
+  add(9, 31, "Halloween"); add(10, tg + 1, "Black Friday"); add(10, tg + 2, "Small Business Saturday"); add(11, 31, "New Year's Eve");
+  // weekend government holidays: closed line moves to the observed weekday
+  L.filter(h => h.gov && h.closed).forEach(h => { const dow = new Date(y, h.m, h.d).getDay(); if (dow !== 6 && dow !== 0) return;
+    const od = new Date(y, h.m, h.d + (dow === 6 ? -1 : 1)); L.push({key: ymdKey(od.getFullYear(), od.getMonth(), od.getDate()), name: h.name + " (observed)", gov: true, closed: h.closed, observed: true, busy: ""}); h.closedNote = h.closed; h.closed = ""; h.observedOn = ymdKey(od.getFullYear(), od.getMonth(), od.getDate()); });
+  return (_holCache[y] = L);
+}
+let SCHOOL = null; const _schoolWait = [];
+loadJSON("schoolbreaks.json").then(j => { SCHOOL = j || {districts: []}; _schoolWait.splice(0).forEach(f => { try { f(); } catch (e) {} }); });
+function onSchool(f){ if (SCHOOL) f(); else _schoolWait.push(f); }
+const keyOf = d => ymdKey(d.getFullYear(), d.getMonth(), d.getDate());
+function busyKeys(y){ // holiday weekends and holiday weeks (gentle "expect busier" note)
+  const S = new Set(), mark = (yy, m, d) => S.add(keyOf(new Date(yy, m, d)));
+  [y - 1, y, y + 1].forEach(yy => holidaysFor(yy).forEach(h => {
+    if (h.busy === "mon") { mark(yy, h.m, h.d - 2); mark(yy, h.m, h.d - 1); mark(yy, h.m, h.d); }
+    else if (h.busy === "thanks") { for (let i = 0; i < 4; i++) mark(yy, h.m, h.d + i); }
+    else if (h.busy === "day") { const dow = new Date(yy, h.m, h.d).getDay(); mark(yy, h.m, h.d);
+      if (dow === 5) { mark(yy, h.m, h.d + 1); mark(yy, h.m, h.d + 2); } if (dow === 1) { mark(yy, h.m, h.d - 1); mark(yy, h.m, h.d - 2); } if (dow === 6) mark(yy, h.m, h.d + 1); if (dow === 0) mark(yy, h.m, h.d - 1); }
+    if (h.name === "Christmas Day" && !h.observed) for (let i = -1; i <= 7; i++) mark(yy, 11, 25 + i); }));
+  return S; }
+const _busy = {};
+/* everything special about one day: holidays, closed lines, school breaks, busy note */
+function dayInfo(key){
+  const y = +key.slice(0, 4), hol = holidaysFor(y).filter(h => h.key === key).concat(holidaysFor(y + 1).filter(h => h.key === key));
+  const out = {holidays: hol.filter(h => !h.observed).map(h => h.name), closed: [...new Set(hol.map(h => h.closed).filter(Boolean))], school: [], busy: ""};
+  hol.filter(h => h.observedOn).forEach(h => out.notes = (out.notes || []).concat(h.name + " falls on a weekend; government offices observe it on " + new Date(h.observedOn + "T12:00:00").toLocaleDateString("en-US", {weekday: "long", month: "short", day: "numeric"}) + "."));
+  ((SCHOOL && SCHOOL.districts) || []).forEach(dt => { (dt.breaks || []).forEach(b => { if (key >= b.start && key <= b.end) out.school.push({short: dt.short, name: dt.name, what: b.name, start: b.start, end: b.end}); });
+    if (key === dt.firstDay) out.school.push({short: dt.short, name: dt.name, what: "First day of school", first: true}); if (key === dt.lastDay) out.school.push({short: dt.short, name: dt.name, what: "Last day of school", first: true}); });
+  if (!_busy[y]) _busy[y] = busyKeys(y);
+  if (_busy[y].has(key)) out.busy = "Holiday weekend: expect busier roads, trailheads and ski resorts.";
+  else if (out.school.some(s => !s.first)) out.busy = "School break: expect busier roads, trailheads and ski resorts.";
+  out.any = out.holidays.length || out.closed.length || out.school.length || out.busy || (out.notes && out.notes.length);
+  return out; }
+const fmtRange = (a, b) => { const o = {month: "short", day: "numeric"}, A = new Date(a + "T12:00:00"), B = new Date(b + "T12:00:00"); return a === b ? A.toLocaleDateString("en-US", o) : A.toLocaleDateString("en-US", o) + "–" + (A.getMonth() === B.getMonth() ? B.getDate() : B.toLocaleDateString("en-US", o)); };
+function dayInfoBox(key){ const I = dayInfo(key); if (!I.any) return null;
+  const kids = [];
+  I.holidays.forEach(h => kids.push(el("p", {class: "di-hol"}, [el("span", {class: "hol-tag", text: "Holiday"}), document.createTextNode(" " + h)])));
+  I.closed.forEach(c => kids.push(el("p", {class: "di-closed", text: "🏛️ " + c + "."})));
+  (I.notes || []).forEach(n => kids.push(el("p", {class: "di-note", text: n})));
+  const seen = new Set(); I.school.forEach(s => { const k = s.short + s.what; if (seen.has(k)) return; seen.add(k);
+    kids.push(el("p", {class: "di-school"}, [el("span", {class: "sch-tag", text: s.first ? "School" : "No school"}), document.createTextNode(" " + s.name + ": " + s.what + (s.start ? " (" + fmtRange(s.start, s.end) + ")" : ""))])); });
+  if (I.busy) kids.push(el("p", {class: "di-busy", text: "🚗 " + I.busy}));
+  if (I.school.length && SCHOOL && SCHOOL.url) kids.push(el("p", {class: "di-src"}, [document.createTextNode("School dates: "), el("a", {href: SCHOOL.url, target: "_blank", rel: "noopener", text: (SCHOOL.source || "Utah State Board of Education") + ", school year " + (SCHOOL.schoolYear || "")})]));
+  return el("div", {class: "dayinfo"}, kids); }
+(function(){ const st = document.createElement("style"); st.textContent =
+  ".hol-tag{display:inline-block;background:#EADFF7;color:#46207F;font-weight:800;font-size:13px;padding:1px 8px;border-radius:999px}.sch-tag{display:inline-block;background:#FFE3C7;color:#7A3300;border-left:4px solid #E07A1F;font-weight:800;font-size:13px;padding:1px 8px;border-radius:999px}" +
+  ".mg-hol{font-size:12px;font-weight:800;line-height:1.2;background:#EADFF7;color:#46207F;border-radius:5px;padding:1px 4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}" +
+  ".mg-sch{font-size:11px;font-weight:700;line-height:1.2;background:#FFE3C7;color:#7A3300;border-left:3px solid #E07A1F;border-radius:4px;padding:1px 4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}" +
+  ".mg-day.busy{background:linear-gradient(var(--card),var(--card)) padding-box,repeating-linear-gradient(45deg,#2E6DA4 0 4px,transparent 4px 8px) border-box;border:2px dashed transparent}" +
+  ".dayinfo{display:grid;gap:6px;background:var(--soft);border-radius:12px;padding:10px 14px;margin:6px 0 10px;font-size:17px}.dayinfo p{margin:0}.di-busy{color:var(--warn);font-weight:700}.di-src,.di-note{font-size:14px;color:var(--muted)}" +
+  ".mg-legend{display:flex;flex-wrap:wrap;gap:8px 16px;margin-top:10px;font-size:14px;color:var(--muted);align-items:center}.mg-legend .lg-busy{display:inline-block;width:16px;height:12px;border:2px dashed #2E6DA4;border-radius:3px;vertical-align:middle;margin-right:4px}" +
+  "@media(prefers-color-scheme:dark){.hol-tag,.mg-hol{background:#2E2050;color:#E2D4FF}.sch-tag,.mg-sch{background:#3D2410;color:#FFD2A6}}" +
+  "@media (max-width:640px){.mg-hol{font-size:10px;padding:0 3px}.mg-sch{font-size:0;height:6px;padding:0;border-radius:3px;border-left:0;background:#E07A1F}}";
+  document.head.appendChild(st); })();
 function monthGrid(box, list, opts){
   opts = opts || {}; const now = new Date(new Date().toLocaleString("en-US", {timeZone: TZ}));
   const keep = opts.state || {}; let y = keep.y != null ? keep.y : opts.y != null ? opts.y : now.getFullYear(), m = keep.m != null ? keep.m : opts.m != null ? opts.m : now.getMonth();
@@ -579,18 +666,22 @@ function monthGrid(box, list, opts){
     for (let i = 0; i < lead; i++) grid.append(el("div", {class: "mg-day empty"}));
     const detail = el("div", {class: "mg-detail"});
     for (let d = 1; d <= days; d++) { const k = key(d), evs = byDay[k] || [];
-      const cell = el("button", {class: "mg-day" + (k === todayKey ? " today" : "") + (evs.length ? " has" : ""), type: "button", "aria-label": new Date(y, m, d).toLocaleDateString("en-US", {weekday: "long", month: "long", day: "numeric"}) + ", " + evs.length + " event" + (evs.length === 1 ? "" : "s")}, [
+      const DI = dayInfo(ymdKey(y, m, d)), schoolTags = [...new Set(DI.school.filter(x => !x.first).map(x => x.short))];
+      const cell = el("button", {class: "mg-day" + (k === todayKey ? " today" : "") + (evs.length ? " has" : "") + (DI.busy ? " busy" : ""), type: "button", "aria-label": new Date(y, m, d).toLocaleDateString("en-US", {weekday: "long", month: "long", day: "numeric"}) + ", " + evs.length + " event" + (evs.length === 1 ? "" : "s") + (DI.holidays.length ? ", " + DI.holidays.join(", ") : "") + (schoolTags.length ? ", no school: " + schoolTags.join(", ") : "")}, [
         el("span", {class: "mg-n", text: String(d)}),
+        ...DI.holidays.slice(0, 2).map(h => el("span", {class: "mg-hol", text: h})),
+        schoolTags.length ? el("span", {class: "mg-sch", text: "No school: " + schoolTags.join(", ")}) : null,
         ...evs.slice(0, 3).map(e => el("span", {class: "mg-ev", style: "--cal:" + CAL_COLOR[e.cal], text: e.t})),
         evs.length > 3 ? el("span", {class: "mg-more", text: "+" + (evs.length - 3) + " more"}) : null,
         evs.length ? el("span", {class: "mg-count", text: evs.length + (evs.length === 1 ? " event" : " events")}) : null]);
-      cell.addEventListener("click", () => { grid.querySelectorAll(".mg-day.sel").forEach(x => x.classList.remove("sel")); cell.classList.add("sel"); renderEvents(detail, evs, {emptyText: "Nothing on the calendar this day."}); detail.scrollIntoView({behavior: "smooth", block: "nearest"}); });
+      cell.addEventListener("click", () => { grid.querySelectorAll(".mg-day.sel").forEach(x => x.classList.remove("sel")); cell.classList.add("sel"); renderEvents(detail, evs, {noDayInfo: true, emptyText: DI.any ? "No events posted this day." : "Nothing on the calendar this day."}); const ib = dayInfoBox(ymdKey(y, m, d)); if (ib) detail.prepend(ib); detail.scrollIntoView({behavior: "smooth", block: "nearest"}); });
       grid.append(cell); }
-    box.replaceChildren(head, grid, detail);
+    const legend = el("div", {class: "mg-legend", "aria-label": "Calendar key"}, [el("span", {class: "hol-tag", text: "Holiday"}), el("span", {class: "sch-tag", text: "No school"}), el("span", {}, [el("span", {class: "lg-busy"}), document.createTextNode("Busy weekend")])]);
+    box.replaceChildren(head, grid, legend, detail);
     /* show today's events under the calendar right away */
-    const t = opts.autoToday ? grid.querySelector(".mg-day.today") : null; if (t) { t.classList.add("sel"); renderEvents(detail, byDay[todayKey] || [], {emptyText: "Nothing else on the calendar today. Tap another day to see its events."}); }
+    const t = opts.autoToday ? grid.querySelector(".mg-day.today") : null; if (t) { t.classList.add("sel"); renderEvents(detail, byDay[todayKey] || [], {noDayInfo: true, emptyText: "Nothing else on the calendar today. Tap another day to see its events."}); const ib = dayInfoBox(keyOf(new Date(new Date().toLocaleString("en-US", {timeZone: TZ})))); if (ib) detail.prepend(ib); }
   };
-  draw();
+  draw(); onSchool(draw);
 }
 (function(){ const st = document.createElement("style"); st.textContent =
   ".area-switch{display:flex;flex-wrap:wrap;gap:8px}.area-chip{padding:8px 16px;text-align:left}.area-chip .ac-t{display:grid;line-height:1.15}.area-chip small{font-weight:600;font-size:13px;color:var(--muted)}" +
@@ -768,5 +859,5 @@ function renderResorts(box, R, compact){
     r.status && r.status !== "ok" ? el("p", {class: "rs-warn", text: "Couldn't update just now. Showing the last numbers we had."}) : null,
     el("p", {class: "meta", style: "font-size:14px"}, [document.createTextNode(when(r) + " · From " + r.source + ". "), el("a", {href: r.link, target: "_blank", rel: "noopener", "data-track": "resort report: " + r.name, text: "Full report"})])]))));
 }
-window.OVE_SITE = {findLocal, findBox, getArea, setArea, areaCals, areaSwitch, valleyFirst, evTags, eventFilters, monthGrid, C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip, snowCheck, isWinter, renderResorts, nwsJSON, snowState: () => snowState, parseHours, openNow};
+window.OVE_SITE = {findLocal, findBox, getArea, setArea, areaCals, areaSwitch, valleyFirst, evTags, eventFilters, monthGrid, C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip, snowCheck, isWinter, renderResorts, nwsJSON, snowState: () => snowState, parseHours, openNow, holidaysFor, dayInfo, dayInfoBox, onSchool};
 })();
