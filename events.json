@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T17:58:19.261Z",
+ "updated": "2026-11-03T19:01:52.804Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -988,6 +988,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1793883600000,
+     "e": 1793894400000,
+     "t": "Cup Hop 2026",
+     "loc": "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant",
+     "allDay": false,
+     "desc": "Collect. Sip. Protect.\nYear eight launches a fresh Cup Hop series across four November days at four local coffee shops. Buy the limited 2026 mug and your purchase powers nature education, safe habitats for wildlife, conservation, and habitat restoration for the community to enjoy.\nWhat you getLimited 2026 Cup Hop mugOne free drink during your pop-up visitSupport for a cause that keeps nature close Where & When –\nFour neighborhood shops, two back-to-back weekends in November.\nDates: November 5th, 6th, 12th and 13th\nTime and Locations:Grounds for Coffee – 3005 Harrison Blvd | Thursday 6 AM to 9 ",
+     "url": "https://www.ogdennaturecenter.org/cup-hop",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1793926800000,
      "e": 1793934000000,
      "t": "Visiting Artist Lecture by Melissa Melero-Moose",
@@ -1036,6 +1046,16 @@
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1793970000000,
+     "e": 1793980800000,
+     "t": "Cup Hop 2026",
+     "loc": "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant",
+     "allDay": false,
+     "desc": "Collect. Sip. Protect.\nYear eight launches a fresh Cup Hop series across four November days at four local coffee shops. Buy the limited 2026 mug and your purchase powers nature education, safe habitats for wildlife, conservation, and habitat restoration for the community to enjoy.\nWhat you getLimited 2026 Cup Hop mugOne free drink during your pop-up visitSupport for a cause that keeps nature close Where & When –\nFour neighborhood shops, two back-to-back weekends in November.\nDates: November 5th, 6th, 12th and 13th\nTime and Locations:Grounds for Coffee – 3005 Harrison Blvd | Thursday 6 AM to 9 ",
+     "url": "https://www.ogdennaturecenter.org/cup-hop",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1794011400000,
@@ -1378,6 +1398,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1794488400000,
+     "e": 1794499200000,
+     "t": "Cup Hop 2026",
+     "loc": "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant",
+     "allDay": false,
+     "desc": "Collect. Sip. Protect.\nYear eight launches a fresh Cup Hop series across four November days at four local coffee shops. Buy the limited 2026 mug and your purchase powers nature education, safe habitats for wildlife, conservation, and habitat restoration for the community to enjoy.\nWhat you getLimited 2026 Cup Hop mugOne free drink during your pop-up visitSupport for a cause that keeps nature close Where & When –\nFour neighborhood shops, two back-to-back weekends in November.\nDates: November 5th, 6th, 12th and 13th\nTime and Locations:Grounds for Coffee – 3005 Harrison Blvd | Thursday 6 AM to 9 ",
+     "url": "https://www.ogdennaturecenter.org/cup-hop",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1794510000000,
      "e": 1794519000000,
      "t": "Author Celebration with Mac Barnett",
@@ -1445,6 +1475,16 @@
      "allDay": true,
      "desc": "Create your own beautiful mosaic lamp in a fun, hands-on workshop! Choose your favorite colors and patterns, learn the traditional mosaic technique, and take home a unique lamp made by you.",
      "url": "https://artmasterclass.global/products/mosaic-classes-ogden",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794574800000,
+     "e": 1794585600000,
+     "t": "Cup Hop 2026",
+     "loc": "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant",
+     "allDay": false,
+     "desc": "Collect. Sip. Protect.\nYear eight launches a fresh Cup Hop series across four November days at four local coffee shops. Buy the limited 2026 mug and your purchase powers nature education, safe habitats for wildlife, conservation, and habitat restoration for the community to enjoy.\nWhat you getLimited 2026 Cup Hop mugOne free drink during your pop-up visitSupport for a cause that keeps nature close Where & When –\nFour neighborhood shops, two back-to-back weekends in November.\nDates: November 5th, 6th, 12th and 13th\nTime and Locations:Grounds for Coffee – 3005 Harrison Blvd | Thursday 6 AM to 9 ",
+     "url": "https://www.ogdennaturecenter.org/cup-hop",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -1749,8 +1789,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1759,8 +1799,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2668,26 +2708,6 @@
      "src": "Treehouse Children's Museum"
     },
     {
-     "s": 1796490000000,
-     "e": 1796493600000,
-     "t": "Faux Stained Glass Ornaments",
-     "loc": "966 W 12th St, Ogden, UT, 84404",
-     "allDay": false,
-     "desc": "Join us at the Ogden Nature Center to create a faux stained-glass masterpiece! Local artist Olivia Roundy will walk you through how to make a beautiful translucent ornament in this hour-long workshop.\nDon't know what faux stained-glass is? Just take a peek at the Visitor Center and Education Building windows at the nature center! Not only are these artworks adorable (many made by 3rd graders from Greenwood Charter) but they help wildlife! Having something in the window reduces bird strikes by limiting the reflections that confuse birds. It's truly the intersection of art, nature, and science!\n",
-     "url": "https://www.ogdennaturecenter.org/education-programs/community-programs",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1796497200000,
-     "e": 1796503500000,
-     "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
-     "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1796504400000,
      "e": 1796511600000,
      "t": "Craft n Cry",
@@ -2699,16 +2719,6 @@
     },
     {
      "s": 1796518800000,
-     "e": 1796525100000,
-     "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
-     "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1796518800000,
      "e": 1796526000000,
      "t": "Free live music & ice cream at Z's Sweets",
      "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
@@ -2716,16 +2726,6 @@
      "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
      "url": "",
      "src": "Weekly regular"
-    },
-    {
-     "s": 1796522400000,
-     "e": 1796527800000,
-     "t": "Joy to the World! A Sacred Celebration",
-     "loc": "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403",
-     "allDay": false,
-     "desc": "Experience the magic of Christmas with Grammy-nominated violinist Jenny Oaks Baker and her accomplished children, musical ensemble Family Four, in a heartwarming, Christ-centered holiday show featuring Tony Award-Winning Soprano Lisa Hopkins Seegmiller. Enjoy captivating and cherished Christmas carols arranged by Emmy Award-winning composer Kurt Bestor, inspiring script by New York Times best-selling author Jason F. Wright, and moving narration and powerful vocals by baritone Preston Yates. Returning by popular demand are vibrant performances by local ballet companies and Scariff Locklier Leon",
-     "url": "https://www.facebook.com/events/27833916432910040/",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796522400000,
@@ -3413,6 +3413,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1793883600000,
+    "e": 1793894400000,
+    "t": "Cup Hop 2026",
+    "loc": "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant",
+    "allDay": false,
+    "desc": "Collect. Sip. Protect.\nYear eight launches a fresh Cup Hop series across four November days at four local coffee shops. Buy the limited 2026 mug and your purchase powers nature education, safe habitats for wildlife, conservation, and habitat restoration for the community to enjoy.\nWhat you getLimited 2026 Cup Hop mugOne free drink during your pop-up visitSupport for a cause that keeps nature close Where & When –\nFour neighborhood shops, two back-to-back weekends in November.\nDates: November 5th, 6th, 12th and 13th\nTime and Locations:Grounds for Coffee – 3005 Harrison Blvd | Thursday 6 AM to 9 ",
+    "url": "https://www.ogdennaturecenter.org/cup-hop",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1793926800000,
     "e": 1793934000000,
     "t": "Visiting Artist Lecture by Melissa Melero-Moose",
@@ -3440,6 +3450,16 @@
     "allDay": false,
     "desc": "The Ogden Mountain Film Festival is gearing up to celebrate the adventures and breathtaking landscapes of Ogden, Utah! Presented by the Trails Foundation of Northern Utah, OMFF will showcase short films that capture the heart-pounding excitement and sheer beauty of exploring our local mountains. These films are not just about the thrill; they’re about preserving our natural playground for generations to come.",
     "url": "https://ogdenpet.com/event/ogden-mountain-film-festival-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1793970000000,
+    "e": 1793980800000,
+    "t": "Cup Hop 2026",
+    "loc": "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant",
+    "allDay": false,
+    "desc": "Collect. Sip. Protect.\nYear eight launches a fresh Cup Hop series across four November days at four local coffee shops. Buy the limited 2026 mug and your purchase powers nature education, safe habitats for wildlife, conservation, and habitat restoration for the community to enjoy.\nWhat you getLimited 2026 Cup Hop mugOne free drink during your pop-up visitSupport for a cause that keeps nature close Where & When –\nFour neighborhood shops, two back-to-back weekends in November.\nDates: November 5th, 6th, 12th and 13th\nTime and Locations:Grounds for Coffee – 3005 Harrison Blvd | Thursday 6 AM to 9 ",
+    "url": "https://www.ogdennaturecenter.org/cup-hop",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -3623,6 +3643,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1794488400000,
+    "e": 1794499200000,
+    "t": "Cup Hop 2026",
+    "loc": "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant",
+    "allDay": false,
+    "desc": "Collect. Sip. Protect.\nYear eight launches a fresh Cup Hop series across four November days at four local coffee shops. Buy the limited 2026 mug and your purchase powers nature education, safe habitats for wildlife, conservation, and habitat restoration for the community to enjoy.\nWhat you getLimited 2026 Cup Hop mugOne free drink during your pop-up visitSupport for a cause that keeps nature close Where & When –\nFour neighborhood shops, two back-to-back weekends in November.\nDates: November 5th, 6th, 12th and 13th\nTime and Locations:Grounds for Coffee – 3005 Harrison Blvd | Thursday 6 AM to 9 ",
+    "url": "https://www.ogdennaturecenter.org/cup-hop",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1794510000000,
     "e": 1794519000000,
     "t": "Author Celebration with Mac Barnett",
@@ -3650,6 +3680,16 @@
     "allDay": true,
     "desc": "Create your own beautiful mosaic lamp in a fun, hands-on workshop! Choose your favorite colors and patterns, learn the traditional mosaic technique, and take home a unique lamp made by you.",
     "url": "https://artmasterclass.global/products/mosaic-classes-ogden",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1794574800000,
+    "e": 1794585600000,
+    "t": "Cup Hop 2026",
+    "loc": "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant",
+    "allDay": false,
+    "desc": "Collect. Sip. Protect.\nYear eight launches a fresh Cup Hop series across four November days at four local coffee shops. Buy the limited 2026 mug and your purchase powers nature education, safe habitats for wildlife, conservation, and habitat restoration for the community to enjoy.\nWhat you getLimited 2026 Cup Hop mugOne free drink during your pop-up visitSupport for a cause that keeps nature close Where & When –\nFour neighborhood shops, two back-to-back weekends in November.\nDates: November 5th, 6th, 12th and 13th\nTime and Locations:Grounds for Coffee – 3005 Harrison Blvd | Thursday 6 AM to 9 ",
+    "url": "https://www.ogdennaturecenter.org/cup-hop",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4241,46 +4281,6 @@
     "desc": "Ogden's First Friday Art Stroll is held the first Friday of the month from 6-9 PM, Ogden’s First Friday Art Stroll is abuzz year ‘round with exciting exhibit openings, artist receptions and live music of all genres in venues and in the streets. As the art stroll becomes the virtual front porch of Ogden, those that venture here are treated to great art, an atmosphere of camaraderie and inclusion and amazing night life; small town feel, big city offerings.\n\nEnjoy your journey. We hope you are inspired, delighted and challenged along the way.",
     "url": "http://www.ogdencityarts.org",
     "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1796490000000,
-    "e": 1796493600000,
-    "t": "Faux Stained Glass Ornaments",
-    "loc": "966 W 12th St, Ogden, UT, 84404",
-    "allDay": false,
-    "desc": "Join us at the Ogden Nature Center to create a faux stained-glass masterpiece! Local artist Olivia Roundy will walk you through how to make a beautiful translucent ornament in this hour-long workshop.\nDon't know what faux stained-glass is? Just take a peek at the Visitor Center and Education Building windows at the nature center! Not only are these artworks adorable (many made by 3rd graders from Greenwood Charter) but they help wildlife! Having something in the window reduces bird strikes by limiting the reflections that confuse birds. It's truly the intersection of art, nature, and science!\n",
-    "url": "https://www.ogdennaturecenter.org/education-programs/community-programs",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1796497200000,
-    "e": 1796503500000,
-    "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
-    "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1796518800000,
-    "e": 1796525100000,
-    "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
-    "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1796522400000,
-    "e": 1796527800000,
-    "t": "Joy to the World! A Sacred Celebration",
-    "loc": "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403",
-    "allDay": false,
-    "desc": "Experience the magic of Christmas with Grammy-nominated violinist Jenny Oaks Baker and her accomplished children, musical ensemble Family Four, in a heartwarming, Christ-centered holiday show featuring Tony Award-Winning Soprano Lisa Hopkins Seegmiller. Enjoy captivating and cherished Christmas carols arranged by Emmy Award-winning composer Kurt Bestor, inspiring script by New York Times best-selling author Jason F. Wright, and moving narration and powerful vocals by baritone Preston Yates. Returning by popular demand are vibrant performances by local ballet companies and Scariff Locklier Leon",
-    "url": "https://www.facebook.com/events/27833916432910040/",
-    "src": "Ogden Area Events (Visit Ogden)"
    }
   ],
   "treehouse": [
@@ -4456,8 +4456,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4466,8 +4466,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
