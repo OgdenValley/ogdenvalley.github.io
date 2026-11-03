@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T20:56:18.589Z",
+ "updated": "2026-11-03T21:54:36.245Z",
  "pages": {
   "404.html": {
    "posted": "2026-10-06",
@@ -83,8 +83,8 @@
   },
   "index.html": {
    "posted": "2026-10-06",
-   "updated": "2026-10-23",
-   "hash": "f7d952dffc7b"
+   "updated": "2026-11-03",
+   "hash": "fb6b2c4baa4d"
   },
   "jobs.html": {
    "posted": "2026-10-07",
@@ -158,8 +158,8 @@
   },
   "restaurants.html": {
    "posted": "2026-10-06",
-   "updated": "2026-10-22",
-   "hash": "c1bf266ebe48"
+   "updated": "2026-11-03",
+   "hash": "5bbee40657dc"
   },
   "rules.html": {
    "posted": "2026-10-07",
@@ -325,6 +325,11 @@
    "posted": "2026-11-03",
    "updated": "2026-11-03",
    "hash": "c73ded9243e7"
+  },
+  "meetings.html": {
+   "posted": "2026-11-03",
+   "updated": "2026-11-03",
+   "hash": "519c911b7008"
   }
  }
 }
