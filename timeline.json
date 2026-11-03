@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-03T11:01:05.888Z",
+ "updated": "2026-11-03T15:59:46.911Z",
  "items": [
+  {
+   "t": 1793721586910,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Tuesday good · Wednesday good · Thursday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1793703665887,
    "src": "UDOT road sensor",
@@ -28,13 +35,6 @@
    "text": "Weber County forecast: Monday good · Tuesday good · Wednesday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1793631893888,
-   "src": "UDOT",
-   "text": "Crash or incident: I-84. Crash, EB I-84 at MP 90.6 (5400 N, South Weber). Right Shoulder Blocked.",
-   "kind": "crash",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {
@@ -44,16 +44,16 @@
   },
   "al": {},
   "cond": {
+   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
+   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
    "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
-   "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
    "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
+   "SR-158 to Powder Mountain#334": "Dry · none",
    "SR-226 to Snowbasin#336": "Dry · none",
    "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
    "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none",
    "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none",
-   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
-   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
-   "SR-158 to Powder Mountain#334": "Dry · none",
+   "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
    "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none"
   },
   "pass": {},
@@ -62,7 +62,7 @@
    "I-84 @ MP 97 Peterson": 0,
    "I-84 @ Weber Canyon": 0,
    "North Ogden Divide": 0,
-   "SR-158 @ MP 11.5 Powder Mountain": 1,
+   "SR-158 @ MP 11.5 Powder Mountain": 0,
    "SR-167 @ Trappers Loop": 0,
    "SR-39 @ MP 14 Pineview Dam": 0,
    "SR-39 @ MP 17.5 Huntsville": 0,
@@ -70,6 +70,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "November 2, 2026 3:32 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "November 3, 2026 8:24 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
