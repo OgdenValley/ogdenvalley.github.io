@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-02T22:50:19.650Z",
+ "updated": "2026-11-03T01:13:11.635Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -1509,8 +1509,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1519,8 +1519,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1639,8 +1639,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1649,8 +1649,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1749,8 +1749,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
+     "e": 1794976200000,
+     "t": "Jazz - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1759,8 +1759,8 @@
     },
     {
      "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
+     "e": 1794978000000,
+     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2674,17 +2674,7 @@
      "loc": "966 W 12th St, Ogden, UT, 84404",
      "allDay": false,
      "desc": "Join us at the Ogden Nature Center to create a faux stained-glass masterpiece! Local artist Olivia Roundy will walk you through how to make a beautiful translucent ornament in this hour-long workshop.\nDon't know what faux stained-glass is? Just take a peek at the Visitor Center and Education Building windows at the nature center! Not only are these artworks adorable (many made by 3rd graders from Greenwood Charter) but they help wildlife! Having something in the window reduces bird strikes by limiting the reflections that confuse birds. It's truly the intersection of art, nature, and science!\n",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1796497200000,
-     "e": 1796500800000,
-     "t": "Faux Stained Glass Ornaments",
-     "loc": "966 W 12th St, Ogden, UT, 84404",
-     "allDay": false,
-     "desc": "Join us at the Ogden Nature Center to create a faux stained-glass masterpiece! Local artist Olivia Roundy will walk you through how to make a beautiful translucent ornament in this hour-long workshop.\nDon't know what faux stained-glass is? Just take a peek at the Visitor Center and Education Building windows at the nature center! Not only are these artworks adorable (many made by 3rd graders from Greenwood Charter) but they help wildlife! Having something in the window reduces bird strikes by limiting the reflections that confuse birds. It's truly the intersection of art, nature, and science!\n",
-     "url": "",
+     "url": "https://www.ogdennaturecenter.org/education-programs/community-programs",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -2726,6 +2716,16 @@
      "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1796522400000,
+     "e": 1796527800000,
+     "t": "Joy to the World! A Sacred Celebration",
+     "loc": "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Experience the magic of Christmas with Grammy-nominated violinist Jenny Oaks Baker and her accomplished children, musical ensemble Family Four, in a heartwarming, Christ-centered holiday show featuring Tony Award-Winning Soprano Lisa Hopkins Seegmiller. Enjoy captivating and cherished Christmas carols arranged by Emmy Award-winning composer Kurt Bestor, inspiring script by New York Times best-selling author Jason F. Wright, and moving narration and powerful vocals by baritone Preston Yates. Returning by popular demand are vibrant performances by local ballet companies and Scariff Locklier Leon",
+     "url": "https://www.facebook.com/events/27833916432910040/",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796522400000,
@@ -3244,6 +3244,26 @@
      "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
      "allDay": false,
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1798849800000,
+     "e": 1798855200000,
+     "t": "Steppin' The Ogden Way dance class",
+     "loc": "Marshall White Center, 222 28th Street, Ogden",
+     "allDay": false,
+     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1798851600000,
+     "e": 1798858800000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
      "url": "",
      "src": "Weekly regular"
     }
@@ -4219,17 +4239,7 @@
     "loc": "966 W 12th St, Ogden, UT, 84404",
     "allDay": false,
     "desc": "Join us at the Ogden Nature Center to create a faux stained-glass masterpiece! Local artist Olivia Roundy will walk you through how to make a beautiful translucent ornament in this hour-long workshop.\nDon't know what faux stained-glass is? Just take a peek at the Visitor Center and Education Building windows at the nature center! Not only are these artworks adorable (many made by 3rd graders from Greenwood Charter) but they help wildlife! Having something in the window reduces bird strikes by limiting the reflections that confuse birds. It's truly the intersection of art, nature, and science!\n",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1796497200000,
-    "e": 1796500800000,
-    "t": "Faux Stained Glass Ornaments",
-    "loc": "966 W 12th St, Ogden, UT, 84404",
-    "allDay": false,
-    "desc": "Join us at the Ogden Nature Center to create a faux stained-glass masterpiece! Local artist Olivia Roundy will walk you through how to make a beautiful translucent ornament in this hour-long workshop.\nDon't know what faux stained-glass is? Just take a peek at the Visitor Center and Education Building windows at the nature center! Not only are these artworks adorable (many made by 3rd graders from Greenwood Charter) but they help wildlife! Having something in the window reduces bird strikes by limiting the reflections that confuse birds. It's truly the intersection of art, nature, and science!\n",
-    "url": "",
+    "url": "https://www.ogdennaturecenter.org/education-programs/community-programs",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4250,6 +4260,16 @@
     "allDay": false,
     "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
     "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796522400000,
+    "e": 1796527800000,
+    "t": "Joy to the World! A Sacred Celebration",
+    "loc": "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Experience the magic of Christmas with Grammy-nominated violinist Jenny Oaks Baker and her accomplished children, musical ensemble Family Four, in a heartwarming, Christ-centered holiday show featuring Tony Award-Winning Soprano Lisa Hopkins Seegmiller. Enjoy captivating and cherished Christmas carols arranged by Emmy Award-winning composer Kurt Bestor, inspiring script by New York Times best-selling author Jason F. Wright, and moving narration and powerful vocals by baritone Preston Yates. Returning by popular demand are vibrant performances by local ballet companies and Scariff Locklier Leon",
+    "url": "https://www.facebook.com/events/27833916432910040/",
     "src": "Ogden Area Events (Visit Ogden)"
    }
   ],
@@ -4366,8 +4386,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4376,8 +4396,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4406,16 +4426,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794715200000,
     "t": "DPAC Scrooge - Austad",
     "loc": "",
@@ -4425,9 +4435,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "s": 1794708000000,
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4438,6 +4448,16 @@
     "s": 1794969000000,
     "e": 1794976200000,
     "t": "Jazz - Allred",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
