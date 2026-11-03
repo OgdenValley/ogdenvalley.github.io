@@ -1,0 +1,35 @@
+name: Snow mode (every 5 minutes during winter alerts)
+# Checks every 5 minutes. If the National Weather Service has no winter alert for the Valley,
+# it stops right away and changes nothing. During a winter alert it refreshes roads, weather
+# alerts, the forecast and the resort snow reports, and saves only what changed.
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency:
+  group: snow-update
+  cancel-in-progress: true
+jobs:
+  snow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    env:
+      TZ: America/Denver
+      UDOT_KEY: ${{ secrets.UDOT_KEY }}
+      SNOW_JOB: "1"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: node update-data.mjs
+      - name: Save changes
+        run: |
+          git config user.name "ogdenvalley-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git diff --cached --quiet; then echo "Nothing changed"; exit 0; fi
+          git commit -m "Snow mode: roads, alerts and resort reports"
+          for i in 1 2 3; do git pull --rebase -X theirs && git push && exit 0; sleep 5; done
+          echo "Could not save this time; the next run in 5 minutes will try again."
