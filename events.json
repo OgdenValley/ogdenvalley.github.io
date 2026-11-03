@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T19:59:15.173Z",
+ "updated": "2026-11-03T20:55:56.679Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -478,6 +478,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1798920000000,
+     "e": 1798927200000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1798923600000,
      "e": 1798938000000,
      "t": "Cinema Saturday Feature Films",
@@ -815,16 +825,6 @@
      "allDay": true,
      "desc": "elparo has created large-scale site-responsive sculptures all over the world. La Vrille is his debut work in the United States.",
      "url": "https://www.weber.edu/shawgallery/upcoming.html",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793646000000,
-     "e": 1793649600000,
-     "t": "Parent Cafe",
-     "loc": "Family Support Center of Ogden 3340 Harrison Blvd Ogden, UT 84403",
-     "allDay": false,
-     "desc": "Safe space for parents to share, connect, and learn from each other. Each month is a different topic.\nFree Refreshments and Free Childcare for ages 0-11 (Must schedule in advance and complete paperwork)\nEmail at inquiry@fscogden.org or call us 801-393-3113\nAugust 3 - Building Structure and Routine at Home\nSeptember 14 - You are Not Alone - The Village Returns\nOctober 5 - Haunted Tales and Parenting WINS\nNovember 2 - Pulling the Ones You Love Closer - Making Your Home a Refuge\nDecember 7 - Resilience, Calm the Stress Down",
-     "url": "https://www.eventbrite.com/cc/parent-cafes-special-events-4839868?utm-campaign=social&utm-content=creatorshare&utm-medium=discovery&utm-term=odclsxcollection&utm-source=cp&aff=escb",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -3290,16 +3290,6 @@
     "allDay": true,
     "desc": "elparo has created large-scale site-responsive sculptures all over the world. La Vrille is his debut work in the United States.",
     "url": "https://www.weber.edu/shawgallery/upcoming.html",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793646000000,
-    "e": 1793649600000,
-    "t": "Parent Cafe",
-    "loc": "Family Support Center of Ogden 3340 Harrison Blvd Ogden, UT 84403",
-    "allDay": false,
-    "desc": "Safe space for parents to share, connect, and learn from each other. Each month is a different topic.\nFree Refreshments and Free Childcare for ages 0-11 (Must schedule in advance and complete paperwork)\nEmail at inquiry@fscogden.org or call us 801-393-3113\nAugust 3 - Building Structure and Routine at Home\nSeptember 14 - You are Not Alone - The Village Returns\nOctober 5 - Haunted Tales and Parenting WINS\nNovember 2 - Pulling the Ones You Love Closer - Making Your Home a Refuge\nDecember 7 - Resilience, Calm the Stress Down",
-    "url": "https://www.eventbrite.com/cc/parent-cafes-special-events-4839868?utm-campaign=social&utm-content=creatorshare&utm-medium=discovery&utm-term=odclsxcollection&utm-source=cp&aff=escb",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {

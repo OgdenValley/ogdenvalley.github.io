@@ -1,17 +1,8 @@
 {
- "updated": "2026-11-03T17:04:38.249Z",
+ "updated": "2026-11-03T20:55:59.258Z",
  "weather": [],
  "fires": [],
- "city": [
-  {
-   "title": "Pearwood Park Estates",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2081",
-   "date": 1793723669000,
-   "text": "EMERGENCY WATER SHUTDOWN",
-   "source": "Ogden City Alerts",
-   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
-  }
- ],
+ "city": [],
  "status": {
   "weather": "ok",
   "fires": "ok",

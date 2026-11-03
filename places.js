@@ -4049,6 +4049,30 @@ window.OVE_PLACES = {
    "fromForm": true
   },
   {
+   "name": "The Valley House Inn",
+   "type": "Lodging",
+   "town": "Huntsville Town",
+   "blurb": "Beautiful historic bed and breakfast in the heart of Huntsville town serving up amazing breakfasts by Chef John and offering private events",
+   "address": "7318 E 200 S. Huntsville",
+   "phone": "801-745-8259",
+   "link": "https://www.thevalleyhouseinn.com",
+   "hours": "Open year round",
+   "note": "Known for: Luxury suites in a cozy setting",
+   "badges": [
+    "Woman owned",
+    "Insured"
+   ],
+   "photos": [
+    "https://drive.google.com/thumbnail?id=1QUiul8mdzVZOgqV2OHYBv0rCFr3Q9-W-&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1jCbpKrd0_QGSuu7UpQD83DJ3otENwxeM&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1Sx1GCidzX70hWAvMbJUgkXsIH2KqcTWy&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1SVFas_cpiGXyvHfW6e3Xi1SeeMtK03Ns&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1v8kmnF2XAj1Lhu4QDsr102r_Bgampq5p&sz=w1000"
+   ],
+   "added": "2026-11-01",
+   "fromForm": true
+  },
+  {
    "name": "Wild poppy floral co",
    "type": "Local business",
    "town": "Eden",
