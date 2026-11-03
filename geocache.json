@@ -329,5 +329,10 @@
   "county": "Weber"
  },
  "McKay-Dee Hospital, Education Center, 4401 Harrison Blvd, Ogden UT": null,
- "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant": null
+ "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant": null,
+ "Ogden Nature Center!": {
+  "lat": 41.24996,
+  "lng": -112.00112,
+  "county": "Weber"
+ }
 }

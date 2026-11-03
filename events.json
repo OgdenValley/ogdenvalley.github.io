@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T21:54:08.031Z",
+ "updated": "2026-11-03T22:53:37.851Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -1988,6 +1988,16 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1795273200000,
+     "e": 1795302000000,
+     "t": "Holiday Open House",
+     "loc": "Ogden Nature Center!",
+     "allDay": false,
+     "desc": "Holiday Open House at Ogden Nature Center 🎄🌿\nSaturday, November 21, 2026 | 9:00 AM – 4:00 PM\nCelebrate the holiday season with us at Ogden Nature Center's annual Holiday Open House!\nEnjoy a festive day of holiday shopping, local artisans, handmade gifts, and family-friendly activities surrounded by the beauty of nature. Browse unique creations from local vendors, discover thoughtful gifts at The Nest Gift Shop, and find something special for everyone on your holiday shopping list.\nONC Members: Enjoy exclusive early access from 8:00–9:00 AM before we open to the public.\nAdmission is FREE! Bri",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1795276800000,
      "e": 1795305600000,
      "t": "Acorn Antiques & Vintage Show",
@@ -2665,16 +2675,6 @@
      "allDay": false,
      "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
      "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1796432400000,
-     "e": 1796443200000,
-     "t": "Ogden's First Friday Art Stroll",
-     "loc": "Downtown Ogden",
-     "allDay": false,
-     "desc": "Ogden's First Friday Art Stroll is held the first Friday of the month from 6-9 PM, Ogden’s First Friday Art Stroll is abuzz year ‘round with exciting exhibit openings, artist receptions and live music of all genres in venues and in the streets. As the art stroll becomes the virtual front porch of Ogden, those that venture here are treated to great art, an atmosphere of camaraderie and inclusion and amazing night life; small town feel, big city offerings.\n\nEnjoy your journey. We hope you are inspired, delighted and challenged along the way.",
-     "url": "http://www.ogdencityarts.org",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -3903,6 +3903,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1795273200000,
+    "e": 1795302000000,
+    "t": "Holiday Open House",
+    "loc": "Ogden Nature Center!",
+    "allDay": false,
+    "desc": "Holiday Open House at Ogden Nature Center 🎄🌿\nSaturday, November 21, 2026 | 9:00 AM – 4:00 PM\nCelebrate the holiday season with us at Ogden Nature Center's annual Holiday Open House!\nEnjoy a festive day of holiday shopping, local artisans, handmade gifts, and family-friendly activities surrounded by the beauty of nature. Browse unique creations from local vendors, discover thoughtful gifts at The Nest Gift Shop, and find something special for everyone on your holiday shopping list.\nONC Members: Enjoy exclusive early access from 8:00–9:00 AM before we open to the public.\nAdmission is FREE! Bri",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1795276800000,
     "e": 1795305600000,
     "t": "Acorn Antiques & Vintage Show",
@@ -4270,16 +4280,6 @@
     "allDay": false,
     "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
     "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1796432400000,
-    "e": 1796443200000,
-    "t": "Ogden's First Friday Art Stroll",
-    "loc": "Downtown Ogden",
-    "allDay": false,
-    "desc": "Ogden's First Friday Art Stroll is held the first Friday of the month from 6-9 PM, Ogden’s First Friday Art Stroll is abuzz year ‘round with exciting exhibit openings, artist receptions and live music of all genres in venues and in the streets. As the art stroll becomes the virtual front porch of Ogden, those that venture here are treated to great art, an atmosphere of camaraderie and inclusion and amazing night life; small town feel, big city offerings.\n\nEnjoy your journey. We hope you are inspired, delighted and challenged along the way.",
-    "url": "http://www.ogdencityarts.org",
     "src": "Ogden Area Events (Visit Ogden)"
    }
   ],
