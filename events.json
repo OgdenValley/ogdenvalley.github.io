@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T16:00:32.486Z",
+ "updated": "2026-11-04T17:58:25.897Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -2748,6 +2748,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1796263200000,
+     "e": 1796268600000,
+     "t": "String Project Recital - Allred",
+     "loc": "",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
+    },
+    {
      "s": 1796268600000,
      "e": 1796281200000,
      "t": "Country Dancing",
@@ -4898,6 +4908,16 @@
     "s": 1796178600000,
     "e": 1796185800000,
     "t": "Percussion Ensemble - Allred",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1796263200000,
+    "e": 1796268600000,
+    "t": "String Project Recital - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
