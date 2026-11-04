@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-04T22:56:11.710Z",
+ "updated": "2026-11-04T23:50:39.427Z",
  "items": [
+  {
+   "t": 1793836239427,
+   "src": "UDOT",
+   "text": "Cleared: I-84. Disabled Vehicle, EB I-84 at MP 89 (Mouth of Weber Canyon). Right Shoulder Blocked.",
+   "kind": "clear",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1793832971709,
    "src": "UDOT",
@@ -26,22 +33,21 @@
  "seen": {
   "ev": {
    "10148": "I-84|(updated 11/3/26) Two travel lanes have been restored in each direction over the bridge region. Construction will suspend starting Nov. 26 Westbound single lane closure | late Winter/early Spring 2027(TBA) - Winter 2027 | Day & Night Construction resumes. All traffic will return to the crossover configuration on the ne",
-   "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at",
-   "38007": "I-84|Disabled Vehicle, EB I-84 at MP 89 (Mouth of Weber Canyon). Right Shoulder Blocked."
+   "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at"
   },
   "al": {},
   "cond": {
    "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
+   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
    "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
    "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
    "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
    "SR-158 to Powder Mountain#334": "Dry · none",
    "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none",
-   "SR-226 to Snowbasin#336": "Dry · none",
    "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
    "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none",
    "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none",
-   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none"
+   "SR-226 to Snowbasin#336": "Dry · none"
   },
   "pass": {},
   "ice": {
