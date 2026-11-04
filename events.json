@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T02:58:07.423Z",
+ "updated": "2026-11-04T04:00:30.195Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -826,16 +826,6 @@
      "desc": "elparo has created large-scale site-responsive sculptures all over the world. La Vrille is his debut work in the United States.",
      "url": "https://www.weber.edu/shawgallery/upcoming.html",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793667600000,
-     "e": 1793674800000,
-     "t": "Mystic Mondays: tarot readings",
-     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "$5 readings. Every Monday.",
-     "url": "",
-     "src": "Weekly regular"
     },
     {
      "s": 1793676600000,
