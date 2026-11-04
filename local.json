@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T19:05:59.946Z",
+ "updated": "2026-11-04T20:04:09.780Z",
  "meetings": [
   {
    "body": "Huntsville Town Council",
@@ -87,7 +87,7 @@
   "Huntsville Town Council": "ok",
   "Weber County Commission": "ok",
   "Huntsville Town website": "ok",
-  "snow": "failed",
+  "snow": "ok",
   "pineview": "ok"
  }
 }
