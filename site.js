@@ -543,7 +543,9 @@ function areaSwitch(box, onChange){
   return cur;
 }
 /* same day: Ogden Valley events first, then Weber County, each by time */
-function valleyFirst(list){ const now = Date.now(); return list.slice().sort((a, b) => { const da = dayKey(Math.max(a.s, now)), db = dayKey(Math.max(b.s, now)); if (da !== db) return da < db ? -1 : 1; if (a.cal !== b.cal) return a.cal === "ov" ? -1 : 1; return a.s - b.s; }); }
+/* sort key is YYYYMMDD: dayKey is MM/DD/YYYY, which sorts January before November when the list crosses into a new year */
+const sortDay = t => { const k = dayKey(t); return k.slice(6, 10) + k.slice(0, 2) + k.slice(3, 5); };
+function valleyFirst(list){ const now = Date.now(); return list.slice().sort((a, b) => { const da = sortDay(Math.max(a.s, now)), db = sortDay(Math.max(b.s, now)); if (da !== db) return da < db ? -1 : 1; if (a.cal !== b.cal) return a.cal === "ov" ? -1 : 1; return a.s - b.s; }); }
 /* quick filters: Free, Family / all ages, 21+, Live music, Classes */
 const EV_MUSIC = /live music|\bband\b|bands|concert|acoustic|open mic|\bdj\b|djs|bluegrass|jazz|musician|singer|songwriter|karaoke|symphony|orchestra|tribute|#livemusic/i;
 const EV_BAR = /\b(side bar|angry goat|thirsty horse|the outlaw|shooting star saloon|brewski'?s|alleged|lighthouse lounge|kokomo|saloon|tavern|lounge|pub\b|nightclub|cocktail bar|wine bar|bar)\b/i;
