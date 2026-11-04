@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T20:59:15.621Z",
+ "updated": "2026-11-04T21:55:22.922Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -915,16 +915,6 @@
      "allDay": false,
      "desc": "Come out and make your voice heard by exercising your right to vote! 🗳️\n\nPolls will be open from 7 am to 8 pm, with voting located at the Exhibit Hall on the north side of the facility.\n\nFor more information visit https://www.weberelections.gov/",
      "url": "https://www.weberelections.gov/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793737800000,
-     "e": 1793741400000,
-     "t": "Gentle Movements",
-     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
-     "url": "https://weberpl.events.mylibrary.digital/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -3610,16 +3600,6 @@
     "allDay": false,
     "desc": "Come out and make your voice heard by exercising your right to vote! 🗳️\n\nPolls will be open from 7 am to 8 pm, with voting located at the Exhibit Hall on the north side of the facility.\n\nFor more information visit https://www.weberelections.gov/",
     "url": "https://www.weberelections.gov/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793737800000,
-    "e": 1793741400000,
-    "t": "Gentle Movements",
-    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
-    "url": "https://weberpl.events.mylibrary.digital/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
