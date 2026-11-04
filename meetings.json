@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-03T23:46:58.654Z",
+ "updated": "2026-11-04T01:14:31.642Z",
  "source": "Utah Public Notice Website (utah.gov/pmn)",
  "bodies": [
   {
@@ -794,6 +794,34 @@
    "link": "https://www.utah.gov/pmn/sitemap/notice/1119587.html"
   },
   {
+   "title": "Town Council Meeting 11-5-2026",
+   "start": 1793919600000,
+   "end": 1793926800000,
+   "place": "7474 East 200 South, Huntsville, UT 84317",
+   "items": [
+    "Opening Ceremony - Bruce Ahlstrom",
+    "Public Comments: Residents will be allotted three (3) minutes.",
+    "Sheriff Report   ACTION ITEMS:",
+    "Discussion and/or action on approval of Minutes for Work Session October 8, 2026.",
+    "Discussion and/or action on approval of Minutes for Town Council Meeting October 8, 2026.",
+    "Discussion and/or action on Resolution 2026-11-05-A: Resolution Requesting Admission to the Public Employees R",
+    "Discussion and/or action on Resolution 2026-11-C: Interlocal Agreement for Payroll Services.",
+    "Discussion and/or action on Assignment Letter No. 1 regarding William Morris.",
+    "Discussion and/or action on approval of boundary line adjustment church lot and ski town.",
+    "Discussion and/or action on Proclamation 2026-11-05: Arbor Day 2026.",
+    "Discussion and/or action on Resolution 2026-11-05-B: Designating Signers for Zion's Bank Accounts.",
+    "Discussion and/or action on Ordinance 2026-09-23: Rezoning of parcels from C-1 to C-2."
+   ],
+   "canceled": false,
+   "files": [],
+   "read": 1793754871642,
+   "id": "1120403",
+   "bodyId": 313,
+   "body": "Huntsville Town Council",
+   "short": "Huntsville Council",
+   "link": "https://www.utah.gov/pmn/sitemap/notice/1120403.html"
+  },
+  {
    "title": "Pineview West Sewer Improvement District Board Meeting",
    "start": 1794254400000,
    "end": 1794258000000,
@@ -806,7 +834,7 @@
    ],
    "canceled": false,
    "files": [],
-   "read": 1793749618654,
+   "read": 1793754871642,
    "id": "1120187",
    "bodyId": 2167,
    "body": "Weber County Commission",
@@ -820,7 +848,7 @@
    "place": "2380 Washington Blvd., Commission Chambers, 1st Floor, Ogden, UT 84401",
    "canceled": false,
    "files": [],
-   "read": 1793749618654,
+   "read": 1793754871642,
    "id": "1120207",
    "bodyId": 2167,
    "body": "Weber County Commission",
