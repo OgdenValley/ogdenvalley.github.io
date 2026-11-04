@@ -42,14 +42,6 @@
    "desc": "2026 holiday bazaar at St Paul Lutheran."
   },
   {
-   "t": "Copper Ornament Class",
-   "start": "2026-11-14T12:00:00-07:00",
-   "loc": "2371 Kiesel Ave, Ogden, UT 84401",
-   "into": "weber",
-   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-   "desc": "Event by Galleon's Gold Jewelry."
-  },
-  {
    "t": "Hairy Horse Show",
    "start": "2026-11-21T09:00:00-07:00",
    "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
@@ -706,6 +698,359 @@
    "url": "https://www.mountainartsandmusic.org/",
    "desc": "Intro to art basics for absolute beginners, 1st Saturdays. From $25, sign up at mountainartsandmusic.org/workshops.",
    "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
+  },
+  {
+   "t": "OVWAG Planning & Volunteer Meeting",
+   "start": "2026-11-04T18:00:00-07:00",
+   "loc": "Ogden Valley Branch Library, 131 S 7400 E, Huntsville, UT 84317",
+   "into": "ov",
+   "url": "https://www.facebook.com/events/1850274899315074/",
+   "desc": "Planning and volunteer meeting.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Fall Concert Series: Singer-Songwriters in the Round",
+   "start": "2026-11-07T19:00:00-07:00",
+   "loc": "Mountain Arts & Music Art Space, 2595 N Hwy 162, Eden, UT 84310",
+   "into": "ov",
+   "url": "https://mountainartsandmusic.org",
+   "desc": "First-Saturday fall concert. Check MAM for the start time.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Fall Into Our Open House Event",
+   "start": "2026-11-07T12:00:00-07:00",
+   "loc": "Ogden Valley",
+   "into": "ov",
+   "url": "https://www.facebook.com/events/1005363139291245/",
+   "desc": "Open house in Ogden Valley.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Huntsville Town Council meeting",
+   "start": "2026-12-03T18:00:00-07:00",
+   "loc": "Huntsville Town Hall, 7474 E 200 S, Huntsville, UT 84317",
+   "into": "ov",
+   "url": "https://huntsvilleutah.gov/upcoming-events",
+   "desc": "Public meeting.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Fall Concert Series: Christian Scheller",
+   "start": "2026-12-05T19:00:00-07:00",
+   "loc": "Mountain Arts & Music Art Space, 2595 N Hwy 162, Eden, UT 84310",
+   "into": "ov",
+   "url": "https://mountainartsandmusic.org",
+   "desc": "First-Saturday fall concert. Check MAM for the start time.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Four Corners of Intention: Junk Journaling Workshop (part 1 of 3)",
+   "start": "2026-11-05T18:00:00-07:00",
+   "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
+   "into": "weber",
+   "url": "https://www.facebook.com/events/1663529512179866/",
+   "desc": "Three-part junk journaling workshop.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "November Art Stroll at The Local Artisan Collective",
+   "start": "2026-11-06T18:00:00-07:00",
+   "loc": "2371 Kiesel Ave, Ogden, UT 84401",
+   "into": "weber",
+   "url": "https://www.facebook.com/events/1086560337603886/",
+   "desc": "First Friday art stroll stop.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Drop-In Ring Bar: Design Your Own Sterling Silver or Spoon Ring",
+   "start": "2026-11-06T18:00:00-07:00",
+   "loc": "2371 Kiesel Ave, Ogden, UT 84401",
+   "into": "weber",
+   "url": "https://www.facebook.com/events/2182450739292366/",
+   "desc": "Drop-in ring making.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "First Friday: Watercolor Embroidery with Hey Be Fab (full)",
+   "start": "2026-11-06T18:00:00-07:00",
+   "loc": "455 25th Street, Ogden, UT 84401",
+   "into": "weber",
+   "url": "https://www.facebook.com/events/2281637989292190/",
+   "desc": "Class is full; waitlist on the event page.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Crossroads Gun Show",
+   "start": "2026-11-07T09:00:00-07:00",
+   "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
+   "into": "weber",
+   "url": "https://www.facebook.com/events/27939215662444459/",
+   "desc": "Gun show.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "RMPRA Winter Series Rodeo",
+   "start": "2026-11-13T19:30:00-07:00",
+   "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
+   "into": "weber",
+   "url": "https://www.facebook.com/events/1835972044500793/",
+   "desc": "Winter series rodeo.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "December Art Stroll at The Local Artisan Collective",
+   "start": "2026-12-04T18:00:00-07:00",
+   "loc": "2371 Kiesel Ave, Ogden, UT 84401",
+   "into": "weber",
+   "url": "https://www.facebook.com/events/2635160083570102/",
+   "desc": "First Friday art stroll stop.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Metaphysical Mini Market",
+   "start": "2026-12-05T10:00:00-07:00",
+   "loc": "1708 E 5550 S, Suites 17 & 18, South Ogden, UT 84403",
+   "into": "weber",
+   "url": "https://www.facebook.com/events/1580793577136768/",
+   "desc": "Dec 5-6. Check the event page for hours.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Breakfast with Santa",
+   "start": "2026-12-13T10:00:00-07:00",
+   "loc": "1335 W 12th Street, Ogden, UT 84404",
+   "into": "weber",
+   "url": "https://www.facebook.com/events/1137700262050457/",
+   "desc": "Breakfast with Santa.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Hands-On Advanced Sourdough Bread",
+   "start": "2027-01-09T14:00:00-07:00",
+   "loc": "3030 Grant Ave, Ogden, UT 84401",
+   "into": "weber",
+   "url": "https://www.facebook.com/events/2916708602042947/",
+   "desc": "Sourdough class.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Girls Volleyball & NAL: Snowcrest vs Wahlquist (home)",
+   "start": "2026-11-05T15:00:00-07:00",
+   "end": "2026-11-05T17:00:00-07:00",
+   "loc": "Snowcrest Junior High, 2755 N Hwy 162, Eden, UT 84310",
+   "into": "ov",
+   "url": "https://www.wsd.net/o/sjh/events",
+   "desc": "Home games. Come cheer on the Snowcrest Bears.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Girls Volleyball & NAL: Snowcrest vs Mountain View (home)",
+   "start": "2026-11-12T15:00:00-07:00",
+   "end": "2026-11-12T17:00:00-07:00",
+   "loc": "Snowcrest Junior High, 2755 N Hwy 162, Eden, UT 84310",
+   "into": "ov",
+   "url": "https://www.wsd.net/o/sjh/events",
+   "desc": "Home games. Come cheer on the Snowcrest Bears.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Royal Petty: Tom Petty tribute w/ Pepper Rose does Sheryl Crow",
+   "start": "2026-11-06T19:00:00-07:00",
+   "loc": "Kamikazes Ogden, 2404 Adams Ave., Ogden",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Royal Bliss Tom Petty tribute experience.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Music @ the Collective with David Phillips",
+   "start": "2026-11-06T18:30:00-07:00",
+   "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Live music at the Collective.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Memorial Cruise for Katie Sue",
+   "start": "2026-11-07T12:00:00-07:00",
+   "loc": "Harmons, Roy",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Memorial cruise.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Envelope Junk Journal Class",
+   "start": "2026-11-07T15:00:00-07:00",
+   "loc": "Downtown Ogden",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Junk journal class. Check the event page for the exact address.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Ecstatic Dance Community Potluck",
+   "start": "2026-11-07T18:00:00-07:00",
+   "loc": "Wild-Shaped Bakery, Ogden",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Community potluck.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Singles Walk & Talk",
+   "start": "2026-11-08T08:00:00-07:00",
+   "loc": "Ogden",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Singles walk. Check the event page for the meeting spot.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Veterans Day Hike: Coldwater Canyon",
+   "start": "2026-11-11T08:00:00-07:00",
+   "loc": "Coldwater Canyon trailhead, North Ogden",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Veterans Day group hike.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Veterans Tribute Run",
+   "start": "2026-11-14T08:00:00-07:00",
+   "loc": "Ogden First United Methodist Church, Marriott-Slaterville",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Tribute run for veterans. Facebook lists it at 8 and 9 a.m.; check the event page.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Lino Print Workshop",
+   "start": "2026-11-14T13:00:00-07:00",
+   "loc": "Ogden Creative Reuse, 2424 Wall Ave., Ogden",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Art workshop.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Ogden Strides Club: Steps & Connections",
+   "start": "2026-11-14T15:00:00-07:00",
+   "loc": "Big Dee Sports Park, Ogden",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Walking club meetup.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Harvest and Holly Bazaar",
+   "start": "2026-11-21T12:00:00-07:00",
+   "loc": "2913 S Grant Ave, Ogden, UT 84401",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Holiday bazaar.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Ogden Ecstatic Dance",
+   "start": "2026-11-21T19:00:00-07:00",
+   "loc": "First Presbyterian Church of Ogden",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Ecstatic dance.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "OPR Santa Run & Cookie Exchange",
+   "start": "2026-11-28T16:00:00-07:00",
+   "loc": "The LAB, Ogden",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Santa run and cookie exchange.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Krampus 801 @ Ogden Light Parade",
+   "start": "2026-11-28T17:00:00-07:00",
+   "loc": "Downtown Ogden",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Krampus group at the Holiday Electric Light Parade.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Club Obscura",
+   "start": "2026-11-28T20:00:00-07:00",
+   "loc": "2404 Adams Ave., Ogden",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Night event at 2404 Adams Ave.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Weber State University Jewelry Student Exhibition",
+   "start": "2026-12-02T18:00:00-07:00",
+   "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Student jewelry show. Facebook lists more than one date.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Dinos in the Snow (Week 1)",
+   "start": "2026-12-11T17:00:00-07:00",
+   "loc": "George S. Eccles Dinosaur Park, 1544 Park Blvd., Ogden",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Dec. 11-12. Check the event page for times.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Dinos in the Snow (Week 2)",
+   "start": "2026-12-18T17:00:00-07:00",
+   "loc": "George S. Eccles Dinosaur Park, 1544 Park Blvd., Ogden",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Dec. 18-19. Check the event page for times.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Cardboard Exchange MEGA Expo",
+   "start": "2027-01-09T10:00:00-07:00",
+   "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Trading card expo, Jan. 9-10. Check the event page for hours.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "2027 Winter Market by Farmers Market Ogden",
+   "start": "2027-01-23T10:00:00-07:00",
+   "loc": "Ogden Union Station, 2501 Wall Ave., Ogden",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Winter farmers market; more dates to follow.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Music @ the Collective with Alli Brown",
+   "start": "2027-04-02T18:30:00-06:00",
+   "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Live music at the Collective.",
+   "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Ogden Cinco de Mayo Festival 2027",
+   "start": "2027-05-01T10:00:00-06:00",
+   "loc": "Ogden City Amphitheater, Ogden",
+   "into": "weber",
+   "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+   "desc": "Cinco de Mayo festival.",
+   "src": "OVE events sweep, Nov. 4, 2026"
   }
  ]
 }

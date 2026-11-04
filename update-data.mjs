@@ -82,6 +82,42 @@ async function fetchCal(id){
   if (!txt.includes("BEGIN:VCALENDAR")) throw new Error("not a calendar (is it set to public?)");
   return txt;
 }
+// Duplicate check: two feeds (or a feed and extra-events.json) often list the same show,
+// e.g. "Ballet West's The Nutcracker" and "Ballet West: Nutcracker - Austad".
+// Same calendar, starts within 90 minutes, and the titles share their main words -> keep one
+// (the one with more details), and borrow the other's link/place if the kept one has none.
+const DUP_DROP = new Set(["the","and","with","for","presents","present","presented","live","event","events","show","night","ogden","utah","austad","allred","browning","onstage","onog","wsu","weber","state","university","center","theater","theatre","eccles","peery","peerys","egyptian","at","of","a","an","in","on","to","by","s"]);
+function dupWords(t){
+  const x = String(t || "").toLowerCase().replace(/[\u2019']s\b/g, "").replace(/\s+-\s+[^-]*$/, "").replace(/&/g, " and ").replace(/[^a-z0-9 ]+/g, " ");
+  return new Set(x.split(/\s+/).filter(w => w.length > 1 && !DUP_DROP.has(w)));
+}
+function sameEvent(a, b){
+  if (Math.abs(a.s - b.s) > 90 * 6e4) return false;
+  const A = dupWords(a.t), B = dupWords(b.t); if (!A.size || !B.size) return false;
+  const [small, big] = A.size <= B.size ? [A, B] : [B, A];
+  let shared = 0; small.forEach(w => { if (big.has(w)) shared++; });
+  const close = Math.abs(a.s - b.s) <= 15 * 6e4; // same start time (within 15 min)
+  if (shared === small.size && (small.size >= 3 || (close && (small.size === 2 || [...small][0].length >= 4)))) return true;
+  return shared / (A.size + B.size - shared) >= 0.6;
+}
+function dedupeCalendars(out){
+  let removed = 0;
+  for (const k of Object.keys(out.calendars)) {
+    const evs = (out.calendars[k].events || []).slice().sort((a, b) => a.s - b.s), keep = [];
+    const score = e => (e.desc || "").length + (e.loc || "").length + (e.url ? 20 : 0);
+    for (const e of evs) {
+      const i = keep.findIndex(y => sameEvent(y, e));
+      if (i < 0) { keep.push(e); continue; }
+      const y = keep[i], [win, lose] = score(e) > score(y) ? [e, y] : [y, e];
+      if (!win.url && lose.url) win.url = lose.url;
+      if (!win.loc && lose.loc) win.loc = lose.loc;
+      keep[i] = win; removed++;
+      console.log("duplicate dropped:", k, lose.t, "(kept:", win.t + ")");
+    }
+    out.calendars[k].events = keep.sort((a, b) => a.s - b.s);
+  }
+  console.log("duplicates dropped:", removed);
+}
 async function calendars(){
   const ids = JSON.parse(fs.readFileSync("calendars.json", "utf8"));
   let oldFile = {}; try { oldFile = JSON.parse(fs.readFileSync("events.json", "utf8")); } catch {}
@@ -145,6 +181,7 @@ async function calendars(){
     }
     for (const k of Object.keys(out.calendars)) out.calendars[k].events.sort((a, b) => a.s - b.s);
     console.log("extra events added:", n); }
+  dedupeCalendars(out);
   // keep the file small: sources are only stored for fallback, not shown twice
   writeIfChanged("events.json", out);
 }
