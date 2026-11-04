@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T01:14:29.196Z",
+ "updated": "2026-11-04T06:07:19.986Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
@@ -12,7 +12,7 @@
    "short": "Mostly Cloudy then Patchy Fog",
    "both": "Mostly Cloudy then Patchy Fog",
    "snow": false,
-   "wind": "1 to 6 mph"
+   "wind": "3 mph"
   },
   {
    "date": "2026-11-04",
@@ -87,7 +87,7 @@
    "wind": "1 mph"
   }
  ],
- "today": "Tonight: Patchy fog after 2am. Mostly cloudy. Low around 31, with temperatures rising to around 33 overnight. East southeast wind 1 to 6 mph.",
+ "today": "Tonight: Patchy fog after 2am. Mostly cloudy. Low around 31, with temperatures rising to around 33 overnight. East wind around 3 mph.",
  "valleySnowDays": [],
  "snowLevelFt": 6600,
  "snowInches48": 0,
