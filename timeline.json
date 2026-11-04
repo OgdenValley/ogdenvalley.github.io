@@ -1,17 +1,24 @@
 {
- "updated": "2026-11-04T16:00:48.149Z",
+ "updated": "2026-11-04T22:56:11.710Z",
  "items": [
   {
-   "t": 1793808048149,
+   "t": 1793832971709,
+   "src": "UDOT",
+   "text": "Crash or incident: I-84. Disabled Vehicle, EB I-84 at MP 89 (Mouth of Weber Canyon). Right Shoulder Blocked.",
+   "kind": "crash",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1793832971709,
    "src": "Utah Air Quality",
    "text": "Weber County forecast: Wednesday good · Thursday good · Friday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
   },
   {
-   "t": 1793746429727,
+   "t": 1793808048149,
    "src": "Utah Air Quality",
-   "text": "Weber County forecast: Tuesday good · Wednesday good · Thursday good",
+   "text": "Weber County forecast: Wednesday good · Thursday good · Friday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
   }
@@ -19,7 +26,8 @@
  "seen": {
   "ev": {
    "10148": "I-84|(updated 11/3/26) Two travel lanes have been restored in each direction over the bridge region. Construction will suspend starting Nov. 26 Westbound single lane closure | late Winter/early Spring 2027(TBA) - Winter 2027 | Day & Night Construction resumes. All traffic will return to the crossover configuration on the ne",
-   "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at"
+   "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at",
+   "38007": "I-84|Disabled Vehicle, EB I-84 at MP 89 (Mouth of Weber Canyon). Right Shoulder Blocked."
   },
   "al": {},
   "cond": {
@@ -49,6 +57,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "November 4, 2026 8:22 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "November 4, 2026 3:32 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
