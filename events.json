@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T13:14:30.925Z",
+ "updated": "2026-11-04T16:00:32.486Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -12,6 +12,26 @@
      "allDay": false,
      "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
      "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1793840400000,
+     "e": 1793847600000,
+     "t": "OVWAG Planning & Volunteer Meeting",
+     "loc": "Ogden Valley Branch Library, 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Planning and volunteer meeting.",
+     "url": "https://www.facebook.com/events/1850274899315074/",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
+     "s": 1793916000000,
+     "e": 1793923200000,
+     "t": "Girls Volleyball & NAL: Snowcrest vs Wahlquist (home)",
+     "loc": "Snowcrest Junior High, 2755 N Hwy 162, Eden, UT 84310",
+     "allDay": false,
+     "desc": "Home games. Come cheer on the Snowcrest Bears.",
+     "url": "https://www.wsd.net/o/sjh/events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1793926800000,
@@ -44,6 +64,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1794078000000,
+     "e": 1794085200000,
+     "t": "Fall Into Our Open House Event",
+     "loc": "Ogden Valley",
+     "allDay": false,
+     "desc": "Open house in Ogden Valley.",
+     "url": "https://www.facebook.com/events/1005363139291245/",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
      "s": 1794081600000,
      "e": 1794088800000,
      "t": "New World Distillery tasting tour",
@@ -73,6 +103,16 @@
      "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
     },
     {
+     "s": 1794103200000,
+     "e": 1794110400000,
+     "t": "Fall Concert Series: Singer-Songwriters in the Round",
+     "loc": "Mountain Arts & Music Art Space, 2595 N Hwy 162, Eden, UT 84310",
+     "allDay": false,
+     "desc": "First-Saturday fall concert. Check MAM for the start time.",
+     "url": "https://mountainartsandmusic.org",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
      "s": 1794168000000,
      "e": 1794175200000,
      "t": "New World Distillery tasting tour",
@@ -100,6 +140,16 @@
      "allDay": false,
      "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
      "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1794520800000,
+     "e": 1794528000000,
+     "t": "Girls Volleyball & NAL: Snowcrest vs Mountain View (home)",
+     "loc": "Snowcrest Junior High, 2755 N Hwy 162, Eden, UT 84310",
+     "allDay": false,
+     "desc": "Home games. Come cheer on the Snowcrest Bears.",
+     "url": "https://www.wsd.net/o/sjh/events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1794600000000,
@@ -276,6 +326,16 @@
      "url": "https://www.meetup.com/webercountyoutdoors/"
     },
     {
+     "s": 1796346000000,
+     "e": 1796353200000,
+     "t": "Huntsville Town Council meeting",
+     "loc": "Huntsville Town Hall, 7474 E 200 S, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Public meeting.",
+     "url": "https://huntsvilleutah.gov/upcoming-events",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
      "s": 1796414400000,
      "e": 1796421600000,
      "t": "New World Distillery tasting tour",
@@ -303,6 +363,16 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
+    },
+    {
+     "s": 1796522400000,
+     "e": 1796529600000,
+     "t": "Fall Concert Series: Christian Scheller",
+     "loc": "Mountain Arts & Music Art Space, 2595 N Hwy 162, Eden, UT 84310",
+     "allDay": false,
+     "desc": "First-Saturday fall concert. Check MAM for the start time.",
+     "url": "https://mountainartsandmusic.org",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1796587200000,
@@ -888,16 +958,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1793759400000,
-     "e": 1793763000000,
-     "t": "Browning Presents: Manual Cinema's The 4th Witch - Austad",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
      "s": 1793833200000,
      "e": 1793847600000,
      "t": "RMBRA Jackpots",
@@ -1008,6 +1068,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1793926800000,
+     "e": 1793934000000,
+     "t": "Four Corners of Intention: Junk Journaling Workshop (part 1 of 3)",
+     "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Three-part junk journaling workshop.",
+     "url": "https://www.facebook.com/events/1663529512179866/",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
      "s": 1793930400000,
      "e": 1793937600000,
      "t": "Trails Foundation of Northern Utah presents: Ogden Mountain Film Festival",
@@ -1088,6 +1158,36 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1794013200000,
+     "e": 1794020400000,
+     "t": "November Art Stroll at The Local Artisan Collective",
+     "loc": "2371 Kiesel Ave, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "First Friday art stroll stop.",
+     "url": "https://www.facebook.com/events/1086560337603886/",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
+     "s": 1794013200000,
+     "e": 1794020400000,
+     "t": "Drop-In Ring Bar: Design Your Own Sterling Silver or Spoon Ring",
+     "loc": "2371 Kiesel Ave, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Drop-in ring making.",
+     "url": "https://www.facebook.com/events/2182450739292366/",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
+     "s": 1794013200000,
+     "e": 1794020400000,
+     "t": "First Friday: Watercolor Embroidery with Hey Be Fab (full)",
+     "loc": "455 25th Street, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Class is full; waitlist on the event page.",
+     "url": "https://www.facebook.com/events/2281637989292190/",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
      "s": 1794015000000,
      "e": 1794024000000,
      "t": "Under the Western Sky Gala",
@@ -1096,6 +1196,16 @@
      "desc": "The Family Support Center of Ogden's Annual Gala Fundraiser.\nDinner with pairings, DJ, dancing, silent auction, and opportunity tickets.\nTables available for purchase.\nFor sponsorship and donation opportunities please email jade@fscogden.org\nThe Family Support Center of Ogden provides free workshops, education, childcare, and supportive services to help strengthen the family unit and enhance family functioning.",
      "url": "https://FSCOAnnualGala2026.eventbrite.com",
      "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794015000000,
+     "e": 1794022200000,
+     "t": "Music @ the Collective with David Phillips",
+     "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Live music at the Collective.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1794016800000,
@@ -1109,16 +1219,6 @@
     },
     {
      "s": 1794016800000,
-     "e": 1794025800000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1794016800000,
      "e": 1794024000000,
      "t": "Friday Night Jazz",
      "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
@@ -1126,6 +1226,16 @@
      "desc": "Free show, all ages. Every Friday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1794016800000,
+     "e": 1794024000000,
+     "t": "Royal Petty: Tom Petty tribute w/ Pepper Rose does Sheryl Crow",
+     "loc": "Kamikazes Ogden, 2404 Adams Ave., Ogden",
+     "allDay": false,
+     "desc": "Royal Bliss Tom Petty tribute experience.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1794018600000,
@@ -1148,16 +1258,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1794018600000,
-     "e": 1794025800000,
-     "t": "WSSO - Austad",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
      "s": 1794020400000,
      "e": 1794024000000,
      "t": "Community United Methodist Church Holiday Boutique",
@@ -1178,6 +1278,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1794067200000,
+     "e": 1794074400000,
+     "t": "Crossroads Gun Show",
+     "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
+     "allDay": false,
+     "desc": "Gun show.",
+     "url": "https://www.facebook.com/events/27939215662444459/",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
      "s": 1794070800000,
      "e": 1794078000000,
      "t": "St Paul Lutheran Holiday Bazaar",
@@ -1186,6 +1296,16 @@
      "desc": "2026 holiday bazaar at St Paul Lutheran.",
      "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
      "src": "Ogden Valley Information and Events"
+    },
+    {
+     "s": 1794078000000,
+     "e": 1794085200000,
+     "t": "Memorial Cruise for Katie Sue",
+     "loc": "Harmons, Roy",
+     "allDay": false,
+     "desc": "Memorial cruise.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1794085200000,
@@ -1198,6 +1318,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1794088800000,
+     "e": 1794096000000,
+     "t": "Envelope Junk Journal Class",
+     "loc": "Downtown Ogden",
+     "allDay": false,
+     "desc": "Junk journal class. Check the event page for the exact address.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
      "s": 1794099600000,
      "e": 1794106800000,
      "t": "Free live music & ice cream at Z's Sweets",
@@ -1206,6 +1336,16 @@
      "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1794099600000,
+     "e": 1794106800000,
+     "t": "Ecstatic Dance Community Potluck",
+     "loc": "Wild-Shaped Bakery, Ogden",
+     "allDay": false,
+     "desc": "Community potluck.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1794103200000,
@@ -1238,14 +1378,14 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1794105000000,
-     "e": 1794110400000,
-     "t": "ONOG: Aida Cuevas - Austad",
-     "loc": "",
+     "s": 1794150000000,
+     "e": 1794157200000,
+     "t": "Singles Walk & Talk",
+     "loc": "Ogden",
      "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
+     "desc": "Singles walk. Check the event page for the meeting spot.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1794272400000,
@@ -1338,14 +1478,14 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1794364200000,
-     "e": 1794369600000,
-     "t": "Wind & Percussion Chamber Music Concert - 136",
-     "loc": "",
+     "s": 1794409200000,
+     "e": 1794416400000,
+     "t": "Veterans Day Hike: Coldwater Canyon",
+     "loc": "Coldwater Canyon trailhead, North Ogden",
      "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
+     "desc": "Veterans Day group hike.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1794447000000,
@@ -1529,8 +1669,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1539,8 +1679,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1566,6 +1706,26 @@
      "desc": "“That rug really tied the room together…”\nAnd so does this festival.\n\nThe Dude is back! Join us at the historic Peery’s Egyptian Theater for a celebration of the Coen Brothers’ cult classic The Big Lebowski.\n\nEnjoy a screening of the film, costume contests, trivia, local vendors, and themed drinks available for purchase. Whether you’re a lifelong Achiever or seeing the movie for the first time, come spend the evening with fellow fans and abide in true Dude fashion.\n\nMark your calendar, and don’t forget your bathrobe.\n\nSCHEDULE:Front doors open at 5 p.m. Party kicks off with art vendors, “Duder",
      "url": "https://ogdenpet.com/event/ogden-big-lebowski-festival-2026/peerys-egyptian-theater/",
      "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794623400000,
+     "e": 1794630600000,
+     "t": "RMPRA Winter Series Rodeo",
+     "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
+     "allDay": false,
+     "desc": "Winter series rodeo.",
+     "url": "https://www.facebook.com/events/1835972044500793/",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
+     "s": 1794668400000,
+     "e": 1794675600000,
+     "t": "Veterans Tribute Run",
+     "loc": "Ogden First United Methodist Church, Marriott-Slaterville",
+     "allDay": false,
+     "desc": "Tribute run for veterans. Facebook lists it at 8 and 9 a.m.; check the event page.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1794675600000,
@@ -1608,14 +1768,14 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1794682800000,
-     "e": 1794690000000,
-     "t": "Copper Ornament Class",
-     "loc": "2371 Kiesel Ave, Ogden, UT 84401",
+     "s": 1794686400000,
+     "e": 1794693600000,
+     "t": "Lino Print Workshop",
+     "loc": "Ogden Creative Reuse, 2424 Wall Ave., Ogden",
      "allDay": false,
-     "desc": "Event by Galleon's Gold Jewelry.",
+     "desc": "Art workshop.",
      "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-     "src": "Ogden Valley Information and Events"
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1794690000000,
@@ -1636,6 +1796,16 @@
      "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1794693600000,
+     "e": 1794700800000,
+     "t": "Ogden Strides Club: Steps & Connections",
+     "loc": "Big Dee Sports Park, Ogden",
+     "allDay": false,
+     "desc": "Walking club meetup.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1794704400000,
@@ -1659,8 +1829,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1669,8 +1839,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1771,16 +1941,6 @@
      "s": 1794969000000,
      "e": 1794976200000,
      "t": "Jazz - Allred",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1794969000000,
-     "e": 1794978000000,
-     "t": "String Chamber Music Fall Concert - 136",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -2008,6 +2168,16 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1795287600000,
+     "e": 1795294800000,
+     "t": "Harvest and Holly Bazaar",
+     "loc": "2913 S Grant Ave, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Holiday bazaar.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
      "s": 1795294800000,
      "e": 1795303800000,
      "t": "Ogden Musical Theatre Presents: A Christmas Carol",
@@ -2066,6 +2236,16 @@
      "desc": "Free. Every Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1795312800000,
+     "e": 1795320000000,
+     "t": "Ogden Ecstatic Dance",
+     "loc": "First Presbyterian Church of Ogden",
+     "allDay": false,
+     "desc": "Ecstatic dance.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1795314600000,
@@ -2248,16 +2428,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1795813200000,
-     "e": 1795820400000,
-     "t": "Ballet West: Nutcracker - Austad",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
      "s": 1795825800000,
      "e": 1795831200000,
      "t": "Steppin' The Ogden Way dance class",
@@ -2350,22 +2520,22 @@
     {
      "s": 1795899600000,
      "e": 1795906800000,
-     "t": "Ballet West: Nutcracker - Austad",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1795899600000,
-     "e": 1795906800000,
      "t": "Craft n Cry",
      "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
      "allDay": false,
      "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1795906800000,
+     "e": 1795914000000,
+     "t": "OPR Santa Run & Cookie Exchange",
+     "loc": "The LAB, Ogden",
+     "allDay": false,
+     "desc": "Santa run and cookie exchange.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1795908600000,
@@ -2376,6 +2546,16 @@
      "desc": "Run this awesome 5K in downtown Ogden wearing a Santa Suit. All runners get a complete Santa suit for their $35 registration fee. Enjoy milk and cookie aid stations; volunteers dress as elves!\n\nBe a part of the 7th Annual Ogden Santa Run. This timed fun run is the best way to start the Holiday Season. ALL RUNNERS MUST DRESS UP AS SANTA CLAUS!!! Along your 5K course you will have Santa's Helpers (Volunteers) dressed with green shirts and hats handing out Milk & Cookies to aid the runners.\n\nFor your registration fee you will receive all you need to run as Santa Claus (Hat, Beard, Jacket, and Pan",
      "url": "http://www.runsanta.com",
      "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795910400000,
+     "e": 1795917600000,
+     "t": "Krampus 801 @ Ogden Light Parade",
+     "loc": "Downtown Ogden",
+     "allDay": false,
+     "desc": "Krampus group at the Holiday Electric Light Parade.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1795912200000,
@@ -2428,6 +2608,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1795921200000,
+     "e": 1795928400000,
+     "t": "Club Obscura",
+     "loc": "2404 Adams Ave., Ogden",
+     "allDay": false,
+     "desc": "Night event at 2404 Adams Ave.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
      "s": 1795978800000,
      "e": 1795984200000,
      "t": "Ballet West's The Nutcracker",
@@ -2436,16 +2626,6 @@
      "desc": "Ballet West’s Nutcracker returns to Ogden for Thanksgiving weekend, America’s first and longest-running production of the holiday classic. Willam Christensen choreographed it in 1944 for San Francisco Ballet, developed in consultation with George Balanchine and Alexandra Danilova. For ten years his was the only complete Nutcracker in the country, and Ballet West has danced it every year since 1963.",
      "url": "https://www.onstageogden.org/show-item/nutcracker-2026/",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795978800000,
-     "e": 1795986000000,
-     "t": "Ballet West: Nutcracker - Austad",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1795993200000,
@@ -2546,6 +2726,16 @@
      "desc": "Ogden City Planning Commission",
      "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
      "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796259600000,
+     "e": 1796266800000,
+     "t": "Weber State University Jewelry Student Exhibition",
+     "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Student jewelry show. Facebook lists more than one date.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1796261400000,
@@ -2668,6 +2858,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1796432400000,
+     "e": 1796439600000,
+     "t": "December Art Stroll at The Local Artisan Collective",
+     "loc": "2371 Kiesel Ave, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "First Friday art stroll stop.",
+     "url": "https://www.facebook.com/events/2635160083570102/",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
      "s": 1796436000000,
      "e": 1796443200000,
      "t": "Friday Night Jazz",
@@ -2686,6 +2886,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1796490000000,
+     "e": 1796497200000,
+     "t": "Metaphysical Mini Market",
+     "loc": "1708 E 5550 S, Suites 17 & 18, South Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Dec 5-6. Check the event page for hours.",
+     "url": "https://www.facebook.com/events/1580793577136768/",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1796504400000,
@@ -2746,16 +2956,6 @@
      "desc": "$5 readings. Every Monday.",
      "url": "",
      "src": "Weekly regular"
-    },
-    {
-     "s": 1796697000000,
-     "e": 1796700600000,
-     "t": "Studio 1 - Austad",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1796700600000,
@@ -2848,6 +3048,16 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1797033600000,
+     "e": 1797040800000,
+     "t": "Dinos in the Snow (Week 1)",
+     "loc": "George S. Eccles Dinosaur Park, 1544 Park Blvd., Ogden",
+     "allDay": false,
+     "desc": "Dec. 11-12. Check the event page for times.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
      "s": 1797035400000,
      "e": 1797040800000,
      "t": "Steppin' The Ogden Way dance class",
@@ -2918,6 +3128,16 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1797181200000,
+     "e": 1797188400000,
+     "t": "Breakfast with Santa",
+     "loc": "1335 W 12th Street, Ogden, UT 84404",
+     "allDay": false,
+     "desc": "Breakfast with Santa.",
+     "url": "https://www.facebook.com/events/1137700262050457/",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
      "s": 1797296400000,
      "e": 1797303600000,
      "t": "Mystic Mondays: tarot readings",
@@ -2976,6 +3196,16 @@
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1797638400000,
+     "e": 1797645600000,
+     "t": "Dinos in the Snow (Week 2)",
+     "loc": "George S. Eccles Dinosaur Park, 1544 Park Blvd., Ogden",
+     "allDay": false,
+     "desc": "Dec. 18-19. Check the event page for times.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1797640200000,
@@ -3286,6 +3516,56 @@
      "desc": "Free. Every Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1799514000000,
+     "e": 1799521200000,
+     "t": "Cardboard Exchange MEGA Expo",
+     "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
+     "allDay": false,
+     "desc": "Trading card expo, Jan. 9-10. Check the event page for hours.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
+     "s": 1799528400000,
+     "e": 1799535600000,
+     "t": "Hands-On Advanced Sourdough Bread",
+     "loc": "3030 Grant Ave, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Sourdough class.",
+     "url": "https://www.facebook.com/events/2916708602042947/",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
+     "s": 1800723600000,
+     "e": 1800730800000,
+     "t": "2027 Winter Market by Farmers Market Ogden",
+     "loc": "Ogden Union Station, 2501 Wall Ave., Ogden",
+     "allDay": false,
+     "desc": "Winter farmers market; more dates to follow.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
+     "s": 1806712200000,
+     "e": 1806719400000,
+     "t": "Music @ the Collective with Alli Brown",
+     "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Live music at the Collective.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
+     "s": 1809187200000,
+     "e": 1809194400000,
+     "t": "Ogden Cinco de Mayo Festival 2027",
+     "loc": "Ogden City Amphitheater, Ogden",
+     "allDay": false,
+     "desc": "Cinco de Mayo festival.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "OVE events sweep, Nov. 4, 2026"
     }
    ]
   }
@@ -4396,8 +4676,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4406,8 +4686,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4436,8 +4716,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4446,8 +4726,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",

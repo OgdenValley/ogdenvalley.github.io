@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T10:12:35.555Z",
+ "updated": "2026-11-04T16:00:40.905Z",
  "meetings": [
   {
    "body": "Weber County Commission",
@@ -42,11 +42,11 @@
    "name": "Ben Lomond Peak",
    "elev": 7690,
    "depth": {
-    "value": 1,
+    "value": 0,
     "date": "2026-11-03"
    },
    "water": {
-    "value": 0.1,
+    "value": 0,
     "date": "2026-11-03"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
@@ -60,7 +60,7 @@
     "date": "2026-11-03"
    },
    "water": {
-    "value": 0.1,
+    "value": 0,
     "date": "2026-11-03"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",

@@ -334,5 +334,63 @@
   "lat": 41.24996,
   "lng": -112.00112,
   "county": "Weber"
- }
+ },
+ "Ogden Valley Branch Library, 131 S 7400 E, Huntsville, UT 84317": null,
+ "Snowcrest Junior High, 2755 N Hwy 162, Eden, UT 84310": null,
+ "Ogden Valley": {
+  "lat": 41.29504,
+  "lng": -111.81582,
+  "county": "Weber"
+ },
+ "Mountain Arts & Music Art Space, 2595 N Hwy 162, Eden, UT 84310": null,
+ "Huntsville Town Hall, 7474 E 200 S, Huntsville, UT 84317": {
+  "lat": 41.26105,
+  "lng": -111.76885,
+  "county": "Weber"
+ },
+ "455 25th Street, Ogden, UT 84401": {
+  "lat": 41.21999,
+  "lng": -111.96854,
+  "county": "Weber"
+ },
+ "Harmons, Roy": {
+  "lat": 41.16671,
+  "lng": -112.02555,
+  "county": "Weber"
+ },
+ "Wild-Shaped Bakery, Ogden": null,
+ "Ogden": {
+  "lat": 41.223,
+  "lng": -111.97384,
+  "county": "Weber"
+ },
+ "Coldwater Canyon trailhead, North Ogden": null,
+ "Ogden First United Methodist Church, Marriott-Slaterville": null,
+ "Big Dee Sports Park, Ogden": {
+  "lat": 41.23544,
+  "lng": -111.9445,
+  "county": "Weber"
+ },
+ "2913 S Grant Ave, Ogden, UT 84401": null,
+ "First Presbyterian Church of Ogden": null,
+ "The LAB, Ogden": null,
+ "2404 Adams Ave., Ogden": {
+  "lat": 41.22243,
+  "lng": -111.96724,
+  "county": "Weber"
+ },
+ "1708 E 5550 S, Suites 17 & 18, South Ogden, UT 84403": null,
+ "George S. Eccles Dinosaur Park, 1544 Park Blvd., Ogden": null,
+ "1335 W 12th Street, Ogden, UT 84404": {
+  "lat": 41.24412,
+  "lng": -112.0126,
+  "county": "Weber"
+ },
+ "3030 Grant Ave, Ogden, UT 84401": {
+  "lat": 41.20934,
+  "lng": -111.97343,
+  "county": "Weber"
+ },
+ "Ogden Union Station, 2501 Wall Ave., Ogden": null,
+ "Ogden City Amphitheater, Ogden": null
 }
