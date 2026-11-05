@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T02:21:32.844Z",
+ "updated": "2026-11-05T04:02:10.930Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -926,26 +926,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1793714400000,
-     "e": 1793761200000,
-     "t": "2026 General Elections In-Person Voting",
-     "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-     "allDay": false,
-     "desc": "Come out and make your voice heard by exercising your right to vote! 🗳️\n\nPolls will be open from 7 am to 8 pm, with voting located at the Exhibit Hall on the north side of the facility.\n\nFor more information visit https://www.weberelections.gov/",
-     "url": "https://www.weberelections.gov/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793754000000,
-     "e": 1793764800000,
-     "t": "Ogden City Council Meeting",
-     "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1793759400000,
      "e": 1793766600000,
      "t": "Manual Cinema Presents: The 4th Witch",
@@ -953,16 +933,6 @@
      "allDay": false,
      "desc": "Manual Cinema is an Emmy Award–winning performance collective, design studio, and film production company. The 4th Witch is a new story inspired by Shakespeare’s Macbeth, about a girl who escapes war and flees into a dark forest.\n\nTold through shado puppetry, actors in silhouette, and live music (without dialogue or narration), The 4th Witch begins on the eve of an invasion of a small town by the warlord Macbeth. The girl escapes the invading army and flees into the nearby forest. Orphaned and exiled, she is rescued by a witch who takes her in as an apprentice. As she becomes more skilled in w",
      "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793759400000,
-     "e": 1793764800000,
-     "t": "Excellence in the Community Presents: Will Baxter & the Best of Neal Diamond",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "This is a free event, no tickets are needed.\n\nExcellence in the Community presents, “Will Baxter and the Best of Neil Diamond”. Nostalgia and “good times never felt so good”.",
-     "url": "https://ogdenpet.com/event/eic-beachboystribute-2026/peerys-egyptian-theater/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -3601,26 +3571,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1793714400000,
-    "e": 1793761200000,
-    "t": "2026 General Elections In-Person Voting",
-    "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-    "allDay": false,
-    "desc": "Come out and make your voice heard by exercising your right to vote! 🗳️\n\nPolls will be open from 7 am to 8 pm, with voting located at the Exhibit Hall on the north side of the facility.\n\nFor more information visit https://www.weberelections.gov/",
-    "url": "https://www.weberelections.gov/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793754000000,
-    "e": 1793764800000,
-    "t": "Ogden City Council Meeting",
-    "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1793759400000,
     "e": 1793766600000,
     "t": "Manual Cinema Presents: The 4th Witch",
@@ -3628,16 +3578,6 @@
     "allDay": false,
     "desc": "Manual Cinema is an Emmy Award–winning performance collective, design studio, and film production company. The 4th Witch is a new story inspired by Shakespeare’s Macbeth, about a girl who escapes war and flees into a dark forest.\n\nTold through shado puppetry, actors in silhouette, and live music (without dialogue or narration), The 4th Witch begins on the eve of an invasion of a small town by the warlord Macbeth. The girl escapes the invading army and flees into the nearby forest. Orphaned and exiled, she is rescued by a witch who takes her in as an apprentice. As she becomes more skilled in w",
     "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793759400000,
-    "e": 1793764800000,
-    "t": "Excellence in the Community Presents: Will Baxter & the Best of Neal Diamond",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "This is a free event, no tickets are needed.\n\nExcellence in the Community presents, “Will Baxter and the Best of Neil Diamond”. Nostalgia and “good times never felt so good”.",
-    "url": "https://ogdenpet.com/event/eic-beachboystribute-2026/peerys-egyptian-theater/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4563,16 +4503,6 @@
   ],
   "treehouse": [
    {
-    "s": 1793759400000,
-    "e": 1793763000000,
-    "t": "Browning Presents: Manual Cinema's The 4th Witch - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
     "s": 1793838600000,
     "e": 1793844000000,
     "t": "Weber State Students Fall Cello Recital - 113",
@@ -4734,8 +4664,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4744,8 +4674,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
