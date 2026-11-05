@@ -1,11 +1,18 @@
 {
- "updated": "2026-11-05T16:12:10.356Z",
+ "updated": "2026-11-05T21:55:04.142Z",
  "meetings": [
   {
    "body": "Huntsville Town Council",
    "title": "Town Council Meeting 11-5-2026",
    "start": 1793919600000,
    "link": "https://www.utah.gov/pmn/sitemap/notice/1120403.html",
+   "source": "Utah Public Notice Website"
+  },
+  {
+   "body": "Weber County Commission",
+   "title": "Public Notice of Vacancy on the Little Mountain Service Area Board",
+   "start": 1793977200000,
+   "link": "https://www.utah.gov/pmn/sitemap/notice/1121027.html",
    "source": "Utah Public Notice Website"
   },
   {
