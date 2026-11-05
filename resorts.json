@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T16:12:17.340Z",
+ "updated": "2026-11-05T17:23:16.804Z",
  "note": "Numbers from each resort's own snow report. Check the resort before you go.",
  "resorts": [
   {
@@ -19,7 +19,7 @@
    "trailsTotal": 115,
    "resortUpdated": "Nov 03 6:25 AM MT",
    "open": false,
-   "checked": "2026-11-05T16:12:17.883Z",
+   "checked": "2026-11-05T17:23:17.288Z",
    "status": "ok"
   },
   {
@@ -27,15 +27,15 @@
    "name": "Powder Mountain",
    "link": "https://powdermountain.com/conditions",
    "source": "Powder Mountain",
-   "base": 0,
+   "base": 2,
    "liftsOpen": 0,
    "liftsTotal": 5,
    "trailsOpen": 0,
    "trailsTotal": 153,
-   "new12": 0,
-   "new24": 0,
-   "new48": 0,
-   "new7d": 0,
+   "new12": 2,
+   "new24": 2,
+   "new48": 2,
+   "new7d": 2,
    "roads": [
     {
      "name": "Summit Pass",
@@ -46,9 +46,9 @@
      "status": "Clear and dry"
     }
    ],
-   "resortUpdated": "11/05/26 09:05 AM MST",
+   "resortUpdated": "11/05/26 10:15 AM MST",
    "open": false,
-   "checked": "2026-11-05T16:12:18.961Z",
+   "checked": "2026-11-05T17:23:18.139Z",
    "status": "ok"
   },
   {
@@ -62,7 +62,7 @@
    "base": 0,
    "season": 0,
    "open": false,
-   "checked": "2026-11-05T16:12:19.965Z",
+   "checked": "2026-11-05T17:23:18.936Z",
    "status": "ok"
   }
  ]
