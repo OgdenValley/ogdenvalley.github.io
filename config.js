@@ -191,7 +191,8 @@ window.OVE = {
   guessSpots: [
     { week: "Oct 8", start: "2026-10-08", image: "spot-2026-10-08.jpg", answerImage: "spot-2026-10-08-answer.jpg", hint: "Fall color, string lights and a big rocky ridge. Where are these two pumpkinheads standing?", by: "ove", credit: "", revealed: true, answer: "The Oaks in Ogden Canyon", winner: "" },
     { week: "Oct 15", start: "2026-10-15", image: "spot-2026-10-15.jpg", hint: "This little guy has a front-row seat for fall color. Where in the Valley is he sitting?", by: "ove", credit: "", revealed: false, answer: "", winner: "" },
-    { week: "Oct 27", start: "2026-10-27", image: "spot-2026-10-27.jpg", hint: "This old-timer has been parked in the Valley a long time, and it's not on a main road. Town or road only, please, no house numbers.", by: "ove", credit: "Photo: Shauna Miller", revealed: false, answer: "", winner: "" }
+    { week: "Oct 27", start: "2026-10-27", image: "spot-2026-10-27.jpg", hint: "This old-timer has been parked in the Valley a long time, and it's not on a main road. Town or road only, please, no house numbers.", by: "ove", credit: "Photo: Shauna Miller", revealed: false, answer: "", winner: "" },
+    { week: "Nov 5", start: "2026-11-05", image: "spot-2026-11-05.jpg", answerImage: "spot-2026-11-05-answer.jpg", hint: "Somewhere in Ogden Valley, a bird keeps watch over the coffee. Where are we?", by: "ove", credit: "Photo: Shauna Miller", revealed: false, answer: "", winner: "" }
   ],
 
   /* --- Home page photo banner -------------------------------------------
