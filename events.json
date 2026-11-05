@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T23:50:22.923Z",
+ "updated": "2026-11-05T01:15:14.246Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -915,16 +915,6 @@
      "allDay": false,
      "desc": "Come out and make your voice heard by exercising your right to vote! 🗳️\n\nPolls will be open from 7 am to 8 pm, with voting located at the Exhibit Hall on the north side of the facility.\n\nFor more information visit https://www.weberelections.gov/",
      "url": "https://www.weberelections.gov/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793745000000,
-     "e": 1793752200000,
-     "t": "Ogden City Council Work Session",
-     "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
-     "allDay": false,
-     "desc": "",
-     "url": "",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -3603,16 +3593,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1793745000000,
-    "e": 1793752200000,
-    "t": "Ogden City Council Work Session",
-    "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1793754000000,
     "e": 1793764800000,
     "t": "Ogden City Council Meeting",
@@ -4736,8 +4716,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4746,8 +4726,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
