@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T03:59:41.630Z",
+ "updated": "2026-11-06T05:06:03.564Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -907,26 +907,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1793836800000,
-     "e": 1793851200000,
-     "t": "Ogden City Planning Commission Meeting",
-     "loc": "2549 Washington Blvd., Council Chambers, 3rd floor, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ogden City Planning Commission",
-     "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793844000000,
-     "e": 1793851200000,
-     "t": "Warren Miller's \"Days Off\"",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Drop in on the 77th historic installment of winter’s favorite tradition this fall with Warren Miller’s Days Off. Join host Katie Burrell as she pulls back the curtain on what the world’s best athletes do on their days off, chasing pure adventure across the globe.\n\nFrom the legendary backcountry of Alaska to the powder of Hokkaido, Japan—journey across the slopes of Deer Valley, Revelstoke, Whistler, Pemberton, and Banff.",
-     "url": "https://ogdenpet.com/event/warren-millers-days-off-2026/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1793849400000,
      "e": 1793862000000,
      "t": "Country Dancing",
@@ -1578,8 +1558,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1588,8 +1568,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1738,8 +1718,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1748,8 +1728,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3522,26 +3502,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1793836800000,
-    "e": 1793851200000,
-    "t": "Ogden City Planning Commission Meeting",
-    "loc": "2549 Washington Blvd., Council Chambers, 3rd floor, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ogden City Planning Commission",
-    "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793844000000,
-    "e": 1793851200000,
-    "t": "Warren Miller's \"Days Off\"",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Drop in on the 77th historic installment of winter’s favorite tradition this fall with Warren Miller’s Days Off. Join host Katie Burrell as she pulls back the curtain on what the world’s best athletes do on their days off, chasing pure adventure across the globe.\n\nFrom the legendary backcountry of Alaska to the powder of Hokkaido, Japan—journey across the slopes of Deer Valley, Revelstoke, Whistler, Pemberton, and Banff.",
-    "url": "https://ogdenpet.com/event/warren-millers-days-off-2026/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1793883600000,
     "e": 1793894400000,
     "t": "Cup Hop 2026",
@@ -4505,8 +4465,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4515,8 +4475,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4545,8 +4505,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4555,8 +4515,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
