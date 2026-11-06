@@ -3,6 +3,15 @@
  "items": [
   {
    "type": "weekly",
+   "date": "2026-11-06T13:15:00-07:00",
+   "title": "Ogden Valley weather: Nov. 6 to 11",
+   "summary": "A dry, sunny week: sunny to mostly sunny every day through Thursday, highs of 53–62°, no rain or snow in the forecast and calm wind. Frosty mornings with lows of 31–36°, coldest Friday night near 31°, so leave time to scrape the windshield. One lane of SR-39 in upper Ogden Canyon stays closed through April, with flaggers by day and a signal at night. Veterans Day, Wednesday, Nov. 11: sunny, high near 61°. A good week to finish yard cleanup, blow out sprinklers and put hoses away.",
+   "image": "weather-2026-11-06-briefing.png",
+   "alt": "Ogden Valley weather briefing for Nov. 6 to 11: a six-day forecast, all sunny and dry, plus boxes on a dry sunny week, frosty mornings, the Ogden Canyon lane closure, Veterans Day, and a good-week-to list.",
+   "source": "National Weather Service point forecast for the Eden, Liberty and Huntsville area, issued 11:31 a.m. Nov. 6, 2026; UDOT Traffic (SR-39)"
+  },
+  {
+   "type": "weekly",
    "date": "2026-11-01T09:00:00-07:00",
    "title": "Ogden Valley weather: Nov. 1 to 6",
    "summary": "A soaking Sunday: rain turning to showers and thunderstorms (100%), with about three-quarters of an inch to an inch of rain possible and a high near 50°. A chance of light rain Monday through Wednesday (36–44%), then drier and sunnier by Thursday. Lows of 29–32° Monday through Friday nights, so cover tender plants and unhook hoses. Snow level near 6,600 feet, so the peaks may turn white while the Valley floor stays rain. Starting as early as Monday, Nov. 2, and through April, one lane of SR-39 in upper Ogden Canyon is closed, with alternating traffic around the clock. Air quality is Good.",
