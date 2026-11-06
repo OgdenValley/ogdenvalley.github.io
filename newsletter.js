@@ -9,7 +9,7 @@
 (function (root) {
   var TZ = "America/Denver";
   var AP = ["Jan.", "Feb.", "March", "April", "May", "June", "July", "Aug.", "Sept.", "Oct.", "Nov.", "Dec."];
-  var PAGE = {restaurants: ["restaurants.html", "Eat"], businesses: ["businesses.html", "Shop & do"], services: ["services.html", "Home services"], beauty: ["beauty.html", "Beauty & wellness"], farm: ["farm.html", "Farm & local food"], foodtrucks: ["foodtrucks.html", "Food trucks"], artists: ["artists.html", "Local artists"]};
+  var PAGE = {restaurants: ["restaurants.html", "Eat"], businesses: ["shop.html", "Shop & do"], services: ["services.html", "Home services"], beauty: ["beauty.html", "Beauty & wellness"], farm: ["farm.html", "Farm & local food"], foodtrucks: ["foodtrucks.html", "Food trucks"], artists: ["artists.html", "Local artists"]};
 
   function esc(s) { return String(s == null ? "" : s).replace(/[&<>"]/g, function (c) { return {"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]; }); }
   function ymd(t) { return new Intl.DateTimeFormat("en-CA", {timeZone: TZ}).format(new Date(t)); }

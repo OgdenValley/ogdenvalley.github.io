@@ -1567,16 +1567,6 @@ window.OVE_PLACES = {
      "checked": "2026-10-07"
    },
    {
-     "name": "Compass Rose Lodge & HALO Observatory",
-     "town": "Huntsville Town",
-     "type": "Boutique lodge & observatory",
-     "blurb": "Boutique lodge in Huntsville with an on-site observatory offering stargazing tours, and First Lift Coffee.",
-     "phone": "385-279-4460",
-     "link": "https://compassroselodge.com",
-     "address": "198 S 7400 E, Huntsville, UT 84317",
-     "checked": "2026-10-07"
-   },
-   {
      "name": "Detours",
      "town": "Huntsville Town",
      "type": "Paddle & bike rentals, shake shop",
@@ -1597,15 +1587,6 @@ window.OVE_PLACES = {
      "checked": "2026-10-07"
    },
    {
-     "name": "Edelweiss Inn",
-     "town": "Eden",
-     "type": "Lodging",
-     "blurb": "Lodging near Nordic Valley.",
-     "phone": "850-866-8418",
-     "address": "2548 Nordic Valley Dr, Eden, UT 84310",
-     "checked": "2026-10-07"
-   },
-   {
      "name": "EmieJames",
      "town": "Eden",
      "type": "Home decor & gifts",
@@ -1613,13 +1594,6 @@ window.OVE_PLACES = {
      "phone": "(385) 358-5506",
      "link": "https://emiejames.com",
      "address": "5522 E 2200 N, Suite B, Eden, UT 84310",
-     "checked": "2026-10-07"
-   },
-   {
-     "name": "Jackson Fork Inn",
-     "town": "Huntsville area",
-     "type": "Inn",
-     "blurb": "Inn on Highway 39 in Huntsville.",
      "checked": "2026-10-07"
    },
    {
@@ -1775,14 +1749,6 @@ window.OVE_PLACES = {
      "blurb": "Semi-private 18-hole golf club established in 1963 with a fitness club, restaurant and lodging.",
      "phone": "801-745-3737",
      "link": "https://www.wolfcreekresort.com",
-     "address": "3718 N Wolf Creek Dr, Eden, UT 84310",
-     "checked": "2026-10-07"
-   },
-   {
-     "name": "WorldMark Wolf Creek",
-     "town": "Eden",
-     "type": "Resort lodging",
-     "blurb": "Timeshare/resort lodging at Wolf Creek.",
      "address": "3718 N Wolf Creek Dr, Eden, UT 84310",
      "checked": "2026-10-07"
    },
@@ -4049,6 +4015,28 @@ window.OVE_PLACES = {
    "fromForm": true
   },
   {
+   "name": "Wild poppy floral co",
+   "type": "Local business",
+   "town": "Eden",
+   "blurb": "Local florist specializing in weddings, special events, everyday flowers and custom designs.",
+   "address": "5460 e 2200 n Eden Utah 84310",
+   "phone": "8014363794",
+   "hours": "Monday-Friday 11-5",
+   "note": "Known for: Local delivery, weddings, special events, everyday flowers.",
+   "badges": [
+    "Woman owned"
+   ],
+   "photos": [
+    "https://drive.google.com/thumbnail?id=1D2YkYo2yKUy-BVDVByC2Pj4aZhCM855n&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1L0PjS3lrS4U8R_NaC7OVSXpqfpQcvIGE&sz=w1000",
+    "https://drive.google.com/thumbnail?id=1CB7GnFaLwmv0n-YjNjes1AlLDVdoq9fl&sz=w1000"
+   ],
+   "added": "2026-10-24",
+   "fromForm": true
+  }
+ ],
+ "stay": [
+  {
    "name": "The Valley House Inn",
    "type": "Lodging",
    "town": "Huntsville Town",
@@ -4070,27 +4058,8 @@ window.OVE_PLACES = {
     "https://drive.google.com/thumbnail?id=1v8kmnF2XAj1Lhu4QDsr102r_Bgampq5p&sz=w1000"
    ],
    "added": "2026-11-01",
-   "fromForm": true
-  },
-  {
-   "name": "Wild poppy floral co",
-   "type": "Local business",
-   "town": "Eden",
-   "blurb": "Local florist specializing in weddings, special events, everyday flowers and custom designs.",
-   "address": "5460 e 2200 n Eden Utah 84310",
-   "phone": "8014363794",
-   "hours": "Monday-Friday 11-5",
-   "note": "Known for: Local delivery, weddings, special events, everyday flowers.",
-   "badges": [
-    "Woman owned"
-   ],
-   "photos": [
-    "https://drive.google.com/thumbnail?id=1D2YkYo2yKUy-BVDVByC2Pj4aZhCM855n&sz=w1000",
-    "https://drive.google.com/thumbnail?id=1L0PjS3lrS4U8R_NaC7OVSXpqfpQcvIGE&sz=w1000",
-    "https://drive.google.com/thumbnail?id=1CB7GnFaLwmv0n-YjNjes1AlLDVdoq9fl&sz=w1000"
-   ],
-   "added": "2026-10-24",
-   "fromForm": true
+   "fromForm": true,
+   "kind": "Lodge & inn"
   }
  ]
 });

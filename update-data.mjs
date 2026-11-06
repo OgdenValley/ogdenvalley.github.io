@@ -560,7 +560,9 @@ async function geocode(){
   try { const sp = JSON.parse(fs.readFileSync("skyphotos.json", "utf8")); for (const i of sp.items || []) if (i.city && i.city.trim().length > 1) locs.add(i.city.trim().replace(/,?\s*(ut|utah)\.?$/i, "") + ", Utah"); } catch {}
   try { const sg = JSON.parse(fs.readFileSync("sightings.json", "utf8")); for (const i of sg.items || []) if (i.area && i.area.trim().length > 1) locs.add(i.area.trim().replace(/,?\s*(ut|utah)\.?$/i, "") + ", Utah"); } catch {}
   try { const cfg = fs.readFileSync("config.js", "utf8"); for (const m of cfg.matchAll(/place:\s*"([^"]+)"/g)) locs.add(m[1].trim().replace(/,?\s*(ut|utah)\.?$/i, "") + ", Utah"); } catch {}
-  const todo = [...locs].filter(l => !(l in cache)).slice(0, 25);
+  // business street addresses, for the Map view on the Local Businesses page (Nov. 2026)
+  try { const w = {}; new Function("window", fs.readFileSync("places.js", "utf8"))(w); for (const [k, list] of Object.entries(w.OVE_PLACES || {})) if (k !== "worship") for (const p of list) if (p.address && /\d/.test(p.address)) locs.add(p.address.trim()); } catch (e) { console.log("geocode: could not read places.js", e.message); }
+  const todo = [...locs].filter(l => !(l in cache)).slice(0, 40);
   for (const l of todo) {
     try {
       const q = /utah|\bUT\b/i.test(l) ? l : l + ", Weber County, Utah";
@@ -977,10 +979,10 @@ async function jobs(){
 /* ---------------- NEW LISTINGS (Business listings form) ----------------
    Public tab of the Business listings (Responses) sheet, published as CSV. Columns matched by name:
    Timestamp, Business name, Type of business, Town, Street address, Phone for customers, Website,
-   Hours, Featured specialties, Short description, Photos, Check any that apply, Hide, Approve, Page (optional).
+   Hours, Featured specialties, Short description, Photos, Check any that apply, Price range (places to eat), Hide, Approve, Page (optional).
    Artists come from their own sheet (_artistsCsv) into the same section; see below.
    A listing shows only when Approve is "yes"; anything in Hide takes it down. Page (optional) picks the page:
-   Restaurants, Businesses, Home Services, Beauty, Farm, Food Trucks or Artists.
+   Restaurants, Businesses, Places to Stay, Home Services, Beauty, Farm, Food Trucks or Artists. Lodging goes to Places to Stay.
    Approved listings are written into the marked section at the bottom of places.js, so every page
    picks them up. Everything above that line in places.js is hand-checked and is never touched here.
    A business whose name already has a hand-checked listing is skipped, so nothing shows twice.
@@ -1001,11 +1003,11 @@ async function listings(){
     const {rows, col} = url ? await sheet(url) : {rows: [], col: () => -1};
     const iT = col(/^timestamp/), iN = col(/^business name/), iTy = col(/^type of business/), iTn = col(/^town/), iAd = col(/^street address/), iPh = col(/^phone/),
       iW = col(/^website/), iHr = col(/^hours/), iSp = col(/^featured special/), iD = col(/^short description/), iPhoto = col(/^photos/), iC = col(/^check any/),
-      iH = col(/^hide/), iOK = col(/^approve/), iPg = col(/^page/);
+      iH = col(/^hide/), iOK = col(/^approve/), iPg = col(/^page/), iPr = col(/^price range/);
     const cut = (r, i, n) => i >= 0 ? String(r[i] || "").trim().slice(0, n) : "";
     const ymd = v => { const m = String(v || "").trim().match(/^(\d{1,2})\/(\d{1,2})\/(\d{2,4})/); if (!m) return ""; const y = m[3].length === 2 ? "20" + m[3] : m[3]; return y + "-" + m[1].padStart(2, "0") + "-" + m[2].padStart(2, "0"); };
     const TOWNS = ["Eden", "Liberty", "Huntsville Town", "Huntsville area", "Snowbasin", "Powder Mountain", "Nordic Valley"];
-    const PAGE = [[/restaurant|cafe|café/i, "restaurants"], [/home serv|service pro/i, "services"], [/beauty|wellness|fitness/i, "beauty"], [/farm|local food/i, "farm"], [/food truck/i, "foodtrucks"], [/artist/i, "artists"], [/business|shop|lodging|recreation|rental/i, "businesses"]];
+    const PAGE = [[/restaurant|cafe|café/i, "restaurants"], [/home serv|service pro/i, "services"], [/beauty|wellness|fitness/i, "beauty"], [/farm|local food/i, "farm"], [/food truck/i, "foodtrucks"], [/artist/i, "artists"], [/lodging|place to stay|\binn\b|b ?& ?b|bed and breakfast|vacation rental|cabin/i, "stay"], [/business|shop|recreation|rental/i, "businesses"]];
     const JOBS = [[/handyman|drywall|repair|maintenance/i, "Handyman & repairs"], [/clean|window wash/i, "Cleaning & window washing"], [/landscap|snow|sprinkler|irrigation|lawn|yard/i, "Landscaping & snow removal"], [/detail/i, "Car detailing"], [/plumb/i, "Plumbing"], [/electric/i, "Electrical"], [/heat|hvac|furnace|cooling/i, "Heating & cooling"], [/pest/i, "Pest control"]];
     for (const r of rows) {
       if (iH >= 0 && cut(r, iH, 40)) continue;
@@ -1031,8 +1033,10 @@ async function listings(){
       if (urls.length > 1) p.links = urls.slice(1, 4).map(u => ({label: label(u), href: u}));
       const hrs = cut(r, iHr, 160); if (hrs && hrs !== "*") p.hours = hrs;
       if (spec) p.note = "Known for: " + spec;
+      const pr = (cut(r, iPr, 40).match(/^\$+/) || [""])[0]; if (pr && pr.length <= 4) p.price = pr;
       const badges = cut(r, iC, 300).split(/\s*[,\n]\s*/).map(x => x.trim()).filter(Boolean).slice(0, 8); if (badges.length) p.badges = badges;
       const photos = cut(r, iPhoto, 2000).split(/\s*,\s*/).map(x => driveImg(x, 1000)).filter(Boolean).slice(0, 6); if (photos.length) p.photos = photos;
+      if (kind === "stay" && !p.kind) p.kind = "Lodge & inn";
       if (kind === "services") { p.job = (JOBS.find(([re]) => re.test(name + " " + blurb + " " + spec)) || [, "Other"])[1]; if (p.job !== "Other") p.type = p.job; }
       p.added = ymd(r[iT]) || new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date());
       p.fromForm = true;

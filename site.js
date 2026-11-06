@@ -239,6 +239,11 @@ function openNow(p, at){
   return inSpan(d, m) || inSpan((d + 6) % 7, m + 24 * 60);
 }
 (function(){ const st = document.createElement("style"); st.textContent = ".open-tag{display:inline-block;font-weight:800;font-size:14px;padding:3px 10px;border-radius:999px;margin-left:8px;vertical-align:middle;white-space:nowrap}.open-tag.yes{background:var(--good-bg);color:var(--good)}.open-tag.no{background:var(--soft);color:var(--muted)}"; document.head.appendChild(st); })();
+/* Rule (Shauna, Nov. 2026): businesses that sent us their own details and photos (listed or updated through the form) show first,
+   on every list. They take turns at the top: the order rotates once a day, so it looks steady all day and no one is always first. */
+const sentUs = p => !!(p && p.photos && p.photos.length && (p.added || p.fromForm));
+const dayNum = () => Math.floor(Date.parse(new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date())) / 864e5);
+const rotateDaily = arr => { const a = arr.slice().sort((x, y) => (x.name || x.p.name).localeCompare(y.name || y.p.name)); if (a.length < 2) return a; const k = dayNum() % a.length; return a.slice(k).concat(a.slice(0, k)); };
 function listing(box, items, kind, R){
   box.replaceChildren();
   if (!items.length) { box.append(el("div", {class: "empty"}, [ el("p", {text: kind === "artists" ? "Artist listings are being gathered. Are you an Ogden Valley or Weber County artist? Ask to be listed." : "Listings are being gathered and checked. Own or love a place in the Valley? Send it in."}),
@@ -252,15 +257,21 @@ function listing(box, items, kind, R){
     const bar = el("div", {class: "filters sortbar"}, [["az", "A to Z"], ["new", "Newest first"]].map(([k, l]) => { const b = el("button", {class: "chip", type: "button", "aria-pressed": String(k === mode), text: l}); b.onclick = () => { SORT[kind] = k; listing(box, items, kind, R); }; return b; }));
     box.append(bar);
   }
-  const grid = el("div", {class: "grid"}); box.append(grid);
   const sorter = mode === "new" ? (a, b) => (b.added || "").localeCompare(a.added || "") || a.name.localeCompare(b.name) : (a, b) => a.name.localeCompare(b.name);
-  rest.slice().sort(sorter).forEach(p => grid.append(card(p)));
+  const fav = rest.filter(sentUs), others = rest.filter(p => !sentUs(p));
+  if (fav.length && others.length) {
+    box.append(el("h3", {class: "list-grp", text: "Listed with OVE"}), el("p", {class: "fine list-why", text: "These sent us their own details and photos, so they show first. They take turns at the top each day."}));
+    const g1 = el("div", {class: "grid"}); box.append(g1); rotateDaily(fav).forEach(p => g1.append(card(p)));
+    box.append(el("h3", {class: "list-grp", text: "More " + ({artists: "local artists", stay: "places to stay", restaurants: "places to eat", foodtrucks: "food trucks", farm: "farms & local food"}[kind] || "Valley businesses")}));
+  }
+  const grid = el("div", {class: "grid"}); box.append(grid);
+  (fav.length && others.length ? others.slice().sort(sorter) : (fav.length ? rotateDaily(fav) : others.slice().sort(sorter))).forEach(p => grid.append(card(p)));
   function card(p){ return el("article", {class: "card", id: slug(p.name), "data-town": p.town || p.area || ""}, [
     photoStrip(p),
     (p.sponsor || isNew(p)) ? el("div", {class: "badges"}, [p.sponsor ? el("span", {class: "sponsor-badge", text: "Sponsor"}) : null, isNew(p) ? el("span", {class: "new-badge", text: "New"}) : null]) : null,
     (on => el("h3", {}, [document.createTextNode(p.name), on == null ? null : el("span", {class: "open-tag " + (on ? "yes" : "no"), text: on ? "Open now" : "Closed now"})]))(openNow(p)),
     spotBadge(p, kind),
-    el("div", {class: "meta", text: [p.type || p.medium, p.town || p.area].filter(Boolean).join(" · ")}),
+    el("div", {class: "meta", text: [p.price, p.type || p.medium, p.town || p.area].filter(Boolean).join(" · ")}),
     p.blurb ? el("p", {text: p.blurb}) : null,
     p.serves ? el("div", {class: "meta", text: "Serves: " + p.serves}) : null,
     (p.sells && p.sells.length) ? el("div", {class: "meta", text: "Sells: " + p.sells.join(", ")}) : null,
@@ -284,7 +295,7 @@ function listing(box, items, kind, R){
 
 /* ---------- Just added: any <div data-justadded> shows the 6 newest listings that owners sent in themselves through the form ---------- */
 (function(){ const box = document.querySelector("[data-justadded]"); if (!box) return;
-  const page = {restaurants: "restaurants.html", businesses: "businesses.html", stay: "stay.html", services: "services.html", beauty: "beauty.html", farm: "farm.html", foodtrucks: "foodtrucks.html", artists: "artists.html"};
+  const page = {restaurants: "restaurants.html", businesses: "shop.html", stay: "stay.html", services: "services.html", beauty: "beauty.html", farm: "farm.html", foodtrucks: "foodtrucks.html", artists: "artists.html"};
   const label = {restaurants: "Eat", businesses: "Shop", stay: "Places to stay", services: "Home Services", beauty: "Beauty & Wellness", farm: "Farm & Local Food", foodtrucks: "Food Trucks", artists: "Artists"};
   const all = Object.keys(page).flatMap(k => (P[k] || []).filter(p => p.added && p.fromForm).map(p => [p, k])).sort((a, b) => b[0].added.localeCompare(a[0].added) || a[0].name.localeCompare(b[0].name)).slice(0, 6);
   if (!all.length) return;
@@ -301,11 +312,11 @@ function listing(box, items, kind, R){
 (function(){ const box = document.querySelector("[data-homebiz]"); if (!box) return;
   const pool = [].concat((P.services || []).map(p => [p, "services"]), (P.beauty || []).filter(p => p.home).map(p => [p, "beauty"]), (P.businesses || []).filter(p => p.home).map(p => [p, "businesses"]));
   /* Rule (Shauna, Oct. 2026): only businesses that listed or updated with us AND sent photos show in this spot. No photo = not shown here (still on the full listings pages). */
-  const ok = x => x[0].photos && x[0].photos.length && (x[0].added || x[0].fromForm);
+  const ok = x => sentUs(x[0]);
   const pool2 = pool.filter(ok);
   if (!pool2.length) return;
   const pick = pool2.map(x => [Math.random(), x]).sort((a, b) => a[0] - b[0]).slice(0, 3).map(x => x[1]);
-  const page = {services: "services.html", beauty: "beauty.html", businesses: "businesses.html"};
+  const page = {services: "services.html", beauty: "beauty.html", businesses: "shop.html"};
   box.append(el("div", {class: "section-head"}, [el("div", {}, [el("p", {class: "eyebrow", text: "Shop local"}), el("h2", {text: "Local home businesses"})]), el("a", {class: "btn blue", href: "services.html", text: "See them all"})]),
     el("div", {class: "grid"}, pick.map(([p, k]) => el("article", {class: "card"}, [
       (p.photos && p.photos[0]) ? el("img", {src: p.photos[0], alt: p.name, loading: "lazy", style: "width:100%;height:160px;object-fit:cover;border-radius:10px"}) : null,
@@ -699,7 +710,7 @@ function monthGrid(box, list, opts){
   document.head.appendChild(st); })();
 
 /* ---------- Find it local: "where can I get candles / sushi / swim lessons?" ---------- */
-const FIND_PAGES = {stay: ["stay.html", "Place to stay"], restaurants: ["restaurants.html", "Eat"], businesses: ["businesses.html", "Shop"], services: ["services.html", "Home service"], beauty: ["beauty.html", "Beauty & wellness"], farm: ["farm.html", "Farm & local food"], foodtrucks: ["foodtrucks.html", "Food truck"], artists: ["artists.html", "Local artist"], worship: ["worship.html", "Place of worship"], shops: ["down-the-canyon.html", "Shop"]};
+const FIND_PAGES = {stay: ["stay.html", "Place to stay"], restaurants: ["restaurants.html", "Eat"], businesses: ["shop.html", "Shop"], services: ["services.html", "Home service"], beauty: ["beauty.html", "Beauty & wellness"], farm: ["farm.html", "Farm & local food"], foodtrucks: ["foodtrucks.html", "Food truck"], artists: ["artists.html", "Local artist"], worship: ["worship.html", "Place of worship"], shops: ["down-the-canyon.html", "Shop"]};
 const FIND_PLACES = [
   ["Marshall N. White Community Center", "pool indoor pool swim swimming swim lessons classes community center fitness", "down-the-canyon.html#pools", "Pools, ice & rec"],
   ["Ogden City Recreation", "swim swimming swim lessons aquatics sports leagues court rentals pavilion tennis classes kids", "down-the-canyon.html#pools", "Pools, ice & rec"],
@@ -862,5 +873,5 @@ function renderResorts(box, R, compact){
     r.status && r.status !== "ok" ? el("p", {class: "rs-warn", text: "Couldn't update just now. Showing the last numbers we had."}) : null,
     el("p", {class: "meta", style: "font-size:14px"}, [document.createTextNode(when(r) + " · From " + r.source + ". "), el("a", {href: r.link, target: "_blank", rel: "noopener", "data-track": "resort report: " + r.name, text: "Full report"})])]))));
 }
-window.OVE_SITE = {findLocal, findBox, getArea, setArea, areaCals, areaSwitch, valleyFirst, evTags, eventFilters, monthGrid, C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip, snowCheck, isWinter, renderResorts, nwsJSON, snowState: () => snowState, parseHours, openNow, holidaysFor, dayInfo, dayInfoBox, onSchool};
+window.OVE_SITE = {sentUs, rotateDaily, isNew, findLocal, findBox, getArea, setArea, areaCals, areaSwitch, valleyFirst, evTags, eventFilters, monthGrid, C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip, snowCheck, isWinter, renderResorts, nwsJSON, snowState: () => snowState, parseHours, openNow, holidaysFor, dayInfo, dayInfoBox, onSchool};
 })();
