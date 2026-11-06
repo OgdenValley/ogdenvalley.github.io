@@ -1,28 +1,9 @@
 {
- "updated": "2026-11-06T02:57:26.111Z",
+ "updated": "2026-11-06T03:59:41.630Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1793840400000,
-     "e": 1793849400000,
-     "t": "Wednesday Night Hikers",
-     "loc": "Varies",
-     "allDay": false,
-     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
-     "url": "https://www.meetup.com/webercountyoutdoors/"
-    },
-    {
-     "s": 1793840400000,
-     "e": 1793847600000,
-     "t": "OVWAG Planning & Volunteer Meeting",
-     "loc": "Ogden Valley Branch Library, 131 S 7400 E, Huntsville, UT 84317",
-     "allDay": false,
-     "desc": "Planning and volunteer meeting.",
-     "url": "https://www.facebook.com/events/1850274899315074/",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
     {
      "s": 1793916000000,
      "e": 1793923200000,
@@ -926,16 +907,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1793833200000,
-     "e": 1793847600000,
-     "t": "RMBRA Jackpots",
-     "loc": "Golden Spike Event Center, Outdoor Stadium, 1000 North 1200 West, Ogden, UT 84404",
-     "allDay": false,
-     "desc": "Time Onlys: 4pm\nRaces: 6:30pm\n\nFor more information and events:\nwww.facebook.com…",
-     "url": "https://www.facebook.com/RMBRARockyMountainBarrelRacing/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1793836800000,
      "e": 1793851200000,
      "t": "Ogden City Planning Commission Meeting",
@@ -1607,8 +1578,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1617,8 +1588,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1767,8 +1738,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1777,8 +1748,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3476,6 +3447,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1799119800000,
+     "e": 1799132400000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1799514000000,
      "e": 1799521200000,
      "t": "Cardboard Exchange MEGA Expo",
@@ -3538,16 +3519,6 @@
     "allDay": true,
     "desc": "elparo has created large-scale site-responsive sculptures all over the world. La Vrille is his debut work in the United States.",
     "url": "https://www.weber.edu/shawgallery/upcoming.html",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793833200000,
-    "e": 1793847600000,
-    "t": "RMBRA Jackpots",
-    "loc": "Golden Spike Event Center, Outdoor Stadium, 1000 North 1200 West, Ogden, UT 84404",
-    "allDay": false,
-    "desc": "Time Onlys: 4pm\nRaces: 6:30pm\n\nFor more information and events:\nwww.facebook.com…",
-    "url": "https://www.facebook.com/RMBRARockyMountainBarrelRacing/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4534,8 +4505,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4544,8 +4515,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4574,8 +4545,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4584,8 +4555,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
