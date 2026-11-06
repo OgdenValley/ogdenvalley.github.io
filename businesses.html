@@ -41,6 +41,7 @@
 @media(min-width:760px){.cat-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(min-width:1000px){.cat-tiles{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .cat-tiles a,.cat-tiles button{display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;text-decoration:none;color:var(--ink);font:inherit;text-align:left;cursor:pointer;min-height:118px}
+.cat-tiles a[hidden]{display:none}
 .cat-tiles a:hover,.cat-tiles button:hover{border-color:var(--blue)}
 .cat-tiles .ic{font-size:30px;line-height:1}
 .cat-tiles b{font-family:var(--display);font-size:18px;line-height:1.2}
@@ -88,11 +89,13 @@
 </style>
 <section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley</p><h1>Local Businesses</h1><p class="lead" style="margin-top:12px">Every Valley business, in one place. Pick a category, or open the full list.</p></div></div></section>
 <section><div class="container">
+  <div data-sponsors style="margin-bottom:18px"></div>
+  <div id="area" style="margin-bottom:12px"></div>
   <div class="fbox" style="margin-bottom:18px"><input type="search" id="q" class="fsearch" placeholder="Search every business: inn, florist, handyman…" aria-label="Search every business"></div>
   <div class="cat-tiles" id="tiles"></div>
   <div id="allbox" hidden>
     <div class="section-head"><div><p class="eyebrow">A to Z</p><h2 id="allh">All businesses</h2></div></div>
-    <div class="frow"><label class="flab" for="where">Where</label><select id="where" class="fselect"><option value="All">Everywhere</option><option>Eden</option><option>Huntsville Town</option><option>Huntsville area</option><option>Liberty</option><option>Snowbasin</option><option>Powder Mountain</option><option>Nordic Valley</option></select></div>
+    <div class="frow"><label class="flab" for="where">Where</label><select id="where" class="fselect"></select></div>
     <div class="sortbar" id="quick"><button class="chip" type="button" id="fopen" aria-pressed="false">Open now</button><button class="chip" type="button" id="fnew" aria-pressed="false">New this month</button><button class="chip" type="button" id="fsaved" aria-pressed="false">♥ My saved</button></div>
     <div class="sortbar"><span class="viewbar"><button class="chip" type="button" id="vgrid" aria-pressed="true">▦ Grid</button><button class="chip" type="button" id="vlist" aria-pressed="false">☰ List</button><button class="chip" type="button" id="vmap" aria-pressed="false">📍 Map</button></span><label class="sortsel"><span class="flab">Sort</span> <select id="sort" class="fselect"><option value="az">A to Z</option><option value="mix">Mix it up</option></select></label></div>
     <p class="fcount" id="count"></p>
@@ -111,15 +114,22 @@ const CATS=[["restaurants","🍽️","Eat","Restaurants, cafés & bars","restaur
 const label={};CATS.forEach(c=>label[c[0]]=c);
 const HID={restaurants:"eat food restaurant cafe coffee bar dinner lunch breakfast",businesses:"shop store gifts",stay:"stay lodging inn hotel lodge bed and breakfast b&b cabin rental place to sleep",services:"home services handyman repair cleaning yard snow",beauty:"beauty wellness hair nails spa massage fitness gym",farm:"farm local food eggs beef honey produce u-pick",foodtrucks:"food truck",artists:"artist art"};
 const all=[];CATS.forEach(([k])=>(P[k]||[]).forEach(p=>all.push({p,k,hay:(JSON.stringify(p)+" "+HID[k]).toLowerCase()})));
+const isW=p=>p.region==="weber";let area=S.getArea();const inArea=p=>area==="both"||(area==="weber")===isW(p);
+const TOWNS=["Eden","Huntsville Town","Huntsville area","Liberty","Snowbasin","Powder Mountain","Nordic Valley"],HOODS=[...new Set(all.filter(x=>isW(x.p)&&x.p.hood).map(x=>x.p.hood))].sort();
+function fillWhere(){const w=document.getElementById("where"),cur=w.value||"All";const o=(v,t)=>'<option value="'+v+'">'+(t||v)+'</option>';let h=o("All","Everywhere");
+ if(area!=="weber")h+=(area==="both"?'<optgroup label="Up here: Ogden Valley">':"")+TOWNS.filter(t=>all.some(x=>!isW(x.p)&&(x.p.town||x.p.area)===t)).map(t=>o(t)).join("")+(area==="both"?"</optgroup>":"");
+ if(area!=="ov")h+='<optgroup label="Down the canyon: Weber County">'+HOODS.map(t=>o("@h:"+t,t)).join("")+'</optgroup>';
+ w.innerHTML=h;w.value=[...w.options].some(x=>x.value===cur)?cur:"All"}
+function tileCounts(){document.querySelectorAll("#tiles [data-k]").forEach(a=>{const k=a.dataset.k;const n=(P[k]||[]).filter(inArea).length;a.querySelector(".n").textContent=n;a.hidden=!n});const ab=document.querySelector("#tiles .all small");if(ab)ab.textContent=all.filter(x=>inArea(x.p)).length+" listings, every category"}
 const T=document.getElementById("tiles");
 const allBtn=S.el("button",{class:"all",type:"button"});allBtn.innerHTML='<span class="ic">📋</span><span><b>All businesses</b><br><small>'+all.length+' listings, A to Z, every category</small></span>';T.append(allBtn);
-CATS.forEach(([k,ic,name,sub,href])=>{const a=S.el("a",{href});a.innerHTML='<span class="ic">'+ic+'</span><b>'+name+'</b><small>'+(P[k]||[]).length+' · '+sub+'</small>';T.append(a)});
+CATS.forEach(([k,ic,name,sub,href])=>{const a=S.el("a",{href,"data-k":k});a.innerHTML='<span class="ic">'+ic+'</span><b>'+name+'</b><small><span class="n"></span> · '+sub+'</small>';T.append(a)});
 const box=document.getElementById("allbox"),list=document.getElementById("all"),q=document.getElementById("q"),where=document.getElementById("where"),cnt=document.getElementById("count");let mix=false,view="grid",page=1,onlyOpen=false,onlyNew=false,onlySaved=false;
 /* Saved favorites live only in this visitor's own browser; nothing is sent anywhere */
 let SAVED=[];try{SAVED=JSON.parse(localStorage.getItem("ove-saved")||"[]")}catch(e){}
 const isSaved=p=>SAVED.includes(S.slug(p.name));const toggleSave=p=>{const k=S.slug(p.name);SAVED=isSaved(p)?SAVED.filter(x=>x!==k):SAVED.concat(k);try{localStorage.setItem("ove-saved",JSON.stringify(SAVED))}catch(e){}savedLabel()};
 const savedLabel=()=>{const b=document.getElementById("fsaved");if(b)b.textContent="♥ My saved"+(SAVED.length?" ("+SAVED.length+")":"")};try{view=localStorage.getItem("ove-biz-view")||"grid"}catch(e){}
-function draw(){const s=q.value.trim().toLowerCase(),w=where.value;let r=all.filter(x=>{const p=x.p;return (!onlyOpen||S.openNow(p)===true)&&(!onlyNew||S.isNew(p))&&(!onlySaved||isSaved(p))&&(w==="All"||(p.town||p.area)===w)&&(!s||s.split(/\s+/).every(w=>new RegExp("(^|[^a-z0-9])"+w.replace(/[^a-z0-9&]/g,"")).test(x.hay)))});
+function draw(){const s=q.value.trim().toLowerCase(),w=where.value;let r=all.filter(x=>{const p=x.p;return (!onlyOpen||S.openNow(p)===true)&&(!onlyNew||S.isNew(p))&&(!onlySaved||isSaved(p))&&inArea(p)&&(w==="All"||(w.startsWith("@h:")?p.hood===w.slice(3):(p.town||p.area)===w))&&(!s||s.split(/\s+/).every(w=>new RegExp("(^|[^a-z0-9])"+w.replace(/[^a-z0-9&]/g,"")).test(x.hay)))});
  if(mix){let seed=+new Date().toISOString().slice(0,10).replace(/-/g,"");r=r.map(x=>({x,o:(seed=(seed*9301+49297)%233280)})).sort((a,b)=>a.o-b.o).map(z=>z.x)}else r.sort((a,b)=>a.p.name.localeCompare(b.p.name));
  const ok=x=>S.sentUs(x.p);/* same rule as every list on the site */
  const fav=r.filter(ok),rest=r.filter(x=>!ok(x)),esc=t=>String(t||"").replace(/[<&"]/g,c=>({"<":"&lt;","&":"&amp;",'"':"&quot;"}[c]));
@@ -131,19 +141,19 @@ function draw(){const s=q.value.trim().toLowerCase(),w=where.value;let r=all.fil
    '<div class="bd">'+tags(p)+'<h3>'+esc(p.name)+'</h3>'+(p.price?'<div class="ad"><b>'+esc(p.price)+'</b> · '+esc(p.type||'')+'</div>':'')+(p.blurb?'<p class="desc">'+esc(p.blurb)+'</p>':'')+'<div class="ad">'+esc(where)+'</div>'+(p.phone?'<a class="tel" href="tel:'+String(p.phone).replace(/[^0-9+]/g,"")+'">'+esc(fmt(p.phone))+'</a>':'')+
    '<div class="acts"><a class="lm" href="'+home+'">Learn more</a>'+(p.link?'<a class="web" href="'+esc(p.link)+'" target="_blank" rel="noopener">Website</a>':'')+'</div></div>';const h=S.el("button",{class:"heart",type:"button","aria-pressed":String(isSaved(p)),"aria-label":"Save "+p.name,title:"Save",text:"♥"});h.onclick=()=>{toggleSave(p);h.setAttribute("aria-pressed",String(isSaved(p)));if(onlySaved)draw()};d.append(h);return d};
  if(view==="map"){drawMap(fav,rest);return}
- const PER=24,order=S.rotateDaily(fav).map(x=>[x,1]).concat(rest.map(x=>[x,0])),pages=Math.max(1,Math.ceil(order.length/PER));
+ const PER=24,order=S.rotateDaily(fav).map(x=>[x,1]).concat(rest.filter(x=>!isW(x.p)).map(x=>[x,0]),rest.filter(x=>isW(x.p)).map(x=>[x,2])),pages=Math.max(1,Math.ceil(order.length/PER));
  if(page>pages)page=pages;const from=(page-1)*PER,slice=order.slice(from,from+PER);
  cnt.textContent=order.length?("Showing "+(from+1)+"–"+(from+slice.length)+" of "+order.length+" businesses"):(onlySaved?"Nothing saved yet. Tap the ♥ on any business to save it here.":"No businesses match. Try another word.");
  const kids=[];let g=null,last=null;
- slice.forEach(([x,f])=>{if(f!==last){last=f;if(f){kids.push(S.el("h3",{class:"grp",text:"Listed with OVE"}),S.el("p",{class:"why",text:"These sent us their own details and photos, so they show first. They take turns at the top each day. Listing is free."}))}else if(fav.length)kids.push(S.el("h3",{class:"grp",text:"More Valley businesses"}));
-  g=S.el("div",{class:"bcards"+(view==="grid"?" grid-v":"")});kids.push(g)}g.append(card(x,!!f))});
+ slice.forEach(([x,f])=>{if(f!==last){last=f;if(f===1){kids.push(S.el("h3",{class:"grp",text:"Listed with OVE"}),S.el("p",{class:"why",text:"These sent us their own details and photos, so they show first. They take turns at the top each day. Listing is free."}))}else if(f===0){if(fav.length)kids.push(S.el("h3",{class:"grp",text:"More Valley businesses"}))}else if(area!=="weber"||fav.length)kids.push(S.el("h3",{class:"grp",text:"Down the canyon · Weber County"}),S.el("p",{class:"why",text:"Places in Ogden and the rest of Weber County that Valley folks drive down for."}));
+  g=S.el("div",{class:"bcards"+(view==="grid"?" grid-v":"")});kids.push(g)}g.append(card(x,f===1))});
  if(pages>1){const nav=S.el("nav",{class:"pager","aria-label":"Pages"});const btn=(t,n,cur,dis)=>{const bt=S.el("button",{class:"chip",type:"button",text:t,"aria-pressed":String(!!cur)});if(dis)bt.disabled=true;else bt.onclick=()=>{page=n;draw();document.getElementById("allbox").scrollIntoView({behavior:"smooth"})};return bt};
   nav.append(btn("‹ Back",page-1,false,page===1));for(let i=1;i<=pages;i++){if(pages>7&&i>2&&i<pages-1&&Math.abs(i-page)>1){if(!nav.lastChild.classList.contains("gap"))nav.append(S.el("span",{class:"gap",text:"…"}));continue}nav.append(btn(String(i),i,i===page))}nav.append(btn("Next ›",page+1,false,page===pages));kids.push(nav)}
  kids.push(S.el("p",{class:"why",style:"margin-top:16px",html:'Own a Valley business? <a href="submit.html">Send us your details and photos</a> to be listed first.'}));
  list.replaceChildren(...kids);}
 let GEO=null,lmap=null,layer=null;
 function loadLeaflet(){return new Promise(res=>{if(window.L)return res();const c=document.createElement("link");c.rel="stylesheet";c.href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css";document.head.append(c);const s=document.createElement("script");s.src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js";s.onload=res;s.onerror=res;document.head.append(s)})}
-async function drawMap(fav,rest){const r=S.rotateDaily(fav).concat(rest);
+async function drawMap(fav,rest){const r=S.rotateDaily(fav).concat(rest.filter(x=>!isW(x.p)),rest.filter(x=>isW(x.p)));
  cnt.textContent=r.length+" businesses";
  if(!GEO)GEO=(await S.loadJSON("geocache.json"))||{};await loadLeaflet();
  const esc=t=>String(t||"").replace(/[<&"]/g,c=>({"<":"&lt;","&":"&amp;",'"':"&quot;"}[c]));
@@ -159,6 +169,7 @@ q.oninput=()=>{page=1;if(q.value.trim())open();else if(!box.dataset.keep)box.hid
 document.getElementById("sort").onchange=e=>{mix=e.target.value==="mix";page=1;draw()};
 const h=decodeURIComponent(location.hash.slice(1));if(h&&h!=="all"){const hit=all.find(x=>S.slug(x.p.name)===h);if(hit){location.replace(label[hit.k][4]+"#"+h);return}}
 [["fopen","onlyOpen"],["fnew","onlyNew"],["fsaved","onlySaved"]].forEach(([id,key])=>{const b=document.getElementById(id);b.onclick=()=>{if(key==="onlyOpen")onlyOpen=!onlyOpen;else if(key==="onlyNew")onlyNew=!onlyNew;else{onlySaved=!onlySaved;box.hidden=false}b.setAttribute("aria-pressed",String(key==="onlyOpen"?onlyOpen:key==="onlyNew"?onlyNew:onlySaved));page=1;draw()}});savedLabel();
+fillWhere();tileCounts();S.areaSwitch(document.getElementById("area"),v=>{area=v;page=1;fillWhere();tileCounts();if(!box.hidden)draw()});
 const vg=document.getElementById("vgrid"),vl=document.getElementById("vlist"),vm=document.getElementById("vmap");const setV=v=>{view=v;vg.setAttribute("aria-pressed",String(v==="grid"));vl.setAttribute("aria-pressed",String(v==="list"));vm.setAttribute("aria-pressed",String(v==="map"));try{localStorage.setItem("ove-biz-view",v)}catch(e){}draw()};vg.onclick=()=>setV("grid");vl.onclick=()=>setV("list");vm.onclick=()=>setV("map");vm.setAttribute("aria-pressed",String(view==="map"));vg.setAttribute("aria-pressed",String(view==="grid"));vl.setAttribute("aria-pressed",String(view==="list"));
 if(location.hash==="#all"){box.dataset.keep=1;open()}
 })();
