@@ -1,0 +1,49 @@
+/* =====================================================================
+   OGDEN VALLEY: add a "Price range" question to the Business listing form
+   ---------------------------------------------------------------------
+   HOW TO RUN (one time, best in the morning):
+   1. Go to script.google.com, signed in as ogdenvalleyevent@gmail.com
+      (an Incognito window works best if other accounts are signed in).
+   2. New project. Delete what's there, paste ALL of this, click Save.
+   3. Pick "addPriceQuestion" next to Debug, click Run, allow the permissions.
+   4. The log at the bottom says "DONE" when it worked.
+   What it does: adds an optional Price range question (places to eat only),
+   puts it right after the Hours question, and adds the new answer column to
+   the Public tab so the website can read it. Safe to run twice: it never adds
+   the question a second time.
+   ===================================================================== */
+function addPriceQuestion() {
+  var ss = SpreadsheetApp.openById('1otwoNk3gJcxJLKrUyRLkqpcsLHfr9cVT9O1HP0ZvAVE');
+  var form = FormApp.openByUrl(ss.getFormUrl());
+  var TITLE = 'Price range (places to eat only)';
+  var items = form.getItems(), have = false;
+  for (var i = 0; i < items.length; i++) { if (items[i].getTitle().indexOf('Price range') === 0) have = true; }
+  if (!have) {
+  var q = form.addMultipleChoiceItem()
+    .setTitle(TITLE)
+    .setHelpText('Tip: about what one person spends on a meal. Skip this if you are not a restaurant, café, bar or food truck.')
+    .setChoiceValues(['$ (under $15)', '$$ ($15 to $30)', '$$$ ($30 to $60)', '$$$$ (over $60)'])
+    .setRequired(false);
+  // place it right after the Hours question
+  items = form.getItems();
+  for (var j = 0; j < items.length; j++) {
+    if (/^Hours/i.test(items[j].getTitle())) { form.moveItem(q.getIndex(), j + 1); break; }
+  }
+  }
+  SpreadsheetApp.flush();
+  Utilities.sleep(5000);
+  // find the new answer column on the responses tab
+  var resp = ss.getSheetByName('Form Responses 1');
+  var head = resp.getRange(1, 1, 1, resp.getLastColumn()).getValues()[0];
+  var col = -1;
+  for (var c = 0; c < head.length; c++) { if (String(head[c]).indexOf('Price range') === 0) { col = c + 1; break; } }
+  if (col < 0) { Logger.log('The question was added, but its column did not show up yet. Wait a minute and run again. It will only fix the Public tab.'); return; }
+  var letter = resp.getRange(1, col).getA1Notation().replace(/\d+/g, '');
+  var pub = ss.getSheetByName('Public');
+  var f = pub.getRange('A1').getFormula();
+  var piece = "'Form Responses 1'!" + letter + ':' + letter;
+  if (f.indexOf(piece) < 0) { pub.getRange('A1').setFormula(f.replace(/}\s*$/, ',' + piece + '}')); }
+  Logger.log('=====');
+  Logger.log('DONE. Price range question added after Hours, and column ' + letter + ' added to the Public tab.');
+  Logger.log('=====');
+}
