@@ -7,7 +7,7 @@
 (function(){
 var GROUPS = [
  ["Events", [["events.html","All events"],["weekend.html","This weekend"],["newsletter.html","Weekly newsletter"],["live-music.html","Live music"],["down-the-canyon.html","Down the canyon"],["yard-sales.html","Yard sales"]]],
- ["Eat & Shop", [["restaurants.html","Restaurants"],["farm.html","Farm stands & local food"],["foodtrucks.html","Food trucks"],["businesses.html","All local businesses"],["shop.html","Shops & local stores"],["open-this-week.html","Who's open this week"]]],
+ ["Eat & Shop", [["businesses.html","All local businesses"],["farm.html","Farm stands & local food"],["foodtrucks.html","Food trucks"],["restaurants.html","Restaurants"],["shop.html","Shops & local stores"],["open-this-week.html","Who's open this week"]]],
  ["Local", [["health.html","Health & help"],["services.html","Home services"],["beauty.html","Beauty & wellness"],["stay.html","Places to stay"],["worship.html","Places of worship"],["artists.html","Local artists"],["jobs.html","Help wanted"],["farm.html","Farm stands & local food"],["businesses.html","All local businesses"]]],
  ["Outdoors & Roads", [["safety.html","Road, weather & alerts"],["snow.html","Snow mode"],["live.html","Live view"],["night-sky.html","Night sky"],["wildlife.html","Wildlife & wildflowers"],["valley-photos.html","Valley photos"]]],
  ["Kids & Fun", [["kids.html","Community Kids: The Utah Depot"],["station-board.html","Kids lessons & teams"],["station-board.html#kid-events","Kid events"],["coloring.html","Coloring pages"],["fun.html","All fun & contests"],["photo-contest.html","Photo contest"],["guess-the-spot.html","Guess the Spot"],["then-and-now.html","Then & Now"],["time-capsule.html","Valley Time Capsule"],["puzzles.html","Puzzles"]]],
