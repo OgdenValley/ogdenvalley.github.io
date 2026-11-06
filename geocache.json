@@ -394,5 +394,149 @@
  "Ogden Union Station, 2501 Wall Ave., Ogden": null,
  "Ogden City Amphitheater, Ogden": null,
  "Ogden Valley (various homes)": null,
- "ML Lodge, Mountain Luxury, Eden": null
+ "ML Lodge, Mountain Luxury, Eden": null,
+ "750 Ogden Canyon, Ogden, UT 84401": {
+  "lat": 41.23655,
+  "lng": -111.92824,
+  "county": "Weber"
+ },
+ "3900 N Wolf Creek Dr, Eden, UT 84310": {
+  "lat": 41.32552,
+  "lng": -111.81925,
+  "county": "Weber"
+ },
+ "5510 E 2200 N, Eden, UT 84310": {
+  "lat": 41.29916,
+  "lng": -111.81509,
+  "county": "Weber"
+ },
+ "7345 E 900 S, Huntsville, UT 84317": null,
+ "3925 E Snowbasin Rd, Huntsville, UT 84317": null,
+ "2595 N Hwy 162, Eden, UT 84310": null,
+ "198 S 7400 E, Huntsville, UT 84317": {
+  "lat": 41.25983,
+  "lng": -111.77013,
+  "county": "Weber"
+ },
+ "2429 UT-158, Eden, UT 84310": null,
+ "6965 E Powder Mountain Rd, Eden, UT 84310": null,
+ "3873 N Wolf Creek Dr, Eden, UT 84310": {
+  "lat": 41.32929,
+  "lng": -111.82507,
+  "county": "Weber"
+ },
+ "2429 N Hwy 158, Suite 6, Eden, UT 84310": null,
+ "3567 Nordic Valley Way, Eden, UT 84310": {
+  "lat": 41.30993,
+  "lng": -111.86519,
+  "county": "Weber"
+ },
+ "2612 N Hwy 162, Unit 2, Eden, UT 84310": null,
+ "3632 N Wolf Creek Dr, Eden, UT 84310": {
+  "lat": 41.32464,
+  "lng": -111.8276,
+  "county": "Weber"
+ },
+ "2612 N Hwy 162, Eden, UT 84310": null,
+ "7350 E 200 S, Huntsville, UT": {
+  "lat": 41.26047,
+  "lng": -111.77138,
+  "county": "Weber"
+ },
+ "2405 N Hwy 158, Eden, UT 84310": null,
+ "2612 N Hwy 162, Bldg 4, Eden, UT 84310": null,
+ "2555 N Wolf Creek Dr, Eden, UT 84310": {
+  "lat": 41.30564,
+  "lng": -111.82663,
+  "county": "Weber"
+ },
+ "435 Ogden Canyon Rd, Ogden, UT 84401": {
+  "lat": 41.23655,
+  "lng": -111.92824,
+  "county": "Weber"
+ },
+ "465 12th St, Ogden, UT 84404": {
+  "lat": 41.24419,
+  "lng": -111.96766,
+  "county": "Weber"
+ },
+ "2068 Harrison Blvd, Ogden, UT 84401": {
+  "lat": 41.22902,
+  "lng": -111.94679,
+  "county": "Weber"
+ },
+ "303 Washington Blvd, Ogden, UT 84404": {
+  "lat": 41.26465,
+  "lng": -111.96965,
+  "county": "Weber"
+ },
+ "2586 N 400 E, North Ogden, UT 84414": {
+  "lat": 41.31348,
+  "lng": -111.96798,
+  "county": "Weber"
+ },
+ "210 25th St, Ogden, UT 84401": {
+  "lat": 41.22093,
+  "lng": -111.9756,
+  "county": "Weber"
+ },
+ "476 12th St, Ogden, UT 84404": {
+  "lat": 41.24471,
+  "lng": -111.96762,
+  "county": "Weber"
+ },
+ "2361 N Washington Blvd, North Ogden, UT 84414": {
+  "lat": 41.30789,
+  "lng": -111.96867,
+  "county": "Weber"
+ },
+ "2550 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.21942,
+  "lng": -111.97002,
+  "county": "Weber"
+ },
+ "252 25th St, Ogden, UT 84401": {
+  "lat": 41.22079,
+  "lng": -111.97462,
+  "county": "Weber"
+ },
+ "360 W 2650 N #3, Pleasant View, UT 84414": null,
+ "2214 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.2265,
+  "lng": -111.97004,
+  "county": "Weber"
+ },
+ "2564 Ogden Ave, Ogden, UT 84401": {
+  "lat": 41.21916,
+  "lng": -111.96875,
+  "county": "Weber"
+ },
+ "380 W 2650 N Ste 3, Pleasant View, UT 84414": null,
+ "501 N Washington Blvd, Ogden, UT 84404": {
+  "lat": 41.28499,
+  "lng": -111.96653,
+  "county": "Weber"
+ },
+ "339 E 2250 S #102, Ogden, UT 84401": null,
+ "154 25th St, Ogden, UT 84401": {
+  "lat": 41.22092,
+  "lng": -111.97716,
+  "county": "Weber"
+ },
+ "1144 W 2700 N, Pleasant View, UT 84414": {
+  "lat": 41.30578,
+  "lng": -111.98737,
+  "county": "Weber"
+ },
+ "1895 Washington Blvd Ste 300, Ogden, UT 84401": null,
+ "1701 Park Blvd, Ogden, UT 84401": {
+  "lat": 41.23805,
+  "lng": -111.9347,
+  "county": "Weber"
+ },
+ "445 Park Blvd, Ogden, UT 84401": {
+  "lat": 41.23442,
+  "lng": -111.96865,
+  "county": "Weber"
+ }
 }

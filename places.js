@@ -4057,9 +4057,9 @@ window.OVE_PLACES = {
     "https://drive.google.com/thumbnail?id=1SVFas_cpiGXyvHfW6e3Xi1SeeMtK03Ns&sz=w1000",
     "https://drive.google.com/thumbnail?id=1v8kmnF2XAj1Lhu4QDsr102r_Bgampq5p&sz=w1000"
    ],
+   "kind": "Lodge & inn",
    "added": "2026-11-01",
-   "fromForm": true,
-   "kind": "Lodge & inn"
+   "fromForm": true
   }
  ]
 });

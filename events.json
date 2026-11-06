@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T14:15:38.584Z",
+ "updated": "2026-11-06T20:28:09.115Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -907,16 +907,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1793883600000,
-     "e": 1793894400000,
-     "t": "Cup Hop 2026",
-     "loc": "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant",
-     "allDay": false,
-     "desc": "Collect. Sip. Protect.\nYear eight launches a fresh Cup Hop series across four November days at four local coffee shops. Buy the limited 2026 mug and your purchase powers nature education, safe habitats for wildlife, conservation, and habitat restoration for the community to enjoy.\nWhat you getLimited 2026 Cup Hop mugOne free drink during your pop-up visitSupport for a cause that keeps nature close Where & When –\nFour neighborhood shops, two back-to-back weekends in November.\nDates: November 5th, 6th, 12th and 13th\nTime and Locations:Grounds for Coffee – 3005 Harrison Blvd | Thursday 6 AM to 9 ",
-     "url": "https://www.ogdennaturecenter.org/cup-hop",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1793926800000,
      "e": 1793934000000,
      "t": "Visiting Artist Lecture by Melissa Melero-Moose",
@@ -1408,16 +1398,6 @@
     },
     {
      "s": 1794510000000,
-     "e": 1794519000000,
-     "t": "Author Celebration with Mac Barnett",
-     "loc": "Treehouse Children's Museum, 347 22nd Street, Ogden, UT. 84401",
-     "allDay": false,
-     "desc": "Children and adults are invited to celebrate the magic and power of picture books with award-winning author Mac Barnett who was named the 2006 National Ambassador for Young People's Literature by the Library of Congress. Mac will talk in Treehouse's Storybook Theater at 5:30 p.m. or 7 p.m. on Thursday, November 11. Children and parents can also participate in 5 activities throughout the Museum based some of our favorites books by Mac and have their books signed, too. Tickets are free but must be reserved in advance on the Treehouse website. Both children and adults need a ticket.",
-     "url": "https://www.treehousemuseum.org/events/87/author-party-with-mac-barnett",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794510000000,
      "e": 1794511800000,
      "t": "Jessica Greenberg Lecture - Allred",
      "loc": "",
@@ -1425,6 +1405,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1794529800000,
+     "e": 1794538800000,
+     "t": "Author Celebration with Mac Barnett",
+     "loc": "Treehouse Children's Museum, 347 22nd Street, Ogden, UT. 84401",
+     "allDay": false,
+     "desc": "Children and adults are invited to celebrate the magic and power of picture books with award-winning author Mac Barnett who was named the 2006 National Ambassador for Young People's Literature by the Library of Congress. Mac will talk in Treehouse's Storybook Theater. Children and parents can also participate in 5 activities throughout the Museum based some of our favorites books by Mac and have their books signed, too. Tickets are free but must be reserved in advance on the Treehouse website. Both children and adults need a ticket.",
+     "url": "https://www.treehousemuseum.org/events/87/author-party-with-mac-barnett",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1794531600000,
@@ -1548,8 +1538,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1558,8 +1548,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1708,8 +1698,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1718,8 +1708,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3492,16 +3482,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1793883600000,
-    "e": 1793894400000,
-    "t": "Cup Hop 2026",
-    "loc": "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant",
-    "allDay": false,
-    "desc": "Collect. Sip. Protect.\nYear eight launches a fresh Cup Hop series across four November days at four local coffee shops. Buy the limited 2026 mug and your purchase powers nature education, safe habitats for wildlife, conservation, and habitat restoration for the community to enjoy.\nWhat you getLimited 2026 Cup Hop mugOne free drink during your pop-up visitSupport for a cause that keeps nature close Where & When –\nFour neighborhood shops, two back-to-back weekends in November.\nDates: November 5th, 6th, 12th and 13th\nTime and Locations:Grounds for Coffee – 3005 Harrison Blvd | Thursday 6 AM to 9 ",
-    "url": "https://www.ogdennaturecenter.org/cup-hop",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1793926800000,
     "e": 1793934000000,
     "t": "Visiting Artist Lecture by Melissa Melero-Moose",
@@ -3732,12 +3712,12 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1794510000000,
-    "e": 1794519000000,
+    "s": 1794529800000,
+    "e": 1794538800000,
     "t": "Author Celebration with Mac Barnett",
     "loc": "Treehouse Children's Museum, 347 22nd Street, Ogden, UT. 84401",
     "allDay": false,
-    "desc": "Children and adults are invited to celebrate the magic and power of picture books with award-winning author Mac Barnett who was named the 2006 National Ambassador for Young People's Literature by the Library of Congress. Mac will talk in Treehouse's Storybook Theater at 5:30 p.m. or 7 p.m. on Thursday, November 11. Children and parents can also participate in 5 activities throughout the Museum based some of our favorites books by Mac and have their books signed, too. Tickets are free but must be reserved in advance on the Treehouse website. Both children and adults need a ticket.",
+    "desc": "Children and adults are invited to celebrate the magic and power of picture books with award-winning author Mac Barnett who was named the 2006 National Ambassador for Young People's Literature by the Library of Congress. Mac will talk in Treehouse's Storybook Theater. Children and parents can also participate in 5 activities throughout the Museum based some of our favorites books by Mac and have their books signed, too. Tickets are free but must be reserved in advance on the Treehouse website. Both children and adults need a ticket.",
     "url": "https://www.treehousemuseum.org/events/87/author-party-with-mac-barnett",
     "src": "Ogden Area Events (Visit Ogden)"
    },
@@ -4455,8 +4435,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4465,8 +4445,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4495,16 +4475,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794715200000,
     "t": "DPAC Scrooge - Austad",
     "loc": "",
@@ -4514,9 +4484,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "s": 1794708000000,
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4527,6 +4497,16 @@
     "s": 1794969000000,
     "e": 1794978000000,
     "t": "String Chamber Music Fall Concert - 136",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-04T16:01:39.362Z",
+ "updated": "2026-11-06T20:29:38.710Z",
  "pages": {
   "404.html": {
    "posted": "2026-10-06",
@@ -18,13 +18,13 @@
   },
   "beauty.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-22",
-   "hash": "c5fbf6eb12a7"
+   "updated": "2026-11-06",
+   "hash": "cb6685e4ba5c"
   },
   "businesses.html": {
    "posted": "2026-10-06",
-   "updated": "2026-10-22",
-   "hash": "2bf67e60f23e"
+   "updated": "2026-11-06",
+   "hash": "a06dd6ed8ade"
   },
   "causes.html": {
    "posted": "2026-10-09",
@@ -53,13 +53,13 @@
   },
   "farm.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-22",
-   "hash": "4548086d4fec"
+   "updated": "2026-11-06",
+   "hash": "7fe13c15b7fb"
   },
   "foodtrucks.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-19",
-   "hash": "a5c1dfcde1f3"
+   "updated": "2026-11-06",
+   "hash": "5c28aa0ada09"
   },
   "fun.html": {
    "posted": "2026-10-07",
@@ -123,8 +123,8 @@
   },
   "open-this-week.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-22",
-   "hash": "e68afb3b715d"
+   "updated": "2026-11-06",
+   "hash": "099771efe7c1"
   },
   "photo-contest.html": {
    "posted": "2026-10-06",
@@ -133,8 +133,8 @@
   },
   "poster.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-22",
-   "hash": "14d4b880df28"
+   "updated": "2026-11-06",
+   "hash": "3481d88b7b86"
   },
   "prepared.html": {
    "posted": "2026-10-07",
@@ -158,8 +158,8 @@
   },
   "restaurants.html": {
    "posted": "2026-10-06",
-   "updated": "2026-11-03",
-   "hash": "5bbee40657dc"
+   "updated": "2026-11-06",
+   "hash": "5553d9ab5d07"
   },
   "rules.html": {
    "posted": "2026-10-07",
@@ -178,13 +178,13 @@
   },
   "search.html": {
    "posted": "2026-10-07",
-   "updated": "2026-10-22",
-   "hash": "0368e92e7065"
+   "updated": "2026-11-06",
+   "hash": "bee66f819a13"
   },
   "services.html": {
    "posted": "2026-10-08",
-   "updated": "2026-10-22",
-   "hash": "fe06831408c7"
+   "updated": "2026-11-06",
+   "hash": "551e5a724116"
   },
   "sneak-peek.html": {
    "posted": "2026-10-11",
@@ -293,8 +293,8 @@
   },
   "stay.html": {
    "posted": "2026-10-22",
-   "updated": "2026-10-22",
-   "hash": "89210ed988a5"
+   "updated": "2026-11-06",
+   "hash": "c53b2042a14a"
   },
   "health.html": {
    "posted": "2026-10-22",
@@ -330,6 +330,11 @@
    "posted": "2026-11-03",
    "updated": "2026-11-03",
    "hash": "519c911b7008"
+  },
+  "shop.html": {
+   "posted": "2026-11-06",
+   "updated": "2026-11-06",
+   "hash": "78af24c682b8"
   }
  }
 }
