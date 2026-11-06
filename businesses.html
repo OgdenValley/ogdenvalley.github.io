@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Ogden Valley Businesses: Shops &amp; Services in Eden, Huntsville, Liberty</title>
-<meta name="description" content="Local businesses in Ogden Valley: Eden, Liberty and Huntsville.">
-<meta property="og:title" content="Ogden Valley Businesses: Shops &amp; Services in Eden, Huntsville, Liberty">
-<meta property="og:description" content="Local businesses in Ogden Valley: Eden, Liberty and Huntsville.">
+<title>Ogden Valley Local Businesses: Eat, Shop, Stay &amp; Services</title>
+<meta name="description" content="Every local business in Ogden Valley, by category: restaurants, shops, places to stay, home services, beauty, farms, food trucks and artists.">
+<meta property="og:title" content="Ogden Valley Local Businesses: Eat, Shop, Stay &amp; Services">
+<meta property="og:description" content="Every local business in Ogden Valley, by category: restaurants, shops, places to stay, home services, beauty, farms, food trucks and artists.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ogdenvalleyevent.com/businesses.html">
 <meta property="og:image" content="https://ogdenvalleyevent.com/share-card.png">
@@ -36,29 +36,67 @@
   <nav class="main" id="nav" aria-label="Main"></nav>
 </div></header>
 <main id="main">
-<section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley</p><h1>Local Businesses</h1><p class="lead" style="margin-top:12px">Shops, services and outfitters run by your Valley neighbors, plus the local Ogden shops Valley folks drive down for, from the canyon mouth to Pleasant View.</p></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<style>
+.cat-tiles{display:grid;gap:12px;grid-template-columns:repeat(2,minmax(0,1fr));margin:0 0 22px}
+@media(min-width:760px){.cat-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:1000px){.cat-tiles{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.cat-tiles a,.cat-tiles button{display:flex;flex-direction:column;align-items:flex-start;gap:6px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:16px;text-decoration:none;color:var(--ink);font:inherit;text-align:left;cursor:pointer;min-height:118px}
+.cat-tiles a:hover,.cat-tiles button:hover{border-color:var(--blue)}
+.cat-tiles .ic{font-size:30px;line-height:1}
+.cat-tiles b{font-family:var(--display);font-size:18px;line-height:1.2}
+.cat-tiles small{font-size:15px;color:var(--muted)}
+.cat-tiles .all{grid-column:1/-1;flex-direction:row;align-items:center;gap:14px;min-height:0;background:var(--navy);color:#fff;border-color:var(--navy)}
+.cat-tiles .all small{color:#C9D6E6}
+.cat-tag{display:inline-block;font:700 13px var(--display);letter-spacing:.04em;background:var(--soft);color:var(--ink);border-radius:999px;padding:3px 10px;text-decoration:none}
+.all-row{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;border-bottom:1px solid var(--line);padding:12px 0}
+.all-row b{font-family:var(--display);font-size:17px}
+.all-row .meta{font-size:15px;color:var(--muted)}
+.grp{font-family:var(--display);font-size:20px;margin:18px 0 4px}.why{font-size:15px;color:var(--muted);margin:0 0 6px}
+.bcard{display:grid;grid-template-columns:120px 1fr;background:var(--card);border:1px solid var(--line);border-radius:14px;overflow:hidden;min-height:150px}
+.bcard.is-fav{border:2px solid var(--accent)}
+.bcard{position:relative}.bcard .heart{position:absolute;top:8px;left:8px;width:38px;height:38px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:#9AA7B6;font-size:20px;line-height:38px;text-align:center;cursor:pointer;box-shadow:0 1px 4px rgba(0,0,0,.2);padding:0}.bcard .heart[aria-pressed="true"]{color:#D6336C}
+.bcard .ph{background:var(--soft);display:flex;align-items:center;justify-content:center;font-size:44px}
+.bcard .ph img{width:100%;height:100%;object-fit:cover;display:block}.bcard .ph img.logo{object-fit:contain;background:#fff;padding:8px;box-sizing:border-box}
+.bcard .bd{padding:14px 16px;display:flex;flex-direction:column;gap:4px;min-width:0}
+.bcard h3{font-family:var(--display);font-size:18px;font-weight:800;text-transform:uppercase;letter-spacing:.02em;margin:0;color:var(--navy);overflow-wrap:anywhere}
+.bcard .desc{font-size:15px;color:var(--ink);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;margin:2px 0}
+.grid-v .bcard .desc{font-size:14px}
+.bcard .tags{display:flex;gap:6px;flex-wrap:wrap}.bcard .tg{font:700 12px var(--display);border-radius:999px;padding:2px 9px;background:var(--good-bg);color:var(--good)}.bcard .tg.closed{background:var(--soft);color:var(--muted)}
+.bcard .ad{font-size:15px;color:var(--muted)}
+.bcard .tel{font-weight:700;font-size:16px;color:var(--ink);text-decoration:none}
+.bcard .acts{display:flex;align-items:center;gap:16px;margin-top:auto;padding-top:8px;flex-wrap:wrap}
+.bcard .lm{background:var(--navy);color:#fff;border-radius:999px;padding:8px 18px;font:700 15px var(--display);text-decoration:none}
+.bcard .web{font:700 15px var(--display);color:var(--navy);text-decoration:none}
+.bcards{display:grid;gap:14px;grid-template-columns:1fr;margin:8px 0 18px}
+@media(min-width:760px){.bcard{grid-template-columns:200px 1fr;min-height:170px}.bcards{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(prefers-color-scheme:dark){.bcard h3,.bcard .web{color:var(--ink)}}
+.bcards.grid-v{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media(min-width:760px){.bcards.grid-v{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(min-width:1100px){.bcards.grid-v{grid-template-columns:repeat(4,minmax(0,1fr))}}
+.grid-v .bcard{grid-template-columns:1fr;grid-template-rows:130px auto;min-height:0}
+@media(min-width:760px){.grid-v .bcard{grid-template-rows:170px auto}}
+.grid-v .bcard .bd{padding:12px}
+.grid-v .bcard h3{font-size:15px}
+.grid-v .bcard .ad,.grid-v .bcard .tel{font-size:14px}
+.grid-v .bcard .acts{gap:10px}
+.grid-v .bcard .lm{padding:7px 14px;font-size:14px}
+.pager{display:flex;gap:6px;flex-wrap:wrap;justify-content:center;align-items:center;margin:18px 0 6px}.pager .chip[disabled]{opacity:.4}.pager .gap{padding:0 4px;color:var(--muted)}
+#bizmap{height:520px;border-radius:14px;border:1px solid var(--line);margin:8px 0 6px}@media(max-width:640px){#bizmap{height:440px}}.mapnote{font-size:15px;color:var(--muted);margin:0 0 14px}.leaflet-popup-content b{font-family:var(--display)}
+.sortsel{display:inline-flex;align-items:center;gap:8px;margin-left:auto}.sortsel .fselect{width:auto;min-width:130px}
+.viewbar{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 4px}
+.sortbar{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 10px}
+</style>
+<section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley</p><h1>Local Businesses</h1><p class="lead" style="margin-top:12px">Every Valley business, in one place. Pick a category, or open the full list.</p></div></div></section>
 <section><div class="container">
-  <details class="week-dd" style="margin-bottom:18px"><summary data-track="find it local dropdown: businesses"><span><span class="eyebrow">Find it local</span><span class="wk-h">Where can I get…?</span></span></summary><div data-find="compact"></div></details>
-  <div id="area" style="margin-bottom:12px"></div>
-  <div class="fbox">
-    <input type="search" id="q" class="fsearch" placeholder="Search: candles, florist, bike shop, gas…" aria-label="Search local businesses">
-    <div class="frow"><label class="flab" for="where">Where</label><select id="where" class="fselect">
-      <option value="All">Everywhere</option><option value="Eden">Eden</option><option value="Huntsville Town">Huntsville Town</option><option value="Huntsville area">Huntsville area</option><option value="Liberty">Liberty</option><option value="Snowbasin">Snowbasin</option><option value="Powder Mountain">Powder Mountain</option><option value="Nordic Valley">Nordic Valley</option>
-      <optgroup label="Down the canyon"><option value="@h:Canyon mouth / 12th St">Canyon mouth / 12th St</option><option value="@h:Downtown & 25th St">Downtown &amp; 25th St</option><option value="@h:Washington Blvd">Washington Blvd</option><option value="@h:Harrison Blvd">Harrison Blvd</option><option value="@h:North Ogden">North Ogden</option><option value="@h:Pleasant View">Pleasant View</option><option value="@h:South Ogden">South Ogden (30th St &amp; south)</option></optgroup>
-    </select></div>
-    <div id="more" hidden>
-      <div class="frow" id="tagbar"><span class="flab">Badges</span></div>
-    </div>
-    <button type="button" class="fmore" id="morebtn" aria-expanded="false" aria-controls="more">More filters ▾</button>
-    <div class="filters" id="spotbar" hidden></div>
-    <p class="fcount"><span id="count"></span> <button type="button" class="fclear" id="clear" hidden>Clear filters</button></p>
-  </div>
-  <div id="list"></div>
-  <div id="list-w-wrap" hidden><div class="section-head" style="margin-top:26px"><div><p class="eyebrow">Weber County · Ogden</p><h2>Down the canyon</h2></div></div><div id="list-w"></div></div>
-  <div data-groups="classifieds,rentals" data-title="Buying, selling or renting? Ask your neighbors" style="margin-top:22px"></div>
-  <div class="fnotes">
-    <p class="fair">Badges are as told to us by the owner. Listings are free and in A–Z order. Nobody pays to be ranked higher, reviews come from real people, and sponsors are always labeled. Every place is checked by a local before it goes up.</p>
-    <p class="also">Also see: <a href="restaurants.html">Restaurants</a> · <a href="beauty.html">Beauty &amp; Wellness</a> · <a href="farm.html">Farm Stands &amp; Local Food</a> · <a href="foodtrucks.html">Food Trucks</a> · <a href="services.html">Home Services</a></p>
+  <div class="fbox" style="margin-bottom:18px"><input type="search" id="q" class="fsearch" placeholder="Search every business: inn, florist, handyman…" aria-label="Search every business"></div>
+  <div class="cat-tiles" id="tiles"></div>
+  <div id="allbox" hidden>
+    <div class="section-head"><div><p class="eyebrow">A to Z</p><h2 id="allh">All businesses</h2></div></div>
+    <div class="frow"><label class="flab" for="where">Where</label><select id="where" class="fselect"><option value="All">Everywhere</option><option>Eden</option><option>Huntsville Town</option><option>Huntsville area</option><option>Liberty</option><option>Snowbasin</option><option>Powder Mountain</option><option>Nordic Valley</option></select></div>
+    <div class="sortbar" id="quick"><button class="chip" type="button" id="fopen" aria-pressed="false">Open now</button><button class="chip" type="button" id="fnew" aria-pressed="false">New this month</button><button class="chip" type="button" id="fsaved" aria-pressed="false">♥ My saved</button></div>
+    <div class="sortbar"><span class="viewbar"><button class="chip" type="button" id="vgrid" aria-pressed="true">▦ Grid</button><button class="chip" type="button" id="vlist" aria-pressed="false">☰ List</button><button class="chip" type="button" id="vmap" aria-pressed="false">📍 Map</button></span><label class="sortsel"><span class="flab">Sort</span> <select id="sort" class="fselect"><option value="az">A to Z</option><option value="mix">Mix it up</option></select></label></div>
+    <p class="fcount" id="count"></p>
+    <div id="all"></div>
   </div>
 </div></section>
 </main>
@@ -68,28 +106,62 @@
 <script src="places.js"></script>
 <script src="site.js"></script>
 <script>
-(async function(){const S=window.OVE_SITE,el=S.el,CFG={"key": "businesses", "spot": true, "one": "place", "many": "places", "rows": [{"id": "tagbar", "field": "badges", "more": true}]};const all=(S.P[CFG.key]||[]);const R=await S.loadJSON("reviews.json");
-const st={town:"All",q:""};const spot=CFG.spot?S.spotFilter(document.getElementById("spotbar"),all,CFG.key,()=>draw()):()=>true;
-const val=(p,r)=>r.single?[p[r.field]||"Other"]:(p[r.field]||[]);
-const rows=CFG.rows.map(r=>{const seen=[...new Set(all.flatMap(p=>val(p,r)))];let vals=r.order?r.order.filter(v=>seen.includes(v)||r.keepAll).concat(seen.filter(v=>!r.order.includes(v)).sort()):seen.sort();
- const bar=document.getElementById(r.id);st[r.id]="";if(!vals.length||(r.single&&vals.length<2)){bar.hidden=true;return null}
- const lab=bar.firstElementChild;bar.replaceChildren(lab,...["All"].concat(vals).map(t=>{const b=el("button",{class:"chip",type:"button","aria-pressed":String(t==="All"),text:t});b.onclick=()=>{st[r.id]=t==="All"?"":t;[...bar.querySelectorAll("button")].forEach(x=>x.setAttribute("aria-pressed",String(x===b)));draw()};return b}));return Object.assign({bar},r)}).filter(Boolean);
-const where=document.getElementById("where"),qi=document.getElementById("q"),more=document.getElementById("more"),mb=document.getElementById("morebtn"),clr=document.getElementById("clear");
-if(more&&!rows.some(r=>r.more)){more.remove();mb.remove()}
-const isW=p=>p.region==="weber";let area=S.getArea();const inArea=p=>area==="both"||(area==="weber")===isW(p);
-const pred=(p,s)=>spot(p)&&(s.town==="All"||(s.town.startsWith("@h:")?p.hood===s.town.slice(3):(p.town||p.area)===s.town))&&rows.every(r=>!s[r.id]||val(p,r).includes(s[r.id]))&&(!s.q||JSON.stringify(p).toLowerCase().includes(s.q));
-function draw(){const shown=all.filter(p=>inArea(p)&&pred(p,st));const up=shown.filter(p=>!isW(p)),dn=shown.filter(isW),lw=document.getElementById("list-w-wrap");
- if(area==="weber"){S.listing(document.getElementById("list"),dn,CFG.key,R);lw.hidden=true}else{if(area==="both"&&!up.length&&dn.length)document.getElementById("list").replaceChildren(el("p",{class:"fcount",style:"font-size:17px",text:"Nothing up here for that yet. Here's what's down the canyon:"}));else S.listing(document.getElementById("list"),up,CFG.key,R);lw.hidden=area!=="both"||!dn.length;if(!lw.hidden)S.listing(document.getElementById("list-w"),dn,CFG.key,R)}
- S.pruneChips(all,pred,st,rows.map(r=>({key:r.id,btns:r.bar.querySelectorAll("button"),val:b=>b.textContent==="All"?null:b.textContent,row:false})));
- if(where)[...where.options].forEach(o=>{if(o.value!=="All")o.disabled=o.value!==st.town&&!all.some(p=>inArea(p)&&pred(p,Object.assign({},st,{town:o.value})))});
- const on=st.town!=="All"||st.q||rows.some(r=>st[r.id]);document.getElementById("count").textContent="Showing "+shown.length+(shown.length===1?" "+CFG.one:" "+CFG.many)+(on?"":" (all)");clr.hidden=!on;
- if(mb&&document.body.contains(mb)){const n=rows.filter(r=>r.more&&st[r.id]).length;mb.textContent=(more.hidden?"More filters ▾":"Fewer filters ▴")+(n&&more.hidden?" ("+n+" on)":"")}}
-qi.addEventListener("input",e=>{st.q=e.target.value.trim().toLowerCase();draw()});
-if(where)where.addEventListener("change",()=>{st.town=where.value;draw()});
-if(mb)mb.addEventListener("click",()=>{more.hidden=!more.hidden;mb.setAttribute("aria-expanded",String(!more.hidden));draw()});
-clr.addEventListener("click",()=>{st.town="All";st.q="";rows.forEach(r=>st[r.id]="");if(where)where.value="All";qi.value="";document.querySelectorAll(".fbox .chip").forEach(b=>b.setAttribute("aria-pressed",String(b.textContent==="All")));draw()});
-S.areaSwitch(document.getElementById("area"),v=>{area=v;draw()});
-draw();if(location.hash){const t=document.getElementById(decodeURIComponent(location.hash.slice(1)));if(t){t.scrollIntoView();t.style.outline="3px solid var(--accent)"}}})();
+(function(){const S=window.OVE_SITE,P=S.P;
+const CATS=[["restaurants","🍽️","Eat","Restaurants, cafés & bars","restaurants.html"],["businesses","🛍️","Shop","Shops & local stores","shop.html"],["stay","🛏️","Places to Stay","Inns, lodges & rentals","stay.html"],["services","🔧","Home Services","Handyman, cleaning, yards","services.html"],["beauty","💆","Beauty & Wellness","Hair, spa, fitness","beauty.html"],["farm","🥚","Farm & Local Food","Eggs, beef, honey, U-pick","farm.html"],["foodtrucks","🚚","Food Trucks","Where they park","foodtrucks.html"],["artists","🎨","Local Artists","Art, pottery, photos","artists.html"]];
+const label={};CATS.forEach(c=>label[c[0]]=c);
+const HID={restaurants:"eat food restaurant cafe coffee bar dinner lunch breakfast",businesses:"shop store gifts",stay:"stay lodging inn hotel lodge bed and breakfast b&b cabin rental place to sleep",services:"home services handyman repair cleaning yard snow",beauty:"beauty wellness hair nails spa massage fitness gym",farm:"farm local food eggs beef honey produce u-pick",foodtrucks:"food truck",artists:"artist art"};
+const all=[];CATS.forEach(([k])=>(P[k]||[]).forEach(p=>all.push({p,k,hay:(JSON.stringify(p)+" "+HID[k]).toLowerCase()})));
+const T=document.getElementById("tiles");
+const allBtn=S.el("button",{class:"all",type:"button"});allBtn.innerHTML='<span class="ic">📋</span><span><b>All businesses</b><br><small>'+all.length+' listings, A to Z, every category</small></span>';T.append(allBtn);
+CATS.forEach(([k,ic,name,sub,href])=>{const a=S.el("a",{href});a.innerHTML='<span class="ic">'+ic+'</span><b>'+name+'</b><small>'+(P[k]||[]).length+' · '+sub+'</small>';T.append(a)});
+const box=document.getElementById("allbox"),list=document.getElementById("all"),q=document.getElementById("q"),where=document.getElementById("where"),cnt=document.getElementById("count");let mix=false,view="grid",page=1,onlyOpen=false,onlyNew=false,onlySaved=false;
+/* Saved favorites live only in this visitor's own browser; nothing is sent anywhere */
+let SAVED=[];try{SAVED=JSON.parse(localStorage.getItem("ove-saved")||"[]")}catch(e){}
+const isSaved=p=>SAVED.includes(S.slug(p.name));const toggleSave=p=>{const k=S.slug(p.name);SAVED=isSaved(p)?SAVED.filter(x=>x!==k):SAVED.concat(k);try{localStorage.setItem("ove-saved",JSON.stringify(SAVED))}catch(e){}savedLabel()};
+const savedLabel=()=>{const b=document.getElementById("fsaved");if(b)b.textContent="♥ My saved"+(SAVED.length?" ("+SAVED.length+")":"")};try{view=localStorage.getItem("ove-biz-view")||"grid"}catch(e){}
+function draw(){const s=q.value.trim().toLowerCase(),w=where.value;let r=all.filter(x=>{const p=x.p;return (!onlyOpen||S.openNow(p)===true)&&(!onlyNew||S.isNew(p))&&(!onlySaved||isSaved(p))&&(w==="All"||(p.town||p.area)===w)&&(!s||s.split(/\s+/).every(w=>new RegExp("(^|[^a-z0-9])"+w.replace(/[^a-z0-9&]/g,"")).test(x.hay)))});
+ if(mix){let seed=+new Date().toISOString().slice(0,10).replace(/-/g,"");r=r.map(x=>({x,o:(seed=(seed*9301+49297)%233280)})).sort((a,b)=>a.o-b.o).map(z=>z.x)}else r.sort((a,b)=>a.p.name.localeCompare(b.p.name));
+ const ok=x=>S.sentUs(x.p);/* same rule as every list on the site */
+ const fav=r.filter(ok),rest=r.filter(x=>!ok(x)),esc=t=>String(t||"").replace(/[<&"]/g,c=>({"<":"&lt;","&":"&amp;",'"':"&quot;"}[c]));
+ const fmt=ph=>{const d=String(ph||"").replace(/\D/g,"");return d.length===10?"("+d.slice(0,3)+") "+d.slice(3,6)+"-"+d.slice(6):ph};
+ const tags=p=>{const t=[];if(S.isNew(p))t.push('<span class="tg">New</span>');const on=S.openNow(p);if(on!=null)t.push(on?'<span class="tg">Open now</span>':'<span class="tg closed">Closed now</span>');return t.length?'<div class="tags">'+t.join("")+'</div>':""};
+ const card=({p,k},isFav)=>{const c=label[k],d=S.el("article",{class:"bcard"+(isFav?" is-fav":"")});const home=c[4]+"#"+S.slug(p.name);
+  const where=p.address||[p.home?"Comes to you":"",p.serves&&p.home?"Serves "+p.serves:(p.town||p.area||"")].filter(Boolean).join(" · ");
+  d.innerHTML='<a class="ph" href="'+home+'" aria-hidden="true" tabindex="-1">'+(p.photos&&p.photos[0]?'<img loading="lazy" alt=""'+(/logo/i.test(p.photos[0])?' class="logo"':"")+' src="'+esc(p.photos[0])+'">':c[1])+'</a>'+
+   '<div class="bd">'+tags(p)+'<h3>'+esc(p.name)+'</h3>'+(p.price?'<div class="ad"><b>'+esc(p.price)+'</b> · '+esc(p.type||'')+'</div>':'')+(p.blurb?'<p class="desc">'+esc(p.blurb)+'</p>':'')+'<div class="ad">'+esc(where)+'</div>'+(p.phone?'<a class="tel" href="tel:'+String(p.phone).replace(/[^0-9+]/g,"")+'">'+esc(fmt(p.phone))+'</a>':'')+
+   '<div class="acts"><a class="lm" href="'+home+'">Learn more</a>'+(p.link?'<a class="web" href="'+esc(p.link)+'" target="_blank" rel="noopener">Website</a>':'')+'</div></div>';const h=S.el("button",{class:"heart",type:"button","aria-pressed":String(isSaved(p)),"aria-label":"Save "+p.name,title:"Save",text:"♥"});h.onclick=()=>{toggleSave(p);h.setAttribute("aria-pressed",String(isSaved(p)));if(onlySaved)draw()};d.append(h);return d};
+ if(view==="map"){drawMap(fav,rest);return}
+ const PER=24,order=S.rotateDaily(fav).map(x=>[x,1]).concat(rest.map(x=>[x,0])),pages=Math.max(1,Math.ceil(order.length/PER));
+ if(page>pages)page=pages;const from=(page-1)*PER,slice=order.slice(from,from+PER);
+ cnt.textContent=order.length?("Showing "+(from+1)+"–"+(from+slice.length)+" of "+order.length+" businesses"):(onlySaved?"Nothing saved yet. Tap the ♥ on any business to save it here.":"No businesses match. Try another word.");
+ const kids=[];let g=null,last=null;
+ slice.forEach(([x,f])=>{if(f!==last){last=f;if(f){kids.push(S.el("h3",{class:"grp",text:"Listed with OVE"}),S.el("p",{class:"why",text:"These sent us their own details and photos, so they show first. They take turns at the top each day. Listing is free."}))}else if(fav.length)kids.push(S.el("h3",{class:"grp",text:"More Valley businesses"}));
+  g=S.el("div",{class:"bcards"+(view==="grid"?" grid-v":"")});kids.push(g)}g.append(card(x,!!f))});
+ if(pages>1){const nav=S.el("nav",{class:"pager","aria-label":"Pages"});const btn=(t,n,cur,dis)=>{const bt=S.el("button",{class:"chip",type:"button",text:t,"aria-pressed":String(!!cur)});if(dis)bt.disabled=true;else bt.onclick=()=>{page=n;draw();document.getElementById("allbox").scrollIntoView({behavior:"smooth"})};return bt};
+  nav.append(btn("‹ Back",page-1,false,page===1));for(let i=1;i<=pages;i++){if(pages>7&&i>2&&i<pages-1&&Math.abs(i-page)>1){if(!nav.lastChild.classList.contains("gap"))nav.append(S.el("span",{class:"gap",text:"…"}));continue}nav.append(btn(String(i),i,i===page))}nav.append(btn("Next ›",page+1,false,page===pages));kids.push(nav)}
+ kids.push(S.el("p",{class:"why",style:"margin-top:16px",html:'Own a Valley business? <a href="submit.html">Send us your details and photos</a> to be listed first.'}));
+ list.replaceChildren(...kids);}
+let GEO=null,lmap=null,layer=null;
+function loadLeaflet(){return new Promise(res=>{if(window.L)return res();const c=document.createElement("link");c.rel="stylesheet";c.href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css";document.head.append(c);const s=document.createElement("script");s.src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js";s.onload=res;s.onerror=res;document.head.append(s)})}
+async function drawMap(fav,rest){const r=S.rotateDaily(fav).concat(rest);
+ cnt.textContent=r.length+" businesses";
+ if(!GEO)GEO=(await S.loadJSON("geocache.json"))||{};await loadLeaflet();
+ const esc=t=>String(t||"").replace(/[<&"]/g,c=>({"<":"&lt;","&":"&amp;",'"':"&quot;"}[c]));
+ const pts=r.map(x=>[x,GEO[(x.p.address||"").trim()]]).filter(([,g])=>g&&g.lat);const off=r.length-pts.length;
+ const box=S.el("div",{id:"bizmap"}),note=S.el("p",{class:"mapnote",text:pts.length+" on the map. "+(off?off+" more come to you, are home-based, or don't have a street address on file. Switch to Grid or List to see everyone.":"")});
+ list.replaceChildren(box,note);if(!window.L){note.textContent="The map couldn't load right now. Switch to Grid or List.";return}
+ lmap=L.map(box,{scrollWheelZoom:false});L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",{maxZoom:18,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'}).addTo(lmap);
+ const b=[];pts.forEach(([{p,k},g])=>{const c=label[k];const m=L.marker([g.lat,g.lng]).addTo(lmap);m.bindPopup('<b>'+esc(p.name)+'</b><br>'+esc(p.address)+(p.phone?'<br>'+esc(p.phone):'')+'<br><a href="'+c[4]+'#'+S.slug(p.name)+'">Learn more</a>');b.push([g.lat,g.lng])});
+ if(b.length)lmap.fitBounds(b,{padding:[30,30],maxZoom:14});else lmap.setView([41.30,-111.82],11)}
+function open(){box.hidden=false;draw()}
+allBtn.onclick=()=>{open();box.scrollIntoView({behavior:"smooth"})};
+q.oninput=()=>{page=1;if(q.value.trim())open();else if(!box.dataset.keep)box.hidden=true;draw()};where.onchange=()=>{page=1;draw()};
+document.getElementById("sort").onchange=e=>{mix=e.target.value==="mix";page=1;draw()};
+const h=decodeURIComponent(location.hash.slice(1));if(h&&h!=="all"){const hit=all.find(x=>S.slug(x.p.name)===h);if(hit){location.replace(label[hit.k][4]+"#"+h);return}}
+[["fopen","onlyOpen"],["fnew","onlyNew"],["fsaved","onlySaved"]].forEach(([id,key])=>{const b=document.getElementById(id);b.onclick=()=>{if(key==="onlyOpen")onlyOpen=!onlyOpen;else if(key==="onlyNew")onlyNew=!onlyNew;else{onlySaved=!onlySaved;box.hidden=false}b.setAttribute("aria-pressed",String(key==="onlyOpen"?onlyOpen:key==="onlyNew"?onlyNew:onlySaved));page=1;draw()}});savedLabel();
+const vg=document.getElementById("vgrid"),vl=document.getElementById("vlist"),vm=document.getElementById("vmap");const setV=v=>{view=v;vg.setAttribute("aria-pressed",String(v==="grid"));vl.setAttribute("aria-pressed",String(v==="list"));vm.setAttribute("aria-pressed",String(v==="map"));try{localStorage.setItem("ove-biz-view",v)}catch(e){}draw()};vg.onclick=()=>setV("grid");vl.onclick=()=>setV("list");vm.onclick=()=>setV("map");vm.setAttribute("aria-pressed",String(view==="map"));vg.setAttribute("aria-pressed",String(view==="grid"));vl.setAttribute("aria-pressed",String(view==="list"));
+if(location.hash==="#all"){box.dataset.keep=1;open()}
+})();
 </script>
 </body>
 </html>

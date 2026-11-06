@@ -50,7 +50,7 @@
 <script src="site.js"></script>
 <script>
 (function(){const S=window.OVE_SITE,el=S.el,P=S.P,C=S.C;
-const KN={restaurants:"restaurants.html",businesses:"businesses.html",beauty:"beauty.html",farm:"farm.html",foodtrucks:"foodtrucks.html"};
+const KN={restaurants:"restaurants.html",businesses:"shop.html",beauty:"beauty.html",farm:"farm.html",foodtrucks:"foodtrucks.html"};
 const all=[];Object.keys(KN).forEach(k=>(P[k]||[]).filter(p=>p.region!=="weber").forEach(p=>all.push(Object.assign({_k:k},p))));
 document.getElementById("wk-date").textContent=C.weekChecked?"Last checked "+S.niceDay(C.weekChecked)+".":"This week's list is being checked now.";
 const G=[["open","Open as usual"],["short","Open, shorter hours"],["closed","Closed this week"],["","Not checked yet this week"]];
