@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T01:19:04.783Z",
+ "updated": "2026-11-06T02:57:26.111Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -946,26 +946,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1793838600000,
-     "e": 1793844000000,
-     "t": "Weber State Students Fall Cello Recital - 113",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1793842200000,
-     "e": 1793845800000,
-     "t": "Yoga",
-     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
-     "url": "https://weberpl.events.mylibrary.digital/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1793844000000,
      "e": 1793851200000,
      "t": "Warren Miller's \"Days Off\"",
@@ -1627,8 +1607,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1637,8 +1617,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1787,8 +1767,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1797,8 +1777,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3581,16 +3561,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1793842200000,
-    "e": 1793845800000,
-    "t": "Yoga",
-    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
-    "url": "https://weberpl.events.mylibrary.digital/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1793844000000,
     "e": 1793851200000,
     "t": "Warren Miller's \"Days Off\"",
@@ -4473,16 +4443,6 @@
   ],
   "treehouse": [
    {
-    "s": 1793838600000,
-    "e": 1793844000000,
-    "t": "Weber State Students Fall Cello Recital - 113",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
     "s": 1794016800000,
     "e": 1794025800000,
     "t": "WSU Theatre: Much Ado About Nothing - Allred",
@@ -4574,8 +4534,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4584,8 +4544,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4614,16 +4574,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794717000000,
     "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
@@ -4633,9 +4583,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "s": 1794708000000,
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4646,6 +4596,16 @@
     "s": 1794969000000,
     "e": 1794976200000,
     "t": "Jazz - Allred",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
