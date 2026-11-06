@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T21:55:04.142Z",
+ "updated": "2026-11-06T14:15:42.771Z",
  "meetings": [
   {
    "body": "Huntsville Town Council",
@@ -43,11 +43,11 @@
    "elev": 7690,
    "depth": {
     "value": 0,
-    "date": "2026-11-04"
+    "date": "2026-11-05"
    },
    "water": {
-    "value": 0,
-    "date": "2026-11-04"
+    "value": 0.1,
+    "date": "2026-11-05"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -57,11 +57,11 @@
    "elev": 5970,
    "depth": {
     "value": 0,
-    "date": "2026-11-04"
+    "date": "2026-11-05"
    },
    "water": {
-    "value": 0,
-    "date": "2026-11-04"
+    "value": 0.1,
+    "date": "2026-11-05"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
@@ -71,11 +71,11 @@
    "elev": 8930,
    "depth": {
     "value": 4,
-    "date": "2026-11-04"
+    "date": "2026-11-05"
    },
    "water": {
     "value": 1,
-    "date": "2026-11-04"
+    "date": "2026-11-05"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
    "source": "USDA NRCS SNOTEL"
