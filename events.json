@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-05T22:55:33.611Z",
+ "updated": "2026-11-06T01:19:04.783Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -933,16 +933,6 @@
      "allDay": false,
      "desc": "Time Onlys: 4pm\nRaces: 6:30pm\n\nFor more information and events:\nwww.facebook.com…",
      "url": "https://www.facebook.com/RMBRARockyMountainBarrelRacing/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793833200000,
-     "e": 1793840400000,
-     "t": "Diabetes Technology Fair",
-     "loc": "McKay-Dee Hospital, Education Center, 4401 Harrison Blvd, Ogden UT",
-     "allDay": false,
-     "desc": "Living with diabetes? Come see how today’s technology can make managing it a little easier. Join us for the Diabetes Technology Open House at McKay-Dee Hospital on Wednesday, November 4, from 4–6 p.m. Meet diabetes technology experts and representatives, explore continuous glucose monitors (CGMs), insulin pumps and other insulin delivery devices, and get answers to your questions about how they work and which options may be right for you. Whether you're already using diabetes technology or simply want to learn what's available, stop by, ask questions and explore the latest options. Come learn,",
-     "url": "https://www.intermountainhealth.org/locations/mckay-dee-hospital?utm_campaign=gmb&utm_medium=organic&utm_source=local",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -3496,6 +3486,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1799110800000,
+     "e": 1799118000000,
+     "t": "Mystic Mondays: tarot readings",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "$5 readings. Every Monday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1799514000000,
      "e": 1799521200000,
      "t": "Cardboard Exchange MEGA Expo",
@@ -3568,16 +3568,6 @@
     "allDay": false,
     "desc": "Time Onlys: 4pm\nRaces: 6:30pm\n\nFor more information and events:\nwww.facebook.com…",
     "url": "https://www.facebook.com/RMBRARockyMountainBarrelRacing/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793833200000,
-    "e": 1793840400000,
-    "t": "Diabetes Technology Fair",
-    "loc": "McKay-Dee Hospital, Education Center, 4401 Harrison Blvd, Ogden UT",
-    "allDay": false,
-    "desc": "Living with diabetes? Come see how today’s technology can make managing it a little easier. Join us for the Diabetes Technology Open House at McKay-Dee Hospital on Wednesday, November 4, from 4–6 p.m. Meet diabetes technology experts and representatives, explore continuous glucose monitors (CGMs), insulin pumps and other insulin delivery devices, and get answers to your questions about how they work and which options may be right for you. Whether you're already using diabetes technology or simply want to learn what's available, stop by, ask questions and explore the latest options. Come learn,",
-    "url": "https://www.intermountainhealth.org/locations/mckay-dee-hospital?utm_campaign=gmb&utm_medium=organic&utm_source=local",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
