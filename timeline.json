@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T07:10:12.305Z",
+ "updated": "2026-11-07T14:01:21.378Z",
  "items": [
   {
    "t": 1794035412304,
@@ -36,21 +36,20 @@
    "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at"
   },
   "al": {
-   "2682": 1,
-   "2683": 1
+   "2682": 1
   },
   "cond": {
-   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
-   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
    "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
-   "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
-   "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none",
-   "SR-226 to Snowbasin#336": "Dry · none",
-   "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
-   "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none",
    "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
    "SR-158 to Powder Mountain#334": "Dry · none",
-   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none"
+   "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none",
+   "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
+   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none",
+   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
+   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
+   "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
+   "SR-226 to Snowbasin#336": "Dry · none",
+   "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none"
   },
   "pass": {},
   "ice": {

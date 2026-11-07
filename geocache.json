@@ -858,5 +858,181 @@
  "4850 Harrison Blvd #3, Ogden, UT 84403": null,
  "3651 Wall Ave #1002 (Newgate Mall), Ogden, UT 84405": null,
  "3651 Wall Ave #1129 (Newgate Mall), Ogden, UT 84405": null,
- "3701 Washington Blvd Ste A, South Ogden, UT 84403": null
+ "3701 Washington Blvd Ste A, South Ogden, UT 84403": null,
+ "2262 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.22556,
+  "lng": -111.97025,
+  "county": "Weber"
+ },
+ "241 25th St, Ogden, UT 84401": {
+  "lat": 41.22063,
+  "lng": -111.97492,
+  "county": "Weber"
+ },
+ "220 24th St, Ogden, UT 84401": {
+  "lat": 41.22289,
+  "lng": -111.97537,
+  "county": "Weber"
+ },
+ "1843 Valley Dr, Ogden, UT 84401": {
+  "lat": 41.23329,
+  "lng": -111.93983,
+  "county": "Weber"
+ },
+ "2424 Wall Ave, Ogden, UT 84401": {
+  "lat": 41.2223,
+  "lng": -111.97872,
+  "county": "Weber"
+ },
+ "1666 Washington Blvd, Ogden, UT 84404": {
+  "lat": 41.23741,
+  "lng": -111.96998,
+  "county": "Weber"
+ },
+ "2917 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.21183,
+  "lng": -111.97104,
+  "county": "Weber"
+ },
+ "1273 Canyon Rd, Ogden, UT 84404": {
+  "lat": 41.24228,
+  "lng": -111.94617,
+  "county": "Weber"
+ },
+ "1165 Patterson St, Ogden, UT 84403": {
+  "lat": 41.20855,
+  "lng": -111.94964,
+  "county": "Weber"
+ },
+ "834 Washington Blvd, Ogden, UT 84404": {
+  "lat": 41.2496,
+  "lng": -111.96973,
+  "county": "Weber"
+ },
+ "1108 Washington Blvd, Ogden, UT 84404": {
+  "lat": 41.24584,
+  "lng": -111.96826,
+  "county": "Weber"
+ },
+ "936 28th St, Ogden, UT 84403": {
+  "lat": 41.21455,
+  "lng": -111.95552,
+  "county": "Weber"
+ },
+ "2210 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.22662,
+  "lng": -111.97025,
+  "county": "Weber"
+ },
+ "180 31st St, Ogden, UT 84401": {
+  "lat": 41.20863,
+  "lng": -111.97693,
+  "county": "Weber"
+ },
+ "2466 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.2212,
+  "lng": -111.97,
+  "county": "Weber"
+ },
+ "131 25th St, Ogden, UT 84401": {
+  "lat": 41.22067,
+  "lng": -111.97796,
+  "county": "Weber"
+ },
+ "2937 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.21148,
+  "lng": -111.97079,
+  "county": "Weber"
+ },
+ "1638 N Washington Blvd #202, North Ogden, UT 84414": null,
+ "1069 W 12th St, Ogden, UT 84404": {
+  "lat": 41.24232,
+  "lng": -112.00562,
+  "county": "Weber"
+ },
+ "3651 Wall Ave #1214 (Newgate Mall), Ogden, UT 84405": null,
+ "304 W Pleasant View Dr, Pleasant View, UT 84414": {
+  "lat": 41.31428,
+  "lng": -111.98521,
+  "county": "Weber"
+ },
+ "905 26th St #99A, Ogden, UT 84401": null,
+ "150 N Washington Blvd #1, Ogden, UT 84404": null,
+ "2620 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.218,
+  "lng": -111.97042,
+  "county": "Weber"
+ },
+ "3201 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.20595,
+  "lng": -111.97091,
+  "county": "Weber"
+ },
+ "2274 N Washington Blvd, North Ogden, UT 84414": {
+  "lat": 41.29977,
+  "lng": -111.96699,
+  "county": "Weber"
+ },
+ "2246 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.22582,
+  "lng": -111.97025,
+  "county": "Weber"
+ },
+ "698 12th St, Ogden, UT 84404": {
+  "lat": 41.24473,
+  "lng": -111.9614,
+  "county": "Weber"
+ },
+ "1485 Harrison Blvd, Ogden, UT 84404": {
+  "lat": 41.2409,
+  "lng": -111.94669,
+  "county": "Weber"
+ },
+ "1177 12th St, Ogden, UT 84404": {
+  "lat": 41.24367,
+  "lng": -111.94901,
+  "county": "Weber"
+ },
+ "1015 12th St, Ogden, UT 84404": {
+  "lat": 41.24402,
+  "lng": -111.95295,
+  "county": "Weber"
+ },
+ "1208 Washington Blvd, Ogden, UT 84404": {
+  "lat": 41.24379,
+  "lng": -111.96925,
+  "county": "Weber"
+ },
+ "2044 S Harrison Blvd, Ogden, UT 84401": null,
+ "2730 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.21553,
+  "lng": -111.96993,
+  "county": "Weber"
+ },
+ "185 W 12th St, Ogden, UT 84404": {
+  "lat": 41.24383,
+  "lng": -111.98059,
+  "county": "Weber"
+ },
+ "1960 Wall Ave, Ogden, UT 84401": {
+  "lat": 41.23196,
+  "lng": -111.97849,
+  "county": "Weber"
+ },
+ "2261 Kiesel Ave #330, Ogden, UT 84401": null,
+ "325 E 2000 N, Ogden, UT 84414": {
+  "lat": 41.29467,
+  "lng": -111.97521,
+  "county": "Weber"
+ },
+ "375 31st St, Ogden, UT 84401": {
+  "lat": 41.20809,
+  "lng": -111.97151,
+  "county": "Weber"
+ },
+ "2566 N 400 E, North Ogden, UT 84414": {
+  "lat": 41.31348,
+  "lng": -111.96798,
+  "county": "Weber"
+ }
 }
