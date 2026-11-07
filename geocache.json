@@ -710,5 +710,153 @@
   "lat": 41.22412,
   "lng": -111.97348,
   "county": "Weber"
- }
+ },
+ "2570 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.21901,
+  "lng": -111.97023,
+  "county": "Weber"
+ },
+ "1875 Valley Dr, Ogden, UT 84401": {
+  "lat": 41.23642,
+  "lng": -111.93151,
+  "county": "Weber"
+ },
+ "6560 1st St": {
+  "lat": 41.26058,
+  "lng": -111.9655,
+  "county": "Weber"
+ },
+ "2429 N Hwy 158, Eden, UT 84310": null,
+ "5522 E 2200 N, Suite B, Eden, UT 84310": null,
+ "2429 Hwy 158, Eden, UT 84310": null,
+ "2595 N Hwy 162, Ste 4, Eden, UT 84310": null,
+ "4795 2600 N, Eden, UT 84310": {
+  "lat": 41.3054,
+  "lng": -111.83254,
+  "county": "Weber"
+ },
+ "4150 E 5950 N, Liberty, UT 84310": null,
+ "131 S 7400 E, Huntsville, UT 84317": {
+  "lat": 41.25983,
+  "lng": -111.77013,
+  "county": "Weber"
+ },
+ "540 S Hwy 39, Huntsville, UT 84317": null,
+ "3718 N Wolf Creek Dr, Eden, UT 84310": {
+  "lat": 41.31997,
+  "lng": -111.82896,
+  "county": "Weber"
+ },
+ "5100 E 2500 N, Eden, UT 84310": {
+  "lat": 41.30419,
+  "lng": -111.82347,
+  "county": "Weber"
+ },
+ "1851 Valley Dr, Ogden, UT 84401": {
+  "lat": 41.23663,
+  "lng": -111.93354,
+  "county": "Weber"
+ },
+ "270 25th St, Ogden, UT 84401": {
+  "lat": 41.22089,
+  "lng": -111.97405,
+  "county": "Weber"
+ },
+ "2361 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.2236,
+  "lng": -111.97051,
+  "county": "Weber"
+ },
+ "455 25th St (The Monarch), Ogden, UT 84401": null,
+ "186 25th St, Ogden, UT 84401": {
+  "lat": 41.22081,
+  "lng": -111.97655,
+  "county": "Weber"
+ },
+ "443 27th St Suite B, Ogden, UT 84401": null,
+ "483 12th St, Ogden, UT 84404": {
+  "lat": 41.24419,
+  "lng": -111.96743,
+  "county": "Weber"
+ },
+ "2735 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.21572,
+  "lng": -111.9707,
+  "county": "Weber"
+ },
+ "2757 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.21512,
+  "lng": -111.97071,
+  "county": "Weber"
+ },
+ "2645 N Washington Blvd, North Ogden, UT 84414": {
+  "lat": 41.3072,
+  "lng": -111.97098,
+  "county": "Weber"
+ },
+ "1833 Valley Dr, Ogden, UT 84401": {
+  "lat": 41.23327,
+  "lng": -111.94001,
+  "county": "Weber"
+ },
+ "2335 Grant Ave, Ogden, UT 84401": {
+  "lat": 41.22412,
+  "lng": -111.97333,
+  "county": "Weber"
+ },
+ "326 Washington Blvd, Ogden, UT 84404": {
+  "lat": 41.26493,
+  "lng": -111.96943,
+  "county": "Weber"
+ },
+ "380 E 2000 N, North Ogden, UT 84414": {
+  "lat": 41.29467,
+  "lng": -111.97521,
+  "county": "Weber"
+ },
+ "2314 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.2244,
+  "lng": -111.97001,
+  "county": "Weber"
+ },
+ "2943 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.21137,
+  "lng": -111.97079,
+  "county": "Weber"
+ },
+ "3365 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.20249,
+  "lng": -111.971,
+  "county": "Weber"
+ },
+ "3041 Pennsylvania Ave, Ogden, UT 84401": {
+  "lat": 41.21022,
+  "lng": -112.00659,
+  "county": "Weber"
+ },
+ "274 25th St, Ogden, UT 84401": {
+  "lat": 41.22078,
+  "lng": -111.97407,
+  "county": "Weber"
+ },
+ "806 Washington Blvd, Ogden, UT 84404": {
+  "lat": 41.25,
+  "lng": -111.96972,
+  "county": "Weber"
+ },
+ "2232 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.22614,
+  "lng": -111.97001,
+  "county": "Weber"
+ },
+ "290 25th St Ste 101, Ogden, UT 84401": null,
+ "2556 Washington Blvd, Ogden, UT 84401": {
+  "lat": 41.21948,
+  "lng": -111.97041,
+  "county": "Weber"
+ },
+ "4850 Harrison Blvd #3, Ogden, UT 84403": null,
+ "3651 Wall Ave #1002 (Newgate Mall), Ogden, UT 84405": null,
+ "3651 Wall Ave #1129 (Newgate Mall), Ogden, UT 84405": null,
+ "3701 Washington Blvd Ste A, South Ogden, UT 84403": null
 }

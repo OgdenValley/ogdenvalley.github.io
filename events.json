@@ -1,29 +1,9 @@
 {
- "updated": "2026-11-07T00:56:16.621Z",
+ "updated": "2026-11-07T07:09:52.893Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1793926800000,
-     "e": 1793934000000,
-     "t": "Huntsville Town Council meeting",
-     "loc": "Huntsville Town Hall, 7474 E. 200 S., Huntsville",
-     "allDay": false,
-     "desc": "Regularly scheduled Town Council meeting. All are welcome.",
-     "url": "https://huntsvilleutah.gov/upcoming-events",
-     "src": "huntsvilleutah.gov upcoming events, checked Oct. 29, 2026"
-    },
-    {
-     "s": 1793928600000,
-     "e": 1793937600000,
-     "t": "Open Music Jam",
-     "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
-     "allDay": false,
-     "desc": "Musicians of all abilities welcome to play, share songs and learn new ones. 1st and 3rd Thursdays, 6:30 p.m. until whenever.",
-     "url": "https://www.mountainartsandmusic.org/",
-     "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
-    },
     {
      "s": 1793995200000,
      "e": 1794002400000,
@@ -906,66 +886,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1793926800000,
-     "e": 1793934000000,
-     "t": "Visiting Artist Lecture by Melissa Melero-Moose",
-     "loc": "Kimball Arts Building | Room 143",
-     "allDay": false,
-     "desc": "Melissa Melero-Moose is a Northern Paiute/Modoc mixed-media artist whose work is inspired by the landscapes and cultural traditions of the Great Basin. Using organic materials like willow, sand, and reeds, her textured abstract works reflect Indigenous knowledge, basketry traditions, and deep connections to land and community.",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793926800000,
-     "e": 1793934000000,
-     "t": "WSSO",
-     "loc": "Kimball Arts Building | Room 143",
-     "allDay": false,
-     "desc": "Melissa Melero-Moose is a Northern Paiute/Modoc mixed-media artist whose work is inspired by the landscapes and cultural traditions of the Great Basin. Using organic materials like willow, sand, and reeds, her textured abstract works reflect Indigenous knowledge, basketry traditions, and deep connections to land and community.",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793926800000,
-     "e": 1793934000000,
-     "t": "Free live music & ice cream at Z's Sweets",
-     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
-     "s": 1793926800000,
-     "e": 1793934000000,
-     "t": "Four Corners of Intention: Junk Journaling Workshop (part 1 of 3)",
-     "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Three-part junk journaling workshop.",
-     "url": "https://www.facebook.com/events/1663529512179866/",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
-     "s": 1793930400000,
-     "e": 1793937600000,
-     "t": "Trails Foundation of Northern Utah presents: Ogden Mountain Film Festival",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "The Ogden Mountain Film Festival is gearing up to celebrate the adventures and breathtaking landscapes of Ogden, Utah! Presented by the Trails Foundation of Northern Utah, OMFF will showcase short films that capture the heart-pounding excitement and sheer beauty of exploring our local mountains. These films are not just about the thrill; they’re about preserving our natural playground for generations to come.",
-     "url": "https://ogdenpet.com/event/ogden-mountain-film-festival-2026/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793935800000,
-     "e": 1793948400000,
-     "t": "Country Dancing",
-     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
      "s": 1793970000000,
      "e": 1793980800000,
      "t": "Cup Hop 2026",
@@ -1537,8 +1457,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1547,8 +1467,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1697,8 +1617,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1707,8 +1627,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3481,36 +3401,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1793926800000,
-    "e": 1793934000000,
-    "t": "Visiting Artist Lecture by Melissa Melero-Moose",
-    "loc": "Kimball Arts Building | Room 143",
-    "allDay": false,
-    "desc": "Melissa Melero-Moose is a Northern Paiute/Modoc mixed-media artist whose work is inspired by the landscapes and cultural traditions of the Great Basin. Using organic materials like willow, sand, and reeds, her textured abstract works reflect Indigenous knowledge, basketry traditions, and deep connections to land and community.",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793926800000,
-    "e": 1793934000000,
-    "t": "WSSO",
-    "loc": "Kimball Arts Building | Room 143",
-    "allDay": false,
-    "desc": "Melissa Melero-Moose is a Northern Paiute/Modoc mixed-media artist whose work is inspired by the landscapes and cultural traditions of the Great Basin. Using organic materials like willow, sand, and reeds, her textured abstract works reflect Indigenous knowledge, basketry traditions, and deep connections to land and community.",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1793930400000,
-    "e": 1793937600000,
-    "t": "Trails Foundation of Northern Utah presents: Ogden Mountain Film Festival",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "The Ogden Mountain Film Festival is gearing up to celebrate the adventures and breathtaking landscapes of Ogden, Utah! Presented by the Trails Foundation of Northern Utah, OMFF will showcase short films that capture the heart-pounding excitement and sheer beauty of exploring our local mountains. These films are not just about the thrill; they’re about preserving our natural playground for generations to come.",
-    "url": "https://ogdenpet.com/event/ogden-mountain-film-festival-2026/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1793970000000,
     "e": 1793980800000,
     "t": "Cup Hop 2026",
@@ -4434,8 +4324,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4444,8 +4334,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4474,16 +4364,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794717000000,
     "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
@@ -4493,9 +4373,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "s": 1794708000000,
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4506,6 +4386,16 @@
     "s": 1794969000000,
     "e": 1794976200000,
     "t": "Jazz - Allred",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",

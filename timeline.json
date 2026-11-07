@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-07T00:56:29.492Z",
+ "updated": "2026-11-07T07:10:12.305Z",
  "items": [
+  {
+   "t": 1794035412304,
+   "src": "UDOT alert",
+   "text": "Construction: Westbound I-84 is now closed as crews move the new bridge into place. The closure began Friday, November 6, at 10 p.m. and is expected to remain in place through Monday, November 9, at 6 a.m. A signed detour route is in place. Drivers should follow posted detour signs and allow extra travel time.",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1794035412304,
+   "src": "UDOT alert",
+   "text": "Construction: Southbound I-15 is closed between 200 North and Park Lane from Friday, 11/6 at 10:00 p.m. through Saturday, 11/7 at 6:00 a.m.",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1794012989492,
    "src": "Utah Air Quality",
@@ -21,7 +35,10 @@
    "10148": "I-84|(updated 11/3/26) Two travel lanes have been restored in each direction over the bridge region. Construction will suspend starting Nov. 26 Westbound single lane closure | late Winter/early Spring 2027(TBA) - Winter 2027 | Day & Night Construction resumes. All traffic will return to the crossover configuration on the ne",
    "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at"
   },
-  "al": {},
+  "al": {
+   "2682": 1,
+   "2683": 1
+  },
   "cond": {
    "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
    "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
