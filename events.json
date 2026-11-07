@@ -1,19 +1,9 @@
 {
- "updated": "2026-11-06T20:28:09.115Z",
+ "updated": "2026-11-07T00:56:16.621Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1793916000000,
-     "e": 1793923200000,
-     "t": "Girls Volleyball & NAL: Snowcrest vs Wahlquist (home)",
-     "loc": "Snowcrest Junior High, 2755 N Hwy 162, Eden, UT 84310",
-     "allDay": false,
-     "desc": "Home games. Come cheer on the Snowcrest Bears.",
-     "url": "https://www.wsd.net/o/sjh/events",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
     {
      "s": 1793926800000,
      "e": 1793934000000,
@@ -890,6 +880,15 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
+    },
+    {
+     "s": 1809561600000,
+     "e": 1809570600000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
     }
    ]
   },

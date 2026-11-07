@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-06T20:28:15.247Z",
+ "updated": "2026-11-07T00:56:22.824Z",
  "source": "Utah Public Notice Website (utah.gov/pmn)",
  "bodies": [
   {
@@ -477,34 +477,6 @@
    "link": "https://www.utah.gov/pmn/sitemap/notice/1116433.html"
   },
   {
-   "title": "Weber County Commission Meeting",
-   "start": 1792512000000,
-   "end": null,
-   "place": "2380 Washington Blvd., Chambers, Ogden, UT 84401",
-   "items": [
-    "Request for approval of purchase orders in the amount of $158,716.86.",
-    "Request for approval of warrants #109507-109568, #498635-498762 and #566 in the amount of $1,000,035.65.",
-    "Summary of warrants and purchase orders.",
-    "Request for approval of the Tax Review Committee's recommendation of tax adjustment/abatement on Parcel #08-09",
-    "Request for approval of extension of the contract by and between Weber County and Verde Facilities Services fo",
-    "Request from the Human Resources Department for approval to approve the following policies- HR Policy 5-200 Pa",
-    "Request for approval of the first reading of an ordinance of the Board of County Commissioners amending sectio",
-    "Request for approval of a first reading of an ordinance of the Board of County Commissioners of Weber County a",
-    "Request for approval of a Lease Agreement by and between Weber County and Eden Excavating and Western Landscap",
-    "Request for a motion to adjourn public meeting and convene public hearings.",
-    "Request for a public hearing and consideration regarding a proposed ordinance for the Jordan Holmes Rezone, an",
-    "Public Comments (Please limit comments to 3 minutes)-"
-   ],
-   "canceled": false,
-   "files": [],
-   "read": 1793996895247,
-   "id": "1116299",
-   "bodyId": 2167,
-   "body": "Weber County Commission",
-   "short": "County Commission",
-   "link": "https://www.utah.gov/pmn/sitemap/notice/1116299.html"
-  },
-  {
    "title": "NOTICE FOR OGDEN VALLEY COUNCIL MEETING - October 20, 2026, Time: 6pm",
    "start": 1792540800000,
    "end": 1792548000000,
@@ -563,26 +535,6 @@
    "link": "https://www.utah.gov/pmn/sitemap/notice/1117253.html"
   },
   {
-   "title": "Meeting of the Board of Commissioners of Weber County Utah",
-   "start": 1793041200000,
-   "end": 1793045700000,
-   "place": "2380 Washington Blvd, Weber County Commission Office, Ste. 360, Ogden, UT 84401",
-   "items": [
-    "Discussion regarding C&D Landfill Rates",
-    "Discussion regarding Renewal of Weber Fire District's Paramedic License",
-    "Closed session to discuss pending or recently imminent litigation",
-    "Discussion regarding Powder Mountain Development Agreement"
-   ],
-   "canceled": false,
-   "files": [],
-   "read": 1793996895247,
-   "id": "1118075",
-   "bodyId": 2167,
-   "body": "Weber County Commission",
-   "short": "County Commission",
-   "link": "https://www.utah.gov/pmn/sitemap/notice/1118075.html"
-  },
-  {
    "title": "NOTICE OF OGDEN VALLEY COUNCIL WORK SESSION MEETING - October 26, 2026, 2pm",
    "start": 1793044800000,
    "end": 1793055600000,
@@ -611,34 +563,6 @@
    "body": "Ogden Valley City Council",
    "short": "OV City Council",
    "link": "https://www.utah.gov/pmn/sitemap/notice/1118081.html"
-  },
-  {
-   "title": "Weber County Commission Meeting",
-   "start": 1793116800000,
-   "end": 1793120400000,
-   "place": "2380 Washington Blvd., 1st Floor, Commission Chambers, Ogden, UT 84401",
-   "items": [
-    "Request for approval of purchase orders in the amount of $33,613.77.",
-    "Request for approval of contract #5260010 in the amount of $25,131.00.",
-    "Request for approval of contract #5260011 in the amount of $148,200.93.",
-    "Request for approval of warrants #109569-109652, #498763-498848 and #568 in the amount of $2,421,587.92.",
-    "Summary of warrants and purchase orders.",
-    "Request for approval of a new business license.",
-    "Request for approval of minutes from the meeting on October 20, 2026.",
-    "Request to declare part of Parcel Number 14-016-0025 as Surplus Property.",
-    "Request for approval of a contract by and between Weber County and Rocky Mountain Barrel Racing Association to",
-    "Request for approval of a contract by and between Weber County and Elite Productions to host the RMPRA Winter ",
-    "Request for approval of a contract by and between Weber County and the United States Marshall Service for the ",
-    "Request for approval of the final reading of an ordinance of the Board of County Commissioners amending sectio"
-   ],
-   "canceled": false,
-   "files": [],
-   "read": 1793996895247,
-   "id": "1118005",
-   "bodyId": 2167,
-   "body": "Weber County Commission",
-   "short": "County Commission",
-   "link": "https://www.utah.gov/pmn/sitemap/notice/1118005.html"
   },
   {
    "title": "NOTICE FOR OGDEN VALLEY PLANNING COMMISSION MEETING - October 27, 2026, 6pm",
@@ -831,12 +755,79 @@
    ],
    "canceled": false,
    "files": [],
-   "read": 1793996895247,
+   "read": 1794012982824,
    "id": "1120187",
    "bodyId": 2167,
    "body": "Weber County Commission",
    "short": "County Commission",
    "link": "https://www.utah.gov/pmn/sitemap/notice/1120187.html"
+  },
+  {
+   "title": "Meeting of the Board of Commissioners of Weber County Utah",
+   "start": 1794256200000,
+   "end": 1794264300000,
+   "place": "2380 Washington Blvd, Weber County Commission Office, Ste. 360, Ogden, UT 84401",
+   "items": [
+    "Discussion and/or action for approval of minutes for the Commission Work Session held on October 26, 2026",
+    "Discussion regarding 3000 S Drainage Issue",
+    "Discussion regarding Storm Water Management Plan Update and Resolution of Waterline Conflicts with Taylor West",
+    "Discussion regarding Bennet Addition #1 Rezone for a request to add property (rezone) to the adopted Bennet Ma",
+    "Discussion regarding Riverbend Farms Rezone for a request to rezone Phases 3 and 4 to the R1-15 zone and poten",
+    "Discussion regarding Wagstaff-Nilson (South) Rezone for a request to rezone property north and west of the 400",
+    "Discussion regarding Wagstaff-North Rezone for a request to rezone property north of the requested Wagstaff-Ni",
+    "Discussion regarding a request for an easement on County property near Little Mountain",
+    "Discussion regarding Impact Fees"
+   ],
+   "canceled": false,
+   "files": [],
+   "read": 1794012982824,
+   "id": "1121485",
+   "bodyId": 2167,
+   "body": "Weber County Commission",
+   "short": "County Commission",
+   "link": "https://www.utah.gov/pmn/sitemap/notice/1121485.html"
+  },
+  {
+   "title": "Weber County Commission Work Session",
+   "start": 1794328200000,
+   "end": null,
+   "place": "2380 Washington Blvd., Chambers, Ogden, UT 84401",
+   "items": [
+    "Request for approval of purchase orders in the amount of $26,990.63.",
+    "Request for approval of warrants #109704-109751, and #498946 in the amount of $987,502.08.",
+    "Summary of warrants and purchase orders.",
+    "Request for approval of the 2026 Transportation priority recommendations.",
+    "Request for approval of a Quit Claim Deed combining two parcels at the Sheriff's Office into one.",
+    "Request for approval of an addendum to the Best Friends Animal Society Grant Agreement adding additional fundi",
+    "Request for approval of an Interlocal Agreement by and between Weber County and Ogden Valley City for Animal C",
+    "Request for approval of an Interlocal Agreement by and between Weber County and Plain City for Animal Control ",
+    "Request for approval of Right of Way Contract by and between Weber County and Multi Cache Properties for prope",
+    "Request for approval of an Avalanche Mitigation and Access Easement between Weber County and Summit Mountain H",
+    "Request for approval of the final reading of an ordinance of the County Commissioners of Weber County amending",
+    "Request for approval of the final reading of an ordinance of the County Commissioners of Weber County amending"
+   ],
+   "canceled": false,
+   "files": [],
+   "read": 1794012982824,
+   "id": "1121457",
+   "bodyId": 2167,
+   "body": "Weber County Commission",
+   "short": "County Commission",
+   "link": "https://www.utah.gov/pmn/sitemap/notice/1121457.html"
+  },
+  {
+   "title": "Weber County Budget Hearing - Wind-up",
+   "start": 1794589200000,
+   "end": null,
+   "place": "2380 Washington Blvd., Chambers, Ogden, UT 84401",
+   "canceled": false,
+   "files": [],
+   "read": 1794012982824,
+   "id": "1121461",
+   "bodyId": 2167,
+   "body": "Weber County Commission",
+   "short": "County Commission",
+   "link": "https://www.utah.gov/pmn/sitemap/notice/1121461.html"
   },
   {
    "title": "Notice of Public Hearing for the Weber County Engineering Division",
@@ -845,7 +836,7 @@
    "place": "2380 Washington Blvd., Commission Chambers, 1st Floor, Ogden, UT 84401",
    "canceled": false,
    "files": [],
-   "read": 1793996895247,
+   "read": 1794012982824,
    "id": "1120207",
    "bodyId": 2167,
    "body": "Weber County Commission",
