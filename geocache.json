@@ -1034,5 +1034,78 @@
   "lat": 41.31348,
   "lng": -111.96798,
   "county": "Weber"
+ },
+ "3354 Harrison Blvd, Ogden, UT 84403": {
+  "lat": 41.20228,
+  "lng": -111.94854,
+  "county": "Weber"
+ },
+ "3885 US-89, Pleasant View, UT 84414": {
+  "lat": 41.32833,
+  "lng": -112.02214,
+  "county": "Weber"
+ },
+ "188 25th St, Ogden, UT 84401": {
+  "lat": 41.22081,
+  "lng": -111.9765,
+  "county": "Weber"
+ },
+ "1075 E 700 S St, Ogden, UT 84404": {
+  "lat": 41.25176,
+  "lng": -111.97428,
+  "county": "Weber"
+ },
+ "560 S 7800 E, Huntsville, UT 84317": {
+  "lat": 41.26305,
+  "lng": -111.76164,
+  "county": "Weber"
+ },
+ "604 S 7800 E, Huntsville, UT 84317": {
+  "lat": 41.26305,
+  "lng": -111.76164,
+  "county": "Weber"
+ },
+ "5460 E 2200 N Eden UT 84310": {
+  "lat": 41.29945,
+  "lng": -111.81628,
+  "county": "Weber"
+ },
+ "5460 e 2200 n Eden Utah 84310": {
+  "lat": 41.29945,
+  "lng": -111.81628,
+  "county": "Weber"
+ },
+ "2234 North 5500 East, Suite C, Eden, UT 84310": null,
+ "4780 E 2600 N, Eden, UT 84310": {
+  "lat": 41.30599,
+  "lng": -111.81392,
+  "county": "Weber"
+ },
+ "2234 N 5500 E, Eden, UT 84310": {
+  "lat": 41.29945,
+  "lng": -111.81485,
+  "county": "Weber"
+ },
+ "5471 E 2300 N Ste 1, Eden, UT 84310": null,
+ "5471 E 2300 N Suite 1, Eden, UT 84310": null,
+ "2580 N Hwy 162, Suite C, Eden, UT 84310": null,
+ "3718 N Wolf Creek Dr (lower level, Wolf Creek Clubhouse), Eden, UT 84310": null,
+ "2429 N Highway 158, Eden, UT 84310": null,
+ "6138 E Highway 39, Huntsville, UT 84317": null,
+ "2103 N 5500 E, Eden, UT 84310": {
+  "lat": 41.29711,
+  "lng": -111.81552,
+  "county": "Weber"
+ },
+ "13485 E Highway 39, Huntsville, UT 84317": null,
+ "2548 Nordic Valley Dr, Eden, UT 84310": {
+  "lat": 41.30524,
+  "lng": -111.85838,
+  "county": "Weber"
+ },
+ "7318 E 200 S. Huntsville": {
+  "lat": 41.26097,
+  "lng": -111.77197,
+  "county": "Weber"
  }
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T14:00:59.030Z",
+ "updated": "2026-11-07T18:48:04.567Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -883,16 +883,6 @@
      "allDay": true,
      "desc": "elparo has created large-scale site-responsive sculptures all over the world. La Vrille is his debut work in the United States.",
      "url": "https://www.weber.edu/shawgallery/upcoming.html",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1793970000000,
-     "e": 1793980800000,
-     "t": "Cup Hop 2026",
-     "loc": "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant",
-     "allDay": false,
-     "desc": "Collect. Sip. Protect.\nYear eight launches a fresh Cup Hop series across four November days at four local coffee shops. Buy the limited 2026 mug and your purchase powers nature education, safe habitats for wildlife, conservation, and habitat restoration for the community to enjoy.\nWhat you getLimited 2026 Cup Hop mugOne free drink during your pop-up visitSupport for a cause that keeps nature close Where & When –\nFour neighborhood shops, two back-to-back weekends in November.\nDates: November 5th, 6th, 12th and 13th\nTime and Locations:Grounds for Coffee – 3005 Harrison Blvd | Thursday 6 AM to 9 ",
-     "url": "https://www.ogdennaturecenter.org/cup-hop",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -3401,16 +3391,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1793970000000,
-    "e": 1793980800000,
-    "t": "Cup Hop 2026",
-    "loc": "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant",
-    "allDay": false,
-    "desc": "Collect. Sip. Protect.\nYear eight launches a fresh Cup Hop series across four November days at four local coffee shops. Buy the limited 2026 mug and your purchase powers nature education, safe habitats for wildlife, conservation, and habitat restoration for the community to enjoy.\nWhat you getLimited 2026 Cup Hop mugOne free drink during your pop-up visitSupport for a cause that keeps nature close Where & When –\nFour neighborhood shops, two back-to-back weekends in November.\nDates: November 5th, 6th, 12th and 13th\nTime and Locations:Grounds for Coffee – 3005 Harrison Blvd | Thursday 6 AM to 9 ",
-    "url": "https://www.ogdennaturecenter.org/cup-hop",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1794011400000,
     "e": 1794016800000,
     "t": "Historic 25th Street Walking Tour",
@@ -4384,8 +4364,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4394,8 +4374,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
