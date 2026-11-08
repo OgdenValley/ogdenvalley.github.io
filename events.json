@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T17:03:35.412Z",
+ "updated": "2026-11-08T21:10:46.341Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -12,16 +12,6 @@
      "allDay": false,
      "desc": "Mountain Luxury open houses at 14 properties throughout Ogden Valley. View event details and plan a route at mountainluxury.com. Source: Mountain Luxury email, Nov. 2026.",
      "url": ""
-    },
-    {
-     "s": 1794078000000,
-     "e": 1794085200000,
-     "t": "Fall Into Our Open House Event",
-     "loc": "Ogden Valley",
-     "allDay": false,
-     "desc": "Open house in Ogden Valley.",
-     "url": "https://www.facebook.com/events/1005363139291245/",
-     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1794081600000,
@@ -884,36 +874,6 @@
      "desc": "November 6–7 & 11–14, 2026 | 7 PM\nMatinee: November 14 | 2 PM\n\nThe court of Messina is transformed to the French Quarter of New Orleans, where, against the backdrop of Mardi Gras, a merry war of wits masks a landscape of guarded hearts and sharp-edged pride.\n\nIn Shakespeare’s sparkling comedy, the cynics, Beatrice and Benedick, are perpetual sparring partners while the young lovers Claudio and Hero have their path to the altar sabotaged by the villainous Don John. A cruel deception threatens to ruin Hero’s reputation, as one couple is tricked into love and the other into scandal.\n\nRich with br",
      "url": "",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794067200000,
-     "e": 1794074400000,
-     "t": "Crossroads Gun Show",
-     "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-     "allDay": false,
-     "desc": "Gun show.",
-     "url": "https://www.facebook.com/events/27939215662444459/",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
-     "s": 1794070800000,
-     "e": 1794078000000,
-     "t": "St Paul Lutheran Holiday Bazaar",
-     "loc": "3329 Harrison Blvd, Ogden, UT 84403",
-     "allDay": false,
-     "desc": "2026 holiday bazaar at St Paul Lutheran.",
-     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-     "src": "Ogden Valley Information and Events"
-    },
-    {
-     "s": 1794078000000,
-     "e": 1794085200000,
-     "t": "Memorial Cruise for Katie Sue",
-     "loc": "Harmons, Roy",
-     "allDay": false,
-     "desc": "Memorial cruise.",
-     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1794085200000,
