@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T02:29:13.781Z",
+ "updated": "2026-11-08T10:21:57.781Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -876,86 +876,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1794013200000,
-     "e": 1794024000000,
-     "t": "The Major Brent Taylor Leadership Legacy Gala",
-     "loc": "Ogden Eccles Conference Center, 2415 Washington Blvd, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "The Leadership Legacy Gala is the Major Brent Taylor Foundation’s premier annual event. It is a night filled with reverence, celebration, and purpose. Held each November in honor of Veterans Day, the Gala brings together military families, civic leaders, students, donors, and community members who share a commitment to honoring those who serve and raising up the next generation of leaders.",
-     "url": "https://majorbrenttaylor.com/gala/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794013200000,
-     "e": 1794024000000,
-     "t": "Ogden's First Friday Art Stroll",
-     "loc": "Downtown Ogden",
-     "allDay": false,
-     "desc": "Ogden's First Friday Art Stroll is held the first Friday of the month from 6-9 PM, Ogden’s First Friday Art Stroll is abuzz year ‘round with exciting exhibit openings, artist receptions and live music of all genres in venues and in the streets. As the art stroll becomes the virtual front porch of Ogden, those that venture here are treated to great art, an atmosphere of camaraderie and inclusion and amazing night life; small town feel, big city offerings.\n\nEnjoy your journey. We hope you are inspired, delighted and challenged along the way.",
-     "url": "http://www.ogdencityarts.org",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794013200000,
-     "e": 1794020400000,
-     "t": "Free live music & ice cream at Z's Sweets",
-     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
-     "s": 1794013200000,
-     "e": 1794020400000,
-     "t": "November Art Stroll at The Local Artisan Collective",
-     "loc": "2371 Kiesel Ave, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "First Friday art stroll stop.",
-     "url": "https://www.facebook.com/events/1086560337603886/",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
-     "s": 1794013200000,
-     "e": 1794020400000,
-     "t": "Drop-In Ring Bar: Design Your Own Sterling Silver or Spoon Ring",
-     "loc": "2371 Kiesel Ave, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Drop-in ring making.",
-     "url": "https://www.facebook.com/events/2182450739292366/",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
-     "s": 1794013200000,
-     "e": 1794020400000,
-     "t": "First Friday: Watercolor Embroidery with Hey Be Fab (full)",
-     "loc": "455 25th Street, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Class is full; waitlist on the event page.",
-     "url": "https://www.facebook.com/events/2281637989292190/",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
-     "s": 1794015000000,
-     "e": 1794024000000,
-     "t": "Under the Western Sky Gala",
-     "loc": "Timbermine Steakhouse 1701 Park Blvd, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "The Family Support Center of Ogden's Annual Gala Fundraiser.\nDinner with pairings, DJ, dancing, silent auction, and opportunity tickets.\nTables available for purchase.\nFor sponsorship and donation opportunities please email jade@fscogden.org\nThe Family Support Center of Ogden provides free workshops, education, childcare, and supportive services to help strengthen the family unit and enhance family functioning.",
-     "url": "https://FSCOAnnualGala2026.eventbrite.com",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794015000000,
-     "e": 1794022200000,
-     "t": "Music @ the Collective with David Phillips",
-     "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Live music at the Collective.",
-     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
      "s": 1794016800000,
      "e": 1794715200000,
      "t": "Much Ado About Nothing",
@@ -963,66 +883,6 @@
      "allDay": false,
      "desc": "November 6–7 & 11–14, 2026 | 7 PM\nMatinee: November 14 | 2 PM\n\nThe court of Messina is transformed to the French Quarter of New Orleans, where, against the backdrop of Mardi Gras, a merry war of wits masks a landscape of guarded hearts and sharp-edged pride.\n\nIn Shakespeare’s sparkling comedy, the cynics, Beatrice and Benedick, are perpetual sparring partners while the young lovers Claudio and Hero have their path to the altar sabotaged by the villainous Don John. A cruel deception threatens to ruin Hero’s reputation, as one couple is tricked into love and the other into scandal.\n\nRich with br",
      "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794016800000,
-     "e": 1794024000000,
-     "t": "Friday Night Jazz",
-     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free show, all ages. Every Friday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
-     "s": 1794016800000,
-     "e": 1794024000000,
-     "t": "Royal Petty: Tom Petty tribute w/ Pepper Rose does Sheryl Crow",
-     "loc": "Kamikazes Ogden, 2404 Adams Ave., Ogden",
-     "allDay": false,
-     "desc": "Royal Bliss Tom Petty tribute experience.",
-     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
-     "s": 1794018600000,
-     "e": 1794025800000,
-     "t": "WSSO: Movie Score Selection",
-     "loc": "Val A. Browning Center | Austad Auditorium",
-     "allDay": false,
-     "desc": "Come enjoy the sensational selection of acclaimed movie soundtracks like E.T., Narnia, Out of Africa, Cinema Paradiso, Kung Fu Panda, by composers like Williams, Powell, Zimmer, Shore and others.",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794018600000,
-     "e": 1794025800000,
-     "t": "Onstage Ogden presents National Geographic Live: Wild Cats Revealed with Sandesh Kadur",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Travel into the mountains, jungles, and plains of India with filmmaker and National Geographic Explorer Sandesh Kadur. Through spectacular photography, rare footage, and stories from the field, Kadur introduces elusive species including Pallas’s cats, fishing cats, and clouded leopards while revealing the remarkable environments these wild predators call home.\n\nAges 8+ are welcome.",
-     "url": "https://ogdenpet.com/event/nat-geo-live-fall2026/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794020400000,
-     "e": 1794024000000,
-     "t": "Community United Methodist Church Holiday Boutique",
-     "loc": "Community United Methodist Church, 163 W 4800 S, Washington Terrace, UT 84405",
-     "allDay": false,
-     "desc": "November 6 from 1 pm to 7 pm and November 7 from 10 am to 4 pm. This is a community event with over 60 vendors. There will also be food and beverages for purchase. All kinds of crafts and each vendor is unique, none selling the same items. There is a silent auction and all proceeds go to a local organization that works with food banks in Utah.",
-     "url": "www.cumcholidayboutique.com",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794067200000,
-     "e": 1794076200000,
-     "t": "Turkey Triathlon & 5K Trot",
-     "loc": "WSU Swenson Building, Weber State Ogden Campus",
-     "allDay": false,
-     "desc": "Join Weber State Campus Recreation for the 22nd Annual Turkey Triathlon and 5K Trot! The race includes a 5k run, 10k bike, 300yd swim, and is a reverse sprint distance to introduce participants to Triathlons. The race circles the Weber State Campus, which offers gorgeous views of the Wasatch Front as you run and bike.\n\nCommunity members welcome! Race fees include a medal and t-shirt. Spots are filling quickly, so don’t wait to register!",
-     "url": "https://www.weber.edu/races/turkey-tri.html",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -1117,13 +977,13 @@
     },
     {
      "s": 1794105000000,
-     "e": 1794112200000,
-     "t": "Aida Cuevas",
-     "loc": "Val A. Browning Center, 3848 Harrison Blvd, Ogden, UT 84403",
+     "e": 1794110400000,
+     "t": "ONOG: Aida Cuevas - Austad",
+     "loc": "",
      "allDay": false,
-     "desc": "When Aída Cuevas takes the stage in Ogden, it’s the kind of night that brings la familia together. Abuelos, parents, and niños sharing music that belongs to all of them. On Saturday, November 7, La Voz de México takes the stage at the Browning Center at Weber State University for an evening of mariachi and ranchera that spans five decades of Mexican tradition.",
-     "url": "https://www.onstageogden.org/show-item/aida-cuevas-2026/",
-     "src": "Ogden Area Events (Visit Ogden)"
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1794150000000,
@@ -2607,6 +2467,16 @@
     },
     {
      "s": 1796432400000,
+     "e": 1796443200000,
+     "t": "Ogden's First Friday Art Stroll",
+     "loc": "Downtown Ogden",
+     "allDay": false,
+     "desc": "Ogden's First Friday Art Stroll is held the first Friday of the month from 6-9 PM, Ogden’s First Friday Art Stroll is abuzz year ‘round with exciting exhibit openings, artist receptions and live music of all genres in venues and in the streets. As the art stroll becomes the virtual front porch of Ogden, those that venture here are treated to great art, an atmosphere of camaraderie and inclusion and amazing night life; small town feel, big city offerings.\n\nEnjoy your journey. We hope you are inspired, delighted and challenged along the way.",
+     "url": "http://www.ogdencityarts.org",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796432400000,
      "e": 1796439600000,
      "t": "Free live music & ice cream at Z's Sweets",
      "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
@@ -2647,6 +2517,16 @@
     },
     {
      "s": 1796490000000,
+     "e": 1796493600000,
+     "t": "Faux Stained Glass Ornaments",
+     "loc": "966 W 12th St, Ogden, UT, 84404",
+     "allDay": false,
+     "desc": "Join us at the Ogden Nature Center to create a faux stained-glass masterpiece! Local artist Olivia Roundy will walk you through how to make a beautiful translucent ornament in this hour-long workshop.\nDon't know what faux stained-glass is? Just take a peek at the Visitor Center and Education Building windows at the nature center! Not only are these artworks adorable (many made by 3rd graders from Greenwood Charter) but they help wildlife! Having something in the window reduces bird strikes by limiting the reflections that confuse birds. It's truly the intersection of art, nature, and science!\n",
+     "url": "https://fareharbor.com/embeds/book/ogdennaturecenter/items/768706/availability/-57218824/book/?full-items=yes&flow=1351112",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796490000000,
      "e": 1796497200000,
      "t": "Metaphysical Mini Market",
      "loc": "1708 E 5550 S, Suites 17 & 18, South Ogden, UT 84403",
@@ -2654,6 +2534,26 @@
      "desc": "Dec 5-6. Check the event page for hours.",
      "url": "https://www.facebook.com/events/1580793577136768/",
      "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
+     "s": 1796497200000,
+     "e": 1796500800000,
+     "t": "Faux Stained Glass Ornaments",
+     "loc": "966 W 12th St, Ogden, UT, 84404",
+     "allDay": false,
+     "desc": "Join us at the Ogden Nature Center to create a faux stained-glass masterpiece! Local artist Olivia Roundy will walk you through how to make a beautiful translucent ornament in this hour-long workshop.\nDon't know what faux stained-glass is? Just take a peek at the Visitor Center and Education Building windows at the nature center! Not only are these artworks adorable (many made by 3rd graders from Greenwood Charter) but they help wildlife! Having something in the window reduces bird strikes by limiting the reflections that confuse birds. It's truly the intersection of art, nature, and science!\n",
+     "url": "https://fareharbor.com/embeds/book/ogdennaturecenter/items/768706/availability/-57218824/book/?full-items=yes&flow=1351112",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796497200000,
+     "e": 1796503500000,
+     "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
+     "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796504400000,
@@ -2667,6 +2567,16 @@
     },
     {
      "s": 1796518800000,
+     "e": 1796525100000,
+     "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
+     "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796518800000,
      "e": 1796526000000,
      "t": "Free live music & ice cream at Z's Sweets",
      "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
@@ -2677,13 +2587,13 @@
     },
     {
      "s": 1796522400000,
-     "e": 1796529600000,
-     "t": "Joy to the World - Austad",
-     "loc": "",
+     "e": 1796527800000,
+     "t": "Joy to the World! A Sacred Celebration",
+     "loc": "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403",
      "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
+     "desc": "Experience the magic of Christmas with Grammy-nominated violinist Jenny Oaks Baker and her accomplished children, musical ensemble Family Four, in a heartwarming, Christ-centered holiday show featuring Tony Award-Winning Soprano Lisa Hopkins Seegmiller. Enjoy captivating and cherished Christmas carols arranged by Emmy Award-winning composer Kurt Bestor, inspiring script by New York Times best-selling author Jason F. Wright, and moving narration and powerful vocals by baritone Preston Yates. Returning by popular demand are vibrant performances by local ballet companies and Scariff Locklier Leon",
+     "url": "https://www.facebook.com/events/27833916432910040/",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796522400000,
@@ -2694,6 +2604,36 @@
      "desc": "Free. Every Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1796572800000,
+     "e": 1796608800000,
+     "t": "Crystal Festival – A Rocks, Minerals, Gems & Crystal Show",
+     "loc": "The Monarch, 455 25th Street, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Explore. Learn. Create. Play.\nJoin us for a ONE-DAY Crystal Festival packed with hands-on learning, interactive workshops, readers, crafts, and incredible vendors! There are so many reasons to come explore and play; free and open to the entire family.\nWhat to Expect\n• Workshops & Readers for kids and adults\n• Craft Corner & Hands-On Activities\n• Vendors offering crystals, gems, minerals, jewelry, fossils, cabochons, and more\n• A welcoming, interactive atmosphere designed for families, collectors, and curious minds of all ages\nThis one-day Crystal Festival is the perfect way to shop, learn, cre",
+     "url": "https://www.facebook.com/events/1412208817207318/?",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796603400000,
+     "e": 1796612400000,
+     "t": "Tidings of Joy: 41st Annual Holiday Choir Concert",
+     "loc": "TBD",
+     "allDay": false,
+     "desc": "Dec. 6, 2026 | 5:30 & 8 PM\nCome celebrate the holiday season at the Weber State Choir's 41st Annual Holiday Choir Concert featuring the Weber State Symphony Orchestra. Tickets for this popular event go quickly, so get yours today!",
+     "url": "https://www.weber.edu/music/concert-choir.html",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796670000000,
+     "e": 1796673600000,
+     "t": "Parent Cafe",
+     "loc": "Family Support Center of Ogden 3340 Harrison Blvd Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Safe space for parents to share, connect, and learn from each other. Each month is a different topic.\nFree Refreshments and Free Childcare for ages 0-11 (Must schedule in advance and complete paperwork)\nEmail at inquiry@fscogden.org or call us 801-393-3113\nAugust 3 - Building Structure and Routine at Home\nSeptember 14 - You are Not Alone - The Village Returns\nOctober 5 - Haunted Tales and Parenting WINS\nNovember 2 - Pulling the Ones You Love Closer - Making Your Home a Refuge\nDecember 7 - Resilience, Calm the Stress Down",
+     "url": "https://www.eventbrite.com/cc/parent-cafes-special-events-4839868?utm-campaign=social&utm-content=creatorshare&utm-medium=discovery&utm-term=odclsxcollection&utm-source=cp&aff=escb",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796691600000,
@@ -2726,14 +2666,84 @@
      "src": "Weekly regular"
     },
     {
-     "s": 1796783400000,
-     "e": 1796790000000,
-     "t": "ONOG: Christmas with BYU Vocal Point & Noteworthy - Austad",
-     "loc": "",
+     "s": 1796745600000,
+     "e": 1796749200000,
+     "t": "Browning Gun Club Meeting",
+     "loc": "Union Station - Wattis Dumke Room, 2501 Wall Avenue, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Club Meets every second Tuesday morning, Sept thru May at Union Station upstairs in the Wattis Dumke Room next to the Browning Gun Museum. Donuts and juice are served.\n\nJan 8, 2019 – Presenter & subject TBA\nFeb 12, 2019 – John Spangler – Subject TBA\nMar 12, 2019 – Presenter & subject TBA\nApr 9, 2019 – Presenter & Subject TBA\nMay 14, 2019 – Presenter & Subject TBA",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796761800000,
+     "e": 1796765400000,
+     "t": "Gentle Movements",
+     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796769000000,
+     "e": 1796776200000,
+     "t": "Ogden City Council Work Session",
+     "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
      "allDay": false,
      "desc": "",
      "url": "",
-     "src": "Treehouse Children's Museum"
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796776200000,
+     "e": 1796783400000,
+     "t": "Free Community Craft night",
+     "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Whether you paint, sew, draw, sculpt, write, knit, crochet, bead, or whatever your creative pursuit, bring your supplies and chat with new friends while we work on our latest projects. During the last 15–20 minutes of the event, everyone will be invited to share what they’ve been working on. If you’ve been struggling with a part of your project or would like to ask the group for feedback, this is the perfect time. This is an open forum for sharing ideas, offering support, and getting help from fellow makers.",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796778000000,
+     "e": 1796788800000,
+     "t": "Ogden City Council Meeting",
+     "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796781600000,
+     "e": 1796788800000,
+     "t": "Caleb Chapman's Cool Yule",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ft. The Crescent Super Band - “Special Guests To Be Announced”\n\nA holiday concert featuring jazz and big band holiday stylings of the wildly popular Crescent Super Band, and other killer bands from Caleb Chapman’s Soundhouse. Twenty-five teenagers from Utah can make a lot of noise – especially when they happen to be members of the Crescent Super Band. Under the direction of Grammy-nominated founder Caleb Chapman, the band has stunned audiences worldwide, from New York to the Netherlands. With a youthful energy and nearly unbelievable performance level, the band has frequently been hailed as th",
+     "url": "https://ogdenpet.com/event/caleb-chapmans-cool-yule-2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796783400000,
+     "e": 1796790600000,
+     "t": "Christmas with BYU Vocal Point & Noteworthy",
+     "loc": "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Christmas with BYU Vocal Point and Noteworthy in Ogden is a double bill of the two best collegiate a cappella ensembles on the planet, each bringing their own Christmas set to the Browning Center at WSU. Carols rearranged until they sound new, Christmas pop built from a bass line up, and a room carried by nothing but voices.",
+     "url": "https://www.onstageogden.org/show-item/byu-vocal-point-noteworthy-christmas/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796866200000,
+     "e": 1796869800000,
+     "t": "Yoga",
+     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796873400000,
@@ -2764,6 +2774,16 @@
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1796990400000,
+     "e": 1797001200000,
+     "t": "Dinos in the Snow",
+     "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join us for our annual Christmas event at the Ogden Dinosaur Park! Settle in with some hot cocoa, explore our arts and crafts, enjoy twinkling lights, and get your holiday photos.",
+     "url": "https://dinosaurpark.org/dinos-in-the-snow/",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1797004800000,
@@ -2837,6 +2857,16 @@
     },
     {
      "s": 1797040800000,
+     "e": 1797048900000,
+     "t": "Imagine Ballet Theatre Presents: The Nutcracker",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
+     "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797040800000,
      "e": 1797048000000,
      "t": "Friday Night Jazz",
      "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
@@ -2844,6 +2874,26 @@
      "desc": "Free show, all ages. Every Friday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1797076800000,
+     "e": 1797087600000,
+     "t": "Dinos in the Snow",
+     "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join us for our annual Christmas event at the Ogden Dinosaur Park! Settle in with some hot cocoa, explore our arts and crafts, enjoy twinkling lights, and get your holiday photos.",
+     "url": "https://dinosaurpark.org/dinos-in-the-snow/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797105600000,
+     "e": 1797113700000,
+     "t": "Imagine Ballet Theatre Presents: The Nutcracker",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
+     "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1797109200000,
@@ -2854,6 +2904,16 @@
      "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1797123600000,
+     "e": 1797131700000,
+     "t": "Imagine Ballet Theatre Presents: The Nutcracker",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
+     "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1797123600000,
@@ -2877,13 +2937,13 @@
     },
     {
      "s": 1797129000000,
-     "e": 1797136200000,
-     "t": "ODT Christmas Spectacular - Austad",
-     "loc": "",
+     "e": 1797134400000,
+     "t": "Christmas Spectacular",
+     "loc": "Austad Theater @ WSU, 3750 Harrison Blvd, Ogden, UT 84408",
      "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
+     "desc": "The return of the hit of the last two years, starring David Osmond, loved by critics and audiences.\nWhy go to endless Christmas productions when you can get your complete Holiday Fix at Odyssey Dance Theatre's Christmas Spectacular, SPECTACULAR?\nSee excerpts from A Christmas Carol, It's A Wonderful Life, The Nutcracker, Elf, A Christmas Story, White Christmas and the Rockettes- just to name a few!",
+     "url": "https://weber.evenue.net/events/C2",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1797181200000,
@@ -2906,6 +2966,26 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1797300000000,
+     "e": 1797308100000,
+     "t": "Imagine Ballet Theatre Presents: The Nutcracker",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
+     "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797301800000,
+     "e": 1797307200000,
+     "t": "The Forgotten Carols",
+     "loc": "Dee Event Center, 4444 Event Center Dr, Ogden, UT 84408",
+     "allDay": false,
+     "desc": "The Forgotten Carols Musical features breathtaking performances of heartwarming melodies and laugh-out-loud entertainment within a timeless Christmas story. Hear your favorite songs, like \"Homeless,\" from Michael McLean's original hit album, sung by incredible musical theater performers. Immerse yourself in the magic of the holiday season as you witness the story of the Forgotten Carols coming to life on stage. Don't miss out on this incredible in-person event that will leave you feeling uplifted and filled with joy. Join us!\n\nRecommended for ages 5 and older.",
+     "url": "https://weber.evenue.net/events/FC",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1797305400000,
      "e": 1797318000000,
      "t": "Country Dancing",
@@ -2914,6 +2994,16 @@
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1797366600000,
+     "e": 1797370200000,
+     "t": "Gentle Movements",
+     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1797478200000,
@@ -3296,6 +3386,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1799292600000,
+     "e": 1799305200000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1799514000000,
      "e": 1799521200000,
      "t": "Cardboard Exchange MEGA Expo",
@@ -3361,36 +3461,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1794013200000,
-    "e": 1794024000000,
-    "t": "The Major Brent Taylor Leadership Legacy Gala",
-    "loc": "Ogden Eccles Conference Center, 2415 Washington Blvd, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "The Leadership Legacy Gala is the Major Brent Taylor Foundation’s premier annual event. It is a night filled with reverence, celebration, and purpose. Held each November in honor of Veterans Day, the Gala brings together military families, civic leaders, students, donors, and community members who share a commitment to honoring those who serve and raising up the next generation of leaders.",
-    "url": "https://majorbrenttaylor.com/gala/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794013200000,
-    "e": 1794024000000,
-    "t": "Ogden's First Friday Art Stroll",
-    "loc": "Downtown Ogden",
-    "allDay": false,
-    "desc": "Ogden's First Friday Art Stroll is held the first Friday of the month from 6-9 PM, Ogden’s First Friday Art Stroll is abuzz year ‘round with exciting exhibit openings, artist receptions and live music of all genres in venues and in the streets. As the art stroll becomes the virtual front porch of Ogden, those that venture here are treated to great art, an atmosphere of camaraderie and inclusion and amazing night life; small town feel, big city offerings.\n\nEnjoy your journey. We hope you are inspired, delighted and challenged along the way.",
-    "url": "http://www.ogdencityarts.org",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794015000000,
-    "e": 1794024000000,
-    "t": "Under the Western Sky Gala",
-    "loc": "Timbermine Steakhouse 1701 Park Blvd, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "The Family Support Center of Ogden's Annual Gala Fundraiser.\nDinner with pairings, DJ, dancing, silent auction, and opportunity tickets.\nTables available for purchase.\nFor sponsorship and donation opportunities please email jade@fscogden.org\nThe Family Support Center of Ogden provides free workshops, education, childcare, and supportive services to help strengthen the family unit and enhance family functioning.",
-    "url": "https://FSCOAnnualGala2026.eventbrite.com",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1794016800000,
     "e": 1794715200000,
     "t": "Much Ado About Nothing",
@@ -3398,56 +3468,6 @@
     "allDay": false,
     "desc": "November 6–7 & 11–14, 2026 | 7 PM\nMatinee: November 14 | 2 PM\n\nThe court of Messina is transformed to the French Quarter of New Orleans, where, against the backdrop of Mardi Gras, a merry war of wits masks a landscape of guarded hearts and sharp-edged pride.\n\nIn Shakespeare’s sparkling comedy, the cynics, Beatrice and Benedick, are perpetual sparring partners while the young lovers Claudio and Hero have their path to the altar sabotaged by the villainous Don John. A cruel deception threatens to ruin Hero’s reputation, as one couple is tricked into love and the other into scandal.\n\nRich with br",
     "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794018600000,
-    "e": 1794025800000,
-    "t": "WSSO: Movie Score Selection",
-    "loc": "Val A. Browning Center | Austad Auditorium",
-    "allDay": false,
-    "desc": "Come enjoy the sensational selection of acclaimed movie soundtracks like E.T., Narnia, Out of Africa, Cinema Paradiso, Kung Fu Panda, by composers like Williams, Powell, Zimmer, Shore and others.",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794018600000,
-    "e": 1794025800000,
-    "t": "Onstage Ogden presents National Geographic Live: Wild Cats Revealed with Sandesh Kadur",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Travel into the mountains, jungles, and plains of India with filmmaker and National Geographic Explorer Sandesh Kadur. Through spectacular photography, rare footage, and stories from the field, Kadur introduces elusive species including Pallas’s cats, fishing cats, and clouded leopards while revealing the remarkable environments these wild predators call home.\n\nAges 8+ are welcome.",
-    "url": "https://ogdenpet.com/event/nat-geo-live-fall2026/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794020400000,
-    "e": 1794024000000,
-    "t": "Community United Methodist Church Holiday Boutique",
-    "loc": "Community United Methodist Church, 163 W 4800 S, Washington Terrace, UT 84405",
-    "allDay": false,
-    "desc": "November 6 from 1 pm to 7 pm and November 7 from 10 am to 4 pm. This is a community event with over 60 vendors. There will also be food and beverages for purchase. All kinds of crafts and each vendor is unique, none selling the same items. There is a silent auction and all proceeds go to a local organization that works with food banks in Utah.",
-    "url": "www.cumcholidayboutique.com",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794067200000,
-    "e": 1794076200000,
-    "t": "Turkey Triathlon & 5K Trot",
-    "loc": "WSU Swenson Building, Weber State Ogden Campus",
-    "allDay": false,
-    "desc": "Join Weber State Campus Recreation for the 22nd Annual Turkey Triathlon and 5K Trot! The race includes a 5k run, 10k bike, 300yd swim, and is a reverse sprint distance to introduce participants to Triathlons. The race circles the Weber State Campus, which offers gorgeous views of the Wasatch Front as you run and bike.\n\nCommunity members welcome! Race fees include a medal and t-shirt. Spots are filling quickly, so don’t wait to register!",
-    "url": "https://www.weber.edu/races/turkey-tri.html",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794105000000,
-    "e": 1794112200000,
-    "t": "Aida Cuevas",
-    "loc": "Val A. Browning Center, 3848 Harrison Blvd, Ogden, UT 84403",
-    "allDay": false,
-    "desc": "When Aída Cuevas takes the stage in Ogden, it’s the kind of night that brings la familia together. Abuelos, parents, and niños sharing music that belongs to all of them. On Saturday, November 7, La Voz de México takes the stage at the Browning Center at Weber State University for an evening of mariachi and ranchera that spans five decades of Mexican tradition.",
-    "url": "https://www.onstageogden.org/show-item/aida-cuevas-2026/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4169,29 +4189,269 @@
     "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
     "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
     "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796432400000,
+    "e": 1796443200000,
+    "t": "Ogden's First Friday Art Stroll",
+    "loc": "Downtown Ogden",
+    "allDay": false,
+    "desc": "Ogden's First Friday Art Stroll is held the first Friday of the month from 6-9 PM, Ogden’s First Friday Art Stroll is abuzz year ‘round with exciting exhibit openings, artist receptions and live music of all genres in venues and in the streets. As the art stroll becomes the virtual front porch of Ogden, those that venture here are treated to great art, an atmosphere of camaraderie and inclusion and amazing night life; small town feel, big city offerings.\n\nEnjoy your journey. We hope you are inspired, delighted and challenged along the way.",
+    "url": "http://www.ogdencityarts.org",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796490000000,
+    "e": 1796493600000,
+    "t": "Faux Stained Glass Ornaments",
+    "loc": "966 W 12th St, Ogden, UT, 84404",
+    "allDay": false,
+    "desc": "Join us at the Ogden Nature Center to create a faux stained-glass masterpiece! Local artist Olivia Roundy will walk you through how to make a beautiful translucent ornament in this hour-long workshop.\nDon't know what faux stained-glass is? Just take a peek at the Visitor Center and Education Building windows at the nature center! Not only are these artworks adorable (many made by 3rd graders from Greenwood Charter) but they help wildlife! Having something in the window reduces bird strikes by limiting the reflections that confuse birds. It's truly the intersection of art, nature, and science!\n",
+    "url": "https://fareharbor.com/embeds/book/ogdennaturecenter/items/768706/availability/-57218824/book/?full-items=yes&flow=1351112",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796497200000,
+    "e": 1796500800000,
+    "t": "Faux Stained Glass Ornaments",
+    "loc": "966 W 12th St, Ogden, UT, 84404",
+    "allDay": false,
+    "desc": "Join us at the Ogden Nature Center to create a faux stained-glass masterpiece! Local artist Olivia Roundy will walk you through how to make a beautiful translucent ornament in this hour-long workshop.\nDon't know what faux stained-glass is? Just take a peek at the Visitor Center and Education Building windows at the nature center! Not only are these artworks adorable (many made by 3rd graders from Greenwood Charter) but they help wildlife! Having something in the window reduces bird strikes by limiting the reflections that confuse birds. It's truly the intersection of art, nature, and science!\n",
+    "url": "https://fareharbor.com/embeds/book/ogdennaturecenter/items/768706/availability/-57218824/book/?full-items=yes&flow=1351112",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796497200000,
+    "e": 1796503500000,
+    "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
+    "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796518800000,
+    "e": 1796525100000,
+    "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
+    "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796522400000,
+    "e": 1796527800000,
+    "t": "Joy to the World! A Sacred Celebration",
+    "loc": "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Experience the magic of Christmas with Grammy-nominated violinist Jenny Oaks Baker and her accomplished children, musical ensemble Family Four, in a heartwarming, Christ-centered holiday show featuring Tony Award-Winning Soprano Lisa Hopkins Seegmiller. Enjoy captivating and cherished Christmas carols arranged by Emmy Award-winning composer Kurt Bestor, inspiring script by New York Times best-selling author Jason F. Wright, and moving narration and powerful vocals by baritone Preston Yates. Returning by popular demand are vibrant performances by local ballet companies and Scariff Locklier Leon",
+    "url": "https://www.facebook.com/events/27833916432910040/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796572800000,
+    "e": 1796608800000,
+    "t": "Crystal Festival – A Rocks, Minerals, Gems & Crystal Show",
+    "loc": "The Monarch, 455 25th Street, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Explore. Learn. Create. Play.\nJoin us for a ONE-DAY Crystal Festival packed with hands-on learning, interactive workshops, readers, crafts, and incredible vendors! There are so many reasons to come explore and play; free and open to the entire family.\nWhat to Expect\n• Workshops & Readers for kids and adults\n• Craft Corner & Hands-On Activities\n• Vendors offering crystals, gems, minerals, jewelry, fossils, cabochons, and more\n• A welcoming, interactive atmosphere designed for families, collectors, and curious minds of all ages\nThis one-day Crystal Festival is the perfect way to shop, learn, cre",
+    "url": "https://www.facebook.com/events/1412208817207318/?",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796603400000,
+    "e": 1796612400000,
+    "t": "Tidings of Joy: 41st Annual Holiday Choir Concert",
+    "loc": "TBD",
+    "allDay": false,
+    "desc": "Dec. 6, 2026 | 5:30 & 8 PM\nCome celebrate the holiday season at the Weber State Choir's 41st Annual Holiday Choir Concert featuring the Weber State Symphony Orchestra. Tickets for this popular event go quickly, so get yours today!",
+    "url": "https://www.weber.edu/music/concert-choir.html",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796670000000,
+    "e": 1796673600000,
+    "t": "Parent Cafe",
+    "loc": "Family Support Center of Ogden 3340 Harrison Blvd Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Safe space for parents to share, connect, and learn from each other. Each month is a different topic.\nFree Refreshments and Free Childcare for ages 0-11 (Must schedule in advance and complete paperwork)\nEmail at inquiry@fscogden.org or call us 801-393-3113\nAugust 3 - Building Structure and Routine at Home\nSeptember 14 - You are Not Alone - The Village Returns\nOctober 5 - Haunted Tales and Parenting WINS\nNovember 2 - Pulling the Ones You Love Closer - Making Your Home a Refuge\nDecember 7 - Resilience, Calm the Stress Down",
+    "url": "https://www.eventbrite.com/cc/parent-cafes-special-events-4839868?utm-campaign=social&utm-content=creatorshare&utm-medium=discovery&utm-term=odclsxcollection&utm-source=cp&aff=escb",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796745600000,
+    "e": 1796749200000,
+    "t": "Browning Gun Club Meeting",
+    "loc": "Union Station - Wattis Dumke Room, 2501 Wall Avenue, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Club Meets every second Tuesday morning, Sept thru May at Union Station upstairs in the Wattis Dumke Room next to the Browning Gun Museum. Donuts and juice are served.\n\nJan 8, 2019 – Presenter & subject TBA\nFeb 12, 2019 – John Spangler – Subject TBA\nMar 12, 2019 – Presenter & subject TBA\nApr 9, 2019 – Presenter & Subject TBA\nMay 14, 2019 – Presenter & Subject TBA",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796761800000,
+    "e": 1796765400000,
+    "t": "Gentle Movements",
+    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796769000000,
+    "e": 1796776200000,
+    "t": "Ogden City Council Work Session",
+    "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796776200000,
+    "e": 1796783400000,
+    "t": "Free Community Craft night",
+    "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Whether you paint, sew, draw, sculpt, write, knit, crochet, bead, or whatever your creative pursuit, bring your supplies and chat with new friends while we work on our latest projects. During the last 15–20 minutes of the event, everyone will be invited to share what they’ve been working on. If you’ve been struggling with a part of your project or would like to ask the group for feedback, this is the perfect time. This is an open forum for sharing ideas, offering support, and getting help from fellow makers.",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796778000000,
+    "e": 1796788800000,
+    "t": "Ogden City Council Meeting",
+    "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796781600000,
+    "e": 1796788800000,
+    "t": "Caleb Chapman's Cool Yule",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ft. The Crescent Super Band - “Special Guests To Be Announced”\n\nA holiday concert featuring jazz and big band holiday stylings of the wildly popular Crescent Super Band, and other killer bands from Caleb Chapman’s Soundhouse. Twenty-five teenagers from Utah can make a lot of noise – especially when they happen to be members of the Crescent Super Band. Under the direction of Grammy-nominated founder Caleb Chapman, the band has stunned audiences worldwide, from New York to the Netherlands. With a youthful energy and nearly unbelievable performance level, the band has frequently been hailed as th",
+    "url": "https://ogdenpet.com/event/caleb-chapmans-cool-yule-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796783400000,
+    "e": 1796790600000,
+    "t": "Christmas with BYU Vocal Point & Noteworthy",
+    "loc": "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Christmas with BYU Vocal Point and Noteworthy in Ogden is a double bill of the two best collegiate a cappella ensembles on the planet, each bringing their own Christmas set to the Browning Center at WSU. Carols rearranged until they sound new, Christmas pop built from a bass line up, and a room carried by nothing but voices.",
+    "url": "https://www.onstageogden.org/show-item/byu-vocal-point-noteworthy-christmas/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796866200000,
+    "e": 1796869800000,
+    "t": "Yoga",
+    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796990400000,
+    "e": 1797001200000,
+    "t": "Dinos in the Snow",
+    "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join us for our annual Christmas event at the Ogden Dinosaur Park! Settle in with some hot cocoa, explore our arts and crafts, enjoy twinkling lights, and get your holiday photos.",
+    "url": "https://dinosaurpark.org/dinos-in-the-snow/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797040800000,
+    "e": 1797048900000,
+    "t": "Imagine Ballet Theatre Presents: The Nutcracker",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
+    "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797076800000,
+    "e": 1797087600000,
+    "t": "Dinos in the Snow",
+    "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join us for our annual Christmas event at the Ogden Dinosaur Park! Settle in with some hot cocoa, explore our arts and crafts, enjoy twinkling lights, and get your holiday photos.",
+    "url": "https://dinosaurpark.org/dinos-in-the-snow/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797105600000,
+    "e": 1797113700000,
+    "t": "Imagine Ballet Theatre Presents: The Nutcracker",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
+    "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797123600000,
+    "e": 1797131700000,
+    "t": "Imagine Ballet Theatre Presents: The Nutcracker",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
+    "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797129000000,
+    "e": 1797134400000,
+    "t": "Christmas Spectacular",
+    "loc": "Austad Theater @ WSU, 3750 Harrison Blvd, Ogden, UT 84408",
+    "allDay": false,
+    "desc": "The return of the hit of the last two years, starring David Osmond, loved by critics and audiences.\nWhy go to endless Christmas productions when you can get your complete Holiday Fix at Odyssey Dance Theatre's Christmas Spectacular, SPECTACULAR?\nSee excerpts from A Christmas Carol, It's A Wonderful Life, The Nutcracker, Elf, A Christmas Story, White Christmas and the Rockettes- just to name a few!",
+    "url": "https://weber.evenue.net/events/C2",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797300000000,
+    "e": 1797308100000,
+    "t": "Imagine Ballet Theatre Presents: The Nutcracker",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
+    "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797301800000,
+    "e": 1797307200000,
+    "t": "The Forgotten Carols",
+    "loc": "Dee Event Center, 4444 Event Center Dr, Ogden, UT 84408",
+    "allDay": false,
+    "desc": "The Forgotten Carols Musical features breathtaking performances of heartwarming melodies and laugh-out-loud entertainment within a timeless Christmas story. Hear your favorite songs, like \"Homeless,\" from Michael McLean's original hit album, sung by incredible musical theater performers. Immerse yourself in the magic of the holiday season as you witness the story of the Forgotten Carols coming to life on stage. Don't miss out on this incredible in-person event that will leave you feeling uplifted and filled with joy. Join us!\n\nRecommended for ages 5 and older.",
+    "url": "https://weber.evenue.net/events/FC",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797366600000,
+    "e": 1797370200000,
+    "t": "Gentle Movements",
+    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
    }
   ],
   "treehouse": [
-   {
-    "s": 1794016800000,
-    "e": 1794025800000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794018600000,
-    "e": 1794025800000,
-    "t": "WSSO - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
    {
     "s": 1794103200000,
     "e": 1794112200000,

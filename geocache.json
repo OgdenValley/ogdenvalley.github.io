@@ -1107,5 +1107,16 @@
   "lat": 41.26097,
   "lng": -111.77197,
   "county": "Weber"
+ },
+ "The Monarch, 455 25th Street, Ogden, UT 84401": {
+  "lat": 41.21999,
+  "lng": -111.96854,
+  "county": "Weber"
+ },
+ "Austad Theater @ WSU, 3750 Harrison Blvd, Ogden, UT 84408": null,
+ "Dee Event Center, 4444 Event Center Dr, Ogden, UT 84408": {
+  "lat": 41.18236,
+  "lng": -111.94501,
+  "county": "Weber"
  }
 }
