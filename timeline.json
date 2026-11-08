@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T22:45:52.698Z",
+ "updated": "2026-11-08T02:29:24.845Z",
  "items": [
   {
    "t": 1794091552697,
@@ -28,13 +28,6 @@
    "text": "Construction: Southbound I-15 is closed between 200 North and Park Lane from Friday, 11/6 at 10:00 p.m. through Saturday, 11/7 at 6:00 a.m.",
    "kind": "road",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794012989492,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Friday good · Saturday moderate · Sunday moderate",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
@@ -46,17 +39,17 @@
    "2682": 1
   },
   "cond": {
-   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
-   "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
+   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
    "SR-158 to Powder Mountain#334": "Dry · none",
    "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none",
-   "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
-   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none",
-   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
-   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
-   "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
    "SR-226 to Snowbasin#336": "Dry · none",
-   "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none"
+   "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
+   "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none",
+   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
+   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
+   "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
+   "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
+   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none"
   },
   "pass": {},
   "ice": {

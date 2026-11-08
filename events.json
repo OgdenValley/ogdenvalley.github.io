@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-07T22:45:38.781Z",
+ "updated": "2026-11-08T02:29:13.781Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -874,26 +874,6 @@
      "desc": "elparo has created large-scale site-responsive sculptures all over the world. La Vrille is his debut work in the United States.",
      "url": "https://www.weber.edu/shawgallery/upcoming.html",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794011400000,
-     "e": 1794016800000,
-     "t": "Historic 25th Street Walking Tour",
-     "loc": "Ogden Union Station, 2501 Wall Ave, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Join local expert, Rich Koski, as he takes you on a guided walk from Union Station to the Monarch Building in the Nine Rails Creative District.\n\nEarly Weber County and Ogden history including the role of the fur traders and mountain men establishing the first European-American settlement in Utah.\n\nAmong the historical facts and anecdotes provided by your guide you’ll learn about:\n\nArrival of the Mormon Pioneers and establishment of Ogden as an agricultural community.\nOgden’s emergence as the Crossroads of the West following the completion of the Transcontinental Railroad and an overview of the",
-     "url": "https://www.visitogden.com/things-to-do/guided-tours/guided-tour/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794011400000,
-     "e": 1794016800000,
-     "t": "Steppin' The Ogden Way dance class",
-     "loc": "Marshall White Center, 222 28th Street, Ogden",
-     "allDay": false,
-     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
-     "url": "",
-     "src": "Weekly regular"
     },
     {
      "s": 1794013200000,
@@ -3378,16 +3358,6 @@
     "allDay": true,
     "desc": "elparo has created large-scale site-responsive sculptures all over the world. La Vrille is his debut work in the United States.",
     "url": "https://www.weber.edu/shawgallery/upcoming.html",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794011400000,
-    "e": 1794016800000,
-    "t": "Historic 25th Street Walking Tour",
-    "loc": "Ogden Union Station, 2501 Wall Ave, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Join local expert, Rich Koski, as he takes you on a guided walk from Union Station to the Monarch Building in the Nine Rails Creative District.\n\nEarly Weber County and Ogden history including the role of the fur traders and mountain men establishing the first European-American settlement in Utah.\n\nAmong the historical facts and anecdotes provided by your guide you’ll learn about:\n\nArrival of the Mormon Pioneers and establishment of Ogden as an agricultural community.\nOgden’s emergence as the Crossroads of the West following the completion of the Transcontinental Railroad and an overview of the",
-    "url": "https://www.visitogden.com/things-to-do/guided-tours/guided-tour/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
