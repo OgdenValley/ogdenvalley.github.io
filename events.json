@@ -1,28 +1,9 @@
 {
- "updated": "2026-11-09T00:54:33.262Z",
+ "updated": "2026-11-09T07:58:21.052Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1794085200000,
-     "e": 1794099600000,
-     "t": "Cinema Saturday Feature Films",
-     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
-     "allDay": false,
-     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
-     "url": ""
-    },
-    {
-     "s": 1794103200000,
-     "e": 1794110400000,
-     "t": "Fall Concert Series: Singer-Songwriters in the Round",
-     "loc": "Mountain Arts & Music Art Space, 2595 N Hwy 162, Eden, UT 84310",
-     "allDay": false,
-     "desc": "First-Saturday fall concert. Check MAM for the start time.",
-     "url": "https://mountainartsandmusic.org",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
     {
      "s": 1794168000000,
      "e": 1794175200000,
@@ -847,56 +828,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1794099600000,
-     "e": 1794106800000,
-     "t": "Free live music & ice cream at Z's Sweets",
-     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
-     "s": 1794099600000,
-     "e": 1794106800000,
-     "t": "Ecstatic Dance Community Potluck",
-     "loc": "Wild-Shaped Bakery, Ogden",
-     "allDay": false,
-     "desc": "Community potluck.",
-     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
-     "s": 1794103200000,
-     "e": 1794112200000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1794103200000,
-     "e": 1794110400000,
-     "t": "Singles Mingle",
-     "loc": "Grounds for Coffee, 111 25th Street, Ogden",
-     "allDay": false,
-     "desc": "Free. Every Saturday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
-     "s": 1794105000000,
-     "e": 1794110400000,
-     "t": "ONOG: Aida Cuevas - Austad",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
      "s": 1794150000000,
      "e": 1794157200000,
      "t": "Singles Walk & Talk",
@@ -1188,8 +1119,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1198,8 +1129,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1348,8 +1279,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1358,8 +1289,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3307,6 +3238,26 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1799370000000,
+     "e": 1799377200000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1799379000000,
+     "e": 1799391600000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1799514000000,
      "e": 1799521200000,
      "t": "Cardboard Exchange MEGA Expo",
@@ -4364,26 +4315,6 @@
   ],
   "treehouse": [
    {
-    "s": 1794103200000,
-    "e": 1794112200000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794105000000,
-    "e": 1794110400000,
-    "t": "ONOG: Aida Cuevas - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
     "s": 1794364200000,
     "e": 1794369600000,
     "t": "Wind & Percussion Chamber Music Concert - 136",
@@ -4435,8 +4366,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4445,8 +4376,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4475,16 +4406,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794717000000,
     "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
@@ -4494,9 +4415,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "s": 1794708000000,
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4507,6 +4428,16 @@
     "s": 1794969000000,
     "e": 1794978000000,
     "t": "String Chamber Music Fall Concert - 136",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
