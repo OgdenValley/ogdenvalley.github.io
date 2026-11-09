@@ -1,28 +1,9 @@
 {
- "updated": "2026-11-08T21:10:46.341Z",
+ "updated": "2026-11-09T00:54:33.262Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1794078000000,
-     "e": 1794088800000,
-     "t": "Mountain Luxury Open House Tour (14 Ogden Valley homes)",
-     "loc": "Ogden Valley (various homes)",
-     "allDay": false,
-     "desc": "Mountain Luxury open houses at 14 properties throughout Ogden Valley. View event details and plan a route at mountainluxury.com. Source: Mountain Luxury email, Nov. 2026.",
-     "url": ""
-    },
-    {
-     "s": 1794081600000,
-     "e": 1794088800000,
-     "t": "New World Distillery tasting tour",
-     "loc": "New World Distillery, Eden",
-     "allDay": false,
-     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
     {
      "s": 1794085200000,
      "e": 1794099600000,
@@ -31,16 +12,6 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
-    },
-    {
-     "s": 1794085200000,
-     "e": 1794092400000,
-     "t": "Can't Do Art? Think Again! (art basics for beginners)",
-     "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
-     "allDay": false,
-     "desc": "Intro to art basics for absolute beginners, 1st Saturdays. From $25, sign up at mountainartsandmusic.org/workshops.",
-     "url": "https://www.mountainartsandmusic.org/",
-     "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
     },
     {
      "s": 1794103200000,
@@ -876,26 +847,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1794085200000,
-     "e": 1794092400000,
-     "t": "Craft n Cry",
-     "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
-     "allDay": false,
-     "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
-     "s": 1794088800000,
-     "e": 1794096000000,
-     "t": "Envelope Junk Journal Class",
-     "loc": "Downtown Ogden",
-     "allDay": false,
-     "desc": "Junk journal class. Check the event page for the exact address.",
-     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
      "s": 1794099600000,
      "e": 1794106800000,
      "t": "Free live music & ice cream at Z's Sweets",
@@ -1237,8 +1188,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1247,8 +1198,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1397,8 +1348,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1407,8 +1358,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -4484,8 +4435,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4494,8 +4445,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4524,16 +4475,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794715200000,
     "t": "DPAC Scrooge - Austad",
     "loc": "",
@@ -4543,9 +4484,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "s": 1794708000000,
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4556,6 +4497,16 @@
     "s": 1794969000000,
     "e": 1794976200000,
     "t": "Jazz - Allred",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
