@@ -133,7 +133,13 @@ window.OVE = {
       town: "Eden, Liberty and Huntsville",
       line: "Sunday is our 10th anniversary relaunch: one place for Valley events, road and weather, local businesses, jobs, the Utah Depot for kids, Valley history and Community Cooking. Thank you for 10 years of reading, sharing and showing up for each other.",
       link: "https://ogdenvalleyevent.com/", linkText: "See what's new",
-      from: "2026-10-29" }
+      from: "2026-10-29" },
+    { title: "Huntsville's First Annual Christmas Parade", date: "2026-12-01", time: "6:30 PM",
+      town: "Huntsville",
+      image: "ove-huntsville-christmas-parade-2026-flyer.jpg",
+      line: "A brand-new holiday tradition from the Huntsville Town Traditions Committee. Businesses, families, church groups and neighbors are invited to decorate a float or dress up a vehicle. Or come cheer along the route. Source: Huntsville Town, Nov. 3.",
+      link: "https://www.signupgenius.com/go/20F0C4DACA722A3FBCE9-67168627-huntsville", linkText: "Sign up to be in the parade",
+      from: "2026-11-09" }
   ],
   eventFeaturePrice: "$25",
 
