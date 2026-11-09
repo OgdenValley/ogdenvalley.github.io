@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-09T07:58:21.052Z",
+ "updated": "2026-11-09T18:48:19.823Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -828,16 +828,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1794150000000,
-     "e": 1794157200000,
-     "t": "Singles Walk & Talk",
-     "loc": "Ogden",
-     "allDay": false,
-     "desc": "Singles walk. Check the event page for the meeting spot.",
-     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
      "s": 1794272400000,
      "e": 1794279600000,
      "t": "Mystic Mondays: tarot readings",
@@ -1119,8 +1109,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1129,8 +1119,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1279,8 +1269,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1289,8 +1279,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1391,6 +1381,16 @@
      "s": 1794969000000,
      "e": 1794976200000,
      "t": "Jazz - Allred",
+     "loc": "",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1795012200000,
+     "e": 1795019400000,
+     "t": "Clytie Adams Nutcracker Dress Rehearsal - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1806,6 +1806,16 @@
      "desc": "The Christmas Tree Jubilee is the ultimate kick off to the Holiday Season and a treasured tradition for our community! This is the largest fundraising event for Weber School Foundation and proceeds fund class and school grants, field trips, enhanced educational programs and opportunities, special needs adaptive equipment and so much more.",
      "url": "https://www.wsd.net/o/foundation/page/christmas-tree-jubilee",
      "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795640400000,
+     "e": 1795647600000,
+     "t": "BW Nutcracker - Invited Student Dress",
+     "loc": "",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1795656600000,
@@ -4366,8 +4376,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4376,8 +4386,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4406,8 +4416,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4416,8 +4426,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4438,6 +4448,16 @@
     "s": 1794969000000,
     "e": 1794976200000,
     "t": "Jazz - Allred",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1795012200000,
+    "e": 1795019400000,
+    "t": "Clytie Adams Nutcracker Dress Rehearsal - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4528,6 +4548,16 @@
     "s": 1795314600000,
     "e": 1795321800000,
     "t": "Clytie Adams Nutcracker - Austad",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1795640400000,
+    "e": 1795647600000,
+    "t": "BW Nutcracker - Invited Student Dress",
     "loc": "",
     "allDay": false,
     "desc": "",

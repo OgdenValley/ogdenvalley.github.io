@@ -1,15 +1,15 @@
 {
- "updated": "2026-11-09T00:54:50.092Z",
+ "updated": "2026-11-09T18:49:11.947Z",
  "items": [
   {
-   "t": 1794185690091,
+   "t": 1794250151947,
    "src": "Utah Air Quality",
-   "text": "Weber County forecast: Sunday good · Monday good · Tuesday moderate",
+   "text": "Weber County forecast: Monday moderate · Tuesday moderate · Wednesday moderate",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
   },
   {
-   "t": 1794157432412,
+   "t": 1794185690091,
    "src": "Utah Air Quality",
    "text": "Weber County forecast: Sunday good · Monday good · Tuesday moderate",
    "kind": "air",
@@ -21,9 +21,7 @@
    "10148": "I-84|(updated 11/3/26) Two travel lanes have been restored in each direction over the bridge region. Construction will suspend starting Nov. 26 Westbound single lane closure | late Winter/early Spring 2027(TBA) - Winter 2027 | Day & Night Construction resumes. All traffic will return to the crossover configuration on the ne",
    "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at"
   },
-  "al": {
-   "2682": 1
-  },
+  "al": {},
   "cond": {
    "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
    "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
@@ -51,6 +49,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "November 8, 2026 3:32 PM|Good/Unrestricted,Good/Unrestricted,Moderate/Unrestricted"
+  "air": "November 9, 2026 8:24 AM|Moderate/Unrestricted,Moderate/Unrestricted,Moderate/Unrestricted"
  }
 }

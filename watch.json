@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-09T07:58:36.919Z",
+ "updated": "2026-11-09T18:48:58.906Z",
  "needed": false,
  "since": null,
  "reasons": [],
- "forecastIssued": "2026-11-09T06:31:19+00:00",
+ "forecastIssued": "2026-11-09T18:31:23+00:00",
  "draft": {
-  "made": "2026-11-02T07:35:39.359Z",
-  "why": "New reason for a briefing: Snow is in the Valley forecast for Wednesday.",
+  "made": "2026-11-09T18:48:58.906Z",
+  "why": "Monday weekly draft",
   "image": "weather-draft.png",
-  "forecastIssued": "2026-11-02T06:31:24+00:00"
+  "forecastIssued": "2026-11-09T18:31:23+00:00"
  }
 }

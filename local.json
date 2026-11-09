@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-08T17:03:38.842Z",
+ "updated": "2026-11-09T18:48:24.502Z",
  "meetings": [
   {
    "body": "Weber County Commission",
@@ -50,11 +50,11 @@
    "elev": 7690,
    "depth": {
     "value": 0,
-    "date": "2026-11-07"
+    "date": "2026-11-08"
    },
    "water": {
-    "value": 0.1,
-    "date": "2026-11-07"
+    "value": 0,
+    "date": "2026-11-08"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -64,11 +64,11 @@
    "elev": 5970,
    "depth": {
     "value": 0,
-    "date": "2026-11-07"
+    "date": "2026-11-08"
    },
    "water": {
-    "value": 0.1,
-    "date": "2026-11-07"
+    "value": 0,
+    "date": "2026-11-08"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
@@ -78,11 +78,11 @@
    "elev": 8930,
    "depth": {
     "value": 3,
-    "date": "2026-11-07"
+    "date": "2026-11-08"
    },
    "water": {
-    "value": 1,
-    "date": "2026-11-07"
+    "value": 0.9,
+    "date": "2026-11-08"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
    "source": "USDA NRCS SNOTEL"
