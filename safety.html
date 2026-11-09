@@ -234,10 +234,10 @@ flags.replaceChildren(...fl);
 if(F&&F.today)document.getElementById("fc-today").textContent=F.today;
 if(F)document.getElementById("fc-src").replaceChildren(document.createTextNode("Source: "),el("a",{href:F.link,target:"_blank",rel:"noopener",text:F.source}),document.createTextNode(" forecast for the "+F.place+(F.updated?". Last checked "+fmt(F.updated)+".":".")));
 const W=await S.loadJSON("weather.json"),bl=document.getElementById("brief-list");
-const cut=Date.now()-14*864e5,items=(W&&W.items||[]).filter(x=>Date.parse(x.date)>=cut).sort((a,b)=>Date.parse(b.date)-Date.parse(a.date));
+const cut=Date.now()-14*864e5,all=(W&&W.items||[]).filter(x=>Date.parse(x.date)>=cut).sort((a,b)=>Date.parse(b.date)-Date.parse(a.date)),wk=all.findIndex(x=>x.type!=="update"),items=wk<0?all:all.slice(0,wk+1); /* only this week: newest weekly briefing plus any updates after it (Shauna 11/9) */
 if(!items.length)quiet(bl,"No briefing this week yet. We check the forecast every two days and post at least once a week.");
 else bl.replaceChildren(...items.map((w,i)=>el("details",{class:"card wx-fold",open:i===0?"":null},[
-  el("summary",{},[el("span",{class:"eyebrow",style:"display:block;margin:0",text:(w.type==="update"?"Update":"Weekly briefing")+" · "+fmt(w.date)+(i===0?" · newest":"")}),el("b",{style:"font-size:19px;color:var(--ink)",text:w.title})]),
+  el("summary",{},[el("span",{class:"eyebrow",style:"display:block;margin:0",text:(w.type==="update"?"Update":"Weekly briefing")+" · "+fmt(w.date)}),el("b",{style:"font-size:19px;color:var(--ink)",text:w.title})]),
   el("div",{class:"brief"+(w.image?" has-img":""),style:"margin-top:12px"},[w.image?el("a",{href:w.image,target:"_blank",rel:"noopener",title:"Open full size"},[el("img",{src:w.image,alt:w.alt||w.title,loading:"lazy"})]):null,
     el("div",{style:"display:grid;gap:8px;align-content:start"},[w.summary?el("p",{style:"margin:0",text:w.summary}):null,w.source?el("p",{class:"meta",style:"font-size:14px",text:"Source: "+w.source}):null,w.image?el("a",{href:w.image,download:"",text:"Download the graphic to share"}):null])])])));
 const fires=document.getElementById("fires");
