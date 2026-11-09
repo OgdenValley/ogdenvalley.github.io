@@ -989,8 +989,8 @@ async function jobs(){
    The private columns (emails, name and role, verify contact) stay on the private tab. */
 const FORM_MARK = "/* ===== FORM LISTINGS: written every hour from the Business listings sheet (approved rows only). Edit the sheet, not this section. ===== */";
 async function listings(){
-  const url = (cfgAll()._listingsCsv || "").trim(), artUrl = (cfgAll()._artistsCsv || "").trim();
-  if (!url && !artUrl) { console.log("listings: no sheet link yet"); return; }
+  const url = (cfgAll()._listingsCsv || "").trim(), artUrl = (cfgAll()._artistsCsv || "").trim(), rentUrl = (cfgAll()._rentalsCsv || "").trim();
+  if (!url && !artUrl && !rentUrl) { console.log("listings: no sheet link yet"); return; }
   let src; try { src = fs.readFileSync("places.js", "utf8"); } catch { console.log("listings: no places.js"); return; }
   const cutAt = src.indexOf(FORM_MARK), hand = (cutAt >= 0 ? src.slice(0, cutAt) : src).replace(/\s+$/, "") + "\n";
   try {
@@ -1068,6 +1068,37 @@ async function listings(){
         p.added = ymd(r[jT]) || new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date());
         p.fromForm = true;
         (out.artists = out.artists || []).push(p);
+      }
+    }
+    /* Rentals form (Ogden Valley: List your rental, Public tab, added Nov. 9, 2026): Timestamp, Rental name, Town,
+       Type of rental, Sleeps how many, Bedrooms, Bathrooms, Booking links, Check any that apply, Short description,
+       Photos, Approve, Hide. Host name, email and street address stay on the private tab. Shows only with Approve "yes". */
+    if (rentUrl) {
+      const V = await sheet(rentUrl), c = V.col;
+      const kT = c(/^timestamp/), kN = c(/^rental name/), kTn = c(/^town/), kTy = c(/^type of rental/), kS = c(/^sleeps/), kBd = c(/^bedrooms/),
+        kBa = c(/^bathrooms/), kL = c(/^booking links/), kC = c(/^check any/), kD = c(/^short description/), kP = c(/^photos/), kA = c(/^approve/), kH = c(/^hide/);
+      const AMEN = {"pets ok": "Pet-friendly", "ski-in/ski-out": "Ski-in / ski-out", "near the ski lifts": "Near the lifts", "ev charger": "EV charging"};
+      for (const r of V.rows) {
+        if (kH >= 0 && cut(r, kH, 40)) continue;
+        const name = cut(r, kN, 80).replace(/\s+/g, " "); if (!name) continue;
+        if (!(kA >= 0 && yes(r[kA]))) { waiting++; continue; }
+        if (already(name)) { skipped++; continue; }
+        const blurb = cut(r, kD, 500);
+        if (BAD.test([name, blurb].join(" "))) { held++; console.log("rental held (language):", name); continue; }
+        const type = cut(r, kTy, 40), p = {name, kind: /condo/i.test(type) ? "Condo" : "Cabin / vacation rental", type: type || "Vacation rental"};
+        const townRaw = cut(r, kTn, 60), town = TOWNS.find(t => t.toLowerCase() === townRaw.toLowerCase()); if (town) p.town = town; else if (townRaw) p.area = townRaw;
+        if (blurb) p.blurb = blurb;
+        const num = i => { const v = parseFloat(cut(r, i, 10)); return isFinite(v) && v > 0 ? v : 0; };
+        if (num(kS)) p.sleeps = num(kS); if (num(kBd)) p.bedrooms = num(kBd); if (num(kBa)) p.baths = num(kBa);
+        const urls = cut(r, kL, 600).split(/[\s,;]+/).map(x => x.trim()).filter(x => /\.[a-z]{2,}/i.test(x)).map(x => /^https?:\/\//i.test(x) ? x : "https://" + x.replace(/^\/+/, ""));
+        const lab = u => /vrbo\.com/i.test(u) ? "VRBO" : /airbnb\./i.test(u) ? "Airbnb" : /booking\.com/i.test(u) ? "Booking.com" : "Website";
+        if (urls[0]) p.book = urls[0];
+        if (urls.length > 1) p.links = urls.slice(1, 4).map(u => ({label: lab(u), href: u}));
+        const am = cut(r, kC, 400).split(/\s*,\s*/).map(x => x.trim()).filter(Boolean).map(x => AMEN[x.toLowerCase()] || x).slice(0, 10); if (am.length) p.amenities = am;
+        const photos = cut(r, kP, 2000).split(/[\s,]+/).map(x => driveImg(x, 1000)).filter(Boolean).slice(0, 3); if (photos.length) p.photos = photos;
+        p.added = ymd(r[kT]) || new Intl.DateTimeFormat("en-CA", {timeZone: "America/Denver"}).format(new Date());
+        p.fromForm = true;
+        (out.stay = out.stay || []).push(p);
       }
     }
     for (const k in out) out[k].sort((a, b) => a.name.localeCompare(b.name));

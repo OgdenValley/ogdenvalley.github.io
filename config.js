@@ -23,7 +23,7 @@ window.OVE = {
   forms: {
     event:    "https://docs.google.com/forms/d/e/1FAIpQLSdq-tr_1dUMWJvoD06p9oZAXQWuK5-SnkucboHFwVEFmeZSZg/viewform",             // Submit an event
     business: "https://docs.google.com/forms/d/e/1FAIpQLSc-jh9kRzlErQ1jv698LT4prqLnCWFkdoJy6Bj5KcUeCZCL7A/viewform", // List a business or restaurant
-    stay:     "https://docs.google.com/forms/d/e/1FAIpQLSc-jh9kRzlErQ1jv698LT4prqLnCWFkdoJy6Bj5KcUeCZCL7A/viewform", // List a place to stay (business form for now; swap in its own form link if you make one)
+    stay:     "https://docs.google.com/forms/d/1A-kJegudT3KVJMoWSHSRzlNViXpKNSyjgEtbus69eGs/viewform", // List a rental (Ogden Valley: List your rental, built Nov. 9, 2026). Lodges and inns can still use the business form.
     artist:   "https://docs.google.com/forms/d/e/1FAIpQLSeT9RH4wEL6lcusqhtEeubo62Ypz2kRLDNK5Uqm55OO_cDCKQ/viewform",             // Be listed as a local artist
     photo:    "https://docs.google.com/forms/d/e/1FAIpQLSe9nppeo6jqEILr9SLywvxZ3jgXA-7V0RiaQ3DSvzk0VCst8A/viewform",             // Photo contest entry
     sponsor:  "https://docs.google.com/forms/d/e/1FAIpQLScl8tGaQgMKnVOo2ocL6tqrMPACLtl36UXm_CJIrrg39ix-vQ/viewform", // Sponsor a spot

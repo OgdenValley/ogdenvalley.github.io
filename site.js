@@ -277,7 +277,7 @@ function listing(box, items, kind, R){
     (p.sells && p.sells.length) ? el("div", {class: "meta", text: "Sells: " + p.sells.join(", ")}) : null,
     (p.buy && p.buy.length) ? el("div", {class: "meta", text: "How to buy: " + p.buy.join(", ")}) : null,
     p.where ? el("div", {class: "meta", text: "Find the work at: " + p.where}) : null,
-    (p.sleeps || p.bedrooms) ? el("div", {class: "meta", text: [p.sleeps ? "Sleeps " + p.sleeps : "", p.bedrooms ? p.bedrooms + " bedroom" + (p.bedrooms == 1 ? "" : "s") : "", p.minNights ? p.minNights + "-night minimum" : ""].filter(Boolean).join(" · ")}) : null,
+    (p.sleeps || p.bedrooms) ? el("div", {class: "meta", text: [p.sleeps ? "Sleeps " + p.sleeps : "", p.bedrooms ? p.bedrooms + " bedroom" + (p.bedrooms == 1 ? "" : "s") : "", p.baths ? p.baths + " bath" + (p.baths == 1 ? "" : "s") : "", p.minNights ? p.minNights + "-night minimum" : ""].filter(Boolean).join(" · ")}) : null,
     (p.amenities && p.amenities.length) ? el("div", {class: "meta", text: p.amenities.join(" · ")}) : null,
     p.host ? el("div", {class: "meta", text: "Local host: " + p.host}) : null,
     p.address ? el("div", {class: "meta", text: p.address}) : null,
