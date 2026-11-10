@@ -1,19 +1,9 @@
 {
- "updated": "2026-11-09T18:48:19.823Z",
+ "updated": "2026-11-10T02:08:10.836Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1794168000000,
-     "e": 1794175200000,
-     "t": "New World Distillery tasting tour",
-     "loc": "New World Distillery, Eden",
-     "allDay": false,
-     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
     {
      "s": 1794348000000,
      "e": 1794355200000,
@@ -207,6 +197,15 @@
      "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1796175000000,
+     "e": 1796178600000,
+     "t": "Huntsville's First Annual Christmas Parade",
+     "loc": "Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "A brand-new holiday tradition from the Huntsville Town Traditions Committee. Businesses, families, church groups and organizations are invited to decorate a float or dress up a vehicle. Or come watch along the route.\n\nSign up to be in the parade: https://www.signupgenius.com/go/20F0C4DACA722A3FBCE9-67168627-huntsville\n\nSource: Huntsville Town, Nov. 3, 2026: https://huntsvilleutah.gov/news-detail?item_id=36518",
+     "url": "https://www.signupgenius.com/go/20F0C4DACA722A3FBCE9-67168627-huntsville"
     },
     {
      "s": 1796259600000,
@@ -485,6 +484,16 @@
      "allDay": false,
      "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
      "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1799438400000,
+     "e": 1799445600000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1799528400000,
@@ -801,6 +810,15 @@
      "allDay": false,
      "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
      "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1809806400000,
+     "e": 1809820800000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
     }
    ]
   },
@@ -2368,6 +2386,16 @@
      "src": "Treehouse Children's Museum"
     },
     {
+     "s": 1796486400000,
+     "e": 1796515200000,
+     "t": "Rocky Mountain Gun Show",
+     "loc": "Golden Spike Event Center",
+     "allDay": false,
+     "desc": "Rocky Mountain Gun Shows offers something for every outdoor adventurer, gun enthusiast, and hunter. Experience one of the largest gun shows in the beehive state. Thousands of fellow gun enthusiasts join to share our passion for gun rights and unique displayed products.",
+     "url": "https://www.rockymountaingunshows.com/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1796490000000,
      "e": 1796493600000,
      "t": "Faux Stained Glass Ornaments",
@@ -2465,6 +2493,16 @@
      "allDay": false,
      "desc": "Explore. Learn. Create. Play.\nJoin us for a ONE-DAY Crystal Festival packed with hands-on learning, interactive workshops, readers, crafts, and incredible vendors! There are so many reasons to come explore and play; free and open to the entire family.\nWhat to Expect\n• Workshops & Readers for kids and adults\n• Craft Corner & Hands-On Activities\n• Vendors offering crystals, gems, minerals, jewelry, fossils, cabochons, and more\n• A welcoming, interactive atmosphere designed for families, collectors, and curious minds of all ages\nThis one-day Crystal Festival is the perfect way to shop, learn, cre",
      "url": "https://www.facebook.com/events/1412208817207318/?",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796572800000,
+     "e": 1796598000000,
+     "t": "Rocky Mountain Gun Show",
+     "loc": "Golden Spike Event Center",
+     "allDay": false,
+     "desc": "Rocky Mountain Gun Shows offers something for every outdoor adventurer, gun enthusiast, and hunter. Experience one of the largest gun shows in the beehive state. Thousands of fellow gun enthusiasts join to share our passion for gun rights and unique displayed products.",
+     "url": "https://www.rockymountaingunshows.com/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -2828,16 +2866,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1797301800000,
-     "e": 1797307200000,
-     "t": "The Forgotten Carols",
-     "loc": "Dee Event Center, 4444 Event Center Dr, Ogden, UT 84408",
-     "allDay": false,
-     "desc": "The Forgotten Carols Musical features breathtaking performances of heartwarming melodies and laugh-out-loud entertainment within a timeless Christmas story. Hear your favorite songs, like \"Homeless,\" from Michael McLean's original hit album, sung by incredible musical theater performers. Immerse yourself in the magic of the holiday season as you witness the story of the Forgotten Carols coming to life on stage. Don't miss out on this incredible in-person event that will leave you feeling uplifted and filled with joy. Join us!\n\nRecommended for ages 5 and older.",
-     "url": "https://weber.evenue.net/events/FC",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1797305400000,
      "e": 1797318000000,
      "t": "Country Dancing",
@@ -2846,16 +2874,6 @@
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
      "src": "Weekly regular"
-    },
-    {
-     "s": 1797366600000,
-     "e": 1797370200000,
-     "t": "Gentle Movements",
-     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
-     "url": "https://weberpl.events.mylibrary.digital/",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1797478200000,
@@ -3264,6 +3282,36 @@
      "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
      "allDay": false,
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1799454600000,
+     "e": 1799460000000,
+     "t": "Steppin' The Ogden Way dance class",
+     "loc": "Marshall White Center, 222 28th Street, Ogden",
+     "allDay": false,
+     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1799456400000,
+     "e": 1799463600000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1799460000000,
+     "e": 1799467200000,
+     "t": "Friday Night Jazz",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free show, all ages. Every Friday.",
      "url": "",
      "src": "Weekly regular"
     },
@@ -4073,6 +4121,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1796486400000,
+    "e": 1796515200000,
+    "t": "Rocky Mountain Gun Show",
+    "loc": "Golden Spike Event Center",
+    "allDay": false,
+    "desc": "Rocky Mountain Gun Shows offers something for every outdoor adventurer, gun enthusiast, and hunter. Experience one of the largest gun shows in the beehive state. Thousands of fellow gun enthusiasts join to share our passion for gun rights and unique displayed products.",
+    "url": "https://www.rockymountaingunshows.com/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1796490000000,
     "e": 1796493600000,
     "t": "Faux Stained Glass Ornaments",
@@ -4130,6 +4188,16 @@
     "allDay": false,
     "desc": "Explore. Learn. Create. Play.\nJoin us for a ONE-DAY Crystal Festival packed with hands-on learning, interactive workshops, readers, crafts, and incredible vendors! There are so many reasons to come explore and play; free and open to the entire family.\nWhat to Expect\n• Workshops & Readers for kids and adults\n• Craft Corner & Hands-On Activities\n• Vendors offering crystals, gems, minerals, jewelry, fossils, cabochons, and more\n• A welcoming, interactive atmosphere designed for families, collectors, and curious minds of all ages\nThis one-day Crystal Festival is the perfect way to shop, learn, cre",
     "url": "https://www.facebook.com/events/1412208817207318/?",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796572800000,
+    "e": 1796598000000,
+    "t": "Rocky Mountain Gun Show",
+    "loc": "Golden Spike Event Center",
+    "allDay": false,
+    "desc": "Rocky Mountain Gun Shows offers something for every outdoor adventurer, gun enthusiast, and hunter. Experience one of the largest gun shows in the beehive state. Thousands of fellow gun enthusiasts join to share our passion for gun rights and unique displayed products.",
+    "url": "https://www.rockymountaingunshows.com/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4300,26 +4368,6 @@
     "allDay": false,
     "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
     "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797301800000,
-    "e": 1797307200000,
-    "t": "The Forgotten Carols",
-    "loc": "Dee Event Center, 4444 Event Center Dr, Ogden, UT 84408",
-    "allDay": false,
-    "desc": "The Forgotten Carols Musical features breathtaking performances of heartwarming melodies and laugh-out-loud entertainment within a timeless Christmas story. Hear your favorite songs, like \"Homeless,\" from Michael McLean's original hit album, sung by incredible musical theater performers. Immerse yourself in the magic of the holiday season as you witness the story of the Forgotten Carols coming to life on stage. Don't miss out on this incredible in-person event that will leave you feeling uplifted and filled with joy. Join us!\n\nRecommended for ages 5 and older.",
-    "url": "https://weber.evenue.net/events/FC",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797366600000,
-    "e": 1797370200000,
-    "t": "Gentle Movements",
-    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
-    "url": "https://weberpl.events.mylibrary.digital/",
     "src": "Ogden Area Events (Visit Ogden)"
    }
   ],

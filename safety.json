@@ -1,17 +1,8 @@
 {
- "updated": "2026-11-09T18:48:23.044Z",
+ "updated": "2026-11-10T02:08:13.520Z",
  "weather": [],
  "fires": [],
- "city": [
-  {
-   "title": "Douglas St. from Van Buren Ave. and Jackson Ave.",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2083",
-   "date": 1794242829000,
-   "text": "Emergency Water Shutdown",
-   "source": "Ogden City Alerts",
-   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
-  }
- ],
+ "city": [],
  "status": {
   "weather": "ok",
   "fires": "ok",

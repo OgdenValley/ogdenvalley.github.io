@@ -1118,5 +1118,15 @@
   "lat": 41.18236,
   "lng": -111.94501,
   "county": "Weber"
+ },
+ "Huntsville, UT 84317": {
+  "lat": 41.26101,
+  "lng": -111.76883,
+  "county": "Weber"
+ },
+ "Golden Spike Event Center": {
+  "lat": 41.27571,
+  "lng": -111.99791,
+  "county": "Weber"
  }
 }
