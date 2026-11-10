@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T17:49:45.545Z",
+ "updated": "2026-11-10T23:20:17.498Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -488,6 +488,16 @@
     {
      "s": 1799438400000,
      "e": 1799445600000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1799524800000,
+     "e": 1799532000000,
      "t": "New World Distillery tasting tour",
      "loc": "New World Distillery, Eden",
      "allDay": false,
@@ -1127,8 +1137,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1137,8 +1147,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1287,8 +1297,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1297,8 +1307,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1973,6 +1983,16 @@
      "allDay": false,
      "desc": "We’re excited to welcome back a favorite tradition—The Polar Express—now in its 12th year of bringing holiday joy to our community.\n\nCome celebrate with us in your coziest, holiday-inspired pajamas and enjoy a morning filled with holiday cheer. Whether it’s your first time or your twelfth, we can’t wait to share this special experience with you. Your presence makes the event even more meaningful.\n\nSynopsis: When a doubting young boy takes an extraordinary train ride to the North Pole he embarks on a journey of self-discovery that shows him that the wonder of life never fades for those who beli",
      "url": "https://ogdenpet.com/event/the-polar-express-2/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795887000000,
+     "e": 1795894200000,
+     "t": "FREE Thanksgiving Weekend Walking Tour for Charity",
+     "loc": "Meet in front of the Union Station, 2501 Wall Ave, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Looking for something fun to do with friends and family over Thanksgiving weekend? Join our FREE walking tour of Historic 25th street and wear your ugly sweater! This is a donation- based charity event to raise money for Ogden’s local Homeless Shelter, Jesus Saves. Meet in front of the Union Station. REGISTRATION REQUIRED so we know how many people to expect.",
+     "url": "https://tourogden.com/free-thanksgiving-charity-walking-tour/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -2856,16 +2876,6 @@
      "src": "Weekly regular"
     },
     {
-     "s": 1797300000000,
-     "e": 1797308100000,
-     "t": "Imagine Ballet Theatre Presents: The Nutcracker",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
-     "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1797305400000,
      "e": 1797318000000,
      "t": "Country Dancing",
@@ -3324,6 +3334,16 @@
      "desc": "Trading card expo, Jan. 9-10. Check the event page for hours.",
      "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
      "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
+     "s": 1799528400000,
+     "e": 1799535600000,
+     "t": "Craft n Cry",
+     "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
+     "allDay": false,
+     "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
     },
     {
      "s": 1799528400000,
@@ -3921,6 +3941,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1795887000000,
+    "e": 1795894200000,
+    "t": "FREE Thanksgiving Weekend Walking Tour for Charity",
+    "loc": "Meet in front of the Union Station, 2501 Wall Ave, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Looking for something fun to do with friends and family over Thanksgiving weekend? Join our FREE walking tour of Historic 25th street and wear your ugly sweater! This is a donation- based charity event to raise money for Ogden’s local Homeless Shelter, Jesus Saves. Meet in front of the Union Station. REGISTRATION REQUIRED so we know how many people to expect.",
+    "url": "https://tourogden.com/free-thanksgiving-charity-walking-tour/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1795899600000,
     "e": 1795905000000,
     "t": "Ballet West's The Nutcracker",
@@ -4359,16 +4389,6 @@
     "desc": "The return of the hit of the last two years, starring David Osmond, loved by critics and audiences.\nWhy go to endless Christmas productions when you can get your complete Holiday Fix at Odyssey Dance Theatre's Christmas Spectacular, SPECTACULAR?\nSee excerpts from A Christmas Carol, It's A Wonderful Life, The Nutcracker, Elf, A Christmas Story, White Christmas and the Rockettes- just to name a few!",
     "url": "https://weber.evenue.net/events/C2",
     "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797300000000,
-    "e": 1797308100000,
-    "t": "Imagine Ballet Theatre Presents: The Nutcracker",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
-    "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
    }
   ],
   "treehouse": [
@@ -4424,8 +4444,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4434,8 +4454,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4464,8 +4484,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4474,8 +4494,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4834,6 +4854,16 @@
    }
   ],
   "huntsville": [
+   {
+    "s": 1796175000000,
+    "e": 1796194800000,
+    "t": "First Annual Christmas Parade at Huntsville Town!",
+    "loc": "Huntsville Town, UT",
+    "allDay": false,
+    "desc": "",
+    "url": "https://huntsvilleutah.gov/upcoming-events",
+    "src": "Huntsville Town"
+   },
    {
     "s": 1809151200000,
     "e": 1809324000000,

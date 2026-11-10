@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-10T17:50:03.239Z",
+ "updated": "2026-11-10T23:20:36.736Z",
  "items": [
+  {
+   "t": 1794352836735,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Tuesday moderate · Wednesday moderate · Thursday moderate",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1794333003239,
    "src": "Utah Air Quality",
@@ -14,13 +21,6 @@
    "text": "Weber County forecast: Monday moderate · Tuesday moderate · Wednesday moderate",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1794250151947,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Monday moderate · Tuesday moderate · Wednesday moderate",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
@@ -30,17 +30,17 @@
   },
   "al": {},
   "cond": {
-   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
+   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
+   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
    "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
    "SR-158 to Powder Mountain#334": "Dry · none",
    "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none",
    "SR-226 to Snowbasin#336": "Dry · none",
-   "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
    "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none",
-   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
-   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
+   "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none",
+   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
    "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
-   "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none"
+   "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none"
   },
   "pass": {},
   "ice": {
@@ -56,6 +56,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "November 10, 2026 8:31 AM|Moderate/Unrestricted,Moderate/Unrestricted,Moderate/Unrestricted"
+  "air": "November 10, 2026 3:34 PM|Moderate/Unrestricted,Moderate/Unrestricted,Moderate/Unrestricted"
  }
 }
