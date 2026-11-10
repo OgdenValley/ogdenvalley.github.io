@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T09:49:20.619Z",
+ "updated": "2026-11-10T17:49:58.170Z",
  "source": "Utah Department of Transportation (UDOT Traffic)",
  "link": "https://udottraffic.utah.gov/",
  "status": {
@@ -55,7 +55,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1794238449000
+   "updated": 1794292318000
   },
   {
    "id": "333",
@@ -63,71 +63,7 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1794238449000
-  },
-  {
-   "id": "335",
-   "road": "SR-167 Trappers Loop I-84 to Huntsville",
-   "cond": "Dry",
-   "weather": "Fair",
-   "restriction": "none",
-   "updated": 1794238449000
-  },
-  {
-   "id": "336",
-   "road": "SR-226 to Snowbasin",
-   "cond": "Dry",
-   "weather": "Fair",
-   "restriction": "none",
-   "updated": 1794238449000
-  },
-  {
-   "id": "337",
-   "road": "I-84 SR-167 at Mountain Green to Morgan",
-   "cond": "Dry",
-   "weather": "Fair",
-   "restriction": "none",
-   "updated": 1794238449000
-  },
-  {
-   "id": "338",
-   "road": "I-84 Uintah Jct to Jct SR-167 at Mountain Green",
-   "cond": "Dry",
-   "weather": "Fair",
-   "restriction": "none",
-   "updated": 1794238449000
-  },
-  {
-   "id": "426",
-   "road": "I-84 I-15 Jct at Riverdale to SR-89",
-   "cond": "Dry",
-   "weather": "Fair",
-   "restriction": "none",
-   "updated": 1794238449000
-  },
-  {
-   "id": "330",
-   "road": "US-89 From Lagoon to Jct. SR-193",
-   "cond": "Dry",
-   "weather": "Fair",
-   "restriction": "none",
-   "updated": 1794238449000
-  },
-  {
-   "id": "331",
-   "road": "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate",
-   "cond": "Dry",
-   "weather": "Fair",
-   "restriction": "none",
-   "updated": 1794238449000
-  },
-  {
-   "id": "332",
-   "road": "US-89 From Jct. SR-193 to I-84",
-   "cond": "Dry",
-   "weather": "Fair",
-   "restriction": "none",
-   "updated": 1794238449000
+   "updated": 1794292318000
   },
   {
    "id": "334",
@@ -135,120 +71,197 @@
    "cond": "Dry",
    "weather": "Fair",
    "restriction": "none",
-   "updated": 1794238449000
+   "updated": 1794292318000
+  },
+  {
+   "id": "335",
+   "road": "SR-167 Trappers Loop I-84 to Huntsville",
+   "cond": "Dry",
+   "weather": "Fair",
+   "restriction": "none",
+   "updated": 1794292318000
+  },
+  {
+   "id": "336",
+   "road": "SR-226 to Snowbasin",
+   "cond": "Dry",
+   "weather": "Fair",
+   "restriction": "none",
+   "updated": 1794292318000
+  },
+  {
+   "id": "337",
+   "road": "I-84 SR-167 at Mountain Green to Morgan",
+   "cond": "Dry",
+   "weather": "Fair",
+   "restriction": "none",
+   "updated": 1794292318000
+  },
+  {
+   "id": "338",
+   "road": "I-84 Uintah Jct to Jct SR-167 at Mountain Green",
+   "cond": "Dry",
+   "weather": "Fair",
+   "restriction": "none",
+   "updated": 1794292318000
+  },
+  {
+   "id": "330",
+   "road": "US-89 From Lagoon to Jct. SR-193",
+   "cond": "Dry",
+   "weather": "Fair",
+   "restriction": "none",
+   "updated": 1794292318000
+  },
+  {
+   "id": "331",
+   "road": "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate",
+   "cond": "Dry",
+   "weather": "Fair",
+   "restriction": "none",
+   "updated": 1794292318000
+  },
+  {
+   "id": "332",
+   "road": "US-89 From Jct. SR-193 to I-84",
+   "cond": "Dry",
+   "weather": "Fair",
+   "restriction": "none",
+   "updated": 1794292318000
+  },
+  {
+   "id": "426",
+   "road": "I-84 I-15 Jct at Riverdale to SR-89",
+   "cond": "Dry",
+   "weather": "Fair",
+   "restriction": "none",
+   "updated": 1794292318000
   }
  ],
  "alerts": [],
- "plows": [],
+ "plows": [
+  {
+   "bearing": "70",
+   "lat": 41.403795,
+   "lng": -111.541809,
+   "updated": 1794332339000
+  },
+  {
+   "bearing": "340",
+   "lat": 41.2073799,
+   "lng": -111.83588,
+   "updated": 1794332683000
+  }
+ ],
  "stations": [
   {
    "name": "I-84 @ MP 91 Devils Gate",
    "air": null,
-   "surface": 37.2,
+   "surface": 45.5,
    "status": "Dry",
    "gust": null,
    "lat": 41.1397,
    "lng": -111.8539,
-   "updated": 1794303000000,
+   "updated": 1794331200000,
    "ice": false
   },
   {
    "name": "I-84 @ MP 97 Peterson",
-   "air": 31.67,
-   "surface": 36.9,
+   "air": 44.08,
+   "surface": 48.7,
    "status": "Dry",
-   "gust": 1.97,
+   "gust": 6.58,
    "lat": 41.114,
    "lng": -111.7631,
-   "updated": 1794303000000,
+   "updated": 1794331800000,
    "ice": false
   },
   {
    "name": "I-84 @ Weber Canyon",
-   "air": 32.24,
-   "surface": 35.8,
+   "air": 39.72,
+   "surface": 40.6,
    "status": "Dry",
-   "gust": 13.59,
+   "gust": 12.06,
    "lat": 41.1379,
    "lng": -111.8868,
-   "updated": 1794303600000,
+   "updated": 1794331800000,
    "ice": false
   },
   {
    "name": "North Ogden Divide",
-   "air": 42.32,
-   "surface": 40.9,
+   "air": 43.93,
+   "surface": 44.2,
    "status": "",
-   "gust": 1.1,
+   "gust": 7.67,
    "lat": 41.3205,
    "lng": -111.8993,
-   "updated": 1794303000000,
+   "updated": 1794331800000,
    "ice": false
   },
   {
    "name": "SR-158 @ MP 11.5 Powder Mountain",
-   "air": 42.01,
-   "surface": 38.1,
+   "air": 46.65,
+   "surface": 49.6,
    "status": "Dry",
    "gust": 10.06,
    "lat": 41.37884,
    "lng": -111.7841,
-   "updated": 1794303000000,
+   "updated": 1794331800000,
    "ice": false
   },
   {
    "name": "SR-167 @ Trappers Loop",
-   "air": 41.9,
-   "surface": 40.3,
+   "air": 48.15,
+   "surface": 52,
    "status": "Dry",
-   "gust": 6.58,
+   "gust": 6.14,
    "lat": 41.2058,
    "lng": -111.8166,
-   "updated": 1794303600000,
+   "updated": 1794331800000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 14 Pineview Dam",
-   "air": 36.34,
-   "surface": 35.6,
+   "air": 40.01,
+   "surface": 37,
    "status": "Dry",
-   "gust": 6.36,
+   "gust": 7.67,
    "lat": 41.2537,
    "lng": -111.8413,
-   "updated": 1794303000000,
+   "updated": 1794331800000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 17.5 Huntsville",
-   "air": 32.27,
-   "surface": 36.5,
+   "air": 44.62,
+   "surface": 47.8,
    "status": "Dry",
-   "gust": 3.29,
+   "gust": 4.38,
    "lat": 41.24793,
    "lng": -111.77576,
-   "updated": 1794303000000,
+   "updated": 1794331800000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 46 Monte Cristo",
-   "air": 37.25,
+   "air": 40.35,
    "surface": null,
    "status": "",
-   "gust": 19.38,
+   "gust": 19,
    "lat": 41.4446,
    "lng": -111.5056,
-   "updated": 1794303000000,
+   "updated": 1794331800000,
    "ice": false
   },
   {
    "name": "US-89 @ MP 406 Weber River",
-   "air": 43.02,
-   "surface": 43.5,
+   "air": 45.95,
+   "surface": 54,
    "status": "Dry",
-   "gust": 26.3,
+   "gust": 23.89,
    "lat": 41.1351,
    "lng": -111.91205,
-   "updated": 1794303000000,
+   "updated": 1794331800000,
    "ice": false
   }
  ],
@@ -257,9 +270,9 @@
    "name": "I-84 Rattlesnake Pass",
    "road": "I-84 Idaho Stateline to Blue Creek Summit",
    "elev": 5315,
-   "surface": 42,
+   "surface": 53,
    "status": "Dry",
-   "air": 41,
+   "air": 53,
    "closures": [],
    "seasonal": ""
   },
@@ -267,9 +280,9 @@
    "name": "I-84 Whites Valley",
    "road": "I-84 Blue Creek Summit to Tremonton",
    "elev": 5295,
-   "surface": 39,
+   "surface": 53,
    "status": "Dry",
-   "air": 34,
+   "air": 51,
    "closures": [],
    "seasonal": ""
   },
@@ -279,7 +292,7 @@
    "elev": 9000,
    "surface": null,
    "status": "",
-   "air": 37,
+   "air": 41,
    "closures": [],
    "seasonal": ""
   },
@@ -297,9 +310,9 @@
    "name": "SR-158 Powder Mountain",
    "road": "SR-158 to Powder Mountain",
    "elev": 8252,
-   "surface": 38,
+   "surface": 49,
    "status": "Dry",
-   "air": 43,
+   "air": 47,
    "closures": [],
    "seasonal": ""
   },
@@ -307,9 +320,9 @@
    "name": "SR-226 Snowbasin",
    "road": "SR-226 to Snowbasin",
    "elev": 6600,
-   "surface": 42,
+   "surface": 52,
    "status": "Dry",
-   "air": 41,
+   "air": 48,
    "closures": [],
    "seasonal": ""
   },
@@ -317,9 +330,9 @@
    "name": "SR-167 Trappers Loop Summit",
    "road": "SR-167 Trappers Loop I-84 to Huntsville",
    "elev": 6050,
-   "surface": 42,
+   "surface": 52,
    "status": "Dry",
-   "air": 41,
+   "air": 48,
    "closures": [],
    "seasonal": ""
   }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-10T09:49:10.837Z",
+ "updated": "2026-11-10T17:49:49.080Z",
  "meetings": [
   {
    "body": "Weber County Commission",
@@ -67,7 +67,7 @@
     "date": "2026-11-09"
    },
    "water": {
-    "value": 0.1,
+    "value": 0,
     "date": "2026-11-09"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
@@ -81,7 +81,7 @@
     "date": "2026-11-09"
    },
    "water": {
-    "value": 0.2,
+    "value": 0,
     "date": "2026-11-09"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
@@ -95,7 +95,7 @@
     "date": "2026-11-09"
    },
    "water": {
-    "value": 1,
+    "value": 0.9,
     "date": "2026-11-09"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
