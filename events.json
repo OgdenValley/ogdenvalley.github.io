@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-11T14:31:41.084Z",
+ "updated": "2026-11-11T21:57:04.911Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -515,6 +515,16 @@
      "url": ""
     },
     {
+     "s": 1799611200000,
+     "e": 1799618400000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1799888400000,
      "e": 1799897400000,
      "t": "Wednesday Night Hikers",
@@ -856,26 +866,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1794326400000,
-     "e": 1794330000000,
-     "t": "Browning Gun Club Meeting",
-     "loc": "Union Station - Wattis Dumke Room, 2501 Wall Avenue, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Club Meets every second Tuesday morning, Sept thru May at Union Station upstairs in the Wattis Dumke Room next to the Browning Gun Museum. Donuts and juice are served.\n\nJan 8, 2019 – Presenter & subject TBA\nFeb 12, 2019 – John Spangler – Subject TBA\nMar 12, 2019 – Presenter & subject TBA\nApr 9, 2019 – Presenter & Subject TBA\nMay 14, 2019 – Presenter & Subject TBA",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794342600000,
-     "e": 1794346200000,
-     "t": "Gentle Movements",
-     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
-     "url": "https://weberpl.events.mylibrary.digital/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1794349800000,
      "e": 1794357000000,
      "t": "Ogden City Council Work Session",
@@ -1117,8 +1107,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1127,8 +1117,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1277,8 +1267,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1287,8 +1277,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3411,26 +3401,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1794326400000,
-    "e": 1794330000000,
-    "t": "Browning Gun Club Meeting",
-    "loc": "Union Station - Wattis Dumke Room, 2501 Wall Avenue, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Club Meets every second Tuesday morning, Sept thru May at Union Station upstairs in the Wattis Dumke Room next to the Browning Gun Museum. Donuts and juice are served.\n\nJan 8, 2019 – Presenter & subject TBA\nFeb 12, 2019 – John Spangler – Subject TBA\nMar 12, 2019 – Presenter & subject TBA\nApr 9, 2019 – Presenter & Subject TBA\nMay 14, 2019 – Presenter & Subject TBA",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794342600000,
-    "e": 1794346200000,
-    "t": "Gentle Movements",
-    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
-    "url": "https://weberpl.events.mylibrary.digital/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1794349800000,
     "e": 1794357000000,
     "t": "Ogden City Council Work Session",
@@ -4444,8 +4414,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4454,8 +4424,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4484,16 +4454,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794715200000,
     "t": "DPAC Scrooge - Austad",
     "loc": "",
@@ -4503,9 +4463,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "s": 1794708000000,
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4516,6 +4476,16 @@
     "s": 1794969000000,
     "e": 1794978000000,
     "t": "String Chamber Music Fall Concert - 136",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",

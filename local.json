@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-11T14:31:44.704Z",
+ "updated": "2026-11-11T21:57:08.591Z",
  "meetings": [
   {
-   "body": "Weber County Commission",
-   "title": "Weber County Commission Work Session",
-   "start": 1794328200000,
-   "link": "https://www.utah.gov/pmn/sitemap/notice/1121457.html",
-   "source": "Utah Public Notice Website"
+   "body": "Huntsville Town Planning Commission",
+   "title": "Planning Meeting",
+   "start": 1794531600000,
+   "link": "https://huntsvilleutah.gov/upcoming-events",
+   "source": "Huntsville Town website (the official agenda is posted on the Utah Public Notice Website closer to the date)"
   },
   {
    "body": "Weber County Commission",
@@ -26,6 +26,13 @@
    "body": "Huntsville Town Council",
    "title": "TC Meeting 12-3-26",
    "start": 1796346000000,
+   "link": "https://huntsvilleutah.gov/upcoming-events",
+   "source": "Huntsville Town website (the official agenda is posted on the Utah Public Notice Website closer to the date)"
+  },
+  {
+   "body": "Huntsville Town Planning Commission",
+   "title": "Planning Meeting",
+   "start": 1796950800000,
    "link": "https://huntsvilleutah.gov/upcoming-events",
    "source": "Huntsville Town website (the official agenda is posted on the Utah Public Notice Website closer to the date)"
   }
