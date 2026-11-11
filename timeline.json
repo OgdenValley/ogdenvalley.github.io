@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-11T06:17:25.415Z",
+ "updated": "2026-11-11T14:31:59.377Z",
  "items": [
+  {
+   "t": 1794407519376,
+   "src": "UDOT alert",
+   "text": "Crash Update: NB I-15 is now open at MP 324 (Park Lane, Farmington). Expect residual delays in the area.",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1794352836735,
    "src": "Utah Air Quality",
@@ -21,7 +28,9 @@
    "10148": "I-84|(updated 11/3/26) Two travel lanes have been restored in each direction over the bridge region. Construction will suspend starting Nov. 26 Westbound single lane closure | late Winter/early Spring 2027(TBA) - Winter 2027 | Day & Night Construction resumes. All traffic will return to the crossover configuration on the ne",
    "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at"
   },
-  "al": {},
+  "al": {
+   "2693": 1
+  },
   "cond": {
    "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
    "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
