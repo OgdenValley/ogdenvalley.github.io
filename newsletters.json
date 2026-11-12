@@ -1,6 +1,467 @@
 {
- "updated": "2026-11-05T13:21:30.696Z",
+ "updated": "2026-11-12T18:56:13.630Z",
  "issues": [
+  {
+   "start": "2026-11-12",
+   "end": "2026-11-19",
+   "made": "2026-11-12T18:56:13.597Z",
+   "featured": [
+    {
+     "title": "Huntsville's First Annual Christmas Parade",
+     "date": "2026-12-01",
+     "time": "6:30 PM",
+     "place": "",
+     "town": "Huntsville",
+     "image": "ove-huntsville-christmas-parade-2026-flyer.jpg",
+     "line": "A brand-new holiday tradition from the Huntsville Town Traditions Committee. Businesses, families, church groups and neighbors are invited to decorate a float or dress up a vehicle. Or come cheer along the route. Source: Huntsville Town, Nov. 3.",
+     "link": "https://www.signupgenius.com/go/20F0C4DACA722A3FBCE9-67168627-huntsville",
+     "linkText": "Sign up to be in the parade"
+    }
+   ],
+   "events": [
+    {
+     "day": "2026-11-12",
+     "items": [
+      {
+       "time": "All day",
+       "t": "La Vrille: public art by elparo",
+       "url": "https://www.weber.edu/shawgallery/upcoming.html",
+       "loc": "Dumke Arts Plaza"
+      },
+      {
+       "time": "7 p.m.",
+       "t": "Much Ado About Nothing",
+       "url": "",
+       "loc": "Val A. Browning Center | Allred Theatre"
+      },
+      {
+       "time": "12 p.m.",
+       "t": "Jessica Greenberg Lecture - Allred",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "3 p.m.",
+       "t": "Girls Volleyball & NAL: Snowcrest vs Mountain View (home)",
+       "url": "https://www.wsd.net/o/sjh/events",
+       "loc": "Snowcrest Junior High"
+      },
+      {
+       "time": "5:30 p.m.",
+       "t": "Author Celebration with Mac Barnett",
+       "url": "https://www.treehousemuseum.org/events/87/author-party-with-mac-barnett",
+       "loc": "Treehouse Children's Museum"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Free live music & ice cream at Z's Sweets",
+       "url": "",
+       "loc": "Z's Sweets"
+      },
+      {
+       "time": "7 p.m.",
+       "t": "Winter's Tales: An Evening of Shakespeare, Music, Food, and Merriment!",
+       "url": "https://www.ogdenshakesfest.org/events/",
+       "loc": "Ogden Union Station - Browning Theater"
+      },
+      {
+       "time": "7 p.m.",
+       "t": "WSU Theatre: Much Ado About Nothing - Allred",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "8:30 p.m.",
+       "t": "Country Dancing",
+       "url": "",
+       "loc": "Neptune Skating Center"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-13",
+     "items": [
+      {
+       "time": "All day",
+       "t": "Mosaic Lamp Making Classes",
+       "url": "https://artmasterclass.global/products/mosaic-classes-ogden",
+       "loc": "Hilton Garden Inn Ogden UT"
+      },
+      {
+       "time": "6 a.m.",
+       "t": "Cup Hop 2026",
+       "url": "https://www.ogdennaturecenter.org/cup-hop",
+       "loc": "Grounds for Coffee – 3005 Harrison Blvd"
+      },
+      {
+       "time": "1 p.m.",
+       "t": "New World Distillery tasting tour",
+       "url": "",
+       "loc": "New World Distillery"
+      },
+      {
+       "time": "5 p.m.",
+       "t": "Ogden Big Lebowski Festival",
+       "url": "https://ogdenpet.com/event/ogden-big-lebowski-festival-2026/peerys-egyptian-theater/",
+       "loc": "Peery’s Egyptian Theater"
+      },
+      {
+       "time": "5:30 p.m.",
+       "t": "Ogden Ski Swap",
+       "url": "",
+       "loc": "1000 N 1200 W"
+      },
+      {
+       "time": "5:30 p.m.",
+       "t": "Steppin' The Ogden Way dance class",
+       "url": "",
+       "loc": "Marshall White Center"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Trans Awareness Week: Film Screening - 113",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Free live music & ice cream at Z's Sweets",
+       "url": "",
+       "loc": "Z's Sweets"
+      },
+      {
+       "time": "7 p.m.",
+       "t": "Winter's Tales: An Evening of Shakespeare, Music, Food, and Merriment!",
+       "url": "https://www.ogdenshakesfest.org/events/",
+       "loc": "Ogden Union Station - Browning Theater"
+      },
+      {
+       "time": "7 p.m.",
+       "t": "DPAC Scrooge - Austad",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "7 p.m.",
+       "t": "WSU Theatre: Much Ado About Nothing - Allred",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "7 p.m.",
+       "t": "Friday Night Jazz",
+       "url": "",
+       "loc": "Two Bit Bistro"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-14",
+     "items": [
+      {
+       "time": "8 a.m.",
+       "t": "Veterans Tribute Run",
+       "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+       "loc": "Ogden First United Methodist Church"
+      },
+      {
+       "time": "10 a.m.",
+       "t": "Ogden Ski Swap",
+       "url": "",
+       "loc": "1000 N 1200 W"
+      },
+      {
+       "time": "10 a.m.",
+       "t": "Annual Holiday Bazaar",
+       "url": "https://www.goodshepherdogdenutah.org/events.html",
+       "loc": "Episcopal Church of the Good Shepherd"
+      },
+      {
+       "time": "10 a.m.",
+       "t": "DPAC Scrooge - Austad",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "12 p.m.",
+       "t": "Festive Ornament Workshop with Local Artisans",
+       "url": "https://localartisancollective.com/events/ornamentworkshop26/",
+       "loc": "The Local Artisan Collective"
+      },
+      {
+       "time": "1 p.m.",
+       "t": "New World Distillery tasting tour",
+       "url": "",
+       "loc": "New World Distillery"
+      },
+      {
+       "time": "1 p.m.",
+       "t": "Lino Print Workshop",
+       "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+       "loc": "Ogden Creative Reuse"
+      },
+      {
+       "time": "2 p.m.",
+       "t": "Cinema Saturday Feature Films",
+       "url": "",
+       "loc": "Ogden Valley Library @ 131 S 7400 E"
+      },
+      {
+       "time": "2 p.m.",
+       "t": "WSU Theatre: Much Ado About Nothing - Allred",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "2 p.m.",
+       "t": "Craft n Cry",
+       "url": "",
+       "loc": "Kaffe Mercantile"
+      },
+      {
+       "time": "3 p.m.",
+       "t": "Ogden Strides Club: Steps & Connections",
+       "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+       "loc": "Big Dee Sports Park"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Free live music & ice cream at Z's Sweets",
+       "url": "",
+       "loc": "Z's Sweets"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-15",
+     "items": [
+      {
+       "time": "1 p.m.",
+       "t": "New World Distillery tasting tour",
+       "url": "",
+       "loc": "New World Distillery"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-16",
+     "items": [
+      {
+       "time": "6 p.m.",
+       "t": "Mystic Mondays: tarot readings",
+       "url": "",
+       "loc": "Two Bit Bistro"
+      },
+      {
+       "time": "8:30 p.m.",
+       "t": "Country Dancing",
+       "url": "",
+       "loc": "Neptune Skating Center"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-17",
+     "items": [
+      {
+       "time": "1:30 p.m.",
+       "t": "Gentle Movements",
+       "url": "https://weberpl.events.mylibrary.digital/",
+       "loc": "Main Library"
+      },
+      {
+       "time": "3:30 p.m.",
+       "t": "Ogden City Council Work Session",
+       "url": "",
+       "loc": "Ogden City Municipal Building"
+      },
+      {
+       "time": "4:30 p.m.",
+       "t": "Utah Youth Rodeo",
+       "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/t4e/1/16/1f402.png",
+       "loc": "Golden Spike Event Center"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Ogden City Council Meeting",
+       "url": "",
+       "loc": "Ogden City Municipal Building"
+      },
+      {
+       "time": "7 p.m.",
+       "t": "Wasatch Audubon Monthly Program",
+       "url": "http://www.wasatchaudubon.org",
+       "loc": "Ogden Nature Center"
+      },
+      {
+       "time": "7:30 p.m.",
+       "t": "String Chamber Music Fall Concert",
+       "url": "https://www.weber.edu/music/chamber-orchestra.html",
+       "loc": "Val A. Browning Center | Garrison Choral Room"
+      },
+      {
+       "time": "7:30 p.m.",
+       "t": "Jazz - Allred",
+       "url": "",
+       "loc": ""
+      }
+     ]
+    },
+    {
+     "day": "2026-11-18",
+     "items": [
+      {
+       "time": "7:30 a.m.",
+       "t": "Clytie Adams Nutcracker Dress Rehearsal - Austad",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "5 p.m.",
+       "t": "Ogden City Planning Commission Worksession",
+       "url": "",
+       "loc": "2549 Washington Blvd."
+      },
+      {
+       "time": "5:30 p.m.",
+       "t": "THE FIELD | Fall into Dance",
+       "url": "",
+       "loc": "Eccles Black Box Theatre"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Wednesday Night Hikers",
+       "url": "https://www.meetup.com/webercountyoutdoors/",
+       "loc": "Varies"
+      },
+      {
+       "time": "6:30 p.m.",
+       "t": "Yoga",
+       "url": "https://weberpl.events.mylibrary.digital/",
+       "loc": "Main Library"
+      },
+      {
+       "time": "7 p.m.",
+       "t": "WSU Dance: The Field - Eccles",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "8:30 p.m.",
+       "t": "Country Dancing",
+       "url": "",
+       "loc": "Neptune Skating Center"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-19",
+     "items": [
+      {
+       "time": "4:30 p.m.",
+       "t": "Ogden Trails Network Committee Meeting",
+       "url": "",
+       "loc": "2549 Washington Blvd."
+      },
+      {
+       "time": "5:30 p.m.",
+       "t": "WSU Dance: The Field - Eccles",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Huntsville Town Council meeting",
+       "url": "https://huntsvilleutah.gov/upcoming-events",
+       "loc": "Huntsville Town Hall"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Free live music & ice cream at Z's Sweets",
+       "url": "",
+       "loc": "Z's Sweets"
+      },
+      {
+       "time": "6:30 p.m.",
+       "t": "Open Music Jam",
+       "url": "https://www.mountainartsandmusic.org/",
+       "loc": "Mountain Arts and Music Art Space"
+      },
+      {
+       "time": "7:30 p.m.",
+       "t": "Clytie Adams Nutcracker - Austad",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "8:30 p.m.",
+       "t": "Country Dancing",
+       "url": "",
+       "loc": "Neptune Skating Center"
+      }
+     ]
+    }
+   ],
+   "weather": [
+    {
+     "type": "weekly",
+     "date": "2026-11-08T22:20:00-07:00",
+     "title": "Ogden Valley weather: week of Nov. 9",
+     "summary": "A dry, mild week is forecast for Eden, Liberty and Huntsville. Highs of 59–63°, sunny to partly sunny all week. Lows of 33–36°, with Tuesday and Wednesday nights dropping to about 33°, near freezing. No rain or snow is forecast Monday through Saturday. Next weekend, a cooler, wetter turn is possible. On the colder nights, disconnect garden hoses and cover tender plants. It's a good week to finish fall yard work and get snow tires and winter gear ready.",
+     "image": "weather-2026-11-09-briefing.png",
+     "alt": "Ben's Weather Desk, week of Nov. 9: Ben the moose at the news desk, with the 7-day forecast below: dry Monday through Thursday, highs 58 to 63, lows 33 to 36, a small rain chance Friday and Saturday and 36% Sunday.",
+     "source": "National Weather Service forecast for the Eden, Liberty and Huntsville area, issued 11:31 a.m. MST Nov. 8, 2026"
+    },
+    {
+     "type": "weekly",
+     "date": "2026-11-06T13:15:00-07:00",
+     "title": "Ogden Valley weather: Nov. 6 to 11",
+     "summary": "A dry, sunny week: sunny to mostly sunny every day through Thursday, highs of 53–62°, no rain or snow in the forecast and calm wind. Frosty mornings with lows of 31–36°, coldest Friday night near 31°, so leave time to scrape the windshield. One lane of SR-39 in upper Ogden Canyon stays closed through April, with flaggers by day and a signal at night. Veterans Day, Wednesday, Nov. 11: sunny, high near 61°. A good week to finish yard cleanup, blow out sprinklers and put hoses away.",
+     "image": "weather-2026-11-06-briefing.png",
+     "alt": "Ogden Valley weather briefing for Nov. 6 to 11: a six-day forecast, all sunny and dry, plus boxes on a dry sunny week, frosty mornings, the Ogden Canyon lane closure, Veterans Day, and a good-week-to list.",
+     "source": "National Weather Service point forecast for the Eden, Liberty and Huntsville area, issued 11:31 a.m. Nov. 6, 2026; UDOT Traffic (SR-39)"
+    }
+   ],
+   "roads": [
+    {
+     "title": "Hwy 166 fiber work · one-way with flaggers",
+     "text": "Started Wednesday, Oct. 28, at 8 a.m. Estimated to last about 2.5 weeks, into mid-November.",
+     "image": "roadwork-2026-11-09-hwy-166-fiber.png",
+     "alt": "Hwy 166 road work: fiber installation on the shoulder from 2480 N Hwy 162 to 2640 E 2300 N, one-way traffic with flaggers, about 5-minute delays, started Oct. 28 for about 2.5 weeks"
+    },
+    {
+     "title": "Ogden Canyon lane closure (SR-39)",
+     "text": "New start date: as early as Monday, Nov. 2. UDOT now lists the closure starting Nov. 2 and running through April 2027 (it was first set for Oct. 26). Dates can still change, so check udottraffic.utah.gov before you drive.",
+     "image": "roadwork-2026-11-02-ogden-canyon-pipeline.png",
+     "alt": "Ogden Canyon lane closure: one lane of SR-39 closed for about a quarter mile between The Oaks Restaurant and the Ogden Canyon Water Treatment Plant, alternating traffic 24/7, 5 to 10 minute delays, as early as Nov. 2, 2026 through April 2027"
+    }
+   ],
+   "fresh": [],
+   "jobs": [],
+   "spot": {
+    "image": "spot-2026-11-05.jpg",
+    "hint": "Somewhere in Ogden Valley, a bird keeps watch over the coffee. Where are we?"
+   },
+   "winner": {
+    "image": "photo-2026-10-carla-r-icebox-canyon.jpg",
+    "title": "Sunset at Icebox Canyon",
+    "name": "Carla R"
+   },
+   "sponsors": [
+    {
+     "name": "Yes, I Can Fix That",
+     "link": "https://icanfixthatut.com",
+     "line": "Veteran-owned handyman serving all of Ogden Valley: drywall, doors, home maintenance and DIY classes."
+    }
+   ],
+   "forms": {
+    "event": "https://docs.google.com/forms/d/e/1FAIpQLSdq-tr_1dUMWJvoD06p9oZAXQWuK5-SnkucboHFwVEFmeZSZg/viewform",
+    "photo": "https://docs.google.com/forms/d/e/1FAIpQLSe9nppeo6jqEILr9SLywvxZ3jgXA-7V0RiaQ3DSvzk0VCst8A/viewform",
+    "business": "https://docs.google.com/forms/d/e/1FAIpQLSc-jh9kRzlErQ1jv698LT4prqLnCWFkdoJy6Bj5KcUeCZCL7A/viewform",
+    "jobs": "https://docs.google.com/forms/d/e/1FAIpQLScOzyUB6XfbZWbwNCMR1FIAjCyWWt-aQFQSGKN2pR5YJvtwkw/viewform",
+    "report": "https://docs.google.com/forms/d/e/1FAIpQLSeeDFHHAo4biQ0t4BzoG0TmCzcFgXUc5iBN33pOrKYpmK1Eng/viewform"
+   }
+  },
   {
    "start": "2026-11-05",
    "end": "2026-11-12",
