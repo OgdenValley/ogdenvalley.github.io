@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-11T21:57:23.688Z",
+ "updated": "2026-11-12T02:58:35.775Z",
  "items": [
+  {
+   "t": 1794452315774,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Wednesday moderate · Thursday moderate · Friday moderate",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1794434243688,
    "src": "Utah Air Quality",
@@ -14,13 +21,6 @@
    "text": "Crash Update: NB I-15 is now open at MP 324 (Park Lane, Farmington). Expect residual delays in the area.",
    "kind": "road",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794352836735,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Tuesday moderate · Wednesday moderate · Thursday moderate",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
@@ -30,17 +30,17 @@
   },
   "al": {},
   "cond": {
+   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
    "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
    "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
+   "SR-226 to Snowbasin#336": "Dry · none",
    "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
    "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none",
    "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none",
-   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
    "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
    "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
    "SR-158 to Powder Mountain#334": "Dry · none",
-   "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none",
-   "SR-226 to Snowbasin#336": "Dry · none"
+   "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none"
   },
   "pass": {},
   "ice": {
@@ -56,6 +56,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "November 11, 2026 8:19 AM|Moderate/Unrestricted,Moderate/Unrestricted,Moderate/Unrestricted"
+  "air": "November 11, 2026 3:33 PM|Moderate/Unrestricted,Moderate/Unrestricted,Moderate/Unrestricted"
  }
 }

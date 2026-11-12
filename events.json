@@ -1,19 +1,9 @@
 {
- "updated": "2026-11-11T21:57:04.911Z",
+ "updated": "2026-11-12T02:58:24.013Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1794348000000,
-     "e": 1794355200000,
-     "t": "Open Art Studio",
-     "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
-     "allDay": false,
-     "desc": "Artists of all abilities welcome to come do art. Bring your own work in progress and learn from the on-site instructor. Watercolor supplies provided. 2nd and 4th Tuesdays.",
-     "url": "https://www.mountainartsandmusic.org/",
-     "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
-    },
     {
      "s": 1794445200000,
      "e": 1794454200000,
@@ -866,16 +856,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1794349800000,
-     "e": 1794357000000,
-     "t": "Ogden City Council Work Session",
-     "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1794351600000,
      "e": 1794366000000,
      "t": "RMBRA Jackpots",
@@ -883,16 +863,6 @@
      "allDay": false,
      "desc": "Time Onlys: 4pm\nRaces: 6:30pm\n\nFor more information and events:\nwww.facebook.com…",
      "url": "https://www.facebook.com/RMBRARockyMountainBarrelRacing/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794357000000,
-     "e": 1794364200000,
-     "t": "Free Community Craft night",
-     "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Whether you paint, sew, draw, sculpt, write, knit, crochet, bead, or whatever your creative pursuit, bring your supplies and chat with new friends while we work on our latest projects. During the last 15–20 minutes of the event, everyone will be invited to share what they’ve been working on. If you’ve been struggling with a part of your project or would like to ask the group for feedback, this is the perfect time. This is an open forum for sharing ideas, offering support, and getting help from fellow makers.",
-     "url": "",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -1107,8 +1077,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1117,8 +1087,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1267,8 +1237,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1277,8 +1247,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3401,16 +3371,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1794349800000,
-    "e": 1794357000000,
-    "t": "Ogden City Council Work Session",
-    "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1794351600000,
     "e": 1794366000000,
     "t": "RMBRA Jackpots",
@@ -3418,16 +3378,6 @@
     "allDay": false,
     "desc": "Time Onlys: 4pm\nRaces: 6:30pm\n\nFor more information and events:\nwww.facebook.com…",
     "url": "https://www.facebook.com/RMBRARockyMountainBarrelRacing/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794357000000,
-    "e": 1794364200000,
-    "t": "Free Community Craft night",
-    "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Whether you paint, sew, draw, sculpt, write, knit, crochet, bead, or whatever your creative pursuit, bring your supplies and chat with new friends while we work on our latest projects. During the last 15–20 minutes of the event, everyone will be invited to share what they’ve been working on. If you’ve been struggling with a part of your project or would like to ask the group for feedback, this is the perfect time. This is an open forum for sharing ideas, offering support, and getting help from fellow makers.",
-    "url": "",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4414,8 +4364,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4424,8 +4374,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4454,8 +4404,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4464,8 +4414,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
