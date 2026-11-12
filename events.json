@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-12T02:58:24.013Z",
+ "updated": "2026-11-12T11:06:34.225Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -856,36 +856,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1794351600000,
-     "e": 1794366000000,
-     "t": "RMBRA Jackpots",
-     "loc": "Golden Spike Event Center, Outdoor Stadium, 1000 North 1200 West, Ogden, UT 84404",
-     "allDay": false,
-     "desc": "Time Onlys: 4pm\nRaces: 6:30pm\n\nFor more information and events:\nwww.facebook.com…",
-     "url": "https://www.facebook.com/RMBRARockyMountainBarrelRacing/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794358800000,
-     "e": 1794369600000,
-     "t": "Ogden City Council Meeting",
-     "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794364200000,
-     "e": 1794371400000,
-     "t": "Wind and Percussion Chamber Music",
-     "loc": "Val A. Browning Center | Garrison Choral Room",
-     "allDay": false,
-     "desc": "An engaging evening of chamber music showcasing wind and percussion instruments in intimate ensemble settings.",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1794409200000,
      "e": 1794416400000,
      "t": "Veterans Day Hike: Coldwater Canyon",
@@ -1077,8 +1047,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1087,8 +1057,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1237,8 +1207,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1247,8 +1217,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3371,36 +3341,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1794351600000,
-    "e": 1794366000000,
-    "t": "RMBRA Jackpots",
-    "loc": "Golden Spike Event Center, Outdoor Stadium, 1000 North 1200 West, Ogden, UT 84404",
-    "allDay": false,
-    "desc": "Time Onlys: 4pm\nRaces: 6:30pm\n\nFor more information and events:\nwww.facebook.com…",
-    "url": "https://www.facebook.com/RMBRARockyMountainBarrelRacing/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794358800000,
-    "e": 1794369600000,
-    "t": "Ogden City Council Meeting",
-    "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794364200000,
-    "e": 1794371400000,
-    "t": "Wind and Percussion Chamber Music",
-    "loc": "Val A. Browning Center | Garrison Choral Room",
-    "allDay": false,
-    "desc": "An engaging evening of chamber music showcasing wind and percussion instruments in intimate ensemble settings.",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1794447000000,
     "e": 1794450600000,
     "t": "Yoga",
@@ -4313,16 +4253,6 @@
   ],
   "treehouse": [
    {
-    "s": 1794364200000,
-    "e": 1794369600000,
-    "t": "Wind & Percussion Chamber Music Concert - 136",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
     "s": 1794448800000,
     "e": 1794457800000,
     "t": "WSU Theatre: Much Ado About Nothing - Allred",
@@ -4364,8 +4294,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4374,8 +4304,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4404,8 +4334,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4414,8 +4344,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
