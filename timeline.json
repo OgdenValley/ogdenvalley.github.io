@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-13T16:22:25.233Z",
+ "updated": "2026-11-13T22:37:45.754Z",
  "items": [
+  {
+   "t": 1794609465754,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Friday good · Saturday good · Sunday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1794586945232,
    "src": "UDOT alert",
@@ -42,20 +49,6 @@
    "text": "Weber County forecast: Thursday good · Friday good · Saturday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1794509759000,
-   "src": "UDOT alert",
-   "text": "Crash Update: SB I-15 at MP 322 (SR-177 Interchange, Farmington) blocking 1 right lane. Expect delays and use an alternate route.",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794509759000,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Thursday good · Friday good · Saturday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
@@ -63,21 +56,19 @@
    "10148": "I-84|(updated 11/3/26) Two travel lanes have been restored in each direction over the bridge region. Construction will suspend starting Nov. 26 Westbound single lane closure | late Winter/early Spring 2027(TBA) - Winter 2027 | Day & Night Construction resumes. All traffic will return to the crossover configuration on the ne",
    "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at"
   },
-  "al": {
-   "2702": 1
-  },
+  "al": {},
   "cond": {
-   "SR-226 to Snowbasin#336": "Dry · none",
+   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
    "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
+   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
    "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
    "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
-   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
    "SR-158 to Powder Mountain#334": "Dry · none",
+   "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none",
    "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none",
-   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none",
+   "SR-226 to Snowbasin#336": "Dry · none",
    "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
-   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
-   "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none"
+   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none"
   },
   "pass": {},
   "ice": {
@@ -93,6 +84,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "November 13, 2026 8:30 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "November 13, 2026 3:31 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }

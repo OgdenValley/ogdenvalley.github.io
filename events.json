@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T16:21:56.795Z",
+ "updated": "2026-11-13T22:37:13.359Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -847,16 +847,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1794510000000,
-     "e": 1794511800000,
-     "t": "Jessica Greenberg Lecture - Allred",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
      "s": 1794529800000,
      "e": 1794538800000,
      "t": "Author Celebration with Mac Barnett",
@@ -914,6 +904,16 @@
      "allDay": true,
      "desc": "Create your own beautiful mosaic lamp in a fun, hands-on workshop! Choose your favorite colors and patterns, learn the traditional mosaic technique, and take home a unique lamp made by you.",
      "url": "https://artmasterclass.global/products/mosaic-classes-ogden",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1794553200000,
+     "e": 1797663600000,
+     "t": "Hilton Garden Inn Community Food Drive",
+     "loc": "Hilton Garden Inn, Ogden, 2271 S. Washington Blvd., Ogden, Ut. 84401",
+     "allDay": true,
+     "desc": "A Season of Giving: Community Food Drive at Hilton Garden Inn Ogden\n\nJoin Hilton Garden Inn Ogden this holiday season as we come together to support our neighbors in need!\n\nFrom **November 9 through December 18, 2026**, we're hosting a community food drive benefiting **Joyce Hansen Hall Food Bank**, part of Catholic Community Services of Northern Utah.\n\nWe invite local residents, businesses, hotel guests, and visitors to help us fill our donation barrels with nonperishable food items. Every contribution, big or small, helps support individuals and families facing food insecurity in our communi",
+     "url": "https://www.hilton.com/en/hotels/ogdwbgi-hilton-garden-inn-ogden-ut/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -988,8 +988,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -998,8 +998,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1148,8 +1148,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1158,8 +1158,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1265,6 +1265,16 @@
      "desc": "",
      "url": "",
      "src": "Treehouse Children's Museum"
+    },
+    {
+     "s": 1795046400000,
+     "e": 1795051800000,
+     "t": "Annual Board Meeting",
+     "loc": "Ogden Nature Center Education Building, 966 W. 12th Street, Ogden, Utah",
+     "allDay": false,
+     "desc": "The Ogden Nature Center invites you to attend our annual meeting on Wednesday, November 18th.\n\n5:00pm Refreshments\n5:30pm Meeting\n\nRSVP: officemgr@ogdennaturecenter.org",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1795046400000,
@@ -1988,6 +1998,16 @@
     },
     {
      "s": 1796086800000,
+     "e": 1796101200000,
+     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+     "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+     "url": "www.TheCarriageEstablishment.com",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796086800000,
      "e": 1796094000000,
      "t": "Mystic Mondays: tarot readings",
      "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
@@ -2047,6 +2067,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1796173200000,
+     "e": 1796187600000,
+     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+     "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+     "url": "www.TheCarriageEstablishment.com",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1796178600000,
      "e": 1796185800000,
      "t": "Carol of Drums Festival",
@@ -2074,6 +2104,16 @@
      "allDay": false,
      "desc": "Ogden City Planning Commission",
      "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796259600000,
+     "e": 1796274000000,
+     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+     "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+     "url": "www.TheCarriageEstablishment.com",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -2115,6 +2155,16 @@
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1796346000000,
+     "e": 1796360400000,
+     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+     "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+     "url": "www.TheCarriageEstablishment.com",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796346000000,
@@ -2187,6 +2237,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1796410800000,
+     "e": 1796439600000,
+     "t": "Holiday Art Market",
+     "loc": "Studio 2580, Eccles Art Center, 2580 Jefferson Ave, Ogden UT 84401",
+     "allDay": false,
+     "desc": "Kick off your holiday shopping with eight area artists on December 4th (12-8 pm) and 5th (12-6:30 pm) at Studio 2580 behind the Eccles Art Center. You'll find handcrafted jewelry, pottery, paintings, metal art, and other unique items for that special person or yourself. The Holiday Art Market will also feature a Japanese model train display that you won't want to miss.",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1796430600000,
      "e": 1796436000000,
      "t": "Steppin' The Ogden Way dance class",
@@ -2195,6 +2255,16 @@
      "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1796432400000,
+     "e": 1796446800000,
+     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+     "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+     "url": "www.TheCarriageEstablishment.com",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796432400000,
@@ -2298,6 +2368,16 @@
     },
     {
      "s": 1796497200000,
+     "e": 1796526000000,
+     "t": "Holiday Art Market",
+     "loc": "Studio 2580, Eccles Art Center, 2580 Jefferson Ave, Ogden UT 84401",
+     "allDay": false,
+     "desc": "Kick off your holiday shopping with eight area artists on December 4th (12-8 pm) and 5th (12-6:30 pm) at Studio 2580 behind the Eccles Art Center. You'll find handcrafted jewelry, pottery, paintings, metal art, and other unique items for that special person or yourself. The Holiday Art Market will also feature a Japanese model train display that you won't want to miss.",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796497200000,
      "e": 1796503500000,
      "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
      "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
@@ -2315,6 +2395,16 @@
      "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1796518800000,
+     "e": 1796533200000,
+     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+     "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+     "url": "www.TheCarriageEstablishment.com",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796518800000,
@@ -2387,6 +2477,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1796605200000,
+     "e": 1796619600000,
+     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+     "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+     "url": "www.TheCarriageEstablishment.com",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1796670000000,
      "e": 1796673600000,
      "t": "Parent Cafe",
@@ -2394,6 +2494,16 @@
      "allDay": false,
      "desc": "Safe space for parents to share, connect, and learn from each other. Each month is a different topic.\nFree Refreshments and Free Childcare for ages 0-11 (Must schedule in advance and complete paperwork)\nEmail at inquiry@fscogden.org or call us 801-393-3113\nAugust 3 - Building Structure and Routine at Home\nSeptember 14 - You are Not Alone - The Village Returns\nOctober 5 - Haunted Tales and Parenting WINS\nNovember 2 - Pulling the Ones You Love Closer - Making Your Home a Refuge\nDecember 7 - Resilience, Calm the Stress Down",
      "url": "https://www.eventbrite.com/cc/parent-cafes-special-events-4839868?utm-campaign=social&utm-content=creatorshare&utm-medium=discovery&utm-term=odclsxcollection&utm-source=cp&aff=escb",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796691600000,
+     "e": 1796706000000,
+     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+     "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+     "url": "www.TheCarriageEstablishment.com",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -2447,64 +2557,14 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1796769000000,
-     "e": 1796776200000,
-     "t": "Ogden City Council Work Session",
-     "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1796776200000,
-     "e": 1796783400000,
-     "t": "Free Community Craft night",
-     "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Whether you paint, sew, draw, sculpt, write, knit, crochet, bead, or whatever your creative pursuit, bring your supplies and chat with new friends while we work on our latest projects. During the last 15–20 minutes of the event, everyone will be invited to share what they’ve been working on. If you’ve been struggling with a part of your project or would like to ask the group for feedback, this is the perfect time. This is an open forum for sharing ideas, offering support, and getting help from fellow makers.",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1796778000000,
-     "e": 1796788800000,
-     "t": "Ogden City Council Meeting",
-     "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1796781600000,
-     "e": 1796788800000,
-     "t": "Caleb Chapman's Cool Yule",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ft. The Crescent Super Band - “Special Guests To Be Announced”\n\nA holiday concert featuring jazz and big band holiday stylings of the wildly popular Crescent Super Band, and other killer bands from Caleb Chapman’s Soundhouse. Twenty-five teenagers from Utah can make a lot of noise – especially when they happen to be members of the Crescent Super Band. Under the direction of Grammy-nominated founder Caleb Chapman, the band has stunned audiences worldwide, from New York to the Netherlands. With a youthful energy and nearly unbelievable performance level, the band has frequently been hailed as th",
-     "url": "https://ogdenpet.com/event/caleb-chapmans-cool-yule-2026/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1796783400000,
-     "e": 1796790600000,
-     "t": "Christmas with BYU Vocal Point & Noteworthy",
-     "loc": "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403",
+     "e": 1796790000000,
+     "t": "ONOG: Christmas with BYU Vocal Point & Noteworthy - Austad",
+     "loc": "",
      "allDay": false,
-     "desc": "Christmas with BYU Vocal Point and Noteworthy in Ogden is a double bill of the two best collegiate a cappella ensembles on the planet, each bringing their own Christmas set to the Browning Center at WSU. Carols rearranged until they sound new, Christmas pop built from a bass line up, and a room carried by nothing but voices.",
-     "url": "https://www.onstageogden.org/show-item/byu-vocal-point-noteworthy-christmas/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1796866200000,
-     "e": 1796869800000,
-     "t": "Yoga",
-     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
-     "url": "https://weberpl.events.mylibrary.digital/",
-     "src": "Ogden Area Events (Visit Ogden)"
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1796873400000,
@@ -2535,16 +2595,6 @@
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
      "src": "Weekly regular"
-    },
-    {
-     "s": 1796990400000,
-     "e": 1797001200000,
-     "t": "Dinos in the Snow",
-     "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Join us for our annual Christmas event at the Ogden Dinosaur Park! Settle in with some hot cocoa, explore our arts and crafts, enjoy twinkling lights, and get your holiday photos.",
-     "url": "https://dinosaurpark.org/dinos-in-the-snow/",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1797004800000,
@@ -2618,16 +2668,6 @@
     },
     {
      "s": 1797040800000,
-     "e": 1797048900000,
-     "t": "Imagine Ballet Theatre Presents: The Nutcracker",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
-     "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1797040800000,
      "e": 1797048000000,
      "t": "Friday Night Jazz",
      "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
@@ -2635,26 +2675,6 @@
      "desc": "Free show, all ages. Every Friday.",
      "url": "",
      "src": "Weekly regular"
-    },
-    {
-     "s": 1797076800000,
-     "e": 1797087600000,
-     "t": "Dinos in the Snow",
-     "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Join us for our annual Christmas event at the Ogden Dinosaur Park! Settle in with some hot cocoa, explore our arts and crafts, enjoy twinkling lights, and get your holiday photos.",
-     "url": "https://dinosaurpark.org/dinos-in-the-snow/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1797105600000,
-     "e": 1797113700000,
-     "t": "Imagine Ballet Theatre Presents: The Nutcracker",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
-     "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1797109200000,
@@ -2665,16 +2685,6 @@
      "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
      "url": "",
      "src": "Weekly regular"
-    },
-    {
-     "s": 1797123600000,
-     "e": 1797131700000,
-     "t": "Imagine Ballet Theatre Presents: The Nutcracker",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
-     "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1797123600000,
@@ -2698,13 +2708,13 @@
     },
     {
      "s": 1797129000000,
-     "e": 1797134400000,
-     "t": "Christmas Spectacular",
-     "loc": "Austad Theater @ WSU, 3750 Harrison Blvd, Ogden, UT 84408",
+     "e": 1797136200000,
+     "t": "ODT Christmas Spectacular - Austad",
+     "loc": "",
      "allDay": false,
-     "desc": "The return of the hit of the last two years, starring David Osmond, loved by critics and audiences.\nWhy go to endless Christmas productions when you can get your complete Holiday Fix at Odyssey Dance Theatre's Christmas Spectacular, SPECTACULAR?\nSee excerpts from A Christmas Carol, It's A Wonderful Life, The Nutcracker, Elf, A Christmas Story, White Christmas and the Rockettes- just to name a few!",
-     "url": "https://weber.evenue.net/events/C2",
-     "src": "Ogden Area Events (Visit Ogden)"
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1797181200000,
@@ -3332,6 +3342,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1794553200000,
+    "e": 1797663600000,
+    "t": "Hilton Garden Inn Community Food Drive",
+    "loc": "Hilton Garden Inn, Ogden, 2271 S. Washington Blvd., Ogden, Ut. 84401",
+    "allDay": true,
+    "desc": "A Season of Giving: Community Food Drive at Hilton Garden Inn Ogden\n\nJoin Hilton Garden Inn Ogden this holiday season as we come together to support our neighbors in need!\n\nFrom **November 9 through December 18, 2026**, we're hosting a community food drive benefiting **Joyce Hansen Hall Food Bank**, part of Catholic Community Services of Northern Utah.\n\nWe invite local residents, businesses, hotel guests, and visitors to help us fill our donation barrels with nonperishable food items. Every contribution, big or small, helps support individuals and families facing food insecurity in our communi",
+    "url": "https://www.hilton.com/en/hotels/ogdwbgi-hilton-garden-inn-ogden-ut/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1794574800000,
     "e": 1794585600000,
     "t": "Cup Hop 2026",
@@ -3479,6 +3499,16 @@
     "allDay": false,
     "desc": "WSU string area students will perform exciting chamber music gems in various groups, including string quartets and trios. Collaborating and performing on their own, the students will be sharing the repertoire they’ve prepared throughout the semester.",
     "url": "https://www.weber.edu/music/chamber-orchestra.html",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1795046400000,
+    "e": 1795051800000,
+    "t": "Annual Board Meeting",
+    "loc": "Ogden Nature Center Education Building, 966 W. 12th Street, Ogden, Utah",
+    "allDay": false,
+    "desc": "The Ogden Nature Center invites you to attend our annual meeting on Wednesday, November 18th.\n\n5:00pm Refreshments\n5:30pm Meeting\n\nRSVP: officemgr@ogdennaturecenter.org",
+    "url": "",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -3822,6 +3852,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1796086800000,
+    "e": 1796101200000,
+    "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+    "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+    "url": "www.TheCarriageEstablishment.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1796090400000,
     "e": 1796097600000,
     "t": "WSU Guitar Ensembles Concert",
@@ -3862,6 +3902,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1796173200000,
+    "e": 1796187600000,
+    "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+    "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+    "url": "www.TheCarriageEstablishment.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1796178600000,
     "e": 1796185800000,
     "t": "Carol of Drums Festival",
@@ -3882,6 +3932,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1796259600000,
+    "e": 1796274000000,
+    "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+    "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+    "url": "www.TheCarriageEstablishment.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1796261400000,
     "e": 1796265000000,
     "t": "Yoga",
@@ -3889,6 +3949,16 @@
     "allDay": false,
     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
     "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796346000000,
+    "e": 1796360400000,
+    "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+    "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+    "url": "www.TheCarriageEstablishment.com",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -3929,6 +3999,26 @@
     "allDay": true,
     "desc": "Join us in celebrating the creativity, talent, and hard work of our graduating art and design students at this capstone showcase. Featuring a diverse range of projects and artistic perspectives, the exhibition highlights the innovative work students have developed throughout their academic journey and offers a glimpse into the next generation of artists and designers.",
     "url": "https://www.weber.edu/shawgallery/upcoming.html",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796410800000,
+    "e": 1796439600000,
+    "t": "Holiday Art Market",
+    "loc": "Studio 2580, Eccles Art Center, 2580 Jefferson Ave, Ogden UT 84401",
+    "allDay": false,
+    "desc": "Kick off your holiday shopping with eight area artists on December 4th (12-8 pm) and 5th (12-6:30 pm) at Studio 2580 behind the Eccles Art Center. You'll find handcrafted jewelry, pottery, paintings, metal art, and other unique items for that special person or yourself. The Holiday Art Market will also feature a Japanese model train display that you won't want to miss.",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796432400000,
+    "e": 1796446800000,
+    "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+    "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+    "url": "www.TheCarriageEstablishment.com",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -3983,12 +4073,32 @@
    },
    {
     "s": 1796497200000,
+    "e": 1796526000000,
+    "t": "Holiday Art Market",
+    "loc": "Studio 2580, Eccles Art Center, 2580 Jefferson Ave, Ogden UT 84401",
+    "allDay": false,
+    "desc": "Kick off your holiday shopping with eight area artists on December 4th (12-8 pm) and 5th (12-6:30 pm) at Studio 2580 behind the Eccles Art Center. You'll find handcrafted jewelry, pottery, paintings, metal art, and other unique items for that special person or yourself. The Holiday Art Market will also feature a Japanese model train display that you won't want to miss.",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796497200000,
     "e": 1796503500000,
     "t": "Julie Moffitt Ballet School's The Nutcracker Ballet",
     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
     "allDay": false,
     "desc": "It's the one event, the one time a year ... It's the Nutcracker! Be part of America's favorite holiday celebration and tradition...and journey with Clara as she travels to the Sugar Plum Fairy's Castle to the Land of the Sweets dancing to the beautiful and captivating music of Tchaikovsky. \"The Nutcracker Ballet\" is the height of the holiday tradition where families and friends of all ages will be delighted with Julie Moffitt Ballet School's performance where it is always new and always magical. Join us in the JMBS Nutcracker Ballet and step into the holiday tradition generations have loved. I",
     "url": "https://ogdenpet.com/events/category/series/jmbs-nutcracker-2026-1/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796518800000,
+    "e": 1796533200000,
+    "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+    "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+    "url": "www.TheCarriageEstablishment.com",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4042,6 +4152,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1796605200000,
+    "e": 1796619600000,
+    "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+    "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+    "url": "www.TheCarriageEstablishment.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1796670000000,
     "e": 1796673600000,
     "t": "Parent Cafe",
@@ -4049,6 +4169,16 @@
     "allDay": false,
     "desc": "Safe space for parents to share, connect, and learn from each other. Each month is a different topic.\nFree Refreshments and Free Childcare for ages 0-11 (Must schedule in advance and complete paperwork)\nEmail at inquiry@fscogden.org or call us 801-393-3113\nAugust 3 - Building Structure and Routine at Home\nSeptember 14 - You are Not Alone - The Village Returns\nOctober 5 - Haunted Tales and Parenting WINS\nNovember 2 - Pulling the Ones You Love Closer - Making Your Home a Refuge\nDecember 7 - Resilience, Calm the Stress Down",
     "url": "https://www.eventbrite.com/cc/parent-cafes-special-events-4839868?utm-campaign=social&utm-content=creatorshare&utm-medium=discovery&utm-term=odclsxcollection&utm-source=cp&aff=escb",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796691600000,
+    "e": 1796706000000,
+    "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+    "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+    "url": "www.TheCarriageEstablishment.com",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4070,139 +4200,9 @@
     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
     "url": "https://weberpl.events.mylibrary.digital/",
     "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1796769000000,
-    "e": 1796776200000,
-    "t": "Ogden City Council Work Session",
-    "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1796776200000,
-    "e": 1796783400000,
-    "t": "Free Community Craft night",
-    "loc": "The Local Artisan Collective, 2371 Kiesel Ave, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Whether you paint, sew, draw, sculpt, write, knit, crochet, bead, or whatever your creative pursuit, bring your supplies and chat with new friends while we work on our latest projects. During the last 15–20 minutes of the event, everyone will be invited to share what they’ve been working on. If you’ve been struggling with a part of your project or would like to ask the group for feedback, this is the perfect time. This is an open forum for sharing ideas, offering support, and getting help from fellow makers.",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1796778000000,
-    "e": 1796788800000,
-    "t": "Ogden City Council Meeting",
-    "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1796781600000,
-    "e": 1796788800000,
-    "t": "Caleb Chapman's Cool Yule",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ft. The Crescent Super Band - “Special Guests To Be Announced”\n\nA holiday concert featuring jazz and big band holiday stylings of the wildly popular Crescent Super Band, and other killer bands from Caleb Chapman’s Soundhouse. Twenty-five teenagers from Utah can make a lot of noise – especially when they happen to be members of the Crescent Super Band. Under the direction of Grammy-nominated founder Caleb Chapman, the band has stunned audiences worldwide, from New York to the Netherlands. With a youthful energy and nearly unbelievable performance level, the band has frequently been hailed as th",
-    "url": "https://ogdenpet.com/event/caleb-chapmans-cool-yule-2026/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1796783400000,
-    "e": 1796790600000,
-    "t": "Christmas with BYU Vocal Point & Noteworthy",
-    "loc": "Browning Center at Weber State, 3848 Harrison Blvd, Ogden, UT 84403",
-    "allDay": false,
-    "desc": "Christmas with BYU Vocal Point and Noteworthy in Ogden is a double bill of the two best collegiate a cappella ensembles on the planet, each bringing their own Christmas set to the Browning Center at WSU. Carols rearranged until they sound new, Christmas pop built from a bass line up, and a room carried by nothing but voices.",
-    "url": "https://www.onstageogden.org/show-item/byu-vocal-point-noteworthy-christmas/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1796866200000,
-    "e": 1796869800000,
-    "t": "Yoga",
-    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
-    "url": "https://weberpl.events.mylibrary.digital/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1796990400000,
-    "e": 1797001200000,
-    "t": "Dinos in the Snow",
-    "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Join us for our annual Christmas event at the Ogden Dinosaur Park! Settle in with some hot cocoa, explore our arts and crafts, enjoy twinkling lights, and get your holiday photos.",
-    "url": "https://dinosaurpark.org/dinos-in-the-snow/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797040800000,
-    "e": 1797048900000,
-    "t": "Imagine Ballet Theatre Presents: The Nutcracker",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
-    "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797076800000,
-    "e": 1797087600000,
-    "t": "Dinos in the Snow",
-    "loc": "Ogden Dinosaur Park, 1544 Park Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Join us for our annual Christmas event at the Ogden Dinosaur Park! Settle in with some hot cocoa, explore our arts and crafts, enjoy twinkling lights, and get your holiday photos.",
-    "url": "https://dinosaurpark.org/dinos-in-the-snow/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797105600000,
-    "e": 1797113700000,
-    "t": "Imagine Ballet Theatre Presents: The Nutcracker",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
-    "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797123600000,
-    "e": 1797131700000,
-    "t": "Imagine Ballet Theatre Presents: The Nutcracker",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
-    "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797129000000,
-    "e": 1797134400000,
-    "t": "Christmas Spectacular",
-    "loc": "Austad Theater @ WSU, 3750 Harrison Blvd, Ogden, UT 84408",
-    "allDay": false,
-    "desc": "The return of the hit of the last two years, starring David Osmond, loved by critics and audiences.\nWhy go to endless Christmas productions when you can get your complete Holiday Fix at Odyssey Dance Theatre's Christmas Spectacular, SPECTACULAR?\nSee excerpts from A Christmas Carol, It's A Wonderful Life, The Nutcracker, Elf, A Christmas Story, White Christmas and the Rockettes- just to name a few!",
-    "url": "https://weber.evenue.net/events/C2",
-    "src": "Ogden Area Events (Visit Ogden)"
    }
   ],
   "treehouse": [
-   {
-    "s": 1794510000000,
-    "e": 1794511800000,
-    "t": "Jessica Greenberg Lecture - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
    {
     "s": 1794535200000,
     "e": 1794544200000,
@@ -4225,8 +4225,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4235,8 +4235,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4265,8 +4265,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4275,8 +4275,8 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
