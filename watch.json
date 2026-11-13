@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T07:56:55.156Z",
+ "updated": "2026-11-13T16:22:14.688Z",
  "needed": true,
  "since": "2026-11-10T23:20:28.151Z",
  "reasons": [
@@ -10,8 +10,8 @@
   },
   {
    "kind": "freeze",
-   "key": "freeze:2026-11-18",
-   "text": "Hard freeze: lows of 25° or colder on 1 night, as cold as 25° Wednesday night."
+   "key": "freeze:2026-11-18,2026-11-19",
+   "text": "Hard freeze: lows of 25° or colder on 2 nights, as cold as 22° Thursday night."
   },
   {
    "kind": "wet",
@@ -19,11 +19,11 @@
    "text": "Two wet days in a row: Friday 90% and Saturday 99%."
   }
  ],
- "forecastIssued": "2026-11-13T06:31:42+00:00",
+ "forecastIssued": "2026-11-13T08:11:46+00:00",
  "draft": {
-  "made": "2026-11-13T07:56:55.156Z",
-  "why": "New reason for a briefing: Snow is in the Valley forecast for Tuesday, Wednesday, Thursday. Hard freeze: lows of 25° or colder on 1 night, as cold as 25° Wednesday night.",
+  "made": "2026-11-13T16:22:14.688Z",
+  "why": "New reason for a briefing: Hard freeze: lows of 25° or colder on 2 nights, as cold as 22° Thursday night.",
   "image": "weather-draft.png",
-  "forecastIssued": "2026-11-13T06:31:42+00:00"
+  "forecastIssued": "2026-11-13T08:11:46+00:00"
  }
 }
