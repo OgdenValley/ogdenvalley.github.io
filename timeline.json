@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-14T17:07:33.752Z",
+ "updated": "2026-11-14T21:29:36.317Z",
  "items": [
+  {
+   "t": 1794691776315,
+   "src": "UDOT",
+   "text": "Cleared: US 89. Crash, SB US-89 at South Weber Dr, South Weber. Left Lane (of 3 Lanes) Blocked, Left Shoulder Blocked.",
+   "kind": "clear",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1794676053751,
    "src": "UDOT",
@@ -103,8 +110,7 @@
  "seen": {
   "ev": {
    "10148": "I-84|(updated 11/3/26) Two travel lanes have been restored in each direction over the bridge region. Construction will suspend starting Nov. 26 Westbound single lane closure | late Winter/early Spring 2027(TBA) - Winter 2027 | Day & Night Construction resumes. All traffic will return to the crossover configuration on the ne",
-   "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at",
-   "38674": "US 89|Crash, SB US-89 at South Weber Dr, South Weber. Left Lane (of 3 Lanes) Blocked, Left Shoulder Blocked."
+   "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at"
   },
   "al": {},
   "cond": {

@@ -1,11 +1,18 @@
 {
- "updated": "2026-11-14T17:07:01.654Z",
+ "updated": "2026-11-14T21:29:18.028Z",
  "meetings": [
   {
    "body": "Weber County Commission",
    "title": "Meeting of the Board of Commissioners of Weber County Utah",
    "start": 1794859200000,
    "link": "https://www.utah.gov/pmn/sitemap/notice/1123390.html",
+   "source": "Utah Public Notice Website"
+  },
+  {
+   "body": "Ogden Valley City Council",
+   "title": "NOTICE OF OGDEN VALLEY COUNCIL WORK SESSION MEETING - November 16, 2026, 2pm",
+   "start": 1794862800000,
+   "link": "https://www.utah.gov/pmn/sitemap/notice/1123429.html",
    "source": "Utah Public Notice Website"
   },
   {
