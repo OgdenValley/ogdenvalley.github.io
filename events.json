@@ -1,19 +1,9 @@
 {
- "updated": "2026-11-13T22:37:13.359Z",
+ "updated": "2026-11-14T03:13:48.977Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1794520800000,
-     "e": 1794528000000,
-     "t": "Girls Volleyball & NAL: Snowcrest vs Mountain View (home)",
-     "loc": "Snowcrest Junior High, 2755 N Hwy 162, Eden, UT 84310",
-     "allDay": false,
-     "desc": "Home games. Come cheer on the Snowcrest Bears.",
-     "url": "https://www.wsd.net/o/sjh/events",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
     {
      "s": 1794600000000,
      "e": 1794607200000,
@@ -820,6 +810,15 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
+    },
+    {
+     "s": 1810166400000,
+     "e": 1810175400000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
     }
    ]
   },
@@ -845,26 +844,6 @@
      "desc": "November 6–7 & 11–14, 2026 | 7 PM\nMatinee: November 14 | 2 PM\n\nThe court of Messina is transformed to the French Quarter of New Orleans, where, against the backdrop of Mardi Gras, a merry war of wits masks a landscape of guarded hearts and sharp-edged pride.\n\nIn Shakespeare’s sparkling comedy, the cynics, Beatrice and Benedick, are perpetual sparring partners while the young lovers Claudio and Hero have their path to the altar sabotaged by the villainous Don John. A cruel deception threatens to ruin Hero’s reputation, as one couple is tricked into love and the other into scandal.\n\nRich with br",
      "url": "",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794529800000,
-     "e": 1794538800000,
-     "t": "Author Celebration with Mac Barnett",
-     "loc": "Treehouse Children's Museum, 347 22nd Street, Ogden, UT. 84401",
-     "allDay": false,
-     "desc": "Children and adults are invited to celebrate the magic and power of picture books with award-winning author Mac Barnett who was named the 2006 National Ambassador for Young People's Literature by the Library of Congress. Mac will talk in Treehouse's Storybook Theater. Children and parents can also participate in 5 activities throughout the Museum based some of our favorites books by Mac and have their books signed, too. Tickets are free but must be reserved in advance on the Treehouse website. Both children and adults need a ticket.",
-     "url": "https://www.treehousemuseum.org/events/87/author-party-with-mac-barnett",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794531600000,
-     "e": 1794538800000,
-     "t": "Free live music & ice cream at Z's Sweets",
-     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
-     "url": "",
-     "src": "Weekly regular"
     },
     {
      "s": 1794535200000,
@@ -988,8 +967,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -998,8 +977,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1148,8 +1127,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1158,8 +1137,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3312,16 +3291,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1794529800000,
-    "e": 1794538800000,
-    "t": "Author Celebration with Mac Barnett",
-    "loc": "Treehouse Children's Museum, 347 22nd Street, Ogden, UT. 84401",
-    "allDay": false,
-    "desc": "Children and adults are invited to celebrate the magic and power of picture books with award-winning author Mac Barnett who was named the 2006 National Ambassador for Young People's Literature by the Library of Congress. Mac will talk in Treehouse's Storybook Theater. Children and parents can also participate in 5 activities throughout the Museum based some of our favorites books by Mac and have their books signed, too. Tickets are free but must be reserved in advance on the Treehouse website. Both children and adults need a ticket.",
-    "url": "https://www.treehousemuseum.org/events/87/author-party-with-mac-barnett",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1794535200000,
     "e": 1794540600000,
     "t": "Winter's Tales: An Evening of Shakespeare, Music, Food, and Merriment!",
@@ -4225,8 +4194,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4235,8 +4204,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4265,16 +4234,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794715200000,
     "t": "DPAC Scrooge - Austad",
     "loc": "",
@@ -4284,9 +4243,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "s": 1794708000000,
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4297,6 +4256,16 @@
     "s": 1794969000000,
     "e": 1794978000000,
     "t": "String Chamber Music Fall Concert - 136",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",

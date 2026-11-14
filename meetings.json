@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T22:37:20.448Z",
+ "updated": "2026-11-14T03:13:54.483Z",
  "source": "Utah Public Notice Website (utah.gov/pmn)",
  "bodies": [
   {
@@ -539,30 +539,6 @@
    "link": "https://www.utah.gov/pmn/sitemap/notice/1119721.html"
   },
   {
-   "title": "Weber County Commission Work Session",
-   "start": 1793649600000,
-   "end": null,
-   "place": "2380 Washington Blvd., Chambers, Ogden, UT 84401",
-   "items": [
-    "Discussion and/or action for approval of minutes for the Commission Work Session held on October 12, 2026",
-    "Sheriff's Office Budget Update",
-    "Discussion regarding Quarterly Financial Information and Budget Changes",
-    "Discussion regarding when the Parks and Recreation donation is applicable if a property is rezoned",
-    "Discussion regarding Inland Port expansion and Ogden Airport Resolution",
-    "Discussion regarding DWQ Ogden Valley Wastewater Feasibility Study Agreement",
-    "Discussion regarding Ogden City CRA Participation Agreement - Wildcat Square",
-    "Closed session to discuss the purchase, exchange or lease of real property"
-   ],
-   "canceled": false,
-   "files": [],
-   "read": 1794609440448,
-   "id": "1119613",
-   "bodyId": 2167,
-   "body": "Weber County Commission",
-   "short": "County Commission",
-   "link": "https://www.utah.gov/pmn/sitemap/notice/1119613.html"
-  },
-  {
    "title": "Notice of Public Hearing for the Weber County Engineering Division",
    "start": 1793725200000,
    "end": 1792256400000,
@@ -827,6 +803,30 @@
    "link": "https://www.utah.gov/pmn/sitemap/notice/1121461.html"
   },
   {
+   "title": "Meeting of the Board of Commissioners of Weber County Utah",
+   "start": 1794859200000,
+   "end": 1794867300000,
+   "place": "2380 Washington Blvd, Weber County Commission Office, Ste. 360, Ogden, UT 84401",
+   "items": [
+    "Discussion and/or action for approval of minutes for the Commission Work Session held on October 19, 2026",
+    "Discussion regarding WCCF Medical and Mental Health Expansion",
+    "Closed Session to discuss the purchase, lease or exchange of real property",
+    "Discussion regarding Fuel Card Management",
+    "Discussion regarding Construction Contract for Weber Industrial Pond",
+    "Discussion regarding UTABA Dam Design Funds Request",
+    "Discussion regarding a request for impact fees",
+    "Discussion regarding Ogden City's Wildcat Square Project Area"
+   ],
+   "canceled": false,
+   "files": [],
+   "read": 1794626034483,
+   "id": "1123390",
+   "bodyId": 2167,
+   "body": "Weber County Commission",
+   "short": "County Commission",
+   "link": "https://www.utah.gov/pmn/sitemap/notice/1123390.html"
+  },
+  {
    "title": "Weber County Commission Meeting",
    "start": 1794934800000,
    "end": null,
@@ -847,7 +847,7 @@
    ],
    "canceled": false,
    "files": [],
-   "read": 1794609440448,
+   "read": 1794626034483,
    "id": "1123272",
    "bodyId": 2167,
    "body": "Weber County Commission",
@@ -861,7 +861,7 @@
    "place": "2380 Washington Blvd., Commission Chambers, 1st Floor, Ogden, UT 84401",
    "canceled": false,
    "files": [],
-   "read": 1794609440448,
+   "read": 1794626034483,
    "id": "1120207",
    "bodyId": 2167,
    "body": "Weber County Commission",

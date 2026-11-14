@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-13T22:37:45.754Z",
+ "updated": "2026-11-14T03:14:01.061Z",
  "items": [
   {
    "t": 1794609465754,
@@ -28,27 +28,6 @@
    "text": "Cleared: US 89. Disabled Vehicle, SB Hwy 89 at I-84 (South Weber). No Lanes Blocked.",
    "kind": "clear",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794529372552,
-   "src": "UDOT",
-   "text": "Crash or incident: US 89. Disabled Vehicle, SB Hwy 89 at I-84 (South Weber). No Lanes Blocked.",
-   "kind": "crash",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794529372552,
-   "src": "UDOT alert",
-   "text": "Update: Disabled Vehicle, All lanes on SB US-89 at the I-84 Jct (South Weber) are back open. Residual delays remain in the area.",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794529372552,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Thursday good · Friday good · Saturday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
@@ -58,17 +37,17 @@
   },
   "al": {},
   "cond": {
-   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
    "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
    "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
    "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
    "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
-   "SR-158 to Powder Mountain#334": "Dry · none",
-   "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none",
    "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none",
-   "SR-226 to Snowbasin#336": "Dry · none",
    "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
-   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none"
+   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none",
+   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
+   "SR-158 to Powder Mountain#334": "Dry · none",
+   "SR-226 to Snowbasin#336": "Dry · none",
+   "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none"
   },
   "pass": {},
   "ice": {
