@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T03:13:48.977Z",
+ "updated": "2026-11-14T10:28:21.308Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -844,36 +844,6 @@
      "desc": "November 6–7 & 11–14, 2026 | 7 PM\nMatinee: November 14 | 2 PM\n\nThe court of Messina is transformed to the French Quarter of New Orleans, where, against the backdrop of Mardi Gras, a merry war of wits masks a landscape of guarded hearts and sharp-edged pride.\n\nIn Shakespeare’s sparkling comedy, the cynics, Beatrice and Benedick, are perpetual sparring partners while the young lovers Claudio and Hero have their path to the altar sabotaged by the villainous Don John. A cruel deception threatens to ruin Hero’s reputation, as one couple is tricked into love and the other into scandal.\n\nRich with br",
      "url": "",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794535200000,
-     "e": 1794540600000,
-     "t": "Winter's Tales: An Evening of Shakespeare, Music, Food, and Merriment!",
-     "loc": "Ogden Union Station - Browning Theater, 2501 Wall Ave, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "What exactly is WINTER’S TALES? ❄️\n\nImagine a winter night. A gathering of strangers. Food, drink, music, and stories waiting to be told.\n\nWINTER’S TALES is an original play with music, written by Jennifer Riley, weaving Shakespeare’s plays and sonnets together with winter-themed songs—some from Shakespeare’s works, others contemporary—to create one new, interconnected story.\n\nAs travelers gather to escape the cold, their stories begin to unfold. They become Shakespeare’s lovers, fools, dreamers, and kings, revealing something of themselves along the way.\n\nAnd this time, you’re part of the gat",
-     "url": "https://www.ogdenshakesfest.org/events/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794535200000,
-     "e": 1794544200000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1794540600000,
-     "e": 1794553200000,
-     "t": "Country Dancing",
-     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
-     "url": "",
-     "src": "Weekly regular"
     },
     {
      "s": 1794553200000,
@@ -3291,16 +3261,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1794535200000,
-    "e": 1794540600000,
-    "t": "Winter's Tales: An Evening of Shakespeare, Music, Food, and Merriment!",
-    "loc": "Ogden Union Station - Browning Theater, 2501 Wall Ave, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "What exactly is WINTER’S TALES? ❄️\n\nImagine a winter night. A gathering of strangers. Food, drink, music, and stories waiting to be told.\n\nWINTER’S TALES is an original play with music, written by Jennifer Riley, weaving Shakespeare’s plays and sonnets together with winter-themed songs—some from Shakespeare’s works, others contemporary—to create one new, interconnected story.\n\nAs travelers gather to escape the cold, their stories begin to unfold. They become Shakespeare’s lovers, fools, dreamers, and kings, revealing something of themselves along the way.\n\nAnd this time, you’re part of the gat",
-    "url": "https://www.ogdenshakesfest.org/events/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1794553200000,
     "e": 1794726000000,
     "t": "Mosaic Lamp Making Classes",
@@ -4173,16 +4133,6 @@
   ],
   "treehouse": [
    {
-    "s": 1794535200000,
-    "e": 1794544200000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
     "s": 1794618000000,
     "e": 1794625200000,
     "t": "Trans Awareness Week: Film Screening - 113",
@@ -4254,8 +4204,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4264,8 +4214,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
