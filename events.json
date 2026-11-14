@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-14T10:28:21.308Z",
+ "updated": "2026-11-14T17:06:57.990Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -866,16 +866,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1794574800000,
-     "e": 1794585600000,
-     "t": "Cup Hop 2026",
-     "loc": "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant",
-     "allDay": false,
-     "desc": "Collect. Sip. Protect.\nYear eight launches a fresh Cup Hop series across four November days at four local coffee shops. Buy the limited 2026 mug and your purchase powers nature education, safe habitats for wildlife, conservation, and habitat restoration for the community to enjoy.\nWhat you getLimited 2026 Cup Hop mugOne free drink during your pop-up visitSupport for a cause that keeps nature close Where & When –\nFour neighborhood shops, two back-to-back weekends in November.\nDates: November 5th, 6th, 12th and 13th\nTime and Locations:Grounds for Coffee – 3005 Harrison Blvd | Thursday 6 AM to 9 ",
-     "url": "https://www.ogdennaturecenter.org/cup-hop",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1794614400000,
      "e": 1794634200000,
      "t": "Ogden Big Lebowski Festival",
@@ -937,8 +927,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794628800000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794630600000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -947,8 +937,8 @@
     },
     {
      "s": 1794621600000,
-     "e": 1794630600000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794628800000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1097,8 +1087,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -1107,8 +1097,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -3281,16 +3271,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1794574800000,
-    "e": 1794585600000,
-    "t": "Cup Hop 2026",
-    "loc": "Grounds for Coffee – 3005 Harrison Blvd, Kaffe Merc – 1221 26th St, Coffee Links – 287 Park Ave, The Mercantile – 25th & Grant",
-    "allDay": false,
-    "desc": "Collect. Sip. Protect.\nYear eight launches a fresh Cup Hop series across four November days at four local coffee shops. Buy the limited 2026 mug and your purchase powers nature education, safe habitats for wildlife, conservation, and habitat restoration for the community to enjoy.\nWhat you getLimited 2026 Cup Hop mugOne free drink during your pop-up visitSupport for a cause that keeps nature close Where & When –\nFour neighborhood shops, two back-to-back weekends in November.\nDates: November 5th, 6th, 12th and 13th\nTime and Locations:Grounds for Coffee – 3005 Harrison Blvd | Thursday 6 AM to 9 ",
-    "url": "https://www.ogdennaturecenter.org/cup-hop",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1794614400000,
     "e": 1794634200000,
     "t": "Ogden Big Lebowski Festival",
@@ -4144,8 +4124,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794628800000,
-    "t": "DPAC Scrooge - Austad",
+    "e": 1794630600000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4154,8 +4134,8 @@
    },
    {
     "s": 1794621600000,
-    "e": 1794630600000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
+    "e": 1794628800000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4184,16 +4164,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794715200000,
-    "t": "DPAC Scrooge - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794717000000,
     "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
@@ -4203,9 +4173,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "s": 1794708000000,
+    "e": 1794715200000,
+    "t": "DPAC Scrooge - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4216,6 +4186,16 @@
     "s": 1794969000000,
     "e": 1794978000000,
     "t": "String Chamber Music Fall Concert - 136",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
