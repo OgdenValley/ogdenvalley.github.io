@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T17:10:13.887Z",
+ "updated": "2026-11-15T21:48:42.454Z",
  "items": [
   {
    "t": 1794762613887,
@@ -91,13 +91,6 @@
    "text": "Weber County forecast: Saturday good · Sunday good · Monday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1794691776315,
-   "src": "UDOT",
-   "text": "Cleared: US 89. Crash, SB US-89 at South Weber Dr, South Weber. Left Lane (of 3 Lanes) Blocked, Left Shoulder Blocked.",
-   "kind": "clear",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {

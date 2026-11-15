@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T17:09:44.835Z",
+ "updated": "2026-11-15T21:48:19.479Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -834,16 +834,6 @@
      "desc": "A Season of Giving: Community Food Drive at Hilton Garden Inn Ogden\n\nJoin Hilton Garden Inn Ogden this holiday season as we come together to support our neighbors in need!\n\nFrom **November 9 through December 18, 2026**, we're hosting a community food drive benefiting **Joyce Hansen Hall Food Bank**, part of Catholic Community Services of Northern Utah.\n\nWe invite local residents, businesses, hotel guests, and visitors to help us fill our donation barrels with nonperishable food items. Every contribution, big or small, helps support individuals and families facing food insecurity in our communi",
      "url": "https://www.hilton.com/en/hotels/ogdwbgi-hilton-garden-inn-ogden-ut/",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794675600000,
-     "e": 1794682800000,
-     "t": "DPAC Scrooge - Austad",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1794686400000,
@@ -4252,16 +4242,6 @@
    }
   ],
   "treehouse": [
-   {
-    "s": 1794675600000,
-    "e": 1794682800000,
-    "t": "DPAC Scrooge - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
    {
     "s": 1794690000000,
     "e": 1794699000000,
