@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-15T09:25:09.779Z",
+ "updated": "2026-11-15T17:10:13.887Z",
  "items": [
+  {
+   "t": 1794762613887,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Sunday good · Monday good · Tuesday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1794734709775,
    "src": "UDOT",
@@ -91,97 +98,6 @@
    "text": "Cleared: US 89. Crash, SB US-89 at South Weber Dr, South Weber. Left Lane (of 3 Lanes) Blocked, Left Shoulder Blocked.",
    "kind": "clear",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794676053751,
-   "src": "UDOT",
-   "text": "Crash or incident: US 89. Crash, SB US-89 at South Weber Dr, South Weber. Left Lane (of 3 Lanes) Blocked, Left Shoulder Blocked.",
-   "kind": "crash",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794676053751,
-   "src": "UDOT",
-   "text": "US-89 From Lagoon to Jct. SR-193: wet · none (rain)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794676053751,
-   "src": "UDOT",
-   "text": "SR-167 Trappers Loop I-84 to Huntsville: wet · none (rain)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794676053751,
-   "src": "UDOT",
-   "text": "SR-226 to Snowbasin: wet · none (mixed rain and snow)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794676053751,
-   "src": "UDOT",
-   "text": "I-84 Uintah Jct to Jct SR-167 at Mountain Green: wet · none (rain)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794676053751,
-   "src": "UDOT",
-   "text": "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln: wet · none (rain)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794676053751,
-   "src": "UDOT",
-   "text": "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate: wet · none (rain)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794676053751,
-   "src": "UDOT",
-   "text": "US-89 From Jct. SR-193 to I-84: wet · none (rain)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794676053751,
-   "src": "UDOT",
-   "text": "I-84 SR-167 at Mountain Green to Morgan: wet · none (rain)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794676053751,
-   "src": "UDOT",
-   "text": "I-84 I-15 Jct at Riverdale to SR-89: wet · none (rain)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794676053751,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Saturday good · Sunday good · Monday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1794652138410,
-   "src": "UDOT",
-   "text": "SR-39 Ogden to Jct. SR-167 Trappers Loop: wet · none (Fair)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794652138410,
-   "src": "UDOT",
-   "text": "SR-158 to Powder Mountain: wet · none (Fair)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {
@@ -217,6 +133,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "November 14, 2026 4:28 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "November 15, 2026 8:24 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }

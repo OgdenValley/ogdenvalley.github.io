@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-15T09:24:33.171Z",
+ "updated": "2026-11-15T17:09:44.835Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -836,16 +836,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1794668400000,
-     "e": 1794675600000,
-     "t": "Veterans Tribute Run",
-     "loc": "Ogden First United Methodist Church, Marriott-Slaterville",
-     "allDay": false,
-     "desc": "Tribute run for veterans. Facebook lists it at 8 and 9 a.m.; check the event page.",
-     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
      "s": 1794675600000,
      "e": 1794682800000,
      "t": "DPAC Scrooge - Austad",
@@ -907,8 +897,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794717000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
+     "e": 1794715200000,
+     "t": "DPAC Scrooge - Austad",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -917,8 +907,8 @@
     },
     {
      "s": 1794708000000,
-     "e": 1794715200000,
-     "t": "DPAC Scrooge - Austad",
+     "e": 1794717000000,
+     "t": "WSU Theatre: Much Ado About Nothing - Allred",
      "loc": "",
      "allDay": false,
      "desc": "",
@@ -4284,16 +4274,6 @@
    },
    {
     "s": 1794708000000,
-    "e": 1794717000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794708000000,
     "e": 1794715200000,
     "t": "DPAC Scrooge - Austad",
     "loc": "",
@@ -4303,9 +4283,9 @@
     "src": "Treehouse Children's Museum"
    },
    {
-    "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "s": 1794708000000,
+    "e": 1794717000000,
+    "t": "WSU Theatre: Much Ado About Nothing - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4316,6 +4296,16 @@
     "s": 1794969000000,
     "e": 1794976200000,
     "t": "Jazz - Allred",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1794969000000,
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",

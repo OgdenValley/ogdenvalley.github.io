@@ -1,8 +1,17 @@
 {
- "updated": "2026-11-10T02:08:13.520Z",
+ "updated": "2026-11-15T17:09:46.842Z",
  "weather": [],
  "fires": [],
- "city": [],
+ "city": [
+  {
+   "title": "800 N and 850 N from Jefferson Ave to Liberty Ave",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2084",
+   "date": 1794759821000,
+   "text": "Emergency Water Shutdown",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  }
+ ],
  "status": {
   "weather": "ok",
   "fires": "ok",
