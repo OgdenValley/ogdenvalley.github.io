@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T20:28:40.378Z",
+ "updated": "2026-11-16T20:57:30.564Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
@@ -98,7 +98,7 @@
  ],
  "snowLevelFt": 3300,
  "snowInches48": 1.6,
- "forecastIssued": "2026-11-16T18:31:33+00:00",
+ "forecastIssued": "2026-11-16T20:46:57+00:00",
  "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
  "source": "National Weather Service Salt Lake City",
  "status": {

@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-16T20:29:02.345Z",
+ "updated": "2026-11-16T20:57:38.027Z",
  "items": [
+  {
+   "t": 1794862658027,
+   "src": "National Weather Service",
+   "text": "Winter Weather Advisory until Wed 11:00 AM · Wasatch Back; Wasatch Mountains I-80 North; Wasatch Mountains South of I-80",
+   "kind": "weather",
+   "link": "https://www.weather.gov/slc/"
+  },
   {
    "t": 1794860942345,
    "src": "Utah Air Quality",
@@ -48,7 +55,9 @@
    "SR-39 @ MP 46 Monte Cristo": 0,
    "US-89 @ MP 406 Weber River": 0
   },
-  "nws": {},
+  "nws": {
+   "Winter Weather Advisory|2026-11-17T11:00:00-07:00|2026-11-18T11:00:00-07:00": 1
+  },
   "air": "November 16, 2026 8:30 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
