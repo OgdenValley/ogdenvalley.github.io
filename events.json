@@ -1,28 +1,9 @@
 {
- "updated": "2026-11-15T21:48:19.479Z",
+ "updated": "2026-11-16T02:06:06.693Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1794686400000,
-     "e": 1794693600000,
-     "t": "New World Distillery tasting tour",
-     "loc": "New World Distillery, Eden",
-     "allDay": false,
-     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
-     "s": 1794690000000,
-     "e": 1794704400000,
-     "t": "Cinema Saturday Feature Films",
-     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
-     "allDay": false,
-     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
-     "url": ""
-    },
     {
      "s": 1794772800000,
      "e": 1794780000000,
@@ -834,46 +815,6 @@
      "desc": "A Season of Giving: Community Food Drive at Hilton Garden Inn Ogden\n\nJoin Hilton Garden Inn Ogden this holiday season as we come together to support our neighbors in need!\n\nFrom **November 9 through December 18, 2026**, we're hosting a community food drive benefiting **Joyce Hansen Hall Food Bank**, part of Catholic Community Services of Northern Utah.\n\nWe invite local residents, businesses, hotel guests, and visitors to help us fill our donation barrels with nonperishable food items. Every contribution, big or small, helps support individuals and families facing food insecurity in our communi",
      "url": "https://www.hilton.com/en/hotels/ogdwbgi-hilton-garden-inn-ogden-ut/",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794686400000,
-     "e": 1794693600000,
-     "t": "Lino Print Workshop",
-     "loc": "Ogden Creative Reuse, 2424 Wall Ave., Ogden",
-     "allDay": false,
-     "desc": "Art workshop.",
-     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
-     "s": 1794690000000,
-     "e": 1794699000000,
-     "t": "WSU Theatre: Much Ado About Nothing - Allred",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1794690000000,
-     "e": 1794697200000,
-     "t": "Craft n Cry",
-     "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
-     "allDay": false,
-     "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
-     "s": 1794693600000,
-     "e": 1794700800000,
-     "t": "Ogden Strides Club: Steps & Connections",
-     "loc": "Big Dee Sports Park, Ogden",
-     "allDay": false,
-     "desc": "Walking club meetup.",
-     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-     "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
      "s": 1794704400000,
@@ -3206,6 +3147,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1799974800000,
+     "e": 1799982000000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1800723600000,
      "e": 1800730800000,
      "t": "2027 Winter Market by Farmers Market Ogden",
@@ -4243,16 +4194,6 @@
   ],
   "treehouse": [
    {
-    "s": 1794690000000,
-    "e": 1794699000000,
-    "t": "WSU Theatre: Much Ado About Nothing - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
     "s": 1794708000000,
     "e": 1794715200000,
     "t": "DPAC Scrooge - Austad",
@@ -4274,8 +4215,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4284,8 +4225,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
