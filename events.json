@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T09:41:59.244Z",
+ "updated": "2026-11-16T20:28:36.890Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -476,6 +476,16 @@
      "url": "https://www.meetup.com/webercountyoutdoors/"
     },
     {
+     "s": 1800043200000,
+     "e": 1800050400000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1800133200000,
      "e": 1800147600000,
      "t": "Cinema Saturday Feature Films",
@@ -790,6 +800,15 @@
      "allDay": false,
      "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
      "url": "https://www.meetup.com/webercountyoutdoors/"
+    },
+    {
+     "s": 1810411200000,
+     "e": 1810425600000,
+     "t": "Cinema Saturday Feature Films",
+     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
+     "allDay": false,
+     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
+     "url": ""
     }
    ]
   },

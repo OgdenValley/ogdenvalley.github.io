@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-16T09:42:16.274Z",
+ "updated": "2026-11-16T20:28:48.804Z",
  "note": "Numbers from each resort's own snow report. Check the resort before you go.",
  "resorts": [
   {
@@ -7,9 +7,9 @@
    "name": "Snowbasin",
    "link": "https://www.snowbasin.com/the-mountain/mountain-report/",
    "source": "Snowbasin",
-   "since5am": null,
+   "since5am": 0,
    "overnight": 0,
-   "new24": 1,
+   "new24": 0,
    "new7d": 2,
    "base": 0,
    "season": 4,
@@ -17,9 +17,9 @@
    "liftsTotal": 13,
    "trailsOpen": 0,
    "trailsTotal": 115,
-   "resortUpdated": "Nov 15 5:49 AM MT",
+   "resortUpdated": "Nov 16 6:32 AM MT",
    "open": false,
-   "checked": "2026-11-16T09:42:16.743Z",
+   "checked": "2026-11-16T20:28:49.528Z",
    "status": "ok"
   },
   {
@@ -46,9 +46,9 @@
      "status": "Clear and dry"
     }
    ],
-   "resortUpdated": "11/16/26 02:30 AM MST",
+   "resortUpdated": "11/16/26 01:15 PM MST",
    "open": false,
-   "checked": "2026-11-16T09:42:17.596Z",
+   "checked": "2026-11-16T20:28:50.432Z",
    "status": "ok"
   },
   {
@@ -62,7 +62,7 @@
    "base": 0,
    "season": 0,
    "open": false,
-   "checked": "2026-11-16T09:42:18.349Z",
+   "checked": "2026-11-16T20:28:51.202Z",
    "status": "ok"
   }
  ]
