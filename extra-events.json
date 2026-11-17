@@ -2,6 +2,14 @@
  "_help": "Events Claude adds by hand (OVE Facebook Events tab, local event lists). Down-the-canyon events are included on purpose: the Valley has few bars, venues, classes or rinks, so Valley people go to Ogden for them. start/end are local times with offset (-06:00 until Nov 1, -07:00 after). into: ov or weber. Past events drop off on their own. Weekly regulars use \"weekly\": {\"days\": [\"MO\",\"WE\"], \"time\": \"20:30\", \"hours\": 3.5, \"from\": \"YYYY-MM-DD\", \"until\": \"YYYY-MM-DD\" (optional)} instead of start/end, and repeat on their own for the next 60 days.",
  "events": [
   {
+   "t": "Joe & Jacy Storey live",
+   "start": "2026-11-20T19:00:00-07:00",
+   "loc": "Utah American Legion Post 129 Ogden Valley, Huntsville, UT",
+   "into": "ov",
+   "url": "https://www.facebook.com/ogdenvalleyevents",
+   "desc": "Original music from the duo Joe & Jacy Storey. No cover charge. From their flyer, shared on the Ogden Valley Information and Events page."
+  },
+  {
    "t": "Town Dance Party",
    "start": "2026-10-24T19:00:00-06:00",
    "loc": "7474 E 200 S, Huntsville, UT 84317",
