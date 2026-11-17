@@ -1,18 +1,11 @@
 {
- "updated": "2026-11-17T13:24:52.137Z",
+ "updated": "2026-11-17T22:22:56.831Z",
  "meetings": [
   {
    "body": "Weber County Commission",
-   "title": "Meeting of the Board of Commissioners of Weber County Utah",
-   "start": 1794859200000,
-   "link": "https://www.utah.gov/pmn/sitemap/notice/1123390.html",
-   "source": "Utah Public Notice Website"
-  },
-  {
-   "body": "Weber County Commission",
-   "title": "Weber County Commission Meeting",
+   "title": "Notice of Public Hearing for the Weber County Engineering Division",
    "start": 1794934800000,
-   "link": "https://www.utah.gov/pmn/sitemap/notice/1123272.html",
+   "link": "https://www.utah.gov/pmn/sitemap/notice/1120207.html",
    "source": "Utah Public Notice Website"
   },
   {
@@ -20,6 +13,13 @@
    "title": "NOTICE FOR OGDEN VALLEY COUNCIL MEETING - November 17, 2026, Time: 6pm",
    "start": 1794963600000,
    "link": "https://www.utah.gov/pmn/sitemap/notice/1123631.html",
+   "source": "Utah Public Notice Website"
+  },
+  {
+   "body": "Weber County Commission",
+   "title": "Public Notice of Vacancy on the West Warren Park District",
+   "start": 1795014000000,
+   "link": "https://www.utah.gov/pmn/sitemap/notice/1124175.html",
    "source": "Utah Public Notice Website"
   },
   {
@@ -49,12 +49,12 @@
    "name": "Ben Lomond Peak",
    "elev": 7690,
    "depth": {
-    "value": 1,
-    "date": "2026-11-15"
+    "value": 2,
+    "date": "2026-11-16"
    },
    "water": {
-    "value": 0.6,
-    "date": "2026-11-15"
+    "value": 0.7,
+    "date": "2026-11-16"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -64,11 +64,11 @@
    "elev": 5970,
    "depth": {
     "value": 0,
-    "date": "2026-11-15"
+    "date": "2026-11-16"
    },
    "water": {
-    "value": 0,
-    "date": "2026-11-15"
+    "value": 0.1,
+    "date": "2026-11-16"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
@@ -91,7 +91,7 @@
  "pineview": {
   "acreFeet": 2447.05,
   "percent": 2,
-  "date": "2026-11-12T07:00:00+00:00",
+  "date": "2026-11-15T07:00:00+00:00",
   "source": "U.S. Bureau of Reclamation",
   "link": "https://data.usbr.gov/location/437"
  },

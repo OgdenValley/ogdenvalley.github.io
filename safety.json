@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T21:16:53.849Z",
+ "updated": "2026-11-17T22:22:55.393Z",
  "weather": [
   {
    "event": "Winter Weather Advisory",
@@ -15,16 +15,7 @@
   }
  ],
  "fires": [],
- "city": [
-  {
-   "title": "800 N St. from E. 850 N. to Liberty Ave.",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2086",
-   "date": 1794935540000,
-   "text": "Emergency Water Shutdown",
-   "source": "Ogden City Alerts",
-   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
-  }
- ],
+ "city": [],
  "status": {
   "weather": "ok",
   "fires": "ok",
