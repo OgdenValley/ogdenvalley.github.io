@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T13:25:03.998Z",
+ "updated": "2026-11-17T21:16:57.537Z",
  "note": "Numbers from each resort's own snow report. Check the resort before you go.",
  "resorts": [
   {
@@ -19,7 +19,7 @@
    "trailsTotal": 115,
    "resortUpdated": "Nov 17 5:55 AM MT",
    "open": false,
-   "checked": "2026-11-17T13:25:04.520Z",
+   "checked": "2026-11-17T21:16:58.027Z",
    "status": "ok"
   },
   {
@@ -35,20 +35,20 @@
    "new12": 0,
    "new24": 0,
    "new48": 0,
-   "new7d": 0,
+   "new7d": 3,
    "roads": [
     {
-     "name": "Summit Pass",
-     "status": "Clear and dry"
+     "name": "Powder Mountain Road",
+     "status": "Snowy Light"
     },
     {
-     "name": "Powder Mountain Road",
-     "status": "Clear and dry"
+     "name": "Summit Pass",
+     "status": "Snowy Light"
     }
    ],
-   "resortUpdated": "11/17/26 06:10 AM MST",
+   "resortUpdated": "11/17/26 02:10 PM MST",
    "open": false,
-   "checked": "2026-11-17T13:25:05.337Z",
+   "checked": "2026-11-17T21:16:58.845Z",
    "status": "ok"
   },
   {
@@ -62,7 +62,7 @@
    "base": 0,
    "season": 0,
    "open": false,
-   "checked": "2026-11-17T13:25:05.755Z",
+   "checked": "2026-11-17T21:16:59.411Z",
    "status": "ok"
   }
  ]

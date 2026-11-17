@@ -1,22 +1,92 @@
 {
- "updated": "2026-11-17T03:53:11.876Z",
+ "updated": "2026-11-17T21:16:59.414Z",
  "items": [
   {
+   "t": 1794950219412,
+   "src": "UDOT",
+   "text": "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln: wet · none (rain)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1794950219412,
+   "src": "UDOT",
+   "text": "US-89 From Lagoon to Jct. SR-193: wet · none (rain)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1794950219412,
+   "src": "UDOT",
+   "text": "US-89 From Jct. SR-193 to I-84: wet · none (rain)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1794950219412,
+   "src": "UDOT",
+   "text": "SR-39 Ogden to Jct. SR-167 Trappers Loop: wet · none (rain)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1794950219412,
+   "src": "UDOT",
+   "text": "SR-158 to Powder Mountain: wet · none (mixed rain and snow)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1794950219412,
+   "src": "UDOT",
+   "text": "SR-226 to Snowbasin: wet · none (rain)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1794950219412,
+   "src": "UDOT",
+   "text": "I-84 Uintah Jct to Jct SR-167 at Mountain Green: wet · none (rain)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1794950219412,
+   "src": "UDOT",
+   "text": "I-84 I-15 Jct at Riverdale to SR-89: wet · none (rain)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1794950219412,
+   "src": "UDOT",
+   "text": "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate: wet · none (mixed rain and snow)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1794950219412,
+   "src": "UDOT",
+   "text": "SR-167 Trappers Loop I-84 to Huntsville: wet · none (rain)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1794950219412,
+   "src": "UDOT",
+   "text": "I-84 SR-167 at Mountain Green to Morgan: wet · none (mixed rain and snow)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1794950219412,
+   "src": "UDOT road sensor",
+   "text": "SR-158 @ MP 11.5 Powder Mountain: pavement 29°F, slushy. Watch for ice.",
+   "kind": "winter",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
    "t": 1794887591876,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Monday good · Tuesday good · Wednesday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1794862658027,
-   "src": "National Weather Service",
-   "text": "Winter Weather Advisory until Wed 11:00 AM · Wasatch Back; Wasatch Mountains I-80 North; Wasatch Mountains South of I-80",
-   "kind": "weather",
-   "link": "https://www.weather.gov/slc/"
-  },
-  {
-   "t": 1794860942345,
    "src": "Utah Air Quality",
    "text": "Weber County forecast: Monday good · Tuesday good · Wednesday good",
    "kind": "air",
@@ -30,17 +100,17 @@
   },
   "al": {},
   "cond": {
-   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
-   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
-   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
-   "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
-   "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
-   "SR-226 to Snowbasin#336": "Dry · none",
-   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none",
-   "SR-158 to Powder Mountain#334": "Dry · none",
-   "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none",
-   "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
-   "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none"
+   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "wet · none",
+   "US-89 From Lagoon to Jct. SR-193#330": "wet · none",
+   "US-89 From Jct. SR-193 to I-84#332": "wet · none",
+   "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "wet · none",
+   "SR-158 to Powder Mountain#334": "wet · none",
+   "SR-226 to Snowbasin#336": "wet · none",
+   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "wet · none",
+   "I-84 I-15 Jct at Riverdale to SR-89#426": "wet · none",
+   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "wet · none",
+   "SR-167 Trappers Loop I-84 to Huntsville#335": "wet · none",
+   "I-84 SR-167 at Mountain Green to Morgan#337": "wet · none"
   },
   "pass": {},
   "ice": {
@@ -48,7 +118,7 @@
    "I-84 @ MP 97 Peterson": 0,
    "I-84 @ Weber Canyon": 0,
    "North Ogden Divide": 0,
-   "SR-158 @ MP 11.5 Powder Mountain": 0,
+   "SR-158 @ MP 11.5 Powder Mountain": 1,
    "SR-167 @ Trappers Loop": 0,
    "SR-39 @ MP 14 Pineview Dam": 0,
    "SR-39 @ MP 17.5 Huntsville": 0,
