@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T12:29:10.608Z",
+ "updated": "2026-11-17T13:25:03.998Z",
  "note": "Numbers from each resort's own snow report. Check the resort before you go.",
  "resorts": [
   {
@@ -17,9 +17,9 @@
    "liftsTotal": 13,
    "trailsOpen": 0,
    "trailsTotal": 115,
-   "resortUpdated": "Nov 16 6:32 AM MT",
+   "resortUpdated": "Nov 17 5:55 AM MT",
    "open": false,
-   "checked": "2026-11-17T12:29:11.048Z",
+   "checked": "2026-11-17T13:25:04.520Z",
    "status": "ok"
   },
   {
@@ -46,9 +46,9 @@
      "status": "Clear and dry"
     }
    ],
-   "resortUpdated": "11/17/26 05:25 AM MST",
+   "resortUpdated": "11/17/26 06:10 AM MST",
    "open": false,
-   "checked": "2026-11-17T12:29:11.671Z",
+   "checked": "2026-11-17T13:25:05.337Z",
    "status": "ok"
   },
   {
@@ -62,7 +62,7 @@
    "base": 0,
    "season": 0,
    "open": false,
-   "checked": "2026-11-17T12:29:11.919Z",
+   "checked": "2026-11-17T13:25:05.755Z",
    "status": "ok"
   }
  ]
