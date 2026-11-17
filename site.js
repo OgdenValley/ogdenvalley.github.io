@@ -431,7 +431,32 @@ function listing(box, items, kind, R){
   const cr = document.getElementById("hero-credit"); if (cr) { cr.textContent = credit; if (w && w.image) { cr.innerHTML = ""; cr.append(el("a", {href: "photo-contest.html", style: "color:inherit", text: credit})); } } })();
 
 /* ---------- shared data loaders ---------- */
-async function loadJSON(name){ try { const r = await fetch(name, {cache: "no-store"}); if (!r.ok) throw 0; return await r.json(); } catch (e) { return null; } }
+async function loadJSONsaved(name){ try { const r = await fetch(name, {cache: "no-store"}); if (!r.ok) throw 0; return await r.json(); } catch (e) { return null; } }
+/* forecast.json: get the forecast live from the National Weather Service when the page opens,
+   so the Valley forecast is current even when the hourly update is late. If the Weather Service
+   can't be reached, the saved copy (forecast.json) is shown, as before. Added Nov. 17, 2026. */
+async function loadJSON(name){
+  const saved = await loadJSONsaved(name);
+  if (!/^forecast\.json/.test(String(name))) return saved;
+  try { const live = await liveForecast(saved); return live || saved; } catch (e) { return saved; }
+}
+async function liveForecast(old){
+  old = old || {};
+  const pt = await nwsJSON("https://api.weather.gov/points/41.3013,-111.8219", 6000); if (!pt || !pt.properties) return null;
+  const f = await nwsJSON(pt.properties.forecast, 7000); if (!f || !f.properties || !(f.properties.periods || []).length) return null;
+  const issued = f.properties.updateTime || f.properties.generatedAt || null;
+  if (old.forecastIssued && issued && Date.parse(old.forecastIssued) >= Date.parse(issued)) return null; /* saved copy is as new or newer */
+  const per = f.properties.periods, byDay = new Map();
+  for (const x of per) { const k = String(x.startTime).slice(0, 10); if (!byDay.has(k)) byDay.set(k, {}); byDay.get(k)[x.isDaytime ? "day" : "night"] = x; }
+  const wd = new Intl.DateTimeFormat("en-US", {timeZone: "America/Denver", weekday: "short"}), md = new Intl.DateTimeFormat("en-US", {timeZone: "America/Denver", month: "short", day: "numeric"});
+  const pop = x => x && x.probabilityOfPrecipitation && x.probabilityOfPrecipitation.value != null ? x.probabilityOfPrecipitation.value : 0;
+  const days = [...byDay.entries()].slice(0, 7).map(([k, v]) => { const d = new Date(k + "T12:00:00-06:00"); const sh = (v.day || v.night).shortForecast;
+    const txt = [v.day && v.day.shortForecast, v.night && v.night.shortForecast].filter(Boolean).join(" / ");
+    return {date: k, label: wd.format(d), md: md.format(d), high: v.day ? v.day.temperature : null, low: v.night ? v.night.temperature : null,
+      pop: Math.max(pop(v.day), pop(v.night)), short: sh, both: txt, snow: /snow|flurr|sleet|wintry/i.test(txt), wind: v.day ? v.day.windSpeed : (v.night ? v.night.windSpeed : "")}; });
+  return Object.assign({}, old, {updated: new Date().toISOString(), live: true, days, today: per[0] ? per[0].name + ": " + per[0].detailedForecast : "",
+    valleySnowDays: days.filter(d => d.snow).map(d => d.label), forecastIssued: issued, status: Object.assign({}, old.status, {forecast: "ok"})});
+}
 function renderMeetings(box, L, n, full){
   if (!box) return; box.replaceChildren();
   const ms = (L && L.meetings) || [];
