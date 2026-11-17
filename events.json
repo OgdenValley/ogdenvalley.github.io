@@ -1,19 +1,9 @@
 {
- "updated": "2026-11-16T20:28:36.890Z",
+ "updated": "2026-11-17T03:52:59.198Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1794772800000,
-     "e": 1794780000000,
-     "t": "New World Distillery tasting tour",
-     "loc": "New World Distillery, Eden",
-     "allDay": false,
-     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
     {
      "s": 1795050000000,
      "e": 1795059000000,
@@ -3146,6 +3136,36 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1800059400000,
+     "e": 1800064800000,
+     "t": "Steppin' The Ogden Way dance class",
+     "loc": "Marshall White Center, 222 28th Street, Ogden",
+     "allDay": false,
+     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1800061200000,
+     "e": 1800068400000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1800064800000,
+     "e": 1800072000000,
+     "t": "Friday Night Jazz",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free show, all ages. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1800723600000,
      "e": 1800730800000,
      "t": "2027 Winter Market by Farmers Market Ogden",
@@ -4184,8 +4204,8 @@
   "treehouse": [
    {
     "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
+    "e": 1794978000000,
+    "t": "String Chamber Music Fall Concert - 136",
     "loc": "",
     "allDay": false,
     "desc": "",
@@ -4194,8 +4214,8 @@
    },
    {
     "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
+    "e": 1794976200000,
+    "t": "Jazz - Allred",
     "loc": "",
     "allDay": false,
     "desc": "",
