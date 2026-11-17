@@ -2,6 +2,15 @@
  "note": "Valley weather briefings and updates shown on the Safety page. Newest first. Items older than 14 days stop showing on their own. type is weekly or update.",
  "items": [
   {
+   "type": "update",
+   "date": "2026-11-17T12:05:00-07:00",
+   "title": "Weather alert: Winter Weather Advisory until 11 a.m. Wed., Nov. 18",
+   "summary": "The National Weather Service has a Winter Weather Advisory for the Wasatch Back until 11 a.m. Wednesday, with 1 to 4 inches expected and the most in Park City and the Ogden Valley. In Huntsville, rain until about 2 p.m. turns to a rain and snow mix, then snow this evening: up to an inch today and 1 to 2 more tonight, low near 22°. Wednesday is mostly sunny, near 41°. A bigger storm follows: rain and snow Thursday, then snow Friday, 4 to 6 inches, and 3 to 5 more Friday night, with a low near 18°. Slow down in the canyon and on mountain roads, and bring pets in tonight. Forecasts change; we'll update.",
+   "image": "ogden-valley-winter-weather-advisory-snow-nov-17-2026.png",
+   "alt": "Weather alert from Ben's Weather Desk: Winter Weather Advisory until 11 a.m. Wednesday, Nov. 18. Ben the moose in earmuffs and a scarf holding a snow shovel. Rain now, snow by this evening; 1 to 4 inches for the Wasatch Back; bigger snow Friday, 4 to 6 inches, then 3 to 5 Friday night. Five-day forecast Wednesday to Sunday.",
+   "source": "National Weather Service Salt Lake City: Winter Weather Advisory issued 10:05 a.m. MST Nov. 17, 2026; Huntsville forecast issued 11:31 a.m. MST Nov. 17, 2026"
+  },
+  {
    "type": "weekly",
    "date": "2026-11-08T22:20:00-07:00",
    "title": "Ogden Valley weather: week of Nov. 9",
