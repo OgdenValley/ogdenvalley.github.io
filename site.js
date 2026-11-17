@@ -438,7 +438,24 @@ async function loadJSONsaved(name){ try { const r = await fetch(name, {cache: "n
 async function loadJSON(name){
   const saved = await loadJSONsaved(name);
   if (!/^forecast\.json/.test(String(name))) return saved;
-  try { const live = await liveForecast(saved); return live || saved; } catch (e) { return saved; }
+  let out = saved;
+  try { out = (await liveForecast(saved)) || saved; } catch (e) {}
+  try { if (out) await liveSnow(out); } catch (e) {}
+  return out;
+}
+/* snow level and 48-hour valley snow, live from the Weather Service grid (same math as the hourly job). Added Nov. 17, 2026. */
+function wxDur(v){ const m = String(v || "").match(/^P(?:(\d+)D)?(?:T(?:(\d+)H)?(?:(\d+)M)?)?$/); if (!m) return null; return ((+m[1] || 0) * 864e5 + (+m[2] || 0) * 36e5 + (+m[3] || 0) * 6e4) || null; }
+async function liveSnow(out){
+  const pt = await nwsJSON("https://api.weather.gov/points/41.3013,-111.8219", 6000); if (!pt || !pt.properties) return;
+  const g = await nwsJSON(pt.properties.forecastGridData, 8000); if (!g || !g.properties) return;
+  const now = Date.now(), H = 36e5;
+  const sl = ((g.properties.snowLevel && g.properties.snowLevel.values) || []).filter(v => { const [ts, dur] = v.validTime.split("/"); const st = Date.parse(ts); return st + (wxDur(dur) || H) > now && st < now + 72 * H && v.value != null; });
+  out.snowLevelFt = sl.length ? Math.round(Math.min(...sl.map(v => v.value)) * 3.28084 / 100) * 100 : null;
+  const hrs = [];
+  for (const v of ((g.properties.snowfallAmount && g.properties.snowfallAmount.values) || [])) { const [ts, dur] = v.validTime.split("/"); const st = Date.parse(ts); const h = Math.max(1, Math.round((wxDur(dur) || H) / H));
+    for (let i = 0; i < h; i++) { const t = st + i * H; if (t >= now && t < now + 48 * H && v.value != null) hrs.push(v.value / h); } }
+  out.snowInches48 = hrs.length ? Math.round(hrs.reduce((a, b) => a + b, 0) / 25.4 * 10) / 10 : null;
+  out.status = Object.assign({}, out.status, {grid: "ok"});
 }
 async function liveForecast(old){
   old = old || {};
