@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-17T22:22:56.831Z",
+ "updated": "2026-11-18T13:57:33.221Z",
  "meetings": [
   {
    "body": "Weber County Commission",
@@ -49,12 +49,12 @@
    "name": "Ben Lomond Peak",
    "elev": 7690,
    "depth": {
-    "value": 2,
-    "date": "2026-11-16"
+    "value": 9,
+    "date": "2026-11-17"
    },
    "water": {
-    "value": 0.7,
-    "date": "2026-11-16"
+    "value": 1.7,
+    "date": "2026-11-17"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -63,12 +63,12 @@
    "name": "Ben Lomond Trail",
    "elev": 5970,
    "depth": {
-    "value": 0,
-    "date": "2026-11-16"
+    "value": 3,
+    "date": "2026-11-17"
    },
    "water": {
-    "value": 0.1,
-    "date": "2026-11-16"
+    "value": 0.5,
+    "date": "2026-11-17"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
@@ -77,12 +77,12 @@
    "name": "Monte Cristo",
    "elev": 8930,
    "depth": {
-    "value": 4,
-    "date": "2026-11-16"
+    "value": 12,
+    "date": "2026-11-17"
    },
    "water": {
-    "value": 1.2,
-    "date": "2026-11-16"
+    "value": 2,
+    "date": "2026-11-17"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
    "source": "USDA NRCS SNOTEL"
