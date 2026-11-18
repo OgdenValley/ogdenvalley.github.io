@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T02:57:57.872Z",
+ "updated": "2026-11-18T04:19:51.252Z",
  "source": "Utah Department of Transportation (UDOT Traffic)",
  "link": "https://udottraffic.utah.gov/",
  "status": {
@@ -52,10 +52,10 @@
   {
    "id": "327",
    "road": "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln",
-   "cond": "slushy",
+   "cond": "wet",
    "weather": "snow",
    "restriction": "none",
-   "updated": 1794943036000
+   "updated": 1794949976000
   },
   {
    "id": "330",
@@ -63,7 +63,7 @@
    "cond": "slushy",
    "weather": "snow",
    "restriction": "none",
-   "updated": 1794943036000
+   "updated": 1794949976000
   },
   {
    "id": "331",
@@ -71,7 +71,7 @@
    "cond": "slushy",
    "weather": "snow",
    "restriction": "none",
-   "updated": 1794943036000
+   "updated": 1794949976000
   },
   {
    "id": "332",
@@ -79,39 +79,7 @@
    "cond": "slushy",
    "weather": "snow",
    "restriction": "none",
-   "updated": 1794943036000
-  },
-  {
-   "id": "334",
-   "road": "SR-158 to Powder Mountain",
-   "cond": "snow covered",
-   "weather": "snow",
-   "restriction": "none",
-   "updated": 1794943036000
-  },
-  {
-   "id": "336",
-   "road": "SR-226 to Snowbasin",
-   "cond": "patchy snow",
-   "weather": "snow",
-   "restriction": "none",
-   "updated": 1794943036000
-  },
-  {
-   "id": "337",
-   "road": "I-84 SR-167 at Mountain Green to Morgan",
-   "cond": "slushy",
-   "weather": "snow",
-   "restriction": "none",
-   "updated": 1794943036000
-  },
-  {
-   "id": "426",
-   "road": "I-84 I-15 Jct at Riverdale to SR-89",
-   "cond": "slushy",
-   "weather": "snow",
-   "restriction": "none",
-   "updated": 1794943036000
+   "updated": 1794949976000
   },
   {
    "id": "333",
@@ -119,7 +87,15 @@
    "cond": "patchy snow",
    "weather": "snow",
    "restriction": "none",
-   "updated": 1794943036000
+   "updated": 1794949976000
+  },
+  {
+   "id": "334",
+   "road": "SR-158 to Powder Mountain",
+   "cond": "snow covered",
+   "weather": "snow",
+   "restriction": "none",
+   "updated": 1794949976000
   },
   {
    "id": "335",
@@ -127,7 +103,23 @@
    "cond": "patchy snow",
    "weather": "snow",
    "restriction": "none",
-   "updated": 1794943036000
+   "updated": 1794949976000
+  },
+  {
+   "id": "336",
+   "road": "SR-226 to Snowbasin",
+   "cond": "patchy snow",
+   "weather": "snow",
+   "restriction": "none",
+   "updated": 1794949976000
+  },
+  {
+   "id": "337",
+   "road": "I-84 SR-167 at Mountain Green to Morgan",
+   "cond": "wet",
+   "weather": "snow",
+   "restriction": "none",
+   "updated": 1794949976000
   },
   {
    "id": "338",
@@ -135,151 +127,177 @@
    "cond": "slushy",
    "weather": "snow",
    "restriction": "none",
-   "updated": 1794943036000
+   "updated": 1794949976000
+  },
+  {
+   "id": "426",
+   "road": "I-84 I-15 Jct at Riverdale to SR-89",
+   "cond": "wet",
+   "weather": "snow",
+   "restriction": "none",
+   "updated": 1794949976000
   }
  ],
  "alerts": [],
  "plows": [
   {
-   "bearing": "114",
-   "lat": 41.193796,
-   "lng": -111.817194,
-   "updated": 1794970452000
+   "bearing": "147",
+   "lat": 41.475272,
+   "lng": -111.45594,
+   "updated": 1794975263000
   },
   {
-   "bearing": "276",
-   "lat": 41.138439,
-   "lng": -111.830808,
-   "updated": 1794970429000
+   "bearing": "74",
+   "lat": 41.137645,
+   "lng": -111.890315,
+   "updated": 1794975264000
   },
   {
-   "bearing": "277",
-   "lat": 41.138501,
-   "lng": -111.830877,
-   "updated": 1794970433000
+   "bearing": "73",
+   "lat": 41.137874,
+   "lng": -111.889675,
+   "updated": 1794975266000
   },
   {
-   "bearing": "3",
-   "lat": 41.118432,
-   "lng": -111.908596,
-   "updated": 1794970444000
+   "bearing": "242",
+   "lat": 41.107401,
+   "lng": -111.917934,
+   "updated": 1794975260000
   },
   {
-   "bearing": "3",
-   "lat": 41.118165,
-   "lng": -111.908532,
-   "updated": 1794970446000
+   "bearing": "358",
+   "lat": 41.260187,
+   "lng": -111.761401,
+   "updated": 1794975247000
+  },
+  {
+   "bearing": "305",
+   "lat": 41.132921,
+   "lng": -111.780418,
+   "updated": 1794975235000
+  },
+  {
+   "bearing": "321",
+   "lat": 41.319691,
+   "lng": -111.828637,
+   "updated": 1794975229000
+  },
+  {
+   "bearing": "296",
+   "lat": 41.136474,
+   "lng": -111.787156,
+   "updated": 1794975269000
   }
  ],
  "stations": [
   {
    "name": "I-84 @ MP 91 Devils Gate",
    "air": null,
-   "surface": 32.4,
-   "status": "Snow",
+   "surface": 32,
+   "status": "Ice",
    "gust": null,
    "lat": 41.1397,
    "lng": -111.8539,
-   "updated": 1794969000000,
-   "ice": false
+   "updated": 1794973800000,
+   "ice": true
   },
   {
    "name": "I-84 @ MP 97 Peterson",
-   "air": 32.04,
-   "surface": 34,
+   "air": 31.78,
+   "surface": 33.4,
    "status": "Wet",
-   "gust": 28.93,
+   "gust": 14.03,
    "lat": 41.114,
    "lng": -111.7631,
-   "updated": 1794969600000,
+   "updated": 1794974400000,
    "ice": false
   },
   {
    "name": "I-84 @ Weber Canyon",
-   "air": 28.53,
-   "surface": 31.5,
-   "status": "Ice",
-   "gust": 30.03,
+   "air": 28.38,
+   "surface": 31.3,
+   "status": "Slushy",
+   "gust": 22.58,
    "lat": 41.1379,
    "lng": -111.8868,
-   "updated": 1794969600000,
+   "updated": 1794974400000,
    "ice": true
   },
   {
    "name": "North Ogden Divide",
-   "air": 28.53,
+   "air": 27.66,
    "surface": 27.3,
    "status": "",
    "gust": 0,
    "lat": 41.3205,
    "lng": -111.8993,
-   "updated": 1794969600000,
+   "updated": 1794974400000,
    "ice": false
   },
   {
    "name": "SR-158 @ MP 11.5 Powder Mountain",
-   "air": 22.51,
+   "air": 21.61,
    "surface": 21.7,
    "status": "Snow",
    "gust": 0,
    "lat": 41.37884,
    "lng": -111.7841,
-   "updated": 1794969600000,
+   "updated": 1794974400000,
    "ice": true
   },
   {
    "name": "SR-167 @ Trappers Loop",
-   "air": 28.31,
-   "surface": 30,
+   "air": 27.84,
+   "surface": 29.5,
    "status": "Snow",
-   "gust": 33.76,
+   "gust": 15.78,
    "lat": 41.2058,
    "lng": -111.8166,
-   "updated": 1794969600000,
+   "updated": 1794974400000,
    "ice": true
   },
   {
    "name": "SR-39 @ MP 14 Pineview Dam",
-   "air": 32.67,
-   "surface": 31.6,
+   "air": 32.56,
+   "surface": 31.5,
    "status": "Snow",
-   "gust": 10.74,
+   "gust": 0,
    "lat": 41.2537,
    "lng": -111.8413,
-   "updated": 1794969600000,
+   "updated": 1794974400000,
    "ice": true
   },
   {
    "name": "SR-39 @ MP 17.5 Huntsville",
-   "air": 32.38,
-   "surface": 31.6,
+   "air": 31.95,
+   "surface": 31.5,
    "status": "Wet",
-   "gust": 16.66,
+   "gust": 9.64,
    "lat": 41.24793,
    "lng": -111.77576,
-   "updated": 1794969600000,
+   "updated": 1794974400000,
    "ice": true
   },
   {
    "name": "SR-39 @ MP 46 Monte Cristo",
-   "air": 21.63,
+   "air": 18.77,
    "surface": null,
    "status": "",
-   "gust": 20.12,
+   "gust": 31.67,
    "lat": 41.4446,
    "lng": -111.5056,
-   "updated": 1794969600000,
+   "updated": 1794974400000,
    "ice": false
   },
   {
    "name": "US-89 @ MP 406 Weber River",
-   "air": 32.24,
+   "air": 32.31,
    "surface": 31.6,
-   "status": "Snow",
-   "gust": 9.43,
+   "status": "Slushy",
+   "gust": 10.52,
    "lat": 41.1351,
    "lng": -111.91205,
-   "updated": 1794969600000,
+   "updated": 1794974400000,
    "ice": true
   }
  ],

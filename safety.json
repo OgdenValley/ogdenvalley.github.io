@@ -1,14 +1,14 @@
 {
- "updated": "2026-11-17T22:22:55.393Z",
+ "updated": "2026-11-18T04:19:45.003Z",
  "weather": [
   {
    "event": "Winter Weather Advisory",
    "severity": "Moderate",
-   "headline": "Winter Weather Advisory issued November 17 at 10:05AM MST until November 18 at 11:00AM MST by NWS Salt Lake City UT",
+   "headline": "Winter Weather Advisory issued November 17 at 8:44PM MST until November 18 at 4:00AM MST by NWS Salt Lake City UT",
    "area": "Wasatch Back; Wasatch Mountains I-80 North; Wasatch Mountains South of I-80",
-   "starts": "2026-11-17T11:00:00-07:00",
-   "ends": "2026-11-18T11:00:00-07:00",
-   "text": "* WHAT...Snow expected. For the Wasatch Mountains, forecast snow\ntotals of 4 to 8 inches above 8000 feet with locally higher amounts\nin excess of 12 inches for the Upper Cottonwoods. For the Wasatch\nBack, 1 to 4 inches with the highest amounts for Park City and the\nOgden valley.\n\n* WHERE...The Wasatch Mountains, and Wasatch Back.\n\n* WHEN...Until 11 AM MST Wednesday.\n\n* IMPACTS...Travel could be difficult at times along mountain routes.\nThe hazardous conditions will impact the Tuesday evening commute on\nhigher passes such as Parleys Summit.\n\n* ADDITIONAL DETAILS...Precipitation will begin as rain for the\nWasatch Back, transitioning to snow Tuesday evening.",
+   "starts": "2026-11-17T20:44:00-07:00",
+   "ends": "2026-11-18T04:00:00-07:00",
+   "text": "* WHAT...Snow. Additional snow accumulations of 1 to 4 inches in the\nmountains, and up to 2 inches in the Wasatch Back.\n\n* WHERE...The Wasatch Mountains, and Wasatch Back.\n\n* WHEN...Until 4 AM MST Wednesday.\n\n* IMPACTS...Travel could be difficult at times along mountain routes.",
    "instruction": "Slow down and use caution while traveling. For winter road conditions\nfrom the Utah Department of Transportation, visit\nhttp://www.udottraffic.utah.gov.\n\nFor graphical depictions of the snowfall forecast, including Official\nNWS Forecast, High End Amount, and Low End Amount, visit\nweather.gov/slc/winter.",
    "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
    "source": "National Weather Service"
