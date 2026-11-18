@@ -1,6 +1,14 @@
 {
- "note": "Valley weather briefings and updates shown on the Safety page. Newest first. Items older than 14 days stop showing on their own. type is weekly or update.",
+ "note": "Valley weather briefings and updates shown on the Safety page. Newest first. Items older than 14 days stop showing on their own. type is weekly or update. An update with an \"ends\" time stops showing once that time passes.",
  "items": [
+  {
+   "type": "update",
+   "date": "2026-11-18T16:45:00-07:00",
+   "ends": "2026-11-21T05:00:00-07:00",
+   "title": "Weather alert: Winter Weather Advisory, 11 a.m. Thu., Nov. 19 to 5 a.m. Sat., Nov. 21",
+   "summary": "The National Weather Service has a new Winter Weather Advisory for the Wasatch Back from 11 a.m. Thursday to 5 a.m. Saturday. It calls for 2 to 7 inches of snow, with the higher totals in the higher terrain near Park City and the Ogden Valley. The Weather Service says the snow will affect the Thursday evening and Friday morning commutes. The Eden-area forecast has rain and snow Thursday (83% chance), high near 41°, then snow Thursday night and Friday (93 to 96% chance), with a low near 20° Friday night. Slow down in the canyon and on mountain roads. Forecasts change; we'll update.",
+   "source": "National Weather Service Salt Lake City: Winter Weather Advisory issued 3:49 p.m. MST Nov. 18, 2026; Eden-area forecast updated 3:52 p.m. MST Nov. 18, 2026"
+  },
   {
    "type": "update",
    "date": "2026-11-17T12:05:00-07:00",
@@ -8,7 +16,17 @@
    "summary": "The National Weather Service has a Winter Weather Advisory for the Wasatch Back until 11 a.m. Wednesday, with 1 to 4 inches expected and the most in Park City and the Ogden Valley. In Huntsville, rain until about 2 p.m. turns to a rain and snow mix, then snow this evening: up to an inch today and 1 to 2 more tonight, low near 22°. Wednesday is mostly sunny, near 41°. A bigger storm follows: rain and snow Thursday, then snow Friday, 4 to 6 inches, and 3 to 5 more Friday night, with a low near 18°. Slow down in the canyon and on mountain roads, and bring pets in tonight. Forecasts change; we'll update.",
    "image": "ogden-valley-winter-weather-advisory-snow-nov-17-2026.png",
    "alt": "Weather alert from Ben's Weather Desk: Winter Weather Advisory until 11 a.m. Wednesday, Nov. 18. Ben the moose in earmuffs and a scarf holding a snow shovel. Rain now, snow by this evening; 1 to 4 inches for the Wasatch Back; bigger snow Friday, 4 to 6 inches, then 3 to 5 Friday night. Five-day forecast Wednesday to Sunday.",
-   "source": "National Weather Service Salt Lake City: Winter Weather Advisory issued 10:05 a.m. MST Nov. 17, 2026; Huntsville forecast issued 11:31 a.m. MST Nov. 17, 2026"
+   "source": "National Weather Service Salt Lake City: Winter Weather Advisory issued 10:05 a.m. MST Nov. 17, 2026; Huntsville forecast issued 11:31 a.m. MST Nov. 17, 2026",
+   "ends": "2026-11-18T11:00:00-07:00"
+  },
+  {
+   "type": "weekly",
+   "date": "2026-11-15T21:00:00-07:00",
+   "title": "Ogden Valley weather: week of Nov. 16",
+   "summary": "A colder, snowier week for Eden, Liberty and Huntsville. Monday is dry, near 57°, low 31°. Tuesday brings a rain and snow mix (93% chance), high 49°, low 24°. Then snow chances: Wednesday 25%, high 43°, low 23°; Thursday 87%, high 42°, low 22°; Friday 66%, high 40°, low 19°. Forecast as of Nov. 14; forecasts change, and updates go up here when they do.",
+   "image": "ogden-valley-weather-snow-forecast-week-of-nov-16-2026.png",
+   "alt": "Ben's Weather Desk, week of Nov. 16: Ben the moose at the news desk, with the forecast below: Monday 57 and dry, Tuesday 49 with a 93% rain and snow mix, Wednesday 43 with 25% snow, Thursday 42 with 87% snow, Friday 40 with 66% snow.",
+   "source": "National Weather Service forecast for the Eden, Liberty and Huntsville area, as of Nov. 14, 2026"
   },
   {
    "type": "weekly",

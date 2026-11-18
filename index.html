@@ -160,7 +160,7 @@ if(F&&F.days&&F.days.length){const d=F.days[0];document.getElementById("hw-h").t
  const W=await S.loadJSON("weather.json"),sfw=await S.loadJSON("safety.json"),bits=[];
  if(sfw&&sfw.weather&&sfw.weather.length)bits.push("Weather service notice: "+sfw.weather[0].event+".");
  if(F.valleySnowDays&&F.valleySnowDays.length)bits.push("Snow possible on the valley floor: "+F.valleySnowDays.join(", ")+".");
- const it=(W&&W.items||[]).filter(x=>Date.parse(x.date)>=Date.now()-7*864e5).sort((a,b)=>Date.parse(b.date)-Date.parse(a.date))[0];
+ const it=(W&&W.items||[]).filter(x=>Date.parse(x.date)>=Date.now()-7*864e5&&!(x.ends&&Date.parse(x.ends)<Date.now())).sort((a,b)=>Date.parse(b.date)-Date.parse(a.date))[0];
  if(it)bits.push((it.type==="update"?"New update: ":"This week's briefing: ")+it.title+".");
  bits.push("Source: National Weather Service.");document.getElementById("hw-line").textContent=bits.join(" ")}
 const L=await S.loadJSON("local.json");S.renderMeetings(document.getElementById("meet"),L,3);S.renderSeason(L);

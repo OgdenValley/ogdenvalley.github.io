@@ -891,7 +891,8 @@ function showSnowBar(s){
   if (!bar) { bar = el("div", {class: "snow-bar", id: "snow-bar", role: "region", "aria-label": "Snow mode"}); const top = document.getElementById("alert-bar") || document.body.firstElementChild; top && top.parentNode ? top.parentNode.insertBefore(bar, top) : document.body.prepend(bar); }
   const names = [...new Set(s.alerts.map(a => a.event))].join(" · ");
   const until = s.alerts.map(a => Date.parse(a.ends)).filter(Boolean).sort((a, b) => b - a)[0];
-  const kids = [el("span", {class: "sb-flake", "aria-hidden": "true", text: "❄️"}), el("span", {text: "Snow mode: " + names}), until ? el("small", {text: "until " + fmt({weekday: "short", hour: "numeric", minute: "2-digit"}).format(new Date(until))}) : null];
+  const start = s.alerts.map(a => Date.parse(a.starts)).filter(Boolean).sort((a, b) => a - b)[0];
+  const kids = [el("span", {class: "sb-flake", "aria-hidden": "true", text: "❄️"}), el("span", {text: "Snow mode: " + names}), until ? el("small", {text: (start > Date.now() ? "starts " + fmt({weekday: "short", hour: "numeric", minute: "2-digit"}).format(new Date(start)) + " · " : "") + "until " + fmt({weekday: "short", hour: "numeric", minute: "2-digit"}).format(new Date(until))}) : null];
   if (!/snow\.html$/.test(location.pathname)) kids.push(el("a", {href: "snow.html", "data-track": "snow bar: details", text: "Roads, alerts & snow totals ›"}));
   bar.replaceChildren(el("div", {class: "container"}, kids));
 }
