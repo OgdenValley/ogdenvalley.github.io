@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T13:57:28.874Z",
+ "updated": "2026-11-18T21:56:21.600Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -505,6 +505,16 @@
      "url": ""
     },
     {
+     "s": 1800216000000,
+     "e": 1800223200000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1800493200000,
      "e": 1800502200000,
      "t": "Wednesday Night Hikers",
@@ -843,16 +853,6 @@
      "allDay": true,
      "desc": "A Season of Giving: Community Food Drive at Hilton Garden Inn Ogden\n\nJoin Hilton Garden Inn Ogden this holiday season as we come together to support our neighbors in need!\n\nFrom **November 9 through December 18, 2026**, we're hosting a community food drive benefiting **Joyce Hansen Hall Food Bank**, part of Catholic Community Services of Northern Utah.\n\nWe invite local residents, businesses, hotel guests, and visitors to help us fill our donation barrels with nonperishable food items. Every contribution, big or small, helps support individuals and families facing food insecurity in our communi",
      "url": "https://www.hilton.com/en/hotels/ogdwbgi-hilton-garden-inn-ogden-ut/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794947400000,
-     "e": 1794951000000,
-     "t": "Gentle Movements",
-     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
-     "url": "https://weberpl.events.mylibrary.digital/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -1797,7 +1797,7 @@
     },
     {
      "s": 1796263200000,
-     "e": 1796268600000,
+     "e": 1796267700000,
      "t": "String Project Recital - Allred",
      "loc": "",
      "allDay": false,
@@ -1903,6 +1903,16 @@
      "allDay": false,
      "desc": "Kick off your holiday shopping with eight area artists on December 4th (12-8 pm) and 5th (12-6:30 pm) at Studio 2580 behind the Eccles Art Center. You'll find handcrafted jewelry, pottery, paintings, metal art, and other unique items for that special person or yourself. The Holiday Art Market will also feature a Japanese model train display that you won't want to miss.",
      "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796430600000,
+     "e": 1796436000000,
+     "t": "Historic 25th Street Walking Tour",
+     "loc": "Ogden Union Station, 2501 Wall Ave, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join local expert, Rich Koski, as he takes you on a guided walk from Union Station to the Monarch Building in the Nine Rails Creative District.\n\nEarly Weber County and Ogden history including the role of the fur traders and mountain men establishing the first European-American settlement in Utah.\n\nAmong the historical facts and anecdotes provided by your guide you’ll learn about:\n\nArrival of the Mormon Pioneers and establishment of Ogden as an agricultural community.\nOgden’s emergence as the Crossroads of the West following the completion of the Transcontinental Railroad and an overview of the",
+     "url": "https://www.visitogden.com/things-to-do/guided-tours/guided-tour/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -2564,16 +2574,6 @@
      "desc": "Breakfast with Santa.",
      "url": "https://www.facebook.com/events/1137700262050457/",
      "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
-     "s": 1797210000000,
-     "e": 1797224400000,
-     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
-     "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
-     "url": "www.TheCarriageEstablishment.com",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1797296400000,
@@ -3251,16 +3251,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1794947400000,
-    "e": 1794951000000,
-    "t": "Gentle Movements",
-    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
-    "url": "https://weberpl.events.mylibrary.digital/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1794954600000,
     "e": 1794961800000,
     "t": "Ogden City Council Work Session",
@@ -3831,6 +3821,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1796430600000,
+    "e": 1796436000000,
+    "t": "Historic 25th Street Walking Tour",
+    "loc": "Ogden Union Station, 2501 Wall Ave, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join local expert, Rich Koski, as he takes you on a guided walk from Union Station to the Monarch Building in the Nine Rails Creative District.\n\nEarly Weber County and Ogden history including the role of the fur traders and mountain men establishing the first European-American settlement in Utah.\n\nAmong the historical facts and anecdotes provided by your guide you’ll learn about:\n\nArrival of the Mormon Pioneers and establishment of Ogden as an agricultural community.\nOgden’s emergence as the Crossroads of the West following the completion of the Transcontinental Railroad and an overview of the",
+    "url": "https://www.visitogden.com/things-to-do/guided-tours/guided-tour/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1796432400000,
     "e": 1796443200000,
     "t": "Artist Factory: Holiday Origami with Rebecca Pletsch",
@@ -4219,16 +4219,6 @@
     "desc": "The return of the hit of the last two years, starring David Osmond, loved by critics and audiences.\nWhy go to endless Christmas productions when you can get your complete Holiday Fix at Odyssey Dance Theatre's Christmas Spectacular, SPECTACULAR?\nSee excerpts from A Christmas Carol, It's A Wonderful Life, The Nutcracker, Elf, A Christmas Story, White Christmas and the Rockettes- just to name a few!",
     "url": "https://weber.evenue.net/events/C2",
     "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797210000000,
-    "e": 1797224400000,
-    "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
-    "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
-    "url": "www.TheCarriageEstablishment.com",
-    "src": "Ogden Area Events (Visit Ogden)"
    }
   ],
   "treehouse": [
@@ -4424,7 +4414,7 @@
    },
    {
     "s": 1796263200000,
-    "e": 1796268600000,
+    "e": 1796267700000,
     "t": "String Project Recital - Allred",
     "loc": "",
     "allDay": false,

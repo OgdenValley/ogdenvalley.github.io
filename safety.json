@@ -1,8 +1,17 @@
 {
- "updated": "2026-11-18T13:57:31.875Z",
+ "updated": "2026-11-18T21:56:24.107Z",
  "weather": [],
  "fires": [],
- "city": [],
+ "city": [
+  {
+   "title": "Liberty Ave. from 1225 N to 1300 N., Lockwood Dr. from Liberty Ave. to Canfield Dr.",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2088",
+   "date": 1795023040000,
+   "text": "SCHEDULED WATER SHUTDOWN",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  }
+ ],
  "status": {
   "weather": "ok",
   "fires": "ok",

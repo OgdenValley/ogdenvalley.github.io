@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T13:57:46.046Z",
+ "updated": "2026-11-18T21:56:40.128Z",
  "needed": true,
  "since": "2026-11-10T23:20:28.151Z",
  "reasons": [
@@ -16,10 +16,10 @@
   {
    "kind": "wet",
    "key": "wet:2026-11-19",
-   "text": "Two wet days in a row: Thursday 100% and Friday 97%."
+   "text": "Two wet days in a row: Thursday 96% and Friday 93%."
   }
  ],
- "forecastIssued": "2026-11-18T06:31:26+00:00",
+ "forecastIssued": "2026-11-18T18:53:17+00:00",
  "draft": {
   "made": "2026-11-18T13:57:46.046Z",
   "why": "New reason for a briefing: Snow is in the Valley forecast for Wednesday, Thursday, Friday, Saturday, Sunday, Monday, Tuesday. Hard freeze: lows of 25° or colder on 7 nights, as cold as 14° Saturday night. Two wet days in a row: Thursday 100% and Friday 97%.",

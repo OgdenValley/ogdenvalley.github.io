@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T13:57:44.797Z",
+ "updated": "2026-11-18T21:56:38.539Z",
  "note": "Numbers from each resort's own snow report. Check the resort before you go.",
  "resorts": [
   {
@@ -19,7 +19,7 @@
    "trailsTotal": 115,
    "resortUpdated": "Nov 18 5:16 AM MT",
    "open": false,
-   "checked": "2026-11-18T13:57:45.058Z",
+   "checked": "2026-11-18T21:56:38.944Z",
    "status": "ok"
   },
   {
@@ -27,28 +27,28 @@
    "name": "Powder Mountain",
    "link": "https://powdermountain.com/conditions",
    "source": "Powder Mountain",
-   "base": 0,
+   "base": 16,
    "liftsOpen": 0,
    "liftsTotal": 5,
    "trailsOpen": 0,
    "trailsTotal": 153,
-   "new12": 0,
-   "new24": 4,
-   "new48": 4,
-   "new7d": 7,
+   "new12": 8,
+   "new24": 12,
+   "new48": 12,
+   "new7d": 15,
    "roads": [
     {
      "name": "Powder Mountain Road",
-     "status": "Snowy Light"
+     "status": "Clear and wet"
     },
     {
      "name": "Summit Pass",
-     "status": "Snowy Light"
+     "status": "Clear and wet"
     }
    ],
-   "resortUpdated": "11/18/26 06:50 AM MST",
+   "resortUpdated": "11/18/26 02:45 PM MST",
    "open": false,
-   "checked": "2026-11-18T13:57:45.648Z",
+   "checked": "2026-11-18T21:56:39.825Z",
    "status": "ok"
   },
   {
@@ -56,13 +56,13 @@
    "name": "Nordic Valley",
    "link": "https://www.nordicvalley.ski/nordic-valley-weather-conditions-webcams/",
    "source": "Nordic Valley",
-   "new24": 0,
-   "new48": 0,
-   "new7d": 0,
+   "new24": 2,
+   "new48": 2,
+   "new7d": 2,
    "base": 0,
-   "season": 0,
+   "season": 2,
    "open": false,
-   "checked": "2026-11-18T13:57:46.046Z",
+   "checked": "2026-11-18T21:56:40.127Z",
    "status": "ok"
   }
  ]

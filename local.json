@@ -1,13 +1,6 @@
 {
- "updated": "2026-11-18T13:57:33.221Z",
+ "updated": "2026-11-18T21:56:25.473Z",
  "meetings": [
-  {
-   "body": "Weber County Commission",
-   "title": "Notice of Public Hearing for the Weber County Engineering Division",
-   "start": 1794934800000,
-   "link": "https://www.utah.gov/pmn/sitemap/notice/1120207.html",
-   "source": "Utah Public Notice Website"
-  },
   {
    "body": "Ogden Valley City Council",
    "title": "NOTICE FOR OGDEN VALLEY COUNCIL MEETING - November 17, 2026, Time: 6pm",
@@ -24,9 +17,9 @@
   },
   {
    "body": "Huntsville Town Council",
-   "title": "Town Council Work Session w/ Planning",
-   "start": 1795129200000,
-   "link": "https://www.utah.gov/pmn/sitemap/notice/1123779.html",
+   "title": "TC Meeting 11-19-2026",
+   "start": 1795136400000,
+   "link": "https://www.utah.gov/pmn/sitemap/notice/1124513.html",
    "source": "Utah Public Notice Website"
   },
   {
@@ -38,7 +31,7 @@
   },
   {
    "body": "Huntsville Town Planning Commission",
-   "title": "Planning Meeting",
+   "title": "Planning Meeting and Public Hearing",
    "start": 1796950800000,
    "link": "https://huntsvilleutah.gov/upcoming-events",
    "source": "Huntsville Town website (the official agenda is posted on the Utah Public Notice Website closer to the date)"
@@ -67,7 +60,7 @@
     "date": "2026-11-17"
    },
    "water": {
-    "value": 0.5,
+    "value": 0.3,
     "date": "2026-11-17"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
