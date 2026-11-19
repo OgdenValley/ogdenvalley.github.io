@@ -1,14 +1,14 @@
 {
- "updated": "2026-11-19T01:27:06.903Z",
+ "updated": "2026-11-19T09:19:47.078Z",
  "weather": [
   {
    "event": "Winter Weather Advisory",
    "severity": "Moderate",
-   "headline": "Winter Weather Advisory issued November 18 at 3:49PM MST until November 21 at 5:00AM MST by NWS Salt Lake City UT",
+   "headline": "Winter Weather Advisory issued November 18 at 10:38PM MST until November 21 at 5:00AM MST by NWS Salt Lake City UT",
    "area": "Wasatch Back",
    "starts": "2026-11-19T11:00:00-07:00",
    "ends": "2026-11-21T05:00:00-07:00",
-   "text": "* WHAT...Snow expected. Total snow accumulations between 2 and 7\ninches with lower totals in the lower terrain near Heber City and\nthe higher totals across the higher terrain near Park City and the\nOgden Valley.\n\n* WHERE...Wasatch Back.\n\n* WHEN...From 11 AM Thursday to 5 AM MST Saturday.\n\n* IMPACTS...Winter driving conditions are expected. The hazardous\nconditions will impact the Thursday evening and Friday morning\ncommutes.",
+   "text": "* WHAT...Snow expected. Total snow accumulations between 4 and 8\ninches in the Park City area and in the Ogden Valley with lower\ntotals in the lower terrain near Heber City.\n\n* WHERE...Wasatch Back.\n\n* WHEN...From 11 AM Thursday to 5 AM MST Saturday.\n\n* IMPACTS...Winter driving conditions are expected. The hazardous\nconditions could impact the Thursday evening and Friday morning\ncommutes.",
    "instruction": "Slow down and use caution while traveling. For winter road conditions\nfrom the Utah Department of Transportation, visit\nhttp://www.udottraffic.utah.gov.\n\nFor graphical depictions of the snowfall forecast, including Official\nNWS Forecast, High End Amount, and Low End Amount, visit\nweather.gov/slc/winter.",
    "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
    "source": "National Weather Service"
@@ -16,11 +16,11 @@
   {
    "event": "Winter Weather Advisory",
    "severity": "Moderate",
-   "headline": "Winter Weather Advisory issued November 18 at 3:49PM MST until November 21 at 11:00AM MST by NWS Salt Lake City UT",
+   "headline": "Winter Weather Advisory issued November 18 at 10:38PM MST until November 21 at 11:00AM MST by NWS Salt Lake City UT",
    "area": "Wasatch Mountains I-80 North; Wasatch Mountains South of I-80; Western Uinta Mountains",
    "starts": "2026-11-19T11:00:00-07:00",
    "ends": "2026-11-21T11:00:00-07:00",
-   "text": "* WHAT...Snow expected. Total snow accumulations between 10 and 20\ninches for the Wasatch Mountains with locally higher totals across\nthe upper Cottonwoods. Total snow accumulations between 4 and 8\ninches for the Western Uinta Mountains.\n\n* WHERE...The Wasatch Mountains, and Western Uinta Mountains.\n\n* WHEN...From 11 AM Thursday to 11 AM MST Saturday.\n\n* IMPACTS...Winter driving conditions are expected.",
+   "text": "* WHAT...Snow expected. Total snow accumulations between 10 and 20\ninches for the Wasatch Mountains with locally higher totals across\nthe upper Cottonwoods. Total snow accumulations between 5 and 10\ninches for the Western Uinta Mountains.\n\n* WHERE...The Wasatch Mountains, and Western Uinta Mountains.\n\n* WHEN...From 11 AM Thursday to 11 AM MST Saturday.\n\n* IMPACTS...Winter driving conditions are expected.",
    "instruction": "Slow down and use caution while traveling. For winter road conditions\nfrom the Utah Department of Transportation, visit\nhttp://www.udottraffic.utah.gov.\n\nFor graphical depictions of the snowfall forecast, including Official\nNWS Forecast, High End Amount, and Low End Amount, visit\nweather.gov/slc/winter.",
    "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
    "source": "National Weather Service"
