@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T13:04:35.219Z",
+ "updated": "2026-11-19T18:25:20.543Z",
  "note": "Numbers from each resort's own snow report. Check the resort before you go.",
  "resorts": [
   {
@@ -19,7 +19,7 @@
    "trailsTotal": 115,
    "resortUpdated": "Nov 19 5:01 AM MT",
    "open": false,
-   "checked": "2026-11-19T13:04:35.578Z",
+   "checked": "2026-11-19T18:25:20.928Z",
    "status": "ok"
   },
   {
@@ -33,9 +33,9 @@
    "trailsOpen": 0,
    "trailsTotal": 153,
    "new12": 0,
-   "new24": 8,
+   "new24": 0,
    "new48": 12,
-   "new7d": 15,
+   "new7d": 16,
    "roads": [
     {
      "name": "Powder Mountain Road",
@@ -46,9 +46,9 @@
      "status": "Clear and wet"
     }
    ],
-   "resortUpdated": "11/19/26 05:50 AM MST",
+   "resortUpdated": "11/19/26 11:15 AM MST",
    "open": false,
-   "checked": "2026-11-19T13:04:36.377Z",
+   "checked": "2026-11-19T18:25:21.811Z",
    "status": "ok"
   },
   {
@@ -56,13 +56,13 @@
    "name": "Nordic Valley",
    "link": "https://www.nordicvalley.ski/nordic-valley-weather-conditions-webcams/",
    "source": "Nordic Valley",
-   "new24": 2,
+   "new24": 0,
    "new48": 2,
    "new7d": 2,
    "base": 0,
    "season": 2,
    "open": false,
-   "checked": "2026-11-19T13:04:36.689Z",
+   "checked": "2026-11-19T18:25:22.316Z",
    "status": "ok"
   }
  ]
