@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pineview's flowing well, reportedly capped | Ogden City | Utah Hive Politics</title>
+<meta name="description" content="A 1915 flowing well exposed on Pineview's floor was inspected by the state, which recommended a full cement seal. It was reportedly capped Nov. 15. What the records show.">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#0E5E63;--teal-deep:#0A4549;--teal-soft:#d5ebeb;--gold:#F2B705;--gold-bg:#fff6d6;--ink:#0F1F3D;--ink-soft:#3d4a63;--page:#ffffff;--box:#eef6f6;--rule:#bfd9d9;--ok:#1d6b3a;--no:#9b1c1c;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;font-size:112.5%}
+body{margin:0;background:var(--page);color:var(--ink);font-family:Georgia,"Iowan Old Style",serif;line-height:1.6;overflow-wrap:break-word}
+a{color:var(--teal)}
+img{max-width:100%}
+.hb-bar{background:#0d0b0a;border-bottom:1px solid #3a2f1c;padding:10px 20px}
+.hb-bar a{display:flex;align-items:center;gap:12px;max-width:1100px;margin:0 auto;text-decoration:none}
+.hb-bar img{width:52px;height:52px;border-radius:4px;display:block;flex:none}
+.hb-name{font-family:'Cinzel','Trajan Pro',Georgia,serif;color:#d4af37;font-size:16px;letter-spacing:.14em;text-transform:uppercase;line-height:1.2;display:block}
+.hb-sub{font-family:Georgia,serif;font-style:italic;color:#b8956a;font-size:12.5px;letter-spacing:.02em;display:block;margin-top:2px}
+.hb-line-top{display:block;font-family:Georgia,serif;color:#e8d9b5;font-size:13px;margin-top:4px}
+.hb-foot{background:#0d0b0a;color:#b8956a;text-align:center;padding:26px 20px 30px;font-family:Georgia,serif}
+.hb-foot img{width:52px;height:52px;display:block;margin:0 auto 10px}
+.hb-foot .hb-name{font-size:14px}
+.hb-foot .hb-tag{font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#8a7650;margin-top:8px;display:block}
+.hb-line{max-width:720px;margin:14px auto 0;color:#e8d9b5;font-size:15.5px;line-height:1.5}
+.hb-tips{margin:16px 0 4px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.hb-btn{display:inline-block;border:2px solid #d4af37;background:#d4af37;color:#0d0b0a;font:700 15px Georgia,serif;padding:10px 18px;border-radius:6px;text-decoration:none}
+.hb-btn2{background:transparent;color:#d4af37}
+.hb-small{font-size:12.5px;color:#8a7650;margin:6px 0 0}
+@media(max-width:600px){.hb-bar{padding:8px 16px}.hb-bar img{width:38px;height:38px}.hb-name{font-size:13px}.hb-sub{font-size:11.5px}}
+.oc-top{background:var(--teal-deep);color:#cfe6e6;font:600 13px Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase}
+.oc-top .in{max-width:960px;margin:0 auto;padding:10px 20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+.oc-top a{color:#fff;text-decoration:none}
+.case-header{background:var(--teal);color:#fff;padding:34px 20px 30px;border-bottom:6px solid var(--gold)}
+.case-wrap{max-width:960px;margin:0 auto}
+.case-eyebrow{font:700 13px Arial,sans-serif;letter-spacing:.14em;color:var(--gold);margin:0 0 10px}
+.case-title{font-size:2.1rem;line-height:1.15;margin:0 0 14px}
+.case-title em{font-style:normal;color:var(--gold)}
+.case-sub{font-size:1.08rem;margin:0 0 16px;color:#e6f2f2;max-width:820px}
+.meta-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.meta-pill{font:600 14px Arial,sans-serif;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.3);padding:6px 10px;border-radius:999px}
+.pub-date{font:600 14px Arial,sans-serif;color:#cfe6e6;margin:0}
+main{max-width:960px;margin:0 auto;padding:26px 20px 10px}
+section{margin:0 0 38px}
+h2.sh{font-size:1.55rem;margin:0 0 16px;border-bottom:3px solid var(--teal);padding-bottom:8px;color:var(--teal-deep)}
+h3{font-size:1.2rem;color:var(--teal-deep);margin:22px 0 8px}
+.ww{border:3px solid var(--teal);border-radius:10px;overflow:hidden;margin:0 0 28px}
+.ww-h{background:var(--teal);color:#fff;padding:12px 18px}
+.ww-lbl{font:700 12.5px Arial,sans-serif;letter-spacing:.14em;color:var(--gold)}
+.ww-h .pl{font-size:1.15rem;font-weight:700;margin-top:2px}
+.ww ul{list-style:none;margin:0;padding:6px 18px 12px}
+.ww li{padding:7px 0;border-bottom:1px solid #e1eeee}
+.ww li:last-child{border-bottom:0}
+.ww li b{color:var(--teal-deep)}
+.plain{background:var(--gold-bg);border:2px dashed #c99700;padding:16px 20px;margin:0 0 28px}
+.plain h2{font-size:1.25rem;margin:0 0 8px;color:var(--ink)}
+.short{background:var(--box);border:1px solid var(--rule);border-left:7px solid var(--gold);padding:18px 22px;margin:0 0 28px}
+.short h2{font-size:1.25rem;margin:0 0 10px;color:var(--teal-deep)}
+.short ul{margin:0;padding-left:22px}.short li{margin-bottom:8px}
+.toc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px}
+.toc a{font:15px Arial,sans-serif;padding:8px 13px;border:1px solid var(--rule);background:var(--box);color:var(--ink);text-decoration:none;border-radius:999px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin:12px 0 18px}
+.stat{background:var(--teal);color:#fff;padding:16px;border-radius:8px;text-align:center}
+.stat b{display:block;font:700 1.9rem Arial,sans-serif;color:var(--gold)}
+.stat span{font-size:.95rem}
+table{width:100%;border-collapse:collapse;font-size:1rem;margin:10px 0 6px}
+th,td{padding:9px 10px;border-bottom:1px solid var(--rule);text-align:left;vertical-align:top}
+th{background:var(--teal);color:#fff;font:700 14px Arial,sans-serif;letter-spacing:.04em}
+td.n,th.n{text-align:right;white-space:nowrap}
+tr.tot td{font-weight:700;border-top:2px solid var(--teal)}
+.tw{overflow-x:auto}
+.note{font:14px Arial,sans-serif;color:var(--ink-soft)}
+.quote{border-left:6px solid var(--gold);background:var(--box);padding:12px 16px;margin:12px 0}
+.quote b{display:block;color:var(--teal-deep);font-family:Arial,sans-serif;font-size:.95rem;margin-bottom:4px}
+.mermaidbox{background:#fff;border:2px solid var(--rule);border-radius:6px;padding:12px;margin:14px 0}
+pre.mermaid{margin:0;font-size:20px;text-align:center}
+.slides{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.slides figure{margin:0;background:var(--box);border:1px solid var(--rule);padding:8px}
+.slides figcaption{font:14px Arial,sans-serif;color:var(--ink-soft);margin-top:6px}
+#map{height:380px;border:2px solid var(--teal);border-radius:6px}
+.people{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.person{border:1px solid var(--rule);border-top:6px solid var(--teal);padding:12px 14px;background:#fff}
+.person b{display:block;font-size:1.05rem}
+.person span{display:block;font:13px Arial,sans-serif;color:var(--teal);text-transform:uppercase;letter-spacing:.06em;margin:2px 0 6px}
+.ask li{margin-bottom:10px}
+.ask b{color:var(--teal-deep)}
+.unk{background:#fff;border:2px solid var(--rule);padding:14px 18px}
+.unk li{margin-bottom:8px}
+.flips{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.flip{text-align:left;background:var(--box);border:1px solid var(--rule);border-top:5px solid var(--teal);padding:14px 16px;cursor:pointer;font:inherit;color:var(--ink);min-height:96px}
+.flip .ft{font-weight:bold;font-size:1.05rem}
+.flip .fh{font:13px Arial,sans-serif;color:var(--ink-soft);margin-top:6px}
+.flip .fd{display:none;margin-top:8px;font-size:.98rem}
+.flip[aria-expanded="true"] .fd{display:block}
+.flip[aria-expanded="true"] .fh{display:none}
+.tl{list-style:none;margin:0;padding:0;border-left:4px solid var(--teal)}
+.tl li{padding:8px 0 8px 18px;position:relative}
+.tl li:before{content:"";position:absolute;left:-10px;top:15px;width:14px;height:14px;border-radius:50%;background:var(--gold);border:2px solid var(--teal)}
+.tl b{display:block;color:var(--teal-deep);font-family:Arial,sans-serif}
+.tl li.og:before{background:var(--teal)}
+.counter{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.counter div{background:var(--teal);color:#fff;padding:14px;text-align:center;border-radius:6px}
+.counter .n{font:700 1.8rem Arial,sans-serif;color:var(--gold)}
+.counter .l{font-size:.88rem}
+.connect ul{list-style:none;margin:0;padding:0}
+.connect li{border:1px solid var(--rule);border-left:6px solid var(--gold);padding:10px 14px;margin:0 0 10px}
+.connect li a{font-weight:700}
+.connect li span{display:block;color:var(--ink-soft);font-size:.95rem}
+.sources details{border:1px solid var(--rule);background:var(--box);padding:12px 16px}
+.sources summary{cursor:pointer;font:700 16px Arial,sans-serif;color:var(--teal-deep)}
+.sources li{margin:8px 0;font-size:.98rem}
+.bars{margin:12px 0}
+.bar{display:grid;grid-template-columns:110px 1fr 120px;gap:10px;align-items:center;margin:6px 0;font-family:Arial,sans-serif;font-size:15px}
+.bar .t{background:#e6efef;height:26px;border-radius:4px;overflow:hidden}
+.bar .f{background:var(--teal);height:100%}
+.bar .f.g{background:var(--gold)}
+.bar .v{text-align:right;font-weight:700}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.cards a{display:block;background:var(--box);border:1px solid var(--rule);border-top:6px solid var(--teal);padding:16px 18px;text-decoration:none;color:var(--ink);border-radius:4px}
+.cards a b{display:block;font-size:1.15rem;color:var(--teal-deep);margin-bottom:6px}
+.cards a span{display:block;font-size:.97rem;color:var(--ink-soft)}
+.cards a i{display:block;font:13px Arial,sans-serif;color:var(--teal);margin-top:8px;font-style:normal}
+@media(max-width:600px){html{font-size:106%}.case-title{font-size:1.6rem}.bar{grid-template-columns:70px 1fr 96px;font-size:13.5px}th,td{padding:7px 6px;font-size:.92rem}pre.mermaid{font-size:16px}}
+</style>
+</head>
+<body>
+<div class="hb-bar"><a href="https://webercountyhive.substack.com/" target="_blank" rel="noopener"><img src="uhp-badge.png" alt="Utah Hive Politics logo"><span><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span><span class="hb-line-top">The people's publication. We investigate what's best for the public as a whole, not any party or special interest.</span></span></a></div>
+<div class="oc-top"><div class="in"><span><a href="index.html">← All Ogden City pages</a> &nbsp;·&nbsp; <a href="https://weber-county-hive.github.io/-weber-county-hive-index/">Hive library ↗</a></span><span>Ogden City · Records</span></div></div>
+<header class="case-header"><div class="case-wrap"><p class="case-eyebrow">CASE FILE · PINEVIEW PIPELINE PROJECT · OC 012</p><h1 class="case-title">Pineview's flowing well was <em>reportedly capped</em>. Here's what we could verify.</h1><p class="case-sub">The drawdown for Ogden's pipeline project exposed a 1915 well that was still flowing. The state inspected it and recommended sealing it with cement from bottom to top. A Nov. 15 post said it was capped. We have not located a record showing who did the work, when, or how.</p><div class="meta-row"><span class="meta-pill">Water right 35-1983</span><span class="meta-pill">Well ID (WIN) 452337</span><span class="meta-pill">Drilled 1915 · 65 ft</span><span class="meta-pill">Flow: about 20.5 gal/min (Sept. 25)</span></div><p class="pub-date">Posted Nov. 19, 2026 · Updated Nov. 19, 2026</p></div></header>
+<main>
+<div class="ww"><div class="ww-h"><div class="ww-lbl">WHAT</div><div class="pl">A 1915 flowing well on the floor of Pineview Reservoir</div></div><ul><li><b>Where:</b> About 500 feet off Pineview's south shore, on a parcel the state describes as currently federal land, directly north of the Jensen-Fowers Farm (state memo, Sept. 28, 2026).</li><li><b>What the state found:</b> No record that it was sealed before the reservoir filled in 1937. It was flowing about 20.5 gallons a minute on Sept. 25, 2026.</li><li><b>What the state recommended:</b> Fill it with cement from the bottom (65 feet) to the surface, done by a licensed Utah well driller, before the reservoir refills in January 2027.</li><li><b>What was reported:</b> Ogden Valley News posted on Nov. 15 that "the running artesian well on Pineview Reservoir bottom has been capped."</li></ul></div>
+<div class="plain"><h2>In plain words</h2><p>When Pineview was drained for Ogden's pipeline project, an old well on the reservoir floor turned out to still be flowing. The state's Division of Water Rights inspected it in September. It said that if the water ever stops flowing up, the open pipe could let reservoir water run down into the groundwater, so it recommended filling the whole well with cement. On Nov. 15, a local news page said the well had been capped. We have not located a record of who did the work, when, how, or who paid. We also haven't confirmed that the well in the Nov. 15 post is the one the state inspected.</p></div>
+<style>.kid{background:#EAF6F6;border:3px solid #0E5E63;border-radius:14px;padding:16px 22px;margin:0 0 28px}.kid h2{margin:0 0 8px;color:#0E5E63;font-size:1.3rem}.kid ul{margin:0;padding-left:22px}.kid li{margin:0 0 8px;font-size:1.12rem;line-height:1.5}</style><div class="kid"><h2>Explain it like I'm 10</h2><ul><li>More than 100 years ago, someone drilled a well where Pineview Reservoir is now. Water came up out of it by itself.</li><li>When the reservoir was built, the well ended up under the water, still open.</li><li>This year the reservoir was drained, and people could see the well again.</li><li>The state said: fill this old well all the way with cement so dirty water can't sneak down into the water underground.</li><li>Someone says it was capped. We're checking the records to see who did it and how.</li></ul></div>
+<div class="short"><h2>The short version</h2><ul><li><b>The state memo:</b> Division of Water Rights, Sept. 28, 2026, water right 35-1983 / WIN 452337. It recommends permanent abandonment with cement from bottom to top.</li><li><b>The report:</b> Ogden Valley News, Nov. 15, 2026, said the well "has been capped."</li><li><b>The online state record (Nov. 17):</b> WIN 452337 shows one activity, "New," dated 06/01/1915. There is no abandonment activity and no water-quality records.</li><li><b>Not located yet:</b> who did the work, when, how, the abandonment log, UGS's water test results, and who paid.</li><li><b>Not confirmed:</b> that the well in the Nov. 15 post is the one the state inspected.</li></ul></div>
+<nav class="toc" aria-label="On this page"><a href="#map-sec">Map and photos</a><a href="#memo">The state memo</a><a href="#timeline">Timeline</a><a href="#why">Why it matters</a><a href="#rules">The rules</a><a href="#records">What the records show</a><a href="#views">Three ways to look at it</a><a href="#unknown">What we don't know</a><a href="#questions">Questions to ask</a><a href="#words">Words to know</a><a href="#sources">Sources</a></nav>
+<div class="mermaidbox" role="img" aria-label="Flow chart: Pineview drawn down for pipeline project; 1915 well found flowing; state inspects Sept. 25 and recommends cement seal Sept. 28; Nov. 15 post says capped; records not yet located: who did it, how, abandonment log, test results, who paid."><pre class="mermaid">
+flowchart TD
+  A["Pineview drawn down<br/>for Ogden pipeline"] --> B["1915 well found<br/>still flowing"]
+  B --> C["State inspects<br/>Sept. 25, 2026"]
+  C --> D["State memo Sept. 28:<br/>fill with cement,<br/>bottom to top"]
+  D --> E["Nov. 15 post:<br/>'has been capped'"]
+  E --> F["Not located yet:<br/>who · how · log ·<br/>test results · who paid"]
+</pre></div>
+
+<section id="map-sec"><h2 class="sh">Map and photos</h2>
+<div id="map" role="img" aria-label="Map of Pineview Reservoir with a marker at the well location from the state memo, 41.2542100, -111.7970750."></div>
+<p class="note">Marker: the coordinates in the state memo (41.2542100, -111.7970750), Section 14, Township 6 North, Range 1 East. Map tiles © OpenStreetMap contributors.</p>
+<div class="slides">
+<figure><img src="pineview-well-memo-map.jpg" alt="State memo map showing the well about 500 feet from Pineview's south shore, north of parcel 200150016"><figcaption>Memo Map 1: well location, about 500 feet from the south bank. Utah Division of Water Rights, Sept. 28, 2026.</figcaption></figure>
+<figure><img src="pineview-well-memo-photo1.jpg" alt="Wide view across the drained lakebed looking north, with the well in the distance"><figcaption>Memo Photo 1: looking north from the south bank. The well is center left, with water flowing southwest from it.</figcaption></figure>
+<figure><img src="pineview-well-memo-photo2.jpg" alt="Wellhead stick-up measured at 44 inches, with water pouring from the side"><figcaption>Memo Photo 2: wellhead stick-up of 44 inches.</figcaption></figure>
+<figure><img src="pineview-well-memo-photo3.jpg" alt="Top of the mineral-crusted wellhead with a tape measure across it"><figcaption>Memo Photo 3: outside diameter of the wellhead, about 8 inches.</figcaption></figure>
+<figure><img src="pineview-well-memo-photo4.jpg" alt="Water flowing from a round opening in the side of the wellhead"><figcaption>Memo Photo 4: opening of about 2.75 inches, about 36 inches above the ground.</figcaption></figure>
+</div>
+<p class="note">All five images are from the state memo (Memo to File 35-1983, Utah Division of Water Rights, Sept. 28, 2026), as posted on Ogden City's pipeline project website. The Hive has not matched these photos by location to the photo in the Nov. 15 post.</p>
+</section>
+
+<section id="memo"><h2 class="sh">The well the state inspected</h2>
+<p>Ogden City's pipeline project website links to a <b>Sept. 28, 2026 memo to file from the Utah Division of Water Rights</b>. It was written by Hannah Finley, P.G., of the Well Drilling Program. The subject line reads "35-1983 Jensen-Fowers Farm LLC - Flowing Well in Pineview Reservoir."</p>
+<div class="tw"><table><tr><th>Item</th><th>What the memo says</th></tr>
+<tr><td>Identification</td><td>Water right 35-1983; well identification number (WIN) 452337; coordinates 41.2542100, -111.7970750; N 1679 W 88 SE, Section 14, T6N, R1E, SLB&amp;M</td></tr>
+<tr><td>Location</td><td>"approximately 500 feet from the southern shore of Pineview Reservoir on Parcel 200150001 (currently federal land), directly north of the Jensen-Fowers Farm"</td></tr>
+<tr><td>History</td><td>6-inch iron pipe, 65 feet deep, drilled in 1915, flowing without a pump; "originally owned by Simon Jensen, the founder of Jensen Farms"</td></tr>
+<tr><td>Before the reservoir</td><td>"There are no records indicating the wellhead was altered or sealed prior to inundation."</td></tr>
+<tr><td>Inspection</td><td>Sept. 25, 2026, with Utah Geological Survey staff. Flow about 20.5 gallons per minute (± 0.5), measured with a bucket and stopwatch at least five times. pH 6.68; 11.2 °C; specific conductivity 798 µS/cm. UGS took water samples, and the results were to be added to the file.</td></tr>
+<tr><td>The concern</td><td>If the flow stops, "there is significant concern that the open well casing acts as a direct conduit for reservoir water to enter and contaminate the underlying groundwater system."</td></tr>
+<tr><td>Recommendation</td><td>"we highly recommend it be properly abandoned" before the reservoir refills in January 2027. A licensed Utah water well driller must pump cement through a tremie pipe from the bottom of the well (65 feet) to fill the entire casing to the surface.</td></tr>
+</table></div>
+<p class="note">How the memo was read: the five-page PDF was downloaded from Ogden City's project website on Nov. 17, 2026. The text was extracted, and the map and photo pages were viewed as rendered images.</p>
+<div class="quote"><b>Is this the same well as in the Nov. 15 post?</b>That hasn't been confirmed. The community post placed the well near a pumpkin patch, and the memo places it directly north of the Jensen-Fowers Farm. The memo photos and the post's photo both show a mineral-crusted wellhead beside a concrete border. The Hive has not matched the two by location, so this page treats them as possibly the same well. It also does not assume the reported capping completed the abandonment the memo recommends.</div>
+</section>
+
+<section id="timeline"><h2 class="sh">Timeline</h2><ol class="tl">
+<li class="og"><b>1915</b>Well drilled, 65 feet, 6-inch iron pipe, flowing without a pump; original owner Simon Jensen (state memo).</li>
+<li class="og"><b>1937</b>Pineview Dam finished; the well goes under the reservoir. The memo found no record that it was sealed first.</li>
+<li><b>2026</b>Pineview drawn down for Ogden's pipeline replacement project.</li>
+<li><b>Sept. 25, 2026</b>Division of Water Rights and UGS staff inspect the well and measure about 20.5 gallons per minute.</li>
+<li><b>Sept. 28, 2026</b>State memo recommends filling the well with cement from bottom to top before the reservoir refills.</li>
+<li><b>Oct. 27, 2026</b>State Drinking Water Board posts its environmental notice for Ogden's waterline and well replacement project (3F1908).</li>
+<li><b>Nov. 12, 2026</b>Ogden City tells the Standard-Examiner the pipeline crossing is ahead of its Jan. 1, 2027 deadline and expected to finish in December (Justin Anderson, Public Services Executive Director).</li>
+<li><b>Nov. 15, 2026</b>Ogden Valley News posts that the well "has been capped."</li>
+<li><b>Nov. 17, 2026</b>The Hive checks the state well database. WIN 452337 shows no abandonment activity and no water-quality records.</li>
+<li><b>January 2027</b>Planned refill of Pineview (state memo).</li>
+</ol></section>
+
+<section id="why"><h2 class="sh">Why a flowing old well matters</h2>
+<p>The <b>Utah Geological Survey's 2019 Special Study 165</b> on Ogden Valley groundwater looked at old wells under Pineview. These quotes were read directly from the study (printed page numbers):</p>
+<ul>
+<li><b>Page 68:</b> "At least 51 wells were drilled in the Artesian Park area." Some were abandoned in the 1970s because of bacteria problems. "The state of most wells at abandonment is unknown and decades of further decay may have deteriorated plugs or caps." The authors say such wells "may now be a conduit between Pineview Reservoir and the confined aquifer," which feeds Ogden's drinking-water wells.</li>
+<li><b>Page 96:</b> A water-balance model "suggests that there must have been at least 2700 acre-feet of reservoir water moving to the confined aquifer in 2016."</li>
+<li><b>The study's own caveats (p. 96):</b> "Without more information, we are unable to positively identify and quantify the interaction between Pineview Reservoir and the confined aquifer." Stable isotopes "do not reflect reservoir influence." But tritium and elevated nitrate in an Ogden City well are "convincing evidence that recent groundwater recharge is entering the confined aquifer."</li>
+</ul>
+<p><b>Ogden City's pipeline project website</b> says the water for the city's wellfield comes from a confined aquifer that is separated from Pineview Reservoir and is not affected by reservoir levels.</p>
+<p>These statements answer different questions. The city is addressing whether the drawdown will interrupt its wellfield supply. UGS identified possible paths by which shallower water could reach the confined aquifer. <b>The study does not establish that this exposed well is one of those paths.</b> The state memo raises the same kind of concern about the well it inspected, namely what could happen if its flow stops. It does not report test results.</p>
+<h3>Background: Ogden's old Artesian Park wells</h3>
+<p>This part is regional history. It does <b>not</b> establish who owned or is responsible for the well in the memo. The memo associates that well with water right 35-1983, Jensen-Fowers Farm LLC, and identifies Simon Jensen as its original owner.</p>
+<ul>
+<li><b>U.S. Bureau of Reclamation, Ogden River Project history:</b> "The artesian wells owned by Ogden City were capped and abandoned."</li>
+<li><b>Ogden Valley News, December 1999</b> (p. 20, compiled by Shanna Francis), quoting a September 1984 Standard-Examiner article: "Under a contract with Ogden, the Bureau of Reclamation took over responsibility for the artesian system."</li>
+<li><b>Standard-Examiner, Sept. 18, 2026:</b> Justin Anderson, Ogden City Public Services Executive Director, said that when the dam was raised in 1970, "our wells all got capped underneath Pineview Reservoir."</li>
+<li><b>UGS Special Study 165, p. 6:</b> before the reservoir filled, Ogden City "plugged some of the wells and extended others to higher ground."</li>
+</ul>
+</section>
+
+<section id="rules"><h2 class="sh">What state rules say about sealing a well</h2>
+<ul>
+<li><b>Who does the work (R655-4-14):</b> Abandoning a well must be done under the direct supervision of a currently licensed water well driller, who is "responsible for verification of the procedures and materials used."</li>
+<li><b>Notice before (R655-4-4, 4.2.5):</b> The driller must notify the state engineer before starting. No start card is needed. The notice can go by phone, fax or email.</li>
+<li><b>Record after (R655-4-4, 4.6.2):</b> An abandonment log is due "within 30 days of the completion of abandonment work."</li>
+<li><b>Artesian wells (14.7):</b> A cement or concrete plug goes in the confining layer "so as to prevent subsurface leakage from the artesian zone." The rest is filled with grout or bentonite.</li>
+<li><b>Temporary caps (14.1):</b> A well temporarily removed from service needs a tamper-resistant, watertight seal. The rule also limits temporary abandonment <i>during construction</i> to 90 days. How this applies to a 1915 well on a reservoir floor is a question for the Division of Water Rights.</li>
+</ul>
+<div class="flips">
+<button class="flip" aria-expanded="false"><div class="ft">Surface cap</div><div class="fh">Tap to compare</div><div class="fd">A cover on top of the pipe. It stops water coming out of the top, but the pipe below stays open.</div></button>
+<button class="flip" aria-expanded="false"><div class="ft">Cement seal, bottom to top</div><div class="fh">Tap to compare</div><div class="fd">What the state memo recommended: cement pumped from 65 feet down, filling the whole casing to the surface. This closes the pipe for good.</div></button>
+</div>
+</section>
+
+<section id="records"><h2 class="sh">What the state well database shows (Nov. 17, 2026)</h2>
+<div class="stats"><div class="stat"><b>0</b><span>abandonment entries on WIN 452337</span></div><div class="stat"><b>0</b><span>water-quality records on WIN 452337</span></div><div class="stat"><b>9</b><span>results returned, township search (Abandon only)</span></div></div>
+<ul>
+<li><b>Search 1, wells drilled 2024 through 2026 (T6N, R1E):</b> Eight records, none documenting abandonment of the exposed well. This search filters by drilling date, so it can't show a recent abandonment of an old well.</li>
+<li><b>Search 2, township search, Abandon activity only, no date limit (T6N, R1E, SLBM):</b> Nine results returned. These are wells with abandonment activity recorded at some point, not nine abandonment events. None is WIN 452337 or water right 35-1983, and none is in Section 14.</li>
+<li><b>Search 3, direct lookup of WIN 452337:</b> One activity, "New," dated 06/01/1915; depth 65; casing 6. "No comment records found." "No water quality records found for this location."</li>
+<li><b>Water right 35-1983:</b> The page header loaded (Application/Claim Number U606). The details and scanned documents didn't load after three tries. Not read yet.</li>
+</ul>
+<p class="note"><b>What this means:</b> These results describe the online record on Nov. 17. They don't show whether work was done, or whether paperwork has been filed but not yet entered. Whether the 30-day filing deadline has passed depends on when permanent abandonment was completed, which we have not established. The Hive keeps a record of the search settings, results and screenshots. A re-check is scheduled for Dec. 1, 2026.</p>
+</section>
+
+<section id="views"><h2 class="sh">Three ways to look at it</h2>
+<h3>1. The auditor's view</h3>
+<p>An audit could examine authorization, compliance, costs and supporting records. Here is what an audit would look for, and what we have located so far:</p>
+<div class="tw"><table><tr><th>Record</th><th>Located as of Nov. 17?</th></tr>
+<tr><td>State inspection and recommendation</td><td><b style="color:var(--ok)">Found:</b> Division of Water Rights memo, Sept. 28, 2026</td></tr>
+<tr><td>UGS water-sample results</td><td>Not located. None on the WIN 452337 record.</td></tr>
+<tr><td>Licensed driller named on the work</td><td>Not located</td></tr>
+<tr><td>Notice to the state engineer before the work</td><td>Not located</td></tr>
+<tr><td>Abandonment log</td><td>Not located. The WIN 452337 record shows no abandonment activity.</td></tr>
+<tr><td>Who paid, and whether it was inside the pipeline project</td><td>Not located</td></tr>
+<tr><td>Confirmation that the inspected well is the one reportedly capped</td><td>Not located</td></tr>
+</table></div>
+<p><b>The money.</b> Two public documents give different figures, and they describe the project differently. Each figure is shown with its source:</p>
+<div class="tw"><table><tr><th>Source</th><th class="n">Cost</th><th>Scope</th></tr>
+<tr><td>Ogden City project website</td><td class="n">"$100M"</td><td>"approximately $100 million across all phases through 2029"; 6.4 miles of pipeline</td></tr>
+<tr><td>State Drinking Water Board notice, Oct. 27, 2026 (project 3F1908)</td><td class="n">$87,000,000</td><td>About 8.2 miles of waterline and "developing a replacement well at the Pineview Well Field"</td></tr>
+</table></div>
+<div class="bars"><div class="bar"><span>DWB loan</span><div class="t"><div class="f" style="width:39.5%"></div></div><span class="v">$34,370,000</span></div><div class="bar"><span>WIFIA loan</span><div class="t"><div class="f" style="width:49%"></div></div><span class="v">$42,630,000</span></div><div class="bar"><span>Ogden City</span><div class="t"><div class="f g" style="width:11.5%"></div></div><span class="v">$10,000,000</span></div></div>
+<p class="note">Funding breakdown from the state's Oct. 27 notice (total $87,000,000). WIFIA is a federal water infrastructure loan program. The records reviewed don't show whether sealing the 1915 well falls within this project.</p>
+<p><b>The historic-discovery condition.</b> The same state notice says the project does not "affect any cultural or historical properties." It also says that if anything with possible cultural or historic significance is uncovered during construction, Ogden City "will be required to stop construction and notify both the Division of Drinking Water (the Division) and the State Historic Preservation Officer." KSL reported the exposed century-old well structures on Oct. 13, and the notice was posted Oct. 27. <b>This does not establish that the condition was triggered or missed.</b></p>
+<h3>2. The collective view: transparency, financial accountability, environmental impact</h3>
+<ul>
+<li><b>Environmental impact:</b> The memo's concern is contamination if the upward flow stops. Sealing the well properly can serve the public good. Whether it does depends on how it was sealed.</li>
+<li><b>Transparency:</b> The state inspected the well and wrote up a recommendation, and Ogden City posted that memo on its project website. The closure itself became public through a Facebook post. We have not located a record of who did the work, when, or how.</li>
+<li><b>Financial accountability:</b> We have not located a record showing who paid.</li>
+<li><b>Done in the open:</b> The pipeline project has had public briefings, a project website and regular local news updates.</li>
+</ul>
+<h3>3. The legislative view</h3>
+<ul>
+<li><b>Repealed in 2010:</b> Utah Code 73-2-21 gave the state engineer power to "plug, repair, or to otherwise control artesian wells which are wasting public water." H.B. 69 (2010), "State Engineer's Plugging of Wells Repealer," repealed it. Its primary sponsor was Rep. James R. Gowans, and its Senate sponsor was Sen. David P. Hinkins. The enrolled bill gives no reason.</li>
+<li><b>Still on the books:</b> Utah Code 73-5-9 lets the state engineer require plugging of caps, valves or casings on wells to prevent waste or contamination, paid for by the owner, lessee or person in control.</li>
+<li><b>Who is responsible?</b> The memo associates the well with water right 35-1983, Jensen-Fowers Farm LLC, on a parcel it describes as currently federal land. That alone doesn't establish current ownership or responsibility. The memo's word is "recommend," not "order."</li>
+<li><b>Rule gap:</b> Nothing in the abandonment rules reviewed requires <i>public</i> notice when an old well on public land is sealed.</li>
+</ul>
+</section>
+
+<section id="unknown"><h2 class="sh">What we don't know yet</h2><div class="unk"><ul>
+<li>Whether the well in the Nov. 15 post is the one the state inspected (35-1983 / WIN 452337)</li>
+<li>Who closed the well, when, and how: a surface cap, or cement from bottom to top as recommended</li>
+<li>Whether an abandonment log was or will be filed</li>
+<li>UGS's water-sample results</li>
+<li>Who paid</li>
+</ul></div><p class="note" style="margin-top:10px"><b>Every item above is also a question you can ask.</b> See <a href="#questions">Questions to ask, and whom to ask</a>.</p></section>
+
+<section id="questions"><h2 class="sh">Questions to ask, and whom to ask</h2><p>Use <b>water right 35-1983</b> and <b>WIN 452337</b> when you ask.</p><ol class="ask">
+<li><b>Utah Division of Water Rights, Well Drilling Program:</b> Has an abandonment log been filed for WIN 452337, and does the closure match the memo's recommendation? Are UGS's water-sample results in the file?</li>
+<li><b>Ogden Public Services:</b> Did the pipeline project close this well, and if so, who did the work and when?</li>
+<li><b>Ogden City Council:</b> If the city paid, was it under the pipeline contract, by change order, or separately?</li>
+<li><b>U.S. Bureau of Reclamation (Provo Area Office):</b> As the federal landholder, did Reclamation have any role in closing the well?</li>
+<li><b>Utah Division of Drinking Water (project 3F1908):</b> Were the exposed historic wells reported under the notice's discovery condition?</li>
+<li><b>Your state legislators:</b> Should sealing an old well on public land come with public notice?</li>
+</ol></section>
+
+<section id="words"><h2 class="sh">Words to know</h2><div class="flips">
+<button class="flip" aria-expanded="false"><div class="ft">Artesian well</div><div class="fh">Tap to see</div><div class="fd">A well where underground pressure pushes water up on its own, with no pump.</div></button>
+<button class="flip" aria-expanded="false"><div class="ft">Aquifer</div><div class="fh">Tap to see</div><div class="fd">A layer of rock, sand or gravel underground that holds water. A confined aquifer is sealed above by a tighter layer, like clay.</div></button>
+<button class="flip" aria-expanded="false"><div class="ft">Abandonment (of a well)</div><div class="fh">Tap to see</div><div class="fd">Permanently sealing a well so water can't move through it. In Utah, a licensed driller does it and files a log.</div></button>
+<button class="flip" aria-expanded="false"><div class="ft">WIN</div><div class="fh">Tap to see</div><div class="fd">Well Identification Number, the state's ID for one well. This well is WIN 452337.</div></button>
+<button class="flip" aria-expanded="false"><div class="ft">Water right</div><div class="fh">Tap to see</div><div class="fd">A state-recorded right to use a certain amount of water from a certain source. This well is associated with 35-1983.</div></button>
+<button class="flip" aria-expanded="false"><div class="ft">Tremie pipe</div><div class="fh">Tap to see</div><div class="fd">A pipe lowered to the bottom of a well so cement fills it from the bottom up, without gaps.</div></button>
+<button class="flip" aria-expanded="false"><div class="ft">State engineer</div><div class="fh">Tap to see</div><div class="fd">The director of Utah's Division of Water Rights.</div></button>
+</div></section>
+
+<section class="connect"><h2 class="sh">Where this connects</h2><ul>
+<li><a href="ogden-water-rates-pipeline.html">Water rates and the $99 million pipeline (OC 008)</a><span>The pipeline project that drew Pineview down, and how it's paid for.</span></li>
+<li><a href="ogden-project-areas.html">Ogden's project areas (OC 007)</a><span>Other Ogden City records pages.</span></li>
+<li><a href="https://webercountyhive.substack.com/">The Weber County Hive on Substack</a><span>This story as an article, Nov. 17, 2026.</span></li>
+<li><a href="index.html">Ogden City pages</a><span>All Ogden City pages.</span></li>
+</ul></section>
+
+<section id="behind"><h2 class="sh">Behind this piece</h2><div class="counter"><div><div class="n">21</div><div class="l">records read</div></div><div><div class="n">18</div><div class="l">database line items checked</div></div><div><div class="n">6</div><div class="l">records checked, not used</div></div><div><div class="n">~18</div><div class="l">searches run (estimate)</div></div></div><p class="note">Counts are estimates from our working notes. Posted Nov. 19, 2026.</p></section>
+<section id="records-fund" style="margin:28px 0;padding:22px 24px;border:3px solid #F2B705;border-radius:14px;background:#FFFBEA;color:#0F1F3D"><h2 style="margin:0 0 8px;color:#0E5E63;font-size:1.5em">Help cover records costs</h2><p style="margin:0 0 14px;font-size:1.08em;line-height:1.5">Public records aren't always free. The Hive Records Fund helps pay records fees, copies and other costs behind pages like this one. You pick the amount, and every dollar in and every cost paid is listed publicly. The Weber County Hive is not a nonprofit, so contributions are not tax-deductible.</p><p style="margin:0;display:flex;flex-wrap:wrap;gap:12px"><a href="https://buy.stripe.com/bJecN6evZ5n25W2aqJfQI00" target="_blank" rel="noopener" style="display:inline-block;background:#0E5E63;color:#fff;font-weight:bold;padding:12px 22px;border-radius:10px;text-decoration:none;font-size:1.1em">Give to the Records Fund</a><a href="https://weber-county-hive.github.io/Transparency/hive-records-fund.html" target="_blank" rel="noopener" style="display:inline-block;color:#0E5E63;font-weight:bold;padding:12px 4px;font-size:1.05em">See the public ledger &rarr;</a></p></section>
+<section id="sources" class="sources"><h2 class="sh">Sources</h2><details><summary>Sources — click to open (with links)</summary><ul>
+<li><a href="https://ogdencitypipeline.com/files/Division_of_Water_Rights_Memo_35-1983.pdf" target="_blank" rel="noopener">Utah Division of Water Rights, Memo to File 35-1983, "Jensen-Fowers Farm LLC - Flowing Well in Pineview Reservoir," Hannah Finley, P.G. (Sept. 28, 2026)</a></li>
+<li>Ogden Valley News, Facebook post (Nov. 15, 2026): "The running artesian well on Pineview Reservoir bottom has been capped. More info to follow."</li>
+<li><a href="https://ogdencitypipeline.com/" target="_blank" rel="noopener">Ogden City, Ogden Canyon 36-Inch Pipeline Replacement project website</a></li>
+<li><a href="https://www.utah.gov/pmn/sitemap/notice/1118553.html" target="_blank" rel="noopener">Utah Drinking Water Board, Categorical Exclusion Determination, Ogden City Waterline and Well replacement, project 3F1908 (posted Oct. 27, 2026)</a></li>
+<li><a href="https://www.waterrights.utah.gov/wellinfo/welldrilling/wlbrowse.asp?WIN=452337" target="_blank" rel="noopener">Utah Division of Water Rights, well record WIN 452337 (viewed Nov. 17, 2026)</a></li>
+<li><a href="https://waterrights.utah.gov/wellinfo/wellsearch.asp" target="_blank" rel="noopener">Utah Division of Water Rights, Well Log Search (T6N R1E SLBM, searched Nov. 17, 2026)</a></li>
+<li><a href="https://waterrights.utah.gov/asp_apps/wrprint/wrprint.asp?wrnum=35-1983" target="_blank" rel="noopener">Utah Division of Water Rights, water right 35-1983 (header viewed Nov. 17, 2026; details did not load)</a></li>
+<li><a href="https://www.webercountyutah.gov/planning/documents/Ogden%20Valley%20Hydrogeology%20Study%20(Reduced).pdf" target="_blank" rel="noopener">Utah Geological Survey, Special Study 165 (2019), Ogden Valley hydrogeology (pp. 6, 68, 96)</a></li>
+<li><a href="https://www.ogdenvalleynews.com/when-pineview-drops.html" target="_blank" rel="noopener">Ogden Valley News, "When Pineview Drops, a Piece of Ogden Valley's Water History Reappears," Ogden Valley Watershed Action Group (Sept. 25, 2026)</a></li>
+<li><a href="https://www.usbr.gov/projects/index.php?id=371" target="_blank" rel="noopener">U.S. Bureau of Reclamation, Ogden River Project</a></li>
+<li><a href="https://newspapers.lib.utah.edu/ark:/87278/s61pwskh/30526268" target="_blank" rel="noopener">Ogden Valley News, Dec. 1999, Vol. II, Issue III, p. 20, "Pineview Dam and Reservoir," compiled by Shanna Francis, quoting a Sept. 1984 Standard-Examiner article (Utah Digital Newspapers, OCR text)</a></li>
+<li><a href="https://www.standard.net/news/2026/sep/18/ogden-city-gives-briefing-on-status-of-water-line-replacement-across-exposed-pineview-reservoir-lake-bed/" target="_blank" rel="noopener">Standard-Examiner, "Ogden City gives briefing on status of water line replacement across exposed Pineview Reservoir lake bed" (Sept. 18, 2026)</a></li>
+<li><a href="https://www.standard.net/news/2026/nov/12/nearing-the-finish-ogden-water-line-project-on-pineview-reservoir-could-wrap-up-early/" target="_blank" rel="noopener">Standard-Examiner, "Nearing the finish: Ogden water line project on Pineview Reservoir could wrap up early" (Nov. 12, 2026)</a></li>
+<li><a href="https://www.fox13now.com/news/local-news/weber-county/pineview-reservoirs-low-water-levels-reveal-century-old-artesian-wells-hidden-beneath-the-surface" target="_blank" rel="noopener">FOX 13, "Pineview Reservoir's low water levels reveal century-old artesian wells hidden beneath the surface" (Nov. 5, 2026)</a></li>
+<li><a href="https://www.ksl.com/article/51636056/century-old-history-surfaces-from-beneath-pineview-reservoir" target="_blank" rel="noopener">KSL, "Century-old history surfaces from beneath Pineview reservoir" (Oct. 13, 2026)</a></li>
+<li><a href="https://www.law.cornell.edu/regulations/utah/Utah-Admin-Code-R655-4-4" target="_blank" rel="noopener">Utah Admin. Code R655-4-4, Administrative Requirements (4.2.5; 4.6.2)</a></li>
+<li><a href="https://www.law.cornell.edu/regulations/utah/Utah-Admin-Code-R655-4-14" target="_blank" rel="noopener">Utah Admin. Code R655-4-14, Abandonment of Wells</a></li>
+<li><a href="https://le.utah.gov/~2010/bills/hbillenr/HB0069.pdf" target="_blank" rel="noopener">Utah H.B. 69 (2010), State Engineer's Plugging of Wells Repealer, enrolled copy</a></li>
+<li><a href="https://law.justia.com/codes/utah/2006/title73/73_02020.html" target="_blank" rel="noopener">Former Utah Code 73-2-21 (2006 text)</a></li>
+<li><a href="https://law.justia.com/codes/utah/title-73/chapter-5/section-9/" target="_blank" rel="noopener">Utah Code 73-5-9, Powers of state engineer as to waste, pollution, or contamination of waters</a></li>
+</ul></details></section></main>
+<div class="hb-foot"><img src="hive-bee.png" alt=""><span class="hb-name">Utah Hive Politics</span><span class="hb-sub">from the publisher of The Weber County Hive</span><span class="hb-tag">Independent · Accountability · Journalism</span><p class="hb-line">The Weber County Hive and Utah Hive Politics: the people's publication. We investigate what's best for the public as a whole, not for any party or special interest group. We report public records. You decide.</p><p class="hb-tips"><a class="hb-btn" href="https://weber-county-hive.github.io/-weber-county-hive-index/tips.html#send">Send a tip</a><a class="hb-btn hb-btn2" href="https://weber-county-hive.github.io/-weber-county-hive-index/tips.html">Tips we checked</a><a class="hb-btn hb-btn2" href="https://weber-county-hive.github.io/-weber-county-hive-index/tips.html#send">See a mistake? Tell us</a></p><p class="hb-small">We never name tipsters. When we correct a page, the fix and its date are shown on the page.</p><p class="hb-small"><a href="index.html" style="color:#d4af37">Ogden City shelf</a> · <a href="https://weber-county-hive.github.io/-weber-county-hive-index/" style="color:#d4af37">Master Index (Hive library)</a> · <a href="https://webercountyhive.substack.com/" style="color:#d4af37">Read on Substack</a></p></div>
+<script>document.querySelectorAll('.flip').forEach(function(f){f.addEventListener('click',function(){f.setAttribute('aria-expanded',f.getAttribute('aria-expanded')==='true'?'false':'true');});});</script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>try{var m=L.map('map').setView([41.2542100,-111.7970750],14);L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'&copy; OpenStreetMap contributors'}).addTo(m);L.marker([41.2542100,-111.7970750]).addTo(m).bindPopup('<b>1915 flowing well</b><br>WIN 452337 · water right 35-1983<br>State memo coordinates').openPopup();}catch(e){}</script>
+<script type="module">import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.esm.min.mjs"; mermaid.initialize({startOnLoad:true,theme:"base",themeVariables:{fontSize:"20px",fontFamily:"Arial",primaryColor:"#eef6f6",primaryBorderColor:"#0E5E63",primaryTextColor:"#0F1F3D",lineColor:"#0E5E63"},flowchart:{useMaxWidth:true,htmlLabels:true}});</script>
+<script data-goatcounter="https://weberhive.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
