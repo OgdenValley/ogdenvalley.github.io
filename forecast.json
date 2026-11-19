@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T09:19:47.693Z",
+ "updated": "2026-11-19T13:04:22.613Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
@@ -79,15 +79,15 @@
    "label": "Wed",
    "md": "Nov 25",
    "high": 41,
-   "low": null,
+   "low": 22,
    "pop": 45,
    "short": "Chance Light Snow",
-   "both": "Chance Light Snow",
+   "both": "Chance Light Snow / Chance Rain And Snow",
    "snow": true,
    "wind": "2 mph"
   }
  ],
- "today": "Overnight: A slight chance of snow after 5am. Mostly cloudy. Low around 23, with temperatures rising to around 26 overnight. East southeast wind around 6 mph. Chance of precipitation is 20%. Little or no snow accumulation expected.",
+ "today": "Today: A slight chance of snow before 8am, then rain and snow. Cloudy, with a high near 40. East southeast wind 2 to 8 mph. Chance of precipitation is 90%. New snow accumulation of less than half an inch possible.",
  "valleySnowDays": [
   "Thu",
   "Fri",

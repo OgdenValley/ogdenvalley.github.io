@@ -1,6 +1,434 @@
 {
- "updated": "2026-11-12T18:56:13.630Z",
+ "updated": "2026-11-19T13:05:06.770Z",
  "issues": [
+  {
+   "start": "2026-11-19",
+   "end": "2026-11-26",
+   "made": "2026-11-19T13:05:06.738Z",
+   "featured": [
+    {
+     "title": "Huntsville's First Annual Christmas Parade",
+     "date": "2026-12-01",
+     "time": "6:30 PM",
+     "place": "",
+     "town": "Huntsville",
+     "image": "ove-huntsville-christmas-parade-2026-flyer.jpg",
+     "line": "A brand-new holiday tradition from the Huntsville Town Traditions Committee. Businesses, families, church groups and neighbors are invited to decorate a float or dress up a vehicle. Or come cheer along the route. Source: Huntsville Town, Nov. 3.",
+     "link": "https://www.signupgenius.com/go/20F0C4DACA722A3FBCE9-67168627-huntsville",
+     "linkText": "Sign up to be in the parade"
+    }
+   ],
+   "events": [
+    {
+     "day": "2026-11-19",
+     "items": [
+      {
+       "time": "All day",
+       "t": "La Vrille: public art by elparo",
+       "url": "https://www.weber.edu/shawgallery/upcoming.html",
+       "loc": "Dumke Arts Plaza"
+      },
+      {
+       "time": "All day",
+       "t": "Hilton Garden Inn Community Food Drive",
+       "url": "https://www.hilton.com/en/hotels/ogdwbgi-hilton-garden-inn-ogden-ut/",
+       "loc": "Hilton Garden Inn"
+      },
+      {
+       "time": "5:30 p.m.",
+       "t": "THE FIELD | Fall into Dance",
+       "url": "",
+       "loc": "Eccles Black Box Theatre"
+      },
+      {
+       "time": "4:30 p.m.",
+       "t": "Ogden Trails Network Committee Meeting",
+       "url": "",
+       "loc": "2549 Washington Blvd."
+      },
+      {
+       "time": "5:30 p.m.",
+       "t": "WSU Dance: The Field - Eccles",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Huntsville Town Council meeting",
+       "url": "https://huntsvilleutah.gov/upcoming-events",
+       "loc": "Huntsville Town Hall"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Free live music & ice cream at Z's Sweets",
+       "url": "",
+       "loc": "Z's Sweets"
+      },
+      {
+       "time": "6:30 p.m.",
+       "t": "Open Music Jam",
+       "url": "https://www.mountainartsandmusic.org/",
+       "loc": "Mountain Arts and Music Art Space"
+      },
+      {
+       "time": "7:30 p.m.",
+       "t": "Clytie Adams Nutcracker - Austad",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "8:30 p.m.",
+       "t": "Country Dancing",
+       "url": "",
+       "loc": "Neptune Skating Center"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-20",
+     "items": [
+      {
+       "time": "All day",
+       "t": "Words/Inspired by Books - Community Art Show",
+       "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
+       "loc": "Ogden Union Station"
+      },
+      {
+       "time": "1 p.m.",
+       "t": "New World Distillery tasting tour",
+       "url": "",
+       "loc": "New World Distillery"
+      },
+      {
+       "time": "5 p.m.",
+       "t": "Acorn Antiques & Vintage Show",
+       "url": "",
+       "loc": "Golden Spike Event Center"
+      },
+      {
+       "time": "5:30 p.m.",
+       "t": "Steppin' The Ogden Way dance class",
+       "url": "",
+       "loc": "Marshall White Center"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Free live music & ice cream at Z's Sweets",
+       "url": "",
+       "loc": "Z's Sweets"
+      },
+      {
+       "time": "7 p.m.",
+       "t": "Joe & Jacy Storey live",
+       "url": "https://www.facebook.com/ogdenvalleyevents",
+       "loc": "Utah American Legion Post 129 Ogden Valley"
+      },
+      {
+       "time": "7 p.m.",
+       "t": "WSU Dance: The Field - Eccles",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "7 p.m.",
+       "t": "Friday Night Jazz",
+       "url": "",
+       "loc": "Two Bit Bistro"
+      },
+      {
+       "time": "7:30 p.m.",
+       "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+       "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+       "loc": "Peery's Egyptian Theater"
+      },
+      {
+       "time": "7:30 p.m.",
+       "t": "Clytie Adams Nutcracker - Austad",
+       "url": "",
+       "loc": ""
+      }
+     ]
+    },
+    {
+     "day": "2026-11-21",
+     "items": [
+      {
+       "time": "8 a.m.",
+       "t": "Holiday Open House",
+       "url": "",
+       "loc": "Ogden Nature Center!"
+      },
+      {
+       "time": "9 a.m.",
+       "t": "Acorn Antiques & Vintage Show",
+       "url": "",
+       "loc": "Golden Spike Event Center"
+      },
+      {
+       "time": "9 a.m.",
+       "t": "Hairy Horse Show",
+       "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/t1/1/16/1f40e.png",
+       "loc": "Golden Spike Event Center"
+      },
+      {
+       "time": "11 a.m.",
+       "t": "Clytie Adams Nutcracker - Austad",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "12 p.m.",
+       "t": "Harvest and Holly Bazaar",
+       "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+       "loc": "2913 S Grant Ave"
+      },
+      {
+       "time": "1 p.m.",
+       "t": "New World Distillery tasting tour",
+       "url": "",
+       "loc": "New World Distillery"
+      },
+      {
+       "time": "2 p.m.",
+       "t": "Cinema Saturday Feature Films",
+       "url": "",
+       "loc": "Ogden Valley Library @ 131 S 7400 E"
+      },
+      {
+       "time": "2 p.m.",
+       "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+       "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+       "loc": "Peery's Egyptian Theater"
+      },
+      {
+       "time": "2 p.m.",
+       "t": "WSU Dance: The Field - Eccles",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "2 p.m.",
+       "t": "Craft n Cry",
+       "url": "",
+       "loc": "Kaffe Mercantile"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Free live music & ice cream at Z's Sweets",
+       "url": "",
+       "loc": "Z's Sweets"
+      },
+      {
+       "time": "7 p.m.",
+       "t": "Singles Mingle",
+       "url": "",
+       "loc": "Grounds for Coffee"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-22",
+     "items": [
+      {
+       "time": "10 a.m.",
+       "t": "Acorn Antiques & Vintage Show",
+       "url": "",
+       "loc": "Golden Spike Event Center"
+      },
+      {
+       "time": "1 p.m.",
+       "t": "New World Distillery tasting tour",
+       "url": "",
+       "loc": "New World Distillery"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-23",
+     "items": [
+      {
+       "time": "6 p.m.",
+       "t": "Mystic Mondays: tarot readings",
+       "url": "",
+       "loc": "Two Bit Bistro"
+      },
+      {
+       "time": "7:30 p.m.",
+       "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+       "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+       "loc": "Peery's Egyptian Theater"
+      },
+      {
+       "time": "8:30 p.m.",
+       "t": "Country Dancing",
+       "url": "",
+       "loc": "Neptune Skating Center"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-24",
+     "items": [
+      {
+       "time": "1:30 p.m.",
+       "t": "Gentle Movements",
+       "url": "https://weberpl.events.mylibrary.digital/",
+       "loc": "Main Library"
+      },
+      {
+       "time": "3 p.m.",
+       "t": "Open Art Studio",
+       "url": "https://www.mountainartsandmusic.org/",
+       "loc": "Mountain Arts and Music Art Space"
+      },
+      {
+       "time": "3:30 p.m.",
+       "t": "Ogden City Council Work Session",
+       "url": "",
+       "loc": "Ogden City Municipal Building"
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Ogden City Council Meeting",
+       "url": "",
+       "loc": "Ogden City Municipal Building"
+      },
+      {
+       "time": "7:30 p.m.",
+       "t": "Ogden Musical Theatre Presents: A Christmas Carol",
+       "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
+       "loc": "Peery's Egyptian Theater"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-25",
+     "items": [
+      {
+       "time": "10 a.m.",
+       "t": "Christmas Tree Jubilee",
+       "url": "https://www.wsd.net/o/foundation/page/christmas-tree-jubilee",
+       "loc": "Ogden Eccles Conference Center"
+      },
+      {
+       "time": "2 p.m.",
+       "t": "BW Nutcracker - Invited Student Dress",
+       "url": "",
+       "loc": ""
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Wednesday Night Hikers",
+       "url": "https://www.meetup.com/webercountyoutdoors/",
+       "loc": "Varies"
+      },
+      {
+       "time": "6:30 p.m.",
+       "t": "Yoga",
+       "url": "https://weberpl.events.mylibrary.digital/",
+       "loc": "Main Library"
+      },
+      {
+       "time": "8:30 p.m.",
+       "t": "Country Dancing",
+       "url": "",
+       "loc": "Neptune Skating Center"
+      }
+     ]
+    },
+    {
+     "day": "2026-11-26",
+     "items": [
+      {
+       "time": "4:30 p.m.",
+       "t": "Ogden City Landmarks Commission",
+       "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
+       "loc": "2549 Washington Blvd."
+      },
+      {
+       "time": "6 p.m.",
+       "t": "Free live music & ice cream at Z's Sweets",
+       "url": "",
+       "loc": "Z's Sweets"
+      },
+      {
+       "time": "8:30 p.m.",
+       "t": "Country Dancing",
+       "url": "",
+       "loc": "Neptune Skating Center"
+      }
+     ]
+    }
+   ],
+   "weather": [
+    {
+     "type": "update",
+     "date": "2026-11-18T16:45:00-07:00",
+     "title": "Weather alert: Winter Weather Advisory, 11 a.m. Thu., Nov. 19 to 5 a.m. Sat., Nov. 21",
+     "summary": "The National Weather Service has a new Winter Weather Advisory for the Wasatch Back from 11 a.m. Thursday to 5 a.m. Saturday. It calls for 2 to 7 inches of snow, with the higher totals in the higher terrain near Park City and the Ogden Valley. The Weather Service says the snow will affect the Thursday evening and Friday morning commutes. The Eden-area forecast has rain and snow Thursday (83% chance), high near 41°, then snow Thursday night and Friday (93 to 96% chance), with a low near 20° Friday night. Slow down in the canyon and on mountain roads. Forecasts change; we'll update.",
+     "image": "ogden-valley-winter-weather-advisory-snow-nov-19-2026.png",
+     "alt": "Weather alert from Ben's Weather Desk: Winter Weather Advisory 11 a.m. Thursday to 5 a.m. Saturday. Ben the moose shoveling snow. 2 to 7 inches for the Wasatch Back; in Huntsville 1 to 2 inches Thursday night, 2 to 4 Friday, 1 to 2 Friday night. Five-day forecast Thursday to Monday.",
+     "source": "National Weather Service Salt Lake City: Winter Weather Advisory issued 3:49 p.m. MST Nov. 18, 2026; Eden-area and Huntsville forecasts updated 3:52 p.m. MST Nov. 18, 2026"
+    },
+    {
+     "type": "update",
+     "date": "2026-11-17T12:05:00-07:00",
+     "title": "Weather alert: Winter Weather Advisory until 11 a.m. Wed., Nov. 18",
+     "summary": "The National Weather Service has a Winter Weather Advisory for the Wasatch Back until 11 a.m. Wednesday, with 1 to 4 inches expected and the most in Park City and the Ogden Valley. In Huntsville, rain until about 2 p.m. turns to a rain and snow mix, then snow this evening: up to an inch today and 1 to 2 more tonight, low near 22°. Wednesday is mostly sunny, near 41°. A bigger storm follows: rain and snow Thursday, then snow Friday, 4 to 6 inches, and 3 to 5 more Friday night, with a low near 18°. Slow down in the canyon and on mountain roads, and bring pets in tonight. Forecasts change; we'll update.",
+     "image": "ogden-valley-winter-weather-advisory-snow-nov-17-2026.png",
+     "alt": "Weather alert from Ben's Weather Desk: Winter Weather Advisory until 11 a.m. Wednesday, Nov. 18. Ben the moose in earmuffs and a scarf holding a snow shovel. Rain now, snow by this evening; 1 to 4 inches for the Wasatch Back; bigger snow Friday, 4 to 6 inches, then 3 to 5 Friday night. Five-day forecast Wednesday to Sunday.",
+     "source": "National Weather Service Salt Lake City: Winter Weather Advisory issued 10:05 a.m. MST Nov. 17, 2026; Huntsville forecast issued 11:31 a.m. MST Nov. 17, 2026"
+    },
+    {
+     "type": "weekly",
+     "date": "2026-11-15T21:00:00-07:00",
+     "title": "Ogden Valley weather: week of Nov. 16",
+     "summary": "A colder, snowier week for Eden, Liberty and Huntsville. Monday is dry, near 57°, low 31°. Tuesday brings a rain and snow mix (93% chance), high 49°, low 24°. Then snow chances: Wednesday 25%, high 43°, low 23°; Thursday 87%, high 42°, low 22°; Friday 66%, high 40°, low 19°. Forecast as of Nov. 14; forecasts change, and updates go up here when they do.",
+     "image": "ogden-valley-weather-snow-forecast-week-of-nov-16-2026.png",
+     "alt": "Ben's Weather Desk, week of Nov. 16: Ben the moose at the news desk, with the forecast below: Monday 57 and dry, Tuesday 49 with a 93% rain and snow mix, Wednesday 43 with 25% snow, Thursday 42 with 87% snow, Friday 40 with 66% snow.",
+     "source": "National Weather Service forecast for the Eden, Liberty and Huntsville area, as of Nov. 14, 2026"
+    }
+   ],
+   "roads": [
+    {
+     "title": "Hwy 166 fiber work · one-way with flaggers",
+     "text": "Started Wednesday, Oct. 28, at 8 a.m. Estimated to last about 2.5 weeks, into mid-November.",
+     "image": "roadwork-2026-11-09-hwy-166-fiber.png",
+     "alt": "Hwy 166 road work: fiber installation on the shoulder from 2480 N Hwy 162 to 2640 E 2300 N, one-way traffic with flaggers, about 5-minute delays, started Oct. 28 for about 2.5 weeks"
+    },
+    {
+     "title": "Ogden Canyon lane closure (SR-39)",
+     "text": "New start date: as early as Monday, Nov. 2. UDOT now lists the closure starting Nov. 2 and running through April 2027 (it was first set for Oct. 26). Dates can still change, so check udottraffic.utah.gov before you drive.",
+     "image": "roadwork-2026-11-02-ogden-canyon-pipeline.png",
+     "alt": "Ogden Canyon lane closure: one lane of SR-39 closed for about a quarter mile between The Oaks Restaurant and the Ogden Canyon Water Treatment Plant, alternating traffic 24/7, 5 to 10 minute delays, as early as Nov. 2, 2026 through April 2027"
+    }
+   ],
+   "fresh": [],
+   "jobs": [],
+   "spot": {
+    "image": "spot-2026-11-05.jpg",
+    "hint": "Somewhere in Ogden Valley, a bird keeps watch over the coffee. Where are we?"
+   },
+   "winner": {
+    "image": "photo-2026-10-carla-r-icebox-canyon.jpg",
+    "title": "Sunset at Icebox Canyon",
+    "name": "Carla R"
+   },
+   "sponsors": [
+    {
+     "name": "Yes, I Can Fix That",
+     "link": "https://icanfixthatut.com",
+     "line": "Veteran-owned handyman serving all of Ogden Valley: drywall, doors, home maintenance and DIY classes."
+    }
+   ],
+   "forms": {
+    "event": "https://docs.google.com/forms/d/e/1FAIpQLSdq-tr_1dUMWJvoD06p9oZAXQWuK5-SnkucboHFwVEFmeZSZg/viewform",
+    "photo": "https://docs.google.com/forms/d/e/1FAIpQLSe9nppeo6jqEILr9SLywvxZ3jgXA-7V0RiaQ3DSvzk0VCst8A/viewform",
+    "business": "https://docs.google.com/forms/d/e/1FAIpQLSc-jh9kRzlErQ1jv698LT4prqLnCWFkdoJy6Bj5KcUeCZCL7A/viewform",
+    "jobs": "https://docs.google.com/forms/d/e/1FAIpQLScOzyUB6XfbZWbwNCMR1FIAjCyWWt-aQFQSGKN2pR5YJvtwkw/viewform",
+    "report": "https://docs.google.com/forms/d/e/1FAIpQLSeeDFHHAo4biQ0t4BzoG0TmCzcFgXUc5iBN33pOrKYpmK1Eng/viewform"
+   }
+  },
   {
    "start": "2026-11-12",
    "end": "2026-11-19",

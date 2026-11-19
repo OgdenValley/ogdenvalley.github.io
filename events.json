@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T03:26:30.016Z",
+ "updated": "2026-11-19T13:04:19.090Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -854,56 +854,6 @@
      "desc": "A Season of Giving: Community Food Drive at Hilton Garden Inn Ogden\n\nJoin Hilton Garden Inn Ogden this holiday season as we come together to support our neighbors in need!\n\nFrom **November 9 through December 18, 2026**, we're hosting a community food drive benefiting **Joyce Hansen Hall Food Bank**, part of Catholic Community Services of Northern Utah.\n\nWe invite local residents, businesses, hotel guests, and visitors to help us fill our donation barrels with nonperishable food items. Every contribution, big or small, helps support individuals and families facing food insecurity in our communi",
      "url": "https://www.hilton.com/en/hotels/ogdwbgi-hilton-garden-inn-ogden-ut/",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794958200000,
-     "e": 1794976200000,
-     "t": "Utah Youth Rodeo",
-     "loc": "Golden Spike Event Center, 1000 N 1200 W St., Ogden, UT 84404",
-     "allDay": false,
-     "desc": "Come out and support the next generation of rodeo athletes! The Utah Youth Rodeo Association is bringing young competitors, ages 2 – 14, together for a fun-filled evening of rodeo.\n\nThese young cowboys and cowgirls will put their skills to the test as they compete in a variety of rodeo events and show off all their hard work, determination, and love for the sport.\n\nAdmission is free!\n\nFor more information visit: https://www.uyraentries.com/",
-     "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/t4e/1/16/1f402.png",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794963600000,
-     "e": 1794974400000,
-     "t": "Ogden City Council Meeting",
-     "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794967200000,
-     "e": 1794974400000,
-     "t": "Wasatch Audubon Monthly Program",
-     "loc": "Ogden Nature Center, 966 W. 12th Street, Ogden, UT 84404",
-     "allDay": false,
-     "desc": "The Audubon Society presents a different speaker or slide show every month. Meetings are hybrid - in person and Zoom. Please visit www.wasatchaudubon.org or call the Ogden Nature Center for details at 801-621-7595.",
-     "url": "http://www.wasatchaudubon.org",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "String Chamber Music Fall Concert",
-     "loc": "Val A. Browning Center | Garrison Choral Room, 3848 Harrison Blvd, Ogden, UT 84403",
-     "allDay": false,
-     "desc": "WSU string area students will perform exciting chamber music gems in various groups, including string quartets and trios. Collaborating and performing on their own, the students will be sharing the repertoire they’ve prepared throughout the semester.",
-     "url": "https://www.weber.edu/music/chamber-orchestra.html",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794969000000,
-     "e": 1794976200000,
-     "t": "Jazz - Allred",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1795046400000,
@@ -3241,46 +3191,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1794958200000,
-    "e": 1794976200000,
-    "t": "Utah Youth Rodeo",
-    "loc": "Golden Spike Event Center, 1000 N 1200 W St., Ogden, UT 84404",
-    "allDay": false,
-    "desc": "Come out and support the next generation of rodeo athletes! The Utah Youth Rodeo Association is bringing young competitors, ages 2 – 14, together for a fun-filled evening of rodeo.\n\nThese young cowboys and cowgirls will put their skills to the test as they compete in a variety of rodeo events and show off all their hard work, determination, and love for the sport.\n\nAdmission is free!\n\nFor more information visit: https://www.uyraentries.com/",
-    "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/t4e/1/16/1f402.png",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794963600000,
-    "e": 1794974400000,
-    "t": "Ogden City Council Meeting",
-    "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794967200000,
-    "e": 1794974400000,
-    "t": "Wasatch Audubon Monthly Program",
-    "loc": "Ogden Nature Center, 966 W. 12th Street, Ogden, UT 84404",
-    "allDay": false,
-    "desc": "The Audubon Society presents a different speaker or slide show every month. Meetings are hybrid - in person and Zoom. Please visit www.wasatchaudubon.org or call the Ogden Nature Center for details at 801-621-7595.",
-    "url": "http://www.wasatchaudubon.org",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "String Chamber Music Fall Concert",
-    "loc": "Val A. Browning Center | Garrison Choral Room, 3848 Harrison Blvd, Ogden, UT 84403",
-    "allDay": false,
-    "desc": "WSU string area students will perform exciting chamber music gems in various groups, including string quartets and trios. Collaborating and performing on their own, the students will be sharing the repertoire they’ve prepared throughout the semester.",
-    "url": "https://www.weber.edu/music/chamber-orchestra.html",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1795046400000,
     "e": 1795051800000,
     "t": "Annual Board Meeting",
@@ -4202,26 +4112,6 @@
    }
   ],
   "treehouse": [
-   {
-    "s": 1794969000000,
-    "e": 1794976200000,
-    "t": "Jazz - Allred",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1794969000000,
-    "e": 1794978000000,
-    "t": "String Chamber Music Fall Concert - 136",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
    {
     "s": 1795053600000,
     "e": 1795060800000,
