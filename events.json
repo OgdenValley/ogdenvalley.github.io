@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-18T21:56:21.600Z",
+ "updated": "2026-11-19T03:26:30.016Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -853,16 +853,6 @@
      "allDay": true,
      "desc": "A Season of Giving: Community Food Drive at Hilton Garden Inn Ogden\n\nJoin Hilton Garden Inn Ogden this holiday season as we come together to support our neighbors in need!\n\nFrom **November 9 through December 18, 2026**, we're hosting a community food drive benefiting **Joyce Hansen Hall Food Bank**, part of Catholic Community Services of Northern Utah.\n\nWe invite local residents, businesses, hotel guests, and visitors to help us fill our donation barrels with nonperishable food items. Every contribution, big or small, helps support individuals and families facing food insecurity in our communi",
      "url": "https://www.hilton.com/en/hotels/ogdwbgi-hilton-garden-inn-ogden-ut/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1794954600000,
-     "e": 1794961800000,
-     "t": "Ogden City Council Work Session",
-     "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
-     "allDay": false,
-     "desc": "",
-     "url": "",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -3248,16 +3238,6 @@
     "allDay": true,
     "desc": "A Season of Giving: Community Food Drive at Hilton Garden Inn Ogden\n\nJoin Hilton Garden Inn Ogden this holiday season as we come together to support our neighbors in need!\n\nFrom **November 9 through December 18, 2026**, we're hosting a community food drive benefiting **Joyce Hansen Hall Food Bank**, part of Catholic Community Services of Northern Utah.\n\nWe invite local residents, businesses, hotel guests, and visitors to help us fill our donation barrels with nonperishable food items. Every contribution, big or small, helps support individuals and families facing food insecurity in our communi",
     "url": "https://www.hilton.com/en/hotels/ogdwbgi-hilton-garden-inn-ogden-ut/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1794954600000,
-    "e": 1794961800000,
-    "t": "Ogden City Council Work Session",
-    "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
-    "allDay": false,
-    "desc": "",
-    "url": "",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {

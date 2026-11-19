@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-19T01:27:12.260Z",
+ "updated": "2026-11-19T03:26:43.622Z",
  "items": [
+  {
+   "t": 1795058803621,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Wednesday good · Thursday good · Friday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1795051632259,
    "src": "UDOT",
@@ -210,118 +217,6 @@
    "text": "Weber County forecast: Tuesday good · Wednesday good · Thursday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT",
-   "text": "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln: slushy · none (snow)",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT",
-   "text": "US-89 From Lagoon to Jct. SR-193: slushy · none (snow)",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT",
-   "text": "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate: slushy · none (snow)",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT",
-   "text": "US-89 From Jct. SR-193 to I-84: slushy · none (snow)",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT",
-   "text": "SR-158 to Powder Mountain: snow covered · none (snow)",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT",
-   "text": "SR-226 to Snowbasin: patchy snow · none (snow)",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT",
-   "text": "I-84 SR-167 at Mountain Green to Morgan: slushy · none (snow)",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT",
-   "text": "I-84 I-15 Jct at Riverdale to SR-89: slushy · none (snow)",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT",
-   "text": "SR-39 Ogden to Jct. SR-167 Trappers Loop: patchy snow · none (snow)",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT",
-   "text": "SR-167 Trappers Loop I-84 to Huntsville: patchy snow · none (snow)",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT",
-   "text": "I-84 Uintah Jct to Jct SR-167 at Mountain Green: slushy · none (snow)",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT road sensor",
-   "text": "I-84 @ Weber Canyon: pavement 32°F, ice. Watch for ice.",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT road sensor",
-   "text": "SR-167 @ Trappers Loop: pavement 30°F, snow. Watch for ice.",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT road sensor",
-   "text": "SR-39 @ MP 14 Pineview Dam: pavement 32°F, snow. Watch for ice.",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT road sensor",
-   "text": "SR-39 @ MP 17.5 Huntsville: pavement 32°F, wet. Watch for ice.",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1794970680770,
-   "src": "UDOT road sensor",
-   "text": "US-89 @ MP 406 Weber River: pavement 32°F, snow. Watch for ice.",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {
@@ -360,6 +255,6 @@
    "Winter Weather Advisory|2026-11-19T11:00:00-07:00|2026-11-21T05:00:00-07:00": 1,
    "Winter Weather Advisory|2026-11-19T11:00:00-07:00|2026-11-21T11:00:00-07:00": 1
   },
-  "air": "November 18, 2026 8:27 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "November 18, 2026 3:31 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
