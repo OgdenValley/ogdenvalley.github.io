@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T03:14:01.797Z",
+ "updated": "2026-11-20T11:43:00.689Z",
  "meetings": [
   {
    "body": "Huntsville Town Council",
@@ -42,12 +42,12 @@
    "name": "Ben Lomond Peak",
    "elev": 7690,
    "depth": {
-    "value": 8,
-    "date": "2026-11-18"
+    "value": 11,
+    "date": "2026-11-19"
    },
    "water": {
-    "value": 1.8,
-    "date": "2026-11-18"
+    "value": 2.4,
+    "date": "2026-11-19"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -56,12 +56,12 @@
    "name": "Ben Lomond Trail",
    "elev": 5970,
    "depth": {
-    "value": 3,
-    "date": "2026-11-18"
+    "value": 4,
+    "date": "2026-11-19"
    },
    "water": {
-    "value": 0.3,
-    "date": "2026-11-18"
+    "value": 0.9,
+    "date": "2026-11-19"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
@@ -70,12 +70,12 @@
    "name": "Monte Cristo",
    "elev": 8930,
    "depth": {
-    "value": 12,
-    "date": "2026-11-18"
+    "value": 13,
+    "date": "2026-11-19"
    },
    "water": {
-    "value": 2.2,
-    "date": "2026-11-18"
+    "value": 2.6,
+    "date": "2026-11-19"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
    "source": "USDA NRCS SNOTEL"
