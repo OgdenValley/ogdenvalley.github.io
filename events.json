@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T13:04:19.090Z",
+ "updated": "2026-11-20T03:13:57.800Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -856,26 +856,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1795046400000,
-     "e": 1795051800000,
-     "t": "Annual Board Meeting",
-     "loc": "Ogden Nature Center Education Building, 966 W. 12th Street, Ogden, Utah",
-     "allDay": false,
-     "desc": "The Ogden Nature Center invites you to attend our annual meeting on Wednesday, November 18th.\n\n5:00pm Refreshments\n5:30pm Meeting\n\nRSVP: officemgr@ogdennaturecenter.org",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795046400000,
-     "e": 1795053600000,
-     "t": "Ogden City Planning Commission Worksession",
-     "loc": "2549 Washington Blvd., Room #310, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ogden City Planning Commission Worksession",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1795048200000,
      "e": 1795314600000,
      "t": "THE FIELD | Fall into Dance",
@@ -883,16 +863,6 @@
      "allDay": false,
      "desc": "Nov 18 | 5:30 PM, Nov 19–21 | 7:30 PM\nMatinee: Nov 21 | 2 PM\nTHE FIELD | Fall into Dance is back inviting audiences to reconsider what dance can be in a world marked by division and uncertainty. THE FIELD is a platform to new student choreographers and Moving Company, under the direction of Adjunct Faculty Stacee Perry, to position movement as a dialogue across cultures, identities, and lived experiences.\n\nRooted in a legacy of empowerment, discovery, and community, THE FIELD presents local, regional, and national works that ask how the body carries history, how movement fosters connection, an",
      "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795051800000,
-     "e": 1795055400000,
-     "t": "Yoga",
-     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
-     "url": "https://weberpl.events.mylibrary.digital/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -3136,6 +3106,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1800320400000,
+     "e": 1800327600000,
+     "t": "Mystic Mondays: tarot readings",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "$5 readings. Every Monday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1800723600000,
      "e": 1800730800000,
      "t": "2027 Winter Market by Farmers Market Ogden",
@@ -3191,26 +3171,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1795046400000,
-    "e": 1795051800000,
-    "t": "Annual Board Meeting",
-    "loc": "Ogden Nature Center Education Building, 966 W. 12th Street, Ogden, Utah",
-    "allDay": false,
-    "desc": "The Ogden Nature Center invites you to attend our annual meeting on Wednesday, November 18th.\n\n5:00pm Refreshments\n5:30pm Meeting\n\nRSVP: officemgr@ogdennaturecenter.org",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795046400000,
-    "e": 1795053600000,
-    "t": "Ogden City Planning Commission Worksession",
-    "loc": "2549 Washington Blvd., Room #310, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ogden City Planning Commission Worksession",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1795048200000,
     "e": 1795314600000,
     "t": "THE FIELD | Fall into Dance",
@@ -3218,16 +3178,6 @@
     "allDay": false,
     "desc": "Nov 18 | 5:30 PM, Nov 19–21 | 7:30 PM\nMatinee: Nov 21 | 2 PM\nTHE FIELD | Fall into Dance is back inviting audiences to reconsider what dance can be in a world marked by division and uncertainty. THE FIELD is a platform to new student choreographers and Moving Company, under the direction of Adjunct Faculty Stacee Perry, to position movement as a dialogue across cultures, identities, and lived experiences.\n\nRooted in a legacy of empowerment, discovery, and community, THE FIELD presents local, regional, and national works that ask how the body carries history, how movement fosters connection, an",
     "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795051800000,
-    "e": 1795055400000,
-    "t": "Yoga",
-    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
-    "url": "https://weberpl.events.mylibrary.digital/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
