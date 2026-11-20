@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T11:43:09.275Z",
+ "updated": "2026-11-20T16:27:42.639Z",
  "note": "Numbers from each resort's own snow report. Check the resort before you go.",
  "resorts": [
   {
@@ -8,18 +8,18 @@
    "link": "https://www.snowbasin.com/the-mountain/mountain-report/",
    "source": "Snowbasin",
    "since5am": null,
-   "overnight": 0,
-   "new24": 0,
-   "new7d": 15,
-   "base": 14,
-   "season": 17,
+   "overnight": 3,
+   "new24": 6,
+   "new7d": 21,
+   "base": 16,
+   "season": 23,
    "liftsOpen": 0,
    "liftsTotal": 13,
    "trailsOpen": 0,
    "trailsTotal": 115,
-   "resortUpdated": "Nov 19 5:01 AM MT",
+   "resortUpdated": "Nov 20 5:03 AM MT",
    "open": false,
-   "checked": "2026-11-20T11:43:09.656Z",
+   "checked": "2026-11-20T16:27:43.096Z",
    "status": "ok"
   },
   {
@@ -32,10 +32,10 @@
    "liftsTotal": 6,
    "trailsOpen": 0,
    "trailsTotal": 153,
-   "new12": 2,
-   "new24": 2,
-   "new48": 10,
-   "new7d": 18,
+   "new12": 4,
+   "new24": 6,
+   "new48": 6,
+   "new7d": 22,
    "roads": [
     {
      "name": "Powder Mountain Road",
@@ -46,9 +46,9 @@
      "status": "Clear and wet"
     }
    ],
-   "resortUpdated": "11/20/26 04:30 AM MST",
+   "resortUpdated": "11/20/26 09:25 AM MST",
    "open": false,
-   "checked": "2026-11-20T11:43:10.420Z",
+   "checked": "2026-11-20T16:27:43.898Z",
    "status": "ok"
   },
   {
@@ -62,7 +62,7 @@
    "base": 0,
    "season": 2,
    "open": false,
-   "checked": "2026-11-20T11:43:11.031Z",
+   "checked": "2026-11-20T16:27:44.222Z",
    "status": "ok"
   }
  ]
