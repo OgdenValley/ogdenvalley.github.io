@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-20T03:14:10.277Z",
+ "updated": "2026-11-20T07:50:19.797Z",
  "items": [
+  {
+   "t": 1795161019796,
+   "src": "National Weather Service",
+   "text": "Winter Weather Advisory until Sat 5:00 AM · Wasatch Back",
+   "kind": "weather",
+   "link": "https://www.weather.gov/slc/"
+  },
+  {
+   "t": 1795161019796,
+   "src": "National Weather Service",
+   "text": "Winter Storm Warning until Sat 11:00 AM · Wasatch Mountains I-80 North; Wasatch Mountains South of I-80",
+   "kind": "warning",
+   "link": "https://www.weather.gov/slc/"
+  },
   {
    "t": 1795144450277,
    "src": "UDOT",
@@ -126,13 +140,6 @@
    "text": "SR-158 @ MP 11.5 Powder Mountain: pavement 29°F, wet. Watch for ice.",
    "kind": "winter",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795058803621,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Wednesday good · Thursday good · Friday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
@@ -143,17 +150,17 @@
   },
   "al": {},
   "cond": {
-   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
-   "SR-158 to Powder Mountain#334": "slushy · none",
-   "SR-167 Trappers Loop I-84 to Huntsville#335": "wet · none",
-   "SR-226 to Snowbasin#336": "wet · none",
-   "I-84 SR-167 at Mountain Green to Morgan#337": "wet · none",
-   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "wet · none",
-   "I-84 I-15 Jct at Riverdale to SR-89#426": "wet · none",
    "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "wet · none",
+   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
    "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "wet · none",
    "US-89 From Jct. SR-193 to I-84#332": "wet · none",
-   "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "wet · none"
+   "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "wet · none",
+   "SR-167 Trappers Loop I-84 to Huntsville#335": "wet · none",
+   "SR-226 to Snowbasin#336": "wet · none",
+   "SR-158 to Powder Mountain#334": "slushy · none",
+   "I-84 SR-167 at Mountain Green to Morgan#337": "wet · none",
+   "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "wet · none",
+   "I-84 I-15 Jct at Riverdale to SR-89#426": "wet · none"
   },
   "pass": {},
   "ice": {
@@ -169,8 +176,8 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {
-   "Winter Weather Advisory|2026-11-19T11:00:00-07:00|2026-11-21T05:00:00-07:00": 1,
-   "Winter Storm Warning|2026-11-19T09:33:00-07:00|2026-11-21T11:00:00-07:00": 1
+   "Winter Weather Advisory|2026-11-19T22:20:00-07:00|2026-11-21T05:00:00-07:00": 1,
+   "Winter Storm Warning|2026-11-19T22:20:00-07:00|2026-11-21T11:00:00-07:00": 1
   },
   "air": "November 19, 2026 3:31 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
