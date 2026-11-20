@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T21:32:42.235Z",
+ "updated": "2026-11-20T00:48:27.795Z",
  "note": "Numbers from each resort's own snow report. Check the resort before you go.",
  "resorts": [
   {
@@ -19,7 +19,7 @@
    "trailsTotal": 115,
    "resortUpdated": "Nov 19 5:01 AM MT",
    "open": false,
-   "checked": "2026-11-19T21:32:42.650Z",
+   "checked": "2026-11-20T00:48:28.173Z",
    "status": "ok"
   },
   {
@@ -32,10 +32,10 @@
    "liftsTotal": 6,
    "trailsOpen": 0,
    "trailsTotal": 153,
-   "new12": 0,
-   "new24": 0,
-   "new48": 12,
-   "new7d": 16,
+   "new12": 2,
+   "new24": 2,
+   "new48": 10,
+   "new7d": 18,
    "roads": [
     {
      "name": "Powder Mountain Road",
@@ -46,9 +46,9 @@
      "status": "Clear and wet"
     }
    ],
-   "resortUpdated": "11/19/26 02:20 PM MST",
+   "resortUpdated": "11/19/26 05:35 PM MST",
    "open": false,
-   "checked": "2026-11-19T21:32:43.216Z",
+   "checked": "2026-11-20T00:48:29.081Z",
    "status": "ok"
   },
   {
@@ -62,7 +62,7 @@
    "base": 0,
    "season": 2,
    "open": false,
-   "checked": "2026-11-19T21:32:43.544Z",
+   "checked": "2026-11-20T00:48:29.455Z",
    "status": "ok"
   }
  ]

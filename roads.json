@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T21:32:39.535Z",
+ "updated": "2026-11-20T00:48:27.034Z",
  "source": "Utah Department of Transportation (UDOT Traffic)",
  "link": "https://udottraffic.utah.gov/",
  "status": {
@@ -23,7 +23,7 @@
    "full": false,
    "severity": "Unknown",
    "reported": 1793628000000,
-   "updated": 1795123898000,
+   "updated": 1795135658000,
    "ends": 1806714000000,
    "lat": 41.2544212341309,
    "lng": -111.85994720459,
@@ -73,39 +73,7 @@
    "cond": "wet",
    "weather": "rain",
    "restriction": "none",
-   "updated": 1795084205000
-  },
-  {
-   "id": "334",
-   "road": "SR-158 to Powder Mountain",
-   "cond": "wet",
-   "weather": "snow",
-   "restriction": "none",
-   "updated": 1795084204000
-  },
-  {
-   "id": "335",
-   "road": "SR-167 Trappers Loop I-84 to Huntsville",
-   "cond": "wet",
-   "weather": "snow",
-   "restriction": "none",
-   "updated": 1795084204000
-  },
-  {
-   "id": "337",
-   "road": "I-84 SR-167 at Mountain Green to Morgan",
-   "cond": "wet",
-   "weather": "mixed rain and snow",
-   "restriction": "none",
-   "updated": 1795084204000
-  },
-  {
-   "id": "426",
-   "road": "I-84 I-15 Jct at Riverdale to SR-89",
-   "cond": "wet",
-   "weather": "rain",
-   "restriction": "none",
-   "updated": 1795084204000
+   "updated": 1795100354000
   },
   {
    "id": "330",
@@ -113,15 +81,7 @@
    "cond": "wet",
    "weather": "rain",
    "restriction": "none",
-   "updated": 1795084205000
-  },
-  {
-   "id": "331",
-   "road": "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate",
-   "cond": "wet",
-   "weather": "snow",
-   "restriction": "none",
-   "updated": 1795084204000
+   "updated": 1795100354000
   },
   {
    "id": "332",
@@ -129,7 +89,7 @@
    "cond": "wet",
    "weather": "rain",
    "restriction": "none",
-   "updated": 1795084205000
+   "updated": 1795100354000
   },
   {
    "id": "333",
@@ -137,7 +97,23 @@
    "cond": "wet",
    "weather": "snow",
    "restriction": "none",
-   "updated": 1795084204000
+   "updated": 1795100354000
+  },
+  {
+   "id": "334",
+   "road": "SR-158 to Powder Mountain",
+   "cond": "wet",
+   "weather": "snow",
+   "restriction": "none",
+   "updated": 1795100354000
+  },
+  {
+   "id": "335",
+   "road": "SR-167 Trappers Loop I-84 to Huntsville",
+   "cond": "wet",
+   "weather": "snow",
+   "restriction": "none",
+   "updated": 1795100354000
   },
   {
    "id": "336",
@@ -145,7 +121,31 @@
    "cond": "wet",
    "weather": "mixed rain and snow",
    "restriction": "none",
-   "updated": 1795084204000
+   "updated": 1795100354000
+  },
+  {
+   "id": "337",
+   "road": "I-84 SR-167 at Mountain Green to Morgan",
+   "cond": "wet",
+   "weather": "mixed rain and snow",
+   "restriction": "none",
+   "updated": 1795100354000
+  },
+  {
+   "id": "426",
+   "road": "I-84 I-15 Jct at Riverdale to SR-89",
+   "cond": "wet",
+   "weather": "rain",
+   "restriction": "none",
+   "updated": 1795100354000
+  },
+  {
+   "id": "331",
+   "road": "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate",
+   "cond": "wet",
+   "weather": "snow",
+   "restriction": "none",
+   "updated": 1795100354000
   },
   {
    "id": "338",
@@ -153,120 +153,128 @@
    "cond": "wet",
    "weather": "mixed rain and snow",
    "restriction": "none",
-   "updated": 1795084204000
+   "updated": 1795100354000
   }
  ],
- "alerts": [],
+ "alerts": [
+  {
+   "id": "2731",
+   "text": "Update: Crash, All lanes on NB I-15 at MP 349 (Farr West, Weber County) are back open. Residual delays remain in the area.",
+   "important": false,
+   "starts": 1795131420000,
+   "ends": 1795217760000
+  }
+ ],
  "plows": [],
  "stations": [
   {
    "name": "I-84 @ MP 91 Devils Gate",
    "air": null,
-   "surface": 39.9,
-   "status": "Dry",
+   "surface": 39,
+   "status": "Damp",
    "gust": null,
    "lat": 41.1397,
    "lng": -111.8539,
-   "updated": 1795122600000,
+   "updated": 1795134600000,
    "ice": false
   },
   {
    "name": "I-84 @ MP 97 Peterson",
-   "air": 38.24,
-   "surface": 40.3,
+   "air": 38.5,
+   "surface": 39.2,
    "status": "Damp",
-   "gust": 7.89,
+   "gust": 4.6,
    "lat": 41.114,
    "lng": -111.7631,
-   "updated": 1795122600000,
+   "updated": 1795134600000,
    "ice": false
   },
   {
    "name": "I-84 @ Weber Canyon",
-   "air": 36.47,
-   "surface": 40.3,
+   "air": 35.71,
+   "surface": 39,
    "status": "Damp",
-   "gust": 4.82,
+   "gust": 8.99,
    "lat": 41.1379,
    "lng": -111.8868,
-   "updated": 1795123200000,
+   "updated": 1795135200000,
    "ice": false
   },
   {
    "name": "North Ogden Divide",
-   "air": 32.57,
-   "surface": 32.5,
+   "air": 33.18,
+   "surface": 33.4,
    "status": "",
-   "gust": 5.26,
+   "gust": 6.36,
    "lat": 41.3205,
    "lng": -111.8993,
-   "updated": 1795122600000,
+   "updated": 1795134600000,
    "ice": false
   },
   {
    "name": "SR-158 @ MP 11.5 Powder Mountain",
-   "air": 27.72,
-   "surface": 30,
+   "air": 28.52,
+   "surface": 28.8,
    "status": "Wet",
-   "gust": 23.1,
+   "gust": 21.98,
    "lat": 41.37884,
    "lng": -111.7841,
-   "updated": 1795122600000,
+   "updated": 1795134600000,
    "ice": true
   },
   {
    "name": "SR-167 @ Trappers Loop",
-   "air": 33.75,
-   "surface": 37.2,
+   "air": 33.51,
+   "surface": 35.1,
    "status": "Wet",
-   "gust": 10.74,
+   "gust": 5.26,
    "lat": 41.2058,
    "lng": -111.8166,
-   "updated": 1795123200000,
+   "updated": 1795135200000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 14 Pineview Dam",
-   "air": 36.96,
-   "surface": 38.1,
+   "air": 36.64,
+   "surface": 37,
    "status": "Wet",
-   "gust": 4.16,
+   "gust": 2.63,
    "lat": 41.2537,
    "lng": -111.8413,
-   "updated": 1795122600000,
+   "updated": 1795134600000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 17.5 Huntsville",
-   "air": 38.72,
-   "surface": 41.2,
+   "air": 37.35,
+   "surface": 38.7,
    "status": "Wet",
-   "gust": 3.07,
+   "gust": 0.66,
    "lat": 41.24793,
    "lng": -111.77576,
-   "updated": 1795122600000,
+   "updated": 1795134600000,
    "ice": false
   },
   {
    "name": "SR-39 @ MP 46 Monte Cristo",
-   "air": 25.59,
+   "air": 25.41,
    "surface": null,
    "status": "",
-   "gust": 21.24,
+   "gust": 16.02,
    "lat": 41.4446,
    "lng": -111.5056,
-   "updated": 1795122600000,
+   "updated": 1795134600000,
    "ice": false
   },
   {
    "name": "US-89 @ MP 406 Weber River",
-   "air": 41.11,
-   "surface": 41.9,
-   "status": "Damp",
-   "gust": 6.14,
+   "air": 42.68,
+   "surface": 43,
+   "status": "Dry",
+   "gust": 16.66,
    "lat": 41.1351,
    "lng": -111.91205,
-   "updated": 1795122600000,
+   "updated": 1795134600000,
    "ice": false
   }
  ],
