@@ -1136,5 +1136,10 @@
  "Studio 2580, Eccles Art Center, 2580 Jefferson Ave, Ogden UT 84401": null,
  "Utah American Legion Post 129 Ogden Valley, Huntsville, UT": null,
  "Copper Nickel, 2450 Grant ave, Ogden, UT 84401": null,
- "Studio 32 in the Monarch, 455 25th St, Ogden UT 84401": null
+ "Studio 32 in the Monarch, 455 25th St, Ogden UT 84401": null,
+ "Ogden Tabernacle, 351 21st St., Ogden, UT": {
+  "lat": 41.2283,
+  "lng": -111.9717,
+  "county": "Weber"
+ }
 }

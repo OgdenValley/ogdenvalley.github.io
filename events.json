@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T11:42:56.746Z",
+ "updated": "2026-11-20T20:17:34.191Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -2057,6 +2057,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1796610600000,
+     "e": 1796617800000,
+     "t": "Deck the Hall! Wasatch Master Chorale Christmas Concert",
+     "loc": "Ogden Tabernacle, 351 21st St., Ogden, UT",
+     "allDay": false,
+     "desc": "Cross \"Attend a Christmas Concert\" off your Christmastime bucket list!\n\nWe'll be presenting a fabulous evening of sacred and secular Christmas music for your Holiday enjoyment. Let us make this Christmas a treasured memory for you!\n\nSee you there!",
+     "url": "https://www.facebook.com/share/1WcXyeGzsy/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1796670000000,
      "e": 1796673600000,
      "t": "Parent Cafe",
@@ -2428,13 +2438,13 @@
     },
     {
      "s": 1797129000000,
-     "e": 1797134400000,
-     "t": "Christmas Spectacular",
-     "loc": "Austad Theater @ WSU, 3750 Harrison Blvd, Ogden, UT 84408",
+     "e": 1797136200000,
+     "t": "ODT Christmas Spectacular - Austad",
+     "loc": "",
      "allDay": false,
-     "desc": "The return of the hit of the last two years, starring David Osmond, loved by critics and audiences.\nWhy go to endless Christmas productions when you can get your complete Holiday Fix at Odyssey Dance Theatre's Christmas Spectacular, SPECTACULAR?\nSee excerpts from A Christmas Carol, It's A Wonderful Life, The Nutcracker, Elf, A Christmas Story, White Christmas and the Rockettes- just to name a few!",
-     "url": "https://weber.evenue.net/events/C2",
-     "src": "Ogden Area Events (Visit Ogden)"
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1797181200000,
@@ -3822,6 +3832,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1796610600000,
+    "e": 1796617800000,
+    "t": "Deck the Hall! Wasatch Master Chorale Christmas Concert",
+    "loc": "Ogden Tabernacle, 351 21st St., Ogden, UT",
+    "allDay": false,
+    "desc": "Cross \"Attend a Christmas Concert\" off your Christmastime bucket list!\n\nWe'll be presenting a fabulous evening of sacred and secular Christmas music for your Holiday enjoyment. Let us make this Christmas a treasured memory for you!\n\nSee you there!",
+    "url": "https://www.facebook.com/share/1WcXyeGzsy/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1796670000000,
     "e": 1796673600000,
     "t": "Parent Cafe",
@@ -4019,16 +4039,6 @@
     "allDay": false,
     "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
     "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797129000000,
-    "e": 1797134400000,
-    "t": "Christmas Spectacular",
-    "loc": "Austad Theater @ WSU, 3750 Harrison Blvd, Ogden, UT 84408",
-    "allDay": false,
-    "desc": "The return of the hit of the last two years, starring David Osmond, loved by critics and audiences.\nWhy go to endless Christmas productions when you can get your complete Holiday Fix at Odyssey Dance Theatre's Christmas Spectacular, SPECTACULAR?\nSee excerpts from A Christmas Carol, It's A Wonderful Life, The Nutcracker, Elf, A Christmas Story, White Christmas and the Rockettes- just to name a few!",
-    "url": "https://weber.evenue.net/events/C2",
     "src": "Ogden Area Events (Visit Ogden)"
    }
   ],
