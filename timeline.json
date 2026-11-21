@@ -1,6 +1,62 @@
 {
- "updated": "2026-11-20T22:46:38.787Z",
+ "updated": "2026-11-21T02:13:19.138Z",
  "items": [
+  {
+   "t": 1795227199138,
+   "src": "UDOT",
+   "text": "US-89 From Lagoon to Jct. SR-193: Dry · none (Fair)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795227199138,
+   "src": "UDOT",
+   "text": "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate: patchy snow · none (snow)",
+   "kind": "winter",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795227199138,
+   "src": "UDOT",
+   "text": "SR-39 Ogden to Jct. SR-167 Trappers Loop: wet · none (Fair)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795227199138,
+   "src": "UDOT",
+   "text": "SR-158 to Powder Mountain: slushy · none (snow)",
+   "kind": "winter",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795227199138,
+   "src": "UDOT",
+   "text": "SR-167 Trappers Loop I-84 to Huntsville: wet · none (snow)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795227199138,
+   "src": "UDOT",
+   "text": "SR-226 to Snowbasin: wet · none (snow)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795227199138,
+   "src": "UDOT road sensor",
+   "text": "SR-167 @ Trappers Loop: pavement 31°F, damp. Watch for ice.",
+   "kind": "winter",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795227199138,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Friday good · Saturday good · Sunday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1795214798786,
    "src": "UDOT alert",
@@ -147,13 +203,6 @@
    "text": "Weber County forecast: Thursday good · Friday good · Saturday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1795135709456,
-   "src": "UDOT alert",
-   "text": "Update: Crash, All lanes on NB I-15 at MP 349 (Farr West, Weber County) are back open. Residual delays remain in the area.",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {
@@ -164,20 +213,18 @@
    "39113": "I 84|Construction resumes Spring 2027: Eastbound traffic will use the new bridge, with two lanes open. Project contact: 801-838-8361 i84weberbridge@utah.gov https://udotinput.utah.gov/i84weberbridge",
    "39114": "I 84|Construction resumes Spring 2027: Westbound traffic will use the new bridge, with one lane open. Project contact: 801-838-8361 i84weberbridge@utah.gov https://udotinput.utah.gov/i84weberbridge"
   },
-  "al": {
-   "2743": 1
-  },
+  "al": {},
   "cond": {
-   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "wet · none",
-   "US-89 From Lagoon to Jct. SR-193#330": "wet · none",
-   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "snow covered · none",
+   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
+   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "patchy snow · none",
    "US-89 From Jct. SR-193 to I-84#332": "wet · none",
-   "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "patchy snow · none",
-   "SR-158 to Powder Mountain#334": "snow covered · none",
-   "SR-226 to Snowbasin#336": "patchy snow · none",
-   "I-84 SR-167 at Mountain Green to Morgan#337": "wet · none",
+   "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "wet · none",
+   "SR-158 to Powder Mountain#334": "slushy · none",
+   "SR-167 Trappers Loop I-84 to Huntsville#335": "wet · none",
    "I-84 I-15 Jct at Riverdale to SR-89#426": "wet · none",
-   "SR-167 Trappers Loop I-84 to Huntsville#335": "slushy · none",
+   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "wet · none",
+   "SR-226 to Snowbasin#336": "wet · none",
+   "I-84 SR-167 at Mountain Green to Morgan#337": "wet · none",
    "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "wet · none"
   },
   "pass": {},
@@ -187,7 +234,7 @@
    "I-84 @ Weber Canyon": 0,
    "North Ogden Divide": 0,
    "SR-158 @ MP 11.5 Powder Mountain": 1,
-   "SR-167 @ Trappers Loop": 0,
+   "SR-167 @ Trappers Loop": 1,
    "SR-39 @ MP 14 Pineview Dam": 0,
    "SR-39 @ MP 17.5 Huntsville": 0,
    "SR-39 @ MP 46 Monte Cristo": 0,
@@ -197,6 +244,6 @@
    "Winter Weather Advisory|2026-11-20T10:24:00-07:00|2026-11-21T05:00:00-07:00": 1,
    "Winter Storm Warning|2026-11-20T10:24:00-07:00|2026-11-21T11:00:00-07:00": 1
   },
-  "air": "November 20, 2026 8:25 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "November 20, 2026 3:31 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }

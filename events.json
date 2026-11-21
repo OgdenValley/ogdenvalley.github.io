@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-20T20:17:34.191Z",
+ "updated": "2026-11-21T02:13:06.167Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -820,6 +820,15 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
+    },
+    {
+     "s": 1810771200000,
+     "e": 1810780200000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
     }
    ]
   },
@@ -853,16 +862,6 @@
      "loc": "Eccles Black Box Theatre",
      "allDay": false,
      "desc": "Nov 18 | 5:30 PM, Nov 19–21 | 7:30 PM\nMatinee: Nov 21 | 2 PM\nTHE FIELD | Fall into Dance is back inviting audiences to reconsider what dance can be in a world marked by division and uncertainty. THE FIELD is a platform to new student choreographers and Moving Company, under the direction of Adjunct Faculty Stacee Perry, to position movement as a dialogue across cultures, identities, and lived experiences.\n\nRooted in a legacy of empowerment, discovery, and community, THE FIELD presents local, regional, and national works that ask how the body carries history, how movement fosters connection, an",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795131000000,
-     "e": 1795134600000,
-     "t": "Ogden Trails Network Committee Meeting",
-     "loc": "2549 Washington Blvd., Room 710, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ogden Trails Network Committee Meeting",
      "url": "",
      "src": "Ogden Area Events (Visit Ogden)"
     },
@@ -3158,16 +3157,6 @@
     "loc": "Eccles Black Box Theatre",
     "allDay": false,
     "desc": "Nov 18 | 5:30 PM, Nov 19–21 | 7:30 PM\nMatinee: Nov 21 | 2 PM\nTHE FIELD | Fall into Dance is back inviting audiences to reconsider what dance can be in a world marked by division and uncertainty. THE FIELD is a platform to new student choreographers and Moving Company, under the direction of Adjunct Faculty Stacee Perry, to position movement as a dialogue across cultures, identities, and lived experiences.\n\nRooted in a legacy of empowerment, discovery, and community, THE FIELD presents local, regional, and national works that ask how the body carries history, how movement fosters connection, an",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795131000000,
-    "e": 1795134600000,
-    "t": "Ogden Trails Network Committee Meeting",
-    "loc": "2549 Washington Blvd., Room 710, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ogden Trails Network Committee Meeting",
     "url": "",
     "src": "Ogden Area Events (Visit Ogden)"
    },
