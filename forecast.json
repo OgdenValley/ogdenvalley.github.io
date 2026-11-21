@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T02:13:09.882Z",
+ "updated": "2026-11-21T03:33:31.555Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
@@ -8,11 +8,11 @@
    "md": "Nov 20",
    "high": null,
    "low": 22,
-   "pop": 58,
-   "short": "Light Snow Likely",
-   "both": "Light Snow Likely",
+   "pop": 46,
+   "short": "Chance Light Snow",
+   "both": "Chance Light Snow",
    "snow": true,
-   "wind": "1 to 5 mph"
+   "wind": "3 mph"
   },
   {
    "date": "2026-11-21",
@@ -87,7 +87,7 @@
    "wind": "1 mph"
   }
  ],
- "today": "Tonight: Snow likely. Mostly cloudy. Low around 22, with temperatures rising to around 25 overnight. North wind 1 to 5 mph. Chance of precipitation is 60%. New snow accumulation of less than half an inch possible.",
+ "today": "Tonight: A chance of snow. Mostly cloudy. Low around 22, with temperatures rising to around 25 overnight. North wind around 3 mph. Chance of precipitation is 50%. New snow accumulation of less than half an inch possible.",
  "valleySnowDays": [
   "Fri",
   "Sat",
@@ -97,7 +97,7 @@
   "Thu"
  ],
  "snowLevelFt": 2700,
- "snowInches48": 0.3,
+ "snowInches48": 0.2,
  "forecastIssued": "2026-11-20T18:31:04+00:00",
  "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
  "source": "National Weather Service Salt Lake City",

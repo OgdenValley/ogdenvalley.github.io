@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-21T02:13:19.138Z",
+ "updated": "2026-11-21T03:33:36.084Z",
  "items": [
+  {
+   "t": 1795232016083,
+   "src": "UDOT road sensor",
+   "text": "SR-39 @ MP 17.5 Huntsville: pavement 32°F, wet. Watch for ice.",
+   "kind": "winter",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1795227199138,
    "src": "UDOT",
@@ -182,27 +189,6 @@
    "text": "Winter Storm Warning until Sat 11:00 AM · Wasatch Mountains I-80 North; Wasatch Mountains South of I-80",
    "kind": "warning",
    "link": "https://www.weather.gov/slc/"
-  },
-  {
-   "t": 1795144450277,
-   "src": "UDOT",
-   "text": "US-89 From Lagoon to Jct. SR-193: Dry · none (Fair)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795144450277,
-   "src": "UDOT",
-   "text": "SR-158 to Powder Mountain: slushy · none (snow)",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795144450277,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Thursday good · Friday good · Saturday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
@@ -236,7 +222,7 @@
    "SR-158 @ MP 11.5 Powder Mountain": 1,
    "SR-167 @ Trappers Loop": 1,
    "SR-39 @ MP 14 Pineview Dam": 0,
-   "SR-39 @ MP 17.5 Huntsville": 0,
+   "SR-39 @ MP 17.5 Huntsville": 1,
    "SR-39 @ MP 46 Monte Cristo": 0,
    "US-89 @ MP 406 Weber River": 0
   },
