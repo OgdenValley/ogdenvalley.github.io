@@ -1,6 +1,90 @@
 {
- "updated": "2026-11-21T03:33:36.084Z",
+ "updated": "2026-11-21T09:50:41.869Z",
  "items": [
+  {
+   "t": 1795254641868,
+   "src": "UDOT",
+   "text": "Cleared: I 84. Construction resumes Spring 2027: Westbound traffic will use the new bridge, with one lane open. Project contact: 801-838-8361 i84weberbridg",
+   "kind": "clear",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795254641868,
+   "src": "UDOT",
+   "text": "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate: icy spots · none (Fair)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795254641868,
+   "src": "UDOT",
+   "text": "SR-39 Ogden to Jct. SR-167 Trappers Loop: icy spots · none (Fair)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795254641868,
+   "src": "UDOT",
+   "text": "SR-158 to Powder Mountain: icy spots · none (Fair)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795254641868,
+   "src": "UDOT",
+   "text": "SR-167 Trappers Loop I-84 to Huntsville: icy spots · none (Fair)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795254641868,
+   "src": "UDOT",
+   "text": "SR-226 to Snowbasin: icy spots · none (Fair)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795254641868,
+   "src": "UDOT",
+   "text": "I-84 I-15 Jct at Riverdale to SR-89: Dry · none (Fair)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795254641868,
+   "src": "UDOT",
+   "text": "US-89 From Lagoon to Jct. SR-193: wet · none (Fair)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795254641868,
+   "src": "UDOT",
+   "text": "I-84 SR-167 at Mountain Green to Morgan: Dry · none (Fair)",
+   "kind": "road",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795254641868,
+   "src": "UDOT road sensor",
+   "text": "SR-39 @ MP 14 Pineview Dam: pavement 32°F, wet. Watch for ice.",
+   "kind": "winter",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795254641868,
+   "src": "National Weather Service",
+   "text": "Winter Weather Advisory until Sat 5:00 AM · Wasatch Back",
+   "kind": "weather",
+   "link": "https://www.weather.gov/slc/"
+  },
+  {
+   "t": 1795254641868,
+   "src": "National Weather Service",
+   "text": "Winter Storm Warning until Sat 11:00 AM · Wasatch Mountains I-80 North; Wasatch Mountains South of I-80",
+   "kind": "warning",
+   "link": "https://www.weather.gov/slc/"
+  },
   {
    "t": 1795232016083,
    "src": "UDOT road sensor",
@@ -175,20 +259,6 @@
    "text": "SR-167 @ Trappers Loop: pavement 32°F, wet. Watch for ice.",
    "kind": "winter",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795161019796,
-   "src": "National Weather Service",
-   "text": "Winter Weather Advisory until Sat 5:00 AM · Wasatch Back",
-   "kind": "weather",
-   "link": "https://www.weather.gov/slc/"
-  },
-  {
-   "t": 1795161019796,
-   "src": "National Weather Service",
-   "text": "Winter Storm Warning until Sat 11:00 AM · Wasatch Mountains I-80 North; Wasatch Mountains South of I-80",
-   "kind": "warning",
-   "link": "https://www.weather.gov/slc/"
   }
  ],
  "seen": {
@@ -196,21 +266,20 @@
    "10148": "I-84|(updated 11/17/26) Two travel lanes have been restored in each direction over the bridge region. Construction will suspend for the Winter season starting the week of Nov. 22, 2026 Late Winter/early Spring 2027(TBA) - Winter 2027 | Westbound single lane closure | Day & Night Construction resumes. All traffic will return",
    "36834": "SR 39|!!TRAFFIC ALERT!! November 2, 2026 - April 2027 | 24/7 Day and Night Beginning as early as Monday, November 2, and continuing through April 2027, one lane will be closed on SR-39 in the upper Ogden Canyon. Motorists can expect one-way alternating traffic 24/7, with flaggers during the day and a mobile traffic signal at",
    "39014": "SR 39|Day- and nighttime single lane closure with one-way alternating traffic for water pipeline replacement work.",
-   "39113": "I 84|Construction resumes Spring 2027: Eastbound traffic will use the new bridge, with two lanes open. Project contact: 801-838-8361 i84weberbridge@utah.gov https://udotinput.utah.gov/i84weberbridge",
-   "39114": "I 84|Construction resumes Spring 2027: Westbound traffic will use the new bridge, with one lane open. Project contact: 801-838-8361 i84weberbridge@utah.gov https://udotinput.utah.gov/i84weberbridge"
+   "39113": "I 84|Construction resumes Spring 2027: Eastbound traffic will use the new bridge, with two lanes open. Project contact: 801-838-8361 i84weberbridge@utah.gov https://udotinput.utah.gov/i84weberbridge"
   },
   "al": {},
   "cond": {
-   "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
-   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "patchy snow · none",
-   "US-89 From Jct. SR-193 to I-84#332": "wet · none",
-   "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "wet · none",
-   "SR-158 to Powder Mountain#334": "slushy · none",
-   "SR-167 Trappers Loop I-84 to Huntsville#335": "wet · none",
-   "I-84 I-15 Jct at Riverdale to SR-89#426": "wet · none",
    "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "wet · none",
-   "SR-226 to Snowbasin#336": "wet · none",
-   "I-84 SR-167 at Mountain Green to Morgan#337": "wet · none",
+   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "icy spots · none",
+   "US-89 From Jct. SR-193 to I-84#332": "wet · none",
+   "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "icy spots · none",
+   "SR-158 to Powder Mountain#334": "icy spots · none",
+   "SR-167 Trappers Loop I-84 to Huntsville#335": "icy spots · none",
+   "SR-226 to Snowbasin#336": "icy spots · none",
+   "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none",
+   "US-89 From Lagoon to Jct. SR-193#330": "wet · none",
+   "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
    "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "wet · none"
   },
   "pass": {},
@@ -219,16 +288,16 @@
    "I-84 @ MP 97 Peterson": 0,
    "I-84 @ Weber Canyon": 0,
    "North Ogden Divide": 0,
-   "SR-158 @ MP 11.5 Powder Mountain": 1,
+   "SR-158 @ MP 11.5 Powder Mountain": 0,
    "SR-167 @ Trappers Loop": 1,
-   "SR-39 @ MP 14 Pineview Dam": 0,
+   "SR-39 @ MP 14 Pineview Dam": 1,
    "SR-39 @ MP 17.5 Huntsville": 1,
    "SR-39 @ MP 46 Monte Cristo": 0,
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {
-   "Winter Weather Advisory|2026-11-20T10:24:00-07:00|2026-11-21T05:00:00-07:00": 1,
-   "Winter Storm Warning|2026-11-20T10:24:00-07:00|2026-11-21T11:00:00-07:00": 1
+   "Winter Weather Advisory|2026-11-20T22:48:00-07:00|2026-11-21T05:00:00-07:00": 1,
+   "Winter Storm Warning|2026-11-20T22:48:00-07:00|2026-11-21T11:00:00-07:00": 1
   },
   "air": "November 20, 2026 3:31 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }

@@ -1,29 +1,29 @@
 {
- "updated": "2026-11-20T20:17:51.536Z",
+ "updated": "2026-11-21T09:50:32.086Z",
  "needed": true,
  "since": "2026-11-10T23:20:28.151Z",
  "reasons": [
   {
    "kind": "nws",
-   "key": "nws:Winter Storm Warning:2026-11-20T10:24:00-07:00",
+   "key": "nws:Winter Storm Warning:2026-11-20T22:48:00-07:00",
    "text": "National Weather Service Winter Storm Warning for Weber County, until 11:00 a.m. Nov. 21."
   },
   {
    "kind": "snow",
-   "key": "snow:2026-11-20,2026-11-21,2026-11-22,2026-11-23,2026-11-25,2026-11-26",
-   "text": "Snow is in the Valley forecast for Friday, Saturday, Sunday, Monday, Wednesday, Thursday."
+   "key": "snow:2026-11-21,2026-11-22,2026-11-23,2026-11-25,2026-11-26,2026-11-27",
+   "text": "Snow is in the Valley forecast for Saturday, Sunday, Monday, Wednesday, Thursday, Friday."
   },
   {
    "kind": "freeze",
-   "key": "freeze:2026-11-20,2026-11-21,2026-11-22,2026-11-23,2026-11-24,2026-11-25,2026-11-26",
-   "text": "Hard freeze: lows of 25° or colder on 7 nights, as cold as 13° Monday night."
+   "key": "freeze:2026-11-21,2026-11-22,2026-11-23,2026-11-24,2026-11-25,2026-11-26",
+   "text": "Hard freeze: lows of 25° or colder on 6 nights, as cold as 14° Monday night."
   }
  ],
- "forecastIssued": "2026-11-20T18:31:04+00:00",
+ "forecastIssued": "2026-11-21T06:31:27+00:00",
  "draft": {
-  "made": "2026-11-20T20:17:51.536Z",
-  "why": "New reason for a briefing: National Weather Service Winter Storm Warning for Weber County, until 11:00 a.m. Nov. 21. Snow is in the Valley forecast for Friday, Saturday, Sunday, Monday, Wednesday, Thursday. Hard freeze: lows of 25° or colder on 7 nights, as cold as 13° Monday night.",
+  "made": "2026-11-21T09:50:32.086Z",
+  "why": "New reason for a briefing: National Weather Service Winter Storm Warning for Weber County, until 11:00 a.m. Nov. 21. Snow is in the Valley forecast for Saturday, Sunday, Monday, Wednesday, Thursday, Friday. Hard freeze: lows of 25° or colder on 6 nights, as cold as 14° Monday night.",
   "image": "weather-draft.png",
-  "forecastIssued": "2026-11-20T18:31:04+00:00"
+  "forecastIssued": "2026-11-21T06:31:27+00:00"
  }
 }
