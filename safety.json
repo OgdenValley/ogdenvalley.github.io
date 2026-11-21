@@ -1,19 +1,6 @@
 {
- "updated": "2026-11-21T17:30:53.791Z",
- "weather": [
-  {
-   "event": "Winter Storm Warning",
-   "severity": "Severe",
-   "headline": "Winter Storm Warning issued November 21 at 5:05AM MST until November 21 at 11:00AM MST by NWS Salt Lake City UT",
-   "area": "Wasatch Mountains I-80 North",
-   "starts": "2026-11-21T05:05:00-07:00",
-   "ends": "2026-11-21T11:00:00-07:00",
-   "text": "* WHAT...Snow showers continue across the Wasatch mainly north of the\nI-84 corridor this morning. Additional snow accumulations of 1 to 2\ninches expected.\n\n* WHERE...Wasatch Mountains I-80 North.\n\n* WHEN...Until 11 AM MST this morning.\n\n* IMPACTS...Winter driving conditions are expected. Roads, and\nespecially bridges and overpasses, will likely become slick and\nhazardous.",
-   "instruction": "If you must travel, keep an extra flashlight, food, and water in your\nvehicle in case of an emergency. For winter road conditions from the\nUtah Department of Transportation, visit\nhttp://www.udottraffic.utah.gov.\n\nPersons should delay all travel if possible. If travel is absolutely\nnecessary, drive with extreme caution and be prepared for sudden\nchanges in visibility. Leave plenty of room between you and the\nmotorist ahead of you, and allow extra time to reach your\ndestination. Avoid sudden brak",
-   "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
-   "source": "National Weather Service"
-  }
- ],
+ "updated": "2026-11-21T23:14:52.354Z",
+ "weather": [],
  "fires": [],
  "city": [],
  "status": {

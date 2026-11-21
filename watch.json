@@ -1,29 +1,24 @@
 {
- "updated": "2026-11-21T17:31:09.590Z",
+ "updated": "2026-11-21T23:15:02.673Z",
  "needed": true,
  "since": "2026-11-10T23:20:28.151Z",
  "reasons": [
   {
-   "kind": "nws",
-   "key": "nws:Winter Storm Warning:2026-11-21T05:05:00-07:00",
-   "text": "National Weather Service Winter Storm Warning for Weber County, until 11:00 a.m. Nov. 21."
-  },
-  {
    "kind": "snow",
-   "key": "snow:2026-11-21,2026-11-22,2026-11-23,2026-11-25,2026-11-26,2026-11-27",
-   "text": "Snow is in the Valley forecast for Saturday, Sunday, Monday, Wednesday, Thursday, Friday."
+   "key": "snow:2026-11-22,2026-11-23,2026-11-25,2026-11-26,2026-11-27",
+   "text": "Snow is in the Valley forecast for Sunday, Monday, Wednesday, Thursday, Friday."
   },
   {
    "kind": "freeze",
-   "key": "freeze:2026-11-21,2026-11-22,2026-11-23,2026-11-24,2026-11-25,2026-11-26",
-   "text": "Hard freeze: lows of 25° or colder on 6 nights, as cold as 14° Monday night."
+   "key": "freeze:2026-11-21,2026-11-22,2026-11-23,2026-11-24,2026-11-25",
+   "text": "Hard freeze: lows of 25° or colder on 5 nights, as cold as 14° Monday night."
   }
  ],
- "forecastIssued": "2026-11-21T12:11:11+00:00",
+ "forecastIssued": "2026-11-21T18:31:30+00:00",
  "draft": {
-  "made": "2026-11-21T17:31:09.590Z",
-  "why": "New reason for a briefing: National Weather Service Winter Storm Warning for Weber County, until 11:00 a.m. Nov. 21.",
+  "made": "2026-11-21T23:15:02.673Z",
+  "why": "New reason for a briefing: Snow is in the Valley forecast for Sunday, Monday, Wednesday, Thursday, Friday. Hard freeze: lows of 25° or colder on 5 nights, as cold as 14° Monday night.",
   "image": "weather-draft.png",
-  "forecastIssued": "2026-11-21T12:11:11+00:00"
+  "forecastIssued": "2026-11-21T18:31:30+00:00"
  }
 }
