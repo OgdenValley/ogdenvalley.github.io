@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T09:50:41.869Z",
+ "updated": "2026-11-21T11:43:26.328Z",
  "items": [
   {
    "t": 1795254641868,
@@ -238,27 +238,6 @@
    "text": "SR-39 @ MP 17.5 Huntsville: pavement 31°F, slushy. Watch for ice.",
    "kind": "winter",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795175000982,
-   "src": "UDOT",
-   "text": "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate: snow covered · none (snow)",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795175000982,
-   "src": "UDOT",
-   "text": "SR-167 Trappers Loop I-84 to Huntsville: slushy · none (snow)",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795175000982,
-   "src": "UDOT road sensor",
-   "text": "SR-167 @ Trappers Loop: pavement 32°F, wet. Watch for ice.",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {
@@ -290,7 +269,7 @@
    "North Ogden Divide": 0,
    "SR-158 @ MP 11.5 Powder Mountain": 0,
    "SR-167 @ Trappers Loop": 1,
-   "SR-39 @ MP 14 Pineview Dam": 1,
+   "SR-39 @ MP 14 Pineview Dam": 0,
    "SR-39 @ MP 17.5 Huntsville": 1,
    "SR-39 @ MP 46 Monte Cristo": 0,
    "US-89 @ MP 406 Weber River": 0
