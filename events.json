@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T23:14:49.994Z",
+ "updated": "2026-11-22T03:13:32.591Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -854,26 +854,6 @@
      "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
      "url": "",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795221000000,
-     "e": 1795226400000,
-     "t": "Steppin' The Ogden Way dance class",
-     "loc": "Marshall White Center, 222 28th Street, Ogden",
-     "allDay": false,
-     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
-     "s": 1795222800000,
-     "e": 1795230000000,
-     "t": "Free live music & ice cream at Z's Sweets",
-     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
-     "url": "",
-     "src": "Weekly regular"
     },
     {
      "s": 1795226400000,
