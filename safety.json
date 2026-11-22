@@ -1,8 +1,17 @@
 {
- "updated": "2026-11-21T23:14:52.354Z",
+ "updated": "2026-11-22T11:26:23.703Z",
  "weather": [],
  "fires": [],
- "city": [],
+ "city": [
+  {
+   "title": "8th St. from Lincoln Ave. to Grant Ave",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2089",
+   "date": 1795335213000,
+   "text": "Emergency Water Shutdown",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  }
+ ],
  "status": {
   "weather": "ok",
   "fires": "ok",

@@ -1,19 +1,9 @@
 {
- "updated": "2026-11-22T03:13:32.591Z",
+ "updated": "2026-11-22T11:26:21.576Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1795226400000,
-     "e": 1795233600000,
-     "t": "Joe & Jacy Storey live",
-     "loc": "Utah American Legion Post 129 Ogden Valley, Huntsville, UT",
-     "allDay": false,
-     "desc": "Original music from the duo Joe & Jacy Storey. No cover charge. From their flyer, shared on the Ogden Valley Information and Events page.",
-     "url": "https://www.facebook.com/ogdenvalleyevents",
-     "src": "Ogden Valley Information and Events"
-    },
     {
      "s": 1795291200000,
      "e": 1795298400000,
@@ -826,16 +816,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1795048200000,
-     "e": 1795314600000,
-     "t": "THE FIELD | Fall into Dance",
-     "loc": "Eccles Black Box Theatre",
-     "allDay": false,
-     "desc": "Nov 18 | 5:30 PM, Nov 19–21 | 7:30 PM\nMatinee: Nov 21 | 2 PM\nTHE FIELD | Fall into Dance is back inviting audiences to reconsider what dance can be in a world marked by division and uncertainty. THE FIELD is a platform to new student choreographers and Moving Company, under the direction of Adjunct Faculty Stacee Perry, to position movement as a dialogue across cultures, identities, and lived experiences.\n\nRooted in a legacy of empowerment, discovery, and community, THE FIELD presents local, regional, and national works that ask how the body carries history, how movement fosters connection, an",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1795158000000,
      "e": 1803711600000,
      "t": "Words/Inspired by Books - Community Art Show",
@@ -846,84 +826,14 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1795219200000,
-     "e": 1795233600000,
-     "t": "Acorn Antiques & Vintage Show",
-     "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-     "allDay": false,
-     "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795226400000,
-     "e": 1795233600000,
-     "t": "WSU Dance: The Field - Eccles",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1795226400000,
-     "e": 1795233600000,
-     "t": "Friday Night Jazz",
-     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free show, all ages. Every Friday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
-     "s": 1795228200000,
-     "e": 1795237200000,
-     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
-     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795228200000,
-     "e": 1795235400000,
-     "t": "Clytie Adams Nutcracker - Austad",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1795273200000,
-     "e": 1795302000000,
-     "t": "Holiday Open House",
-     "loc": "Ogden Nature Center!",
-     "allDay": false,
-     "desc": "Holiday Open House at Ogden Nature Center 🎄🌿\nSaturday, November 21, 2026 | 9:00 AM – 4:00 PM\nCelebrate the holiday season with us at Ogden Nature Center's annual Holiday Open House!\nEnjoy a festive day of holiday shopping, local artisans, handmade gifts, and family-friendly activities surrounded by the beauty of nature. Browse unique creations from local vendors, discover thoughtful gifts at The Nest Gift Shop, and find something special for everyone on your holiday shopping list.\nONC Members: Enjoy exclusive early access from 8:00–9:00 AM before we open to the public.\nAdmission is FREE! Bri",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1795276800000,
-     "e": 1795305600000,
-     "t": "Acorn Antiques & Vintage Show",
-     "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-     "allDay": false,
-     "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795276800000,
-     "e": 1795305600000,
+     "e": 1795284000000,
      "t": "Hairy Horse Show",
      "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
      "allDay": false,
-     "desc": "Ever wondered what the \"Hairy Horse Show\" is all about? It’s a fun, family-friendly horse show for all ages! From kiddos to adults, everyone’s welcome to join the action. Classes include halter, pleasure, snaffle bit, reining, barrels, poles, and keyhole.\n\nSign-ups start at 7:30 am and go until 9 am, with the show kicking off right at 9 am!\n\nAdmission for spectators is FREE.",
-     "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/t1/1/16/1f40e.png",
-     "src": "Ogden Area Events (Visit Ogden)"
+     "desc": "Event by Golden Spike Event Center.",
+     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
+     "src": "Ogden Valley Information and Events"
     },
     {
      "s": 1795284000000,
@@ -944,16 +854,6 @@
      "desc": "Holiday bazaar.",
      "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
      "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
-     "s": 1795294800000,
-     "e": 1795303800000,
-     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
-     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1795294800000,
@@ -1014,16 +914,6 @@
      "desc": "Ecstatic dance.",
      "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
      "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
-     "s": 1795314600000,
-     "e": 1795323600000,
-     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
-     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1795314600000,
@@ -2347,13 +2237,13 @@
     },
     {
      "s": 1797129000000,
-     "e": 1797136200000,
-     "t": "ODT Christmas Spectacular - Austad",
-     "loc": "",
+     "e": 1797134400000,
+     "t": "Christmas Spectacular",
+     "loc": "Austad Theater @ WSU, 3750 Harrison Blvd, Ogden, UT 84408",
      "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
+     "desc": "The return of the hit of the last two years, starring David Osmond, loved by critics and audiences.\nWhy go to endless Christmas productions when you can get your complete Holiday Fix at Odyssey Dance Theatre's Christmas Spectacular, SPECTACULAR?\nSee excerpts from A Christmas Carol, It's A Wonderful Life, The Nutcracker, Elf, A Christmas Story, White Christmas and the Rockettes- just to name a few!",
+     "url": "https://weber.evenue.net/events/C2",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1797181200000,
@@ -2366,6 +2256,36 @@
      "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
+     "s": 1797210000000,
+     "e": 1797224400000,
+     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+     "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+     "url": "www.TheCarriageEstablishment.com",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797213600000,
+     "e": 1797220800000,
+     "t": "The 45th Annual Ogden Messiah Sing-In",
+     "loc": "Ogden Tabernacle, 351 21st St., Ogden, UT",
+     "allDay": false,
+     "desc": "Come sing with us!!\n\nMake the Ogden Messiah Sing-In a treasured Christmas Tradition!\n\nWe'll be singing from the Schirmer Messiah. Bring your own copy, or there will be a limited number of loaner copies available at the front of the hall. First come, first served.\n\nSee you there!",
+     "url": "https://www.facebook.com/share/18tk8mhxY3/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797296400000,
+     "e": 1797310800000,
+     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+     "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+     "url": "www.TheCarriageEstablishment.com",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1797296400000,
      "e": 1797303600000,
      "t": "Mystic Mondays: tarot readings",
@@ -2374,6 +2294,36 @@
      "desc": "$5 readings. Every Monday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1797300000000,
+     "e": 1797308100000,
+     "t": "Imagine Ballet Theatre Presents: The Nutcracker",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
+     "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797301800000,
+     "e": 1797307200000,
+     "t": "The Forgotten Carols",
+     "loc": "Dee Event Center, 4444 Event Center Dr, Ogden, UT 84408",
+     "allDay": false,
+     "desc": "The Forgotten Carols Musical features breathtaking performances of heartwarming melodies and laugh-out-loud entertainment within a timeless Christmas story. Hear your favorite songs, like \"Homeless,\" from Michael McLean's original hit album, sung by incredible musical theater performers. Immerse yourself in the magic of the holiday season as you witness the story of the Forgotten Carols coming to life on stage. Don't miss out on this incredible in-person event that will leave you feeling uplifted and filled with joy. Join us!\n\nRecommended for ages 5 and older.",
+     "url": "https://weber.evenue.net/events/FC",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797301800000,
+     "e": 1797309000000,
+     "t": "Deck the Hall! Wasatch Master Chorale Christmas Concert",
+     "loc": "Ogden Tabernacle, 351 21st St., Ogden, UT",
+     "allDay": false,
+     "desc": "Cross \"Attend a Christmas Concert\" off your Christmastime bucket list!\n\nWe'll be presenting a fabulous evening of sacred and secular Christmas music for your Holiday enjoyment. Let us make this Christmas a treasured memory for you!\n\nSee you there!",
+     "url": "https://www.facebook.com/share/1BLSUq83gr//",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1797305400000,
@@ -2386,6 +2336,96 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1797366600000,
+     "e": 1797370200000,
+     "t": "Gentle Movements",
+     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797373800000,
+     "e": 1797381000000,
+     "t": "Ogden City Council Work Session",
+     "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797382800000,
+     "e": 1797393600000,
+     "t": "Ogden City Council Meeting",
+     "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797382800000,
+     "e": 1797397200000,
+     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+     "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+     "url": "www.TheCarriageEstablishment.com",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797386400000,
+     "e": 1797393600000,
+     "t": "Wasatch Audubon Monthly Program",
+     "loc": "Ogden Nature Center, 966 W. 12th Street, Ogden, UT 84404",
+     "allDay": false,
+     "desc": "The Audubon Society presents a different speaker or slide show every month. Meetings are hybrid - in person and Zoom. Please visit www.wasatchaudubon.org or call the Ogden Nature Center for details at 801-621-7595.",
+     "url": "http://www.wasatchaudubon.org",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797465600000,
+     "e": 1797472800000,
+     "t": "Ogden City Planning Commission Worksession",
+     "loc": "2549 Washington Blvd., Room #310, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ogden City Planning Commission Worksession",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797469200000,
+     "e": 1797483600000,
+     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+     "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+     "url": "www.TheCarriageEstablishment.com",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797471000000,
+     "e": 1797474600000,
+     "t": "Yoga",
+     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
+     "url": "https://weberpl.events.mylibrary.digital/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797472800000,
+     "e": 1797476400000,
+     "t": "Imagine Ballet Theatre Presents: Jazzy Nutcracker",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join us for a jazzy take on a timeless holiday tradition! This show is set to music from Duke Ellington’s interpretation of Tchaikovsky’s score. The collection of dances are performed by PALS and the Imagine Ballet Theatre dancers. PALS stands for “Performing Artists Lengthening Strides,” which is a dance group featuring dancers with special needs. PALS provides dancers with an opportunity to grow as individuals, build transformative friendships, and have fun with their peers.\n\nThese performers will warm your heart and the show is sure to get you in the holiday spirit!",
+     "url": "https://ogdenpet.com/event/jazzy-nutcracker-2026/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1797478200000,
      "e": 1797490800000,
      "t": "Country Dancing",
@@ -2394,6 +2434,26 @@
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1797548400000,
+     "e": 1797555600000,
+     "t": "OCA Workshop: Fabric Soft Sculpture with Alix Twiggs Wright",
+     "loc": "Monarch Studio 32, 455 25th St, Ogden UT 84401",
+     "allDay": false,
+     "desc": "Sew, stuff, and sculpt something soft! Join artist Alix Twiggs Wright for a hands-on after-school workshop where you’ll turn flat fabric into playful, three-dimensional art.\n\nDesign your own organic shape, cut it from fabric, sew it together on a sewing machine, and stuff it to bring your form to life. Whether your creation ends up curvy, lumpy, abstract, or surprisingly lifelike, it will be a one-of-a-kind soft sculpture that’s entirely your own.\n\nYou’ll learn how to plan and cut organic shapes, use a sewing machine to assemble your piece, and stuff and finish it to create a three-dimensional",
+     "url": "https://ogdencontemporaryarts-bloom.kindful.com/e/fabric-soft-sculpture-with-alix-twiggs-wright",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797550200000,
+     "e": 1797553800000,
+     "t": "Ogden Trails Network Committee Meeting",
+     "loc": "2549 Washington Blvd., Room 710, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Ogden Trails Network Committee Meeting",
+     "url": "",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1797555600000,
@@ -3006,6 +3066,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1800502200000,
+     "e": 1800514800000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1800723600000,
      "e": 1800730800000,
      "t": "2027 Winter Market by Farmers Market Ogden",
@@ -3061,16 +3131,6 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
-    "s": 1795048200000,
-    "e": 1795314600000,
-    "t": "THE FIELD | Fall into Dance",
-    "loc": "Eccles Black Box Theatre",
-    "allDay": false,
-    "desc": "Nov 18 | 5:30 PM, Nov 19–21 | 7:30 PM\nMatinee: Nov 21 | 2 PM\nTHE FIELD | Fall into Dance is back inviting audiences to reconsider what dance can be in a world marked by division and uncertainty. THE FIELD is a platform to new student choreographers and Moving Company, under the direction of Adjunct Faculty Stacee Perry, to position movement as a dialogue across cultures, identities, and lived experiences.\n\nRooted in a legacy of empowerment, discovery, and community, THE FIELD presents local, regional, and national works that ask how the body carries history, how movement fosters connection, an",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
     "s": 1795158000000,
     "e": 1803711600000,
     "t": "Words/Inspired by Books - Community Art Show",
@@ -3078,76 +3138,6 @@
     "allDay": true,
     "desc": "Community Art Show is hosted quarterly at Ogden’s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
     "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795219200000,
-    "e": 1795233600000,
-    "t": "Acorn Antiques & Vintage Show",
-    "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-    "allDay": false,
-    "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795228200000,
-    "e": 1795237200000,
-    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
-    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795273200000,
-    "e": 1795302000000,
-    "t": "Holiday Open House",
-    "loc": "Ogden Nature Center!",
-    "allDay": false,
-    "desc": "Holiday Open House at Ogden Nature Center 🎄🌿\nSaturday, November 21, 2026 | 9:00 AM – 4:00 PM\nCelebrate the holiday season with us at Ogden Nature Center's annual Holiday Open House!\nEnjoy a festive day of holiday shopping, local artisans, handmade gifts, and family-friendly activities surrounded by the beauty of nature. Browse unique creations from local vendors, discover thoughtful gifts at The Nest Gift Shop, and find something special for everyone on your holiday shopping list.\nONC Members: Enjoy exclusive early access from 8:00–9:00 AM before we open to the public.\nAdmission is FREE! Bri",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795276800000,
-    "e": 1795305600000,
-    "t": "Acorn Antiques & Vintage Show",
-    "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-    "allDay": false,
-    "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795276800000,
-    "e": 1795305600000,
-    "t": "Hairy Horse Show",
-    "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-    "allDay": false,
-    "desc": "Ever wondered what the \"Hairy Horse Show\" is all about? It’s a fun, family-friendly horse show for all ages! From kiddos to adults, everyone’s welcome to join the action. Classes include halter, pleasure, snaffle bit, reining, barrels, poles, and keyhole.\n\nSign-ups start at 7:30 am and go until 9 am, with the show kicking off right at 9 am!\n\nAdmission for spectators is FREE.",
-    "url": "https://static.xx.fbcdn.net/images/emoji.php/v9/t1/1/16/1f40e.png",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795294800000,
-    "e": 1795303800000,
-    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
-    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795314600000,
-    "e": 1795323600000,
-    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
-    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -3939,29 +3929,189 @@
     "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
     "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
     "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797129000000,
+    "e": 1797134400000,
+    "t": "Christmas Spectacular",
+    "loc": "Austad Theater @ WSU, 3750 Harrison Blvd, Ogden, UT 84408",
+    "allDay": false,
+    "desc": "The return of the hit of the last two years, starring David Osmond, loved by critics and audiences.\nWhy go to endless Christmas productions when you can get your complete Holiday Fix at Odyssey Dance Theatre's Christmas Spectacular, SPECTACULAR?\nSee excerpts from A Christmas Carol, It's A Wonderful Life, The Nutcracker, Elf, A Christmas Story, White Christmas and the Rockettes- just to name a few!",
+    "url": "https://weber.evenue.net/events/C2",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797210000000,
+    "e": 1797224400000,
+    "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+    "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+    "url": "www.TheCarriageEstablishment.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797213600000,
+    "e": 1797220800000,
+    "t": "The 45th Annual Ogden Messiah Sing-In",
+    "loc": "Ogden Tabernacle, 351 21st St., Ogden, UT",
+    "allDay": false,
+    "desc": "Come sing with us!!\n\nMake the Ogden Messiah Sing-In a treasured Christmas Tradition!\n\nWe'll be singing from the Schirmer Messiah. Bring your own copy, or there will be a limited number of loaner copies available at the front of the hall. First come, first served.\n\nSee you there!",
+    "url": "https://www.facebook.com/share/18tk8mhxY3/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797296400000,
+    "e": 1797310800000,
+    "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+    "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+    "url": "www.TheCarriageEstablishment.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797300000000,
+    "e": 1797308100000,
+    "t": "Imagine Ballet Theatre Presents: The Nutcracker",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join us for the holiday tradition of Clara dancing through her meeting of the Rat King, the Snow Queen, and finally into land of the Sugarplum Fairy. Raymond Van Mason choreographed Imagine Ballet Theatre's Production of The Nutcracker in 2007, which has been in Ogden for 19 years now. The show features local community dancers, guest artists spanning the Wasatch Front, and live music from the New American Philharmonic Orchestra.\n\nAct quick, this is the last year to see the current version of the set before the new design arrives for next year's 20th anniversary!\n\nAges 3+ are welcome.",
+    "url": "https://ogdenpet.com/events/category/series/imagine-ballet-theatres-the-nutcracker-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797301800000,
+    "e": 1797307200000,
+    "t": "The Forgotten Carols",
+    "loc": "Dee Event Center, 4444 Event Center Dr, Ogden, UT 84408",
+    "allDay": false,
+    "desc": "The Forgotten Carols Musical features breathtaking performances of heartwarming melodies and laugh-out-loud entertainment within a timeless Christmas story. Hear your favorite songs, like \"Homeless,\" from Michael McLean's original hit album, sung by incredible musical theater performers. Immerse yourself in the magic of the holiday season as you witness the story of the Forgotten Carols coming to life on stage. Don't miss out on this incredible in-person event that will leave you feeling uplifted and filled with joy. Join us!\n\nRecommended for ages 5 and older.",
+    "url": "https://weber.evenue.net/events/FC",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797301800000,
+    "e": 1797309000000,
+    "t": "Deck the Hall! Wasatch Master Chorale Christmas Concert",
+    "loc": "Ogden Tabernacle, 351 21st St., Ogden, UT",
+    "allDay": false,
+    "desc": "Cross \"Attend a Christmas Concert\" off your Christmastime bucket list!\n\nWe'll be presenting a fabulous evening of sacred and secular Christmas music for your Holiday enjoyment. Let us make this Christmas a treasured memory for you!\n\nSee you there!",
+    "url": "https://www.facebook.com/share/1BLSUq83gr//",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797366600000,
+    "e": 1797370200000,
+    "t": "Gentle Movements",
+    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797373800000,
+    "e": 1797381000000,
+    "t": "Ogden City Council Work Session",
+    "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797382800000,
+    "e": 1797393600000,
+    "t": "Ogden City Council Meeting",
+    "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797382800000,
+    "e": 1797397200000,
+    "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+    "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+    "url": "www.TheCarriageEstablishment.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797386400000,
+    "e": 1797393600000,
+    "t": "Wasatch Audubon Monthly Program",
+    "loc": "Ogden Nature Center, 966 W. 12th Street, Ogden, UT 84404",
+    "allDay": false,
+    "desc": "The Audubon Society presents a different speaker or slide show every month. Meetings are hybrid - in person and Zoom. Please visit www.wasatchaudubon.org or call the Ogden Nature Center for details at 801-621-7595.",
+    "url": "http://www.wasatchaudubon.org",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797465600000,
+    "e": 1797472800000,
+    "t": "Ogden City Planning Commission Worksession",
+    "loc": "2549 Washington Blvd., Room #310, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ogden City Planning Commission Worksession",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797469200000,
+    "e": 1797483600000,
+    "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
+    "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
+    "url": "www.TheCarriageEstablishment.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797471000000,
+    "e": 1797474600000,
+    "t": "Yoga",
+    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
+    "url": "https://weberpl.events.mylibrary.digital/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797472800000,
+    "e": 1797476400000,
+    "t": "Imagine Ballet Theatre Presents: Jazzy Nutcracker",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join us for a jazzy take on a timeless holiday tradition! This show is set to music from Duke Ellington’s interpretation of Tchaikovsky’s score. The collection of dances are performed by PALS and the Imagine Ballet Theatre dancers. PALS stands for “Performing Artists Lengthening Strides,” which is a dance group featuring dancers with special needs. PALS provides dancers with an opportunity to grow as individuals, build transformative friendships, and have fun with their peers.\n\nThese performers will warm your heart and the show is sure to get you in the holiday spirit!",
+    "url": "https://ogdenpet.com/event/jazzy-nutcracker-2026/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797548400000,
+    "e": 1797555600000,
+    "t": "OCA Workshop: Fabric Soft Sculpture with Alix Twiggs Wright",
+    "loc": "Monarch Studio 32, 455 25th St, Ogden UT 84401",
+    "allDay": false,
+    "desc": "Sew, stuff, and sculpt something soft! Join artist Alix Twiggs Wright for a hands-on after-school workshop where you’ll turn flat fabric into playful, three-dimensional art.\n\nDesign your own organic shape, cut it from fabric, sew it together on a sewing machine, and stuff it to bring your form to life. Whether your creation ends up curvy, lumpy, abstract, or surprisingly lifelike, it will be a one-of-a-kind soft sculpture that’s entirely your own.\n\nYou’ll learn how to plan and cut organic shapes, use a sewing machine to assemble your piece, and stuff and finish it to create a three-dimensional",
+    "url": "https://ogdencontemporaryarts-bloom.kindful.com/e/fabric-soft-sculpture-with-alix-twiggs-wright",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797550200000,
+    "e": 1797553800000,
+    "t": "Ogden Trails Network Committee Meeting",
+    "loc": "2549 Washington Blvd., Room 710, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Ogden Trails Network Committee Meeting",
+    "url": "",
+    "src": "Ogden Area Events (Visit Ogden)"
    }
   ],
   "treehouse": [
-   {
-    "s": 1795226400000,
-    "e": 1795233600000,
-    "t": "WSU Dance: The Field - Eccles",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1795228200000,
-    "e": 1795235400000,
-    "t": "Clytie Adams Nutcracker - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
    {
     "s": 1795284000000,
     "e": 1795291200000,
