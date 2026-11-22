@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T19:38:47.545Z",
+ "updated": "2026-11-22T23:52:58.142Z",
  "items": [
   {
    "t": 1795376327543,
@@ -77,48 +77,6 @@
    "text": "I-84 SR-167 at Mountain Green to Morgan: Dry · none (Fair)",
    "kind": "road",
    "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795302919868,
-   "src": "UDOT",
-   "text": "SR-158 to Powder Mountain: wet · none (Fair)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795302919868,
-   "src": "UDOT",
-   "text": "SR-167 Trappers Loop I-84 to Huntsville: wet · none (Fair)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795302919868,
-   "src": "UDOT",
-   "text": "SR-226 to Snowbasin: wet · none (Fair)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795302919868,
-   "src": "UDOT",
-   "text": "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate: Dry · none (Fair)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795302919868,
-   "src": "UDOT road sensor",
-   "text": "SR-158 @ MP 11.5 Powder Mountain: pavement 24°F, wet. Watch for ice.",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795302919868,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Saturday good · Sunday good · Monday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
   }
  ],
  "seen": {
