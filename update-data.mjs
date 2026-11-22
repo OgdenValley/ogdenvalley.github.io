@@ -1220,8 +1220,10 @@ async function winterNow(){
   } catch (e) { console.log("NWS check failed, using safety.json:", e.message); return ((oldJSON("safety.json") || {}).weather || []).some(isWinterAlert); }
 }
 if (process.env.SNOW_JOB === "1") {
-  if (!(await winterNow())) { console.log("snow mode off: nothing to refresh"); process.exit(0); }
-  await safety(); await forecast(); await roads(); await resorts();
+  // Every 5 minutes: weather alerts, the forecast and roads always refresh (Shauna, Nov. 22, 2026).
+  // Resort snow reports refresh every 5 minutes only during a winter alert; otherwise they stay hourly.
+  const winter = await winterNow();
+  await safety(); await forecast(); await roads(); if (winter) await resorts();
   try { timeline(); } catch (e) { console.log("timeline failed:", e.message); }
   try { execSync('git add -- safety.json forecast.json roads.json resorts.json timeline.json', {stdio: "inherit"}); } catch (e) { console.log("git add skipped:", e.message); }
   process.exit(0);

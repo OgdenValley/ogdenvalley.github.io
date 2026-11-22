@@ -37,7 +37,7 @@ main .container>*{min-width:0}.tl-i>*{min-width:0;overflow-wrap:anywhere}#who-to
 </style>
 <style>
 .br-card{grid-template-columns:300px 1fr;gap:20px;align-items:center;border-left:6px solid #2E7D32}
-.br-card[data-s=closed]{border-left-color:#B3261E}.br-card[data-s=accident]{border-left-color:#C77700}.br-card[data-s=snow]{border-left-color:#1F4E80}.br-card[data-s=slow]{border-left-color:#C9A227}
+.br-card[data-s=closed]{border-left-color:#B3261E}.br-card[data-s=accident]{border-left-color:#C77700}.br-card[data-s=snow]{border-left-color:#1F4E80}.br-card[data-s=rain]{border-left-color:#1F6FB2}.br-card[data-s=cold]{border-left-color:#5B7FA6}.br-card[data-s=wind]{border-left-color:#7A8B99}.br-card[data-s=fun]{border-left-color:#1F4E80}.br-card[data-s=hot]{border-left-color:#E08A00}.br-card[data-s=slow]{border-left-color:#C9A227}
 .br-pic img{width:300px;height:300px;border-radius:14px;display:block;object-fit:cover}
 .br-say{font-size:19px;margin:0 0 8px}
 .br-list{margin:0 0 8px;padding-left:20px;display:grid;gap:6px;font-size:17px}
@@ -76,12 +76,12 @@ main .container>*{min-width:0}.tl-i>*{min-width:0;overflow-wrap:anywhere}#who-to
   <nav class="main" id="nav" aria-label="Main"></nav>
 </div></header>
 <main id="main">
-<section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley · Weber County</p><h1>Road &amp; weather</h1><p class="lead" style="margin-top:12px">Valley forecast, canyon roads, weather and fire alerts in one place, updated every hour. Every item shows where it came from. In an emergency, call 911.</p><div class="btns"><a class="btn light" data-track="share safety to facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fogdenvalleyevent.com%2Fsafety.html" target="_blank" rel="noopener">Share this page on Facebook</a></div></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
+<section class="hero"><div class="container"><div><p class="eyebrow">Ogden Valley · Weber County</p><h1>Road &amp; weather</h1><p class="lead" style="margin-top:12px">Valley forecast, canyon roads, weather and fire alerts in one place. Weather and roads update every 5 minutes. Every item shows where it came from. In an emergency, call 911.</p><div class="btns"><a class="btn light" data-track="share safety to facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fogdenvalleyevent.com%2Fsafety.html" target="_blank" rel="noopener">Share this page on Facebook</a></div></div></div><svg class="ridge" viewBox="0 0 1440 110" preserveAspectRatio="none" aria-hidden="true"><path d="M0 70 L120 40 L230 62 L380 18 L520 58 L660 30 L820 66 L980 22 L1120 60 L1260 34 L1440 56 L1440 110 L0 110Z" fill="var(--bg)" opacity=".35"/><path d="M0 92 L180 66 L360 86 L560 60 L760 84 L960 62 L1160 88 L1380 66 L1440 74 L1440 110 L0 110Z" fill="var(--bg)"/></svg></section>
 <section><div class="container" style="display:grid;gap:28px">
   <div id="ben-road" class="card br-card" aria-live="polite">
     <div class="br-pic"><img id="br-img" src="ben-road-clear.jpg" alt="Ben Lomoose, our road reporter moose, in a safety vest with a BEN name tag" width="300" height="300"></div>
     <div class="br-txt">
-      <p class="eyebrow" style="margin:0">Ben's Road Report · updates every hour</p>
+      <p class="eyebrow" style="margin:0">Ben's Road Report · updates every 5 minutes</p>
       <h2 id="br-head" style="margin:2px 0 6px">Checking the roads…</h2>
       <p id="br-say" class="br-say"></p>
       <ul id="br-list" class="br-list"></ul>
@@ -101,10 +101,10 @@ main .container>*{min-width:0}.tl-i>*{min-width:0;overflow-wrap:anywhere}#who-to
     <p class="fine" style="margin:10px 0 0">Numbers from <a href="https://weber911.gov/" target="_blank" rel="noopener">Weber Area 911</a>, <a href="https://connect.udot.utah.gov/public/contact-udot/" target="_blank" rel="noopener">UDOT</a>, <a href="https://wildlife.utah.gov/contact" target="_blank" rel="noopener">Utah DWR</a> and <a href="https://webercountyutah.gov/Animal_Shelter/contact.php" target="_blank" rel="noopener">Weber County Animal Services</a>, checked Oct. 22, 2026.</p>
     <p style="margin:10px 0 0"><b>Need a doctor, ER, pharmacy or crisis help?</b> See <a href="health.html" data-track="safety: health and help">Health &amp; help</a>.</p>
   </div>
-  <div id="timeline"><div class="section-head"><div><p class="eyebrow">Updated every hour · official sources</p><h2>Last 24 hours</h2></div></div>
+  <div id="timeline"><div class="section-head"><div><p class="eyebrow">Updated every 5 minutes · official sources</p><h2>Last 24 hours</h2></div></div>
     <p class="meta" style="font-size:16px;margin:0 0 10px">Crashes, closures, road conditions, weather alerts and air quality for the Valley and its canyons, newest first. Anything older than 24 hours drops off.</p>
     <div id="tl" class="tl"></div></div>
-  <div id="roads"><div class="section-head"><div><p class="eyebrow">Utah Department of Transportation · updated every hour</p><h2>Roads &amp; canyons</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://udottraffic.utah.gov/" target="_blank" rel="noopener">UDOT Traffic</a></div>
+  <div id="roads"><div class="section-head"><div><p class="eyebrow">Utah Department of Transportation · updated every 5 minutes</p><h2>Roads &amp; canyons</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://udottraffic.utah.gov/" target="_blank" rel="noopener">UDOT Traffic</a></div>
     <div id="rd-flags" style="display:grid;gap:10px"></div>
     <div id="rdmap" role="region" aria-label="Map of road events, snowplows and road sensors" style="height:min(50vh,380px);border-radius:12px;border:1px solid var(--line);background:var(--soft);margin-top:12px"></div>
     <p class="meta" style="font-size:15px;margin:6px 0 0">🔴 crash or closure · 🟠 snowplow · 🔵 road sensor · 🟡 road work or other</p>
@@ -149,13 +149,22 @@ main .container>*{min-width:0}.tl-i>*{min-width:0;overflow-wrap:anywhere}#who-to
       </div></div></article>
     <script>try{var rw=document.getElementById("roadwork");if(new Date()>=new Date(rw.dataset.ends))rw.remove()}catch(e){}</script>
   </div>
-  <div id="valley-weather"><div class="section-head"><div><p class="eyebrow">National Weather Service · updated every hour</p><h2>Valley weather</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Full Eden forecast</a></div>
+  <div id="valley-weather"><div class="section-head"><div><p class="eyebrow">National Weather Service · updated every 5 minutes</p><h2>Valley weather</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219" target="_blank" rel="noopener">Full Eden forecast</a></div>
+    <div id="ben-wx" class="card br-card" data-s="clear" aria-live="polite" style="margin-bottom:12px">
+      <div class="br-pic"><img id="bw-img" src="ben-wx-clear-desk.jpg" alt="Ben Lomoose at the Weather Desk" width="300" height="300"></div>
+      <div class="br-txt">
+        <p class="eyebrow" style="margin:0">Ben's Weather Look · changes with the forecast</p>
+        <h2 id="bw-head" style="margin:2px 0 6px">Checking the sky…</h2>
+        <p id="bw-say" class="br-say"></p>
+        <p id="bw-today" class="meta" style="font-size:16px;margin:0"></p>
+      </div>
+    </div>
     <div class="wx-flags" id="wx-flags"></div>
     <div class="fc-strip" id="fc"></div>
     <p class="meta" id="fc-today" style="font-size:17px;margin-top:12px"></p>
     <p class="meta" id="fc-src" style="font-size:14px;margin-top:6px"></p>
   </div>
-  <div id="resorts"><div class="section-head"><div><p class="eyebrow">From each resort's own snow report · updated every hour</p><h2>Resort snow reports</h2></div><a class="btn ghost" style="color:var(--blue)" href="snow.html" data-track="open snow mode page">❄️ Snow mode page</a></div><div id="rs"></div></div>
+  <div id="resorts"><div class="section-head"><div><p class="eyebrow">From each resort's own snow report · updated every hour (every 5 minutes during winter alerts)</p><h2>Resort snow reports</h2></div><a class="btn ghost" style="color:var(--blue)" href="snow.html" data-track="open snow mode page">❄️ Snow mode page</a></div><div id="rs"></div></div>
   <div id="air"><div class="section-head"><div><p class="eyebrow">Utah Division of Air Quality</p><h2>Air quality</h2></div><a class="btn ghost" style="color:var(--blue)" href="https://air.utah.gov/forecast.php?id=hv" target="_blank" rel="noopener">Full forecast</a></div>
     <div id="aq"></div></div>
   <div id="briefings"><div class="section-head"><div><p class="eyebrow">From Ogden Valley Info &amp; Events</p><h2>Weather briefing &amp; updates</h2></div></div><div id="brief-list" style="display:grid;gap:12px"></div></div>
@@ -324,8 +333,11 @@ else{const k=[];
 })();
 </script>
 <script>
-/* Ben's Road Report: picks Ben's pose from the hourly UDOT data. Order: closed, accident, snow/ice, slow/road work, all clear. */
-(async function(){const S=window.OVE_SITE;if(!S)return;
+/* Ben's Road Report: picks Ben's pose from the UDOT data (refreshed every 5 minutes). Order: closed, accident, snow/ice, slow/road work, all clear.
+   Each condition has a set of Ben pictures that take turns every 15 minutes so readers don't see the same one every time. */
+const BEN_ALT={"ben-road-clear.jpg":"Ben Lomoose giving a thumbs up by a dry canyon road","ben-road-closed.jpg":"Ben Lomoose holding a stop sign at a snowy road closure","ben-road-accident.jpg":"Ben Lomoose waving traffic around a minor crash","ben-road-snow.jpg":"Ben Lomoose in a scarf holding tire chains by a snowplow","ben-road-slow.jpg":"Ben Lomoose in a hard hat holding a SLOW sign at road work","ben-road-snow-plow.jpg":"Ben Lomoose driving a snowplow","ben-road-snow-go-slow.jpg":"Ben Lomoose shoveling snow and saying Go slow","ben-road-ice-black-ice.jpg":"Ben Lomoose skating down an icy canyon road warning: It is black ice out there"};
+function benTurn(list){return list[Math.floor(Date.now()/9e5)%list.length]}
+async function benRoad(){const S=window.OVE_SITE;if(!S)return;
 const [R,T,F]=await Promise.all([S.loadJSON("roads.json"),S.loadJSON("timeline.json"),S.loadJSON("forecast.json")]);
 const card=document.getElementById("ben-road"),img=document.getElementById("br-img"),head=document.getElementById("br-head"),say=document.getElementById("br-say"),list=document.getElementById("br-list");
 if(!R||!R.updated){head.textContent="Ben is getting his vest on";say.textContent="Live road data is loading. Use the UDOT links below for now.";return;}
@@ -342,12 +354,49 @@ else if(ice.length||slick.length||wint.length||snowToday){s="snow";H="Snow and i
  items=[...ice.map(x=>"Icy pavement: "+x.name+(x.surface!=null?" ("+Math.round(x.surface)+"°F)":"")),...slick.map(c=>c.road+": "+[c.cond,c.weather].filter(Boolean).join(", ")),...wint.map(i=>i.text)];if(snowToday&&!items.length)items=["Snow in today's forecast: "+(today.both||today.short)];}
 else if(work.length){s="slow";H="Road work: go slow";Sy="Roads are open, but expect crews, lane closures and short waits.";items=work.map(e=>(e.road?e.road+": ":"")+short(e.loc)+(e.desc?". "+short(e.desc):""));}
 else{H="All clear";Sy="No crashes, closures or ice reported on the Valley's roads and canyons. Drive safe and watch for deer.";}
-card.dataset.s=s;img.src="ben-road-"+s+".jpg";img.alt={clear:"Ben Lomoose giving a thumbs up by a dry canyon road",closed:"Ben Lomoose holding a stop sign at a snowy road closure",accident:"Ben Lomoose waving traffic around a minor crash",snow:"Ben Lomoose in a scarf holding tire chains by a snowplow",slow:"Ben Lomoose in a hard hat holding a SLOW sign at road work"}[s]+", wearing his BEN name tag";
-head.textContent=H;say.textContent=Sy;list.replaceChildren(...items.slice(0,5).map(li));
+const POOL={clear:["ben-road-clear.jpg"],closed:["ben-road-closed.jpg"],accident:["ben-road-accident.jpg"],slow:["ben-road-slow.jpg"],
+ snow:ice.length?["ben-road-ice-black-ice.jpg","ben-road-snow-go-slow.jpg","ben-road-snow.jpg"]:["ben-road-snow.jpg","ben-road-snow-plow.jpg","ben-road-snow-go-slow.jpg"]};
+const pic=benTurn(POOL[s]);card.dataset.s=s;if(!img.src.endsWith(pic))img.src=pic;img.alt=BEN_ALT[pic]||"Ben Lomoose, our road reporter moose";
+head.textContent=H;say.textContent=Sy;list.hidden=false;list.replaceChildren(...items.slice(0,5).map(li));
 const others=[closed.length&&s!=="closed"?closed.length+" closure":"",crash.length&&s!=="accident"?crash.length+" crash":"",work.length&&s!=="slow"?work.length+" road work":""].filter(Boolean);
 if(others.length)list.append(li("Also: "+others.join(" · ")+". See below."));
 if(!items.length&&!others.length)list.hidden=true;
-})();
+}
+benRoad();setInterval(benRoad,5*60e3);
+/* Ben's Weather Look: picks a Ben from the forecast (refreshed every 5 minutes). Order: snow, rain, wind, cold, fresh mountain snow, hot, clear.
+   Pictures in each set take turns every 15 minutes. */
+const WX_POOL={
+ snow:["ben-wx-snow-desk-shovel.jpg","ben-wx-snow-catching-flakes.jpg","ben-wx-snow-shoveling.jpg","ben-wx-snow-snowshoeing.jpg","ben-wx-snow-little-dusting.jpg","ben-wx-snow-buried.jpg"],
+ rain:["ben-wx-rain-desk-umbrella.jpg","ben-wx-rain-car-wash.jpg"],
+ wind:["ben-wx-wind-desk-papers.jpg","ben-wx-wind-canyon-breeze.jpg","ben-wx-wind-bad-hair-day.jpg"],
+ cold:["ben-wx-cold-desk-puffy-coat.jpg","ben-wx-cold-desk-cocoa.jpg","ben-wx-cold-cocoa.jpg","ben-wx-cold-scraping-windshield.jpg"],
+ fun:["ben-wx-after-snow-skiing.jpg","ben-wx-after-snow-tubing.jpg","ben-wx-after-snow-snowman.jpg","ben-wx-after-snow-snowball-fight.jpg"],
+ hot:["ben-wx-hot-shade.jpg"],
+ clear:["ben-wx-clear-desk.jpg","ben-wx-clear-pick-a-season.jpg"]};
+const WX_ALT={"ben-wx-snow-desk-shovel.jpg":"Ben Lomoose at the Weather Desk in earmuffs and a scarf, holding a snow shovel","ben-wx-snow-catching-flakes.jpg":"Ben Lomoose catching snowflakes on his tongue","ben-wx-snow-shoveling.jpg":"Ben Lomoose shoveling the walk","ben-wx-snow-snowshoeing.jpg":"Ben Lomoose snowshoeing by a cabin","ben-wx-snow-little-dusting.jpg":"Ben Lomoose covered in snow: Just a little dusting","ben-wx-snow-buried.jpg":"Ben Lomoose buried in a snowdrift","ben-wx-rain-desk-umbrella.jpg":"Ben Lomoose at the Weather Desk in a yellow raincoat with an umbrella","ben-wx-rain-car-wash.jpg":"Ben Lomoose washing a car in the rain: Free car wash day","ben-wx-wind-desk-papers.jpg":"Ben Lomoose at the Weather Desk as the wind blows his papers away","ben-wx-wind-canyon-breeze.jpg":"Ben Lomoose holding a blown-out umbrella: Light canyon breeze","ben-wx-wind-bad-hair-day.jpg":"Ben Lomoose chasing his hat in the wind: Bad hair day. Great antlers.","ben-wx-cold-desk-puffy-coat.jpg":"Ben Lomoose at the Weather Desk in a puffy coat and beanie","ben-wx-cold-desk-cocoa.jpg":"Ben Lomoose at the Weather Desk with a mug of cocoa","ben-wx-cold-cocoa.jpg":"Ben Lomoose bundled up with hot cocoa","ben-wx-cold-scraping-windshield.jpg":"Ben Lomoose scraping frost off a windshield","ben-wx-after-snow-skiing.jpg":"Ben Lomoose skiing fresh powder","ben-wx-after-snow-tubing.jpg":"Ben Lomoose snow tubing","ben-wx-after-snow-snowman.jpg":"Ben Lomoose building a snowman","ben-wx-after-snow-snowball-fight.jpg":"Ben Lomoose in a snowball fight with friends","ben-wx-hot-shade.jpg":"Ben Lomoose in the sun with lemonade: Shade sold separately","ben-wx-summer-mosquitoes.jpg":"Ben Lomoose in a bug net: The neighbors are thirsty","ben-wx-spring-return-policy.jpg":"Ben Lomoose with spring flowers and a snow shovel: Spring has a return policy","ben-wx-clear-desk.jpg":"Ben Lomoose at the Weather Desk","ben-wx-clear-pick-a-season.jpg":"Ben Lomoose at the Weather Desk: Utah, pick a season"};
+async function benWeather(){const S=window.OVE_SITE;if(!S)return;
+const [F,T,RS]=await Promise.all([S.loadJSON("forecast.json"),S.loadJSON("timeline.json"),S.loadJSON("resorts.json")]);
+const card=document.getElementById("ben-wx"),img=document.getElementById("bw-img"),head=document.getElementById("bw-head"),say=document.getElementById("bw-say"),today=document.getElementById("bw-today");
+const d=F&&F.days&&F.days[0];if(!d){head.textContent="Ben is at the forecast office";say.textContent="Check back in a few minutes.";return;}
+const now=Date.now(),mo=new Date().getMonth()+1;
+const winter=((T&&T.items)||[]).some(i=>i.kind==="winter"&&i.t>now-3*36e5);
+const txt=String(d.both||d.short||""),windMax=Math.max(0,...String(d.wind||"").match(/\d+/g)?.map(Number)||[0]);
+const fresh=((RS&&RS.resorts)||[]).filter(r=>r.new24>=4&&r.checked&&now-new Date(r.checked)<36*36e5).sort((a,b)=>b.new24-a.new24)[0];
+let s="clear",H="A nice day in the Valley",Sy="Ben's at the desk. Enjoy it.";
+if(d.snow||winter||(F.valleySnowDays||[]).includes(d.label)){s="snow";H="Snow in the Valley";Sy="Ben's grabbing the shovel. Slow down out there, and give the plows room.";}
+else if(d.pop>=40||(/rain|shower/i.test(txt)&&d.pop>=30)){s="rain";H="Rain today";Sy="Ben brought the umbrella. Watch for wet, slick roads.";}
+else if(windMax>=20||/breezy|windy|gust/i.test(txt)){s="wind";H="A windy one";Sy="Hold onto your hat (and your antlers). Secure the patio furniture.";}
+else if((d.low!=null&&d.low<=15)||(d.high!=null&&d.high<=28)){s="cold";H="Bundle up";Sy="Cold one tonight. Ben's sticking with cocoa. Bring pets in and watch for icy spots.";}
+else if(fresh&&mo>=11||fresh&&mo<=4){s="fun";H="Fresh snow on the mountains";Sy=fresh.name+" reported "+fresh.new24+"\" of new snow in its latest report. Ben's heading uphill.";}
+else if(d.high!=null&&d.high>=85){s="hot";H="A hot one";Sy="Shade sold separately. Drink water and check on the neighbors.";}
+const pool=WX_POOL[s].slice();
+if(s==="snow"&&mo>=3&&mo<=5)pool.push("ben-wx-spring-return-policy.jpg");
+if((s==="clear"||s==="hot")&&mo>=6&&mo<=8)pool.push("ben-wx-summer-mosquitoes.jpg");
+const pic=benTurn(pool);card.dataset.s=s;if(!img.src.endsWith(pic))img.src=pic;img.alt=WX_ALT[pic]||"Ben Lomoose";
+head.textContent=H;say.textContent=Sy;
+today.textContent="Today: "+(d.short||"")+(d.high!=null?", high "+d.high+"°":"")+(d.low!=null?", low "+d.low+"°":"")+(d.pop?", "+d.pop+"% chance of rain or snow":"")+". National Weather Service.";
+}
+benWeather();setInterval(benWeather,5*60e3);
 /* Anchorman Ben vs. the Magic 8 Ball */
 (async function(){const S=window.OVE_SITE;
 const A=["Signs point to snow.","Ask again after Pineview freezes.","Outlook sunny. Bring a coat anyway.","It's Utah. Wait 10 minutes.","Without a doubt… maybe.","Reply hazy. Blame the inversion.","Yes, but only on the Divide.","Don't count on it. Count on wind.","It is certain: Ben will be wrong.","Cannot predict now. A moose is in the way.","Very doubtful. Wear layers.","Most likely a powder day.","My sources say: ask the cows.","Better not tell you now. Check the canyon cam."];
