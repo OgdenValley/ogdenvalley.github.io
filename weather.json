@@ -2,6 +2,15 @@
  "note": "Valley weather briefings and updates shown on the Safety page. Newest first. Items older than 14 days stop showing on their own. type is weekly or update. An update with an \"ends\" time stops showing once that time passes.",
  "items": [
   {
+   "type": "weekly",
+   "date": "2026-11-22T20:00:00-07:00",
+   "title": "Ogden Valley weather: week of Nov. 23",
+   "summary": "A mostly dry Thanksgiving week for Eden, Liberty and Huntsville. Monday, high near 40°, then the coldest night of the week, low near 13°. Tuesday, high 43°, low 18°. Wednesday, high 43°, low 20°. Thanksgiving Day is mostly sunny, high 43°; rain, then a rain and snow mix, is possible Thursday night (28%), low 24°, so plan ahead if you're driving home after dinner. Friday, a slight chance of rain and snow (24%), high 46°, low 25°. Saturday, a slight chance of rain (20%), high 49°. Forecast as of Nov. 22; forecasts change, and updates go up here when they do.",
+   "image": "ogden-valley-weather-forecast-week-of-nov-23-2026.png",
+   "alt": "Ben's Weather Desk, week of Nov. 23: Ben the moose at the news desk, with the forecast below: Monday 40 and dry, low 13; Tuesday 43 dry; Wednesday 43 dry; Thursday 43 with a 28% rain and snow mix at night; Friday 46 with a 24% mix; Saturday 49 with a 20% chance of rain.",
+   "source": "National Weather Service Salt Lake City forecast for Huntsville, issued 11:31 p.m. MST Nov. 21, 2026"
+  },
+  {
    "type": "update",
    "date": "2026-11-18T16:45:00-07:00",
    "ends": "2026-11-21T05:00:00-07:00",
