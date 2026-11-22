@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T11:26:38.692Z",
+ "updated": "2026-11-22T19:38:36.366Z",
  "note": "Numbers from each resort's own snow report. Check the resort before you go.",
  "resorts": [
   {
@@ -8,18 +8,18 @@
    "link": "https://www.snowbasin.com/the-mountain/mountain-report/",
    "source": "Snowbasin",
    "since5am": null,
-   "overnight": 1,
-   "new24": 9,
+   "overnight": 0,
+   "new24": 1,
    "new7d": 29,
    "base": 21,
-   "season": 32,
+   "season": 33,
    "liftsOpen": 0,
    "liftsTotal": 13,
    "trailsOpen": 0,
    "trailsTotal": 115,
-   "resortUpdated": "Nov 21 5:04 AM MT",
+   "resortUpdated": "Nov 22 5:01 AM MT",
    "open": false,
-   "checked": "2026-11-22T11:26:39.164Z",
+   "checked": "2026-11-22T19:38:36.782Z",
    "status": "ok"
   },
   {
@@ -57,13 +57,13 @@
    "name": "Nordic Valley",
    "link": "https://www.nordicvalley.ski/nordic-valley-weather-conditions-webcams/",
    "source": "Nordic Valley",
-   "new24": 3,
-   "new48": 4,
-   "new7d": 4,
+   "new24": 0,
+   "new48": 4.25,
+   "new7d": 4.25,
    "base": 0,
-   "season": 4,
+   "season": 4.25,
    "open": false,
-   "checked": "2026-11-22T11:26:40.246Z",
+   "checked": "2026-11-22T19:38:37.909Z",
    "status": "ok"
   }
  ]

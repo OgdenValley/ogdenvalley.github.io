@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-19T21:33:00.893Z",
+ "updated": "2026-11-22T19:39:00.787Z",
  "pages": {
   "404.html": {
    "posted": "2026-10-06",
@@ -168,8 +168,8 @@
   },
   "safety.html": {
    "posted": "2026-10-07",
-   "updated": "2026-11-18",
-   "hash": "27c3839994e8"
+   "updated": "2026-11-22",
+   "hash": "feafafd6ef0e"
   },
   "scavenger-hunt.html": {
    "posted": "2026-10-07",
@@ -345,6 +345,11 @@
    "posted": "2026-11-19",
    "updated": "2026-11-19",
    "hash": "bddd7d99a93b"
+  },
+  "preview-road-weather-bens-nov-22.html": {
+   "posted": "2026-11-22",
+   "updated": "2026-11-22",
+   "hash": "ba58ddefeec7"
   }
  }
 }
