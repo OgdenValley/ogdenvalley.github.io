@@ -1,19 +1,9 @@
 {
- "updated": "2026-11-22T19:38:23.567Z",
+ "updated": "2026-11-23T00:51:56.418Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1795291200000,
-     "e": 1795298400000,
-     "t": "New World Distillery tasting tour",
-     "loc": "New World Distillery, Eden",
-     "allDay": false,
-     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
     {
      "s": 1795294800000,
      "e": 1795309200000,
@@ -824,46 +814,6 @@
      "desc": "Community Art Show is hosted quarterly at Ogden’s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
      "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795284000000,
-     "e": 1795291200000,
-     "t": "Clytie Adams Nutcracker - Austad",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1795287600000,
-     "e": 1795294800000,
-     "t": "Harvest and Holly Bazaar",
-     "loc": "2913 S Grant Ave, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Holiday bazaar.",
-     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
-     "s": 1795294800000,
-     "e": 1795302000000,
-     "t": "WSU Dance: The Field - Eccles",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1795294800000,
-     "e": 1795302000000,
-     "t": "Craft n Cry",
-     "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
-     "allDay": false,
-     "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
-     "url": "",
-     "src": "Weekly regular"
     },
     {
      "s": 1795309200000,
@@ -4102,26 +4052,6 @@
    }
   ],
   "treehouse": [
-   {
-    "s": 1795284000000,
-    "e": 1795291200000,
-    "t": "Clytie Adams Nutcracker - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1795294800000,
-    "e": 1795302000000,
-    "t": "WSU Dance: The Field - Eccles",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
    {
     "s": 1795312800000,
     "e": 1795320000000,
