@@ -477,7 +477,15 @@ window.OVE.monthly = [
         theme: "First snow and cozy Valley days",
         deadline: "November 28",
         lastWinner: { name: "Carla R", title: "Sunset at Icebox Canyon", image: "photo-2026-10-carla-r-icebox-canyon.jpg", marked: "photo-2026-10-carla-r-icebox-canyon-winner.jpg", month: "October 2026" },
-        entries: []
+        votePage: "photo-vote-2026-11.html",   // this month's vote page (each month gets its own page)
+        votePost: "",             // Facebook vote post link, added Nov. 29; turns the vote page button into "Vote on Facebook"
+        entries: [
+          { image: "photo-2026-11-wolf-creek-wsid-alpenglow.jpg", by: "Wolf Creek Water & Sewer Improvement District", title: "Alpenglow" },
+          { image: "photo-2026-11-jessica-young-alpenglow.jpg", by: "Jessica Young", title: "Alpenglow" },
+          { image: "photo-2026-11-danica-mickelson-zindel-wolf-creek.jpg", by: "Danica Mickelson Zindel", title: "Wolf Creek" },
+          { image: "photo-2026-11-troy-turner-weber-canyon.jpg", by: "Troy Turner", title: "Weber Canyon" },
+          { image: "photo-2026-11-julia-rae-sunrise.jpg", by: "Julia Rae", title: "Early morning, Nov. 13" }
+        ]
       },
       jigsaw: [
         { image: "logo-10-years-512.png", title: "Our 10-year logo", artist: "Ogden Valley Info & Events",
