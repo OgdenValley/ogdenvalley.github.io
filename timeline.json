@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-22T23:52:58.142Z",
+ "updated": "2026-11-23T05:18:33.679Z",
  "items": [
+  {
+   "t": 1795411113679,
+   "src": "UDOT road sensor",
+   "text": "I-84 @ Weber Canyon: pavement 32°F, damp. Watch for ice.",
+   "kind": "winter",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1795376327543,
    "src": "Utah Air Quality",
@@ -27,55 +34,6 @@
    "src": "UDOT road sensor",
    "text": "I-84 @ Weber Canyon: pavement 25°F, damp. Watch for ice.",
    "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795317228604,
-   "src": "UDOT",
-   "text": "US-89 From Lagoon to Jct. SR-193: Dry · none (Fair)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795317228604,
-   "src": "UDOT",
-   "text": "US-89 From Jct. SR-193 to I-84: Dry · none (Fair)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795317228604,
-   "src": "UDOT",
-   "text": "I-84 Uintah Jct to Jct SR-167 at Mountain Green: Dry · none (Fair)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795317228604,
-   "src": "UDOT",
-   "text": "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln: Dry · none (Fair)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795317228604,
-   "src": "UDOT",
-   "text": "SR-39 Ogden to Jct. SR-167 Trappers Loop: Dry · none (Fair)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795317228604,
-   "src": "UDOT",
-   "text": "SR-167 Trappers Loop I-84 to Huntsville: Dry · none (Fair)",
-   "kind": "road",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795317228604,
-   "src": "UDOT",
-   "text": "I-84 SR-167 at Mountain Green to Morgan: Dry · none (Fair)",
-   "kind": "road",
    "link": "https://udottraffic.utah.gov/"
   }
  ],
@@ -104,7 +62,7 @@
   "ice": {
    "I-84 @ MP 91 Devils Gate": 0,
    "I-84 @ MP 97 Peterson": 0,
-   "I-84 @ Weber Canyon": 0,
+   "I-84 @ Weber Canyon": 1,
    "North Ogden Divide": 0,
    "SR-158 @ MP 11.5 Powder Mountain": 0,
    "SR-167 @ Trappers Loop": 0,
