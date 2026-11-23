@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T09:04:17.794Z",
+ "updated": "2026-11-23T21:23:53.370Z",
  "pages": {
   "404.html": {
    "posted": "2026-10-06",
@@ -128,8 +128,8 @@
   },
   "photo-contest.html": {
    "posted": "2026-10-06",
-   "updated": "2026-11-01",
-   "hash": "46580920b3c2"
+   "updated": "2026-11-23",
+   "hash": "b087eff07090"
   },
   "poster.html": {
    "posted": "2026-10-07",
@@ -283,8 +283,8 @@
   },
   "where-moose.html": {
    "posted": "2026-10-20",
-   "updated": "2026-10-30",
-   "hash": "d81df8d28fdf"
+   "updated": "2026-11-23",
+   "hash": "af1bb186cfaf"
   },
   "down-the-canyon.html": {
    "posted": "2026-10-22",
@@ -350,6 +350,16 @@
    "posted": "2026-11-22",
    "updated": "2026-11-22",
    "hash": "ba58ddefeec7"
+  },
+  "photo-vote-2026-11.html": {
+   "posted": "2026-11-23",
+   "updated": "2026-11-23",
+   "hash": "2210d0f691ff"
+  },
+  "where-moose-2026-11-farm.html": {
+   "posted": "2026-11-23",
+   "updated": "2026-11-23",
+   "hash": "bf397cd63748"
   }
  }
 }

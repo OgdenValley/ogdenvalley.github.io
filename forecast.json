@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T16:10:35.837Z",
+ "updated": "2026-11-23T21:23:03.750Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
@@ -7,10 +7,10 @@
    "label": "Mon",
    "md": "Nov 23",
    "high": 42,
-   "low": 17,
-   "pop": 4,
-   "short": "Mostly Sunny",
-   "both": "Mostly Sunny / Mostly Clear",
+   "low": 19,
+   "pop": 1,
+   "short": "Sunny",
+   "both": "Sunny / Mostly Clear",
    "snow": false,
    "wind": "1 mph"
   },
@@ -19,20 +19,20 @@
    "label": "Tue",
    "md": "Nov 24",
    "high": 43,
-   "low": 22,
+   "low": 24,
    "pop": 0,
    "short": "Mostly Sunny",
    "both": "Mostly Sunny / Mostly Cloudy",
    "snow": false,
-   "wind": "2 mph"
+   "wind": "0 to 3 mph"
   },
   {
    "date": "2026-11-25",
    "label": "Wed",
    "md": "Nov 25",
    "high": 45,
-   "low": 20,
-   "pop": 1,
+   "low": 22,
+   "pop": 0,
    "short": "Partly Sunny",
    "both": "Partly Sunny / Partly Cloudy",
    "snow": false,
@@ -43,60 +43,58 @@
    "label": "Thu",
    "md": "Nov 26",
    "high": 44,
-   "low": 28,
-   "pop": 24,
+   "low": 30,
+   "pop": 15,
    "short": "Mostly Sunny",
-   "both": "Mostly Sunny / Slight Chance Rain And Snow",
-   "snow": true,
-   "wind": "0 mph"
+   "both": "Mostly Sunny / Slight Chance Light Rain",
+   "snow": false,
+   "wind": "1 mph"
   },
   {
    "date": "2026-11-27",
    "label": "Fri",
    "md": "Nov 27",
-   "high": 46,
-   "low": 30,
+   "high": 45,
+   "low": 32,
    "pop": 40,
-   "short": "Chance Rain And Snow",
-   "both": "Chance Rain And Snow / Chance Light Rain",
-   "snow": true,
-   "wind": "0 mph"
+   "short": "Mostly Cloudy then Slight Chance Light Rain",
+   "both": "Mostly Cloudy then Slight Chance Light Rain / Chance Light Rain",
+   "snow": false,
+   "wind": "1 mph"
   },
   {
    "date": "2026-11-28",
    "label": "Sat",
    "md": "Nov 28",
-   "high": 48,
+   "high": 47,
    "low": 29,
-   "pop": 40,
+   "pop": 31,
    "short": "Chance Light Rain",
-   "both": "Chance Light Rain / Chance Light Rain then Slight Chance Rain And Snow",
+   "both": "Chance Light Rain / Chance Rain And Snow",
    "snow": true,
-   "wind": "1 mph"
+   "wind": "2 mph"
   },
   {
    "date": "2026-11-29",
    "label": "Sun",
    "md": "Nov 29",
-   "high": 47,
-   "low": 28,
-   "pop": 64,
+   "high": 45,
+   "low": 29,
+   "pop": 71,
    "short": "Chance Rain And Snow",
    "both": "Chance Rain And Snow / Rain And Snow Likely",
    "snow": true,
-   "wind": "1 mph"
+   "wind": "2 mph"
   }
  ],
- "today": "Today: Mostly sunny. High near 42, with temperatures falling to around 37 in the afternoon. North northwest wind around 1 mph.",
+ "today": "This Afternoon: Sunny. High near 42, with temperatures falling to around 37 in the afternoon. West wind around 1 mph.",
  "valleySnowDays": [
-  "Thu",
-  "Fri",
   "Sat",
   "Sun"
  ],
- "snowLevelFt": 2800,
+ "snowLevelFt": 3100,
  "snowInches48": 0,
- "forecastIssued": "2026-11-23T06:31:24+00:00",
+ "forecastIssued": "2026-11-23T18:31:28+00:00",
  "link": "https://forecast.weather.gov/MapClick.php?lat=41.3013&lon=-111.8219",
  "source": "National Weather Service Salt Lake City",
  "status": {
