@@ -291,6 +291,20 @@ window.OVE = {
      top of the Coloring page automatically; earlier months move down to
      "Past months" (newest first) so kids can still color them. */
   coloringMonths: [
+    { month: "2026-12", label: "December 2026", pages: [
+      { file: "coloring-2026-12-ben-tinsel-tree-littles.png", title: "Ben and friends trim the tree (littles)" },
+      { file: "coloring-2026-12-ben-tinsel-tree-big-kids.png", title: "Tinsel time at the cabin (bigger kids)" },
+      { file: "coloring-2026-12-ben-cookies-littles.png", title: "Decorating cookies (littles)" },
+      { file: "coloring-2026-12-ben-cookies-big-kids.png", title: "Ben's cookie kitchen (bigger kids)" },
+      { file: "coloring-2026-12-ben-manger-littles.png", title: "At the manger (littles)" },
+      { file: "coloring-2026-12-ben-manger-big-kids.png", title: "A quiet night at the manger (bigger kids)" },
+      { file: "coloring-2026-12-ben-reindeer-roof-littles.png", title: "Reindeer on the roof! (littles)" },
+      { file: "coloring-2026-12-ben-reindeer-roof-big-kids.png", title: "Christmas Eve: listening for Santa (bigger kids)" },
+      { file: "coloring-2026-12-ben-christmas-village-littles.png", title: "Walking through Christmas Village (littles)" },
+      { file: "coloring-2026-12-ben-christmas-village-big-kids.png", title: "Christmas Village lights (bigger kids)" },
+      { file: "coloring-2026-12-ben-gifts-littles.png", title: "Christmas morning presents (littles)" },
+      { file: "coloring-2026-12-ben-gifts-big-kids.png", title: "Christmas morning at the cabin (bigger kids)" }
+    ] },
     { month: "2026-11", label: "November 2026", pages: [
       { file: "coloring-2026-11-crew-thanksgiving.png", title: "Happy Thanksgiving from the Valley Crew!" },
       { file: "coloring-2026-11-crew-leaf-pile.png", title: "Morgan and Wyatt's leaf pile" },
