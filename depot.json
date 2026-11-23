@@ -214,6 +214,131 @@
     "lat": 41.2298,
     "lon": -111.9262
    }
+  },
+  {
+   "n": 3,
+   "place": "Ogden",
+   "title": "Dinos in the Snow",
+   "posted": "2026-12-01",
+   "lat": 41.2298,
+   "lon": -111.9262,
+   "milesThisTrip": 42,
+   "roadMiles": 0,
+   "story": [
+    "All aboard! Our train rolled about 42 miles back from Promontory Summit to Ogden, to Timmy the Tyrannosaurus's favorite place in the whole world: the George S. Eccles Dinosaur Park, along the Ogden River Parkway.",
+    "Timmy could hardly sit still. The park opened in April 1993, and today it has more than 100 exhibits on 8.5 acres. The dinosaur sculptures are full size, and they are based on real fossils and skeletons. Some of them even move and roar, thanks to robots and speakers hidden inside!",
+    "Inside the park's museum are real dinosaur fossils. There is also a paleontology lab, where you can watch people carefully clean fossils out of rock. One of the park's leaders says paleontology changes every day, because people keep finding new things.",
+    "Utah is a great place for dinosaurs. Long ago, dinosaurs lived all over Utah. In 1988, Utah picked the Allosaurus as its state fossil. In 2018, Utah picked the Utahraptor as its state dinosaur. Here's the best part: the Utahraptor idea came from a 10-year-old boy named Kenyon Roberts, who asked a state senator to help. Kids can make a difference!",
+    "In December, the park has a special event called Dinos in the Snow, on four evenings: December 11, 12, 18 and 19. Families can make ornaments and hear stories with hot chocolate.",
+    "Then our friend Ben La Moose had an idea. 'Want to see Santa?' Ben, Timmy and the whole train crew rode about 2 miles across town to Christmas Village on Washington Boulevard in Ogden. The lights come on at 5 o'clock every evening, and it's free to visit through New Year's Day.",
+    "Santa was there, too! Santa visits Christmas Village until December 23. Timmy told Santa he wished for a new dinosaur book. Ben wished for snow, lots of snow. Next month, our train heads back where we started: Union Station. This time, we're going inside to explore! All aboard!"
+   ],
+   "quiz": [
+    {
+     "q": "The dinosaur sculptures at Dinosaur Park are full size.",
+     "a": true,
+     "why": "They are full-sized, and they are based on real fossils and skeletons."
+    },
+    {
+     "q": "Utah's state dinosaur is the Tyrannosaurus.",
+     "a": false,
+     "why": "Utah's state dinosaur is the Utahraptor (2018). The state fossil is the Allosaurus (1988)."
+    },
+    {
+     "q": "A 10-year-old helped Utah pick its state dinosaur.",
+     "a": true,
+     "why": "Kenyon Roberts, age 10, asked a senator to sponsor the Utahraptor bill. It passed in 2018."
+    }
+   ],
+   "draw": "Draw your own dinosaur in the snow. Give it a scarf, a hat and a name! Is it a meat eater or a plant eater?",
+   "find": "Look for a rock with lines or tiny shapes in it. That's how fossils can hide! Or, with a grown-up, visit Dinosaur Park (1544 Park Blvd., Ogden) or Christmas Village (2549 Washington Blvd., Ogden). Dinos in the Snow needs an event ticket from dinosaurpark.org.",
+   "word": {
+    "w": "Paleontologist",
+    "def": "A paleontologist (PAY-lee-on-TOL-oh-jist) is a scientist who studies fossils to learn about plants and animals that lived long ago. Can you say it three times fast?"
+   },
+   "math": "Dinos in the Snow runs from 5 to 8 p.m. That's 3 hours a night. It happens on 4 nights. How many hours is that in all?",
+   "sources": [
+    {
+     "title": "George S. Eccles Dinosaur Park",
+     "url": "https://dinosaurpark.org/",
+     "used": "1544 Park Blvd, Ogden; 8.5-acre sculpture park; Stewart Museum of Paleontology and paleontology lab; Dinos in the Snow Dec 11, 12, 18 and 19, 2026, 5–8 PM, event ticket required"
+    },
+    {
+     "title": "Dinos in the Snow 2026 (Dinosaur Park sponsorship page)",
+     "url": "https://dinosaurpark.org/sponsorships",
+     "used": "ornament making, storytelling with hot chocolate; park closed Dec 20 – Jan 4, reopens Jan 5"
+    },
+    {
+     "title": "Ogden's George S. Eccles Dinosaur Park, Visit Utah",
+     "url": "https://www.visitutah.com/articles/ogden-eccles-dinosaur-park",
+     "used": "opened April 1993; more than 100 exhibits; full-sized replicas based on real fossils and skeletons; some move through robotics and sound; real fossils and fossil lab; park director quote that paleontology changes every day; Ogden River Parkway"
+    },
+    {
+     "title": "State Fossil: Allosaurus, Utah State Library",
+     "url": "https://onlinelibrary.utah.gov/state-symbol/fossil/",
+     "used": "Allosaurus designated state fossil in 1988"
+    },
+    {
+     "title": "State Dinosaur: Utahraptor, Utah State Library",
+     "url": "https://onlinelibrary.utah.gov/state-symbol/dinosaur/",
+     "used": "Utahraptor named state dinosaur in 2018 (S.B. 43); 10-year-old Kenyon Roberts convinced Sen. Curtis Bramble to sponsor it"
+    },
+    {
+     "title": "Christmas Village, Ogden City",
+     "url": "https://bids.ogdencity.com/452",
+     "used": "2549 Washington Blvd; free; open Nov 28, 2026 through Jan 1, 2027; lights on at 5 PM; Santa Nov 28 – Dec 23"
+    }
+   ],
+   "learn": [
+    {
+     "title": "Educator Resources",
+     "by": "George S. Eccles Dinosaur Park",
+     "url": "https://dinosaurpark.org/educator-resources/"
+    },
+    {
+     "title": "Utah's State Dinosaur: Utahraptor",
+     "by": "Utah State Library",
+     "url": "https://onlinelibrary.utah.gov/state-symbol/dinosaur/"
+    },
+    {
+     "title": "The State Fossil of Utah: Allosaurus",
+     "by": "Natural History Museum of Utah",
+     "url": "https://nhmu.utah.edu/allosaurus"
+    }
+   ],
+   "coloring": [
+    {
+     "file": "depot-stop-3-coloring.png",
+     "title": "Stop 3: Dinos in the Snow",
+     "level": "For littles (about ages 3 to 6)"
+    },
+    {
+     "file": "depot-stop-3-coloring-big.png",
+     "title": "Timmy's Favorite Place",
+     "level": "For bigger kids (about 7 and up)"
+    }
+   ],
+   "wordSearch": [
+    "DINOSAUR",
+    "FOSSIL",
+    "ALLOSAURUS",
+    "UTAHRAPTOR",
+    "SCULPTURE",
+    "MUSEUM",
+    "SNOW",
+    "SANTA",
+    "VILLAGE",
+    "LIGHTS"
+   ],
+   "next": {
+    "name": "Union Station",
+    "line": "Back home to Ogden's 1924 station, this time to explore the museums inside",
+    "miles": 3,
+    "when": "The story comes Jan. 1.",
+    "id": "union-station",
+    "lat": 41.2206,
+    "lon": -111.9806
+   }
   }
  ],
  "suggestForm": "",
@@ -256,12 +381,12 @@
   ]
  },
  "nextStop": {
-  "name": "Golden Spike",
-  "line": "See where the two railroads met in 1869",
-  "miles": 40,
-  "when": "The story comes next week.",
-  "id": "golden-spike",
-  "lat": 41.6185,
-  "lon": -112.5517
+  "name": "Union Station",
+  "line": "Back home to Ogden's 1924 station, this time to explore the museums inside",
+  "miles": 3,
+  "when": "The story comes Jan. 1.",
+  "id": "union-station",
+  "lat": 41.2206,
+  "lon": -111.9806
  }
 }
