@@ -1,18 +1,9 @@
 {
- "updated": "2026-11-23T00:51:56.418Z",
+ "updated": "2026-11-23T09:03:34.724Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1795294800000,
-     "e": 1795309200000,
-     "t": "Cinema Saturday Feature Films",
-     "loc": "Ogden Valley Library @ 131 S 7400 E, Huntsville, UT 84317",
-     "allDay": false,
-     "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
-     "url": ""
-    },
     {
      "s": 1795377600000,
      "e": 1795384800000,
@@ -814,56 +805,6 @@
      "desc": "Community Art Show is hosted quarterly at Ogden’s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
      "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795309200000,
-     "e": 1795316400000,
-     "t": "Free live music & ice cream at Z's Sweets",
-     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
-     "s": 1795312800000,
-     "e": 1795320000000,
-     "t": "WSU Dance: The Field - Eccles",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
-    },
-    {
-     "s": 1795312800000,
-     "e": 1795320000000,
-     "t": "Singles Mingle",
-     "loc": "Grounds for Coffee, 111 25th Street, Ogden",
-     "allDay": false,
-     "desc": "Free. Every Saturday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
-    {
-     "s": 1795312800000,
-     "e": 1795320000000,
-     "t": "Ogden Ecstatic Dance",
-     "loc": "First Presbyterian Church of Ogden",
-     "allDay": false,
-     "desc": "Ecstatic dance.",
-     "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
-     "src": "OVE events sweep, Nov. 4, 2026"
-    },
-    {
-     "s": 1795314600000,
-     "e": 1795321800000,
-     "t": "Clytie Adams Nutcracker - Austad",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1795366800000,
@@ -3016,6 +2957,26 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1800579600000,
+     "e": 1800586800000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1800588600000,
+     "e": 1800601200000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1800723600000,
      "e": 1800730800000,
      "t": "2027 Winter Market by Farmers Market Ogden",
@@ -4052,26 +4013,6 @@
    }
   ],
   "treehouse": [
-   {
-    "s": 1795312800000,
-    "e": 1795320000000,
-    "t": "WSU Dance: The Field - Eccles",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
-   {
-    "s": 1795314600000,
-    "e": 1795321800000,
-    "t": "Clytie Adams Nutcracker - Austad",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
    {
     "s": 1795640400000,
     "e": 1795647600000,

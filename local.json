@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-22T11:26:25.029Z",
+ "updated": "2026-11-23T09:03:38.759Z",
  "meetings": [
   {
    "body": "Ogden Valley City Council",
@@ -50,11 +50,11 @@
    "elev": 7690,
    "depth": {
     "value": 14,
-    "date": "2026-11-21"
+    "date": "2026-11-22"
    },
    "water": {
     "value": 3.4,
-    "date": "2026-11-21"
+    "date": "2026-11-22"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -63,12 +63,12 @@
    "name": "Ben Lomond Trail",
    "elev": 5970,
    "depth": {
-    "value": 11,
-    "date": "2026-11-21"
+    "value": 10,
+    "date": "2026-11-22"
    },
    "water": {
     "value": 2.2,
-    "date": "2026-11-21"
+    "date": "2026-11-22"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
@@ -77,12 +77,12 @@
    "name": "Monte Cristo",
    "elev": 8930,
    "depth": {
-    "value": 19,
-    "date": "2026-11-21"
+    "value": 17,
+    "date": "2026-11-22"
    },
    "water": {
-    "value": 3.3,
-    "date": "2026-11-21"
+    "value": 3.4,
+    "date": "2026-11-22"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
    "source": "USDA NRCS SNOTEL"

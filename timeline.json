@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-23T05:18:33.679Z",
+ "updated": "2026-11-23T09:04:05.700Z",
  "items": [
+  {
+   "t": 1795424645700,
+   "src": "UDOT road sensor",
+   "text": "I-84 @ MP 91 Devils Gate: pavement 31°F, damp. Watch for ice.",
+   "kind": "winter",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795424645700,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Sunday good · Monday good · Tuesday good",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1795411113679,
    "src": "UDOT road sensor",
@@ -46,21 +60,21 @@
   },
   "al": {},
   "cond": {
+   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
    "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
    "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
    "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
+   "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
+   "SR-158 to Powder Mountain#334": "Dry · none",
+   "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none",
    "SR-226 to Snowbasin#336": "Dry · none",
    "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
    "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none",
-   "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none",
-   "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
-   "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
-   "SR-158 to Powder Mountain#334": "Dry · none",
-   "SR-167 Trappers Loop I-84 to Huntsville#335": "Dry · none"
+   "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none"
   },
   "pass": {},
   "ice": {
-   "I-84 @ MP 91 Devils Gate": 0,
+   "I-84 @ MP 91 Devils Gate": 1,
    "I-84 @ MP 97 Peterson": 0,
    "I-84 @ Weber Canyon": 1,
    "North Ogden Divide": 0,
@@ -72,6 +86,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "November 22, 2026 8:23 AM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
+  "air": "November 22, 2026 6:30 PM|Good/Unrestricted,Good/Unrestricted,Good/Unrestricted"
  }
 }
