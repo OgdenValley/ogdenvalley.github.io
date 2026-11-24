@@ -1,6 +1,20 @@
 {
- "updated": "2026-11-24T02:54:34.001Z",
+ "updated": "2026-11-24T06:01:50.224Z",
  "items": [
+  {
+   "t": 1795500110224,
+   "src": "UDOT road sensor",
+   "text": "I-84 @ Weber Canyon: pavement 29°F, damp. Watch for ice.",
+   "kind": "winter",
+   "link": "https://udottraffic.utah.gov/"
+  },
+  {
+   "t": 1795500110224,
+   "src": "Utah Air Quality",
+   "text": "Weber County forecast: Monday good · Tuesday good · Wednesday good, voluntary action",
+   "kind": "air",
+   "link": "https://air.utah.gov/forecast.php?id=hv"
+  },
   {
    "t": 1795469008031,
    "src": "UDOT",
@@ -42,13 +56,6 @@
    "text": "Weber County forecast: Sunday good · Monday good · Tuesday good",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1795411113679,
-   "src": "UDOT road sensor",
-   "text": "I-84 @ Weber Canyon: pavement 32°F, damp. Watch for ice.",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
   }
  ],
  "seen": {
@@ -75,7 +82,7 @@
   "ice": {
    "I-84 @ MP 91 Devils Gate": 0,
    "I-84 @ MP 97 Peterson": 0,
-   "I-84 @ Weber Canyon": 0,
+   "I-84 @ Weber Canyon": 1,
    "North Ogden Divide": 0,
    "SR-158 @ MP 11.5 Powder Mountain": 0,
    "SR-167 @ Trappers Loop": 0,
@@ -85,6 +92,6 @@
    "US-89 @ MP 406 Weber River": 0
   },
   "nws": {},
-  "air": "November 23, 2026 8:26 AM|Good/Unrestricted,Good/Unrestricted,Good/Voluntary"
+  "air": "November 23, 2026 3:35 PM|Good/Unrestricted,Good/Unrestricted,Good/Voluntary"
  }
 }

@@ -1,19 +1,9 @@
 {
- "updated": "2026-11-23T21:23:00.152Z",
+ "updated": "2026-11-24T06:01:34.102Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1795377600000,
-     "e": 1795384800000,
-     "t": "New World Distillery tasting tour",
-     "loc": "New World Distillery, Eden",
-     "allDay": false,
-     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
-     "url": "",
-     "src": "Weekly regular"
-    },
     {
      "s": 1795557600000,
      "e": 1795564800000,
@@ -823,16 +813,6 @@
      "allDay": true,
      "desc": "Community Art Show is hosted quarterly at Ogden’s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
      "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795366800000,
-     "e": 1795388400000,
-     "t": "Acorn Antiques & Vintage Show",
-     "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-     "allDay": false,
-     "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
-     "url": "",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -1896,6 +1876,16 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
+     "s": 1796860800000,
+     "e": 1796863500000,
+     "t": "Energy Dance - Austad",
+     "loc": "",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
+    },
+    {
      "s": 1796864400000,
      "e": 1796878800000,
      "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
@@ -1914,6 +1904,16 @@
      "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
      "url": "https://weberpl.events.mylibrary.digital/",
      "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796869800000,
+     "e": 1796872500000,
+     "t": "Energy Dance - Austad",
+     "loc": "",
+     "allDay": false,
+     "desc": "",
+     "url": "",
+     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1796873400000,
@@ -2996,6 +2996,36 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1800664200000,
+     "e": 1800669600000,
+     "t": "Steppin' The Ogden Way dance class",
+     "loc": "Marshall White Center, 222 28th Street, Ogden",
+     "allDay": false,
+     "desc": "R&B, hip hop, Southern country and soul line dancing, $10 or free for members. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1800666000000,
+     "e": 1800673200000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1800669600000,
+     "e": 1800676800000,
+     "t": "Friday Night Jazz",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free show, all ages. Every Friday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1800723600000,
      "e": 1800730800000,
      "t": "2027 Winter Market by Farmers Market Ogden",
@@ -3058,16 +3088,6 @@
     "allDay": true,
     "desc": "Community Art Show is hosted quarterly at Ogden’s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
     "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795366800000,
-    "e": 1795388400000,
-    "t": "Acorn Antiques & Vintage Show",
-    "loc": "Golden Spike Event Center, 1000 N 1200 W, Ogden, UT 84404",
-    "allDay": false,
-    "desc": "🍂🎄 Join us for the Acorn Antiques & Vintage Holiday Show! 🎄🍂\n\nShop a unique selection of antiques, vintage finds, collectibles, farmhouse & country décor, vintage Christmas, jewelry, glassware, linens, art, and one-of-a-kind gifts! With vendors from Iowa, Oregon, and Utah, you’ll find something for everyone!\n\n🎟️ Admission: 🎟️\n🍁 Friday Early Shopping: $10\n🍁 Saturday – Sunday: $7\n✨ Tickets are good for re-entry all weekend!\n🎟️ Tickets sold at door.",
-    "url": "",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -4166,6 +4186,26 @@
     "s": 1796783400000,
     "e": 1796790000000,
     "t": "ONOG: Christmas with BYU Vocal Point & Noteworthy - Austad",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1796860800000,
+    "e": 1796863500000,
+    "t": "Energy Dance - Austad",
+    "loc": "",
+    "allDay": false,
+    "desc": "",
+    "url": "",
+    "src": "Treehouse Children's Museum"
+   },
+   {
+    "s": 1796869800000,
+    "e": 1796872500000,
+    "t": "Energy Dance - Austad",
     "loc": "",
     "allDay": false,
     "desc": "",
