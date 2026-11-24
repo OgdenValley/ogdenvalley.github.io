@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T21:23:53.370Z",
+ "updated": "2026-11-24T17:44:06.755Z",
  "pages": {
   "404.html": {
    "posted": "2026-10-06",
@@ -258,8 +258,8 @@
   },
   "newsletter.html": {
    "posted": "2026-10-13",
-   "updated": "2026-10-13",
-   "hash": "cb7261ee11ca"
+   "updated": "2026-11-24",
+   "hash": "9948dca3a4ba"
   },
   "time-capsule.html": {
    "posted": "2026-10-18",
@@ -360,6 +360,16 @@
    "posted": "2026-11-23",
    "updated": "2026-11-23",
    "hash": "bf397cd63748"
+  },
+  "2026-11-24.html": {
+   "posted": "2026-11-24",
+   "updated": "2026-11-24",
+   "hash": "d411c9a46a86"
+  },
+  "OVE-newsletter-2026-11-24-thanksgiving-week.html": {
+   "posted": "2026-11-24",
+   "updated": "2026-11-24",
+   "hash": "d41b2b1370d2"
   }
  }
 }

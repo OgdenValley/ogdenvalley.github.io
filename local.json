@@ -1,13 +1,6 @@
 {
- "updated": "2026-11-23T21:23:04.078Z",
+ "updated": "2026-11-24T17:43:24.867Z",
  "meetings": [
-  {
-   "body": "Ogden Valley City Council",
-   "title": "NOTICE OF OGDEN VALLEY COUNCIL WORK SESSION MEETING - November 23, 2026, 9am",
-   "start": 1795449600000,
-   "link": "https://www.utah.gov/pmn/sitemap/notice/1125495.html",
-   "source": "Utah Public Notice Website"
-  },
   {
    "body": "Weber County Commission",
    "title": "Meeting of the Board of Commissioners of Weber County Utah",
@@ -49,12 +42,12 @@
    "name": "Ben Lomond Peak",
    "elev": 7690,
    "depth": {
-    "value": 14,
-    "date": "2026-11-22"
+    "value": 13,
+    "date": "2026-11-23"
    },
    "water": {
     "value": 3.4,
-    "date": "2026-11-22"
+    "date": "2026-11-23"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -63,12 +56,12 @@
    "name": "Ben Lomond Trail",
    "elev": 5970,
    "depth": {
-    "value": 10,
-    "date": "2026-11-22"
+    "value": 9,
+    "date": "2026-11-23"
    },
    "water": {
     "value": 2.2,
-    "date": "2026-11-22"
+    "date": "2026-11-23"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
@@ -77,21 +70,21 @@
    "name": "Monte Cristo",
    "elev": 8930,
    "depth": {
-    "value": 17,
-    "date": "2026-11-22"
+    "value": 16,
+    "date": "2026-11-23"
    },
    "water": {
     "value": 3.3,
-    "date": "2026-11-22"
+    "date": "2026-11-23"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
    "source": "USDA NRCS SNOTEL"
   }
  ],
  "pineview": {
-  "acreFeet": 2447.05,
+  "acreFeet": 2049.05,
   "percent": 2,
-  "date": "2026-11-17T07:00:00+00:00",
+  "date": "2026-11-23T07:00:00+00:00",
   "source": "U.S. Bureau of Reclamation",
   "link": "https://data.usbr.gov/location/437"
  },

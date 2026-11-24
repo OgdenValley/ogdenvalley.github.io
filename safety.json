@@ -1,8 +1,17 @@
 {
- "updated": "2026-11-24T02:54:31.646Z",
+ "updated": "2026-11-24T17:43:24.000Z",
  "weather": [],
  "fires": [],
- "city": [],
+ "city": [
+  {
+   "title": "Charlesworth Ct",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2094",
+   "date": 1795537898000,
+   "text": "Emergency Water Shutdown",
+   "source": "Ogden City Alerts",
+   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
+  }
+ ],
  "status": {
   "weather": "ok",
   "fires": "ok",

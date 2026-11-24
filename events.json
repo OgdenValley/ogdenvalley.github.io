@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T06:01:34.102Z",
+ "updated": "2026-11-24T17:43:21.490Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -1053,6 +1053,16 @@
      "allDay": false,
      "desc": "Looking for something fun to do with friends and family over Thanksgiving weekend? Join our FREE walking tour of Historic 25th street and wear your ugly sweater! This is a donation- based charity event to raise money for Ogden’s local Homeless Shelter, Jesus Saves. Meet in front of the Union Station. REGISTRATION REQUIRED so we know how many people to expect.",
      "url": "https://tourogden.com/free-thanksgiving-charity-walking-tour/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1795888800000,
+     "e": 1795892400000,
+     "t": "Visit with Santa at the HFH ReStore!",
+     "loc": "Habitat for Humanity of Northern Utah ReStore, 3111 Wall Ave, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Santa's coming to the Habitat for Humanity Northern Utah ReStore (3111 Wall Ave) on Saturday 11/28! Join us between 11:00am-12:00pm to visit Santa and receive a virtual photo for FREE.\n\nThe ReStore will also be open its usual hours from 10:00am-6:00pm running a 50% off sale for most of the store!",
+     "url": "https://www.hfhnu.com/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -2346,16 +2356,6 @@
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
-     "s": 1797550200000,
-     "e": 1797553800000,
-     "t": "Ogden Trails Network Committee Meeting",
-     "loc": "2549 Washington Blvd., Room 710, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ogden Trails Network Committee Meeting",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1797555600000,
      "e": 1797562800000,
      "t": "Free live music & ice cream at Z's Sweets",
@@ -3231,6 +3231,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1795888800000,
+    "e": 1795892400000,
+    "t": "Visit with Santa at the HFH ReStore!",
+    "loc": "Habitat for Humanity of Northern Utah ReStore, 3111 Wall Ave, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Santa's coming to the Habitat for Humanity Northern Utah ReStore (3111 Wall Ave) on Saturday 11/28! Join us between 11:00am-12:00pm to visit Santa and receive a virtual photo for FREE.\n\nThe ReStore will also be open its usual hours from 10:00am-6:00pm running a 50% off sale for most of the store!",
+    "url": "https://www.hfhnu.com/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1795899600000,
     "e": 1795905000000,
     "t": "Ballet West's The Nutcracker",
@@ -4038,16 +4048,6 @@
     "allDay": false,
     "desc": "Sew, stuff, and sculpt something soft! Join artist Alix Twiggs Wright for a hands-on after-school workshop where you’ll turn flat fabric into playful, three-dimensional art.\n\nDesign your own organic shape, cut it from fabric, sew it together on a sewing machine, and stuff it to bring your form to life. Whether your creation ends up curvy, lumpy, abstract, or surprisingly lifelike, it will be a one-of-a-kind soft sculpture that’s entirely your own.\n\nYou’ll learn how to plan and cut organic shapes, use a sewing machine to assemble your piece, and stuff and finish it to create a three-dimensional",
     "url": "https://ogdencontemporaryarts-bloom.kindful.com/e/fabric-soft-sculpture-with-alix-twiggs-wright",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797550200000,
-    "e": 1797553800000,
-    "t": "Ogden Trails Network Committee Meeting",
-    "loc": "2549 Washington Blvd., Room 710, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ogden Trails Network Committee Meeting",
-    "url": "",
     "src": "Ogden Area Events (Visit Ogden)"
    }
   ],

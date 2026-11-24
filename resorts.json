@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T06:01:48.897Z",
+ "updated": "2026-11-24T17:43:36.401Z",
  "note": "Numbers from each resort's own snow report. Check the resort before you go.",
  "resorts": [
   {
@@ -17,9 +17,9 @@
    "liftsTotal": 13,
    "trailsOpen": 0,
    "trailsTotal": 115,
-   "resortUpdated": "Nov 23 5:00 AM MT",
+   "resortUpdated": "Nov 24 4:23 AM MT",
    "open": false,
-   "checked": "2026-11-24T06:01:49.073Z",
+   "checked": "2026-11-24T17:43:36.861Z",
    "status": "ok"
   },
   {
@@ -58,12 +58,12 @@
    "link": "https://www.nordicvalley.ski/nordic-valley-weather-conditions-webcams/",
    "source": "Nordic Valley",
    "new24": 0,
-   "new48": 0.25,
+   "new48": 0,
    "new7d": 4.25,
    "base": 0,
    "season": 4.25,
    "open": false,
-   "checked": "2026-11-24T06:01:50.222Z",
+   "checked": "2026-11-24T17:43:37.764Z",
    "status": "ok"
   }
  ]
