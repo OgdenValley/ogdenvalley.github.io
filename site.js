@@ -918,3 +918,30 @@ function renderResorts(box, R, compact){
 }
 window.OVE_SITE = {sentUs, rotateDaily, isNew, findLocal, findBox, getArea, setArea, areaCals, areaSwitch, valleyFirst, evTags, eventFilters, monthGrid, C, P, el, $, pruneChips, niceDay, loadJSON, renderMeetings, renderSeason, slug, loadEvents, allEvents, renderEvents, calLinks, moon, loadSky, auroraText, listing, isHome, spotFilter, dayKey, dayName, timeStr, todayKey, TZ, wxIcon, renderForecastStrip, snowCheck, isWinter, renderResorts, nwsJSON, snowState: () => snowState, parseHours, openNow, holidaysFor, dayInfo, dayInfoBox, onSchool};
 })();
+
+/* Banner circle (navy pages): one pick per day, alternating Ben and Valley businesses that listed with photos */
+(function(){
+  const heroes = document.querySelectorAll(".hero:not(.photo) .container");
+  if (!heroes.length) return;
+  const m = new Date().getMonth() + 1;
+  const bens = (m === 12 || m <= 2) ? ["ben-wx-cold-desk-cocoa.jpg","ben-wx-snow-catching-flakes.jpg","ben-wx-after-snow-snowman.jpg","ben-wx-snow-snowshoeing.jpg","ben-wx-after-snow-skiing.jpg"]
+    : (m >= 3 && m <= 5) ? ["ben-wx-spring-return-policy.jpg","ben-wx-rain-desk-umbrella.jpg","ben-wx-clear-desk.jpg"]
+    : (m >= 6 && m <= 8) ? ["ben-wx-hot-shade.jpg","ben-wx-summer-mosquitoes.jpg","ben-wx-clear-desk.jpg"]
+    : ["ben-wx-cold-desk-cocoa.jpg","ben-wx-wind-canyon-breeze.jpg","ben-wx-clear-desk.jpg"];
+  const pages = {businesses:"businesses.html", farm:"farm.html", stay:"businesses.html", restaurants:"restaurants.html", beauty:"beauty.html", services:"services.html", foodtrucks:"foodtrucks.html", artists:"artists.html"};
+  const biz = [];
+  for (const k in P) for (const b of (P[k] || [])) if (b && b.fromForm && b.photos && b.photos.length) biz.push({img: b.photos[0], title: b.name, kicker: "Local spotlight", href: (pages[k] || "businesses.html")});
+  const list = [];
+  const n = Math.max(bens.length, biz.length);
+  for (let i = 0; i < n; i++) { if (bens[i]) list.push({img: bens[i], title: "Ben La Moose", kicker: "Your Valley reporter", href: "safety.html"}); if (biz[i]) list.push(biz[i]); }
+  const day = Math.floor((Date.now() - new Date(new Date().getFullYear(), 0, 0)) / 864e5);
+  const pick = list[day % list.length];
+  heroes.forEach(c => {
+    if (c.querySelector(".badge, .hero-spot")) return;
+    const a = document.createElement("a"); a.className = "hero-spot"; a.href = pick.href;
+    a.innerHTML = '<span class="ring"><img alt="" loading="lazy"></span><span><small></small><br><b></b></span>';
+    a.querySelector("img").src = pick.img; a.querySelector("img").alt = pick.title;
+    a.querySelector("small").textContent = pick.kicker; a.querySelector("b").textContent = pick.title;
+    c.appendChild(a);
+  });
+})();

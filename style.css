@@ -10,11 +10,11 @@
   --display:"Montserrat",Arial,Helvetica,sans-serif; --body:"Source Sans 3","Segoe UI",system-ui,sans-serif;
   --radius:12px; color-scheme:light;
 }
-html[data-season="halloween"]{--hero-eye:#F6B544;--accent:#E07B22;--accent-2:#8E4FB8;--accent-ink:#1A1030;--hero-a:#1E1238;--hero-b:#4B2A7B;--hero-c:#8E4FB8}
-html[data-season="fall"]{--hero-eye:#F2C46B;--accent:#C9741C;--accent-2:#E8B64A;--accent-ink:#1A1A1A;--hero-a:#3A2A12;--hero-b:#7A5420;--hero-c:#D79A3A}
-html[data-season="winter"]{--hero-eye:#BFE3F5;--accent:#3E83C4;--accent-2:#BFE3F5;--accent-ink:#FFFFFF;--hero-a:#16304F;--hero-b:#3E6A99;--hero-c:#A9C6E2}
-html[data-season="spring"]{--hero-eye:#FBD3E1;--accent:#C2577F;--accent-2:#F4B6CB;--accent-ink:#FFFFFF;--hero-a:#1F4E80;--hero-b:#4A8FC4;--hero-c:#9FD0EE}
-html[data-season="summer"]{--hero-eye:#FFD45C;--accent:#2F7D4F;--accent-2:#FFD45C;--accent-ink:#FFFFFF;--hero-a:#1F5F99;--hero-b:#3E9BDB;--hero-c:#8FD0F2}
+html[data-season="halloween"]{--hero-eye:#F6B544;--accent:#E07B22;--accent-2:#8E4FB8;--accent-ink:#1A1030;--hero-a:#0D2340;--hero-b:#1F4E80;--hero-c:#5C97C9}
+html[data-season="fall"]{--hero-eye:#F2C46B;--accent:#D9952B;--accent-2:#F2C46B;--accent-ink:#0D2340;--hero-a:#0D2340;--hero-b:#1F4E80;--hero-c:#5C97C9}
+html[data-season="winter"]{--hero-eye:#BFE3F5;--accent:#3E83C4;--accent-2:#BFE3F5;--accent-ink:#FFFFFF;--hero-a:#0D2340;--hero-b:#1F4E80;--hero-c:#5C97C9}
+html[data-season="spring"]{--hero-eye:#FBD3E1;--accent:#C2577F;--accent-2:#F4B6CB;--accent-ink:#FFFFFF;--hero-a:#0D2340;--hero-b:#1F4E80;--hero-c:#5C97C9}
+html[data-season="summer"]{--hero-eye:#FFD45C;--accent:#2F7D4F;--accent-2:#FFD45C;--accent-ink:#FFFFFF;--hero-a:#0D2340;--hero-b:#1F4E80;--hero-c:#5C97C9}
 @media (prefers-color-scheme:dark){:root{
   --hero-eye:#E8C25A;
   --bg:#0D1520; --card:#142030; --ink:#E7EEF6; --muted:#A0B0C3; --line:#28384C; --soft:#1A283A;
@@ -339,3 +339,11 @@ body.kids h1,body.kids h2{font-family:var(--display);font-weight:800;letter-spac
 .week-dd>summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;background:var(--card);border:2px solid var(--line);border-radius:14px;padding:14px 18px}.week-dd>summary::-webkit-details-marker{display:none}.week-dd>summary>span{display:grid}.week-dd .eyebrow{margin:0}.wk-h{font-family:var(--display);font-weight:800;font-size:clamp(22px,4vw,28px);color:var(--ink)}.week-dd>summary::after{content:"Show \25BE";font-weight:700;color:var(--blue);white-space:nowrap}.week-dd[open]>summary::after{content:"Hide \25B4"}.week-dd[open]>summary{margin-bottom:12px}
 
 .foot-top{display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}.foot-top .ten{margin:0}.foot-idea{white-space:nowrap}
+
+/* banner circle: rotates daily between Ben and Valley businesses that listed with photos (site.js) */
+.hero-spot{display:flex;flex-direction:column;align-items:center;gap:8px;text-decoration:none;color:#fff;text-align:center;max-width:200px}
+.hero-spot .ring{width:180px;height:180px;border-radius:50%;overflow:hidden;border:4px solid var(--hero-eye);background:#fff;flex:none}
+.hero-spot img{width:100%;height:100%;object-fit:cover;display:block}
+.hero-spot b{font-size:15px;line-height:1.25}
+.hero-spot small{font-size:12px;color:#CFE0F1;letter-spacing:.06em;text-transform:uppercase}
+@media (max-width:700px){.hero-spot{flex-direction:row;max-width:none;justify-content:flex-start;text-align:left}.hero-spot .ring{width:84px;height:84px}}

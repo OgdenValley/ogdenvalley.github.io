@@ -69,14 +69,38 @@
 (async function(){
   const NL = window.OVE_NL, C = window.OVE || {};
   const sub = document.getElementById("nl-sub"); if (C.newsletterUrl) { sub.href = C.newsletterUrl; sub.target = "_blank"; sub.rel = "noopener"; } else sub.hidden = true;
-  const get = async f => { try { const r = await fetch(f + "?t=" + Date.now(), {cache: "no-store"}); if (!r.ok) throw 0; return f.endsWith(".html") ? await r.text() : await r.json(); } catch (e) { return null; } };
-  const [E, W, J, S, A] = await Promise.all([get("events.json"), get("weather.json"), get("jobs.json"), get("safety.html"), get("newsletters.json")]);
-  const d = NL.collect(C, window.OVE_PLACES, E, W, J, NL.roadsFromHTML(S, NL.ymd(Date.now())), Date.now());
-  document.getElementById("nl-range").textContent = NL.range(d.start, d.end);
-  document.getElementById("nl-now").innerHTML = NL.render(d, {mode: "web"});
-  const issues = ((A && A.issues) || []).filter(x => x.start !== d.start).sort((a, b) => a.start < b.start ? 1 : -1);
+  const get = async (f, text) => { try { const r = await fetch(f + "?t=" + Date.now(), {cache: "no-store"}); if (!r.ok) throw 0; return text ? await r.text() : await r.json(); } catch (e) { return null; } };
+  const esc = s => String(s || "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c]);
+  /* This week = the exact issue that went out on Substack (issues/issues.json, newest first) */
+  const IX = await get("issues/issues.json");
+  const list = ((IX && IX.issues) || []).slice().sort((a, b) => a.date < b.date ? 1 : -1);
+  const now = document.getElementById("nl-now");
+  let shownStart = null;
+  if (list.length) {
+    const cur = list[0];
+    const html = await get(cur.file, true);
+    document.getElementById("nl-range").textContent = cur.range || cur.date;
+    now.innerHTML = html || '<p class="meta">This week\'s issue could not load. Please refresh the page.</p>';
+  } else {
+    /* fallback: build from site data, as before */
+    const [E, W, J, S] = await Promise.all([get("events.json"), get("weather.json"), get("jobs.json"), get("safety.html", true)]);
+    const d = NL.collect(C, window.OVE_PLACES, E, W, J, NL.roadsFromHTML(S, NL.ymd(Date.now())), Date.now());
+    shownStart = d.start;
+    document.getElementById("nl-range").textContent = NL.range(d.start, d.end);
+    now.innerHTML = NL.render(d, {mode: "web"});
+  }
+  /* Past issues: earlier Substack issues first, then the older automatic weekly saves */
   const past = document.getElementById("nl-past");
-  if (issues.length) past.innerHTML = issues.map(x => '<details class="issue"><summary>' + NL.range(x.start, x.end) + '</summary><div class="nl-body">' + NL.render(x, {mode: "web"}) + "</div></details>").join("");
+  let out = "";
+  for (const x of list.slice(1)) {
+    const h = await get(x.file, true);
+    if (h) out += '<details class="issue"><summary>' + esc(x.range || x.date) + (x.title ? " · " + esc(x.title) : "") + '</summary><div class="nl-body">' + h + "</div></details>";
+  }
+  const A = await get("newsletters.json");
+  const firstDate = list.length ? list[list.length - 1].date : null;
+  const auto = ((A && A.issues) || []).filter(x => x.start !== shownStart && (!firstDate || x.start < firstDate)).sort((a, b) => a.start < b.start ? 1 : -1);
+  out += auto.map(x => '<details class="issue"><summary>' + NL.range(x.start, x.end) + '</summary><div class="nl-body">' + NL.render(x, {mode: "web"}) + "</div></details>").join("");
+  if (out) past.innerHTML = out;
 })();
 </script>
 </body>
