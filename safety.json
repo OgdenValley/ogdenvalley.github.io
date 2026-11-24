@@ -1,13 +1,13 @@
 {
- "updated": "2026-11-24T17:43:24.000Z",
+ "updated": "2026-11-24T23:07:42.804Z",
  "weather": [],
  "fires": [],
  "city": [
   {
-   "title": "Charlesworth Ct",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2094",
-   "date": 1795537898000,
-   "text": "Emergency Water Shutdown",
+   "title": "Douglas St. from Tyler Ave to Polk Ave. Updated on 2026-11-24",
+   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2095",
+   "date": 1795560146000,
+   "text": "Emergency Water Shutdown Update: &lt;p fr-original-style=\"\" style=\"margin: 0px 0px 6px; box-sizing: inherit;\"&gt;This outage has been extended to 8:30 PM&lt;/p&gt;",
    "source": "Ogden City Alerts",
    "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
   }
