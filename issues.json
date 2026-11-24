@@ -1,11 +1,11 @@
 {
- "note": "Newest first. Each issue is the exact newsletter that went out on Substack. Add one line per week.",
+ "note": "Newest first. Each issue is the exact newsletter that went out on Substack. Issue files and their pictures sit in the main folder.",
  "issues": [
   {
    "date": "2026-11-24",
    "range": "Nov. 24–Dec. 1, 2026",
    "title": "Thanksgiving week",
-   "file": "issues/2026-11-24.html"
+   "file": "2026-11-24.html"
   }
  ]
 }

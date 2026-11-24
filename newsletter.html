@@ -71,8 +71,8 @@
   const sub = document.getElementById("nl-sub"); if (C.newsletterUrl) { sub.href = C.newsletterUrl; sub.target = "_blank"; sub.rel = "noopener"; } else sub.hidden = true;
   const get = async (f, text) => { try { const r = await fetch(f + "?t=" + Date.now(), {cache: "no-store"}); if (!r.ok) throw 0; return text ? await r.text() : await r.json(); } catch (e) { return null; } };
   const esc = s => String(s || "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"})[c]);
-  /* This week = the exact issue that went out on Substack (issues/issues.json, newest first) */
-  const IX = await get("issues/issues.json");
+  /* This week = the exact issue that went out on Substack (issues.json, newest first) */
+  const IX = await get("issues.json");
   const list = ((IX && IX.issues) || []).slice().sort((a, b) => a.date < b.date ? 1 : -1);
   const now = document.getElementById("nl-now");
   let shownStart = null;
