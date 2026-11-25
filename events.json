@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-24T17:43:21.490Z",
+ "updated": "2026-11-25T02:27:04.546Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -448,6 +448,16 @@
     {
      "s": 1800648000000,
      "e": 1800655200000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1800734400000,
+     "e": 1800741600000,
      "t": "New World Distillery tasting tour",
      "loc": "New World Distillery, Eden",
      "allDay": false,
@@ -1566,6 +1576,16 @@
      "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
+     "s": 1796434200000,
+     "e": 1796441400000,
+     "t": "A Night of Music",
+     "loc": "Episcopal Church of the Good Shepherd, Iglesia Episcopal del Buen Pastor, 2374 Grant Avenue, Ogden, UT 84401",
+     "allDay": false,
+     "desc": "A Night of Music, Friday, December 4, 2026, at 6:30 pm, featuring the Tonioli Studio Children's Choir at the Episcopal Church of the Good Shepherd / Iglesia Episcopal del Buen Pastor, 2374 Grant Avenue, Ogden Utah. Voluntary donations support the Chapel Preservation Project and help unlock matching funds from the National Fund for Sacred Places.",
+     "url": "https://www.facebook.com/profile.php?id=100064520241402",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1796436000000,
      "e": 1796443200000,
      "t": "Friday Night Jazz",
@@ -1574,6 +1594,16 @@
      "desc": "Free show, all ages. Every Friday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1796437800000,
+     "e": 1796446800000,
+     "t": "A Christmas Story: The Musical",
+     "loc": "The Ziegfeld Theater, 3934 Washington Blvd., Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Ralphie Parker wants just one thing for Christmas: an Official Red Ryder Carbine-Action 200-Shot Range Model Air Rifle. Based on the beloved holiday film, A Christmas Story: The Musical brings the leg lamp, the pink bunny suit, the triple-dog-dare and Ralphie's larger-than-life daydreams to the stage at The Ziegfeld Theater in a big, bright and hilarious holiday celebration. Music and lyrics by Benj Pasek and Justin Paul (Dear Evan Hansen, La La Land), book by Joseph Robinette, directed by Morgan Parry. Rated G and perfect for the whole family.\n\nPerformances: Dec. 4, 5, 7, 11, 12, 14, 17, 18, ",
+     "url": "https://www.zigarts.com/shows/christmas-story",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796482800000,
@@ -1706,6 +1736,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1796524200000,
+     "e": 1796533200000,
+     "t": "A Christmas Story: The Musical",
+     "loc": "The Ziegfeld Theater, 3934 Washington Blvd., Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Ralphie Parker wants just one thing for Christmas: an Official Red Ryder Carbine-Action 200-Shot Range Model Air Rifle. Based on the beloved holiday film, A Christmas Story: The Musical brings the leg lamp, the pink bunny suit, the triple-dog-dare and Ralphie's larger-than-life daydreams to the stage at The Ziegfeld Theater in a big, bright and hilarious holiday celebration. Music and lyrics by Benj Pasek and Justin Paul (Dear Evan Hansen, La La Land), book by Joseph Robinette, directed by Morgan Parry. Rated G and perfect for the whole family.\n\nPerformances: Dec. 4, 5, 7, 11, 12, 14, 17, 18, ",
+     "url": "https://www.zigarts.com/shows/christmas-story",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1796572800000,
      "e": 1796608800000,
      "t": "Crystal Festival – A Rocks, Minerals, Gems & Crystal Show",
@@ -1749,9 +1789,9 @@
      "s": 1796610600000,
      "e": 1796617800000,
      "t": "Deck the Hall! Wasatch Master Chorale Christmas Concert",
-     "loc": "Ogden Tabernacle, 351 21st St., Ogden, UT",
+     "loc": "The Ogden Tabernacle, 351 21st Street, Ogden, UT 84401",
      "allDay": false,
-     "desc": "Cross \"Attend a Christmas Concert\" off your Christmastime bucket list!\n\nWe'll be presenting a fabulous evening of sacred and secular Christmas music for your Holiday enjoyment. Let us make this Christmas a treasured memory for you!\n\nSee you there!",
+     "desc": "Cross \"Attend a Christmas Concert\" off your holiday bucket list!\n\nJoin us at the Ogden Tabernacle for an evening of beautiful Christmas Music.\n\nOur concert features an amazing lineup of sacred and secular Christmas music that we know you'll enjoy.\n\nSee you there!",
      "url": "https://www.facebook.com/share/1WcXyeGzsy/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
@@ -1763,6 +1803,16 @@
      "allDay": false,
      "desc": "Safe space for parents to share, connect, and learn from each other. Each month is a different topic.\nFree Refreshments and Free Childcare for ages 0-11 (Must schedule in advance and complete paperwork)\nEmail at inquiry@fscogden.org or call us 801-393-3113\nAugust 3 - Building Structure and Routine at Home\nSeptember 14 - You are Not Alone - The Village Returns\nOctober 5 - Haunted Tales and Parenting WINS\nNovember 2 - Pulling the Ones You Love Closer - Making Your Home a Refuge\nDecember 7 - Resilience, Calm the Stress Down",
      "url": "https://www.eventbrite.com/cc/parent-cafes-special-events-4839868?utm-campaign=social&utm-content=creatorshare&utm-medium=discovery&utm-term=odclsxcollection&utm-source=cp&aff=escb",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796688000000,
+     "e": 1796691600000,
+     "t": "Inspire Dance Studio Winter Recital",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join us for our 2026 Winter Recital as our dancers showcase their routines for this season. Get excited for a magical night with our dance family.",
+     "url": "https://ogdenpet.com/events/category/series/inspire-dance-studio-winter-recital-26/peerys-egyptian-theater/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -1794,6 +1844,26 @@
      "desc": "$5 readings. Every Monday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1796695200000,
+     "e": 1796702400000,
+     "t": "Inspire Dance Studio Winter Recital",
+     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+     "allDay": false,
+     "desc": "Join us for our 2026 Winter Recital as our dancers showcase their routines for this season. Get excited for a magical night with our dance family.",
+     "url": "https://ogdenpet.com/events/category/series/inspire-dance-studio-winter-recital-26/peerys-egyptian-theater/",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1796697000000,
+     "e": 1796706000000,
+     "t": "A Christmas Story: The Musical",
+     "loc": "The Ziegfeld Theater, 3934 Washington Blvd., Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Ralphie Parker wants just one thing for Christmas: an Official Red Ryder Carbine-Action 200-Shot Range Model Air Rifle. Based on the beloved holiday film, A Christmas Story: The Musical brings the leg lamp, the pink bunny suit, the triple-dog-dare and Ralphie's larger-than-life daydreams to the stage at The Ziegfeld Theater in a big, bright and hilarious holiday celebration. Music and lyrics by Benj Pasek and Justin Paul (Dear Evan Hansen, La La Land), book by Joseph Robinette, directed by Morgan Parry. Rated G and perfect for the whole family.\n\nPerformances: Dec. 4, 5, 7, 11, 12, 14, 17, 18, ",
+     "url": "https://www.zigarts.com/shows/christmas-story",
+     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1796700600000,
@@ -2076,6 +2146,16 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1797042600000,
+     "e": 1797051600000,
+     "t": "A Christmas Story: The Musical",
+     "loc": "The Ziegfeld Theater, 3934 Washington Blvd., Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Ralphie Parker wants just one thing for Christmas: an Official Red Ryder Carbine-Action 200-Shot Range Model Air Rifle. Based on the beloved holiday film, A Christmas Story: The Musical brings the leg lamp, the pink bunny suit, the triple-dog-dare and Ralphie's larger-than-life daydreams to the stage at The Ziegfeld Theater in a big, bright and hilarious holiday celebration. Music and lyrics by Benj Pasek and Justin Paul (Dear Evan Hansen, La La Land), book by Joseph Robinette, directed by Morgan Parry. Rated G and perfect for the whole family.\n\nPerformances: Dec. 4, 5, 7, 11, 12, 14, 17, 18, ",
+     "url": "https://www.zigarts.com/shows/christmas-story",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
      "s": 1797076800000,
      "e": 1797087600000,
      "t": "Dinos in the Snow",
@@ -2147,6 +2227,16 @@
     },
     {
      "s": 1797129000000,
+     "e": 1797138000000,
+     "t": "A Christmas Story: The Musical",
+     "loc": "The Ziegfeld Theater, 3934 Washington Blvd., Ogden, UT 84403",
+     "allDay": false,
+     "desc": "Ralphie Parker wants just one thing for Christmas: an Official Red Ryder Carbine-Action 200-Shot Range Model Air Rifle. Based on the beloved holiday film, A Christmas Story: The Musical brings the leg lamp, the pink bunny suit, the triple-dog-dare and Ralphie's larger-than-life daydreams to the stage at The Ziegfeld Theater in a big, bright and hilarious holiday celebration. Music and lyrics by Benj Pasek and Justin Paul (Dear Evan Hansen, La La Land), book by Joseph Robinette, directed by Morgan Parry. Rated G and perfect for the whole family.\n\nPerformances: Dec. 4, 5, 7, 11, 12, 14, 17, 18, ",
+     "url": "https://www.zigarts.com/shows/christmas-story",
+     "src": "Ogden Area Events (Visit Ogden)"
+    },
+    {
+     "s": 1797129000000,
      "e": 1797134400000,
      "t": "Christmas Spectacular",
      "loc": "Austad Theater @ WSU, 3750 Harrison Blvd, Ogden, UT 84408",
@@ -2178,10 +2268,10 @@
     {
      "s": 1797213600000,
      "e": 1797220800000,
-     "t": "The 45th Annual Ogden Messiah Sing-In",
-     "loc": "Ogden Tabernacle, 351 21st St., Ogden, UT",
+     "t": "45th Annual Ogden Messiah Sing-In",
+     "loc": "The Ogden Tabernacle, 351 21st Street, Ogden, UT 84401",
      "allDay": false,
-     "desc": "Come sing with us!!\n\nMake the Ogden Messiah Sing-In a treasured Christmas Tradition!\n\nWe'll be singing from the Schirmer Messiah. Bring your own copy, or there will be a limited number of loaner copies available at the front of the hall. First come, first served.\n\nSee you there!",
+     "desc": "Come Sing with us!\n\nMake the Messiah Sing-In part of your annual Christmas tradition! Bring your friends and family. Sing or just bask in the glory that is Handel's Messiah.\n\nWe'll be singing from the Schirmer version of the Messiah. Bring your own or there will be a limited number of loaner copies available at the front of the hall. First come, first served.\n\nSee you there!",
      "url": "https://www.facebook.com/share/18tk8mhxY3/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
@@ -2217,12 +2307,12 @@
     },
     {
      "s": 1797301800000,
-     "e": 1797307200000,
-     "t": "The Forgotten Carols",
-     "loc": "Dee Event Center, 4444 Event Center Dr, Ogden, UT 84408",
+     "e": 1797310800000,
+     "t": "A Christmas Story: The Musical",
+     "loc": "The Ziegfeld Theater, 3934 Washington Blvd., Ogden, UT 84403",
      "allDay": false,
-     "desc": "The Forgotten Carols Musical features breathtaking performances of heartwarming melodies and laugh-out-loud entertainment within a timeless Christmas story. Hear your favorite songs, like \"Homeless,\" from Michael McLean's original hit album, sung by incredible musical theater performers. Immerse yourself in the magic of the holiday season as you witness the story of the Forgotten Carols coming to life on stage. Don't miss out on this incredible in-person event that will leave you feeling uplifted and filled with joy. Join us!\n\nRecommended for ages 5 and older.",
-     "url": "https://weber.evenue.net/events/FC",
+     "desc": "Ralphie Parker wants just one thing for Christmas: an Official Red Ryder Carbine-Action 200-Shot Range Model Air Rifle. Based on the beloved holiday film, A Christmas Story: The Musical brings the leg lamp, the pink bunny suit, the triple-dog-dare and Ralphie's larger-than-life daydreams to the stage at The Ziegfeld Theater in a big, bright and hilarious holiday celebration. Music and lyrics by Benj Pasek and Justin Paul (Dear Evan Hansen, La La Land), book by Joseph Robinette, directed by Morgan Parry. Rated G and perfect for the whole family.\n\nPerformances: Dec. 4, 5, 7, 11, 12, 14, 17, 18, ",
+     "url": "https://www.zigarts.com/shows/christmas-story",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -2246,96 +2336,6 @@
      "src": "Weekly regular"
     },
     {
-     "s": 1797366600000,
-     "e": 1797370200000,
-     "t": "Gentle Movements",
-     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
-     "url": "https://weberpl.events.mylibrary.digital/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1797373800000,
-     "e": 1797381000000,
-     "t": "Ogden City Council Work Session",
-     "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1797382800000,
-     "e": 1797393600000,
-     "t": "Ogden City Council Meeting",
-     "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1797382800000,
-     "e": 1797397200000,
-     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
-     "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
-     "url": "www.TheCarriageEstablishment.com",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1797386400000,
-     "e": 1797393600000,
-     "t": "Wasatch Audubon Monthly Program",
-     "loc": "Ogden Nature Center, 966 W. 12th Street, Ogden, UT 84404",
-     "allDay": false,
-     "desc": "The Audubon Society presents a different speaker or slide show every month. Meetings are hybrid - in person and Zoom. Please visit www.wasatchaudubon.org or call the Ogden Nature Center for details at 801-621-7595.",
-     "url": "http://www.wasatchaudubon.org",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1797465600000,
-     "e": 1797472800000,
-     "t": "Ogden City Planning Commission Worksession",
-     "loc": "2549 Washington Blvd., Room #310, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ogden City Planning Commission Worksession",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1797469200000,
-     "e": 1797483600000,
-     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
-     "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
-     "url": "www.TheCarriageEstablishment.com",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1797471000000,
-     "e": 1797474600000,
-     "t": "Yoga",
-     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
-     "url": "https://weberpl.events.mylibrary.digital/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1797472800000,
-     "e": 1797476400000,
-     "t": "Imagine Ballet Theatre Presents: Jazzy Nutcracker",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Join us for a jazzy take on a timeless holiday tradition! This show is set to music from Duke Ellington’s interpretation of Tchaikovsky’s score. The collection of dances are performed by PALS and the Imagine Ballet Theatre dancers. PALS stands for “Performing Artists Lengthening Strides,” which is a dance group featuring dancers with special needs. PALS provides dancers with an opportunity to grow as individuals, build transformative friendships, and have fun with their peers.\n\nThese performers will warm your heart and the show is sure to get you in the holiday spirit!",
-     "url": "https://ogdenpet.com/event/jazzy-nutcracker-2026/peerys-egyptian-theater/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
      "s": 1797478200000,
      "e": 1797490800000,
      "t": "Country Dancing",
@@ -2344,16 +2344,6 @@
      "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
      "url": "",
      "src": "Weekly regular"
-    },
-    {
-     "s": 1797548400000,
-     "e": 1797555600000,
-     "t": "OCA Workshop: Fabric Soft Sculpture with Alix Twiggs Wright",
-     "loc": "Monarch Studio 32, 455 25th St, Ogden UT 84401",
-     "allDay": false,
-     "desc": "Sew, stuff, and sculpt something soft! Join artist Alix Twiggs Wright for a hands-on after-school workshop where you’ll turn flat fabric into playful, three-dimensional art.\n\nDesign your own organic shape, cut it from fabric, sew it together on a sewing machine, and stuff it to bring your form to life. Whether your creation ends up curvy, lumpy, abstract, or surprisingly lifelike, it will be a one-of-a-kind soft sculpture that’s entirely your own.\n\nYou’ll learn how to plan and cut organic shapes, use a sewing machine to assemble your piece, and stuff and finish it to create a three-dimensional",
-     "url": "https://ogdencontemporaryarts-bloom.kindful.com/e/fabric-soft-sculpture-with-alix-twiggs-wright",
-     "src": "Ogden Area Events (Visit Ogden)"
     },
     {
      "s": 1797555600000,
@@ -3036,6 +3026,36 @@
      "src": "OVE events sweep, Nov. 4, 2026"
     },
     {
+     "s": 1800738000000,
+     "e": 1800745200000,
+     "t": "Craft n Cry",
+     "loc": "Kaffe Mercantile, 1221 26th St., Ogden",
+     "allDay": false,
+     "desc": "Bring a craft project and chat with other creatives. Free, every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1800752400000,
+     "e": 1800759600000,
+     "t": "Free live music & ice cream at Z's Sweets",
+     "loc": "Z's Sweets, 3920 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1800756000000,
+     "e": 1800763200000,
+     "t": "Singles Mingle",
+     "loc": "Grounds for Coffee, 111 25th Street, Ogden",
+     "allDay": false,
+     "desc": "Free. Every Saturday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1806712200000,
      "e": 1806719400000,
      "t": "Music @ the Collective with Alli Brown",
@@ -3551,6 +3571,26 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1796434200000,
+    "e": 1796441400000,
+    "t": "A Night of Music",
+    "loc": "Episcopal Church of the Good Shepherd, Iglesia Episcopal del Buen Pastor, 2374 Grant Avenue, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "A Night of Music, Friday, December 4, 2026, at 6:30 pm, featuring the Tonioli Studio Children's Choir at the Episcopal Church of the Good Shepherd / Iglesia Episcopal del Buen Pastor, 2374 Grant Avenue, Ogden Utah. Voluntary donations support the Chapel Preservation Project and help unlock matching funds from the National Fund for Sacred Places.",
+    "url": "https://www.facebook.com/profile.php?id=100064520241402",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796437800000,
+    "e": 1796446800000,
+    "t": "A Christmas Story: The Musical",
+    "loc": "The Ziegfeld Theater, 3934 Washington Blvd., Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Ralphie Parker wants just one thing for Christmas: an Official Red Ryder Carbine-Action 200-Shot Range Model Air Rifle. Based on the beloved holiday film, A Christmas Story: The Musical brings the leg lamp, the pink bunny suit, the triple-dog-dare and Ralphie's larger-than-life daydreams to the stage at The Ziegfeld Theater in a big, bright and hilarious holiday celebration. Music and lyrics by Benj Pasek and Justin Paul (Dear Evan Hansen, La La Land), book by Joseph Robinette, directed by Morgan Parry. Rated G and perfect for the whole family.\n\nPerformances: Dec. 4, 5, 7, 11, 12, 14, 17, 18, ",
+    "url": "https://www.zigarts.com/shows/christmas-story",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1796486400000,
     "e": 1796515200000,
     "t": "Rocky Mountain Gun Show",
@@ -3631,6 +3671,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1796524200000,
+    "e": 1796533200000,
+    "t": "A Christmas Story: The Musical",
+    "loc": "The Ziegfeld Theater, 3934 Washington Blvd., Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Ralphie Parker wants just one thing for Christmas: an Official Red Ryder Carbine-Action 200-Shot Range Model Air Rifle. Based on the beloved holiday film, A Christmas Story: The Musical brings the leg lamp, the pink bunny suit, the triple-dog-dare and Ralphie's larger-than-life daydreams to the stage at The Ziegfeld Theater in a big, bright and hilarious holiday celebration. Music and lyrics by Benj Pasek and Justin Paul (Dear Evan Hansen, La La Land), book by Joseph Robinette, directed by Morgan Parry. Rated G and perfect for the whole family.\n\nPerformances: Dec. 4, 5, 7, 11, 12, 14, 17, 18, ",
+    "url": "https://www.zigarts.com/shows/christmas-story",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1796572800000,
     "e": 1796608800000,
     "t": "Crystal Festival – A Rocks, Minerals, Gems & Crystal Show",
@@ -3674,6 +3724,16 @@
     "s": 1796610600000,
     "e": 1796617800000,
     "t": "Deck the Hall! Wasatch Master Chorale Christmas Concert",
+    "loc": "The Ogden Tabernacle, 351 21st Street, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Cross \"Attend a Christmas Concert\" off your holiday bucket list!\n\nJoin us at the Ogden Tabernacle for an evening of beautiful Christmas Music.\n\nOur concert features an amazing lineup of sacred and secular Christmas music that we know you'll enjoy.\n\nSee you there!",
+    "url": "https://www.facebook.com/share/1WcXyeGzsy/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796610600000,
+    "e": 1796617800000,
+    "t": "Deck the Hall! Wasatch Master Chorale Christmas Concert",
     "loc": "Ogden Tabernacle, 351 21st St., Ogden, UT",
     "allDay": false,
     "desc": "Cross \"Attend a Christmas Concert\" off your Christmastime bucket list!\n\nWe'll be presenting a fabulous evening of sacred and secular Christmas music for your Holiday enjoyment. Let us make this Christmas a treasured memory for you!\n\nSee you there!",
@@ -3691,6 +3751,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1796688000000,
+    "e": 1796691600000,
+    "t": "Inspire Dance Studio Winter Recital",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join us for our 2026 Winter Recital as our dancers showcase their routines for this season. Get excited for a magical night with our dance family.",
+    "url": "https://ogdenpet.com/events/category/series/inspire-dance-studio-winter-recital-26/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1796691600000,
     "e": 1796706000000,
     "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
@@ -3698,6 +3768,26 @@
     "allDay": false,
     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
     "url": "www.TheCarriageEstablishment.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796695200000,
+    "e": 1796702400000,
+    "t": "Inspire Dance Studio Winter Recital",
+    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Join us for our 2026 Winter Recital as our dancers showcase their routines for this season. Get excited for a magical night with our dance family.",
+    "url": "https://ogdenpet.com/events/category/series/inspire-dance-studio-winter-recital-26/peerys-egyptian-theater/",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1796697000000,
+    "e": 1796706000000,
+    "t": "A Christmas Story: The Musical",
+    "loc": "The Ziegfeld Theater, 3934 Washington Blvd., Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Ralphie Parker wants just one thing for Christmas: an Official Red Ryder Carbine-Action 200-Shot Range Model Air Rifle. Based on the beloved holiday film, A Christmas Story: The Musical brings the leg lamp, the pink bunny suit, the triple-dog-dare and Ralphie's larger-than-life daydreams to the stage at The Ziegfeld Theater in a big, bright and hilarious holiday celebration. Music and lyrics by Benj Pasek and Justin Paul (Dear Evan Hansen, La La Land), book by Joseph Robinette, directed by Morgan Parry. Rated G and perfect for the whole family.\n\nPerformances: Dec. 4, 5, 7, 11, 12, 14, 17, 18, ",
+    "url": "https://www.zigarts.com/shows/christmas-story",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -3841,6 +3931,16 @@
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
+    "s": 1797042600000,
+    "e": 1797051600000,
+    "t": "A Christmas Story: The Musical",
+    "loc": "The Ziegfeld Theater, 3934 Washington Blvd., Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Ralphie Parker wants just one thing for Christmas: an Official Red Ryder Carbine-Action 200-Shot Range Model Air Rifle. Based on the beloved holiday film, A Christmas Story: The Musical brings the leg lamp, the pink bunny suit, the triple-dog-dare and Ralphie's larger-than-life daydreams to the stage at The Ziegfeld Theater in a big, bright and hilarious holiday celebration. Music and lyrics by Benj Pasek and Justin Paul (Dear Evan Hansen, La La Land), book by Joseph Robinette, directed by Morgan Parry. Rated G and perfect for the whole family.\n\nPerformances: Dec. 4, 5, 7, 11, 12, 14, 17, 18, ",
+    "url": "https://www.zigarts.com/shows/christmas-story",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
     "s": 1797076800000,
     "e": 1797087600000,
     "t": "Dinos in the Snow",
@@ -3882,6 +3982,16 @@
    },
    {
     "s": 1797129000000,
+    "e": 1797138000000,
+    "t": "A Christmas Story: The Musical",
+    "loc": "The Ziegfeld Theater, 3934 Washington Blvd., Ogden, UT 84403",
+    "allDay": false,
+    "desc": "Ralphie Parker wants just one thing for Christmas: an Official Red Ryder Carbine-Action 200-Shot Range Model Air Rifle. Based on the beloved holiday film, A Christmas Story: The Musical brings the leg lamp, the pink bunny suit, the triple-dog-dare and Ralphie's larger-than-life daydreams to the stage at The Ziegfeld Theater in a big, bright and hilarious holiday celebration. Music and lyrics by Benj Pasek and Justin Paul (Dear Evan Hansen, La La Land), book by Joseph Robinette, directed by Morgan Parry. Rated G and perfect for the whole family.\n\nPerformances: Dec. 4, 5, 7, 11, 12, 14, 17, 18, ",
+    "url": "https://www.zigarts.com/shows/christmas-story",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797129000000,
     "e": 1797134400000,
     "t": "Christmas Spectacular",
     "loc": "Austad Theater @ WSU, 3750 Harrison Blvd, Ogden, UT 84408",
@@ -3898,6 +4008,16 @@
     "allDay": false,
     "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
     "url": "www.TheCarriageEstablishment.com",
+    "src": "Ogden Area Events (Visit Ogden)"
+   },
+   {
+    "s": 1797213600000,
+    "e": 1797220800000,
+    "t": "45th Annual Ogden Messiah Sing-In",
+    "loc": "The Ogden Tabernacle, 351 21st Street, Ogden, UT 84401",
+    "allDay": false,
+    "desc": "Come Sing with us!\n\nMake the Messiah Sing-In part of your annual Christmas tradition! Bring your friends and family. Sing or just bask in the glory that is Handel's Messiah.\n\nWe'll be singing from the Schirmer version of the Messiah. Bring your own or there will be a limited number of loaner copies available at the front of the hall. First come, first served.\n\nSee you there!",
+    "url": "https://www.facebook.com/share/18tk8mhxY3/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -3932,12 +4052,12 @@
    },
    {
     "s": 1797301800000,
-    "e": 1797307200000,
-    "t": "The Forgotten Carols",
-    "loc": "Dee Event Center, 4444 Event Center Dr, Ogden, UT 84408",
+    "e": 1797310800000,
+    "t": "A Christmas Story: The Musical",
+    "loc": "The Ziegfeld Theater, 3934 Washington Blvd., Ogden, UT 84403",
     "allDay": false,
-    "desc": "The Forgotten Carols Musical features breathtaking performances of heartwarming melodies and laugh-out-loud entertainment within a timeless Christmas story. Hear your favorite songs, like \"Homeless,\" from Michael McLean's original hit album, sung by incredible musical theater performers. Immerse yourself in the magic of the holiday season as you witness the story of the Forgotten Carols coming to life on stage. Don't miss out on this incredible in-person event that will leave you feeling uplifted and filled with joy. Join us!\n\nRecommended for ages 5 and older.",
-    "url": "https://weber.evenue.net/events/FC",
+    "desc": "Ralphie Parker wants just one thing for Christmas: an Official Red Ryder Carbine-Action 200-Shot Range Model Air Rifle. Based on the beloved holiday film, A Christmas Story: The Musical brings the leg lamp, the pink bunny suit, the triple-dog-dare and Ralphie's larger-than-life daydreams to the stage at The Ziegfeld Theater in a big, bright and hilarious holiday celebration. Music and lyrics by Benj Pasek and Justin Paul (Dear Evan Hansen, La La Land), book by Joseph Robinette, directed by Morgan Parry. Rated G and perfect for the whole family.\n\nPerformances: Dec. 4, 5, 7, 11, 12, 14, 17, 18, ",
+    "url": "https://www.zigarts.com/shows/christmas-story",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
@@ -3948,106 +4068,6 @@
     "allDay": false,
     "desc": "Cross \"Attend a Christmas Concert\" off your Christmastime bucket list!\n\nWe'll be presenting a fabulous evening of sacred and secular Christmas music for your Holiday enjoyment. Let us make this Christmas a treasured memory for you!\n\nSee you there!",
     "url": "https://www.facebook.com/share/1BLSUq83gr//",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797366600000,
-    "e": 1797370200000,
-    "t": "Gentle Movements",
-    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
-    "url": "https://weberpl.events.mylibrary.digital/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797373800000,
-    "e": 1797381000000,
-    "t": "Ogden City Council Work Session",
-    "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797382800000,
-    "e": 1797393600000,
-    "t": "Ogden City Council Meeting",
-    "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797382800000,
-    "e": 1797397200000,
-    "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
-    "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
-    "url": "www.TheCarriageEstablishment.com",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797386400000,
-    "e": 1797393600000,
-    "t": "Wasatch Audubon Monthly Program",
-    "loc": "Ogden Nature Center, 966 W. 12th Street, Ogden, UT 84404",
-    "allDay": false,
-    "desc": "The Audubon Society presents a different speaker or slide show every month. Meetings are hybrid - in person and Zoom. Please visit www.wasatchaudubon.org or call the Ogden Nature Center for details at 801-621-7595.",
-    "url": "http://www.wasatchaudubon.org",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797465600000,
-    "e": 1797472800000,
-    "t": "Ogden City Planning Commission Worksession",
-    "loc": "2549 Washington Blvd., Room #310, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ogden City Planning Commission Worksession",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797469200000,
-    "e": 1797483600000,
-    "t": "Ogden Christmas Village Horse Drawn Carriage Rides",
-    "loc": "Ogden Christmas Village Horse Carriage Stop at 2550 Grant Avenue, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Giddy-up Jingle Horse! Create magical memories with your own Ogden Christmas Village Horse Drawn Carriage Ride. Experience the festive lights and holiday cheer from your choice of carriages. Our friendly drivers are pleased to provide warm blankets and the merriest music.\n\nRides start Nov 30 to Dec 31 for M-Th 6pm-10pm and F-S 6pm-midnight. We are closed on Sundays. Our Vis-a-Vis carriage can hold up to 4 average-sized adults and 2 lap children under the age of 2 (or some variation of this). Our Wagonette can hold up to 9 average-sized adults. We offer 3 different routes around the Ogden Chris",
-    "url": "www.TheCarriageEstablishment.com",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797471000000,
-    "e": 1797474600000,
-    "t": "Yoga",
-    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
-    "url": "https://weberpl.events.mylibrary.digital/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797472800000,
-    "e": 1797476400000,
-    "t": "Imagine Ballet Theatre Presents: Jazzy Nutcracker",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Join us for a jazzy take on a timeless holiday tradition! This show is set to music from Duke Ellington’s interpretation of Tchaikovsky’s score. The collection of dances are performed by PALS and the Imagine Ballet Theatre dancers. PALS stands for “Performing Artists Lengthening Strides,” which is a dance group featuring dancers with special needs. PALS provides dancers with an opportunity to grow as individuals, build transformative friendships, and have fun with their peers.\n\nThese performers will warm your heart and the show is sure to get you in the holiday spirit!",
-    "url": "https://ogdenpet.com/event/jazzy-nutcracker-2026/peerys-egyptian-theater/",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1797548400000,
-    "e": 1797555600000,
-    "t": "OCA Workshop: Fabric Soft Sculpture with Alix Twiggs Wright",
-    "loc": "Monarch Studio 32, 455 25th St, Ogden UT 84401",
-    "allDay": false,
-    "desc": "Sew, stuff, and sculpt something soft! Join artist Alix Twiggs Wright for a hands-on after-school workshop where you’ll turn flat fabric into playful, three-dimensional art.\n\nDesign your own organic shape, cut it from fabric, sew it together on a sewing machine, and stuff it to bring your form to life. Whether your creation ends up curvy, lumpy, abstract, or surprisingly lifelike, it will be a one-of-a-kind soft sculpture that’s entirely your own.\n\nYou’ll learn how to plan and cut organic shapes, use a sewing machine to assemble your piece, and stuff and finish it to create a three-dimensional",
-    "url": "https://ogdencontemporaryarts-bloom.kindful.com/e/fabric-soft-sculpture-with-alix-twiggs-wright",
     "src": "Ogden Area Events (Visit Ogden)"
    }
   ],

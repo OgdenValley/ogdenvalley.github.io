@@ -1143,5 +1143,12 @@
   "county": "Weber"
  },
  "Monarch Studio 32, 455 25th St, Ogden UT 84401": null,
- "Habitat for Humanity of Northern Utah ReStore, 3111 Wall Ave, Ogden, UT 84401": null
+ "Habitat for Humanity of Northern Utah ReStore, 3111 Wall Ave, Ogden, UT 84401": null,
+ "Episcopal Church of the Good Shepherd, Iglesia Episcopal del Buen Pastor, 2374 Grant Avenue, Ogden, UT 84401": null,
+ "The Ziegfeld Theater, 3934 Washington Blvd., Ogden, UT 84403": {
+  "lat": 41.19143,
+  "lng": -111.97056,
+  "county": "Weber"
+ },
+ "The Ogden Tabernacle, 351 21st Street, Ogden, UT 84401": null
 }
