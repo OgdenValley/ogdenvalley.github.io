@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T12:52:59.357Z",
+ "updated": "2026-11-25T22:31:08.239Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -475,6 +475,16 @@
      "url": ""
     },
     {
+     "s": 1800820800000,
+     "e": 1800828000000,
+     "t": "New World Distillery tasting tour",
+     "loc": "New World Distillery, Eden",
+     "allDay": false,
+     "desc": "Tours at 1 and 3 p.m., $20. Every Friday, Saturday and Sunday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1801098000000,
      "e": 1801107000000,
      "t": "Wednesday Night Hikers",
@@ -823,16 +833,6 @@
      "allDay": true,
      "desc": "Community Art Show is hosted quarterly at Ogden’s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
      "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795552200000,
-     "e": 1795555800000,
-     "t": "Gentle Movements",
-     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
-     "url": "https://weberpl.events.mylibrary.digital/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -3078,16 +3078,6 @@
     "allDay": true,
     "desc": "Community Art Show is hosted quarterly at Ogden’s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
     "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795552200000,
-    "e": 1795555800000,
-    "t": "Gentle Movements",
-    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "This vibrant low-impact class combines gentle yoga, strength and stretch, guided dance, and meditation. Presented as a combined approach, selected activities help the body with balance, dexterity, strength, and circulation.",
-    "url": "https://weberpl.events.mylibrary.digital/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {

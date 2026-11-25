@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T12:53:03.475Z",
+ "updated": "2026-11-25T22:31:11.228Z",
  "meetings": [
   {
    "body": "Weber County Commission",
@@ -13,6 +13,13 @@
    "title": "NOTICE FOR OGDEN VALLEY PLANNING COMMISSION MEETING - November 24, 2026, pm",
    "start": 1795568400000,
    "link": "https://www.utah.gov/pmn/sitemap/notice/1125157.html",
+   "source": "Utah Public Notice Website"
+  },
+  {
+   "body": "Weber County Commission",
+   "title": "Weber County Commission Meeting",
+   "start": 1796144400000,
+   "link": "https://www.utah.gov/pmn/sitemap/notice/1126585.html",
    "source": "Utah Public Notice Website"
   },
   {
@@ -67,7 +74,7 @@
     "date": "2026-11-24"
    },
    "water": {
-    "value": 3.4,
+    "value": 3.3,
     "date": "2026-11-24"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
