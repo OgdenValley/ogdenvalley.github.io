@@ -282,7 +282,12 @@ window.OVE = {
   skyPhotos: [
     { image: "sky-logan-peak-moonrise-1.jpg", title: "Moonrise behind Logan Peak", place: "Logan", date: "Sept. 26, 2026", by: "Jim Brown" },
     { image: "sky-logan-peak-moonrise-2.jpg", title: "Full moon over Logan Peak", place: "Logan", date: "Sept. 26, 2026", by: "Jim Brown" },
-    { image: "sky-milky-way-pines-doxey.jpg", title: "Milky Way over the pines", place: "", date: "", by: "Tom Doxey" }
+    { image: "sky-milky-way-pines-doxey.jpg", title: "Milky Way over the pines", place: "", date: "", by: "Tom Doxey" },
+    { image: "sky-beaver-moon-robert-loy-ridge.jpg", title: "Beaver Moon low over the ridge", place: "", date: "Nov. 2026", by: "Robert Loy" },
+    { image: "sky-beaver-moon-kristin-summers.jpg", title: "The full Beaver Moon up close", place: "", date: "Nov. 2026", by: "Kristin Summers" },
+    { image: "sky-beaver-moon-mandy-mclean-ring.jpg", title: "Beaver Moon wearing its icy ring", place: "", date: "Nov. 2026", by: "Mandy Jackett McLean" },
+    { image: "sky-beaver-moon-mandy-mclean-corral.jpg", title: "Beaver Moon over a snowy corral", place: "", date: "Nov. 2026", by: "Mandy Jackett McLean" },
+    { image: "sky-beaver-moon-mandy-mclean-peaks.jpg", title: "Beaver Moon rising gold over the peaks", place: "", date: "Nov. 2026", by: "Mandy Jackett McLean" }
   ],
 
   /* --- Coloring pages (change each month) ---------------------------- */
