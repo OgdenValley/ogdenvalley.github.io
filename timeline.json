@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-25T02:27:33.276Z",
+ "updated": "2026-11-25T05:26:07.739Z",
  "items": [
+  {
+   "t": 1795584367739,
+   "src": "UDOT road sensor",
+   "text": "I-84 @ Weber Canyon: pavement 29°F, damp. Watch for ice.",
+   "kind": "winter",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1795573653273,
    "src": "Utah Air Quality",
@@ -45,7 +52,6 @@
   },
   "al": {},
   "cond": {
-   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
    "US-89 From Jct. SR-193 to I-84#332": "Dry · none",
    "SR-39 Ogden to Jct. SR-167 Trappers Loop#333": "Dry · none",
    "SR-158 to Powder Mountain#334": "Dry · none",
@@ -54,6 +60,7 @@
    "I-84 I-15 Jct at Riverdale to SR-89#426": "Dry · none",
    "US-89 I-84 Jct Ogden to Box Elder/Weber Co Ln#327": "Dry · none",
    "US-89 From Lagoon to Jct. SR-193#330": "Dry · none",
+   "SR-39 Jct. SR-167 Trappers Loop to Monte Cristo Gate#331": "Dry · none",
    "I-84 SR-167 at Mountain Green to Morgan#337": "Dry · none",
    "I-84 Uintah Jct to Jct SR-167 at Mountain Green#338": "Dry · none"
   },
@@ -61,7 +68,7 @@
   "ice": {
    "I-84 @ MP 91 Devils Gate": 0,
    "I-84 @ MP 97 Peterson": 0,
-   "I-84 @ Weber Canyon": 0,
+   "I-84 @ Weber Canyon": 1,
    "North Ogden Divide": 0,
    "SR-158 @ MP 11.5 Powder Mountain": 0,
    "SR-167 @ Trappers Loop": 0,
