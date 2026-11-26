@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T05:02:28.574Z",
+ "updated": "2026-11-26T15:14:23.284Z",
  "meetings": [
   {
    "body": "Weber County Commission",
@@ -29,11 +29,11 @@
    "elev": 7690,
    "depth": {
     "value": 12,
-    "date": "2026-11-24"
+    "date": "2026-11-25"
    },
    "water": {
-    "value": 3.4,
-    "date": "2026-11-24"
+    "value": 3.3,
+    "date": "2026-11-25"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -43,11 +43,11 @@
    "elev": 5970,
    "depth": {
     "value": 10,
-    "date": "2026-11-24"
+    "date": "2026-11-25"
    },
    "water": {
     "value": 2.2,
-    "date": "2026-11-24"
+    "date": "2026-11-25"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
@@ -56,12 +56,12 @@
    "name": "Monte Cristo",
    "elev": 8930,
    "depth": {
-    "value": 16,
-    "date": "2026-11-24"
+    "value": 15,
+    "date": "2026-11-25"
    },
    "water": {
-    "value": 3.3,
-    "date": "2026-11-24"
+    "value": 3.4,
+    "date": "2026-11-25"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
    "source": "USDA NRCS SNOTEL"
@@ -70,7 +70,7 @@
  "pineview": {
   "acreFeet": 2049.05,
   "percent": 2,
-  "date": "2026-11-23T07:00:00+00:00",
+  "date": "2026-11-24T07:00:00+00:00",
   "source": "U.S. Bureau of Reclamation",
   "link": "https://data.usbr.gov/location/437"
  },
@@ -79,7 +79,7 @@
   "Ogden Valley Planning Commission": "ok",
   "Huntsville Town Council": "ok",
   "Weber County Commission": "ok",
-  "Huntsville Town website": "ok",
+  "Huntsville Town website": "failed",
   "snow": "ok",
   "pineview": "ok"
  }
