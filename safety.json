@@ -1,17 +1,8 @@
 {
- "updated": "2026-11-25T22:31:10.353Z",
+ "updated": "2026-11-26T00:02:42.846Z",
  "weather": [],
  "fires": [],
- "city": [
-  {
-   "title": "Wall Ave from 25th St. to 26th St. Updated on 2026-11-25",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2096",
-   "date": 1795635378000,
-   "text": "Emergency Water Shutdown Update: &lt;p fr-original-style=\"\" style=\"margin: 0px 0px 6px; box-sizing: inherit;\"&gt;This outage has been extended until 3:30 PM&lt;/p&gt;",
-   "source": "Ogden City Alerts",
-   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
-  }
- ],
+ "city": [],
  "status": {
   "weather": "ok",
   "fires": "ok",
