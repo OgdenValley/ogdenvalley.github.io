@@ -1,19 +1,9 @@
 {
- "updated": "2026-11-25T22:31:08.239Z",
+ "updated": "2026-11-26T05:02:24.421Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1795557600000,
-     "e": 1795564800000,
-     "t": "Open Art Studio",
-     "loc": "Mountain Arts and Music Art Space, 2595 N. Hwy 162, Eden (Eats of Eden building, next to the post office)",
-     "allDay": false,
-     "desc": "Artists of all abilities welcome to come do art. Bring your own work in progress and learn from the on-site instructor. Watercolor supplies provided. 2nd and 4th Tuesdays.",
-     "url": "https://www.mountainartsandmusic.org/",
-     "src": "mountainartsandmusic.org, checked Oct. 29, 2026"
-    },
     {
      "s": 1795654800000,
      "e": 1795663800000,
@@ -833,36 +823,6 @@
      "allDay": true,
      "desc": "Community Art Show is hosted quarterly at Ogden’s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
      "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795559400000,
-     "e": 1795566600000,
-     "t": "Ogden City Council Work Session",
-     "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795568400000,
-     "e": 1795579200000,
-     "t": "Ogden City Council Meeting",
-     "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795573800000,
-     "e": 1795582800000,
-     "t": "Ogden Musical Theatre Presents: A Christmas Carol",
-     "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
-     "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -3078,36 +3038,6 @@
     "allDay": true,
     "desc": "Community Art Show is hosted quarterly at Ogden’s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
     "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795559400000,
-    "e": 1795566600000,
-    "t": "Ogden City Council Work Session",
-    "loc": "Ogden City Municipal Building, 2549 Washington Blvd Ste 340, Ogden UT 84401",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795568400000,
-    "e": 1795579200000,
-    "t": "Ogden City Council Meeting",
-    "loc": "Ogden City Municipal Building, Council Chambers, 3rd Floor, 2549 Washington Blvd, Ogden UT 84401",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795573800000,
-    "e": 1795582800000,
-    "t": "Ogden Musical Theatre Presents: A Christmas Carol",
-    "loc": "Peery's Egyptian Theater, 2415 Washington Blvd., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ebenezer Scrooge is a prosperous curmudgeon who believes that personal wealth is far more valuable than the happiness and comfort of others. With an infuriated \"Bah! Humbug!\" Scrooge summates his feelings of Christmas tidings and charitable giving, but he's forced to face his selfish ways when three ghosts on Christmas Eve lead him through his Past, Present and Future. Thanks to their guidance, Scrooge recognizes his faults and greets Christmas morning with a cheerful \"Happy Christmas\" before spending the day reconnecting and sharing love with those that mean the most to him.\n\nNo babes in arms",
-    "url": "https://ogdenpet.com/events/category/series/a-christmas-carol-2026-1/peerys-egyptian-theater/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {
