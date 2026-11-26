@@ -1,29 +1,29 @@
 {
- "updated": "2026-11-26T15:14:39.285Z",
+ "updated": "2026-11-26T23:52:52.467Z",
  "needed": true,
  "since": "2026-11-10T23:20:28.151Z",
  "reasons": [
   {
    "kind": "snow",
-   "key": "snow:2026-11-28,2026-11-29,2026-11-30,2026-12-01,2026-12-02",
-   "text": "Snow is in the Valley forecast for Saturday, Sunday, Monday, Tuesday, Wednesday."
+   "key": "snow:2026-11-28,2026-11-29,2026-11-30,2026-12-02",
+   "text": "Snow is in the Valley forecast for Saturday, Sunday, Monday, Wednesday."
   },
   {
    "kind": "freeze",
    "key": "freeze:2026-11-28",
-   "text": "Hard freeze: lows of 25° or colder on 1 night, as cold as 23° Saturday night."
+   "text": "Hard freeze: lows of 25° or colder on 1 night, as cold as 22° Saturday night."
   },
   {
    "kind": "wet",
-   "key": "wet:2026-11-29",
-   "text": "Two wet days in a row: Sunday 83% and Monday 83%."
+   "key": "wet:2026-11-27",
+   "text": "Two wet days in a row: Friday 80% and Saturday 80%."
   }
  ],
- "forecastIssued": "2026-11-26T06:31:22+00:00",
+ "forecastIssued": "2026-11-26T18:31:26+00:00",
  "draft": {
-  "made": "2026-11-26T15:14:39.285Z",
-  "why": "New reason for a briefing: Snow is in the Valley forecast for Saturday, Sunday, Monday, Tuesday, Wednesday. Hard freeze: lows of 25° or colder on 1 night, as cold as 23° Saturday night. Two wet days in a row: Sunday 83% and Monday 83%.",
+  "made": "2026-11-26T23:52:52.467Z",
+  "why": "New reason for a briefing: Snow is in the Valley forecast for Saturday, Sunday, Monday, Wednesday. Two wet days in a row: Friday 80% and Saturday 80%.",
   "image": "weather-draft.png",
-  "forecastIssued": "2026-11-26T06:31:22+00:00"
+  "forecastIssued": "2026-11-26T18:31:26+00:00"
  }
 }

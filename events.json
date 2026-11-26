@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T05:02:24.421Z",
+ "updated": "2026-11-26T23:52:36.114Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -834,16 +834,6 @@
      "desc": "The Christmas Tree Jubilee is the ultimate kick off to the Holiday Season and a treasured tradition for our community! This is the largest fundraising event for Weber School Foundation and proceeds fund class and school grants, field trips, enhanced educational programs and opportunities, special needs adaptive equipment and so much more.",
      "url": "https://www.wsd.net/o/foundation/page/christmas-tree-jubilee",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795640400000,
-     "e": 1795647600000,
-     "t": "BW Nutcracker - Invited Student Dress",
-     "loc": "",
-     "allDay": false,
-     "desc": "",
-     "url": "",
-     "src": "Treehouse Children's Museum"
     },
     {
      "s": 1795656600000,
@@ -3952,16 +3942,6 @@
    }
   ],
   "treehouse": [
-   {
-    "s": 1795640400000,
-    "e": 1795647600000,
-    "t": "BW Nutcracker - Invited Student Dress",
-    "loc": "",
-    "allDay": false,
-    "desc": "",
-    "url": "",
-    "src": "Treehouse Children's Museum"
-   },
    {
     "s": 1795813200000,
     "e": 1795820400000,
