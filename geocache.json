@@ -1150,5 +1150,10 @@
   "lng": -111.97056,
   "county": "Weber"
  },
- "The Ogden Tabernacle, 351 21st Street, Ogden, UT 84401": null
+ "The Ogden Tabernacle, 351 21st Street, Ogden, UT 84401": null,
+ "Snowbasin, Utah": {
+  "lat": 41.20037,
+  "lng": -111.86525,
+  "county": "Weber"
+ }
 }
