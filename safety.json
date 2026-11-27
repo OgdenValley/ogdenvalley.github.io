@@ -1,17 +1,8 @@
 {
- "updated": "2026-11-27T08:30:29.511Z",
+ "updated": "2026-11-27T10:17:50.547Z",
  "weather": [],
  "fires": [],
- "city": [
-  {
-   "title": "27th St. from Quincy Ave. to Jefferson Ave., 28th St from Quincy Ave. to Jefferson Ave.",
-   "link": "https://www.ogdencity.gov/AlertCenter.aspx?AID=2097",
-   "date": 1795749817000,
-   "text": "Emergency Water Shutdown",
-   "source": "Ogden City Alerts",
-   "sourceLink": "https://www.ogdencity.gov/AlertCenter.aspx"
-  }
- ],
+ "city": [],
  "status": {
   "weather": "ok",
   "fires": "ok",

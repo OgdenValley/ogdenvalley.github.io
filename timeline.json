@@ -1,6 +1,13 @@
 {
- "updated": "2026-11-27T08:30:55.638Z",
+ "updated": "2026-11-27T10:17:52.540Z",
  "items": [
+  {
+   "t": 1795774672540,
+   "src": "UDOT road sensor",
+   "text": "I-84 @ Weber Canyon: pavement 31°F, damp. Watch for ice.",
+   "kind": "winter",
+   "link": "https://udottraffic.utah.gov/"
+  },
   {
    "t": 1795737188213,
    "src": "Utah Air Quality",
@@ -33,7 +40,7 @@
   "ice": {
    "I-84 @ MP 91 Devils Gate": 0,
    "I-84 @ MP 97 Peterson": 0,
-   "I-84 @ Weber Canyon": 0,
+   "I-84 @ Weber Canyon": 1,
    "North Ogden Divide": 0,
    "SR-158 @ MP 11.5 Powder Mountain": 0,
    "SR-167 @ Trappers Loop": 0,
