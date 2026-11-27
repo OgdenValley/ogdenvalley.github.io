@@ -1,18 +1,18 @@
 {
- "updated": "2026-11-26T23:52:40.152Z",
+ "updated": "2026-11-27T01:51:17.489Z",
  "place": "Eden, Liberty and Huntsville area",
  "days": [
   {
    "date": "2026-11-26",
    "label": "Thu",
    "md": "Nov 26",
-   "high": 46,
+   "high": null,
    "low": 29,
    "pop": 9,
-   "short": "Partly Sunny",
-   "both": "Partly Sunny / Mostly Cloudy",
+   "short": "Mostly Cloudy",
+   "both": "Mostly Cloudy",
    "snow": false,
-   "wind": "1 mph"
+   "wind": "2 mph"
   },
   {
    "date": "2026-11-27",
@@ -87,7 +87,7 @@
    "wind": "2 mph"
   }
  ],
- "today": "Thanksgiving Day: Partly sunny. High near 46, with temperatures falling to around 41 in the afternoon. South wind around 1 mph.",
+ "today": "Tonight: Mostly cloudy, with a low around 29. East northeast wind around 2 mph.",
  "valleySnowDays": [
   "Sat",
   "Sun",
