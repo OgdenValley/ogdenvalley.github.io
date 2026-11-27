@@ -1,24 +1,10 @@
 {
- "updated": "2026-11-26T23:53:08.214Z",
+ "updated": "2026-11-27T08:30:55.638Z",
  "items": [
   {
    "t": 1795737188213,
    "src": "Utah Air Quality",
    "text": "Weber County forecast: Thursday moderate, voluntary action · Friday moderate, voluntary action · Saturday good",
-   "kind": "air",
-   "link": "https://air.utah.gov/forecast.php?id=hv"
-  },
-  {
-   "t": 1795669363705,
-   "src": "UDOT road sensor",
-   "text": "I-84 @ Weber Canyon: pavement 31°F, damp. Watch for ice.",
-   "kind": "winter",
-   "link": "https://udottraffic.utah.gov/"
-  },
-  {
-   "t": 1795669363705,
-   "src": "Utah Air Quality",
-   "text": "Weber County forecast: Wednesday moderate, voluntary action · Thursday moderate, voluntary action · Friday moderate, voluntary action",
    "kind": "air",
    "link": "https://air.utah.gov/forecast.php?id=hv"
   }

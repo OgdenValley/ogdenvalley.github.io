@@ -1,18 +1,9 @@
 {
- "updated": "2026-11-26T23:52:36.114Z",
+ "updated": "2026-11-27T08:30:25.607Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
    "events": [
-    {
-     "s": 1795654800000,
-     "e": 1795663800000,
-     "t": "Wednesday Night Hikers",
-     "loc": "Varies",
-     "allDay": false,
-     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
-     "url": "https://www.meetup.com/webercountyoutdoors/"
-    },
     {
      "s": 1795809600000,
      "e": 1795816800000,
@@ -824,36 +815,6 @@
      "desc": "Community Art Show is hosted quarterly at Ogden’s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
      "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
      "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795626000000,
-     "e": 1795662000000,
-     "t": "Christmas Tree Jubilee",
-     "loc": "Ogden Eccles Conference Center, 2415 Washington Blvd, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "The Christmas Tree Jubilee is the ultimate kick off to the Holiday Season and a treasured tradition for our community! This is the largest fundraising event for Weber School Foundation and proceeds fund class and school grants, field trips, enhanced educational programs and opportunities, special needs adaptive equipment and so much more.",
-     "url": "https://www.wsd.net/o/foundation/page/christmas-tree-jubilee",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795656600000,
-     "e": 1795660200000,
-     "t": "Yoga",
-     "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
-     "url": "https://weberpl.events.mylibrary.digital/",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795663800000,
-     "e": 1795676400000,
-     "t": "Country Dancing",
-     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
-     "allDay": false,
-     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
-     "url": "",
-     "src": "Weekly regular"
     },
     {
      "s": 1795735800000,
@@ -2976,6 +2937,26 @@
      "src": "Weekly regular"
     },
     {
+     "s": 1800925200000,
+     "e": 1800932400000,
+     "t": "Mystic Mondays: tarot readings",
+     "loc": "Two Bit Bistro, 2510 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "$5 readings. Every Monday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
+     "s": 1800934200000,
+     "e": 1800946800000,
+     "t": "Country Dancing",
+     "loc": "Neptune Skating Center, 2770 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Swing and line dancing, lessons 8:30-9 p.m., $6, all ages. Every Monday, Wednesday and Thursday.",
+     "url": "",
+     "src": "Weekly regular"
+    },
+    {
      "s": 1806712200000,
      "e": 1806719400000,
      "t": "Music @ the Collective with Alli Brown",
@@ -3028,26 +3009,6 @@
     "allDay": true,
     "desc": "Community Art Show is hosted quarterly at Ogden’s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
     "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795626000000,
-    "e": 1795662000000,
-    "t": "Christmas Tree Jubilee",
-    "loc": "Ogden Eccles Conference Center, 2415 Washington Blvd, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "The Christmas Tree Jubilee is the ultimate kick off to the Holiday Season and a treasured tradition for our community! This is the largest fundraising event for Weber School Foundation and proceeds fund class and school grants, field trips, enhanced educational programs and opportunities, special needs adaptive equipment and so much more.",
-    "url": "https://www.wsd.net/o/foundation/page/christmas-tree-jubilee",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795656600000,
-    "e": 1795660200000,
-    "t": "Yoga",
-    "loc": "Main Library, 2464 Jefferson Ave., Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Our certified instructor will provide an invigorating workout and help improve mental wellness. This low-impact activity promotes relaxation and helps reduce stress. Don’t forget your yoga mat!",
-    "url": "https://weberpl.events.mylibrary.digital/",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {

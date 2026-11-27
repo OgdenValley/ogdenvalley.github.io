@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T23:52:40.318Z",
+ "updated": "2026-11-27T08:30:30.726Z",
  "meetings": [
   {
    "body": "Weber County Commission",
@@ -29,11 +29,11 @@
    "elev": 7690,
    "depth": {
     "value": 12,
-    "date": "2026-11-25"
+    "date": "2026-11-26"
    },
    "water": {
-    "value": 3.3,
-    "date": "2026-11-25"
+    "value": 3.4,
+    "date": "2026-11-26"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=332",
    "source": "USDA NRCS SNOTEL"
@@ -42,12 +42,12 @@
    "name": "Ben Lomond Trail",
    "elev": 5970,
    "depth": {
-    "value": 10,
-    "date": "2026-11-25"
+    "value": 9,
+    "date": "2026-11-26"
    },
    "water": {
     "value": 2.2,
-    "date": "2026-11-25"
+    "date": "2026-11-26"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=333",
    "source": "USDA NRCS SNOTEL"
@@ -57,11 +57,11 @@
    "elev": 8930,
    "depth": {
     "value": 15,
-    "date": "2026-11-25"
+    "date": "2026-11-26"
    },
    "water": {
     "value": 3.4,
-    "date": "2026-11-25"
+    "date": "2026-11-26"
    },
    "link": "https://wcc.sc.egov.usda.gov/nwcc/site?sitenum=634",
    "source": "USDA NRCS SNOTEL"
@@ -79,7 +79,7 @@
   "Ogden Valley Planning Commission": "ok",
   "Huntsville Town Council": "ok",
   "Weber County Commission": "ok",
-  "Huntsville Town website": "ok",
+  "Huntsville Town website": "failed",
   "snow": "ok",
   "pineview": "ok"
  }
