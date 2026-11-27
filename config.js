@@ -213,6 +213,7 @@ window.OVE = {
        date: "2026-10" (year-month, sets the season), caption: "Sunrise over the reservoir" }
      Only add photos the photographer gave permission for. Upload the image to the main folder. */
   valleyPhotos: [
+    { image: "valley-snowbasin-ridge-john-dubock.jpg", by: "John Dubock", place: "Snowbasin", date: "2026-11", caption: "Dropping in off a Snowbasin ridge, with Ogden far below" },
     { image: "valley-pineview-sunrise-tom-doxey.jpg", by: "Tom Doxey", place: "Pineview", date: "2026-10", caption: "Sunrise over Pineview, looking east up the low water" },
     { image: "valley-moose-snow-deck.jpg", by: "Shauna Miller", place: "Nordic Valley", date: "", caption: "A moose naps in the snow right outside the back door" },
     { image: "valley-sunset-huntsville.jpg", by: "Seth Miller", place: "Huntsville", date: "", caption: "Fire in the sky over the Valley at sunset" },
@@ -287,7 +288,11 @@ window.OVE = {
     { image: "sky-beaver-moon-kristin-summers.jpg", title: "The full Beaver Moon up close", place: "", date: "Nov. 2026", by: "Kristin Summers" },
     { image: "sky-beaver-moon-mandy-mclean-ring.jpg", title: "Beaver Moon wearing its icy ring", place: "", date: "Nov. 2026", by: "Mandy Jackett McLean" },
     { image: "sky-beaver-moon-mandy-mclean-corral.jpg", title: "Beaver Moon over a snowy corral", place: "", date: "Nov. 2026", by: "Mandy Jackett McLean" },
-    { image: "sky-beaver-moon-mandy-mclean-peaks.jpg", title: "Beaver Moon rising gold over the peaks", place: "", date: "Nov. 2026", by: "Mandy Jackett McLean" }
+    { image: "sky-beaver-moon-mandy-mclean-peaks.jpg", title: "Beaver Moon rising gold over the peaks", place: "", date: "Nov. 2026", by: "Mandy Jackett McLean" },
+    { image: "sky-beaver-moon-lola-benstog-branches.jpg", title: "Beaver Moon through the branches", place: "", date: "Nov. 2026", by: "Lola Benstog" },
+    { image: "sky-beaver-moon-alison-benjamin-clouds.jpg", title: "Beaver Moon glowing through the clouds", place: "", date: "Nov. 2026", by: "Alison J Benjamin" },
+    { image: "sky-beaver-moon-carol-monaco-alpenglow.jpg", title: "Alpenglow, with the Beaver Moon just rising", place: "", date: "Nov. 2026", by: "Carol Monaco" },
+    { image: "sky-moon-halo-sam-crump-fisheye.jpg", title: "Moon halo over the Valley (fisheye view)", place: "", date: "Nov. 2026", by: "Sam Crump" }
   ],
 
   /* --- Coloring pages (change each month) ---------------------------- */
