@@ -1059,6 +1059,46 @@
    "url": "https://www.facebook.com/ogdenvalleyevents/upcoming_hosted_events",
    "desc": "Cinco de Mayo festival.",
    "src": "OVE events sweep, Nov. 4, 2026"
+  },
+  {
+   "t": "Ogden Holiday Electric Light Parade",
+   "start": "2026-11-28T17:30:00-07:00",
+   "end": "2026-11-28T18:30:00-07:00",
+   "loc": "Washington Blvd., 22nd St. to 27th St., Ogden",
+   "into": "weber",
+   "url": "https://visitogden.com/events/signature/christmas-village",
+   "desc": "Free. Lighted floats down Washington Blvd. from 22nd St. to 27th St. The Santa Run starts on Washington Blvd. at 4:30 p.m., before the parade. Dress warm and come early for a curb spot.",
+   "src": "Visit Ogden Christmas Village page and Ogden City Christmas Village page, checked Nov. 27, 2026"
+  },
+  {
+   "t": "Christmas Village lighting, opening ceremony and fireworks",
+   "start": "2026-11-28T18:30:00-07:00",
+   "end": "2026-11-28T19:30:00-07:00",
+   "loc": "Ogden Municipal Gardens, 2549 Washington Blvd., Ogden",
+   "into": "weber",
+   "url": "https://visitogden.com/events/signature/christmas-village",
+   "desc": "Free. Right after the parade: the village lights come on, with fireworks.",
+   "src": "Visit Ogden Christmas Village page and Ogden City Christmas Village page, checked Nov. 27, 2026"
+  },
+  {
+   "t": "Ogden's Christmas Village (open daily)",
+   "start": "2026-11-28T18:30:00-07:00",
+   "end": "2027-01-01T21:00:00-07:00",
+   "loc": "Ogden Municipal Gardens, 2549 Washington Blvd., Ogden",
+   "into": "weber",
+   "url": "https://visitogden.com/events/signature/christmas-village",
+   "desc": "Free. Lighted cottages and displays around the Municipal Building, Nov. 28 through Jan. 1.",
+   "src": "Visit Ogden Christmas Village page and Ogden City Christmas Village page, checked Nov. 27, 2026"
+  },
+  {
+   "t": "Powder Mountain opening day",
+   "start": "2026-12-04T09:00:00-07:00",
+   "end": "2026-12-04T16:00:00-07:00",
+   "loc": "Powder Mountain, Eden",
+   "into": "ov",
+   "url": "https://www.powdermountain.com/",
+   "desc": "Opening a week early, Dec. 4 instead of Dec. 11. Check powdermountain.com for lifts, hours and tickets before you go.",
+   "src": "powdermountain.com, checked Nov. 27, 2026"
   }
  ]
 }

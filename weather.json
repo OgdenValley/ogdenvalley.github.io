@@ -12,6 +12,16 @@
    "source": "National Weather Service Salt Lake City forecast for 4 miles NW of Huntsville, issued 11:31 p.m. MST Nov. 26, 2026"
   },
   {
+   "type": "update",
+   "date": "2026-11-27T13:00:00-07:00",
+   "ends": "2026-12-05T06:00:00-07:00",
+   "title": "Snow report: Powder Mountain opens early, Friday, Dec. 4",
+   "summary": "Fresh snow moved Powder Mountain's opening day up a full week, from Dec. 11 to Friday, Dec. 4. The new DMI Lift adds more than 1,000 acres and 2,200 feet of vertical when conditions allow. A new Afternoon Ticket is $99; all-day tickets run $63 to $229 and are cheaper when you book early. Snowbasin is already open, and Nordic Valley plans to open Dec. 18. Check each resort's site before you go.",
+   "image": "ove-powder-mountain-opens-early-dec-4-2026.png",
+   "alt": "Powder Mountain opens early: Friday, Dec. 4, one week ahead of its Dec. 11 plan, with Ben the moose skiing. New DMI Lift adds 1,000-plus acres and 2,200 feet of vertical; Afternoon Ticket $99; all-day tickets $63 to $229. Snowbasin is already open; Nordic Valley plans to open Dec. 18.",
+   "source": "powdermountain.com, checked Nov. 27, 2026; Unofficial Networks, Nov. 26, 2026; Nordic Valley projected opening from OnTheSnow"
+  },
+  {
    "type": "weekly",
    "date": "2026-11-22T20:00:00-07:00",
    "title": "Ogden Valley weather: week of Nov. 23",
