@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-27T08:30:25.607Z",
+ "updated": "2026-11-28T01:58:45.971Z",
  "calendars": {
   "ov": {
    "name": "Ogden Valley",
@@ -70,6 +70,16 @@
      "desc": "Public meeting.",
      "url": "https://huntsvilleutah.gov/upcoming-events",
      "src": "OVE events sweep, Nov. 4, 2026"
+    },
+    {
+     "s": 1796400000000,
+     "e": 1796425200000,
+     "t": "Powder Mountain opening day",
+     "loc": "Powder Mountain, Eden",
+     "allDay": false,
+     "desc": "Opening a week early, Dec. 4 instead of Dec. 11. Check powdermountain.com for lifts, hours and tickets before you go.",
+     "url": "https://www.powdermountain.com/",
+     "src": "powdermountain.com, checked Nov. 27, 2026"
     },
     {
      "s": 1796414400000,
@@ -780,6 +790,15 @@
      "allDay": false,
      "desc": "Kids, bring your parents Saturdays and come watch recent Cinema, family friendly, films.",
      "url": ""
+    },
+    {
+     "s": 1811376000000,
+     "e": 1811385000000,
+     "t": "Wednesday Night Hikers",
+     "loc": "Varies",
+     "allDay": false,
+     "desc": "Weekly hiking events that vary slightly with the seasons. Please check https://www.meetup.com/webercountyoutdoors/ for details",
+     "url": "https://www.meetup.com/webercountyoutdoors/"
     }
    ]
   },
@@ -814,16 +833,6 @@
      "allDay": true,
      "desc": "Community Art Show is hosted quarterly at Ogden’s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
      "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
-     "src": "Ogden Area Events (Visit Ogden)"
-    },
-    {
-     "s": 1795735800000,
-     "e": 1795739400000,
-     "t": "Ogden City Landmarks Commission",
-     "loc": "2549 Washington Blvd., City Council Chambers, Ogden, UT 84401",
-     "allDay": false,
-     "desc": "Ogden City Landmarks Commission",
-     "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
      "src": "Ogden Area Events (Visit Ogden)"
     },
     {
@@ -1035,6 +1044,26 @@
      "desc": "Free shows, all ages. Every Thursday, Friday and Saturday.",
      "url": "",
      "src": "Weekly regular"
+    },
+    {
+     "s": 1795915800000,
+     "e": 1795919400000,
+     "t": "Christmas Village lighting, opening ceremony and fireworks",
+     "loc": "Ogden Municipal Gardens, 2549 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free. Right after the parade: the village lights come on, with fireworks.",
+     "url": "https://visitogden.com/events/signature/christmas-village",
+     "src": "Visit Ogden Christmas Village page and Ogden City Christmas Village page, checked Nov. 27, 2026"
+    },
+    {
+     "s": 1795915800000,
+     "e": 1798862400000,
+     "t": "Ogden's Christmas Village (open daily)",
+     "loc": "Ogden Municipal Gardens, 2549 Washington Blvd., Ogden",
+     "allDay": false,
+     "desc": "Free. Lighted cottages and displays around the Municipal Building, Nov. 28 through Jan. 1.",
+     "url": "https://visitogden.com/events/signature/christmas-village",
+     "src": "Visit Ogden Christmas Village page and Ogden City Christmas Village page, checked Nov. 27, 2026"
     },
     {
      "s": 1795917600000,
@@ -3009,16 +3038,6 @@
     "allDay": true,
     "desc": "Community Art Show is hosted quarterly at Ogden’s Historic Union Station, welcoming artists of all skill levels and people of all backgrounds.\n\nThis initiative is designed to build the confidence and resumes of local creatives. Community members will have the opportunity to experience art in a safe and comfortable setting.\n\nCommunity Art Show focuses will rotate, highlighting a new genre and/or theme with each new show.",
     "url": "https://www.ogdencity.gov/2581/Community-Art-Show",
-    "src": "Ogden Area Events (Visit Ogden)"
-   },
-   {
-    "s": 1795735800000,
-    "e": 1795739400000,
-    "t": "Ogden City Landmarks Commission",
-    "loc": "2549 Washington Blvd., City Council Chambers, Ogden, UT 84401",
-    "allDay": false,
-    "desc": "Ogden City Landmarks Commission",
-    "url": "http://www.ogdencity.com/index.php?module=ibcms&fxn=plan.main",
     "src": "Ogden Area Events (Visit Ogden)"
    },
    {

@@ -1155,5 +1155,15 @@
   "lat": 41.20037,
   "lng": -111.86525,
   "county": "Weber"
+ },
+ "Powder Mountain, Eden": {
+  "lat": 41.30654,
+  "lng": -111.82863,
+  "county": "Weber"
+ },
+ "Ogden Municipal Gardens, 2549 Washington Blvd., Ogden": {
+  "lat": 41.21956,
+  "lng": -111.9712,
+  "county": "Weber"
  }
 }
