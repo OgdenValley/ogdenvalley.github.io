@@ -1,29 +1,24 @@
 {
- "updated": "2026-11-27T18:58:34.426Z",
+ "updated": "2026-11-28T10:26:32.613Z",
  "needed": true,
  "since": "2026-11-10T23:20:28.151Z",
  "reasons": [
   {
    "kind": "snow",
-   "key": "snow:2026-11-29,2026-11-30,2026-12-01,2026-12-02,2026-12-03",
-   "text": "Snow is in the Valley forecast for Sunday, Monday, Tuesday, Wednesday, Thursday."
+   "key": "snow:2026-11-29,2026-11-30,2026-12-01,2026-12-03,2026-12-04",
+   "text": "Snow is in the Valley forecast for Sunday, Monday, Tuesday, Thursday, Friday."
   },
   {
    "kind": "freeze",
-   "key": "freeze:2026-11-28",
-   "text": "Hard freeze: lows of 25° or colder on 1 night, as cold as 23° Saturday night."
-  },
-  {
-   "kind": "wet",
-   "key": "wet:2026-11-30",
-   "text": "Two wet days in a row: Monday 71% and Tuesday 71%."
+   "key": "freeze:2026-11-28,2026-12-02",
+   "text": "Hard freeze: lows of 25° or colder on 2 nights, as cold as 20° Saturday night."
   }
  ],
- "forecastIssued": "2026-11-27T18:31:30+00:00",
+ "forecastIssued": "2026-11-28T08:21:40+00:00",
  "draft": {
-  "made": "2026-11-27T18:58:34.426Z",
-  "why": "New reason for a briefing: Snow is in the Valley forecast for Sunday, Monday, Tuesday, Wednesday, Thursday. Two wet days in a row: Monday 71% and Tuesday 71%.",
+  "made": "2026-11-28T10:26:32.613Z",
+  "why": "New reason for a briefing: Snow is in the Valley forecast for Sunday, Monday, Tuesday, Thursday, Friday. Hard freeze: lows of 25° or colder on 2 nights, as cold as 20° Saturday night.",
   "image": "weather-draft.png",
-  "forecastIssued": "2026-11-27T18:31:30+00:00"
+  "forecastIssued": "2026-11-28T08:21:40+00:00"
  }
 }

@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-28T10:22:48.313Z",
+ "updated": "2026-11-28T10:26:28.029Z",
  "source": "Utah Department of Transportation (UDOT Traffic)",
  "link": "https://udottraffic.utah.gov/",
  "status": {
@@ -23,7 +23,7 @@
    "full": false,
    "severity": "Unknown",
    "reported": 1793628000000,
-   "updated": 1795861296000,
+   "updated": 1795861476000,
    "ends": 1806714000000,
    "lat": 41.2544212341309,
    "lng": -111.85994720459,
@@ -41,7 +41,7 @@
    "full": false,
    "severity": "Unknown",
    "reported": 1772434800000,
-   "updated": 1795861296000,
+   "updated": 1795861476000,
    "ends": 1825135140000,
    "lat": 41.1372184753418,
    "lng": -111.862312316895,
@@ -59,7 +59,7 @@
    "full": false,
    "severity": "Unknown",
    "reported": 1772434800000,
-   "updated": 1795861296000,
+   "updated": 1795861476000,
    "ends": 1825135140000,
    "lat": 41.1396598815918,
    "lng": -111.853317260742,
